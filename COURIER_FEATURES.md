@@ -30,3 +30,11 @@ Controlled three-role pickup → extraction → rank → next mission was exerci
 Screenshots inspected: `output/playwright/courier-visor.png`, `courier-bloom-rescue.png`, `courier-mobile.png`. No new runtime/shader errors in final browser checks; existing FBX import warnings remain. Short120-frame desktop sample: median16.5ms,p9518.6ms; not a hardware-wide performance certification.
 
 Models, toon shading, close camera, red afterimages, drone searchlights, destruction and existing audio remain in place. A portrait-only shoulder adjustment keeps the character inside the mobile viewport. Mission/player simulation is still local browser state; only mastery is saved across reloads.
+
+## Rescue routes and mission presentation
+
+Four repeatable directional corridor templates now place the three rescue rooftops progressively farther from the central district. Six existing rescue vectors form three numbered pairs: green RECOVERY STOP (18 pressure vent) and gold RESCUE APPROACH. Approach height is raised until its segment from the recovery stop clears swept character collision. The objective guides each stage; anchor contact advances guidance. Civilian pickups remain possible by direct shortcuts. Recovery-to-approach clearance does not promise a clear shot from every player position; the arrival forecast remains authoritative. Damage and dropped civilians rebuild the route positions. Visor-only world labels identify the numbered markers.
+
+A shrinking gold arc beside the crosshair displays the actual 0.42-second Crosscut window. Mission completion and identity failure now pause on a results screen with rank, mission score, bonus, clean arrivals, Crosscuts, mistakes, peak identity, condition and time. Continue using the button, Enter/Space, or controller A/Start. Success begins the next corridor; failure retries the same corridor number. Inputs and audio are cleared while results are open.
+
+Validation: 16 route/presentation checks, 24 updated Courier regressions, 20 base regressions and four continuation/input checks passed. Desktop marker/countdown/success and 390×844 mobile results screenshots inspected. The supplied web-game client completed a smoke run. Route tests cover four corridor variants with the existing map; real controller hardware and unrestricted routes through heavily destroyed cities still need playtesting.

@@ -20,4 +20,4 @@ This private snapshot includes user-supplied statue, drone and character assets.
 
 ## Validation
 
-The source build passed 44 automated regression checks before this snapshot: 24 Courier checks and 20 base game checks. Physical controller rumble and broad cross-browser performance remain unverified.
+The source build passed 64 automated checks for this snapshot: 24 Courier checks, 20 base game checks, 16 route/presentation checks and four continuation/input checks. Physical controller rumble and broad cross-browser performance remain unverified.
