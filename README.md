@@ -25,3 +25,7 @@ The source build passed 64 automated checks for this snapshot: 24 Courier checks
 ## Stylized rendering additions
 
 Spherical night clouds, reactive puddles, subtle edge outlines and adaptive resolution are included. See [STYLIZED_COMPONENTS_NOTES.md](STYLIZED_COMPONENTS_NOTES.md) for implementation and validation. Portions are adapted from [Christian Ortiz (Cortiz)'s stylized-components](https://github.com/cortiz2894/stylized-components); its MIT notice is included in [third-party/stylized-components/LICENSE](third-party/stylized-components/LICENSE). The updated build passed 80 automated checks.
+
+## Blender city buildings
+
+Eight reference-based architectural families now replace all 310 city buildings, fitted to their original footprints and heights. Nearby buildings use detailed models; distant ones use shared simplified geometry. Compound surfaces support balcony and stepped-roof contact, and impacts carve destructible colored geometry without changing neighboring instances. See [BUILDING_IMPORT_NOTES.md](BUILDING_IMPORT_NOTES.md). The updated build passed 101 gameplay/asset integration checks and glTF validation for all eight runtime models.

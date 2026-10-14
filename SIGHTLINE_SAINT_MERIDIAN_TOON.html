@@ -7740,7 +7740,11 @@ for(let i=-6;i<=6;i++){addRoadStrip(i*160,0,22,2200);addRoadStrip(0,i*160,2200,2
 const laneMat=new THREE.MeshBasicMaterial({color:0x376376,transparent:true,opacity:.32});for(let i=-6;i<=6;i++){const a=new THREE.Mesh(new THREE.BoxGeometry(.12,.02,2200),laneMat);a.position.set(i*160,.055,0);world.add(a);const b=new THREE.Mesh(new THREE.BoxGeometry(2200,.02,.12),laneMat);b.position.set(0,.055,i*160);world.add(b)}
 const buildingMats=[0x101826,0x151b2a,0x0e1621,0x1b1e2b].map(c=>new THREE.MeshStandardMaterial({color:c,roughness:.68,metalness:.18}));
 function registerProp(mesh){propColliders.push({box:new THREE.Box3().setFromObject(mesh),mesh});cameraObstacles.push(mesh)}
-function allColliders(){return buildingColliders.flatMap(c=>c.parts||[c]).concat(propColliders)}
+function allColliders(start=null,end=start){
+ if(!start)return buildingColliders.flatMap(c=>c.parts||[c]).concat(propColliders);
+ const area=new THREE.Box3(start.clone().min(end),start.clone().max(end)).expandByScalar(2);
+ return buildingColliders.filter(c=>c.box.intersectsBox(area)).flatMap(c=>c.parts||[c]).concat(propColliders.filter(c=>c.box.intersectsBox(area)));
+}
 function disposeObject(obj){if(!obj)return;obj.removeFromParent?obj.removeFromParent():obj.parent&&obj.parent.remove(obj);const gs=new Set(),ms=new Set();obj.traverse(o=>{if(o.geometry&&!o.userData.sharedAsset)gs.add(o.geometry);if(o.material)(Array.isArray(o.material)?o.material:[o.material]).forEach(m=>ms.add(m))});gs.forEach(g=>g.dispose());ms.forEach(m=>m.dispose())}
 function addBuilding(x,z,w,d,h,accent){const mesh=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),buildingMats[Math.floor(rand()*buildingMats.length)]);mesh.position.set(x,h/2,z);mesh.castShadow=true;mesh.receiveShadow=true;world.add(mesh);rayTargets.push(mesh);walkables.push(mesh);const box=new THREE.Box3().setFromObject(mesh);buildingColliders.push({box,mesh});cameraObstacles.push(mesh);
  // Removed the original wraparound accent strips: their overlapping faces produced jagged facade bands.
@@ -7949,9 +7953,9 @@ const performanceBudget={visibleChunks:0,totalChunks:detailChunks.length,pedestr
 function updateVisualBudget(dt=0){
  camera.updateMatrixWorld();detailProjection.multiplyMatrices(camera.projectionMatrix,camera.matrixWorldInverse);detailFrustum.setFromProjectionMatrix(detailProjection);let visible=0;
  for(const c of buildingColliders)c.mesh.castShadow=c.box.distanceToPoint(camera.position)<650;
- for(const c of detailChunks){const near=c.box.distanceToPoint(camera.position);c.mesh.visible=near<c.range&&detailFrustum.intersectsBox(c.box);if(c.mesh.visible)visible++}performanceBudget.visibleChunks=visible;
+ for(const c of detailChunks){const near=c.box.distanceToPoint(camera.position);c.mesh.visible=near<c.range&&detailFrustum.intersectsBox(c.box);if(c.mesh.visible)visible++}performanceBudget.visibleChunks=visible;updateImportedBuildingLOD();
  let pedestrians=0,steam=0;for(const w of streetAtmosphere.walkers){w.group.visible=w.group.position.distanceToSquared(camera.position)<240*240;if(w.group.visible)pedestrians++}
- for(const p of streetAtmosphere.steam){p.visible=p.position.distanceToSquared(camera.position)<280*280;if(p.visible)steam++}for(const fan of streetAtmosphere.fans)fan.visible=fan.position.distanceToSquared(camera.position)<320*320;
+ for(const p of streetAtmosphere.steam){p.visible=!p.userData.unmounted&&p.position.distanceToSquared(camera.position)<280*280;if(p.visible)steam++}for(const fan of streetAtmosphere.fans)fan.visible=fan.position.distanceToSquared(camera.position)<320*320;
  performanceBudget.pedestrians=pedestrians;performanceBudget.steam=steam;
  streetAtmosphere.rain.geometry.setDrawRange(0,performanceBudget.quality==='mobile'?600:1300);
  const aimed=inputAiming();streetAtmosphere.rainUniforms.gain.value=(aimed?.48:s.mode===P.TRANSIT?.65:1)*courier.rainStrength;
@@ -7991,6 +7995,58 @@ function outlineCharacter(root){const bodies=[];root.traverse(o=>{if(o.isSkinned
  }}
 applyToonVisuals(scene);
 
+// Eight Blender-authored families; floor pivots, shared geometry and one draw per building.
+const importedCity={status:'loading',families:[],buildings:0,near:0,far:0,error:null};
+function importedBuildingMaterial(){
+ const holder=new THREE.Mesh(new THREE.BufferGeometry(),new THREE.MeshStandardMaterial({color:0xffffff,vertexColors:true,emissive:0xffffff,emissiveIntensity:1}));applyToonVisuals(holder);
+ const mat=holder.material,previous=mat.onBeforeCompile;
+ mat.onBeforeCompile=shader=>{previous(shader);shader.vertexShader=shader.vertexShader.replace('#include <common>','#include <common>\nattribute vec3 cityEmission; varying vec3 vCityEmission;').replace('#include <begin_vertex>','#include <begin_vertex>\nvCityEmission=cityEmission;');shader.fragmentShader=shader.fragmentShader.replace('#include <common>','#include <common>\nvarying vec3 vCityEmission;').replace('#include <emissivemap_fragment>','#include <emissivemap_fragment>\ntotalEmissiveRadiance*=vCityEmission;');};
+ mat.customProgramCacheKey=()=> 'SaintMeridianBuildingVertexEmission1';holder.geometry.dispose();return mat;
+}
+function prepareBuildingTemplate(root){
+ root.updateMatrixWorld(true);const bounds=new THREE.Box3().setFromObject(root),size=bounds.getSize(new THREE.Vector3()),center=bounds.getCenter(new THREE.Vector3()),full={position:[],normal:[],color:[],cityEmission:[]},low={position:[],normal:[],color:[],cityEmission:[]};
+ if(size.toArray().some(v=>!Number.isFinite(v)||v<=0))throw Error('Invalid building bounds');
+ root.traverse(o=>{if(!o.isMesh)return;const source=o.geometry,p=source.attributes.position,n=source.attributes.normal,normalMatrix=new THREE.Matrix3().getNormalMatrix(o.matrixWorld),v=new THREE.Vector3(),normal=new THREE.Vector3();
+  const detailed=/panel.?seams|mullion|louvers|silver.?floor.?seams|door.?handles|facade.?grooves/i.test(o.name),groups=source.groups.length?source.groups:[{start:0,count:source.index?source.index.count:p.count,materialIndex:0}];
+  for(const group of groups){const material=Array.isArray(o.material)?o.material[group.materialIndex]:o.material,tint=(/Midnight alloy/i.test(material.name)?new THREE.Color(.018,.038,.053):material.color.clone()).multiplyScalar(1.18),emission=material.emissive.clone().multiplyScalar(material.emissiveIntensity||1);if(/cyan|pale lamps/i.test(material.name))emission.multiplyScalar(1.4);
+   for(let k=group.start;k<Math.min(source.index?source.index.count:p.count,group.start+group.count);k++){const vertex=source.index?source.index.getX(k):k;v.fromBufferAttribute(p,vertex).applyMatrix4(o.matrixWorld);normal.fromBufferAttribute(n,vertex).applyMatrix3(normalMatrix).normalize();const pos=[(v.x-center.x)/size.x,(v.y-bounds.min.y)/size.y,(v.z-center.z)/size.z];for(const dst of detailed?[full]:[full,low]){dst.position.push(...pos);dst.normal.push(normal.x,normal.y,normal.z);dst.color.push(tint.r,tint.g,tint.b);dst.cityEmission.push(emission.r,emission.g,emission.b)}}
+  }
+ });
+ function make(data){const g=new THREE.BufferGeometry();for(const key of Object.keys(data))g.setAttribute(key,new THREE.Float32BufferAttribute(data[key],3));g.computeBoundingBox();g.computeBoundingSphere();return g}
+ const template={geometry:make(full),lod:make(low),bounds,size,center};const gs=new Set(),ms=new Set();root.traverse(o=>{if(o.geometry)gs.add(o.geometry);if(o.material)(Array.isArray(o.material)?o.material:[o.material]).forEach(m=>ms.add(m))});gs.forEach(g=>g.dispose());ms.forEach(m=>m.dispose());return template;
+}
+function buildingFamily(id,h){return h>190?(id%2?6:7):h>110?(id%2?1:7):h>65?(id%3?0:3):[2,4,5,3][id%4]}
+function removeLegacyBuildingDetails(){
+ architecture.visible=false;world.children.filter(o=>o.isInstancedMesh).forEach(o=>o.visible=false);districtArt.children.filter(o=>o.isInstancedMesh).forEach(o=>o.visible=false);
+ // Retire flat-shell roof props, storefront cards and fans; the imported models supply these details.
+ for(let i=propColliders.length-1;i>=0;i--){const p=propColliders[i];if(!buildingColliders.some(c=>p.box.min.y>=c.box.max.y-1&&p.box.min.x>=c.box.min.x&&p.box.max.x<=c.box.max.x&&p.box.min.z>=c.box.min.z&&p.box.max.z<=c.box.max.z))continue;p.mesh.visible=false;for(const registry of [rayTargets,walkables,cameraObstacles]){const at=registry.indexOf(p.mesh);if(at>=0)registry.splice(at,1)}propColliders.splice(i,1)}
+ for(const f of streetAtmosphere.fans)f.parent.remove(f);streetAtmosphere.fans=[];
+ const atmosphere=streetAtmosphere.rain.parent;atmosphere.children.filter(o=>o.isInstancedMesh&&o.material.map).forEach(o=>o.visible=false);streetAtmosphere.stats.storeInteriors=0;
+}
+function updateImportedBuildingLOD(){
+ if(importedCity.status!=='ready')return;let near=0,far=0;const distance=performanceBudget.quality==='mobile'?310:460;
+ for(const c of buildingColliders){if(!c.importedKind)continue;const close=!!c.damageCount||c.box.distanceToPoint(camera.position)<distance;c.mesh.visible=!c.destroyed&&close;c.lodMesh.visible=!c.destroyed&&!close;c.mesh.castShadow=close&&c.box.distanceToPoint(camera.position)<320;if(c.mesh.visible)near++;else if(c.lodMesh.visible)far++}
+ importedCity.near=near;importedCity.far=far;
+}
+async function importBlenderCity(){
+ try{
+  const response=await fetch('buildings/saint_meridian/collisions.json');if(!response.ok)throw Error('Collision asset HTTP '+response.status);const metadata=await response.json(),loader=new THREE.GLTFLoader();
+  const templates=await Promise.all(metadata.map(data=>new Promise((resolve,reject)=>loader.load('buildings/saint_meridian/'+data.file,g=>{try{resolve(prepareBuildingTemplate(g.scene))}catch(e){reject(e)}},undefined,reject))));
+  // Commit only after every asset loads, so failed downloads retain the complete original city.
+  const material=importedBuildingMaterial();removeLegacyBuildingDetails();
+  importedCity.families=templates.map((t,i)=>({file:metadata[i].file,count:0,triangles:t.geometry.attributes.position.count/3,lodTriangles:t.lod.attributes.position.count/3}));
+  buildingColliders.forEach((c,id)=>{const size=c.box.getSize(new THREE.Vector3()),family=buildingFamily(id,size.y),t=templates[family],mesh=c.mesh;mesh.geometry.dispose();mesh.geometry=t.geometry;mesh.material=material;mesh.position.y=c.box.min.y;mesh.scale.set(size.x,size.y,size.z);mesh.userData.sharedAsset=true;mesh.userData.cityBuildingId=id;c.importedKind='blender_'+(family+1);c.family=family;c.sharedGeometry=true;c.originalBounds=c.box.clone();
+   c.parts=metadata[family].boxes.map(b=>{const lo=new THREE.Vector3(...b.min),hi=new THREE.Vector3(...b.max);for(const v of [lo,hi]){v.x=(v.x-t.center.x)/t.size.x*size.x+mesh.position.x;v.y=(v.y-t.bounds.min.y)/t.size.y*size.y+mesh.position.y;v.z=(v.z-t.center.z)/t.size.z*size.z+mesh.position.z}return{box:new THREE.Box3(lo,hi),mesh,owner:c,role:b.role}});c.initialPartCount=c.parts.length;
+   const lod=new THREE.Mesh(t.lod,material);lod.position.copy(mesh.position);lod.scale.copy(mesh.scale);lod.receiveShadow=true;lod.userData.sharedAsset=true;lod.userData.cityLOD=true;world.add(lod);c.lodMesh=lod;mesh.updateMatrixWorld(true);importedCity.families[family].count++;
+  });
+  // Mount remaining district signs and steam to the new facades, using the real mesh surface.
+  for(const o of [...districtArt.children.filter(o=>o.isMesh&&!o.isInstancedMesh),...streetAtmosphere.steam]){const c=buildingColliders.find(c=>o.position.x>=c.box.min.x-1&&o.position.x<=c.box.max.x+1&&o.position.z>=c.box.min.z-1&&o.position.z<=c.box.max.z+1);if(!c)continue;const front=o.position.z>c.mesh.position.z,dir=new THREE.Vector3(0,0,front?-1:1),from=new THREE.Vector3(o.position.x,o.position.y,front?c.box.max.z+2:c.box.min.z-2),hit=new THREE.Raycaster(from,dir,0,c.box.max.z-c.box.min.z+5).intersectObject(c.mesh,false)[0];if(hit)o.position.z=hit.point.z+(front?.08:-.08);else{o.visible=false;o.userData.unmounted=true;}}
+  importedCity.status='ready';importedCity.buildings=buildingColliders.length;
+  for(const c of courier.civilians)if(!c.rescued)c.group.position.copy(roofSpawnPoint(c.roof));for(const g of courier.guards)g.group.position.copy(roofSpawnPoint(g.roof).add(new THREE.Vector3(2,0,0)));syncRescueAnchors();recoverPenetration();updateImportedBuildingLOD();return importedCity;
+ }catch(error){importedCity.status='fallback';importedCity.error=String(error.message||error);console.error('Blender city import failed',error);$('assetNote').textContent='Building download failed; original city remains playable.';return importedCity}
+}
+window.importedCityState=()=>({...importedCity,families:importedCity.families.map(f=>({...f}))});
+
 // User-supplied FBX replaces the scenic guardian at exactly the existing world-space height.
 const statueReplacement={status:'loading',height:0,error:null};
 (function replaceScenicStatue(){
@@ -8013,20 +8069,30 @@ const statueReplacement={status:'loading',height:0,error:null};
 
 // Surface damage and bounded ballistic rubble. Building holes affect both meshes and swept collision.
 const destruction={decals:[],debris:[],hits:0,last:0,damaged:new Set()};
-function roofSpawnPoint(c){const parts=c.parts||[c];if(!parts.length)return new THREE.Vector3(c.mesh.position.x,.05,c.mesh.position.z);const roof=parts.slice().sort((a,b)=>b.box.max.y-a.box.max.y||((b.box.max.x-b.box.min.x)*(b.box.max.z-b.box.min.z)-(a.box.max.x-a.box.min.x)*(a.box.max.z-a.box.min.z)))[0];return new THREE.Vector3((roof.box.min.x+roof.box.max.x)/2,roof.box.max.y+.05,(roof.box.min.z+roof.box.max.z)/2)}
+function roofSpawnPoint(c){const parts=(c.parts||[c]).filter(p=>!c.importedKind||(p.box.max.x-p.box.min.x>2&&p.box.max.z-p.box.min.z>2));if(!parts.length)return new THREE.Vector3(c.mesh.position.x,.05,c.mesh.position.z);const roof=parts.slice().sort((a,b)=>b.box.max.y-a.box.max.y||((b.box.max.x-b.box.min.x)*(b.box.max.z-b.box.min.z)-(a.box.max.x-a.box.min.x)*(a.box.max.z-a.box.min.z)))[0];return new THREE.Vector3((roof.box.min.x+roof.box.max.x)/2,roof.box.max.y+.05,(roof.box.min.z+roof.box.max.z)/2)}
 function impactTexture(hole=false){const canvas=document.createElement('canvas');canvas.width=canvas.height=512;const ctx=canvas.getContext('2d');if(!hole){const g=ctx.createRadialGradient(256,256,15,256,256,170);g.addColorStop(0,'rgba(3,7,10,.96)');g.addColorStop(.42,'rgba(10,15,18,.85)');g.addColorStop(.78,'rgba(32,34,34,.55)');g.addColorStop(1,'rgba(15,19,21,0)');ctx.fillStyle=g;ctx.fillRect(0,0,512,512)}
  for(let i=0;i<17;i++){let angle=i*2.399+Math.random()*.15,x=256+Math.cos(angle)*80,y=256+Math.sin(angle)*80;ctx.beginPath();ctx.moveTo(x,y);for(let j=0;j<5;j++){x+=Math.cos(angle)*(20+Math.random()*15)+(Math.random()-.5)*18;y+=Math.sin(angle)*(20+Math.random()*15)+(Math.random()-.5)*18;ctx.lineTo(x,y)}ctx.strokeStyle='rgba(1,5,8,.92)';ctx.lineWidth=3+Math.random()*5;ctx.stroke();ctx.strokeStyle='rgba(104,109,111,.40)';ctx.lineWidth=1;ctx.stroke()}
  const map=new THREE.CanvasTexture(canvas);map.encoding=THREE.sRGBEncoding;return map}
 const groundDamageMap=impactTexture(false),wallDamageMap=impactTexture(true),rubbleGeometry=new THREE.IcosahedronGeometry(1,0),rubbleMaterial=new THREE.MeshStandardMaterial({color:0x53545b,roughness:.95});
 function collapseBuilding(c){
- gameAudio.play('collapse');c.destroyed=true;c.parts=[];c.mesh.visible=false;c.mesh.geometry.dispose();c.mesh.geometry=new THREE.BufferGeometry();c.mesh.geometry.setAttribute('position',new THREE.Float32BufferAttribute([],3));
+ gameAudio.play('collapse');c.destroyed=true;c.parts=[];c.mesh.visible=false;if(c.lodMesh)c.lodMesh.visible=false;if(!c.sharedGeometry)c.mesh.geometry.dispose();c.sharedGeometry=false;c.mesh.geometry=new THREE.BufferGeometry();c.mesh.geometry.setAttribute('position',new THREE.Float32BufferAttribute([],3));
  const bounds=c.box.clone().expandByScalar(1),matrix=new THREE.Matrix4(),position=new THREE.Vector3();scene.updateMatrixWorld(true);scene.traverse(o=>{if(o.isInstancedMesh){for(let i=0;i<o.count;i++){o.getMatrixAt(i,matrix);position.setFromMatrixPosition(matrix);if(bounds.containsPoint(position)){matrix.makeScale(0,0,0);o.setMatrixAt(i,matrix);o.instanceMatrix.needsUpdate=true}}}else if(o.isMesh&&o!==c.mesh&&(o.parent===world||o.parent===districtArt)){o.getWorldPosition(position);if(bounds.containsPoint(position))o.visible=false}});
  for(let i=propColliders.length-1;i>=0;i--){const prop=propColliders[i];if(prop.box.min.x>=c.box.min.x&&prop.box.max.x<=c.box.max.x&&prop.box.min.z>=c.box.min.z&&prop.box.max.z<=c.box.max.z&&prop.box.min.y>=c.box.max.y-1){prop.mesh.visible=false;rayTargets.splice(rayTargets.indexOf(prop.mesh),rayTargets.includes(prop.mesh)?1:0);propColliders.splice(i,1)}}
  if(vip&&!carrying&&Math.abs(vip.group.position.x-c.mesh.position.x)<(c.box.max.x-c.box.min.x)/2&&Math.abs(vip.group.position.z-c.mesh.position.z)<(c.box.max.z-c.box.min.z)/2)vip.group.position.copy(roofSpawnPoint(c));
  for(let i=destruction.decals.length-1;i>=0;i--)if(bounds.containsPoint(destruction.decals[i].position)){const decal=destruction.decals.splice(i,1)[0];scene.remove(decal);decal.geometry.dispose();decal.material.dispose()}
  relocateCourierRescues(c);destruction.damaged.add(c);showBanner('BUILDING COLLAPSE','STRUCTURE DESTROYED');
 }
-function cutImportedGeometry(source,cut,origin){const src=source.index?source.toNonIndexed():source.clone(),p=src.attributes.position,n=src.attributes.normal,uv=src.attributes.uv,positions=[],normals=[],uvs=[],center=new THREE.Vector3();for(let i=0;i<p.count;i+=3){center.set((p.getX(i)+p.getX(i+1)+p.getX(i+2))/3,(p.getY(i)+p.getY(i+1)+p.getY(i+2))/3,(p.getZ(i)+p.getZ(i+1)+p.getZ(i+2))/3).add(origin);if(cut.containsPoint(center))continue;for(let k=i;k<i+3;k++){positions.push(p.getX(k),p.getY(k),p.getZ(k));if(n)normals.push(n.getX(k),n.getY(k),n.getZ(k));if(uv)uvs.push(uv.getX(k),uv.getY(k))}}src.dispose();const out=new THREE.BufferGeometry();out.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));if(n)out.setAttribute('normal',new THREE.Float32BufferAttribute(normals,3));else out.computeVertexNormals();if(uv)out.setAttribute('uv',new THREE.Float32BufferAttribute(uvs,2));out.computeBoundingSphere();return out}
+// Subtract the world-space impact box by clipping triangles, preserving every vertex attribute.
+// A small hit must cut a large wall triangle even when that triangle's centroid lies elsewhere.
+function cutImportedGeometry(source,cut,mesh){
+ mesh.updateMatrixWorld(true);const inverse=mesh.matrixWorld.clone().invert(),localCut=cut.clone().applyMatrix4(inverse),keys=Object.keys(source.attributes),sizes=keys.map(k=>source.attributes[k].itemSize),offsets=[];let stride=0;for(const n of sizes){offsets.push(stride);stride+=n}const values=keys.map(()=>[]),positionOffset=offsets[keys.indexOf('position')],count=source.index?source.index.count:source.attributes.position.count;
+ function vertex(index){const v=[];for(const key of keys){const a=source.attributes[key];for(let j=0;j<a.itemSize;j++)v.push(a.array[index*a.itemSize+j])}return v}
+ function emit(poly){for(let i=1;i<poly.length-1;i++)for(const v of [poly[0],poly[i],poly[i+1]])for(let k=0;k<keys.length;k++)for(let j=0;j<sizes[k];j++)values[k].push(v[offsets[k]+j])}
+ function split(poly,axis,edge,sign){const inside=[],outside=[];for(let i=0;i<poly.length;i++){const a=poly[i],b=poly[(i+1)%poly.length],da=(a[positionOffset+axis]-edge)*sign,db=(b[positionOffset+axis]-edge)*sign;const inA=da>=-1e-8,inB=db>=-1e-8;(inA?inside:outside).push(a);if(inA!==inB){const t=da/(da-db),v=a.map((n,k)=>n+(b[k]-n)*t);inside.push(v);outside.push(v)}}return{inside,outside}}
+ const planes=[[0,localCut.min.x,1],[0,localCut.max.x,-1],[1,localCut.min.y,1],[1,localCut.max.y,-1],[2,localCut.min.z,1],[2,localCut.max.z,-1]];
+ for(let i=0;i<count;i+=3){let poly=[0,1,2].map(k=>vertex(source.index?source.index.getX(i+k):i+k));if(planes.some(([axis,edge,sign])=>poly.every(v=>(v[positionOffset+axis]-edge)*sign<0))){emit(poly);continue}for(const [axis,edge,sign] of planes){if(poly.length<3)break;const clipped=split(poly,axis,edge,sign);if(clipped.outside.length>=3)emit(clipped.outside);poly=clipped.inside}}
+ const out=new THREE.BufferGeometry();for(let k=0;k<keys.length;k++)out.setAttribute(keys[k],new THREE.Float32BufferAttribute(values[k],sizes[k]));out.computeBoundingSphere();out.computeBoundingBox();return out;
+}
 function carveBuilding(c,point,radius,normal=null){
  if(!c||c.prop||c.destroyed)return false;if(c.damageCount>=5)return false;const cut=new THREE.Box3(point.clone().addScalar(-radius),point.clone().addScalar(radius)),parts=c.parts||[{box:c.box.clone(),mesh:c.mesh}],next=[];if(c.importedKind&&normal)for(const axis of ['x','y','z'])if(Math.abs(normal[axis])>.5){if(normal[axis]>0)cut.max[axis]=c.box.max[axis]+radius;else cut.min[axis]=c.box.min[axis]-radius;}
  function add(min,max){if(max.x-min.x>.08&&max.y-min.y>.08&&max.z-min.z>.08)next.push({box:new THREE.Box3(min,max),mesh:c.mesh,owner:c})}
@@ -8035,9 +8101,9 @@ function carveBuilding(c,point,radius,normal=null){
   add(new THREE.Vector3(i.min.x,lo.y,lo.z),new THREE.Vector3(i.max.x,i.min.y,hi.z));add(new THREE.Vector3(i.min.x,i.max.y,lo.z),new THREE.Vector3(i.max.x,hi.y,hi.z));
   add(new THREE.Vector3(i.min.x,i.min.y,lo.z),new THREE.Vector3(i.max.x,i.max.y,i.min.z));add(new THREE.Vector3(i.min.x,i.min.y,i.max.z),new THREE.Vector3(i.max.x,i.max.y,hi.z));
  }
- if(!next.length||next.length>80)return false;
+ if(!next.length||next.length>(c.importedKind?c.initialPartCount+160:80))return false;
  const positions=[],normals=[],uvs=[],indices=[];let vertex=0;for(const part of next){const b=part.box,sz=b.getSize(new THREE.Vector3()),center=b.getCenter(new THREE.Vector3()).sub(c.mesh.position),g=new THREE.BoxGeometry(sz.x,sz.y,sz.z);g.translate(center.x,center.y,center.z);positions.push(...g.attributes.position.array);normals.push(...g.attributes.normal.array);uvs.push(...g.attributes.uv.array);for(const index of g.index.array)indices.push(index+vertex);vertex+=g.attributes.position.count;g.dispose()}
- const geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));geometry.setAttribute('normal',new THREE.Float32BufferAttribute(normals,3));geometry.setAttribute('uv',new THREE.Float32BufferAttribute(uvs,2));geometry.setIndex(indices);geometry.computeBoundingSphere();const old=c.mesh.geometry;if(c.importedKind){c.mesh.geometry=cutImportedGeometry(old,cut,c.mesh.position);geometry.dispose()}else c.mesh.geometry=geometry;old.dispose();c.parts=next;relocateCourierRescues(c);c.damageCount=(c.damageCount||0)+1;destruction.damaged.add(c);next.forEach(p=>p.owner=c);
+ const geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));geometry.setAttribute('normal',new THREE.Float32BufferAttribute(normals,3));geometry.setAttribute('uv',new THREE.Float32BufferAttribute(uvs,2));geometry.setIndex(indices);geometry.computeBoundingSphere();const old=c.mesh.geometry;if(c.importedKind){c.mesh.geometry=cutImportedGeometry(old,cut,c.mesh);geometry.dispose()}else c.mesh.geometry=geometry;if(!c.sharedGeometry)old.dispose();c.sharedGeometry=false;c.parts=next;relocateCourierRescues(c);c.damageCount=(c.damageCount||0)+1;destruction.damaged.add(c);next.forEach(p=>p.owner=c);
  // Strip visual cladding/window instances that would otherwise float over the hole.
  const visualCut=cut.clone().expandByScalar(.6),matrix=new THREE.Matrix4(),position=new THREE.Vector3();scene.traverse(o=>{if(!o.isInstancedMesh)return;for(let j=0;j<o.count;j++){o.getMatrixAt(j,matrix);position.setFromMatrixPosition(matrix);if(visualCut.containsPoint(position)){matrix.makeScale(0,0,0);o.setMatrixAt(j,matrix);o.instanceMatrix.needsUpdate=true}}});
  if(vip&&!carrying){const v=vip.group.position;if(cut.clone().expandByScalar(4).containsPoint(v))vip.group.position.copy(roofSpawnPoint(c))}
@@ -8196,7 +8262,7 @@ async function loadCharacter(){if(typeof fflate==='undefined')throw new Error('F
  model.traverse(mesh=>{if(!mesh.isSkinnedMesh)return;const pos=mesh.geometry.attributes.position;let min=Infinity;for(let i=0;i<pos.count;i++){mesh.boneTransform(i,footVertex).applyMatrix4(mesh.matrixWorld);min=Math.min(min,footVertex.y)}visualBaseOffset=-min+characterRoot.position.y;const indices=[];for(let i=0;i<pos.count;i++){mesh.boneTransform(i,footVertex).applyMatrix4(mesh.matrixWorld);if(footVertex.y<=min+.06)indices.push(i)}const samples=indices.length>512?Array.from({length:512},(_,i)=>indices[Math.floor(i*(indices.length-1)/511)]):indices;footContactSamples.push({mesh,indices:samples})});
  mixer=new THREE.AnimationMixer(model);if(model.animations&&model.animations[0])clips.idle=cleanClip(model.animations[0],'idle');else clips.idle=new THREE.AnimationClip('idle',1,[]);update('SKIN READY — BINDING ANIMATIONS…');
  for(const [name,file] of entries){if(name==='idle')continue;loadtext.textContent='BINDING '+file;await new Promise(r=>setTimeout(r,0));try{const fbx=loader.parse(b64ToBuffer(EMBEDDED_FBX[file]),'');if(fbx.animations&&fbx.animations[0])clips[name]=cleanClip(fbx.animations[0],name);else throw new Error('No animation clip in '+file)}catch(err){console.error(file,err)}update('BOUND '+file)}
- const missing=Object.keys(ASSET_KEYS).filter(k=>!clips[k]);if(missing.length)throw new Error('Missing required animations: '+missing.join(', '));clips.jumpPose=clips.takeoff.clone();clips.jumpPose.name='jumpPose';playAnim('idle',0,false);flightFX.bindBones(model);applyToonVisuals(model);outlineCharacter(model);loadfill.style.width='100%';loadtext.textContent='READY — 3D CHARACTER + ANIMATION SET BOUND';gameReady=true;setTimeout(()=>{loading.style.display='none';if(!gameActive)menu.style.display='flex';updateControllerUI()},220)}
+ const missing=Object.keys(ASSET_KEYS).filter(k=>!clips[k]);if(missing.length)throw new Error('Missing required animations: '+missing.join(', '));clips.jumpPose=clips.takeoff.clone();clips.jumpPose.name='jumpPose';playAnim('idle',0,false);flightFX.bindBones(model);applyToonVisuals(model);outlineCharacter(model);loadfill.style.width='100%';loadtext.textContent='READY — 3D CHARACTER + ANIMATION SET BOUND';await cityImportPromise;gameReady=true;setTimeout(()=>{loading.style.display='none';if(!gameActive)menu.style.display='flex';updateControllerUI()},220)}
 
 // ---------- player state ----------
 const P={GROUND:'GROUND',AIM:'AIM',TAKEOFF:'TAKEOFF',TRANSIT:'TRANSIT',AIR:'AIR',UNCONTROLLED:'UNCONTROLLED',LANDING:'LANDING',IMPACT:'IMPACT'};
@@ -8341,7 +8407,7 @@ const velocityTunnel=new VelocityTunnel();
 
 function showBanner(a,b){$('bannerBig').textContent=a;$('bannerSub').textContent=b;$('banner').style.opacity=1;bannerTimer=1.45}
 function hitFlash(){damage.style.opacity=.8;setTimeout(()=>damage.style.opacity=0,120)}
-function supportHeight(x,z,currentY){let h=.42;for(const c of allColliders()){const b=c.box;if(x>b.min.x+.45&&x<b.max.x-.45&&z>b.min.z+.45&&z<b.max.z-.45&&b.max.y+.42<=currentY+.85)h=Math.max(h,b.max.y+.42)}return h}
+function supportHeight(x,z,currentY){let h=.42;for(const c of allColliders(new THREE.Vector3(x,0,z),new THREE.Vector3(x,currentY+1,z))){const b=c.box;if(x>b.min.x+.45&&x<b.max.x-.45&&z>b.min.z+.45&&z<b.max.z-.45&&b.max.y+.42<=currentY+.85)h=Math.max(h,b.max.y+.42)}return h}
 // PHASE: 3D FLIGHT RELIABILITY. The player's position is at the FEET, not the center.
 // Swept AABB collision with capsule-sized padding prevents tunnelling between frames.
 // AABB-expanded dimensions: 0.55m body radius; ~1.72m torso above feet; .40m roof clearance.
@@ -8352,7 +8418,7 @@ function sweptCharacterHit(start,end){
  const dx=end.x-start.x,dy=end.y-start.y,dz=end.z-start.z;
  if(dx*dx+dy*dy+dz*dz<1e-10)return null;
  let nearest=1.00001,result=null;
- for(const c of allColliders()){
+ for(const c of allColliders(start,end)){
   const b=c.box;
   const loX=b.min.x-BODY_RADIUS,hiX=b.max.x+BODY_RADIUS;
   const loY=b.min.y-BODY_HEIGHT,hiY=b.max.y+ROOF_CLEARANCE;
@@ -8381,7 +8447,7 @@ function sweptCharacterHit(start,end){
  return result;
 }
 function recoverPenetration(){
- for(let pass=0;pass<8;pass++){let moved=false;for(const c of allColliders()){const b=c.box,lo=new THREE.Vector3(b.min.x-BODY_RADIUS,b.min.y-BODY_HEIGHT,b.min.z-BODY_RADIUS),hi=new THREE.Vector3(b.max.x+BODY_RADIUS,b.max.y+ROOF_CLEARANCE,b.max.z+BODY_RADIUS);if(s.pos.x<=lo.x||s.pos.x>=hi.x||s.pos.y<=lo.y||s.pos.y>=hi.y||s.pos.z<=lo.z||s.pos.z>=hi.z)continue;
+ for(let pass=0;pass<8;pass++){let moved=false;for(const c of allColliders(s.pos)){const b=c.box,lo=new THREE.Vector3(b.min.x-BODY_RADIUS,b.min.y-BODY_HEIGHT,b.min.z-BODY_RADIUS),hi=new THREE.Vector3(b.max.x+BODY_RADIUS,b.max.y+ROOF_CLEARANCE,b.max.z+BODY_RADIUS);if(s.pos.x<=lo.x||s.pos.x>=hi.x||s.pos.y<=lo.y||s.pos.y>=hi.y||s.pos.z<=lo.z||s.pos.z>=hi.z)continue;
  const exits=[['x',lo.x-.025,s.pos.x-lo.x],['x',hi.x+.025,hi.x-s.pos.x],['y',hi.y+.025,hi.y-s.pos.y],['z',lo.z-.025,s.pos.z-lo.z],['z',hi.z+.025,hi.z-s.pos.z]].sort((a,b)=>a[2]-b[2]);s.pos[exits[0][0]]=exits[0][1];s.vel[exits[0][0]]=0;moved=true;markCollision('OVERLAP RECOVERED')}if(!moved)break}
 }
 function clearRailQueue(){s.queued=s.queuedObj=s.queuedNormal=null;document.body.classList.remove('locked')}
@@ -8969,9 +9035,10 @@ function tickFrame(dt,draw=true){pollGamepad();gameAudio.update(dt);updateCrossc
 function loop(){requestAnimationFrame(loop);const elapsed=Math.min(clock.getDelta(),.25),steps=Math.max(1,Math.ceil(elapsed/(1/60)));for(let i=0;i<steps;i++)tickFrame(elapsed/steps,false);renderNight(elapsed)}
 window.advanceTime=ms=>{const steps=Math.max(1,Math.ceil(ms/(1000/60)));for(let i=0;i<steps;i++)tickFrame(ms/1000/steps,false);renderNight(ms/1000)};
 window.stylizedState=()=>({resolutionScale:adaptiveQuality.scale,pixelRatio:renderer.getPixelRatio(),fallback:adaptiveQuality.fallback,outlineStrength:phasePost.uniforms.outlineStrength.value,puddles:wetSurfaces.patches.length,rippleEvents:wetSurfaces.emitted,activeRipples:wetSurfaces.events.filter(e=>wetSurfaces.time-e.z<2).length});
-window.render_game_to_text=()=>JSON.stringify({visuals:stylizedState(),courier:courierState(),coordinates:'feet position; +Y up, -Z forward at yaw 0',ready:gameReady,active:gameActive,mode:s.mode,pos:s.pos.toArray(),velocity:s.vel.toArray(),aiming:inputAiming(),pressure:s.pressure,score:s.score,combo:s.combo,carrying,queued:!!s.queued,overload:s.overloadRecovery,vip:vip.group.position.toArray(),extraction:dropZone.group.position.toArray(),enemies:enemies.length});
+window.render_game_to_text=()=>JSON.stringify({visuals:{...stylizedState(),buildings:importedCityState()},courier:courierState(),coordinates:'feet position; +Y up, -Z forward at yaw 0',ready:gameReady,active:gameActive,mode:s.mode,pos:s.pos.toArray(),velocity:s.vel.toArray(),aiming:inputAiming(),pressure:s.pressure,score:s.score,combo:s.combo,carrying,queued:!!s.queued,overload:s.overloadRecovery,vip:vip.group.position.toArray(),extraction:dropZone.group.position.toArray(),enemies:enemies.length});
 renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();pauseGame();$('assetNote').textContent='Graphics context lost. Reload to restore the game.'});renderer.domElement.addEventListener('webglcontextrestored',()=>location.reload());
 window.addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight)});
+const cityImportPromise=importBlenderCity();
 courier.initialized=true;courier.scoreStart=s.score;buildCourierAnchors();buildRescueRouteAnchors();loadCharacter().catch(err=>{console.error(err);const ff=(typeof fflate!=='undefined')?'FFLATE READY':'FFLATE MISSING';const fx=(window.THREE&&THREE.FBXLoader)?'FBXLOADER READY':'FBXLOADER MISSING';loadtext.innerHTML='<span class="warn">FBX LOAD FAILED:</span> '+err.message+'<br><small>'+ff+' · '+fx+'</small><br>Open DevTools for details.'});resetPlayer();loop();
 </script>
 </body>
