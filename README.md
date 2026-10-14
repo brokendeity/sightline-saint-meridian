@@ -1,4 +1,46 @@
-# Sightline — Saint Meridian
+# Preserved game snapshot — before REA-inspired changes
+
+This branch saves the current playable browser game as of 15 October 2026. The earlier build remains on `main` at `9a800a7` and is tagged `archive/pre-roads-backspool-2026-10-14`. This updated build is separately tagged `snapshot-2026-10-15-pre-rea`.
+
+Included since the previous GitHub build:
+
+- Connected roads, sidewalks, crossings, signals and pedestrian routes.
+- Sightline / Backspool character selection and all 121 supplied Backspool animation clips in a searchable preview menu.
+- L3 + LT + RT + R3 hero switching, once per complete press/release.
+- Backspool's own powers remain undefined; Sightline powers are disabled for him.
+- Truck models removed. No REA-inspired gameplay changes or Naruto assets are included.
+
+See [ROAD_INFRASTRUCTURE_NOTES.md](ROAD_INFRASTRUCTURE_NOTES.md) and [BACKSPOOL_CHARACTER_NOTES.md](BACKSPOOL_CHARACTER_NOTES.md). Latest baseline validation passed 225 checks, plus 11 hero-switch and power-separation checks. Historical animation checks involving Backspool's former shared powers are superseded by the hero-separation checks.
+
+## Run this version
+
+```sh
+python3 -m http.server 8765
+```
+
+Open `http://localhost:8765/SIGHTLINE_SAINT_MERIDIAN_TOON.html`. Keep `assets`, `buildings` and `characters ` (trailing space) beside the HTML. Core browser libraries and Sightline animations are embedded. Backspool's runtime model, texture and compressed animation library are included; original FBX animation source folders are not required to play.
+
+## Rebuild the current HTML
+
+```sh
+python3 scripts/apply_backspool_switch.py
+```
+
+The tracked `.pre-backspool-switch.html` is the truck-free road-enabled base for this patch. Its rebuilt output was verified byte-for-byte against the saved game. `.pre-road-infrastructure.html` preserves the prior base used by the road patcher. See `SNAPSHOT_MANIFEST.json` for runtime file hashes.
+
+## Return to the older version
+
+Use a separate checkout to preserve both versions:
+
+```sh
+git worktree add ../sightline-original archive/pre-roads-backspool-2026-10-14
+```
+
+Or check out the old archive tag in a clean checkout. To recover this newer snapshot, check out `snapshot-2026-10-15-pre-rea`. Do not force-push or move these archive tags.
+
+---
+
+# Sightline — Saint Meridian · 2026-10-15 snapshot
 
 Current anime-noir toon browser game, including the ten Courier priorities, city atmosphere, destructible buildings, white patrol drones, and procedural audio.
 

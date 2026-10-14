@@ -1,0 +1,50 @@
+(async()=>{
+ window.loop=()=>{};gameActive=false;await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));
+ const out=[],check=(name,pass,detail)=>out.push({name,pass:!!pass,detail}),net=roadNetwork,rs=net.state();
+ navigator.getGamepads=()=>[];clearPad();courier.resultsOpen=false;resetPlayer();gameActive=true;
+ check('Infrastructure ready with authorized Halo fleet',rs.ready&&!rs.error&&rs.vehicleActors===(window.haloTruckState?.().count||0)&&rs.policeActors===0);
+ check('All 310 buildings retain their original bounds',buildingColliders.length===310&&buildingColliders.every(c=>c.box.min.distanceTo(c.originalBounds.min)<.001&&c.box.max.distanceTo(c.originalBounds.max)<.001));
+ check('Superseded roads and grid are hidden',!gridHelper.visible&&world.children.filter(o=>o.userData.legacyRoad).every(o=>!o.visible));
+ check('Both boulevard and neighborhood networks exist',rs.boulevards>100&&rs.localStreets>100);
+ check('Road rendering stays under 20 mesh draws',rs.meshDraws<=20,rs.meshDraws);
+ check('Right-hand boulevard lanes have correct width and speed',net.lanes.filter(l=>l.width===3.4).every(l=>l.speedLimit===40&&Math.sign(l.points[0].z-net.nodes[Number(l.startNode.slice(1))].position.z)===Math.sign(l.direction.x)));
+ check('Right-hand local lanes have correct width and speed',net.lanes.filter(l=>l.width===3.5).every(l=>l.speedLimit===25&&Math.sign(l.points[0].x-net.nodes[Number(l.startNode.slice(1))].position.x)===-Math.sign(l.direction.z)));
+ check('Patrol-ready lanes form one connected loop network',rs.patrolComponents===1&&rs.activeLanes>500,rs.activeLanes);
+ check('Each patrol lane has an outgoing connection',net.lanes.filter(l=>l.active).every(l=>l.outgoing.length>0));
+ check('No closed segment is an active patrol lane',net.lanes.filter(l=>l.active).every(l=>net.segments[Number(l.segment.slice(1))].active));
+ check('All straight lanes clear reference vehicle footprint',net.lanes.filter(l=>l.active).every(l=>net.vehicleClear(l.points)));
+ let badTurns=0;for(const t of net.turns)if(net.lanes[Number(t.from.slice(1))].active&&!net.vehicleClear(t.points))badTurns++;
+ check('Every active turn passes the reference vehicle sweep',badTurns===0,badTurns);
+ check('Every patrol point remains outside pedestrian plaza',net.lanes.filter(l=>l.active).every(l=>l.points.every(p=>Math.hypot(p.x,p.z)>115))&&net.turns.every(t=>t.points.every(p=>Math.hypot(p.x,p.z)>115)));
+ check('Obstructed outer roads are explicitly closed',rs.closedSections>0&&net.closures.every(c=>!!c.reason));
+ check('Staging and loading bays have valid future lane references',rs.stagingBays>0&&net.stagingPoints.every(p=>p.lane&&net.lanes[Number(p.lane.slice(1))].active)&&net.stagingPoints.some(p=>p.kind==='police-staging'));
+ check('Future traffic can query lane signals and pedestrian yields',net.lanes.every(l=>['EW','NS'].includes(l.signalGroup))&&net.turns.every(t=>t.yieldToCrossings.length===4));
+ check('Every pedestrian edge clears buildings and ground props',net.pedestrian.edges.every(e=>net.pathClear(e.points,.55,false)));
+ check('Each crossing connects to sidewalks at both ends',net.pedestrian.edges.filter(e=>e.kind==='crosswalk').every(e=>[e.from,e.to].every(id=>net.pedestrian.nodes[Number(id.slice(1))].edges.length>=2)));
+ check('Plaza entrances and storefront approaches are present',rs.plazaEntrances>=4&&rs.storefronts>=30,{plaza:rs.plazaEntrances,stores:rs.storefronts});
+ check('All existing 28 pedestrians are assigned sidewalk routes',rs.walkers===28&&streetAtmosphere.walkers.every(w=>w.routeEdge&&net.pedestrian.edges[Number(w.routeEdge.slice(1))]));
+ const node=net.nodes.find(n=>n.valid),at=phase=>{const now=net.state().clock;net.tick(((phase-node.offset-now)%40+40)%40);return net.signalState(node.id)};
+ check('East-west green phase lasts 16 seconds',at(15.9).EW==='green'&&net.signalState(node.id).NS==='red');
+ check('Amber occupies seconds 16 to 19',at(16.1).EW==='amber'&&net.signalState(node.id).NS==='red');
+ check('All-red clearance occupies seconds 19 to 20',at(19.5).EW==='red'&&net.signalState(node.id).NS==='red');
+ check('North-south green begins at second 20',at(20.1).NS==='green'&&net.signalState(node.id).EW==='red');
+ check('No opposing signals are green simultaneously',net.nodes.filter(n=>n.valid).every(n=>{const p=net.signalState(n.id);return !(p.EW==='green'&&p.NS==='green')}));
+ const crossing=net.pedestrian.crossings.find(c=>c.node===node.id&&c.signalGroup==='NS'),edge=net.pedestrian.edges.find(e=>e.crossing===crossing.id),walker=streetAtmosphere.walkers[0];at(1);walker.routeEdge=edge.id;walker.routeDistance=0;walker.routeForward=true;net.tick(.1);const wait=walker.group.position.clone();check('Pedestrian waits at a red crossing',walker.routeWaiting&&walker.routeDistance===0);at(21);net.tick(.5);check('Pedestrian enters crossing on compatible green',!walker.routeWaiting&&walker.group.position.distanceTo(wait)>.1);
+ const pausedClock=net.state().clock,pausedPos=walker.group.position.clone();gameActive=false;net.tick(2);check('Pause freezes signals and sidewalk pedestrians',net.state().clock===pausedClock&&walker.group.position.equals(pausedPos));gameActive=true;
+ const clean=()=>{resetPlayer();gameActive=true;courier.resultsOpen=false;};
+ clean();s.pos.set(-150,.42,-240);s.onGround=true;setMode(P.GROUND);for(let i=0;i<15;i++)updatePlayer(1/60);check('Road walking remains grounded at original floor clearance',s.onGround&&Math.abs(s.pos.y-.42)<.01);
+ s.pos.set(-150,.42,-232);for(let i=0;i<15;i++)updatePlayer(1/60);check('Sidewalk steps up without a crash or jump',s.onGround&&Math.abs(s.pos.y-.58)<.01&&s.mode===P.GROUND,{pos:s.pos.toArray(),mode:s.mode});
+ updateCharacter(1/60);let sole=Infinity;for(const {mesh,indices} of footContactSamples)for(const index of indices)sole=Math.min(sole,mesh.boneTransform(index,new THREE.Vector3()).applyMatrix4(mesh.matrixWorld).y);check('Actual skinned soles contact the sidewalk',Math.abs(sole-.16)<.012,sole);
+ input.actions.aim=true;input.actions.moveX=1;const plant=s.pos.clone();for(let i=0;i<20;i++)updatePlayer(1/60);check('Sidewalk aim locks translation',s.pos.distanceTo(plant)<1e-8);clearInput();
+ s.pos.set(-150,.58,-240);s.onGround=true;s.vel.set(0,0,0);for(let i=0;i<15;i++)updatePlayer(1/60);check('Stepping down to road does not float or fall uncontrolled',s.onGround&&Math.abs(s.pos.y-.42)<.01&&s.mode===P.GROUND);
+ for(const z of [-240,-230.7]){clean();s.pos.set(-150,9,z);s.onGround=false;s.vel.set(0,-70,0);setMode(P.AIR);for(let i=0;i<120;i++)updatePlayer(1/60);check('Fast landing contacts '+(z===-240?'road':'sidewalk'),s.onGround&&Math.abs(s.pos.y-(z===-240?.42:.58))<.015&&Number.isFinite(s.pos.y));}
+ const ramp=net.ramps.find(r=>r.a.distanceTo(new THREE.Vector3(-80,0,-240))<30);check('Curb ramp has a continuous surface slope',ramp&&[.2,.5,.8].every(t=>{const p=ramp.a.clone().lerp(ramp.b,t);return Math.abs(net.surfaceAt(p.x,p.z)-.16*t)<.025}));
+ clean();s.pos.set(-150,.58,-230.7);s.onGround=true;queueJump();updatePlayer(1/60);check('Sidewalk jump still launches from support',!s.onGround&&s.vel.y>9);
+ s.pos.y=100;s.onGround=false;input.actions.aim=true;setMode(P.AIR);currentAnimAge=1;animationHold=0;for(let i=0;i<5;i++){updatePlayer(1/60);updateCharacter(1/60)}check('Airborne aim over new roads keeps controlled fall',currentAnim==='fallControlled');pad.fireQueued=true;updateCamera(.2);updatePlayer(1/60);updateCharacter(1/60);check('Firing over road infrastructure still enters flight',s.mode===P.TRANSIT&&currentAnim==='fly');
+ clean();s.pos.set(-150,.58,-230.7);cam.pitch=cam.targetPitch=1.49;for(let i=0;i<60;i++)updateCamera(1/60);check('Camera stays above sidewalk at extreme upward aim',camera.position.y>=.37);
+ check('Road surfaces participate in target and searchlight raycasts',net.root.children.filter(m=>m.name==='Road / asphalt'||m.name==='Road / sidewalks and curb ramps').every(m=>rayTargets.includes(m)&&walkables.includes(m)));
+ const mesh=net.root.children.find(m=>m.name==='Road / sidewalks and curb ramps');let rayError=0,rayMissing=0;for(const r of net.ramps.slice(0,8))for(const t of [.2,.5,.8]){const p=r.a.clone().lerp(r.b,t).setY(3),ray=new THREE.Raycaster(p,new THREE.Vector3(0,-1,0),0,4),fast=[],native=[];mesh.raycast(ray,fast);THREE.Mesh.prototype.raycast.call(mesh,ray,native);native.sort((a,b)=>a.distance-b.distance);if(!fast[0]||!native[0])rayMissing++;else rayError=Math.max(rayError,fast[0].point.distanceTo(native[0].point));}
+ check('Spatial ramp ray hits match rendered geometry',rayMissing===0&&rayError<.003,{missing:rayMissing,maxError:rayError});
+ check('Road geometry is protected from unrelated building instance cleanup',net.root.children.every(m=>m.userData.streetInfrastructure));
+ clean();pauseGame();return{checks:out,passed:out.filter(x=>x.pass).length,total:out.length,roads:net.state()};
+})()
