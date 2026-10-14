@@ -29,3 +29,7 @@ Spherical night clouds, reactive puddles, subtle edge outlines and adaptive reso
 ## Blender city buildings
 
 Eight reference-based architectural families now replace all 310 city buildings, fitted to their original footprints and heights. Nearby buildings use detailed models; distant ones use shared simplified geometry. Compound surfaces support balcony and stepped-roof contact, and impacts carve destructible colored geometry without changing neighboring instances. See [BUILDING_IMPORT_NOTES.md](BUILDING_IMPORT_NOTES.md). The updated build passed 101 gameplay/asset integration checks and glTF validation for all eight runtime models.
+
+## Comprehensive polish
+
+The current build adds clearer facade and street lighting, mounted neighborhood business signs, improved surface shading, and a depth-precision fix for diagonal window artifacts. Traversal now has buffered/coyote jumps; drone/guard shots have visible windups and bounded projectile density; Q/LB adds a timed shot guard while retaining rail pressure venting. A compact HUD and numbered route markers replace the default diagnostics panel (F3). Camera floor/wall clipping and duplicate simulation updates are fixed. See [COMPREHENSIVE_POLISH_NOTES.md](COMPREHENSIVE_POLISH_NOTES.md) for behavior and validation.
