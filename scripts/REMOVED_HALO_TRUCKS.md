@@ -1,0 +1,1 @@
+Halo truck integration removed at user request. The current game contains no Halo trucks. Source model and historical scripts are retained. Do not run apply_halo_trucks.py unless the user explicitly requests restoring the truck model.

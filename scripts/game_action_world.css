@@ -1,0 +1,20 @@
+#heroContractHUD{position:absolute;left:14px;bottom:195px;top:auto;width:250px;box-sizing:border-box;padding:11px 12px;background:linear-gradient(120deg,#0b1823e8,#11222bc9);border:1px solid #d2a35c66;border-radius:7px;color:#d9e9e7;font:10px/1.5 ui-monospace,monospace;z-index:8;pointer-events:auto}#heroContractHUD[hidden]{display:none}#heroContractHUD strong{display:block;color:#ffd28c;font-size:10px;letter-spacing:.08em}#heroContractHUD div{margin:6px 0;color:#c4d7d8}#heroContractHUD small{display:block;font-size:9px;color:#a6c4c7}#heroContractHUD span{display:flex;gap:6px;margin-top:8px}#heroContractHUD button{position:static;margin:0;padding:6px 9px;min-height:28px;min-width:0;border:1px solid #c6a16366;background:#17313c;color:#f0d19a;font:700 9px ui-monospace,monospace;border-radius:4px;box-shadow:none}#heroContractHUD button:disabled{opacity:.4;cursor:default}
+@media(max-width:600px){#heroContractHUD{left:10px;top:360px;width:180px;padding:8px;font-size:9px}#heroContractHUD div{line-height:1.35}#heroContractHUD small{font-size:8px}}@media(max-height:600px){#heroContractHUD{top:auto;bottom:16px;left:250px;width:225px;padding:7px 9px}#heroContractHUD div{display:none}#heroContractHUD span{margin-top:5px}body.touchPlay #heroContractHUD{left:135px;bottom:12px;width:210px}}
+@media(max-width:700px),(max-height:600px){
+ #backspoolPowerHUD,body.touchPlay #backspoolPowerHUD{width:174px;top:100px;left:8px;padding:7px;font-size:9px}
+ #backspoolPowerHUD #powerMessage{min-height:0;max-height:26px;overflow:hidden;margin:4px 0;font-size:9px;line-height:1.35}
+ #backspoolPowerHUD #powerRouteInfo{font-size:8px;margin-bottom:4px}
+ #backspoolPowerHUD #bankSlots{margin-bottom:5px;gap:3px}
+ #backspoolPowerHUD #bankSlots button{white-space:nowrap;padding:5px 1px;font-size:8px;overflow:hidden;text-overflow:ellipsis}
+ #backspoolPowerHUD .powerButtons{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-top:5px}
+ #backspoolPowerHUD .powerButtons button{font-size:8px;padding:4px 1px;min-width:0;min-height:28px}
+ #backspoolTrainingHUD,body.touchPlay #backspoolTrainingHUD{top:265px!important;bottom:auto!important;left:8px!important;transform:none!important;width:174px!important;font-size:9px!important;line-height:1.35!important;padding:7px!important}
+ #backspoolTrainingHUD .trainingMessage{max-height:42px;overflow:hidden}
+ #backspoolTrainingHUD button{font-size:8px;padding:4px!important}
+ #heroContractHUD,body.touchPlay #heroContractHUD{top:100px;bottom:auto;left:auto;right:8px;width:174px;padding:7px;font-size:9px}
+ #heroContractHUD div{max-height:38px;overflow:hidden;font-size:8px}
+ body.touchPlay.backspoolCombatActive #flightVitals{display:none!important}
+}
+@media(max-height:600px) and (min-width:701px){
+ #backspoolTrainingHUD,body.touchPlay #backspoolTrainingHUD,#heroContractHUD,body.touchPlay #heroContractHUD{left:200px!important;right:auto;top:92px!important;bottom:auto!important;width:230px!important}
+}

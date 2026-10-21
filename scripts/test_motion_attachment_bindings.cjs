@@ -1,0 +1,12 @@
+const assert=require('assert'),fs=require('fs'),zlib=require('zlib'),helper=require('./motion_attachment_bindings.js');
+const load=k=>JSON.parse(zlib.gunzipSync(fs.readFileSync('assets/nsunsc-library/'+k+'/anm-bindings.json.gz')));
+const minato=load('c426d45069048ff1a4d4').animations.find(x=>x.name==='3mntspl1_atk');
+let m=helper.resolve(minato,'1efc_dmy01_rsn01','3mnt00t0 tongue');assert.equal(m.status,'resolved');assert.equal(m.clump,59);assert.deepEqual(minato.clumps[m.clump].bones[m.bone].parent,[58,138]);
+m=helper.resolve(minato,'1efc_dmy01_hrs01','1efc_dmy01_trall');assert.equal(m.status,'resolved');assert.equal(m.clump,28);
+assert.equal(helper.resolve(minato,'1efc_dmy01_rsn01','3mnt01t0 tongue').status,'missing-coordinate');
+assert.equal(helper.resolve(minato,{name:'1efc_dmy01_rsn01',path:'wrong.max'},'3mnt00t0 tongue').status,'missing-coordinate');
+assert(helper.crossParents(minato).some(x=>x.child[0]===59&&x.parent[0]===58));
+const double={clumps:[...minato.clumps,...minato.clumps]};assert.equal(helper.resolve(double,'1efc_dmy01_rsn01','3mnt00t0 tongue').status,'ambiguous-context');
+const cycle={clumps:[{reference:'a',bones:[{name:'a',reference:'a',parent:[1,0]}]},{reference:'b',bones:[{name:'b',reference:'b',parent:[0,0]}]}]};assert.equal(helper.crossParents(cycle).length,0);
+const sasuke=load('c5fa8247ee6d9495a0fc').animations.find(x=>x.name==='2sskspl1_atk');assert(sasuke);const node=sasuke.clumps.find(c=>c.reference==='1efc_dmy01_01');assert(node);assert.equal(helper.resolve(sasuke,node.bones[0].reference,node.reference).status,'resolved');
+console.log('Exact Minato hand/ancestor attachments, context rejection, path rejection, ambiguity, cycle and Sasuke identities passed.');

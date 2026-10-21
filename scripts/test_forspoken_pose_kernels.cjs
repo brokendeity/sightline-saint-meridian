@@ -1,0 +1,25 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),K=require('./game_forspoken_pose_kernels.js');
+let checks=0;function test(name,fn){fn();checks++;console.log('PASS',name)}
+const id=[0,0,0,1],flatten=a=>a.flat(),binding=[0,1,2,3,4,5,6,7,8];
+const near=(a,b,epsilon=2e-5)=>a.forEach((x,i)=>assert(Math.abs(x-b[i])<epsilon,`${a} != ${b}`));
+const positions=[[0,2,0,0],[.2,1.8,0,0],[.2,1,0,0],[.2,.2,0,0],[.2,.1,.2,0],[-.2,1.8,0,0],[-.2,1,0,0],[-.2,.2,0,0],[-.2,.1,.2,0]];
+const frame=()=>({inverseRotation:id,scale:1,actorScale:1,hipOffset:[0,.1,0,0],footOffsets:[[0,0,.3,0],[0,0,.3,0],[0,0,-.1,0],[0,0,-.1,0]],bendAxes:[[1,0,0,0],[1,0,0,0]]});
+const packet=(q=Array(9).fill(id),p=positions,fr=frame())=>K.bodyPacket(flatten(q),flatten(p),binding,fr);
+test('13-vector packet keeps native hip and interleaved body-point order',()=>{const p=Array.from(packet());assert.equal(p.length,52);near(p.slice(0,4),[0,1.9,0,0]);for(const [i,j]of [[1,1],[2,5],[3,2],[4,6],[5,3],[6,7]])near(p.slice(i*4,i*4+4),positions[j]);});
+test('foot offsets use foot rotation; bend axes use lower-leg rotation',()=>{
+ const q=Array.from({length:9},()=>id.slice());q[3]=[0,Math.SQRT1_2,0,Math.SQRT1_2];q[2]=[0,0,Math.SQRT1_2,Math.SQRT1_2];
+ const p=Array.from(packet(q));near(p.slice(7*4,7*4+4),[.5,.2,0,0]);near(p.slice(11*4,11*4+4),[0,1,0,0]);near(p.slice(8*4,8*4+4),[-.2,.2,.3,0]);
+});
+test('actor scale affects centers while solver scale alone divides offsets',()=>{const fr=frame();fr.scale=2;fr.actorScale=3;const p=Array.from(packet(undefined,undefined,fr));near(p.slice(5*4,5*4+4),[.2/6,.2/6,0,0]);near(p.slice(7*4,7*4+4),[.2/6,.2/6,.15,0]);near(p.slice(11*4,11*4+4),[1,0,0,0]);});
+test('root offset rotates with hip before inverse frame transformation',()=>{const fr=frame();fr.hipOffset=[1,0,0,0];fr.inverseRotation=[0,0,-Math.SQRT1_2,Math.SQRT1_2];const q=Array(9).fill(id);q[0]=[0,0,Math.SQRT1_2,Math.SQRT1_2];near(Array.from(packet(q,undefined,fr)).slice(0,4),[1,0,0,0]);});
+test('source fourth components are retained, not normalized as geometric points',()=>{const fr=frame();fr.hipOffset[3]=2;fr.scale=2;fr.footOffsets[0][3]=4;fr.bendAxes[0][3]=7;const p=Array.from(packet(undefined,undefined,fr));assert.equal(p[3],-1);assert.equal(p[7*4+3],2);assert.equal(p[11*4+3],7);});
+test('writeback left-multiplies corrections and rotates before translation',()=>{const q=[0,0,Math.SQRT1_2,Math.SQRT1_2],out=K.writeback(id,[1,0,0,2],[{rotation:q,translation:[2,3,4,5]}]);near(Array.from(out.rotations),q);near(Array.from(out.positions),[2,4,4,7]);});
+test('null rotation / null translation follow distinct native paths',()=>{const out=K.writeback(flatten([id,id,id]),flatten([[1,2,3,4],[5,6,7,8],[9,10,11,12]]),[null,{translation:[1,2,3,4]},{rotation:[0,0,0,2]}]);assert.deepEqual(Array.from(out.positions),[1,2,3,4,6,8,10,12,36,40,44,12]);near(Array.from(out.rotations).slice(8),[0,0,0,2]);});
+test('cutdown selection is signed16, one-based, and preserves duplicate execution',()=>{const data=flatten([id,id]),p=[0,0,0,0,0,0,0,0],d=[{translation:[1,0,0,0]},{translation:[0,2,0,0]}];assert.deepEqual(Array.from(K.writeback(data,p,d,[0,-1,2,2]).positions),[0,0,0,0,0,4,0,0]);assert.deepEqual(Array.from(K.writeback(data,p,d,[]).positions),[1,0,0,0,0,2,0,0]);});
+test('validation failures never partially modify input buffers',()=>{const q=flatten(Array(9).fill(id)),p=flatten(positions),before=q.slice();assert.throws(()=>K.bodyPacket(q,p,[0,1,2],frame()),/binding/);assert.throws(()=>K.bodyPacket(q,p,binding,{...frame(),scale:0}),/scale/);assert.throws(()=>K.writeback(q,p,[{translation:[NaN,0,0,0]}]),/count/);assert.throws(()=>K.writeback(q,p,Array(9).fill(null),[10]),/selection/);assert.deepEqual(q,before);});
+test('identity/no-op writeback preserves all5977 original source pose entries',()=>{const rig=JSON.parse(fs.readFileSync('output/rea-forspoken/hu000-rig.json'));assert.equal(rig.bones.length,5977);const q=flatten(rig.bones.map(b=>b.sourceRotationXYZW)),p=flatten(rig.bones.map(b=>[...b.derivedWorldPosition,0])),out=K.writeback(q,p,rig.bones.map(()=>null));assert.deepEqual(out.rotations,new Float32Array(q));assert.deepEqual(out.positions,new Float32Array(p));});
+// Independently written quaternion product/rotation oracle, double precision.
+function product(a,b){return [a[3]*b[0]+a[0]*b[3]+a[1]*b[2]-a[2]*b[1],a[3]*b[1]-a[0]*b[2]+a[1]*b[3]+a[2]*b[0],a[3]*b[2]+a[0]*b[1]-a[1]*b[0]+a[2]*b[3],a[3]*b[3]-a[0]*b[0]-a[1]*b[1]-a[2]*b[2]]}
+function rotation(q,v){return product(product(q,[...v.slice(0,3),0]),[-q[0],-q[1],-q[2],q[3]]).slice(0,3)}
+test('600 deterministic corrections match independent model-space oracle',()=>{for(let i=1;i<=600;i++){const c=[Math.sin(i*.03),0,0,Math.cos(i*.03)],q=[0,Math.sin(i*.02),0,Math.cos(i*.02)],p=[i%7,-i%9,i%3,0],t=[.1,-.2,.3,0],out=K.writeback(q,p,[{rotation:c,translation:t}]);near(Array.from(out.rotations),product(c,q));near(Array.from(out.positions),[...rotation(c,p).map((x,j)=>x+t[j]),0]);}});
+assert.equal(K.originalIKComplete,false);console.log(checks,'native pose packet/writeback checks passed; no complete solver claim');

@@ -1,0 +1,2 @@
+const actionMetrics=(()=>{const data={simulation:[],render:[]};function sample(kind,time){const values=data[kind];values.push(time);if(values.length>240)values.shift();}const stats=values=>{if(!values.length)return null;const ordered=values.slice().sort((a,b)=>a-b);return{samples:ordered.length,p50:ordered[Math.floor(ordered.length*.5)],p95:ordered[Math.floor(ordered.length*.95)]};};return{sample,state:()=>({units:'CPU milliseconds; render is submission time',simulation:stats(data.simulation),render:stats(data.render)})};})();
+window.actionMetrics=actionMetrics;

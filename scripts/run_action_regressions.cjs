@@ -1,0 +1,9 @@
+const {chromium}=require('/opt/homebrew/lib/node_modules/playwright'),fs=require('fs');
+(async()=>{
+ const browser=await chromium.launch({headless:true,args:['--use-gl=angle','--use-angle=metal']});const page=await browser.newPage(),errors=[],results=[];
+ page.on('pageerror',e=>errors.push(String(e)));await page.goto('http://127.0.0.1:8765/SIGHTLINE_ACTION_V2_CANDIDATE.html');
+ const ready=async()=>{await page.waitForFunction(()=>gameReady&&!characterState().busy&&roadNetworkState().ready,{timeout:120000});await page.evaluate(()=>{window.loop=()=>{};gameActive=false;});await page.waitForTimeout(100);};await ready();
+ for(const file of ['import-regression-suite','gameplay-upgrade-tests','polish-audit-tests','presentation-upgrade-tests','visual-polish-tests','building-import-tests','road-infrastructure-tests']){await page.reload();await ready();await page.evaluate(async()=>{await characterSwitcher.change('sightline');});try{const result=await page.evaluate(fs.readFileSync('output/playwright/'+file+'.js','utf8'));results.push({file,result});console.log(file,JSON.stringify(result).slice(0,150));}catch(e){results.push({file,error:String(e)});console.log(file,String(e));}}
+ if(process.argv.includes('--all')){const legacy=eval('('+fs.readFileSync('output/reliability/final-tests.js','utf8')+')');const all=await legacy(page);results.push(...all);console.log('LEGACY DONE');for(const name of ['pointer-tests','mobile-lifecycle']){await page.reload();await ready();try{const run=eval('('+fs.readFileSync('output/reliability/'+name+'.js','utf8')+')');results.push({file:name,result:await run(page)});}catch(e){results.push({file:name,error:String(e)});}}}
+ fs.writeFileSync('output/action-v2/retained-regressions.json',JSON.stringify({results,errors},null,2));await browser.close();
+})().catch(e=>{console.error(e);process.exitCode=1;});

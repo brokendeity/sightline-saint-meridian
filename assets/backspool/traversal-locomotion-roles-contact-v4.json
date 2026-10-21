@@ -1,0 +1,90 @@
+{
+  "schema": "backspool-locomotion-roles-v1",
+  "scope": "isolated traversal candidate",
+  "unitPolicy": "Source numerical root speeds used as authored target metres/second; original controller unit conversion remains unverified",
+  "runSpeed": 6.6,
+  "sprintSpeed": 16.363984533570363,
+  "roles": [
+    {
+      "role": "walk",
+      "id": "traversal-locomotion-walk",
+      "sourceAnimationId": "0x2811294e",
+      "url": "assets/backspool/source-contact-v4/2811294e.json.gz",
+      "sha256": "dc4d8511c7d2e743a9e4429ff370020a32c5d3150941aca4a13c80d6e72d6f1b",
+      "sourceSha256": "e7c24cbba18a20ea94f9865225d7b20ebd7181e33187bc84b1402bb7721a6037",
+      "duration": 1.0666667222976685,
+      "minSpeed": 0.2,
+      "nominalSpeed": 1.5000319071097423,
+      "roleEvidence": "Authored Backspool role; source root/leg-cycle analysis and target mesh review; original move name unverified",
+      "pelvisTranslation": true
+    },
+    {
+      "role": "jog",
+      "id": "traversal-locomotion-jog",
+      "sourceAnimationId": "0x2811294f",
+      "url": "assets/backspool/source-contact-v4/2811294f.json.gz",
+      "sha256": "890960617496fc3ad8badee670c059e5ce8579308dc50bce62f4a18acef77261",
+      "sourceSha256": "da458792f44c804c7e6f3cbf923d04ea40989fa60c4ebc52bcfdae95a8f01490",
+      "duration": 0.800000011920929,
+      "minSpeed": 2.15,
+      "nominalSpeed": 3.0000638514747644,
+      "roleEvidence": "Authored Backspool role; source root/leg-cycle analysis and target mesh review; original move name unverified",
+      "pelvisTranslation": true
+    },
+    {
+      "role": "run",
+      "id": "traversal-locomotion-run",
+      "sourceAnimationId": "0x2811296d",
+      "url": "assets/backspool/source-contact-v4/2811296d.json.gz",
+      "sha256": "2677eadac3cd605bd709bf254854f1ffb6745a87b70afb9bceb476ff0887d27f",
+      "sourceSha256": "ebea6da5a4e081e51de29d301c8b521ff0ccf50e9cade2f0cfe905963ee3120d",
+      "duration": 0.6666666865348816,
+      "minSpeed": 3.9,
+      "nominalSpeed": 4.800102210041815,
+      "roleEvidence": "Authored Backspool role; source root/leg-cycle analysis and target mesh review; original move name unverified",
+      "pelvisTranslation": true
+    },
+    {
+      "role": "fastRun",
+      "id": "traversal-locomotion-fastRun",
+      "sourceAnimationId": "0x28112951",
+      "url": "assets/backspool/source-contact-v4/28112951.json.gz",
+      "sha256": "6832a411d7aea2e0eda12df6edc87c33f9b87f463d01f2c5a2a30b8178dc5c18",
+      "sourceSha256": "33a00a8763e2c1c5b083a2083bd1c6e92cca4bd6436366c8fccf6131deacf91a",
+      "duration": 0.5333333611488342,
+      "minSpeed": 5.6,
+      "nominalSpeed": 6.600139988951534,
+      "roleEvidence": "Authored Backspool role; source root/leg-cycle analysis and target mesh review; original move name unverified",
+      "pelvisTranslation": true
+    },
+    {
+      "role": "parkourRun",
+      "id": "traversal-locomotion-parkourRun",
+      "sourceAnimationId": "0x281103f8",
+      "url": "assets/backspool/source-contact-v4/281103f8.json.gz",
+      "sha256": "dca4e472d969c2bf361b86928dc9d5e13d18ae688d91fcfbdc33171c45d4b76a",
+      "sourceSha256": "783fcd64be51c90268202c608be74f1930f56121fa461a18a0de646bf71e7032",
+      "duration": 0.6666666865348816,
+      "minSpeed": 9.1,
+      "nominalSpeed": 12.000254273407034,
+      "roleEvidence": "Authored Backspool role; source root/leg-cycle analysis and target mesh review; original move name unverified",
+      "pelvisTranslation": true
+    },
+    {
+      "role": "parkourSprint",
+      "id": "traversal-locomotion-parkourSprint",
+      "sourceAnimationId": "0x2811df78",
+      "url": "assets/backspool/source-contact-v4/2811df78.json.gz",
+      "sha256": "51763d0bd9266898bc90f938f29a6aa17b33e14fc86793802b3ed316f26c7913",
+      "sourceSha256": "1524639fffa1f6065a0f2984d0e9574ad61a603c527a7a3bdf29851ab44677dc",
+      "duration": 0.7333333492279053,
+      "minSpeed": 14.1,
+      "nominalSpeed": 16.363984533570363,
+      "roleEvidence": "Authored Backspool role; source root/leg-cycle analysis and target mesh review; original move name unverified",
+      "pelvisTranslation": true
+    }
+  ],
+  "pelvisTranslation": true,
+  "rootTravelApplied": false,
+  "origin": "Recovered source rotations plus normalized C_Hip motion; gameplay role semantics remain authored"
+}

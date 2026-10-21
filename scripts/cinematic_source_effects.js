@@ -1,0 +1,49 @@
+/* Recovered emitter equations, original animated-resource meshes, nominal source clock.
+ * Inspection only: unmatched global RNG state, sprite shaders, force fields and full
+ * particle orientation/clock semantics do not become verified originals. */
+(function(root,factory){const api=factory();if(typeof module==='object')module.exports=api;else root.SourceEffectRuntime=api;})(typeof globalThis!=='undefined'?globalThis:this,()=>{
+ const f=Math.fround,clamp=(n,a,b)=>Math.max(a,Math.min(b,n));
+ function rng(seed=1){let state=seed>>>0;return()=>{state=(Math.imul(state,214013)+2531011)>>>0;return ((state>>>16)&32767)/32767;};}
+ function envelope(a,b,c,pivot,phase){phase=clamp(phase,0,1);if(pivot===0)return a.slice();const first=phase<pivot,t=first?phase/pivot:(phase-pivot)/(1-pivot);if(phase===pivot)return b.slice();const x=first?a:b,y=first?b:c;return x.map((v,i)=>f(v*(1-t)+y[i]*t));}
+ // 14130b200 branches differently for color and scale. A zero SCALE pivot
+ // suppresses interpolation; a zero COLOR pivot starts at the middle color.
+ function colorEnvelope(a,b,c,pivot,phase){phase=clamp(phase,0,1);if(pivot===0)return b.map((v,i)=>f(v*(1-phase)+c[i]*phase));return envelope(a,b,c,pivot,phase);}
+ // 14130c350 initializes a four-state fade; 14130b200 changes state only
+ // after the current update's branch. In particular fade-out does not begin
+ // on the threshold update. This is nominal unit-step replay, not evidence
+ // of the original application's global frame/update ordering.
+ function fadeAtUpdate(lifetime,fadeInFraction,fadeOutFraction,updates){
+  const inUpdates=lifetime*fadeInFraction,outUpdates=lifetime*fadeOutFraction,threshold=lifetime-Math.trunc(outUpdates);
+  let opacity=fadeInFraction===0&&threshold!==0?1:0,mode=fadeInFraction===0&&threshold!==0?1:0;
+  for(let age=1;age<=Math.min(Math.max(0,Math.trunc(updates)),Math.max(0,lifetime)+2);age++){
+   if(mode===0){if(inUpdates>0)opacity=f(opacity+f(1/inUpdates));if(opacity>=1){opacity=1;mode=1;}}
+   else if(mode===1){if(threshold<age)mode=2;}
+   else if(mode===2){if(outUpdates>0)opacity=f(opacity-f(1/outUpdates));if(opacity<=0){opacity=0;mode=3;}}
+  }
+  return clamp(opacity,0,1);
+ }
+ function schedule(record,duration,seed=1){const random=rng(seed),births=[],unsupported=[];for(const config of record.generators||[]){const events=(record.events.find(r=>r.generator===config.generator)?.events||[]).slice().sort((a,b)=>a.milliseconds-b.milliseconds),resources=record.resources.filter(r=>r.generatorIndex===config.generator),anchors=record.attachments.filter(r=>r.generatorIndex===config.generator&&r.kind==='positionAttachment'&&r.reference?.status==='resolved');
+  const problems=[];if(config.emissionMode!==1)problems.push('continuous emitter requires source update scheduling');if(config.positionMode!==0)problems.push('distributed spawn position');if(config.rotationMode!==1)problems.push('billboard/random orientation');if(config.velocity!==0&&config.directionMode!==0)problems.push('directional velocity');if(config.randomLifetimeFraction!==0)problems.push('random lifetime');if(config.baseLifetimeUpdates<=0)problems.push('invalid lifetime');if(!anchors.length)problems.push('missing source attachment');if(resources.length!==1||resources[0].reference?.type!=='NuccChunkAnm'||resources[0].reference?.status!=='resolved')problems.push('resource selection or unsupported resource type');
+  if(problems.length){unsupported.push({generator:config.generator,reasons:problems,resources:resources.map(r=>r.reference)});continue;}
+  const life=config.baseLifetimeUpdates/30;for(let ei=0;ei<events.length;ei++){const e=events[ei];if(e.reservedFlags){unsupported.push({generator:config.generator,reasons:['reserved event flags']});continue;}if(e.command!=='enable'||e.seconds>duration)continue;const amount=Math.trunc(config.emissionAmount);if(amount!==1){unsupported.push({generator:config.generator,reasons:['multiple births omitted pending original random ordering']});continue;}
+   // 14131d460 shares one random scalar unless generator flag bit0 selects independent axes.
+   const shared=random();const randomAxes=config.flags&1?[shared,random(),random()]:[shared,shared,shared];const scaleRandom=config.scaleRandom.map((v,i)=>f(v*randomAxes[i]));const scales=[config.scaleStart,config.scaleMiddle,config.scaleEnd].map(v=>v.map((n,i)=>f(n+f(n*scaleRandom[i]))));
+   births.push({id:record.name+':'+config.generator+':'+ei,time:e.seconds,life,config,scales,resource:resources[0].reference,attachment:anchors[0],stopEvents:events.filter(x=>x.seconds>e.seconds&&x.seconds<=e.seconds+life&&x.command!=='enable')});
+  }}return {births:births.sort((a,b)=>a.time-b.time||a.id.localeCompare(b.id)),unsupported};}
+ function state(birth,time){const age=time-birth.time,phase=age/birth.life,c=birth.config,updates=Math.max(0,Math.floor(age*30+1e-7));const color=colorEnvelope(c.colorStart,c.colorMiddle,c.colorEnd,c.colorPivot,phase),fade=fadeAtUpdate(c.baseLifetimeUpdates,c.fadeInFraction,c.fadeOutFraction,updates);return{visible:age>=0&&age<=birth.life,age,updates,scale:envelope(...birth.scales,c.scalePivot,phase),color,opacity:color[3]*fade};}
+ // A source material may be shared by several meshes. Apply particle tint
+ // once per material, retaining the freshly sampled source animation alpha.
+ function tintMaterials(root,state,makeColor){const seen=new Set();root.traverse(o=>{if(!o.isMesh)return;for(const m of [].concat(o.material||[])){if(!m||seen.has(m))continue;seen.add(m);m.userData.effectSourceBaseColor??=m.color?.clone();if(m.color&&m.userData.effectSourceBaseColor)m.color.copy(m.userData.effectSourceBaseColor).multiply(makeColor(state.color[0],state.color[1],state.color[2]));m.opacity*=state.opacity;m.transparent=true;}});return seen.size;}
+ return{rng,envelope,colorEnvelope,fadeAtUpdate,tintMaterials,schedule,state};
+});
+if(typeof window!=='undefined')window.createSourceCinematicEffects=({scene,camera,load,native})=>{
+ let generation=0,instances=[],prepared=null,time=0,enabled=true,warnings=[],catalogRef=null;
+ function reset(){generation++;for(const i of instances){i.viewer.dispose();}instances=[];prepared=null;warnings=[];time=0;}
+ const normalized=p=>String(p||'').replace(/\\/g,'/').toLowerCase();
+ async function prepare(clip,catalog,manifest){reset();const token=generation;catalogRef=catalog;if(clip.nativeBundle!==manifest?.sourceBundle)return false;const record=manifest.records.find(r=>r.name===clip.sourceAnimation);if(!record)return false;prepared=SourceEffectRuntime.schedule(record,clip.duration);const paths=new Map();for(const birth of prepared.births){const matches=catalog.clips.filter(c=>c.sourceAnimation===birth.resource.name&&normalized(c.sourceFolder)===normalized(birth.resource.path));const choices=matches.length?matches:catalog.clips.filter(c=>c.sourceAnimation===birth.resource.name&&c.nativeBundle===clip.nativeBundle);if(choices.length!==1){warnings.push('Exact animated resource unavailable/ambiguous: '+birth.resource.name);continue;}const key=choices[0].id;if(!paths.has(key))paths.set(key,{clip:choices[0],births:[]});paths.get(key).births.push(birth);}
+ // One pool slot per maximum simultaneous occurrence of an exact resource, not one viewer per event.
+ for(const row of paths.values()){const overlap=Math.max(...row.births.map(a=>row.births.filter(b=>b.time<=a.time&&b.time+b.life>=a.time).length));for(let j=0;j<Math.min(overlap,4);j++){const viewer=createNativeMotionViewer({scene,camera,load});viewer.setCamera(false);let info;try{info=await viewer.select(row.clip,catalog);}catch(e){viewer.dispose();warnings.push(e.message);continue;}if(token!==generation){viewer.dispose();return false;}viewer.setReaction(false);viewer.root.visible=false;viewer.root.matrixAutoUpdate=false;instances.push({viewer,clip:row.clip,loop:info?.loop,births:row.births,key:row.clip.id,birthId:null,unresolved:false});}}
+ return true;}
+ function sample(t){time=Math.max(0,Number(t)||0);for(const p of instances){p.viewer.root.visible=false;p.birthId=null;p.unresolved=false;}if(!prepared||!enabled)return;const used=new Set();for(const birth of prepared.births){const s=SourceEffectRuntime.state(birth,time);if(!s.visible)continue;const slot=instances.find(p=>p.births.includes(birth)&&!used.has(p));if(!slot)continue;used.add(slot);const a=birth.attachment;if(!birth.spawnMatrix){native.sample(birth.time);birth.spawnMatrix=native.getAttachmentTransform?.(a.reference,a.contextReference);native.sample(time);}const matrix=birth.spawnMatrix;if(!matrix){slot.unresolved=true;continue;}slot.unresolved=false;slot.viewer.sample(slot.loop&&slot.clip.duration>0?s.age%slot.clip.duration:s.age);slot.viewer.root.matrix.copy(matrix);slot.viewer.root.matrix.scale(new THREE.Vector3(...s.scale));slot.viewer.root.visible=true;slot.birthId=birth.id;SourceEffectRuntime.tintMaterials(slot.viewer.root,s,(r,g,b)=>new THREE.Color(r,g,b));slot.viewer.root.updateMatrixWorld(true);}}
+ return{prepare,sample,reset,setEnabled(v){enabled=!!v;sample(time);},diagnostics(){return{time,enabled,mode:'bounded-source-inspection',originalReady:false,originalEligibleBirths:0,forceFieldState:'unrecovered runtime manager lists',sourceBirths:prepared?.births.length||0,loadedInstances:instances.length,visibleInstances:instances.filter(p=>p.viewer.root.visible).length,omittedSpriteAndComplexGenerators:prepared?.unsupported.length||0,unresolvedAttachments:instances.filter(p=>p.unresolved).length,unsupported:prepared?.unsupported||[],warnings,policy:'Bounded inspection, not original-ready. Runtime force-field state is unrecovered and is not silently certified as empty. Recovered animated-source resources, emission timestamps and lifetime/scale/color equations. Nominal 30 Hz; local source-LCG seed; particle rotation/jitter/velocity, orientation normalization, global RNG ordering, sprites and force fields remain unresolved; those motion terms are not silently claimed reproduced.'};}};
+};

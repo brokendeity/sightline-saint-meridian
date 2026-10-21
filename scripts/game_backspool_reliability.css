@@ -1,0 +1,12 @@
+
+#combatMore{display:none}
+@media(max-width:700px),(max-height:600px){
+ #characterControls{top:54px;left:8px;padding:4px;font-size:9px;max-width:calc(100vw - 16px)}#characterControls label,#characterMessage,#characterControls span:last-child{display:none}#characterControls button,#characterControls select{font-size:10px;padding:4px;margin:0}
+ #backspoolCombatHUD{top:auto;bottom:12px;right:8px;width:162px;padding:7px;font-size:9px}#backspoolCombatHUD strong{font-size:9px}#backspoolCombatHUD p,#backspoolCombatHUD .charge,#combatActionText{display:none}#combatLockText{margin:5px 0}#backspoolCombatHUD .combatTouch{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:6px}#backspoolCombatHUD button{padding:5px 2px;font-size:10px;min-height:28px}#backspoolCombatHUD .combatStyleLabel,#combatPractice{display:none}#backspoolCombatHUD.expanded .combatStyleLabel{display:flex}#backspoolCombatHUD.expanded #combatPractice{display:block}#combatMore{display:block;width:100%;margin-top:5px!important}
+ #backspoolPowerHUD,body.touchPlay #backspoolPowerHUD{top:100px;left:8px;width:174px;padding:7px;font-size:10px}#backspoolPowerHUD p{display:none}#backspoolPowerHUD .powerButtons{display:flex;flex-wrap:wrap}
+ #backspoolTrainingHUD{top:auto!important;bottom:208px!important;left:8px!important;transform:none!important;width:calc(100vw - 16px)!important;padding:8px!important;font-size:10px!important}#backspoolTrainingHUD button{min-height:28px}
+}
+@media(max-height:600px) and (min-width:701px){#backspoolCombatHUD{top:92px;bottom:auto;width:180px}#backspoolTrainingHUD{left:50%!important;transform:translateX(-50%)!important;bottom:10px!important;width:280px!important}#backspoolPowerHUD,body.touchPlay #backspoolPowerHUD{top:100px;left:8px}}
+.combatMobileActions{display:flex;gap:4px;margin-top:6px}.combatMobileActions[hidden]{display:none}.combatMobileActions button{flex:1;margin:0!important;font-size:9px!important;padding:5px 2px!important;min-width:0!important}body.touchPlay.backspoolCombatActive #touchButtons{display:none}
+@media(max-width:700px){body.touchPlay #backspoolTrainingHUD{bottom:245px!important}}
+#powerRouteInfo:empty{display:none}#powerRouteInfo{display:block;margin:0 0 8px;color:#9ce5cf;font:10px monospace;line-height:1.4}
