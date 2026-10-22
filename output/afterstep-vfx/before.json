@@ -1,0 +1,2790 @@
+{
+  "tests": [
+    "normal sprint banks physical contacts",
+    "real keyboard Drive activates shard and body effects",
+    "release effects fade out without a persistent stream",
+    "no page or shader errors"
+  ],
+  "errors": [],
+  "shots": [
+    {
+      "name": "idle",
+      "state": {
+        "motion": {
+          "position": {
+            "x": 0,
+            "y": 0.42,
+            "z": 45
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "speed": 0,
+          "grounded": true,
+          "mode": "GROUND",
+          "flow": null,
+          "advanced": null,
+          "sourcePose": {
+            "role": "relaxedIdle",
+            "sourceAnimationId": "0x281116bb",
+            "originalMotionName": "ntl_idle_loop_base_n000a_lp",
+            "time": 0.21666666666666665,
+            "duration": 3,
+            "loop": true,
+            "rate": 1,
+            "pelvisTranslation": false
+          },
+          "contact": {
+            "policy": "sole",
+            "correction": 4.87065610066395e-10,
+            "support": 0.42
+          }
+        },
+        "camera": {
+          "mode": "exploration",
+          "clock": 0.21666666666666665,
+          "manualRemaining": 0,
+          "releaseRemaining": 0,
+          "yaw": 0,
+          "pitch": 0,
+          "composition": null
+        },
+        "afterimages": {
+          "bound": true,
+          "disposed": false,
+          "sourceVertices": 56190,
+          "sourceIndices": 56190,
+          "capacity": 3,
+          "active": 0,
+          "activeKinds": [],
+          "footCapacity": 8,
+          "footprints": 0,
+          "pending": 0,
+          "drawCalls": 0,
+          "maxDrawCalls": 2,
+          "captures": 0,
+          "peakCaptureMs": 0,
+          "last": {
+            "kind": "reset",
+            "reason": "INPUT RESET"
+          }
+        },
+        "lastFailure": null,
+        "impulses": [],
+        "releaseEvents": [],
+        "movementReady": true,
+        "hero": "backspool",
+        "clock": 0.21666666666666665,
+        "owner": {
+          "frame": 13,
+          "owner": "ordinary",
+          "reason": null,
+          "conflicts": 0,
+          "commits": 1
+        },
+        "sprint": false,
+        "preset": "traversal",
+        "mode": "auto",
+        "wheel": false,
+        "drive": {
+          "now": 0.21666666666666665,
+          "strain": 0,
+          "capacity": 5,
+          "bank": [],
+          "lastBeat": null,
+          "lastRelease": null,
+          "doubleStep": null,
+          "eventSequence": 0,
+          "reason": "RESPAWN"
+        },
+        "rail": {
+          "time": 0.03333333333333333,
+          "anchors": [],
+          "rails": [],
+          "current": null,
+          "events": [
+            {
+              "id": 4,
+              "type": "reset",
+              "time": 0,
+              "reason": "RESPAWN"
+            }
+          ],
+          "lastReason": "RESPAWN",
+          "limits": {
+            "minSpan": 6,
+            "maxSpan": 100,
+            "maxSlope": 55,
+            "maxRails": 4,
+            "maxAnchors": 8,
+            "lifetime": 30,
+            "attachReach": 2,
+            "transferReach": 3,
+            "maxSpeed": 28,
+            "gravity": 9.81,
+            "friction": 0.45,
+            "junctionAngle": 75,
+            "jumpImpulse": 4.8,
+            "slingshotImpulse": 6.5
+          }
+        },
+        "route": {
+          "status": "empty",
+          "reason": "INPUT RESET",
+          "time": 0,
+          "route": null,
+          "recording": null,
+          "token": null,
+          "reservedIds": [],
+          "consumedIds": [],
+          "actionIndex": 0,
+          "counters": {
+            "recordings": 0,
+            "replays": 0,
+            "completed": 0,
+            "interrupted": 0,
+            "executed": 0,
+            "rejectedActions": 0
+          },
+          "limits": {
+            "maxSeconds": 4,
+            "maxActions": 8,
+            "maxSamples": 120,
+            "reconnectDistance": 1.35,
+            "maxDeviation": 1.5
+          },
+          "nextIds": {
+            "route": 1,
+            "action": 1,
+            "trace": 1,
+            "replay": 1
+          }
+        },
+        "exhaust": {
+          "bound": true,
+          "source": "bone:mixamorigHips",
+          "enabled": true,
+          "disposed": false,
+          "outletPosition": {
+            "x": -0.007381271692254104,
+            "y": 1.4413005201755855,
+            "z": 45.17573647640827
+          },
+          "outletOffsetMeters": {
+            "x": 0,
+            "y": -0.02,
+            "z": -0.19
+          },
+          "emissionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "activeCounts": {
+            "slivers": 0,
+            "rings": 0,
+            "threads": 0,
+            "slices": 0
+          },
+          "capacities": {
+            "slivers": 48,
+            "rings": 24,
+            "threads": 64,
+            "slices": 12
+          },
+          "activeTotal": 0,
+          "visibleDrawCalls": 0,
+          "maxDrawCalls": 5,
+          "lastRelease": null,
+          "lastBank": null,
+          "lastReset": "INPUT RESET",
+          "emitted": 0,
+          "overwritten": 0,
+          "refraction": {
+            "supported": null,
+            "remaining": 0,
+            "captureCount": 0,
+            "rect": null,
+            "textureSize": 128
+          }
+        },
+        "precision": false,
+        "pendingAnchor": null,
+        "lastMessage": "",
+        "course": null,
+        "activeAnimation": "forspoken-threadrail-relaxed-idle",
+        "animationTime": 0.21666666666666665,
+        "contactEvents": []
+      }
+    },
+    {
+      "name": "sprint",
+      "state": {
+        "motion": {
+          "position": {
+            "x": 0,
+            "y": 0.42,
+            "z": 25.029534999999996
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": -16.36365
+          },
+          "speed": 16.36365,
+          "grounded": true,
+          "mode": "GROUND",
+          "flow": null,
+          "advanced": null,
+          "sourcePose": null,
+          "contact": {
+            "policy": "sole",
+            "correction": 4.87065610066395e-10,
+            "support": 0.42
+          }
+        },
+        "camera": {
+          "mode": "exploration",
+          "clock": 1.8833333333333315,
+          "manualRemaining": 0,
+          "releaseRemaining": 0,
+          "yaw": 0,
+          "pitch": 0,
+          "composition": null
+        },
+        "afterimages": {
+          "bound": true,
+          "disposed": false,
+          "sourceVertices": 56190,
+          "sourceIndices": 56190,
+          "capacity": 3,
+          "active": 0,
+          "activeKinds": [],
+          "footCapacity": 8,
+          "footprints": 1,
+          "pending": 0,
+          "drawCalls": 1,
+          "maxDrawCalls": 2,
+          "captures": 0,
+          "peakCaptureMs": 0,
+          "last": {
+            "kind": "reset",
+            "reason": "INPUT RESET"
+          }
+        },
+        "lastFailure": null,
+        "impulses": [
+          {
+            "id": "physical-1",
+            "remaining": 6.450000000000003,
+            "modes": {
+              "standard": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "directional": {
+                "cost": 10,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "launch": {
+                "cost": 14,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "ghoststep": {
+                "cost": 10,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "brake": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "double-step": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "rail": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              }
+            }
+          },
+          {
+            "id": "physical-2",
+            "remaining": 6.700000000000003,
+            "modes": {
+              "standard": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "directional": {
+                "cost": 10,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "launch": {
+                "cost": 14,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "ghoststep": {
+                "cost": 10,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "brake": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "double-step": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "rail": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              }
+            }
+          },
+          {
+            "id": "physical-3",
+            "remaining": 7.200000000000003,
+            "modes": {
+              "standard": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "directional": {
+                "cost": 10,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "launch": {
+                "cost": 14,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "ghoststep": {
+                "cost": 10,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "brake": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "double-step": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "rail": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              }
+            }
+          },
+          {
+            "id": "physical-4",
+            "remaining": 7.566666666666668,
+            "modes": {
+              "standard": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "directional": {
+                "cost": 10,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "launch": {
+                "cost": 14,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "ghoststep": {
+                "cost": 10,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "brake": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "double-step": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "rail": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              }
+            }
+          },
+          {
+            "id": "physical-5",
+            "remaining": 7.933333333333334,
+            "modes": {
+              "standard": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "directional": {
+                "cost": 10,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "launch": {
+                "cost": 14,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "ghoststep": {
+                "cost": 10,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "brake": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "double-step": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "rail": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              }
+            }
+          }
+        ],
+        "releaseEvents": [],
+        "movementReady": true,
+        "hero": "backspool",
+        "clock": 1.8833333333333315,
+        "owner": {
+          "frame": 113,
+          "owner": "ordinary",
+          "reason": null,
+          "conflicts": 0,
+          "commits": 1
+        },
+        "sprint": true,
+        "preset": "traversal",
+        "mode": "auto",
+        "wheel": false,
+        "drive": {
+          "now": 1.8833333333333315,
+          "strain": 0,
+          "capacity": 5,
+          "bank": [
+            {
+              "id": "physical-1",
+              "action": "footplant",
+              "direction": {
+                "x": 0,
+                "y": 0,
+                "z": -1
+              },
+              "magnitude": 0.8400000000000001,
+              "vector": {
+                "x": 0,
+                "y": 0,
+                "z": -0.8400000000000001
+              },
+              "time": 0.3333333333333333,
+              "expiresAt": 8.333333333333334,
+              "reservedBy": null
+            },
+            {
+              "id": "physical-2",
+              "action": "footplant",
+              "direction": {
+                "x": 0,
+                "y": 0,
+                "z": -1
+              },
+              "magnitude": 2.6399999999999992,
+              "vector": {
+                "x": 0,
+                "y": 0,
+                "z": -2.6399999999999992
+              },
+              "time": 0.5833333333333335,
+              "expiresAt": 8.583333333333334,
+              "reservedBy": null
+            },
+            {
+              "id": "physical-3",
+              "action": "footplant",
+              "direction": {
+                "x": 0,
+                "y": 0,
+                "z": -1
+              },
+              "magnitude": 6.240000000000006,
+              "vector": {
+                "x": 0,
+                "y": 0,
+                "z": -6.240000000000006
+              },
+              "time": 1.0833333333333344,
+              "expiresAt": 9.083333333333334,
+              "reservedBy": null
+            },
+            {
+              "id": "physical-4",
+              "action": "footplant",
+              "direction": {
+                "x": 0,
+                "y": 0,
+                "z": -0.9999999999999999
+              },
+              "magnitude": 6.54546,
+              "vector": {
+                "x": 0,
+                "y": 0,
+                "z": -6.545459999999999
+              },
+              "time": 1.4499999999999997,
+              "expiresAt": 9.45,
+              "reservedBy": null
+            },
+            {
+              "id": "physical-5",
+              "action": "footplant",
+              "direction": {
+                "x": 0,
+                "y": 0,
+                "z": -0.9999999999999999
+              },
+              "magnitude": 6.54546,
+              "vector": {
+                "x": 0,
+                "y": 0,
+                "z": -6.545459999999999
+              },
+              "time": 1.816666666666665,
+              "expiresAt": 9.816666666666665,
+              "reservedBy": null
+            }
+          ],
+          "lastBeat": 1.816666666666665,
+          "lastRelease": null,
+          "doubleStep": null,
+          "eventSequence": 5,
+          "reason": "CONTACT"
+        },
+        "rail": {
+          "time": 1.6999999999999988,
+          "anchors": [],
+          "rails": [],
+          "current": null,
+          "events": [
+            {
+              "id": 4,
+              "type": "reset",
+              "time": 0,
+              "reason": "RESPAWN"
+            }
+          ],
+          "lastReason": "RESPAWN",
+          "limits": {
+            "minSpan": 6,
+            "maxSpan": 100,
+            "maxSlope": 55,
+            "maxRails": 4,
+            "maxAnchors": 8,
+            "lifetime": 30,
+            "attachReach": 2,
+            "transferReach": 3,
+            "maxSpeed": 28,
+            "gravity": 9.81,
+            "friction": 0.45,
+            "junctionAngle": 75,
+            "jumpImpulse": 4.8,
+            "slingshotImpulse": 6.5
+          }
+        },
+        "route": {
+          "status": "empty",
+          "reason": "INPUT RESET",
+          "time": 0,
+          "route": null,
+          "recording": null,
+          "token": null,
+          "reservedIds": [],
+          "consumedIds": [],
+          "actionIndex": 0,
+          "counters": {
+            "recordings": 0,
+            "replays": 0,
+            "completed": 0,
+            "interrupted": 0,
+            "executed": 0,
+            "rejectedActions": 0
+          },
+          "limits": {
+            "maxSeconds": 4,
+            "maxActions": 8,
+            "maxSamples": 120,
+            "reconnectDistance": 1.35,
+            "maxDeviation": 1.5
+          },
+          "nextIds": {
+            "route": 1,
+            "action": 1,
+            "trace": 1,
+            "replay": 1
+          }
+        },
+        "exhaust": {
+          "bound": true,
+          "source": "bone:mixamorigHips",
+          "enabled": true,
+          "disposed": false,
+          "outletPosition": {
+            "x": 0.022207903777744994,
+            "y": 1.2452605135758337,
+            "z": 25.816782716938256
+          },
+          "outletOffsetMeters": {
+            "x": 0,
+            "y": -0.02,
+            "z": -0.19
+          },
+          "emissionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "activeCounts": {
+            "slivers": 0,
+            "rings": 1,
+            "threads": 5,
+            "slices": 0
+          },
+          "capacities": {
+            "slivers": 48,
+            "rings": 24,
+            "threads": 64,
+            "slices": 12
+          },
+          "activeTotal": 6,
+          "visibleDrawCalls": 2,
+          "maxDrawCalls": 5,
+          "lastRelease": null,
+          "lastBank": {
+            "id": "afterstep-5",
+            "at": 1.816666666666665,
+            "type": "contact"
+          },
+          "lastReset": "INPUT RESET",
+          "emitted": 30,
+          "overwritten": 0,
+          "refraction": {
+            "supported": null,
+            "remaining": 0,
+            "captureCount": 0,
+            "rect": null,
+            "textureSize": 128
+          }
+        },
+        "precision": false,
+        "pendingAnchor": null,
+        "lastMessage": "",
+        "course": null,
+        "activeAnimation": "traversal-locomotion-parkourSprint",
+        "animationTime": 0.4351863300576923,
+        "contactEvents": [
+          {
+            "type": "contact",
+            "id": "afterstep-1",
+            "sequence": 1,
+            "time": 0.3333333333333333,
+            "contactId": "physical-1",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -0.8400000000000001
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -1
+            },
+            "magnitude": 0.8400000000000001,
+            "replaced": null
+          },
+          {
+            "type": "contact",
+            "id": "afterstep-2",
+            "sequence": 2,
+            "time": 0.5833333333333335,
+            "contactId": "physical-2",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -2.6399999999999992
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -1
+            },
+            "magnitude": 2.6399999999999992,
+            "replaced": null
+          },
+          {
+            "type": "contact",
+            "id": "afterstep-3",
+            "sequence": 3,
+            "time": 1.0833333333333344,
+            "contactId": "physical-3",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -6.240000000000006
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -1
+            },
+            "magnitude": 6.240000000000006,
+            "replaced": null
+          },
+          {
+            "type": "contact",
+            "id": "afterstep-4",
+            "sequence": 4,
+            "time": 1.4499999999999997,
+            "contactId": "physical-4",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -6.545459999999999
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -0.9999999999999999
+            },
+            "magnitude": 6.54546,
+            "replaced": null
+          },
+          {
+            "type": "contact",
+            "id": "afterstep-5",
+            "sequence": 5,
+            "time": 1.816666666666665,
+            "contactId": "physical-5",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -6.545459999999999
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -0.9999999999999999
+            },
+            "magnitude": 6.54546,
+            "replaced": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "release",
+      "state": {
+        "motion": {
+          "position": {
+            "x": 0,
+            "y": 0.42,
+            "z": 24.466979999999996
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": -16.85165
+          },
+          "speed": 16.85165,
+          "grounded": true,
+          "mode": "GROUND",
+          "flow": null,
+          "advanced": null,
+          "sourcePose": null,
+          "contact": {
+            "policy": "sole",
+            "correction": 4.87065610066395e-10,
+            "support": 0.42
+          }
+        },
+        "camera": {
+          "mode": "exploration",
+          "clock": 1.9166666666666647,
+          "manualRemaining": 0,
+          "releaseRemaining": 0.516666666666667,
+          "yaw": 0,
+          "pitch": 0,
+          "composition": null
+        },
+        "afterimages": {
+          "bound": true,
+          "disposed": false,
+          "sourceVertices": 56190,
+          "sourceIndices": 56190,
+          "capacity": 3,
+          "active": 1,
+          "activeKinds": [
+            "ghoststep"
+          ],
+          "footCapacity": 8,
+          "footprints": 1,
+          "pending": 0,
+          "drawCalls": 2,
+          "maxDrawCalls": 2,
+          "captures": 1,
+          "peakCaptureMs": 10.5,
+          "last": {
+            "kind": "release",
+            "id": "afterstep-6",
+            "mode": "standard",
+            "count": 1
+          }
+        },
+        "lastFailure": null,
+        "impulses": [
+          {
+            "id": "physical-2",
+            "remaining": 6.66666666666667,
+            "modes": {
+              "standard": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "directional": {
+                "cost": 10,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "launch": {
+                "cost": 14,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "ghoststep": {
+                "cost": 10,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "brake": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "double-step": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "rail": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              }
+            }
+          },
+          {
+            "id": "physical-3",
+            "remaining": 7.16666666666667,
+            "modes": {
+              "standard": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "directional": {
+                "cost": 10,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "launch": {
+                "cost": 14,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "ghoststep": {
+                "cost": 10,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "brake": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "double-step": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "rail": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              }
+            }
+          },
+          {
+            "id": "physical-4",
+            "remaining": 7.533333333333335,
+            "modes": {
+              "standard": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "directional": {
+                "cost": 10,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "launch": {
+                "cost": 14,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "ghoststep": {
+                "cost": 10,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "brake": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "double-step": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "rail": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              }
+            }
+          },
+          {
+            "id": "physical-5",
+            "remaining": 7.9,
+            "modes": {
+              "standard": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "directional": {
+                "cost": 10,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "launch": {
+                "cost": 14,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "ghoststep": {
+                "cost": 10,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "brake": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "double-step": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "rail": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              }
+            }
+          }
+        ],
+        "releaseEvents": [
+          {
+            "type": "release",
+            "id": "afterstep-6",
+            "sequence": 6,
+            "time": 1.8833333333333315,
+            "mode": "standard",
+            "contactId": "physical-1",
+            "action": "footplant",
+            "perfect": false,
+            "cost": 8,
+            "deltaVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -0.588000000000001
+            },
+            "spent": [
+              "physical-1"
+            ],
+            "doubleStep": 0
+          }
+        ],
+        "movementReady": true,
+        "hero": "backspool",
+        "clock": 1.9166666666666647,
+        "owner": {
+          "frame": 115,
+          "owner": "ordinary",
+          "reason": null,
+          "conflicts": 0,
+          "commits": 1
+        },
+        "sprint": true,
+        "preset": "traversal",
+        "mode": "auto",
+        "wheel": false,
+        "drive": {
+          "now": 1.9166666666666647,
+          "strain": 8,
+          "capacity": 5,
+          "bank": [
+            {
+              "id": "physical-2",
+              "action": "footplant",
+              "direction": {
+                "x": 0,
+                "y": 0,
+                "z": -1
+              },
+              "magnitude": 2.6399999999999992,
+              "vector": {
+                "x": 0,
+                "y": 0,
+                "z": -2.6399999999999992
+              },
+              "time": 0.5833333333333335,
+              "expiresAt": 8.583333333333334,
+              "reservedBy": null
+            },
+            {
+              "id": "physical-3",
+              "action": "footplant",
+              "direction": {
+                "x": 0,
+                "y": 0,
+                "z": -1
+              },
+              "magnitude": 6.240000000000006,
+              "vector": {
+                "x": 0,
+                "y": 0,
+                "z": -6.240000000000006
+              },
+              "time": 1.0833333333333344,
+              "expiresAt": 9.083333333333334,
+              "reservedBy": null
+            },
+            {
+              "id": "physical-4",
+              "action": "footplant",
+              "direction": {
+                "x": 0,
+                "y": 0,
+                "z": -0.9999999999999999
+              },
+              "magnitude": 6.54546,
+              "vector": {
+                "x": 0,
+                "y": 0,
+                "z": -6.545459999999999
+              },
+              "time": 1.4499999999999997,
+              "expiresAt": 9.45,
+              "reservedBy": null
+            },
+            {
+              "id": "physical-5",
+              "action": "footplant",
+              "direction": {
+                "x": 0,
+                "y": 0,
+                "z": -0.9999999999999999
+              },
+              "magnitude": 6.54546,
+              "vector": {
+                "x": 0,
+                "y": 0,
+                "z": -6.545459999999999
+              },
+              "time": 1.816666666666665,
+              "expiresAt": 9.816666666666665,
+              "reservedBy": null
+            }
+          ],
+          "lastBeat": 1.816666666666665,
+          "lastRelease": {
+            "type": "release",
+            "id": "afterstep-6",
+            "sequence": 6,
+            "time": 1.8833333333333315,
+            "mode": "standard",
+            "contactId": "physical-1",
+            "action": "footplant",
+            "perfect": false,
+            "cost": 8,
+            "deltaVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -0.588000000000001
+            },
+            "spent": [
+              "physical-1"
+            ],
+            "doubleStep": 0
+          },
+          "doubleStep": null,
+          "eventSequence": 6,
+          "reason": "RELEASED"
+        },
+        "rail": {
+          "time": 1.733333333333332,
+          "anchors": [],
+          "rails": [],
+          "current": null,
+          "events": [
+            {
+              "id": 4,
+              "type": "reset",
+              "time": 0,
+              "reason": "RESPAWN"
+            }
+          ],
+          "lastReason": "RESPAWN",
+          "limits": {
+            "minSpan": 6,
+            "maxSpan": 100,
+            "maxSlope": 55,
+            "maxRails": 4,
+            "maxAnchors": 8,
+            "lifetime": 30,
+            "attachReach": 2,
+            "transferReach": 3,
+            "maxSpeed": 28,
+            "gravity": 9.81,
+            "friction": 0.45,
+            "junctionAngle": 75,
+            "jumpImpulse": 4.8,
+            "slingshotImpulse": 6.5
+          }
+        },
+        "route": {
+          "status": "empty",
+          "reason": "INPUT RESET",
+          "time": 0,
+          "route": null,
+          "recording": null,
+          "token": null,
+          "reservedIds": [],
+          "consumedIds": [],
+          "actionIndex": 0,
+          "counters": {
+            "recordings": 0,
+            "replays": 0,
+            "completed": 0,
+            "interrupted": 0,
+            "executed": 0,
+            "rejectedActions": 0
+          },
+          "limits": {
+            "maxSeconds": 4,
+            "maxActions": 8,
+            "maxSamples": 120,
+            "reconnectDistance": 1.35,
+            "maxDeviation": 1.5
+          },
+          "nextIds": {
+            "route": 1,
+            "action": 1,
+            "trace": 1,
+            "replay": 1
+          }
+        },
+        "exhaust": {
+          "bound": true,
+          "source": "bone:mixamorigHips",
+          "enabled": true,
+          "disposed": false,
+          "outletPosition": {
+            "x": -0.022879652248302185,
+            "y": 1.274101162825752,
+            "z": 25.159630691771824
+          },
+          "outletOffsetMeters": {
+            "x": 0,
+            "y": -0.02,
+            "z": -0.19
+          },
+          "emissionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "activeCounts": {
+            "slivers": 10,
+            "rings": 4,
+            "threads": 17,
+            "slices": 2
+          },
+          "capacities": {
+            "slivers": 48,
+            "rings": 24,
+            "threads": 64,
+            "slices": 12
+          },
+          "activeTotal": 33,
+          "visibleDrawCalls": 5,
+          "maxDrawCalls": 5,
+          "lastRelease": {
+            "id": "afterstep-6",
+            "at": 1.8833333333333315,
+            "mode": "standard",
+            "perfect": false,
+            "magnitude": 0.588000000000001,
+            "deltaVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -0.588000000000001
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": 1
+            },
+            "braking": false
+          },
+          "lastBank": {
+            "id": "afterstep-5",
+            "at": 1.816666666666665,
+            "type": "contact"
+          },
+          "lastReset": "INPUT RESET",
+          "emitted": 57,
+          "overwritten": 0,
+          "refraction": {
+            "supported": true,
+            "remaining": 0.14666666666666667,
+            "captureCount": 1,
+            "rect": {
+              "x": 772,
+              "y": 381,
+              "width": 128,
+              "height": 128
+            },
+            "textureSize": 128
+          }
+        },
+        "precision": false,
+        "pendingAnchor": null,
+        "lastMessage": "DRIVE · STANDARD",
+        "course": null,
+        "activeAnimation": "traversal-locomotion-parkourSprint",
+        "animationTime": 0.469563959714206,
+        "contactEvents": [
+          {
+            "type": "contact",
+            "id": "afterstep-1",
+            "sequence": 1,
+            "time": 0.3333333333333333,
+            "contactId": "physical-1",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -0.8400000000000001
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -1
+            },
+            "magnitude": 0.8400000000000001,
+            "replaced": null
+          },
+          {
+            "type": "contact",
+            "id": "afterstep-2",
+            "sequence": 2,
+            "time": 0.5833333333333335,
+            "contactId": "physical-2",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -2.6399999999999992
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -1
+            },
+            "magnitude": 2.6399999999999992,
+            "replaced": null
+          },
+          {
+            "type": "contact",
+            "id": "afterstep-3",
+            "sequence": 3,
+            "time": 1.0833333333333344,
+            "contactId": "physical-3",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -6.240000000000006
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -1
+            },
+            "magnitude": 6.240000000000006,
+            "replaced": null
+          },
+          {
+            "type": "contact",
+            "id": "afterstep-4",
+            "sequence": 4,
+            "time": 1.4499999999999997,
+            "contactId": "physical-4",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -6.545459999999999
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -0.9999999999999999
+            },
+            "magnitude": 6.54546,
+            "replaced": null
+          },
+          {
+            "type": "contact",
+            "id": "afterstep-5",
+            "sequence": 5,
+            "time": 1.816666666666665,
+            "contactId": "physical-5",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -6.545459999999999
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -0.9999999999999999
+            },
+            "magnitude": 6.54546,
+            "replaced": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "trail",
+      "state": {
+        "motion": {
+          "position": {
+            "x": 0,
+            "y": 0.42,
+            "z": 22.799314999999996
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": -16.551649999999995
+          },
+          "speed": 16.551649999999995,
+          "grounded": true,
+          "mode": "GROUND",
+          "flow": null,
+          "advanced": null,
+          "sourcePose": null,
+          "contact": {
+            "policy": "sole",
+            "correction": 4.87065610066395e-10,
+            "support": 0.42
+          }
+        },
+        "camera": {
+          "mode": "exploration",
+          "clock": 2.0166666666666644,
+          "manualRemaining": 0,
+          "releaseRemaining": 0.4166666666666674,
+          "yaw": 0,
+          "pitch": 0,
+          "composition": null
+        },
+        "afterimages": {
+          "bound": true,
+          "disposed": false,
+          "sourceVertices": 56190,
+          "sourceIndices": 56190,
+          "capacity": 3,
+          "active": 1,
+          "activeKinds": [
+            "ghoststep"
+          ],
+          "footCapacity": 8,
+          "footprints": 1,
+          "pending": 0,
+          "drawCalls": 2,
+          "maxDrawCalls": 2,
+          "captures": 1,
+          "peakCaptureMs": 10.5,
+          "last": {
+            "kind": "release",
+            "id": "afterstep-6",
+            "mode": "standard",
+            "count": 1
+          }
+        },
+        "lastFailure": null,
+        "impulses": [
+          {
+            "id": "physical-2",
+            "remaining": 6.56666666666667,
+            "modes": {
+              "standard": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "directional": {
+                "cost": 10,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "launch": {
+                "cost": 14,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "ghoststep": {
+                "cost": 10,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "brake": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "double-step": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "rail": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              }
+            }
+          },
+          {
+            "id": "physical-3",
+            "remaining": 7.06666666666667,
+            "modes": {
+              "standard": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "directional": {
+                "cost": 10,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "launch": {
+                "cost": 14,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "ghoststep": {
+                "cost": 10,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "brake": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "double-step": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "rail": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              }
+            }
+          },
+          {
+            "id": "physical-4",
+            "remaining": 7.433333333333335,
+            "modes": {
+              "standard": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "directional": {
+                "cost": 10,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "launch": {
+                "cost": 14,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "ghoststep": {
+                "cost": 10,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "brake": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "double-step": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "rail": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              }
+            }
+          },
+          {
+            "id": "physical-5",
+            "remaining": 7.800000000000001,
+            "modes": {
+              "standard": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "directional": {
+                "cost": 10,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "launch": {
+                "cost": 14,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "ghoststep": {
+                "cost": 10,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "brake": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "double-step": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "rail": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              }
+            }
+          }
+        ],
+        "releaseEvents": [
+          {
+            "type": "release",
+            "id": "afterstep-6",
+            "sequence": 6,
+            "time": 1.8833333333333315,
+            "mode": "standard",
+            "contactId": "physical-1",
+            "action": "footplant",
+            "perfect": false,
+            "cost": 8,
+            "deltaVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -0.588000000000001
+            },
+            "spent": [
+              "physical-1"
+            ],
+            "doubleStep": 0
+          }
+        ],
+        "movementReady": true,
+        "hero": "backspool",
+        "clock": 2.0166666666666644,
+        "owner": {
+          "frame": 121,
+          "owner": "ordinary",
+          "reason": null,
+          "conflicts": 0,
+          "commits": 1
+        },
+        "sprint": true,
+        "preset": "traversal",
+        "mode": "auto",
+        "wheel": false,
+        "drive": {
+          "now": 2.0166666666666644,
+          "strain": 8,
+          "capacity": 5,
+          "bank": [
+            {
+              "id": "physical-2",
+              "action": "footplant",
+              "direction": {
+                "x": 0,
+                "y": 0,
+                "z": -1
+              },
+              "magnitude": 2.6399999999999992,
+              "vector": {
+                "x": 0,
+                "y": 0,
+                "z": -2.6399999999999992
+              },
+              "time": 0.5833333333333335,
+              "expiresAt": 8.583333333333334,
+              "reservedBy": null
+            },
+            {
+              "id": "physical-3",
+              "action": "footplant",
+              "direction": {
+                "x": 0,
+                "y": 0,
+                "z": -1
+              },
+              "magnitude": 6.240000000000006,
+              "vector": {
+                "x": 0,
+                "y": 0,
+                "z": -6.240000000000006
+              },
+              "time": 1.0833333333333344,
+              "expiresAt": 9.083333333333334,
+              "reservedBy": null
+            },
+            {
+              "id": "physical-4",
+              "action": "footplant",
+              "direction": {
+                "x": 0,
+                "y": 0,
+                "z": -0.9999999999999999
+              },
+              "magnitude": 6.54546,
+              "vector": {
+                "x": 0,
+                "y": 0,
+                "z": -6.545459999999999
+              },
+              "time": 1.4499999999999997,
+              "expiresAt": 9.45,
+              "reservedBy": null
+            },
+            {
+              "id": "physical-5",
+              "action": "footplant",
+              "direction": {
+                "x": 0,
+                "y": 0,
+                "z": -0.9999999999999999
+              },
+              "magnitude": 6.54546,
+              "vector": {
+                "x": 0,
+                "y": 0,
+                "z": -6.545459999999999
+              },
+              "time": 1.816666666666665,
+              "expiresAt": 9.816666666666665,
+              "reservedBy": null
+            }
+          ],
+          "lastBeat": 1.816666666666665,
+          "lastRelease": {
+            "type": "release",
+            "id": "afterstep-6",
+            "sequence": 6,
+            "time": 1.8833333333333315,
+            "mode": "standard",
+            "contactId": "physical-1",
+            "action": "footplant",
+            "perfect": false,
+            "cost": 8,
+            "deltaVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -0.588000000000001
+            },
+            "spent": [
+              "physical-1"
+            ],
+            "doubleStep": 0
+          },
+          "doubleStep": null,
+          "eventSequence": 6,
+          "reason": "RELEASED"
+        },
+        "rail": {
+          "time": 1.8333333333333317,
+          "anchors": [],
+          "rails": [],
+          "current": null,
+          "events": [
+            {
+              "id": 4,
+              "type": "reset",
+              "time": 0,
+              "reason": "RESPAWN"
+            }
+          ],
+          "lastReason": "RESPAWN",
+          "limits": {
+            "minSpan": 6,
+            "maxSpan": 100,
+            "maxSlope": 55,
+            "maxRails": 4,
+            "maxAnchors": 8,
+            "lifetime": 30,
+            "attachReach": 2,
+            "transferReach": 3,
+            "maxSpeed": 28,
+            "gravity": 9.81,
+            "friction": 0.45,
+            "junctionAngle": 75,
+            "jumpImpulse": 4.8,
+            "slingshotImpulse": 6.5
+          }
+        },
+        "route": {
+          "status": "empty",
+          "reason": "INPUT RESET",
+          "time": 0,
+          "route": null,
+          "recording": null,
+          "token": null,
+          "reservedIds": [],
+          "consumedIds": [],
+          "actionIndex": 0,
+          "counters": {
+            "recordings": 0,
+            "replays": 0,
+            "completed": 0,
+            "interrupted": 0,
+            "executed": 0,
+            "rejectedActions": 0
+          },
+          "limits": {
+            "maxSeconds": 4,
+            "maxActions": 8,
+            "maxSamples": 120,
+            "reconnectDistance": 1.35,
+            "maxDeviation": 1.5
+          },
+          "nextIds": {
+            "route": 1,
+            "action": 1,
+            "trace": 1,
+            "replay": 1
+          }
+        },
+        "exhaust": {
+          "bound": true,
+          "source": "bone:mixamorigHips",
+          "enabled": true,
+          "disposed": false,
+          "outletPosition": {
+            "x": -0.07392102497754315,
+            "y": 1.1444338176159625,
+            "z": 23.27895727538094
+          },
+          "outletOffsetMeters": {
+            "x": 0,
+            "y": -0.02,
+            "z": -0.19
+          },
+          "emissionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "activeCounts": {
+            "slivers": 10,
+            "rings": 3,
+            "threads": 15,
+            "slices": 2
+          },
+          "capacities": {
+            "slivers": 48,
+            "rings": 24,
+            "threads": 64,
+            "slices": 12
+          },
+          "activeTotal": 30,
+          "visibleDrawCalls": 5,
+          "maxDrawCalls": 5,
+          "lastRelease": {
+            "id": "afterstep-6",
+            "at": 1.8833333333333315,
+            "mode": "standard",
+            "perfect": false,
+            "magnitude": 0.588000000000001,
+            "deltaVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -0.588000000000001
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": 1
+            },
+            "braking": false
+          },
+          "lastBank": {
+            "id": "afterstep-5",
+            "at": 1.816666666666665,
+            "type": "contact"
+          },
+          "lastReset": "INPUT RESET",
+          "emitted": 57,
+          "overwritten": 0,
+          "refraction": {
+            "supported": true,
+            "remaining": 0.04666666666666669,
+            "captureCount": 2,
+            "rect": {
+              "x": 802,
+              "y": 363,
+              "width": 128,
+              "height": 128
+            },
+            "textureSize": 128
+          }
+        },
+        "precision": false,
+        "pendingAnchor": null,
+        "lastMessage": "DRIVE · STANDARD",
+        "course": null,
+        "activeAnimation": "traversal-locomotion-parkourSprint",
+        "animationTime": 0.5714746524662566,
+        "contactEvents": [
+          {
+            "type": "contact",
+            "id": "afterstep-1",
+            "sequence": 1,
+            "time": 0.3333333333333333,
+            "contactId": "physical-1",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -0.8400000000000001
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -1
+            },
+            "magnitude": 0.8400000000000001,
+            "replaced": null
+          },
+          {
+            "type": "contact",
+            "id": "afterstep-2",
+            "sequence": 2,
+            "time": 0.5833333333333335,
+            "contactId": "physical-2",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -2.6399999999999992
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -1
+            },
+            "magnitude": 2.6399999999999992,
+            "replaced": null
+          },
+          {
+            "type": "contact",
+            "id": "afterstep-3",
+            "sequence": 3,
+            "time": 1.0833333333333344,
+            "contactId": "physical-3",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -6.240000000000006
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -1
+            },
+            "magnitude": 6.240000000000006,
+            "replaced": null
+          },
+          {
+            "type": "contact",
+            "id": "afterstep-4",
+            "sequence": 4,
+            "time": 1.4499999999999997,
+            "contactId": "physical-4",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -6.545459999999999
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -0.9999999999999999
+            },
+            "magnitude": 6.54546,
+            "replaced": null
+          },
+          {
+            "type": "contact",
+            "id": "afterstep-5",
+            "sequence": 5,
+            "time": 1.816666666666665,
+            "contactId": "physical-5",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -6.545459999999999
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -0.9999999999999999
+            },
+            "magnitude": 6.54546,
+            "replaced": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "expired",
+      "state": {
+        "motion": {
+          "position": {
+            "x": 0,
+            "y": 0.42,
+            "z": 15.902794166666677
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "speed": 0,
+          "grounded": true,
+          "mode": "GROUND",
+          "flow": null,
+          "advanced": null,
+          "sourcePose": {
+            "role": "relaxedIdle",
+            "sourceAnimationId": "0x281116bb",
+            "originalMotionName": "ntl_idle_loop_base_n000a_lp",
+            "time": 0.6833333333333251,
+            "duration": 3,
+            "loop": true,
+            "rate": 1,
+            "pelvisTranslation": false
+          },
+          "contact": {
+            "policy": "sole",
+            "correction": 1.0113326842642323e-10,
+            "support": 0.42
+          }
+        },
+        "camera": {
+          "mode": "exploration",
+          "clock": 3.683333333333325,
+          "manualRemaining": 0,
+          "releaseRemaining": 0,
+          "yaw": 0,
+          "pitch": 0,
+          "composition": null
+        },
+        "afterimages": {
+          "bound": true,
+          "disposed": false,
+          "sourceVertices": 56190,
+          "sourceIndices": 56190,
+          "capacity": 3,
+          "active": 0,
+          "activeKinds": [],
+          "footCapacity": 8,
+          "footprints": 0,
+          "pending": 0,
+          "drawCalls": 0,
+          "maxDrawCalls": 2,
+          "captures": 1,
+          "peakCaptureMs": 10.5,
+          "last": {
+            "kind": "release",
+            "id": "afterstep-6",
+            "mode": "standard",
+            "count": 1
+          }
+        },
+        "lastFailure": null,
+        "impulses": [
+          {
+            "id": "physical-2",
+            "remaining": 4.900000000000009,
+            "modes": {
+              "standard": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "directional": {
+                "cost": 10,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "launch": {
+                "cost": 14,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "ghoststep": {
+                "cost": 10,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "brake": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "double-step": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "rail": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              }
+            }
+          },
+          {
+            "id": "physical-3",
+            "remaining": 5.400000000000009,
+            "modes": {
+              "standard": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "directional": {
+                "cost": 10,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "launch": {
+                "cost": 14,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "ghoststep": {
+                "cost": 10,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "brake": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "double-step": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "rail": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              }
+            }
+          },
+          {
+            "id": "physical-4",
+            "remaining": 5.766666666666675,
+            "modes": {
+              "standard": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "directional": {
+                "cost": 10,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "launch": {
+                "cost": 14,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "ghoststep": {
+                "cost": 10,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "brake": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "double-step": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "rail": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              }
+            }
+          },
+          {
+            "id": "physical-5",
+            "remaining": 6.13333333333334,
+            "modes": {
+              "standard": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "directional": {
+                "cost": 10,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "launch": {
+                "cost": 14,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "ghoststep": {
+                "cost": 10,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "brake": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              },
+              "double-step": {
+                "cost": 8,
+                "eligible": true,
+                "compatible": true,
+                "requiresWorldValidation": true
+              },
+              "rail": {
+                "cost": 8,
+                "eligible": false,
+                "compatible": false,
+                "requiresWorldValidation": true
+              }
+            }
+          }
+        ],
+        "releaseEvents": [
+          {
+            "type": "release",
+            "id": "afterstep-6",
+            "sequence": 6,
+            "time": 1.8833333333333315,
+            "mode": "standard",
+            "contactId": "physical-1",
+            "action": "footplant",
+            "perfect": false,
+            "cost": 8,
+            "deltaVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -0.588000000000001
+            },
+            "spent": [
+              "physical-1"
+            ],
+            "doubleStep": 0
+          }
+        ],
+        "movementReady": true,
+        "hero": "backspool",
+        "clock": 3.683333333333325,
+        "owner": {
+          "frame": 221,
+          "owner": "ordinary",
+          "reason": null,
+          "conflicts": 0,
+          "commits": 1
+        },
+        "sprint": true,
+        "preset": "traversal",
+        "mode": "auto",
+        "wheel": false,
+        "drive": {
+          "now": 3.683333333333325,
+          "strain": 5.600000000000051,
+          "capacity": 5,
+          "bank": [
+            {
+              "id": "physical-2",
+              "action": "footplant",
+              "direction": {
+                "x": 0,
+                "y": 0,
+                "z": -1
+              },
+              "magnitude": 2.6399999999999992,
+              "vector": {
+                "x": 0,
+                "y": 0,
+                "z": -2.6399999999999992
+              },
+              "time": 0.5833333333333335,
+              "expiresAt": 8.583333333333334,
+              "reservedBy": null
+            },
+            {
+              "id": "physical-3",
+              "action": "footplant",
+              "direction": {
+                "x": 0,
+                "y": 0,
+                "z": -1
+              },
+              "magnitude": 6.240000000000006,
+              "vector": {
+                "x": 0,
+                "y": 0,
+                "z": -6.240000000000006
+              },
+              "time": 1.0833333333333344,
+              "expiresAt": 9.083333333333334,
+              "reservedBy": null
+            },
+            {
+              "id": "physical-4",
+              "action": "footplant",
+              "direction": {
+                "x": 0,
+                "y": 0,
+                "z": -0.9999999999999999
+              },
+              "magnitude": 6.54546,
+              "vector": {
+                "x": 0,
+                "y": 0,
+                "z": -6.545459999999999
+              },
+              "time": 1.4499999999999997,
+              "expiresAt": 9.45,
+              "reservedBy": null
+            },
+            {
+              "id": "physical-5",
+              "action": "footplant",
+              "direction": {
+                "x": 0,
+                "y": 0,
+                "z": -0.9999999999999999
+              },
+              "magnitude": 6.54546,
+              "vector": {
+                "x": 0,
+                "y": 0,
+                "z": -6.545459999999999
+              },
+              "time": 1.816666666666665,
+              "expiresAt": 9.816666666666665,
+              "reservedBy": null
+            }
+          ],
+          "lastBeat": 1.816666666666665,
+          "lastRelease": {
+            "type": "release",
+            "id": "afterstep-6",
+            "sequence": 6,
+            "time": 1.8833333333333315,
+            "mode": "standard",
+            "contactId": "physical-1",
+            "action": "footplant",
+            "perfect": false,
+            "cost": 8,
+            "deltaVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -0.588000000000001
+            },
+            "spent": [
+              "physical-1"
+            ],
+            "doubleStep": 0
+          },
+          "doubleStep": null,
+          "eventSequence": 6,
+          "reason": "RELEASED"
+        },
+        "rail": {
+          "time": 3.4999999999999925,
+          "anchors": [],
+          "rails": [],
+          "current": null,
+          "events": [
+            {
+              "id": 4,
+              "type": "reset",
+              "time": 0,
+              "reason": "RESPAWN"
+            }
+          ],
+          "lastReason": "RESPAWN",
+          "limits": {
+            "minSpan": 6,
+            "maxSpan": 100,
+            "maxSlope": 55,
+            "maxRails": 4,
+            "maxAnchors": 8,
+            "lifetime": 30,
+            "attachReach": 2,
+            "transferReach": 3,
+            "maxSpeed": 28,
+            "gravity": 9.81,
+            "friction": 0.45,
+            "junctionAngle": 75,
+            "jumpImpulse": 4.8,
+            "slingshotImpulse": 6.5
+          }
+        },
+        "route": {
+          "status": "empty",
+          "reason": "INPUT RESET",
+          "time": 0,
+          "route": null,
+          "recording": null,
+          "token": null,
+          "reservedIds": [],
+          "consumedIds": [],
+          "actionIndex": 0,
+          "counters": {
+            "recordings": 0,
+            "replays": 0,
+            "completed": 0,
+            "interrupted": 0,
+            "executed": 0,
+            "rejectedActions": 0
+          },
+          "limits": {
+            "maxSeconds": 4,
+            "maxActions": 8,
+            "maxSamples": 120,
+            "reconnectDistance": 1.35,
+            "maxDeviation": 1.5
+          },
+          "nextIds": {
+            "route": 1,
+            "action": 1,
+            "trace": 1,
+            "replay": 1
+          }
+        },
+        "exhaust": {
+          "bound": true,
+          "source": "bone:mixamorigHips",
+          "enabled": true,
+          "disposed": false,
+          "outletPosition": {
+            "x": -0.03983122518036129,
+            "y": 1.443264411044527,
+            "z": 16.075069932304444
+          },
+          "outletOffsetMeters": {
+            "x": 0,
+            "y": -0.02,
+            "z": -0.19
+          },
+          "emissionDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "activeCounts": {
+            "slivers": 0,
+            "rings": 0,
+            "threads": 0,
+            "slices": 0
+          },
+          "capacities": {
+            "slivers": 48,
+            "rings": 24,
+            "threads": 64,
+            "slices": 12
+          },
+          "activeTotal": 0,
+          "visibleDrawCalls": 0,
+          "maxDrawCalls": 5,
+          "lastRelease": {
+            "id": "afterstep-6",
+            "at": 1.8833333333333315,
+            "mode": "standard",
+            "perfect": false,
+            "magnitude": 0.588000000000001,
+            "deltaVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -0.588000000000001
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": 1
+            },
+            "braking": false
+          },
+          "lastBank": {
+            "id": "afterstep-5",
+            "at": 1.816666666666665,
+            "type": "contact"
+          },
+          "lastReset": "INPUT RESET",
+          "emitted": 57,
+          "overwritten": 0,
+          "refraction": {
+            "supported": true,
+            "remaining": 0,
+            "captureCount": 2,
+            "rect": {
+              "x": 802,
+              "y": 363,
+              "width": 128,
+              "height": 128
+            },
+            "textureSize": 128
+          }
+        },
+        "precision": false,
+        "pendingAnchor": null,
+        "lastMessage": "DRIVE · STANDARD",
+        "course": null,
+        "activeAnimation": "forspoken-threadrail-relaxed-idle",
+        "animationTime": 0.6833333333333251,
+        "contactEvents": [
+          {
+            "type": "contact",
+            "id": "afterstep-1",
+            "sequence": 1,
+            "time": 0.3333333333333333,
+            "contactId": "physical-1",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -0.8400000000000001
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -1
+            },
+            "magnitude": 0.8400000000000001,
+            "replaced": null
+          },
+          {
+            "type": "contact",
+            "id": "afterstep-2",
+            "sequence": 2,
+            "time": 0.5833333333333335,
+            "contactId": "physical-2",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -2.6399999999999992
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -1
+            },
+            "magnitude": 2.6399999999999992,
+            "replaced": null
+          },
+          {
+            "type": "contact",
+            "id": "afterstep-3",
+            "sequence": 3,
+            "time": 1.0833333333333344,
+            "contactId": "physical-3",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -6.240000000000006
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -1
+            },
+            "magnitude": 6.240000000000006,
+            "replaced": null
+          },
+          {
+            "type": "contact",
+            "id": "afterstep-4",
+            "sequence": 4,
+            "time": 1.4499999999999997,
+            "contactId": "physical-4",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -6.545459999999999
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -0.9999999999999999
+            },
+            "magnitude": 6.54546,
+            "replaced": null
+          },
+          {
+            "type": "contact",
+            "id": "afterstep-5",
+            "sequence": 5,
+            "time": 1.816666666666665,
+            "contactId": "physical-5",
+            "action": "footplant",
+            "vector": {
+              "x": 0,
+              "y": 0,
+              "z": -6.545459999999999
+            },
+            "direction": {
+              "x": 0,
+              "y": 0,
+              "z": -0.9999999999999999
+            },
+            "magnitude": 6.54546,
+            "replaced": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,832 @@
+{
+  "startedAt": "2026-10-22T20:45:46.960Z",
+  "method": {
+    "viewport": [
+      1280,
+      800
+    ],
+    "deviceScaleFactor": 1,
+    "rendererPixelRatio": 1,
+    "resolutionScale": 1,
+    "backend": "Chromium ANGLE Metal",
+    "warmupSeconds": 12,
+    "matchedSeconds": 60,
+    "camera": {
+      "position": [
+        0,
+        5,
+        22
+      ],
+      "target": [
+        0,
+        1.4,
+        -10
+      ]
+    },
+    "stimulus": "Identical simulated standard-gamepad walking circle: axes sin/cos at 0.65 amplitude, eight-second period; no feature calls. Fixed world camera every render. Active city/drones/destruction unchanged.",
+    "notes": [
+      "Explicit identical full resolution disables adaptive quality for both runs.",
+      "CPU timings include renderer submission, not GPU completion.",
+      "Physics pose initially placed at the same clear plaza position; subsequent motion uses normal gamepad movement."
+    ]
+  },
+  "runs": [
+    {
+      "file": "SIGHTLINE_BACKSPOOL_VAULT_PLAYGROUND.html",
+      "buildSha256": "93c255087728508d028c382acffc20f80b48e6dffbff36f2b206b4df1b208e6d",
+      "buildSha256After": "93c255087728508d028c382acffc20f80b48e6dffbff36f2b206b4df1b208e6d",
+      "result": {
+        "wallSeconds": 60.001399999809266,
+        "rendererInfo": {
+          "webgl2": true,
+          "vendor": "Google Inc. (Apple)",
+          "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Max, Unspecified Version)"
+        },
+        "frameIntervalsMs": {
+          "n": 6647,
+          "p50": 8.30000000000291,
+          "p95": 16.60000000000582,
+          "max": 33.29999999999927
+        },
+        "simulationCpuMs": {
+          "n": 3601,
+          "p50": 1.8000001907348633,
+          "p95": 8.600000381469727,
+          "max": 19.59999990463257
+        },
+        "renderSubmissionCpuMs": {
+          "n": 6652,
+          "p50": 2.5,
+          "p95": 4.699999809265137,
+          "max": 10.900000095367432
+        },
+        "visibleSceneDrawCalls": {
+          "n": 6652,
+          "p50": 185,
+          "p95": 189,
+          "max": 190
+        },
+        "visibleSceneTriangles": {
+          "n": 6652,
+          "p50": 641531,
+          "p95": 659520,
+          "max": 659552
+        },
+        "droppedSimulationSeconds": 0,
+        "frameExcessAbove250msSeconds": 0,
+        "gpuTimerAvailable": true,
+        "gpuTimingMs": {
+          "n": 416,
+          "p50": 13.913583,
+          "p95": 17.861708,
+          "max": 22.061749
+        },
+        "peakBank": 1,
+        "peakVFX": 6,
+        "peakBodies": 0,
+        "peakFootfalls": 1,
+        "peakCaptureCpuMs": 0,
+        "peakRails": 0,
+        "peakDebris": 0,
+        "framesWithCombatAction": 0,
+        "fixturePhases": [],
+        "invalidFrames": 0,
+        "peakOwnerConflicts": 0,
+        "peakRetraces": 0,
+        "finalMemory": {
+          "geometries": 274,
+          "textures": 30,
+          "programs": 44,
+          "heapBytes": 167000000
+        },
+        "finalPosition": [
+          10.257788991441053,
+          0.42,
+          25.428116727300605
+        ],
+        "finalVelocity": [
+          -0.008552978984946722,
+          0,
+          4.033324264713693
+        ],
+        "finalEquipment": {
+          "owner": {
+            "frame": 4316,
+            "owner": "ordinary",
+            "reason": null,
+            "conflicts": 0,
+            "commits": 1
+          },
+          "drive": {
+            "strain": 0,
+            "lastRelease": null
+          },
+          "rail": {
+            "current": null,
+            "events": [
+              {
+                "id": 5,
+                "type": "reset",
+                "time": 0,
+                "reason": "BENCHMARK RESET"
+              }
+            ]
+          },
+          "exhaust": {
+            "bound": true,
+            "source": "bone:mixamorigHips",
+            "enabled": true,
+            "disposed": false,
+            "outletPosition": {
+              "x": 10.20277078555997,
+              "y": 1.4333460366803705,
+              "z": 25.176736665408175
+            },
+            "outletOffsetMeters": {
+              "x": 0,
+              "y": -0.02,
+              "z": -0.19
+            },
+            "emissionDirection": {
+              "x": 0,
+              "y": 0,
+              "z": 1
+            },
+            "activeCounts": {
+              "slivers": 0,
+              "rings": 0,
+              "threads": 0,
+              "slices": 0
+            },
+            "capacities": {
+              "slivers": 48,
+              "rings": 24,
+              "threads": 64,
+              "slices": 12
+            },
+            "activeTotal": 0,
+            "visibleDrawCalls": 0,
+            "maxDrawCalls": 5,
+            "lastRelease": null,
+            "lastBank": {
+              "id": "afterstep-2",
+              "at": 12.03333333333351,
+              "type": "contact"
+            },
+            "lastReset": "BENCHMARK RESET",
+            "emitted": 12,
+            "overwritten": 0,
+            "refraction": {
+              "supported": null,
+              "remaining": 0,
+              "captureCount": 0,
+              "rect": null,
+              "textureSize": 128
+            }
+          },
+          "afterimages": {
+            "bound": true,
+            "disposed": false,
+            "sourceVertices": 56190,
+            "sourceIndices": 56190,
+            "capacity": 3,
+            "active": 0,
+            "activeKinds": [],
+            "footCapacity": 8,
+            "footprints": 0,
+            "pending": 0,
+            "drawCalls": 0,
+            "maxDrawCalls": 2,
+            "captures": 0,
+            "peakCaptureMs": 0,
+            "last": {
+              "kind": "reset",
+              "reason": "BENCHMARK RESET"
+            }
+          },
+          "camera": {
+            "mode": "exploration",
+            "clock": 71.93333333333054,
+            "manualRemaining": 0,
+            "releaseRemaining": 0,
+            "yaw": 0,
+            "pitch": 0,
+            "composition": null
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "file": "SIGHTLINE_BACKSPOOL_AFTERSTEP_VFX.html",
+      "buildSha256": "4080c24ad95103f5c35cf63007907361b055a0facd7b6016e39443c33b2f9a43",
+      "buildSha256After": "4080c24ad95103f5c35cf63007907361b055a0facd7b6016e39443c33b2f9a43",
+      "result": {
+        "wallSeconds": 60.00789999999999,
+        "rendererInfo": {
+          "webgl2": true,
+          "vendor": "Google Inc. (Apple)",
+          "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Max, Unspecified Version)"
+        },
+        "frameIntervalsMs": {
+          "n": 6623,
+          "p50": 8.30000000000291,
+          "p95": 16.60000000000582,
+          "max": 33.400000000001455
+        },
+        "simulationCpuMs": {
+          "n": 3601,
+          "p50": 2.0999999046325684,
+          "p95": 11.800000190734863,
+          "max": 28.200000286102295
+        },
+        "renderSubmissionCpuMs": {
+          "n": 6628,
+          "p50": 2.8000001907348633,
+          "p95": 4.600000381469727,
+          "max": 7.900000095367432
+        },
+        "visibleSceneDrawCalls": {
+          "n": 6628,
+          "p50": 188,
+          "p95": 191,
+          "max": 192
+        },
+        "visibleSceneTriangles": {
+          "n": 6628,
+          "p50": 659472,
+          "p95": 659584,
+          "max": 659616
+        },
+        "droppedSimulationSeconds": 0,
+        "frameExcessAbove250msSeconds": 0,
+        "gpuTimerAvailable": true,
+        "gpuTimingMs": {
+          "n": 415,
+          "p50": 10.523125,
+          "p95": 16.810166,
+          "max": 18.688374
+        },
+        "peakBank": 3,
+        "peakVFX": 6,
+        "peakBodies": 0,
+        "peakFootfalls": 2,
+        "peakCaptureCpuMs": 0,
+        "peakRails": 0,
+        "peakDebris": 0,
+        "framesWithCombatAction": 0,
+        "fixturePhases": [],
+        "invalidFrames": 0,
+        "peakOwnerConflicts": 0,
+        "peakRetraces": 0,
+        "finalMemory": {
+          "geometries": 273,
+          "textures": 30,
+          "programs": 44,
+          "heapBytes": 212000000
+        },
+        "finalPosition": [
+          10.242493694600393,
+          0.42,
+          25.47006437597351
+        ],
+        "finalVelocity": [
+          -0.02565878462015105,
+          0,
+          4.033251715991651
+        ],
+        "finalEquipment": {
+          "owner": {
+            "frame": 4313,
+            "owner": "ordinary",
+            "reason": null,
+            "conflicts": 0,
+            "commits": 1
+          },
+          "drive": {
+            "strain": 0,
+            "lastRelease": null
+          },
+          "rail": {
+            "current": null,
+            "events": [
+              {
+                "id": 5,
+                "type": "reset",
+                "time": 0,
+                "reason": "BENCHMARK RESET"
+              }
+            ]
+          },
+          "exhaust": {
+            "bound": true,
+            "source": "bone:mixamorigHips",
+            "enabled": true,
+            "disposed": false,
+            "outletPosition": {
+              "x": 10.177518751055606,
+              "y": 1.411143729758086,
+              "z": 25.206529027671557
+            },
+            "outlets": [
+              {
+                "x": 10.048505374019479,
+                "y": 1.4239038104751354,
+                "z": 25.231363054457187
+              },
+              {
+                "x": 10.306532128091733,
+                "y": 1.3983836490410366,
+                "z": 25.181695000885927
+              }
+            ],
+            "outletOffsetMeters": {
+              "x": 0,
+              "y": -0.02,
+              "z": -0.19
+            },
+            "emissionDirection": {
+              "x": 0,
+              "y": 0,
+              "z": 1
+            },
+            "activeCounts": {
+              "slivers": 0,
+              "rings": 0,
+              "threads": 0,
+              "slices": 0
+            },
+            "capacities": {
+              "slivers": 96,
+              "rings": 24,
+              "threads": 64,
+              "slices": 12
+            },
+            "activeTotal": 0,
+            "visibleDrawCalls": 0,
+            "maxDrawCalls": 3,
+            "lastRelease": null,
+            "lastBank": {
+              "id": "afterstep-4",
+              "at": 12.483333333333533,
+              "type": "contact"
+            },
+            "lastReset": "BENCHMARK RESET",
+            "emitted": 24,
+            "overwritten": 0,
+            "flash": 0,
+            "config": {
+              "quality": "high",
+              "maxShards": 96,
+              "shardCount": 48,
+              "shardSize": 1,
+              "shardOpacity": 0.25,
+              "shardSpeed": 5.5,
+              "shardLifetime": 0.68,
+              "shardRotation": 0.7,
+              "violetBalance": 0.28,
+              "outlineBrightness": 1.3,
+              "afterimageCount": 3,
+              "afterimageOpacity": 0.22,
+              "afterimageSpacing": 0.85,
+              "afterimageFade": 0.55,
+              "outletBrightness": 1.3,
+              "intensity": 1,
+              "trailLength": 7
+            },
+            "refraction": {
+              "supported": null,
+              "remaining": 0,
+              "captureCount": 0,
+              "rect": null,
+              "textureSize": 128
+            }
+          },
+          "afterimages": {
+            "bound": true,
+            "disposed": false,
+            "sourceVertices": 56190,
+            "sourceIndices": 56190,
+            "capacity": 3,
+            "poolCapacity": 4,
+            "history": 8,
+            "config": {
+              "quality": "high",
+              "maxShards": 96,
+              "shardCount": 48,
+              "shardSize": 1,
+              "shardOpacity": 0.25,
+              "shardSpeed": 5.5,
+              "shardLifetime": 0.68,
+              "shardRotation": 0.7,
+              "violetBalance": 0.28,
+              "outlineBrightness": 1.3,
+              "afterimageCount": 3,
+              "afterimageOpacity": 0.22,
+              "afterimageSpacing": 0.85,
+              "afterimageFade": 0.55,
+              "outletBrightness": 1.3,
+              "intensity": 1,
+              "trailLength": 7
+            },
+            "active": 0,
+            "activeKinds": [],
+            "footCapacity": 8,
+            "footprints": 0,
+            "pending": 0,
+            "drawCalls": 0,
+            "maxDrawCalls": 2,
+            "captures": 0,
+            "peakCaptureMs": 0,
+            "last": {
+              "kind": "reset",
+              "reason": "BENCHMARK RESET"
+            }
+          },
+          "camera": {
+            "mode": "exploration",
+            "clock": 71.88333333333054,
+            "manualRemaining": 0,
+            "releaseRemaining": 0,
+            "yaw": 0,
+            "pitch": 0,
+            "composition": null
+          }
+        }
+      },
+      "errors": []
+    }
+  ],
+  "stress": {
+    "seconds": 60,
+    "description": "Three twenty-second phases: Flow with simulated RB pulses; sparring combos/guard/evade; physical course rail fixture with simulated X/RB/jump. Periodic surface impacts. Physical setup positions are test fixtures, subsequent actions use simulated standard controller buttons.",
+    "result": {
+      "wallSeconds": 60.00909999971389,
+      "rendererInfo": {
+        "webgl2": true,
+        "vendor": "Google Inc. (Apple)",
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Max, Unspecified Version)"
+      },
+      "frameIntervalsMs": {
+        "n": 6385,
+        "p50": 8.30000000000291,
+        "p95": 16.69999999999709,
+        "max": 42.60000000000582
+      },
+      "simulationCpuMs": {
+        "n": 3602,
+        "p50": 2.5999999046325684,
+        "p95": 10.400000095367432,
+        "max": 35.09999990463257
+      },
+      "renderSubmissionCpuMs": {
+        "n": 6390,
+        "p50": 2.9000000953674316,
+        "p95": 4.700000286102295,
+        "max": 33.19999980926514
+      },
+      "visibleSceneDrawCalls": {
+        "n": 6390,
+        "p50": 201,
+        "p95": 215,
+        "max": 250
+      },
+      "visibleSceneTriangles": {
+        "n": 6390,
+        "p50": 659592,
+        "p95": 764165,
+        "max": 872354
+      },
+      "droppedSimulationSeconds": 0,
+      "frameExcessAbove250msSeconds": 0,
+      "gpuTimerAvailable": true,
+      "gpuTimingMs": {
+        "n": 400,
+        "p50": 14.721124,
+        "p95": 18.275875,
+        "max": 21.218624
+      },
+      "peakBank": 5,
+      "peakVFX": 58,
+      "peakBodies": 3,
+      "peakFootfalls": 2,
+      "peakCaptureCpuMs": 4.300000190734863,
+      "peakRails": 3,
+      "peakDebris": 32,
+      "framesWithCombatAction": 374,
+      "fixturePhases": [
+        {
+          "phase": 0,
+          "at": 0.00039999961853027344,
+          "geometries": 273,
+          "textures": 31,
+          "programs": 45,
+          "heapBytes": 212000000
+        },
+        {
+          "phase": 1,
+          "at": 20.001599999904634,
+          "geometries": 282,
+          "textures": 33,
+          "programs": 48,
+          "heapBytes": 212000000
+        },
+        {
+          "phase": 2,
+          "at": 40.00469999980926,
+          "geometries": 289,
+          "textures": 33,
+          "programs": 48,
+          "heapBytes": 212000000
+        },
+        {
+          "phase": 0,
+          "at": 60.0095,
+          "geometries": 296,
+          "textures": 35,
+          "programs": 49,
+          "heapBytes": 212000000
+        }
+      ],
+      "invalidFrames": 0,
+      "peakOwnerConflicts": 0,
+      "peakRetraces": 0,
+      "finalMemory": {
+        "geometries": 296,
+        "textures": 35,
+        "programs": 49,
+        "heapBytes": 212000000
+      },
+      "finalPosition": [
+        25.81000306769054,
+        0.42,
+        64.99916002415911
+      ],
+      "finalVelocity": [
+        -6.899815938567653,
+        0,
+        -0.050398550453282474
+      ],
+      "finalEquipment": {
+        "owner": {
+          "frame": 7916,
+          "owner": "ordinary",
+          "reason": null,
+          "conflicts": 0,
+          "commits": 1
+        },
+        "drive": {
+          "strain": 0,
+          "lastRelease": {
+            "type": "release",
+            "id": "afterstep-44",
+            "sequence": 44,
+            "time": 120.01666666666114,
+            "mode": "ghoststep",
+            "contactId": "physical-47",
+            "action": "footplant",
+            "perfect": false,
+            "cost": 10,
+            "deltaVelocity": {
+              "x": 1.8480000000000008,
+              "y": 0,
+              "z": -4.10338429901458e-16
+            },
+            "spent": [
+              "physical-47"
+            ],
+            "doubleStep": 0
+          }
+        },
+        "rail": {
+          "current": null,
+          "events": [
+            {
+              "id": 7,
+              "type": "reset",
+              "time": 0,
+              "reason": "BENCHMARK FIXTURE"
+            },
+            {
+              "id": 8,
+              "type": "create",
+              "time": 0,
+              "railId": "rail-1",
+              "a": "anchor-41",
+              "b": "anchor-42"
+            },
+            {
+              "id": 9,
+              "type": "create",
+              "time": 0,
+              "railId": "rail-2",
+              "a": "anchor-42",
+              "b": "anchor-43"
+            },
+            {
+              "id": 10,
+              "type": "create",
+              "time": 0,
+              "railId": "rail-3",
+              "a": "anchor-43",
+              "b": "anchor-44"
+            },
+            {
+              "id": 11,
+              "type": "attach",
+              "time": 0.03333333333333333,
+              "railId": "rail-1",
+              "speed": 11.56659866077278
+            },
+            {
+              "id": 12,
+              "type": "detach",
+              "time": 2.8666666666666614,
+              "railId": "rail-1",
+              "reason": "slingshot",
+              "velocity": {
+                "x": 7.488543216164505,
+                "y": 7.24885432161645,
+                "z": 0
+              }
+            },
+            {
+              "id": 13,
+              "type": "jump",
+              "time": 2.8666666666666614,
+              "railId": "rail-1",
+              "slingshot": true,
+              "velocity": {
+                "x": 7.488543216164505,
+                "y": 7.24885432161645,
+                "z": 0
+              }
+            }
+          ]
+        },
+        "exhaust": {
+          "bound": true,
+          "source": "bone:mixamorigHips",
+          "enabled": true,
+          "disposed": false,
+          "outletPosition": {
+            "x": 25.62740877116921,
+            "y": 1.436200347132447,
+            "z": 65.06270468351111
+          },
+          "outlets": [
+            {
+              "x": 25.672914744883087,
+              "y": 1.4360324568061908,
+              "z": 65.18661262582933
+            },
+            {
+              "x": 25.581902797455335,
+              "y": 1.436368237458703,
+              "z": 64.9387967411929
+            }
+          ],
+          "outletOffsetMeters": {
+            "x": 0,
+            "y": -0.02,
+            "z": -0.19
+          },
+          "emissionDirection": {
+            "x": -1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "activeCounts": {
+            "slivers": 0,
+            "rings": 1,
+            "threads": 5,
+            "slices": 0
+          },
+          "capacities": {
+            "slivers": 96,
+            "rings": 24,
+            "threads": 64,
+            "slices": 12
+          },
+          "activeTotal": 6,
+          "visibleDrawCalls": 0,
+          "maxDrawCalls": 3,
+          "lastRelease": {
+            "id": "afterstep-44",
+            "at": 120.01666666666114,
+            "mode": "ghoststep",
+            "perfect": false,
+            "magnitude": 1.8480000000000008,
+            "deltaVelocity": {
+              "x": 1.8480000000000008,
+              "y": 0,
+              "z": -4.10338429901458e-16
+            },
+            "direction": {
+              "x": -1,
+              "y": 0,
+              "z": 2.220446049250313e-16
+            },
+            "braking": false
+          },
+          "lastBank": {
+            "id": "afterstep-45",
+            "at": 131.93333333333047,
+            "type": "contact"
+          },
+          "lastReset": "BENCHMARK FIXTURE",
+          "emitted": 868,
+          "overwritten": 0,
+          "flash": 0,
+          "config": {
+            "quality": "high",
+            "maxShards": 96,
+            "shardCount": 48,
+            "shardSize": 1,
+            "shardOpacity": 0.25,
+            "shardSpeed": 5.5,
+            "shardLifetime": 0.68,
+            "shardRotation": 0.7,
+            "violetBalance": 0.28,
+            "outlineBrightness": 1.3,
+            "afterimageCount": 3,
+            "afterimageOpacity": 0.22,
+            "afterimageSpacing": 0.85,
+            "afterimageFade": 0.55,
+            "outletBrightness": 1.3,
+            "intensity": 1,
+            "trailLength": 7
+          },
+          "refraction": {
+            "supported": null,
+            "remaining": 0,
+            "captureCount": 0,
+            "rect": null,
+            "textureSize": 128
+          }
+        },
+        "afterimages": {
+          "bound": true,
+          "disposed": false,
+          "sourceVertices": 56190,
+          "sourceIndices": 56190,
+          "capacity": 3,
+          "poolCapacity": 4,
+          "history": 8,
+          "config": {
+            "quality": "high",
+            "maxShards": 96,
+            "shardCount": 48,
+            "shardSize": 1,
+            "shardOpacity": 0.25,
+            "shardSpeed": 5.5,
+            "shardLifetime": 0.68,
+            "shardRotation": 0.7,
+            "violetBalance": 0.28,
+            "outlineBrightness": 1.3,
+            "afterimageCount": 3,
+            "afterimageOpacity": 0.22,
+            "afterimageSpacing": 0.85,
+            "afterimageFade": 0.55,
+            "outletBrightness": 1.3,
+            "intensity": 1,
+            "trailLength": 7
+          },
+          "active": 0,
+          "activeKinds": [],
+          "footCapacity": 8,
+          "footprints": 1,
+          "pending": 0,
+          "drawCalls": 0,
+          "maxDrawCalls": 2,
+          "captures": 95,
+          "peakCaptureMs": 4.300000190734863,
+          "last": {
+            "kind": "release",
+            "id": "afterstep-44",
+            "mode": "ghoststep",
+            "count": 3
+          }
+        },
+        "camera": {
+          "mode": "exploration",
+          "clock": 131.93333333333047,
+          "manualRemaining": 0,
+          "releaseRemaining": 0,
+          "yaw": -1.5707963267948963,
+          "pitch": -0.08,
+          "composition": null
+        }
+      }
+    },
+    "errors": []
+  },
+  "comparison": {
+    "medianFrameTimeIncreasePercent": 0,
+    "p95FrameTimeIncreasePercent": 0,
+    "medianDrawCallIncrease": 3,
+    "medianSimulationCpuIncreasePercent": 16.66664900603305,
+    "medianRenderCpuIncreasePercent": 12.000007629394528
+  },
+  "finishedAt": "2026-10-22T20:49:22.591Z"
+}

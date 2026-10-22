@@ -8,6 +8,8 @@ The city/replay reliability update is [Threadrail V3](http://localhost:8766/SIGH
 
 Try the [automatic vault lane](http://localhost:8766/SIGHTLINE_BACKSPOOL_VAULT_PLAYGROUND.html?capture=backspool&vaultcourse=1): three central-plaza obstacles, a start/retry button and an observed automatic-completion counter. [Controls and evidence](docs/VAULT_COURSE.md).
 
+The latest visual candidate is [reference Afterstep VFX](http://localhost:8766/SIGHTLINE_BACKSPOOL_AFTERSTEP_VFX.html?capture=backspool&vaultcourse=1): dual lower-back outlet pulses, translucent angular shards and three historical body poses. [Implementation, tuning and verification](docs/AFTERSTEP_REFERENCE_VFX.md). The wall-fix vault playground remains available at its old URL.
+
 ## Original snapshot
 
 Separate update: `snapshots/2026-10-21-pose-binding-v14`, tagged `snapshot-2026-10-21-pose-binding-v14`. Earlier branches and tags are preserved.
