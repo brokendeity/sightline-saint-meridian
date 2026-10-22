@@ -6,6 +6,8 @@ The completed presentation update is [Threadrail V2](http://localhost:8766/SIGHT
 
 The city/replay reliability update is [Threadrail V3](http://localhost:8766/SIGHTLINE_BACKSPOOL_THREADRAIL_V3.html?capture=backspool), with [acceptance and limits](docs/THREADRAIL_V3.md). V2 remains available at its previous URL and GitHub snapshot. V3 is currently a local update.
 
+Try the [automatic vault lane](http://localhost:8766/SIGHTLINE_BACKSPOOL_VAULT_PLAYGROUND.html?capture=backspool&vaultcourse=1): three central-plaza obstacles, a start/retry button and an observed automatic-completion counter. [Controls and evidence](docs/VAULT_COURSE.md).
+
 ## Original snapshot
 
 Separate update: `snapshots/2026-10-21-pose-binding-v14`, tagged `snapshot-2026-10-21-pose-binding-v14`. Earlier branches and tags are preserved.
