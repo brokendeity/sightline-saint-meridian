@@ -19,6 +19,68 @@
           29.236407009488754
         ],
         "equipment": {
+          "motion": {
+            "position": {
+              "x": 0,
+              "y": 0.42,
+              "z": 25
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "speed": 0,
+            "grounded": true,
+            "mode": "GROUND",
+            "flow": null,
+            "advanced": null,
+            "sourcePose": {
+              "role": "relaxedIdle",
+              "sourceAnimationId": "0x281116bb",
+              "originalMotionName": "ntl_idle_loop_base_n000a_lp",
+              "time": 1.6999999999999988,
+              "duration": 3,
+              "loop": true,
+              "rate": 1,
+              "pelvisTranslation": false
+            },
+            "contact": {
+              "policy": "sole",
+              "correction": 1.0027839669746186e-10,
+              "support": 0.42
+            }
+          },
+          "camera": {
+            "mode": "exploration",
+            "clock": 1.6999999999999988,
+            "manualRemaining": 0,
+            "releaseRemaining": 0,
+            "yaw": 0,
+            "pitch": 0,
+            "composition": null
+          },
+          "afterimages": {
+            "bound": true,
+            "disposed": false,
+            "sourceVertices": 56190,
+            "sourceIndices": 56190,
+            "capacity": 3,
+            "active": 0,
+            "activeKinds": [],
+            "footCapacity": 8,
+            "footprints": 0,
+            "pending": 0,
+            "drawCalls": 0,
+            "maxDrawCalls": 2,
+            "captures": 0,
+            "peakCaptureMs": 0,
+            "last": {
+              "kind": "reset",
+              "reason": "RESPAWN"
+            }
+          },
+          "lastFailure": null,
           "impulses": [],
           "releaseEvents": [],
           "movementReady": true,
@@ -196,6 +258,63 @@
           7.355845029101572
         ],
         "equipment": {
+          "motion": {
+            "position": {
+              "x": 0,
+              "y": 0.42,
+              "z": 1.7397049999999916
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": -16.85165
+            },
+            "speed": 16.85165,
+            "grounded": true,
+            "mode": "GROUND",
+            "flow": null,
+            "advanced": null,
+            "sourcePose": null,
+            "contact": {
+              "policy": "sole",
+              "correction": 1.0027839669746186e-10,
+              "support": 0.42
+            }
+          },
+          "camera": {
+            "mode": "exploration",
+            "clock": 3.566666666666659,
+            "manualRemaining": 0,
+            "releaseRemaining": 0.516666666666667,
+            "yaw": 0,
+            "pitch": 0,
+            "composition": null
+          },
+          "afterimages": {
+            "bound": true,
+            "disposed": false,
+            "sourceVertices": 56190,
+            "sourceIndices": 56190,
+            "capacity": 3,
+            "active": 1,
+            "activeKinds": [
+              "ghoststep"
+            ],
+            "footCapacity": 8,
+            "footprints": 1,
+            "pending": 0,
+            "drawCalls": 2,
+            "maxDrawCalls": 2,
+            "captures": 1,
+            "peakCaptureMs": 3.5999999046325684,
+            "last": {
+              "kind": "release",
+              "id": "afterstep-6",
+              "mode": "standard",
+              "count": 1
+            }
+          },
+          "lastFailure": null,
           "impulses": [
             {
               "id": "physical-2",
@@ -797,6 +916,63 @@
           4.939704999999992
         ],
         "equipment": {
+          "motion": {
+            "position": {
+              "x": 0,
+              "y": 0.42,
+              "z": 1.7397049999999916
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": -16.85165
+            },
+            "speed": 16.85165,
+            "grounded": true,
+            "mode": "GROUND",
+            "flow": null,
+            "advanced": null,
+            "sourcePose": null,
+            "contact": {
+              "policy": "sole",
+              "correction": 1.0027839669746186e-10,
+              "support": 0.42
+            }
+          },
+          "camera": {
+            "mode": "exploration",
+            "clock": 3.566666666666659,
+            "manualRemaining": 0,
+            "releaseRemaining": 0.516666666666667,
+            "yaw": 0,
+            "pitch": 0,
+            "composition": null
+          },
+          "afterimages": {
+            "bound": true,
+            "disposed": false,
+            "sourceVertices": 56190,
+            "sourceIndices": 56190,
+            "capacity": 3,
+            "active": 1,
+            "activeKinds": [
+              "ghoststep"
+            ],
+            "footCapacity": 8,
+            "footprints": 1,
+            "pending": 0,
+            "drawCalls": 2,
+            "maxDrawCalls": 2,
+            "captures": 1,
+            "peakCaptureMs": 3.5999999046325684,
+            "last": {
+              "kind": "release",
+              "id": "afterstep-6",
+              "mode": "standard",
+              "count": 1
+            }
+          },
+          "lastFailure": null,
           "impulses": [
             {
               "id": "physical-2",
@@ -1398,6 +1574,94 @@
           28
         ],
         "equipment": {
+          "motion": {
+            "position": {
+              "x": 0,
+              "y": 1.8733333333333357,
+              "z": 25
+            },
+            "velocity": {
+              "x": 0,
+              "y": -0.7666666666666665,
+              "z": 0
+            },
+            "speed": 0.7666666666666665,
+            "grounded": false,
+            "mode": "AIR",
+            "flow": null,
+            "advanced": null,
+            "sourcePose": {
+              "role": "fall",
+              "sourceAnimationId": "0x28113cde",
+              "originalMotionName": "air_fall_base_begin_n000a",
+              "time": 0.9500000000000004,
+              "duration": 1.3333333730697632,
+              "loop": false,
+              "rate": 1,
+              "pelvisTranslation": true
+            },
+            "contact": {
+              "policy": "sole",
+              "correction": -0.006051588943305073,
+              "support": 0.42
+            }
+          },
+          "camera": {
+            "mode": "drive",
+            "clock": 4.266666666666657,
+            "manualRemaining": 0.8666666666666671,
+            "releaseRemaining": 0.5166666666666666,
+            "yaw": 0,
+            "pitch": -0.08,
+            "composition": {
+              "owner": "threadrail",
+              "inputYaw": 0,
+              "inputPitch": -0.08,
+              "mode": "drive",
+              "position": {
+                "x": 0.28,
+                "y": 4.124913977541506,
+                "z": 31.18017057907624
+              },
+              "focus": {
+                "x": 0,
+                "y": 3.0294428749326356,
+                "z": 25
+              },
+              "origin": {
+                "x": 0,
+                "y": 3.0233333333333356,
+                "z": 25
+              },
+              "fov": 60.207,
+              "followRate": 15
+            }
+          },
+          "afterimages": {
+            "bound": true,
+            "disposed": false,
+            "sourceVertices": 56190,
+            "sourceIndices": 56190,
+            "capacity": 3,
+            "active": 1,
+            "activeKinds": [
+              "ghoststep"
+            ],
+            "footCapacity": 8,
+            "footprints": 0,
+            "pending": 0,
+            "drawCalls": 1,
+            "maxDrawCalls": 2,
+            "captures": 2,
+            "peakCaptureMs": 3.5999999046325684,
+            "last": {
+              "kind": "release",
+              "id": "afterstep-8",
+              "mode": "brake",
+              "count": 1
+            }
+          },
+          "lastFailure": null,
           "impulses": [],
           "releaseEvents": [
             {
@@ -1594,8 +1858,8 @@
               "remaining": 0.14666666666666667,
               "captureCount": 3,
               "rect": {
-                "x": 555,
-                "y": 392,
+                "x": 553,
+                "y": 396,
                 "width": 128,
                 "height": 128
               },
@@ -1757,11 +2021,95 @@
           0
         ],
         "camera": [
-          -33.24991962550621,
-          8.502846659262207,
-          63.90179026379977
+          -32.81971712082027,
+          8.417445734134766,
+          65.26134317056133
         ],
         "equipment": {
+          "motion": {
+            "position": {
+              "x": -25.93560376336019,
+              "y": 6.046439623663981,
+              "z": 65
+            },
+            "velocity": {
+              "x": 11.502773754996594,
+              "y": 1.1502773754996587,
+              "z": 0
+            },
+            "speed": 11.560144553560948,
+            "grounded": false,
+            "mode": "AIR",
+            "flow": null,
+            "advanced": null,
+            "sourcePose": {
+              "role": "railGrind",
+              "sourceAnimationId": "0x2811926e",
+              "originalMotionName": "pkr000_mgc_move_slide_f000a_lp",
+              "time": 0.6666666666666554,
+              "duration": 2,
+              "loop": true,
+              "rate": 1,
+              "pelvisTranslation": true
+            },
+            "contact": {
+              "policy": "rail sole",
+              "correction": 0.0010931908180911165,
+              "support": 6.046439623663981
+            }
+          },
+          "camera": {
+            "mode": "rail",
+            "clock": 4.666666666666655,
+            "manualRemaining": 0,
+            "releaseRemaining": 0,
+            "yaw": -1.5707963267948966,
+            "pitch": -0.08,
+            "composition": {
+              "owner": "threadrail",
+              "inputYaw": -1.5707963267948966,
+              "inputPitch": -0.08,
+              "mode": "rail",
+              "position": {
+                "x": -32.35005911113876,
+                "y": 8.476599965357837,
+                "z": 65.28
+              },
+              "focus": {
+                "x": -25.671487678911213,
+                "y": 7.14117151576438,
+                "z": 65
+              },
+              "origin": {
+                "x": -25.93560376336019,
+                "y": 7.196439623663981,
+                "z": 65
+              },
+              "fov": 63.12123902946146,
+              "followRate": 19
+            }
+          },
+          "afterimages": {
+            "bound": true,
+            "disposed": false,
+            "sourceVertices": 56190,
+            "sourceIndices": 56190,
+            "capacity": 3,
+            "active": 0,
+            "activeKinds": [],
+            "footCapacity": 8,
+            "footprints": 0,
+            "pending": 0,
+            "drawCalls": 0,
+            "maxDrawCalls": 2,
+            "captures": 2,
+            "peakCaptureMs": 3.5999999046325684,
+            "last": {
+              "kind": "reset",
+              "reason": "RESPAWN"
+            }
+          },
+          "lastFailure": null,
           "impulses": [],
           "releaseEvents": [],
           "movementReady": true,
@@ -2074,8 +2422,8 @@
               "remaining": 0,
               "captureCount": 3,
               "rect": {
-                "x": 555,
-                "y": 392,
+                "x": 553,
+                "y": 396,
                 "width": 128,
                 "height": 128
               },
@@ -2325,11 +2673,73 @@
           0
         ],
         "camera": [
-          0.4448957411437639,
-          2.3996374555033047,
-          29.23640729594936
+          0.4448957409659509,
+          2.3996374553653954,
+          29.236407296194358
         ],
         "equipment": {
+          "motion": {
+            "position": {
+              "x": 0,
+              "y": 0.42,
+              "z": 25
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "speed": 0,
+            "grounded": true,
+            "mode": "GROUND",
+            "flow": null,
+            "advanced": null,
+            "sourcePose": {
+              "role": "relaxedIdle",
+              "sourceAnimationId": "0x281116bb",
+              "originalMotionName": "ntl_idle_loop_base_n000a_lp",
+              "time": 0.33333333333331616,
+              "duration": 3,
+              "loop": true,
+              "rate": 1,
+              "pelvisTranslation": false
+            },
+            "contact": {
+              "policy": "sole",
+              "correction": 1.0120593252338494e-10,
+              "support": 0.42
+            }
+          },
+          "camera": {
+            "mode": "exploration",
+            "clock": 6.333333333333316,
+            "manualRemaining": 0,
+            "releaseRemaining": 0,
+            "yaw": -1.5707963267948966,
+            "pitch": -0.08,
+            "composition": null
+          },
+          "afterimages": {
+            "bound": true,
+            "disposed": false,
+            "sourceVertices": 56190,
+            "sourceIndices": 56190,
+            "capacity": 3,
+            "active": 0,
+            "activeKinds": [],
+            "footCapacity": 8,
+            "footprints": 0,
+            "pending": 0,
+            "drawCalls": 0,
+            "maxDrawCalls": 2,
+            "captures": 2,
+            "peakCaptureMs": 3.5999999046325684,
+            "last": {
+              "kind": "reset",
+              "reason": "RESPAWN"
+            }
+          },
+          "lastFailure": null,
           "impulses": [],
           "releaseEvents": [],
           "movementReady": true,
@@ -2486,8 +2896,8 @@
               "remaining": 0,
               "captureCount": 3,
               "rect": {
-                "x": 555,
-                "y": 392,
+                "x": 553,
+                "y": 396,
                 "width": 128,
                 "height": 128
               },
@@ -2742,6 +3152,68 @@
           29.236407251786144
         ],
         "equipment": {
+          "motion": {
+            "position": {
+              "x": 0,
+              "y": 0.42,
+              "z": 25
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "speed": 0,
+            "grounded": true,
+            "mode": "GROUND",
+            "flow": null,
+            "advanced": null,
+            "sourcePose": {
+              "role": "relaxedIdle",
+              "sourceAnimationId": "0x281116bb",
+              "originalMotionName": "ntl_idle_loop_base_n000a_lp",
+              "time": 1.999999999999977,
+              "duration": 3,
+              "loop": true,
+              "rate": 1,
+              "pelvisTranslation": false
+            },
+            "contact": {
+              "policy": "sole",
+              "correction": 1.0094658442483251e-10,
+              "support": 0.42
+            }
+          },
+          "camera": {
+            "mode": "exploration",
+            "clock": 7.999999999999977,
+            "manualRemaining": 0,
+            "releaseRemaining": 0,
+            "yaw": -1.5707963267948966,
+            "pitch": -0.08,
+            "composition": null
+          },
+          "afterimages": {
+            "bound": true,
+            "disposed": false,
+            "sourceVertices": 56190,
+            "sourceIndices": 56190,
+            "capacity": 3,
+            "active": 0,
+            "activeKinds": [],
+            "footCapacity": 8,
+            "footprints": 0,
+            "pending": 0,
+            "drawCalls": 0,
+            "maxDrawCalls": 2,
+            "captures": 2,
+            "peakCaptureMs": 3.5999999046325684,
+            "last": {
+              "kind": "reset",
+              "reason": "RESPAWN"
+            }
+          },
+          "lastFailure": null,
           "impulses": [],
           "releaseEvents": [],
           "movementReady": true,
@@ -2898,8 +3370,8 @@
               "remaining": 0,
               "captureCount": 3,
               "rect": {
-                "x": 555,
-                "y": 392,
+                "x": 553,
+                "y": 396,
                 "width": 128,
                 "height": 128
               },

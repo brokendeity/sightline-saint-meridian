@@ -56,7 +56,11 @@
         var answer = api[name].apply(api, args);
         if (answer === false || answer === null || (typeof answer === 'number' && !Number.isFinite(answer))) return { ok: false };
         if (answer && typeof answer === 'object' && (answer.ok === false || answer.valid === false || answer.clear === false || answer.supported === false || answer.destroyed === true)) return { ok: false };
-        return { ok: true, answer: answer };
+        if (answer && typeof answer.then === 'function') return { ok: false };
+        var explicit = answer === true || name === 'supportAt' && typeof answer === 'number' && Number.isFinite(answer) ||
+          answer && typeof answer === 'object' && (answer.ok === true || answer.valid === true || answer.clear === true || answer.supported === true ||
+            name === 'validateAnchor' && (answer.ownerId !== undefined || answer.revision !== undefined || answer.position !== undefined));
+        return { ok: !!explicit, answer: answer };
       } catch (_) { return { ok: false }; }
     }
     function anchorReason(a) {

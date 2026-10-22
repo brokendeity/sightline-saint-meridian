@@ -478,6 +478,94 @@
         "pose": "forspoken-flow-jump"
       },
       "equipment": {
+        "motion": {
+          "position": {
+            "x": 0,
+            "y": 8.665833333333333,
+            "z": 25
+          },
+          "velocity": {
+            "x": 0,
+            "y": 5.700000000000001,
+            "z": 0
+          },
+          "speed": 5.700000000000001,
+          "grounded": false,
+          "mode": "AIR",
+          "flow": null,
+          "advanced": null,
+          "sourcePose": {
+            "role": "jump",
+            "sourceAnimationId": "0x28113cdc",
+            "originalMotionName": "air_jump_begin_inplace_n000a",
+            "time": 1.99999,
+            "duration": 2,
+            "loop": false,
+            "rate": 1,
+            "pelvisTranslation": true
+          },
+          "contact": {
+            "policy": "sole",
+            "correction": 0,
+            "support": 0.42
+          }
+        },
+        "camera": {
+          "mode": "drive",
+          "clock": 1.2333333333333338,
+          "manualRemaining": 0,
+          "releaseRemaining": 0.4500000000000004,
+          "yaw": 0,
+          "pitch": -0.08,
+          "composition": {
+            "owner": "threadrail",
+            "inputYaw": 0,
+            "inputPitch": -0.08,
+            "mode": "drive",
+            "position": {
+              "x": 0.28,
+              "y": 10.723408820825183,
+              "z": 31.18017057907624
+            },
+            "focus": {
+              "x": 0,
+              "y": 9.627937718216312,
+              "z": 25
+            },
+            "origin": {
+              "x": 0,
+              "y": 9.815833333333334,
+              "z": 25
+            },
+            "fov": 61.539,
+            "followRate": 15
+          }
+        },
+        "afterimages": {
+          "bound": true,
+          "disposed": false,
+          "sourceVertices": 56190,
+          "sourceIndices": 56190,
+          "capacity": 3,
+          "active": 1,
+          "activeKinds": [
+            "ghoststep"
+          ],
+          "footCapacity": 8,
+          "footprints": 0,
+          "pending": 0,
+          "drawCalls": 1,
+          "maxDrawCalls": 2,
+          "captures": 2,
+          "peakCaptureMs": 3.6999998092651367,
+          "last": {
+            "kind": "release",
+            "id": "afterstep-4",
+            "mode": "standard",
+            "count": 1
+          }
+        },
+        "lastFailure": null,
         "impulses": [],
         "releaseEvents": [
           {
@@ -901,6 +989,72 @@
           "pose": "forspoken-flow-frontFlip"
         },
         "equipment": {
+          "motion": {
+            "position": {
+              "x": 0,
+              "y": 2.7870833333333334,
+              "z": 23.916666666666668
+            },
+            "velocity": {
+              "x": 0,
+              "y": 8.433333333333335,
+              "z": -5
+            },
+            "speed": 9.804137448603582,
+            "grounded": false,
+            "mode": "AIR",
+            "flow": "frontFlip",
+            "advanced": null,
+            "sourcePose": {
+              "role": "frontFlip",
+              "sourceAnimationId": "0x2811ec86",
+              "originalMotionName": "pkr_mgc_act_cancel_base_f000a",
+              "time": 0.25999999999999995,
+              "duration": 1.5,
+              "loop": false,
+              "rate": 1.2,
+              "pelvisTranslation": true
+            },
+            "contact": {
+              "policy": "sole",
+              "correction": 0,
+              "support": 0.42
+            }
+          },
+          "camera": {
+            "mode": "exploration",
+            "clock": 1.4499999999999997,
+            "manualRemaining": 0,
+            "releaseRemaining": 0,
+            "yaw": 0,
+            "pitch": -0.08,
+            "composition": null
+          },
+          "afterimages": {
+            "bound": true,
+            "disposed": false,
+            "sourceVertices": 56190,
+            "sourceIndices": 56190,
+            "capacity": 3,
+            "active": 0,
+            "activeKinds": [],
+            "footCapacity": 8,
+            "footprints": 0,
+            "pending": 0,
+            "drawCalls": 0,
+            "maxDrawCalls": 2,
+            "captures": 2,
+            "peakCaptureMs": 3.6999998092651367,
+            "last": {
+              "kind": "reset",
+              "reason": "INPUT RESET"
+            }
+          },
+          "lastFailure": {
+            "time": 1.3333333333333335,
+            "text": "MOVEMENT COMMITTED",
+            "owner": "flow"
+          },
           "impulses": [
             {
               "id": "physical-7",
@@ -1509,6 +1663,98 @@
           "pose": "forspoken-flow-frontFlip"
         },
         "equipment": {
+          "motion": {
+            "position": {
+              "x": 0,
+              "y": 4.05625,
+              "z": 23.377453405974762
+            },
+            "velocity": {
+              "x": 0,
+              "y": 11.733333333333336,
+              "z": -5.6507583442217095
+            },
+            "speed": 13.023140211788494,
+            "grounded": false,
+            "mode": "AIR",
+            "flow": null,
+            "advanced": null,
+            "sourcePose": {
+              "role": "frontFlip",
+              "sourceAnimationId": "0x2811ec86",
+              "originalMotionName": "pkr_mgc_act_cancel_base_f000a",
+              "time": 0.37999999999999945,
+              "duration": 1.5,
+              "loop": false,
+              "rate": 1.2,
+              "pelvisTranslation": true
+            },
+            "contact": {
+              "policy": "sole",
+              "correction": 0,
+              "support": 0.42
+            }
+          },
+          "camera": {
+            "mode": "drive",
+            "clock": 1.5499999999999994,
+            "manualRemaining": 0,
+            "releaseRemaining": 0.4500000000000004,
+            "yaw": 0,
+            "pitch": -0.08,
+            "composition": {
+              "owner": "threadrail",
+              "inputYaw": 0,
+              "inputPitch": -0.08,
+              "mode": "drive",
+              "position": {
+                "x": 0.28,
+                "y": 5.932168596133688,
+                "z": 29.44777938255542
+              },
+              "focus": {
+                "x": 0,
+                "y": 4.8366974935248175,
+                "z": 23.26760880347918
+              },
+              "origin": {
+                "x": 0,
+                "y": 5.206250000000001,
+                "z": 23.377453405974762
+              },
+              "fov": 63.51624785718289,
+              "followRate": 15
+            }
+          },
+          "afterimages": {
+            "bound": true,
+            "disposed": false,
+            "sourceVertices": 56190,
+            "sourceIndices": 56190,
+            "capacity": 3,
+            "active": 1,
+            "activeKinds": [
+              "ghoststep"
+            ],
+            "footCapacity": 8,
+            "footprints": 0,
+            "pending": 0,
+            "drawCalls": 1,
+            "maxDrawCalls": 2,
+            "captures": 3,
+            "peakCaptureMs": 3.6999998092651367,
+            "last": {
+              "kind": "release",
+              "id": "afterstep-11",
+              "mode": "standard",
+              "count": 1
+            }
+          },
+          "lastFailure": {
+            "time": 1.3333333333333335,
+            "text": "MOVEMENT COMMITTED",
+            "owner": "flow"
+          },
           "impulses": [
             {
               "id": "physical-8",
@@ -2127,6 +2373,72 @@
           "pose": "forspoken-flow-wallClimb"
         },
         "equipment": {
+          "motion": {
+            "position": {
+              "x": 30,
+              "y": 0.6268398079999999,
+              "z": 21.6263825408
+            },
+            "velocity": {
+              "x": 0,
+              "y": 1.326407679999999,
+              "z": -0.2553016319999557
+            },
+            "speed": 1.350753958670794,
+            "grounded": false,
+            "mode": "AIR",
+            "flow": null,
+            "advanced": "wall",
+            "sourcePose": {
+              "role": "wallClimb",
+              "sourceAnimationId": "0x2811ae77",
+              "originalMotionName": "pkr_mgc_climb_base_f000a",
+              "time": 0.12,
+              "duration": 1.8833333253860474,
+              "loop": true,
+              "rate": 1,
+              "pelvisTranslation": true
+            },
+            "contact": {
+              "policy": "sole",
+              "correction": -0.002261394756219448,
+              "support": 0.42
+            }
+          },
+          "camera": {
+            "mode": "exploration",
+            "clock": 2.28333333333333,
+            "manualRemaining": 0,
+            "releaseRemaining": 0,
+            "yaw": 0,
+            "pitch": -0.08,
+            "composition": null
+          },
+          "afterimages": {
+            "bound": true,
+            "disposed": false,
+            "sourceVertices": 56190,
+            "sourceIndices": 56190,
+            "capacity": 3,
+            "active": 0,
+            "activeKinds": [],
+            "footCapacity": 8,
+            "footprints": 0,
+            "pending": 0,
+            "drawCalls": 0,
+            "maxDrawCalls": 2,
+            "captures": 4,
+            "peakCaptureMs": 3.6999998092651367,
+            "last": {
+              "kind": "reset",
+              "reason": "INPUT RESET"
+            }
+          },
+          "lastFailure": {
+            "time": 2.1499999999999972,
+            "text": "MOVEMENT COMMITTED",
+            "owner": "flow"
+          },
           "impulses": [
             {
               "id": "physical-13",
@@ -2690,6 +3002,98 @@
           "pose": "forspoken-flow-jump"
         },
         "equipment": {
+          "motion": {
+            "position": {
+              "x": 30,
+              "y": 1.1853139093333334,
+              "z": 21.501138597371632
+            },
+            "velocity": {
+              "x": 0,
+              "y": 4.626407680000002,
+              "z": -1.9100881346408147
+            },
+            "speed": 5.005205760371758,
+            "grounded": false,
+            "mode": "AIR",
+            "flow": null,
+            "advanced": null,
+            "sourcePose": {
+              "role": "jump",
+              "sourceAnimationId": "0x28113cdc",
+              "originalMotionName": "air_jump_begin_inplace_n000a",
+              "time": 1.99999,
+              "duration": 2,
+              "loop": false,
+              "rate": 1,
+              "pelvisTranslation": true
+            },
+            "contact": {
+              "policy": "sole",
+              "correction": -0.002261394756219448,
+              "support": 0.42
+            }
+          },
+          "camera": {
+            "mode": "drive",
+            "clock": 2.3833333333333298,
+            "manualRemaining": 0,
+            "releaseRemaining": 0.4500000000000006,
+            "yaw": 0,
+            "pitch": -0.08,
+            "composition": {
+              "owner": "threadrail",
+              "inputYaw": 0,
+              "inputPitch": -0.08,
+              "mode": "drive",
+              "position": {
+                "x": 30.28,
+                "y": 3.275214055958419,
+                "z": 27.655768653639267
+              },
+              "focus": {
+                "x": 30,
+                "y": 2.1797429533495483,
+                "z": 21.475598074563027
+              },
+              "origin": {
+                "x": 30,
+                "y": 2.3353139093333333,
+                "z": 21.501138597371632
+              },
+              "fov": 61.351405555300374,
+              "followRate": 15
+            }
+          },
+          "afterimages": {
+            "bound": true,
+            "disposed": false,
+            "sourceVertices": 56190,
+            "sourceIndices": 56190,
+            "capacity": 3,
+            "active": 1,
+            "activeKinds": [
+              "ghoststep"
+            ],
+            "footCapacity": 8,
+            "footprints": 0,
+            "pending": 0,
+            "drawCalls": 1,
+            "maxDrawCalls": 2,
+            "captures": 5,
+            "peakCaptureMs": 3.6999998092651367,
+            "last": {
+              "kind": "release",
+              "id": "afterstep-18",
+              "mode": "standard",
+              "count": 1
+            }
+          },
+          "lastFailure": {
+            "time": 2.1499999999999972,
+            "text": "MOVEMENT COMMITTED",
+            "owner": "flow"
+          },
           "impulses": [],
           "releaseEvents": [
             {

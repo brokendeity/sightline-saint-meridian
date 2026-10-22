@@ -1,5 +1,5 @@
 {
-  "startedAt": "2026-10-22T06:52:18.536Z",
+  "startedAt": "2026-10-22T11:31:32.735Z",
   "method": {
     "viewport": [
       1280,
@@ -36,66 +36,69 @@
       "buildSha256": "3c852ba5de9f4262ac9b290c941ca686bd3f21fae64d477171ede4ecd8a3a03b",
       "buildSha256After": "3c852ba5de9f4262ac9b290c941ca686bd3f21fae64d477171ede4ecd8a3a03b",
       "result": {
-        "wallSeconds": 60.00550000019073,
+        "wallSeconds": 60.00040000009537,
         "rendererInfo": {
           "webgl2": true,
           "vendor": "Google Inc. (Apple)",
           "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Max, Unspecified Version)"
         },
         "frameIntervalsMs": {
-          "n": 7195,
+          "n": 7192,
           "p50": 8.30000000000291,
-          "p95": 9.60000000000582,
-          "max": 18.19999999999709
+          "p95": 9.299999999999272,
+          "max": 26.30000000000291
         },
         "simulationCpuMs": {
           "n": 3601,
           "p50": 1,
-          "p95": 5.400000095367432,
-          "max": 7.199999809265137
+          "p95": 5.700000286102295,
+          "max": 10.099999904632568
         },
         "renderSubmissionCpuMs": {
-          "n": 7200,
+          "n": 7197,
           "p50": 1.8000001907348633,
-          "p95": 2.0999999046325684,
-          "max": 5.600000381469727
+          "p95": 2.1000003814697266,
+          "max": 14
         },
         "visibleSceneDrawCalls": {
-          "n": 7200,
-          "p50": 169,
-          "p95": 173,
-          "max": 174
+          "n": 7197,
+          "p50": 172,
+          "p95": 174,
+          "max": 175
         },
         "visibleSceneTriangles": {
-          "n": 7200,
-          "p50": 640257,
-          "p95": 676099,
-          "max": 676123
+          "n": 7197,
+          "p50": 676115,
+          "p95": 676203,
+          "max": 676235
         },
         "droppedSimulationSeconds": 0,
         "frameExcessAbove250msSeconds": 0,
         "gpuTimerAvailable": true,
         "gpuTimingMs": {
           "n": 450,
-          "p50": 4.562833,
-          "p95": 8.23725,
-          "max": 11.932624
+          "p50": 3.827708,
+          "p95": 4.920708,
+          "max": 6.853833
         },
         "peakBank": 0,
         "peakVFX": 0,
+        "peakBodies": 0,
+        "peakFootfalls": 0,
+        "peakCaptureCpuMs": 0,
         "peakRails": 0,
         "peakDebris": 0,
         "framesWithCombatAction": 0,
         "fixturePhases": [],
         "finalPosition": [
-          10.253702757476868,
+          10.249407126109057,
           0.42,
-          25.422248281226814
+          25.428072794181116
         ],
         "finalVelocity": [
-          0.002850995397831094,
+          -0.0019006646934635364,
           0,
-          4.033332325708237
+          4.0333328854994726
         ],
         "finalEquipment": null
       },
@@ -103,73 +106,76 @@
     },
     {
       "file": "SIGHTLINE_BACKSPOOL_THREADRAIL_CANDIDATE.html",
-      "buildSha256": "b702d85b7c0da20d5fed4a7ce5ea2365005967beb63e66443575c96d007fb179",
-      "buildSha256After": "b702d85b7c0da20d5fed4a7ce5ea2365005967beb63e66443575c96d007fb179",
+      "buildSha256": "a9128294928c13bf91f95162d3b23d12ebe4432e878b87045f3150caff4ae163",
+      "buildSha256After": "a9128294928c13bf91f95162d3b23d12ebe4432e878b87045f3150caff4ae163",
       "result": {
-        "wallSeconds": 60.00099999990463,
+        "wallSeconds": 60.0023999997139,
         "rendererInfo": {
           "webgl2": true,
           "vendor": "Google Inc. (Apple)",
           "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Max, Unspecified Version)"
         },
         "frameIntervalsMs": {
-          "n": 7198,
+          "n": 7196,
           "p50": 8.30000000000291,
-          "p95": 9.700000000004366,
-          "max": 10.400000000008731
+          "p95": 9.5,
+          "max": 10.400000000001455
         },
         "simulationCpuMs": {
-          "n": 3600,
-          "p50": 1.200000286102295,
+          "n": 3601,
+          "p50": 1.3000001907348633,
           "p95": 5.5,
-          "max": 8.099999904632568
+          "max": 7.900000095367432
         },
         "renderSubmissionCpuMs": {
-          "n": 7203,
+          "n": 7201,
           "p50": 1.799999713897705,
-          "p95": 2.0999999046325684,
-          "max": 5.200000286102295
+          "p95": 2,
+          "max": 2.8000001907348633
         },
         "visibleSceneDrawCalls": {
-          "n": 7203,
-          "p50": 171,
-          "p95": 177,
-          "max": 178
+          "n": 7201,
+          "p50": 168,
+          "p95": 174,
+          "max": 177
         },
         "visibleSceneTriangles": {
-          "n": 7203,
-          "p50": 640257,
-          "p95": 658318,
-          "max": 658374
+          "n": 7201,
+          "p50": 622236,
+          "p95": 676203,
+          "max": 676291
         },
         "droppedSimulationSeconds": 0,
         "frameExcessAbove250msSeconds": 0,
         "gpuTimerAvailable": true,
         "gpuTimingMs": {
-          "n": 451,
-          "p50": 4.423249,
-          "p95": 7.226416,
-          "max": 9.473875
+          "n": 450,
+          "p50": 4.008125,
+          "p95": 5.391958,
+          "max": 9.335375
         },
         "peakBank": 1,
         "peakVFX": 6,
+        "peakBodies": 0,
+        "peakFootfalls": 1,
+        "peakCaptureCpuMs": 0,
         "peakRails": 0,
         "peakDebris": 0,
         "framesWithCombatAction": 0,
         "fixturePhases": [],
         "finalPosition": [
-          10.265154014537764,
+          10.251071916621669,
           0.42,
-          25.419428986965926
+          25.438248160835393
         ],
         "finalVelocity": [
-          0.02439169967658662,
+          -0.007919426392265196,
           0,
-          4.0332595779052784
+          4.033325558452155
         ],
         "finalEquipment": {
           "owner": {
-            "frame": 4314,
+            "frame": 4315,
             "owner": "ordinary",
             "reason": null,
             "conflicts": 0,
@@ -196,9 +202,9 @@
             "enabled": true,
             "disposed": false,
             "outletPosition": {
-              "x": 10.199047172744576,
-              "y": 1.4222156497932112,
-              "z": 25.159789045062915
+              "x": 10.191393361344405,
+              "y": 1.4293943031642051,
+              "z": 25.18318915350775
             },
             "outletOffsetMeters": {
               "x": 0,
@@ -241,6 +247,35 @@
               "rect": null,
               "textureSize": 128
             }
+          },
+          "afterimages": {
+            "bound": true,
+            "disposed": false,
+            "sourceVertices": 56190,
+            "sourceIndices": 56190,
+            "capacity": 3,
+            "active": 0,
+            "activeKinds": [],
+            "footCapacity": 8,
+            "footprints": 0,
+            "pending": 0,
+            "drawCalls": 0,
+            "maxDrawCalls": 2,
+            "captures": 0,
+            "peakCaptureMs": 0,
+            "last": {
+              "kind": "reset",
+              "reason": "BENCHMARK RESET"
+            }
+          },
+          "camera": {
+            "mode": "exploration",
+            "clock": 71.91666666666387,
+            "manualRemaining": 0,
+            "releaseRemaining": 0,
+            "yaw": 0,
+            "pitch": 0,
+            "composition": null
           }
         }
       },
@@ -251,68 +286,71 @@
     "seconds": 60,
     "description": "Three twenty-second phases: Flow with simulated RB pulses; sparring combos/guard/evade; physical course rail fixture with simulated X/RB/jump. Periodic surface impacts. Physical setup positions are test fixtures, subsequent actions use simulated standard controller buttons.",
     "result": {
-      "wallSeconds": 60.00669999990464,
+      "wallSeconds": 60.005999999809255,
       "rendererInfo": {
         "webgl2": true,
         "vendor": "Google Inc. (Apple)",
         "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Max, Unspecified Version)"
       },
       "frameIntervalsMs": {
-        "n": 7198,
+        "n": 7195,
         "p50": 8.30000000000291,
-        "p95": 9.39999999999418,
-        "max": 16.69999999999709
+        "p95": 9.5,
+        "max": 17
       },
       "simulationCpuMs": {
-        "n": 3600,
-        "p50": 1.5,
-        "p95": 5.800000190734863,
-        "max": 19
+        "n": 3601,
+        "p50": 1.5999999046325684,
+        "p95": 5.5,
+        "max": 20.300000190734863
       },
       "renderSubmissionCpuMs": {
-        "n": 7203,
-        "p50": 1.9000000953674316,
-        "p95": 2.1999998092651367,
-        "max": 10.299999713897705
+        "n": 7200,
+        "p50": 2,
+        "p95": 2.200000286102295,
+        "max": 7.400000095367432
       },
       "visibleSceneDrawCalls": {
-        "n": 7203,
-        "p50": 189,
-        "p95": 218,
-        "max": 236
+        "n": 7200,
+        "p50": 191,
+        "p95": 204,
+        "max": 237
       },
       "visibleSceneTriangles": {
-        "n": 7203,
-        "p50": 652391,
-        "p95": 760886,
-        "max": 808800
+        "n": 7200,
+        "p50": 676455,
+        "p95": 744485,
+        "max": 852478
       },
       "droppedSimulationSeconds": 0,
       "frameExcessAbove250msSeconds": 0,
       "gpuTimerAvailable": true,
       "gpuTimingMs": {
-        "n": 451,
-        "p50": 4.115875,
-        "p95": 5.834458,
-        "max": 26.223124
+        "n": 450,
+        "p50": 4.188666,
+        "p95": 6.78,
+        "max": 9.209
       },
       "peakBank": 5,
       "peakVFX": 33,
+      "peakBodies": 3,
+      "peakFootfalls": 2,
+      "peakCaptureCpuMs": 3.5999999046325684,
       "peakRails": 3,
       "peakDebris": 32,
-      "framesWithCombatAction": 374,
+      "framesWithCombatAction": 373,
       "fixturePhases": [
         {
           "phase": 0,
-          "at": 0.014400000095367432
+          "at": 0.00019999980926513672
         },
         {
           "phase": 1,
-          "at": 20.01540000009537
+          "at": 20.005699999809266
         },
         {
           "phase": 2,
-          "at": 40.0152000002861
+          "at": 40.00640000009537
         }
       ],
       "finalPosition": [
@@ -327,7 +365,7 @@
       ],
       "finalEquipment": {
         "owner": {
-          "frame": 7915,
+          "frame": 7916,
           "owner": "ordinary",
           "reason": null,
           "conflicts": 0,
@@ -337,21 +375,21 @@
           "strain": 0,
           "lastRelease": {
             "type": "release",
-            "id": "afterstep-37",
-            "sequence": 37,
+            "id": "afterstep-42",
+            "sequence": 42,
             "time": 120.01666666666114,
-            "mode": "standard",
-            "contactId": "physical-53",
+            "mode": "ghoststep",
+            "contactId": "physical-45",
             "action": "footplant",
             "perfect": false,
-            "cost": 8,
+            "cost": 10,
             "deltaVelocity": {
-              "x": 0.5880000000000001,
+              "x": 1.8480000000000008,
               "y": 0,
-              "z": -1.3056222769591843e-16
+              "z": -4.10338429901458e-16
             },
             "spent": [
-              "physical-53"
+              "physical-45"
             ],
             "doubleStep": 0
           }
@@ -370,24 +408,24 @@
               "type": "create",
               "time": 0,
               "railId": "rail-1",
-              "a": "anchor-48",
-              "b": "anchor-49"
+              "a": "anchor-39",
+              "b": "anchor-40"
             },
             {
               "id": 9,
               "type": "create",
               "time": 0,
               "railId": "rail-2",
-              "a": "anchor-49",
-              "b": "anchor-50"
+              "a": "anchor-40",
+              "b": "anchor-41"
             },
             {
               "id": 10,
               "type": "create",
               "time": 0,
               "railId": "rail-3",
-              "a": "anchor-50",
-              "b": "anchor-51"
+              "a": "anchor-41",
+              "b": "anchor-42"
             },
             {
               "id": 11,
@@ -428,9 +466,9 @@
           "enabled": true,
           "disposed": false,
           "outletPosition": {
-            "x": 25.75261271170561,
-            "y": 1.4435143264454915,
-            "z": 64.96057034860792
+            "x": 25.752613615073468,
+            "y": 1.4435320595906915,
+            "z": 64.96056795663934
           },
           "outletOffsetMeters": {
             "x": 0,
@@ -438,9 +476,9 @@
             "z": -0.19
           },
           "emissionDirection": {
-            "x": -0.9999999999999999,
+            "x": -1,
             "y": 0,
-            "z": 2.2204460492503128e-16
+            "z": 2.220446049250313e-16
           },
           "activeCounts": {
             "slivers": 0,
@@ -458,43 +496,69 @@
           "visibleDrawCalls": 0,
           "maxDrawCalls": 5,
           "lastRelease": {
-            "id": "afterstep-37",
+            "id": "afterstep-42",
             "at": 120.01666666666114,
-            "mode": "standard",
+            "mode": "ghoststep",
             "perfect": false,
-            "magnitude": 0.5880000000000001,
+            "magnitude": 1.8480000000000008,
             "deltaVelocity": {
-              "x": 0.5880000000000001,
+              "x": 1.8480000000000008,
               "y": 0,
-              "z": -1.3056222769591843e-16
+              "z": -4.10338429901458e-16
             },
             "direction": {
-              "x": -0.9999999999999999,
+              "x": -1,
               "y": 0,
-              "z": 2.2204460492503128e-16
+              "z": 2.220446049250313e-16
             },
             "braking": false
           },
           "lastBank": {
-            "id": "afterstep-35",
+            "id": "afterstep-40",
             "at": 118.61666666666122,
             "type": "contact"
           },
           "lastReset": "BENCHMARK FIXTURE",
-          "emitted": 432,
+          "emitted": 525,
           "overwritten": 0,
           "refraction": {
-            "supported": true,
+            "supported": null,
             "remaining": 0,
-            "captureCount": 20,
-            "rect": {
-              "x": 1152,
-              "y": 40,
-              "width": 128,
-              "height": 128
-            },
+            "captureCount": 0,
+            "rect": null,
             "textureSize": 128
           }
+        },
+        "afterimages": {
+          "bound": true,
+          "disposed": false,
+          "sourceVertices": 56190,
+          "sourceIndices": 56190,
+          "capacity": 3,
+          "active": 0,
+          "activeKinds": [],
+          "footCapacity": 8,
+          "footprints": 0,
+          "pending": 0,
+          "drawCalls": 0,
+          "maxDrawCalls": 2,
+          "captures": 41,
+          "peakCaptureMs": 3.5999999046325684,
+          "last": {
+            "kind": "release",
+            "id": "afterstep-42",
+            "mode": "ghoststep",
+            "count": 3
+          }
+        },
+        "camera": {
+          "mode": "exploration",
+          "clock": 131.93333333333047,
+          "manualRemaining": 0,
+          "releaseRemaining": 0,
+          "yaw": -1.5707963267948963,
+          "pitch": -0.08,
+          "composition": null
         }
       }
     },
@@ -502,10 +566,10 @@
   },
   "comparison": {
     "medianFrameTimeIncreasePercent": 0,
-    "p95FrameTimeIncreasePercent": 1.0416666666508867,
-    "medianDrawCallIncrease": 2,
-    "medianSimulationCpuIncreasePercent": 20.000028610229492,
+    "p95FrameTimeIncreasePercent": 2.150537634416594,
+    "medianDrawCallIncrease": -4,
+    "medianSimulationCpuIncreasePercent": 30.000019073486328,
     "medianRenderCpuIncreasePercent": -0.00002649095042217553
   },
-  "finishedAt": "2026-10-22T06:55:53.220Z"
+  "finishedAt": "2026-10-22T11:35:07.622Z"
 }

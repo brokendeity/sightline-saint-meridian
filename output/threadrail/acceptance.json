@@ -1,13 +1,14 @@
 {
-  "recordedAt": "2026-10-22T06:59:03.945146+00:00",
-  "candidateSha256": "b702d85b7c0da20d5fed4a7ce5ea2365005967beb63e66443575c96d007fb179",
+  "recordedAt": "2026-10-22T11:40:14.015089+00:00",
+  "candidateSha256": "a9128294928c13bf91f95162d3b23d12ebe4432e878b87045f3150caff4ae163",
   "branch": "feature/backspool-threadrail-afterstep-drive",
   "protectedBuilds": {
     "SIGHTLINE_BACKSPOOL_TRAVERSAL_CANDIDATE.html": "3c852ba5de9f4262ac9b290c941ca686bd3f21fae64d477171ede4ecd8a3a03b",
-    "SIGHTLINE_SAINT_MERIDIAN_TOON.html": "58f8de3207eb6b5ff5289a0a636e079fe030bbe970761933da1e2890081d1063"
+    "SIGHTLINE_SAINT_MERIDIAN_TOON.html": "58f8de3207eb6b5ff5289a0a636e079fe030bbe970761933da1e2890081d1063",
+    "SIGHTLINE_BACKSPOOL_THREADRAIL_V1.html": "b702d85b7c0da20d5fed4a7ce5ea2365005967beb63e66443575c96d007fb179"
   },
   "rebuildReproducedHash": true,
-  "validationGroups": 22,
+  "validationGroups": 26,
   "allExecutedPassed": true,
   "focusedIntegrationChecks": 40,
   "physicalInputChains": 8,
@@ -16,17 +17,19 @@
   "sourceNumericChecks": 48,
   "newCoreGroups": {
     "drive": 42,
-    "rail": 24,
-    "route": 19
+    "rail": 25,
+    "route": 19,
+    "camera": "passed",
+    "posedAfterimages": "passed"
   },
   "physicalDevicesTested": false,
   "originalForspokenControllerVerified": false,
   "originalForspokenIKVerified": false,
   "performance": {
     "medianFrameTimeIncreasePercent": 0,
-    "p95FrameTimeIncreasePercent": 1.0416666666508867,
-    "medianDrawCallIncrease": 2,
-    "medianSimulationCpuIncreasePercent": 20.000028610229492,
+    "p95FrameTimeIncreasePercent": 2.150537634416594,
+    "medianDrawCallIncrease": -4,
+    "medianSimulationCpuIncreasePercent": 30.000019073486328,
     "medianRenderCpuIncreasePercent": -2.649095042217553e-05
   },
   "stressSeconds": 60,
@@ -40,5 +43,17 @@
     "performance.json",
     "captures.json"
   ],
-  "githubPushed": false
+  "releaseFile": "SIGHTLINE_BACKSPOOL_THREADRAIL_V2.html",
+  "presentationChecks": 19,
+  "completedPresentationGaps": [
+    "rail/Drive/slingshot camera",
+    "posed Ghoststep and supported footfalls",
+    "resolving Landing Recall",
+    "F9 developer overlay"
+  ],
+  "githubPublication": {
+    "branch": "feature/backspool-threadrail-afterstep-drive",
+    "tag": "update-2026-10-22-threadrail-v2",
+    "mainUnchanged": true
+  }
 }

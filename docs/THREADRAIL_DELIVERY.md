@@ -1,6 +1,8 @@
 # Backspool Threadrail and Afterstep delivery
 
-Candidate: `SIGHTLINE_BACKSPOOL_THREADRAIL_CANDIDATE.html?capture=backspool` on branch `feature/backspool-threadrail-afterstep-drive`. The branch starts from `snapshot-2026-10-21-pose-binding-v14-complete`; commit `949ed83` carries v15 landing/roll repairs and `1e8201b` introduces the equipment candidate. The subsequent integration-repair commit contains this report. No existing GitHub ref was rewritten or pushed by this pass.
+Presentation completion: [V2 report](THREADRAIL_V2.md). The accepted V2 entrypoint is `SIGHTLINE_BACKSPOOL_THREADRAIL_V2.html?capture=backspool`; V1 and the original main game remain preserved.
+
+Candidate: `SIGHTLINE_BACKSPOOL_THREADRAIL_CANDIDATE.html?capture=backspool` on branch `feature/backspool-threadrail-afterstep-drive`. The branch starts from `snapshot-2026-10-21-pose-binding-v14-complete`; commit `949ed83` carries v15 landing/roll repairs and `1e8201b` introduces the equipment candidate. The subsequent integration-repair commit contains this report. Older snapshot/main refs are preserved. V2 is delivered separately on the feature branch and update tag documented in its report.
 
 ## Implemented and playable
 

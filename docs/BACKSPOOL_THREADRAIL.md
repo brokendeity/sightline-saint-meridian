@@ -38,3 +38,8 @@ Required chain checklist: sprint → Drive → jump → wall kick → landing; s
 ## Validation
 
 Evidence and limitations are recorded under `output/threadrail/`. New pure cores, source-contact admission and real-input browser flows complement the original 48 source/numeric checks and 119 retained Classic-control assertions. Source-data checks cannot establish original-game equivalence. Physical controller/touchscreen playtesting and matched Windows captures remain separate release checks. Performance evidence includes hashes and settings; do not infer a GPU guarantee from CPU/frame measurements.
+
+
+## Presentation V2
+
+Use `SIGHTLINE_BACKSPOOL_THREADRAIL_V2.html?capture=backspool` for the accepted update. Rail/Drive/slingshot framing now shares the camera director, respects manual look and uses one final collision pass. Ghoststep and DoubleStep leave real posed-mesh silhouettes, and supported landings resolve a displaced silhouette into the moving hero. F9 (Fn+F9 on some Mac keyboards) opens developer diagnostics; `threadrailGame.toggleDiagnostics(true)` is the console equivalent. The overlay is hidden by default. See [V2 evidence](THREADRAIL_V2.md).

@@ -1,0 +1,13 @@
+const assert=require('assert/strict'),{create}=require('./game_threadrail_camera');
+const base=()=>({hero:'backspool',active:true,position:{x:0,y:4,z:0},velocity:{x:12,y:2,z:0},grounded:false,rail:true,yaw:0,pitch:-.08,aspect:1.6});
+const c=create(),f=base(),original=JSON.stringify(f);let r=c.update(1/60,f);
+assert.equal(r.mode,'rail');assert.equal(r.owner,'threadrail');assert.equal(JSON.stringify(f),original);assert(r.fov>=60&&r.fov<=71);assert(Object.values(r.position).every(Number.isFinite));
+const start=c.state().yaw;for(let i=0;i<20;i++)r=c.update(1/60,f);assert(Math.abs(c.state().yaw-start)<=1.8*20/60+1e-7,'recenter is angularly bounded');
+f.manualLook=true;f.yaw=2;f.pitch=.3;r=c.update(1/60,f);assert.equal(c.state().yaw,2);assert.equal(c.state().pitch,.3);f.manualLook=false;for(let i=0;i<20;i++)c.update(1/60,f);assert.equal(c.state().yaw,2,'manual look survives the hold window');
+const copy=c.state();copy.composition.position.x=999;assert.notEqual(c.state().composition.position.x,999);
+f.reducedMotion=true;r=c.update(1/60,f);assert.equal(r.fov,60);assert.equal(r.followRate,10);
+f.rail=false;c.release('slingshot');r=c.update(1/60,f);assert.equal(r.mode,'slingshot');for(let i=0;i<65;i++)r=c.update(1/60,f);assert.equal(r,null,'slingshot exits through the existing director');
+c.release('drive');r=c.update(1/60,f);assert.equal(r.mode,'drive');f.grounded=true;assert.equal(c.update(1/60,f),null);f.hero='sightline';f.grounded=false;f.rail=true;assert.equal(c.update(1/60,f),null,'Sightline has no equipment camera');
+f.hero='backspool';c.update(1/60,f);const clock=c.state().clock;f.active=false;assert.equal(c.update(.05,f),null);assert.equal(c.state().clock,clock,'inactive simulation cannot advance the policy');
+assert.throws(()=>c.update(NaN,base()));assert.throws(()=>c.update(.2,base()));assert.equal(c.update(.01,{...base(),position:{x:NaN,y:0,z:0}}),null);
+console.log('PASS rail/slingshot/Drive composition, bounded recenter, manual override, reduced motion, lifecycle, detached diagnostics, invalid frames and unchanged actor input.');

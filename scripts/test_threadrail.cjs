@@ -153,4 +153,8 @@ test('idle expiry and repeated lifecycle events stay bounded and monotonic',()=>
 test('preview of bounded projected Drive is readonly and applies the same checked delta',()=>{
  const {c,f,id}=fixture();assert(c.attach(f,id).ok);const before=c.state();const checked=c.previewDrive(v(30));assert(checked.ok);assert.deepEqual(c.state(),before);close(checked.velocity.x,28);close(checked.deltaVelocity.x,18);const applied=c.applyDrive(checked.deltaVelocity);assert(applied.ok);assert.deepEqual(applied.deltaVelocity,checked.deltaVelocity);const capped=c.state();assert(!c.previewDrive(v(1)).ok);assert.deepEqual(c.state().current,capped.current);
 });
-console.log(`${count} Threadrail tests passed`);
+
+
+test('present world validators require explicit synchronous success',()=>{for(const name of ['validateAnchor','supportAt','sweepClear'])for(const value of [undefined,{},Promise.resolve(true),{then(){}}]){const c=createThreadrail({[name]:()=>value});assert.equal(c.create(anchor('a',0),anchor('b',20)).ok,false);assert.equal(c.state().rails.length,0);}});
+
+console.log(count+' Threadrail tests passed');

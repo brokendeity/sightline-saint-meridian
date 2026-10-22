@@ -1,0 +1,19 @@
+/* Opt-in developer overlay. Text-only rendering of detached public snapshots. */
+(function(root){'use strict';
+ function createTraversalDiagnostics(api){
+  const panel=document.createElement('aside'),heading=document.createElement('strong'),close=document.createElement('button'),text=document.createElement('pre');
+  panel.id='traversalDiagnostics';panel.hidden=true;panel.setAttribute('aria-label','Traversal developer diagnostics');heading.textContent='TRAVERSAL DIAGNOSTICS · F9';close.textContent='Close';panel.append(heading,close,text);document.body.append(panel);
+  const style=document.createElement('style');style.textContent='#traversalDiagnostics{position:fixed;right:12px;top:140px;z-index:2000;width:410px;max-width:calc(100vw - 24px);max-height:calc(100vh - 165px);overflow:auto;background:#03131af5;color:#caf7ef;border:1px solid #83bcb9;padding:10px;font:11px/1.45 monospace;border-radius:6px}#traversalDiagnostics[hidden]{display:none}#traversalDiagnostics button{float:right;min-height:32px}#traversalDiagnostics pre{white-space:pre-wrap;overflow-wrap:anywhere;margin:8px 0 0}@media(max-width:700px),(max-height:600px){#traversalDiagnostics{top:100px;right:8px;max-height:calc(100vh - 120px)}}';document.head.append(style);
+  for(const e of['pointerdown','mousedown','mouseup'])panel.addEventListener(e,e=>e.stopPropagation());
+  let visible=false,lastAt=-99,renders=0;
+  const number=n=>Number.isFinite(n)?n.toFixed(2):'—',vec=v=>v?[v.x,v.y,v.z].map(number).join(', '):'—';
+  function toggle(value=!visible){visible=!!value;panel.hidden=!visible;lastAt=-99;update(0);return visible;}
+  function key(e){if(e.code!=='F9'||e.repeat)return;e.preventDefault();e.stopImmediatePropagation();toggle();}
+  window.addEventListener('keydown',key,true);close.onclick=()=>toggle(false);
+  function update(now){if(!visible||now-lastAt<.1)return;lastAt=now;const s=api.read(),m=s.motion||{},pose=m.sourcePose||{},rail=s.rail||{},drive=s.drive||{},current=rail.current;
+   text.textContent=[`HERO ${s.hero} · ${m.mode||'—'} · ${m.grounded?'GROUNDED':'AIR'}`,`OWNER ${s.owner?.owner||'ordinary'} · frame ${s.owner?.frame} · commits ${s.owner?.commits} · conflicts ${s.owner?.conflicts}`,`POSITION ${vec(m.position)}`,`VELOCITY ${vec(m.velocity)} · speed ${number(m.speed)}`,`FLOW ${m.flow||'—'} · ADVANCED ${m.advanced||'—'}`,`ANIMATION ${s.activeAnimation} @ ${number(s.animationTime)}s`,`SOURCE ${pose.sourceAnimationId||'—'} · ${pose.role||'—'} @ ${number(pose.time)}s`,`CONTACT ${m.contact?.policy||'—'} · correction ${number(m.contact?.correction)}m · support ${number(m.contact?.support)}m`,`STRAIN ${number(drive.strain)} · BANK ${drive.bank?.length||0}/5`,...(drive.bank||[]).map(b=>{const d=s.impulses?.find(x=>x.id===b.id),modes=Object.entries(d?.modes||{}).filter(([,v])=>v.eligible).map(([k,v])=>`${k}:${number(v.cost)}`);return `${b.id} ${b.action} · ${number(d?.remaining)}s · ${modes.join(' ')||'no eligible release'}`;}),`RAIL ${current?.railId||'—'} · speed ${number(current?.speed)} · ${rail.rails?.length||0} segments`,`ANCHORS ${(rail.anchors||[]).map(a=>a.id+'@'+a.ownerId+':r'+a.revision).join(' ')||'—'}`,`RAIL VALIDITY ${rail.lastReason||'—'}`,`CAMERA ${s.camera?.mode||'exploration'} · manual ${number(s.camera?.manualRemaining)}s`,`VFX ${s.afterimages?.active||0} bodies + ${s.afterimages?.footprints||0} footfalls · ${s.afterimages?.drawCalls||0} calls`,`LAST FAILURE ${s.lastFailure?number(s.lastFailure.time)+' '+s.lastFailure.text:'—'}`,`LAST MESSAGE ${s.lastMessage||'—'}`].join('\n');renders++;
+  }
+  return{toggle,update,state:()=>({visible,renders}),dispose:()=>{window.removeEventListener('keydown',key,true);panel.remove();style.remove();}};
+ }
+ root.createTraversalDiagnostics=createTraversalDiagnostics;if(typeof module!=='undefined')module.exports={createTraversalDiagnostics};
+})(typeof window!=='undefined'?window:globalThis);

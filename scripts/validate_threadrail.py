@@ -11,7 +11,7 @@ def main():
   (out/(name+'.log')).write_text(proc.stdout+proc.stderr)
   results.append({'name':name,'command':command,'passed':proc.returncode==0,'exitCode':proc.returncode})
   print(('PASS 'if proc.returncode==0 else 'FAIL ')+name,flush=True)
- for name in ['afterstep_drive','threadrail','replay_route','threadrail_foundation','temporal_exhaust','threadrail_pose','backspool_flow','backspool_advanced','backspool_hop','backspool_traversal','backspool_roll_physics','forspoken_native_kernels','forspoken_contact_frames']:
+ for name in ['afterstep_drive','threadrail','replay_route','threadrail_foundation','temporal_exhaust','movement_afterimages','threadrail_camera','threadrail_pose','backspool_flow','backspool_advanced','backspool_hop','backspool_traversal','backspool_roll_physics','forspoken_native_kernels','forspoken_contact_frames']:
   run(name,['node',str(ROOT/'scripts'/('test_'+name+'.cjs'))])
  run('landing_assets',[sys.executable,str(ROOT/'scripts/test_backspool_landing_roll_assets.py')])
  if args.source_evidence:
@@ -24,6 +24,8 @@ def main():
  if args.browser:
   run('integrated_input',['node','scripts/test_threadrail_browser.cjs'])
   run('device_route',['node','scripts/test_threadrail_inputs_route.cjs'])
+  run('presentation_v2',['node','scripts/test_threadrail_presentation.cjs'])
+  run('hero_switch',['node','scripts/test_threadrail_hero_switch.cjs'])
   run('integration_fixes',['node','scripts/test_threadrail_fix_regression.cjs'])
   run('eight_physical_chains',['node','scripts/test_threadrail_chains.cjs'])
   env={**os.environ,'GAME_URL':'http://127.0.0.1:8766/SIGHTLINE_BACKSPOOL_THREADRAIL_CANDIDATE.html?capture=backspool','GAME_ORIGIN':'http://127.0.0.1:8766','REGRESSION_BUILD':'SIGHTLINE_BACKSPOOL_THREADRAIL_CANDIDATE.html','REGRESSION_PRESET':'classic'}

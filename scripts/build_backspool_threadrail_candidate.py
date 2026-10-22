@@ -15,7 +15,7 @@ def main():
   nonlocal s
   if s.count(a)!=count:raise ValueError(f'Expected {count} hooks ({s.count(a)}): {a[:100]}')
   s=s.replace(a,b)
- cores='\n'.join((ROOT/'scripts'/f).read_text() for f in ['game_movement_coordinator.js','game_afterstep_drive.js','game_threadrail.js','game_temporal_exhaust.js','game_replay_route.js'])
+ cores='\n'.join((ROOT/'scripts'/f).read_text() for f in ['game_movement_coordinator.js','game_afterstep_drive.js','game_threadrail.js','game_temporal_exhaust.js','game_replay_route.js','game_threadrail_camera.js','game_movement_afterimages.js','game_traversal_diagnostics.js'])
  runtime=(ROOT/'scripts/game_backspool_threadrail_runtime.js').read_text()
  # Register input capture ahead of legacy capture handlers; the adapter is initialized before play.
  marker="window.addEventListener('gamepadconnected'"
@@ -71,6 +71,13 @@ def main():
  edit("touchHold('tAim','aim');", "$('tSprint').addEventListener('pointerdown',e=>{if(window.characterState?.().active==='backspool'&&window.threadrailGame){e.preventDefault();e.stopImmediatePropagation();threadrailGame.toggleSprint();}},true);for(const event of ['pointerup','pointercancel','lostpointercapture'])$('tSprint').addEventListener(event,e=>{if(window.characterState?.().active==='backspool'){e.stopImmediatePropagation();input.actions.sprint=false;}},true);touchHold('tAim','aim');")
  edit("window.backspoolAdvanced?.setTouchJump(true);window.backspoolFlow?.setTouchJump(true);queueJump();", "window.backspoolAdvanced?.setTouchJump(true);window.backspoolFlow?.setTouchJump(true);if(window.characterState?.().active==='backspool')threadrailGame.jump();else queueJump();")
  edit('window.backspoolFlow?.hint()||', 'window.threadrailGame?.hint()||window.backspoolFlow?.hint()||')
+ # Equipment compositions use the same camera director and final collision pass as combat.
+ edit('const desired=window.backspoolCombat?.cameraComposition?.();', 'const desired=window.backspoolCombat?.cameraComposition?.()||window.threadrailGame?.cameraComposition?.(dt);')
+ edit("const actionCamera=(()=>{let blend=0;", "const actionCamera=(()=>{let blend=0,mode='exploration';")
+ edit('if(!desired){blend=0;updateCamera(dt);return;}', "if(!desired){mode='exploration';blend=0;updateCamera(dt);return;}mode=desired.mode||window.backspoolCombat?.state().cameraMode||'exploration';")
+ edit('const safe=constrainCameraPosition(origin,target,false);camera.position.lerp(safe,1-Math.exp(-9*dt));', "camera.position.lerp(target,1-Math.exp(-(desired.followRate||9)*dt));camera.position.copy(constrainCameraPosition(origin,camera.position,false));if(desired.owner==='threadrail')cam.focus.copy(desired.focus||origin);")
+ edit("mode:window.backspoolCombat?.state().cameraMode||'exploration',blend", 'mode,blend')
+ edit('cam.yaw=cam.targetYaw=Math.atan2(-direction.x,-direction.z);', "cam.yaw=cam.targetYaw=desired.owner==='threadrail'?desired.inputYaw:Math.atan2(-direction.x,-direction.z);if(desired.owner==='threadrail')cam.pitch=cam.targetPitch=desired.inputPitch;")
  edit('<title>', '<title>Threadrail + Afterstep — ')
  target=ROOT/'SIGHTLINE_BACKSPOOL_THREADRAIL_CANDIDATE.html';target.write_text(s)
  out=ROOT/'output/threadrail';out.mkdir(exist_ok=True)
