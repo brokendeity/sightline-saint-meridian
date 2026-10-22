@@ -1,0 +1,72 @@
+{
+  "results": [
+    {
+      "name": "entry preserves speed and stable wall stand-off",
+      "pass": true,
+      "frames": 33
+    },
+    {
+      "name": "released movement drops instead of climbing with no input",
+      "pass": true,
+      "frames": 42
+    },
+    {
+      "name": "continuous lateral run reaches edge once without repeated grab",
+      "pass": true,
+      "frames": 260
+    },
+    {
+      "name": "head-on climb mantles onto roof and settles supported",
+      "pass": true,
+      "frames": 262
+    },
+    {
+      "name": "neutral input beside a wall does not start climbing",
+      "pass": true,
+      "frames": 30
+    },
+    {
+      "name": "toggle Flow off releases the wall without an automatic regrab",
+      "pass": true,
+      "frames": 30
+    },
+    {
+      "name": "steering away detaches and preserves outward control",
+      "pass": true,
+      "frames": 40
+    },
+    {
+      "name": "upward boost resumes wall source timeline without a floor snap",
+      "pass": true,
+      "frames": 46
+    },
+    {
+      "name": "back plus Jump kicks away and returns to supported ground",
+      "pass": true,
+      "frames": 81
+    },
+    {
+      "name": "wall destruction interrupts safely and pause clears ownership",
+      "pass": true,
+      "frames": 21
+    },
+    {
+      "name": "simulated controller Flow and stick climb then release",
+      "pass": true,
+      "frames": 51
+    },
+    {
+      "name": "blocked imported facade drops once instead of repeatedly retrying",
+      "pass": true,
+      "frames": 240
+    },
+    {
+      "name": "actual city facade allows continuous collision-clear wall traversal",
+      "pass": true,
+      "frames": 88
+    }
+  ],
+  "errors": [],
+  "fullTrace": "report.json.gz",
+  "buildSha256": "93c255087728508d028c382acffc20f80b48e6dffbff36f2b206b4df1b208e6d"
+}

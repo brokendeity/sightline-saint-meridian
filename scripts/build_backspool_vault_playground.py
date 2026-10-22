@@ -6,7 +6,20 @@ def main():
  base=ROOT/'SIGHTLINE_BACKSPOOL_THREADRAIL_V3.html'
  expected='66bbea3c3c0be5a09054676df6f1e8ddcabcf2ba197d7941846be148379ac124'
  if hashlib.sha256(base.read_bytes()).hexdigest()!=expected:raise SystemExit('Accepted V3 changed; preserve it before building the vault playground.')
- s=base.read_text();marker='loadCharacter().catch(err=>'
+ s=base.read_text()
+ # Apply maintained wall sources to this candidate only; accepted V3 stays immutable.
+ start=s.index('/* Authored Backspool traversal.')
+ end=s.index("})(typeof window!=='undefined'?window:globalThis);",start)+len("})(typeof window!=='undefined'?window:globalThis);")
+ core=(ROOT/'scripts/game_backspool_advanced.js').read_text().replace('if(!plan&&!f.grounded&&f.jumpHeld&&!f.reserveJump','if(!window.threadrailGame&&!plan&&!f.grounded&&f.jumpHeld&&!f.reserveJump')
+ s=s[:start]+core.rstrip()+s[end:]
+ start=s.index('const backspoolAdvancedRuntime=(()=>{');end=s.index('/* Candidate adapter:',start)
+ runtime=(ROOT/'scripts/game_backspool_advanced_runtime.js').read_text().replace('function tether(){','function tether(){if(window.threadrailGame)return false;').replace('s.vel.set(0,0,0);s.onGround=false;setMode(P.AIR);consumeJump();window.backspoolHop','s.onGround=false;setMode(P.AIR);consumeJump();window.backspoolHop')
+ s=s[:start]+runtime+'\n'+s[end:]
+ # Wall poses are relative to wall contact, never the ordinary floor sole correction.
+ marker="if(!enabled()||(!poseRole&&!window.backspoolAdvanced?.floating()&&localClock>=bodyContactUntil)||window.backspoolAdvancedState?.().kind==='ledge')return;"
+ assert s.count(marker)==1
+ s=s.replace(marker,marker+"if(['wall','wallApproach','wallBoost'].includes(window.backspoolAdvancedState?.().kind))return;")
+ marker='loadCharacter().catch(err=>'
  assert s.count(marker)==1
  s=s.replace(marker,(ROOT/'scripts/game_backspool_vault_course.js').read_text()+'\n'+marker)
  marker='backspoolPowers.ui();backspoolEncounters.present();threadrailGame.present();'

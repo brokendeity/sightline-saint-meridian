@@ -115,7 +115,7 @@ const backspoolFlowRuntime=(()=>{
 
  function visualSupportBias(){const distance=Math.hypot(s.pos.x,s.pos.z),support=supportHeight(s.pos.x,s.pos.z,s.pos.y);return distance<115&&support<.9?.4*(1-THREE.MathUtils.smoothstep(distance,105,115)):0;}
  function anchor(supportedSurface=null){
-  if(!enabled()||(!poseRole&&!window.backspoolAdvanced?.floating()&&localClock>=bodyContactUntil)||window.backspoolAdvancedState?.().kind==='ledge')return;
+  if(!enabled()||(!poseRole&&!window.backspoolAdvanced?.floating()&&localClock>=bodyContactUntil)||window.backspoolAdvancedState?.().kind==='ledge')return;if(['wall','wallApproach','wallBoost'].includes(window.backspoolAdvancedState?.().kind))return;
   const air=!s.onGround&&!Number.isFinite(supportedSurface),approach=air?landingApproach():null;
   if(air){if(!airBiasApplied){visualPivot.position.y+=visualSupportBias();airBiasApplied=true;characterRoot.updateMatrixWorld(true);}if(!approach)return;}
   let minimum=Infinity;const v=new THREE.Vector3();

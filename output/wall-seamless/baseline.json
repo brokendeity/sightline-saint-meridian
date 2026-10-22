@@ -1,0 +1,29 @@
+{
+  "results": [
+    {
+      "name": "entry preserves speed and stable wall stand-off",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'wallClimb'\n- 'wallRun'\n       ^\n",
+      "frames": 9
+    },
+    {
+      "name": "released movement drops instead of climbing with no input",
+      "pass": false,
+      "error": "wall keeps climbing after stick release",
+      "frames": 42
+    },
+    {
+      "name": "continuous lateral run reaches edge once without repeated grab",
+      "pass": false,
+      "error": "multiple wall reattachments\n\n1 !== 0\n",
+      "frames": 260
+    },
+    {
+      "name": "head-on climb mantles onto roof and settles supported",
+      "pass": true,
+      "frames": 267
+    }
+  ],
+  "errors": [],
+  "fullTrace": "baseline.json.gz"
+}

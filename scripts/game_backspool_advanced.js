@@ -1,55 +1,70 @@
 /* Authored Backspool traversal. Source motions do not establish original Forspoken mechanics. */
 (function(root){
  const cp=p=>({x:p.x,y:p.y,z:p.z}),len=p=>Math.hypot(p.x,p.y,p.z),sub=(a,b)=>({x:a.x-b.x,y:a.y-b.y,z:a.z-b.z}),add=(a,b,k=1)=>({x:a.x+b.x*k,y:a.y+b.y*k,z:a.z+b.z*k}),mix=(a,b,t)=>add(a,sub(b,a),t),finite=p=>p&&[p.x,p.y,p.z].every(Number.isFinite);
- function create(api){let plan=null,clock=0,cooldown=0,floatUsed=0,wallJumps=0,reason=null,last=null,serial=0;const events=[];let waterSpeed=0,waterDirection={x:0,z:0};
+ function create(api){let plan=null,clock=0,cooldown=0,floatUsed=0,wallJumps=0,reason=null,last=null,serial=0;const events=[];let wallLock=null;let waterSpeed=0,waterDirection={x:0,z:0};
  const eligible=f=>f.hero==='backspool'&&f.active&&!f.locked&&!f.retracing&&!f.preview&&!f.defeated&&!f.posture;
  function log(kind,extra={}){events.push({eventId:++serial,time:clock,kind,...extra});if(events.length>48)events.shift();}
- function reset(why='RESET'){if(plan)log('end',{mode:plan.kind,reason:why});plan=null;reason=why;waterSpeed=0;last=null;if(['INPUT RESET','RESPAWN','HERO CHANGE'].includes(why)){cooldown=0;floatUsed=0;wallJumps=0;}}
+ function reset(why='RESET'){if(plan)log('end',{mode:plan.kind,reason:why});plan=null;reason=why;waterSpeed=0;last=null;if(['INPUT RESET','RESPAWN','HERO CHANGE'].includes(why)){cooldown=0;floatUsed=0;wallJumps=0;wallLock=null;}}
  const clear=(a,b)=>api.sweepClear(a,b)===true;
- function output(p,v,kind,phase=0,landed=false){last={ownsMovement:true,position:cp(p),velocity:cp(v),kind,phase,sourceTime:plan?.time||0,landed};if(plan)plan.expected=cp(p);return last;}
- function finish(why){reset(why);cooldown=.25;return {ownsMovement:false,interrupted:true,reason:why};}
+ function output(p,v,kind,phase=0,landed=false){last={ownsMovement:true,position:cp(p),velocity:cp(v),kind,phase,sourceTime:['wallApproach','wall','wallBoost'].includes(plan?.kind)?plan.poseTime||0:plan?.time||0,landed};if(plan)plan.expected=cp(p);return last;}
+ function finish(why){const wall=plan?.wall;reset(why);if(wall)wallLock={...wall,neutral:false};cooldown=.25;return {ownsMovement:false,interrupted:true,reason:why};}
  function startWall(f,w){
   if(!eligible(f)||!f.sprint||plan&&plan.kind!=='float'||cooldown>1e-6&&!(f.linkFromTether&&reason==='TETHER ARRIVED')||wallJumps>=6||!w||!finite(w.normal)||!finite(w.position)||!Number.isFinite(w.top))return false;
+  const intent=Math.hypot(f.direction.x,f.direction.z),outward=f.direction.x*w.normal.x+f.direction.z*w.normal.z;if(intent<.15||outward>.25)return false;
+  if(wallLock&&wallLock.normal.x*w.normal.x+wallLock.normal.z*w.normal.z>.99&&Math.abs((w.position.x-wallLock.position.x)*w.normal.x+(w.position.z-wallLock.position.z)*w.normal.z)<.2)return false;
   const nl=Math.hypot(w.normal.x,w.normal.z);if(nl<.99||nl>1.01||Math.abs(w.normal.y)>.01||len(sub(w.position,f.position))>1.4||!clear(f.position,w.position))return false;
-  plan={kind:'wallApproach',wall:{...w,normal:cp(w.normal),position:cp(w.position)},time:0,start:cp(f.position),entryVelocity:cp(f.velocity),expected:cp(f.position)};reason=null;log('wall-start');return true;
+  plan={kind:'wallApproach',wall:{...w,normal:cp(w.normal),position:cp(w.position)},time:0,poseTime:0,wallAge:0,neutralTime:0,start:cp(f.position),entryVelocity:cp(f.velocity),expected:cp(f.position)};reason=null;log('wall-start');return true;
  }
  function startTether(f,a){
   if(!eligible(f)||plan&&!['float','wall','ledge','water'].includes(plan.kind)||cooldown>1e-6||!a||!finite(a.position)||!finite(a.contact))return false;
   const distance=len(sub(a.position,f.position));if(distance<3||distance>120||!clear(f.position,a.position)||api.anchorValid?.(a)===false){reason='TETHER PATH BLOCKED';return false;}
   plan={kind:'tether',anchor:{...a,position:cp(a.position),contact:cp(a.contact)},time:0,duration:distance/28+.3,expected:cp(f.position)};reason=null;log('tether-start',{distance});return true;
  }
- function boost(f){if(!eligible(f)||!plan||!['wall','ledge'].includes(plan.kind)||wallJumps>=3)return false;wallJumps++;plan={...plan,kind:'wallBoost',time:0,expected:cp(f.position)};log('wall-boost',{count:wallJumps});return true;}
+ function boost(f){if(!eligible(f)||!plan||!['wall','ledge'].includes(plan.kind)||wallJumps>=3)return false;wallJumps++;plan={...plan,kind:'wallBoost',time:0,wallPoseTime:plan.poseTime,poseTime:0,expected:cp(f.position)};log('wall-boost',{count:wallJumps});return true;}
  function detach(f){if(!plan||!eligible(f))return null;let v=null;
   if(plan.kind==='wall'||plan.kind==='wallApproach'||plan.kind==='ledge'){const n=plan.wall.normal;wallJumps++;v={x:n.x*7,y:9,z:n.z*7};}
   else if(plan.kind==='water'){v={x:f.velocity.x,y:8,z:f.velocity.z};}
   else if(plan.kind==='tether'){const d=sub(plan.anchor.position,f.position),l=len(d)||1;v={x:d.x/l*16,y:Math.max(4,d.y/l*16),z:d.z/l*16};}
-  else return null;reset('JUMP DETACH');cooldown=.5;return {velocity:v};
+  else return null;const wall=plan.wall;reset('JUMP DETACH');if(wall)wallLock={...wall,neutral:false};cooldown=.5;return {velocity:v};
  }
  function mantle(f){const w=plan.wall,end=add({x:f.position.x,y:w.top+.42,z:f.position.z},w.normal,-1.25),high={x:f.position.x,y:end.y+.02,z:f.position.z},h=api.supportAt(end);
   if(!Number.isFinite(h)||Math.abs(h-end.y)>.08||!clear(f.position,high)||!clear(high,end)){reason='LEDGE EXIT BLOCKED';return false;}
-  plan={...plan,kind:'mantle',time:0,duration:1.599,start:cp(f.position),high,end,expected:cp(f.position)};log('mantle-start');return true;
+  plan={...plan,kind:'mantle',time:0,poseTime:0,duration:1.599,start:cp(f.position),high,end,expected:cp(f.position)};log('mantle-start');return true;
  }
  function update(dt,f){
   if(!Number.isFinite(dt)||dt<0||dt>.1)throw Error('Advanced traversal requires bounded steps');if(!eligible(f)){reset(f.hero!=='backspool'?'HERO CHANGE':'INELIGIBLE');return {ownsMovement:false};}
-  clock+=dt;cooldown=Math.max(0,cooldown-dt);if(f.grounded&&!plan){floatUsed=0;wallJumps=0;}
+  clock+=dt;cooldown=Math.max(0,cooldown-dt);if(wallLock&&Math.hypot(f.direction.x,f.direction.z)<.15)wallLock.neutral=true;if(wallLock&&(f.grounded&&cooldown<=1e-6&&wallLock.neutral&&Math.hypot(f.direction.x,f.direction.z)>=.15||(f.position.x-wallLock.position.x)*wallLock.normal.x+(f.position.z-wallLock.position.z)*wallLock.normal.z>.6))wallLock=null;if(f.grounded&&!plan){floatUsed=0;wallJumps=0;}
   if(plan?.expected&&len(sub(f.position,plan.expected))>.15)return finish('ACTOR DISPLACED');
-  if(plan?.kind==='wallApproach'){
-   const w=plan.wall;if(api.wallValid?.(w)===false)return finish('WALL CHANGED');plan.time=Math.min(.12,plan.time+dt);
-   const n=w.normal,entry=plan.entryVelocity||f.velocity,dot=entry.x*n.x+entry.z*n.z,tangent={x:entry.x-dot*n.x,y:Math.max(2,entry.y),z:entry.z-dot*n.z};
-   const approach=mix(f.position,add(w.position,tangent,plan.time),Math.min(1,dt*24));
-   if(!clear(f.position,approach))return finish('WALL APPROACH BLOCKED');const v=dt>0?{x:(approach.x-f.position.x)/dt,y:(approach.y-f.position.y)/dt,z:(approach.z-f.position.z)/dt}:tangent;
-   const result=output(approach,v,'wallClimb',plan.time);if(plan.time>=.12){plan.kind='wall';plan.time=0;}return result;
-  }
-  if(plan?.kind==='wallBoost'){const w=plan.wall;if(api.wallValid?.(w)===false)return finish('WALL CHANGED');plan.time+=dt;const next=add(f.position,{x:0,y:10,z:0},dt);if(!clear(f.position,next)||api.wallContact?.(next,w)===false)return finish('BOOST BLOCKED');const result=output(next,{x:0,y:10,z:0},'wallBoost',plan.time);if(next.y>=w.top-.8){plan.kind='wall';if(mantle(f))return update(0,f);}if(plan.time>=.35){plan.kind='wall';plan.time=0;}return result;}
-  if(plan?.kind==='wall'||plan?.kind==='ledge'){
+  if(plan&&['wallApproach','wall','wallBoost','ledge'].includes(plan.kind)){
    const w=plan.wall;if(api.wallValid?.(w)===false)return finish('WALL CHANGED');
-   if(f.position.y>=w.top-.8){if(f.sprint||f.jumpHeld){if(mantle(f))return update(0,f);}else plan.kind='ledge';}
-   if(plan.kind==='ledge'){if(f.inputY<-.3)return finish('LEDGE RELEASED');const tangent={x:w.normal.z,y:0,z:-w.normal.x},next=add(f.position,tangent,f.inputX*1.3*dt);if(!clear(f.position,next)||api.wallContact?.(next,w)===false)return finish('LEDGE ENDED');return output(next,{x:0,y:0,z:0},'ledge',clock%1);}
-   if(!f.sprint)return finish('WALL RELEASED');plan.time+=dt;if(plan.time>1.6)return finish('WALL RUN EXPIRED');
-   const dot=f.direction.x*w.normal.x+f.direction.z*w.normal.z,tangent={x:f.direction.x-w.normal.x*dot,y:0,z:f.direction.z-w.normal.z*dot},tl=Math.hypot(tangent.x,tangent.z),targetSpeed=Math.max(6,Math.min(14,Math.hypot(plan.entryVelocity?.x||0,plan.entryVelocity?.z||0))),blend=1-Math.exp(-12*dt),target=tl>.3?{x:tangent.x/tl*targetSpeed,y:2.3,z:tangent.z/tl*targetSpeed}:{x:0,y:5.5,z:0},normalVelocity=f.velocity.x*w.normal.x+f.velocity.z*w.normal.z,v={x:(f.velocity.x-normalVelocity*w.normal.x)*(1-blend)+target.x*blend,y:f.velocity.y*(1-blend)+target.y*blend,z:(f.velocity.z-normalVelocity*w.normal.z)*(1-blend)+target.z*blend},next=add(f.position,v,dt);
-   // Retain the .62m body stand-off from the physical wall plane.
-   const plane=(next.x-w.position.x)*w.normal.x+(next.z-w.position.z)*w.normal.z;next.x-=plane*w.normal.x;next.z-=plane*w.normal.z;
-   if(!clear(f.position,next)||api.wallContact?.(next,w)===false)return finish('WALL PATH BLOCKED');return output(next,v,tl>.3?'wallRun':'wallClimb',plan.time);
+   const n=w.normal,dot=f.direction.x*n.x+f.direction.z*n.z,intent=Math.hypot(f.direction.x,f.direction.z);
+   if(plan.kind!=='ledge'){
+    plan.neutralTime=intent<.15?(plan.neutralTime||0)+dt:0;
+    if(!f.sprint&&f.position.y<w.top-.8||dot>.25||plan.neutralTime>.08)return finish(dot>.25?'WALL STEERED AWAY':'WALL RELEASED');
+    plan.wallAge=(plan.wallAge||0)+dt;if(plan.wallAge>4.2)return finish('WALL RUN EXPIRED');
+   }
+   if(f.position.y>=w.top-.8&&plan.kind!=='wallApproach'){
+    if(f.sprint||f.jumpHeld){if(mantle(f))return update(0,f);}else plan.kind='ledge';
+   }
+   if(plan.kind==='ledge'){if(f.inputY<-.3)return finish('LEDGE RELEASED');const tangent={x:n.z,y:0,z:-n.x},next=add(f.position,tangent,f.inputX*1.3*dt);if(!clear(f.position,next)||api.wallContact?.(next,w)===false)return finish('LEDGE ENDED');return output(next,{x:0,y:0,z:0},'ledge',clock%1);}
+   const tangent={x:f.direction.x-n.x*dot,y:0,z:f.direction.z-n.z*dot},tl=Math.hypot(tangent.x,tangent.z);
+   // Hysteresis avoids switching source poses at diagonal stick boundaries.
+   if(intent>=.15)plan.running=plan.running?tl>.22:tl>.38;if(tl>.15)plan.runDirection={x:tangent.x/tl,z:tangent.z/tl};
+   const speed=Math.max(6,Math.min(14,Math.hypot(plan.entryVelocity.x,plan.entryVelocity.z))),target=plan.kind==='wallBoost'?{x:0,y:10,z:0}:plan.running?{x:(plan.runDirection?.x||0)*speed,y:2.3,z:(plan.runDirection?.z||0)*speed}:{x:0,y:5.5,z:0};
+   plan.time+=dt;plan.poseTime=(plan.poseTime||0)+dt;
+   const blend=1-Math.exp(-12*dt),normalSpeed=f.velocity.x*n.x+f.velocity.z*n.z,v={x:(f.velocity.x-normalSpeed*n.x)*(1-blend)+target.x*blend,y:f.velocity.y*(1-blend)+target.y*blend,z:(f.velocity.z-normalSpeed*n.z)*(1-blend)+target.z*blend},next=add(f.position,v,dt);
+   // Advance tangentially once per step; ease only the remaining stand-off.
+   const plane=(next.x-w.position.x)*n.x+(next.z-w.position.z)*n.z;
+   const before=Math.min(1,Math.max(0,(plan.time-dt)/.12)),after=Math.min(1,plan.time/.12),ease=x=>x*x*(3-2*x),weight=plan.kind==='wallApproach'?(1-ease(before)>1e-6?(ease(after)-ease(before))/(1-ease(before)):1):1;
+   next.x-=plane*n.x*weight;next.z-=plane*n.z*weight;
+   if(!clear(f.position,next)||api.wallContact?.(next,w)===false)return finish('WALL PATH BLOCKED');
+   const motion=plan.kind==='wallBoost'?'wallBoost':plan.running?'wallRun':'wallClimb';
+   // Report the velocity actually integrated, including the bounded entry offset.
+   const velocity=dt>0?{x:(next.x-f.position.x)/dt,y:(next.y-f.position.y)/dt,z:(next.z-f.position.z)/dt}:v;
+   const result=output(next,velocity,motion,plan.time);
+   if(plan.kind==='wallApproach'&&plan.time>=.12){plan.kind='wall';plan.time=0;}
+   if(plan.kind==='wallBoost'&&plan.time>=.35){plan.kind='wall';plan.time=0;plan.poseTime=plan.wallPoseTime||0;}
+   return result;
   }
   if(plan?.kind==='mantle'){
    if(api.wallValid?.(plan.wall)===false)return finish('WALL CHANGED');plan.time=Math.min(plan.duration,plan.time+dt);const t=plan.time/plan.duration,ease=x=>x*x*(3-2*x),next=t<.6?mix(plan.start,plan.high,ease(t/.6)):mix(plan.high,plan.end,ease((t-.6)/.4));
@@ -73,7 +88,7 @@
  }
  function equipmentReady(){return !plan||['wall','ledge'].includes(plan.kind)&&api.wallValid?.(plan.wall)!==false&&api.wallContact?.(plan.expected,plan.wall)!==false;}
  function equipmentHandoff(why){if(!equipmentReady())return false;if(plan){reset(why);cooldown=.25;}return true;}
- return{equipmentReady,equipmentHandoff,update,startWall,startTether,boost,detach,mantle: f=>plan?.kind==='ledge'&&mantle(f),reset,active:()=>!!plan,locked:()=>!!plan&&plan.kind!=='float',floating:()=>plan?.kind==='float',releaseForCombat(){if(plan?.kind==='float')reset('COMBAT CANCEL');return !plan;},state:()=>({kind:plan?.kind||null,clock,cooldown,floatRemaining:Math.max(0,6-floatUsed),wallJumps,reason,motion:last,water:plan?.water?.id||null,anchor:plan?.anchor?.contact||null,wallNormal:plan?.wall?.normal||null,wallTop:plan?.wall?.top??null,events:events.slice(),origin:'authored mechanics; source/native candidate poses'})};
+ return{equipmentReady,equipmentHandoff,update,startWall,startTether,boost,detach,mantle: f=>plan?.kind==='ledge'&&mantle(f),reset,active:()=>!!plan,locked:()=>!!plan&&plan.kind!=='float',floating:()=>plan?.kind==='float',releaseForCombat(){if(plan?.kind==='float')reset('COMBAT CANCEL');return !plan;},state:()=>({kind:plan?.kind||null,clock,cooldown,floatRemaining:Math.max(0,6-floatUsed),wallJumps,reason,motion:last,water:plan?.water?.id||null,anchor:plan?.anchor?.contact||null,wallNormal:plan?.wall?.normal||null,wallTop:plan?.wall?.top??null,wallPoint:plan?.wall?.position||null,wallAge:plan?.wallAge||0,wallRegrabLocked:!!wallLock,events:events.slice(),origin:'authored mechanics; source/native candidate poses'})};
  }
  root.createBackspoolAdvanced=create;if(typeof module!=='undefined')module.exports={create};
 })(typeof window!=='undefined'?window:globalThis);
