@@ -5,13 +5,13 @@ Open `SIGHTLINE_BACKSPOOL_VAULT_PLAYGROUND.html?capture=backspool&vaultcourse=1`
 ## Try it
 
 1. Tap **Shift** or click **L3** once to enable Flow.
-2. Hold forward along the cyan arrows. **Do not press Jump.**
+2. Hold forward along the subtle pavement arrows. **Do not press Jump.**
 3. At full speed Backspool automatically flips over the low barrier, planter and cargo cases. A gentler left-stick input produces the actual vault actions instead.
 4. The counter reaches **Automatic · 3/3** after all three actions finish and their supported exits are reached. Use **Start vault test** to return to the run-up and repeat.
 
 The course observes existing controllers; it never requests a vault/flip, supplies a scripted velocity or moves the actor through obstacles. The explicit start/retry button relocates the player to the marked beginning and clears unfinished movement/combat activity. It does not refill health or erase existing stored replay actions. Manual Jump input is labelled separately, and blocked/interrupted actions do not earn automatic completion credit.
 
-The three visible bodies have matching physical bounds. Repeated decoration is instanced, for 14 potential course draw calls, with no extra dynamic lights. The lane is checked against existing city colliders before creation and invalidates affected pedestrian navigation. No city buildings, streets, character proportions, animation curves or original game files are modified.
+The three visible bodies have matching physical bounds. Repeated decoration is instanced, for at most 20 potential course draw calls, with no extra dynamic lights. The lane is checked against existing city colliders before creation and invalidates affected pedestrian navigation. No city buildings, streets, character proportions, animation curves or original game files are modified.
 
 ## Validation
 
@@ -28,3 +28,7 @@ The three visible bodies have matching physical bounds. Repeated decoration is i
 The installed develop-web-game Playwright client also ran against active gameplay. Evidence is in `output/vault-course/`. Physical controller/touchscreen use remains a user playtest; simulated device checks are not hardware certification.
 
 Rebuild with `python3 scripts/build_backspool_vault_playground.py`. The builder verifies its V3 base hash and writes only the new playground entrypoint and its manifest.
+
+## Saint Meridian visual pass
+
+The course now uses charcoal plated security barriers, recessed rain-garden planting and framed logistics cases. Muted cyan corner beacons, restrained brass hardware, non-emissive pavement inlays and physically mounted public-works signs match the city palette. The overhead test billboard and continuous glowing lane borders are removed. Planting remains below the original contact plane. All three obstacle dimensions and traversal logic are unchanged; no dynamic lights were added. The focused 16-check suite passed again after rebuilding, including keyboard and simulated-controller automatic traversal and grounded exits. Updated captures are in `output/vault-course/`.
