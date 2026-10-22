@@ -28,6 +28,8 @@ def main():
   run('hero_switch',['node','scripts/test_threadrail_hero_switch.cjs'])
   run('integration_fixes',['node','scripts/test_threadrail_fix_regression.cjs'])
   run('eight_physical_chains',['node','scripts/test_threadrail_chains.cjs'])
+  run('city_routes',['node','scripts/test_threadrail_city_routes.cjs'])
+  run('controller_banking',['node','scripts/test_threadrail_controller_bank.cjs'])
   env={**os.environ,'GAME_URL':'http://127.0.0.1:8766/SIGHTLINE_BACKSPOOL_THREADRAIL_CANDIDATE.html?capture=backspool','GAME_ORIGIN':'http://127.0.0.1:8766','REGRESSION_BUILD':'SIGHTLINE_BACKSPOOL_THREADRAIL_CANDIDATE.html','REGRESSION_PRESET':'classic'}
   run('v15_landing_roll',['node','scripts/test_backspool_landing_roll.cjs'],env)
   run('retained_classic',['node','scripts/validate_traversal_regressions.cjs'],env)

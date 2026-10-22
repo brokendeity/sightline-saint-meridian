@@ -4,6 +4,8 @@ Current feature branch: `feature/backspool-threadrail-afterstep-drive`, based on
 
 The completed presentation update is [Threadrail V2](http://localhost:8766/SIGHTLINE_BACKSPOOL_THREADRAIL_V2.html?capture=backspool). [V1](http://localhost:8766/SIGHTLINE_BACKSPOOL_THREADRAIL_V1.html?capture=backspool) remains available. See [V2 completion evidence](docs/THREADRAIL_V2.md).
 
+The city/replay reliability update is [Threadrail V3](http://localhost:8766/SIGHTLINE_BACKSPOOL_THREADRAIL_V3.html?capture=backspool), with [acceptance and limits](docs/THREADRAIL_V3.md). V2 remains available at its previous URL and GitHub snapshot. V3 is currently a local update.
+
 ## Original snapshot
 
 Separate update: `snapshots/2026-10-21-pose-binding-v14`, tagged `snapshot-2026-10-21-pose-binding-v14`. Earlier branches and tags are preserved.

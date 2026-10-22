@@ -1,0 +1,182 @@
+{
+  "build": "SIGHTLINE_BACKSPOOL_THREADRAIL_CANDIDATE.html",
+  "sha256": "a9128294928c13bf91f95162d3b23d12ebe4432e878b87045f3150caff4ae163",
+  "retrace": {
+    "beforeIds": [
+      "physical-39",
+      "physical-40"
+    ],
+    "afterIds": [
+      "physical-39",
+      "physical-40",
+      "physical-43"
+    ],
+    "elapsed": 0.3499999999999801,
+    "railElapsed": 0,
+    "events": [
+      {
+        "type": "contact",
+        "id": "afterstep-30",
+        "sequence": 30,
+        "time": 14.596666666666959,
+        "contactId": "physical-30",
+        "action": "landing",
+        "vector": {
+          "x": 0,
+          "y": 6.088333333333327,
+          "z": 0
+        },
+        "direction": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "magnitude": 6.088333333333327,
+        "replaced": null
+      },
+      {
+        "type": "contact",
+        "id": "afterstep-31",
+        "sequence": 31,
+        "time": 15.93666666666702,
+        "contactId": "physical-33",
+        "action": "landing",
+        "vector": {
+          "x": 0,
+          "y": 3.9974999999999983,
+          "z": 0
+        },
+        "direction": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "magnitude": 3.9974999999999983,
+        "replaced": null
+      },
+      {
+        "type": "contact",
+        "id": "afterstep-32",
+        "sequence": 32,
+        "time": 15.986666666667022,
+        "contactId": "physical-34",
+        "action": "jump",
+        "vector": {
+          "x": 0,
+          "y": 9.416666666666668,
+          "z": 0
+        },
+        "direction": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "magnitude": 9.416666666666668,
+        "replaced": null
+      },
+      {
+        "type": "contact",
+        "id": "afterstep-33",
+        "sequence": 33,
+        "time": 16.82000000000031,
+        "contactId": "physical-35",
+        "action": "landing",
+        "vector": {
+          "x": 0,
+          "y": 6.088333333333327,
+          "z": 0
+        },
+        "direction": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "magnitude": 6.088333333333327,
+        "replaced": null
+      },
+      {
+        "type": "contact",
+        "id": "afterstep-34",
+        "sequence": 34,
+        "time": 18.1600000000002,
+        "contactId": "physical-38",
+        "action": "landing",
+        "vector": {
+          "x": 0,
+          "y": 3.9974999999999983,
+          "z": 0
+        },
+        "direction": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "magnitude": 3.9974999999999983,
+        "replaced": null
+      },
+      {
+        "type": "contact",
+        "id": "afterstep-35",
+        "sequence": 35,
+        "time": 18.210000000000196,
+        "contactId": "physical-39",
+        "action": "jump",
+        "vector": {
+          "x": 0,
+          "y": 9.416666666666668,
+          "z": 0
+        },
+        "direction": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "magnitude": 9.416666666666668,
+        "replaced": null
+      },
+      {
+        "type": "contact",
+        "id": "afterstep-36",
+        "sequence": 36,
+        "time": 19.043333333333482,
+        "contactId": "physical-40",
+        "action": "landing",
+        "vector": {
+          "x": 0,
+          "y": 6.088333333333327,
+          "z": 0
+        },
+        "direction": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "magnitude": 6.088333333333327,
+        "replaced": null
+      },
+      {
+        "type": "contact",
+        "id": "afterstep-37",
+        "sequence": 37,
+        "time": 20.66666666666669,
+        "contactId": "physical-43",
+        "action": "landing",
+        "vector": {
+          "x": 0,
+          "y": 5.83916666666666,
+          "z": 0
+        },
+        "direction": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "magnitude": 5.83916666666666,
+        "replaced": null
+      }
+    ]
+  },
+  "failures": [
+    "AssertionError [ERR_ASSERTION]: Retrace cannot manufacture new Afterstep impulses"
+  ]
+}

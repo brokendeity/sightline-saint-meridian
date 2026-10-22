@@ -1,7 +1,7 @@
 {
-  "startedAt": "2026-10-22T11:27:55.092824+00:00",
-  "buildSha256": "a9128294928c13bf91f95162d3b23d12ebe4432e878b87045f3150caff4ae163",
-  "buildSha256After": "a9128294928c13bf91f95162d3b23d12ebe4432e878b87045f3150caff4ae163",
+  "startedAt": "2026-10-22T12:50:00.135981+00:00",
+  "buildSha256": "66bbea3c3c0be5a09054676df6f1e8ddcabcf2ba197d7941846be148379ac124",
+  "buildSha256After": "66bbea3c3c0be5a09054676df6f1e8ddcabcf2ba197d7941846be148379ac124",
   "results": [
     {
       "name": "afterstep_drive",
@@ -219,6 +219,24 @@
       "command": [
         "node",
         "scripts/test_threadrail_chains.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "city_routes",
+      "command": [
+        "node",
+        "scripts/test_threadrail_city_routes.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "controller_banking",
+      "command": [
+        "node",
+        "scripts/test_threadrail_controller_bank.cjs"
       ],
       "passed": true,
       "exitCode": 0
