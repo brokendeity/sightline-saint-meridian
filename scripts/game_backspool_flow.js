@@ -20,7 +20,16 @@
  }
  function secondWaterJump(f){if(f.grounded||!waterHop)return false;const d=norm(Math.hypot(f.direction.x,f.direction.z)>.1?f.direction:f.velocity);const ok=begin('waterJump',f,{x:d.x*18,y:8.5,z:d.z*18},.45);if(ok)waterHop=0;return ok;}
  function rebound(f,normal,tree=false){if(!eligible(f)||plan||cooldown>0)return false;const d=norm(normal);const ok=begin(tree?'treeFlip':'slopeKick',f,{x:d.x*14,y:10,z:d.z*14},.55);if(ok){airDash=1;emit('refresh',{resource:'airDash'})}return ok;}
- function evade(f){if(!eligible(f))return false;const teleport=clock<=rollUntil;if(!f.grounded&&!teleport&&airRolls<=0)return false; if(plan&&!(teleport||plan.kind==='dash'||plan.kind==='airDash'))return false;if(teleport||plan&&['dash','airDash'].includes(plan.kind)){if(plan)emit('cancel',{action:plan.kind,by:'evade'});plan=null;cooldown=0;}const d=norm(f.direction);if(Math.hypot(d.x,d.z)<.1)return false;const ok=begin(teleport?'teleport':'aerialRoll',f,{x:d.x*(teleport?38:15),y:teleport?Math.max(f.velocity.y,0):f.grounded?6:Math.max(2,f.velocity.y),z:d.z*(teleport?38:15)},teleport?.24:.4,{gravity:!teleport});if(ok){if(!f.grounded&&!teleport)airRolls--;rollUntil=teleport?-1:clock+.9;}return ok;}
+ function evade(f,timing={}){
+  if(!eligible(f))return false;const teleport=clock<=rollUntil;
+  if(!f.grounded&&!teleport&&airRolls<=0)return false;
+  if(plan&&!(teleport||plan.kind==='dash'||plan.kind==='airDash'))return false;
+  if(teleport||plan&&['dash','airDash'].includes(plan.kind)){if(plan)emit('cancel',{action:plan.kind,by:'evade'});plan=null;cooldown=0;}
+  const d=norm(f.direction);if(Math.hypot(d.x,d.z)<.1)return false;
+  const groundRoll=f.grounded&&!teleport,duration=teleport?.24:groundRoll?(timing.duration||1.2):.4;
+  const ok=begin(teleport?'teleport':groundRoll?'groundRoll':'aerialRoll',f,{x:d.x*(teleport?38:groundRoll?12:15),y:teleport?Math.max(f.velocity.y,0):groundRoll?0:Math.max(2,f.velocity.y),z:d.z*(teleport?38:groundRoll?12:15)},duration,{gravity:!teleport&&!groundRoll,groundRoll,rollRole:timing.role||'roll',facingYaw:groundRoll?Math.atan2(-d.x,-d.z):f.facingYaw,travelDirection:d});
+  if(ok){if(!f.grounded&&!teleport)airRolls--;rollUntil=teleport?-1:clock+.9;}return ok;
+ }
  function skip(f){if(!eligible(f)||plan||clock<skipReady)return false;const ok=begin('skip',f,{x:0,y:0,z:0},1.6,{gravity:false});if(ok)skipReady=clock+4;return ok;}
  function switchMove(f,state){if(!eligible(f)||plan)return false;let d=norm(f.direction),kind='switchBackstep',v={x:-d.x*13,y:1,z:-d.z*13};if(state==='impact'){kind='switchLift';v={x:d.x*3,y:10,z:d.z*3};}if(state==='counter'){kind='switchSlide';v={x:d.x*22,y:f.grounded?0:Math.max(0,f.velocity.y),z:d.z*22};}return begin(kind,f,v,.38);}
  function cancel(f){if(!eligible(f)||plan&&['scale','waterJump','treeFlip'].includes(plan.kind))return false;const kind=plan?.kind;plan=null;cooldown=.08;last=null;emit('cancel',{action:kind||'flow'});return{velocity:{x:f.velocity.x*.25,y:Math.max(f.velocity.y,-2),z:f.velocity.z*.25}};}
@@ -32,15 +41,16 @@
   const a=plan;a.time=Math.min(a.duration,a.time+dt);if(a.kind==='skip'){const d=norm(f.direction),rise=f.jumpHeld?6:f.descend?-6:1;a.velocity={x:d.x*13,y:rise,z:d.z*13};if(f.burst){a.velocity.x*=1.7;a.velocity.z*=1.7;}}
   if(a.kind==='skip'&&f.releaseSkip){reset('SKIP RELEASED');return{ownsMovement:false};}
   if(a.gravity!==false&&a.kind!=='dash'&&a.kind!=='airDash')a.velocity.y-=23*dt;
+  if(a.groundRoll){const u=Math.min(1,a.time/.55),fade=Math.max(0,Math.min(1,(u-.5)/.5)),speed=12*(1-fade*fade*(3-2*fade));a.velocity={x:a.travelDirection.x*speed,y:0,z:a.travelDirection.z*speed};}
   let next=add(f.position,a.velocity,dt),landed=false;if(a.flip){next={x:a.start.x+a.velocity.x*a.time,y:a.start.y+23*a.duration/2*a.time-11.5*a.time*a.time,z:a.start.z+a.velocity.z*a.time};a.velocity.y=23*a.duration/2-23*a.time;}
-  const h=api.supportAt(next);if(Number.isFinite(h)&&next.y<=h+1e-6&&f.position.y>=h-.2&&a.velocity.y<=0){next.y=h;a.velocity.y=0;landed=true;}
+  const h=api.supportAt(next);if(a.groundRoll&&(!Number.isFinite(h)||Math.abs(h-f.position.y)>.2)){reason='ROLL LOST SUPPORT';emit('blocked',{action:a.kind,reason});plan=null;cooldown=.08;return{ownsMovement:false};}if(a.groundRoll){next.y=h;landed=true;}if(Number.isFinite(h)&&next.y<=h+1e-6&&f.position.y>=h-.2&&a.velocity.y<=0){next.y=h;a.velocity.y=0;landed=true;}
   if(!api.sweepClear(f.position,next)){reason='PATH BLOCKED';emit('blocked',{action:a.kind});plan=null;cooldown=.15;last={ownsMovement:true,position:cp(f.position),velocity:{x:0,y:0,z:0},kind:a.kind,time:a.time,phase:a.time/a.duration,landed:!!f.grounded,blocked:true};return last;}
-  a.expected=cp(next);last={ownsMovement:true,position:next,velocity:cp(a.velocity),kind:a.kind,time:a.time,phase:a.time/a.duration,facingYaw:a.facingYaw,landed,invulnerable:a.kind==='skip'||a.kind==='teleport'||a.kind==='aerialRoll'&&a.time>=.04&&a.time<.22};
+  a.expected=cp(next);last={ownsMovement:true,position:next,velocity:cp(a.velocity),kind:a.kind,time:a.time,phase:a.time/a.duration,facingYaw:a.facingYaw,rollRole:a.rollRole,landed,invulnerable:a.kind==='skip'||a.kind==='teleport'||['aerialRoll','groundRoll'].includes(a.kind)&&a.time>=.04&&a.time<.22};
   // A supported flip landing is a continuation window. Delaying it by the
   // general skill cooldown can consume the remaining ground-jump buffer.
   if(a.time>=a.duration||landed&&a.airborne){emit('complete',{action:a.kind});plan=null;cooldown=a.flip&&landed?0:.08;}return last;
  }
- return{notifyJump:()=>{jumpAge=0;lastGround=false;},update,flip,launch:(f,v,kind='zipLaunch')=>begin(kind,f,v,.65),dash,scale,secondWaterJump,rebound,evade,skip,switchMove,cancel,setCharge,reset,refresh:()=>{airDash=1;},jumpGravity:f=>jumpAge<.22&&f.jumpHeld&&f.velocity.y>0?.5:1,charging:()=>charging,locked:()=>!!plan,active:()=>!!plan,invulnerable:()=>!!plan&&['skip','teleport'].includes(plan.kind)||!!last?.invulnerable&&!!plan,state:()=>({clock,action:plan?.kind||null,time:plan?.time||0,duration:plan?.duration||0,airDash,airLift,waterHop,airRolls,skipCooldown:Math.max(0,skipReady-clock),charging,charge,pendingRelease,jumpAge,reason,cooldown,events:events.slice(),motion:last})};
+ return{notifyJump:()=>{jumpAge=0;lastGround=false;},update,flip,launch:(f,v,kind='zipLaunch')=>begin(kind,f,v,.65),dash,scale,secondWaterJump,rebound,evade,skip,switchMove,cancel,setCharge,reset,refresh:()=>{airDash=1;},jumpGravity:f=>jumpAge<.22&&f.jumpHeld&&f.velocity.y>0?.5:1,charging:()=>charging,locked:()=>!!plan,active:()=>!!plan,invulnerable:()=>!!plan&&['skip','teleport'].includes(plan.kind)||!!last?.invulnerable&&!!plan,state:()=>({clock,action:plan?.kind||null,time:plan?.time||0,duration:plan?.duration||0,rollRole:plan?.rollRole||null,airDash,airLift,waterHop,airRolls,skipCooldown:Math.max(0,skipReady-clock),charging,charge,pendingRelease,jumpAge,reason,cooldown,events:events.slice(),motion:last})};
  }
  root.createBackspoolFlow=create;if(typeof module!=='undefined')module.exports={create};
 })(typeof window!=='undefined'?window:globalThis);
