@@ -11,7 +11,7 @@
  function startWall(f,w){
   if(!eligible(f)||!f.sprint||plan&&plan.kind!=='float'||cooldown>1e-6&&!(f.linkFromTether&&reason==='TETHER ARRIVED')||wallJumps>=6||!w||!finite(w.normal)||!finite(w.position)||!Number.isFinite(w.top))return false;
   const nl=Math.hypot(w.normal.x,w.normal.z);if(nl<.99||nl>1.01||Math.abs(w.normal.y)>.01||len(sub(w.position,f.position))>1.4||!clear(f.position,w.position))return false;
-  plan={kind:'wallApproach',wall:{...w,normal:cp(w.normal),position:cp(w.position)},time:0,start:cp(f.position),expected:cp(f.position)};reason=null;log('wall-start');return true;
+  plan={kind:'wallApproach',wall:{...w,normal:cp(w.normal),position:cp(w.position)},time:0,start:cp(f.position),entryVelocity:cp(f.velocity),expected:cp(f.position)};reason=null;log('wall-start');return true;
  }
  function startTether(f,a){
   if(!eligible(f)||plan&&!['float','wall','ledge','water'].includes(plan.kind)||cooldown>1e-6||!a||!finite(a.position)||!finite(a.contact))return false;
@@ -33,21 +33,27 @@
   if(!Number.isFinite(dt)||dt<0||dt>.1)throw Error('Advanced traversal requires bounded steps');if(!eligible(f)){reset(f.hero!=='backspool'?'HERO CHANGE':'INELIGIBLE');return {ownsMovement:false};}
   clock+=dt;cooldown=Math.max(0,cooldown-dt);if(f.grounded&&!plan){floatUsed=0;wallJumps=0;}
   if(plan?.expected&&len(sub(f.position,plan.expected))>.15)return finish('ACTOR DISPLACED');
-  if(plan?.kind==='wallApproach'){const w=plan.wall;if(api.wallValid?.(w)===false)return finish('WALL CHANGED');plan.time=Math.min(.15,plan.time+dt);const next=mix(plan.start,w.position,plan.time/.15);if(!clear(f.position,next))return finish('WALL APPROACH BLOCKED');const result=output(next,{x:0,y:0,z:0},'wallClimb',0);if(plan.time>=.15){plan.kind='wall';plan.time=0;}return result;}
+  if(plan?.kind==='wallApproach'){
+   const w=plan.wall;if(api.wallValid?.(w)===false)return finish('WALL CHANGED');plan.time=Math.min(.12,plan.time+dt);
+   const n=w.normal,entry=plan.entryVelocity||f.velocity,dot=entry.x*n.x+entry.z*n.z,tangent={x:entry.x-dot*n.x,y:Math.max(2,entry.y),z:entry.z-dot*n.z};
+   const approach=mix(f.position,add(w.position,tangent,plan.time),Math.min(1,dt*24));
+   if(!clear(f.position,approach))return finish('WALL APPROACH BLOCKED');const v=dt>0?{x:(approach.x-f.position.x)/dt,y:(approach.y-f.position.y)/dt,z:(approach.z-f.position.z)/dt}:tangent;
+   const result=output(approach,v,'wallClimb',plan.time);if(plan.time>=.12){plan.kind='wall';plan.time=0;}return result;
+  }
   if(plan?.kind==='wallBoost'){const w=plan.wall;if(api.wallValid?.(w)===false)return finish('WALL CHANGED');plan.time+=dt;const next=add(f.position,{x:0,y:10,z:0},dt);if(!clear(f.position,next)||api.wallContact?.(next,w)===false)return finish('BOOST BLOCKED');const result=output(next,{x:0,y:10,z:0},'wallBoost',plan.time);if(next.y>=w.top-.8){plan.kind='wall';if(mantle(f))return update(0,f);}if(plan.time>=.35){plan.kind='wall';plan.time=0;}return result;}
   if(plan?.kind==='wall'||plan?.kind==='ledge'){
    const w=plan.wall;if(api.wallValid?.(w)===false)return finish('WALL CHANGED');
    if(f.position.y>=w.top-.8){if(f.sprint||f.jumpHeld){if(mantle(f))return update(0,f);}else plan.kind='ledge';}
    if(plan.kind==='ledge'){if(f.inputY<-.3)return finish('LEDGE RELEASED');const tangent={x:w.normal.z,y:0,z:-w.normal.x},next=add(f.position,tangent,f.inputX*1.3*dt);if(!clear(f.position,next)||api.wallContact?.(next,w)===false)return finish('LEDGE ENDED');return output(next,{x:0,y:0,z:0},'ledge',clock%1);}
    if(!f.sprint)return finish('WALL RELEASED');plan.time+=dt;if(plan.time>1.6)return finish('WALL RUN EXPIRED');
-   const dot=f.direction.x*w.normal.x+f.direction.z*w.normal.z,tangent={x:f.direction.x-w.normal.x*dot,y:0,z:f.direction.z-w.normal.z*dot},tl=Math.hypot(tangent.x,tangent.z),v=tl>.3?{x:tangent.x/tl*7,y:2.3,z:tangent.z/tl*7}:{x:0,y:5.5,z:0},next=add(f.position,v,dt);
+   const dot=f.direction.x*w.normal.x+f.direction.z*w.normal.z,tangent={x:f.direction.x-w.normal.x*dot,y:0,z:f.direction.z-w.normal.z*dot},tl=Math.hypot(tangent.x,tangent.z),targetSpeed=Math.max(6,Math.min(14,Math.hypot(plan.entryVelocity?.x||0,plan.entryVelocity?.z||0))),blend=1-Math.exp(-12*dt),target=tl>.3?{x:tangent.x/tl*targetSpeed,y:2.3,z:tangent.z/tl*targetSpeed}:{x:0,y:5.5,z:0},normalVelocity=f.velocity.x*w.normal.x+f.velocity.z*w.normal.z,v={x:(f.velocity.x-normalVelocity*w.normal.x)*(1-blend)+target.x*blend,y:f.velocity.y*(1-blend)+target.y*blend,z:(f.velocity.z-normalVelocity*w.normal.z)*(1-blend)+target.z*blend},next=add(f.position,v,dt);
    // Retain the .62m body stand-off from the physical wall plane.
    const plane=(next.x-w.position.x)*w.normal.x+(next.z-w.position.z)*w.normal.z;next.x-=plane*w.normal.x;next.z-=plane*w.normal.z;
    if(!clear(f.position,next)||api.wallContact?.(next,w)===false)return finish('WALL PATH BLOCKED');return output(next,v,tl>.3?'wallRun':'wallClimb',plan.time);
   }
   if(plan?.kind==='mantle'){
-   if(api.wallValid?.(plan.wall)===false)return finish('WALL CHANGED');plan.time=Math.min(plan.duration,plan.time+dt);const t=plan.time/plan.duration,next=t<.6?mix(plan.start,plan.high,t/.6):mix(plan.high,plan.end,(t-.6)/.4);
-   if(!clear(f.position,next)||Math.abs(api.supportAt(plan.end)-plan.end.y)>.08)return finish('MANTLE EXIT LOST');const result=output(next,{x:0,y:0,z:0},'mantle',t,t>=1);if(t>=1){reset('ROOFTOP REACHED');wallJumps=0;cooldown=.3;}return result;
+   if(api.wallValid?.(plan.wall)===false)return finish('WALL CHANGED');plan.time=Math.min(plan.duration,plan.time+dt);const t=plan.time/plan.duration,ease=x=>x*x*(3-2*x),next=t<.6?mix(plan.start,plan.high,ease(t/.6)):mix(plan.high,plan.end,ease((t-.6)/.4));
+   if(!clear(f.position,next)||Math.abs(api.supportAt(plan.end)-plan.end.y)>.08)return finish('MANTLE EXIT LOST');const result=output(next,dt>0?{x:(next.x-f.position.x)/dt,y:t>=1?0:(next.y-f.position.y)/dt,z:(next.z-f.position.z)/dt}:{x:0,y:0,z:0},'mantle',t,t>=1);if(t>=1){reset('ROOFTOP REACHED');wallJumps=0;cooldown=.3;}return result;
   }
   if(plan?.kind==='tether'){
    const a=plan.anchor;plan.time+=dt;if(api.anchorValid?.(a)===false)return finish('ANCHOR CHANGED');if(plan.time>plan.duration)return finish('TETHER EXPIRED');const d=sub(a.position,f.position),distance=len(d),v=distance>.001?{x:d.x/distance*28,y:d.y/distance*28,z:d.z/distance*28}:{x:0,y:0,z:0},next=distance<=28*dt?cp(a.position):add(f.position,v,dt);
