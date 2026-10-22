@@ -1,0 +1,1178 @@
+{
+  "results": [
+    {
+      "file": "output/action-v2/combat-tests.js",
+      "result": {
+        "checks": [
+          {
+            "name": "Action manifest has exactly36attacks",
+            "pass": true,
+            "detail": 36
+          },
+          {
+            "name": "Three states each own12authored attacks",
+            "pass": true
+          },
+          {
+            "name": "All moves have loaded cropped clips",
+            "pass": true
+          },
+          {
+            "name": "All authored clips have normalized runtime duration",
+            "pass": true
+          },
+          {
+            "name": "Each state retains four verified source families",
+            "pass": true
+          },
+          {
+            "name": "Each move owns explicit contact and transition markers",
+            "pass": true
+          },
+          {
+            "name": "flow starts immediately on RT/LMB press",
+            "pass": true
+          },
+          {
+            "name": "flow reaction latency is at most one fixedstep",
+            "pass": true
+          },
+          {
+            "name": "flow holding RT/LMB does not autochain",
+            "pass": true
+          },
+          {
+            "name": "flow follow-up enters one action-scoped continuation",
+            "pass": true
+          },
+          {
+            "name": "flow continuation advances one graph edge",
+            "pass": true
+          },
+          {
+            "name": "flow heavy is a distinct authored move",
+            "pass": true
+          },
+          {
+            "name": "flow forward heavy selects launcher",
+            "pass": true
+          },
+          {
+            "name": "impact starts immediately on RT/LMB press",
+            "pass": true
+          },
+          {
+            "name": "impact reaction latency is at most one fixedstep",
+            "pass": true
+          },
+          {
+            "name": "impact holding RT/LMB does not autochain",
+            "pass": true
+          },
+          {
+            "name": "impact follow-up enters one action-scoped continuation",
+            "pass": true
+          },
+          {
+            "name": "impact continuation advances one graph edge",
+            "pass": true
+          },
+          {
+            "name": "impact heavy is a distinct authored move",
+            "pass": true
+          },
+          {
+            "name": "impact forward heavy selects launcher",
+            "pass": true
+          },
+          {
+            "name": "counter starts immediately on RT/LMB press",
+            "pass": true
+          },
+          {
+            "name": "counter reaction latency is at most one fixedstep",
+            "pass": true
+          },
+          {
+            "name": "counter holding RT/LMB does not autochain",
+            "pass": true
+          },
+          {
+            "name": "counter follow-up enters one action-scoped continuation",
+            "pass": true
+          },
+          {
+            "name": "counter continuation advances one graph edge",
+            "pass": true
+          },
+          {
+            "name": "counter heavy is a distinct authored move",
+            "pass": true
+          },
+          {
+            "name": "counter forward heavy selects launcher",
+            "pass": true
+          },
+          {
+            "name": "Jump denied during committed startup",
+            "pass": true
+          },
+          {
+            "name": "Guard cancels only after final contact",
+            "pass": true
+          },
+          {
+            "name": "Unguarded hit interrupts action",
+            "pass": true
+          },
+          {
+            "name": "Stagger blocks attacks,jumps,releases",
+            "pass": true
+          },
+          {
+            "name": "Dodge invulnerability opens after40ms",
+            "pass": true
+          },
+          {
+            "name": "Dodge invulnerability closes after220ms",
+            "pass": true
+          },
+          {
+            "name": "Dodge releases movement by550ms",
+            "pass": true
+          },
+          {
+            "name": "State switch queues during committed attack",
+            "pass": true
+          },
+          {
+            "name": "State switch preserves action recovery before applying",
+            "pass": true
+          },
+          {
+            "name": "Air attack owns airborne definition",
+            "pass": true
+          },
+          {
+            "name": "Ordinary landing closes airborne damage action",
+            "pass": true
+          },
+          {
+            "name": "Mixer combat action is evaluated manually once",
+            "pass": true
+          },
+          {
+            "name": "Hitstop leaves global simulation at normal speed",
+            "pass": true
+          },
+          {
+            "name": "Reset always clears free-roam attack and pending input",
+            "pass": true
+          },
+          {
+            "name": "Practice placement commits allthreeactors",
+            "pass": true
+          },
+          {
+            "name": "Shared limb-contact path damages and deduplicates",
+            "pass": true
+          },
+          {
+            "name": "Echo contact result includes target and outcome",
+            "pass": true
+          }
+        ],
+        "passed": 44,
+        "total": 44,
+        "diagnostics": {
+          "clock": 9.083333333333364,
+          "inputClock": 9.083333333333364,
+          "pending": null,
+          "action": null,
+          "phase": "idle",
+          "charge": 0,
+          "charging": false,
+          "target": null,
+          "lockPhase": "none",
+          "lockAge": 9.083333333333364,
+          "hits": 1,
+          "blocked": 0,
+          "evaded": 0,
+          "sequence": 20,
+          "chain": 0,
+          "buffer": false,
+          "hitstop": 0,
+          "focus": 0,
+          "evadeUntil": 8.066666666666697,
+          "guardSince": 7.333333333333313,
+          "reactionUntil": 0,
+          "cameraMode": "exploration",
+          "lastResult": "HIT",
+          "interruptionReason": "TEST",
+          "groundLift": 0.008000023356287467,
+          "groundClearance": 0.008000000000000007,
+          "responseLatency": 0,
+          "statePending": null,
+          "evadeStarted": -100,
+          "counterUntil": 0,
+          "counterSequence": 0,
+          "groundCorrectionRequested": 0.008000023356287467,
+          "contactPolicy": "feet",
+          "groundRejected": false,
+          "evadeDirection": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "invulnerable": false,
+          "staggered": false,
+          "defensiveWindow": {
+            "movement": 0.3,
+            "recovery": 0.48,
+            "invulnerableStart": 0.04,
+            "invulnerableEnd": 0.22,
+            "perfectGuard": 0.18
+          },
+          "style": "impact",
+          "groundMoves": 10,
+          "airMoves": 2,
+          "importedClips": 322,
+          "acrobatics": null,
+          "practice": [],
+          "ledger": [
+            {
+              "attack": "projectile",
+              "target": "backspool",
+              "result": "HIT",
+              "time": 7.35
+            },
+            {
+              "attack": "contract-test",
+              "moveId": "flow-light-1",
+              "beat": "test-contact",
+              "target": "practice-0",
+              "result": "HIT",
+              "damage": 12,
+              "time": 9.067
+            }
+          ],
+          "contactEvents": [
+            {
+              "attack": "contract-test",
+              "moveId": "flow-light-1",
+              "beat": "test-contact",
+              "target": "practice-0",
+              "result": "HIT",
+              "damage": 12,
+              "time": 9.067
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "output/action-v2/integration-tests.js",
+      "result": {
+        "checks": [
+          {
+            "name": "Discrete performed strike banks original ID/state/markers",
+            "pass": true,
+            "detail": {
+              "index": 0,
+              "id": 1,
+              "kind": "strike",
+              "frames": 14,
+              "playing": false,
+              "origin": [
+                0,
+                0.42,
+                0
+              ],
+              "expiresIn": 24.858333333333334,
+              "moveId": "flow-light-1",
+              "moveVersion": 2,
+              "combatState": "flow",
+              "executedContacts": [
+                {
+                  "id": "flow-light-1-contact",
+                  "time": 0.08382,
+                  "socket": "rightHand",
+                  "radius": 0.32,
+                  "damage": 14,
+                  "push": 0.18,
+                  "heavy": false,
+                  "launcher": false
+                }
+              ]
+            }
+          },
+          {
+            "name": "Stored Flow action immutable after Impact switch",
+            "pass": true
+          },
+          {
+            "name": "World anchored Echo releases",
+            "pass": true
+          },
+          {
+            "name": "Echo cannot transport real hero",
+            "pass": true
+          },
+          {
+            "name": "Echo miss has explicit terminal event",
+            "pass": true
+          },
+          {
+            "name": "Dodge route is recorded through authored recovery",
+            "pass": true,
+            "detail": {
+              "index": 0,
+              "id": 2,
+              "kind": "dodge",
+              "frames": 15,
+              "playing": false,
+              "origin": [
+                0,
+                0.42,
+                0
+              ],
+              "expiresIn": 24.966666666666665,
+              "moveId": null,
+              "moveVersion": null,
+              "combatState": null,
+              "executedContacts": []
+            }
+          },
+          {
+            "name": "Retrace reconnect begins",
+            "pass": true
+          },
+          {
+            "name": "Retrace completes physical route",
+            "pass": true
+          },
+          {
+            "name": "Real jump request cannot cancel committed strike",
+            "pass": true
+          },
+          {
+            "name": "Jump request cannot overwrite hit stagger",
+            "pass": true
+          },
+          {
+            "name": "Dodge retains raw directional intent while action locked",
+            "pass": true,
+            "detail": [
+              2.479999999999999,
+              0.42,
+              0
+            ]
+          },
+          {
+            "name": "Real rooftop guards registered as melee targets",
+            "pass": true
+          },
+          {
+            "name": "Real guard shares normalized damage outcome",
+            "pass": true
+          },
+          {
+            "name": "Teaching mannequin invulnerable without damage healing",
+            "pass": true
+          },
+          {
+            "name": "Legal sparring damage reaches defeat threshold",
+            "pass": true
+          },
+          {
+            "name": "Sparring naturally displays defeat",
+            "pass": true
+          },
+          {
+            "name": "Defeat restart restores playable attempt",
+            "pass": true
+          },
+          {
+            "name": "Actual pressed strike socket hits physical opponent",
+            "pass": true,
+            "detail": {
+              "before": 180,
+              "after": 166,
+              "ledger": [
+                {
+                  "attack": "projectile",
+                  "target": "backspool",
+                  "result": "HIT",
+                  "time": 3.275
+                },
+                {
+                  "attack": 4,
+                  "moveId": "flow-light-1",
+                  "beat": "flow-light-1-contact",
+                  "target": "encounter-3-0",
+                  "result": "HIT",
+                  "damage": 14,
+                  "time": 3.367
+                }
+              ]
+            }
+          },
+          {
+            "name": "Backspool has ground-reachable contract",
+            "pass": true
+          },
+          {
+            "name": "Switch preserves paused contract opponent health",
+            "pass": true
+          },
+          {
+            "name": "Hero switch does not refill Backspool health",
+            "pass": true
+          },
+          {
+            "name": "Resume retains opponent damage",
+            "pass": true
+          },
+          {
+            "name": "Courier progress preserved through Backspool contract",
+            "pass": true
+          },
+          {
+            "name": "Hero switching preserves Sightline strain and debt",
+            "pass": true
+          },
+          {
+            "name": "Backspool rewards do not inflate courier mission score",
+            "pass": true
+          },
+          {
+            "name": "Authored ground segments fit within12cm runtime correction",
+            "pass": true,
+            "detail": {
+              "id": "counter-counter-2",
+              "time": 0.4,
+              "min": 0.4128839120631573
+            }
+          },
+          {
+            "name": "Pause freezes world and replay simulation",
+            "pass": true
+          },
+          {
+            "name": "Reset unconditionally clears action, target and bank",
+            "pass": true
+          }
+        ],
+        "passed": 28,
+        "total": 28,
+        "supportMinimum": 0.4128839120631573
+      }
+    },
+    {
+      "file": "output/action-v2/retained/defense-tests.js",
+      "result": {
+        "checks": [
+          {
+            "name": "Guard cannot protect committed startup",
+            "pass": true
+          },
+          {
+            "name": "149ms buffered strike chains",
+            "pass": true
+          },
+          {
+            "name": "Stale general strike buffer expires before dodge recovery",
+            "pass": true
+          },
+          {
+            "name": "Defeat clears pending attack",
+            "pass": true
+          },
+          {
+            "name": "Encounter records defeat",
+            "pass": true
+          },
+          {
+            "name": "Defeat restart restores playable condition",
+            "pass": true
+          },
+          {
+            "name": "One attack beat cannot damage twice",
+            "pass": true
+          },
+          {
+            "name": "Approaching opponents keep separation",
+            "pass": true
+          },
+          {
+            "name": "Rooftop swept knockback finds supported path",
+            "pass": true
+          },
+          {
+            "name": "Rooftop knockback refuses unsupported drop",
+            "pass": true
+          },
+          {
+            "name": "Street knockback works beyond plaza",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "output/action-v2/retained/backspool-power-edge-tests.js",
+      "result": {
+        "checks": [
+          {
+            "name": "Current-world obstruction rejects route without consuming it",
+            "pass": true
+          },
+          {
+            "name": "Cleared route becomes available",
+            "pass": true
+          },
+          {
+            "name": "New obstruction interrupts retrace",
+            "pass": true
+          },
+          {
+            "name": "Blocked retrace stops before passing wall",
+            "pass": true
+          },
+          {
+            "name": "Echo misses when target leaves recorded attack volume",
+            "pass": true
+          },
+          {
+            "name": "Stored actions expire on simulation clock",
+            "pass": true
+          },
+          {
+            "name": "Three bank slots are bounded",
+            "pass": true
+          },
+          {
+            "name": "Fourth recording is refused without overwriting stored actions",
+            "pass": true
+          },
+          {
+            "name": "Separate present attack earns Crossbeat on delayed hit",
+            "pass": true
+          },
+          {
+            "name": "Three stored strikes can layer independently",
+            "pass": true
+          },
+          {
+            "name": "Layered echoes remain bounded and consume their slots",
+            "pass": true
+          },
+          {
+            "name": "All48gameplay clips validate",
+            "pass": true
+          },
+          {
+            "name": "Five new source rigs yield finite bounded bodies",
+            "pass": true
+          },
+          {
+            "name": "New clips retain fixed target scale and65bone channels",
+            "pass": true
+          }
+        ],
+        "radius": 1.7026921933673203,
+        "state": {
+          "clock": 44.63266666666594,
+          "strain": 68.63333333333347,
+          "selected": 0,
+          "recording": null,
+          "armed": false,
+          "echoes": 5,
+          "retraces": 1,
+          "crossbeats": 1,
+          "message": "MOVE · BANK · RELEASE",
+          "messageUntil": 46.63266666666594,
+          "eventCursor": 35,
+          "selectedRoute": null,
+          "retracing": null,
+          "slots": [
+            {
+              "index": 0,
+              "kind": null,
+              "frames": 0,
+              "playing": false,
+              "expiresIn": 0,
+              "moveId": null,
+              "moveVersion": null,
+              "combatState": null,
+              "executedContacts": []
+            },
+            {
+              "index": 1,
+              "kind": null,
+              "frames": 0,
+              "playing": false,
+              "expiresIn": 0,
+              "moveId": null,
+              "moveVersion": null,
+              "combatState": null,
+              "executedContacts": []
+            },
+            {
+              "index": 2,
+              "kind": null,
+              "frames": 0,
+              "playing": false,
+              "expiresIn": 0,
+              "moveId": null,
+              "moveVersion": null,
+              "combatState": null,
+              "executedContacts": []
+            }
+          ],
+          "events": [
+            {
+              "eventId": 1,
+              "recordingId": 1,
+              "kind": "record-start",
+              "time": 0.016,
+              "id": 1,
+              "action": "dodge"
+            },
+            {
+              "eventId": 2,
+              "recordingId": 1,
+              "kind": "banked",
+              "time": 0.499,
+              "id": 1,
+              "action": "dodge",
+              "frames": 15,
+              "contacts": []
+            },
+            {
+              "eventId": 3,
+              "recordingId": 1,
+              "kind": "retrace-rejected",
+              "time": 0.549,
+              "id": 1,
+              "reason": "ROUTE BLOCKED"
+            },
+            {
+              "eventId": 4,
+              "recordingId": 1,
+              "kind": "retrace-release",
+              "time": 0.549,
+              "id": 1
+            },
+            {
+              "eventId": 5,
+              "recordingId": 1,
+              "kind": "retrace-interrupted",
+              "time": 0.633,
+              "id": 1,
+              "reason": "OBSTRUCTION"
+            },
+            {
+              "eventId": 6,
+              "recordingId": 2,
+              "kind": "record-start",
+              "time": 1.116,
+              "id": 2,
+              "action": "strike"
+            },
+            {
+              "eventId": 7,
+              "recordingId": 2,
+              "kind": "banked",
+              "time": 1.449,
+              "id": 2,
+              "action": "strike",
+              "frames": 12,
+              "moveId": "flow-light-1",
+              "moveVersion": 2,
+              "combatState": "flow",
+              "contacts": [
+                "flow-light-1-contact"
+              ]
+            },
+            {
+              "eventId": 8,
+              "recordingId": 2,
+              "kind": "echo-release",
+              "time": 2.783,
+              "id": 2
+            },
+            {
+              "eventId": 9,
+              "recordingId": 2,
+              "kind": "echo-complete",
+              "time": 3.083,
+              "id": 2,
+              "hits": 0,
+              "guards": 0
+            },
+            {
+              "eventId": 10,
+              "recordingId": 3,
+              "kind": "record-start",
+              "time": 4.449,
+              "id": 3,
+              "action": "strike"
+            },
+            {
+              "eventId": 11,
+              "recordingId": 3,
+              "kind": "banked",
+              "time": 4.749,
+              "id": 3,
+              "action": "strike",
+              "frames": 11,
+              "moveId": "flow-light-1",
+              "moveVersion": 2,
+              "combatState": "flow",
+              "contacts": [
+                "flow-light-1-contact"
+              ]
+            },
+            {
+              "eventId": 12,
+              "recordingId": 3,
+              "kind": "expired",
+              "time": 32.116,
+              "id": 3
+            },
+            {
+              "eventId": 13,
+              "recordingId": 4,
+              "kind": "record-start",
+              "time": 32.116,
+              "id": 4,
+              "action": "dodge"
+            },
+            {
+              "eventId": 14,
+              "recordingId": 4,
+              "kind": "banked",
+              "time": 32.599,
+              "id": 4,
+              "action": "dodge",
+              "frames": 15,
+              "contacts": []
+            },
+            {
+              "eventId": 15,
+              "recordingId": 5,
+              "kind": "record-start",
+              "time": 32.649,
+              "id": 5,
+              "action": "dodge"
+            },
+            {
+              "eventId": 16,
+              "recordingId": 5,
+              "kind": "banked",
+              "time": 33.133,
+              "id": 5,
+              "action": "dodge",
+              "frames": 15,
+              "contacts": []
+            },
+            {
+              "eventId": 17,
+              "recordingId": 6,
+              "kind": "record-start",
+              "time": 33.183,
+              "id": 6,
+              "action": "dodge"
+            },
+            {
+              "eventId": 18,
+              "recordingId": 6,
+              "kind": "banked",
+              "time": 33.666,
+              "id": 6,
+              "action": "dodge",
+              "frames": 15,
+              "contacts": []
+            },
+            {
+              "eventId": 19,
+              "recordingId": 7,
+              "kind": "record-start",
+              "time": 33.799,
+              "id": 7,
+              "action": "strike"
+            },
+            {
+              "eventId": 20,
+              "recordingId": 7,
+              "kind": "banked",
+              "time": 34.133,
+              "id": 7,
+              "action": "strike",
+              "frames": 12,
+              "moveId": "flow-light-1",
+              "moveVersion": 2,
+              "combatState": "flow",
+              "contacts": [
+                "flow-light-1-contact"
+              ]
+            },
+            {
+              "eventId": 21,
+              "recordingId": 7,
+              "kind": "echo-release",
+              "time": 35.466,
+              "id": 7
+            },
+            {
+              "eventId": 22,
+              "recordingId": 7,
+              "kind": "echo-hit",
+              "time": 35.566,
+              "id": 7,
+              "target": "practice-0",
+              "contactId": "flow-light-1-contact",
+              "result": "HIT",
+              "damage": 0,
+              "moveId": "flow-light-1",
+              "moveVersion": 2,
+              "combatState": "flow"
+            },
+            {
+              "eventId": 23,
+              "recordingId": 7,
+              "kind": "echo-complete",
+              "time": 35.766,
+              "id": 7,
+              "hits": 1,
+              "guards": 0
+            },
+            {
+              "eventId": 24,
+              "recordingId": 8,
+              "kind": "record-start",
+              "time": 37.133,
+              "id": 8,
+              "action": "strike"
+            },
+            {
+              "eventId": 25,
+              "recordingId": 8,
+              "kind": "banked",
+              "time": 37.433,
+              "id": 8,
+              "action": "strike",
+              "frames": 11,
+              "moveId": "flow-light-1",
+              "moveVersion": 2,
+              "combatState": "flow",
+              "contacts": [
+                "flow-light-1-contact"
+              ]
+            },
+            {
+              "eventId": 26,
+              "recordingId": 9,
+              "kind": "record-start",
+              "time": 38.799,
+              "id": 9,
+              "action": "strike"
+            },
+            {
+              "eventId": 27,
+              "recordingId": 9,
+              "kind": "banked",
+              "time": 39.099,
+              "id": 9,
+              "action": "strike",
+              "frames": 11,
+              "moveId": "flow-light-1",
+              "moveVersion": 2,
+              "combatState": "flow",
+              "contacts": [
+                "flow-light-1-contact"
+              ]
+            },
+            {
+              "eventId": 28,
+              "recordingId": 10,
+              "kind": "record-start",
+              "time": 40.466,
+              "id": 10,
+              "action": "strike"
+            },
+            {
+              "eventId": 29,
+              "recordingId": 10,
+              "kind": "banked",
+              "time": 40.766,
+              "id": 10,
+              "action": "strike",
+              "frames": 11,
+              "moveId": "flow-light-1",
+              "moveVersion": 2,
+              "combatState": "flow",
+              "contacts": [
+                "flow-light-1-contact"
+              ]
+            },
+            {
+              "eventId": 30,
+              "recordingId": 10,
+              "kind": "echo-release",
+              "time": 42.133,
+              "id": 10
+            },
+            {
+              "eventId": 31,
+              "recordingId": 8,
+              "kind": "echo-release",
+              "time": 42.133,
+              "id": 8
+            },
+            {
+              "eventId": 32,
+              "recordingId": 9,
+              "kind": "echo-release",
+              "time": 42.133,
+              "id": 9
+            },
+            {
+              "eventId": 33,
+              "recordingId": 8,
+              "kind": "echo-complete",
+              "time": 42.416,
+              "id": 8,
+              "hits": 0,
+              "guards": 0
+            },
+            {
+              "eventId": 34,
+              "recordingId": 9,
+              "kind": "echo-complete",
+              "time": 42.416,
+              "id": 9,
+              "hits": 0,
+              "guards": 0
+            },
+            {
+              "eventId": 35,
+              "recordingId": 10,
+              "kind": "echo-complete",
+              "time": 42.416,
+              "id": 10,
+              "hits": 0,
+              "guards": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "output/action-v2/retained/backspool-power-controller-tests.js",
+      "result": {
+        "checks": [
+          {
+            "name": "LB plus X banks real controller dodge",
+            "pass": true
+          },
+          {
+            "name": "LB no longer switches fighting style",
+            "pass": true
+          },
+          {
+            "name": "RB release input does not sprint",
+            "pass": true
+          },
+          {
+            "name": "RB tap begins selected Retrace",
+            "pass": true
+          },
+          {
+            "name": "Full player loop completes controller Retrace",
+            "pass": true
+          },
+          {
+            "name": "Pause freezes power and Backspool animation",
+            "pass": true
+          },
+          {
+            "name": "Holding RB selects without releasing",
+            "pass": true
+          },
+          {
+            "name": "Original four-button hero switch remains valid",
+            "pass": true
+          },
+          {
+            "name": "Hero chord does not release stored actions",
+            "pass": true
+          }
+        ],
+        "powers": {
+          "clock": 2.2826666666666635,
+          "strain": 30.88333333333339,
+          "selected": 0,
+          "recording": null,
+          "armed": false,
+          "echoes": 0,
+          "retraces": 1,
+          "crossbeats": 0,
+          "message": "MOVE · BANK · RELEASE",
+          "messageUntil": 4.282666666666664,
+          "eventCursor": 6,
+          "selectedRoute": null,
+          "retracing": null,
+          "slots": [
+            {
+              "index": 0,
+              "kind": null,
+              "frames": 0,
+              "playing": false,
+              "expiresIn": 0,
+              "moveId": null,
+              "moveVersion": null,
+              "combatState": null,
+              "executedContacts": []
+            },
+            {
+              "index": 1,
+              "kind": null,
+              "frames": 0,
+              "playing": false,
+              "expiresIn": 0,
+              "moveId": null,
+              "moveVersion": null,
+              "combatState": null,
+              "executedContacts": []
+            },
+            {
+              "index": 2,
+              "kind": null,
+              "frames": 0,
+              "playing": false,
+              "expiresIn": 0,
+              "moveId": null,
+              "moveVersion": null,
+              "combatState": null,
+              "executedContacts": []
+            }
+          ],
+          "events": [
+            {
+              "eventId": 1,
+              "recordingId": 1,
+              "kind": "record-start",
+              "time": 0.016,
+              "id": 1,
+              "action": "dodge"
+            },
+            {
+              "eventId": 2,
+              "recordingId": 1,
+              "kind": "banked",
+              "time": 0.499,
+              "id": 1,
+              "action": "dodge",
+              "frames": 15,
+              "contacts": []
+            },
+            {
+              "eventId": 3,
+              "recordingId": 1,
+              "kind": "retrace-release",
+              "time": 0.566,
+              "id": 1
+            },
+            {
+              "eventId": 4,
+              "recordingId": 1,
+              "kind": "retrace-complete",
+              "time": 1.033,
+              "id": 1
+            },
+            {
+              "eventId": 5,
+              "recordingId": 2,
+              "kind": "record-start",
+              "time": 1.316,
+              "id": 2,
+              "action": "dodge"
+            },
+            {
+              "eventId": 6,
+              "recordingId": 2,
+              "kind": "banked",
+              "time": 1.799,
+              "id": 2,
+              "action": "dodge",
+              "frames": 15,
+              "contacts": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "output/action-v2/retained/lesson-failures.js",
+      "result": {
+        "checks": [
+          {
+            "name": "Missed Echo releases",
+            "pass": true
+          },
+          {
+            "name": "Missed Echo returns lesson to recording",
+            "pass": true
+          },
+          {
+            "name": "Miss feedback and recordingID retained in event",
+            "pass": true
+          },
+          {
+            "name": "Echo on wrong target cannot advance lesson",
+            "pass": true
+          },
+          {
+            "name": "Correct recording and target advances",
+            "pass": true
+          },
+          {
+            "name": "Movement lesson binds exact route",
+            "pass": true
+          },
+          {
+            "name": "Hit interruption returns lesson to dodge bank",
+            "pass": true
+          },
+          {
+            "name": "Retried Retrace completes lesson",
+            "pass": true
+          },
+          {
+            "name": "Lesson reward exactly250 once",
+            "pass": true
+          },
+          {
+            "name": "End clears owned Echo lock and actors",
+            "pass": true
+          },
+          {
+            "name": "Released Echo survives player hit",
+            "pass": true
+          },
+          {
+            "name": "Hero switch clears owned encounter",
+            "pass": true
+          },
+          {
+            "name": "Player reset clears lesson and bank",
+            "pass": true
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,28 @@
+# Integration review — 1e8201b
+
+Scope: authored diff `integration-review.patch`, current runtime/builder, supporting existing movement/input contracts. No production edits, commits, browser launches or unchanged-test reruns.
+
+**Spec compliance: changes required. Quality: changes required.** The pure modules remain approved under their documented contracts, but these adapter defects prevent the claimed physical chains and resource rules.
+
+## Important findings
+
+1. **P1 — Idle rail output overwrites ordinary velocity every frame.** `scripts/game_backspool_threadrail_runtime.js:57` copies `motion.velocity` for any non-owning result with a reason. `game_threadrail.js:46–50,253` always includes `lastVelocity` and a reason, including ordinary idle updates with no attachment. Consequently unattached frames reset velocity to zero initially, or repeatedly to the last detach/slingshot velocity. Ground locomotion hides the horizontal reset by replacing x/z later; gravity, normal air travel, Drive and actual rail landings do not recover correctly. Apply a handoff velocity once on an actual attached→detached transition/event; ignore idle snapshots. Add a real ordinary jump/fall and a slingshot-to-`onGround`/support-height test. The existing “seamless supported landing” assertion at `test_threadrail_browser.cjs:5` checks only finite velocity and `pos.y >= .4`, so an indefinitely ascending actor passes.
+
+2. **P1 — Manual rail transfer is unreachable through the selected controls.** `runtime:38–40`: `bestNearbyRail()` includes the attached segment, whose nearest distance is zero, then `attach()` calls `rail.transfer()` with that same ID; the core rejects `same-rail`. It also uses the 2 m attachment limit instead of the approved 3 m transfer limit. Exclude the current segment and select eligible outgoing/nearby alternatives within 3 m while attached. Test transfer through a real R/X press, including a candidate between 2 and 3 m away.
+
+3. **P1 — Drive spends resources without a compatible owning-controller handoff.** `runtime:14,25` gates combat/retrace, but does not gate or transition active Flow rolls/flips, advanced mantle/wall actions, ladders or vaults. Those controllers own planned movement and may overwrite the applied `s.vel` on their next tick (`game_backspool_traversal.js:43–49`, Flow/advanced adapters). A clear release during a committed vault/roll can therefore consume an impulse/strain and emit exhaust for movement that is immediately discarded. Either reject committed states before spending with clear feedback, or establish a checked interruption/handoff that preserves the applied impulse; test the resulting state and velocity beyond the release frame.
+
+4. **P1 — Classic controller can still invoke the unlimited legacy tether.** `runtime:75` consumes Classic View+RT only on the RT rising edge. On a later held frame it returns false; the unmodified legacy `pollGamepad` executes `backspoolAdvanced.padTether(View && RT)` (`builder:47` only injects the early return). That calls the old `beginTetherAim`, and release calls `endTetherAim` → `backspoolAdvanced.tether`. When quick physical placement fails, holding/releasing the same chord can still activate the old free pull. Consume the complete chord lifecycle or redirect/disable the legacy tether entry point in this candidate for both presets. Test a failed Threadrail placement followed by several held frames and release.
+
+5. **P2 — Nonrail cap can spend an impulse for zero actual motion.** `runtime:14,25` validates the uncapped proposed velocity, then clamps horizontal speed to 28 and upward speed to 16 only after the bank commits. At an exact cap a compatible forward/upward release can return success and charge strain while `actual deltaVelocity` is zero. The rail branch explicitly rejects no projected change; the ground/air branch needs the same transactional check using the final bounded velocity. Test both caps, preserved resource IDs/strain and no emitted release on rejection.
+
+6. **P2 — Mobile has no usable Replay Route record/replay controls.** `runtime:87` hides all direct `#afterstepHUD > button` controls at portrait and short heights; Record Route and Replay Route are only exposed as those buttons, and there is no equivalent touch action or binding. The new Drive/Threadrail touch buttons do not address this separate prototype. Keep Record/Replay reachable in an expandable options/mode panel and test actual touch hit targets at portrait and landscape sizes. The optional course button may remain in a debug/expanded panel.
+
+## Minor presentation / hardening
+
+- The default traversal preset still receives old Action Replay feedback instructing LB rather than View+LB, and combat lock feedback says R3/F even though default F is now interact and Alt is lock. Update preset-aware teaching/status labels, not only the new documentation (`runtime:88–90`; existing powers/combat presentation strings).
+- The builder restores the rollback HTML only after `baseline()` returns (`build_backspool_threadrail_candidate.py:7–9`); a failure after the baseline writes but before returning can leave the rollback replaced. A `try/finally` protects the preservation promise on errors too.
+
+## Acceptance still requiring evidence
+
+The supplied tests do not yet demonstrate all eight required chains, interruption/resource failure paths and physical roof/ground contact after rail handoff. The source-correctness and 119 retained checks are valuable but do not cover these newly identified adapter states. Matched performance evidence is being collected separately and was not interfered with during review.

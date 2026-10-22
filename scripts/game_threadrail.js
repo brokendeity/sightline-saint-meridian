@@ -196,14 +196,19 @@
       // The coordinator commits this one release plan, then ordinary air movement owns subsequent frames.
       outcome.ownsMovement = true; event('jump', { railId: outcome.railId, slingshot: !!(options && options.slingshot), velocity: copy(velocity) }); return outcome;
     }
-    function applyDrive(deltaVelocity) {
+    function previewDrive(deltaVelocity) {
       if (!current) return fail('not-attached');
       if (!vec(deltaVelocity) || length(deltaVelocity) < EPS) return fail('invalid-impulse');
       var rail = rails.get(current.railId), reason = railReason(rail); if (reason) return fail(reason);
       var before = copy(current.velocity), projection = dot(deltaVelocity, rail.tangent);
       var proposed = clamp(current.signedSpeed + projection, -limits.maxSpeed, limits.maxSpeed);
       if (Math.abs(proposed - current.signedSpeed) < EPS) return fail('no-projected-impulse');
-      current.signedSpeed = proposed; current.speed = Math.abs(proposed); current.velocity = mul(rail.tangent, proposed);
+      return { ok: true, signedSpeed: proposed, velocity: mul(rail.tangent, proposed), deltaVelocity: sub(mul(rail.tangent, proposed), before) };
+    }
+    function applyDrive(deltaVelocity) {
+      var checked = previewDrive(deltaVelocity); if (!checked.ok) return checked;
+      var before = copy(current.velocity);
+      current.signedSpeed = checked.signedSpeed; current.speed = Math.abs(checked.signedSpeed); current.velocity = copy(checked.velocity);
       // Drive direction can request a physically compatible outgoing path at the next linked endpoint.
       current.driveDirection = copy(deltaVelocity); lastReason = 'drive';
       var applied = sub(current.velocity, before), e = event('drive', { railId: current.railId, deltaVelocity: applied, speed: current.speed });
@@ -270,6 +275,6 @@
     function state() {
       return clone({ time: time, anchors: Array.from(anchors.values()), rails: Array.from(rails.values()), current: current, events: events, lastReason: lastReason, limits: limits });
     }
-    return { create: create, attach: attach, update: update, detach: detach, jump: jump, transfer: transfer, applyDrive: applyDrive, reset: reset, state: state };
+    return { create: create, attach: attach, update: update, detach: detach, jump: jump, transfer: transfer, previewDrive: previewDrive, applyDrive: applyDrive, reset: reset, state: state };
   };
 });

@@ -150,4 +150,7 @@ test('idle expiry and repeated lifecycle events stay bounded and monotonic',()=>
   for(let i=0;i<80;i++) {assert(c.attach(frame(),id).ok);c.detach();}
   assert(c.state().events.length<=128);const ids=c.state().events.map(e=>e.id);assert.equal(new Set(ids).size,ids.length);
 });
+test('preview of bounded projected Drive is readonly and applies the same checked delta',()=>{
+ const {c,f,id}=fixture();assert(c.attach(f,id).ok);const before=c.state();const checked=c.previewDrive(v(30));assert(checked.ok);assert.deepEqual(c.state(),before);close(checked.velocity.x,28);close(checked.deltaVelocity.x,18);const applied=c.applyDrive(checked.deltaVelocity);assert(applied.ok);assert.deepEqual(applied.deltaVelocity,checked.deltaVelocity);const capped=c.state();assert(!c.previewDrive(v(1)).ok);assert.deepEqual(c.state().current,capped.current);
+});
 console.log(`${count} Threadrail tests passed`);

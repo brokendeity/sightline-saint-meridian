@@ -141,12 +141,16 @@
     if (strain + cost > 100 + 1e-10) return failure('STRAIN_CAPACITY');
     let magnitude = Math.min(cfg.maxDelta, proposal.magnitude * (perfect ? 1 : .7));
     if (mode === 'brake') magnitude = Math.min(magnitude, length(frame.velocity));
-    const deltaVelocity = scale(proposal.direction, magnitude);
+    let deltaVelocity = scale(proposal.direction, magnitude);
     releasing = true;
     try {
       if (typeof api.canRelease === 'function') {
         const validation = api.canRelease(clone(frame), copy(deltaVelocity), mode);
         if (validation !== true && !(validation && validation.ok === true)) return failure(validation && validation.reason || 'OBSTRUCTED');
+        if (validation && validation.deltaVelocity != null) {
+          if (!vector(validation.deltaVelocity) || length(validation.deltaVelocity) < 1e-8 || length(validation.deltaVelocity) > length(deltaVelocity) + 1e-7) return failure('INVALID_APPLIED_IMPULSE');
+          deltaVelocity = copy(validation.deltaVelocity);
+        }
       }
       // Commit only after collision, compatibility and capacity checks have all succeeded.
       bank.splice(bank.indexOf(selected), 1); strain = Math.min(100, strain + cost);
@@ -157,6 +161,14 @@
       return { ok: true, reason, deltaVelocity, spent: [selected.id], event: confirmed };
     } catch (_) { return failure('VALIDATION_ERROR'); }
     finally { releasing = false; }
+  }
+  function describe(frame) {
+    return bank.map(item => ({ id: item.id, remaining: Math.max(0, item.expiresAt - now), modes: Object.fromEntries(Object.keys(costs).map(mode => {
+      const demanding = ['launch', 'directional', 'ghoststep', 'double-step', 'rail'].includes(mode), second = mode === 'double-step' && doubleStep && now - doubleStep.time <= .7;
+      const beat = second ? doubleStep.time + .32 : lastBeat, perfect = number(beat) && Math.abs(now - beat) <= cfg.perfectWindow + 1e-10, cost = costs[mode] * (perfect ? .75 : 1);
+      const compatibleNow = !!frame && !!compatible(item, mode, frame, {}), eligible = item.expiresAt > now && item.reservedBy === null && compatibleNow && !(demanding && strain >= 85) && strain + cost <= 100;
+      return [mode, { cost, eligible, compatible: compatibleNow, requiresWorldValidation: true }];
+    })) }));
   }
   function reserve(ids, token) {
     if (releasing) return failure('BUSY');
@@ -183,5 +195,5 @@
     if (/death|respawn|new-game|restart/.test(reason.toLowerCase())) { strain = 0; lastRelease = null; }
     return state();
   }
-  return { contact, update, release, state, reset, reserve, unreserve };
+  return { contact, update, release, state, describe, reset, reserve, unreserve };
 });

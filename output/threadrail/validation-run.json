@@ -1,0 +1,210 @@
+{
+  "startedAt": "2026-10-22T06:49:00.104566+00:00",
+  "buildSha256": "b702d85b7c0da20d5fed4a7ce5ea2365005967beb63e66443575c96d007fb179",
+  "buildSha256After": "b702d85b7c0da20d5fed4a7ce5ea2365005967beb63e66443575c96d007fb179",
+  "results": [
+    {
+      "name": "afterstep_drive",
+      "command": [
+        "node",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/test_afterstep_drive.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "threadrail",
+      "command": [
+        "node",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/test_threadrail.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "replay_route",
+      "command": [
+        "node",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/test_replay_route.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "threadrail_foundation",
+      "command": [
+        "node",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/test_threadrail_foundation.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "temporal_exhaust",
+      "command": [
+        "node",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/test_temporal_exhaust.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "threadrail_pose",
+      "command": [
+        "node",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/test_threadrail_pose.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "backspool_flow",
+      "command": [
+        "node",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/test_backspool_flow.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "backspool_advanced",
+      "command": [
+        "node",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/test_backspool_advanced.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "backspool_hop",
+      "command": [
+        "node",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/test_backspool_hop.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "backspool_traversal",
+      "command": [
+        "node",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/test_backspool_traversal.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "backspool_roll_physics",
+      "command": [
+        "node",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/test_backspool_roll_physics.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "forspoken_native_kernels",
+      "command": [
+        "node",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/test_forspoken_native_kernels.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "forspoken_contact_frames",
+      "command": [
+        "node",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/test_forspoken_contact_frames.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "landing_assets",
+      "command": [
+        "/opt/homebrew/opt/python@3.11/bin/python3.11",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/test_backspool_landing_roll_assets.py"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "source_parameter_biped",
+      "command": [
+        "/opt/homebrew/opt/python@3.11/bin/python3.11",
+        "-c",
+        "import sys,unittest;from pathlib import Path;sys.path.insert(0,'scripts');import recover_forspoken_controller_contracts as a,recover_forspoken_biped_bindings as b;a.OUT=b.OUT=Path(sys.argv[1]);import test_forspoken_controller_contracts as c,test_forspoken_biped_bindings as d;r=unittest.TextTestRunner(verbosity=2).run(unittest.TestSuite([unittest.defaultTestLoader.loadTestsFromModule(c),unittest.defaultTestLoader.loadTestsFromModule(d)]));sys.exit(not r.wasSuccessful())",
+        "/Users/richardmpayi/Downloads/sight game rail/output/rea-forspoken"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "source_pose_oracle",
+      "command": [
+        "node",
+        "-e",
+        "const fs=require('fs'),orig=fs.readFileSync;fs.readFileSync=function(file,...rest){if(file==='output/rea-forspoken/hu000-rig.json')file=process.argv[1]+'/hu000-rig.json';return orig.call(this,file,...rest)};require('./scripts/test_forspoken_pose_kernels.cjs')",
+        "/Users/richardmpayi/Downloads/sight game rail/output/rea-forspoken"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "integrated_input",
+      "command": [
+        "node",
+        "scripts/test_threadrail_browser.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "device_route",
+      "command": [
+        "node",
+        "scripts/test_threadrail_inputs_route.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "integration_fixes",
+      "command": [
+        "node",
+        "scripts/test_threadrail_fix_regression.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "eight_physical_chains",
+      "command": [
+        "node",
+        "scripts/test_threadrail_chains.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "v15_landing_roll",
+      "command": [
+        "node",
+        "scripts/test_backspool_landing_roll.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "retained_classic",
+      "command": [
+        "node",
+        "scripts/validate_traversal_regressions.cjs"
+      ],
+      "passed": true,
+      "exitCode": 0
+    }
+  ],
+  "allExecutedPassed": true
+}

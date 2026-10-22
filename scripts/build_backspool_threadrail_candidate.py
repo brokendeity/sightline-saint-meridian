@@ -5,8 +5,11 @@ from build_backspool_traversal_candidate import main as baseline
 ROOT=Path(__file__).resolve().parents[1]
 def main():
  old=ROOT/'SIGHTLINE_BACKSPOOL_TRAVERSAL_CANDIDATE.html';backup=old.read_bytes()
- baseline()
- s=old.read_text();old.write_bytes(backup)
+ try:
+  baseline()
+  s=old.read_text()
+ finally:
+  old.write_bytes(backup)
  subprocess.run(['node',str(ROOT/'scripts/build_threadrail_pose.cjs')],check=True)
  def edit(a,b,count=1):
   nonlocal s
@@ -51,6 +54,14 @@ def main():
  edit("rb=!!(pad.connected&&gp?.buttons?.[5]?.value>.5)", "rb=!!(pad.connected&&gp?.buttons?.[5]?.value>.5&&window.threadrailGame?.preset()!=='traversal')")
  edit("up=!!(pad.connected&&gp?.buttons?.[12]?.value>.5&&!gp?.buttons?.[8]?.pressed)", "up=!!(pad.connected&&gp?.buttons?.[12]?.value>.5&&!gp?.buttons?.[8]?.pressed&&window.threadrailGame?.preset()!=='traversal')")
  # Experimental free boost/teleport controls stay in rollback, not this physical equipment build.
+ for entry in ['function dash(){','function scale(){','function skip(){','function switchMove(){']:
+  edit(entry,entry+"if(window.threadrailGame)return false;")
+ edit('function setCharge(held){','function setCharge(held){if(window.threadrailGame)return false;')
+ edit('function beginTetherAim(){','function beginTetherAim(){if(window.threadrailGame)return false;')
+ edit('function endTetherAim(){','function endTetherAim(){if(window.threadrailGame)return false;')
+ edit('function tether(){','function tether(){if(window.threadrailGame)return false;')
+
+ edit('const teleport=clock<=rollUntil;', 'const teleport=!window.threadrailGame&&clock<=rollUntil;')
  edit('function poll(){const gp=findGamepad(),now=', 'function poll(){if(window.threadrailGame)return;const gp=findGamepad(),now=')
  edit('if(!sprint&&sprintDown&&inputClock-sprintAt<.18', 'if(!window.threadrailGame&&!sprint&&sprintDown&&inputClock-sprintAt<.18')
  edit('if(!plan&&!f.grounded&&f.jumpHeld&&!f.reserveJump', 'if(!window.threadrailGame&&!plan&&!f.grounded&&f.jumpHeld&&!f.reserveJump')

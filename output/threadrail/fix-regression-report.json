@@ -1,0 +1,3260 @@
+{
+  "tests": [
+    "idle rail cannot rewrite ordinary velocity across six gravity frames",
+    "ordinary input jump has ascent, apex, descent and supported contact within three seconds",
+    "air Drive remains applied through six physics frames",
+    "horizontal cap rejection preserves exact bank IDs, expiry, strain, events and exhaust",
+    "upward cap rejection preserves exact bank IDs, expiry, strain, events and exhaust",
+    "capped success records only actual applied delta in core and exhaust",
+    "flip startup rejects Drive and rail without changing resources or action",
+    "flip recovery hands physics to Drive after 200ms and preserves source pose tail",
+    "ground roll startup preserves committed action and bank",
+    "ground roll recovery accepts Drive after 400ms without re-banking its motion",
+    "ladder fixture is physically attached",
+    "ladder rejects Drive and rail with exact resource preservation",
+    "guard fixture is active",
+    "guard rejects Drive without spending",
+    "combat fixture action is active",
+    "active combat rejects Drive without spending",
+    "wall approach fixture is committed",
+    "wall approach rejects equipment before stable contact",
+    "stable wall fixture is eligible",
+    "stable wall hands physics to Drive and retains it through six gravity frames",
+    "mantle fixture reaches actual owning state",
+    "mantle rejects Drive and rail without losing committed motion",
+    "ground vault fixture is committed",
+    "ground vault rejects Drive and rail with exact resources",
+    "committed ground vault completes physically within its source duration",
+    "stagger fixture is active",
+    "stagger rejects both equipment actions preserving exact resources",
+    "transfer fixture attaches to first physical segment",
+    "real R transfers to another rail between 2m and 3m reach",
+    "three-metre transfer remains attached after approach and eighty physics frames",
+    "invalid transfer preserves current rail and momentum",
+    "failed Classic View+RT held and released never enables legacy tether",
+    "repeated evade cannot activate the old free teleport",
+    "candidate disables direct legacy magic entry points",
+    "Traversal teaching labels use View+LB and Alt lock",
+    "touch 430x932 recordRoute has visible 44px hit target",
+    "touch 430x932 replayRoute has visible 44px hit target",
+    "touch 932x430 recordRoute has visible 44px hit target",
+    "touch 932x430 replayRoute has visible 44px hit target",
+    "clean candidate page console"
+  ],
+  "evidence": {
+    "jump": [
+      {
+        "y": 0.5769444444444445,
+        "vy": 9.416666666666668,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 0.7275,
+        "vy": 9.033333333333335,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 0.8716666666666667,
+        "vy": 8.650000000000002,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.0094444444444446,
+        "vy": 8.26666666666667,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.1408333333333336,
+        "vy": 7.8833333333333355,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.2658333333333336,
+        "vy": 7.500000000000002,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.3844444444444448,
+        "vy": 7.116666666666669,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.496666666666667,
+        "vy": 6.733333333333336,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.6025000000000005,
+        "vy": 6.350000000000003,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.701944444444445,
+        "vy": 5.96666666666667,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.7950000000000006,
+        "vy": 5.5833333333333375,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.8816666666666673,
+        "vy": 5.200000000000004,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.9619444444444452,
+        "vy": 4.81666666666667,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.035833333333334,
+        "vy": 4.433333333333337,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.103333333333334,
+        "vy": 4.050000000000004,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.1644444444444453,
+        "vy": 3.666666666666671,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.2191666666666676,
+        "vy": 3.283333333333337,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.267500000000001,
+        "vy": 2.900000000000004,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.3094444444444453,
+        "vy": 2.5166666666666706,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.345000000000001,
+        "vy": 2.1333333333333373,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.374166666666668,
+        "vy": 1.750000000000004,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.3969444444444457,
+        "vy": 1.3666666666666707,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.4133333333333344,
+        "vy": 0.9833333333333373,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.4233333333333347,
+        "vy": 0.600000000000004,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.426944444444446,
+        "vy": 0.21666666666667064,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.424166666666668,
+        "vy": -0.16666666666666263,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.4150000000000014,
+        "vy": -0.5499999999999959,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.399444444444446,
+        "vy": -0.9333333333333291,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.3775000000000017,
+        "vy": -1.3166666666666624,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.3491666666666684,
+        "vy": -1.6999999999999957,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.314444444444446,
+        "vy": -2.083333333333329,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.273333333333335,
+        "vy": -2.4666666666666623,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.2258333333333353,
+        "vy": -2.8499999999999956,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.1719444444444465,
+        "vy": -3.2333333333333285,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.1116666666666686,
+        "vy": -3.616666666666662,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 2.045000000000002,
+        "vy": -3.999999999999995,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.9719444444444467,
+        "vy": -4.383333333333328,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.8925000000000023,
+        "vy": -4.766666666666662,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.806666666666669,
+        "vy": -5.149999999999995,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.7144444444444469,
+        "vy": -5.533333333333327,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.615833333333336,
+        "vy": -5.916666666666661,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.510833333333336,
+        "vy": -6.299999999999994,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.3994444444444472,
+        "vy": -6.683333333333326,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.2816666666666696,
+        "vy": -7.066666666666658,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.157500000000003,
+        "vy": -7.449999999999992,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 1.0269444444444478,
+        "vy": -7.833333333333325,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 0.8900000000000035,
+        "vy": -8.216666666666658,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 0.7466666666666703,
+        "vy": -8.59999999999999,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 0.5969444444444482,
+        "vy": -8.983333333333324,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 0.4408333333333372,
+        "vy": -9.366666666666656,
+        "ground": false,
+        "support": 0.42
+      },
+      {
+        "y": 0.42,
+        "vy": 0,
+        "ground": true,
+        "support": 0.42
+      }
+    ],
+    "driveSixFrames": {
+      "pos": [
+        0,
+        8.665833333333333,
+        25
+      ],
+      "velocity": [
+        0,
+        5.700000000000001,
+        0
+      ],
+      "ground": false,
+      "flow": {
+        "clock": 1.2333333333333338,
+        "action": null,
+        "time": 0,
+        "duration": 0,
+        "rollRole": null,
+        "airDash": 1,
+        "airLift": 1,
+        "waterHop": 0,
+        "airRolls": 2,
+        "skipCooldown": 0,
+        "charging": false,
+        "charge": 0,
+        "pendingRelease": null,
+        "jumpAge": 99.1,
+        "reason": "DRIVE HANDOFF",
+        "cooldown": 0,
+        "events": [],
+        "motion": null,
+        "ready": true,
+        "magicTrails": 0,
+        "walkMode": false,
+        "flipCount": 0,
+        "poseRole": "jump",
+        "sourcePlayback": {
+          "role": "jump",
+          "sourceAnimationId": "0x28113cdc",
+          "originalMotionName": "air_jump_begin_inplace_n000a",
+          "time": 1.99999,
+          "duration": 2,
+          "loop": false,
+          "rate": 1,
+          "pelvisTranslation": true
+        },
+        "visualSupportBias": 0.4,
+        "poseTail": null,
+        "aimingTether": false,
+        "aimAge": 0,
+        "anchors": [
+          {
+            "id": "launch-0",
+            "position": [
+              -18,
+              5.5,
+              1153.7387966456854
+            ],
+            "launch": "horizontal"
+          },
+          {
+            "id": "launch-1",
+            "position": [
+              18,
+              5.5,
+              1153.7387966456854
+            ],
+            "launch": "vertical"
+          }
+        ],
+        "trees": [
+          [
+            -52,
+            0,
+            1178.7387966456854
+          ],
+          [
+            -66,
+            0,
+            1190.7387966456854
+          ]
+        ],
+        "ramps": [
+          {
+            "id": "waterfront-ramp",
+            "minX": -92,
+            "maxX": -82,
+            "minZ": 1158.7387966456854,
+            "maxZ": 1170.7387966456854,
+            "rise": 3
+          }
+        ],
+        "sourceOnly": true,
+        "landing": null,
+        "contactPolicy": "sole",
+        "contactCorrection": 0,
+        "landingApproach": null
+      },
+      "advanced": {
+        "kind": null,
+        "clock": 1.2333333333333338,
+        "cooldown": 0,
+        "floatRemaining": 6,
+        "wallJumps": 0,
+        "reason": "INPUT RESET",
+        "motion": null,
+        "water": null,
+        "anchor": null,
+        "wallNormal": null,
+        "wallTop": null,
+        "events": [],
+        "origin": "authored mechanics; source/native candidate poses",
+        "ready": true,
+        "waters": [
+          {
+            "id": "meridian-waterfront",
+            "minX": -36,
+            "maxX": 36,
+            "minZ": 1171.7387966456854,
+            "maxZ": 1231.7387966456854,
+            "surface": 0.06,
+            "depth": 2.5
+          }
+        ],
+        "surfaceOnly": true,
+        "pose": "forspoken-flow-jump"
+      },
+      "equipment": {
+        "impulses": [],
+        "releaseEvents": [
+          {
+            "type": "release",
+            "id": "afterstep-4",
+            "sequence": 4,
+            "time": 1.1333333333333342,
+            "mode": "standard",
+            "contactId": "physical-3",
+            "action": "jump",
+            "perfect": true,
+            "cost": 6,
+            "deltaVelocity": {
+              "x": 0,
+              "y": 8,
+              "z": 0
+            },
+            "spent": [
+              "physical-3"
+            ],
+            "doubleStep": 0
+          }
+        ],
+        "movementReady": true,
+        "hero": "backspool",
+        "clock": 1.2333333333333338,
+        "owner": {
+          "frame": 74,
+          "owner": "ordinary",
+          "reason": null,
+          "conflicts": 0,
+          "commits": 1
+        },
+        "sprint": false,
+        "preset": "traversal",
+        "mode": "auto",
+        "wheel": false,
+        "drive": {
+          "now": 1.2333333333333338,
+          "strain": 6,
+          "capacity": 5,
+          "bank": [],
+          "lastBeat": 1.1333333333333342,
+          "lastRelease": {
+            "type": "release",
+            "id": "afterstep-4",
+            "sequence": 4,
+            "time": 1.1333333333333342,
+            "mode": "standard",
+            "contactId": "physical-3",
+            "action": "jump",
+            "perfect": true,
+            "cost": 6,
+            "deltaVelocity": {
+              "x": 0,
+              "y": 8,
+              "z": 0
+            },
+            "spent": [
+              "physical-3"
+            ],
+            "doubleStep": 0
+          },
+          "doubleStep": null,
+          "eventSequence": 4,
+          "reason": "RELEASED"
+        },
+        "rail": {
+          "time": 0.09999999999999999,
+          "anchors": [],
+          "rails": [],
+          "current": null,
+          "events": [
+            {
+              "id": 6,
+              "type": "reset",
+              "time": 0,
+              "reason": "RESPAWN"
+            }
+          ],
+          "lastReason": "RESPAWN",
+          "limits": {
+            "minSpan": 6,
+            "maxSpan": 100,
+            "maxSlope": 55,
+            "maxRails": 4,
+            "maxAnchors": 8,
+            "lifetime": 30,
+            "attachReach": 2,
+            "transferReach": 3,
+            "maxSpeed": 28,
+            "gravity": 9.81,
+            "friction": 0.45,
+            "junctionAngle": 75,
+            "jumpImpulse": 4.8,
+            "slingshotImpulse": 6.5
+          }
+        },
+        "route": {
+          "status": "empty",
+          "reason": "INPUT RESET",
+          "time": 0,
+          "route": null,
+          "recording": null,
+          "token": null,
+          "reservedIds": [],
+          "consumedIds": [],
+          "actionIndex": 0,
+          "counters": {
+            "recordings": 0,
+            "replays": 0,
+            "completed": 0,
+            "interrupted": 0,
+            "executed": 0,
+            "rejectedActions": 0
+          },
+          "limits": {
+            "maxSeconds": 4,
+            "maxActions": 8,
+            "maxSamples": 120,
+            "reconnectDistance": 1.35,
+            "maxDeviation": 1.5
+          },
+          "nextIds": {
+            "route": 1,
+            "action": 1,
+            "trace": 1,
+            "replay": 1
+          }
+        },
+        "exhaust": {
+          "bound": true,
+          "source": "bone:mixamorigHips",
+          "enabled": true,
+          "disposed": false,
+          "outletPosition": {
+            "x": -0.03995301002059292,
+            "y": 10.097628286452846,
+            "z": 25.193157097479514
+          },
+          "outletOffsetMeters": {
+            "x": 0,
+            "y": -0.02,
+            "z": -0.19
+          },
+          "emissionDirection": {
+            "x": 0,
+            "y": -1,
+            "z": 0
+          },
+          "activeCounts": {
+            "slivers": 15,
+            "rings": 7,
+            "threads": 25,
+            "slices": 4
+          },
+          "capacities": {
+            "slivers": 48,
+            "rings": 24,
+            "threads": 64,
+            "slices": 12
+          },
+          "activeTotal": 51,
+          "visibleDrawCalls": 4,
+          "maxDrawCalls": 5,
+          "lastRelease": {
+            "id": "afterstep-4",
+            "at": 1.1333333333333342,
+            "mode": "standard",
+            "perfect": true,
+            "magnitude": 8,
+            "deltaVelocity": {
+              "x": 0,
+              "y": 8,
+              "z": 0
+            },
+            "direction": {
+              "x": 0,
+              "y": -1,
+              "z": 0
+            },
+            "braking": false
+          },
+          "lastBank": {
+            "id": "afterstep-3",
+            "at": 1.1333333333333342,
+            "type": "contact"
+          },
+          "lastReset": "INPUT RESET",
+          "emitted": 63,
+          "overwritten": 0,
+          "refraction": {
+            "supported": null,
+            "remaining": 0.17000000000000004,
+            "captureCount": 0,
+            "rect": null,
+            "textureSize": 128
+          }
+        },
+        "precision": false,
+        "pendingAnchor": null,
+        "lastMessage": "PERFECT DRIVE · STANDARD",
+        "course": null,
+        "activeAnimation": "forspoken-flow-jump",
+        "animationTime": 1.99999,
+        "contactEvents": [
+          {
+            "type": "contact",
+            "id": "afterstep-1",
+            "sequence": 1,
+            "time": 0.3,
+            "contactId": "physical-1",
+            "action": "jump",
+            "vector": {
+              "x": 0,
+              "y": 9.416666666666668,
+              "z": 0
+            },
+            "direction": {
+              "x": 0,
+              "y": 1,
+              "z": 0
+            },
+            "magnitude": 9.416666666666668,
+            "replaced": null
+          },
+          {
+            "type": "contact",
+            "id": "afterstep-2",
+            "sequence": 2,
+            "time": 1.1333333333333342,
+            "contactId": "physical-2",
+            "action": "landing",
+            "vector": {
+              "x": 0,
+              "y": 6.088333333333327,
+              "z": 0
+            },
+            "direction": {
+              "x": 0,
+              "y": 1,
+              "z": 0
+            },
+            "magnitude": 6.088333333333327,
+            "replaced": null
+          },
+          {
+            "type": "contact",
+            "id": "afterstep-3",
+            "sequence": 3,
+            "time": 1.1333333333333342,
+            "contactId": "physical-3",
+            "action": "jump",
+            "vector": {
+              "x": 0,
+              "y": 8,
+              "z": 0
+            },
+            "direction": {
+              "x": 0,
+              "y": 1,
+              "z": 0
+            },
+            "magnitude": 8,
+            "replaced": null
+          }
+        ]
+      }
+    },
+    "flipHandoff": {
+      "before": {
+        "pos": [
+          0,
+          2.7870833333333334,
+          23.916666666666668
+        ],
+        "velocity": [
+          0,
+          8.433333333333335,
+          -5
+        ],
+        "ground": false,
+        "flow": {
+          "clock": 1.4499999999999997,
+          "action": "frontFlip",
+          "time": 0.21666666666666665,
+          "duration": 1.1666666666666667,
+          "rollRole": null,
+          "airDash": 1,
+          "airLift": 1,
+          "waterHop": 0,
+          "airRolls": 2,
+          "skipCooldown": 0,
+          "charging": false,
+          "charge": 0,
+          "pendingRelease": null,
+          "jumpAge": 0.21666666666666665,
+          "reason": null,
+          "cooldown": 0,
+          "events": [
+            {
+              "id": 1,
+              "time": 1.2333333333333338,
+              "kind": "start",
+              "action": "frontFlip"
+            }
+          ],
+          "motion": {
+            "ownsMovement": true,
+            "position": {
+              "x": 0,
+              "y": 2.7870833333333334,
+              "z": 23.916666666666668
+            },
+            "velocity": {
+              "x": 0,
+              "y": 8.433333333333335,
+              "z": -5
+            },
+            "kind": "frontFlip",
+            "time": 0.21666666666666665,
+            "phase": 0.1857142857142857,
+            "facingYaw": 0,
+            "landed": false,
+            "invulnerable": false
+          },
+          "ready": true,
+          "magicTrails": 2,
+          "walkMode": false,
+          "flipCount": 1,
+          "poseRole": "frontFlip",
+          "sourcePlayback": {
+            "role": "frontFlip",
+            "sourceAnimationId": "0x2811ec86",
+            "originalMotionName": "pkr_mgc_act_cancel_base_f000a",
+            "time": 0.25999999999999995,
+            "duration": 1.5,
+            "loop": false,
+            "rate": 1.2,
+            "pelvisTranslation": true
+          },
+          "visualSupportBias": 0.4,
+          "poseTail": null,
+          "aimingTether": false,
+          "aimAge": 0,
+          "anchors": [
+            {
+              "id": "launch-0",
+              "position": [
+                -18,
+                5.5,
+                1153.7387966456854
+              ],
+              "launch": "horizontal"
+            },
+            {
+              "id": "launch-1",
+              "position": [
+                18,
+                5.5,
+                1153.7387966456854
+              ],
+              "launch": "vertical"
+            }
+          ],
+          "trees": [
+            [
+              -52,
+              0,
+              1178.7387966456854
+            ],
+            [
+              -66,
+              0,
+              1190.7387966456854
+            ]
+          ],
+          "ramps": [
+            {
+              "id": "waterfront-ramp",
+              "minX": -92,
+              "maxX": -82,
+              "minZ": 1158.7387966456854,
+              "maxZ": 1170.7387966456854,
+              "rise": 3
+            }
+          ],
+          "sourceOnly": true,
+          "landing": null,
+          "contactPolicy": "sole",
+          "contactCorrection": 0,
+          "landingApproach": null
+        },
+        "advanced": {
+          "kind": null,
+          "clock": 1.2333333333333338,
+          "cooldown": 0,
+          "floatRemaining": 6,
+          "wallJumps": 0,
+          "reason": "INPUT RESET",
+          "motion": null,
+          "water": null,
+          "anchor": null,
+          "wallNormal": null,
+          "wallTop": null,
+          "events": [],
+          "origin": "authored mechanics; source/native candidate poses",
+          "ready": true,
+          "waters": [
+            {
+              "id": "meridian-waterfront",
+              "minX": -36,
+              "maxX": 36,
+              "minZ": 1171.7387966456854,
+              "maxZ": 1231.7387966456854,
+              "surface": 0.06,
+              "depth": 2.5
+            }
+          ],
+          "surfaceOnly": true,
+          "pose": "forspoken-flow-frontFlip"
+        },
+        "equipment": {
+          "impulses": [
+            {
+              "id": "physical-7",
+              "remaining": 7.783333333333335,
+              "modes": {
+                "standard": {
+                  "cost": 8,
+                  "eligible": true,
+                  "compatible": true,
+                  "requiresWorldValidation": true
+                },
+                "directional": {
+                  "cost": 10,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                },
+                "launch": {
+                  "cost": 14,
+                  "eligible": true,
+                  "compatible": true,
+                  "requiresWorldValidation": true
+                },
+                "ghoststep": {
+                  "cost": 10,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                },
+                "brake": {
+                  "cost": 8,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                },
+                "double-step": {
+                  "cost": 8,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                },
+                "rail": {
+                  "cost": 8,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                }
+              }
+            },
+            {
+              "id": "physical-8",
+              "remaining": 7.800000000000001,
+              "modes": {
+                "standard": {
+                  "cost": 8,
+                  "eligible": true,
+                  "compatible": true,
+                  "requiresWorldValidation": true
+                },
+                "directional": {
+                  "cost": 10,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                },
+                "launch": {
+                  "cost": 14,
+                  "eligible": true,
+                  "compatible": true,
+                  "requiresWorldValidation": true
+                },
+                "ghoststep": {
+                  "cost": 10,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                },
+                "brake": {
+                  "cost": 8,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                },
+                "double-step": {
+                  "cost": 8,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                },
+                "rail": {
+                  "cost": 8,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                }
+              }
+            }
+          ],
+          "releaseEvents": [],
+          "movementReady": true,
+          "hero": "backspool",
+          "clock": 1.4499999999999997,
+          "owner": {
+            "frame": 87,
+            "owner": "flow",
+            "reason": null,
+            "conflicts": 0,
+            "commits": 2
+          },
+          "sprint": true,
+          "preset": "traversal",
+          "mode": "auto",
+          "wheel": false,
+          "drive": {
+            "now": 1.4499999999999997,
+            "strain": 0,
+            "capacity": 5,
+            "bank": [
+              {
+                "id": "physical-7",
+                "action": "jump",
+                "direction": {
+                  "x": 0,
+                  "y": 1,
+                  "z": 0
+                },
+                "magnitude": 8,
+                "vector": {
+                  "x": 0,
+                  "y": 8,
+                  "z": 0
+                },
+                "time": 1.2333333333333338,
+                "expiresAt": 9.233333333333334,
+                "reservedBy": null
+              },
+              {
+                "id": "physical-8",
+                "action": "jump",
+                "direction": {
+                  "x": 0,
+                  "y": 0.9336529771267061,
+                  "z": -0.3581788914808335
+                },
+                "magnitude": 13.959504925955569,
+                "vector": {
+                  "x": 0,
+                  "y": 13.033333333333337,
+                  "z": -5
+                },
+                "time": 1.2500000000000004,
+                "expiresAt": 9.25,
+                "reservedBy": null
+              }
+            ],
+            "lastBeat": 1.2500000000000004,
+            "lastRelease": null,
+            "doubleStep": null,
+            "eventSequence": 10,
+            "reason": "CONTACT"
+          },
+          "rail": {
+            "time": 0.21666666666666665,
+            "anchors": [],
+            "rails": [],
+            "current": null,
+            "events": [
+              {
+                "id": 10,
+                "type": "reset",
+                "time": 0,
+                "reason": "RESPAWN"
+              }
+            ],
+            "lastReason": "RESPAWN",
+            "limits": {
+              "minSpan": 6,
+              "maxSpan": 100,
+              "maxSlope": 55,
+              "maxRails": 4,
+              "maxAnchors": 8,
+              "lifetime": 30,
+              "attachReach": 2,
+              "transferReach": 3,
+              "maxSpeed": 28,
+              "gravity": 9.81,
+              "friction": 0.45,
+              "junctionAngle": 75,
+              "jumpImpulse": 4.8,
+              "slingshotImpulse": 6.5
+            }
+          },
+          "route": {
+            "status": "empty",
+            "reason": "INPUT RESET",
+            "time": 0,
+            "route": null,
+            "recording": null,
+            "token": null,
+            "reservedIds": [],
+            "consumedIds": [],
+            "actionIndex": 0,
+            "counters": {
+              "recordings": 0,
+              "replays": 0,
+              "completed": 0,
+              "interrupted": 0,
+              "executed": 0,
+              "rejectedActions": 0
+            },
+            "limits": {
+              "maxSeconds": 4,
+              "maxActions": 8,
+              "maxSamples": 120,
+              "reconnectDistance": 1.35,
+              "maxDeviation": 1.5
+            },
+            "nextIds": {
+              "route": 1,
+              "action": 1,
+              "trace": 1,
+              "replay": 1
+            }
+          },
+          "exhaust": {
+            "bound": true,
+            "source": "bone:mixamorigHips",
+            "enabled": true,
+            "disposed": false,
+            "outletPosition": {
+              "x": -0.1747246406038865,
+              "y": 4.536240768260469,
+              "z": 24.077757513833713
+            },
+            "outletOffsetMeters": {
+              "x": 0,
+              "y": -0.02,
+              "z": -0.19
+            },
+            "emissionDirection": {
+              "x": -1,
+              "y": 0,
+              "z": 0
+            },
+            "activeCounts": {
+              "slivers": 0,
+              "rings": 0,
+              "threads": 4,
+              "slices": 0
+            },
+            "capacities": {
+              "slivers": 48,
+              "rings": 24,
+              "threads": 64,
+              "slices": 12
+            },
+            "activeTotal": 4,
+            "visibleDrawCalls": 1,
+            "maxDrawCalls": 5,
+            "lastRelease": {
+              "id": "afterstep-8",
+              "at": 1.2333333333333338,
+              "mode": "standard",
+              "perfect": true,
+              "magnitude": 2,
+              "deltaVelocity": {
+                "x": 2,
+                "y": 0,
+                "z": 0
+              },
+              "direction": {
+                "x": -1,
+                "y": 0,
+                "z": 0
+              },
+              "braking": false
+            },
+            "lastBank": {
+              "id": "afterstep-10",
+              "at": 1.2500000000000004,
+              "type": "contact"
+            },
+            "lastReset": "INPUT RESET",
+            "emitted": 138,
+            "overwritten": 0,
+            "refraction": {
+              "supported": null,
+              "remaining": 0,
+              "captureCount": 0,
+              "rect": null,
+              "textureSize": 128
+            }
+          },
+          "precision": false,
+          "pendingAnchor": null,
+          "lastMessage": "MOVEMENT COMMITTED",
+          "course": null,
+          "activeAnimation": "forspoken-flow-frontFlip",
+          "animationTime": 0.25999999999999995,
+          "contactEvents": [
+            {
+              "type": "contact",
+              "id": "afterstep-1",
+              "sequence": 1,
+              "time": 0.3,
+              "contactId": "physical-1",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 9.416666666666668,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 9.416666666666668,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-2",
+              "sequence": 2,
+              "time": 1.1333333333333342,
+              "contactId": "physical-2",
+              "action": "landing",
+              "vector": {
+                "x": 0,
+                "y": 6.088333333333327,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 6.088333333333327,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-3",
+              "sequence": 3,
+              "time": 1.1333333333333342,
+              "contactId": "physical-3",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 8,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-5",
+              "sequence": 5,
+              "time": 1.2333333333333338,
+              "contactId": "physical-4",
+              "action": "jump",
+              "vector": {
+                "x": 8,
+                "y": 0,
+                "z": 0
+              },
+              "direction": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-6",
+              "sequence": 6,
+              "time": 1.2333333333333338,
+              "contactId": "physical-5",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 8,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-7",
+              "sequence": 7,
+              "time": 1.2333333333333338,
+              "contactId": "physical-6",
+              "action": "jump",
+              "vector": {
+                "x": 6,
+                "y": 0,
+                "z": 0
+              },
+              "direction": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+              },
+              "magnitude": 6,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-9",
+              "sequence": 9,
+              "time": 1.2333333333333338,
+              "contactId": "physical-7",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 8,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-10",
+              "sequence": 10,
+              "time": 1.2500000000000004,
+              "contactId": "physical-8",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 13.033333333333337,
+                "z": -5
+              },
+              "direction": {
+                "x": 0,
+                "y": 0.9336529771267061,
+                "z": -0.3581788914808335
+              },
+              "magnitude": 13.959504925955569,
+              "replaced": null
+            }
+          ]
+        }
+      },
+      "after": {
+        "pos": [
+          0,
+          4.05625,
+          23.377453405974762
+        ],
+        "velocity": [
+          0,
+          11.733333333333336,
+          -5.6507583442217095
+        ],
+        "ground": false,
+        "flow": {
+          "clock": 1.5499999999999994,
+          "action": null,
+          "time": 0,
+          "duration": 0,
+          "rollRole": null,
+          "airDash": 1,
+          "airLift": 1,
+          "waterHop": 0,
+          "airRolls": 2,
+          "skipCooldown": 0,
+          "charging": false,
+          "charge": 0,
+          "pendingRelease": null,
+          "jumpAge": 0.31666666666666665,
+          "reason": "DRIVE HANDOFF",
+          "cooldown": 0,
+          "events": [
+            {
+              "id": 1,
+              "time": 1.2333333333333338,
+              "kind": "start",
+              "action": "frontFlip"
+            },
+            {
+              "id": 2,
+              "time": 1.4499999999999997,
+              "kind": "interrupt",
+              "reason": "DRIVE HANDOFF"
+            }
+          ],
+          "motion": null,
+          "ready": true,
+          "magicTrails": 0,
+          "walkMode": false,
+          "flipCount": 1,
+          "poseRole": "frontFlip",
+          "sourcePlayback": {
+            "role": "frontFlip",
+            "sourceAnimationId": "0x2811ec86",
+            "originalMotionName": "pkr_mgc_act_cancel_base_f000a",
+            "time": 0.37999999999999945,
+            "duration": 1.5,
+            "loop": false,
+            "rate": 1.2,
+            "pelvisTranslation": true
+          },
+          "visualSupportBias": 0.4,
+          "poseTail": {
+            "role": "frontFlip",
+            "began": 1.2333333333333332,
+            "until": 2.4
+          },
+          "aimingTether": false,
+          "aimAge": 0,
+          "anchors": [
+            {
+              "id": "launch-0",
+              "position": [
+                -18,
+                5.5,
+                1153.7387966456854
+              ],
+              "launch": "horizontal"
+            },
+            {
+              "id": "launch-1",
+              "position": [
+                18,
+                5.5,
+                1153.7387966456854
+              ],
+              "launch": "vertical"
+            }
+          ],
+          "trees": [
+            [
+              -52,
+              0,
+              1178.7387966456854
+            ],
+            [
+              -66,
+              0,
+              1190.7387966456854
+            ]
+          ],
+          "ramps": [
+            {
+              "id": "waterfront-ramp",
+              "minX": -92,
+              "maxX": -82,
+              "minZ": 1158.7387966456854,
+              "maxZ": 1170.7387966456854,
+              "rise": 3
+            }
+          ],
+          "sourceOnly": true,
+          "landing": null,
+          "contactPolicy": "sole",
+          "contactCorrection": 0,
+          "landingApproach": null
+        },
+        "advanced": {
+          "kind": null,
+          "clock": 1.3333333333333335,
+          "cooldown": 0,
+          "floatRemaining": 6,
+          "wallJumps": 0,
+          "reason": "INPUT RESET",
+          "motion": null,
+          "water": null,
+          "anchor": null,
+          "wallNormal": null,
+          "wallTop": null,
+          "events": [],
+          "origin": "authored mechanics; source/native candidate poses",
+          "ready": true,
+          "waters": [
+            {
+              "id": "meridian-waterfront",
+              "minX": -36,
+              "maxX": 36,
+              "minZ": 1171.7387966456854,
+              "maxZ": 1231.7387966456854,
+              "surface": 0.06,
+              "depth": 2.5
+            }
+          ],
+          "surfaceOnly": true,
+          "pose": "forspoken-flow-frontFlip"
+        },
+        "equipment": {
+          "impulses": [
+            {
+              "id": "physical-8",
+              "remaining": 7.700000000000001,
+              "modes": {
+                "standard": {
+                  "cost": 8,
+                  "eligible": true,
+                  "compatible": true,
+                  "requiresWorldValidation": true
+                },
+                "directional": {
+                  "cost": 10,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                },
+                "launch": {
+                  "cost": 14,
+                  "eligible": true,
+                  "compatible": true,
+                  "requiresWorldValidation": true
+                },
+                "ghoststep": {
+                  "cost": 10,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                },
+                "brake": {
+                  "cost": 8,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                },
+                "double-step": {
+                  "cost": 8,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                },
+                "rail": {
+                  "cost": 8,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                }
+              }
+            }
+          ],
+          "releaseEvents": [
+            {
+              "type": "release",
+              "id": "afterstep-11",
+              "sequence": 11,
+              "time": 1.4499999999999997,
+              "mode": "standard",
+              "contactId": "physical-7",
+              "action": "jump",
+              "perfect": false,
+              "cost": 8,
+              "deltaVelocity": {
+                "x": 0,
+                "y": 5.6,
+                "z": 0
+              },
+              "spent": [
+                "physical-7"
+              ],
+              "doubleStep": 0
+            }
+          ],
+          "movementReady": true,
+          "hero": "backspool",
+          "clock": 1.5499999999999994,
+          "owner": {
+            "frame": 93,
+            "owner": "ordinary",
+            "reason": null,
+            "conflicts": 0,
+            "commits": 1
+          },
+          "sprint": true,
+          "preset": "traversal",
+          "mode": "auto",
+          "wheel": false,
+          "drive": {
+            "now": 1.5499999999999994,
+            "strain": 8,
+            "capacity": 5,
+            "bank": [
+              {
+                "id": "physical-8",
+                "action": "jump",
+                "direction": {
+                  "x": 0,
+                  "y": 0.9336529771267061,
+                  "z": -0.3581788914808335
+                },
+                "magnitude": 13.959504925955569,
+                "vector": {
+                  "x": 0,
+                  "y": 13.033333333333337,
+                  "z": -5
+                },
+                "time": 1.2500000000000004,
+                "expiresAt": 9.25,
+                "reservedBy": null
+              }
+            ],
+            "lastBeat": 1.2500000000000004,
+            "lastRelease": {
+              "type": "release",
+              "id": "afterstep-11",
+              "sequence": 11,
+              "time": 1.4499999999999997,
+              "mode": "standard",
+              "contactId": "physical-7",
+              "action": "jump",
+              "perfect": false,
+              "cost": 8,
+              "deltaVelocity": {
+                "x": 0,
+                "y": 5.6,
+                "z": 0
+              },
+              "spent": [
+                "physical-7"
+              ],
+              "doubleStep": 0
+            },
+            "doubleStep": null,
+            "eventSequence": 11,
+            "reason": "RELEASED"
+          },
+          "rail": {
+            "time": 0.31666666666666665,
+            "anchors": [],
+            "rails": [],
+            "current": null,
+            "events": [
+              {
+                "id": 10,
+                "type": "reset",
+                "time": 0,
+                "reason": "RESPAWN"
+              }
+            ],
+            "lastReason": "RESPAWN",
+            "limits": {
+              "minSpan": 6,
+              "maxSpan": 100,
+              "maxSlope": 55,
+              "maxRails": 4,
+              "maxAnchors": 8,
+              "lifetime": 30,
+              "attachReach": 2,
+              "transferReach": 3,
+              "maxSpeed": 28,
+              "gravity": 9.81,
+              "friction": 0.45,
+              "junctionAngle": 75,
+              "jumpImpulse": 4.8,
+              "slingshotImpulse": 6.5
+            }
+          },
+          "route": {
+            "status": "empty",
+            "reason": "INPUT RESET",
+            "time": 0,
+            "route": null,
+            "recording": null,
+            "token": null,
+            "reservedIds": [],
+            "consumedIds": [],
+            "actionIndex": 0,
+            "counters": {
+              "recordings": 0,
+              "replays": 0,
+              "completed": 0,
+              "interrupted": 0,
+              "executed": 0,
+              "rejectedActions": 0
+            },
+            "limits": {
+              "maxSeconds": 4,
+              "maxActions": 8,
+              "maxSamples": 120,
+              "reconnectDistance": 1.35,
+              "maxDeviation": 1.5
+            },
+            "nextIds": {
+              "route": 1,
+              "action": 1,
+              "trace": 1,
+              "replay": 1
+            }
+          },
+          "exhaust": {
+            "bound": true,
+            "source": "bone:mixamorigHips",
+            "enabled": true,
+            "disposed": false,
+            "outletPosition": {
+              "x": -0.16568777068612406,
+              "y": 5.730156125388454,
+              "z": 23.029845167026103
+            },
+            "outletOffsetMeters": {
+              "x": 0,
+              "y": -0.02,
+              "z": -0.19
+            },
+            "emissionDirection": {
+              "x": 0,
+              "y": -1,
+              "z": 0
+            },
+            "activeCounts": {
+              "slivers": 10,
+              "rings": 3,
+              "threads": 12,
+              "slices": 2
+            },
+            "capacities": {
+              "slivers": 48,
+              "rings": 24,
+              "threads": 64,
+              "slices": 12
+            },
+            "activeTotal": 27,
+            "visibleDrawCalls": 4,
+            "maxDrawCalls": 5,
+            "lastRelease": {
+              "id": "afterstep-11",
+              "at": 1.4499999999999997,
+              "mode": "standard",
+              "perfect": false,
+              "magnitude": 5.6,
+              "deltaVelocity": {
+                "x": 0,
+                "y": 5.6,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+              },
+              "braking": false
+            },
+            "lastBank": {
+              "id": "afterstep-10",
+              "at": 1.2500000000000004,
+              "type": "contact"
+            },
+            "lastReset": "INPUT RESET",
+            "emitted": 165,
+            "overwritten": 0,
+            "refraction": {
+              "supported": null,
+              "remaining": 0.08000000000000002,
+              "captureCount": 0,
+              "rect": null,
+              "textureSize": 128
+            }
+          },
+          "precision": false,
+          "pendingAnchor": null,
+          "lastMessage": "DRIVE · STANDARD",
+          "course": null,
+          "activeAnimation": "forspoken-flow-frontFlip",
+          "animationTime": 0.37999999999999945,
+          "contactEvents": [
+            {
+              "type": "contact",
+              "id": "afterstep-1",
+              "sequence": 1,
+              "time": 0.3,
+              "contactId": "physical-1",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 9.416666666666668,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 9.416666666666668,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-2",
+              "sequence": 2,
+              "time": 1.1333333333333342,
+              "contactId": "physical-2",
+              "action": "landing",
+              "vector": {
+                "x": 0,
+                "y": 6.088333333333327,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 6.088333333333327,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-3",
+              "sequence": 3,
+              "time": 1.1333333333333342,
+              "contactId": "physical-3",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 8,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-5",
+              "sequence": 5,
+              "time": 1.2333333333333338,
+              "contactId": "physical-4",
+              "action": "jump",
+              "vector": {
+                "x": 8,
+                "y": 0,
+                "z": 0
+              },
+              "direction": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-6",
+              "sequence": 6,
+              "time": 1.2333333333333338,
+              "contactId": "physical-5",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 8,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-7",
+              "sequence": 7,
+              "time": 1.2333333333333338,
+              "contactId": "physical-6",
+              "action": "jump",
+              "vector": {
+                "x": 6,
+                "y": 0,
+                "z": 0
+              },
+              "direction": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+              },
+              "magnitude": 6,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-9",
+              "sequence": 9,
+              "time": 1.2333333333333338,
+              "contactId": "physical-7",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 8,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-10",
+              "sequence": 10,
+              "time": 1.2500000000000004,
+              "contactId": "physical-8",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 13.033333333333337,
+                "z": -5
+              },
+              "direction": {
+                "x": 0,
+                "y": 0.9336529771267061,
+                "z": -0.3581788914808335
+              },
+              "magnitude": 13.959504925955569,
+              "replaced": null
+            }
+          ]
+        }
+      }
+    },
+    "wallHandoff": {
+      "before": {
+        "pos": [
+          30,
+          0.6268398079999999,
+          21.6263825408
+        ],
+        "velocity": [
+          0,
+          1.326407679999999,
+          -0.2553016319999557
+        ],
+        "ground": false,
+        "flow": {
+          "clock": 2.116666666666664,
+          "action": null,
+          "time": 0,
+          "duration": 0,
+          "rollRole": null,
+          "airDash": 1,
+          "airLift": 1,
+          "waterHop": 0,
+          "airRolls": 2,
+          "skipCooldown": 0,
+          "charging": false,
+          "charge": 0,
+          "pendingRelease": null,
+          "jumpAge": 99.01666666666667,
+          "reason": "INELIGIBLE",
+          "cooldown": 0,
+          "events": [
+            {
+              "id": 1,
+              "time": 1.2333333333333338,
+              "kind": "start",
+              "action": "frontFlip"
+            },
+            {
+              "id": 2,
+              "time": 1.4499999999999997,
+              "kind": "interrupt",
+              "reason": "DRIVE HANDOFF"
+            },
+            {
+              "id": 3,
+              "time": 1.5499999999999994,
+              "kind": "start",
+              "action": "groundRoll"
+            },
+            {
+              "id": 4,
+              "time": 1.9833333333333312,
+              "kind": "interrupt",
+              "reason": "DRIVE HANDOFF"
+            }
+          ],
+          "motion": null,
+          "ready": true,
+          "magicTrails": 0,
+          "walkMode": false,
+          "flipCount": 1,
+          "poseRole": "wallClimb",
+          "sourcePlayback": {
+            "role": "wallClimb",
+            "sourceAnimationId": "0x2811ae77",
+            "originalMotionName": "pkr_mgc_climb_base_f000a",
+            "time": 0.12,
+            "duration": 1.8833333253860474,
+            "loop": true,
+            "rate": 1,
+            "pelvisTranslation": true
+          },
+          "visualSupportBias": 0.4,
+          "poseTail": null,
+          "aimingTether": false,
+          "aimAge": 0,
+          "anchors": [
+            {
+              "id": "launch-0",
+              "position": [
+                -18,
+                5.5,
+                1153.7387966456854
+              ],
+              "launch": "horizontal"
+            },
+            {
+              "id": "launch-1",
+              "position": [
+                18,
+                5.5,
+                1153.7387966456854
+              ],
+              "launch": "vertical"
+            }
+          ],
+          "trees": [
+            [
+              -52,
+              0,
+              1178.7387966456854
+            ],
+            [
+              -66,
+              0,
+              1190.7387966456854
+            ]
+          ],
+          "ramps": [
+            {
+              "id": "waterfront-ramp",
+              "minX": -92,
+              "maxX": -82,
+              "minZ": 1158.7387966456854,
+              "maxZ": 1170.7387966456854,
+              "rise": 3
+            }
+          ],
+          "sourceOnly": true,
+          "landing": null,
+          "contactPolicy": "sole",
+          "contactCorrection": -0.002261394756219448,
+          "landingApproach": null
+        },
+        "advanced": {
+          "kind": "wall",
+          "clock": 1.566666666666666,
+          "cooldown": 0,
+          "floatRemaining": 6,
+          "wallJumps": 0,
+          "reason": null,
+          "motion": {
+            "ownsMovement": true,
+            "position": {
+              "x": 30,
+              "y": 0.6268398079999999,
+              "z": 21.6263825408
+            },
+            "velocity": {
+              "x": 0,
+              "y": 1.326407679999999,
+              "z": -0.2553016319999557
+            },
+            "kind": "wallClimb",
+            "phase": 0.12,
+            "sourceTime": 0.12,
+            "landed": false
+          },
+          "water": null,
+          "anchor": null,
+          "wallNormal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "wallTop": 5,
+          "events": [
+            {
+              "eventId": 1,
+              "time": 1.4333333333333331,
+              "kind": "wall-start"
+            }
+          ],
+          "origin": "authored mechanics; source/native candidate poses",
+          "ready": true,
+          "waters": [
+            {
+              "id": "meridian-waterfront",
+              "minX": -36,
+              "maxX": 36,
+              "minZ": 1171.7387966456854,
+              "maxZ": 1231.7387966456854,
+              "surface": 0.06,
+              "depth": 2.5
+            }
+          ],
+          "surfaceOnly": true,
+          "pose": "forspoken-flow-wallClimb"
+        },
+        "equipment": {
+          "impulses": [
+            {
+              "id": "physical-13",
+              "remaining": 7.866666666666667,
+              "modes": {
+                "standard": {
+                  "cost": 8,
+                  "eligible": true,
+                  "compatible": true,
+                  "requiresWorldValidation": true
+                },
+                "directional": {
+                  "cost": 10,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                },
+                "launch": {
+                  "cost": 14,
+                  "eligible": true,
+                  "compatible": true,
+                  "requiresWorldValidation": true
+                },
+                "ghoststep": {
+                  "cost": 10,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                },
+                "brake": {
+                  "cost": 8,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                },
+                "double-step": {
+                  "cost": 8,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                },
+                "rail": {
+                  "cost": 8,
+                  "eligible": false,
+                  "compatible": false,
+                  "requiresWorldValidation": true
+                }
+              }
+            }
+          ],
+          "releaseEvents": [],
+          "movementReady": true,
+          "hero": "backspool",
+          "clock": 2.28333333333333,
+          "owner": {
+            "frame": 137,
+            "owner": "advanced",
+            "reason": null,
+            "conflicts": 0,
+            "commits": 2
+          },
+          "sprint": true,
+          "preset": "traversal",
+          "mode": "auto",
+          "wheel": false,
+          "drive": {
+            "now": 2.28333333333333,
+            "strain": 0,
+            "capacity": 5,
+            "bank": [
+              {
+                "id": "physical-13",
+                "action": "jump",
+                "direction": {
+                  "x": 0,
+                  "y": 1,
+                  "z": 0
+                },
+                "magnitude": 8,
+                "vector": {
+                  "x": 0,
+                  "y": 8,
+                  "z": 0
+                },
+                "time": 2.1499999999999972,
+                "expiresAt": 10.149999999999997,
+                "reservedBy": null
+              }
+            ],
+            "lastBeat": 2.1499999999999972,
+            "lastRelease": null,
+            "doubleStep": null,
+            "eventSequence": 17,
+            "reason": "CONTACT"
+          },
+          "rail": {
+            "time": 0.15,
+            "anchors": [],
+            "rails": [],
+            "current": null,
+            "events": [
+              {
+                "id": 15,
+                "type": "reset",
+                "time": 0,
+                "reason": "RESPAWN"
+              }
+            ],
+            "lastReason": "RESPAWN",
+            "limits": {
+              "minSpan": 6,
+              "maxSpan": 100,
+              "maxSlope": 55,
+              "maxRails": 4,
+              "maxAnchors": 8,
+              "lifetime": 30,
+              "attachReach": 2,
+              "transferReach": 3,
+              "maxSpeed": 28,
+              "gravity": 9.81,
+              "friction": 0.45,
+              "junctionAngle": 75,
+              "jumpImpulse": 4.8,
+              "slingshotImpulse": 6.5
+            }
+          },
+          "route": {
+            "status": "empty",
+            "reason": "INPUT RESET",
+            "time": 0,
+            "route": null,
+            "recording": null,
+            "token": null,
+            "reservedIds": [],
+            "consumedIds": [],
+            "actionIndex": 0,
+            "counters": {
+              "recordings": 0,
+              "replays": 0,
+              "completed": 0,
+              "interrupted": 0,
+              "executed": 0,
+              "rejectedActions": 0
+            },
+            "limits": {
+              "maxSeconds": 4,
+              "maxActions": 8,
+              "maxSamples": 120,
+              "reconnectDistance": 1.35,
+              "maxDeviation": 1.5
+            },
+            "nextIds": {
+              "route": 1,
+              "action": 1,
+              "trace": 1,
+              "replay": 1
+            }
+          },
+          "exhaust": {
+            "bound": true,
+            "source": "bone:mixamorigHips",
+            "enabled": true,
+            "disposed": false,
+            "outletPosition": {
+              "x": 29.959059480476057,
+              "y": 1.521594478413653,
+              "z": 22.16732482812417
+            },
+            "outletOffsetMeters": {
+              "x": 0,
+              "y": -0.02,
+              "z": -0.19
+            },
+            "emissionDirection": {
+              "x": 0,
+              "y": -1,
+              "z": 0
+            },
+            "activeCounts": {
+              "slivers": 0,
+              "rings": 1,
+              "threads": 5,
+              "slices": 0
+            },
+            "capacities": {
+              "slivers": 48,
+              "rings": 24,
+              "threads": 64,
+              "slices": 12
+            },
+            "activeTotal": 6,
+            "visibleDrawCalls": 2,
+            "maxDrawCalls": 5,
+            "lastRelease": {
+              "id": "afterstep-13",
+              "at": 1.9833333333333312,
+              "mode": "standard",
+              "perfect": false,
+              "magnitude": 5.6,
+              "deltaVelocity": {
+                "x": 0,
+                "y": 5.6,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+              },
+              "braking": false
+            },
+            "lastBank": {
+              "id": "afterstep-17",
+              "at": 2.1499999999999972,
+              "type": "contact"
+            },
+            "lastReset": "INPUT RESET",
+            "emitted": 222,
+            "overwritten": 0,
+            "refraction": {
+              "supported": null,
+              "remaining": 0,
+              "captureCount": 0,
+              "rect": null,
+              "textureSize": 128
+            }
+          },
+          "precision": false,
+          "pendingAnchor": null,
+          "lastMessage": "MOVEMENT COMMITTED",
+          "course": null,
+          "activeAnimation": "forspoken-flow-wallClimb",
+          "animationTime": 0.12,
+          "contactEvents": [
+            {
+              "type": "contact",
+              "id": "afterstep-7",
+              "sequence": 7,
+              "time": 1.2333333333333338,
+              "contactId": "physical-6",
+              "action": "jump",
+              "vector": {
+                "x": 6,
+                "y": 0,
+                "z": 0
+              },
+              "direction": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+              },
+              "magnitude": 6,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-9",
+              "sequence": 9,
+              "time": 1.2333333333333338,
+              "contactId": "physical-7",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 8,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-10",
+              "sequence": 10,
+              "time": 1.2500000000000004,
+              "contactId": "physical-8",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 13.033333333333337,
+                "z": -5
+              },
+              "direction": {
+                "x": 0,
+                "y": 0.9336529771267061,
+                "z": -0.3581788914808335
+              },
+              "magnitude": 13.959504925955569,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-12",
+              "sequence": 12,
+              "time": 1.5499999999999994,
+              "contactId": "physical-9",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 8,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-14",
+              "sequence": 14,
+              "time": 2.0999999999999974,
+              "contactId": "physical-10",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 8,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-15",
+              "sequence": 15,
+              "time": 2.0999999999999974,
+              "contactId": "physical-11",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 8,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-16",
+              "sequence": 16,
+              "time": 2.116666666666664,
+              "contactId": "physical-12",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 8,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-17",
+              "sequence": 17,
+              "time": 2.1499999999999972,
+              "contactId": "physical-13",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 8,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            }
+          ]
+        }
+      },
+      "after": {
+        "pos": [
+          30,
+          1.1853139093333334,
+          21.501138597371632
+        ],
+        "velocity": [
+          0,
+          4.626407680000002,
+          -1.9100881346408147
+        ],
+        "ground": false,
+        "flow": {
+          "clock": 2.2166666666666637,
+          "action": null,
+          "time": 0,
+          "duration": 0,
+          "rollRole": null,
+          "airDash": 1,
+          "airLift": 1,
+          "waterHop": 0,
+          "airRolls": 2,
+          "skipCooldown": 0,
+          "charging": false,
+          "charge": 0,
+          "pendingRelease": null,
+          "jumpAge": 99.11666666666666,
+          "reason": "DRIVE HANDOFF",
+          "cooldown": 0,
+          "events": [
+            {
+              "id": 1,
+              "time": 1.2333333333333338,
+              "kind": "start",
+              "action": "frontFlip"
+            },
+            {
+              "id": 2,
+              "time": 1.4499999999999997,
+              "kind": "interrupt",
+              "reason": "DRIVE HANDOFF"
+            },
+            {
+              "id": 3,
+              "time": 1.5499999999999994,
+              "kind": "start",
+              "action": "groundRoll"
+            },
+            {
+              "id": 4,
+              "time": 1.9833333333333312,
+              "kind": "interrupt",
+              "reason": "DRIVE HANDOFF"
+            }
+          ],
+          "motion": null,
+          "ready": true,
+          "magicTrails": 0,
+          "walkMode": false,
+          "flipCount": 1,
+          "poseRole": "jump",
+          "sourcePlayback": {
+            "role": "jump",
+            "sourceAnimationId": "0x28113cdc",
+            "originalMotionName": "air_jump_begin_inplace_n000a",
+            "time": 1.99999,
+            "duration": 2,
+            "loop": false,
+            "rate": 1,
+            "pelvisTranslation": true
+          },
+          "visualSupportBias": 0.4,
+          "poseTail": null,
+          "aimingTether": false,
+          "aimAge": 0,
+          "anchors": [
+            {
+              "id": "launch-0",
+              "position": [
+                -18,
+                5.5,
+                1153.7387966456854
+              ],
+              "launch": "horizontal"
+            },
+            {
+              "id": "launch-1",
+              "position": [
+                18,
+                5.5,
+                1153.7387966456854
+              ],
+              "launch": "vertical"
+            }
+          ],
+          "trees": [
+            [
+              -52,
+              0,
+              1178.7387966456854
+            ],
+            [
+              -66,
+              0,
+              1190.7387966456854
+            ]
+          ],
+          "ramps": [
+            {
+              "id": "waterfront-ramp",
+              "minX": -92,
+              "maxX": -82,
+              "minZ": 1158.7387966456854,
+              "maxZ": 1170.7387966456854,
+              "rise": 3
+            }
+          ],
+          "sourceOnly": true,
+          "landing": null,
+          "contactPolicy": "sole",
+          "contactCorrection": -0.002261394756219448,
+          "landingApproach": null
+        },
+        "advanced": {
+          "kind": null,
+          "clock": 1.6666666666666656,
+          "cooldown": 0.15000000000000002,
+          "floatRemaining": 6,
+          "wallJumps": 0,
+          "reason": "DRIVE HANDOFF",
+          "motion": null,
+          "water": null,
+          "anchor": null,
+          "wallNormal": null,
+          "wallTop": null,
+          "events": [
+            {
+              "eventId": 1,
+              "time": 1.4333333333333331,
+              "kind": "wall-start"
+            },
+            {
+              "eventId": 2,
+              "time": 1.566666666666666,
+              "kind": "end",
+              "mode": "wall",
+              "reason": "DRIVE HANDOFF"
+            }
+          ],
+          "origin": "authored mechanics; source/native candidate poses",
+          "ready": true,
+          "waters": [
+            {
+              "id": "meridian-waterfront",
+              "minX": -36,
+              "maxX": 36,
+              "minZ": 1171.7387966456854,
+              "maxZ": 1231.7387966456854,
+              "surface": 0.06,
+              "depth": 2.5
+            }
+          ],
+          "surfaceOnly": true,
+          "pose": "forspoken-flow-jump"
+        },
+        "equipment": {
+          "impulses": [],
+          "releaseEvents": [
+            {
+              "type": "release",
+              "id": "afterstep-18",
+              "sequence": 18,
+              "time": 2.28333333333333,
+              "mode": "standard",
+              "contactId": "physical-13",
+              "action": "jump",
+              "perfect": false,
+              "cost": 8,
+              "deltaVelocity": {
+                "x": 0,
+                "y": 5.6,
+                "z": 0
+              },
+              "spent": [
+                "physical-13"
+              ],
+              "doubleStep": 0
+            }
+          ],
+          "movementReady": true,
+          "hero": "backspool",
+          "clock": 2.3833333333333298,
+          "owner": {
+            "frame": 143,
+            "owner": "ordinary",
+            "reason": null,
+            "conflicts": 0,
+            "commits": 1
+          },
+          "sprint": true,
+          "preset": "traversal",
+          "mode": "auto",
+          "wheel": false,
+          "drive": {
+            "now": 2.3833333333333298,
+            "strain": 8,
+            "capacity": 5,
+            "bank": [],
+            "lastBeat": 2.1499999999999972,
+            "lastRelease": {
+              "type": "release",
+              "id": "afterstep-18",
+              "sequence": 18,
+              "time": 2.28333333333333,
+              "mode": "standard",
+              "contactId": "physical-13",
+              "action": "jump",
+              "perfect": false,
+              "cost": 8,
+              "deltaVelocity": {
+                "x": 0,
+                "y": 5.6,
+                "z": 0
+              },
+              "spent": [
+                "physical-13"
+              ],
+              "doubleStep": 0
+            },
+            "doubleStep": null,
+            "eventSequence": 18,
+            "reason": "RELEASED"
+          },
+          "rail": {
+            "time": 0.24999999999999997,
+            "anchors": [],
+            "rails": [],
+            "current": null,
+            "events": [
+              {
+                "id": 15,
+                "type": "reset",
+                "time": 0,
+                "reason": "RESPAWN"
+              }
+            ],
+            "lastReason": "RESPAWN",
+            "limits": {
+              "minSpan": 6,
+              "maxSpan": 100,
+              "maxSlope": 55,
+              "maxRails": 4,
+              "maxAnchors": 8,
+              "lifetime": 30,
+              "attachReach": 2,
+              "transferReach": 3,
+              "maxSpeed": 28,
+              "gravity": 9.81,
+              "friction": 0.45,
+              "junctionAngle": 75,
+              "jumpImpulse": 4.8,
+              "slingshotImpulse": 6.5
+            }
+          },
+          "route": {
+            "status": "empty",
+            "reason": "INPUT RESET",
+            "time": 0,
+            "route": null,
+            "recording": null,
+            "token": null,
+            "reservedIds": [],
+            "consumedIds": [],
+            "actionIndex": 0,
+            "counters": {
+              "recordings": 0,
+              "replays": 0,
+              "completed": 0,
+              "interrupted": 0,
+              "executed": 0,
+              "rejectedActions": 0
+            },
+            "limits": {
+              "maxSeconds": 4,
+              "maxActions": 8,
+              "maxSamples": 120,
+              "reconnectDistance": 1.35,
+              "maxDeviation": 1.5
+            },
+            "nextIds": {
+              "route": 1,
+              "action": 1,
+              "trace": 1,
+              "replay": 1
+            }
+          },
+          "exhaust": {
+            "bound": true,
+            "source": "bone:mixamorigHips",
+            "enabled": true,
+            "disposed": false,
+            "outletPosition": {
+              "x": 29.960046989979407,
+              "y": 2.617108862452846,
+              "z": 21.694295694851146
+            },
+            "outletOffsetMeters": {
+              "x": 0,
+              "y": -0.02,
+              "z": -0.19
+            },
+            "emissionDirection": {
+              "x": 0,
+              "y": -1,
+              "z": 0
+            },
+            "activeCounts": {
+              "slivers": 10,
+              "rings": 3,
+              "threads": 12,
+              "slices": 2
+            },
+            "capacities": {
+              "slivers": 48,
+              "rings": 24,
+              "threads": 64,
+              "slices": 12
+            },
+            "activeTotal": 27,
+            "visibleDrawCalls": 4,
+            "maxDrawCalls": 5,
+            "lastRelease": {
+              "id": "afterstep-18",
+              "at": 2.28333333333333,
+              "mode": "standard",
+              "perfect": false,
+              "magnitude": 5.6,
+              "deltaVelocity": {
+                "x": 0,
+                "y": 5.6,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+              },
+              "braking": false
+            },
+            "lastBank": {
+              "id": "afterstep-17",
+              "at": 2.1499999999999972,
+              "type": "contact"
+            },
+            "lastReset": "INPUT RESET",
+            "emitted": 249,
+            "overwritten": 0,
+            "refraction": {
+              "supported": null,
+              "remaining": 0.08000000000000002,
+              "captureCount": 0,
+              "rect": null,
+              "textureSize": 128
+            }
+          },
+          "precision": false,
+          "pendingAnchor": null,
+          "lastMessage": "DRIVE · STANDARD",
+          "course": null,
+          "activeAnimation": "forspoken-flow-jump",
+          "animationTime": 1.99999,
+          "contactEvents": [
+            {
+              "type": "contact",
+              "id": "afterstep-7",
+              "sequence": 7,
+              "time": 1.2333333333333338,
+              "contactId": "physical-6",
+              "action": "jump",
+              "vector": {
+                "x": 6,
+                "y": 0,
+                "z": 0
+              },
+              "direction": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+              },
+              "magnitude": 6,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-9",
+              "sequence": 9,
+              "time": 1.2333333333333338,
+              "contactId": "physical-7",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 8,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-10",
+              "sequence": 10,
+              "time": 1.2500000000000004,
+              "contactId": "physical-8",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 13.033333333333337,
+                "z": -5
+              },
+              "direction": {
+                "x": 0,
+                "y": 0.9336529771267061,
+                "z": -0.3581788914808335
+              },
+              "magnitude": 13.959504925955569,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-12",
+              "sequence": 12,
+              "time": 1.5499999999999994,
+              "contactId": "physical-9",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 8,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-14",
+              "sequence": 14,
+              "time": 2.0999999999999974,
+              "contactId": "physical-10",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 8,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-15",
+              "sequence": 15,
+              "time": 2.0999999999999974,
+              "contactId": "physical-11",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 8,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-16",
+              "sequence": 16,
+              "time": 2.116666666666664,
+              "contactId": "physical-12",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 8,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            },
+            {
+              "type": "contact",
+              "id": "afterstep-17",
+              "sequence": 17,
+              "time": 2.1499999999999972,
+              "contactId": "physical-13",
+              "action": "jump",
+              "vector": {
+                "x": 0,
+                "y": 8,
+                "z": 0
+              },
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "magnitude": 8,
+              "replaced": null
+            }
+          ]
+        }
+      }
+    },
+    "transfer": {
+      "time": 3.0333333333333274,
+      "anchors": [
+        {
+          "id": "anchor-15",
+          "position": {
+            "x": -30,
+            "y": 5.640000000000001,
+            "z": 65
+          },
+          "normal": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "ownerId": "threadrail-post-0",
+          "revision": 0,
+          "valid": true
+        },
+        {
+          "id": "anchor-16",
+          "position": {
+            "x": 0,
+            "y": 8.639999999999999,
+            "z": 65
+          },
+          "normal": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "ownerId": "threadrail-post-1",
+          "revision": 0,
+          "valid": true
+        },
+        {
+          "id": "anchor-17",
+          "position": {
+            "x": 30,
+            "y": 11.639999999999999,
+            "z": 65
+          },
+          "normal": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "ownerId": "threadrail-post-2",
+          "revision": 0,
+          "valid": true
+        },
+        {
+          "id": "anchor-18",
+          "position": {
+            "x": 55,
+            "y": 10.639999999999999,
+            "z": 83
+          },
+          "normal": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "ownerId": "threadrail-post-3",
+          "revision": 0,
+          "valid": true
+        }
+      ],
+      "rails": [
+        {
+          "id": "rail-4",
+          "a": "anchor-15",
+          "b": "anchor-16",
+          "length": 30.14962686336267,
+          "tangent": {
+            "x": 0.9950371902099893,
+            "y": 0.09950371902099886,
+            "z": 0
+          },
+          "slope": 5.7105931374996395,
+          "createdAt": 0,
+          "expiresAt": 30
+        },
+        {
+          "id": "rail-5",
+          "a": "anchor-16",
+          "b": "anchor-17",
+          "length": 30.14962686336267,
+          "tangent": {
+            "x": 0.9950371902099893,
+            "y": 0.09950371902099892,
+            "z": 0
+          },
+          "slope": 5.710593137499642,
+          "createdAt": 0,
+          "expiresAt": 30
+        },
+        {
+          "id": "rail-6",
+          "a": "anchor-17",
+          "b": "anchor-18",
+          "length": 30.822070014844883,
+          "tangent": {
+            "x": 0.8111071056538127,
+            "y": -0.03244428422615251,
+            "z": 0.5839971160707452
+          },
+          "slope": 1.859246836472446,
+          "createdAt": 0,
+          "expiresAt": 30
+        }
+      ],
+      "current": {
+        "railId": "rail-5",
+        "distance": 0,
+        "signedSpeed": 3.6741668423805205,
+        "speed": 3.6741668423805205,
+        "position": {
+          "x": 0,
+          "y": 8.639999999999999,
+          "z": 65
+        },
+        "velocity": {
+          "x": 3.6559326512050214,
+          "y": 0.3655932651205021,
+          "z": 0
+        },
+        "hero": "backspool",
+        "direction": null
+      },
+      "events": [
+        {
+          "id": 22,
+          "type": "reset",
+          "time": 0,
+          "reason": "RESPAWN"
+        },
+        {
+          "id": 23,
+          "type": "create",
+          "time": 0,
+          "railId": "rail-4",
+          "a": "anchor-15",
+          "b": "anchor-16"
+        },
+        {
+          "id": 24,
+          "type": "create",
+          "time": 0,
+          "railId": "rail-5",
+          "a": "anchor-16",
+          "b": "anchor-17"
+        },
+        {
+          "id": 25,
+          "type": "create",
+          "time": 0,
+          "railId": "rail-6",
+          "a": "anchor-17",
+          "b": "anchor-18"
+        },
+        {
+          "id": 26,
+          "type": "attach",
+          "time": 0,
+          "railId": "rail-4",
+          "speed": 8.000099009288313
+        },
+        {
+          "id": 27,
+          "type": "transfer",
+          "time": 3.0333333333333274,
+          "fromId": "rail-4",
+          "railId": "rail-5",
+          "speed": 3.6741668423805205
+        }
+      ],
+      "lastReason": "transferred",
+      "limits": {
+        "minSpan": 6,
+        "maxSpan": 100,
+        "maxSlope": 55,
+        "maxRails": 4,
+        "maxAnchors": 8,
+        "lifetime": 30,
+        "attachReach": 2,
+        "transferReach": 3,
+        "maxSpeed": 28,
+        "gravity": 9.81,
+        "friction": 0.45,
+        "junctionAngle": 75,
+        "jumpImpulse": 4.8,
+        "slingshotImpulse": 6.5
+      }
+    }
+  },
+  "errors": []
+}

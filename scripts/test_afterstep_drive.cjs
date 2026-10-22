@@ -181,4 +181,11 @@ test('browser factory exports without CommonJS globals', () => {
  const fs=require('node:fs'),vm=require('node:vm'),context={window:{}};vm.runInNewContext(fs.readFileSync(require.resolve('./game_afterstep_drive.js'),'utf8'),context);
  assert.equal(typeof context.window.createAfterstepDrive,'function');assert.equal(context.window.createAfterstepDrive().state().capacity,5);
 });
+test('validated applied delta is the only committed release vector and invalid replacement is atomic', () => {
+ const c=create({canRelease:()=>({ok:true,deltaVelocity:{x:2,y:0,z:0}})});c.contact(contact('limited'));const r=c.release('standard',frame());assert(r.ok);assert.deepEqual(r.deltaVelocity,{x:2,y:0,z:0});assert.deepEqual(c.state().lastRelease.deltaVelocity,r.deltaVelocity);
+ const bad=create({canRelease:()=>({ok:true,deltaVelocity:{x:0,y:0,z:0}})});bad.contact(contact('still-here'));const before=bad.state();assert(!bad.release('standard',frame()).ok);assert.deepEqual(bad.state(),before);
+});
+test('derived expiry and mode eligibility metadata is readonly and never invokes world validation', () => {
+ let calls=0;const c=create({canRelease:()=>{calls++;return true}});c.contact(contact('metadata'));const before=c.state(),meta=c.describe(frame());assert.equal(meta[0].remaining,8);assert.equal(meta[0].modes.standard.cost,6);assert(meta[0].modes.standard.eligible);assert(!meta[0].modes.launch.eligible);assert.equal(calls,0);meta[0].remaining=99;assert.deepEqual(c.state(),before);c.update(1,frame());assert.equal(c.describe(frame())[0].remaining,7);
+});
 console.log(`${passed} Afterstep Drive tests passed`);

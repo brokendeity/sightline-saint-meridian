@@ -1,4 +1,8 @@
-# Sightline / Backspool — 21 October 2026 snapshot
+# Sightline / Backspool — Threadrail and Afterstep candidate
+
+Current feature branch: `feature/backspool-threadrail-afterstep-drive`, based on the preserved v14 complete snapshot with v15 landing/roll fixes. Run `python3 scripts/build_backspool_threadrail_candidate.py`, then `python3 -m http.server 8766` and open [the equipment candidate](http://localhost:8766/SIGHTLINE_BACKSPOOL_THREADRAIL_CANDIDATE.html?capture=backspool). Controls are in [docs/BACKSPOOL_THREADRAIL.md](docs/BACKSPOOL_THREADRAIL.md); final evidence, source boundaries and demonstration steps are in [docs/THREADRAIL_DELIVERY.md](docs/THREADRAIL_DELIVERY.md). The main game and earlier candidate below are retained.
+
+## Original snapshot
 
 Separate update: `snapshots/2026-10-21-pose-binding-v14`, tagged `snapshot-2026-10-21-pose-binding-v14`. Earlier branches and tags are preserved.
 

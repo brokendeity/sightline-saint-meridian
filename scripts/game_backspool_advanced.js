@@ -4,7 +4,7 @@
  function create(api){let plan=null,clock=0,cooldown=0,floatUsed=0,wallJumps=0,reason=null,last=null,serial=0;const events=[];let waterSpeed=0,waterDirection={x:0,z:0};
  const eligible=f=>f.hero==='backspool'&&f.active&&!f.locked&&!f.retracing&&!f.preview&&!f.defeated&&!f.posture;
  function log(kind,extra={}){events.push({eventId:++serial,time:clock,kind,...extra});if(events.length>48)events.shift();}
- function reset(why='RESET'){if(plan)log('end',{mode:plan.kind,reason:why});plan=null;reason=why;waterSpeed=0;last=null;if(['INPUT RESET','RESPAWN','HERO CHANGE'].includes(why))cooldown=0;}
+ function reset(why='RESET'){if(plan)log('end',{mode:plan.kind,reason:why});plan=null;reason=why;waterSpeed=0;last=null;if(['INPUT RESET','RESPAWN','HERO CHANGE'].includes(why)){cooldown=0;floatUsed=0;wallJumps=0;}}
  const clear=(a,b)=>api.sweepClear(a,b)===true;
  function output(p,v,kind,phase=0,landed=false){last={ownsMovement:true,position:cp(p),velocity:cp(v),kind,phase,sourceTime:plan?.time||0,landed};if(plan)plan.expected=cp(p);return last;}
  function finish(why){reset(why);cooldown=.25;return {ownsMovement:false,interrupted:true,reason:why};}
@@ -71,7 +71,9 @@
   if(plan?.kind==='float'){floatUsed=Math.min(6,floatUsed+dt);plan.time+=dt;last={ownsMovement:false,floating:true,kind:'float',phase:plan.time};return last;}
   return {ownsMovement:false};
  }
- return{update,startWall,startTether,boost,detach,mantle: f=>plan?.kind==='ledge'&&mantle(f),reset,active:()=>!!plan,locked:()=>!!plan&&plan.kind!=='float',floating:()=>plan?.kind==='float',releaseForCombat(){if(plan?.kind==='float')reset('COMBAT CANCEL');return !plan;},state:()=>({kind:plan?.kind||null,clock,cooldown,floatRemaining:Math.max(0,6-floatUsed),wallJumps,reason,motion:last,water:plan?.water?.id||null,anchor:plan?.anchor?.contact||null,wallNormal:plan?.wall?.normal||null,wallTop:plan?.wall?.top??null,events:events.slice(),origin:'authored mechanics; source/native candidate poses'})};
+ function equipmentReady(){return !plan||['wall','ledge'].includes(plan.kind)&&api.wallValid?.(plan.wall)!==false&&api.wallContact?.(plan.expected,plan.wall)!==false;}
+ function equipmentHandoff(why){if(!equipmentReady())return false;if(plan){reset(why);cooldown=.25;}return true;}
+ return{equipmentReady,equipmentHandoff,update,startWall,startTether,boost,detach,mantle: f=>plan?.kind==='ledge'&&mantle(f),reset,active:()=>!!plan,locked:()=>!!plan&&plan.kind!=='float',floating:()=>plan?.kind==='float',releaseForCombat(){if(plan?.kind==='float')reset('COMBAT CANCEL');return !plan;},state:()=>({kind:plan?.kind||null,clock,cooldown,floatRemaining:Math.max(0,6-floatUsed),wallJumps,reason,motion:last,water:plan?.water?.id||null,anchor:plan?.anchor?.contact||null,wallNormal:plan?.wall?.normal||null,wallTop:plan?.wall?.top??null,events:events.slice(),origin:'authored mechanics; source/native candidate poses'})};
  }
  root.createBackspoolAdvanced=create;if(typeof module!=='undefined')module.exports={create};
 })(typeof window!=='undefined'?window:globalThis);
