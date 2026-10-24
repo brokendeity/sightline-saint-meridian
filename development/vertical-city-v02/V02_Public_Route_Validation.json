@@ -1,9 +1,10 @@
 {
-  "status": "PASS uninterrupted ground-to-station public route",
+  "status": "PASS uninterrupted ground-to-station physical circulation",
   "errors": [],
-  "method": "One controlled ground start [55,.42,210]; O walk and WASD only. No jump, rail, Drive, teleport or position assignment after start.",
-  "entrySHA256": "9ecdefa48c810e52814c3d422bf144ea5d7b2cdffcde5145e09a5b6b74e57ba0",
-  "manifestSHA256": "e8767f382cb0c805e51c8257a07653dc48140655d66219867c8f89e8abfee018",
+  "ambientHits": [],
+  "method": "One controlled ground start [55,.42,210]; WASD only (O walk in baseline, ordinary run in RUN_PUBLIC variant). No jump, rail, Drive, teleport or position assignment after start.",
+  "entrySHA256": "b887965e8f16821c810ab5db72253f3bdd987511d17155e0a6231f0c1aa38033",
+  "manifestSHA256": "eb37451e8a98d7d758745753bd3b7ea0a3e51f2b4179f85a1e69cf0b69c665e7",
   "initialBank": 0,
   "segments": [
     {
@@ -84,6 +85,7 @@
   "distance": 801.0877389557749,
   "airFrames": 0,
   "maxUncommandedHorizontal": 1.0231399061311208e-14,
+  "combatExposure": "No incoming or physical damage in this trial",
   "fullTrace": "V02_Public_Route_Validation.trace.json.gz",
   "traceFrames": 27273
 }

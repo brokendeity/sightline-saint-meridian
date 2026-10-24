@@ -203,18 +203,20 @@ E0200,V2-VT-D-128,W128_400,run,0,6.946221994724902,6.946221994724902,0,1.052,pub
 E0201,W128_400,V2-VT-D-128,run,0,6.946221994724902,6.946221994724902,0,1.052,public,low,return along supported public gallery
 E0202,W128_410,observation-deck,run,0,19.72308292331602,19.72308292331602,0,2.988,public,low,return along supported public gallery
 E0203,observation-deck,W128_410,run,0,19.72308292331602,19.72308292331602,0,2.988,public,low,return along supported public gallery
-E0204,W84_326,fast-launch,flow-run,0,4.0,4.0,0,0.244,advanced,low,return along supported public gallery
-E0205,fast-launch,W84_326,flow-run,0,4.0,4.0,0,0.244,advanced,low,return along supported public gallery
-E0206,fast-launch,momentum-landing,threadrail,8,25.632011235952593,26.851443164195103,0,,advanced,medium,Y84 gallery and crossing below
-E0207,momentum-landing,station-concourse,threadrail,8,22.14158982548453,23.542514733987108,0,,advanced,medium,Y84 return crossing; public stair C
-E0208,W84_300,wall-shelf-96,wall-climb,12,13.45362404707371,18.027756377319946,0,3.278,advanced,medium,preceding 8x6m shelf / Y84 public loop
-E0209,wall-shelf-96,wall-shelf-108,wall-climb,12,4.0,12.649110640673518,0,2.3,advanced,medium,preceding 8x6m shelf / Y84 public loop
-E0210,wall-shelf-108,wall-shelf-120,wall-climb,12,4.0,12.649110640673518,0,2.3,advanced,medium,preceding 8x6m shelf / Y84 public loop
-E0211,wall-shelf-120,wall-shelf-128,wall-climb,8,4.0,8.94427190999916,0,1.626,advanced,medium,preceding 8x6m shelf / Y84 public loop
-E0212,wall-shelf-128,W128_300,flow-run,0,9.219544457292887,9.219544457292887,0,0.563,advanced,low,return along supported public gallery
-E0213,W128_300,wall-shelf-128,flow-run,0,9.219544457292887,9.219544457292887,0,0.563,advanced,low,return along supported public gallery
-E0214,W128_430,high-rail-start,flow-run,0,10.816653826391969,10.816653826391969,0,0.661,advanced,low,return along supported public gallery
-E0215,high-rail-start,W128_430,flow-run,0,10.816653826391969,10.816653826391969,0,0.661,advanced,low,return along supported public gallery
-E0216,high-rail-start,pop-launch,threadrail,0,24.0,24.0,0,,advanced,high,upper public gallery and observation deck
-E0217,pop-launch,station-concourse,rail-pop,-28,24.12985702402731,36.96281915655244,0,,advanced,high,Y84 crossing and intermediate Y92 deck
-E0218,pop-launch,station-concourse,afterstep-transfer,-28,24.12985702402731,36.96281915655244,1,,advanced,high,Y84 crossing / public stair C
+E0204,W84_300,fast-launch,flow-run,0,5.0,5.0,0,0.306,advanced,low,return along supported public gallery
+E0205,fast-launch,W84_300,flow-run,0,5.0,5.0,0,0.306,advanced,low,return along supported public gallery
+E0206,momentum-landing,momentum-relaunch,flow-run,0,19.712515346732634,19.712515346732634,0,1.205,advanced,low,return along supported public gallery
+E0207,momentum-relaunch,momentum-landing,flow-run,0,19.712515346732634,19.712515346732634,0,1.205,advanced,low,return along supported public gallery
+E0208,fast-launch,momentum-landing,threadrail,8,36.235341863986875,37.107950630558946,0,,advanced,medium,Y84 gallery / public stairs below; missed Pop recovery still requires input validation
+E0209,momentum-relaunch,station-concourse,threadrail,8,42.08622102303793,42.83981792678396,0,,advanced,medium,Y84 gallery / public stairs below; missed Pop recovery still requires input validation
+E0210,W84_300,wall-shelf-96,wall-climb,12,13.45362404707371,18.027756377319946,0,3.278,advanced,medium,preceding 8x6m shelf / Y84 public loop
+E0211,wall-shelf-96,wall-shelf-108,wall-climb,12,4.0,12.649110640673518,0,2.3,advanced,medium,preceding 8x6m shelf / Y84 public loop
+E0212,wall-shelf-108,wall-shelf-120,wall-climb,12,4.0,12.649110640673518,0,2.3,advanced,medium,preceding 8x6m shelf / Y84 public loop
+E0213,wall-shelf-120,wall-shelf-128,wall-climb,8,4.0,8.94427190999916,0,1.626,advanced,medium,preceding 8x6m shelf / Y84 public loop
+E0214,wall-shelf-128,W128_300,flow-run,0,9.219544457292887,9.219544457292887,0,0.563,advanced,low,return along supported public gallery
+E0215,W128_300,wall-shelf-128,flow-run,0,9.219544457292887,9.219544457292887,0,0.563,advanced,low,return along supported public gallery
+E0216,W128_430,high-rail-start,flow-run,0,10.816653826391969,10.816653826391969,0,0.661,advanced,low,return along supported public gallery
+E0217,high-rail-start,W128_430,flow-run,0,10.816653826391969,10.816653826391969,0,0.661,advanced,low,return along supported public gallery
+E0218,high-rail-start,pop-launch,threadrail,0,24.0,24.0,0,,advanced,high,upper public gallery and observation deck
+E0219,pop-launch,station-concourse,rail-pop,-28,24.12985702402731,36.96281915655244,0,,advanced,high,Y84 crossing and intermediate Y92 deck
+E0220,pop-launch,station-concourse,afterstep-transfer,-28,24.12985702402731,36.96281915655244,1,,advanced,high,Y84 crossing / public stair C

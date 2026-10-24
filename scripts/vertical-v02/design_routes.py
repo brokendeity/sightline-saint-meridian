@@ -60,7 +60,7 @@ for id,x,y,z,sx,sz,collection,role in [
  ('service-yard',75.5,52,326,35,28,'SM_V02_SERVICE_YARDS','multi-level combat and flanking'),
  ('station-concourse',66.5,100,376,17,34,'SM_V02_TRANSIT_STRUCTURES','public transit, pursuit and interception'),
  ('observation-deck',72,128,420,28,18,'SM_V02_LANDMARKS','lookout, pursuit escape and rail staging'),
- ('momentum-landing',64,92,354,12,10,'SM_V02_ROOFTOP_ROUTES','restore momentum between bounded uphill rails')]:
+ ('momentum-landing',78,92,323,16,44,'SM_V02_ROOFTOP_ROUTES','restore momentum between bounded uphill rails')]:
  structure(id,[x,y-.3,z],[sx,.6,sz],collection,role,walkable=True)
  node(id,x,y,z,'encounter'if y<100 else 'landmark',structuralOwner='v02:'+id)
 # Integrate destinations with actual gallery positions via supported connectors.
@@ -98,10 +98,22 @@ for side,x in [('W',55),('E',96)]:
 for side,x in [('W',W),('E',E)]:
  for z in ([300,430]if side=='W'else[400,430]):structure(f'upper-endpad-{side}-{z}',[x,127.7,z],[6,.6,7],'SM_V02_ROOFTOP_ROUTES','supported upper turn',walkable=True)
 structure('upper-crossing',[(W+E)/2,127.7,430],[35,.6,7],'SM_V02_SKYBRIDGES','observation return crossing',walkable=True);edge('W128_430','E128_430');edge('V2-VT-B-128','E128_410');edge(U[128],'W128_400');edge('W128_410','observation-deck')
-# Momentum station approach: two small uphill spans, not one energetically impossible 16m rise.
-node('fast-launch',55,84,330,'threadrail-launch');edge('W84_326','fast-launch','flow-run')
-edge('fast-launch','momentum-landing','threadrail',reverse=False,risk='medium',recovery='Y84 gallery and crossing below',anchors={'a':[55,84.44,330],'b':[64,92.44,354]},energyScreen={'entrySpeed':16.36365,'gravity':9.81,'rise':8,'friction':.45,'remainingSpecificEnergy':16.36365**2/2-9.81*8-.45*math.dist([55,84,330],[64,92,354])},physicalGate='Throw A/B, catch with momentum, stop inside supported 12x10m landing; not certified')
-edge('momentum-landing','station-concourse','threadrail',reverse=False,risk='medium',recovery='Y84 return crossing; public stair C',anchors={'a':[64,92.44,354],'b':[66.5,100.44,376]},energyScreen={'entrySpeed':16.36365,'gravity':9.81,'rise':8,'friction':.45,'remainingSpecificEnergy':16.36365**2/2-9.81*8-.45*math.dist([64,92,354],[66.5,100,376])},physicalGate='Must regain speed on intermediate landing before second uphill rail')
+# Momentum approach uses visible side faces, not inaccessible top-face targets.
+# The incoming velocity projected onto each uphill rail must cover gravity/friction.
+structure('momentum-launch-court',[54,83.7,290],[24,.6,24],'SM_V02_ROOFTOP_ROUTES','acceleration and precision cartridge staging before uphill shortcut',walkable=True)
+# Physical canopy makes precision construction a readable covered staging space.
+# The rail leaves its south edge before the full capsule rises to canopy height.
+structure('momentum-court-canopy',[50.5,88.25,288],[17,.3,20],'SM_V02_ROOFTOP_ROUTES','covered cartridge staging against aerial Halo fire',walkable=True)
+for x in [42.2,58.8]:
+ for z in [278.2,297.8]:structure(f'momentum-canopy-post-{x}-{z}',[x,86.05,z],[.35,4.1,.35],'SM_V02_ROOFTOP_ROUTES','visible launch canopy support')
+node('fast-launch',55,84,295,'threadrail-launch');edge('W84_300','fast-launch','flow-run')
+node('momentum-relaunch',76,92,335,'threadrail-launch')
+edge('momentum-landing','momentum-relaunch','flow-run',path=[[78,92,323],[82.4,92,321.4],[76,92,335]])
+for source,destination,a,b,normal,approach in [
+ ('fast-launch','momentum-landing',[55,84.44,295],[69.28,91.75,315],[-1,0,0],[46.28,84,282.78]),
+ ('momentum-relaunch','station-concourse',[76,92.44,335],[65,99.75,358.28],[0,0,-1],[82.41,92,321.44])]:
+ length=math.dist(a,b);horizontal=math.hypot(b[0]-a[0],b[2]-a[2]);rise=b[1]-a[1];entry=16.36365*horizontal/length
+ edge(source,destination,'threadrail',reverse=False,risk='medium',recovery='Y84 gallery / public stairs below; missed Pop recovery still requires input validation',anchors={'a':a,'b':b,'bSurfaceNormal':normal},approachStart=approach,energyScreen={'flowSpeed':16.36365,'projectedEntrySpeed':entry,'gravity':9.81,'rise':rise,'friction':.45,'remainingSpecificEnergy':entry**2/2-9.81*rise-.45*length},physicalGate='Physical precision A/B, supported ground acceleration, momentum catch, near-end Pop and safe landing; no direct rail/position creation during route')
 # Advanced wall staircase: each short wall fits measured age/boost budget; physical tests still required.
 last='W84_300'
 for i,y in enumerate([96,108,120,128]):
@@ -114,7 +126,7 @@ edge('pop-launch','station-concourse','afterstep-transfer',reverse=False,resourc
 def spine(side,y,a,b):return [f'{side}{y}_{z}'for z in zs if min(a,b)<=z<=max(a,b)][::1 if b>=a else -1]
 loops=[{'id':'lower','elevation':24,'nodes':spine('W',24,210,350)+spine('E',24,350,210)+['W24_210'],'destination':'suspended-market','layerConnections':['V2-VT-A','V2-VT-B'],'status':'PROPOSED; not input validated'}, {'id':'mid','elevation':52,'nodes':spine('W',52,276,350)+spine('E',52,350,276)+['W52_276'],'destination':'service-yard','layerConnections':['V2-VT-A','V2-VT-B'],'status':'PROPOSED; not input validated'}, {'id':'high','elevation':84,'nodes':spine('W',84,350,430)+spine('E',84,430,350)+['W84_350'],'destination':'station-concourse','layerConnections':['V2-VT-A','V2-VT-B','V2-VT-C','V2-VT-D','wall-shelves'],'status':'PROPOSED; not input validated'}]
 # Actual route alternatives specify abilities and are not automatically inferred from reachability.
-routes=[{'id':'A-public','start':'ground-access','destination':'station-concourse','via':['V2-VT-A-0','V2-VT-A-24','V2-VT-A-52','V2-VT-A-84','W84_210','W84_376','V2-VT-C-84','V2-VT-C-100'],'allowed':['run','stairs'],'requiredAfterstepImpulses':0,'inputValidation':'NOT TESTED'}, {'id':'B-momentum','start':'ground-access','destination':'station-concourse','via':['V2-VT-A-84','W84_326','fast-launch','momentum-landing'],'allowed':['flow-run','stairs','run','threadrail'],'requiredAfterstepImpulses':0,'inputValidation':'NOT TESTED; energetic screen passes only with fresh running momentum on both rails'}, {'id':'C-mastery','start':'ground-access','destination':'station-concourse','via':['V2-VT-A-84','W84_300','wall-shelf-96','wall-shelf-108','wall-shelf-120','wall-shelf-128','W128_300','W128_430','high-rail-start','pop-launch'],'allowed':['run','stairs','wall-climb','threadrail','rail-pop','afterstep-transfer'],'requiredAfterstepImpulses':0,'optionalAfterstepImpulses':1,'inputValidation':'NOT TESTED; no exact landing claim'}]
+routes=[{'id':'A-public','start':'ground-access','destination':'station-concourse','via':['V2-VT-A-0','V2-VT-A-24','V2-VT-A-52','V2-VT-A-84','W84_210','W84_376','V2-VT-C-84','V2-VT-C-100'],'allowed':['run','stairs'],'requiredAfterstepImpulses':0,'inputValidation':'NOT TESTED'}, {'id':'B-momentum','start':'ground-access','destination':'station-concourse','via':['V2-VT-A-84','W84_300','fast-launch','momentum-landing','momentum-relaunch'],'allowed':['flow-run','stairs','run','threadrail','rail-pop'],'requiredAfterstepImpulses':0,'inputValidation':'NOT TESTED; energetic screen passes only with fresh running momentum on both rails'}, {'id':'C-mastery','start':'ground-access','destination':'station-concourse','via':['V2-VT-A-84','W84_300','wall-shelf-96','wall-shelf-108','wall-shelf-120','wall-shelf-128','W128_300','W128_430','high-rail-start','pop-launch'],'allowed':['run','stairs','wall-climb','threadrail','rail-pop','afterstep-transfer'],'requiredAfterstepImpulses':0,'optionalAfterstepImpulses':1,'inputValidation':'NOT TESTED; no exact landing claim'}]
 # Check graph invariants and public strong connectivity; logical proof is deliberately distinct from playability.
 assert len(by)==len(nodes)
 for e in edges:assert e['source']in by and e['destination']in by and e['distance3D']>=abs(e['elevationChange'])-1e-6

@@ -859,9 +859,9 @@
     {
       "id": "momentum-landing",
       "position": [
-        64,
+        78,
         92,
-        354
+        323
       ],
       "kind": "encounter",
       "supportStatus": "planned; not yet imported",
@@ -1150,7 +1150,18 @@
       "position": [
         55,
         84,
-        330
+        295
+      ],
+      "kind": "threadrail-launch",
+      "supportStatus": "planned; not yet imported",
+      "validation": "PROPOSED"
+    },
+    {
+      "id": "momentum-relaunch",
+      "position": [
+        76,
+        92,
+        335
       ],
       "kind": "threadrail-launch",
       "supportStatus": "planned; not yet imported",
@@ -10666,28 +10677,28 @@
     },
     {
       "id": "E0204",
-      "source": "W84_326",
+      "source": "W84_300",
       "destination": "fast-launch",
       "ability": "flow-run",
       "directionality": "directed",
       "elevationChange": 0,
-      "horizontalDistance": 4.0,
-      "distance3D": 4.0,
+      "horizontalDistance": 5.0,
+      "distance3D": 5.0,
       "path": [
         [
           55,
           84,
-          326
+          300
         ],
         [
           55,
           84,
-          330
+          295
         ]
       ],
       "requiredAfterstepImpulses": 0,
       "requiredReplaySlots": 0,
-      "expectedSeconds": 0.244,
+      "expectedSeconds": 0.306,
       "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
       "difficulty": "advanced",
       "risk": "low",
@@ -10700,27 +10711,27 @@
     {
       "id": "E0205",
       "source": "fast-launch",
-      "destination": "W84_326",
+      "destination": "W84_300",
       "ability": "flow-run",
       "directionality": "directed",
       "elevationChange": 0,
-      "horizontalDistance": 4.0,
-      "distance3D": 4.0,
+      "horizontalDistance": 5.0,
+      "distance3D": 5.0,
       "path": [
         [
           55,
           84,
-          330
+          295
         ],
         [
           55,
           84,
-          326
+          300
         ]
       ],
       "requiredAfterstepImpulses": 0,
       "requiredReplaySlots": 0,
-      "expectedSeconds": 0.244,
+      "expectedSeconds": 0.306,
       "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
       "difficulty": "advanced",
       "risk": "low",
@@ -10732,23 +10743,99 @@
     },
     {
       "id": "E0206",
+      "source": "momentum-landing",
+      "destination": "momentum-relaunch",
+      "ability": "flow-run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 19.712515346732634,
+      "distance3D": 19.712515346732634,
+      "path": [
+        [
+          78,
+          92,
+          323
+        ],
+        [
+          82.4,
+          92,
+          321.4
+        ],
+        [
+          76,
+          92,
+          335
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 1.205,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "advanced",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      }
+    },
+    {
+      "id": "E0207",
+      "source": "momentum-relaunch",
+      "destination": "momentum-landing",
+      "ability": "flow-run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 19.712515346732634,
+      "distance3D": 19.712515346732634,
+      "path": [
+        [
+          76,
+          92,
+          335
+        ],
+        [
+          82.4,
+          92,
+          321.4
+        ],
+        [
+          78,
+          92,
+          323
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 1.205,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "advanced",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      }
+    },
+    {
+      "id": "E0208",
       "source": "fast-launch",
       "destination": "momentum-landing",
       "ability": "threadrail",
       "directionality": "directed",
       "elevationChange": 8,
-      "horizontalDistance": 25.632011235952593,
-      "distance3D": 26.851443164195103,
+      "horizontalDistance": 36.235341863986875,
+      "distance3D": 37.107950630558946,
       "path": [
         [
           55,
           84,
-          330
+          295
         ],
         [
-          64,
+          78,
           92,
-          354
+          323
         ]
       ],
       "requiredAfterstepImpulses": 0,
@@ -10757,7 +10844,7 @@
       "timeEvidence": "pending physical route test; no fabricated timing",
       "difficulty": "advanced",
       "risk": "medium",
-      "failureRecovery": "Y84 gallery and crossing below",
+      "failureRecovery": "Y84 gallery / public stairs below; missed Pop recovery still requires input validation",
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
@@ -10766,37 +10853,48 @@
         "a": [
           55,
           84.44,
-          330
+          295
         ],
         "b": [
-          64,
-          92.44,
-          354
+          69.28,
+          91.75,
+          315
+        ],
+        "bSurfaceNormal": [
+          -1,
+          0,
+          0
         ]
       },
+      "approachStart": [
+        46.28,
+        84,
+        282.78
+      ],
       "energyScreen": {
-        "entrySpeed": 16.36365,
+        "flowSpeed": 16.36365,
+        "projectedEntrySpeed": 15.684457169167908,
         "gravity": 9.81,
-        "rise": 8,
+        "rise": 7.310000000000002,
         "friction": 0.45,
-        "remainingSpecificEnergy": 43.32137123736221
+        "remainingSpecificEnergy": 39.752481877704014
       },
-      "physicalGate": "Throw A/B, catch with momentum, stop inside supported 12x10m landing; not certified"
+      "physicalGate": "Physical precision A/B, supported ground acceleration, momentum catch, near-end Pop and safe landing; no direct rail/position creation during route"
     },
     {
-      "id": "E0207",
-      "source": "momentum-landing",
+      "id": "E0209",
+      "source": "momentum-relaunch",
       "destination": "station-concourse",
       "ability": "threadrail",
       "directionality": "directed",
       "elevationChange": 8,
-      "horizontalDistance": 22.14158982548453,
-      "distance3D": 23.542514733987108,
+      "horizontalDistance": 42.08622102303793,
+      "distance3D": 42.83981792678396,
       "path": [
         [
-          64,
+          76,
           92,
-          354
+          335
         ],
         [
           66.5,
@@ -10810,34 +10908,45 @@
       "timeEvidence": "pending physical route test; no fabricated timing",
       "difficulty": "advanced",
       "risk": "medium",
-      "failureRecovery": "Y84 return crossing; public stair C",
+      "failureRecovery": "Y84 gallery / public stairs below; missed Pop recovery still requires input validation",
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
       "anchors": {
         "a": [
-          64,
+          76,
           92.44,
-          354
+          335
         ],
         "b": [
-          66.5,
-          100.44,
-          376
+          65,
+          99.75,
+          358.28
+        ],
+        "bSurfaceNormal": [
+          0,
+          0,
+          -1
         ]
       },
+      "approachStart": [
+        82.41,
+        92,
+        321.44
+      ],
       "energyScreen": {
-        "entrySpeed": 16.36365,
+        "flowSpeed": 16.36365,
+        "projectedEntrySpeed": 15.741539345812376,
         "gravity": 9.81,
-        "rise": 8,
+        "rise": 7.310000000000002,
         "friction": 0.45,
-        "remainingSpecificEnergy": 44.810389030955804
+        "remainingSpecificEnergy": 40.14243439007619
       },
-      "physicalGate": "Must regain speed on intermediate landing before second uphill rail"
+      "physicalGate": "Physical precision A/B, supported ground acceleration, momentum catch, near-end Pop and safe landing; no direct rail/position creation during route"
     },
     {
-      "id": "E0208",
+      "id": "E0210",
       "source": "W84_300",
       "destination": "wall-shelf-96",
       "ability": "wall-climb",
@@ -10872,7 +10981,7 @@
       "physicalGate": "Verify real vertical wall contacts, mantle support and clear camera before admission"
     },
     {
-      "id": "E0209",
+      "id": "E0211",
       "source": "wall-shelf-96",
       "destination": "wall-shelf-108",
       "ability": "wall-climb",
@@ -10907,7 +11016,7 @@
       "physicalGate": "Verify real vertical wall contacts, mantle support and clear camera before admission"
     },
     {
-      "id": "E0210",
+      "id": "E0212",
       "source": "wall-shelf-108",
       "destination": "wall-shelf-120",
       "ability": "wall-climb",
@@ -10942,7 +11051,7 @@
       "physicalGate": "Verify real vertical wall contacts, mantle support and clear camera before admission"
     },
     {
-      "id": "E0211",
+      "id": "E0213",
       "source": "wall-shelf-120",
       "destination": "wall-shelf-128",
       "ability": "wall-climb",
@@ -10977,7 +11086,7 @@
       "physicalGate": "Verify real vertical wall contacts, mantle support and clear camera before admission"
     },
     {
-      "id": "E0212",
+      "id": "E0214",
       "source": "wall-shelf-128",
       "destination": "W128_300",
       "ability": "flow-run",
@@ -11010,7 +11119,7 @@
       }
     },
     {
-      "id": "E0213",
+      "id": "E0215",
       "source": "W128_300",
       "destination": "wall-shelf-128",
       "ability": "flow-run",
@@ -11043,7 +11152,7 @@
       }
     },
     {
-      "id": "E0214",
+      "id": "E0216",
       "source": "W128_430",
       "destination": "high-rail-start",
       "ability": "flow-run",
@@ -11076,7 +11185,7 @@
       }
     },
     {
-      "id": "E0215",
+      "id": "E0217",
       "source": "high-rail-start",
       "destination": "W128_430",
       "ability": "flow-run",
@@ -11109,7 +11218,7 @@
       }
     },
     {
-      "id": "E0216",
+      "id": "E0218",
       "source": "high-rail-start",
       "destination": "pop-launch",
       "ability": "threadrail",
@@ -11154,7 +11263,7 @@
       }
     },
     {
-      "id": "E0217",
+      "id": "E0219",
       "source": "pop-launch",
       "destination": "station-concourse",
       "ability": "rail-pop",
@@ -11189,7 +11298,7 @@
       "physicalGate": "Swept arc and exact normal-input landing required; straight-line edge is topology only"
     },
     {
-      "id": "E0218",
+      "id": "E0220",
       "source": "pop-launch",
       "destination": "station-concourse",
       "ability": "afterstep-transfer",
@@ -11328,15 +11437,17 @@
       "destination": "station-concourse",
       "via": [
         "V2-VT-A-84",
-        "W84_326",
+        "W84_300",
         "fast-launch",
-        "momentum-landing"
+        "momentum-landing",
+        "momentum-relaunch"
       ],
       "allowed": [
         "flow-run",
         "stairs",
         "run",
-        "threadrail"
+        "threadrail",
+        "rail-pop"
       ],
       "requiredAfterstepImpulses": 0,
       "inputValidation": "NOT TESTED; energetic screen passes only with fresh running momentum on both rails"
@@ -13946,14 +14057,14 @@
     {
       "id": "momentum-landing",
       "center": [
-        64,
+        78,
         91.7,
-        354
+        323
       ],
       "size": [
-        12,
+        16,
         0.6,
-        10
+        44
       ],
       "collection": "SM_V02_ROOFTOP_ROUTES",
       "role": "restore momentum between bounded uphill rails",
@@ -13961,14 +14072,14 @@
       "operation": "addition replacing V1 vertical prototype in V02 candidate only",
       "bounds": {
         "min": [
-          58.0,
+          70.0,
           91.4,
-          349.0
+          301.0
         ],
         "max": [
-          70.0,
+          86.0,
           92.0,
-          359.0
+          345.0
         ]
       },
       "originalGeometryConflicts": [],
@@ -14407,6 +14518,188 @@
       },
       "originalGeometryConflicts": [],
       "walkable": true
+    },
+    {
+      "id": "momentum-launch-court",
+      "center": [
+        54,
+        83.7,
+        290
+      ],
+      "size": [
+        24,
+        0.6,
+        24
+      ],
+      "collection": "SM_V02_ROOFTOP_ROUTES",
+      "role": "acceleration and precision cartridge staging before uphill shortcut",
+      "owner": "v02:momentum-launch-court",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          42.0,
+          83.4,
+          278.0
+        ],
+        "max": [
+          66.0,
+          84.0,
+          302.0
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "walkable": true
+    },
+    {
+      "id": "momentum-court-canopy",
+      "center": [
+        50.5,
+        88.25,
+        288
+      ],
+      "size": [
+        17,
+        0.3,
+        20
+      ],
+      "collection": "SM_V02_ROOFTOP_ROUTES",
+      "role": "covered cartridge staging against aerial Halo fire",
+      "owner": "v02:momentum-court-canopy",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          42.0,
+          88.1,
+          278.0
+        ],
+        "max": [
+          59.0,
+          88.4,
+          298.0
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "walkable": true
+    },
+    {
+      "id": "momentum-canopy-post-42.2-278.2",
+      "center": [
+        42.2,
+        86.05,
+        278.2
+      ],
+      "size": [
+        0.35,
+        4.1,
+        0.35
+      ],
+      "collection": "SM_V02_ROOFTOP_ROUTES",
+      "role": "visible launch canopy support",
+      "owner": "v02:momentum-canopy-post-42.2-278.2",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          42.025000000000006,
+          84.0,
+          278.025
+        ],
+        "max": [
+          42.375,
+          88.1,
+          278.375
+        ]
+      },
+      "originalGeometryConflicts": []
+    },
+    {
+      "id": "momentum-canopy-post-42.2-297.8",
+      "center": [
+        42.2,
+        86.05,
+        297.8
+      ],
+      "size": [
+        0.35,
+        4.1,
+        0.35
+      ],
+      "collection": "SM_V02_ROOFTOP_ROUTES",
+      "role": "visible launch canopy support",
+      "owner": "v02:momentum-canopy-post-42.2-297.8",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          42.025000000000006,
+          84.0,
+          297.625
+        ],
+        "max": [
+          42.375,
+          88.1,
+          297.975
+        ]
+      },
+      "originalGeometryConflicts": []
+    },
+    {
+      "id": "momentum-canopy-post-58.8-278.2",
+      "center": [
+        58.8,
+        86.05,
+        278.2
+      ],
+      "size": [
+        0.35,
+        4.1,
+        0.35
+      ],
+      "collection": "SM_V02_ROOFTOP_ROUTES",
+      "role": "visible launch canopy support",
+      "owner": "v02:momentum-canopy-post-58.8-278.2",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          58.625,
+          84.0,
+          278.025
+        ],
+        "max": [
+          58.974999999999994,
+          88.1,
+          278.375
+        ]
+      },
+      "originalGeometryConflicts": []
+    },
+    {
+      "id": "momentum-canopy-post-58.8-297.8",
+      "center": [
+        58.8,
+        86.05,
+        297.8
+      ],
+      "size": [
+        0.35,
+        4.1,
+        0.35
+      ],
+      "collection": "SM_V02_ROOFTOP_ROUTES",
+      "role": "visible launch canopy support",
+      "owner": "v02:momentum-canopy-post-58.8-297.8",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          58.625,
+          84.0,
+          297.625
+        ],
+        "max": [
+          58.974999999999994,
+          88.1,
+          297.975
+        ]
+      },
+      "originalGeometryConflicts": []
     },
     {
       "id": "pop-end-deck",

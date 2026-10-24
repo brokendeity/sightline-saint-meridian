@@ -39,6 +39,14 @@
       "fix": "3\u20133.2m flight separation gives the complete capsule headroom; no movement limits enlarged",
       "evidence": "V02_Public_Route_PreSpacing.json.gz",
       "verification": "V02_Public_Route_Validation.json maxUncommandedHorizontal near floating-point zero"
+    },
+    {
+      "name": "ordinary running stalls against upcoming low riser",
+      "observedFrames": 305,
+      "observedMaximumClippedFrameDisplacement": 0.075,
+      "source": "evidence/fixed-defects/running-stair-snags-before.trace.json.gz",
+      "fix": "Tagged stair broadphase includes one 60Hz input-frame horizontal travel in proximity padding. Exact support rise remains <=.201m. No original building, generic wall or movement power changes.",
+      "verification": "V02_Public_Route_Run_Validation.json: complete ground-to-station, no airborne frames, max displacement beyond reported velocity <.04m"
     }
   ]
 }
