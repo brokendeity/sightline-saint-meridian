@@ -1,6 +1,49 @@
 {
-  "sourceManifestSHA256": "0509a3145f13c29220678398aac4057692fe6fe920fa3ee5c1af58fffc3bc76a",
+  "sourceManifestSHA256": "898acae1647bbda8729c7224d3842e03b49f884b73ff1f8ae4e8010391aba267",
   "status": "graybox; full V02 acceptance incomplete",
+  "runtimeEncounters": [
+    {
+      "id": "service-combat",
+      "title": "SERVICE YARD \u00b7 COMBAT",
+      "trigger": [
+        62,
+        52,
+        337
+      ],
+      "positions": [
+        [
+          65,
+          52,
+          330
+        ],
+        [
+          73,
+          52,
+          327
+        ],
+        [
+          85.5,
+          55.2,
+          329
+        ]
+      ],
+      "reward": 350,
+      "bounds": {
+        "min": [
+          51,
+          51.9,
+          308
+        ],
+        "max": [
+          99,
+          61,
+          343
+        ]
+      },
+      "actorType": "existing damage-taking sparring prototype",
+      "status": "runtime adapter; acceptance is hash-bound external evidence, not this design record"
+    }
+  ],
   "points": [
     {
       "id": "transit-interception",
@@ -8,15 +51,6 @@
         66.5,
         100,
         376
-      ],
-      "status": "planned gameplay adapter; not an active encounter"
-    },
-    {
-      "id": "service-combat",
-      "position": [
-        75.5,
-        52,
-        326
       ],
       "status": "planned gameplay adapter; not an active encounter"
     },

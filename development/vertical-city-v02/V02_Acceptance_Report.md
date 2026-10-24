@@ -1,8 +1,8 @@
 # V02 acceptance — circulation milestone
 
-Full V02 completion is **not established**. All three destination approaches now have full normal-input traces, and public circulation reachesY128 and returns to ground. Encounters, recovery breadth, final architecture, transit, visuals and sustained performance remain open.
+Full V02 completion is **not established**. All three destination approaches now have full normal-input traces, and public circulation reachesY128 and returns to ground. A multi-level service-yard prototype now supports legal combat and lifecycle input tests; pursuit, rescue, broader recovery, final architecture, transit, visuals and sustained performance remain open.
 
-Candidate: `SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html` (`82e26024710a8723510d5e190748609db8c739ba5e85bee1f496a8c0952b1dab`).
+Candidate: `SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html` (`6b9c333d6c0e47166ba8be4da9af39b41d04335a747db607ec57e1da84ece9a3`).
 
 ## Named gameplay gates
 
@@ -17,6 +17,22 @@ Candidate: `SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html` (`82e26024710a8723510d5e1
 | I train | NOT TESTED | Real moving front preserved provisionally; full carriage/traffic sweeps remain open. |
 | J preservation | PARTIAL | Protected entry hash, original mesh references, impact-owner regression and preserved carving tested. Full missions/combat/destruction playthrough regressions remain open. |
 
+## Service-yard gameplay
+
+- real keyboard starts three supported, damage-taking opponents on two elevations
+- partial invalid placement preserves all existing actors and attempt
+- normal controller movement climbs to mezzanine and overhead maintenance route
+- legal heavy contacts defeat lower and upper opponents, award once
+- standard simulated controller Y starts fixed encounter
+- pause freezes positions and local clock; resume keeps attempt
+- restart replaces exactly three opponents without healing or stale target lock
+- actual hero selector clears encounter actors and locks
+- CDP touch starts encounter with unobscured 44px portrait/landscape buttons
+- labelled direct respawn lifecycle clears district actors
+- labelled negative district-start API preserves street contract actors/progress and usable existing End control
+- ordinary enemy strikes cause natural defeat; retry cannot refill condition
+- These are local controlled-start cases. They do not certify all Echo interactions, final camera/readability, physical devices or the other encounters. Prototype opponent art remains deliberate during graybox acceptance.
+
 ## Current measured behavior
 
 - lower loop: 361.8m / 55.43s, no airborne frames or Drive releases.
@@ -28,14 +44,14 @@ Candidate: `SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html` (`82e26024710a8723510d5e1
 - Public roundtrip: 2042.2m / 353.78s through stairsA/C/D, upper crossing, stairsB and original ground roads. Zero airborne frames, damage or power releases; max unexplained horizontal motion 0.000000m.
 - Banked starts collect five actual running impulses before the timed route; they do not inject resources. Original Halo actors remain active. Input-time measurements include precision slow-motion and are not human performance benchmarks.
 - The immutable V02-owner impact crash is fixed without disabling collision, injury, audio, debris or decals. Original imported-building carving still changes the original mesh/parts in a separate labelled direct test.
-- 29 exported GLBs pass glTF validation. 1713 new components, 20,556 triangles, 1,197,400 bytes. No original building copies are exported.
+- 29 exported GLBs pass glTF validation. 1766 new components, 21,192 triangles, 1,233,716 bytes. No original building copies are exported.
 - Compound-box and6392 sampled ground-road vehicle envelopes clear; these are not continuous train/traffic or triangle collision certification.
 
 ## Design and remaining gates
 
-The graph has111 nodes /231 directed edges. Rail/Pop/landing phases are distinct. Some public hub junctions and edge admission still require alignment with measured traces, so proposed graph statuses do not automatically become certified. Three encounter spaces/landmarks and four POIs are designed, but runtime encounter and discovery behavior is unfinished. Do not advance to detailed architecture while essential encounter/recovery gates remain open.
+The graph has116 nodes /241 directed edges. Rail/Pop/landing phases are distinct. Some public hub junctions and edge admission still require alignment with measured traces, so proposed graph statuses do not automatically become certified. Three encounter spaces/landmarks and four POIs are designed. Service-yard combat and local lifecycle now have input evidence; transit pursuit, market rescue and POI discovery remain unfinished. Do not advance to detailed architecture while essential encounter/recovery gates remain open.
 
-- Three functional encounters: pursuit, multi-level service combat and civilian rescue
+- Implement transit pursuit and market rescue; expand service-yard Echo/cross-level/escape/camera acceptance
 - Runtime landmark/navigation cues and four discoverable POIs
 - Refine graph junctions/admission against actual input traces; graph edge proposals are not route certification
 - V02 physical rail-to-rail transfer, missed anchors, no-Pop and wider recovery/camera/contact cases

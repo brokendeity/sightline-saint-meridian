@@ -1,0 +1,160 @@
+{
+  "status": "PASS listed graybox regressions",
+  "hashes": {
+    "entry": "6b9c333d6c0e47166ba8be4da9af39b41d04335a747db607ec57e1da84ece9a3",
+    "manifest": "898acae1647bbda8729c7224d3842e03b49f884b73ff1f8ae4e8010391aba267",
+    "encounters": "45043cfeb79e630d6228414a2a03a40517b4bbb6f6ec127a1ad3b0af6f7a0e89"
+  },
+  "jobs": [
+    {
+      "name": "service",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_service_encounter.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 48.43,
+      "log": "development/vertical-city-v02/evidence/regression-service.log"
+    },
+    {
+      "name": "loops",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_loops.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 74.57,
+      "log": "development/vertical-city-v02/evidence/regression-loops.log"
+    },
+    {
+      "name": "public-run",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_public_station.cjs"
+      ],
+      "environment": {
+        "RUN_PUBLIC": "1"
+      },
+      "returncode": 0,
+      "wallSeconds": 90.92,
+      "log": "development/vertical-city-v02/evidence/regression-public-run.log"
+    },
+    {
+      "name": "public-walk",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_public_station.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 263.35,
+      "log": "development/vertical-city-v02/evidence/regression-public-walk.log"
+    },
+    {
+      "name": "roundtrip",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_public_roundtrip.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 209.64,
+      "log": "development/vertical-city-v02/evidence/regression-roundtrip.log"
+    },
+    {
+      "name": "momentum-zero",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_momentum_route.cjs"
+      ],
+      "environment": {
+        "FULL_ROUTE": "1",
+        "RUN_PREFIX": "flow"
+      },
+      "returncode": 0,
+      "wallSeconds": 49.77,
+      "log": "development/vertical-city-v02/evidence/regression-momentum-zero.log"
+    },
+    {
+      "name": "momentum-banked",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_momentum_route.cjs"
+      ],
+      "environment": {
+        "FULL_ROUTE": "1",
+        "RUN_PREFIX": "flow",
+        "BANKED_START": "1"
+      },
+      "returncode": 0,
+      "wallSeconds": 56.86,
+      "log": "development/vertical-city-v02/evidence/regression-momentum-banked.log"
+    },
+    {
+      "name": "mastery-zero",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_mastery_route.cjs"
+      ],
+      "environment": {
+        "FULL_ROUTE": "1"
+      },
+      "returncode": 0,
+      "wallSeconds": 70.42,
+      "log": "development/vertical-city-v02/evidence/regression-mastery-zero.log"
+    },
+    {
+      "name": "mastery-brake",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_mastery_route.cjs"
+      ],
+      "environment": {
+        "FULL_ROUTE": "1",
+        "BANKED_START": "1",
+        "USE_BRAKE": "1"
+      },
+      "returncode": 0,
+      "wallSeconds": 72.64,
+      "log": "development/vertical-city-v02/evidence/regression-mastery-brake.log"
+    },
+    {
+      "name": "short-catch",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_mastery_route.cjs"
+      ],
+      "environment": {
+        "SHORT_CATCH": "1"
+      },
+      "returncode": 0,
+      "wallSeconds": 58.47,
+      "log": "development/vertical-city-v02/evidence/regression-short-catch.log"
+    },
+    {
+      "name": "impact",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_impact_ownership.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 10.12,
+      "log": "development/vertical-city-v02/evidence/regression-impact.log"
+    },
+    {
+      "name": "whip",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_preserved_whip_inputs.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 10.37,
+      "log": "development/vertical-city-v02/evidence/regression-whip.log"
+    }
+  ],
+  "scope": "Current graybox circulation, local service combat and retained inputs; not complete V02 acceptance."
+}

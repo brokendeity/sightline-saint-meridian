@@ -1,8 +1,8 @@
 {
   "status": "GRAYBOX CIRCULATION MILESTONE; full V02 remains incomplete",
   "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html",
-  "entrySHA256": "82e26024710a8723510d5e190748609db8c739ba5e85bee1f496a8c0952b1dab",
-  "manifestSHA256": "0509a3145f13c29220678398aac4057692fe6fe920fa3ee5c1af58fffc3bc76a",
+  "entrySHA256": "6b9c333d6c0e47166ba8be4da9af39b41d04335a747db607ec57e1da84ece9a3",
+  "manifestSHA256": "898acae1647bbda8729c7224d3842e03b49f884b73ff1f8ae4e8010391aba267",
   "originalPlayableSHA256": "fac92161657cb93c8500d6afbc2900748b7cadfc015c019eeddf0366cdf070e4",
   "originalPlayableUnchanged": true,
   "loops": [
@@ -1422,6 +1422,337 @@
       }
     ]
   },
+  "serviceEncounter": {
+    "status": "PASS local service encounter",
+    "scope": "Service-yard local encounter; single initial fixture, no route-node teleporting or injected damage. Other district encounters and full V02 acceptance remain pending.",
+    "results": [
+      {
+        "name": "real keyboard starts three supported, damage-taking opponents on two elevations",
+        "pass": true
+      },
+      {
+        "name": "partial invalid placement preserves all existing actors and attempt",
+        "pass": true,
+        "evidence": {
+          "accepted": false,
+          "before": 1,
+          "after": 1,
+          "hp": [
+            180,
+            180,
+            180
+          ],
+          "afterHp": [
+            180,
+            180,
+            180
+          ]
+        }
+      },
+      {
+        "name": "normal controller movement climbs to mezzanine and overhead maintenance route",
+        "pass": true,
+        "airFrames": 0
+      },
+      {
+        "name": "legal heavy contacts defeat lower and upper opponents, award once",
+        "pass": true,
+        "victory": {
+          "district": {
+            "phase": "victory",
+            "attempt": 2,
+            "elapsed": 52.333333333331645,
+            "rewarded": true,
+            "message": "Yard secured \u00b7 +350. Continue to the market or transit interchange.",
+            "reason": null,
+            "history": [
+              {
+                "attempt": 1,
+                "outcome": "ENDED",
+                "elapsed": 0.06666666666666667
+              },
+              {
+                "attempt": 2,
+                "outcome": "victory",
+                "elapsed": 52.333333333331645,
+                "reward": 350
+              }
+            ],
+            "events": [
+              {
+                "eventId": 1,
+                "time": 0.067,
+                "attempt": 1,
+                "kind": "started",
+                "positions": [
+                  [
+                    65,
+                    52,
+                    330
+                  ],
+                  [
+                    73,
+                    52,
+                    327
+                  ],
+                  [
+                    85.5,
+                    55.2,
+                    329
+                  ]
+                ]
+              },
+              {
+                "eventId": 2,
+                "time": 0.133,
+                "attempt": 1,
+                "kind": "ended",
+                "reason": "ENDED"
+              },
+              {
+                "eventId": 3,
+                "time": 28.017,
+                "attempt": 2,
+                "kind": "started",
+                "positions": [
+                  [
+                    65,
+                    52,
+                    330
+                  ],
+                  [
+                    73,
+                    52,
+                    327
+                  ],
+                  [
+                    85.5,
+                    55.2,
+                    329
+                  ]
+                ]
+              },
+              {
+                "eventId": 4,
+                "time": 80.35,
+                "attempt": 2,
+                "kind": "victory",
+                "reward": 350
+              }
+            ],
+            "eventId": 4,
+            "config": {
+              "id": "service-combat",
+              "title": "SERVICE YARD \u00b7 COMBAT",
+              "trigger": [
+                62,
+                52,
+                337
+              ],
+              "positions": [
+                [
+                  65,
+                  52,
+                  330
+                ],
+                [
+                  73,
+                  52,
+                  327
+                ],
+                [
+                  85.5,
+                  55.2,
+                  329
+                ]
+              ],
+              "reward": 350,
+              "bounds": {
+                "min": [
+                  51,
+                  51.9,
+                  308
+                ],
+                "max": [
+                  99,
+                  61,
+                  343
+                ]
+              },
+              "actorType": "existing damage-taking sparring prototype",
+              "status": "runtime adapter; acceptance is hash-bound external evidence, not this design record"
+            },
+            "near": false,
+            "inside": true,
+            "opponents": [
+              {
+                "id": "encounter-2-0",
+                "hp": 0,
+                "phase": "heavy-stagger",
+                "position": [
+                  65.92064527748195,
+                  52,
+                  324.60848319357166
+                ]
+              },
+              {
+                "id": "encounter-2-1",
+                "hp": 0,
+                "phase": "guard-break",
+                "position": [
+                  71.20007443256662,
+                  52,
+                  333.5757812946773
+                ]
+              },
+              {
+                "id": "encounter-2-2",
+                "hp": 0,
+                "phase": "heavy-stagger",
+                "position": [
+                  88.39278244391646,
+                  55.2,
+                  333.4669481160839
+                ]
+              }
+            ],
+            "scope": "Service-yard prototype combat only; rescue and pursuit pending"
+          },
+          "encounter": {
+            "active": true,
+            "lesson": false,
+            "stage": 0,
+            "clock": 53.34999999999825,
+            "message": "",
+            "completed": false,
+            "outcome": "victory",
+            "attacks": 4,
+            "guardBreaks": 2,
+            "recordingId": null,
+            "targetId": "encounter-2-0",
+            "attackerId": null,
+            "nextAttackAt": 44.21666666666546,
+            "eventCursor": 0,
+            "interruptionReason": null,
+            "attempt": 2,
+            "notice": "",
+            "opponents": [
+              {
+                "id": "encounter-2-0",
+                "role": "drill",
+                "phase": "heavy-stagger",
+                "hp": 0,
+                "guarding": false,
+                "position": [
+                  65.92064527748195,
+                  52,
+                  324.60848319357166
+                ],
+                "home": [
+                  65,
+                  52,
+                  330
+                ],
+                "aim": [
+                  0.4337127616093503,
+                  0,
+                  0.9010511863469195
+                ],
+                "windup": 1.2,
+                "stagger": 1.2
+              },
+              {
+                "id": "encounter-2-1",
+                "role": "guard",
+                "phase": "guard-break",
+                "hp": 0,
+                "guarding": false,
+                "position": [
+                  71.20007443256662,
+                  52,
+                  333.5757812946773
+                ],
+                "home": [
+                  73,
+                  52,
+                  327
+                ],
+                "aim": [
+                  -0.5397448564789453,
+                  0,
+                  -0.8418286582817922
+                ],
+                "windup": 1.2,
+                "stagger": 1.2
+              },
+              {
+                "id": "encounter-2-2",
+                "role": "striker",
+                "phase": "heavy-stagger",
+                "hp": 0,
+                "guarding": false,
+                "position": [
+                  88.39278244391646,
+                  55.2,
+                  333.4669481160839
+                ],
+                "home": [
+                  85.5,
+                  55.2,
+                  329
+                ],
+                "aim": [
+                  -0.5479926187746648,
+                  0,
+                  -0.836483167654009
+                ],
+                "windup": 1.2,
+                "stagger": 1.2
+              }
+            ]
+          },
+          "score": 2510
+        }
+      }
+    ],
+    "lifecycle": [
+      {
+        "name": "standard simulated controller Y starts fixed encounter",
+        "pass": true
+      },
+      {
+        "name": "pause freezes positions and local clock; resume keeps attempt",
+        "pass": true
+      },
+      {
+        "name": "restart replaces exactly three opponents without healing or stale target lock",
+        "pass": true
+      },
+      {
+        "name": "actual hero selector clears encounter actors and locks",
+        "pass": true
+      },
+      {
+        "name": "CDP touch starts encounter with unobscured 44px portrait/landscape buttons",
+        "pass": true
+      },
+      {
+        "name": "labelled direct respawn lifecycle clears district actors",
+        "pass": true
+      },
+      {
+        "name": "labelled negative district-start API preserves street contract actors/progress and usable existing End control",
+        "pass": true
+      },
+      {
+        "name": "ordinary enemy strikes cause natural defeat; retry cannot refill condition",
+        "pass": true,
+        "attacks": 13,
+        "elapsed": 33.34999999999939
+      }
+    ],
+    "actorModels": "existing sparring prototypes, not final Halo models"
+  },
   "impactOwnership": {
     "status": "PASS immutable V02 impact ownership and preserved original carving",
     "scope": "actual gravity drop onto immutable V02 roof, then a labelled direct original-building carving test; not full destruction playthrough",
@@ -1442,9 +1773,9 @@
   },
   "graybox": {
     "chunks": 29,
-    "records": 1713,
-    "triangles": 20556,
-    "bytes": 1197400,
+    "records": 1766,
+    "triangles": 21192,
+    "bytes": 1233716,
     "exportedOriginalBuildingCopies": 0,
     "originalGeometryConflicts": [],
     "coplanarSurfaceOverlaps": [],
@@ -1452,7 +1783,7 @@
     "roadEnvelopeConflictCount": 0
   },
   "remaining": [
-    "Three functional encounters: pursuit, multi-level service combat and civilian rescue",
+    "Implement transit pursuit and market rescue; expand service-yard Echo/cross-level/escape/camera acceptance",
     "Runtime landmark/navigation cues and four discoverable POIs",
     "Refine graph junctions/admission against actual input traces; graph edge proposals are not route certification",
     "V02 physical rail-to-rail transfer, missed anchors, no-Pop and wider recovery/camera/contact cases",

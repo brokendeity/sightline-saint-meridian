@@ -1,6 +1,6 @@
-# V02 encounter spaces — graybox design, not gameplay acceptance
+# V02 encounter spaces — service prototype and remaining designs
 
-The current live city, collision export and measured 0.55 m body radius are authoritative. All coordinates below are game metres, Y up, with architectural deck-top heights; the player origin is 0.42 m higher. Original missions, building ownership and road graphs remain unchanged. These three encounters require candidate integration and input tests before they count as functional.
+The current live city, collision export and measured 0.55 m body radius are authoritative. All coordinates below are game metres, Y up, with architectural deck-top heights; the player origin is 0.42 m higher. Original missions, building ownership and road graphs remain unchanged. Service-yard combat has a playable prototype; pursuit and rescue are still designs. Local service tests are not full district acceptance.
 
 ## Transit interchange pursuit
 
@@ -14,11 +14,17 @@ Acceptance: start/finish/retry through real interaction input; both chase and in
 
 Main deck: X58–93, Z312–340, Y52 (35×28 m). This supplies more than five current 2.9 m opponent strike reaches across each dimension. Preserve a 6 m circulation lane on both gallery approaches. Use an 8×8 m clear center and three opponent spawn areas separated by at least 6.5 m. Proposed spawns: [65,52,320], [85,52,320], [75,52,334]. Positions remain proposals until actual support, full body and camera clearance pass.
 
-Add a Y54 flank shelf reached by a native jump, two separated cover props no taller than 0.9 m, and an overhead maintenance route at Y58 with an accessible end. No cover is placed across the main Flow line. Keep rear and side escapes to both public galleries, with wall/Threadrail opportunities on solid, visibly corresponding support geometry.
+Implemented graybox: a Y55.2 combat mezzanine, Y58.4 walkable overhead maintenance route and real 3.2 m stair flights, with <=0.18 m risers. Both elevated decks occupy X80–91, Z317–335, with actual stair openings and side return landings. A solid Y54 jump plinth occupies X87–92, Z336–340. Two separated low cover blocks remain0.9m high. A clear8×8m fighting region is X58–66/Z323.6–331.6. Both public gallery approaches remain open. Visible half-metre posts atX82/90.5,Z334.5 provide physical anchor surfaces; full cast/transfer and camera acceptance remain separate.
+
+Runtime metadata and Blender encounter empties come from the same graph record: access[62,52,337]; lower spawns[65,52,330] and[73,52,327]; mezzanine spawn[85.5,55.2,329]. Earlier proposed spawn coordinates above are superseded by these measured supported placements. Opponents use existing sparring prototype meshes and legal shared combat damage, reactions, guard, leash and one-attacker coordination. No new fake hit/damage system or enemy teleport is introduced. The upper patrol holds its elevation; this does not claim stair-climbing enemy navigation.
+
+At the access ring, press **I**, the existing controller **Y interaction**, or **Start encounter**. Combat, evasion, replay, Threadrail and hero-switch bindings remain intact. **J remains Retrace**. The local HUD owns its objective only while applicable, and existing street contracts retain their own usable controls. Restart preflights every fixed spawn before replacement, clears locks/owned replay through existing cleanup, and does not restore condition. Victory awards350once per attempt. Pause freezes the clock and actors. Defeat, End, respawn and actual hero switching have explicit local lifecycle handling.
 
 Reuse the existing combatant registry, health, action/hit rules and encounter lifecycle. Do not duplicate damage logic or create invulnerable sparring opponents. Height-aware spawn validation is required. Death, end, restart and hero switch must use the established cleanup path. The encounter must be defeated through legal attacks and show an actual completion outcome.
 
 Acceptance: three active opponents, natural win/defeat/retry, cross-level melee/Echo/guard interactions, camera room at the deck corners, collision-checked knockback and both escape routes. Layout changes must follow measured combat space needs rather than shrinking attacks to fit.
+
+Current evidence: `V02_Service_Encounter.json` and `V02_Service_Lifecycle.json`, their compressed traces and actual browser captures. Legal heavy attacks defeat both lower opponents, then normal stair movement flanks and defeats the mezzanine opponent. Mezzanine/overhead access is grounded. Atomic invalid placement, pause, controller start, touch start, restart, hero selector and natural incoming-hit defeat are tested. Broader Echo, knockback/escape, camera, navigation-cue and physical-device playtests remain open; do not promote the whole encounter quality gate from these local cases alone.
 
 ## Suspended-market civilian rescue
 

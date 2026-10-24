@@ -1,6 +1,6 @@
 # Saint Meridian V02 development
 
-Phase 1 began from V1 snapshot c3eacd02 on branch feature/saint-meridian-aaa-vertical-city-v02. Current integrated entry remains SIGHTLINE_BACKSPOOL_WHIP_THROW.html; no gameplay/environment geometry has been changed yet.
+Phase 1 began from V1 snapshot c3eacd02 on branch feature/saint-meridian-aaa-vertical-city-v02. The preserved integrated entry is SIGHTLINE_BACKSPOOL_WHIP_THROW.html. Current V02 work runs in the separate SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html candidate; the historical phase notes below are retained.
 
 Run scripts/vertical-v02/export_live_world.cjs with the repository served at 8766, then scripts/vertical-v02/reconcile_site.py and scripts/vertical-v02/draw_live_site.py. The exporter waits for actual imported city, roads, vertical environment and Backspool readiness; captures mesh/compound geometry, route data, live mission anchors, recovery source, support registry and V1 instancing matrices. Export is an initialized-world snapshot, not coverage of every future mission or destruction state.
 
@@ -55,3 +55,11 @@ Ordinary running found repeated low-riser snags that walking did not expose. The
 Four real climbable service-room roofs reach96/108/120/128m within existing wall limits. An upper rail, supportedZ440 run-up and118/108m maintenance roofs provide a safe stepped descent to the station. Full zero-start/no-release and full-start/one-brake input tests pass; the latter consumes an actual compatible landing impulse. A short-catch pilot recovers on the upper deck and continues without a reset. See `V02_Mastery_Route_Notes.md`.
 
 The complete public ground→A/C/D→Y128→B→ground circuit passes with no jumps, power use, damage or unsupported frames. It found and fixed a0.65m station exit gap with a visible side connection beside the final stair flight. An actual high drop also found a grouped-owner carving crash: immutable new graybox owners are now respected without disabling collision, injury or impact effects; original imported-building carving remains functional. Final circulation evidence is hash-bound; the full V02 objective remains incomplete.
+
+## Service-yard combat prototype
+
+A real multi-level encounter now uses the shared damage-taking sparring system. Enter via the west access ring at[62,52,337], then pressI, controllerY, or the local Start button. The lower deck,55.2m mezzanine and58.4m overhead route are Blender-authored, with physical stairs and cover. Existing Halo global behavior remains active. Opponent models remain explicit prototypes.
+
+`test_service_encounter.cjs` proves three supported spawns, atomic placement failure, grounded access to both upper decks and victory through legal combat inputs. `test_service_lifecycle.cjs` covers simulated-controller and CDP-touch start, pause, restart without healing, actual hero-selector cleanup, respawn, coexistence with street contracts and natural defeat from incoming strikes. Broader Echo/knockback/camera/escape cases remain open, along with the two other encounters. SeeV02_Encounter_Design.md.
+
+After changes, run `python3 scripts/vertical-v02/run_graybox_regressions.py` for all listed circulation, local-combat and retained-input scenarios, then `python3 scripts/vertical-v02/report_milestone.py`. The runner records exact hashes and per-job logs. It does not certify the full city. Original builds and saved GitHub snapshot refs are unchanged.

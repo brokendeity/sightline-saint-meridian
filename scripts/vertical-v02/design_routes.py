@@ -69,24 +69,38 @@ edge('W52_326','service-yard');edge('E52_326','service-yard')
 # Primary public switchback stair, secondary public stair at the other end of the district.
 # Exact risers are authored next; graph includes their true switchback path, not vertical walk edges.
 stairs=[]
-def stair(id,x,z,levels):
+def stair(id,x,z,levels,public=True):
  interfaces={}
  for y in levels:
   interfaces[y]=node(f'{id}-{y}',x-3,y,z-4.5,'stair-landing',structure=id)
-  if y in [24,52,84]:
+  if public and y in [24,52,84]:
    side='W'if x<80 else 'E';nearest=min(zs,key=lambda t:abs(t-(z-4.5)))
    edge(f'{side}{y}_{nearest}',interfaces[y],path=[by[f'{side}{y}_{nearest}']['position'],[W if side=='W' else E,y,z-4.5],[x-3,y,z-4.5]])
  for lo,hi in zip(levels,levels[1:]):
-  flights=math.ceil((hi-lo)/3.2);rise=(hi-lo)/flights;steps=math.ceil(rise/.18);run=steps*.36;north=z-4.5;south=z-3+run+1.5;poly=[by[interfaces[lo]]['position']]
+  flights=math.ceil((hi-lo)/3.2-1e-9);rise=(hi-lo)/flights;steps=math.ceil(rise/.18);run=steps*.36;north=z-4.5;south=z-3+run+1.5;poly=[by[interfaces[lo]]['position']]
   for j in range(flights):
    xj=x-3 if j%2==0 else x+3;start=north if j%2==0 else south;end=south if j%2==0 else north
    poly += [[xj,lo+j*rise,start],[xj,lo+(j+1)*rise,end],[x+3 if j%2==0 else x-3,lo+(j+1)*rise,end]]
   if flights%2:poly += [[x+6.2,hi,south],[x+6.2,hi,north],[x-3,hi,north]]
   poly += [by[interfaces[hi]]['position']]
   edge(interfaces[lo],interfaces[hi],'stairs',path=poly,recovery='continuous guardrails and full switchback landings',architectureGate='Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification')
- stairs.append({'id':id,'x':x,'z':z,'levels':levels,'flightWidth':3.2,'landingWidth':9.2,'riseMax':.18,'tread':.36,'flightRiseMax':3.2,'interfaces':interfaces,'status':'design; test first flight before full build'})
+ stairs.append({'id':id,'x':x,'z':z,'levels':levels,'publicPortal':public,'flightWidth':3.2,'landingWidth':9.2,'riseMax':.18,'tread':.36,'flightRiseMax':3.2,'interfaces':interfaces,'status':'design; test first flight before full build'})
  return interfaces
 A=stair('V2-VT-A',64,220,[0,24,52,84]);B=stair('V2-VT-B',103,414,[0,24,52,84,128]);C=stair('V2-VT-C',64,380,[84,100]);U=stair('V2-VT-D',64,408,[100,128]);
+# A real, independently supported combat mezzanine and overhead maintenance route.
+# These are encounter graybox additions, not refined architecture. Keep the public
+# galleries and the measured station approach corridor unchanged.
+Y=stair('service-stair',74,321,[52,55.2,58.4],public=False)
+for y in [55.2,58.4]:
+ structure(f'service-mezzanine-{y}',[85.5,y-.15,326],[11,.3,18],'SM_V02_SERVICE_YARDS','combat flank'if y<58 else'walkable overhead maintenance and escape route',walkable=True)
+ node(f'service-upper-{y}',85.5,y,329,'combat-platform')
+ edge(Y[y],f'service-upper-{y}',path=[[71,y,316.5],[80.2,y,316.5],[80.2,y,321],[85.5,y,329]])
+edge('service-yard',Y[52],path=[[75.5,52,326],[77,52,328],[64,52,328],[64,52,316.5],[71,52,316.5]])
+for id,x,z,sx,sz in [('west',66,321,2,5),('south',74,333,4,2)]:
+ structure('service-cover-'+id,[x,52.45,z],[sx,.9,sz],'SM_V02_SERVICE_YARDS','low cover with clear flanking space',walkable=True)
+for x in [82,90.5]:
+ structure(f'service-overhead-post-{x}',[x,55.2,334.5],[.5,6.4,.5],'SM_V02_SERVICE_YARDS','visible maintenance support and physical Threadrail anchor')
+structure('service-jump-shelf',[89.5,53,338],[5,2,4],'SM_V02_SERVICE_YARDS','optional native-jump flank shelf',walkable=True)
 node('ground-access',55,0,210,'ground-access');edge('ground-access',A[0]);edge('ground-access',B[0],path=[[55,0,210],[80,0,210],[80,0,410],[100,0,409.5]])
 edge(C[100],'station-concourse');edge(U[100],'station-concourse',path=[[61,100,403.5],[64,100,399],[66.5,100,391],[66.5,100,376]])
 structure('station-exit-side-link',[68.5,99.7,377.5],[9,.6,3],'SM_V02_TRANSIT_STRUCTURES','continuous station circulation beside the final stair flight',walkable=True,besideStairFlight=True)
@@ -167,6 +181,10 @@ while stack:
  seen.add(n);stack+=adj[n]
 assert 'station-concourse'in seen and 'observation-deck'in seen
 report={'schema':'sm-v02-movement-graph-1','axes':{'up':'Y','units':'metres','deckTopNotActorOrigin':True},'authority':w['provenance'],'metricsSHA256':hashlib.sha256((D/'V02_Movement_Measurements_Clean.json').read_bytes()).hexdigest(),'status':'DESIGN REVISION; original-volume precheck is not structural or gameplay acceptance','nodes':nodes,'edges':edges,'loops':loops,'stationApproaches':routes,'architecturalChanges':[{'id':'east-spine','fromX':105,'toX':96,'reason':'avoid building-160 spine/columns with facade and camera margin; no original building moved'},{'id':'V2-BR-M1','fromZ':280,'toZ':276,'reason':'original-box precheck retained; crossing now terminates at X96 instead of X105'},{'id':'station','fromX':80,'toX':66.5,'reason':'platform separated from original guideway; train integration still requires a full sweep'},{'id':'two-uphill-rails','reason':'single 16m rise exceeds kinetic energy of ordinary 16.36m/s Flow; split into two 8m rises with supported acceleration landing'}],'publicConnectivity':{'nodesReachable':len(seen),'stationReachable':True,'observationReachable':True,'claim':'topology only, zero resource; exact walking/stair contact not accepted'},'structures':structures,'publicStairs':stairs,'preservation':{'originalBuildings':310,'replaceOnly':'V1 vertical environment module in a separate V02 candidate','keepV1AndGameEntryUnchanged':True},'remainingGates':['Complete rail transfer/Pop and fall-brake measurements','Author stair contact fixture and prove first flight through normal inputs','Blender blockout and GLB coordinate checks','Every route, loop, recovery and camera through input traces','Triangle clearance and full train/traffic sweeps']}
+report['encounters']=[{'id':'service-combat','title':'SERVICE YARD · COMBAT','trigger':[62,52,337],
+ 'positions':[[65,52,330],[73,52,327],[85.5,55.2,329]],'reward':350,
+ 'bounds':{'min':[51,51.9,308],'max':[99,61,343]},'actorType':'existing damage-taking sparring prototype',
+ 'status':'runtime adapter; acceptance is hash-bound external evidence, not this design record'}]
 (D/'V02_Movement_Graph.json').write_text(json.dumps(report,indent=2)+'\n')
 (D/'V02_Design_Clearance.json').write_text(json.dumps({'status':'box precheck only','checkedStructures':len(checks),'failures':[c for c in checks if c['status'].startswith('FAIL')],'edgeFailures':[{'id':e['id'],'source':e['source'],'destination':e['destination'],'hits':e.get('originalConflicts')}for e in edges if e['validation']['geometry'].startswith('FAIL')],'checks':checks,'excluded':'V1 vertical prototype is replaced only in V02 candidate; original city and non-V1 props included'},indent=2)+'\n')
 with (D/'V02_AbilityRoute_Matrix.csv').open('w',newline='')as f:

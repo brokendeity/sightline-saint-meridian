@@ -1025,6 +1025,64 @@
       "structure": "V2-VT-D"
     },
     {
+      "id": "service-stair-52",
+      "position": [
+        71,
+        52,
+        316.5
+      ],
+      "kind": "stair-landing",
+      "supportStatus": "planned; not yet imported",
+      "validation": "PROPOSED",
+      "structure": "service-stair"
+    },
+    {
+      "id": "service-stair-55.2",
+      "position": [
+        71,
+        55.2,
+        316.5
+      ],
+      "kind": "stair-landing",
+      "supportStatus": "planned; not yet imported",
+      "validation": "PROPOSED",
+      "structure": "service-stair"
+    },
+    {
+      "id": "service-stair-58.4",
+      "position": [
+        71,
+        58.4,
+        316.5
+      ],
+      "kind": "stair-landing",
+      "supportStatus": "planned; not yet imported",
+      "validation": "PROPOSED",
+      "structure": "service-stair"
+    },
+    {
+      "id": "service-upper-55.2",
+      "position": [
+        85.5,
+        55.2,
+        329
+      ],
+      "kind": "combat-platform",
+      "supportStatus": "planned; not yet imported",
+      "validation": "PROPOSED"
+    },
+    {
+      "id": "service-upper-58.4",
+      "position": [
+        85.5,
+        58.4,
+        329
+      ],
+      "kind": "combat-platform",
+      "supportStatus": "planned; not yet imported",
+      "validation": "PROPOSED"
+    },
+    {
       "id": "ground-access",
       "position": [
         55,
@@ -9671,6 +9729,530 @@
     },
     {
       "id": "E0172",
+      "source": "service-stair-52",
+      "destination": "service-stair-55.2",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": 3.200000000000003,
+      "horizontalDistance": 37.36000000000004,
+      "distance3D": 37.885518477320446,
+      "path": [
+        [
+          71,
+          52,
+          316.5
+        ],
+        [
+          71,
+          52.0,
+          316.5
+        ],
+        [
+          71,
+          55.2,
+          325.98
+        ],
+        [
+          77,
+          55.2,
+          325.98
+        ],
+        [
+          80.2,
+          55.2,
+          325.98
+        ],
+        [
+          80.2,
+          55.2,
+          316.5
+        ],
+        [
+          71,
+          55.2,
+          316.5
+        ],
+        [
+          71,
+          55.2,
+          316.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 22.961,
+      "timeEvidence": "unmeasured stair/ability estimate; route timing must be replaced by input trial",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "continuous guardrails and full switchback landings",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+    },
+    {
+      "id": "E0173",
+      "source": "service-stair-55.2",
+      "destination": "service-stair-52",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": -3.200000000000003,
+      "horizontalDistance": 37.36000000000004,
+      "distance3D": 37.885518477320446,
+      "path": [
+        [
+          71,
+          55.2,
+          316.5
+        ],
+        [
+          71,
+          55.2,
+          316.5
+        ],
+        [
+          80.2,
+          55.2,
+          316.5
+        ],
+        [
+          80.2,
+          55.2,
+          325.98
+        ],
+        [
+          77,
+          55.2,
+          325.98
+        ],
+        [
+          71,
+          55.2,
+          325.98
+        ],
+        [
+          71,
+          52.0,
+          316.5
+        ],
+        [
+          71,
+          52,
+          316.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 22.961,
+      "timeEvidence": "unmeasured stair/ability estimate; route timing must be replaced by input trial",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "continuous guardrails and full switchback landings",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+    },
+    {
+      "id": "E0174",
+      "source": "service-stair-55.2",
+      "destination": "service-stair-58.4",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": 3.1999999999999957,
+      "horizontalDistance": 37.36000000000004,
+      "distance3D": 37.885518477320446,
+      "path": [
+        [
+          71,
+          55.2,
+          316.5
+        ],
+        [
+          71,
+          55.2,
+          316.5
+        ],
+        [
+          71,
+          58.4,
+          325.98
+        ],
+        [
+          77,
+          58.4,
+          325.98
+        ],
+        [
+          80.2,
+          58.4,
+          325.98
+        ],
+        [
+          80.2,
+          58.4,
+          316.5
+        ],
+        [
+          71,
+          58.4,
+          316.5
+        ],
+        [
+          71,
+          58.4,
+          316.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 22.961,
+      "timeEvidence": "unmeasured stair/ability estimate; route timing must be replaced by input trial",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "continuous guardrails and full switchback landings",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+    },
+    {
+      "id": "E0175",
+      "source": "service-stair-58.4",
+      "destination": "service-stair-55.2",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": -3.1999999999999957,
+      "horizontalDistance": 37.36000000000004,
+      "distance3D": 37.885518477320446,
+      "path": [
+        [
+          71,
+          58.4,
+          316.5
+        ],
+        [
+          71,
+          58.4,
+          316.5
+        ],
+        [
+          80.2,
+          58.4,
+          316.5
+        ],
+        [
+          80.2,
+          58.4,
+          325.98
+        ],
+        [
+          77,
+          58.4,
+          325.98
+        ],
+        [
+          71,
+          58.4,
+          325.98
+        ],
+        [
+          71,
+          55.2,
+          316.5
+        ],
+        [
+          71,
+          55.2,
+          316.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 22.961,
+      "timeEvidence": "unmeasured stair/ability estimate; route timing must be replaced by input trial",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "continuous guardrails and full switchback landings",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+    },
+    {
+      "id": "E0176",
+      "source": "service-stair-55.2",
+      "destination": "service-upper-55.2",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0.0,
+      "horizontalDistance": 23.296353474106716,
+      "distance3D": 23.296353474106716,
+      "path": [
+        [
+          71,
+          55.2,
+          316.5
+        ],
+        [
+          80.2,
+          55.2,
+          316.5
+        ],
+        [
+          80.2,
+          55.2,
+          321
+        ],
+        [
+          85.5,
+          55.2,
+          329
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 3.53,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      }
+    },
+    {
+      "id": "E0177",
+      "source": "service-upper-55.2",
+      "destination": "service-stair-55.2",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": -0.0,
+      "horizontalDistance": 23.296353474106716,
+      "distance3D": 23.296353474106716,
+      "path": [
+        [
+          85.5,
+          55.2,
+          329
+        ],
+        [
+          80.2,
+          55.2,
+          321
+        ],
+        [
+          80.2,
+          55.2,
+          316.5
+        ],
+        [
+          71,
+          55.2,
+          316.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 3.53,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      }
+    },
+    {
+      "id": "E0178",
+      "source": "service-stair-58.4",
+      "destination": "service-upper-58.4",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0.0,
+      "horizontalDistance": 23.296353474106716,
+      "distance3D": 23.296353474106716,
+      "path": [
+        [
+          71,
+          58.4,
+          316.5
+        ],
+        [
+          80.2,
+          58.4,
+          316.5
+        ],
+        [
+          80.2,
+          58.4,
+          321
+        ],
+        [
+          85.5,
+          58.4,
+          329
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 3.53,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      }
+    },
+    {
+      "id": "E0179",
+      "source": "service-upper-58.4",
+      "destination": "service-stair-58.4",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": -0.0,
+      "horizontalDistance": 23.296353474106716,
+      "distance3D": 23.296353474106716,
+      "path": [
+        [
+          85.5,
+          58.4,
+          329
+        ],
+        [
+          80.2,
+          58.4,
+          321
+        ],
+        [
+          80.2,
+          58.4,
+          316.5
+        ],
+        [
+          71,
+          58.4,
+          316.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 3.53,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      }
+    },
+    {
+      "id": "E0180",
+      "source": "service-yard",
+      "destination": "service-stair-52",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 34.0,
+      "distance3D": 34.0,
+      "path": [
+        [
+          75.5,
+          52,
+          326
+        ],
+        [
+          77,
+          52,
+          328
+        ],
+        [
+          64,
+          52,
+          328
+        ],
+        [
+          64,
+          52,
+          316.5
+        ],
+        [
+          71,
+          52,
+          316.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 5.152,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      }
+    },
+    {
+      "id": "E0181",
+      "source": "service-stair-52",
+      "destination": "service-yard",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 34.0,
+      "distance3D": 34.0,
+      "path": [
+        [
+          71,
+          52,
+          316.5
+        ],
+        [
+          64,
+          52,
+          316.5
+        ],
+        [
+          64,
+          52,
+          328
+        ],
+        [
+          77,
+          52,
+          328
+        ],
+        [
+          75.5,
+          52,
+          326
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 5.152,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      }
+    },
+    {
+      "id": "E0182",
       "source": "ground-access",
       "destination": "V2-VT-A-0",
       "ability": "run",
@@ -9703,7 +10285,7 @@
       }
     },
     {
-      "id": "E0173",
+      "id": "E0183",
       "source": "V2-VT-A-0",
       "destination": "ground-access",
       "ability": "run",
@@ -9736,7 +10318,7 @@
       }
     },
     {
-      "id": "E0174",
+      "id": "E0184",
       "source": "ground-access",
       "destination": "V2-VT-B-0",
       "ability": "run",
@@ -9779,7 +10361,7 @@
       }
     },
     {
-      "id": "E0175",
+      "id": "E0185",
       "source": "V2-VT-B-0",
       "destination": "ground-access",
       "ability": "run",
@@ -9822,7 +10404,7 @@
       }
     },
     {
-      "id": "E0176",
+      "id": "E0186",
       "source": "V2-VT-C-100",
       "destination": "station-concourse",
       "ability": "run",
@@ -9855,7 +10437,7 @@
       }
     },
     {
-      "id": "E0177",
+      "id": "E0187",
       "source": "station-concourse",
       "destination": "V2-VT-C-100",
       "ability": "run",
@@ -9888,7 +10470,7 @@
       }
     },
     {
-      "id": "E0178",
+      "id": "E0188",
       "source": "V2-VT-D-100",
       "destination": "station-concourse",
       "ability": "run",
@@ -9931,7 +10513,7 @@
       }
     },
     {
-      "id": "E0179",
+      "id": "E0189",
       "source": "station-concourse",
       "destination": "V2-VT-D-100",
       "ability": "run",
@@ -9974,7 +10556,7 @@
       }
     },
     {
-      "id": "E0180",
+      "id": "E0190",
       "source": "W128_276",
       "destination": "W128_300",
       "ability": "run",
@@ -10007,7 +10589,7 @@
       }
     },
     {
-      "id": "E0181",
+      "id": "E0191",
       "source": "W128_300",
       "destination": "W128_276",
       "ability": "run",
@@ -10040,7 +10622,7 @@
       }
     },
     {
-      "id": "E0182",
+      "id": "E0192",
       "source": "W128_300",
       "destination": "W128_326",
       "ability": "run",
@@ -10073,7 +10655,7 @@
       }
     },
     {
-      "id": "E0183",
+      "id": "E0193",
       "source": "W128_326",
       "destination": "W128_300",
       "ability": "run",
@@ -10106,7 +10688,7 @@
       }
     },
     {
-      "id": "E0184",
+      "id": "E0194",
       "source": "W128_326",
       "destination": "W128_350",
       "ability": "run",
@@ -10139,7 +10721,7 @@
       }
     },
     {
-      "id": "E0185",
+      "id": "E0195",
       "source": "W128_350",
       "destination": "W128_326",
       "ability": "run",
@@ -10172,7 +10754,7 @@
       }
     },
     {
-      "id": "E0186",
+      "id": "E0196",
       "source": "W128_350",
       "destination": "W128_376",
       "ability": "run",
@@ -10205,7 +10787,7 @@
       }
     },
     {
-      "id": "E0187",
+      "id": "E0197",
       "source": "W128_376",
       "destination": "W128_350",
       "ability": "run",
@@ -10238,7 +10820,7 @@
       }
     },
     {
-      "id": "E0188",
+      "id": "E0198",
       "source": "W128_376",
       "destination": "W128_400",
       "ability": "run",
@@ -10271,7 +10853,7 @@
       }
     },
     {
-      "id": "E0189",
+      "id": "E0199",
       "source": "W128_400",
       "destination": "W128_376",
       "ability": "run",
@@ -10304,7 +10886,7 @@
       }
     },
     {
-      "id": "E0190",
+      "id": "E0200",
       "source": "W128_400",
       "destination": "W128_410",
       "ability": "run",
@@ -10337,7 +10919,7 @@
       }
     },
     {
-      "id": "E0191",
+      "id": "E0201",
       "source": "W128_410",
       "destination": "W128_400",
       "ability": "run",
@@ -10370,7 +10952,7 @@
       }
     },
     {
-      "id": "E0192",
+      "id": "E0202",
       "source": "W128_410",
       "destination": "W128_430",
       "ability": "run",
@@ -10403,7 +10985,7 @@
       }
     },
     {
-      "id": "E0193",
+      "id": "E0203",
       "source": "W128_430",
       "destination": "W128_410",
       "ability": "run",
@@ -10436,7 +11018,7 @@
       }
     },
     {
-      "id": "E0194",
+      "id": "E0204",
       "source": "E128_400",
       "destination": "E128_410",
       "ability": "run",
@@ -10469,7 +11051,7 @@
       }
     },
     {
-      "id": "E0195",
+      "id": "E0205",
       "source": "E128_410",
       "destination": "E128_400",
       "ability": "run",
@@ -10502,7 +11084,7 @@
       }
     },
     {
-      "id": "E0196",
+      "id": "E0206",
       "source": "E128_410",
       "destination": "E128_430",
       "ability": "run",
@@ -10535,7 +11117,7 @@
       }
     },
     {
-      "id": "E0197",
+      "id": "E0207",
       "source": "E128_430",
       "destination": "E128_410",
       "ability": "run",
@@ -10568,7 +11150,7 @@
       }
     },
     {
-      "id": "E0198",
+      "id": "E0208",
       "source": "W128_430",
       "destination": "E128_430",
       "ability": "run",
@@ -10601,7 +11183,7 @@
       }
     },
     {
-      "id": "E0199",
+      "id": "E0209",
       "source": "E128_430",
       "destination": "W128_430",
       "ability": "run",
@@ -10634,7 +11216,7 @@
       }
     },
     {
-      "id": "E0200",
+      "id": "E0210",
       "source": "V2-VT-B-128",
       "destination": "E128_410",
       "ability": "run",
@@ -10667,7 +11249,7 @@
       }
     },
     {
-      "id": "E0201",
+      "id": "E0211",
       "source": "E128_410",
       "destination": "V2-VT-B-128",
       "ability": "run",
@@ -10700,7 +11282,7 @@
       }
     },
     {
-      "id": "E0202",
+      "id": "E0212",
       "source": "V2-VT-D-128",
       "destination": "W128_400",
       "ability": "run",
@@ -10733,7 +11315,7 @@
       }
     },
     {
-      "id": "E0203",
+      "id": "E0213",
       "source": "W128_400",
       "destination": "V2-VT-D-128",
       "ability": "run",
@@ -10766,7 +11348,7 @@
       }
     },
     {
-      "id": "E0204",
+      "id": "E0214",
       "source": "W128_410",
       "destination": "observation-deck",
       "ability": "run",
@@ -10799,7 +11381,7 @@
       }
     },
     {
-      "id": "E0205",
+      "id": "E0215",
       "source": "observation-deck",
       "destination": "W128_410",
       "ability": "run",
@@ -10832,7 +11414,7 @@
       }
     },
     {
-      "id": "E0206",
+      "id": "E0216",
       "source": "W84_300",
       "destination": "fast-launch",
       "ability": "flow-run",
@@ -10865,7 +11447,7 @@
       }
     },
     {
-      "id": "E0207",
+      "id": "E0217",
       "source": "fast-launch",
       "destination": "W84_300",
       "ability": "flow-run",
@@ -10898,7 +11480,7 @@
       }
     },
     {
-      "id": "E0208",
+      "id": "E0218",
       "source": "momentum-landing",
       "destination": "momentum-relaunch",
       "ability": "flow-run",
@@ -10936,7 +11518,7 @@
       }
     },
     {
-      "id": "E0209",
+      "id": "E0219",
       "source": "momentum-relaunch",
       "destination": "momentum-landing",
       "ability": "flow-run",
@@ -10974,7 +11556,7 @@
       }
     },
     {
-      "id": "E0210",
+      "id": "E0220",
       "source": "fast-launch",
       "destination": "momentum-pop-1",
       "ability": "threadrail",
@@ -11038,7 +11620,7 @@
       "physicalGate": "Precision A/B, ground acceleration and momentum catch; end at authored Pop window"
     },
     {
-      "id": "E0211",
+      "id": "E0221",
       "source": "momentum-pop-1",
       "destination": "momentum-touchdown-1",
       "ability": "rail-pop",
@@ -11073,7 +11655,7 @@
       "physicalGate": "Current swept arc, body contact and supported landing need real-input evidence"
     },
     {
-      "id": "E0212",
+      "id": "E0222",
       "source": "momentum-touchdown-1",
       "destination": "momentum-landing",
       "ability": "run",
@@ -11106,7 +11688,7 @@
       }
     },
     {
-      "id": "E0213",
+      "id": "E0223",
       "source": "momentum-relaunch",
       "destination": "momentum-pop-2",
       "ability": "threadrail",
@@ -11170,7 +11752,7 @@
       "physicalGate": "Precision A/B, ground acceleration and momentum catch; end at authored Pop window"
     },
     {
-      "id": "E0214",
+      "id": "E0224",
       "source": "momentum-pop-2",
       "destination": "momentum-touchdown-2",
       "ability": "rail-pop",
@@ -11205,7 +11787,7 @@
       "physicalGate": "Current swept arc, body contact and supported landing need real-input evidence"
     },
     {
-      "id": "E0215",
+      "id": "E0225",
       "source": "momentum-touchdown-2",
       "destination": "station-concourse",
       "ability": "run",
@@ -11238,7 +11820,7 @@
       }
     },
     {
-      "id": "E0216",
+      "id": "E0226",
       "source": "W84_300",
       "destination": "wall-entry",
       "ability": "flow-run",
@@ -11276,7 +11858,7 @@
       }
     },
     {
-      "id": "E0217",
+      "id": "E0227",
       "source": "wall-entry",
       "destination": "W84_300",
       "ability": "flow-run",
@@ -11314,7 +11896,7 @@
       }
     },
     {
-      "id": "E0218",
+      "id": "E0228",
       "source": "wall-entry",
       "destination": "wall-shelf-96",
       "ability": "wall-climb",
@@ -11358,7 +11940,7 @@
       "physicalGate": "Normal-input wall contact and mantle with supported touchdown, no power changes"
     },
     {
-      "id": "E0219",
+      "id": "E0229",
       "source": "wall-shelf-96",
       "destination": "wall-shelf-108",
       "ability": "wall-climb",
@@ -11402,7 +11984,7 @@
       "physicalGate": "Normal-input wall contact and mantle with supported touchdown, no power changes"
     },
     {
-      "id": "E0220",
+      "id": "E0230",
       "source": "wall-shelf-108",
       "destination": "wall-shelf-120",
       "ability": "wall-climb",
@@ -11446,7 +12028,7 @@
       "physicalGate": "Normal-input wall contact and mantle with supported touchdown, no power changes"
     },
     {
-      "id": "E0221",
+      "id": "E0231",
       "source": "wall-shelf-120",
       "destination": "wall-shelf-128",
       "ability": "wall-climb",
@@ -11490,7 +12072,7 @@
       "physicalGate": "Normal-input wall contact and mantle with supported touchdown, no power changes"
     },
     {
-      "id": "E0222",
+      "id": "E0232",
       "source": "wall-shelf-128",
       "destination": "W128_276",
       "ability": "run",
@@ -11528,7 +12110,7 @@
       }
     },
     {
-      "id": "E0223",
+      "id": "E0233",
       "source": "W128_276",
       "destination": "wall-shelf-128",
       "ability": "run",
@@ -11566,7 +12148,7 @@
       }
     },
     {
-      "id": "E0224",
+      "id": "E0234",
       "source": "W128_430",
       "destination": "high-rail-start",
       "ability": "flow-run",
@@ -11599,7 +12181,7 @@
       }
     },
     {
-      "id": "E0225",
+      "id": "E0235",
       "source": "high-rail-start",
       "destination": "W128_430",
       "ability": "flow-run",
@@ -11632,7 +12214,7 @@
       }
     },
     {
-      "id": "E0226",
+      "id": "E0236",
       "source": "high-rail-start",
       "destination": "pop-launch",
       "ability": "threadrail",
@@ -11682,7 +12264,7 @@
       ]
     },
     {
-      "id": "E0227",
+      "id": "E0237",
       "source": "pop-launch",
       "destination": "mastery-recovery-118",
       "ability": "rail-pop",
@@ -11717,7 +12299,7 @@
       "physicalGate": "Normal-input arc and exact supported landing required"
     },
     {
-      "id": "E0228",
+      "id": "E0238",
       "source": "mastery-recovery-118",
       "destination": "mastery-recovery-108",
       "ability": "controlled-drop",
@@ -11755,7 +12337,7 @@
       }
     },
     {
-      "id": "E0229",
+      "id": "E0239",
       "source": "mastery-recovery-108",
       "destination": "station-concourse",
       "ability": "controlled-drop",
@@ -11798,7 +12380,7 @@
       }
     },
     {
-      "id": "E0230",
+      "id": "E0240",
       "source": "mastery-recovery-108",
       "destination": "station-concourse",
       "ability": "afterstep-transfer",
@@ -12014,7 +12596,7 @@
     }
   ],
   "publicConnectivity": {
-    "nodesReachable": 99,
+    "nodesReachable": 104,
     "stationReachable": true,
     "observationReachable": true,
     "claim": "topology only, zero resource; exact walking/stair contact not accepted"
@@ -14594,6 +15176,221 @@
       "walkable": true
     },
     {
+      "id": "service-mezzanine-55.2",
+      "center": [
+        85.5,
+        55.050000000000004,
+        326
+      ],
+      "size": [
+        11,
+        0.3,
+        18
+      ],
+      "collection": "SM_V02_SERVICE_YARDS",
+      "role": "combat flank",
+      "owner": "v02:service-mezzanine-55.2",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          80.0,
+          54.900000000000006,
+          317.0
+        ],
+        "max": [
+          91.0,
+          55.2,
+          335.0
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "walkable": true
+    },
+    {
+      "id": "service-mezzanine-58.4",
+      "center": [
+        85.5,
+        58.25,
+        326
+      ],
+      "size": [
+        11,
+        0.3,
+        18
+      ],
+      "collection": "SM_V02_SERVICE_YARDS",
+      "role": "walkable overhead maintenance and escape route",
+      "owner": "v02:service-mezzanine-58.4",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          80.0,
+          58.1,
+          317.0
+        ],
+        "max": [
+          91.0,
+          58.4,
+          335.0
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "walkable": true
+    },
+    {
+      "id": "service-cover-west",
+      "center": [
+        66,
+        52.45,
+        321
+      ],
+      "size": [
+        2,
+        0.9,
+        5
+      ],
+      "collection": "SM_V02_SERVICE_YARDS",
+      "role": "low cover with clear flanking space",
+      "owner": "v02:service-cover-west",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          65.0,
+          52.0,
+          318.5
+        ],
+        "max": [
+          67.0,
+          52.900000000000006,
+          323.5
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "walkable": true
+    },
+    {
+      "id": "service-cover-south",
+      "center": [
+        74,
+        52.45,
+        333
+      ],
+      "size": [
+        4,
+        0.9,
+        2
+      ],
+      "collection": "SM_V02_SERVICE_YARDS",
+      "role": "low cover with clear flanking space",
+      "owner": "v02:service-cover-south",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          72.0,
+          52.0,
+          332.0
+        ],
+        "max": [
+          76.0,
+          52.900000000000006,
+          334.0
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "walkable": true
+    },
+    {
+      "id": "service-overhead-post-82",
+      "center": [
+        82,
+        55.2,
+        334.5
+      ],
+      "size": [
+        0.5,
+        6.4,
+        0.5
+      ],
+      "collection": "SM_V02_SERVICE_YARDS",
+      "role": "visible maintenance support and physical Threadrail anchor",
+      "owner": "v02:service-overhead-post-82",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          81.75,
+          52.0,
+          334.25
+        ],
+        "max": [
+          82.25,
+          58.400000000000006,
+          334.75
+        ]
+      },
+      "originalGeometryConflicts": []
+    },
+    {
+      "id": "service-overhead-post-90.5",
+      "center": [
+        90.5,
+        55.2,
+        334.5
+      ],
+      "size": [
+        0.5,
+        6.4,
+        0.5
+      ],
+      "collection": "SM_V02_SERVICE_YARDS",
+      "role": "visible maintenance support and physical Threadrail anchor",
+      "owner": "v02:service-overhead-post-90.5",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          90.25,
+          52.0,
+          334.25
+        ],
+        "max": [
+          90.75,
+          58.400000000000006,
+          334.75
+        ]
+      },
+      "originalGeometryConflicts": []
+    },
+    {
+      "id": "service-jump-shelf",
+      "center": [
+        89.5,
+        53,
+        338
+      ],
+      "size": [
+        5,
+        2,
+        4
+      ],
+      "collection": "SM_V02_SERVICE_YARDS",
+      "role": "optional native-jump flank shelf",
+      "owner": "v02:service-jump-shelf",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          87.0,
+          52.0,
+          336.0
+        ],
+        "max": [
+          92.0,
+          54.0,
+          340.0
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "walkable": true
+    },
+    {
       "id": "station-exit-side-link",
       "center": [
         68.5,
@@ -15594,6 +16391,7 @@
         52,
         84
       ],
+      "publicPortal": true,
       "flightWidth": 3.2,
       "landingWidth": 9.2,
       "riseMax": 0.18,
@@ -15618,6 +16416,7 @@
         84,
         128
       ],
+      "publicPortal": true,
       "flightWidth": 3.2,
       "landingWidth": 9.2,
       "riseMax": 0.18,
@@ -15640,6 +16439,7 @@
         84,
         100
       ],
+      "publicPortal": true,
       "flightWidth": 3.2,
       "landingWidth": 9.2,
       "riseMax": 0.18,
@@ -15659,6 +16459,7 @@
         100,
         128
       ],
+      "publicPortal": true,
       "flightWidth": 3.2,
       "landingWidth": 9.2,
       "riseMax": 0.18,
@@ -15667,6 +16468,28 @@
       "interfaces": {
         "100": "V2-VT-D-100",
         "128": "V2-VT-D-128"
+      },
+      "status": "design; test first flight before full build"
+    },
+    {
+      "id": "service-stair",
+      "x": 74,
+      "z": 321,
+      "levels": [
+        52,
+        55.2,
+        58.4
+      ],
+      "publicPortal": false,
+      "flightWidth": 3.2,
+      "landingWidth": 9.2,
+      "riseMax": 0.18,
+      "tread": 0.36,
+      "flightRiseMax": 3.2,
+      "interfaces": {
+        "52": "service-stair-52",
+        "55.2": "service-stair-55.2",
+        "58.4": "service-stair-58.4"
       },
       "status": "design; test first flight before full build"
     }
@@ -15682,5 +16505,48 @@
     "Blender blockout and GLB coordinate checks",
     "Every route, loop, recovery and camera through input traces",
     "Triangle clearance and full train/traffic sweeps"
+  ],
+  "encounters": [
+    {
+      "id": "service-combat",
+      "title": "SERVICE YARD \u00b7 COMBAT",
+      "trigger": [
+        62,
+        52,
+        337
+      ],
+      "positions": [
+        [
+          65,
+          52,
+          330
+        ],
+        [
+          73,
+          52,
+          327
+        ],
+        [
+          85.5,
+          55.2,
+          329
+        ]
+      ],
+      "reward": 350,
+      "bounds": {
+        "min": [
+          51,
+          51.9,
+          308
+        ],
+        "max": [
+          99,
+          61,
+          343
+        ]
+      },
+      "actorType": "existing damage-taking sparring prototype",
+      "status": "runtime adapter; acceptance is hash-bound external evidence, not this design record"
+    }
   ]
 }

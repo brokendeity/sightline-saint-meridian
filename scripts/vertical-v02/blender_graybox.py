@@ -72,7 +72,7 @@ def add(id,p,size,col='SM_V02_VERTICAL_TRANSFERS',kind='deck',solid=True,walkabl
 openings=[]
 for spec in G['publicStairs']:
  for lo,hi in zip(spec['levels'],spec['levels'][1:]):
-  flights=math.ceil((hi-lo)/3.2);rise=(hi-lo)/flights;run=math.ceil(rise/.18)*.36;xj=spec['x']-3 if (flights-1)%2==0 else spec['x']+3
+  flights=math.ceil((hi-lo)/3.2-1e-9);rise=(hi-lo)/flights;run=math.ceil(rise/.18)*.36;xj=spec['x']-3 if (flights-1)%2==0 else spec['x']+3
   openings.append((hi,(xj-2.25,xj+2.25,spec['z']-3-.65,spec['z']-3+run+.65)))
   approach=spec['z']-4.5 if (flights-1)%2==0 else spec['z']-3+run+1.5
   openings.append((hi,(spec['x']-5.25,spec['x']+8.45,approach-2.15,approach+2.15)))
@@ -88,7 +88,7 @@ def landing(id,x,y,z,width=12.4,depth=3):
 def staircase(spec,pilot_only=False):
  id=spec['id'];x=spec['x'];z=spec['z'];levels=spec['levels'];paths=[]
  for seg,(lo,hi)in enumerate(zip(levels,levels[1:])):
-  flights=math.ceil((hi-lo)/3.2);rise=(hi-lo)/flights;steps=math.ceil(rise/.18);run=steps*.36;north=z-4.5;south=z-3+run+1.5;poly=[[x-3,lo,north]]
+  flights=math.ceil((hi-lo)/3.2-1e-9);rise=(hi-lo)/flights;steps=math.ceil(rise/.18);run=steps*.36;north=z-4.5;south=z-3+run+1.5;poly=[[x-3,lo,north]]
   for j in range(flights):
    y0=lo+j*rise;y1=y0+rise;xj=x-3 if j%2==0 else x+3;sign=1 if j%2==0 else-1;front=z-3 if sign>0 else z-3+run
    if j==0:landing(f'{id}-{seg}-start',x,y0,north)
@@ -107,7 +107,7 @@ def staircase(spec,pilot_only=False):
    add(f'{id}-{seg}-return',[x+6.2,hi-.09,(north+south)/2],[3.2,.18,south-north],walkable=True,stairLanding=True)
    poly += [[x+6.2,hi,south],[x+6.2,hi,north],[x-3,hi,north]]
   poly.append([x-3,hi,north]);paths.append({'from':lo,'to':hi,'points':poly})
-  for y in[lo,hi]:
+  for y in([lo,hi]if spec.get('publicPortal',True)else[]):
    # Landing portals meet the public gallery; any coplanar overlaps are flagged in the graybox audit.
    side=55 if x<80 else 96;middle=(side+x-3)/2;width=abs(side-(x-3))
    if width>.01:add(f'{id}-{seg}-portal-{y}',[middle,y-.09,north],[width,.18,3],walkable=True,stairLanding=True)
@@ -127,8 +127,14 @@ for (zone,kind),v in chunks.items():
  manifest.append({'id':name,'url':str(file.relative_to(R)),'sha256':hashlib.sha256(file.read_bytes()).hexdigest(),'bytes':file.stat().st_size,'triangles':len(v['faces'])*2,'recordIDs':v['records']})
 # No reference object may enter a chunk export.
 assert all(not id.startswith('building-')for v in chunks.values()for id in v['records'])
-meta={'schema':'sm-v02-graybox-1','pilot':pilot,'coordinateSystem':'game X/Y-up/Z metres; deck tops and actor +.42 are distinct','sourceEntrySHA256':world['provenance']['entrySHA256'],'graphSHA256':hashlib.sha256((D/'V02_Movement_Graph.json').read_bytes()).hexdigest(),'records':records,'paths':walkpaths,'chunks':manifest,'referenceOnlyBuildingCount':0 if pilot else len(world['buildings']),'status':'EXPERIMENTAL GRAYBOX; no gameplay acceptance claim'}
+meta={'schema':'sm-v02-graybox-1','pilot':pilot,'coordinateSystem':'game X/Y-up/Z metres; deck tops and actor +.42 are distinct','sourceEntrySHA256':world['provenance']['entrySHA256'],'graphSHA256':hashlib.sha256((D/'V02_Movement_Graph.json').read_bytes()).hexdigest(),'records':records,'paths':walkpaths,'encounters':G.get('encounters',[]),'chunks':manifest,'referenceOnlyBuildingCount':0 if pilot else len(world['buildings']),'status':'EXPERIMENTAL GRAYBOX; no gameplay acceptance claim'}
 (OUT/'manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
+# Encounter authoring markers stay editable and reference the exact exported
+# runtime positions. They are metadata, never invisible collision geometry.
+if not pilot:
+ for encounter in G.get('encounters',[]):
+  for name,p in [('access',encounter['trigger'])]+[(f'actor-{i}',p)for i,p in enumerate(encounter['positions'])]:
+   o=bpy.data.objects.new(encounter['id']+'-'+name,None);collections['SM_V02_ENCOUNTER_POINTS'].objects.link(o);o.location=(p[0],-p[2],p[1]);o.empty_display_type='ARROWS';o.empty_display_size=.8;o['runtimePosition']=json.dumps(p);o['encounterID']=encounter['id'];o['exportRole']='metadata only'
 # Matching raw view bookmarks are created now; detailed render matching remains a later gate.
 from mathutils import Vector
 for id,p,look in[('A',(78,132,185),(82,70,400)),('B',(80,2,185),(80,90,400))]:
