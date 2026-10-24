@@ -1,0 +1,6 @@
+const assert=require('node:assert/strict'),create=require('./game_snapback.js');let blocked=false,resource=true,spent=0;const m=create({clear:()=>!blocked,release:()=>resource?(spent++,{ok:true,spent:['real-contact']}):{ok:false,reason:'EMPTY'}}),frame=x=>({ready:true,active:true,paused:false,position:{x,y:.42,z:0}});
+assert(m.bank(frame(0)).ok);assert(!m.bank(frame(1)).ok);assert(!m.release(frame(1)).ok);resource=false;assert(!m.release(frame(5)).ok);assert(m.state(frame(5)).bank);assert.equal(spent,0);resource=true;assert.equal(m.release(frame(25)).grade,'CLEAN');assert.equal(spent,1);assert(!m.state().bank);assert(!m.release(frame(5)).ok);
+m.bank(frame(0));blocked=true;m.update(.1,frame(5));assert(!m.state().bank);blocked=false;
+m.bank(frame(0));m.update(.1,frame(29));assert.match(m.state().reason,/FORCED/);
+m.bank(frame(0));for(let i=0;i<100;i++)m.update(.1,{...frame(3),paused:true});assert(m.state().bank);for(let i=0;i<81;i++)m.update(.1,frame(3));assert(!m.state().bank);
+m.bank(frame(0));m.update(.1,{...frame(4),active:false});assert(!m.state().bank);assert.equal(spent,1);assert(m.state().events.every((e,i,a)=>!i||e.id>a[i-1].id));console.log('PASS Snapback min tension, resource rejection, clean release, obstruction, reach break, pause, expiry, hero cleanup, deduplication');

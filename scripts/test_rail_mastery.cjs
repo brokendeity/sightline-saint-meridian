@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict'),create=require('./game_rail_mastery.js'),m=create();
+const anchor=(x,y,z,n,id)=>({position:{x,y,z},normal:n,ownerId:id});const up={x:0,y:1,z:0},right={x:1,y:0,z:0},left={x:-1,y:0,z:0};
+assert.equal(m.register({id:'ramp'},anchor(0,0,0,up,'ground'),anchor(20,10,0,left,'wall')).family,'Ground-Ramp');
+assert.equal(m.register({id:'same'},anchor(0,2,0,right,'wall'),anchor(0,2,20,right,'wall')).family,'Same-Wall');
+assert.equal(m.register({id:'cross'},anchor(0,2,0,right,'a'),anchor(20,2,0,left,'b')).family,'Cross-Street');
+for(const [distance,grade] of [[0,'EARLY'],[15,'TIGHT'],[18,'PERFECT'],[19.9,'LATE']])assert.equal(m.pop({signedSpeed:20,distance},{id:'x',length:20}).grade,grade);
+assert.equal(m.pop({signedSpeed:0,distance:0},{id:'x',length:20}).grade,'DEAD');
+assert.equal(m.pop({signedSpeed:-20,distance:2},{id:'x',length:20}).grade,'PERFECT');
+assert.equal(m.catchRail('x',{x:20,y:0,z:0},{x:1,y:0,z:0},0).grade,'PERFECT');
+assert.equal(m.catchRail('x',{x:0,y:0,z:20},{x:1,y:0,z:0},2).grade,'ROUGH');
+const a={distance:1,intent:{x:1,y:0,z:0},velocity:{x:10,y:0,z:0},height:0};assert(m.scoreCandidate({...a,tangent:{x:1,y:0,z:0}})>m.scoreCandidate({...a,tangent:{x:0,y:0,z:1}}));
+assert(m.state().events.every((e,i,all)=>!i||e.id>all[i-1].id));console.log('PASS rail classification, catch, five pop windows, reverse travel, directional selection, event order');

@@ -21,6 +21,18 @@ def main():
  marker="afterimages.update(dt,{model,hero:"
  assert s.count(marker)==1
  s=s.replace(marker,"afterimages.update(dt,{interrupted:backspoolCombat.staggered()||[P.IMPACT,P.LANDING,P.UNCONTROLLED].includes(s.mode),model,hero:")
+ # Sightline retains its red flight trail; Backspool uses Temporal Exhaust.
+ marker='const flying=!s.onGround&&s.mode!==P.UNCONTROLLED&&s.mode!==P.IMPACT;'
+ assert s.count(marker)==1
+ s=s.replace(marker,"if(characterState().active==='backspool'){this.reset();return;}"+marker)
+ s=s.replace("afterimages.update(dt,{interrupted:","afterimages.update(dt,{motionTrace:!backspoolPreviewActive()&&/flip/i.test(backspoolFlowState().action||''),interrupted:")
+ # Disable old foot ribbons only in this candidate.
+ marker="const moving=enabled()&&gameActive&&!backspoolPreviewActive()&&(Math.hypot(s.vel.x,s.vel.z)>9||controller.state().action?.endsWith('Flip'));"
+ assert s.count(marker)==1
+ s=s.replace(marker,'const moving=false;')
+ marker='exhaust.update(dt,{interrupted:'
+ assert s.count(marker)==1
+ s=s.replace(marker,"exhaust.update(dt,{motionTrace:!backspoolPreviewActive()&&(Math.hypot(s.vel.x,s.vel.z)>9||/flip/i.test(backspoolFlowState().action||'')),interrupted:")
  # The public tuning API is visual only and preserves all gameplay methods.
  marker='window.threadrailGame=api;'
  assert s.count(marker)==1

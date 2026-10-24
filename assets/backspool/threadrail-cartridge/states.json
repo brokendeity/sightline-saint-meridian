@@ -1,0 +1,40 @@
+{
+  "units": "meters",
+  "foldedDiameter": 0.08,
+  "thickness": 0.02,
+  "axes": {
+    "face": "+Y",
+    "spin": "+Y",
+    "throw": "+Z"
+  },
+  "deploySeconds": 0.18,
+  "finTranslation": "node extras deployOffset * deployment",
+  "jawLocalAxis": [
+    0,
+    0,
+    1
+  ],
+  "jawRadians": -0.9,
+  "spinRadiansPerSecond": {
+    "folded": 1,
+    "flight": 35,
+    "anchored": 5
+  },
+  "sourceBody": "Tripo b71871c5-e9e6-4e89-b6f7-723182ab3c8e",
+  "authoredParts": [
+    "four retractable fins",
+    "four hinged jaws",
+    "A/B markers",
+    "sockets"
+  ],
+  "states": [
+    "folded",
+    "flight",
+    "anchored"
+  ],
+  "coreEmissiveIntensity": {
+    "folded": 0.3,
+    "flight": 1.4,
+    "anchored": 1
+  }
+}

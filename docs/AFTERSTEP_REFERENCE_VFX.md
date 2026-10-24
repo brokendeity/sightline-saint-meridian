@@ -64,3 +64,6 @@ Final paired measurements use the exact candidate hash in `build.json` and `perf
 The final 60-second active stress records zero console errors, invalid states, owner conflicts or dropped simulation time. Peak presentation records: 58 exhaust particles and the configured bounded body pool; peak sampled capture cost 4.3 ms. Frame p50/p95/max: 8.3/16.7/42.6 ms. This is a bounded Mac/browser test, not prolonged thermal or physical-device certification.
 
 A browser comparison is available at `output/afterstep-vfx/comparison.html`, including the supplied art target and actual before/after captures. The match is strongest in the paired outlets, shard silhouettes, cyan/violet palette and posed ghosts. The illustration's physically richer glow/reflections, hand-composed perspective and simplified HUD are not reproduced exactly.
+
+### Movement trace update
+Backspool's fast movement now uses cosmetic socket-based glass traces, and flips use the existing cyan pose-snapshot pool. Legacy foot ribbons and red flight ghosts are suppressed for Backspool only. These visual emissions never create Drive releases or spend resources. Movement traces are lighter than confirmed Drive bursts; reduced-motion and quality limits remain in effect. The browser suite now explicitly covers a keyboard sprint-to-flip and verifies no red flight ghosts remain.

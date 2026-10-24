@@ -1,0 +1,71 @@
+{
+  "status": "generated-refined-and-integrated-candidate",
+  "taskId": "b71871c5-e9e6-4e89-b6f7-723182ab3c8e",
+  "model": "Tripo Studio H3.1",
+  "multiviewTaskId": "e5892154-34e9-4cef-b6fb-e8231ec0aae0",
+  "generationSettings": {
+    "input": "cleaned folded hero + Tripo multiview",
+    "geometryAndTexture": true,
+    "generateInParts": false,
+    "eightKTexture": false,
+    "export": "GLB / 4K current",
+    "seed": "not exposed in Studio"
+  },
+  "credits": {
+    "approvedCap": 65,
+    "multiviewObserved": 0,
+    "generation": 55,
+    "exportObserved": 0,
+    "totalObserved": 55,
+    "balanceBefore": 865,
+    "balanceAfter": 810,
+    "evidence": "Displayed generation price55 and Studio balance865\u2192810; no balance change on multiview/export. No CLI billing API was available."
+  },
+  "files": [
+    {
+      "path": "source/model.glb",
+      "bytes": 9228872,
+      "sha256": "9317b26394692f8c41e33793077d02b78445c73c44ede2888b179c3f68472047",
+      "triangles": 7574,
+      "nodes": 1,
+      "materials": 1
+    },
+    {
+      "path": "backspool_threadrail_cartridge_master.glb",
+      "bytes": 35578280,
+      "sha256": "9e903b75a2c33c21e9f8cbd3696a238ecf908f70bedf76f3a7938af6cc427099",
+      "triangles": 9498,
+      "nodes": 32,
+      "materials": 6
+    },
+    {
+      "path": "backspool_threadrail_cartridge_game.glb",
+      "bytes": 4168376,
+      "sha256": "5d6456c2275da201395ecf757af1a6d6076be2fae5e017963832d83a0d4eb4e4",
+      "triangles": 9498,
+      "nodes": 32,
+      "materials": 6
+    }
+  ],
+  "authoredChanges": [
+    "PCA disc orientation; meter normalization",
+    "central source faces separated as rotating spool",
+    "four sliding fins and four hinged jaws",
+    "lower housing repair plate/trim",
+    "A/B label geometry and identifier material variants",
+    "ThreadExit/DockingMount sockets",
+    "source-albedo-derived emissive mask",
+    "detachable belt clips"
+  ],
+  "sourceProvenance": "source/model.glb immutable raw Tripo export",
+  "candidate": "SIGHTLINE_BACKSPOOL_CARTRIDGE.html",
+  "inspector": "THREADRAIL_CARTRIDGE_VIEWER.html",
+  "limitations": [
+    "AI generation approximates small master-sheet details",
+    "local fin/jaw geometry is simpler than reference",
+    "release is existing authored grab-source overlay, not a newly recovered whip",
+    "point projectile sweep unchanged",
+    "short filament leads connect physical ThreadExit to existing collision-clearance-offset ride segment",
+    "physical controller/touch and full traversal-performance certification pending"
+  ]
+}

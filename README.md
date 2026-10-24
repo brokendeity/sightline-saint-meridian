@@ -1,3 +1,19 @@
+# Current snapshot — vertical megacity + Hi3D train
+
+Latest playable build: [SIGHTLINE_BACKSPOOL_WHIP_THROW.html](SIGHTLINE_BACKSPOOL_WHIP_THROW.html), including current Threadrail cartridge/whip, Afterstep, imported city props and first Hi3D train front carriage.
+
+```sh
+python3 -m http.server 8766 --bind 127.0.0.1
+```
+
+Open http://127.0.0.1:8766/SIGHTLINE_BACKSPOOL_WHIP_THROW.html?capture=backspool&vaultcourse=1 . Model inspection: http://127.0.0.1:8766/VERTICAL_TRAIN_INSPECTOR.html . Keep the asset folders beside the HTML.
+
+Saved on `feature/saint-meridian-vertical-megacity-v1` with the separate tag `snapshot-2026-10-24-megacity-hi3d-train`. Older branches, tags and main are preserved. This is an unfinished development snapshot: the front carriage is integrated; other carriages, safe route refinement, the other six hero asset families and full megacity acceptance remain pending. See [train integration evidence and limitations](docs/vertical-city/HI3D_TRAIN_INTEGRATION.md).
+
+The 145 MB raw Hi3D model and 74 MB authoring Blender source remain local; optimized runtime GLBs and source hashes are included. Recreating those authoring outputs requires the preserved local raw export. They are not needed to run this snapshot.
+
+---
+
 # Sightline / Backspool — Threadrail and Afterstep candidate
 
 Current feature branch: `feature/backspool-threadrail-afterstep-drive`, based on the preserved v14 complete snapshot with v15 landing/roll fixes. Run `python3 scripts/build_backspool_threadrail_candidate.py`, then `python3 -m http.server 8766` and open [the equipment candidate](http://localhost:8766/SIGHTLINE_BACKSPOOL_THREADRAIL_CANDIDATE.html?capture=backspool). Controls are in [docs/BACKSPOOL_THREADRAIL.md](docs/BACKSPOOL_THREADRAIL.md); final evidence, source boundaries and demonstration steps are in [docs/THREADRAIL_DELIVERY.md](docs/THREADRAIL_DELIVERY.md). The main game and earlier candidate below are retained.

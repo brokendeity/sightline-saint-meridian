@@ -45,8 +45,10 @@
    const v=e.velocity||{x:0,y:0,z:0},offset=new T.Vector3(-v.x*.022,.18,-v.z*.022).clampLength(0,.3);capture('landing',offset,true);last={kind:'landing',id:e.id,impact:e.impact};return true;
   }
   function footplant(e){if(disposed||!model||reduced()||!e?.position||!remember('foot:'+e.id))return false;const p=e.position;if(![p.x,p.y,p.z,e.yaw||0].every(Number.isFinite))return false;const f=footprints[footCursor++%footCapacity];f.p.set(p.x,p.y+.012,p.z);f.yaw=e.yaw||0;f.age=0;f.life=.32;return true;}
+  let nextMotionGhost=0;
   function update(dt,c={}){if(disposed)return;dt=Number.isFinite(dt)?Math.max(0,Math.min(.1,dt)):0;clock+=dt;if(c.model&&c.model!==model)bind(c.model);group.visible=c.hero==='backspool'&&c.active!==false;if(!group.visible){reset('INACTIVE');return;}if(c.interrupted){pending=[];burstUntil=-1;burstPending=false;}
    for(const s of slots){s.age+=dt;if(s.life<=0)continue;const t=Math.min(1,s.age/s.life),i=slots.indexOf(s);opacities[i]=(s.kind==='landing'?.22:config.afterimageOpacity)*config.intensity*(1-t)*(1-t);if(!s.settle){const distance=model.getWorldPosition(point).distanceTo(s.anchor);opacities[i]*=Math.max(0,1-distance/config.trailLength);}shifts[i].copy(s.shift).multiplyScalar(s.settle?1-t:1);if(s.settle){model.getWorldPosition(point);point.sub(s.anchor);shifts[i].addScaledVector(point,t*t*(3-2*t));}if(t>=1)s.life=0;}
+   if(c.motionTrace&&!c.interrupted&&clock>=nextMotionGhost&&historyCount>=2){nextMotionGhost=clock+.25;burstPending=true;}
    if(burstPending){burstPending=false;let prior=null,used=0;for(let j=0;j<historyCount&&used<count();j++){const entry=history[(historyCursor-1-j+16)%8];if(prior&&entry.anchor.distanceTo(prior)<config.afterimageSpacing*.8)continue;capture('ghoststep',new T.Vector3(),false,entry);prior=entry.anchor;used++;}}
    if(clock<burstUntil&&clock-lastGhostAt>=.065&&historyCount){const past=history[(historyCursor-1+8)%8];if(clock-past.at>=.035){capture('ghoststep',new T.Vector3(),false,past);lastGhostAt=clock;}}
    recordHistory();

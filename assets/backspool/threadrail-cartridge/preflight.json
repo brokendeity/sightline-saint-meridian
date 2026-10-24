@@ -1,0 +1,55 @@
+{
+  "status": "completed-see-manifest",
+  "source": "user master accessory sheet",
+  "referenceAuthority": "master-sheet.png; folded safe-carry panel governs base geometry",
+  "references": [
+    {
+      "path": "references/folded-hero-v1.png",
+      "sha256": "250af4bf952c9cdcae530fd389e98e0d38a3e5f3ca2450e995f32ab2fc741d0e"
+    },
+    {
+      "path": "references/master-sheet.png",
+      "sha256": "688a360646f9e838a9c75e243a28dc24bb1552167df64f500aa15724d671029b"
+    }
+  ],
+  "studioBalanceObserved": 865,
+  "studioModel": "H3.1",
+  "cliModelAlias": "tripo-v3.1",
+  "cliWireValue": "v3.1-20260211",
+  "cliVersion": "0.7.2",
+  "cliAuthenticated": false,
+  "studioAuthenticated": true,
+  "proposedCreditCap": 65,
+  "taskId": "b71871c5-e9e6-4e89-b6f7-723182ab3c8e",
+  "worldUnits": "meters",
+  "targetFoldedDiameter": 0.08,
+  "targetThickness": 0.02,
+  "runtimeTriangleTarget": [
+    5000,
+    15000
+  ],
+  "plannedStates": [
+    "folded",
+    "flight",
+    "anchored"
+  ],
+  "requiredSockets": [
+    "ThreadExit",
+    "DockingMount"
+  ],
+  "localAxes": {
+    "faceNormal": "+Y",
+    "spinAxis": "+Y",
+    "throwDirection": "+Z"
+  },
+  "requiredMovingParts": [
+    "Spool_Core",
+    "LockingJaw_*",
+    "AnchorFin_*"
+  ],
+  "generationRule": "one base generation; reuse geometry for A and B; no paid retries without approval",
+  "approvedCreditCap": 65,
+  "multiviewTaskId": "e5892154-34e9-4cef-b6fb-e8231ec0aae0",
+  "studioBalanceAfterSubmission": 810,
+  "observedBalanceChange": 55
+}

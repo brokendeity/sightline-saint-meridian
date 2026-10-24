@@ -34,7 +34,15 @@ function createTemporalExhaust(THREE,scene,options={}){
  const polygon=Array.from({length:5},()=>new THREE.Vector3()),edgeA=new THREE.Vector3(),edgeB=new THREE.Vector3(),edgeR=new THREE.Vector3(),edgeDelta=new THREE.Vector3(),normal=new THREE.Vector3();
  function line(a,b,width,alpha,color){const dst=batches.edges;edgeR.crossVectors(axis,side).normalize().cross(edgeDelta.copy(b).sub(a)).normalize().multiplyScalar(width);for(const [p,k]of[[a,-1],[a,1],[b,1],[a,-1],[b,1],[b,-1]]){point.copy(p).addScaledVector(edgeR,k);vertex(dst,point,alpha,color);}}
  function ring(c,right,up,radius,width,alpha){const dst=batches.edges;for(let i=0;i<32;i++){const a=i/32*Math.PI*2,b=(i+1)/32*Math.PI*2;for(const [angle,r]of[[a,radius-width],[a,radius+width],[b,radius+width],[a,radius-width],[b,radius+width],[b,radius-width]]){point.copy(c).addScaledVector(right,Math.cos(angle)*r).addScaledVector(up,Math.sin(angle)*r);vertex(dst,point,alpha,white);}}}
- function update(dt,context={}){if(disposed)return;dt=Number.isFinite(dt)?clamp(dt,0,.1):0;clock+=dt;if(context.model&&context.model!==model)bind(context.model);const was=enabled;enabled=context.active!==false&&(!context.hero||String(context.hero).toLowerCase()==='backspool');if(!enabled){if(was)reset('inactive / hero switch');return;}if(!attachment())return;speed=finite(context.velocity)?Math.hypot(context.velocity.x,context.velocity.y,context.velocity.z):speed;if(context.interrupted){for(const name in pools)for(const p of pools[name])if(!p.born)p.life=0;flash=0;}for(const name in batches)batches[name].count=0;
+ let nextMotionTrace=0;
+ function update(dt,context={}){if(disposed)return;dt=Number.isFinite(dt)?clamp(dt,0,.1):0;clock+=dt;if(context.model&&context.model!==model)bind(context.model);const was=enabled;enabled=context.active!==false&&(!context.hero||String(context.hero).toLowerCase()==='backspool');if(!enabled){if(was)reset('inactive / hero switch');return;}if(!attachment())return;speed=finite(context.velocity)?Math.hypot(context.velocity.x,context.velocity.y,context.velocity.z):speed;if(context.interrupted){for(const name in pools)for(const p of pools[name])if(!p.born)p.life=0;flash=0;}// Cosmetic motion uses the same Drive sockets without spending or releasing resources.
+ if(context.motionTrace&&!context.interrupted&&speed>3&&clock>=nextMotionTrace){
+ nextMotionTrace=clock+(options.reducedMotion?.()?.24:.075);
+ direction.set(-context.velocity.x,-context.velocity.y,-context.velocity.z).normalize();
+ const count=options.reducedMotion?.()?2:config.quality==='low'?2:4;
+ for(let i=0;i<count;i++){const p=allocate('slivers',0,.30+(i%2)*.08,direction,i+sequence,.35);p.brake=false;}
+ }
+ for(const name in batches)batches[name].count=0;
  for(const name in pools)for(const p of pools[name]){if(p.life<=0)continue;p.age+=dt;const age=p.age-p.delay;if(age<0)continue;if(age>=p.life){p.life=0;continue;}if(!p.born){p.origin.copy(sockets[p.outlet]);p.born=true;}const t=age/p.life,fade=Math.min(1,age/.025)*Math.pow(1-t,1.3)*config.intensity;
   if(name==='slivers'){
    const spread=(p.brake?.35:1)*(.025+age*(2+(p.index%5)*.65)),travel=age*config.shardSpeed*(.65+(p.index%5)*.16)*(p.brake?.5:1);center.copy(p.origin).addScaledVector(p.direction,travel).addScaledVector(p.right,Math.sin(p.seed)*spread).addScaledVector(p.up,Math.cos(p.seed)*spread*.7);
