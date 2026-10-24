@@ -1,0 +1,1228 @@
+{
+  "results": [
+    {
+      "name": "1 sprint > Drive > jump > wall kick > supported landing",
+      "pass": true,
+      "traceFrames": 163,
+      "first": {
+        "clock": 0.19999999999999998,
+        "p": [
+          -48,
+          0.42,
+          100.995
+        ],
+        "v": [
+          0,
+          0,
+          -0.3
+        ],
+        "ground": true,
+        "support": 0.42,
+        "mode": "GROUND",
+        "flow": null,
+        "flowTime": 0,
+        "advanced": null,
+        "advancedEvents": [],
+        "bank": [],
+        "release": null,
+        "rail": null,
+        "railEvents": [
+          {
+            "id": 4,
+            "type": "reset",
+            "time": 0,
+            "reason": "RESPAWN"
+          },
+          {
+            "id": 5,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-1",
+            "a": "anchor-1",
+            "b": "anchor-2"
+          },
+          {
+            "id": 6,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-2",
+            "a": "anchor-2",
+            "b": "anchor-3"
+          },
+          {
+            "id": 7,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-3",
+            "a": "anchor-3",
+            "b": "anchor-4"
+          }
+        ],
+        "owner": "ordinary",
+        "combat": "idle",
+        "message": "COURSE READY · PLAZA SOUTH"
+      },
+      "last": {
+        "clock": 2.8999999999999946,
+        "p": [
+          -48,
+          0.42,
+          86.80033381538115
+        ],
+        "v": [
+          0,
+          0,
+          0
+        ],
+        "ground": true,
+        "support": 0.42,
+        "mode": "LANDING",
+        "flow": null,
+        "flowTime": 0,
+        "pose": "landHard",
+        "advanced": null,
+        "advancedEvents": [
+          {
+            "eventId": 1,
+            "time": 1.7666666666666653,
+            "kind": "wall-start"
+          },
+          {
+            "eventId": 2,
+            "time": 1.8999999999999981,
+            "kind": "end",
+            "mode": "wall",
+            "reason": "JUMP DETACH"
+          }
+        ],
+        "landing": "land",
+        "bank": [
+          {
+            "id": "physical-6",
+            "action": "wallKick"
+          },
+          {
+            "id": "physical-7",
+            "action": "landing"
+          }
+        ],
+        "release": {
+          "type": "release",
+          "id": "afterstep-2",
+          "sequence": 2,
+          "time": 1.4333333333333331,
+          "mode": "standard",
+          "contactId": "physical-5",
+          "action": "footplant",
+          "perfect": false,
+          "cost": 8,
+          "deltaVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": -4.536000000000005
+          },
+          "spent": [
+            "physical-5"
+          ],
+          "doubleStep": 0
+        },
+        "rail": null,
+        "railEvents": [
+          {
+            "id": 4,
+            "type": "reset",
+            "time": 0,
+            "reason": "RESPAWN"
+          },
+          {
+            "id": 5,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-1",
+            "a": "anchor-1",
+            "b": "anchor-2"
+          },
+          {
+            "id": 6,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-2",
+            "a": "anchor-2",
+            "b": "anchor-3"
+          },
+          {
+            "id": 7,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-3",
+            "a": "anchor-3",
+            "b": "anchor-4"
+          }
+        ],
+        "owner": "ordinary",
+        "combat": "idle",
+        "message": "DRIVE · STANDARD"
+      }
+    },
+    {
+      "name": "2 sprint > automatic vault > Drive > roof jump",
+      "pass": true,
+      "traceFrames": 198,
+      "first": {
+        "clock": 0.05,
+        "p": [
+          -48,
+          0.42,
+          73.995
+        ],
+        "v": [
+          0,
+          0,
+          -0.3
+        ],
+        "ground": true,
+        "support": 0.42,
+        "mode": "GROUND",
+        "flow": null,
+        "flowTime": 0,
+        "advanced": null,
+        "advancedEvents": [],
+        "bank": [],
+        "release": null,
+        "rail": null,
+        "railEvents": [
+          {
+            "id": 4,
+            "type": "reset",
+            "time": 0,
+            "reason": "RESPAWN"
+          },
+          {
+            "id": 5,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-1",
+            "a": "anchor-1",
+            "b": "anchor-2"
+          },
+          {
+            "id": 6,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-2",
+            "a": "anchor-2",
+            "b": "anchor-3"
+          },
+          {
+            "id": 7,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-3",
+            "a": "anchor-3",
+            "b": "anchor-4"
+          }
+        ],
+        "owner": "ordinary",
+        "combat": "idle",
+        "message": "COURSE READY · PLAZA SOUTH"
+      },
+      "last": {
+        "clock": 3.566666666666659,
+        "p": [
+          -48,
+          2.82,
+          51.419995347705054
+        ],
+        "v": [
+          0,
+          0,
+          -12.490414930426772
+        ],
+        "ground": true,
+        "support": 2.82,
+        "mode": "GROUND",
+        "flow": null,
+        "flowTime": 0,
+        "pose": "landMove",
+        "advanced": null,
+        "advancedEvents": [],
+        "landing": "landMove",
+        "bank": [
+          {
+            "id": "physical-6",
+            "action": "footplant"
+          },
+          {
+            "id": "physical-7",
+            "action": "vault"
+          }
+        ],
+        "release": {
+          "type": "release",
+          "id": "afterstep-4",
+          "sequence": 4,
+          "time": 2.666666666666662,
+          "mode": "standard",
+          "contactId": "physical-5",
+          "action": "footplant",
+          "perfect": true,
+          "cost": 6,
+          "deltaVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": -0.8399999999999999
+          },
+          "spent": [
+            "physical-5"
+          ],
+          "doubleStep": 0
+        },
+        "rail": null,
+        "railEvents": [
+          {
+            "id": 4,
+            "type": "reset",
+            "time": 0,
+            "reason": "RESPAWN"
+          },
+          {
+            "id": 5,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-1",
+            "a": "anchor-1",
+            "b": "anchor-2"
+          },
+          {
+            "id": 6,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-2",
+            "a": "anchor-2",
+            "b": "anchor-3"
+          },
+          {
+            "id": 7,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-3",
+            "a": "anchor-3",
+            "b": "anchor-4"
+          }
+        ],
+        "owner": "ordinary",
+        "combat": "idle",
+        "message": "PERFECT DRIVE · STANDARD"
+      }
+    },
+    {
+      "name": "3 jump > physical rail attach > grind > Rail Drive",
+      "pass": true,
+      "traceFrames": 64,
+      "first": {
+        "clock": 0.06666666666666667,
+        "p": [
+          -32.995,
+          4.42,
+          65
+        ],
+        "v": [
+          0.3,
+          0,
+          -6.661338147750939e-17
+        ],
+        "ground": true,
+        "support": 4.42,
+        "mode": "GROUND",
+        "flow": null,
+        "flowTime": 0,
+        "advanced": null,
+        "advancedEvents": [],
+        "bank": [],
+        "release": null,
+        "rail": null,
+        "railEvents": [
+          {
+            "id": 4,
+            "type": "reset",
+            "time": 0,
+            "reason": "RESPAWN"
+          },
+          {
+            "id": 5,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-1",
+            "a": "anchor-1",
+            "b": "anchor-2"
+          },
+          {
+            "id": 6,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-2",
+            "a": "anchor-2",
+            "b": "anchor-3"
+          },
+          {
+            "id": 7,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-3",
+            "a": "anchor-3",
+            "b": "anchor-4"
+          }
+        ],
+        "owner": "ordinary",
+        "combat": "idle",
+        "message": "COURSE READY · PLAZA SOUTH"
+      },
+      "last": {
+        "clock": 1.266666666666667,
+        "p": [
+          -28.00348184654353,
+          5.839651815345648,
+          65
+        ],
+        "v": [
+          4.757805009562918,
+          0.4757805009562915,
+          0
+        ],
+        "ground": false,
+        "support": 4.42,
+        "mode": "AIR",
+        "flow": null,
+        "flowTime": 0,
+        "pose": "railGrind",
+        "advanced": null,
+        "advancedEvents": [],
+        "bank": [
+          {
+            "id": "physical-6",
+            "action": "jump"
+          }
+        ],
+        "release": {
+          "type": "release",
+          "id": "afterstep-3",
+          "sequence": 3,
+          "time": 1.2500000000000004,
+          "mode": "rail",
+          "contactId": "physical-5",
+          "action": "footplant",
+          "perfect": false,
+          "cost": 8,
+          "deltaVelocity": {
+            "x": 0.5850818678434742,
+            "y": 0.05850818678434733,
+            "z": 0
+          },
+          "spent": [
+            "physical-5"
+          ],
+          "doubleStep": 0
+        },
+        "rail": {
+          "railId": "rail-1",
+          "distance": 2.006475911754748,
+          "signedSpeed": 4.781534857565321,
+          "speed": 4.781534857565321,
+          "position": {
+            "x": -28.00348184654353,
+            "y": 5.839651815345648,
+            "z": 65
+          },
+          "velocity": {
+            "x": 4.757805009562918,
+            "y": 0.4757805009562915,
+            "z": 0
+          },
+          "hero": "backspool",
+          "direction": null,
+          "driveDirection": {
+            "x": 0.5850818678434742,
+            "y": 0.05850818678434733,
+            "z": 0
+          }
+        },
+        "railEvents": [
+          {
+            "id": 5,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-1",
+            "a": "anchor-1",
+            "b": "anchor-2"
+          },
+          {
+            "id": 6,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-2",
+            "a": "anchor-2",
+            "b": "anchor-3"
+          },
+          {
+            "id": 7,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-3",
+            "a": "anchor-3",
+            "b": "anchor-4"
+          },
+          {
+            "id": 8,
+            "type": "attach",
+            "time": 1.016666666666668,
+            "railId": "rail-1",
+            "speed": 4.288610289805051
+          },
+          {
+            "id": 9,
+            "type": "drive",
+            "time": 1.0666666666666678,
+            "railId": "rail-1",
+            "deltaVelocity": {
+              "x": 0.585081867843475,
+              "y": 0.05850818678434738,
+              "z": 0
+            },
+            "speed": 4.805303715625254
+          }
+        ],
+        "owner": "rail",
+        "combat": "idle",
+        "message": "DRIVE · RAIL"
+      }
+    },
+    {
+      "name": "4 grind > input transfer > slingshot > supported landing",
+      "pass": true,
+      "traceFrames": 156,
+      "first": {
+        "clock": 0.06666666666666667,
+        "p": [
+          -29.000519920819244,
+          5.645199208192424,
+          65
+        ],
+        "v": [
+          23.76237623762377,
+          2.3762376237623752,
+          0
+        ],
+        "ground": false,
+        "support": 4.42,
+        "mode": "AIR",
+        "flow": null,
+        "flowTime": 0,
+        "pose": "railGrind",
+        "advanced": null,
+        "advancedEvents": [],
+        "bank": [],
+        "release": null,
+        "rail": {
+          "railId": "rail-1",
+          "distance": 0.9950371902099892,
+          "signedSpeed": 23.880892565039744,
+          "speed": 23.880892565039744,
+          "position": {
+            "x": -29.00990099009901,
+            "y": 5.7390099009901,
+            "z": 65
+          },
+          "velocity": {
+            "x": 23.76237623762377,
+            "y": 2.3762376237623752,
+            "z": 0
+          },
+          "hero": "backspool",
+          "direction": null
+        },
+        "railEvents": [
+          {
+            "id": 4,
+            "type": "reset",
+            "time": 0,
+            "reason": "RESPAWN"
+          },
+          {
+            "id": 5,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-1",
+            "a": "anchor-1",
+            "b": "anchor-2"
+          },
+          {
+            "id": 6,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-2",
+            "a": "anchor-2",
+            "b": "anchor-3"
+          },
+          {
+            "id": 7,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-3",
+            "a": "anchor-3",
+            "b": "anchor-4"
+          },
+          {
+            "id": 8,
+            "type": "attach",
+            "time": 0,
+            "railId": "rail-1",
+            "speed": 23.880892565039744
+          }
+        ],
+        "owner": "rail",
+        "combat": "idle",
+        "message": "PERFECT CATCH"
+      },
+      "last": {
+        "clock": 2.799999999999995,
+        "p": [
+          23.509441310990884,
+          0.42,
+          65
+        ],
+        "v": [
+          0,
+          0,
+          0
+        ],
+        "ground": true,
+        "support": 0.42,
+        "mode": "LANDING",
+        "flow": null,
+        "flowTime": 0,
+        "pose": "landHard",
+        "advanced": null,
+        "advancedEvents": [],
+        "landing": "landHard",
+        "bank": [
+          {
+            "id": "physical-5",
+            "action": "landing"
+          }
+        ],
+        "release": null,
+        "rail": null,
+        "railEvents": [
+          {
+            "id": 7,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-3",
+            "a": "anchor-3",
+            "b": "anchor-4"
+          },
+          {
+            "id": 8,
+            "type": "attach",
+            "time": 0,
+            "railId": "rail-1",
+            "speed": 23.880892565039744
+          },
+          {
+            "id": 9,
+            "type": "transfer",
+            "time": 1.1500000000000008,
+            "fromId": "rail-1",
+            "railId": "rail-2",
+            "speed": 22.24084135890426
+          },
+          {
+            "id": 10,
+            "type": "detach",
+            "time": 1.2000000000000006,
+            "railId": "rail-2",
+            "reason": "slingshot",
+            "velocity": {
+              "x": 22.05951160045484,
+              "y": 8.705951160045483,
+              "z": 0
+            }
+          },
+          {
+            "id": 11,
+            "type": "jump",
+            "time": 1.2000000000000006,
+            "railId": "rail-2",
+            "slingshot": true,
+            "velocity": {
+              "x": 22.05951160045484,
+              "y": 8.705951160045483,
+              "z": 0
+            }
+          }
+        ],
+        "owner": "ordinary",
+        "combat": "idle",
+        "message": "EARLY RAIL POP"
+      }
+    },
+    {
+      "name": "5 wall run > upward boost > physical rail > supported landing",
+      "pass": false,
+      "error": "Precision surface anchors did not form rail",
+      "traceFrames": 4,
+      "first": {
+        "clock": 0.4533333333333336,
+        "p": [
+          -30,
+          0.42,
+          90
+        ],
+        "v": [
+          0,
+          0,
+          0
+        ],
+        "ground": true,
+        "support": 0.42,
+        "mode": "GROUND",
+        "flow": null,
+        "flowTime": 0,
+        "pose": "relaxedIdle",
+        "advanced": null,
+        "advancedEvents": [],
+        "bank": [],
+        "release": null,
+        "rail": null,
+        "railEvents": [
+          {
+            "id": 4,
+            "type": "reset",
+            "time": 0,
+            "reason": "RESPAWN"
+          },
+          {
+            "id": 5,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-1",
+            "a": "anchor-1",
+            "b": "anchor-2"
+          },
+          {
+            "id": 6,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-2",
+            "a": "anchor-2",
+            "b": "anchor-3"
+          },
+          {
+            "id": 7,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-3",
+            "a": "anchor-3",
+            "b": "anchor-4"
+          }
+        ],
+        "owner": "ordinary",
+        "combat": "idle",
+        "message": "COURSE READY · PLAZA SOUTH"
+      },
+      "last": {
+        "clock": 0.9200000000000016,
+        "p": [
+          -30,
+          0.42,
+          90
+        ],
+        "v": [
+          0,
+          0,
+          0
+        ],
+        "ground": true,
+        "support": 0.42,
+        "mode": "GROUND",
+        "flow": null,
+        "flowTime": 0,
+        "pose": "relaxedIdle",
+        "advanced": null,
+        "advancedEvents": [],
+        "bank": [],
+        "release": null,
+        "rail": null,
+        "railEvents": [
+          {
+            "id": 4,
+            "type": "reset",
+            "time": 0,
+            "reason": "RESPAWN"
+          },
+          {
+            "id": 5,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-1",
+            "a": "anchor-1",
+            "b": "anchor-2"
+          },
+          {
+            "id": 6,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-2",
+            "a": "anchor-2",
+            "b": "anchor-3"
+          },
+          {
+            "id": 7,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-3",
+            "a": "anchor-3",
+            "b": "anchor-4"
+          }
+        ],
+        "owner": "ordinary",
+        "combat": "idle",
+        "message": "CARTRIDGE CASTING"
+      }
+    },
+    {
+      "name": "6 aerial evade > automatic tree rebound > landing",
+      "pass": true,
+      "traceFrames": 88,
+      "first": {
+        "clock": 0.06666666666666667,
+        "p": [
+          -52,
+          2.6269444444444447,
+          1183.9887966456854
+        ],
+        "v": [
+          0,
+          1.6166666666666667,
+          -15
+        ],
+        "ground": false,
+        "support": 0.42,
+        "mode": "AIR",
+        "flow": "aerialRoll",
+        "flowTime": 0.016666666666666666,
+        "pose": "roll",
+        "advanced": null,
+        "advancedEvents": [],
+        "bank": [],
+        "release": null,
+        "rail": null,
+        "railEvents": [
+          {
+            "id": 4,
+            "type": "reset",
+            "time": 0,
+            "reason": "RESPAWN"
+          },
+          {
+            "id": 5,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-1",
+            "a": "anchor-1",
+            "b": "anchor-2"
+          },
+          {
+            "id": 6,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-2",
+            "a": "anchor-2",
+            "b": "anchor-3"
+          },
+          {
+            "id": 7,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-3",
+            "a": "anchor-3",
+            "b": "anchor-4"
+          }
+        ],
+        "owner": "flow",
+        "combat": "idle",
+        "message": "COURSE READY · PLAZA SOUTH"
+      },
+      "last": {
+        "clock": 1.5166666666666662,
+        "p": [
+          -52,
+          0.42,
+          1193.436074298574
+        ],
+        "v": [
+          0,
+          0,
+          12.566786350026089
+        ],
+        "ground": true,
+        "support": 0.42,
+        "mode": "GROUND",
+        "flow": null,
+        "flowTime": 0,
+        "pose": "land",
+        "advanced": null,
+        "advancedEvents": [],
+        "landing": "land",
+        "bank": [
+          {
+            "id": "physical-5",
+            "action": "rebound"
+          },
+          {
+            "id": "physical-6",
+            "action": "landing"
+          }
+        ],
+        "release": null,
+        "rail": null,
+        "railEvents": [
+          {
+            "id": 4,
+            "type": "reset",
+            "time": 0,
+            "reason": "RESPAWN"
+          },
+          {
+            "id": 5,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-1",
+            "a": "anchor-1",
+            "b": "anchor-2"
+          },
+          {
+            "id": 6,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-2",
+            "a": "anchor-2",
+            "b": "anchor-3"
+          },
+          {
+            "id": 7,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-3",
+            "a": "anchor-3",
+            "b": "anchor-4"
+          }
+        ],
+        "owner": "ordinary",
+        "combat": "idle",
+        "message": "COURSE READY · PLAZA SOUTH"
+      }
+    },
+    {
+      "name": "7 sprint > foot bank > rail > release recorded foot",
+      "pass": false,
+      "error": "Timed out: {\"clock\":0.6666666666666671,\"p\":[-29.484999999999996,4.42,65],\"v\":[11.100000000000005,0,-2.4646951146678486e-15],\"ground\":true,\"support\":4.42,\"mode\":\"GROUND\",\"flow\":null,\"flowTime\":0,\"advanced\":null,\"advancedEvents\":[],\"bank\":[{\"id\":\"physical-5\",\"action\":\"footplant\"}],\"release\":null,\"rail\":null,\"railEvents\":[{\"id\":4,\"type\":\"reset\",\"time\":0,\"reason\":\"RESPAWN\"},{\"id\":5,\"type\":\"create\",\"time\":0,\"railId\":\"rail-1\",\"a\":\"anchor-1\",\"b\":\"anchor-2\"},{\"id\":6,\"type\":\"create\",\"time\":0,\"railId\":\"rail-2\",\"a\":\"anchor-2\",\"b\":\"anchor-3\"},{\"id\":7,\"type\":\"create\",\"time\":0,\"railId\":\"rail-3\",\"a\":\"anchor-3\",\"b\":\"anchor-4\"}],\"owner\":\"ordinary\",\"combat\":\"idle\",\"message\":\"CARTRIDGE A ATTACHED\"}",
+      "traceFrames": 37,
+      "first": {
+        "clock": 0.06666666666666667,
+        "p": [
+          -32.995,
+          4.42,
+          65
+        ],
+        "v": [
+          0.3,
+          0,
+          -6.661338147750939e-17
+        ],
+        "ground": true,
+        "support": 4.42,
+        "mode": "GROUND",
+        "flow": null,
+        "flowTime": 0,
+        "advanced": null,
+        "advancedEvents": [],
+        "bank": [],
+        "release": null,
+        "rail": null,
+        "railEvents": [
+          {
+            "id": 4,
+            "type": "reset",
+            "time": 0,
+            "reason": "RESPAWN"
+          },
+          {
+            "id": 5,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-1",
+            "a": "anchor-1",
+            "b": "anchor-2"
+          },
+          {
+            "id": 6,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-2",
+            "a": "anchor-2",
+            "b": "anchor-3"
+          },
+          {
+            "id": 7,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-3",
+            "a": "anchor-3",
+            "b": "anchor-4"
+          }
+        ],
+        "owner": "ordinary",
+        "combat": "idle",
+        "message": "COURSE READY · PLAZA SOUTH"
+      },
+      "last": {
+        "clock": 0.6666666666666671,
+        "p": [
+          -29.484999999999996,
+          4.42,
+          65
+        ],
+        "v": [
+          11.100000000000005,
+          0,
+          -2.4646951146678486e-15
+        ],
+        "ground": true,
+        "support": 4.42,
+        "mode": "GROUND",
+        "flow": null,
+        "flowTime": 0,
+        "advanced": null,
+        "advancedEvents": [],
+        "bank": [
+          {
+            "id": "physical-5",
+            "action": "footplant"
+          }
+        ],
+        "release": null,
+        "rail": null,
+        "railEvents": [
+          {
+            "id": 4,
+            "type": "reset",
+            "time": 0,
+            "reason": "RESPAWN"
+          },
+          {
+            "id": 5,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-1",
+            "a": "anchor-1",
+            "b": "anchor-2"
+          },
+          {
+            "id": 6,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-2",
+            "a": "anchor-2",
+            "b": "anchor-3"
+          },
+          {
+            "id": 7,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-3",
+            "a": "anchor-3",
+            "b": "anchor-4"
+          }
+        ],
+        "owner": "ordinary",
+        "combat": "idle",
+        "message": "CARTRIDGE A ATTACHED"
+      }
+    },
+    {
+      "name": "8 grind > combat > ordinary traversal",
+      "pass": true,
+      "traceFrames": 122,
+      "first": {
+        "clock": 0.06666666666666667,
+        "p": [
+          -29.000519920819244,
+          5.645199208192424,
+          65
+        ],
+        "v": [
+          11.881188118811885,
+          1.1881188118811876,
+          0
+        ],
+        "ground": false,
+        "support": 4.42,
+        "mode": "AIR",
+        "flow": null,
+        "flowTime": 0,
+        "pose": "railGrind",
+        "advanced": null,
+        "advancedEvents": [],
+        "bank": [],
+        "release": null,
+        "rail": {
+          "railId": "rail-1",
+          "distance": 0.9950371902099892,
+          "signedSpeed": 11.940446282519872,
+          "speed": 11.940446282519872,
+          "position": {
+            "x": -29.00990099009901,
+            "y": 5.7390099009901,
+            "z": 65
+          },
+          "velocity": {
+            "x": 11.881188118811885,
+            "y": 1.1881188118811876,
+            "z": 0
+          },
+          "hero": "backspool",
+          "direction": null
+        },
+        "railEvents": [
+          {
+            "id": 4,
+            "type": "reset",
+            "time": 0,
+            "reason": "RESPAWN"
+          },
+          {
+            "id": 5,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-1",
+            "a": "anchor-1",
+            "b": "anchor-2"
+          },
+          {
+            "id": 6,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-2",
+            "a": "anchor-2",
+            "b": "anchor-3"
+          },
+          {
+            "id": 7,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-3",
+            "a": "anchor-3",
+            "b": "anchor-4"
+          },
+          {
+            "id": 8,
+            "type": "attach",
+            "time": 0,
+            "railId": "rail-1",
+            "speed": 11.940446282519872
+          }
+        ],
+        "owner": "rail",
+        "combat": "idle",
+        "message": "PERFECT CATCH"
+      },
+      "last": {
+        "clock": 2.716666666666662,
+        "p": [
+          -18.11698943355128,
+          0.42,
+          65
+        ],
+        "v": [
+          6.6,
+          0,
+          -1.4654943925052066e-15
+        ],
+        "ground": true,
+        "support": 0.42,
+        "mode": "GROUND",
+        "flow": null,
+        "flowTime": 0,
+        "advanced": null,
+        "advancedEvents": [],
+        "bank": [
+          {
+            "id": "physical-5",
+            "action": "landing"
+          },
+          {
+            "id": "physical-6",
+            "action": "footplant"
+          },
+          {
+            "id": "physical-7",
+            "action": "footplant"
+          }
+        ],
+        "release": null,
+        "rail": null,
+        "railEvents": [
+          {
+            "id": 5,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-1",
+            "a": "anchor-1",
+            "b": "anchor-2"
+          },
+          {
+            "id": 6,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-2",
+            "a": "anchor-2",
+            "b": "anchor-3"
+          },
+          {
+            "id": 7,
+            "type": "create",
+            "time": 0,
+            "railId": "rail-3",
+            "a": "anchor-3",
+            "b": "anchor-4"
+          },
+          {
+            "id": 8,
+            "type": "attach",
+            "time": 0,
+            "railId": "rail-1",
+            "speed": 11.940446282519872
+          },
+          {
+            "id": 9,
+            "type": "detach",
+            "time": 0.05,
+            "railId": "rail-1",
+            "reason": "PLAYER DETACH",
+            "velocity": {
+              "x": 11.810235425596519,
+              "y": 1.181023542559651,
+              "z": 0
+            }
+          }
+        ],
+        "owner": "ordinary",
+        "combat": "idle",
+        "message": "PERFECT CATCH"
+      }
+    }
+  ],
+  "errors": [],
+  "fullTraces": "V02_PhysicalChain_Traces.json.gz"
+}

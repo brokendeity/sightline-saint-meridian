@@ -1,3 +1,11 @@
+# V02 development candidate — connected Blender graybox
+
+Experimental entry: [SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html](SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html). Serve this repository at8766, open it with `?capture=backspool`, and select **Enter V02 district**. The original latest WHIP game and all saved snapshots below remain unchanged.
+
+Three elevated loops and a complete public ground-to-station approach pass normal keyboard traversal. This is a graybox milestone, **not the completed V02 city**. Momentum/mastery approaches, encounters, recovery, final architecture, transport sweeps and full performance acceptance remain open. [Current evidence and remaining gates](development/vertical-city-v02/V02_Acceptance_Report.md) · [Blender master and reproduction workflow](development/vertical-city-v02/README.md).
+
+---
+
 # Current GitHub snapshot — 24 October 2026
 
 Saved independently on `snapshots/2026-10-24-current-game-v02-baseline`, tagged `snapshot-2026-10-24-current-game-v02-baseline`. The latest playable entry remains **SIGHTLINE_BACKSPOOL_WHIP_THROW.html**; **VERTICAL_TRAIN_INSPECTOR.html** previews the train asset. Run `python3 -m http.server 8766 --bind 127.0.0.1` from this repository.

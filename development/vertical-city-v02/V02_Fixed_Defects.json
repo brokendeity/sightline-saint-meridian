@@ -1,0 +1,44 @@
+{
+  "status": "fixed in current graybox; remaining broader acceptance is separately tracked",
+  "defects": [
+    {
+      "name": "front stair riser collision snag",
+      "observedPlayer": [
+        61,
+        0.42,
+        216.425
+      ],
+      "fix": "new tagged low-riser pass includes existing collision margin; <=.201m surface rise unchanged",
+      "verification": "V02_Stair_Pilot_Validation.json and full public route"
+    },
+    {
+      "name": "top landing counted as a crash wall",
+      "observedPlayer": [
+        61,
+        2.9088888888888884,
+        221.825
+      ],
+      "fix": "new walkable landing surfaces receive low-step treatment, while walls remain solid",
+      "verification": "two-flight pilot and full public route"
+    },
+    {
+      "name": "station slab over final-flight approach",
+      "observedPlayer": [
+        66.9125,
+        99.4425,
+        381.162
+      ],
+      "fix": "Blender cutouts cover the real final-flight approach, not just the step rectangle",
+      "evidence": "evidence/fixed-defects/station-headroom-before.log.txt",
+      "verification": "public route reachesY100 with0airborne frames"
+    },
+    {
+      "name": "horizontal penetration corrections under stacked flights",
+      "observedFrameDisplacement": 0.2225,
+      "commandedFrameTravel": 0.0275,
+      "fix": "3\u20133.2m flight separation gives the complete capsule headroom; no movement limits enlarged",
+      "evidence": "V02_Public_Route_PreSpacing.json.gz",
+      "verification": "V02_Public_Route_Validation.json maxUncommandedHorizontal near floating-point zero"
+    }
+  ]
+}

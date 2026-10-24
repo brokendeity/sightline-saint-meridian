@@ -1,0 +1,79 @@
+{
+  "status": "GRAYBOX MILESTONE ONLY; full V02 goal remains incomplete",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html",
+  "entrySHA256": "9ecdefa48c810e52814c3d422bf144ea5d7b2cdffcde5145e09a5b6b74e57ba0",
+  "manifestSHA256": "e8767f382cb0c805e51c8257a07653dc48140655d66219867c8f89e8abfee018",
+  "originalPlayableSHA256": "fac92161657cb93c8500d6afbc2900748b7cadfc015c019eeddf0366cdf070e4",
+  "originalPlayableUnchanged": true,
+  "loops": [
+    {
+      "id": "lower",
+      "status": "PASS ordinary keyboard traversal from one controlled loop start",
+      "seconds": 55.43333333333333,
+      "distance": 361.8450000000447,
+      "airFrames": 0,
+      "powerReleases": 0
+    },
+    {
+      "id": "mid",
+      "status": "PASS ordinary keyboard traversal from one controlled loop start",
+      "seconds": 35.43333333333333,
+      "distance": 229.84500000002305,
+      "airFrames": 0,
+      "powerReleases": 0
+    },
+    {
+      "id": "high",
+      "status": "PASS ordinary keyboard traversal from one controlled loop start",
+      "seconds": 37.266666666666666,
+      "distance": 241.94500000002455,
+      "airFrames": 0,
+      "powerReleases": 0
+    }
+  ],
+  "stationApproaches": {
+    "A-public": {
+      "status": "PASS uninterrupted ground-to-station public route",
+      "initialBank": 0,
+      "seconds": 454.55,
+      "distance": 801.0877389557749,
+      "airFrames": 0,
+      "maxUncommandedHorizontal": 1.0231399061311208e-14,
+      "final": {
+        "p": [
+          66.43750000000139,
+          100.42,
+          375.9124999998966
+        ],
+        "onGround": true,
+        "trauma": 0,
+        "releases": 0
+      }
+    },
+    "B-momentum": "NOT TESTED; proposed anchors/landing exist, full construction/catch/ride sequence pending",
+    "C-mastery": "NOT TESTED; wall/recovery geometry and Pop route not finished"
+  },
+  "graybox": {
+    "chunks": 27,
+    "records": 1694,
+    "triangles": 20328,
+    "bytes": 1182252,
+    "exportedOriginalBuildingCopies": 0,
+    "originalGeometryConflicts": [],
+    "coplanarSurfaceOverlaps": [],
+    "roadEnvelopeSamples": 6392,
+    "roadEnvelopeConflictCount": 0
+  },
+  "remaining": [
+    "Ground-to-upper-to-ground public return and both secondary transfer stacks",
+    "Momentum and mastery approaches at zero/full resources",
+    "Safe failure recovery, guardrails, full camera and contact review",
+    "Three encounter adapters and real completion/retry flows",
+    "Runtime landmarks and four discoverable POIs",
+    "Train/traffic full swept clearance and station behavior",
+    "Detailed Blender architecture only after circulation/encounter gates",
+    "Reference-matched Blender/browser renders",
+    "60s matched sustained gameplay performance and full retained regressions",
+    "Physical controller/touchscreen release checks"
+  ]
+}
