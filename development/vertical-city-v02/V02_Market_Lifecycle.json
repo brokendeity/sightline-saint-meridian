@@ -1,0 +1,138 @@
+{
+  "scope": "Local controlled start; actual keys, standard controller, CDP touch and hero selector. Negative API and respawn cases labelled. No injected hazard damage or encounter state.",
+  "results": [
+    {
+      "name": "actual pause/resume freezes all civilians and both incident clocks",
+      "pass": true
+    },
+    {
+      "name": "hero selector pauses/resumes resident and walked route without resetting progress",
+      "pass": true
+    },
+    {
+      "name": "native jump pauses breadcrumb recording; resident stays on supported floor and resumes",
+      "pass": true
+    },
+    {
+      "name": "normal departure beyond market leaves resident safely waiting; marked path reconnection resumes the same rescue",
+      "pass": true
+    },
+    {
+      "name": "labelled negative street-contract API cannot replace active rescue",
+      "pass": true
+    },
+    {
+      "name": "actual End clears escort ownership/route without warping resident or awarding completion",
+      "pass": true
+    },
+    {
+      "name": "CDP touch starts incident through an unobscured 44px control; responsive captures",
+      "pass": true
+    },
+    {
+      "name": "standard simulated controller Y starts the same incident",
+      "pass": true
+    },
+    {
+      "name": "real electrical contact causes shared-health defeat; no injected damage or false rescue award",
+      "pass": true,
+      "attempt": 3,
+      "shockEvents": 13
+    },
+    {
+      "name": "labelled existing respawn API retains failed incident and safe resident position",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "entrySHA256": "c998daaa2d492d332cdeb391051f96139d99ff889db099cbeb9f0dd3d8195531",
+  "manifestSHA256": "79f8abf9f3d505fcd3212dc05c00666dd5c023a125ef327aafe47259a85f620c",
+  "encounterSHA256": "cbf52c95e723e3983898d7b8edde8b4c199b2071e4487745b433eba1bf901a2a",
+  "marketSHA256": "952b5fc3562f4e72b39c6074fe77d24e72047df3b6640aabfbdd169ce7b77601",
+  "stages": [
+    {
+      "name": "resident found",
+      "frame": 469,
+      "p": [
+        84.99105939160164,
+        24.42,
+        361.67286694116126
+      ],
+      "phase": "isolate",
+      "civilians": [
+        [
+          85,
+          24,
+          364
+        ],
+        [
+          73.95783491854309,
+          24,
+          359.05391931740826
+        ],
+        [
+          85.98916666666516,
+          24,
+          373
+        ]
+      ]
+    },
+    {
+      "name": "power isolated",
+      "frame": 591,
+      "p": [
+        82.086610550307,
+        24.42,
+        357.0905008266443
+      ],
+      "phase": "rendezvous",
+      "civilians": [
+        [
+          85,
+          24,
+          364
+        ],
+        [
+          73.53853930639936,
+          24,
+          360.935733315693
+        ],
+        [
+          87.93505935694034,
+          24,
+          373.4023742776788
+        ]
+      ]
+    },
+    {
+      "name": "escort begins",
+      "frame": 715,
+      "p": [
+        84.99335781813694,
+        24.42,
+        361.67266392085105
+      ],
+      "phase": "escort",
+      "civilians": [
+        [
+          84.99947677157884,
+          24,
+          363.81666741330827
+        ],
+        [
+          71.16195899960378,
+          24,
+          360.9559938635392
+        ],
+        [
+          87.99445746459912,
+          24,
+          375.7782985839727
+        ]
+      ]
+    }
+  ],
+  "status": "PASS market interruption/input/failure cases",
+  "fullTrace": "V02_Market_Lifecycle.trace.json.gz",
+  "traceFrames": 4399
+}

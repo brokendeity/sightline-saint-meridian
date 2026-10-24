@@ -63,3 +63,11 @@ A real multi-level encounter now uses the shared damage-taking sparring system. 
 `test_service_encounter.cjs` proves three supported spawns, atomic placement failure, grounded access to both upper decks and victory through legal combat inputs. `test_service_lifecycle.cjs` covers simulated-controller and CDP-touch start, pause, restart without healing, actual hero-selector cleanup, respawn, coexistence with street contracts and natural defeat from incoming strikes. Broader Echo/knockback/camera/escape cases remain open, along with the two other encounters. SeeV02_Encounter_Design.md.
 
 After changes, run `python3 scripts/vertical-v02/run_graybox_regressions.py` for all listed circulation, local-combat and retained-input scenarios, then `python3 scripts/vertical-v02/report_milestone.py`. The runner records exact hashes and per-job logs. It does not certify the full city. Original builds and saved GitHub snapshot refs are unchanged.
+
+## Market-rescue prototype
+
+At the lower market access[62,24,375], pressI/controllerY or the contextual Start button. Find the resident, isolate the cabinet, return and escort them to assembly. Current scenic pedestrian appearance is reused with a new, separately owned escort adapter. NPCs follow validated ground steps; jumps, leaving the area and blocked shortcuts do not teleport them. Two surrounding residents circulate independently. The original courier rescue remains unchanged.
+
+Normal-input evidence includes a complete ground-to-market approach and northern extraction, a southern escort from a labelled local setup, and interruption/input/failure cases. Civilian bases/footprint support are validated; final pedestrian animation/contact presentation and camera acceptance remain open. SeeV02_Encounter_Design.md.
+
+The full regression runner now contains16sequential scenarios, fingerprints both external encounter modules as well as entry/manifest, and rejects any runtime change during acceptance. The aggregate report requires current passing reports and exact saved-Blender encounter-marker alignment. This remains a prototype milestone; pursuit, POIs, guardrails/recovery/graph admission and all later architecture/transit/visual/performance gates remain unfinished.

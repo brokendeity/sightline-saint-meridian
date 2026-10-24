@@ -1,8 +1,8 @@
 # V02 acceptance — circulation milestone
 
-Full V02 completion is **not established**. All three destination approaches now have full normal-input traces, and public circulation reachesY128 and returns to ground. A multi-level service-yard prototype now supports legal combat and lifecycle input tests; pursuit, rescue, broader recovery, final architecture, transit, visuals and sustained performance remain open.
+Full V02 completion is **not established**. All three destination approaches now have full normal-input traces, and public circulation reachesY128 and returns to ground. Service-yard combat and the market rescue now have playable prototypes and lifecycle input evidence. Transit pursuit, broader recovery, final architecture, world life, visuals and sustained performance remain open.
 
-Candidate: `SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html` (`6b9c333d6c0e47166ba8be4da9af39b41d04335a747db607ec57e1da84ece9a3`).
+Candidate: `SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html` (`c998daaa2d492d332cdeb391051f96139d99ff889db099cbeb9f0dd3d8195531`).
 
 ## Named gameplay gates
 
@@ -33,6 +33,26 @@ Candidate: `SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html` (`6b9c333d6c0e47166ba8be4
 - ordinary enemy strikes cause natural defeat; retry cannot refill condition
 - These are local controlled-start cases. They do not certify all Echo interactions, final camera/readability, physical devices or the other encounters. Prototype opponent art remains deliberate during graybox acceptance.
 
+## Suspended-market rescue
+
+- Ground-to-market public approach through stairs and gallery
+- Find resident, isolate live supply, return and begin escort
+- Northern escort around stalls
+- Grounded civilians, bounded movement, one completion award and unchanged original courier mission
+- completed rescue releases objective presentation after normal departure from market
+- actual pause/resume freezes all civilians and both incident clocks
+- hero selector pauses/resumes resident and walked route without resetting progress
+- native jump pauses breadcrumb recording; resident stays on supported floor and resumes
+- normal departure beyond market leaves resident safely waiting; marked path reconnection resumes the same rescue
+- labelled negative street-contract API cannot replace active rescue
+- actual End clears escort ownership/route without warping resident or awarding completion
+- CDP touch starts incident through an unobscured 44px control; responsive captures
+- standard simulated controller Y starts the same incident
+- real electrical contact causes shared-health defeat; no injected damage or false rescue award
+- labelled existing respawn API retains failed incident and safe resident position
+- Full ground-to-extraction input time: 87.50s; local southern variant: 51.83s. These are different starts, not a route-speed comparison. Both use no Drive releases and preserve the original courier mission.
+- Civilian bases and physical footprint support are tested. Existing scenic models remain prototypes; final foot poses, contact presentation and camera readability are not certified here.
+
 ## Current measured behavior
 
 - lower loop: 361.8m / 55.43s, no airborne frames or Drive releases.
@@ -44,14 +64,14 @@ Candidate: `SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html` (`6b9c333d6c0e47166ba8be4
 - Public roundtrip: 2042.2m / 353.78s through stairsA/C/D, upper crossing, stairsB and original ground roads. Zero airborne frames, damage or power releases; max unexplained horizontal motion 0.000000m.
 - Banked starts collect five actual running impulses before the timed route; they do not inject resources. Original Halo actors remain active. Input-time measurements include precision slow-motion and are not human performance benchmarks.
 - The immutable V02-owner impact crash is fixed without disabling collision, injury, audio, debris or decals. Original imported-building carving still changes the original mesh/parts in a separate labelled direct test.
-- 29 exported GLBs pass glTF validation. 1766 new components, 21,192 triangles, 1,233,716 bytes. No original building copies are exported.
+- 29 exported GLBs pass glTF validation. 1779 new components, 21,348 triangles, 1,242,532 bytes. No original building copies are exported.
 - Compound-box and6392 sampled ground-road vehicle envelopes clear; these are not continuous train/traffic or triangle collision certification.
 
 ## Design and remaining gates
 
-The graph has116 nodes /241 directed edges. Rail/Pop/landing phases are distinct. Some public hub junctions and edge admission still require alignment with measured traces, so proposed graph statuses do not automatically become certified. Three encounter spaces/landmarks and four POIs are designed. Service-yard combat and local lifecycle now have input evidence; transit pursuit, market rescue and POI discovery remain unfinished. Do not advance to detailed architecture while essential encounter/recovery gates remain open.
+The graph has121 nodes /251 directed edges. Rail/Pop/landing phases are distinct. Some public hub junctions and edge admission still require alignment with measured traces, so proposed graph statuses do not automatically become certified. Three encounter spaces/landmarks and four POIs are designed. Service-yard combat and market rescue have normal-input evidence, including a ground-to-market approach. Transit pursuit and POI discovery remain unfinished; actor art, wider interaction/camera and recovery acceptance remain separate. Do not advance to detailed architecture while essential encounter/recovery gates remain open.
 
-- Implement transit pursuit and market rescue; expand service-yard Echo/cross-level/escape/camera acceptance
+- Implement transit pursuit; expand service-yard Echo/cross-level/escape/camera and market presentation acceptance
 - Runtime landmark/navigation cues and four discoverable POIs
 - Refine graph junctions/admission against actual input traces; graph edge proposals are not route certification
 - V02 physical rail-to-rail transfer, missed anchors, no-Pop and wider recovery/camera/contact cases

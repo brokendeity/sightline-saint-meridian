@@ -66,6 +66,13 @@
       "fix": "Real Blender side connection outside the final stair flight; hole remains over required stair headroom.",
       "evidence": "evidence/fixed-defects/station-exit-gap-before.trace.json.gz",
       "verification": "V02_Public_Roundtrip_Validation.json, zero unsupported frames"
+    },
+    {
+      "name": "rescued resident freezes in the final walking stride",
+      "observed": "Actual post-extraction browser capture shows crossed, frozen legs. Scenic walker prototype was reused without a stationary transition.",
+      "fix": "New market clones normalize the neutral visual sole pivot and blend stationary leg rotations to neutral over simulation time; physical bases/routes and hero animation are unchanged.",
+      "verification": "V02_Market_Rescue_Public.json and South variant inspect actual scene geometry soles and neutral leg transforms after a three-second stop; current hash-bound regressions required.",
+      "evidenceNote": "Observed in a browser capture before the idle fix; a reliable retained pre-fix image is unavailable. Current after-fix transforms and sole heights are recorded in the rescue reports."
     }
   ]
 }

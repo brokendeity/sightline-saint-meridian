@@ -1,6 +1,6 @@
-# V02 encounter spaces — service prototype and remaining designs
+# V02 encounter spaces — service/market prototypes and pursuit design
 
-The current live city, collision export and measured 0.55 m body radius are authoritative. All coordinates below are game metres, Y up, with architectural deck-top heights; the player origin is 0.42 m higher. Original missions, building ownership and road graphs remain unchanged. Service-yard combat has a playable prototype; pursuit and rescue are still designs. Local service tests are not full district acceptance.
+The current live city, collision export and measured 0.55 m body radius are authoritative. All coordinates below are game metres, Y up, with architectural deck-top heights; the player origin is 0.42 m higher. Original missions, building ownership and road graphs remain unchanged. Service-yard combat and market rescue have playable prototypes; transit pursuit is still a design. Local service tests are not full district acceptance.
 
 ## Transit interchange pursuit
 
@@ -30,9 +30,17 @@ Current evidence: `V02_Service_Encounter.json` and `V02_Service_Lifecycle.json`,
 
 Main deck: X58–93, Z353–379, Y24 (35×26 m). Two gallery entrances and the lower return crossing serve this public destination. Reserve a 6 m through-route; merchant stalls sit off it. Two civilians circulate on supported loops and through marked entrances. An incident occurs beside the central stall while the extraction point stays on the same deck, reachable without rails, Drive or courier flight.
 
-Reuse civilian appearance and the existing rescue/follow primitives where valid. Backspool needs a local rescue objective adapter; the hero's rail-dependent courier objective must not be repurposed. The incident has a visible start, safe approach, escorted return and unambiguous extraction condition. Ambient walkers and incident actors have separate ownership and lifecycle.
+The original courier rescue supports rooftop pickup/carry, not a civilian escort. The new candidate therefore owns a separate incident adapter in `scripts/game_vertical_market_v02.js`; it reuses current scenic pedestrian appearance, shared hero health and native ground/body clearance. It never registers civilians as Halo combatants or modifies courier passengers, roof civilians or rescue anchors.
 
-Acceptance: interact, reach civilian, escort to extraction through normal movement; recover from leaving the deck; pause/retry/hero switch; no floating civilians or blocked stalls; keep existing rooftop rescues intact.
+Implemented graybox: two physical counters at[71,24,365] and[83,24,369], with visible posts and canopies at27.7m. Their underside is3.4m above the market floor. A real isolation cabinet stands at[82,24,355.4], with interaction stance[82,24,357]. Resident[85,24,364], incident access[62,24,375], assembly[62,24,357]. Two other residents circulate on clearance-checked paths. Both public gallery entrances remain clear. A clear8×8m landing region is available atX58.5–66.5/Z362–370.5.
+
+Press **I**, controller **Y interaction**, or the contextual button. Find the resident outside the amber fault ring, isolate the supply, return to begin the escort, then walk to green assembly. The live fault applies8shared-health damage per1.2simulation seconds on actual contact; isolation stops it. It can cause a real defeat. The escort follows a bounded queue of the player's physically supported footsteps at up to2.2m/s. Jumps, blocked shortcuts and leaving the market produce a waiting explanation and a route-reconnection cue. No catch-up teleport is used. Explicit Start/Retry resets the resident to the fixed incident position; End leaves the resident at their last safe position.
+
+Pause freezes the local clock and all residents. Hero switching pauses rescue progress and the escort route; ambient residents still use the active world clock. Returning as Backspool resumes the same attempt. Defeat/respawn retain a failed outcome; Start never restores condition. Successful extraction requires both resident and player in the assembly area and awards450once per attempt. Completed objectives relinquish HUD ownership when the player leaves the market. Existing street contracts cannot be replaced by beginning the rescue, and cannot start over an active rescue.
+
+`V02_Market_Rescue_Public.json` demonstrates the entire ordinary ground→stairsA→lower gallery→market approach and the complete incident through normal inputs. `V02_Market_Rescue_South.json` demonstrates the longer southern flank from one labelled local setup. The starts differ, so their total times are not a speed comparison. Both routes preserve the original courier mission snapshot, keep actor bases atY24 and bound per-frame movement. `V02_Market_Lifecycle.json` covers pause, hero switching, native jumping, leaving/reconnecting, End, controller/CDP-touch starts, real fault defeat and labelled respawn/negative API cases. Current hashes and the aggregate report are the acceptance authority.
+
+The graph separates the player's safe resident-interaction stance from the civilian origin. Civilian escort edges explicitly require isolated power and a begun escort, and do not masquerade as unconditional player-walking links. Actual route traces, not these design labels alone, prove the tested movement. Existing scenic meshes remain prototypes. Post-extraction captures exposed a frozen mid-stride idle; new clones now normalize their neutral sole pivot and blend stationary legs to neutral without altering navigation bases or hero animation. Actual scene geometry/leg transforms are checked after stopping. Final walking foot poses, civilian art, interaction animation and camera/readability polish remain part of later acceptance.
 
 ## Common ownership and feedback
 

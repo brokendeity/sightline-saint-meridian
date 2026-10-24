@@ -7,7 +7,11 @@ import os,json,hashlib,subprocess,time,sys
 from pathlib import Path
 R=Path(__file__).resolve().parents[2];D=R/'development/vertical-city-v02'
 jobs=[
+ ('market-public',['node','scripts/vertical-v02/test_market_rescue.cjs'],{}),
+ ('market-south',['node','scripts/vertical-v02/test_market_rescue.cjs'],{'LOCAL_ONLY':'1','SOUTH_ROUTE':'1'}),
+ ('market-lifecycle',['node','scripts/vertical-v02/test_market_lifecycle.cjs'],{}),
  ('service',['node','scripts/vertical-v02/test_service_encounter.cjs'],{}),
+ ('service-lifecycle',['node','scripts/vertical-v02/test_service_lifecycle.cjs'],{}),
  ('loops',['node','scripts/vertical-v02/test_loops.cjs'],{}),
  ('public-run',['node','scripts/vertical-v02/test_public_station.cjs'],{'RUN_PUBLIC':'1'}),
  ('public-walk',['node','scripts/vertical-v02/test_public_station.cjs'],{}),
@@ -20,7 +24,7 @@ jobs=[
  ('impact',['node','scripts/vertical-v02/test_impact_ownership.cjs'],{}),
  ('whip',['node','scripts/vertical-v02/test_preserved_whip_inputs.cjs'],{}),
 ]
-files={'entry':'SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html','manifest':'assets/city/vertical-v02/graybox/manifest.json','encounters':'scripts/game_vertical_encounters_v02.js'}
+files={'entry':'SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html','manifest':'assets/city/vertical-v02/graybox/manifest.json','encounters':'scripts/game_vertical_encounters_v02.js','market':'scripts/game_vertical_market_v02.js'}
 hashes={k:hashlib.sha256((R/p).read_bytes()).hexdigest()for k,p in files.items()}
 report_file=D/'V02_Regression_Run.json'
 report={'status':'RUNNING','hashes':hashes,'jobs':[],'scope':'Current graybox circulation, local service combat and retained inputs; not complete V02 acceptance.'}
@@ -33,6 +37,7 @@ for name,cmd,env in jobs[start:]:
  report['active']=name;report_file.write_text(json.dumps(report,indent=2)+'\n');print('START',name,flush=True)
  t=time.monotonic();log=D/'evidence'/('regression-'+name+'.log')
  with log.open('w')as f:run=subprocess.run(cmd,cwd=R,env={**os.environ,**env},stdout=f,stderr=subprocess.STDOUT)
+ assert hashes=={k:hashlib.sha256((R/p).read_bytes()).hexdigest()for k,p in files.items()},'Runtime changed during acceptance; repeat against one build'
  report['jobs'].append({'name':name,'command':cmd,'environment':env,'returncode':run.returncode,'wallSeconds':round(time.monotonic()-t,2),'log':str(log.relative_to(R))})
  print('DONE',name,run.returncode,flush=True)
  if run.returncode:

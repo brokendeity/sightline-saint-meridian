@@ -3,7 +3,7 @@
 const {chromium}=require('/opt/homebrew/lib/node_modules/playwright'),fs=require('fs'),path=require('path'),assert=require('assert/strict'),crypto=require('crypto');
 const {saveEvidence}=require('./evidence_io.cjs');const R=path.resolve(__dirname,'../..'),D=path.join(R,'development/vertical-city-v02');
 const report={scope:'Local service-yard lifecycle, normal controller and touch start; direct respawn API case labelled. Physical devices and other encounters untested.',results:[],trace:[],errors:[]};
-for(const [key,file]of Object.entries({entrySHA256:'SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html',manifestSHA256:'assets/city/vertical-v02/graybox/manifest.json',encounterSHA256:'scripts/game_vertical_encounters_v02.js'}))report[key]=crypto.createHash('sha256').update(fs.readFileSync(path.join(R,file))).digest('hex');
+for(const [key,file]of Object.entries({entrySHA256:'SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html',manifestSHA256:'assets/city/vertical-v02/graybox/manifest.json',encounterSHA256:'scripts/game_vertical_encounters_v02.js',marketSHA256:'scripts/game_vertical_market_v02.js'}))report[key]=crypto.createHash('sha256').update(fs.readFileSync(path.join(R,file))).digest('hex');
 (async()=>{const b=await chromium.launch({headless:true,args:['--use-gl=angle','--use-angle=metal']});let p;
 try{
  p=await b.newPage({viewport:{width:1280,height:800}});p.on('pageerror',e=>report.errors.push(String(e)));p.on('console',m=>{if(m.type()==='error')report.errors.push(m.text())});

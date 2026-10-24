@@ -26,16 +26,17 @@ def compose_encounters(s):
  # Preserve shared hero vitals, but let the active local encounter own only its
  # objective presentation. No street-contract progress is discarded.
  edit("if(!c&&window.backspoolEncounterState?.().active)panel.hidden=true;",
-      "if(!c&&window.backspoolEncounterState?.().active||window.verticalEncounters?.ownsPresentation())panel.hidden=true;")
+      "if(!c&&window.backspoolEncounterState?.().active||window.verticalEncounters?.ownsPresentation()||window.verticalMarket?.ownsPresentation())panel.hidden=true;")
  edit("function resetPlayer(){window.threadrailGame?.lifecycle('RESPAWN');",
-      "function resetPlayer(){window.verticalEncounters?.reset('RESPAWN');window.threadrailGame?.lifecycle('RESPAWN');")
+      "function resetPlayer(){window.verticalMarket?.reset('RESPAWN');window.verticalEncounters?.reset('RESPAWN');window.threadrailGame?.lifecycle('RESPAWN');")
  edit('backspoolEncounters.tick(playerDt);actionWorld.tick(playerDt);',
-      'backspoolEncounters.tick(playerDt);actionWorld.tick(playerDt);window.verticalEncounters?.tick(playerDt);')
+      'backspoolEncounters.tick(playerDt);actionWorld.tick(playerDt);window.verticalEncounters?.tick(playerDt);window.verticalMarket?.tick(worldDt);')
  edit('backspoolPowers.ui();backspoolEncounters.present();threadrailGame.present();',
-      'backspoolPowers.ui();backspoolEncounters.present();threadrailGame.present();window.verticalEncounters?.present();')
+      'backspoolPowers.ui();backspoolEncounters.present();threadrailGame.present();window.verticalEncounters?.present();window.verticalMarket?.present();')
  edit('window.actionWorld?.present();adaptiveQuality.update(dt);',
-      'window.actionWorld?.present();window.verticalEncounters?.present();adaptiveQuality.update(dt);')
+      'window.actionWorld?.present();window.verticalEncounters?.present();window.verticalMarket?.present();adaptiveQuality.update(dt);')
  # Use the already established equipment-interact action on keyboard/controller.
  edit("function interact(){say('BACKSPOOL · EQUIPMENT READY');}",
-      "function interact(){if(window.verticalEncounters?.interact())return;say('BACKSPOOL · EQUIPMENT READY');}")
+      "function interact(){if(window.verticalMarket?.interact()||window.verticalEncounters?.interact())return;say('BACKSPOOL · EQUIPMENT READY');}")
+ edit("function startContract(resume=false){if(!gameActive", "function startContract(resume=false){if(window.verticalMarket?.isActive()){notice('Finish or end the market rescue first.');return false;}if(!gameActive")
  return s

@@ -5,7 +5,7 @@ const fs=require('fs'),path=require('path'),crypto=require('crypto'),assert=requ
 const {saveEvidence}=require('./evidence_io.cjs');
 const R=path.resolve(__dirname,'../..'),D=path.join(R,'development/vertical-city-v02');
 const report={scope:'Service-yard local encounter; single initial fixture, no route-node teleporting or injected damage. Other district encounters and full V02 acceptance remain pending.',entry:'SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html',results:[],trace:[],errors:[]};
-for(const [key,file]of Object.entries({entrySHA256:report.entry,manifestSHA256:'assets/city/vertical-v02/graybox/manifest.json',encounterSHA256:'scripts/game_vertical_encounters_v02.js'}))report[key]=crypto.createHash('sha256').update(fs.readFileSync(path.join(R,file))).digest('hex');
+for(const [key,file]of Object.entries({entrySHA256:report.entry,manifestSHA256:'assets/city/vertical-v02/graybox/manifest.json',encounterSHA256:'scripts/game_vertical_encounters_v02.js',marketSHA256:'scripts/game_vertical_market_v02.js'}))report[key]=crypto.createHash('sha256').update(fs.readFileSync(path.join(R,file))).digest('hex');
 (async()=>{const browser=await chromium.launch({headless:true,args:['--use-gl=angle','--use-angle=metal']});let p;
 try{
  p=await browser.newPage({viewport:{width:1280,height:800}});p.on('pageerror',e=>report.errors.push(String(e)));p.on('console',m=>{if(m.type()==='error')report.errors.push(m.text())});

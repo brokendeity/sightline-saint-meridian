@@ -16,6 +16,7 @@ const verticalEncounters=(()=>{
  function start(){
   if(!gameActive||!verticalDistrictState().ready||!isHero())return false;
   if(courier.trauma>=100)return notice('Recalibrate at the plaza, then return to the yard.');
+  if(window.verticalMarket?.isActive())return notice('Finish or end the market rescue first.');
   if(!s.onGround||!(near()||own()&&inside()))return notice('Reach the service-yard access marker on the west side.');
   const street=actionWorldState().contracts.active;
   if(street&&['active','paused'].includes(street.status))return notice('Finish or end your street contract first.');
@@ -47,7 +48,7 @@ const verticalEncounters=(()=>{
   else if(!inside()){state.message='Outside the yard · opponents return to their positions without healing. Return or end the encounter.';}
  }
  function interact(){if(!near()||!isHero()||state.phase==='active')return false;start();return true;}
- function ownsPresentation(){return isHero()&&gameActive&&(state.phase==='active'||own()||near()&&!streetBusy()&&!backspoolEncounterState().active);}
+ function ownsPresentation(){return !window.verticalMarket?.ownsPresentation()&&isHero()&&gameActive&&(state.phase==='active'||own()||near()&&!streetBusy()&&!backspoolEncounterState().active);}
  function present(){
   const visible=ownsPresentation();panel.hidden=!visible;marker.visible=gameActive&&isHero()&&verticalDistrictState().ready;
   if(!visible)return;

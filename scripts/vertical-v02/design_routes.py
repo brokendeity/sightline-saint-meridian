@@ -64,8 +64,23 @@ for id,x,y,z,sx,sz,collection,role in [
  structure(id,[x,y-.3,z],[sx,.6,sz],collection,role,walkable=True)
  node(id,x,y,z,'encounter'if y<100 else 'landmark',structuralOwner='v02:'+id)
 # Integrate destinations with actual gallery positions via supported connectors.
-edge('W24_376','suspended-market');edge('E24_376','suspended-market')
+edge('W24_376','suspended-market');edge('E24_376','suspended-market',path=[[96,24,376],[89,24,376],[89,24,366],[75.5,24,366]])
 edge('W52_326','service-yard');edge('E52_326','service-yard')
+# Market incident graybox: physically visible counters, clear public entries,
+# human-height canopy clearance and a real isolation cabinet beside the fault.
+for id,x,z in [('west',71,365),('east',83,369)]:
+ structure('market-counter-'+id,[x,24.45,z],[4,.9,2],'SM_V02_MARKET','merchant counter outside public and rescue paths',walkable=True)
+ structure('market-canopy-'+id,[x,27.55,z],[4.5,.3,2.5],'SM_V02_MARKET','small commercial canopy with human/camera clearance',walkable=True)
+ for dx in [-1.9,1.9]:
+  for dz in [-.9,.9]:structure(f'market-post-{id}-{dx}-{dz}',[x+dx,25.7,z+dz],[.16,3.4,.16],'SM_V02_MARKET','visible stall canopy support')
+structure('market-isolator',[82,24.65,355.4],[.8,1.3,.55],'SM_V02_MARKET','physical power isolation cabinet for civilian rescue')
+for id,p,kind in [('market-access',[62,24,375],'encounter-access'),('market-resident',[85,24,361.8],'civilian-interaction-stance'),('market-escort-origin',[85,24,364],'civilian-start'),('market-isolation',[82,24,357],'interaction'),('market-assembly',[62,24,357],'extraction')]:node(id,*p,kind)
+edge('W24_376','market-access','walk',path=[[55,24,376],[62,24,376],[62,24,375]])
+edge('market-access','market-resident','walk',path=[[62,24,375],[62,24,360],[85,24,360],[85,24,361.8]])
+edge('market-resident','market-isolation','walk',path=[[85,24,361.8],[85,24,360],[82,24,357]])
+edge('market-isolation','market-assembly','walk',path=[[82,24,357],[62,24,357]])
+edge('market-escort-origin','market-assembly','walk',path=[[85,24,364],[85,24,360],[77,24,360],[77,24,357],[62,24,357]],reverse=False,traversalAgent='civilian',requiredGameplayConditions=['market-rescue.power-isolated','market-rescue.escort-started'],recovery='Civilian waits on the last supported route if the player leaves; return without resetting')
+edge('market-escort-origin','market-assembly','walk',path=[[85,24,364],[89,24,364],[89,24,377],[62,24,377],[62,24,357]],reverse=False,traversalAgent='civilian',requiredGameplayConditions=['market-rescue.power-isolated','market-rescue.escort-started'],risk='low',variant='longer southern flank around market counters',recovery='Both market entrances and the lower west gallery remain open')
 # Primary public switchback stair, secondary public stair at the other end of the district.
 # Exact risers are authored next; graph includes their true switchback path, not vertical walk edges.
 stairs=[]
@@ -84,7 +99,7 @@ def stair(id,x,z,levels,public=True):
   if flights%2:poly += [[x+6.2,hi,south],[x+6.2,hi,north],[x-3,hi,north]]
   poly += [by[interfaces[hi]]['position']]
   edge(interfaces[lo],interfaces[hi],'stairs',path=poly,recovery='continuous guardrails and full switchback landings',architectureGate='Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification')
- stairs.append({'id':id,'x':x,'z':z,'levels':levels,'publicPortal':public,'flightWidth':3.2,'landingWidth':9.2,'riseMax':.18,'tread':.36,'flightRiseMax':3.2,'interfaces':interfaces,'status':'design; test first flight before full build'})
+ stairs.append({'id':id,'x':x,'z':z,'levels':levels,'publicPortal':public,'flightWidth':3.2,'landingWidth':12.4,'riseMax':.18,'tread':.36,'flightRiseMax':3.2,'interfaces':interfaces,'status':'design; test first flight before full build'})
  return interfaces
 A=stair('V2-VT-A',64,220,[0,24,52,84]);B=stair('V2-VT-B',103,414,[0,24,52,84,128]);C=stair('V2-VT-C',64,380,[84,100]);U=stair('V2-VT-D',64,408,[100,128]);
 # A real, independently supported combat mezzanine and overhead maintenance route.
@@ -166,14 +181,18 @@ loops=[{'id':'lower','elevation':24,'nodes':spine('W',24,210,350)+spine('E',24,3
 routes=[{'id':'A-public','start':'ground-access','destination':'station-concourse','via':['V2-VT-A-0','V2-VT-A-24','V2-VT-A-52','V2-VT-A-84','W84_210','W84_376','V2-VT-C-84','V2-VT-C-100'],'allowed':['run','stairs'],'requiredAfterstepImpulses':0,'inputValidation':'NOT TESTED'}, {'id':'B-momentum','start':'ground-access','destination':'station-concourse','via':['V2-VT-A-84','W84_300','fast-launch','momentum-pop-1','momentum-touchdown-1','momentum-landing','momentum-relaunch','momentum-pop-2','momentum-touchdown-2'],'allowed':['flow-run','stairs','run','threadrail','rail-pop'],'requiredAfterstepImpulses':0,'inputValidation':'NOT TESTED; energetic screen passes only with fresh running momentum on both rails'}, {'id':'C-mastery','start':'ground-access','destination':'station-concourse','via':['V2-VT-A-84','W84_300','wall-shelf-96','wall-shelf-108','wall-shelf-120','wall-shelf-128','W128_276','W128_300','W128_430','high-rail-start','pop-launch','mastery-recovery-118','mastery-recovery-108'],'allowed':['run','stairs','wall-climb','threadrail','rail-pop','controlled-drop','afterstep-transfer'],'requiredAfterstepImpulses':0,'optionalAfterstepImpulses':1,'inputValidation':'NOT TESTED; no exact landing claim'}]
 # Check graph invariants and public strong connectivity; logical proof is deliberately distinct from playability.
 assert len(by)==len(nodes)
-for e in edges:assert e['source']in by and e['destination']in by and e['distance3D']>=abs(e['elevationChange'])-1e-6
+for e in edges:
+ e.setdefault('traversalAgent','player')
+ if e['traversalAgent']=='civilian':
+  e['expectedSeconds']=round(e['distance3D']/2.2,3);e['timeEvidence']='authored civilian speed limit2.2m/s; waits and turns require measured input evidence'
+ assert e['source']in by and e['destination']in by and e['distance3D']>=abs(e['elevationChange'])-1e-6
 lookup={(e['source'],e['destination']):e for e in edges}
 for l in loops:
  assert l['nodes'][0]==l['nodes'][-1]
  assert all((a,b)in lookup for a,b in zip(l['nodes'],l['nodes'][1:])),l['id']
 adj={n['id']:[]for n in nodes}
 for e in edges:
- if e['ability']in['run','stairs','flow-run'] and not e['requiredAfterstepImpulses']:adj[e['source']].append(e['destination'])
+ if e['traversalAgent']=='player'and e['ability']in['walk','run','stairs','flow-run'] and not e['requiredAfterstepImpulses']:adj[e['source']].append(e['destination'])
 seen=set();stack=['ground-access']
 while stack:
  n=stack.pop()
@@ -184,9 +203,15 @@ report={'schema':'sm-v02-movement-graph-1','axes':{'up':'Y','units':'metres','de
 report['encounters']=[{'id':'service-combat','title':'SERVICE YARD · COMBAT','trigger':[62,52,337],
  'positions':[[65,52,330],[73,52,327],[85.5,55.2,329]],'reward':350,
  'bounds':{'min':[51,51.9,308],'max':[99,61,343]},'actorType':'existing damage-taking sparring prototype',
- 'status':'runtime adapter; acceptance is hash-bound external evidence, not this design record'}]
+ 'status':'runtime adapter; acceptance is hash-bound external evidence, not this design record'},
+ {'id':'market-rescue','title':'SUSPENDED MARKET · RESCUE','trigger':[62,24,375],
+  'positions':[[85,24,364],[66,24,358],[77,24,373]],'reward':450,
+  'isolation':[82,24,357],'extraction':[62,24,357],'hazard':[85,24,364],
+  'patrols':[[[66,24,358],[74,24,358],[74,24,361],[66,24,361]],[[77,24,373],[88,24,373],[88,24,376],[77,24,376]]],
+  'bounds':{'min':[51,23.9,349],'max':[99,26,381]},'actorType':'existing scenic pedestrian appearance; new collision-checked escort adapter',
+  'status':'new runtime adapter; acceptance requires normal-input incident, escort and lifecycle tests'}]
 (D/'V02_Movement_Graph.json').write_text(json.dumps(report,indent=2)+'\n')
 (D/'V02_Design_Clearance.json').write_text(json.dumps({'status':'box precheck only','checkedStructures':len(checks),'failures':[c for c in checks if c['status'].startswith('FAIL')],'edgeFailures':[{'id':e['id'],'source':e['source'],'destination':e['destination'],'hits':e.get('originalConflicts')}for e in edges if e['validation']['geometry'].startswith('FAIL')],'checks':checks,'excluded':'V1 vertical prototype is replaced only in V02 candidate; original city and non-V1 props included'},indent=2)+'\n')
 with (D/'V02_AbilityRoute_Matrix.csv').open('w',newline='')as f:
- fields=['id','source','destination','ability','elevationChange','horizontalDistance','distance3D','requiredAfterstepImpulses','expectedSeconds','difficulty','risk','failureRecovery'];writer=csv.DictWriter(f,fieldnames=fields,lineterminator='\n');writer.writeheader();writer.writerows({k:e[k]for k in fields}for e in edges)
+ fields=['id','source','destination','ability','traversalAgent','elevationChange','horizontalDistance','distance3D','requiredAfterstepImpulses','expectedSeconds','difficulty','risk','failureRecovery'];writer=csv.DictWriter(f,fieldnames=fields,lineterminator='\n');writer.writeheader();writer.writerows({k:e[k]for k in fields}for e in edges)
 print(json.dumps({'nodes':len(nodes),'directedEdges':len(edges),'proposedLoops':len(loops),'structures':len(structures),'boxFailures':len([c for c in checks if c['status'].startswith('FAIL')]),'edgeVolumeFailures':len([e for e in edges if e['validation']['geometry'].startswith('FAIL')]),'publicReachableNodes':len(seen)},indent=2))
