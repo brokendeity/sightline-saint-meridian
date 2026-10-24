@@ -1,0 +1,23 @@
+{
+  "status": "PASS spatial-export integrity only",
+  "checks": [
+    "310 unique loaded building IDs",
+    "lane outgoing turn IDs resolve; turn source/destination lane IDs resolve",
+    "finite lane points",
+    "310 reconstructed envelopes match live envelopes within1mm",
+    "952 existing vertical colliders retained",
+    "four visible V1 instancing batches exported"
+  ],
+  "activeLanes": 642,
+  "fingerprint": {
+    "buildingGeometry": "47758b248508482a98a4eb6bbebf0c85322b1e27b2a3a9f970ace5068c635818",
+    "buildingTransforms": "0e11b5bacd0065512b14927b1178fce3fbdf1876049293ec05630469aff4c61b",
+    "roadLanes": "f1c9a6b98582e7c1b0c5025012a86435e42c1633b08325974d13965a162cfba5"
+  },
+  "notEstablished": [
+    "walkable roof certification",
+    "train swept clearance",
+    "normal-input route traversal",
+    "all future mission permutations"
+  ]
+}

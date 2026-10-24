@@ -1,0 +1,5567 @@
+{
+  "authority": {
+    "capturedAt": "2026-10-24T11:33:17.588Z",
+    "commit": "c3eacd02ba2dbc0c964f27e4c9ffe92b48118737",
+    "branch": "feature/saint-meridian-aaa-vertical-city-v02",
+    "entrySHA256": "fac92161657cb93c8500d6afbc2900748b7cadfc015c019eeddf0366cdf070e4",
+    "geometryFile": "V02_BuildingGeometry.json",
+    "geometrySHA256": "47758b248508482a98a4eb6bbebf0c85322b1e27b2a3a9f970ace5068c635818"
+  },
+  "method": "Strict positive-volume AABB intersection against actual compound structural boxes; no triangle sweep, supports, facade portal, train or gameplay certification.",
+  "crossings": [
+    {
+      "id": "V2-BR-L2",
+      "x": 80,
+      "z": 350,
+      "y": 24,
+      "width": 50,
+      "depth": 7,
+      "role": "lower loop return crossing",
+      "status": "proposed",
+      "deckBounds": {
+        "min": [
+          55.0,
+          23.4,
+          346.5
+        ],
+        "max": [
+          105.0,
+          24.0,
+          353.5
+        ]
+      },
+      "deckConflicts": [],
+      "headroomConflicts": [],
+      "spatialStatus": "compound-box clear; gameplay not tested",
+      "adjustmentCandidates": [
+        {
+          "x": 80,
+          "y": 24,
+          "z": 348,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 24,
+          "z": 350,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 24,
+          "z": 352,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 24,
+          "z": 354,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 24,
+          "z": 356,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 24,
+          "z": 358,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 24,
+          "z": 360,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 24,
+          "z": 362,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 24,
+          "z": 364,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 24,
+          "z": 366,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 24,
+          "z": 368,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 24,
+          "z": 370,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 24,
+          "z": 372,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 24,
+          "z": 374,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 24,
+          "z": 376,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 24,
+          "z": 378,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 24,
+          "z": 380,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        }
+      ]
+    },
+    {
+      "id": "V2-BR-M1",
+      "x": 80,
+      "z": 280,
+      "y": 52,
+      "width": 50,
+      "depth": 8,
+      "role": "redesign V1 rejected crossing at verified portal",
+      "status": "redesign",
+      "deckBounds": {
+        "min": [
+          55.0,
+          51.400000000000006,
+          276.0
+        ],
+        "max": [
+          105.0,
+          52.0,
+          284.0
+        ]
+      },
+      "deckConflicts": [
+        {
+          "building": "building-160",
+          "part": "building-160/part-11",
+          "role": "Rear megablock spine"
+        }
+      ],
+      "headroomConflicts": [
+        {
+          "building": "building-160",
+          "part": "building-160/part-11",
+          "role": "Rear megablock spine"
+        }
+      ],
+      "spatialStatus": "conflict",
+      "adjustmentCandidates": [
+        {
+          "x": 80,
+          "y": 52,
+          "z": 250,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 252,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 254,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 256,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 258,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 260,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 262,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 264,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 266,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 268,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 270,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 272,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 274,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 276,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        }
+      ]
+    },
+    {
+      "id": "V2-BR-M2",
+      "x": 80,
+      "z": 350,
+      "y": 52,
+      "width": 50,
+      "depth": 8,
+      "role": "mid-city loop return crossing",
+      "status": "proposed",
+      "deckBounds": {
+        "min": [
+          55.0,
+          51.400000000000006,
+          346.0
+        ],
+        "max": [
+          105.0,
+          52.0,
+          354.0
+        ]
+      },
+      "deckConflicts": [],
+      "headroomConflicts": [],
+      "spatialStatus": "compound-box clear; gameplay not tested",
+      "adjustmentCandidates": [
+        {
+          "x": 80,
+          "y": 52,
+          "z": 348,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 350,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 352,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 354,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 356,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 358,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 360,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 362,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 364,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 366,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 368,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 370,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 372,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 374,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 376,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 378,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 52,
+          "z": 380,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        }
+      ]
+    },
+    {
+      "id": "V2-BR-H2",
+      "x": 80,
+      "z": 430,
+      "y": 84,
+      "width": 50,
+      "depth": 7,
+      "role": "high level loop return crossing",
+      "status": "proposed",
+      "deckBounds": {
+        "min": [
+          55.0,
+          83.4,
+          426.5
+        ],
+        "max": [
+          105.0,
+          84.0,
+          433.5
+        ]
+      },
+      "deckConflicts": [],
+      "headroomConflicts": [],
+      "spatialStatus": "compound-box clear; gameplay not tested",
+      "adjustmentCandidates": [
+        {
+          "x": 80,
+          "y": 84,
+          "z": 400,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 402,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 404,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 406,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 408,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 410,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 412,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 414,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 416,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 418,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 420,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 422,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 424,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 426,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 428,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 430,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 432,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 434,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 436,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 438,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 440,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 442,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        },
+        {
+          "x": 80,
+          "y": 84,
+          "z": 444,
+          "status": "box/headroom precheck only; supports/endpoints/camera/normal-input traversal pending"
+        }
+      ]
+    }
+  ],
+  "segmentedSpines": [
+    {
+      "id": "V2-SP-55-24",
+      "x": 55,
+      "z0": 210,
+      "z1": 430,
+      "y": 24,
+      "status": "proposed",
+      "purpose": "segmented walkable spine, clearance-route around host facades",
+      "segments": [
+        {
+          "z0": 210,
+          "z1": 215,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              210.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              215.0
+            ]
+          }
+        },
+        {
+          "z0": 215,
+          "z1": 220,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              215.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              220.0
+            ]
+          }
+        },
+        {
+          "z0": 220,
+          "z1": 225,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              220.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              225.0
+            ]
+          }
+        },
+        {
+          "z0": 225,
+          "z1": 230,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              225.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              230.0
+            ]
+          }
+        },
+        {
+          "z0": 230,
+          "z1": 235,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              230.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              235.0
+            ]
+          }
+        },
+        {
+          "z0": 235,
+          "z1": 240,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              235.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              240.0
+            ]
+          }
+        },
+        {
+          "z0": 240,
+          "z1": 245,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              240.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              245.0
+            ]
+          }
+        },
+        {
+          "z0": 245,
+          "z1": 250,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              245.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              250.0
+            ]
+          }
+        },
+        {
+          "z0": 250,
+          "z1": 255,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              250.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              255.0
+            ]
+          }
+        },
+        {
+          "z0": 255,
+          "z1": 260,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              255.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              260.0
+            ]
+          }
+        },
+        {
+          "z0": 260,
+          "z1": 265,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              260.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              265.0
+            ]
+          }
+        },
+        {
+          "z0": 265,
+          "z1": 270,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              265.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              270.0
+            ]
+          }
+        },
+        {
+          "z0": 270,
+          "z1": 275,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              270.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              275.0
+            ]
+          }
+        },
+        {
+          "z0": 275,
+          "z1": 280,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              275.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              280.0
+            ]
+          }
+        },
+        {
+          "z0": 280,
+          "z1": 285,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              280.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              285.0
+            ]
+          }
+        },
+        {
+          "z0": 285,
+          "z1": 290,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              285.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              290.0
+            ]
+          }
+        },
+        {
+          "z0": 290,
+          "z1": 295,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              290.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              295.0
+            ]
+          }
+        },
+        {
+          "z0": 295,
+          "z1": 300,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              295.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              300.0
+            ]
+          }
+        },
+        {
+          "z0": 300,
+          "z1": 305,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              300.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              305.0
+            ]
+          }
+        },
+        {
+          "z0": 305,
+          "z1": 310,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              305.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              310.0
+            ]
+          }
+        },
+        {
+          "z0": 310,
+          "z1": 315,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              310.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              315.0
+            ]
+          }
+        },
+        {
+          "z0": 315,
+          "z1": 320,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              315.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              320.0
+            ]
+          }
+        },
+        {
+          "z0": 320,
+          "z1": 325,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              320.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              325.0
+            ]
+          }
+        },
+        {
+          "z0": 325,
+          "z1": 330,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              325.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              330.0
+            ]
+          }
+        },
+        {
+          "z0": 330,
+          "z1": 335,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              330.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              335.0
+            ]
+          }
+        },
+        {
+          "z0": 335,
+          "z1": 340,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              335.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              340.0
+            ]
+          }
+        },
+        {
+          "z0": 340,
+          "z1": 345,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              340.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              345.0
+            ]
+          }
+        },
+        {
+          "z0": 345,
+          "z1": 350,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              345.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              350.0
+            ]
+          }
+        },
+        {
+          "z0": 350,
+          "z1": 355,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              350.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              355.0
+            ]
+          }
+        },
+        {
+          "z0": 355,
+          "z1": 360,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              355.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              360.0
+            ]
+          }
+        },
+        {
+          "z0": 360,
+          "z1": 365,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              360.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              365.0
+            ]
+          }
+        },
+        {
+          "z0": 365,
+          "z1": 370,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              365.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              370.0
+            ]
+          }
+        },
+        {
+          "z0": 370,
+          "z1": 375,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              370.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              375.0
+            ]
+          }
+        },
+        {
+          "z0": 375,
+          "z1": 380,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              375.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              380.0
+            ]
+          }
+        },
+        {
+          "z0": 380,
+          "z1": 385,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              380.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              385.0
+            ]
+          }
+        },
+        {
+          "z0": 385,
+          "z1": 390,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              385.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              390.0
+            ]
+          }
+        },
+        {
+          "z0": 390,
+          "z1": 395,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              390.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              395.0
+            ]
+          }
+        },
+        {
+          "z0": 395,
+          "z1": 400,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              395.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              400.0
+            ]
+          }
+        },
+        {
+          "z0": 400,
+          "z1": 405,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              400.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              405.0
+            ]
+          }
+        },
+        {
+          "z0": 405,
+          "z1": 410,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              405.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              410.0
+            ]
+          }
+        },
+        {
+          "z0": 410,
+          "z1": 415,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              410.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              415.0
+            ]
+          }
+        },
+        {
+          "z0": 415,
+          "z1": 420,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              415.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              420.0
+            ]
+          }
+        },
+        {
+          "z0": 420,
+          "z1": 425,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              420.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              425.0
+            ]
+          }
+        },
+        {
+          "z0": 425,
+          "z1": 430,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              23.7,
+              425.0
+            ],
+            "max": [
+              58.0,
+              26.2,
+              430.0
+            ]
+          }
+        }
+      ],
+      "blockedSegments": 0
+    },
+    {
+      "id": "V2-SP-55-52",
+      "x": 55,
+      "z0": 210,
+      "z1": 430,
+      "y": 52,
+      "status": "proposed",
+      "purpose": "segmented walkable spine, clearance-route around host facades",
+      "segments": [
+        {
+          "z0": 210,
+          "z1": 215,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              210.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              215.0
+            ]
+          }
+        },
+        {
+          "z0": 215,
+          "z1": 220,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              215.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              220.0
+            ]
+          }
+        },
+        {
+          "z0": 220,
+          "z1": 225,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              220.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              225.0
+            ]
+          }
+        },
+        {
+          "z0": 225,
+          "z1": 230,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              225.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              230.0
+            ]
+          }
+        },
+        {
+          "z0": 230,
+          "z1": 235,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              230.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              235.0
+            ]
+          }
+        },
+        {
+          "z0": 235,
+          "z1": 240,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              235.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              240.0
+            ]
+          }
+        },
+        {
+          "z0": 240,
+          "z1": 245,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              240.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              245.0
+            ]
+          }
+        },
+        {
+          "z0": 245,
+          "z1": 250,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              245.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              250.0
+            ]
+          }
+        },
+        {
+          "z0": 250,
+          "z1": 255,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              250.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              255.0
+            ]
+          }
+        },
+        {
+          "z0": 255,
+          "z1": 260,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              255.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              260.0
+            ]
+          }
+        },
+        {
+          "z0": 260,
+          "z1": 265,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              260.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              265.0
+            ]
+          }
+        },
+        {
+          "z0": 265,
+          "z1": 270,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              265.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              270.0
+            ]
+          }
+        },
+        {
+          "z0": 270,
+          "z1": 275,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              270.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              275.0
+            ]
+          }
+        },
+        {
+          "z0": 275,
+          "z1": 280,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              275.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              280.0
+            ]
+          }
+        },
+        {
+          "z0": 280,
+          "z1": 285,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              280.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              285.0
+            ]
+          }
+        },
+        {
+          "z0": 285,
+          "z1": 290,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              285.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              290.0
+            ]
+          }
+        },
+        {
+          "z0": 290,
+          "z1": 295,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              290.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              295.0
+            ]
+          }
+        },
+        {
+          "z0": 295,
+          "z1": 300,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              295.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              300.0
+            ]
+          }
+        },
+        {
+          "z0": 300,
+          "z1": 305,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              300.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              305.0
+            ]
+          }
+        },
+        {
+          "z0": 305,
+          "z1": 310,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              305.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              310.0
+            ]
+          }
+        },
+        {
+          "z0": 310,
+          "z1": 315,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              310.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              315.0
+            ]
+          }
+        },
+        {
+          "z0": 315,
+          "z1": 320,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              315.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              320.0
+            ]
+          }
+        },
+        {
+          "z0": 320,
+          "z1": 325,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              320.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              325.0
+            ]
+          }
+        },
+        {
+          "z0": 325,
+          "z1": 330,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              325.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              330.0
+            ]
+          }
+        },
+        {
+          "z0": 330,
+          "z1": 335,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              330.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              335.0
+            ]
+          }
+        },
+        {
+          "z0": 335,
+          "z1": 340,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              335.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              340.0
+            ]
+          }
+        },
+        {
+          "z0": 340,
+          "z1": 345,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              340.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              345.0
+            ]
+          }
+        },
+        {
+          "z0": 345,
+          "z1": 350,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              345.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              350.0
+            ]
+          }
+        },
+        {
+          "z0": 350,
+          "z1": 355,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              350.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              355.0
+            ]
+          }
+        },
+        {
+          "z0": 355,
+          "z1": 360,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              355.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              360.0
+            ]
+          }
+        },
+        {
+          "z0": 360,
+          "z1": 365,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              360.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              365.0
+            ]
+          }
+        },
+        {
+          "z0": 365,
+          "z1": 370,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              365.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              370.0
+            ]
+          }
+        },
+        {
+          "z0": 370,
+          "z1": 375,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              370.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              375.0
+            ]
+          }
+        },
+        {
+          "z0": 375,
+          "z1": 380,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              375.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              380.0
+            ]
+          }
+        },
+        {
+          "z0": 380,
+          "z1": 385,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              380.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              385.0
+            ]
+          }
+        },
+        {
+          "z0": 385,
+          "z1": 390,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              385.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              390.0
+            ]
+          }
+        },
+        {
+          "z0": 390,
+          "z1": 395,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              390.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              395.0
+            ]
+          }
+        },
+        {
+          "z0": 395,
+          "z1": 400,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              395.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              400.0
+            ]
+          }
+        },
+        {
+          "z0": 400,
+          "z1": 405,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              400.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              405.0
+            ]
+          }
+        },
+        {
+          "z0": 405,
+          "z1": 410,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              405.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              410.0
+            ]
+          }
+        },
+        {
+          "z0": 410,
+          "z1": 415,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              410.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              415.0
+            ]
+          }
+        },
+        {
+          "z0": 415,
+          "z1": 420,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              415.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              420.0
+            ]
+          }
+        },
+        {
+          "z0": 420,
+          "z1": 425,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              420.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              425.0
+            ]
+          }
+        },
+        {
+          "z0": 425,
+          "z1": 430,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              51.7,
+              425.0
+            ],
+            "max": [
+              58.0,
+              54.2,
+              430.0
+            ]
+          }
+        }
+      ],
+      "blockedSegments": 0
+    },
+    {
+      "id": "V2-SP-55-84",
+      "x": 55,
+      "z0": 210,
+      "z1": 430,
+      "y": 84,
+      "status": "proposed",
+      "purpose": "segmented walkable spine, clearance-route around host facades",
+      "segments": [
+        {
+          "z0": 210,
+          "z1": 215,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              210.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              215.0
+            ]
+          }
+        },
+        {
+          "z0": 215,
+          "z1": 220,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              215.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              220.0
+            ]
+          }
+        },
+        {
+          "z0": 220,
+          "z1": 225,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              220.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              225.0
+            ]
+          }
+        },
+        {
+          "z0": 225,
+          "z1": 230,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              225.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              230.0
+            ]
+          }
+        },
+        {
+          "z0": 230,
+          "z1": 235,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              230.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              235.0
+            ]
+          }
+        },
+        {
+          "z0": 235,
+          "z1": 240,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              235.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              240.0
+            ]
+          }
+        },
+        {
+          "z0": 240,
+          "z1": 245,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              240.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              245.0
+            ]
+          }
+        },
+        {
+          "z0": 245,
+          "z1": 250,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              245.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              250.0
+            ]
+          }
+        },
+        {
+          "z0": 250,
+          "z1": 255,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              250.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              255.0
+            ]
+          }
+        },
+        {
+          "z0": 255,
+          "z1": 260,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              255.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              260.0
+            ]
+          }
+        },
+        {
+          "z0": 260,
+          "z1": 265,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              260.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              265.0
+            ]
+          }
+        },
+        {
+          "z0": 265,
+          "z1": 270,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              265.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              270.0
+            ]
+          }
+        },
+        {
+          "z0": 270,
+          "z1": 275,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              270.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              275.0
+            ]
+          }
+        },
+        {
+          "z0": 275,
+          "z1": 280,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              275.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              280.0
+            ]
+          }
+        },
+        {
+          "z0": 280,
+          "z1": 285,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              280.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              285.0
+            ]
+          }
+        },
+        {
+          "z0": 285,
+          "z1": 290,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              285.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              290.0
+            ]
+          }
+        },
+        {
+          "z0": 290,
+          "z1": 295,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              290.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              295.0
+            ]
+          }
+        },
+        {
+          "z0": 295,
+          "z1": 300,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              295.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              300.0
+            ]
+          }
+        },
+        {
+          "z0": 300,
+          "z1": 305,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              300.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              305.0
+            ]
+          }
+        },
+        {
+          "z0": 305,
+          "z1": 310,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              305.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              310.0
+            ]
+          }
+        },
+        {
+          "z0": 310,
+          "z1": 315,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              310.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              315.0
+            ]
+          }
+        },
+        {
+          "z0": 315,
+          "z1": 320,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              315.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              320.0
+            ]
+          }
+        },
+        {
+          "z0": 320,
+          "z1": 325,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              320.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              325.0
+            ]
+          }
+        },
+        {
+          "z0": 325,
+          "z1": 330,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              325.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              330.0
+            ]
+          }
+        },
+        {
+          "z0": 330,
+          "z1": 335,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              330.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              335.0
+            ]
+          }
+        },
+        {
+          "z0": 335,
+          "z1": 340,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              335.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              340.0
+            ]
+          }
+        },
+        {
+          "z0": 340,
+          "z1": 345,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              340.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              345.0
+            ]
+          }
+        },
+        {
+          "z0": 345,
+          "z1": 350,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              345.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              350.0
+            ]
+          }
+        },
+        {
+          "z0": 350,
+          "z1": 355,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              350.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              355.0
+            ]
+          }
+        },
+        {
+          "z0": 355,
+          "z1": 360,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              355.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              360.0
+            ]
+          }
+        },
+        {
+          "z0": 360,
+          "z1": 365,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              360.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              365.0
+            ]
+          }
+        },
+        {
+          "z0": 365,
+          "z1": 370,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              365.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              370.0
+            ]
+          }
+        },
+        {
+          "z0": 370,
+          "z1": 375,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              370.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              375.0
+            ]
+          }
+        },
+        {
+          "z0": 375,
+          "z1": 380,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              375.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              380.0
+            ]
+          }
+        },
+        {
+          "z0": 380,
+          "z1": 385,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              380.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              385.0
+            ]
+          }
+        },
+        {
+          "z0": 385,
+          "z1": 390,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              385.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              390.0
+            ]
+          }
+        },
+        {
+          "z0": 390,
+          "z1": 395,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              390.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              395.0
+            ]
+          }
+        },
+        {
+          "z0": 395,
+          "z1": 400,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              395.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              400.0
+            ]
+          }
+        },
+        {
+          "z0": 400,
+          "z1": 405,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              400.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              405.0
+            ]
+          }
+        },
+        {
+          "z0": 405,
+          "z1": 410,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              405.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              410.0
+            ]
+          }
+        },
+        {
+          "z0": 410,
+          "z1": 415,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              410.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              415.0
+            ]
+          }
+        },
+        {
+          "z0": 415,
+          "z1": 420,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              415.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              420.0
+            ]
+          }
+        },
+        {
+          "z0": 420,
+          "z1": 425,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              420.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              425.0
+            ]
+          }
+        },
+        {
+          "z0": 425,
+          "z1": 430,
+          "conflicts": [],
+          "box": {
+            "min": [
+              52.0,
+              83.7,
+              425.0
+            ],
+            "max": [
+              58.0,
+              86.2,
+              430.0
+            ]
+          }
+        }
+      ],
+      "blockedSegments": 0
+    },
+    {
+      "id": "V2-SP-105-24",
+      "x": 105,
+      "z0": 210,
+      "z1": 430,
+      "y": 24,
+      "status": "proposed",
+      "purpose": "segmented walkable spine, clearance-route around host facades",
+      "segments": [
+        {
+          "z0": 210,
+          "z1": 215,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              210.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              215.0
+            ]
+          }
+        },
+        {
+          "z0": 215,
+          "z1": 220,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              215.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              220.0
+            ]
+          }
+        },
+        {
+          "z0": 220,
+          "z1": 225,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              220.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              225.0
+            ]
+          }
+        },
+        {
+          "z0": 225,
+          "z1": 230,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              225.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              230.0
+            ]
+          }
+        },
+        {
+          "z0": 230,
+          "z1": 235,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              230.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              235.0
+            ]
+          }
+        },
+        {
+          "z0": 235,
+          "z1": 240,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              235.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              240.0
+            ]
+          }
+        },
+        {
+          "z0": 240,
+          "z1": 245,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              240.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              245.0
+            ]
+          }
+        },
+        {
+          "z0": 245,
+          "z1": 250,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              245.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              250.0
+            ]
+          }
+        },
+        {
+          "z0": 250,
+          "z1": 255,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              250.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              255.0
+            ]
+          }
+        },
+        {
+          "z0": 255,
+          "z1": 260,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              255.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              260.0
+            ]
+          }
+        },
+        {
+          "z0": 260,
+          "z1": 265,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              260.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              265.0
+            ]
+          }
+        },
+        {
+          "z0": 265,
+          "z1": 270,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              265.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              270.0
+            ]
+          }
+        },
+        {
+          "z0": 270,
+          "z1": 275,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              270.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              275.0
+            ]
+          }
+        },
+        {
+          "z0": 275,
+          "z1": 280,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              275.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              280.0
+            ]
+          }
+        },
+        {
+          "z0": 280,
+          "z1": 285,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              280.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              285.0
+            ]
+          }
+        },
+        {
+          "z0": 285,
+          "z1": 290,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              285.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              290.0
+            ]
+          }
+        },
+        {
+          "z0": 290,
+          "z1": 295,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              290.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              295.0
+            ]
+          }
+        },
+        {
+          "z0": 295,
+          "z1": 300,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              295.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              300.0
+            ]
+          }
+        },
+        {
+          "z0": 300,
+          "z1": 305,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              300.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              305.0
+            ]
+          }
+        },
+        {
+          "z0": 305,
+          "z1": 310,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              305.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              310.0
+            ]
+          }
+        },
+        {
+          "z0": 310,
+          "z1": 315,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              310.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              315.0
+            ]
+          }
+        },
+        {
+          "z0": 315,
+          "z1": 320,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              315.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              320.0
+            ]
+          }
+        },
+        {
+          "z0": 320,
+          "z1": 325,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              320.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              325.0
+            ]
+          }
+        },
+        {
+          "z0": 325,
+          "z1": 330,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              325.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              330.0
+            ]
+          }
+        },
+        {
+          "z0": 330,
+          "z1": 335,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              330.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              335.0
+            ]
+          }
+        },
+        {
+          "z0": 335,
+          "z1": 340,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              335.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              340.0
+            ]
+          }
+        },
+        {
+          "z0": 340,
+          "z1": 345,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              340.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              345.0
+            ]
+          }
+        },
+        {
+          "z0": 345,
+          "z1": 350,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              345.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              350.0
+            ]
+          }
+        },
+        {
+          "z0": 350,
+          "z1": 355,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              350.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              355.0
+            ]
+          }
+        },
+        {
+          "z0": 355,
+          "z1": 360,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              355.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              360.0
+            ]
+          }
+        },
+        {
+          "z0": 360,
+          "z1": 365,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              360.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              365.0
+            ]
+          }
+        },
+        {
+          "z0": 365,
+          "z1": 370,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              365.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              370.0
+            ]
+          }
+        },
+        {
+          "z0": 370,
+          "z1": 375,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              370.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              375.0
+            ]
+          }
+        },
+        {
+          "z0": 375,
+          "z1": 380,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              375.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              380.0
+            ]
+          }
+        },
+        {
+          "z0": 380,
+          "z1": 385,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              380.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              385.0
+            ]
+          }
+        },
+        {
+          "z0": 385,
+          "z1": 390,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              385.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              390.0
+            ]
+          }
+        },
+        {
+          "z0": 390,
+          "z1": 395,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              390.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              395.0
+            ]
+          }
+        },
+        {
+          "z0": 395,
+          "z1": 400,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              395.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              400.0
+            ]
+          }
+        },
+        {
+          "z0": 400,
+          "z1": 405,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              400.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              405.0
+            ]
+          }
+        },
+        {
+          "z0": 405,
+          "z1": 410,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              405.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              410.0
+            ]
+          }
+        },
+        {
+          "z0": 410,
+          "z1": 415,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              410.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              415.0
+            ]
+          }
+        },
+        {
+          "z0": 415,
+          "z1": 420,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              415.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              420.0
+            ]
+          }
+        },
+        {
+          "z0": 420,
+          "z1": 425,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              420.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              425.0
+            ]
+          }
+        },
+        {
+          "z0": 425,
+          "z1": 430,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              23.7,
+              425.0
+            ],
+            "max": [
+              108.0,
+              26.2,
+              430.0
+            ]
+          }
+        }
+      ],
+      "blockedSegments": 13
+    },
+    {
+      "id": "V2-SP-105-52",
+      "x": 105,
+      "z0": 210,
+      "z1": 430,
+      "y": 52,
+      "status": "proposed",
+      "purpose": "segmented walkable spine, clearance-route around host facades",
+      "segments": [
+        {
+          "z0": 210,
+          "z1": 215,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              210.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              215.0
+            ]
+          }
+        },
+        {
+          "z0": 215,
+          "z1": 220,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              215.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              220.0
+            ]
+          }
+        },
+        {
+          "z0": 220,
+          "z1": 225,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              220.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              225.0
+            ]
+          }
+        },
+        {
+          "z0": 225,
+          "z1": 230,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              225.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              230.0
+            ]
+          }
+        },
+        {
+          "z0": 230,
+          "z1": 235,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              230.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              235.0
+            ]
+          }
+        },
+        {
+          "z0": 235,
+          "z1": 240,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              235.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              240.0
+            ]
+          }
+        },
+        {
+          "z0": 240,
+          "z1": 245,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              240.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              245.0
+            ]
+          }
+        },
+        {
+          "z0": 245,
+          "z1": 250,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              245.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              250.0
+            ]
+          }
+        },
+        {
+          "z0": 250,
+          "z1": 255,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              250.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              255.0
+            ]
+          }
+        },
+        {
+          "z0": 255,
+          "z1": 260,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              255.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              260.0
+            ]
+          }
+        },
+        {
+          "z0": 260,
+          "z1": 265,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              260.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              265.0
+            ]
+          }
+        },
+        {
+          "z0": 265,
+          "z1": 270,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              265.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              270.0
+            ]
+          }
+        },
+        {
+          "z0": 270,
+          "z1": 275,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              270.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              275.0
+            ]
+          }
+        },
+        {
+          "z0": 275,
+          "z1": 280,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              275.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              280.0
+            ]
+          }
+        },
+        {
+          "z0": 280,
+          "z1": 285,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              280.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              285.0
+            ]
+          }
+        },
+        {
+          "z0": 285,
+          "z1": 290,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              285.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              290.0
+            ]
+          }
+        },
+        {
+          "z0": 290,
+          "z1": 295,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              290.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              295.0
+            ]
+          }
+        },
+        {
+          "z0": 295,
+          "z1": 300,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              295.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              300.0
+            ]
+          }
+        },
+        {
+          "z0": 300,
+          "z1": 305,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              300.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              305.0
+            ]
+          }
+        },
+        {
+          "z0": 305,
+          "z1": 310,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              305.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              310.0
+            ]
+          }
+        },
+        {
+          "z0": 310,
+          "z1": 315,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              310.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              315.0
+            ]
+          }
+        },
+        {
+          "z0": 315,
+          "z1": 320,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              315.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              320.0
+            ]
+          }
+        },
+        {
+          "z0": 320,
+          "z1": 325,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              320.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              325.0
+            ]
+          }
+        },
+        {
+          "z0": 325,
+          "z1": 330,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              325.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              330.0
+            ]
+          }
+        },
+        {
+          "z0": 330,
+          "z1": 335,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              330.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              335.0
+            ]
+          }
+        },
+        {
+          "z0": 335,
+          "z1": 340,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              335.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              340.0
+            ]
+          }
+        },
+        {
+          "z0": 340,
+          "z1": 345,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              340.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              345.0
+            ]
+          }
+        },
+        {
+          "z0": 345,
+          "z1": 350,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              345.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              350.0
+            ]
+          }
+        },
+        {
+          "z0": 350,
+          "z1": 355,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              350.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              355.0
+            ]
+          }
+        },
+        {
+          "z0": 355,
+          "z1": 360,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              355.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              360.0
+            ]
+          }
+        },
+        {
+          "z0": 360,
+          "z1": 365,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              360.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              365.0
+            ]
+          }
+        },
+        {
+          "z0": 365,
+          "z1": 370,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              365.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              370.0
+            ]
+          }
+        },
+        {
+          "z0": 370,
+          "z1": 375,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              370.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              375.0
+            ]
+          }
+        },
+        {
+          "z0": 375,
+          "z1": 380,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              375.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              380.0
+            ]
+          }
+        },
+        {
+          "z0": 380,
+          "z1": 385,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              380.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              385.0
+            ]
+          }
+        },
+        {
+          "z0": 385,
+          "z1": 390,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              385.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              390.0
+            ]
+          }
+        },
+        {
+          "z0": 390,
+          "z1": 395,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              390.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              395.0
+            ]
+          }
+        },
+        {
+          "z0": 395,
+          "z1": 400,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              395.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              400.0
+            ]
+          }
+        },
+        {
+          "z0": 400,
+          "z1": 405,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              400.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              405.0
+            ]
+          }
+        },
+        {
+          "z0": 405,
+          "z1": 410,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              405.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              410.0
+            ]
+          }
+        },
+        {
+          "z0": 410,
+          "z1": 415,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              410.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              415.0
+            ]
+          }
+        },
+        {
+          "z0": 415,
+          "z1": 420,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              415.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              420.0
+            ]
+          }
+        },
+        {
+          "z0": 420,
+          "z1": 425,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              420.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              425.0
+            ]
+          }
+        },
+        {
+          "z0": 425,
+          "z1": 430,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              51.7,
+              425.0
+            ],
+            "max": [
+              108.0,
+              54.2,
+              430.0
+            ]
+          }
+        }
+      ],
+      "blockedSegments": 13
+    },
+    {
+      "id": "V2-SP-105-84",
+      "x": 105,
+      "z0": 210,
+      "z1": 430,
+      "y": 84,
+      "status": "proposed",
+      "purpose": "segmented walkable spine, clearance-route around host facades",
+      "segments": [
+        {
+          "z0": 210,
+          "z1": 215,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              210.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              215.0
+            ]
+          }
+        },
+        {
+          "z0": 215,
+          "z1": 220,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              215.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              220.0
+            ]
+          }
+        },
+        {
+          "z0": 220,
+          "z1": 225,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              220.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              225.0
+            ]
+          }
+        },
+        {
+          "z0": 225,
+          "z1": 230,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              225.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              230.0
+            ]
+          }
+        },
+        {
+          "z0": 230,
+          "z1": 235,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              230.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              235.0
+            ]
+          }
+        },
+        {
+          "z0": 235,
+          "z1": 240,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              235.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              240.0
+            ]
+          }
+        },
+        {
+          "z0": 240,
+          "z1": 245,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              240.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              245.0
+            ]
+          }
+        },
+        {
+          "z0": 245,
+          "z1": 250,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              245.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              250.0
+            ]
+          }
+        },
+        {
+          "z0": 250,
+          "z1": 255,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              250.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              255.0
+            ]
+          }
+        },
+        {
+          "z0": 255,
+          "z1": 260,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              255.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              260.0
+            ]
+          }
+        },
+        {
+          "z0": 260,
+          "z1": 265,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              260.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              265.0
+            ]
+          }
+        },
+        {
+          "z0": 265,
+          "z1": 270,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              265.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              270.0
+            ]
+          }
+        },
+        {
+          "z0": 270,
+          "z1": 275,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              270.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              275.0
+            ]
+          }
+        },
+        {
+          "z0": 275,
+          "z1": 280,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              275.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              280.0
+            ]
+          }
+        },
+        {
+          "z0": 280,
+          "z1": 285,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              280.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              285.0
+            ]
+          }
+        },
+        {
+          "z0": 285,
+          "z1": 290,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              285.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              290.0
+            ]
+          }
+        },
+        {
+          "z0": 290,
+          "z1": 295,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              290.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              295.0
+            ]
+          }
+        },
+        {
+          "z0": 295,
+          "z1": 300,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              295.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              300.0
+            ]
+          }
+        },
+        {
+          "z0": 300,
+          "z1": 305,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              300.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              305.0
+            ]
+          }
+        },
+        {
+          "z0": 305,
+          "z1": 310,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              305.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              310.0
+            ]
+          }
+        },
+        {
+          "z0": 310,
+          "z1": 315,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              310.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              315.0
+            ]
+          }
+        },
+        {
+          "z0": 315,
+          "z1": 320,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-11",
+              "role": "Rear megablock spine"
+            },
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              315.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              320.0
+            ]
+          }
+        },
+        {
+          "z0": 320,
+          "z1": 325,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              320.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              325.0
+            ]
+          }
+        },
+        {
+          "z0": 325,
+          "z1": 330,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              325.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              330.0
+            ]
+          }
+        },
+        {
+          "z0": 330,
+          "z1": 335,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              330.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              335.0
+            ]
+          }
+        },
+        {
+          "z0": 335,
+          "z1": 340,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              335.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              340.0
+            ]
+          }
+        },
+        {
+          "z0": 340,
+          "z1": 345,
+          "conflicts": [
+            {
+              "building": "building-160",
+              "part": "building-160/part-15",
+              "role": "Twin flank towers"
+            }
+          ],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              340.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              345.0
+            ]
+          }
+        },
+        {
+          "z0": 345,
+          "z1": 350,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              345.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              350.0
+            ]
+          }
+        },
+        {
+          "z0": 350,
+          "z1": 355,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              350.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              355.0
+            ]
+          }
+        },
+        {
+          "z0": 355,
+          "z1": 360,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              355.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              360.0
+            ]
+          }
+        },
+        {
+          "z0": 360,
+          "z1": 365,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              360.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              365.0
+            ]
+          }
+        },
+        {
+          "z0": 365,
+          "z1": 370,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              365.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              370.0
+            ]
+          }
+        },
+        {
+          "z0": 370,
+          "z1": 375,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              370.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              375.0
+            ]
+          }
+        },
+        {
+          "z0": 375,
+          "z1": 380,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              375.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              380.0
+            ]
+          }
+        },
+        {
+          "z0": 380,
+          "z1": 385,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              380.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              385.0
+            ]
+          }
+        },
+        {
+          "z0": 385,
+          "z1": 390,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              385.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              390.0
+            ]
+          }
+        },
+        {
+          "z0": 390,
+          "z1": 395,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              390.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              395.0
+            ]
+          }
+        },
+        {
+          "z0": 395,
+          "z1": 400,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              395.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              400.0
+            ]
+          }
+        },
+        {
+          "z0": 400,
+          "z1": 405,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              400.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              405.0
+            ]
+          }
+        },
+        {
+          "z0": 405,
+          "z1": 410,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              405.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              410.0
+            ]
+          }
+        },
+        {
+          "z0": 410,
+          "z1": 415,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              410.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              415.0
+            ]
+          }
+        },
+        {
+          "z0": 415,
+          "z1": 420,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              415.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              420.0
+            ]
+          }
+        },
+        {
+          "z0": 420,
+          "z1": 425,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              420.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              425.0
+            ]
+          }
+        },
+        {
+          "z0": 425,
+          "z1": 430,
+          "conflicts": [],
+          "box": {
+            "min": [
+              102.0,
+              83.7,
+              425.0
+            ],
+            "max": [
+              108.0,
+              86.2,
+              430.0
+            ]
+          }
+        }
+      ],
+      "blockedSegments": 13
+    }
+  ],
+  "v1Rejections": [
+    {
+      "id": "terrace055320",
+      "reason": "building clearance"
+    },
+    {
+      "id": "warmsoffit055320",
+      "reason": "building clearance"
+    },
+    {
+      "id": "gallery0105",
+      "reason": "building clearance"
+    },
+    {
+      "id": "terrace0105320",
+      "reason": "building clearance"
+    },
+    {
+      "id": "warmsoffit0105320",
+      "reason": "building clearance"
+    },
+    {
+      "id": "bridge1",
+      "reason": "building clearance"
+    },
+    {
+      "id": "terrace155320",
+      "reason": "building clearance"
+    },
+    {
+      "id": "warmsoffit155320",
+      "reason": "building clearance"
+    },
+    {
+      "id": "gallery1105",
+      "reason": "building clearance"
+    },
+    {
+      "id": "terrace1105320",
+      "reason": "building clearance"
+    },
+    {
+      "id": "warmsoffit1105320",
+      "reason": "building clearance"
+    },
+    {
+      "id": "terrace255320",
+      "reason": "building clearance"
+    },
+    {
+      "id": "warmsoffit255320",
+      "reason": "building clearance"
+    },
+    {
+      "id": "gallery2105",
+      "reason": "building clearance"
+    },
+    {
+      "id": "terrace2105320",
+      "reason": "building clearance"
+    },
+    {
+      "id": "warmsoffit2105320",
+      "reason": "building clearance"
+    },
+    {
+      "id": "terrace355320",
+      "reason": "building clearance"
+    },
+    {
+      "id": "warmsoffit355320",
+      "reason": "building clearance"
+    },
+    {
+      "id": "gallery3105",
+      "reason": "building clearance"
+    },
+    {
+      "id": "terrace3105320",
+      "reason": "building clearance"
+    },
+    {
+      "id": "warmsoffit3105320",
+      "reason": "building clearance"
+    },
+    {
+      "id": "transit-crossbeam62294",
+      "reason": "building clearance"
+    },
+    {
+      "id": "transit-support104294",
+      "reason": "building clearance"
+    },
+    {
+      "id": "transit-crossbeam104294",
+      "reason": "building clearance"
+    },
+    {
+      "id": "transit-support104346",
+      "reason": "building clearance"
+    },
+    {
+      "id": "transit-support104450",
+      "reason": "building clearance"
+    }
+  ],
+  "allV1FailuresPreserved": true
+}

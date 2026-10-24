@@ -1,0 +1,829 @@
+{
+  "title": "Saint Meridian V02 - site study / AAA quality gate",
+  "status": "SOURCE-AUDITED ARCHITECTURAL STUDY / PROPOSED V02 NOT GAMEPLAY VERIFIED",
+  "source": {
+    "repo": "brokendeity/sightline-saint-meridian",
+    "branch": "feature/saint-meridian-vertical-megacity-v1",
+    "files": [
+      "assets/city/vertical/layout.json",
+      "scripts/game_vertical_city.js",
+      "docs/vertical-city/IMPLEMENTATION.md",
+      "output/vertical-city/audit.json",
+      "docs/vertical-city/HI3D_TRAIN_INTEGRATION.md"
+    ],
+    "lotReference": "2026-10-19 reconstructed 310-lot data; not direct Oct-24 runtime geometry export"
+  },
+  "verified_branch_facts": {
+    "original_lots_preserved": 310,
+    "corridor": {
+      "x": 80,
+      "zStart": 180,
+      "zEnd": 460
+    },
+    "levels": [
+      24,
+      52,
+      84,
+      128
+    ],
+    "current_bridge_decks": [
+      {
+        "id": "V1-BR0",
+        "x": 80,
+        "z": 210,
+        "y": 24,
+        "width": 50,
+        "depth": 7,
+        "status": "admitted",
+        "ref": "bridge0"
+      },
+      {
+        "id": "V1-BR1",
+        "x": 80,
+        "z": 280,
+        "y": 52,
+        "width": 50,
+        "depth": 7,
+        "status": "rejected",
+        "ref": "bridge1"
+      },
+      {
+        "id": "V1-BR2",
+        "x": 80,
+        "z": 350,
+        "y": 84,
+        "width": 50,
+        "depth": 7,
+        "status": "admitted",
+        "ref": "bridge2"
+      },
+      {
+        "id": "V1-BR3",
+        "x": 80,
+        "z": 430,
+        "y": 128,
+        "width": 50,
+        "depth": 7,
+        "status": "admitted",
+        "ref": "bridge3"
+      }
+    ],
+    "rejected_placements": 26,
+    "bridge_rejected_id": "bridge1",
+    "admitted_primitive_assemblies": 1474,
+    "vertical_collision_boxes": 952,
+    "scenic_vehicles": 24,
+    "train_cars": 4,
+    "train_height": 100,
+    "train_front_real_hi3d_model_loaded": true,
+    "train_middle_rear": "procedural placeholders",
+    "scenic_traffic_physics": false,
+    "full_traversal_acceptance": false,
+    "train_camera_performance": "single-sample render only (not baseline p95)"
+  },
+  "older_v01_plan": "Retired: previous X240-850/Z-225..240 proposal must NOT be overlaid onto current V1 as if implemented",
+  "new_v02": {
+    "crossings": [
+      {
+        "id": "V2-BR-L2",
+        "x": 80,
+        "z": 350,
+        "y": 24,
+        "width": 50,
+        "depth": 7,
+        "role": "lower loop return crossing",
+        "status": "proposed"
+      },
+      {
+        "id": "V2-BR-M1",
+        "x": 80,
+        "z": 280,
+        "y": 52,
+        "width": 50,
+        "depth": 8,
+        "role": "redesign V1 rejected crossing at verified portal",
+        "status": "redesign"
+      },
+      {
+        "id": "V2-BR-M2",
+        "x": 80,
+        "z": 350,
+        "y": 52,
+        "width": 50,
+        "depth": 8,
+        "role": "mid-city loop return crossing",
+        "status": "proposed"
+      },
+      {
+        "id": "V2-BR-H2",
+        "x": 80,
+        "z": 430,
+        "y": 84,
+        "width": 50,
+        "depth": 7,
+        "role": "high level loop return crossing",
+        "status": "proposed"
+      }
+    ],
+    "segmented_spines": [
+      {
+        "id": "V2-SP-55-24",
+        "x": 55,
+        "z0": 210,
+        "z1": 430,
+        "y": 24,
+        "status": "proposed",
+        "purpose": "segmented walkable spine, clearance-route around host facades"
+      },
+      {
+        "id": "V2-SP-55-52",
+        "x": 55,
+        "z0": 210,
+        "z1": 430,
+        "y": 52,
+        "status": "proposed",
+        "purpose": "segmented walkable spine, clearance-route around host facades"
+      },
+      {
+        "id": "V2-SP-55-84",
+        "x": 55,
+        "z0": 210,
+        "z1": 430,
+        "y": 84,
+        "status": "proposed",
+        "purpose": "segmented walkable spine, clearance-route around host facades"
+      },
+      {
+        "id": "V2-SP-105-24",
+        "x": 105,
+        "z0": 210,
+        "z1": 430,
+        "y": 24,
+        "status": "proposed",
+        "purpose": "segmented walkable spine, clearance-route around host facades"
+      },
+      {
+        "id": "V2-SP-105-52",
+        "x": 105,
+        "z0": 210,
+        "z1": 430,
+        "y": 52,
+        "status": "proposed",
+        "purpose": "segmented walkable spine, clearance-route around host facades"
+      },
+      {
+        "id": "V2-SP-105-84",
+        "x": 105,
+        "z0": 210,
+        "z1": 430,
+        "y": 84,
+        "status": "proposed",
+        "purpose": "segmented walkable spine, clearance-route around host facades"
+      }
+    ],
+    "vertical_transfers": [
+      {
+        "id": "V2-VT-A",
+        "x": 55,
+        "z": 215,
+        "y0": 0,
+        "y1": 84,
+        "type": "stair/lift spine",
+        "status": "proposed"
+      },
+      {
+        "id": "V2-VT-B",
+        "x": 105,
+        "z": 350,
+        "y0": 0,
+        "y1": 84,
+        "type": "secondary elevator/service ascent",
+        "status": "proposed"
+      },
+      {
+        "id": "V2-VT-C",
+        "x": 55,
+        "z": 420,
+        "y0": 24,
+        "y1": 128,
+        "type": "wall-climb + lift + safe descent",
+        "status": "proposed"
+      },
+      {
+        "id": "V2-VT-D",
+        "x": 105,
+        "z": 425,
+        "y0": 84,
+        "y1": 128,
+        "type": "high ascent transfer",
+        "status": "proposed"
+      }
+    ],
+    "hubs": [
+      {
+        "id": "H-G",
+        "name": "Ground access / recovery",
+        "x": 55,
+        "z": 205,
+        "y": 0,
+        "type": "public-entry",
+        "status": "proposed location"
+      },
+      {
+        "id": "H-L",
+        "name": "Suspended market + civilian rescue",
+        "x": 55,
+        "z": 355,
+        "y": 24,
+        "type": "rescue",
+        "status": "proposed location"
+      },
+      {
+        "id": "H-M",
+        "name": "Multi-tier service yard + combat",
+        "x": 105,
+        "z": 345,
+        "y": 52,
+        "type": "combat",
+        "status": "proposed location"
+      },
+      {
+        "id": "H-U",
+        "name": "Transit interchange + pursuit",
+        "x": 80,
+        "z": 355,
+        "y": 100,
+        "type": "chase",
+        "status": "proposed location"
+      },
+      {
+        "id": "H-R",
+        "name": "Upper roof vantage",
+        "x": 55,
+        "z": 422,
+        "y": 128,
+        "type": "landmark",
+        "status": "proposed location"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "G0",
+        "x": 55,
+        "z": 205,
+        "y": 0,
+        "kind": "street"
+      },
+      {
+        "id": "LWA",
+        "x": 55,
+        "z": 210,
+        "y": 24,
+        "kind": "walk"
+      },
+      {
+        "id": "LEA",
+        "x": 105,
+        "z": 210,
+        "y": 24,
+        "kind": "walk"
+      },
+      {
+        "id": "LWB",
+        "x": 55,
+        "z": 350,
+        "y": 24,
+        "kind": "hub"
+      },
+      {
+        "id": "LEB",
+        "x": 105,
+        "z": 350,
+        "y": 24,
+        "kind": "walk"
+      },
+      {
+        "id": "MWA",
+        "x": 55,
+        "z": 280,
+        "y": 52,
+        "kind": "walk"
+      },
+      {
+        "id": "MEA",
+        "x": 105,
+        "z": 280,
+        "y": 52,
+        "kind": "walk"
+      },
+      {
+        "id": "MWB",
+        "x": 55,
+        "z": 350,
+        "y": 52,
+        "kind": "walk"
+      },
+      {
+        "id": "MEB",
+        "x": 105,
+        "z": 350,
+        "y": 52,
+        "kind": "hub"
+      },
+      {
+        "id": "HWA",
+        "x": 55,
+        "z": 350,
+        "y": 84,
+        "kind": "walk"
+      },
+      {
+        "id": "HEA",
+        "x": 105,
+        "z": 350,
+        "y": 84,
+        "kind": "walk"
+      },
+      {
+        "id": "HWB",
+        "x": 55,
+        "z": 430,
+        "y": 84,
+        "kind": "walk"
+      },
+      {
+        "id": "HEB",
+        "x": 105,
+        "z": 430,
+        "y": 84,
+        "kind": "walk"
+      },
+      {
+        "id": "UW",
+        "x": 55,
+        "z": 430,
+        "y": 128,
+        "kind": "roof"
+      },
+      {
+        "id": "UE",
+        "x": 105,
+        "z": 430,
+        "y": 128,
+        "kind": "roof"
+      },
+      {
+        "id": "TS",
+        "x": 80,
+        "z": 355,
+        "y": 100,
+        "kind": "transit"
+      }
+    ],
+    "edges": [
+      {
+        "id": "E01",
+        "a": "LWA",
+        "b": "LEA",
+        "directed": false,
+        "mode": "walk",
+        "status": "current admitted proxy",
+        "group": "lower",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 50.0,
+        "straight_slope_deg": 0.0,
+        "threadrail_direct_legal_envelope": true,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E02",
+        "a": "LEA",
+        "b": "LEB",
+        "directed": false,
+        "mode": "walk",
+        "status": "proposed east spine",
+        "group": "lower",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 140.0,
+        "straight_slope_deg": 0.0,
+        "threadrail_direct_legal_envelope": false,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E03",
+        "a": "LEB",
+        "b": "LWB",
+        "directed": false,
+        "mode": "walk",
+        "status": "proposed new crossing",
+        "group": "lower",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 50.0,
+        "straight_slope_deg": 0.0,
+        "threadrail_direct_legal_envelope": true,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E04",
+        "a": "LWB",
+        "b": "LWA",
+        "directed": false,
+        "mode": "walk",
+        "status": "proposed west spine",
+        "group": "lower",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 140.0,
+        "straight_slope_deg": 0.0,
+        "threadrail_direct_legal_envelope": false,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E05",
+        "a": "MWA",
+        "b": "MEA",
+        "directed": false,
+        "mode": "walk",
+        "status": "redesign rejected V1 span",
+        "group": "mid",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 50.0,
+        "straight_slope_deg": 0.0,
+        "threadrail_direct_legal_envelope": true,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E06",
+        "a": "MEA",
+        "b": "MEB",
+        "directed": false,
+        "mode": "walk",
+        "status": "proposed east spine",
+        "group": "mid",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 70.0,
+        "straight_slope_deg": 0.0,
+        "threadrail_direct_legal_envelope": true,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E07",
+        "a": "MEB",
+        "b": "MWB",
+        "directed": false,
+        "mode": "walk",
+        "status": "proposed new crossing",
+        "group": "mid",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 50.0,
+        "straight_slope_deg": 0.0,
+        "threadrail_direct_legal_envelope": true,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E08",
+        "a": "MWB",
+        "b": "MWA",
+        "directed": false,
+        "mode": "walk",
+        "status": "proposed west spine",
+        "group": "mid",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 70.0,
+        "straight_slope_deg": 0.0,
+        "threadrail_direct_legal_envelope": true,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E09",
+        "a": "HWA",
+        "b": "HEA",
+        "directed": false,
+        "mode": "walk",
+        "status": "current admitted proxy",
+        "group": "high",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 50.0,
+        "straight_slope_deg": 0.0,
+        "threadrail_direct_legal_envelope": true,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E10",
+        "a": "HEA",
+        "b": "HEB",
+        "directed": false,
+        "mode": "walk",
+        "status": "proposed east spine",
+        "group": "high",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 80.0,
+        "straight_slope_deg": 0.0,
+        "threadrail_direct_legal_envelope": true,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E11",
+        "a": "HEB",
+        "b": "HWB",
+        "directed": false,
+        "mode": "walk",
+        "status": "proposed new crossing",
+        "group": "high",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 50.0,
+        "straight_slope_deg": 0.0,
+        "threadrail_direct_legal_envelope": true,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E12",
+        "a": "HWB",
+        "b": "HWA",
+        "directed": false,
+        "mode": "walk",
+        "status": "proposed west spine",
+        "group": "high",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 80.0,
+        "straight_slope_deg": 0.0,
+        "threadrail_direct_legal_envelope": true,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E13",
+        "a": "G0",
+        "b": "LWA",
+        "directed": false,
+        "mode": "stairs/lift",
+        "status": "proposed",
+        "group": "vertical",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 24.5,
+        "straight_slope_deg": 78.2,
+        "threadrail_direct_legal_envelope": false,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E14",
+        "a": "G0",
+        "b": "LWB",
+        "directed": false,
+        "mode": "wall run + intermediate landings",
+        "status": "proposed",
+        "group": "vertical",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 147.0,
+        "straight_slope_deg": 9.4,
+        "threadrail_direct_legal_envelope": false,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E15",
+        "a": "LWA",
+        "b": "MWA",
+        "directed": false,
+        "mode": "stairs/lift",
+        "status": "proposed",
+        "group": "vertical",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 75.4,
+        "straight_slope_deg": 21.8,
+        "threadrail_direct_legal_envelope": true,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E16",
+        "a": "LWB",
+        "b": "MWB",
+        "directed": false,
+        "mode": "stairs/lift",
+        "status": "proposed",
+        "group": "vertical",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 28.0,
+        "straight_slope_deg": 90,
+        "threadrail_direct_legal_envelope": false,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E17",
+        "a": "LEB",
+        "b": "MEB",
+        "directed": false,
+        "mode": "lift",
+        "status": "proposed",
+        "group": "vertical",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 28.0,
+        "straight_slope_deg": 90,
+        "threadrail_direct_legal_envelope": false,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E18",
+        "a": "MWB",
+        "b": "HWA",
+        "directed": false,
+        "mode": "wall run / stair",
+        "status": "proposed",
+        "group": "vertical",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 32.0,
+        "straight_slope_deg": 90,
+        "threadrail_direct_legal_envelope": false,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E19",
+        "a": "MEB",
+        "b": "HEA",
+        "directed": false,
+        "mode": "lift",
+        "status": "proposed",
+        "group": "vertical",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 32.0,
+        "straight_slope_deg": 90,
+        "threadrail_direct_legal_envelope": false,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E20",
+        "a": "HWA",
+        "b": "HWB",
+        "directed": false,
+        "mode": "gallery",
+        "status": "proposed",
+        "group": "vertical",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 80.0,
+        "straight_slope_deg": 0.0,
+        "threadrail_direct_legal_envelope": true,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E21",
+        "a": "HWB",
+        "b": "UW",
+        "directed": false,
+        "mode": "wall run + recovery",
+        "status": "proposed",
+        "group": "vertical",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 44.0,
+        "straight_slope_deg": 90,
+        "threadrail_direct_legal_envelope": false,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E22",
+        "a": "HEB",
+        "b": "UE",
+        "directed": false,
+        "mode": "lift",
+        "status": "proposed",
+        "group": "vertical",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 44.0,
+        "straight_slope_deg": 90,
+        "threadrail_direct_legal_envelope": false,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E23",
+        "a": "UW",
+        "b": "UE",
+        "directed": false,
+        "mode": "current upper bridge at Y128, Z430",
+        "status": "proposed",
+        "group": "vertical",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 50.0,
+        "straight_slope_deg": 0.0,
+        "threadrail_direct_legal_envelope": true,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E24",
+        "a": "HWA",
+        "b": "TS",
+        "directed": false,
+        "mode": "Threadrail + station landing",
+        "status": "proposed",
+        "group": "vertical",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 30.1,
+        "straight_slope_deg": 32.1,
+        "threadrail_direct_legal_envelope": true,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E25",
+        "a": "TS",
+        "b": "UW",
+        "directed": false,
+        "mode": "Threadrail / transit connection",
+        "status": "proposed",
+        "group": "vertical",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 83.9,
+        "straight_slope_deg": 19.5,
+        "threadrail_direct_legal_envelope": true,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      },
+      {
+        "id": "E26",
+        "a": "TS",
+        "b": "HEA",
+        "directed": false,
+        "mode": "safe station access (proposed)",
+        "status": "proposed",
+        "group": "vertical",
+        "resource": "none",
+        "danger": "standard",
+        "verified_in_game": false,
+        "distance_m": 30.1,
+        "straight_slope_deg": 32.1,
+        "threadrail_direct_legal_envelope": true,
+        "note": "No collision/projectile/landing certification; envelopes alone insufficient."
+      }
+    ],
+    "loops": [
+      "lower",
+      "mid",
+      "high"
+    ],
+    "landmarks": [
+      "transit interchange",
+      "suspended market",
+      "service yard",
+      "upper rooftop lookout"
+    ],
+    "quality_gates": [
+      "G0 authoritative runtime export",
+      "G1 collision and transport sweep",
+      "G2 resource-aware 3D navigation loops",
+      "G3 three route variants to train station",
+      "G4 encounter staging",
+      "G5 player recovery and signage",
+      "G6 motion and performance / visual match"
+    ]
+  },
+  "limitations": [
+    "No current-branch world-position/collider export available in this chat",
+    "Reconstructed source footprints not an authenticated runtime dump",
+    "Proposed V02 bridge paths and host facades not spatially validated",
+    "Blue/amber architectural palette referenced, not a game screenshot",
+    "No claims of AAA parity or playable route verification"
+  ]
+}
