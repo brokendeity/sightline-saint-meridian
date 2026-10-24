@@ -1,3 +1,11 @@
+# Current GitHub snapshot — 24 October 2026
+
+Saved independently on `snapshots/2026-10-24-current-game-v02-baseline`, tagged `snapshot-2026-10-24-current-game-v02-baseline`. The latest playable entry remains **SIGHTLINE_BACKSPOOL_WHIP_THROW.html**; **VERTICAL_TRAIN_INSPECTOR.html** previews the train asset. Run `python3 -m http.server 8766 --bind 127.0.0.1` from this repository.
+
+This preserves the current playable megacity/Hi3D train build plus the V02 live-world baseline and preliminary movement research. V02 gameplay geometry is not implemented yet. Earlier branches, tags and `main` remain unchanged. See [snapshot details](docs/snapshots/2026-10-24-current-game.md).
+
+---
+
 # Current snapshot — vertical megacity + Hi3D train
 
 Latest playable build: [SIGHTLINE_BACKSPOOL_WHIP_THROW.html](SIGHTLINE_BACKSPOOL_WHIP_THROW.html), including current Threadrail cartridge/whip, Afterstep, imported city props and first Hi3D train front carriage.

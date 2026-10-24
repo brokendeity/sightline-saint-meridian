@@ -9,3 +9,7 @@ V02_LiveWorld_Authoritative.json references V02_BuildingGeometry.json by hash. E
 Live reconciliation: all310 outer envelopes match reconstructed reference; imported structure still conflicts with Y52/Z280 and13/44 east-spine segments at each level. Z276 is a nearby box/headroom-clear crossing hypothesis. No route is certified by these box checks. V1's26 failures remain recorded.
 
 Next strict phase: measure real movement through controls, plan a directed ability-aware graph with supported endpoints, fit east galleries around building160, then author/export the Blender graybox. Do not advance to detailed architecture before normal-input loop/route tests pass. Source declarations alone are not measured ability metrics. Detailed modeling, encounters, transit sweeps, gameplay route acceptance, sustained performance and visual acceptance are still NOT TESTED.
+
+## Preliminary movement evidence
+
+`V02_Movement_Measurements.json` and `scripts/vertical-v02/measure_movement.cjs` preserve an exploratory keyboard-input run. These are not certified movement budgets: Flow triggered a plaza obstacle flip, the forward jump met an obstacle, and resetting between trials may retain pending contact impulses. Rerun in isolated, validated clear fixtures before using these distances to design routes. No V02 geometry or movement-power changes are included in this snapshot.
