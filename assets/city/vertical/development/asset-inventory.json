@@ -1,0 +1,198 @@
+{
+  "date": "2026-10-24",
+  "activeBuild": "SIGHTLINE_BACKSPOOL_WHIP_THROW.html",
+  "branch": "feature/saint-meridian-vertical-megacity-v1",
+  "scope": "Audited city, building and Halo transport asset directories; filename search across checkout found no named train/taxi/craft/station/elevator/skyport/bridge GLBs. Similar unnamed assets may require visual review.",
+  "assets": [
+    {
+      "path": "assets/city/tripo/barrier.glb",
+      "bytes": 1143248,
+      "sha256": "88a4d0ccb0e7b945f9d69f5ba7d6806a1f01976bbbf810180a94b99d71f6e23a",
+      "meshes": 1,
+      "materials": 1,
+      "animations": 0
+    },
+    {
+      "path": "assets/city/tripo/planter.glb",
+      "bytes": 1010260,
+      "sha256": "11ab4aef48acdcb7b1362f2485bdf4f1f759e3d8e9c6e64dbcf3413a79ba48e7",
+      "meshes": 1,
+      "materials": 1,
+      "animations": 0
+    },
+    {
+      "path": "assets/city/tripo/source/barrier.glb",
+      "bytes": 9850684,
+      "sha256": "09590887a3fe49480e4b4200749111ed32af63cf8433886dfcc869f869f7ee53",
+      "meshes": 1,
+      "materials": 1,
+      "animations": 0
+    },
+    {
+      "path": "assets/city/tripo/source/planter.glb",
+      "bytes": 7571976,
+      "sha256": "56c2aa838905a3253da28306a005a5b123a7168f9f88d6e4a85340446c1612b9",
+      "meshes": 1,
+      "materials": 1,
+      "animations": 0
+    },
+    {
+      "path": "assets/halo-transport/source/model.glb",
+      "bytes": 9653596,
+      "sha256": "85612404cb112b5b0c9c4ca4695b035858ff093e0aeb67313637cf3b08d2a373",
+      "meshes": 1,
+      "materials": 1,
+      "animations": 0
+    },
+    {
+      "path": "buildings/saint_meridian/building_01.glb",
+      "bytes": 389080,
+      "sha256": "7daeb4070385e9f03bd5b48993923d16a22682439225035eb7dc45c759f1b0d1",
+      "meshes": 27,
+      "materials": 7,
+      "animations": 0
+    },
+    {
+      "path": "buildings/saint_meridian/building_02.glb",
+      "bytes": 366072,
+      "sha256": "da91e969e1a658608a25a2bee4c0c6f30f0a00f4f01dfdcaa1ef7d3ae9fbcce6",
+      "meshes": 25,
+      "materials": 7,
+      "animations": 0
+    },
+    {
+      "path": "buildings/saint_meridian/building_03.glb",
+      "bytes": 190804,
+      "sha256": "ff0f72170ecfc94999ca523575eafecb7eb2576d152b8d427dd375ec8b95c77e",
+      "meshes": 22,
+      "materials": 8,
+      "animations": 0
+    },
+    {
+      "path": "buildings/saint_meridian/building_04.glb",
+      "bytes": 348940,
+      "sha256": "eea141cf9322d4984b5bfda6d189a3eef59d41dd29bb7233ece1beb30a9b56d3",
+      "meshes": 23,
+      "materials": 8,
+      "animations": 0
+    },
+    {
+      "path": "buildings/saint_meridian/building_05.glb",
+      "bytes": 443992,
+      "sha256": "c7d03bcbf09e1c42f2963f4d4496ade6f94874e91279ec5d4123a49e3051e46c",
+      "meshes": 22,
+      "materials": 8,
+      "animations": 0
+    },
+    {
+      "path": "buildings/saint_meridian/building_06.glb",
+      "bytes": 261932,
+      "sha256": "89aa96be150fcb423fb5522b29312f15f4b4a57fabf601fd0499f1a9506a63c3",
+      "meshes": 21,
+      "materials": 9,
+      "animations": 0
+    },
+    {
+      "path": "buildings/saint_meridian/building_07.glb",
+      "bytes": 725852,
+      "sha256": "92cfedd378724b6ea67b170bf8cd36351cdf44308130ca8293fb5b5ffc7c9f82",
+      "meshes": 20,
+      "materials": 7,
+      "animations": 0
+    },
+    {
+      "path": "buildings/saint_meridian/building_08.glb",
+      "bytes": 576028,
+      "sha256": "1f606525027106158244e543091ca55cc10b82f50ce5e963580df2af233e58a3",
+      "meshes": 25,
+      "materials": 8,
+      "animations": 0
+    }
+  ],
+  "generationQueue": [
+    {
+      "id": "train-front",
+      "label": "Elevated passenger train front",
+      "inventoryFinding": "procedural trainModel() placeholder; no suitable GLB found",
+      "status": "reference-preparation-pending",
+      "mode": "image-to-3D; exact Hi3D schema pending",
+      "quality": "Quality first; Master requires demonstrated need",
+      "creditCost": null,
+      "generationApproved": false
+    },
+    {
+      "id": "flying-taxi",
+      "label": "Flying civilian taxi",
+      "inventoryFinding": "procedural traffic box placeholder; no suitable GLB found",
+      "status": "reference-preparation-pending",
+      "mode": "image-to-3D; exact Hi3D schema pending",
+      "quality": "Quality first; Master requires demonstrated need",
+      "creditCost": null,
+      "generationApproved": false
+    },
+    {
+      "id": "halo-aerial",
+      "label": "Civic Halo patrol craft",
+      "inventoryFinding": "existing ground transport and ring drones are different vehicle classes",
+      "status": "reference-preparation-pending",
+      "mode": "image-to-3D; exact Hi3D schema pending",
+      "quality": "Quality first; Master requires demonstrated need",
+      "creditCost": null,
+      "generationApproved": false
+    },
+    {
+      "id": "station",
+      "label": "Elevated train station",
+      "inventoryFinding": "no suitable model found",
+      "status": "reference-preparation-pending",
+      "mode": "image-to-3D; exact Hi3D schema pending",
+      "quality": "Quality first; Master requires demonstrated need",
+      "creditCost": null,
+      "generationApproved": false
+    },
+    {
+      "id": "skybridge-connector",
+      "label": "Modular skybridge connector",
+      "inventoryFinding": "procedural structural beams exist; distinctive facade connector missing",
+      "status": "reference-preparation-pending",
+      "mode": "image-to-3D; exact Hi3D schema pending",
+      "quality": "Quality first; Master requires demonstrated need",
+      "creditCost": null,
+      "generationApproved": false
+    },
+    {
+      "id": "elevator",
+      "label": "Exterior elevator module",
+      "inventoryFinding": "no suitable model found",
+      "status": "reference-preparation-pending",
+      "mode": "image-to-3D; exact Hi3D schema pending",
+      "quality": "Quality first; Master requires demonstrated need",
+      "creditCost": null,
+      "generationApproved": false
+    },
+    {
+      "id": "skyport",
+      "label": "Skyport module",
+      "inventoryFinding": "no suitable model found",
+      "status": "reference-preparation-pending",
+      "mode": "image-to-3D; exact Hi3D schema pending",
+      "quality": "Quality first; Master requires demonstrated need",
+      "creditCost": null,
+      "generationApproved": false
+    }
+  ],
+  "hi3d": {
+    "endpoint": "https://agent.hi3d.ai/mcp",
+    "authentication": "OAuth login succeeded",
+    "currentSessionToolsExposed": false,
+    "generationCost": "unknown; awaiting authenticated schemas/account quote",
+    "creditsSpentByThisPhase": 0
+  },
+  "reuse": [
+    "eight existing Saint Meridian building GLBs",
+    "Tripo planter and barrier GLBs",
+    "existing street infrastructure",
+    "procedural spans, supports, guideways, railings and repeated carriages"
+  ],
+  "acceptance": "Not complete; no generated assets or final route/visual acceptance yet"
+}
