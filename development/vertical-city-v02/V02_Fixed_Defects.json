@@ -47,6 +47,25 @@
       "source": "evidence/fixed-defects/running-stair-snags-before.trace.json.gz",
       "fix": "Tagged stair broadphase includes one 60Hz input-frame horizontal travel in proximity padding. Exact support rise remains <=.201m. No original building, generic wall or movement power changes.",
       "verification": "V02_Public_Route_Run_Validation.json: complete ground-to-station, no airborne frames, max displacement beyond reported velocity <.04m"
+    },
+    {
+      "name": "immutable grouped V02 owner sent to building carving",
+      "fix": "Candidate impact mutation condition honours nonDestructible; carving also rejects owners without meshes. Sound/debris/decals and actual collision/injury remain active.",
+      "evidence": "evidence/fixed-defects/vertical-impact-owner-before.trace.json.gz",
+      "verification": "V02_Impact_Ownership_Validation.json plus complete mastery route"
+    },
+    {
+      "name": "direct 28m station drop injures player",
+      "fix": "Architectural Y118/Y108 landing terraces and longer upper rail run-up; existing damage and Drive compatibility unchanged.",
+      "evidence": "evidence/fixed-defects/mastery-direct-drop-hard-landing.trace.json.gz",
+      "verification": "Complete zero-bank/no-release mastery route; optional legal-brake variant"
+    },
+    {
+      "name": "station stairwell side exit contains .65m unsupported gap",
+      "observedAirFrames": 8,
+      "fix": "Real Blender side connection outside the final stair flight; hole remains over required stair headroom.",
+      "evidence": "evidence/fixed-defects/station-exit-gap-before.trace.json.gz",
+      "verification": "V02_Public_Roundtrip_Validation.json, zero unsupported frames"
     }
   ]
 }

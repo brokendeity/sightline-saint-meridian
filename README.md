@@ -2,7 +2,7 @@
 
 Experimental entry: [SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html](SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html). Serve this repository at8766, open it with `?capture=backspool`, and select **Enter V02 district**. The original latest WHIP game and all saved snapshots below remain unchanged.
 
-Three elevated loops, the public ground-to-station route and the Flow/Threadrail momentum approach pass normal-input tests. The momentum approach takes73.23s versus135.33s for ordinary public running, with zero/full initial Drive bank and no Drive spending. This is a graybox milestone, **not the completed V02 city**. The mastery approach, encounters, recovery, final architecture, transport sweeps and full performance acceptance remain open. [Current evidence and remaining gates](development/vertical-city-v02/V02_Acceptance_Report.md) · [Blender master and reproduction workflow](development/vertical-city-v02/README.md).
+Three elevated loops, all three station approaches and the public ground→Y128→ground roundtrip pass normal-input tests. The momentum approach takes73.23s versus135.33s for ordinary public running; the wall/rail mastery approach takes103.78s. Zero/full initial bank variants are recorded. This remains a graybox milestone, **not the completed V02 city**. Functional encounters, navigation/recovery breadth, final architecture, transit sweeps and sustained visual/performance acceptance remain open. [Current evidence and remaining gates](development/vertical-city-v02/V02_Acceptance_Report.md) · [Blender master and reproduction workflow](development/vertical-city-v02/README.md).
 
 ---
 

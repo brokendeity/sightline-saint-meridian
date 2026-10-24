@@ -16,6 +16,11 @@ old='return Math.max(h,window.backspoolFlow?.terrainHeight(x,z,currentY)??-Infin
 # Only explicitly tagged new stair risers get ground step treatment; original colliders are unchanged.
 old='for(const c of allColliders(start,end)){\n  const b=c.box;';assert s.count(old)==1;s=s.replace(old,'for(const c of allColliders(start,end)){\n  if(window.verticalDistrict?.stepRiserPass(start,c))continue;\n  const b=c.box;')
 old='for(const c of allColliders(s.pos)){const b=c.box,lo=';assert s.count(old)==1;s=s.replace(old,'for(const c of allColliders(s.pos)){if(window.verticalDistrict?.stepRiserPass(s.pos,c))continue;const b=c.box,lo=')
+# New grouped GLBs have immutable structural owners rather than one destructible
+# mesh per collider. Honour that ownership in both impact mutation paths; keep
+# decals, sound, debris and normal solid landing/collision responses active.
+old='if(!c||c.prop||c.destroyed)return false;';assert s.count(old)==1;s=s.replace(old,'if(!c||c.prop||c.destroyed||c.nonDestructible||!c.mesh)return false;')
+old='if(owner&&speed>=28&&!owner.destroyed)';assert s.count(old)==1;s=s.replace(old,'if(owner&&speed>=28&&!owner.destroyed&&!owner.nonDestructible)')
 s=s.replace('<title>Forspoken Whip Cast — ', '<title>Saint Meridian V02 Graybox — ')
 name='SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html';(R/name).write_text(s)
 (R/'development/vertical-city-v02/V02_Graybox_Build.json').write_text(json.dumps({'entry':name,'sha256':hashlib.sha256(s.encode()).hexdigest(),'sourceEntry':'SIGHTLINE_BACKSPOOL_WHIP_THROW.html','sourceSHA256':source_hash,'scope':'V1 static vertical prototype replaced with Blender modular graybox only in candidate; actual train/scenic traffic retained provisionally. Original game and all older HTML untouched.','gate':'Input acceptance pending'},indent=2)+'\n')

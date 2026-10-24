@@ -3,7 +3,7 @@
   "pilot": false,
   "coordinateSystem": "game X/Y-up/Z metres; deck tops and actor +.42 are distinct",
   "sourceEntrySHA256": "fac92161657cb93c8500d6afbc2900748b7cadfc015c019eeddf0366cdf070e4",
-  "graphSHA256": "a636af9883dc60ec1b669704dd85b5b28522391f38492d7759a4cb3034ba68ee",
+  "graphSHA256": "670cfbc7bd723819945235141f69127e7096e1947a6bc57589f96cd6fd2fefce",
   "records": [
     {
       "id": "gallery-W-24-210",
@@ -2982,6 +2982,37 @@
       "sourceStructure": "momentum-landing"
     },
     {
+      "id": "station-exit-side-link",
+      "owner": "v02:station-exit-side-link",
+      "center": [
+        68.225,
+        99.7,
+        376.825
+      ],
+      "size": [
+        8.449999999999989,
+        0.6,
+        1.6499999999999773
+      ],
+      "box": {
+        "min": [
+          64.0,
+          99.4,
+          376.0
+        ],
+        "max": [
+          72.44999999999999,
+          100.0,
+          377.65
+        ]
+      },
+      "solid": true,
+      "walkable": true,
+      "material": "deck",
+      "collection": "SM_V02_TRANSIT_STRUCTURES",
+      "sourceStructure": "station-exit-side-link"
+    },
+    {
       "id": "station-north-access",
       "owner": "v02:station-north-access",
       "center": [
@@ -3013,23 +3044,54 @@
       "sourceStructure": "station-north-access"
     },
     {
-      "id": "upper-gallery-W-300",
-      "owner": "v02:upper-gallery-W-300",
+      "id": "upper-gallery-W-276",
+      "owner": "v02:upper-gallery-W-276",
       "center": [
         55.0,
         127.7,
-        314.75
+        289.75
       ],
       "size": [
         6.0,
         0.6,
-        22.5
+        20.5
       ],
       "box": {
         "min": [
           52.0,
           127.4,
-          303.5
+          279.5
+        ],
+        "max": [
+          58.0,
+          128.0,
+          300.0
+        ]
+      },
+      "solid": true,
+      "walkable": true,
+      "material": "deck",
+      "collection": "SM_V02_ROOFTOP_ROUTES",
+      "sourceStructure": "upper-gallery-W-276"
+    },
+    {
+      "id": "upper-gallery-W-300",
+      "owner": "v02:upper-gallery-W-300",
+      "center": [
+        55.0,
+        127.7,
+        313.0
+      ],
+      "size": [
+        6.0,
+        0.6,
+        26.0
+      ],
+      "box": {
+        "min": [
+          52.0,
+          127.4,
+          300.0
         ],
         "max": [
           58.0,
@@ -3323,12 +3385,12 @@
       "sourceStructure": "upper-gallery-E-410-opening-2"
     },
     {
-      "id": "upper-endpad-W-300",
-      "owner": "v02:upper-endpad-W-300",
+      "id": "upper-endpad-W-276",
+      "owner": "v02:upper-endpad-W-276",
       "center": [
         55.0,
         127.7,
-        300.0
+        276.0
       ],
       "size": [
         6.0,
@@ -3339,19 +3401,19 @@
         "min": [
           52.0,
           127.4,
-          296.5
+          272.5
         ],
         "max": [
           58.0,
           128.0,
-          303.5
+          279.5
         ]
       },
       "solid": true,
       "walkable": true,
       "material": "deck",
       "collection": "SM_V02_ROOFTOP_ROUTES",
-      "sourceStructure": "upper-endpad-W-300"
+      "sourceStructure": "upper-endpad-W-276"
     },
     {
       "id": "upper-endpad-W-430",
@@ -3784,6 +3846,254 @@
       "collection": "SM_V02_ROOFTOP_ROUTES"
     },
     {
+      "id": "mastery-court-link",
+      "owner": "v02:mastery-court-link",
+      "center": [
+        67.0,
+        83.7,
+        301.0
+      ],
+      "size": [
+        2.0,
+        0.6,
+        2.0
+      ],
+      "box": {
+        "min": [
+          66.0,
+          83.4,
+          300.0
+        ],
+        "max": [
+          68.0,
+          84.0,
+          302.0
+        ]
+      },
+      "solid": true,
+      "walkable": true,
+      "material": "deck",
+      "collection": "SM_V02_ROOFTOP_ROUTES",
+      "sourceStructure": "mastery-court-link"
+    },
+    {
+      "id": "mastery-wall-room-96",
+      "owner": "v02:mastery-wall-room-96",
+      "center": [
+        64.0,
+        90.0,
+        294.0
+      ],
+      "size": [
+        8.0,
+        12,
+        12.0
+      ],
+      "box": {
+        "min": [
+          60.0,
+          84.0,
+          288.0
+        ],
+        "max": [
+          68.0,
+          96.0,
+          300.0
+        ]
+      },
+      "solid": true,
+      "walkable": true,
+      "material": "deck",
+      "collection": "SM_V02_ROOFTOP_ROUTES",
+      "sourceStructure": "mastery-wall-room-96"
+    },
+    {
+      "id": "mastery-wall-room-108",
+      "owner": "v02:mastery-wall-room-108",
+      "center": [
+        64.0,
+        102.0,
+        286.0
+      ],
+      "size": [
+        8.0,
+        12,
+        12.0
+      ],
+      "box": {
+        "min": [
+          60.0,
+          96.0,
+          280.0
+        ],
+        "max": [
+          68.0,
+          108.0,
+          292.0
+        ]
+      },
+      "solid": true,
+      "walkable": true,
+      "material": "deck",
+      "collection": "SM_V02_ROOFTOP_ROUTES",
+      "sourceStructure": "mastery-wall-room-108"
+    },
+    {
+      "id": "mastery-wall-room-120",
+      "owner": "v02:mastery-wall-room-120",
+      "center": [
+        64.0,
+        114.0,
+        278.0
+      ],
+      "size": [
+        8.0,
+        12,
+        12.0
+      ],
+      "box": {
+        "min": [
+          60.0,
+          108.0,
+          272.0
+        ],
+        "max": [
+          68.0,
+          120.0,
+          284.0
+        ]
+      },
+      "solid": true,
+      "walkable": true,
+      "material": "deck",
+      "collection": "SM_V02_ROOFTOP_ROUTES",
+      "sourceStructure": "mastery-wall-room-120"
+    },
+    {
+      "id": "mastery-wall-room-128",
+      "owner": "v02:mastery-wall-room-128",
+      "center": [
+        64.0,
+        124.0,
+        270.0
+      ],
+      "size": [
+        8.0,
+        8,
+        12.0
+      ],
+      "box": {
+        "min": [
+          60.0,
+          120.0,
+          264.0
+        ],
+        "max": [
+          68.0,
+          128.0,
+          276.0
+        ]
+      },
+      "solid": true,
+      "walkable": true,
+      "material": "deck",
+      "collection": "SM_V02_ROOFTOP_ROUTES",
+      "sourceStructure": "mastery-wall-room-128"
+    },
+    {
+      "id": "mastery-upper-link",
+      "owner": "v02:mastery-upper-link",
+      "center": [
+        59.0,
+        127.7,
+        274.5
+      ],
+      "size": [
+        2.0,
+        0.6,
+        3.0
+      ],
+      "box": {
+        "min": [
+          58.0,
+          127.4,
+          273.0
+        ],
+        "max": [
+          60.0,
+          128.0,
+          276.0
+        ]
+      },
+      "solid": true,
+      "walkable": true,
+      "material": "deck",
+      "collection": "SM_V02_ROOFTOP_ROUTES",
+      "sourceStructure": "mastery-upper-link"
+    },
+    {
+      "id": "mastery-rail-runup-union-0",
+      "owner": "v02:mastery-rail-runup-union-0",
+      "center": [
+        61.625,
+        127.7,
+        439.75
+      ],
+      "size": [
+        3.25,
+        0.6,
+        12.5
+      ],
+      "box": {
+        "min": [
+          60.0,
+          127.4,
+          433.5
+        ],
+        "max": [
+          63.25,
+          128.0,
+          446.0
+        ]
+      },
+      "solid": true,
+      "walkable": true,
+      "material": "deck",
+      "collection": "SM_V02_ROOFTOP_ROUTES",
+      "sourceStructure": "mastery-rail-runup"
+    },
+    {
+      "id": "mastery-rail-runup-union-1",
+      "owner": "v02:mastery-rail-runup-union-1",
+      "center": [
+        65.625,
+        127.7,
+        439.75
+      ],
+      "size": [
+        4.75,
+        0.6,
+        12.5
+      ],
+      "box": {
+        "min": [
+          63.25,
+          127.4,
+          433.5
+        ],
+        "max": [
+          68.0,
+          128.0,
+          446.0
+        ]
+      },
+      "solid": true,
+      "walkable": true,
+      "material": "deck",
+      "collection": "SM_V02_ROOFTOP_ROUTES",
+      "sourceStructure": "mastery-rail-runup"
+    },
+    {
       "id": "pop-end-deck-opening-0",
       "owner": "v02:pop-end-deck-opening-0",
       "center": [
@@ -3844,6 +4154,68 @@
       "material": "deck",
       "collection": "SM_V02_ROOFTOP_ROUTES",
       "sourceStructure": "pop-end-deck-opening-1"
+    },
+    {
+      "id": "mastery-recovery-118",
+      "owner": "v02:mastery-recovery-118",
+      "center": [
+        64.0,
+        117.7,
+        391.0
+      ],
+      "size": [
+        12.0,
+        0.6,
+        14.0
+      ],
+      "box": {
+        "min": [
+          58.0,
+          117.4,
+          384.0
+        ],
+        "max": [
+          70.0,
+          118.0,
+          398.0
+        ]
+      },
+      "solid": true,
+      "walkable": true,
+      "material": "deck",
+      "collection": "SM_V02_ROOFTOP_ROUTES",
+      "sourceStructure": "mastery-recovery-118"
+    },
+    {
+      "id": "mastery-recovery-108",
+      "owner": "v02:mastery-recovery-108",
+      "center": [
+        64.0,
+        107.7,
+        375.0
+      ],
+      "size": [
+        12.0,
+        0.6,
+        14.0
+      ],
+      "box": {
+        "min": [
+          58.0,
+          107.4,
+          368.0
+        ],
+        "max": [
+          70.0,
+          108.0,
+          382.0
+        ]
+      },
+      "solid": true,
+      "walkable": true,
+      "material": "deck",
+      "collection": "SM_V02_ROOFTOP_ROUTES",
+      "sourceStructure": "mastery-recovery-108"
     },
     {
       "id": "V2-VT-A-0-start",
@@ -50762,15 +51134,15 @@
       "stairLanding": true
     },
     {
-      "id": "V2-VT-C-0-north-exit",
-      "owner": "v02:V2-VT-C-0-north-exit",
+      "id": "V2-VT-C-0-north-exit-union-0",
+      "owner": "v02:V2-VT-C-0-north-exit-union-0",
       "center": [
-        65.6,
+        61.699999999999996,
         99.91,
         375.5
       ],
       "size": [
-        12.400000000000006,
+        4.6000000000000085,
         0.18,
         3.0
       ],
@@ -50781,7 +51153,7 @@
           374.0
         ],
         "max": [
-          71.8,
+          64.0,
           100.0,
           377.0
         ]
@@ -50794,35 +51166,35 @@
       "stairLanding": true
     },
     {
-      "id": "V2-VT-C-0-return",
-      "owner": "v02:V2-VT-C-0-return",
+      "id": "V2-VT-C-0-north-exit-union-1",
+      "owner": "v02:V2-VT-C-0-north-exit-union-1",
       "center": [
-        70.2,
+        67.9,
         99.91,
-        377.325
+        375.0
       ],
       "size": [
-        3.1999999999999886,
+        7.799999999999997,
         0.18,
-        0.6499999999999773
+        2.0
       ],
       "box": {
         "min": [
-          68.60000000000001,
+          64.0,
           99.82,
-          377.0
+          374.0
         ],
         "max": [
-          71.8,
+          71.80000000000001,
           100.0,
-          377.65
+          376.0
         ]
       },
       "solid": true,
       "walkable": true,
       "material": "deck",
       "collection": "SM_V02_VERTICAL_TRANSFERS",
-      "sourceStructure": "V2-VT-C-0-return",
+      "sourceStructure": "V2-VT-C-0-north-exit",
       "stairLanding": true
     },
     {
@@ -59701,15 +60073,16 @@
     {
       "id": "v02-02-05-deck",
       "url": "assets/city/vertical-v02/graybox/v02-02-05-deck.glb",
-      "sha256": "86acd2b8ff8d3a64c5d4e29eba7eb6d67c347355b448751f21ce6b6854f0c5b8",
-      "bytes": 4488,
-      "triangles": 60,
+      "sha256": "b28eecdd8fe36d39a3c6924169e1a2062b636abc86509ff9812425e7c044367b",
+      "bytes": 5160,
+      "triangles": 72,
       "recordIDs": [
         "gallery-W-84-300",
         "gallery-W-84-326",
         "gallery-E-84-300",
         "gallery-E-84-326",
-        "V1-BR-H1-rebuilt"
+        "V1-BR-H1-rebuilt",
+        "mastery-court-link"
       ]
     },
     {
@@ -59914,9 +60287,9 @@
     {
       "id": "v02-03-06-deck",
       "url": "assets/city/vertical-v02/graybox/v02-03-06-deck.glb",
-      "sha256": "565f3bdeeed88cf1ab2b2be83898f834fcf64c28ef88777c75ef58bb3a8b8c42",
-      "bytes": 237836,
-      "triangles": 4176,
+      "sha256": "306e8b97dfaebeb01cb0574a46c90c3f1c335a0c484bfb857577bc9402af759b",
+      "bytes": 239208,
+      "triangles": 4200,
       "recordIDs": [
         "station-concourse-opening-0",
         "station-concourse-opening-1",
@@ -59924,7 +60297,9 @@
         "station-concourse-opening-3",
         "station-concourse-opening-4",
         "station-concourse-opening-5",
+        "station-exit-side-link",
         "station-north-access",
+        "mastery-recovery-108",
         "V2-VT-B-3-flight-0-riser-0",
         "V2-VT-B-3-flight-0-riser-1",
         "V2-VT-B-3-flight-0-riser-2",
@@ -60188,8 +60563,8 @@
         "V2-VT-C-0-flight-4-riser-16",
         "V2-VT-C-0-flight-4-riser-17",
         "V2-VT-C-0-landing-4",
-        "V2-VT-C-0-north-exit",
-        "V2-VT-C-0-return",
+        "V2-VT-C-0-north-exit-union-0",
+        "V2-VT-C-0-north-exit-union-1",
         "V2-VT-C-0-portal-100-union-0",
         "V2-VT-C-0-portal-100-union-1",
         "V2-VT-D-0-start",
@@ -60271,9 +60646,9 @@
     {
       "id": "v02-04-07-deck",
       "url": "assets/city/vertical-v02/graybox/v02-04-07-deck.glb",
-      "sha256": "02c78e6285d59632a40fe5c0a46ef8e11654794079552a494231732b6678023c",
-      "bytes": 7912,
-      "triangles": 120,
+      "sha256": "3530fa74ca898d9a31f82d840a8a701539cebcec1c14eb036c5932ad238113d7",
+      "bytes": 9272,
+      "triangles": 144,
       "recordIDs": [
         "observation-deck-opening-0",
         "observation-deck-opening-1",
@@ -60284,7 +60659,9 @@
         "upper-crossing-union-0",
         "upper-crossing-union-1",
         "upper-crossing-union-2",
-        "upper-crossing-union-3"
+        "upper-crossing-union-3",
+        "mastery-rail-runup-union-0",
+        "mastery-rail-runup-union-1"
       ]
     },
     {
@@ -60298,23 +60675,36 @@
       ]
     },
     {
+      "id": "v02-04-04-deck",
+      "url": "assets/city/vertical-v02/graybox/v02-04-04-deck.glb",
+      "sha256": "4865f63d562049b297311d22aabb1cb73e3c5266058a9daa47688994ade9616e",
+      "bytes": 4492,
+      "triangles": 60,
+      "recordIDs": [
+        "upper-gallery-W-276",
+        "upper-endpad-W-276",
+        "mastery-wall-room-120",
+        "mastery-wall-room-128",
+        "mastery-upper-link"
+      ]
+    },
+    {
       "id": "v02-04-05-deck",
       "url": "assets/city/vertical-v02/graybox/v02-04-05-deck.glb",
-      "sha256": "03eff94a936fdfc9fe0f89d7ec77ffa0fbacc4579b5492375ec88553f5b3bf6c",
-      "bytes": 3156,
-      "triangles": 36,
+      "sha256": "e22b1d74765a3bba3e6b00bd4e851ce0cc1cd5fb5ea118d9468a6c8b00bf768e",
+      "bytes": 2480,
+      "triangles": 24,
       "recordIDs": [
         "upper-gallery-W-300",
-        "upper-gallery-W-326",
-        "upper-endpad-W-300"
+        "upper-gallery-W-326"
       ]
     },
     {
       "id": "v02-04-06-deck",
       "url": "assets/city/vertical-v02/graybox/v02-04-06-deck.glb",
-      "sha256": "5928a88aa946bfde8c7c4583706cab8aa7700d019027448ea4c4d030a215262d",
-      "bytes": 144672,
-      "triangles": 2532,
+      "sha256": "a41cb6be7057fe372ad9b549169a91df7c5dbb2a2f9d82ec55f2160dfe0856e5",
+      "bytes": 145344,
+      "triangles": 2544,
       "recordIDs": [
         "upper-gallery-W-350",
         "upper-gallery-W-376",
@@ -60326,6 +60716,7 @@
         "upper-endpad-E-400",
         "pop-end-deck-opening-0",
         "pop-end-deck-opening-1",
+        "mastery-recovery-118",
         "V2-VT-B-3-flight-8-riser-16",
         "V2-VT-B-3-flight-8-riser-17",
         "V2-VT-B-3-landing-8",
@@ -60532,15 +60923,17 @@
     {
       "id": "v02-03-04-deck",
       "url": "assets/city/vertical-v02/graybox/v02-03-04-deck.glb",
-      "sha256": "dd31903d56fb7493a99a0efc301245f21c152ac146e73815f4108af18893ce76",
-      "bytes": 4552,
-      "triangles": 60,
+      "sha256": "66bbe8944b5bc875324f11378d3c83c0c54441c0b87c77bb88107ec57aa57b57",
+      "bytes": 5888,
+      "triangles": 84,
       "recordIDs": [
         "momentum-court-canopy",
         "momentum-canopy-post-42.2-278.2",
         "momentum-canopy-post-42.2-297.8",
         "momentum-canopy-post-58.8-278.2",
-        "momentum-canopy-post-58.8-297.8"
+        "momentum-canopy-post-58.8-297.8",
+        "mastery-wall-room-96",
+        "mastery-wall-room-108"
       ]
     },
     {

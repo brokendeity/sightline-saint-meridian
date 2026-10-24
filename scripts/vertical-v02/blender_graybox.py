@@ -80,7 +80,7 @@ if not pilot:
  for st in G['structures']:
   p=st['center'];sz=st['size'];top=p[1]+sz[1]/2;rects=[(p[0]-sz[0]/2,p[0]+sz[0]/2,p[2]-sz[2]/2,p[2]+sz[2]/2)]
   for y,cut in openings:
-   if abs(y-top)<1e-5:rects=[v for r in rects for v in subtract(r,cut)]
+   if abs(y-top)<1e-5 and not st.get('besideStairFlight'):rects=[v for r in rects for v in subtract(r,cut)]
   for i,(x0,x1,z0,z1)in enumerate(rects):add(st['id']if len(rects)==1 else st['id']+f'-opening-{i}',[(x0+x1)/2,p[1],(z0+z1)/2],[x1-x0,sz[1],z1-z0],st['collection'],walkable=st.get('walkable',False))
 def landing(id,x,y,z,width=12.4,depth=3):
  # Offset east to provide an outside return corridor without covering stair flights.

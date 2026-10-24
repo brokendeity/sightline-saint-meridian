@@ -1,5 +1,5 @@
 {
-  "sourceManifestSHA256": "eb37451e8a98d7d758745753bd3b7ea0a3e51f2b4179f85a1e69cf0b69c665e7",
+  "sourceManifestSHA256": "0509a3145f13c29220678398aac4057692fe6fe920fa3ee5c1af58fffc3bc76a",
   "status": "graybox; full V02 acceptance incomplete",
   "axes": "game Y-up metres",
   "colliders": [
@@ -1732,6 +1732,24 @@
       "walkable": true
     },
     {
+      "id": "station-exit-side-link",
+      "owner": "v02:station-exit-side-link",
+      "box": {
+        "min": [
+          64.0,
+          99.4,
+          376.0
+        ],
+        "max": [
+          72.44999999999999,
+          100.0,
+          377.65
+        ]
+      },
+      "solid": true,
+      "walkable": true
+    },
+    {
       "id": "station-north-access",
       "owner": "v02:station-north-access",
       "box": {
@@ -1750,13 +1768,31 @@
       "walkable": true
     },
     {
+      "id": "upper-gallery-W-276",
+      "owner": "v02:upper-gallery-W-276",
+      "box": {
+        "min": [
+          52.0,
+          127.4,
+          279.5
+        ],
+        "max": [
+          58.0,
+          128.0,
+          300.0
+        ]
+      },
+      "solid": true,
+      "walkable": true
+    },
+    {
       "id": "upper-gallery-W-300",
       "owner": "v02:upper-gallery-W-300",
       "box": {
         "min": [
           52.0,
           127.4,
-          303.5
+          300.0
         ],
         "max": [
           58.0,
@@ -1930,18 +1966,18 @@
       "walkable": true
     },
     {
-      "id": "upper-endpad-W-300",
-      "owner": "v02:upper-endpad-W-300",
+      "id": "upper-endpad-W-276",
+      "owner": "v02:upper-endpad-W-276",
       "box": {
         "min": [
           52.0,
           127.4,
-          296.5
+          272.5
         ],
         "max": [
           58.0,
           128.0,
-          303.5
+          279.5
         ]
       },
       "solid": true,
@@ -2200,6 +2236,150 @@
       "walkable": false
     },
     {
+      "id": "mastery-court-link",
+      "owner": "v02:mastery-court-link",
+      "box": {
+        "min": [
+          66.0,
+          83.4,
+          300.0
+        ],
+        "max": [
+          68.0,
+          84.0,
+          302.0
+        ]
+      },
+      "solid": true,
+      "walkable": true
+    },
+    {
+      "id": "mastery-wall-room-96",
+      "owner": "v02:mastery-wall-room-96",
+      "box": {
+        "min": [
+          60.0,
+          84.0,
+          288.0
+        ],
+        "max": [
+          68.0,
+          96.0,
+          300.0
+        ]
+      },
+      "solid": true,
+      "walkable": true
+    },
+    {
+      "id": "mastery-wall-room-108",
+      "owner": "v02:mastery-wall-room-108",
+      "box": {
+        "min": [
+          60.0,
+          96.0,
+          280.0
+        ],
+        "max": [
+          68.0,
+          108.0,
+          292.0
+        ]
+      },
+      "solid": true,
+      "walkable": true
+    },
+    {
+      "id": "mastery-wall-room-120",
+      "owner": "v02:mastery-wall-room-120",
+      "box": {
+        "min": [
+          60.0,
+          108.0,
+          272.0
+        ],
+        "max": [
+          68.0,
+          120.0,
+          284.0
+        ]
+      },
+      "solid": true,
+      "walkable": true
+    },
+    {
+      "id": "mastery-wall-room-128",
+      "owner": "v02:mastery-wall-room-128",
+      "box": {
+        "min": [
+          60.0,
+          120.0,
+          264.0
+        ],
+        "max": [
+          68.0,
+          128.0,
+          276.0
+        ]
+      },
+      "solid": true,
+      "walkable": true
+    },
+    {
+      "id": "mastery-upper-link",
+      "owner": "v02:mastery-upper-link",
+      "box": {
+        "min": [
+          58.0,
+          127.4,
+          273.0
+        ],
+        "max": [
+          60.0,
+          128.0,
+          276.0
+        ]
+      },
+      "solid": true,
+      "walkable": true
+    },
+    {
+      "id": "mastery-rail-runup-union-0",
+      "owner": "v02:mastery-rail-runup-union-0",
+      "box": {
+        "min": [
+          60.0,
+          127.4,
+          433.5
+        ],
+        "max": [
+          63.25,
+          128.0,
+          446.0
+        ]
+      },
+      "solid": true,
+      "walkable": true
+    },
+    {
+      "id": "mastery-rail-runup-union-1",
+      "owner": "v02:mastery-rail-runup-union-1",
+      "box": {
+        "min": [
+          63.25,
+          127.4,
+          433.5
+        ],
+        "max": [
+          68.0,
+          128.0,
+          446.0
+        ]
+      },
+      "solid": true,
+      "walkable": true
+    },
+    {
       "id": "pop-end-deck-opening-0",
       "owner": "v02:pop-end-deck-opening-0",
       "box": {
@@ -2230,6 +2410,42 @@
           70.0,
           128.0,
           401.35
+        ]
+      },
+      "solid": true,
+      "walkable": true
+    },
+    {
+      "id": "mastery-recovery-118",
+      "owner": "v02:mastery-recovery-118",
+      "box": {
+        "min": [
+          58.0,
+          117.4,
+          384.0
+        ],
+        "max": [
+          70.0,
+          118.0,
+          398.0
+        ]
+      },
+      "solid": true,
+      "walkable": true
+    },
+    {
+      "id": "mastery-recovery-108",
+      "owner": "v02:mastery-recovery-108",
+      "box": {
+        "min": [
+          58.0,
+          107.4,
+          368.0
+        ],
+        "max": [
+          70.0,
+          108.0,
+          382.0
         ]
       },
       "solid": true,
@@ -31147,8 +31363,8 @@
       "stairLanding": true
     },
     {
-      "id": "V2-VT-C-0-north-exit",
-      "owner": "v02:V2-VT-C-0-north-exit",
+      "id": "V2-VT-C-0-north-exit-union-0",
+      "owner": "v02:V2-VT-C-0-north-exit-union-0",
       "box": {
         "min": [
           59.39999999999999,
@@ -31156,7 +31372,7 @@
           374.0
         ],
         "max": [
-          71.8,
+          64.0,
           100.0,
           377.0
         ]
@@ -31166,18 +31382,18 @@
       "stairLanding": true
     },
     {
-      "id": "V2-VT-C-0-return",
-      "owner": "v02:V2-VT-C-0-return",
+      "id": "V2-VT-C-0-north-exit-union-1",
+      "owner": "v02:V2-VT-C-0-north-exit-union-1",
       "box": {
         "min": [
-          68.60000000000001,
+          64.0,
           99.82,
-          377.0
+          374.0
         ],
         "max": [
-          71.8,
+          71.80000000000001,
           100.0,
-          377.65
+          376.0
         ]
       },
       "solid": true,
