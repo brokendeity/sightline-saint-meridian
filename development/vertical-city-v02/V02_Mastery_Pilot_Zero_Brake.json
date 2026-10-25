@@ -1,0 +1,192 @@
+{
+  "status": "FAIL",
+  "scope": "Local Y84 courtyard fixture; four walls, upper rail and Pop, not full ground approach",
+  "method": "One controlled initial setup (ground for full route, Y84 for local pilot). Normal R/Shift/Space keys and standard simulated controller movement/look after setup. No direct rail creation, actor/camera assignment, reset or resource injection during route.",
+  "errors": [],
+  "stages": [
+    {
+      "name": "mastery courtyard",
+      "frame": 2,
+      "p": [
+        55,
+        84.42,
+        293
+      ],
+      "clock": 0.08333333333333333,
+      "message": ""
+    },
+    {
+      "name": "wall boost to 96",
+      "frame": 327,
+      "p": [
+        63.831639968322015,
+        86.67915525530671,
+        300.62
+      ],
+      "clock": 5.499999999999986,
+      "message": ""
+    },
+    {
+      "name": "wall roof landing 96",
+      "frame": 501,
+      "p": [
+        63.831639968322015,
+        96.42,
+        299.365
+      ],
+      "clock": 8.399999999999997,
+      "message": ""
+    },
+    {
+      "name": "wall boost to 108",
+      "frame": 579,
+      "p": [
+        63.831639968322015,
+        98.67915525530671,
+        292.62
+      ],
+      "clock": 9.700000000000061,
+      "message": ""
+    },
+    {
+      "name": "wall roof landing 108",
+      "frame": 753,
+      "p": [
+        63.831639968322015,
+        108.42,
+        291.12
+      ],
+      "clock": 12.600000000000206,
+      "message": ""
+    },
+    {
+      "name": "wall boost to 120",
+      "frame": 805,
+      "p": [
+        63.831639968322015,
+        110.67915525530671,
+        284.62
+      ],
+      "clock": 13.466666666666915,
+      "message": ""
+    },
+    {
+      "name": "wall roof landing 120",
+      "frame": 979,
+      "p": [
+        63.831639968322015,
+        120.42,
+        283.09727250000003
+      ],
+      "clock": 16.36666666666702,
+      "message": ""
+    },
+    {
+      "name": "wall boost to 128",
+      "frame": 1031,
+      "p": [
+        63.831639968322015,
+        122.67915525530671,
+        276.62
+      ],
+      "clock": 17.233333333333636,
+      "message": ""
+    },
+    {
+      "name": "wall roof landing 128",
+      "frame": 1162,
+      "p": [
+        63.831639968322015,
+        128.42,
+        275.09727250000003
+      ],
+      "clock": 19.416666666666845,
+      "message": ""
+    },
+    {
+      "name": "upper rail staging",
+      "frame": 1910,
+      "p": [
+        63.96254239197373,
+        128.42,
+        422.00759465662514
+      ],
+      "clock": 31.883333333332804,
+      "message": ""
+    },
+    {
+      "name": "upper cartridge A",
+      "frame": 2127,
+      "p": [
+        63.96254239197373,
+        128.42,
+        422.00759465662514
+      ],
+      "clock": 33.74499999999971,
+      "message": "POINT A ATTACHED · AIM B"
+    },
+    {
+      "name": "upper rail constructed",
+      "frame": 2310,
+      "p": [
+        63.96254239197373,
+        128.42,
+        422.00759465662514
+      ],
+      "clock": 35.62499999999984,
+      "message": "PERFECT CROSS-STREET"
+    },
+    {
+      "name": "rail attached",
+      "frame": 2460,
+      "p": [
+        63.99857266797074,
+        128.42377229080932,
+        425.1762326379729
+      ],
+      "clock": 38.124999999999694,
+      "message": "CLEAN CATCH"
+    },
+    {
+      "name": "near-end Pop",
+      "frame": 2656,
+      "p": [
+        64.00724154070235,
+        128.54194444444445,
+        400.6272207314593
+      ],
+      "clock": 41.391666666666175,
+      "message": "PERFECT RAIL POP"
+    },
+    {
+      "name": "Afterstep fall brake",
+      "frame": 2684,
+      "p": [
+        64.04187287697937,
+        128.8025,
+        398.40136118524043
+      ],
+      "clock": 41.858333333332816,
+      "message": "INCOMPATIBLE"
+    },
+    {
+      "name": "station landing",
+      "frame": 2901,
+      "p": [
+        64.64751200399313,
+        100.42,
+        392.77052378720714
+      ],
+      "clock": 45.47499999999928,
+      "message": "INCOMPATIBLE"
+    }
+  ],
+  "entrySHA256": "82e26024710a8723510d5e190748609db8c739ba5e85bee1f496a8c0952b1dab",
+  "manifestSHA256": "e60cd874b183e01a42565696d73896299a89dd029c108a21e6c7e46eac7eef12",
+  "initialBank": 0,
+  "routeStartFrame": 1,
+  "routeTraceStart": 1,
+  "failure": "Error: Move damage {\"frame\":3,\"p\":[64.64751200399313,100.42,392.77052378720714],\"v\":[0,0,0],\"grounded\":true,\"mode\":\"LANDING\",\"trauma\":3.217378666666653,\"rail\":null,\"rails\":[{\"id\":\"rail-1\",\"a\":\"anchor-33\",\"b\":\"anchor-34\",\"length\":24.119055686997655,\"tangent\":{\"x\":0.0005432539660318249,\"y\":0,\"z\":-0.9999998524375534},\"slope\":0,\"createdAt\":35.60833333333317,\"expiresAt\":65.60833333333318}],\"anchors\":[{\"id\":\"anchor-33\",\"position\":{\"x\":63.99453300111109,\"y\":128.44,\"z\":424.0205846286427},\"normal\":{\"x\":0,\"y\":1,\"z\":0},\"ownerId\":\"v02:observation-deck-opening-1\",\"revision\":0,\"valid\":true},{\"id\":\"anchor-34\",\"position\":{\"x\":64.00763577376999,\"y\":128.44,\"z\":399.90153250071194},\"normal\":{\"x\":0,\"y\":1,\"z\":0},\"ownerId\":\"v02:pop-end-deck-opening-1\",\"revision\":0,\"valid\":true}],\"bank\":4,\"releases\":[],\"clock\":45.54166666666594,\"message\":\"INCOMPATIBLE\",\"deployment\":\"attached\",\"precision\":false,\"source\":\"forspoken-flow-landHard\",\"advanced\":{\"kind\":null,\"clock\":42.1083333333328,\"cooldown\":0,\"floatRemaining\":6,\"wallJumps\":0,\"reason\":\"INELIGIBLE\",\"motion\":null,\"water\":null,\"anchor\":null,\"wallNormal\":null,\"wallTop\":null,\"wallPoint\":null,\"wallAge\":0,\"wallRegrabLocked\":false,\"events\":[{\"eventId\":1,\"time\":4.999999999999988,\"kind\":\"wall-start\"},{\"eventId\":2,\"time\":5.466666666666653,\"kind\":\"wall-boost\",\"count\":1},{\"eventId\":3,\"time\":6.766666666666648,\"kind\":\"mantle-start\"},{\"eventId\":4,\"time\":8.366666666666662,\"kind\":\"end\",\"mode\":\"mantle\",\"reason\":\"ROOFTOP REACHED\"},{\"eventId\":5,\"time\":9.183333333333369,\"kind\":\"wall-start\"},{\"eventId\":6,\"time\":9.650000000000059,\"kind\":\"wall-boost\",\"count\":1},{\"eventId\":7,\"time\":10.950000000000124,\"kind\":\"mantle-start\"},{\"eventId\":8,\"time\":12.550000000000203,\"kind\":\"end\",\"mode\":\"mantle\",\"reason\":\"ROOFTOP REACHED\"},{\"eventId\":9,\"time\":12.933333333333556,\"kind\":\"wall-start\"},{\"eventId\":10,\"time\":13.400000000000245,\"kind\":\"wall-boost\",\"count\":1},{\"eventId\":11,\"time\":14.70000000000031,\"kind\":\"mantle-start\"},{\"eventId\":12,\"time\":16.300000000000356,\"kind\":\"end\",\"mode\":\"mantle\",\"reason\":\"ROOFTOP REACHED\"},{\"eventId\":13,\"time\":16.683333333333668,\"kind\":\"wall-start\"},{\"eventId\":14,\"time\":17.150000000000308,\"kind\":\"wall-boost\",\"count\":1},{\"eventId\":15,\"time\":17.733333333333608,\"kind\":\"mantle-start\"},{\"eventId\":16,\"time\":19.333333333333517,\"kind\":\"end\",\"mode\":\"mantle\",\"reason\":\"ROOFTOP REACHED\"}],\"origin\":\"authored mechanics; source/native candidate poses\",\"ready\":true,\"waters\":[{\"id\":\"meridian-waterfront\",\"minX\":-36,\"maxX\":36,\"minZ\":1171.7387966456854,\"maxZ\":1231.7387966456854,\"surface\":0.06,\"depth\":2.5}],\"surfaceOnly\":true,\"wallPose\":null,\"pose\":\"forspoken-flow-landHard\"},\"camera\":[65.80849428618723,103.49349436805898,397.27126080446646]}",
+  "fullTrace": "V02_Mastery_Pilot_Zero_Brake.trace.json.gz",
+  "traceFrames": 2905
+}

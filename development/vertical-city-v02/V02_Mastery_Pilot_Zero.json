@@ -1,0 +1,428 @@
+{
+  "status": "PASS local mastery approach, full ground prefix not tested",
+  "scope": "Local Y84 courtyard fixture; four walls, upper rail and Pop, not full ground approach",
+  "method": "One controlled initial setup (ground for full route, Y84 for local pilot). Normal R/Shift/Space keys and standard simulated controller movement/look after setup. No direct rail creation, actor/camera assignment, reset or resource injection during route.",
+  "errors": [],
+  "stages": [
+    {
+      "name": "mastery courtyard",
+      "frame": 2,
+      "p": [
+        55,
+        84.42,
+        293
+      ],
+      "clock": 0.08333333333333333,
+      "message": ""
+    },
+    {
+      "name": "wall boost to 96",
+      "frame": 327,
+      "p": [
+        63.831639968322015,
+        86.67915525530671,
+        300.62
+      ],
+      "clock": 5.499999999999986,
+      "message": ""
+    },
+    {
+      "name": "wall roof landing 96",
+      "frame": 501,
+      "p": [
+        63.831639968322015,
+        96.42,
+        299.365
+      ],
+      "clock": 8.399999999999997,
+      "message": ""
+    },
+    {
+      "name": "wall boost to 108",
+      "frame": 579,
+      "p": [
+        63.831639968322015,
+        98.67915525530671,
+        292.62
+      ],
+      "clock": 9.700000000000061,
+      "message": ""
+    },
+    {
+      "name": "wall roof landing 108",
+      "frame": 753,
+      "p": [
+        63.831639968322015,
+        108.42,
+        291.12
+      ],
+      "clock": 12.600000000000206,
+      "message": ""
+    },
+    {
+      "name": "wall boost to 120",
+      "frame": 805,
+      "p": [
+        63.831639968322015,
+        110.67915525530671,
+        284.62
+      ],
+      "clock": 13.466666666666915,
+      "message": ""
+    },
+    {
+      "name": "wall roof landing 120",
+      "frame": 979,
+      "p": [
+        63.831639968322015,
+        120.42,
+        283.09727250000003
+      ],
+      "clock": 16.36666666666702,
+      "message": ""
+    },
+    {
+      "name": "wall boost to 128",
+      "frame": 1031,
+      "p": [
+        63.831639968322015,
+        122.67915525530671,
+        276.62
+      ],
+      "clock": 17.233333333333636,
+      "message": ""
+    },
+    {
+      "name": "wall roof landing 128",
+      "frame": 1162,
+      "p": [
+        63.831639968322015,
+        128.42,
+        275.09727250000003
+      ],
+      "clock": 19.416666666666845,
+      "message": ""
+    },
+    {
+      "name": "upper rail staging",
+      "frame": 1910,
+      "p": [
+        63.96254239197373,
+        128.42,
+        422.00759465662514
+      ],
+      "clock": 31.883333333332804,
+      "message": ""
+    },
+    {
+      "name": "upper cartridge A",
+      "frame": 2127,
+      "p": [
+        63.96254239197373,
+        128.42,
+        422.00759465662514
+      ],
+      "clock": 33.74499999999971,
+      "message": "POINT A ATTACHED · AIM B"
+    },
+    {
+      "name": "upper rail constructed",
+      "frame": 2310,
+      "p": [
+        63.96254239197373,
+        128.42,
+        422.00759465662514
+      ],
+      "clock": 35.62499999999984,
+      "message": "PERFECT CROSS-STREET"
+    },
+    {
+      "name": "rail attached",
+      "frame": 2597,
+      "p": [
+        63.998944033530066,
+        128.42377229080932,
+        425.0629792557553
+      ],
+      "clock": 40.4083333333329,
+      "message": "CLEAN CATCH"
+    },
+    {
+      "name": "near-end Pop",
+      "frame": 2687,
+      "p": [
+        64.0067383542923,
+        128.54194444444445,
+        401.553465853031
+      ],
+      "clock": 41.90833333333281,
+      "message": "PERFECT RAIL POP"
+    },
+    {
+      "name": "recovery roof landing 118",
+      "frame": 2777,
+      "p": [
+        63.99951835610186,
+        118.42,
+        390.08988732556014
+      ],
+      "clock": 43.40833333333273,
+      "message": "PERFECT RAIL POP"
+    },
+    {
+      "name": "recovery roof landing 108",
+      "frame": 3007,
+      "p": [
+        63.99987877505939,
+        108.42,
+        378.7979733615364
+      ],
+      "clock": 47.24166666666584,
+      "message": "PERFECT RAIL POP"
+    },
+    {
+      "name": "recovery roof landing 100",
+      "frame": 3296,
+      "p": [
+        63.999997748643864,
+        100.42,
+        363.29339560244716
+      ],
+      "clock": 52.058333333332236,
+      "message": "PERFECT RAIL POP"
+    },
+    {
+      "name": "station objective reached",
+      "frame": 3531,
+      "p": [
+        66.46793437121151,
+        100.42,
+        375.8370220428589
+      ],
+      "clock": 55.97499999999868,
+      "message": "PERFECT RAIL POP"
+    }
+  ],
+  "entrySHA256": "cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1",
+  "manifestSHA256": "ec545e5e7f7cc4adea24bc9189b5db950ea4343f349a7fbad3edda07404da777",
+  "cameraSamplePolicy": {
+    "sourceSHA256": "ba089f56bf1ebb13f2b258b81bfb7282f7a425fb72befbf674f3882f35662e1a",
+    "intervalFrames": 6,
+    "scope": "Actual animated head/hips projection and native static-obstacle triangle rays during normal input, 10Hz at60Hz simulation. No gameplay state writes. Transparent glass below.5alpha excluded from opaque occlusion; moving objects absent from the native obstacle registry, HUD, between-sample frames and physical devices are not certified. Raw samples require context/visual review; collection is not camera acceptance."
+  },
+  "initialBank": 0,
+  "routeStartFrame": 1,
+  "routeTraceStart": 1,
+  "totalInputSeconds": 58.86666666666667,
+  "seconds": 58.85,
+  "distance": 378.60273853283263,
+  "powerReleases": [],
+  "final": {
+    "frame": 0,
+    "p": [
+      66.46793437121151,
+      100.42,
+      375.8370220428589
+    ],
+    "v": [
+      0,
+      0,
+      0
+    ],
+    "grounded": true,
+    "mode": "GROUND",
+    "trauma": 0,
+    "damage": 0,
+    "rail": null,
+    "rails": [
+      {
+        "id": "rail-1",
+        "a": "anchor-33",
+        "b": "anchor-34",
+        "length": 24.119055686997655,
+        "tangent": {
+          "x": 0.0005432539660318249,
+          "y": 0,
+          "z": -0.9999998524375534
+        },
+        "slope": 0,
+        "createdAt": 35.60833333333317,
+        "expiresAt": 65.60833333333318
+      }
+    ],
+    "anchors": [
+      {
+        "id": "anchor-33",
+        "position": {
+          "x": 63.99453300111109,
+          "y": 128.44,
+          "z": 424.0205846286427
+        },
+        "normal": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "ownerId": "v02:observation-deck-opening-1",
+        "revision": 0,
+        "valid": true
+      },
+      {
+        "id": "anchor-34",
+        "position": {
+          "x": 64.00763577376999,
+          "y": 128.44,
+          "z": 399.90153250071194
+        },
+        "normal": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "ownerId": "v02:pop-end-deck-opening-1",
+        "revision": 0,
+        "valid": true
+      }
+    ],
+    "bank": 5,
+    "releases": [],
+    "clock": 55.991666666665346,
+    "message": "PERFECT RAIL POP",
+    "deployment": "attached",
+    "precision": false,
+    "source": "forspoken-threadrail-relaxed-idle",
+    "advanced": {
+      "kind": null,
+      "clock": 50.658333333332315,
+      "cooldown": 0,
+      "floatRemaining": 6,
+      "wallJumps": 0,
+      "reason": "INELIGIBLE",
+      "motion": null,
+      "water": null,
+      "anchor": null,
+      "wallNormal": null,
+      "wallTop": null,
+      "wallPoint": null,
+      "wallAge": 0,
+      "wallRegrabLocked": false,
+      "events": [
+        {
+          "eventId": 1,
+          "time": 4.999999999999988,
+          "kind": "wall-start"
+        },
+        {
+          "eventId": 2,
+          "time": 5.466666666666653,
+          "kind": "wall-boost",
+          "count": 1
+        },
+        {
+          "eventId": 3,
+          "time": 6.766666666666648,
+          "kind": "mantle-start"
+        },
+        {
+          "eventId": 4,
+          "time": 8.366666666666662,
+          "kind": "end",
+          "mode": "mantle",
+          "reason": "ROOFTOP REACHED"
+        },
+        {
+          "eventId": 5,
+          "time": 9.183333333333369,
+          "kind": "wall-start"
+        },
+        {
+          "eventId": 6,
+          "time": 9.650000000000059,
+          "kind": "wall-boost",
+          "count": 1
+        },
+        {
+          "eventId": 7,
+          "time": 10.950000000000124,
+          "kind": "mantle-start"
+        },
+        {
+          "eventId": 8,
+          "time": 12.550000000000203,
+          "kind": "end",
+          "mode": "mantle",
+          "reason": "ROOFTOP REACHED"
+        },
+        {
+          "eventId": 9,
+          "time": 12.933333333333556,
+          "kind": "wall-start"
+        },
+        {
+          "eventId": 10,
+          "time": 13.400000000000245,
+          "kind": "wall-boost",
+          "count": 1
+        },
+        {
+          "eventId": 11,
+          "time": 14.70000000000031,
+          "kind": "mantle-start"
+        },
+        {
+          "eventId": 12,
+          "time": 16.300000000000356,
+          "kind": "end",
+          "mode": "mantle",
+          "reason": "ROOFTOP REACHED"
+        },
+        {
+          "eventId": 13,
+          "time": 16.683333333333668,
+          "kind": "wall-start"
+        },
+        {
+          "eventId": 14,
+          "time": 17.150000000000308,
+          "kind": "wall-boost",
+          "count": 1
+        },
+        {
+          "eventId": 15,
+          "time": 17.733333333333608,
+          "kind": "mantle-start"
+        },
+        {
+          "eventId": 16,
+          "time": 19.333333333333517,
+          "kind": "end",
+          "mode": "mantle",
+          "reason": "ROOFTOP REACHED"
+        }
+      ],
+      "origin": "authored mechanics; source/native candidate poses",
+      "ready": true,
+      "waters": [
+        {
+          "id": "meridian-waterfront",
+          "minX": -36,
+          "maxX": 36,
+          "minZ": 1171.7387966456854,
+          "maxZ": 1231.7387966456854,
+          "surface": 0.06,
+          "depth": 2.5
+        }
+      ],
+      "surfaceOnly": true,
+      "wallPose": null,
+      "pose": "forspoken-threadrail-relaxed-idle"
+    },
+    "camera": [
+      67.82542549023131,
+      102.39946639350099,
+      380.0694246986871
+    ]
+  },
+  "fullTrace": "V02_Mastery_Pilot_Zero.trace.json.gz",
+  "traceFrames": 3532
+}

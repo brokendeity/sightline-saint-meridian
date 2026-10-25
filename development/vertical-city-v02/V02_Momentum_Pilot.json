@@ -1,0 +1,176 @@
+{
+  "status": "PASS local two-rail momentum pilot",
+  "scope": "Y84 launch courtyard to Y100 station, local pilot; not full ground approach",
+  "method": "One controlled initial setup (ground for full route, Y84 for local pilot). Normal R/Shift/Space keys and standard simulated controller movement/look after setup. No direct rail creation, actor/camera assignment, reset or resource injection during route.",
+  "errors": [],
+  "stages": [
+    {
+      "name": "initial launch court",
+      "frame": 2,
+      "p": [
+        55,
+        84.42,
+        293
+      ],
+      "clock": 0.08333333333333333,
+      "message": ""
+    },
+    {
+      "name": "first cartridge A",
+      "frame": 117,
+      "p": [
+        55,
+        84.42,
+        293
+      ],
+      "clock": 1.3500000000000012,
+      "message": "POINT A ATTACHED · AIM B"
+    },
+    {
+      "name": "first rail constructed",
+      "frame": 263,
+      "p": [
+        55,
+        84.42,
+        293
+      ],
+      "clock": 3.089999999999998,
+      "message": "PERFECT GROUND-RAMP"
+    },
+    {
+      "name": "first acceleration start",
+      "frame": 406,
+      "p": [
+        46.3954843069731,
+        84.42,
+        282.9153497267505
+      ],
+      "clock": 5.473333333333323,
+      "message": "PERFECT GROUND-RAMP"
+    },
+    {
+      "name": "rail attached",
+      "frame": 514,
+      "p": [
+        54.338792770434985,
+        84.42377229080932,
+        294.07061660513443
+      ],
+      "clock": 7.2733333333333166,
+      "message": "CLEAN CATCH"
+    },
+    {
+      "name": "near-end Pop",
+      "frame": 637,
+      "p": [
+        68.6847534907853,
+        91.41353544721954,
+        314.22551724801735
+      ],
+      "clock": 9.32333333333338,
+      "message": "PERFECT RAIL POP"
+    },
+    {
+      "name": "middle landing",
+      "frame": 675,
+      "p": [
+        71.65717999283031,
+        92.42,
+        318.4023006127787
+      ],
+      "clock": 9.956666666666745,
+      "message": "PERFECT RAIL POP"
+    },
+    {
+      "name": "second cartridge A",
+      "frame": 968,
+      "p": [
+        75.94904283137247,
+        92.42,
+        332.82871557466785
+      ],
+      "clock": 13.97333333333359,
+      "message": "POINT A ATTACHED · AIM B"
+    },
+    {
+      "name": "second rail constructed",
+      "frame": 1124,
+      "p": [
+        75.94904283137247,
+        92.42,
+        332.82871557466785
+      ],
+      "clock": 15.793333333333662,
+      "message": "PERFECT GROUND-RAMP"
+    },
+    {
+      "name": "second acceleration start",
+      "frame": 1265,
+      "p": [
+        82.32907013114543,
+        92.42,
+        321.58265490914505
+      ],
+      "clock": 18.14333333333355,
+      "message": "PERFECT GROUND-RAMP"
+    },
+    {
+      "name": "rail attached",
+      "frame": 1373,
+      "p": [
+        76.48934994384406,
+        92.42377229080932,
+        333.9676107459809
+      ],
+      "clock": 19.94333333333345,
+      "message": "CLEAN CATCH"
+    },
+    {
+      "name": "near-end Pop",
+      "frame": 1503,
+      "p": [
+        65.41466267721388,
+        99.61858916861172,
+        357.4727771596501
+      ],
+      "clock": 22.109999999999992,
+      "message": "PERFECT RAIL POP"
+    },
+    {
+      "name": "station landing",
+      "frame": 1542,
+      "p": [
+        63.20079096337308,
+        100.42,
+        362.1672921728419
+      ],
+      "clock": 22.759999999999955,
+      "message": "PERFECT RAIL POP"
+    },
+    {
+      "name": "station objective reached",
+      "frame": 1695,
+      "p": [
+        66.46094785280168,
+        100.42,
+        375.8362647118686
+      ],
+      "clock": 25.30999999999981,
+      "message": "PERFECT RAIL POP"
+    }
+  ],
+  "entrySHA256": "d24a1fe8c233c298d1b4244fc6c4512773096674211c3f6002f03b9b3d12bf84",
+  "manifestSHA256": "3a33e43fa14b5bb2bdf44f4f953574c9c430996996fab8a1b6e5ce80bac2bb7e",
+  "cameraSamplePolicy": {
+    "sourceSHA256": "09a5741abaab7933dea3303e7c2e6455c8a27a53240f9d7ff6bcc88e9abdb073",
+    "intervalFrames": 6,
+    "scope": "Actual animated head/hips projection and native static-obstacle triangle rays during normal input, 10Hz at60Hz simulation. No gameplay state writes. Transparent glass below.5alpha excluded from opaque occlusion; moving objects absent from the native obstacle registry, HUD, between-sample frames and physical devices are not certified. Raw samples require context/visual review; collection is not camera acceptance."
+  },
+  "initialBank": 0,
+  "totalInputSeconds": 28.25,
+  "seconds": 28.25,
+  "distance": 147.00244316576044,
+  "powerReleases": 0,
+  "fullTrace": "V02_Momentum_Pilot.trace.json.gz",
+  "traceFrames": 1715
+}

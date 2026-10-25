@@ -1,0 +1,180 @@
+{
+  "status": "PASS essential circulation, recovery and prototype encounters",
+  "scope": "Admit detailed authoring after current essential graybox gameplay evidence.\n\nThis gate is deliberately distinct from final V02 acceptance. Transit, final\nart, full preservation playthroughs and sustained performance remain required.",
+  "timestampUTC": "2026-10-25T21:44:13.330053+00:00",
+  "entrySHA256": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
+  "manifestSHA256": "3a524ca3b09823cf8fa9eec3c5116ff6a7ec11d1cb091bb7bcdf1ffec88703c1",
+  "masterSHA256": "19b280e67e509ef407706e426881bd11f7d66472655534215237b9dff1880d81",
+  "graphSHA256": "2cab25710a3e61009c10299f202c292a785160eeec4212352b43706791e7f438",
+  "aggregateSHA256": "f310250d4e461025ddf0fdab40736c4b9075285b493196d32a490e77e38659df",
+  "regressionSHA256": "d27b0cf55f5e8c02ca6c8b1e815c0291db0e48b8d2b4b61661715b5ebf978362",
+  "regressionCases": 31,
+  "evidence": [
+    {
+      "file": "V02_Loop_Validation.json",
+      "sha256": "150e8a63e3904d07a1bf64ffad61450a0421815b70f1eed346f935f726594ee8",
+      "status": "PASS three complete normal-input loops"
+    },
+    {
+      "file": "V02_Public_Route_Validation.json",
+      "sha256": "384ef347460292b3861a8774e7b759461bf70c91fd0bcc4f6f79e6f2a1e2450c",
+      "status": "PASS uninterrupted ground-to-station physical circulation"
+    },
+    {
+      "file": "V02_Public_Route_Run_Validation.json",
+      "sha256": "ed79876a7e38306a6edb80574e7239374bf9f21e4bfe144a8021a83a0aba627d",
+      "status": "PASS uninterrupted ground-to-station physical circulation"
+    },
+    {
+      "file": "V02_Public_Roundtrip_Validation.json",
+      "sha256": "2f427f027fde2b8ba42906f3379a4f814301778234cf9c268870cac6896b4636",
+      "status": "PASS uninterrupted ground-to-upper-to-ground public roundtrip"
+    },
+    {
+      "file": "V02_Momentum_Full_Zero_Flow.json",
+      "sha256": "f9d4816e2b8bcff68a774edbe2aea659db2239ee7032d6180b645bad3ec05d6a",
+      "status": "PASS uninterrupted ground-to-station momentum approach"
+    },
+    {
+      "file": "V02_Momentum_Full_Banked_Flow.json",
+      "sha256": "bd5eba850f842806c96d7d39a999c77a8cd0faa37fb2d40600f808a9feef8503",
+      "status": "PASS uninterrupted ground-to-station momentum approach"
+    },
+    {
+      "file": "V02_Mastery_Full_Zero.json",
+      "sha256": "b07b92237d51f261de9fb1afe0c2dd4685c9d83036042d547121ede5a4b05016",
+      "status": "PASS complete ground-to-station mastery approach"
+    },
+    {
+      "file": "V02_Mastery_Full_Banked_Brake.json",
+      "sha256": "9b283cfa705d39523d0d6391b468b88820aa0f3f2881f6197bf36c31b7056144",
+      "status": "PASS complete ground-to-station mastery approach"
+    },
+    {
+      "file": "V02_Mastery_Pilot_Zero_ShortCatch.json",
+      "sha256": "f7f3e9c5f67db425235933eb38cc4ba15e7c03fe97866bf46b9a83ffb92a2985",
+      "status": "PASS local mastery approach, full ground prefix not tested"
+    },
+    {
+      "file": "V02_Physical_Rail_Transfer.json",
+      "sha256": "a086840233ab8f4a76d4cbbfdf310a7a9ede7b73135aafd7bb62341edc78520f",
+      "status": "PASS physical V02 casts, input rail transfer, Pop and supported recovery"
+    },
+    {
+      "file": "V02_Physical_Rail_Transfer_NoPop.json",
+      "sha256": "76ae5e0f9f8b00539d7135f6c65e5288f9568862c2c631906d49bfae83124bff",
+      "status": "PASS physical V02 casts, input rail transfer, no-Pop endpoint recovery"
+    },
+    {
+      "file": "V02_Physical_Rail_Transfer_Overshoot.json",
+      "sha256": "a4f70b8f4483bb91cc897fd3a6660fcf8f3ef50ff0bf6298832f6a05b1334259",
+      "status": "PASS physical V02 casts, input rail transfer, late-Pop overshoot catch,108m descent and public station"
+    },
+    {
+      "file": "V02_Failed_Anchor_Recovery.json",
+      "sha256": "8cb480d6974132ee34b3f97b361e88670e63b7e95ac5732ca781c544b782c036",
+      "status": "PASS invalid aimed attachment, clean control release and physical rail recovery"
+    },
+    {
+      "file": "V02_Service_Encounter.json",
+      "sha256": "7eecdcce29bf728f0eb2f7a5c85ea17b4e5bfbeeacb67366c5d51dee028c0fdf",
+      "status": "PASS local service encounter"
+    },
+    {
+      "file": "V02_Service_Lifecycle.json",
+      "sha256": "a25ec9ecdd0cdd8febd2c8ad6e6da8b86b8b578bebc5bbf1059ebf0e9b867d85",
+      "status": "PASS local service lifecycle"
+    },
+    {
+      "file": "V02_Service_Replay_Escape.json",
+      "sha256": "9c3b0933e24e17680383d23ec7848dba418d8df1e863fafe72080eff23302eb0",
+      "status": "PASS local service Echo contact and two supported public escapes"
+    },
+    {
+      "file": "V02_Market_Rescue_Public.json",
+      "sha256": "904ea6f73695d911e44e4e3f592e7ae4051c47f472f4f90eb06703f056d4ffcc",
+      "status": "PASS ground-to-market civilian rescue"
+    },
+    {
+      "file": "V02_Market_Rescue_South.json",
+      "sha256": "dff5a2e670942e60ae137634f0c7c416a532b31ad6379f8ba9691e667ce7882d",
+      "status": "PASS southern flank market rescue"
+    },
+    {
+      "file": "V02_Market_Lifecycle.json",
+      "sha256": "081951ed48140bcfd1c64ad594261ba5d50c554567b4e1643af3e8debadaf3fb",
+      "status": "PASS market interruption/input/failure cases"
+    },
+    {
+      "file": "V02_Pursuit_intercept_ground.json",
+      "sha256": "2614a138ebf743cf6694c02b92487df14c63cebab75dc8e120fd5e5cc37334ad",
+      "status": "PASS intercept pursuit through supported upper route"
+    },
+    {
+      "file": "V02_Pursuit_intercept.json",
+      "sha256": "d2ca2a4857735e5ac01f0f584aea48bb46c02ef00284363983f1bc26572db6b7",
+      "status": "PASS intercept pursuit through supported upper route"
+    },
+    {
+      "file": "V02_Pursuit_chase.json",
+      "sha256": "9cf56ffe7b3263db2b7fd4f0b3f62b5ddb0ad98c152f042f4d772dfe5c4abba4",
+      "status": "PASS chase pursuit through supported upper route"
+    },
+    {
+      "file": "V02_Pursuit_escape.json",
+      "sha256": "50b799f5bde96669501344a07bbb624fb547e6ac723c9c763fbeed56d9236b45",
+      "status": "PASS escape pursuit through supported upper route"
+    },
+    {
+      "file": "V02_Pursuit_lifecycle.json",
+      "sha256": "4486eeb2f4339548ab8dbdc854c14bd5392fe3b3b8f2616fca52c6bc945c0ca1",
+      "status": "PASS lifecycle pursuit interruption/input cases"
+    },
+    {
+      "file": "V02_Camera_Orbits.json",
+      "sha256": "416bfc3403b4d390abb6a89eedfc802f5b1642ac943c3fdee3f47e5c037eab0f",
+      "status": "PASS sampled native camera orbits, local recovery drop and animated hero visibility"
+    },
+    {
+      "file": "V02_Discovery_Tour.json",
+      "sha256": "0eff1a4433ff7c85f66ae7fcf7ab7d388bc8a5a29c25e1871bfa7e0fb9de78b9",
+      "status": "PASS four-location normal-input discovery and public information tour"
+    },
+    {
+      "file": "V02_Discovery_Lifecycle.json",
+      "sha256": "4bd47b970f97a11d981660060ad67d8cc33bd7bd8db695258db235e385e422fa",
+      "status": "PASS discovery elevation, line-of-sight, pause, input, hero and invalidation cases"
+    },
+    {
+      "file": "V02_Public_Edge_Safety.json",
+      "sha256": "1ac77ebafa21e79c5c77a3ac24bde13e0de8736a86e564381f47243f1b164d24",
+      "status": "PASS sampled public gallery and stair edge safety"
+    },
+    {
+      "file": "V02_Station_Circulation.json",
+      "sha256": "bb2f8079850343c35c7c1950a346a8e552c350fe4ad4353fafc04546aac0144a",
+      "status": "PASS guarded station circulation, runner start and observation roundtrip"
+    },
+    {
+      "file": "V02_Station_North_Entrance.json",
+      "sha256": "cf4504559de0a395501f51ffabf361bc2b2a50f4b8c3e3431678e80a2b2f2ec1",
+      "status": "PASS both station approach walk-outs through physical north portal"
+    },
+    {
+      "file": "V02_C_Stair_Cover_Projectiles.json",
+      "sha256": "1621fdddfcee19bab9b1cc9a92d7e3db2796058d6570b62214642301d16c1bbd",
+      "status": "PASS twelve formerly open reference projectiles stopped by physical cover"
+    }
+  ],
+  "nextPhase": "5 \u2014 detailed Blender architecture in a separate candidate",
+  "preservation": "Original WHIP/V1 files and310 original building instances preserved; no original copies exported.",
+  "remainingForCompleteGoal": [
+    "Detailed landmark/environment architecture and route revalidation",
+    "Consistent moving train, supported track/boarding, full transit/traffic envelope clearance and world life",
+    "Reference-matched Blender/browser visuals and lighting",
+    "Matched baseline/candidate gameplay performance captures >=60seconds",
+    "Full retained hero mission/combat/destruction and physical-device release checks"
+  ],
+  "knownTransitIssue": "FAIL sampled convoy envelope conflicts",
+  "fullGoalComplete": false
+}

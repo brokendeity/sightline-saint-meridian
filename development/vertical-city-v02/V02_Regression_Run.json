@@ -1,229 +1,26 @@
 {
   "status": "PASS listed graybox regressions",
   "hashes": {
-    "entry": "cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1",
-    "manifest": "d4fb49380ae1a0aed2aecaabc836b27836efea6455b1200716096cbd5370128c",
+    "entry": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
+    "manifest": "3a524ca3b09823cf8fa9eec3c5116ff6a7ec11d1cb091bb7bcdf1ffec88703c1",
     "encounters": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
     "market": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
     "pursuit": "d26199eb208a5d3fc21ad26f70c97471bd14b8b3b8370dfd2611c7b0c0344d58",
-    "discovery": "93a394a1fb61c624acb6d94948bac39d7c6524764bb14a39c1d595a8dad957c3"
+    "discovery": "7cfc8878103a13115fb9778c4d8ee15dadc0147a0ace29433a14a2ba651c0679"
   },
   "jobs": [
     {
-      "name": "discovery-tour",
+      "name": "short-catch",
       "command": [
         "node",
-        "scripts/vertical-v02/test_discovery.cjs"
-      ],
-      "environment": {},
-      "returncode": 0,
-      "wallSeconds": 287.06,
-      "log": "development/vertical-city-v02/evidence/regression-discovery-tour.log"
-    },
-    {
-      "name": "discovery-lifecycle",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_discovery_lifecycle.cjs"
-      ],
-      "environment": {},
-      "returncode": 0,
-      "wallSeconds": 24.0,
-      "log": "development/vertical-city-v02/evidence/regression-discovery-lifecycle.log"
-    },
-    {
-      "name": "actor-stairs",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_actor_stairs.cjs"
-      ],
-      "environment": {},
-      "returncode": 0,
-      "wallSeconds": 7.09,
-      "log": "development/vertical-city-v02/evidence/regression-actor-stairs.log"
-    },
-    {
-      "name": "pursuit-intercept",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_pursuit.cjs"
-      ],
-      "environment": {},
-      "returncode": 0,
-      "wallSeconds": 66.81,
-      "log": "development/vertical-city-v02/evidence/regression-pursuit-intercept.log"
-    },
-    {
-      "name": "pursuit-chase",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_pursuit.cjs"
+        "scripts/vertical-v02/test_mastery_route.cjs"
       ],
       "environment": {
-        "PURSUIT_CASE": "chase"
+        "SHORT_CATCH": "1"
       },
       "returncode": 0,
-      "wallSeconds": 69.6,
-      "log": "development/vertical-city-v02/evidence/regression-pursuit-chase.log"
-    },
-    {
-      "name": "pursuit-escape",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_pursuit.cjs"
-      ],
-      "environment": {
-        "PURSUIT_CASE": "escape"
-      },
-      "returncode": 0,
-      "wallSeconds": 79.57,
-      "log": "development/vertical-city-v02/evidence/regression-pursuit-escape.log"
-    },
-    {
-      "name": "pursuit-lifecycle",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_pursuit.cjs"
-      ],
-      "environment": {
-        "PURSUIT_CASE": "lifecycle"
-      },
-      "returncode": 0,
-      "wallSeconds": 10.7,
-      "log": "development/vertical-city-v02/evidence/regression-pursuit-lifecycle.log"
-    },
-    {
-      "name": "market-public",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_market_rescue.cjs"
-      ],
-      "environment": {},
-      "returncode": 0,
-      "wallSeconds": 61.94,
-      "log": "development/vertical-city-v02/evidence/regression-market-public.log"
-    },
-    {
-      "name": "market-south",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_market_rescue.cjs"
-      ],
-      "environment": {
-        "LOCAL_ONLY": "1",
-        "SOUTH_ROUTE": "1"
-      },
-      "returncode": 0,
-      "wallSeconds": 44.54,
-      "log": "development/vertical-city-v02/evidence/regression-market-south.log"
-    },
-    {
-      "name": "market-lifecycle",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_market_lifecycle.cjs"
-      ],
-      "environment": {},
-      "returncode": 0,
-      "wallSeconds": 51.95,
-      "log": "development/vertical-city-v02/evidence/regression-market-lifecycle.log"
-    },
-    {
-      "name": "service",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_service_encounter.cjs"
-      ],
-      "environment": {},
-      "returncode": 0,
-      "wallSeconds": 45.65,
-      "log": "development/vertical-city-v02/evidence/regression-service.log"
-    },
-    {
-      "name": "service-lifecycle",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_service_lifecycle.cjs"
-      ],
-      "environment": {},
-      "returncode": 0,
-      "wallSeconds": 27.2,
-      "log": "development/vertical-city-v02/evidence/regression-service-lifecycle.log"
-    },
-    {
-      "name": "loops",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_loops.cjs"
-      ],
-      "environment": {},
-      "returncode": 0,
-      "wallSeconds": 70.87,
-      "log": "development/vertical-city-v02/evidence/regression-loops.log"
-    },
-    {
-      "name": "public-run",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_public_station.cjs"
-      ],
-      "environment": {
-        "RUN_PUBLIC": "1"
-      },
-      "returncode": 0,
-      "wallSeconds": 86.26,
-      "log": "development/vertical-city-v02/evidence/regression-public-run.log"
-    },
-    {
-      "name": "public-walk",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_public_station.cjs"
-      ],
-      "environment": {},
-      "returncode": 0,
-      "wallSeconds": 297.14,
-      "log": "development/vertical-city-v02/evidence/regression-public-walk.log"
-    },
-    {
-      "name": "roundtrip",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_public_roundtrip.cjs"
-      ],
-      "environment": {},
-      "returncode": 0,
-      "wallSeconds": 215.92,
-      "log": "development/vertical-city-v02/evidence/regression-roundtrip.log"
-    },
-    {
-      "name": "momentum-zero",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_momentum_route.cjs"
-      ],
-      "environment": {
-        "FULL_ROUTE": "1",
-        "RUN_PREFIX": "flow"
-      },
-      "returncode": 0,
-      "wallSeconds": 45.27,
-      "log": "development/vertical-city-v02/evidence/regression-momentum-zero.log"
-    },
-    {
-      "name": "momentum-banked",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_momentum_route.cjs"
-      ],
-      "environment": {
-        "FULL_ROUTE": "1",
-        "RUN_PREFIX": "flow",
-        "BANKED_START": "1"
-      },
-      "returncode": 0,
-      "wallSeconds": 54.8,
-      "log": "development/vertical-city-v02/evidence/regression-momentum-banked.log"
+      "wallSeconds": 71.63,
+      "log": "development/vertical-city-v02/evidence/regression-short-catch.log"
     },
     {
       "name": "mastery-zero",
@@ -235,7 +32,7 @@
         "FULL_ROUTE": "1"
       },
       "returncode": 0,
-      "wallSeconds": 69.89,
+      "wallSeconds": 130.48,
       "log": "development/vertical-city-v02/evidence/regression-mastery-zero.log"
     },
     {
@@ -250,43 +47,8 @@
         "USE_BRAKE": "1"
       },
       "returncode": 0,
-      "wallSeconds": 72.16,
+      "wallSeconds": 138.65,
       "log": "development/vertical-city-v02/evidence/regression-mastery-brake.log"
-    },
-    {
-      "name": "short-catch",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_mastery_route.cjs"
-      ],
-      "environment": {
-        "SHORT_CATCH": "1"
-      },
-      "returncode": 0,
-      "wallSeconds": 38.85,
-      "log": "development/vertical-city-v02/evidence/regression-short-catch.log"
-    },
-    {
-      "name": "impact",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_impact_ownership.cjs"
-      ],
-      "environment": {},
-      "returncode": 0,
-      "wallSeconds": 9.69,
-      "log": "development/vertical-city-v02/evidence/regression-impact.log"
-    },
-    {
-      "name": "whip",
-      "command": [
-        "node",
-        "scripts/vertical-v02/test_preserved_whip_inputs.cjs"
-      ],
-      "environment": {},
-      "returncode": 0,
-      "wallSeconds": 9.96,
-      "log": "development/vertical-city-v02/evidence/regression-whip.log"
     },
     {
       "name": "physical-transfer",
@@ -296,7 +58,7 @@
       ],
       "environment": {},
       "returncode": 0,
-      "wallSeconds": 16.76,
+      "wallSeconds": 18.51,
       "log": "development/vertical-city-v02/evidence/regression-physical-transfer.log"
     },
     {
@@ -309,8 +71,314 @@
         "NO_POP": "1"
       },
       "returncode": 0,
-      "wallSeconds": 14.87,
+      "wallSeconds": 15.99,
       "log": "development/vertical-city-v02/evidence/regression-physical-transfer-no-pop.log"
+    },
+    {
+      "name": "physical-transfer-overshoot",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_physical_transfer.cjs"
+      ],
+      "environment": {
+        "V02_OVERSHOOT_RECOVERY": "1"
+      },
+      "returncode": 0,
+      "wallSeconds": 64.65,
+      "log": "development/vertical-city-v02/evidence/regression-physical-transfer-overshoot.log"
+    },
+    {
+      "name": "momentum-zero",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_momentum_route.cjs"
+      ],
+      "environment": {
+        "FULL_ROUTE": "1",
+        "RUN_PREFIX": "flow"
+      },
+      "returncode": 0,
+      "wallSeconds": 98.54,
+      "log": "development/vertical-city-v02/evidence/regression-momentum-zero.log"
+    },
+    {
+      "name": "momentum-banked",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_momentum_route.cjs"
+      ],
+      "environment": {
+        "FULL_ROUTE": "1",
+        "RUN_PREFIX": "flow",
+        "BANKED_START": "1"
+      },
+      "returncode": 0,
+      "wallSeconds": 103.69,
+      "log": "development/vertical-city-v02/evidence/regression-momentum-banked.log"
+    },
+    {
+      "name": "public-edge-safety",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_public_edge_safety.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 26.76,
+      "log": "development/vertical-city-v02/evidence/regression-public-edge-safety.log"
+    },
+    {
+      "name": "station-circulation",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_station_circulation.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 232.77,
+      "log": "development/vertical-city-v02/evidence/regression-station-circulation.log"
+    },
+    {
+      "name": "stair-projectile-cover",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_stair_cover_projectiles.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 22.19,
+      "log": "development/vertical-city-v02/evidence/regression-stair-projectile-cover.log"
+    },
+    {
+      "name": "discovery-tour",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_discovery.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 654.99,
+      "log": "development/vertical-city-v02/evidence/regression-discovery-tour.log"
+    },
+    {
+      "name": "discovery-lifecycle",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_discovery_lifecycle.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 33.56,
+      "log": "development/vertical-city-v02/evidence/regression-discovery-lifecycle.log"
+    },
+    {
+      "name": "actor-stairs",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_actor_stairs.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 7.24,
+      "log": "development/vertical-city-v02/evidence/regression-actor-stairs.log"
+    },
+    {
+      "name": "pursuit-intercept",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_pursuit.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 132.54,
+      "log": "development/vertical-city-v02/evidence/regression-pursuit-intercept.log"
+    },
+    {
+      "name": "pursuit-chase",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_pursuit.cjs"
+      ],
+      "environment": {
+        "PURSUIT_CASE": "chase"
+      },
+      "returncode": 0,
+      "wallSeconds": 200.76,
+      "log": "development/vertical-city-v02/evidence/regression-pursuit-chase.log"
+    },
+    {
+      "name": "pursuit-escape",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_pursuit.cjs"
+      ],
+      "environment": {
+        "PURSUIT_CASE": "escape"
+      },
+      "returncode": 0,
+      "wallSeconds": 237.76,
+      "log": "development/vertical-city-v02/evidence/regression-pursuit-escape.log"
+    },
+    {
+      "name": "pursuit-lifecycle",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_pursuit.cjs"
+      ],
+      "environment": {
+        "PURSUIT_CASE": "lifecycle"
+      },
+      "returncode": 0,
+      "wallSeconds": 15.97,
+      "log": "development/vertical-city-v02/evidence/regression-pursuit-lifecycle.log"
+    },
+    {
+      "name": "market-public",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_market_rescue.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 130.29,
+      "log": "development/vertical-city-v02/evidence/regression-market-public.log"
+    },
+    {
+      "name": "market-south",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_market_rescue.cjs"
+      ],
+      "environment": {
+        "LOCAL_ONLY": "1",
+        "SOUTH_ROUTE": "1"
+      },
+      "returncode": 0,
+      "wallSeconds": 85.01,
+      "log": "development/vertical-city-v02/evidence/regression-market-south.log"
+    },
+    {
+      "name": "market-lifecycle",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_market_lifecycle.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 109.09,
+      "log": "development/vertical-city-v02/evidence/regression-market-lifecycle.log"
+    },
+    {
+      "name": "service",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_service_encounter.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 56.97,
+      "log": "development/vertical-city-v02/evidence/regression-service.log"
+    },
+    {
+      "name": "service-lifecycle",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_service_lifecycle.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 34.3,
+      "log": "development/vertical-city-v02/evidence/regression-service-lifecycle.log"
+    },
+    {
+      "name": "loops",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_loops.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 145.17,
+      "log": "development/vertical-city-v02/evidence/regression-loops.log"
+    },
+    {
+      "name": "public-run",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_public_station.cjs"
+      ],
+      "environment": {
+        "RUN_PUBLIC": "1"
+      },
+      "returncode": 0,
+      "wallSeconds": 221.77,
+      "log": "development/vertical-city-v02/evidence/regression-public-run.log"
+    },
+    {
+      "name": "public-walk",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_public_station.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 704.53,
+      "log": "development/vertical-city-v02/evidence/regression-public-walk.log"
+    },
+    {
+      "name": "roundtrip",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_public_roundtrip.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 572.05,
+      "log": "development/vertical-city-v02/evidence/regression-roundtrip.log"
+    },
+    {
+      "name": "impact",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_impact_ownership.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 12.98,
+      "log": "development/vertical-city-v02/evidence/regression-impact.log"
+    },
+    {
+      "name": "whip",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_preserved_whip_inputs.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 10.21,
+      "log": "development/vertical-city-v02/evidence/regression-whip.log"
+    },
+    {
+      "name": "failed-anchor-recovery",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_failed_anchor_recovery.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 18.47,
+      "log": "development/vertical-city-v02/evidence/regression-failed-anchor-recovery.log"
+    },
+    {
+      "name": "camera-orbits",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_camera_orbits.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 73.64,
+      "log": "development/vertical-city-v02/evidence/regression-camera-orbits.log"
     }
   ],
   "scope": "Current graybox circulation, supported discovery/guidance, actor stair clearance, pursuit, market rescue, local service combat and retained inputs; not complete V02 acceptance."

@@ -14,9 +14,11 @@ const variant=process.env.PURSUIT_CASE||'intercept',full=process.env.FULL_PURSUI
  const capture=async label=>{await p.evaluate(()=>renderNight(0));await p.screenshot({path:path.join(D,'evidence/pursuit-'+captureVariant+'-'+label+'.png')});};
  const mark=async label=>{const st=await step();report.stages.push({label,frame,p:st.p,target:st.pursuit.runner.position,phase:st.pursuit.phase,elapsed:st.pursuit.elapsed});console.log(label,JSON.stringify(report.stages.at(-1)));await capture(label)};
  const lookAtRunner=async()=>{for(let i=0;i<240;i++){const err=await p.evaluate(()=>{const q=verticalPursuitState(),target=new THREE.Vector3(...q.runner.position).add(new THREE.Vector3(0,1.1,0)),direction=new THREE.Vector3();camera.getWorldDirection(direction);const desired=target.sub(camera.position).normalize(),dy=angleDelta(Math.atan2(-direction.x,-direction.z),Math.atan2(-desired.x,-desired.z)),dp=Math.asin(desired.y)-Math.asin(direction.y),map=v=>Math.abs(v)<.001?0:Math.sign(v)*(.1+.9*Math.min(1,Math.abs(v)*5));pursuitPad.axes[2]=map(-dy);pursuitPad.axes[3]=map(-dp);return Math.hypot(dy,dp)});if(err<.006)break;await step(2);}await p.evaluate(()=>{pursuitPad.axes[2]=pursuitPad.axes[3]=0});await step(8);};
- const move=async t=>{let st;for(let i=0;i<9000;i++){
+ const move=async t=>{let st,previous=null,stalled=0;for(let i=0;i<9000;i++){
   const d=await p.evaluate(t=>{const dx=t[0]-s.pos.x,dz=t[2]-s.pos.z,d=Math.hypot(dx,dz),speed=backspoolFlow.walking()?1.65:6.6,m=Math.min(1,Math.max(.15,d/(speed*.22)));pursuitPad.axes[0]=d>.14?(dx*Math.cos(cam.yaw)-dz*Math.sin(cam.yaw))/d*(.1+.9*m):0;pursuitPad.axes[1]=d>.14?-(-dx*Math.sin(cam.yaw)-dz*Math.cos(cam.yaw))/d*(.1+.9*m):0;return d},t);
-  st=await step(d>1?3:1);if(variant==='chase'&&st.pursuit.canCapture&&st.p[1]>128){await p.keyboard.press('i');await p.evaluate(()=>pursuitPad.axes=[0,0,0,0]);return await step(2);}if(d<.16){await p.evaluate(()=>pursuitPad.axes=[0,0,0,0]);st=await step(3);assert(Math.abs(st.p[1]-t[1]-.42)<.21,'Unexpected floor '+JSON.stringify({t,st}));return st;}assert(st.trauma<100,'Player defeated');
+  st=await step(d>1?3:1);stalled=previous&&Math.hypot(st.p[0]-previous[0],st.p[2]-previous[2])<.0005&&d>.3?stalled+1:0;previous=st.p;
+  if(stalled>=60){report.blockedMovement={target:t,position:st.p,stalledIterations:stalled,nearby:await p.evaluate(()=>allColliders(s.pos).filter(c=>c.box.clone().expandByScalar(.8).containsPoint(s.pos)).map(c=>({id:c.id||c.owner?.id,min:c.box.min.toArray(),max:c.box.max.toArray()})))};throw Error('Blocked authored pursuit approach '+JSON.stringify(report.blockedMovement));}
+  if(variant==='chase'&&st.pursuit.canCapture&&st.p[1]>128){await p.keyboard.press('i');await p.evaluate(()=>pursuitPad.axes=[0,0,0,0]);return await step(2);}if(d<.16){await p.evaluate(()=>pursuitPad.axes=[0,0,0,0]);st=await step(3);assert(Math.abs(st.p[1]-t[1]-.42)<.21,'Unexpected floor '+JSON.stringify({t,st}));return st;}assert(st.trauma<100,'Player defeated');
  }throw Error('Move timed out '+JSON.stringify({t,st}));};
  await step(3);report.fullGroundApproach=full;
  if(full){
@@ -25,7 +27,7 @@ const variant=process.env.PURSUIT_CASE||'intercept',full=process.env.FULL_PURSUI
   const paths=await p.evaluate(()=>verticalDistrictState().paths);for(const seg of paths['V2-VT-A'].segments)for(const t of seg.points)await move(t);
   for(const t of [[55,84,215.5],[55,84,375.5],[61,84,375.5]])await move(t);
   for(const seg of paths['V2-VT-C'].segments)for(const t of seg.points)await move(t);
-  for(const t of [[64.5,100,375.5],[64.5,100,376.8],[73.7,100,376.8],[73.7,100,364],[73,100,364]])await move(t);
+  for(const t of [[66.5,100,375.5],[66.5,100,376.8],[73.7,100,376.8],[73.7,100,364],[73,100,364]])await move(t);
   report.approachSeconds=frame/60;report.approachAirFrames=report.trace.filter(t=>!t.grounded).length;assert.equal(report.approachAirFrames,0);await mark('ground-access-complete');
  }
  const before=await p.evaluate(()=>({score:s.score,mission:{number:courier.missionNumber,passengers:courier.passengers.length,civilians:courier.civilians.map(c=>({uuid:c.group.uuid,rescued:c.rescued,position:c.group.position.toArray()}))},condition:courier.trauma}));await p.keyboard.press('i');let st=await step(2);assert.equal(st.pursuit.phase,'active',JSON.stringify(st.pursuit));await mark('start');

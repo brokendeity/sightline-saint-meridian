@@ -1,7 +1,7 @@
 const{chromium}=require('/opt/homebrew/lib/node_modules/playwright'),fs=require('fs'),path=require('path'),crypto=require('crypto'),assert=require('assert/strict');
 const R=path.resolve(__dirname,'../..'),D=path.join(R,'development/vertical-city-v02');
 async function openMarket(report,{full=false,viewport={width:1280,height:800}}={}){
- const browser=await chromium.launch({headless:true,args:['--use-gl=angle','--use-angle=metal']}),p=await browser.newPage({viewport});
+ const browser=await chromium.launch({headless:true,args:['--use-gl=angle','--use-angle=metal']});try{const p=await browser.newPage({viewport});
  report.trace=[];report.errors=[];
  for(const[key,file]of Object.entries({entrySHA256:'SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html',manifestSHA256:'assets/city/vertical-v02/graybox/manifest.json',encounterSHA256:'scripts/game_vertical_encounters_v02.js',marketSHA256:'scripts/game_vertical_market_v02.js'}))report[key]=crypto.createHash('sha256').update(fs.readFileSync(path.join(R,file))).digest('hex');
  p.on('pageerror',e=>report.errors.push(String(e)));p.on('console',m=>{if(m.type()==='error')report.errors.push(m.text())});
@@ -21,5 +21,6 @@ async function openMarket(report,{full=false,viewport={width:1280,height:800}}={
  const press=async expected=>{await p.keyboard.press('i');const st=await step(2);assert.equal(st.phase,expected,JSON.stringify(await p.evaluate(()=>verticalMarketState())));return st};
  const reachEscort=async()=>{await walking(false);await press('locate');for(const t of [[62,24,360],[85,24,360],[85,24,361.8]])await move(t);await press('isolate');await mark('resident found');for(const t of [[85,24,360],[82,24,357]])await move(t);await press('rendezvous');await mark('power isolated');for(const t of [[85,24,360],[85,24,361.8]])await move(t);await press('escort');await walking(true);await mark('escort begins');};
  await step(4);return{browser,p,step,stop,walking,move,capture,mark,press,reachEscort,frames:()=>frames};
+ }catch(error){await browser.close();throw error;}
 }
 module.exports={openMarket,R,D};

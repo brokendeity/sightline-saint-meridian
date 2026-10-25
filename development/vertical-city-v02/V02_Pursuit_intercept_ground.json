@@ -5,14 +5,14 @@
   "stages": [
     {
       "label": "ground-access-complete",
-      "frame": 9091,
+      "frame": 9124,
       "p": [
-        72.99863729857236,
+        73.13788208202924,
         100.42,
-        364.1321873215539
+        364.026090692715
       ],
       "target": [
-        73,
+        73.7,
         100,
         373
       ],
@@ -21,14 +21,14 @@
     },
     {
       "label": "start",
-      "frame": 9094,
+      "frame": 9127,
       "p": [
-        72.99863729857236,
+        73.13788208202924,
         100.42,
-        364.1321873215539
+        364.026090692715
       ],
       "target": [
-        73,
+        73.7,
         100,
         373
       ],
@@ -37,55 +37,55 @@
     },
     {
       "label": "stairs-entry",
-      "frame": 9577,
+      "frame": 9743,
       "p": [
-        61.073844658032236,
+        61.07523660247612,
         100.42,
-        403.3902968108383
+        403.3917313420075
       ],
       "target": [
-        72.01358604024492,
+        68,
         100,
-        390.98641395975596
+        391.3950000000005
       ],
       "phase": "active",
-      "elapsed": 8.099999999999982
+      "elapsed": 10.316666666666759
     },
     {
       "label": "upper-stair",
-      "frame": 11659,
+      "frame": 11825,
       "p": [
         61.131110833316086,
         128.42,
         403.50188321008454
       ],
       "target": [
-        62.215000000000046,
+        61.675000000000026,
         115.55555555555556,
         412.98
       ],
       "phase": "active",
-      "elapsed": 42.79999999999885
+      "elapsed": 45.016666666665394
     },
     {
       "label": "upper-approach",
-      "frame": 12192,
+      "frame": 12358,
       "p": [
         81.7708117603955,
         128.42,
         419.99936359008257
       ],
       "target": [
-        61.0112262705466,
-        119.18518518518519,
-        405.88499701445613
+        61.01208069985675,
+        118.8395061728395,
+        405.34499769042833
       ],
       "phase": "active",
-      "elapsed": 51.68333333333168
+      "elapsed": 53.89999999999822
     },
     {
       "label": "victory",
-      "frame": 15610,
+      "frame": 15788,
       "p": [
         81.7708117603955,
         128.42,
@@ -97,15 +97,15 @@
         420.27999999999656
       ],
       "phase": "victory",
-      "elapsed": 104.01666666666205
+      "elapsed": 106.43333333332858
     }
   ],
-  "entrySHA256": "cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1",
-  "manifestSHA256": "d4fb49380ae1a0aed2aecaabc836b27836efea6455b1200716096cbd5370128c",
+  "entrySHA256": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
+  "manifestSHA256": "3a524ca3b09823cf8fa9eec3c5116ff6a7ec11d1cb091bb7bcdf1ffec88703c1",
   "pursuitSHA256": "d26199eb208a5d3fc21ad26f70c97471bd14b8b3b8370dfd2611c7b0c0344d58",
   "fullGroundApproach": true,
   "initialBank": 0,
-  "approachSeconds": 151.5,
+  "approachSeconds": 152.05,
   "approachAirFrames": 0,
   "runnerVisual": {
     "visible": true,
@@ -138,7 +138,7 @@
     "pursuit": {
       "phase": "victory",
       "attempt": 1,
-      "elapsed": 104.01666666666205,
+      "elapsed": 106.43333333332858,
       "runner": {
         "position": [
           84,
@@ -148,16 +148,16 @@
         "speedLimit": 2.7
       },
       "canCapture": false,
-      "waypoint": 38,
+      "waypoint": 40,
       "rewarded": true,
       "error": null,
       "events": [
         {
-          "eventId": 38,
+          "eventId": 40,
           "attempt": 1,
-          "time": 251.85,
+          "time": 254.817,
           "kind": "waypoint",
-          "index": 37,
+          "index": 39,
           "position": [
             84,
             127.99999999999999,
@@ -165,9 +165,9 @@
           ]
         },
         {
-          "eventId": 39,
+          "eventId": 41,
           "attempt": 1,
-          "time": 255.533,
+          "time": 258.5,
           "kind": "intercepted",
           "position": [
             84,
@@ -187,5 +187,5 @@
     "releases": 0
   },
   "fullTrace": "V02_Pursuit_intercept_ground.trace.json.gz",
-  "traceFrames": 15610
+  "traceFrames": 15788
 }

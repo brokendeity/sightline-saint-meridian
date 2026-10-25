@@ -1,0 +1,1180 @@
+{
+  "status": "PASS guarded station circulation, runner start and observation roundtrip",
+  "scope": "Local Y100 station fixture, normal input through the guarded side corridor, pursuit Start/End, observation route and station return. Not a full ground approach.",
+  "results": [
+    {
+      "name": "Station information reaches the real pursuit access through the centre of the guarded corridor",
+      "pass": true,
+      "route": [
+        "E0275"
+      ]
+    },
+    {
+      "name": "Actual pursuit Start accepts its guarded route and moves the runner; End stops the attempt without reward",
+      "pass": true
+    },
+    {
+      "name": "Normal input follows the corrected north-platform corner and actual D stairs to observation and back",
+      "pass": true,
+      "upEdges": [
+        "E0276",
+        "E0180",
+        "E0222",
+        "E0210",
+        "E0224"
+      ],
+      "downEdges": [
+        "E0225",
+        "E0211",
+        "E0223",
+        "E0181",
+        "E0277"
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "name": "incident-access",
+      "frame": 294,
+      "p": [
+        73.13344366806115,
+        100.42,
+        364.0271159356056
+      ],
+      "guide": {
+        "title": "Transit incident access",
+        "destination": "pursuit-access",
+        "points": [
+          [
+            73,
+            100,
+            382
+          ],
+          [
+            73.7,
+            100,
+            382
+          ],
+          [
+            73.7,
+            100,
+            364
+          ],
+          [
+            73,
+            100,
+            364
+          ]
+        ],
+        "index": 4,
+        "status": "arrived",
+        "edgeIDs": [
+          "E0275"
+        ],
+        "navigationVersion": 2,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      }
+    },
+    {
+      "name": "observation",
+      "frame": 4004,
+      "p": [
+        71.85885637661751,
+        128.42,
+        419.99894952898796
+      ],
+      "guide": {
+        "title": "OBSERVATION DECK",
+        "destination": "observation-deck",
+        "points": [
+          [
+            73,
+            100,
+            382
+          ],
+          [
+            73.7,
+            100,
+            382
+          ],
+          [
+            73.7,
+            100,
+            390
+          ],
+          [
+            68,
+            100,
+            390
+          ],
+          [
+            68,
+            100,
+            399
+          ],
+          [
+            64,
+            100,
+            399
+          ],
+          [
+            61,
+            100,
+            403.5
+          ],
+          [
+            61,
+            103.11111111111111,
+            412.98
+          ],
+          [
+            67,
+            103.11111111111111,
+            412.98
+          ],
+          [
+            67,
+            106.22222222222223,
+            403.5
+          ],
+          [
+            61,
+            106.22222222222223,
+            403.5
+          ],
+          [
+            61,
+            109.33333333333333,
+            412.98
+          ],
+          [
+            67,
+            109.33333333333333,
+            412.98
+          ],
+          [
+            67,
+            112.44444444444444,
+            403.5
+          ],
+          [
+            61,
+            112.44444444444444,
+            403.5
+          ],
+          [
+            61,
+            115.55555555555556,
+            412.98
+          ],
+          [
+            67,
+            115.55555555555556,
+            412.98
+          ],
+          [
+            67,
+            118.66666666666667,
+            403.5
+          ],
+          [
+            61,
+            118.66666666666667,
+            403.5
+          ],
+          [
+            61,
+            121.77777777777777,
+            412.98
+          ],
+          [
+            67,
+            121.77777777777777,
+            412.98
+          ],
+          [
+            67,
+            124.88888888888889,
+            403.5
+          ],
+          [
+            61,
+            124.88888888888889,
+            403.5
+          ],
+          [
+            61,
+            128,
+            412.98
+          ],
+          [
+            67,
+            128,
+            412.98
+          ],
+          [
+            70.2,
+            128,
+            412.98
+          ],
+          [
+            70.2,
+            128,
+            403.5
+          ],
+          [
+            61,
+            128,
+            403.5
+          ],
+          [
+            55,
+            128,
+            403.5
+          ],
+          [
+            55,
+            128,
+            400
+          ],
+          [
+            55,
+            128,
+            410
+          ],
+          [
+            55,
+            128,
+            420
+          ],
+          [
+            72,
+            128,
+            420
+          ]
+        ],
+        "index": 33,
+        "status": "arrived",
+        "edgeIDs": [
+          "E0276",
+          "E0180",
+          "E0222",
+          "E0210",
+          "E0224"
+        ],
+        "navigationVersion": 2,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      }
+    },
+    {
+      "name": "station-return",
+      "frame": 7340,
+      "p": [
+        73.13249844761117,
+        100.42,
+        382.0248797266879
+      ],
+      "guide": {
+        "title": "TRANSIT INFORMATION",
+        "destination": "poi-station",
+        "points": [
+          [
+            72,
+            128,
+            420
+          ],
+          [
+            55,
+            128,
+            420
+          ],
+          [
+            55,
+            128,
+            410
+          ],
+          [
+            55,
+            128,
+            400
+          ],
+          [
+            55,
+            128,
+            403.5
+          ],
+          [
+            61,
+            128,
+            403.5
+          ],
+          [
+            70.2,
+            128,
+            403.5
+          ],
+          [
+            70.2,
+            128,
+            412.98
+          ],
+          [
+            67,
+            128,
+            412.98
+          ],
+          [
+            61,
+            128,
+            412.98
+          ],
+          [
+            61,
+            124.88888888888889,
+            403.5
+          ],
+          [
+            67,
+            124.88888888888889,
+            403.5
+          ],
+          [
+            67,
+            121.77777777777777,
+            412.98
+          ],
+          [
+            61,
+            121.77777777777777,
+            412.98
+          ],
+          [
+            61,
+            118.66666666666667,
+            403.5
+          ],
+          [
+            67,
+            118.66666666666667,
+            403.5
+          ],
+          [
+            67,
+            115.55555555555556,
+            412.98
+          ],
+          [
+            61,
+            115.55555555555556,
+            412.98
+          ],
+          [
+            61,
+            112.44444444444444,
+            403.5
+          ],
+          [
+            67,
+            112.44444444444444,
+            403.5
+          ],
+          [
+            67,
+            109.33333333333333,
+            412.98
+          ],
+          [
+            61,
+            109.33333333333333,
+            412.98
+          ],
+          [
+            61,
+            106.22222222222223,
+            403.5
+          ],
+          [
+            67,
+            106.22222222222223,
+            403.5
+          ],
+          [
+            67,
+            103.11111111111111,
+            412.98
+          ],
+          [
+            61,
+            103.11111111111111,
+            412.98
+          ],
+          [
+            61,
+            100,
+            403.5
+          ],
+          [
+            64,
+            100,
+            399
+          ],
+          [
+            68,
+            100,
+            399
+          ],
+          [
+            68,
+            100,
+            390
+          ],
+          [
+            73.7,
+            100,
+            390
+          ],
+          [
+            73.7,
+            100,
+            382
+          ],
+          [
+            73,
+            100,
+            382
+          ]
+        ],
+        "index": 33,
+        "status": "arrived",
+        "edgeIDs": [
+          "E0225",
+          "E0211",
+          "E0223",
+          "E0181",
+          "E0277"
+        ],
+        "navigationVersion": 2,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      }
+    }
+  ],
+  "errors": [],
+  "entrySHA256": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
+  "manifestSHA256": "3a524ca3b09823cf8fa9eec3c5116ff6a7ec11d1cb091bb7bcdf1ffec88703c1",
+  "encounterSHA256": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+  "marketSHA256": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+  "incidentDamage": [],
+  "final": {
+    "position": [
+      73.13249844761117,
+      100.42,
+      382.0248797266879
+    ],
+    "discovery": {
+      "ready": true,
+      "clock": 122.34999999999434,
+      "discovered": [
+        {
+          "id": "station-info",
+          "time": 0.083
+        },
+        {
+          "id": "observation",
+          "time": 65.967
+        }
+      ],
+      "openBoard": null,
+      "route": {
+        "title": "TRANSIT INFORMATION",
+        "destination": "poi-station",
+        "points": [
+          [
+            72,
+            128,
+            420
+          ],
+          [
+            55,
+            128,
+            420
+          ],
+          [
+            55,
+            128,
+            410
+          ],
+          [
+            55,
+            128,
+            400
+          ],
+          [
+            55,
+            128,
+            403.5
+          ],
+          [
+            61,
+            128,
+            403.5
+          ],
+          [
+            70.2,
+            128,
+            403.5
+          ],
+          [
+            70.2,
+            128,
+            412.98
+          ],
+          [
+            67,
+            128,
+            412.98
+          ],
+          [
+            61,
+            128,
+            412.98
+          ],
+          [
+            61,
+            124.88888888888889,
+            403.5
+          ],
+          [
+            67,
+            124.88888888888889,
+            403.5
+          ],
+          [
+            67,
+            121.77777777777777,
+            412.98
+          ],
+          [
+            61,
+            121.77777777777777,
+            412.98
+          ],
+          [
+            61,
+            118.66666666666667,
+            403.5
+          ],
+          [
+            67,
+            118.66666666666667,
+            403.5
+          ],
+          [
+            67,
+            115.55555555555556,
+            412.98
+          ],
+          [
+            61,
+            115.55555555555556,
+            412.98
+          ],
+          [
+            61,
+            112.44444444444444,
+            403.5
+          ],
+          [
+            67,
+            112.44444444444444,
+            403.5
+          ],
+          [
+            67,
+            109.33333333333333,
+            412.98
+          ],
+          [
+            61,
+            109.33333333333333,
+            412.98
+          ],
+          [
+            61,
+            106.22222222222223,
+            403.5
+          ],
+          [
+            67,
+            106.22222222222223,
+            403.5
+          ],
+          [
+            67,
+            103.11111111111111,
+            412.98
+          ],
+          [
+            61,
+            103.11111111111111,
+            412.98
+          ],
+          [
+            61,
+            100,
+            403.5
+          ],
+          [
+            64,
+            100,
+            399
+          ],
+          [
+            68,
+            100,
+            399
+          ],
+          [
+            68,
+            100,
+            390
+          ],
+          [
+            73.7,
+            100,
+            390
+          ],
+          [
+            73.7,
+            100,
+            382
+          ],
+          [
+            73,
+            100,
+            382
+          ]
+        ],
+        "index": 33,
+        "status": "arrived",
+        "edgeIDs": [
+          "E0225",
+          "E0211",
+          "E0223",
+          "E0181",
+          "E0277"
+        ],
+        "navigationVersion": 2,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      },
+      "pending": null,
+      "message": "Destination reached.",
+      "eventId": 14,
+      "events": [
+        {
+          "id": 1,
+          "time": 0.083,
+          "kind": "discovered",
+          "point": "station-info"
+        },
+        {
+          "id": 2,
+          "time": 0.167,
+          "kind": "board-read",
+          "point": "station-info"
+        },
+        {
+          "id": 3,
+          "time": 0.2,
+          "kind": "route-requested",
+          "source": "station-info",
+          "destination": "pursuit-access"
+        },
+        {
+          "id": 4,
+          "time": 0.3,
+          "kind": "route-ready",
+          "destination": "pursuit-access",
+          "edges": [
+            "E0275"
+          ],
+          "validationSamples": 108,
+          "blockedEdges": [],
+          "validationAttempts": 1
+        },
+        {
+          "id": 5,
+          "time": 4.483,
+          "kind": "route-arrived",
+          "destination": "pursuit-access"
+        },
+        {
+          "id": 6,
+          "time": 11.233,
+          "kind": "board-read",
+          "point": "station-info"
+        },
+        {
+          "id": 7,
+          "time": 11.267,
+          "kind": "route-requested",
+          "source": "station-info",
+          "destination": "observation-deck"
+        },
+        {
+          "id": 8,
+          "time": 12.05,
+          "kind": "route-ready",
+          "destination": "observation-deck",
+          "edges": [
+            "E0276",
+            "E0180",
+            "E0222",
+            "E0210",
+            "E0224"
+          ],
+          "validationSamples": 1380,
+          "blockedEdges": [],
+          "validationAttempts": 1
+        },
+        {
+          "id": 9,
+          "time": 65.967,
+          "kind": "discovered",
+          "point": "observation"
+        },
+        {
+          "id": 10,
+          "time": 66.333,
+          "kind": "route-arrived",
+          "destination": "observation-deck"
+        },
+        {
+          "id": 11,
+          "time": 66.75,
+          "kind": "board-read",
+          "point": "observation"
+        },
+        {
+          "id": 12,
+          "time": 66.783,
+          "kind": "route-requested",
+          "source": "observation",
+          "destination": "poi-station"
+        },
+        {
+          "id": 13,
+          "time": 67.567,
+          "kind": "route-ready",
+          "destination": "poi-station",
+          "edges": [
+            "E0225",
+            "E0211",
+            "E0223",
+            "E0181",
+            "E0277"
+          ],
+          "validationSamples": 1380,
+          "blockedEdges": [],
+          "validationAttempts": 1
+        },
+        {
+          "id": 14,
+          "time": 121.917,
+          "kind": "route-arrived",
+          "destination": "poi-station"
+        }
+      ],
+      "error": null,
+      "points": [
+        {
+          "id": "market-info",
+          "title": "MARKET ASSEMBLY",
+          "position": [
+            64,
+            24,
+            356
+          ],
+          "board": [
+            65.25,
+            24.85,
+            354.3
+          ],
+          "graphNode": "poi-market",
+          "function": "market",
+          "collection": "SM_V02_MARKET"
+        },
+        {
+          "id": "maintenance-access",
+          "title": "MAINTENANCE ACCESS",
+          "position": [
+            86,
+            52,
+            314.8
+          ],
+          "board": [
+            87.4,
+            52.85,
+            313.7
+          ],
+          "graphNode": "poi-maintenance",
+          "function": "maintenance",
+          "collection": "SM_V02_SERVICE_YARDS"
+        },
+        {
+          "id": "observation",
+          "title": "OBSERVATION DECK",
+          "position": [
+            72,
+            128,
+            420
+          ],
+          "board": [
+            73.5,
+            128.85,
+            418
+          ],
+          "graphNode": "observation-deck",
+          "function": "observation",
+          "collection": "SM_V02_LANDMARKS"
+        },
+        {
+          "id": "station-info",
+          "title": "TRANSIT INFORMATION",
+          "position": [
+            73,
+            100,
+            382
+          ],
+          "board": [
+            74.65,
+            100.85,
+            382
+          ],
+          "graphNode": "poi-station",
+          "function": "station",
+          "collection": "SM_V02_TRANSIT_STRUCTURES"
+        }
+      ],
+      "directory": {
+        "id": "directory",
+        "title": "DISTRICT DIRECTORY",
+        "position": [
+          55,
+          0,
+          210
+        ],
+        "board": [
+          56.9,
+          0.85,
+          208
+        ],
+        "graphNode": "ground-access",
+        "function": "directory",
+        "collection": "SM_V02_GALLERIES"
+      },
+      "nearBoard": "station-info",
+      "readingDisabledByEncounter": false,
+      "scope": "Four functional information/discovery locations and voluntary public route guidance; not final landmark architecture or complete V02 acceptance"
+    },
+    "pursuit": {
+      "phase": "idle",
+      "attempt": 1,
+      "clock": 122.34999999999434,
+      "elapsed": 2.033333333333331,
+      "waypoint": 1,
+      "distance": 2.250000000000796,
+      "rewarded": false,
+      "blockedFor": 0,
+      "message": "Pursuit ended. The runner stays at the last supported position.",
+      "events": [
+        {
+          "eventId": 1,
+          "attempt": 1,
+          "time": 4.917,
+          "kind": "started",
+          "position": [
+            73.7,
+            100,
+            373
+          ]
+        },
+        {
+          "eventId": 2,
+          "attempt": 1,
+          "time": 6.95,
+          "kind": "ended",
+          "reason": "ENDED"
+        }
+      ],
+      "eventId": 2,
+      "error": null,
+      "config": {
+        "id": "transit-pursuit",
+        "title": "TRANSIT INTERCHANGE · PURSUIT",
+        "trigger": [
+          73,
+          100,
+          364
+        ],
+        "positions": [
+          [
+            73.7,
+            100,
+            373
+          ]
+        ],
+        "reward": 400,
+        "escape": [
+          84,
+          128,
+          420
+        ],
+        "path": [
+          [
+            73.7,
+            100,
+            373
+          ],
+          [
+            73.7,
+            100,
+            390
+          ],
+          [
+            68,
+            100,
+            390
+          ],
+          [
+            68,
+            100,
+            399
+          ],
+          [
+            64,
+            100,
+            399
+          ],
+          [
+            61,
+            100,
+            403.5
+          ],
+          [
+            61,
+            100,
+            403.5
+          ],
+          [
+            61,
+            103.11111111111111,
+            412.98
+          ],
+          [
+            67,
+            103.11111111111111,
+            412.98
+          ],
+          [
+            67,
+            103.11111111111111,
+            412.98
+          ],
+          [
+            67,
+            106.22222222222223,
+            403.5
+          ],
+          [
+            61,
+            106.22222222222223,
+            403.5
+          ],
+          [
+            61,
+            106.22222222222223,
+            403.5
+          ],
+          [
+            61,
+            109.33333333333333,
+            412.98
+          ],
+          [
+            67,
+            109.33333333333333,
+            412.98
+          ],
+          [
+            67,
+            109.33333333333333,
+            412.98
+          ],
+          [
+            67,
+            112.44444444444444,
+            403.5
+          ],
+          [
+            61,
+            112.44444444444444,
+            403.5
+          ],
+          [
+            61,
+            112.44444444444444,
+            403.5
+          ],
+          [
+            61,
+            115.55555555555556,
+            412.98
+          ],
+          [
+            67,
+            115.55555555555556,
+            412.98
+          ],
+          [
+            67,
+            115.55555555555556,
+            412.98
+          ],
+          [
+            67,
+            118.66666666666667,
+            403.5
+          ],
+          [
+            61,
+            118.66666666666667,
+            403.5
+          ],
+          [
+            61,
+            118.66666666666667,
+            403.5
+          ],
+          [
+            61,
+            121.77777777777777,
+            412.98
+          ],
+          [
+            67,
+            121.77777777777777,
+            412.98
+          ],
+          [
+            67,
+            121.77777777777777,
+            412.98
+          ],
+          [
+            67,
+            124.88888888888889,
+            403.5
+          ],
+          [
+            61,
+            124.88888888888889,
+            403.5
+          ],
+          [
+            61,
+            124.88888888888889,
+            403.5
+          ],
+          [
+            61,
+            128,
+            412.98
+          ],
+          [
+            67,
+            128,
+            412.98
+          ],
+          [
+            70.2,
+            128,
+            412.98
+          ],
+          [
+            70.2,
+            128,
+            403.5
+          ],
+          [
+            61,
+            128,
+            403.5
+          ],
+          [
+            61,
+            128,
+            403.5
+          ],
+          [
+            55,
+            128,
+            403.5
+          ],
+          [
+            55,
+            128,
+            430
+          ],
+          [
+            84,
+            128,
+            430
+          ],
+          [
+            84,
+            128,
+            420
+          ]
+        ],
+        "interception": [
+          80,
+          128,
+          420
+        ],
+        "speed": 2.7,
+        "cornerPause": 0.1,
+        "bounds": {
+          "min": [
+            51,
+            83.9,
+            353
+          ],
+          "max": [
+            99,
+            131,
+            446
+          ]
+        },
+        "actorType": "dedicated collision-checked runner; existing scenic civilian prototype appearance",
+        "status": "runtime prototype; original train envelope and wider gameplay acceptance remain separate"
+      },
+      "runner": {
+        "position": [
+          73.7,
+          100,
+          375.2500000000008
+        ],
+        "speedLimit": 2.7
+      },
+      "canCapture": false,
+      "atAccess": false,
+      "scope": "Supported pursuit prototype, not final character art or train-envelope certification"
+    }
+  },
+  "fullTrace": "V02_Station_Circulation.trace.json.gz",
+  "traceFrames": 7337
+}

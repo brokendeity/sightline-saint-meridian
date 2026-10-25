@@ -1,0 +1,600 @@
+{
+  "status": "PASS invalid aimed attachment, clean control release and physical rail recovery",
+  "scope": "Local Y128 player/camera fixture, normal invalid sky aim, two physical floor casts, running catch and supported natural endpoint recovery; not all failed-projectile cases",
+  "method": "One labelled controlled Y128 player/camera start fixture. Normal R/Shift/Space keys and standard simulated controller movement/look after setup. No direct rail creation, actor/camera assignment, reset or resource injection during route.",
+  "errors": [],
+  "stages": [
+    {
+      "name": "local failure-recovery start",
+      "frame": 1,
+      "p": [
+        64,
+        128.42,
+        422
+      ],
+      "clock": 0.06666666666666667,
+      "message": ""
+    },
+    {
+      "name": "invalid aim released cleanly",
+      "frame": 142,
+      "p": [
+        64,
+        128.42,
+        422
+      ],
+      "clock": 1.0950000000000026,
+      "message": "AIM AT A CLEAR SURFACE"
+    },
+    {
+      "name": "recovery rail constructed",
+      "frame": 562,
+      "p": [
+        64.00000024756034,
+        128.42,
+        420.17390967634407
+      ],
+      "clock": 5.343333333333332,
+      "message": "PERFECT CROSS-STREET"
+    },
+    {
+      "name": "recovery rail caught",
+      "frame": 867,
+      "p": [
+        63.99736277314065,
+        128.42377229080932,
+        425.06672322419894
+      ],
+      "clock": 10.426666666666776,
+      "message": "CLEAN CATCH"
+    },
+    {
+      "name": "failed attempt recovered to supported landing",
+      "frame": 989,
+      "p": [
+        63.580858480853216,
+        128.42,
+        398.9391972750761
+      ],
+      "clock": 12.46000000000021,
+      "message": "CLEAN CATCH"
+    }
+  ],
+  "entrySHA256": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
+  "manifestSHA256": "3a524ca3b09823cf8fa9eec3c5116ff6a7ec11d1cb091bb7bcdf1ffec88703c1",
+  "initialBank": 0,
+  "beforeInvalidRelease": {
+    "cartridgeAsset": {
+      "ready": true,
+      "error": null,
+      "sourceTask": "b71871c5-e9e6-4e89-b6f7-723182ab3c8e",
+      "diameter": 0.12,
+      "thickness": 0.03,
+      "dt": 0.005833333333333357,
+      "modelBounds": [
+        0.081000001810248,
+        0.024879999546101317,
+        0.08100000445693827
+      ],
+      "count": 3,
+      "instances": [
+        {
+          "id": "belt-A",
+          "pair": "A",
+          "mode": "holder",
+          "deployment": 0,
+          "faceNormal": [
+            0.9999999999999998,
+            0,
+            1.224646799147353e-16
+          ],
+          "position": [
+            64.18,
+            129.02815287390604,
+            421.9993156259286
+          ],
+          "threadExit": [
+            64.1905000003241,
+            128.97715287113442,
+            421.9993156259286
+          ],
+          "coreIntensity": 2.4,
+          "surfaceGlow": false,
+          "speedTrail": false,
+          "trailPoints": 0
+        },
+        {
+          "id": "belt-B",
+          "pair": "B",
+          "mode": "folded",
+          "deployment": 0,
+          "faceNormal": [
+            -0.9999999999999998,
+            0,
+            -1.224646799147353e-16
+          ],
+          "position": [
+            63.82,
+            129.02815287390604,
+            421.9993156259286
+          ],
+          "threadExit": [
+            63.8094999996759,
+            129.07915287667765,
+            421.9993156259286
+          ],
+          "coreIntensity": 0.3,
+          "surfaceGlow": false,
+          "speedTrail": false,
+          "trailPoints": 0
+        },
+        {
+          "id": "aim-cartridge-A",
+          "pair": "A",
+          "mode": "held",
+          "deployment": 0,
+          "faceNormal": [
+            0.8155668435489467,
+            0.15808391736710709,
+            0.5566508769179089
+          ],
+          "position": [
+            63.64875133574054,
+            129.43978292909776,
+            421.98441572393676
+          ],
+          "threadExit": [
+            63.67902277264961,
+            129.39984889899992,
+            421.97026780405025
+          ],
+          "coreIntensity": 1.6,
+          "surfaceGlow": false,
+          "speedTrail": false,
+          "trailPoints": 0
+        }
+      ]
+    },
+    "whipCast": {
+      "ready": true,
+      "error": null,
+      "active": {
+        "hand": "right",
+        "sourceAnimationId": "0x2811be99",
+        "originalMotionName": "pkr_mgc_grab_short_f000a",
+        "authoredMirror": false,
+        "sourceTime": 0.15,
+        "weight": 1,
+        "phase": "aim",
+        "releaseSourceTime": 0.3
+      },
+      "sourceAnimationId": "0x2811be99",
+      "releaseTiming": "authored"
+    },
+    "snapback": {
+      "bank": null,
+      "clock": 1.0283333333333362,
+      "reason": "HERO CHANGE",
+      "distance": 0,
+      "tension": 0,
+      "remaining": 0,
+      "events": []
+    },
+    "surf": {
+      "active": false,
+      "railId": null,
+      "phase": "off",
+      "age": 0,
+      "speed": 0,
+      "lean": 0,
+      "crouch": 0,
+      "compression": 0,
+      "source": "0x2811926e",
+      "provenance": "authored slide-derived posture",
+      "offsets": {
+        "spinePitch": 0,
+        "spineRoll": 0,
+        "knee": 0,
+        "armBalance": 0.06
+      }
+    },
+    "mastery": {
+      "rails": [],
+      "lastCatch": null,
+      "lastPop": null,
+      "style": 0,
+      "events": []
+    },
+    "deployment": {
+      "clock": 1.0283333333333362,
+      "status": "HERO CHANGE",
+      "tensionAt": null,
+      "tensionProgress": 0,
+      "shots": [],
+      "events": []
+    },
+    "motion": {
+      "position": {
+        "x": 64,
+        "y": 128.42,
+        "z": 422
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "speed": 0,
+      "grounded": true,
+      "mode": "GROUND",
+      "flow": null,
+      "advanced": null,
+      "sourcePose": {
+        "role": "relaxedIdle",
+        "sourceAnimationId": "0x281116bb",
+        "originalMotionName": "ntl_idle_loop_base_n000a_lp",
+        "time": 1.0283333333333362,
+        "duration": 3,
+        "loop": true,
+        "rate": 1,
+        "pelvisTranslation": false
+      },
+      "contact": {
+        "policy": "sole",
+        "correction": 1.5911183481875923e-9,
+        "support": 128.42
+      }
+    },
+    "camera": {
+      "mode": "exploration",
+      "clock": 2.3499999999999965,
+      "manualRemaining": 0.766666666666667,
+      "releaseRemaining": 0,
+      "yaw": 0,
+      "pitch": 0,
+      "composition": null
+    },
+    "afterimages": {
+      "bound": true,
+      "disposed": false,
+      "sourceVertices": 56190,
+      "sourceIndices": 56190,
+      "capacity": 3,
+      "poolCapacity": 4,
+      "history": 1,
+      "config": {
+        "quality": "high",
+        "maxShards": 96,
+        "shardCount": 48,
+        "shardSize": 1,
+        "shardOpacity": 0.25,
+        "shardSpeed": 5.5,
+        "shardLifetime": 0.68,
+        "shardRotation": 0.7,
+        "violetBalance": 0.28,
+        "outlineBrightness": 1.3,
+        "afterimageCount": 3,
+        "afterimageOpacity": 0.22,
+        "afterimageSpacing": 0.85,
+        "afterimageFade": 0.55,
+        "outletBrightness": 1.3,
+        "intensity": 1,
+        "trailLength": 7
+      },
+      "active": 0,
+      "activeKinds": [],
+      "footCapacity": 8,
+      "footprints": 0,
+      "pending": 0,
+      "drawCalls": 0,
+      "maxDrawCalls": 2,
+      "captures": 0,
+      "peakCaptureMs": 0,
+      "last": {
+        "kind": "reset",
+        "reason": "MODEL CHANGE"
+      }
+    },
+    "lastFailure": null,
+    "impulses": [],
+    "releaseEvents": [],
+    "movementReady": true,
+    "hero": "backspool",
+    "clock": 1.0283333333333362,
+    "owner": {
+      "frame": 141,
+      "owner": "ordinary",
+      "reason": null,
+      "conflicts": 0,
+      "commits": 1
+    },
+    "sprint": false,
+    "preset": "traversal",
+    "mode": "auto",
+    "wheel": false,
+    "drive": {
+      "now": 1.0283333333333362,
+      "strain": 0,
+      "capacity": 5,
+      "bank": [],
+      "lastBeat": null,
+      "lastRelease": null,
+      "doubleStep": null,
+      "eventSequence": 0,
+      "reason": "HERO CHANGE"
+    },
+    "rail": {
+      "time": 1.0283333333333362,
+      "anchors": [],
+      "rails": [],
+      "current": null,
+      "events": [
+        {
+          "id": 5,
+          "type": "reset",
+          "time": 0,
+          "reason": "HERO CHANGE"
+        }
+      ],
+      "lastReason": "HERO CHANGE",
+      "limits": {
+        "minSpan": 6,
+        "maxSpan": 100,
+        "maxSlope": 55,
+        "maxRails": 4,
+        "maxAnchors": 8,
+        "lifetime": 30,
+        "attachReach": 2,
+        "transferReach": 3,
+        "maxSpeed": 28,
+        "gravity": 9.81,
+        "friction": 0.45,
+        "junctionAngle": 75,
+        "jumpImpulse": 4.8,
+        "slingshotImpulse": 6.5
+      }
+    },
+    "route": {
+      "status": "empty",
+      "reason": "HERO CHANGE",
+      "time": 0,
+      "route": null,
+      "recording": null,
+      "token": null,
+      "reservedIds": [],
+      "consumedIds": [],
+      "actionIndex": 0,
+      "counters": {
+        "recordings": 0,
+        "replays": 0,
+        "completed": 0,
+        "interrupted": 0,
+        "executed": 0,
+        "rejectedActions": 0
+      },
+      "limits": {
+        "maxSeconds": 4,
+        "maxActions": 8,
+        "maxSamples": 120,
+        "reconnectDistance": 1.35,
+        "maxDeviation": 1.5
+      },
+      "nextIds": {
+        "route": 1,
+        "action": 1,
+        "trace": 1,
+        "replay": 1
+      }
+    },
+    "exhaust": {
+      "bound": true,
+      "source": "bone:mixamorigHips",
+      "enabled": true,
+      "disposed": false,
+      "outletPosition": {
+        "x": 64.0400889077709,
+        "y": 129.04258276020968,
+        "z": 421.8278185691953
+      },
+      "outlets": [
+        {
+          "x": 63.91103493361705,
+          "y": 129.04241593065962,
+          "z": 421.800086928007
+        },
+        {
+          "x": 64.16914288192473,
+          "y": 129.04274958975975,
+          "z": 421.8555502103836
+        }
+      ],
+      "outletOffsetMeters": {
+        "x": 0,
+        "y": -0.02,
+        "z": -0.19
+      },
+      "emissionDirection": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "activeCounts": {
+        "slivers": 0,
+        "rings": 0,
+        "threads": 0,
+        "slices": 0
+      },
+      "capacities": {
+        "slivers": 96,
+        "rings": 24,
+        "threads": 64,
+        "slices": 12
+      },
+      "activeTotal": 0,
+      "visibleDrawCalls": 0,
+      "maxDrawCalls": 3,
+      "lastRelease": null,
+      "lastBank": null,
+      "lastReset": "model bind",
+      "emitted": 0,
+      "overwritten": 0,
+      "flash": 0,
+      "config": {
+        "quality": "high",
+        "maxShards": 96,
+        "shardCount": 48,
+        "shardSize": 1,
+        "shardOpacity": 0.25,
+        "shardSpeed": 5.5,
+        "shardLifetime": 0.68,
+        "shardRotation": 0.7,
+        "violetBalance": 0.28,
+        "outlineBrightness": 1.3,
+        "afterimageCount": 3,
+        "afterimageOpacity": 0.22,
+        "afterimageSpacing": 0.85,
+        "afterimageFade": 0.55,
+        "outletBrightness": 1.3,
+        "intensity": 1,
+        "trailLength": 7
+      },
+      "refraction": {
+        "supported": null,
+        "remaining": 0,
+        "captureCount": 0,
+        "rect": null,
+        "textureSize": 128
+      }
+    },
+    "precision": true,
+    "pendingAnchor": null,
+    "lastMessage": "",
+    "course": null,
+    "activeAnimation": "forspoken-threadrail-relaxed-idle",
+    "animationTime": 1.0283333333333362,
+    "contactEvents": []
+  },
+  "invalidAttempt": {
+    "message": "AIM AT A CLEAR SURFACE",
+    "precision": false,
+    "pendingAnchor": null,
+    "shots": 0,
+    "releases": 0
+  },
+  "final": {
+    "frame": 0,
+    "p": [
+      63.580858480853216,
+      128.42,
+      398.9391972750761
+    ],
+    "v": [
+      0,
+      0,
+      0
+    ],
+    "grounded": true,
+    "mode": "GROUND",
+    "trauma": 0,
+    "damage": 0,
+    "rail": null,
+    "rails": [
+      {
+        "id": "rail-1",
+        "a": "anchor-3",
+        "b": "anchor-4",
+        "length": 24.31599341141438,
+        "tangent": {
+          "x": -0.01614609433218897,
+          "y": 0,
+          "z": -0.9998696433224764
+        },
+        "slope": 0,
+        "createdAt": 5.326666666666665,
+        "expiresAt": 35.32666666666667
+      }
+    ],
+    "anchors": [
+      {
+        "id": "anchor-3",
+        "position": {
+          "x": 63.986017750960094,
+          "y": 128.44,
+          "z": 424.02925599490777
+        },
+        "normal": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "ownerId": "v02:observation-deck-opening-1",
+        "revision": 0,
+        "valid": true
+      },
+      {
+        "id": "anchor-4",
+        "position": {
+          "x": 63.59340942755851,
+          "y": 128.44,
+          "z": 399.7164323356052
+        },
+        "normal": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "ownerId": "v02:pop-end-deck-opening-1",
+        "revision": 0,
+        "valid": true
+      }
+    ],
+    "bank": 5,
+    "releases": [],
+    "clock": 12.476666666666878,
+    "message": "CLEAN CATCH",
+    "deployment": "attached",
+    "precision": false,
+    "source": "forspoken-flow-land",
+    "advanced": {
+      "kind": null,
+      "clock": 10.810000000000128,
+      "cooldown": 0,
+      "floatRemaining": 6,
+      "wallJumps": 0,
+      "reason": "INPUT RESET",
+      "motion": null,
+      "water": null,
+      "anchor": null,
+      "wallNormal": null,
+      "wallTop": null,
+      "wallPoint": null,
+      "wallAge": 0,
+      "wallRegrabLocked": false,
+      "events": [],
+      "origin": "authored mechanics; source/native candidate poses",
+      "ready": true,
+      "waters": [
+        {
+          "id": "meridian-waterfront",
+          "minX": -36,
+          "maxX": 36,
+          "minZ": 1171.7387966456854,
+          "maxZ": 1231.7387966456854,
+          "surface": 0.06,
+          "depth": 2.5
+        }
+      ],
+      "surfaceOnly": true,
+      "wallPose": null,
+      "pose": "forspoken-flow-land"
+    },
+    "camera": [
+      64.99876996926783,
+      130.3967910348404,
+      403.1509039251379
+    ]
+  },
+  "seconds": 16.5,
+  "fullTrace": "V02_Failed_Anchor_Recovery.trace.json.gz",
+  "traceFrames": 990
+}

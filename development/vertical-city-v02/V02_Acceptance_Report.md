@@ -2,7 +2,7 @@
 
 Full V02 completion is **not established**. All three destination approaches now have full normal-input traces, and public circulation reachesY128 and returns to ground. Service-yard combat and the market rescue now have playable prototypes and lifecycle input evidence. Transit pursuit also has chase/interception/escape/lifecycle evidence; broader recovery, final architecture, world life, visuals and sustained performance remain open.
 
-Candidate: `SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html` (`cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1`).
+Candidate: `SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html` (`d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8`).
 
 ## Named gameplay gates
 
@@ -12,8 +12,8 @@ Candidate: `SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html` (`cc4b595a92129c7a149c373
 | D station approaches | PASS sampled approaches | Public, momentum and mastery each reach the same station goal from ground. Wider alternate input/failure routes remain separate. |
 | E depletion | PASS tested variants | Public zero bank; momentum zero/full with no release; mastery zero with no release and full-bank variant with one real brake. |
 | F Threadrail | PASS sampled V02 transfer | Four physical casts create two rails; actual R transfers mid-span, followed by Pop and a supported recovery landing. Broader failure routes remain separate. |
-| G recovery | PARTIAL | Short catch safely returns to upper deck and descends throughY118/Y108 roofs. An actual no-Pop endpoint returns to the upper deck. Missed anchors and broader overshoots remain open. |
-| H camera | PARTIAL | Route camera traces and actual captures exist; full obstruction/contact and touch-size traversal review remains open. |
+| G recovery | PASS tested failures | Short catch/no-Pop recover to supported upper surfaces; failed sky anchor reconnects through real surface casts; late Pop overshoots the landing target by6.64m and recovers via118/108/100m. Further movement variants remain release coverage. |
+| H camera | PASS tested core motion | Five fast/airborne actual-body trace reviews,56 local orbits and the60Hz recovery drop pass with rendered review. Full HUD, moving-obstacle and touch-size traversal review remains open for final presentation. |
 | I train | NOT TESTED | Real moving front preserved provisionally; full carriage/traffic sweeps remain open. |
 | J preservation | PARTIAL | Protected entry hash, original mesh references, impact-owner regression and preserved carving tested. Full missions/combat/destruction playthrough regressions remain open. |
 
@@ -60,22 +60,22 @@ Candidate: `SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html` (`cc4b595a92129c7a149c373
 - high loop: 241.9m / 37.27s, no airborne frames or Drive releases.
 - Public ordinary run: 135.33s; walking: 454.55s. Walking ambient projectile hits: 0; final trauma 0. Earlier exposed walking failure is retained. No blanket hostile-combat safety claim.
 - Momentum route: 73.23s zero initial bank / 72.65s full initial bank, no Drive used.
-- Mastery route: 103.78s zero initial bank, no Drive used / 103.33s full initial bank, one confirmed brake. Four wall ascents, physical upper A/B casts, running catch, Pop, aerial redirect and supported118→108→100m descent; no damage.
+- Mastery route: 103.77s zero initial bank, no Drive used / 103.30s full initial bank, one confirmed brake. Four wall ascents, physical upper A/B casts, running catch, Pop, aerial redirect and supported118→108→100m descent; no damage.
 - Public roundtrip: 2042.2m / 353.78s through stairsA/C/D, upper crossing, stairsB and original ground roads. Zero airborne frames, damage or power releases; max unexplained horizontal motion 0.000000m.
 - Banked starts collect five actual running impulses before the timed route; they do not inject resources. Original Halo actors remain active. Input-time measurements include precision slow-motion and are not human performance benchmarks.
 - The immutable V02-owner impact crash is fixed without disabling collision, injury, audio, debris or decals. Original imported-building carving still changes the original mesh/parts in a separate labelled direct test.
-- 39 exported GLBs pass glTF validation. 1789 new components, 21,468 triangles, 1,261,772 bytes. No original building copies are exported.
+- 76 exported GLBs pass glTF validation. 9236 new components, 110,832 triangles, 6,320,452 bytes. No original building copies are exported.
 - Compound-box and6392 sampled ground-road vehicle envelopes clear; these are not continuous train/traffic or triangle collision certification.
 
 ## Design and remaining gates
 
 The graph has128 nodes /278 directed edges. Rail/Pop/landing phases are distinct. Some public hub junctions and edge admission still require alignment with measured traces, so proposed graph statuses do not automatically become certified. Three encounter spaces/landmarks and four POIs are designed. Service-yard combat and market rescue have normal-input evidence, including a ground-to-market approach. Transit pursuit has input-tested chase, interception, escape and lifecycle controls; Four useful discovery locations and a street directory now have a complete input-guided tour plus lifecycle evidence; final landmark silhouettes remain unfinished. Actor art, wider interaction/camera, train clearance and recovery acceptance remain separate. Do not advance to detailed architecture while essential encounter/recovery gates remain open.
 
-- Expand pursuit recovery/train-envelope/camera, service-yard Echo/cross-level/escape/camera and market presentation acceptance
+- Refine encounter art and presentation; service Echo/two public escapes, multi-level legal combat, market escort and pursuit now have tested prototype evidence; moving-transit compatibility remains phase6 work
 - Refine landmark silhouettes and navigation-cue readability at traversal speed; four information/discovery POIs have prototype input evidence
 - Refine graph junctions/admission against actual input traces; graph edge proposals are not route certification
-- Missed anchors, wider rail/Pop overshoot recovery and camera/contact cases; sampled physical V02 transfer and no-Pop endpoint now have input evidence
-- Guardrails and civilian access around approved routes
+- Tested failure recovery covers short catch, no-Pop endpoint, failed anchors and late-Pop overshoot; further movement variants remain release coverage
+- Wider public-edge/civilian access and ability-opening acceptance; five walking-edge safety probes do not certify every boundary
 - Train/traffic full swept clearance and station behavior
 - Detailed Blender architecture after essential gameplay/encounter acceptance
 - Reference-matched Blender/browser renders
@@ -86,12 +86,12 @@ See the hash-bound JSON, complete compressed traces, retained failures and route
 
 ## Directed edge evidence
 
-- 104/278 proposed directed edges have matching ordered, supported ground input passages in the current evidence overlay. This is deliberately partial: other edges remain unadmitted rather than being certified from topology or nearby screenshots. Stair paths are circulation corridors; NPC, ability, camera and recovery evidence retain their own gates.
+- 101/278 proposed directed edges have matching ordered, supported ground input passages in the current evidence overlay. This is deliberately partial: other edges remain unadmitted rather than being certified from topology or nearby screenshots. Stair paths are circulation corridors; NPC, ability, camera and recovery evidence retain their own gates.
 
 ## Transit pursuit prototype
 
-- Ordinary ground-to-station approach: 151.50s, grounded and zero initial bank. Runner starts only through actual interaction.
-- Chase: 96.05s; interception: 104.42s. Chase deliberately gives the runner a45s lead; these totals are not a player-speed benchmark.
+- Ordinary ground-to-station approach: 152.05s, grounded and zero initial bank. Runner starts only through actual interaction.
+- Chase: 98.22s; interception: 106.83s. Chase deliberately gives the runner a45s lead; these totals are not a player-speed benchmark.
 - Runner uses collision-checked movement up the actual100→128m stairs, then the upper west/crossing/observation path. Interception cuts across the observation deck; chasing follows the outer crossing. No catch-up teleport or time-based escape. Capture requires grounded proximity, compatible elevation and unobstructed sight; one400point award per attempt.
 - actual pause freezes runner, route and clocks
 - actual hero selector and simulated-controller Y resume the same runner
@@ -102,6 +102,12 @@ See the hash-bound JSON, complete compressed traces, retained failures and route
 - labelled existing respawn API retains failed outcome and safe runner position
 - Four controlled actor stair probes plus solid-wall, excessive-step and unsupported-edge rejections pass. These support NPC routing, not player-control certification. Prototype appearance and the wider camera/train/recovery gates remain open.
 - The prior mastery-brake wall-launch damage case remains retained in fixed-defects evidence. A later passing trial does not establish that all hostile exposure has been resolved.
+
+## Service Echo and public escapes
+
+- Real G/Q/H inputs bank a versioned heavy action and replay its original contacts against the same live yard opponent. An actual Echo deals31 damage. The player baits the opponent back toward the world-anchored action through ordinary movement; actor positions and health are never assigned by the test.
+- Both public galleries are reached during the same active attempt, with a supported crossing between them. End clears the owned actors/replay state. Native condition recovery remains enabled; this case does not independently certify healing timing.
+- Before-state camera failures and the corrected drop capture are retained under evidence/fixed-defects and evidence/recovery-drop-body-origin-after.png.
 
 ## Physical V02 transfer and endpoint recovery
 

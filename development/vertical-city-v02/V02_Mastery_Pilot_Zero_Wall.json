@@ -1,0 +1,275 @@
+{
+  "status": "PASS four supported wall ascents, local pilot",
+  "scope": "Local Y84 courtyard fixture; four walls, upper rail and Pop, not full ground approach",
+  "method": "One controlled initial setup (ground for full route, Y84 for local pilot). Normal R/Shift/Space keys and standard simulated controller movement/look after setup. No direct rail creation, actor/camera assignment, reset or resource injection during route.",
+  "errors": [],
+  "stages": [
+    {
+      "name": "mastery courtyard",
+      "frame": 2,
+      "p": [
+        55,
+        84.42,
+        293
+      ],
+      "clock": 0.08333333333333333,
+      "message": ""
+    },
+    {
+      "name": "wall boost to 96",
+      "frame": 327,
+      "p": [
+        63.831639968322015,
+        86.67915525530671,
+        300.62
+      ],
+      "clock": 5.499999999999986,
+      "message": ""
+    },
+    {
+      "name": "wall roof landing 96",
+      "frame": 501,
+      "p": [
+        63.831639968322015,
+        96.42,
+        299.365
+      ],
+      "clock": 8.399999999999997,
+      "message": ""
+    },
+    {
+      "name": "wall boost to 108",
+      "frame": 579,
+      "p": [
+        63.831639968322015,
+        98.67915525530671,
+        292.62
+      ],
+      "clock": 9.700000000000061,
+      "message": ""
+    },
+    {
+      "name": "wall roof landing 108",
+      "frame": 753,
+      "p": [
+        63.831639968322015,
+        108.42,
+        291.12
+      ],
+      "clock": 12.600000000000206,
+      "message": ""
+    },
+    {
+      "name": "wall boost to 120",
+      "frame": 805,
+      "p": [
+        63.831639968322015,
+        110.67915525530671,
+        284.62
+      ],
+      "clock": 13.466666666666915,
+      "message": ""
+    },
+    {
+      "name": "wall roof landing 120",
+      "frame": 979,
+      "p": [
+        63.831639968322015,
+        120.42,
+        283.09727250000003
+      ],
+      "clock": 16.36666666666702,
+      "message": ""
+    },
+    {
+      "name": "wall boost to 128",
+      "frame": 1031,
+      "p": [
+        63.831639968322015,
+        122.67915525530671,
+        276.62
+      ],
+      "clock": 17.233333333333636,
+      "message": ""
+    },
+    {
+      "name": "wall roof landing 128",
+      "frame": 1162,
+      "p": [
+        63.831639968322015,
+        128.42,
+        275.09727250000003
+      ],
+      "clock": 19.416666666666845,
+      "message": ""
+    }
+  ],
+  "entrySHA256": "b887965e8f16821c810ab5db72253f3bdd987511d17155e0a6231f0c1aa38033",
+  "manifestSHA256": "e60cd874b183e01a42565696d73896299a89dd029c108a21e6c7e46eac7eef12",
+  "initialBank": 0,
+  "routeStartFrame": 1,
+  "routeTraceStart": 1,
+  "totalInputSeconds": 19.716666666666665,
+  "seconds": 19.7,
+  "distance": 86.14188498733171,
+  "powerReleases": [],
+  "final": {
+    "frame": 0,
+    "p": [
+      63.831639968322015,
+      128.42,
+      275.09727250000003
+    ],
+    "v": [
+      0,
+      0,
+      0
+    ],
+    "grounded": true,
+    "mode": "GROUND",
+    "trauma": 0,
+    "rail": null,
+    "rails": [],
+    "anchors": [],
+    "bank": 0,
+    "releases": [],
+    "clock": 19.766666666666826,
+    "message": "",
+    "deployment": "HERO CHANGE",
+    "precision": false,
+    "source": "forspoken-flow-land",
+    "advanced": {
+      "kind": null,
+      "clock": 19.700000000000163,
+      "cooldown": 0,
+      "floatRemaining": 6,
+      "wallJumps": 0,
+      "reason": "ROOFTOP REACHED",
+      "motion": null,
+      "water": null,
+      "anchor": null,
+      "wallNormal": null,
+      "wallTop": null,
+      "wallPoint": null,
+      "wallAge": 0,
+      "wallRegrabLocked": false,
+      "events": [
+        {
+          "eventId": 1,
+          "time": 4.999999999999988,
+          "kind": "wall-start"
+        },
+        {
+          "eventId": 2,
+          "time": 5.466666666666653,
+          "kind": "wall-boost",
+          "count": 1
+        },
+        {
+          "eventId": 3,
+          "time": 6.766666666666648,
+          "kind": "mantle-start"
+        },
+        {
+          "eventId": 4,
+          "time": 8.366666666666662,
+          "kind": "end",
+          "mode": "mantle",
+          "reason": "ROOFTOP REACHED"
+        },
+        {
+          "eventId": 5,
+          "time": 9.183333333333369,
+          "kind": "wall-start"
+        },
+        {
+          "eventId": 6,
+          "time": 9.650000000000059,
+          "kind": "wall-boost",
+          "count": 1
+        },
+        {
+          "eventId": 7,
+          "time": 10.950000000000124,
+          "kind": "mantle-start"
+        },
+        {
+          "eventId": 8,
+          "time": 12.550000000000203,
+          "kind": "end",
+          "mode": "mantle",
+          "reason": "ROOFTOP REACHED"
+        },
+        {
+          "eventId": 9,
+          "time": 12.933333333333556,
+          "kind": "wall-start"
+        },
+        {
+          "eventId": 10,
+          "time": 13.400000000000245,
+          "kind": "wall-boost",
+          "count": 1
+        },
+        {
+          "eventId": 11,
+          "time": 14.70000000000031,
+          "kind": "mantle-start"
+        },
+        {
+          "eventId": 12,
+          "time": 16.300000000000356,
+          "kind": "end",
+          "mode": "mantle",
+          "reason": "ROOFTOP REACHED"
+        },
+        {
+          "eventId": 13,
+          "time": 16.683333333333668,
+          "kind": "wall-start"
+        },
+        {
+          "eventId": 14,
+          "time": 17.150000000000308,
+          "kind": "wall-boost",
+          "count": 1
+        },
+        {
+          "eventId": 15,
+          "time": 17.733333333333608,
+          "kind": "mantle-start"
+        },
+        {
+          "eventId": 16,
+          "time": 19.333333333333517,
+          "kind": "end",
+          "mode": "mantle",
+          "reason": "ROOFTOP REACHED"
+        }
+      ],
+      "origin": "authored mechanics; source/native candidate poses",
+      "ready": true,
+      "waters": [
+        {
+          "id": "meridian-waterfront",
+          "minX": -36,
+          "maxX": 36,
+          "minZ": 1171.7387966456854,
+          "maxZ": 1231.7387966456854,
+          "surface": 0.06,
+          "depth": 2.5
+        }
+      ],
+      "surfaceOnly": true,
+      "wallPose": null,
+      "pose": "forspoken-flow-land"
+    },
+    "camera": [
+      65.28156634272517,
+      127.6873659242623,
+      278.88348231664446
+    ]
+  },
+  "fullTrace": "V02_Mastery_Pilot_Zero_Wall.trace.json.gz",
+  "traceFrames": 1183
+}

@@ -10,7 +10,7 @@
     },
     {
       "name": "market",
-      "frame": 2939,
+      "frame": 2943,
       "found": [
         "market-info"
       ],
@@ -35,7 +35,7 @@
     },
     {
       "name": "maintenance",
-      "frame": 7751,
+      "frame": 7239,
       "found": [
         "market-info",
         "maintenance-access"
@@ -43,7 +43,7 @@
       "route": {
         "destination": "poi-maintenance",
         "status": "arrived",
-        "index": 43,
+        "index": 39,
         "edges": [
           "E0263",
           "E0122",
@@ -57,18 +57,14 @@
           "E0075",
           "E0073",
           "E0071",
-          "E0138",
-          "E0190",
-          "E0271"
-        ],
-        "blockedEdges": [
           "E0268"
-        ]
+        ],
+        "blockedEdges": []
       }
     },
     {
       "name": "overhead",
-      "frame": 8913,
+      "frame": 8404,
       "found": [
         "market-info",
         "maintenance-access"
@@ -88,7 +84,7 @@
     },
     {
       "name": "station",
-      "frame": 15883,
+      "frame": 14958,
       "found": [
         "market-info",
         "maintenance-access",
@@ -97,11 +93,9 @@
       "route": {
         "destination": "poi-station",
         "status": "arrived",
-        "index": 59,
+        "index": 57,
         "edges": [
-          "E0270",
-          "E0191",
-          "E0139",
+          "E0269",
           "E0070",
           "E0072",
           "E0074",
@@ -119,14 +113,12 @@
           "E0196",
           "E0272"
         ],
-        "blockedEdges": [
-          "E0269"
-        ]
+        "blockedEdges": []
       }
     },
     {
       "name": "observation",
-      "frame": 18726,
+      "frame": 17737,
       "found": [
         "market-info",
         "maintenance-access",
@@ -136,23 +128,20 @@
       "route": {
         "destination": "observation-deck",
         "status": "arrived",
-        "index": 32,
+        "index": 33,
         "edges": [
-          "E0273",
-          "E0199",
+          "E0276",
           "E0180",
           "E0222",
           "E0210",
           "E0224"
         ],
-        "blockedEdges": [
-          "E0276"
-        ]
+        "blockedEdges": []
       }
     },
     {
       "name": "street-return",
-      "frame": 28218,
+      "frame": 27291,
       "found": [
         "market-info",
         "maintenance-access",
@@ -212,32 +201,32 @@
     }
   ],
   "errors": [],
-  "entrySHA256": "cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1",
-  "manifestSHA256": "d4fb49380ae1a0aed2aecaabc836b27836efea6455b1200716096cbd5370128c",
+  "entrySHA256": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
+  "manifestSHA256": "3a524ca3b09823cf8fa9eec3c5116ff6a7ec11d1cb091bb7bcdf1ffec88703c1",
   "encounterSHA256": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
   "marketSHA256": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
-  "discoverySHA256": "93a394a1fb61c624acb6d94948bac39d7c6524764bb14a39c1d595a8dad957c3",
+  "discoverySHA256": "7cfc8878103a13115fb9778c4d8ee15dadc0147a0ace29433a14a2ba651c0679",
   "confirmedAmbientHits": [],
   "finalCondition": 100,
   "final": {
     "ready": true,
-    "clock": 470.29999999990093,
+    "clock": 454.849999999915,
     "discovered": [
       {
         "id": "market-info",
-        "time": 48.083
+        "time": 48.15
       },
       {
         "id": "maintenance-access",
-        "time": 128.283
+        "time": 119.833
       },
       {
         "id": "station-info",
-        "time": 263.833
+        "time": 248.333
       },
       {
         "id": "observation",
-        "time": 311.217
+        "time": 294.733
       }
     ],
     "openBoard": null,
@@ -858,7 +847,7 @@
       },
       {
         "id": 3,
-        "time": 1.433,
+        "time": 1.483,
         "kind": "route-ready",
         "destination": "poi-market",
         "edges": [
@@ -879,32 +868,32 @@
       },
       {
         "id": 4,
-        "time": 48.083,
+        "time": 48.15,
         "kind": "discovered",
         "point": "market-info"
       },
       {
         "id": 5,
-        "time": 48.45,
+        "time": 48.517,
         "kind": "route-arrived",
         "destination": "poi-market"
       },
       {
         "id": 6,
-        "time": 48.983,
+        "time": 49.05,
         "kind": "board-read",
         "point": "market-info"
       },
       {
         "id": 7,
-        "time": 49.017,
+        "time": 49.083,
         "kind": "route-requested",
         "source": "market-info",
         "destination": "market-access"
       },
       {
         "id": 8,
-        "time": 49.083,
+        "time": 49.15,
         "kind": "route-ready",
         "destination": "market-access",
         "edges": [
@@ -916,26 +905,26 @@
       },
       {
         "id": 9,
-        "time": 52.4,
+        "time": 52.467,
         "kind": "route-arrived",
         "destination": "market-access"
       },
       {
         "id": 10,
-        "time": 56.7,
+        "time": 56.767,
         "kind": "board-read",
         "point": "market-info"
       },
       {
         "id": 11,
-        "time": 56.733,
+        "time": 56.8,
         "kind": "route-requested",
         "source": "market-info",
         "destination": "poi-maintenance"
       },
       {
         "id": 12,
-        "time": 59.233,
+        "time": 58.383,
         "kind": "route-ready",
         "destination": "poi-maintenance",
         "edges": [
@@ -951,44 +940,40 @@
           "E0075",
           "E0073",
           "E0071",
-          "E0138",
-          "E0190",
-          "E0271"
-        ],
-        "validationSamples": 2500,
-        "blockedEdges": [
           "E0268"
         ],
-        "validationAttempts": 2
+        "validationSamples": 2221,
+        "blockedEdges": [],
+        "validationAttempts": 1
       },
       {
         "id": 13,
-        "time": 128.283,
+        "time": 119.833,
         "kind": "discovered",
         "point": "maintenance-access"
       },
       {
         "id": 14,
-        "time": 128.65,
+        "time": 120.117,
         "kind": "route-arrived",
         "destination": "poi-maintenance"
       },
       {
         "id": 15,
-        "time": 129.183,
+        "time": 120.65,
         "kind": "board-read",
         "point": "maintenance-access"
       },
       {
         "id": 16,
-        "time": 129.217,
+        "time": 120.683,
         "kind": "route-requested",
         "source": "maintenance-access",
         "destination": "service-upper-58.4"
       },
       {
         "id": 17,
-        "time": 129.567,
+        "time": 121.033,
         "kind": "route-ready",
         "destination": "service-upper-58.4",
         "edges": [
@@ -1003,32 +988,30 @@
       },
       {
         "id": 18,
-        "time": 148.033,
+        "time": 139.55,
         "kind": "route-arrived",
         "destination": "service-upper-58.4"
       },
       {
         "id": 19,
-        "time": 174.25,
+        "time": 165.767,
         "kind": "board-read",
         "point": "maintenance-access"
       },
       {
         "id": 20,
-        "time": 174.283,
+        "time": 165.8,
         "kind": "route-requested",
         "source": "maintenance-access",
         "destination": "poi-station"
       },
       {
         "id": 21,
-        "time": 176,
+        "time": 168,
         "kind": "route-ready",
         "destination": "poi-station",
         "edges": [
-          "E0270",
-          "E0191",
-          "E0139",
+          "E0269",
           "E0070",
           "E0072",
           "E0074",
@@ -1046,115 +1029,110 @@
           "E0196",
           "E0272"
         ],
-        "validationSamples": 3169,
-        "blockedEdges": [
-          "E0269"
-        ],
-        "validationAttempts": 2
+        "validationSamples": 2903,
+        "blockedEdges": [],
+        "validationAttempts": 1
       },
       {
         "id": 22,
-        "time": 263.833,
+        "time": 248.333,
         "kind": "discovered",
         "point": "station-info"
       },
       {
         "id": 23,
-        "time": 264.2,
+        "time": 248.8,
         "kind": "route-arrived",
         "destination": "poi-station"
       },
       {
         "id": 24,
-        "time": 264.717,
+        "time": 249.3,
         "kind": "board-read",
         "point": "station-info"
       },
       {
         "id": 25,
-        "time": 264.75,
+        "time": 249.333,
         "kind": "route-requested",
         "source": "station-info",
         "destination": "pursuit-access"
       },
       {
         "id": 26,
-        "time": 264.817,
+        "time": 249.4,
         "kind": "route-ready",
         "destination": "pursuit-access",
         "edges": [
           "E0275"
         ],
-        "validationSamples": 102,
+        "validationSamples": 110,
         "blockedEdges": [],
         "validationAttempts": 1
       },
       {
         "id": 27,
-        "time": 267.65,
+        "time": 252.367,
         "kind": "route-arrived",
         "destination": "pursuit-access"
       },
       {
         "id": 28,
-        "time": 270.917,
+        "time": 255.683,
         "kind": "board-read",
         "point": "station-info"
       },
       {
         "id": 29,
-        "time": 270.95,
+        "time": 255.717,
         "kind": "route-requested",
         "source": "station-info",
         "destination": "observation-deck"
       },
       {
         "id": 30,
-        "time": 271.733,
+        "time": 256.517,
         "kind": "route-ready",
         "destination": "observation-deck",
         "edges": [
-          "E0273",
-          "E0199",
+          "E0276",
           "E0180",
           "E0222",
           "E0210",
           "E0224"
         ],
-        "validationSamples": 1423,
-        "blockedEdges": [
-          "E0276"
-        ],
-        "validationAttempts": 2
+        "validationSamples": 1380,
+        "blockedEdges": [],
+        "validationAttempts": 1
       },
       {
         "id": 31,
-        "time": 311.217,
+        "time": 294.733,
         "kind": "discovered",
         "point": "observation"
       },
       {
         "id": 32,
-        "time": 311.567,
+        "time": 295.083,
         "kind": "route-arrived",
         "destination": "observation-deck"
       },
       {
         "id": 33,
-        "time": 312.1,
+        "time": 295.617,
         "kind": "board-read",
         "point": "observation"
       },
       {
         "id": 34,
-        "time": 312.133,
+        "time": 295.65,
         "kind": "route-requested",
         "source": "observation",
         "destination": "ground-access"
       },
       {
         "id": 35,
-        "time": 315.183,
+        "time": 299.75,
         "kind": "route-ready",
         "destination": "ground-access",
         "edges": [
@@ -1185,7 +1163,7 @@
       },
       {
         "id": 36,
-        "time": 469.767,
+        "time": 454.317,
         "kind": "route-arrived",
         "destination": "ground-access"
       }
@@ -1282,26 +1260,26 @@
     "readingDisabledByEncounter": false,
     "scope": "Four functional information/discovery locations and voluntary public route guidance; not final landmark architecture or complete V02 acceptance"
   },
-  "inputSeconds": 470.31666666666666,
+  "inputSeconds": 454.8666666666667,
   "diagnostics": {
     "ready": true,
-    "clock": 470.3166666665676,
+    "clock": 454.86666666658164,
     "discovered": [
       {
         "id": "market-info",
-        "time": 48.083
+        "time": 48.15
       },
       {
         "id": "maintenance-access",
-        "time": 128.283
+        "time": 119.833
       },
       {
         "id": "station-info",
-        "time": 263.833
+        "time": 248.333
       },
       {
         "id": "observation",
-        "time": 311.217
+        "time": 294.733
       }
     ],
     "openBoard": null,
@@ -1325,7 +1303,7 @@
       },
       {
         "id": 3,
-        "time": 1.433,
+        "time": 1.483,
         "kind": "route-ready",
         "destination": "poi-market",
         "edges": [
@@ -1346,32 +1324,32 @@
       },
       {
         "id": 4,
-        "time": 48.083,
+        "time": 48.15,
         "kind": "discovered",
         "point": "market-info"
       },
       {
         "id": 5,
-        "time": 48.45,
+        "time": 48.517,
         "kind": "route-arrived",
         "destination": "poi-market"
       },
       {
         "id": 6,
-        "time": 48.983,
+        "time": 49.05,
         "kind": "board-read",
         "point": "market-info"
       },
       {
         "id": 7,
-        "time": 49.017,
+        "time": 49.083,
         "kind": "route-requested",
         "source": "market-info",
         "destination": "market-access"
       },
       {
         "id": 8,
-        "time": 49.083,
+        "time": 49.15,
         "kind": "route-ready",
         "destination": "market-access",
         "edges": [
@@ -1383,26 +1361,26 @@
       },
       {
         "id": 9,
-        "time": 52.4,
+        "time": 52.467,
         "kind": "route-arrived",
         "destination": "market-access"
       },
       {
         "id": 10,
-        "time": 56.7,
+        "time": 56.767,
         "kind": "board-read",
         "point": "market-info"
       },
       {
         "id": 11,
-        "time": 56.733,
+        "time": 56.8,
         "kind": "route-requested",
         "source": "market-info",
         "destination": "poi-maintenance"
       },
       {
         "id": 12,
-        "time": 59.233,
+        "time": 58.383,
         "kind": "route-ready",
         "destination": "poi-maintenance",
         "edges": [
@@ -1418,44 +1396,40 @@
           "E0075",
           "E0073",
           "E0071",
-          "E0138",
-          "E0190",
-          "E0271"
-        ],
-        "validationSamples": 2500,
-        "blockedEdges": [
           "E0268"
         ],
-        "validationAttempts": 2
+        "validationSamples": 2221,
+        "blockedEdges": [],
+        "validationAttempts": 1
       },
       {
         "id": 13,
-        "time": 128.283,
+        "time": 119.833,
         "kind": "discovered",
         "point": "maintenance-access"
       },
       {
         "id": 14,
-        "time": 128.65,
+        "time": 120.117,
         "kind": "route-arrived",
         "destination": "poi-maintenance"
       },
       {
         "id": 15,
-        "time": 129.183,
+        "time": 120.65,
         "kind": "board-read",
         "point": "maintenance-access"
       },
       {
         "id": 16,
-        "time": 129.217,
+        "time": 120.683,
         "kind": "route-requested",
         "source": "maintenance-access",
         "destination": "service-upper-58.4"
       },
       {
         "id": 17,
-        "time": 129.567,
+        "time": 121.033,
         "kind": "route-ready",
         "destination": "service-upper-58.4",
         "edges": [
@@ -1470,32 +1444,30 @@
       },
       {
         "id": 18,
-        "time": 148.033,
+        "time": 139.55,
         "kind": "route-arrived",
         "destination": "service-upper-58.4"
       },
       {
         "id": 19,
-        "time": 174.25,
+        "time": 165.767,
         "kind": "board-read",
         "point": "maintenance-access"
       },
       {
         "id": 20,
-        "time": 174.283,
+        "time": 165.8,
         "kind": "route-requested",
         "source": "maintenance-access",
         "destination": "poi-station"
       },
       {
         "id": 21,
-        "time": 176,
+        "time": 168,
         "kind": "route-ready",
         "destination": "poi-station",
         "edges": [
-          "E0270",
-          "E0191",
-          "E0139",
+          "E0269",
           "E0070",
           "E0072",
           "E0074",
@@ -1513,115 +1485,110 @@
           "E0196",
           "E0272"
         ],
-        "validationSamples": 3169,
-        "blockedEdges": [
-          "E0269"
-        ],
-        "validationAttempts": 2
+        "validationSamples": 2903,
+        "blockedEdges": [],
+        "validationAttempts": 1
       },
       {
         "id": 22,
-        "time": 263.833,
+        "time": 248.333,
         "kind": "discovered",
         "point": "station-info"
       },
       {
         "id": 23,
-        "time": 264.2,
+        "time": 248.8,
         "kind": "route-arrived",
         "destination": "poi-station"
       },
       {
         "id": 24,
-        "time": 264.717,
+        "time": 249.3,
         "kind": "board-read",
         "point": "station-info"
       },
       {
         "id": 25,
-        "time": 264.75,
+        "time": 249.333,
         "kind": "route-requested",
         "source": "station-info",
         "destination": "pursuit-access"
       },
       {
         "id": 26,
-        "time": 264.817,
+        "time": 249.4,
         "kind": "route-ready",
         "destination": "pursuit-access",
         "edges": [
           "E0275"
         ],
-        "validationSamples": 102,
+        "validationSamples": 110,
         "blockedEdges": [],
         "validationAttempts": 1
       },
       {
         "id": 27,
-        "time": 267.65,
+        "time": 252.367,
         "kind": "route-arrived",
         "destination": "pursuit-access"
       },
       {
         "id": 28,
-        "time": 270.917,
+        "time": 255.683,
         "kind": "board-read",
         "point": "station-info"
       },
       {
         "id": 29,
-        "time": 270.95,
+        "time": 255.717,
         "kind": "route-requested",
         "source": "station-info",
         "destination": "observation-deck"
       },
       {
         "id": 30,
-        "time": 271.733,
+        "time": 256.517,
         "kind": "route-ready",
         "destination": "observation-deck",
         "edges": [
-          "E0273",
-          "E0199",
+          "E0276",
           "E0180",
           "E0222",
           "E0210",
           "E0224"
         ],
-        "validationSamples": 1423,
-        "blockedEdges": [
-          "E0276"
-        ],
-        "validationAttempts": 2
+        "validationSamples": 1380,
+        "blockedEdges": [],
+        "validationAttempts": 1
       },
       {
         "id": 31,
-        "time": 311.217,
+        "time": 294.733,
         "kind": "discovered",
         "point": "observation"
       },
       {
         "id": 32,
-        "time": 311.567,
+        "time": 295.083,
         "kind": "route-arrived",
         "destination": "observation-deck"
       },
       {
         "id": 33,
-        "time": 312.1,
+        "time": 295.617,
         "kind": "board-read",
         "point": "observation"
       },
       {
         "id": 34,
-        "time": 312.133,
+        "time": 295.65,
         "kind": "route-requested",
         "source": "observation",
         "destination": "ground-access"
       },
       {
         "id": 35,
-        "time": 315.183,
+        "time": 299.75,
         "kind": "route-ready",
         "destination": "ground-access",
         "edges": [
@@ -1652,13 +1619,13 @@
       },
       {
         "id": 36,
-        "time": 469.767,
+        "time": 454.317,
         "kind": "route-arrived",
         "destination": "ground-access"
       },
       {
         "id": 37,
-        "time": 470.317,
+        "time": 454.867,
         "kind": "route-ended",
         "reason": "RESPAWN",
         "destination": "ground-access"
@@ -1757,5 +1724,5 @@
     "scope": "Four functional information/discovery locations and voluntary public route guidance; not final landmark architecture or complete V02 acceptance"
   },
   "fullTrace": "V02_Discovery_Tour.trace.json.gz",
-  "traceFrames": 28219
+  "traceFrames": 27292
 }
