@@ -44,4 +44,11 @@ A local wall-only fixture (`WALL_ONLY=1`) proves only its four ascents. It canno
 
 ## Remaining full-objective work
 
-Three functional encounters and four discoverable POIs are not implemented yet. Guardrails, navigation cues, actual graph-junction/admission alignment, fresh physical rail transfers, missed anchors/no-Pop cases, wider recovery and camera/contact review remain gameplay-acceptance work. Detailed architecture must follow those essential gates. Full train/traffic sweeps, living-world refinement, matched Blender/game visuals, sustained60s performance and retained mission/combat/destruction regressions remain required. Earlier game builds and snapshot refs remain protected.
+The three encounter prototypes and four useful discovery POIs now have separate current-build input evidence. Their broader acceptance is still incomplete. Guardrails, navigation cues, actual graph-junction/admission alignment, wider physical transfer layouts, missed anchors and overshoot cases, wider recovery and camera/contact review remain gameplay-acceptance work. Detailed architecture must follow those essential gates. Full train/traffic sweeps, living-world refinement, matched Blender/game visuals, sustained60s performance and retained mission/combat/destruction regressions remain required. Earlier game builds and snapshot refs remain protected.
+
+
+## Fresh V02 physical transfer and no-Pop recovery
+
+`test_physical_transfer.cjs` now verifies four actual precision casts on the128m upper staging/exit decks, creating two parallel24m rails2.5m apart. Normal running catches the first; a real R input transfers mid-span to the second without adding speed. The Pop variant lands on the118m roof; `NO_POP=1` exits naturally onto the128m deck. Both have zero initial impulses, no Drive release and no injury. These are local player/camera setup fixtures, not additional full ground approaches. The two cases are included at the end of the25-scenario regression suite.
+
+Camera-centre screening also examines the current full momentum/mastery/public-roundtrip/discovery traces and both transfer variants against exported solid V02 boxes. It is a limited defect screen, not framing, swept-radius or original-building camera acceptance. The first local transfer setup let the camera travel from the old spawn; its single interior sample is retained as a labelled fixture artifact. The corrected fixture initializes player and camera together before normal input. Gameplay camera behavior is unchanged by this test correction.

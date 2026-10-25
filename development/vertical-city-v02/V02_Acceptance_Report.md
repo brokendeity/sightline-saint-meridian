@@ -2,7 +2,7 @@
 
 Full V02 completion is **not established**. All three destination approaches now have full normal-input traces, and public circulation reachesY128 and returns to ground. Service-yard combat and the market rescue now have playable prototypes and lifecycle input evidence. Transit pursuit also has chase/interception/escape/lifecycle evidence; broader recovery, final architecture, world life, visuals and sustained performance remain open.
 
-Candidate: `SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html` (`db8af3b20ec4d8f5e1378d7df5ffa8d74521947565503cd17b9dca567a29e8c7`).
+Candidate: `SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html` (`cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1`).
 
 ## Named gameplay gates
 
@@ -11,8 +11,8 @@ Candidate: `SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html` (`db8af3b20ec4d8f5e1378d7
 | A/B/C city loops | PASS | Three complete loops, grounded, ordinary keys, no powers; one controlled start per loop. |
 | D station approaches | PASS sampled approaches | Public, momentum and mastery each reach the same station goal from ground. Wider alternate input/failure routes remain separate. |
 | E depletion | PASS tested variants | Public zero bank; momentum zero/full with no release; mastery zero with no release and full-bank variant with one real brake. |
-| F Threadrail | PARTIAL | Physical construction, uphill catches and upper Pop landings pass. Fresh physical rail-to-rail transfer in V02 remains open. |
-| G recovery | PARTIAL | Short catch safely returns to upper deck and descends throughY118/Y108 roofs. Missed anchors, no-Pop and broader overshoots remain open. |
+| F Threadrail | PASS sampled V02 transfer | Four physical casts create two rails; actual R transfers mid-span, followed by Pop and a supported recovery landing. Broader failure routes remain separate. |
+| G recovery | PARTIAL | Short catch safely returns to upper deck and descends throughY118/Y108 roofs. An actual no-Pop endpoint returns to the upper deck. Missed anchors and broader overshoots remain open. |
 | H camera | PARTIAL | Route camera traces and actual captures exist; full obstruction/contact and touch-size traversal review remains open. |
 | I train | NOT TESTED | Real moving front preserved provisionally; full carriage/traffic sweeps remain open. |
 | J preservation | PARTIAL | Protected entry hash, original mesh references, impact-owner regression and preserved carving tested. Full missions/combat/destruction playthrough regressions remain open. |
@@ -64,17 +64,17 @@ Candidate: `SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html` (`db8af3b20ec4d8f5e1378d7
 - Public roundtrip: 2042.2m / 353.78s through stairsA/C/D, upper crossing, stairsB and original ground roads. Zero airborne frames, damage or power releases; max unexplained horizontal motion 0.000000m.
 - Banked starts collect five actual running impulses before the timed route; they do not inject resources. Original Halo actors remain active. Input-time measurements include precision slow-motion and are not human performance benchmarks.
 - The immutable V02-owner impact crash is fixed without disabling collision, injury, audio, debris or decals. Original imported-building carving still changes the original mesh/parts in a separate labelled direct test.
-- 29 exported GLBs pass glTF validation. 1779 new components, 21,348 triangles, 1,242,532 bytes. No original building copies are exported.
+- 39 exported GLBs pass glTF validation. 1789 new components, 21,468 triangles, 1,261,772 bytes. No original building copies are exported.
 - Compound-box and6392 sampled ground-road vehicle envelopes clear; these are not continuous train/traffic or triangle collision certification.
 
 ## Design and remaining gates
 
-The graph has125 nodes /262 directed edges. Rail/Pop/landing phases are distinct. Some public hub junctions and edge admission still require alignment with measured traces, so proposed graph statuses do not automatically become certified. Three encounter spaces/landmarks and four POIs are designed. Service-yard combat and market rescue have normal-input evidence, including a ground-to-market approach. Transit pursuit has input-tested chase, interception, escape and lifecycle controls; POI discovery remains unfinished. Actor art, wider interaction/camera, train clearance and recovery acceptance remain separate. Do not advance to detailed architecture while essential encounter/recovery gates remain open.
+The graph has128 nodes /278 directed edges. Rail/Pop/landing phases are distinct. Some public hub junctions and edge admission still require alignment with measured traces, so proposed graph statuses do not automatically become certified. Three encounter spaces/landmarks and four POIs are designed. Service-yard combat and market rescue have normal-input evidence, including a ground-to-market approach. Transit pursuit has input-tested chase, interception, escape and lifecycle controls; Four useful discovery locations and a street directory now have a complete input-guided tour plus lifecycle evidence; final landmark silhouettes remain unfinished. Actor art, wider interaction/camera, train clearance and recovery acceptance remain separate. Do not advance to detailed architecture while essential encounter/recovery gates remain open.
 
 - Expand pursuit recovery/train-envelope/camera, service-yard Echo/cross-level/escape/camera and market presentation acceptance
-- Runtime landmark/navigation cues and four discoverable POIs
+- Refine landmark silhouettes and navigation-cue readability at traversal speed; four information/discovery POIs have prototype input evidence
 - Refine graph junctions/admission against actual input traces; graph edge proposals are not route certification
-- V02 physical rail-to-rail transfer, missed anchors, no-Pop and wider recovery/camera/contact cases
+- Missed anchors, wider rail/Pop overshoot recovery and camera/contact cases; sampled physical V02 transfer and no-Pop endpoint now have input evidence
 - Guardrails and civilian access around approved routes
 - Train/traffic full swept clearance and station behavior
 - Detailed Blender architecture after essential gameplay/encounter acceptance
@@ -86,7 +86,7 @@ See the hash-bound JSON, complete compressed traces, retained failures and route
 
 ## Directed edge evidence
 
-- 54/262 proposed directed edges have matching ordered, supported ground input passages in the current evidence overlay. This is deliberately partial: other edges remain unadmitted rather than being certified from topology or nearby screenshots. Stair paths are circulation corridors; NPC, ability, camera and recovery evidence retain their own gates.
+- 104/278 proposed directed edges have matching ordered, supported ground input passages in the current evidence overlay. This is deliberately partial: other edges remain unadmitted rather than being certified from topology or nearby screenshots. Stair paths are circulation corridors; NPC, ability, camera and recovery evidence retain their own gates.
 
 ## Transit pursuit prototype
 
@@ -102,3 +102,26 @@ See the hash-bound JSON, complete compressed traces, retained failures and route
 - labelled existing respawn API retains failed outcome and safe runner position
 - Four controlled actor stair probes plus solid-wall, excessive-step and unsupported-edge rejections pass. These support NPC routing, not player-control certification. Prototype appearance and the wider camera/train/recovery gates remain open.
 - The prior mastery-brake wall-launch damage case remains retained in fixed-defects evidence. A later passing trial does not establish that all hostile exposure has been resolved.
+
+## Physical V02 transfer and endpoint recovery
+
+- Four normal precision throws attach to actual Y128 floors and create two parallel24m rails, separated by2.5m. A running catch is followed by an actual R transfer away from the endpoints, preventing an automatic junction from satisfying the manual-transfer assertion.
+- The transfer does not add speed. A near-end Pop redirects to the118m recovery roof; a separate no-Pop endpoint exits onto the supported128m deck. Both begin with zero impulses, use no Drive release and cause no injury.
+- These are explicitly local player/camera start fixtures followed by normal keys and simulated controller axes. They do not certify every rail layout, failed cast or visual/camera condition.
+
+## Discovery and public guidance
+
+- Four supported locations: market assembly, maintenance access, transit information and observation deck. A street directory links them through the authored three-dimensional public graph.
+- The complete normal-input tour visits all four, uses maintenance/encounter/public-return links and preserves the original courier objectives. No score or health bonus is granted for reading information.
+- An initial diagonal route crossed the required upper stairwell opening for seven unsupported frames. The route now follows the supported west spine before turning into the observation deck; the opening remains intact.
+- Pending and active guidance both reject navigation-revision changes. Evidence includes the reproduced mixed-revision failure and the current cancellation test.
+- matching XZ below the market does not discover or read its elevated board
+- actual kiosk geometry prevents reading through its back; normal walking reaches its front
+- standard controller Y opens information without changing combat state
+- labelled native navigation refresh cancels an in-progress route check before publishing mixed-world guidance
+- actual controller-look frames the readable front of the Blender kiosk and runtime label
+- board Pause freezes clock and state; normal resume restores the reading
+- CDP touch reads and chooses a public route; portrait/landscape Close and Pause remain reachable and combat controls return
+- actual hero switching retains the guide without advancing it or replacing Sightline objectives
+- labelled existing navigation-refresh API invalidates stale guidance; actual Clear route removes it
+- The readable kiosk front and portrait/landscape screenshots are reviewed separately. These prototypes do not establish final landmark art or high-speed camera acceptance.

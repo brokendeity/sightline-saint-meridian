@@ -1479,6 +1479,39 @@
       "kind": "supported-interception",
       "supportStatus": "planned; not yet imported",
       "validation": "PROPOSED"
+    },
+    {
+      "id": "poi-market",
+      "position": [
+        64,
+        24,
+        356
+      ],
+      "kind": "discovery-location",
+      "supportStatus": "planned; not yet imported",
+      "validation": "PROPOSED"
+    },
+    {
+      "id": "poi-maintenance",
+      "position": [
+        86,
+        52,
+        314.8
+      ],
+      "kind": "discovery-location",
+      "supportStatus": "planned; not yet imported",
+      "validation": "PROPOSED"
+    },
+    {
+      "id": "poi-station",
+      "position": [
+        73,
+        100,
+        382
+      ],
+      "kind": "discovery-location",
+      "supportStatus": "planned; not yet imported",
+      "validation": "PROPOSED"
     }
   ],
   "edges": [
@@ -12038,11 +12071,16 @@
       "ability": "run",
       "directionality": "directed",
       "elevationChange": 0,
-      "horizontalDistance": 6.946221994724902,
-      "distance3D": 6.946221994724902,
+      "horizontalDistance": 9.5,
+      "distance3D": 9.5,
       "path": [
         [
           61,
+          128,
+          403.5
+        ],
+        [
+          55,
           128,
           403.5
         ],
@@ -12054,7 +12092,7 @@
       ],
       "requiredAfterstepImpulses": 0,
       "requiredReplaySlots": 0,
-      "expectedSeconds": 1.052,
+      "expectedSeconds": 1.439,
       "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
       "difficulty": "public",
       "risk": "low",
@@ -12072,13 +12110,18 @@
       "ability": "run",
       "directionality": "directed",
       "elevationChange": 0,
-      "horizontalDistance": 6.946221994724902,
-      "distance3D": 6.946221994724902,
+      "horizontalDistance": 9.5,
+      "distance3D": 9.5,
       "path": [
         [
           55,
           128,
           400
+        ],
+        [
+          55,
+          128,
+          403.5
         ],
         [
           61,
@@ -12088,7 +12131,7 @@
       ],
       "requiredAfterstepImpulses": 0,
       "requiredReplaySlots": 0,
-      "expectedSeconds": 1.052,
+      "expectedSeconds": 1.439,
       "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
       "difficulty": "public",
       "risk": "low",
@@ -12106,13 +12149,18 @@
       "ability": "run",
       "directionality": "directed",
       "elevationChange": 0,
-      "horizontalDistance": 19.72308292331602,
-      "distance3D": 19.72308292331602,
+      "horizontalDistance": 27.0,
+      "distance3D": 27.0,
       "path": [
         [
           55,
           128,
           410
+        ],
+        [
+          55,
+          128,
+          420
         ],
         [
           72,
@@ -12122,7 +12170,7 @@
       ],
       "requiredAfterstepImpulses": 0,
       "requiredReplaySlots": 0,
-      "expectedSeconds": 2.988,
+      "expectedSeconds": 4.091,
       "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
       "difficulty": "public",
       "risk": "low",
@@ -12140,11 +12188,16 @@
       "ability": "run",
       "directionality": "directed",
       "elevationChange": 0,
-      "horizontalDistance": 19.72308292331602,
-      "distance3D": 19.72308292331602,
+      "horizontalDistance": 27.0,
+      "distance3D": 27.0,
       "path": [
         [
           72,
+          128,
+          420
+        ],
+        [
+          55,
           128,
           420
         ],
@@ -12156,7 +12209,7 @@
       ],
       "requiredAfterstepImpulses": 0,
       "requiredReplaySlots": 0,
-      "expectedSeconds": 2.988,
+      "expectedSeconds": 4.091,
       "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
       "difficulty": "public",
       "risk": "low",
@@ -13780,6 +13833,630 @@
       "requiredGameplayConditions": [
         "transit-pursuit.active"
       ]
+    },
+    {
+      "id": "E0262",
+      "source": "W24_350",
+      "destination": "poi-market",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 15.0,
+      "distance3D": 15.0,
+      "path": [
+        [
+          55,
+          24,
+          350
+        ],
+        [
+          55,
+          24,
+          356
+        ],
+        [
+          64,
+          24,
+          356
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 9.091,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0263",
+      "source": "poi-market",
+      "destination": "W24_350",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 15.0,
+      "distance3D": 15.0,
+      "path": [
+        [
+          64,
+          24,
+          356
+        ],
+        [
+          55,
+          24,
+          356
+        ],
+        [
+          55,
+          24,
+          350
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 9.091,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0264",
+      "source": "poi-market",
+      "destination": "market-access",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 21.0,
+      "distance3D": 21.0,
+      "path": [
+        [
+          64,
+          24,
+          356
+        ],
+        [
+          62,
+          24,
+          356
+        ],
+        [
+          62,
+          24,
+          375
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 12.727,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0265",
+      "source": "market-access",
+      "destination": "poi-market",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 21.0,
+      "distance3D": 21.0,
+      "path": [
+        [
+          62,
+          24,
+          375
+        ],
+        [
+          62,
+          24,
+          356
+        ],
+        [
+          64,
+          24,
+          356
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 12.727,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0266",
+      "source": "W52_300",
+      "destination": "poi-maintenance",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 45.80000000000001,
+      "distance3D": 45.80000000000001,
+      "path": [
+        [
+          55,
+          52,
+          300
+        ],
+        [
+          55,
+          52,
+          314.8
+        ],
+        [
+          86,
+          52,
+          314.8
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 27.758,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0267",
+      "source": "poi-maintenance",
+      "destination": "W52_300",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 45.80000000000001,
+      "distance3D": 45.80000000000001,
+      "path": [
+        [
+          86,
+          52,
+          314.8
+        ],
+        [
+          55,
+          52,
+          314.8
+        ],
+        [
+          55,
+          52,
+          300
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 27.758,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0268",
+      "source": "E52_326",
+      "destination": "poi-maintenance",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 21.19999999999999,
+      "distance3D": 21.19999999999999,
+      "path": [
+        [
+          96,
+          52,
+          326
+        ],
+        [
+          96,
+          52,
+          314.8
+        ],
+        [
+          86,
+          52,
+          314.8
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 12.848,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0269",
+      "source": "poi-maintenance",
+      "destination": "E52_326",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 21.19999999999999,
+      "distance3D": 21.19999999999999,
+      "path": [
+        [
+          86,
+          52,
+          314.8
+        ],
+        [
+          96,
+          52,
+          314.8
+        ],
+        [
+          96,
+          52,
+          326
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 12.848,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0270",
+      "source": "poi-maintenance",
+      "destination": "service-stair-52",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 16.69999999999999,
+      "distance3D": 16.69999999999999,
+      "path": [
+        [
+          86,
+          52,
+          314.8
+        ],
+        [
+          71,
+          52,
+          314.8
+        ],
+        [
+          71,
+          52,
+          316.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 10.121,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0271",
+      "source": "service-stair-52",
+      "destination": "poi-maintenance",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 16.69999999999999,
+      "distance3D": 16.69999999999999,
+      "path": [
+        [
+          71,
+          52,
+          316.5
+        ],
+        [
+          71,
+          52,
+          314.8
+        ],
+        [
+          86,
+          52,
+          314.8
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 10.121,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0272",
+      "source": "station-concourse",
+      "destination": "poi-station",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 11.749045732013165,
+      "distance3D": 11.749045732013165,
+      "path": [
+        [
+          66.5,
+          100,
+          376
+        ],
+        [
+          73,
+          100,
+          376.8
+        ],
+        [
+          73,
+          100,
+          382
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 7.121,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0273",
+      "source": "poi-station",
+      "destination": "station-concourse",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 11.749045732013165,
+      "distance3D": 11.749045732013165,
+      "path": [
+        [
+          73,
+          100,
+          382
+        ],
+        [
+          73,
+          100,
+          376.8
+        ],
+        [
+          66.5,
+          100,
+          376
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 7.121,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0274",
+      "source": "pursuit-access",
+      "destination": "poi-station",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 18.0,
+      "distance3D": 18.0,
+      "path": [
+        [
+          73,
+          100,
+          364
+        ],
+        [
+          73,
+          100,
+          382
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 10.909,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0275",
+      "source": "poi-station",
+      "destination": "pursuit-access",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 18.0,
+      "distance3D": 18.0,
+      "path": [
+        [
+          73,
+          100,
+          382
+        ],
+        [
+          73,
+          100,
+          364
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 10.909,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0276",
+      "source": "poi-station",
+      "destination": "V2-VT-D-100",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 26.44992149198828,
+      "distance3D": 26.44992149198828,
+      "path": [
+        [
+          73,
+          100,
+          382
+        ],
+        [
+          73,
+          100,
+          391
+        ],
+        [
+          64,
+          100,
+          399
+        ],
+        [
+          61,
+          100,
+          403.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 16.03,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0277",
+      "source": "V2-VT-D-100",
+      "destination": "poi-station",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 26.44992149198828,
+      "distance3D": 26.44992149198828,
+      "path": [
+        [
+          61,
+          100,
+          403.5
+        ],
+        [
+          64,
+          100,
+          399
+        ],
+        [
+          73,
+          100,
+          391
+        ],
+        [
+          73,
+          100,
+          382
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 16.03,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
     }
   ],
   "loops": [
@@ -13963,7 +14640,7 @@
     }
   ],
   "publicConnectivity": {
-    "nodesReachable": 111,
+    "nodesReachable": 114,
     "stationReachable": true,
     "observationReachable": true,
     "claim": "topology only, zero resource; exact walking/stair contact not accepted"
@@ -18139,6 +18816,321 @@
       },
       "originalGeometryConflicts": [],
       "walkable": true
+    },
+    {
+      "id": "kiosk-market-info",
+      "center": [
+        65.25,
+        24.85,
+        354.3
+      ],
+      "size": [
+        0.22,
+        1.7,
+        1.1
+      ],
+      "collection": "SM_V02_MARKET",
+      "role": "physical public information fixture",
+      "owner": "v02:kiosk-market-info",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          65.14,
+          24.0,
+          353.75
+        ],
+        "max": [
+          65.36,
+          25.700000000000003,
+          354.85
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "material": "steel"
+    },
+    {
+      "id": "kiosk-trim-market-info",
+      "center": [
+        65.13,
+        25.57,
+        354.3
+      ],
+      "size": [
+        0.025,
+        0.06,
+        0.94
+      ],
+      "collection": "SM_V02_MARKET",
+      "role": "restrained cyan information light",
+      "owner": "v02:kiosk-trim-market-info",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          65.11749999999999,
+          25.54,
+          353.83
+        ],
+        "max": [
+          65.1425,
+          25.6,
+          354.77000000000004
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "material": "cyan",
+      "solid": false
+    },
+    {
+      "id": "kiosk-maintenance-access",
+      "center": [
+        87.4,
+        52.85,
+        313.7
+      ],
+      "size": [
+        0.22,
+        1.7,
+        1.1
+      ],
+      "collection": "SM_V02_SERVICE_YARDS",
+      "role": "physical public information fixture",
+      "owner": "v02:kiosk-maintenance-access",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          87.29,
+          52.0,
+          313.15
+        ],
+        "max": [
+          87.51,
+          53.7,
+          314.25
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "material": "steel"
+    },
+    {
+      "id": "kiosk-trim-maintenance-access",
+      "center": [
+        87.28,
+        53.57,
+        313.7
+      ],
+      "size": [
+        0.025,
+        0.06,
+        0.94
+      ],
+      "collection": "SM_V02_SERVICE_YARDS",
+      "role": "restrained cyan information light",
+      "owner": "v02:kiosk-trim-maintenance-access",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          87.2675,
+          53.54,
+          313.22999999999996
+        ],
+        "max": [
+          87.2925,
+          53.6,
+          314.17
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "material": "cyan",
+      "solid": false
+    },
+    {
+      "id": "kiosk-observation",
+      "center": [
+        73.5,
+        128.85,
+        418
+      ],
+      "size": [
+        0.22,
+        1.7,
+        1.1
+      ],
+      "collection": "SM_V02_LANDMARKS",
+      "role": "physical public information fixture",
+      "owner": "v02:kiosk-observation",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          73.39,
+          128.0,
+          417.45
+        ],
+        "max": [
+          73.61,
+          129.7,
+          418.55
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "material": "steel"
+    },
+    {
+      "id": "kiosk-trim-observation",
+      "center": [
+        73.38,
+        129.57,
+        418
+      ],
+      "size": [
+        0.025,
+        0.06,
+        0.94
+      ],
+      "collection": "SM_V02_LANDMARKS",
+      "role": "restrained cyan information light",
+      "owner": "v02:kiosk-trim-observation",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          73.36749999999999,
+          129.54,
+          417.53
+        ],
+        "max": [
+          73.3925,
+          129.6,
+          418.47
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "material": "cyan",
+      "solid": false
+    },
+    {
+      "id": "kiosk-station-info",
+      "center": [
+        74.65,
+        100.85,
+        382
+      ],
+      "size": [
+        0.22,
+        1.7,
+        1.1
+      ],
+      "collection": "SM_V02_TRANSIT_STRUCTURES",
+      "role": "physical public information fixture",
+      "owner": "v02:kiosk-station-info",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          74.54,
+          100.0,
+          381.45
+        ],
+        "max": [
+          74.76,
+          101.69999999999999,
+          382.55
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "material": "steel"
+    },
+    {
+      "id": "kiosk-trim-station-info",
+      "center": [
+        74.53,
+        101.57,
+        382
+      ],
+      "size": [
+        0.025,
+        0.06,
+        0.94
+      ],
+      "collection": "SM_V02_TRANSIT_STRUCTURES",
+      "role": "restrained cyan information light",
+      "owner": "v02:kiosk-trim-station-info",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          74.5175,
+          101.53999999999999,
+          381.53
+        ],
+        "max": [
+          74.5425,
+          101.6,
+          382.47
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "material": "cyan",
+      "solid": false
+    },
+    {
+      "id": "kiosk-directory",
+      "center": [
+        56.9,
+        0.85,
+        208
+      ],
+      "size": [
+        0.22,
+        1.7,
+        1.1
+      ],
+      "collection": "SM_V02_GALLERIES",
+      "role": "physical public information fixture",
+      "owner": "v02:kiosk-directory",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          56.79,
+          0.0,
+          207.45
+        ],
+        "max": [
+          57.01,
+          1.7,
+          208.55
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "material": "steel"
+    },
+    {
+      "id": "kiosk-trim-directory",
+      "center": [
+        56.78,
+        1.5699999999999998,
+        208
+      ],
+      "size": [
+        0.025,
+        0.06,
+        0.94
+      ],
+      "collection": "SM_V02_GALLERIES",
+      "role": "restrained cyan information light",
+      "owner": "v02:kiosk-trim-directory",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          56.7675,
+          1.5399999999999998,
+          207.53
+        ],
+        "max": [
+          56.792500000000004,
+          1.5999999999999999,
+          208.47
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "material": "cyan",
+      "solid": false
     }
   ],
   "publicStairs": [
@@ -18267,6 +19259,93 @@
     "Every route, loop, recovery and camera through input traces",
     "Triangle clearance and full train/traffic sweeps"
   ],
+  "pointsOfInterest": [
+    {
+      "id": "market-info",
+      "title": "MARKET ASSEMBLY",
+      "position": [
+        64,
+        24,
+        356
+      ],
+      "board": [
+        65.25,
+        24.85,
+        354.3
+      ],
+      "graphNode": "poi-market",
+      "function": "market",
+      "collection": "SM_V02_MARKET"
+    },
+    {
+      "id": "maintenance-access",
+      "title": "MAINTENANCE ACCESS",
+      "position": [
+        86,
+        52,
+        314.8
+      ],
+      "board": [
+        87.4,
+        52.85,
+        313.7
+      ],
+      "graphNode": "poi-maintenance",
+      "function": "maintenance",
+      "collection": "SM_V02_SERVICE_YARDS"
+    },
+    {
+      "id": "observation",
+      "title": "OBSERVATION DECK",
+      "position": [
+        72,
+        128,
+        420
+      ],
+      "board": [
+        73.5,
+        128.85,
+        418
+      ],
+      "graphNode": "observation-deck",
+      "function": "observation",
+      "collection": "SM_V02_LANDMARKS"
+    },
+    {
+      "id": "station-info",
+      "title": "TRANSIT INFORMATION",
+      "position": [
+        73,
+        100,
+        382
+      ],
+      "board": [
+        74.65,
+        100.85,
+        382
+      ],
+      "graphNode": "poi-station",
+      "function": "station",
+      "collection": "SM_V02_TRANSIT_STRUCTURES"
+    }
+  ],
+  "directory": {
+    "id": "directory",
+    "title": "DISTRICT DIRECTORY",
+    "position": [
+      55,
+      0,
+      210
+    ],
+    "board": [
+      56.9,
+      0.85,
+      208
+    ],
+    "graphNode": "ground-access",
+    "function": "directory",
+    "collection": "SM_V02_GALLERIES"
+  },
   "encounters": [
     {
       "id": "service-combat",

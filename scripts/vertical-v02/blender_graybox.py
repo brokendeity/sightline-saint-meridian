@@ -81,7 +81,7 @@ if not pilot:
   p=st['center'];sz=st['size'];top=p[1]+sz[1]/2;rects=[(p[0]-sz[0]/2,p[0]+sz[0]/2,p[2]-sz[2]/2,p[2]+sz[2]/2)]
   for y,cut in openings:
    if abs(y-top)<1e-5 and not st.get('besideStairFlight'):rects=[v for r in rects for v in subtract(r,cut)]
-  for i,(x0,x1,z0,z1)in enumerate(rects):add(st['id']if len(rects)==1 else st['id']+f'-opening-{i}',[(x0+x1)/2,p[1],(z0+z1)/2],[x1-x0,sz[1],z1-z0],st['collection'],walkable=st.get('walkable',False))
+  for i,(x0,x1,z0,z1)in enumerate(rects):add(st['id']if len(rects)==1 else st['id']+f'-opening-{i}',[(x0+x1)/2,p[1],(z0+z1)/2],[x1-x0,sz[1],z1-z0],st['collection'],kind=st.get('material','deck'),solid=st.get('solid',True),walkable=st.get('walkable',False))
 def landing(id,x,y,z,width=12.4,depth=3):
  # Offset east to provide an outside return corridor without covering stair flights.
  return add(id,[x+1.6,y-.09,z],[width,.18,depth],walkable=True,stairLanding=True)
@@ -127,7 +127,7 @@ for (zone,kind),v in chunks.items():
  manifest.append({'id':name,'url':str(file.relative_to(R)),'sha256':hashlib.sha256(file.read_bytes()).hexdigest(),'bytes':file.stat().st_size,'triangles':len(v['faces'])*2,'recordIDs':v['records']})
 # No reference object may enter a chunk export.
 assert all(not id.startswith('building-')for v in chunks.values()for id in v['records'])
-meta={'schema':'sm-v02-graybox-1','pilot':pilot,'coordinateSystem':'game X/Y-up/Z metres; deck tops and actor +.42 are distinct','sourceEntrySHA256':world['provenance']['entrySHA256'],'graphSHA256':hashlib.sha256((D/'V02_Movement_Graph.json').read_bytes()).hexdigest(),'records':records,'paths':walkpaths,'encounters':G.get('encounters',[]),'chunks':manifest,'referenceOnlyBuildingCount':0 if pilot else len(world['buildings']),'status':'EXPERIMENTAL GRAYBOX; no gameplay acceptance claim'}
+meta={'schema':'sm-v02-graybox-1','pilot':pilot,'coordinateSystem':'game X/Y-up/Z metres; deck tops and actor +.42 are distinct','sourceEntrySHA256':world['provenance']['entrySHA256'],'graphSHA256':hashlib.sha256((D/'V02_Movement_Graph.json').read_bytes()).hexdigest(),'records':records,'paths':walkpaths,'encounters':G.get('encounters',[]),'pointsOfInterest':G.get('pointsOfInterest',[]),'directory':G.get('directory'),'navigation':{'nodes':[{k:n[k]for k in ['id','position','kind']}for n in G['nodes']],'edges':[{k:e[k]for k in ['id','source','destination','ability','path','distance3D']}for e in G['edges']if e['traversalAgent']=='player'and e['ability']in ['walk','run','stairs']and not e['requiredAfterstepImpulses']and not e.get('requiredGameplayConditions')]},'chunks':manifest,'referenceOnlyBuildingCount':0 if pilot else len(world['buildings']),'status':'EXPERIMENTAL GRAYBOX; no gameplay acceptance claim'}
 (OUT/'manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 # Encounter authoring markers stay editable and reference the exact exported
 # runtime positions. They are metadata, never invisible collision geometry.
@@ -135,6 +135,10 @@ if not pilot:
  for encounter in G.get('encounters',[]):
   for name,p in [('access',encounter['trigger'])]+[(f'actor-{i}',p)for i,p in enumerate(encounter['positions'])]+[(name,encounter[name])for name in ['isolation','extraction','escape','interception']if name in encounter]:
    o=bpy.data.objects.new(encounter['id']+'-'+name,None);collections['SM_V02_ENCOUNTER_POINTS'].objects.link(o);o.location=(p[0],-p[2],p[1]);o.empty_display_type='ARROWS';o.empty_display_size=.8;o['runtimePosition']=json.dumps(p);o['encounterID']=encounter['id'];o['exportRole']='metadata only'
+# Editable interaction stances are metadata, never extra floor copies.
+if not pilot:
+ for point in G.get('pointsOfInterest',[])+[G['directory']]:
+  p=point['position'];o=bpy.data.objects.new('poi-'+point['id'],None);collections['SM_V02_ENCOUNTER_POINTS'].objects.link(o);o.location=(p[0],-p[2],p[1]);o.empty_display_type='ARROWS';o.empty_display_size=.6;o['runtimePosition']=json.dumps(p);o['exportRole']='discovery metadata only'
 # Matching raw view bookmarks are created now; detailed render matching remains a later gate.
 from mathutils import Vector
 for id,p,look in[('A',(78,132,185),(82,70,400)),('B',(80,2,185),(80,90,400))]:

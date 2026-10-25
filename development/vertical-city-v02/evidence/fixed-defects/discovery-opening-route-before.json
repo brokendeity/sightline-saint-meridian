@@ -1,0 +1,99 @@
+{
+  "sourceEdgeFromCommit": "87516a6",
+  "edge": {
+    "id": "E0224",
+    "source": "W128_410",
+    "destination": "observation-deck",
+    "ability": "run",
+    "directionality": "directed",
+    "elevationChange": 0,
+    "horizontalDistance": 19.72308292331602,
+    "distance3D": 19.72308292331602,
+    "path": [
+      [
+        55,
+        128,
+        410
+      ],
+      [
+        72,
+        128,
+        420
+      ]
+    ],
+    "requiredAfterstepImpulses": 0,
+    "requiredReplaySlots": 0,
+    "expectedSeconds": 2.988,
+    "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+    "difficulty": "public",
+    "risk": "low",
+    "failureRecovery": "return along supported public gallery",
+    "validation": {
+      "geometry": "PASS original-volume broadphase only",
+      "input": "NOT TESTED"
+    },
+    "traversalAgent": "player"
+  },
+  "actualUnsupportedFrames": [
+    {
+      "frame": 18324,
+      "position": [
+        58.754920827241264,
+        128.42,
+        411.8891605545193
+      ]
+    },
+    {
+      "frame": 18325,
+      "position": [
+        58.84954407723093,
+        128.4136111111111,
+        411.9471046391462
+      ]
+    },
+    {
+      "frame": 18326,
+      "position": [
+        58.94495035148546,
+        128.4008333333333,
+        412.0055282214047
+      ]
+    },
+    {
+      "frame": 18327,
+      "position": [
+        58.94913117219111,
+        128.42,
+        412.0080884148963
+      ]
+    },
+    {
+      "frame": 18328,
+      "position": [
+        59.04601341009273,
+        128.4136111111111,
+        412.06741582747645
+      ]
+    },
+    {
+      "frame": 18329,
+      "position": [
+        59.14359090540512,
+        128.4008333333333,
+        412.12716899222903
+      ]
+    },
+    {
+      "frame": 18330,
+      "position": [
+        59.14786245933455,
+        128.42,
+        412.1297847476845
+      ]
+    }
+  ],
+  "entrySHA256": "7eff08a0fb46b764a0e03c1fabd0cd083875cf2357540961faf1d00fb0c27e5a",
+  "manifestSHA256": "8f6da8574f65aac8e6aa17418f4c804a00e85b3febd855db61ed9eecb4e93a8c",
+  "trace": "discovery-diagonal-opening-before.trace.json.gz",
+  "scope": "Actual guide follower crossed the required D stairwell notch; not a changed hero capability or removed stair opening"
+}

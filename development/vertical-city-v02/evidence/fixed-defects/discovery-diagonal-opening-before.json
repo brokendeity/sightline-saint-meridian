@@ -1,0 +1,118 @@
+{
+  "status": "FAIL",
+  "scope": "One ground start, four supported discoveries and their useful routes, then public return. No player, health, resource or discovery writes during gameplay.",
+  "stages": [
+    {
+      "name": "directory",
+      "frame": 8,
+      "found": [],
+      "route": null
+    },
+    {
+      "name": "market",
+      "frame": 2891,
+      "found": [
+        "market-info"
+      ],
+      "route": {
+        "destination": "poi-market",
+        "status": "arrived",
+        "index": 28
+      }
+    },
+    {
+      "name": "maintenance",
+      "frame": 7677,
+      "found": [
+        "market-info",
+        "maintenance-access"
+      ],
+      "route": {
+        "destination": "poi-maintenance",
+        "status": "arrived",
+        "index": 43
+      }
+    },
+    {
+      "name": "overhead",
+      "frame": 8815,
+      "found": [
+        "market-info",
+        "maintenance-access"
+      ],
+      "route": {
+        "destination": "service-upper-58.4",
+        "status": "arrived",
+        "index": 16
+      }
+    },
+    {
+      "name": "station",
+      "frame": 15755,
+      "found": [
+        "market-info",
+        "maintenance-access",
+        "station-info"
+      ],
+      "route": {
+        "destination": "poi-station",
+        "status": "arrived",
+        "index": 59
+      }
+    },
+    {
+      "name": "observation",
+      "frame": 18473,
+      "found": [
+        "market-info",
+        "maintenance-access",
+        "station-info",
+        "observation"
+      ],
+      "route": {
+        "destination": "observation-deck",
+        "status": "arrived",
+        "index": 30
+      }
+    },
+    {
+      "name": "street-return",
+      "frame": 27832,
+      "found": [
+        "market-info",
+        "maintenance-access",
+        "station-info",
+        "observation"
+      ],
+      "route": {
+        "destination": "ground-access",
+        "status": "arrived",
+        "index": 111
+      }
+    }
+  ],
+  "results": [
+    {
+      "name": "Market information guides to the real rescue interaction without starting or replacing its encounter",
+      "pass": true
+    },
+    {
+      "name": "Maintenance information marks a physical upper flank; ascent and return use actual stairs",
+      "pass": true
+    },
+    {
+      "name": "Station information guides to the actual pursuit access and reports through-service availability",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "entrySHA256": "7eff08a0fb46b764a0e03c1fabd0cd083875cf2357540961faf1d00fb0c27e5a",
+  "manifestSHA256": "8f6da8574f65aac8e6aa17418f4c804a00e85b3febd855db61ed9eecb4e93a8c",
+  "encounterSHA256": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+  "marketSHA256": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+  "discoverySHA256": "436e3b8b752324f1712381ebaee39a96fcf782ce96c6293261e7a5664ae0d1e8",
+  "failure": "AssertionError [ERR_ASSERTION]: Tour had unsupported frames",
+  "fullTrace": "evidence/fixed-defects/discovery-diagonal-opening-before.trace.json.gz",
+  "traceFrames": 27833,
+  "archivedFrom": "V02_Discovery_Tour.json"
+}

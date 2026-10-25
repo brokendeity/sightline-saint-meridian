@@ -1,8 +1,8 @@
 {
   "status": "GRAYBOX CIRCULATION MILESTONE; full V02 remains incomplete",
   "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html",
-  "entrySHA256": "db8af3b20ec4d8f5e1378d7df5ffa8d74521947565503cd17b9dca567a29e8c7",
-  "manifestSHA256": "6c4fee7bf26402714b48240d14b7a9a87595886daa942117553baa4da1b03e09",
+  "entrySHA256": "cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1",
+  "manifestSHA256": "d4fb49380ae1a0aed2aecaabc836b27836efea6455b1200716096cbd5370128c",
   "originalPlayableSHA256": "fac92161657cb93c8500d6afbc2900748b7cadfc015c019eeddf0366cdf070e4",
   "originalPlayableUnchanged": true,
   "loops": [
@@ -1772,10 +1772,10 @@
     }
   },
   "graybox": {
-    "chunks": 29,
-    "records": 1779,
-    "triangles": 21348,
-    "bytes": 1242532,
+    "chunks": 39,
+    "records": 1789,
+    "triangles": 21468,
+    "bytes": 1261772,
     "exportedOriginalBuildingCopies": 0,
     "originalGeometryConflicts": [],
     "coplanarSurfaceOverlaps": [],
@@ -1784,9 +1784,9 @@
   },
   "remaining": [
     "Expand pursuit recovery/train-envelope/camera, service-yard Echo/cross-level/escape/camera and market presentation acceptance",
-    "Runtime landmark/navigation cues and four discoverable POIs",
+    "Refine landmark silhouettes and navigation-cue readability at traversal speed; four information/discovery POIs have prototype input evidence",
     "Refine graph junctions/admission against actual input traces; graph edge proposals are not route certification",
-    "V02 physical rail-to-rail transfer, missed anchors, no-Pop and wider recovery/camera/contact cases",
+    "Missed anchors, wider rail/Pop overshoot recovery and camera/contact cases; sampled physical V02 transfer and no-Pop endpoint now have input evidence",
     "Guardrails and civilian access around approved routes",
     "Train/traffic full swept clearance and station behavior",
     "Detailed Blender architecture after essential gameplay/encounter acceptance",
@@ -2005,7 +2005,7 @@
             0.9848928594560085
           ]
         },
-        "courierPreserved": "not recorded in this variant"
+        "courierPreserved": true
       },
       "chase": {
         "status": "PASS chase pursuit through supported upper route",
@@ -2104,7 +2104,7 @@
             0.984483323794352
           ]
         },
-        "courierPreserved": "not recorded in this variant"
+        "courierPreserved": true
       },
       "escape": {
         "status": "PASS escape pursuit through supported upper route",
@@ -2394,10 +2394,2961 @@
     ],
     "scope": "Existing scenic character appearance, normal interaction capture, no combatant/weapon implementation; no complete moving-train envelope or final camera/character art acceptance."
   },
+  "sampledCameraCentreScreening": {
+    "status": "PASS sampled V02 camera-centre screening only",
+    "scope": "Screen measured camera centres against actual exported solid V02 boxes.\nThis is a defect finder, not a certificate for framing, swept camera radius,\noriginal building triangles, visibility, or physical-device playtesting.",
+    "interiorToleranceMetres": 0.02,
+    "traces": [
+      {
+        "summary": "V02_Momentum_Full_Zero_Flow.json",
+        "traceSHA256": "5171d047f957efeb31f7f9a2f0d9aeb11a262f9c0c2145a331a0ccd8adc889a2",
+        "cameraSamples": 4415,
+        "interiorSamples": 0,
+        "maximumInteriorDepth": 0
+      },
+      {
+        "summary": "V02_Mastery_Full_Zero.json",
+        "traceSHA256": "b0f10e003663da21392af79ab0308c61b200d2940b9bad3d55e831a33bfd8494",
+        "cameraSamples": 6228,
+        "interiorSamples": 0,
+        "maximumInteriorDepth": 0
+      },
+      {
+        "summary": "V02_Public_Roundtrip_Validation.json",
+        "traceSHA256": "28e9377a1771b30105df8b767e2879c875722e57ec299a31b7489eb4132bc3a0",
+        "cameraSamples": 21227,
+        "interiorSamples": 0,
+        "maximumInteriorDepth": 0
+      },
+      {
+        "summary": "V02_Discovery_Tour.json",
+        "traceSHA256": "72dc0e1e4d7b1e8325635f9bf4135a828d990daa59a56c641e021d100fcdae48",
+        "cameraSamples": 28219,
+        "interiorSamples": 0,
+        "maximumInteriorDepth": 0
+      },
+      {
+        "summary": "V02_Physical_Rail_Transfer.json",
+        "traceSHA256": "af72f098a8d54d9a80f11282044d5df5ae34a3d5f44111dd0482e79311666dc6",
+        "cameraSamples": 1138,
+        "interiorSamples": 0,
+        "maximumInteriorDepth": 0
+      },
+      {
+        "summary": "V02_Physical_Rail_Transfer_NoPop.json",
+        "traceSHA256": "3f1a43a0fed6bedd163a9886a5296b3528645f0967b94392e8aedce7b7657244",
+        "cameraSamples": 1073,
+        "interiorSamples": 0,
+        "maximumInteriorDepth": 0
+      }
+    ]
+  },
+  "physicalRailTransfer": {
+    "variants": {
+      "pop": {
+        "status": "PASS physical V02 casts, input rail transfer, Pop and supported recovery",
+        "scope": "Local Y128 fixture, four physical cartridges, two parallel rails, actual input transfer, Pop and supported recovery",
+        "method": "One labelled controlled Y128 player/camera start fixture. Normal R/Shift/Space keys and standard simulated controller movement/look after setup. No direct rail creation, actor/camera assignment, reset or resource injection during route.",
+        "initialBank": 0,
+        "seconds": 18.966666666666665,
+        "constructedRails": [
+          {
+            "id": "rail-1",
+            "a": "anchor-1",
+            "b": "anchor-2",
+            "length": 24.10228578787441,
+            "tangent": {
+              "x": -0.0005689655969395532,
+              "y": 0,
+              "z": -0.9999998381390617
+            },
+            "slope": 0,
+            "createdAt": 3.3699999999999988,
+            "expiresAt": 33.37
+          },
+          {
+            "id": "rail-2",
+            "a": "anchor-3",
+            "b": "anchor-4",
+            "length": 24.223000889860057,
+            "tangent": {
+              "x": 0.0018896698780267087,
+              "y": 0,
+              "z": -0.9999982145722822
+            },
+            "slope": 0,
+            "createdAt": 6.724999999999995,
+            "expiresAt": 36.724999999999994
+          }
+        ],
+        "constructedAnchors": [
+          {
+            "id": "anchor-1",
+            "position": {
+              "x": 64.01867755192472,
+              "y": 128.44,
+              "z": 424.02760442787564
+            },
+            "normal": {
+              "x": 0,
+              "y": 1,
+              "z": 0
+            },
+            "ownerId": "v02:observation-deck-opening-1",
+            "revision": 0,
+            "valid": true
+          },
+          {
+            "id": "anchor-2",
+            "position": {
+              "x": 64.00496418050382,
+              "y": 128.44,
+              "z": 399.9253225412198
+            },
+            "normal": {
+              "x": 0,
+              "y": 1,
+              "z": 0
+            },
+            "ownerId": "v02:pop-end-deck-opening-1",
+            "revision": 0,
+            "valid": true
+          },
+          {
+            "id": "anchor-3",
+            "position": {
+              "x": 66.46129458986957,
+              "y": 128.44,
+              "z": 423.990105441958
+            },
+            "normal": {
+              "x": 0,
+              "y": 1,
+              "z": 0
+            },
+            "ownerId": "v02:observation-deck-opening-1",
+            "revision": 0,
+            "valid": true
+          },
+          {
+            "id": "anchor-4",
+            "position": {
+              "x": 66.50706806500655,
+              "y": 128.44,
+              "z": 399.76714780051515
+            },
+            "normal": {
+              "x": 0,
+              "y": 1,
+              "z": 0
+            },
+            "ownerId": "v02:pop-end-deck-opening-1",
+            "revision": 0,
+            "valid": true
+          }
+        ],
+        "beforeTransfer": {
+          "frame": 0,
+          "p": [
+            64.016357964908,
+            128.44,
+            419.9507557506477
+          ],
+          "v": [
+            -0.0092463437520592,
+            0,
+            -16.2511447180165
+          ],
+          "grounded": false,
+          "mode": "AIR",
+          "trauma": 0,
+          "damage": 0,
+          "rail": {
+            "railId": "rail-1",
+            "distance": 4.076849337110615,
+            "signedSpeed": 16.25114734844246,
+            "speed": 16.25114734844246,
+            "position": {
+              "x": 64.016357964908,
+              "y": 128.44,
+              "z": 419.9507557506477
+            },
+            "velocity": {
+              "x": -0.0092463437520592,
+              "y": 0,
+              "z": -16.2511447180165
+            },
+            "hero": "backspool",
+            "direction": null
+          },
+          "rails": [
+            {
+              "id": "rail-1",
+              "a": "anchor-1",
+              "b": "anchor-2",
+              "length": 24.10228578787441,
+              "tangent": {
+                "x": -0.0005689655969395532,
+                "y": 0,
+                "z": -0.9999998381390617
+              },
+              "slope": 0,
+              "createdAt": 3.3699999999999988,
+              "expiresAt": 33.37
+            },
+            {
+              "id": "rail-2",
+              "a": "anchor-3",
+              "b": "anchor-4",
+              "length": 24.223000889860057,
+              "tangent": {
+                "x": 0.0018896698780267087,
+                "y": 0,
+                "z": -0.9999982145722822
+              },
+              "slope": 0,
+              "createdAt": 6.724999999999995,
+              "expiresAt": 36.724999999999994
+            }
+          ],
+          "anchors": [
+            {
+              "id": "anchor-1",
+              "position": {
+                "x": 64.01867755192472,
+                "y": 128.44,
+                "z": 424.02760442787564
+              },
+              "normal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "ownerId": "v02:observation-deck-opening-1",
+              "revision": 0,
+              "valid": true
+            },
+            {
+              "id": "anchor-2",
+              "position": {
+                "x": 64.00496418050382,
+                "y": 128.44,
+                "z": 399.9253225412198
+              },
+              "normal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "ownerId": "v02:pop-end-deck-opening-1",
+              "revision": 0,
+              "valid": true
+            },
+            {
+              "id": "anchor-3",
+              "position": {
+                "x": 66.46129458986957,
+                "y": 128.44,
+                "z": 423.990105441958
+              },
+              "normal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "ownerId": "v02:observation-deck-opening-1",
+              "revision": 0,
+              "valid": true
+            },
+            {
+              "id": "anchor-4",
+              "position": {
+                "x": 66.50706806500655,
+                "y": 128.44,
+                "z": 399.76714780051515
+              },
+              "normal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "ownerId": "v02:pop-end-deck-opening-1",
+              "revision": 0,
+              "valid": true
+            }
+          ],
+          "bank": 5,
+          "releases": [],
+          "clock": 11.908333333333518,
+          "message": "CLEAN CATCH",
+          "deployment": "attached",
+          "precision": false,
+          "source": "forspoken-threadrail-grind",
+          "advanced": {
+            "kind": null,
+            "clock": 11.525000000000166,
+            "cooldown": 0,
+            "floatRemaining": 6,
+            "wallJumps": 0,
+            "reason": "INPUT RESET",
+            "motion": null,
+            "water": null,
+            "anchor": null,
+            "wallNormal": null,
+            "wallTop": null,
+            "wallPoint": null,
+            "wallAge": 0,
+            "wallRegrabLocked": false,
+            "events": [],
+            "origin": "authored mechanics; source/native candidate poses",
+            "ready": true,
+            "waters": [
+              {
+                "id": "meridian-waterfront",
+                "minX": -36,
+                "maxX": 36,
+                "minZ": 1171.7387966456854,
+                "maxZ": 1231.7387966456854,
+                "surface": 0.06,
+                "depth": 2.5
+              }
+            ],
+            "surfaceOnly": true,
+            "wallPose": null,
+            "pose": "forspoken-threadrail-grind"
+          },
+          "camera": [
+            64.30061195569745,
+            130.7894262092666,
+            426.98093897315107
+          ]
+        },
+        "transfer": {
+          "id": 9,
+          "type": "transfer",
+          "time": 11.775000000000178,
+          "fromId": "rail-1",
+          "railId": "rail-2",
+          "speed": 16.251098230235005
+        },
+        "final": {
+          "frame": 0,
+          "p": [
+            64.58586517387344,
+            118.42,
+            391.1665943706167
+          ],
+          "v": [
+            0,
+            0,
+            0
+          ],
+          "grounded": true,
+          "mode": "LANDING",
+          "trauma": 0,
+          "damage": 0,
+          "rail": null,
+          "rails": [
+            {
+              "id": "rail-1",
+              "a": "anchor-1",
+              "b": "anchor-2",
+              "length": 24.10228578787441,
+              "tangent": {
+                "x": -0.0005689655969395532,
+                "y": 0,
+                "z": -0.9999998381390617
+              },
+              "slope": 0,
+              "createdAt": 3.3699999999999988,
+              "expiresAt": 33.37
+            },
+            {
+              "id": "rail-2",
+              "a": "anchor-3",
+              "b": "anchor-4",
+              "length": 24.223000889860057,
+              "tangent": {
+                "x": 0.0018896698780267087,
+                "y": 0,
+                "z": -0.9999982145722822
+              },
+              "slope": 0,
+              "createdAt": 6.724999999999995,
+              "expiresAt": 36.724999999999994
+            }
+          ],
+          "anchors": [
+            {
+              "id": "anchor-1",
+              "position": {
+                "x": 64.01867755192472,
+                "y": 128.44,
+                "z": 424.02760442787564
+              },
+              "normal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "ownerId": "v02:observation-deck-opening-1",
+              "revision": 0,
+              "valid": true
+            },
+            {
+              "id": "anchor-2",
+              "position": {
+                "x": 64.00496418050382,
+                "y": 128.44,
+                "z": 399.9253225412198
+              },
+              "normal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "ownerId": "v02:pop-end-deck-opening-1",
+              "revision": 0,
+              "valid": true
+            },
+            {
+              "id": "anchor-3",
+              "position": {
+                "x": 66.46129458986957,
+                "y": 128.44,
+                "z": 423.990105441958
+              },
+              "normal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "ownerId": "v02:observation-deck-opening-1",
+              "revision": 0,
+              "valid": true
+            },
+            {
+              "id": "anchor-4",
+              "position": {
+                "x": 66.50706806500655,
+                "y": 128.44,
+                "z": 399.76714780051515
+              },
+              "normal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "ownerId": "v02:pop-end-deck-opening-1",
+              "revision": 0,
+              "valid": true
+            }
+          ],
+          "bank": 5,
+          "releases": [],
+          "clock": 14.441666666666977,
+          "message": "PERFECT RAIL POP",
+          "deployment": "attached",
+          "precision": false,
+          "source": "forspoken-flow-landHard",
+          "advanced": {
+            "kind": null,
+            "clock": 12.775000000000228,
+            "cooldown": 0,
+            "floatRemaining": 6,
+            "wallJumps": 0,
+            "reason": "INPUT RESET",
+            "motion": null,
+            "water": null,
+            "anchor": null,
+            "wallNormal": null,
+            "wallTop": null,
+            "wallPoint": null,
+            "wallAge": 0,
+            "wallRegrabLocked": false,
+            "events": [],
+            "origin": "authored mechanics; source/native candidate poses",
+            "ready": true,
+            "waters": [
+              {
+                "id": "meridian-waterfront",
+                "minX": -36,
+                "maxX": 36,
+                "minZ": 1171.7387966456854,
+                "maxZ": 1231.7387966456854,
+                "surface": 0.06,
+                "depth": 2.5
+              }
+            ],
+            "surfaceOnly": true,
+            "wallPose": null,
+            "pose": "forspoken-flow-landHard"
+          },
+          "camera": [
+            68.17664416346229,
+            122.85894261814461,
+            396.7467990926781
+          ]
+        },
+        "stages": [
+          {
+            "name": "labelled upper start",
+            "frame": 1,
+            "p": [
+              64,
+              128.42,
+              422
+            ],
+            "clock": 0.06666666666666667,
+            "message": ""
+          },
+          {
+            "name": "physical cartridge 1",
+            "frame": 141,
+            "p": [
+              64,
+              128.42,
+              422
+            ],
+            "clock": 1.4900000000000009,
+            "message": "POINT A ATTACHED \u00b7 AIM B"
+          },
+          {
+            "name": "physical cartridge 2",
+            "frame": 325,
+            "p": [
+              64,
+              128.42,
+              422
+            ],
+            "clock": 3.3866666666666654,
+            "message": "PERFECT CROSS-STREET"
+          },
+          {
+            "name": "physical cartridge 3",
+            "frame": 492,
+            "p": [
+              64,
+              128.42,
+              422
+            ],
+            "clock": 4.956666666666664,
+            "message": "POINT A ATTACHED \u00b7 AIM B"
+          },
+          {
+            "name": "physical cartridge 4",
+            "frame": 655,
+            "p": [
+              64,
+              128.42,
+              422
+            ],
+            "clock": 6.741666666666662,
+            "message": "PERFECT CROSS-STREET"
+          },
+          {
+            "name": "first physical rail caught",
+            "frame": 944,
+            "p": [
+              64.00352252180923,
+              128.42377229080932,
+              425.0763752921533
+            ],
+            "clock": 11.5583333333335,
+            "message": "CLEAN CATCH"
+          },
+          {
+            "name": "actual input rail transfer",
+            "frame": 967,
+            "p": [
+              64.47894661547227,
+              128.44,
+              419.9516298920473
+            ],
+            "clock": 11.941666666666853,
+            "message": "STABLE CATCH"
+          },
+          {
+            "name": "transferred near-end Pop",
+            "frame": 1043,
+            "p": [
+              66.50416572436066,
+              128.54194444444445,
+              401.3030433014794
+            ],
+            "clock": 13.208333333333583,
+            "message": "PERFECT RAIL POP"
+          },
+          {
+            "name": "supported recovery landing",
+            "frame": 1138,
+            "p": [
+              64.58586517387344,
+              118.42,
+              391.1665943706167
+            ],
+            "clock": 14.791666666666995,
+            "message": "PERFECT RAIL POP"
+          }
+        ]
+      },
+      "noPop": {
+        "status": "PASS physical V02 casts, input rail transfer, no-Pop endpoint recovery",
+        "scope": "Local Y128 fixture, four physical cartridges, two parallel rails, actual input transfer, natural endpoint exit without Pop and supported recovery",
+        "method": "One labelled controlled Y128 player/camera start fixture. Normal R/Shift/Space keys and standard simulated controller movement/look after setup. No direct rail creation, actor/camera assignment, reset or resource injection during route.",
+        "initialBank": 0,
+        "seconds": 17.883333333333333,
+        "constructedRails": [
+          {
+            "id": "rail-1",
+            "a": "anchor-1",
+            "b": "anchor-2",
+            "length": 24.10228578787441,
+            "tangent": {
+              "x": -0.0005689655969395532,
+              "y": 0,
+              "z": -0.9999998381390617
+            },
+            "slope": 0,
+            "createdAt": 3.3699999999999988,
+            "expiresAt": 33.37
+          },
+          {
+            "id": "rail-2",
+            "a": "anchor-3",
+            "b": "anchor-4",
+            "length": 24.223000889860057,
+            "tangent": {
+              "x": 0.0018896698780267087,
+              "y": 0,
+              "z": -0.9999982145722822
+            },
+            "slope": 0,
+            "createdAt": 6.724999999999995,
+            "expiresAt": 36.724999999999994
+          }
+        ],
+        "constructedAnchors": [
+          {
+            "id": "anchor-1",
+            "position": {
+              "x": 64.01867755192472,
+              "y": 128.44,
+              "z": 424.02760442787564
+            },
+            "normal": {
+              "x": 0,
+              "y": 1,
+              "z": 0
+            },
+            "ownerId": "v02:observation-deck-opening-1",
+            "revision": 0,
+            "valid": true
+          },
+          {
+            "id": "anchor-2",
+            "position": {
+              "x": 64.00496418050382,
+              "y": 128.44,
+              "z": 399.9253225412198
+            },
+            "normal": {
+              "x": 0,
+              "y": 1,
+              "z": 0
+            },
+            "ownerId": "v02:pop-end-deck-opening-1",
+            "revision": 0,
+            "valid": true
+          },
+          {
+            "id": "anchor-3",
+            "position": {
+              "x": 66.46129458986957,
+              "y": 128.44,
+              "z": 423.990105441958
+            },
+            "normal": {
+              "x": 0,
+              "y": 1,
+              "z": 0
+            },
+            "ownerId": "v02:observation-deck-opening-1",
+            "revision": 0,
+            "valid": true
+          },
+          {
+            "id": "anchor-4",
+            "position": {
+              "x": 66.50706806500655,
+              "y": 128.44,
+              "z": 399.76714780051515
+            },
+            "normal": {
+              "x": 0,
+              "y": 1,
+              "z": 0
+            },
+            "ownerId": "v02:pop-end-deck-opening-1",
+            "revision": 0,
+            "valid": true
+          }
+        ],
+        "beforeTransfer": {
+          "frame": 0,
+          "p": [
+            64.016357964908,
+            128.44,
+            419.9507557506477
+          ],
+          "v": [
+            -0.0092463437520592,
+            0,
+            -16.2511447180165
+          ],
+          "grounded": false,
+          "mode": "AIR",
+          "trauma": 0,
+          "damage": 0,
+          "rail": {
+            "railId": "rail-1",
+            "distance": 4.076849337110615,
+            "signedSpeed": 16.25114734844246,
+            "speed": 16.25114734844246,
+            "position": {
+              "x": 64.016357964908,
+              "y": 128.44,
+              "z": 419.9507557506477
+            },
+            "velocity": {
+              "x": -0.0092463437520592,
+              "y": 0,
+              "z": -16.2511447180165
+            },
+            "hero": "backspool",
+            "direction": null
+          },
+          "rails": [
+            {
+              "id": "rail-1",
+              "a": "anchor-1",
+              "b": "anchor-2",
+              "length": 24.10228578787441,
+              "tangent": {
+                "x": -0.0005689655969395532,
+                "y": 0,
+                "z": -0.9999998381390617
+              },
+              "slope": 0,
+              "createdAt": 3.3699999999999988,
+              "expiresAt": 33.37
+            },
+            {
+              "id": "rail-2",
+              "a": "anchor-3",
+              "b": "anchor-4",
+              "length": 24.223000889860057,
+              "tangent": {
+                "x": 0.0018896698780267087,
+                "y": 0,
+                "z": -0.9999982145722822
+              },
+              "slope": 0,
+              "createdAt": 6.724999999999995,
+              "expiresAt": 36.724999999999994
+            }
+          ],
+          "anchors": [
+            {
+              "id": "anchor-1",
+              "position": {
+                "x": 64.01867755192472,
+                "y": 128.44,
+                "z": 424.02760442787564
+              },
+              "normal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "ownerId": "v02:observation-deck-opening-1",
+              "revision": 0,
+              "valid": true
+            },
+            {
+              "id": "anchor-2",
+              "position": {
+                "x": 64.00496418050382,
+                "y": 128.44,
+                "z": 399.9253225412198
+              },
+              "normal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "ownerId": "v02:pop-end-deck-opening-1",
+              "revision": 0,
+              "valid": true
+            },
+            {
+              "id": "anchor-3",
+              "position": {
+                "x": 66.46129458986957,
+                "y": 128.44,
+                "z": 423.990105441958
+              },
+              "normal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "ownerId": "v02:observation-deck-opening-1",
+              "revision": 0,
+              "valid": true
+            },
+            {
+              "id": "anchor-4",
+              "position": {
+                "x": 66.50706806500655,
+                "y": 128.44,
+                "z": 399.76714780051515
+              },
+              "normal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "ownerId": "v02:pop-end-deck-opening-1",
+              "revision": 0,
+              "valid": true
+            }
+          ],
+          "bank": 5,
+          "releases": [],
+          "clock": 11.908333333333518,
+          "message": "CLEAN CATCH",
+          "deployment": "attached",
+          "precision": false,
+          "source": "forspoken-threadrail-grind",
+          "advanced": {
+            "kind": null,
+            "clock": 11.525000000000166,
+            "cooldown": 0,
+            "floatRemaining": 6,
+            "wallJumps": 0,
+            "reason": "INPUT RESET",
+            "motion": null,
+            "water": null,
+            "anchor": null,
+            "wallNormal": null,
+            "wallTop": null,
+            "wallPoint": null,
+            "wallAge": 0,
+            "wallRegrabLocked": false,
+            "events": [],
+            "origin": "authored mechanics; source/native candidate poses",
+            "ready": true,
+            "waters": [
+              {
+                "id": "meridian-waterfront",
+                "minX": -36,
+                "maxX": 36,
+                "minZ": 1171.7387966456854,
+                "maxZ": 1231.7387966456854,
+                "surface": 0.06,
+                "depth": 2.5
+              }
+            ],
+            "surfaceOnly": true,
+            "wallPose": null,
+            "pose": "forspoken-threadrail-grind"
+          },
+          "camera": [
+            64.30061195569745,
+            130.7894262092666,
+            426.98093897315107
+          ]
+        },
+        "transfer": {
+          "id": 9,
+          "type": "transfer",
+          "time": 11.775000000000178,
+          "fromId": "rail-1",
+          "railId": "rail-2",
+          "speed": 16.251098230235005
+        },
+        "final": {
+          "frame": 0,
+          "p": [
+            66.50554095331286,
+            128.42,
+            399.00627878372586
+          ],
+          "v": [
+            -0.09036883398832975,
+            0,
+            -14.821384878358508
+          ],
+          "grounded": true,
+          "mode": "GROUND",
+          "trauma": 0,
+          "damage": 0,
+          "rail": null,
+          "rails": [
+            {
+              "id": "rail-1",
+              "a": "anchor-1",
+              "b": "anchor-2",
+              "length": 24.10228578787441,
+              "tangent": {
+                "x": -0.0005689655969395532,
+                "y": 0,
+                "z": -0.9999998381390617
+              },
+              "slope": 0,
+              "createdAt": 3.3699999999999988,
+              "expiresAt": 33.37
+            },
+            {
+              "id": "rail-2",
+              "a": "anchor-3",
+              "b": "anchor-4",
+              "length": 24.223000889860057,
+              "tangent": {
+                "x": 0.0018896698780267087,
+                "y": 0,
+                "z": -0.9999982145722822
+              },
+              "slope": 0,
+              "createdAt": 6.724999999999995,
+              "expiresAt": 36.724999999999994
+            }
+          ],
+          "anchors": [
+            {
+              "id": "anchor-1",
+              "position": {
+                "x": 64.01867755192472,
+                "y": 128.44,
+                "z": 424.02760442787564
+              },
+              "normal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "ownerId": "v02:observation-deck-opening-1",
+              "revision": 0,
+              "valid": true
+            },
+            {
+              "id": "anchor-2",
+              "position": {
+                "x": 64.00496418050382,
+                "y": 128.44,
+                "z": 399.9253225412198
+              },
+              "normal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "ownerId": "v02:pop-end-deck-opening-1",
+              "revision": 0,
+              "valid": true
+            },
+            {
+              "id": "anchor-3",
+              "position": {
+                "x": 66.46129458986957,
+                "y": 128.44,
+                "z": 423.990105441958
+              },
+              "normal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "ownerId": "v02:observation-deck-opening-1",
+              "revision": 0,
+              "valid": true
+            },
+            {
+              "id": "anchor-4",
+              "position": {
+                "x": 66.50706806500655,
+                "y": 128.44,
+                "z": 399.76714780051515
+              },
+              "normal": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+              },
+              "ownerId": "v02:pop-end-deck-opening-1",
+              "revision": 0,
+              "valid": true
+            }
+          ],
+          "bank": 5,
+          "releases": [],
+          "clock": 13.35833333333359,
+          "message": "STABLE CATCH",
+          "deployment": "attached",
+          "precision": false,
+          "source": "forspoken-flow-landMove",
+          "advanced": {
+            "kind": null,
+            "clock": 11.575000000000168,
+            "cooldown": 0,
+            "floatRemaining": 6,
+            "wallJumps": 0,
+            "reason": "INPUT RESET",
+            "motion": null,
+            "water": null,
+            "anchor": null,
+            "wallNormal": null,
+            "wallTop": null,
+            "wallPoint": null,
+            "wallAge": 0,
+            "wallRegrabLocked": false,
+            "events": [],
+            "origin": "authored mechanics; source/native candidate poses",
+            "ready": true,
+            "waters": [
+              {
+                "id": "meridian-waterfront",
+                "minX": -36,
+                "maxX": 36,
+                "minZ": 1171.7387966456854,
+                "maxZ": 1231.7387966456854,
+                "surface": 0.06,
+                "depth": 2.5
+              }
+            ],
+            "surfaceOnly": true,
+            "wallPose": null,
+            "pose": "forspoken-flow-landMove"
+          },
+          "camera": [
+            67.2752813637696,
+            130.75097752144043,
+            405.5660299793515
+          ]
+        },
+        "stages": [
+          {
+            "name": "labelled upper start",
+            "frame": 1,
+            "p": [
+              64,
+              128.42,
+              422
+            ],
+            "clock": 0.06666666666666667,
+            "message": ""
+          },
+          {
+            "name": "physical cartridge 1",
+            "frame": 141,
+            "p": [
+              64,
+              128.42,
+              422
+            ],
+            "clock": 1.4900000000000009,
+            "message": "POINT A ATTACHED \u00b7 AIM B"
+          },
+          {
+            "name": "physical cartridge 2",
+            "frame": 325,
+            "p": [
+              64,
+              128.42,
+              422
+            ],
+            "clock": 3.3866666666666654,
+            "message": "PERFECT CROSS-STREET"
+          },
+          {
+            "name": "physical cartridge 3",
+            "frame": 492,
+            "p": [
+              64,
+              128.42,
+              422
+            ],
+            "clock": 4.956666666666664,
+            "message": "POINT A ATTACHED \u00b7 AIM B"
+          },
+          {
+            "name": "physical cartridge 4",
+            "frame": 655,
+            "p": [
+              64,
+              128.42,
+              422
+            ],
+            "clock": 6.741666666666662,
+            "message": "PERFECT CROSS-STREET"
+          },
+          {
+            "name": "first physical rail caught",
+            "frame": 944,
+            "p": [
+              64.00352252180923,
+              128.42377229080932,
+              425.0763752921533
+            ],
+            "clock": 11.5583333333335,
+            "message": "CLEAN CATCH"
+          },
+          {
+            "name": "actual input rail transfer",
+            "frame": 967,
+            "p": [
+              64.47894661547227,
+              128.44,
+              419.9516298920473
+            ],
+            "clock": 11.941666666666853,
+            "message": "STABLE CATCH"
+          },
+          {
+            "name": "natural endpoint exit without Pop",
+            "frame": 1050,
+            "p": [
+              66.50755996179531,
+              128.4336111111111,
+              399.5068399466268
+            ],
+            "clock": 13.325000000000255,
+            "message": "STABLE CATCH"
+          },
+          {
+            "name": "supported recovery landing",
+            "frame": 1073,
+            "p": [
+              66.50554095331286,
+              128.42,
+              399.00627878372586
+            ],
+            "clock": 13.708333333333607,
+            "message": "STABLE CATCH"
+          }
+        ]
+      }
+    },
+    "scope": "Local controlled Y128 setup, then actual surface casts, movement, input transfer and supported Pop/no-Pop recovery; not all rail geometry or camera acceptance."
+  },
+  "discovery": {
+    "tour": {
+      "status": "PASS four-location normal-input discovery and public information tour",
+      "scope": "One ground start, four supported discoveries and their useful routes, then public return. No player, health, resource or discovery writes during gameplay.",
+      "stages": [
+        {
+          "name": "directory",
+          "frame": 32,
+          "found": [],
+          "route": null
+        },
+        {
+          "name": "market",
+          "frame": 2939,
+          "found": [
+            "market-info"
+          ],
+          "route": {
+            "destination": "poi-market",
+            "status": "arrived",
+            "index": 28,
+            "edges": [
+              "E0192",
+              "E0156",
+              "E0151",
+              "E0000",
+              "E0002",
+              "E0004",
+              "E0006",
+              "E0008",
+              "E0010",
+              "E0262"
+            ],
+            "blockedEdges": []
+          }
+        },
+        {
+          "name": "maintenance",
+          "frame": 7751,
+          "found": [
+            "market-info",
+            "maintenance-access"
+          ],
+          "route": {
+            "destination": "poi-maintenance",
+            "status": "arrived",
+            "index": 43,
+            "edges": [
+              "E0263",
+              "E0122",
+              "E0032",
+              "E0034",
+              "E0036",
+              "E0162",
+              "E0170",
+              "E0165",
+              "E0077",
+              "E0075",
+              "E0073",
+              "E0071",
+              "E0138",
+              "E0190",
+              "E0271"
+            ],
+            "blockedEdges": [
+              "E0268"
+            ]
+          }
+        },
+        {
+          "name": "overhead",
+          "frame": 8913,
+          "found": [
+            "market-info",
+            "maintenance-access"
+          ],
+          "route": {
+            "destination": "service-upper-58.4",
+            "status": "arrived",
+            "index": 16,
+            "edges": [
+              "E0270",
+              "E0182",
+              "E0184",
+              "E0188"
+            ],
+            "blockedEdges": []
+          }
+        },
+        {
+          "name": "station",
+          "frame": 15883,
+          "found": [
+            "market-info",
+            "maintenance-access",
+            "station-info"
+          ],
+          "route": {
+            "destination": "poi-station",
+            "status": "arrived",
+            "index": 59,
+            "edges": [
+              "E0270",
+              "E0191",
+              "E0139",
+              "E0070",
+              "E0072",
+              "E0074",
+              "E0076",
+              "E0164",
+              "E0172",
+              "E0167",
+              "E0118",
+              "E0131",
+              "E0099",
+              "E0097",
+              "E0095",
+              "E0176",
+              "E0178",
+              "E0196",
+              "E0272"
+            ],
+            "blockedEdges": [
+              "E0269"
+            ]
+          }
+        },
+        {
+          "name": "observation",
+          "frame": 18726,
+          "found": [
+            "market-info",
+            "maintenance-access",
+            "station-info",
+            "observation"
+          ],
+          "route": {
+            "destination": "observation-deck",
+            "status": "arrived",
+            "index": 32,
+            "edges": [
+              "E0273",
+              "E0199",
+              "E0180",
+              "E0222",
+              "E0210",
+              "E0224"
+            ],
+            "blockedEdges": [
+              "E0276"
+            ]
+          }
+        },
+        {
+          "name": "street-return",
+          "frame": 28218,
+          "found": [
+            "market-info",
+            "maintenance-access",
+            "station-info",
+            "observation"
+          ],
+          "route": {
+            "destination": "ground-access",
+            "status": "arrived",
+            "index": 113,
+            "edges": [
+              "E0225",
+              "E0211",
+              "E0223",
+              "E0181",
+              "E0198",
+              "E0197",
+              "E0179",
+              "E0177",
+              "E0093",
+              "E0091",
+              "E0089",
+              "E0087",
+              "E0085",
+              "E0083",
+              "E0081",
+              "E0154",
+              "E0161",
+              "E0159",
+              "E0157",
+              "E0193"
+            ],
+            "blockedEdges": []
+          }
+        }
+      ],
+      "results": [
+        {
+          "name": "Market information guides to the real rescue interaction without starting or replacing its encounter",
+          "pass": true
+        },
+        {
+          "name": "Maintenance information marks a physical upper flank; ascent and return use actual stairs",
+          "pass": true
+        },
+        {
+          "name": "Station information guides to the actual pursuit access and reports through-service availability",
+          "pass": true
+        },
+        {
+          "name": "Observation information supplies an actual public street return; all four unique records persist without changing courier progress or power resources; hostile exposure is recorded separately",
+          "pass": true
+        },
+        {
+          "name": "labelled existing respawn API preserves all four unique discovery records and clears guidance",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "entrySHA256": "cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1",
+      "manifestSHA256": "d4fb49380ae1a0aed2aecaabc836b27836efea6455b1200716096cbd5370128c",
+      "encounterSHA256": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+      "marketSHA256": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+      "discoverySHA256": "93a394a1fb61c624acb6d94948bac39d7c6524764bb14a39c1d595a8dad957c3",
+      "confirmedAmbientHits": [],
+      "finalCondition": 100,
+      "final": {
+        "ready": true,
+        "clock": 470.29999999990093,
+        "discovered": [
+          {
+            "id": "market-info",
+            "time": 48.083
+          },
+          {
+            "id": "maintenance-access",
+            "time": 128.283
+          },
+          {
+            "id": "station-info",
+            "time": 263.833
+          },
+          {
+            "id": "observation",
+            "time": 311.217
+          }
+        ],
+        "openBoard": null,
+        "route": {
+          "title": "Street-level return",
+          "destination": "ground-access",
+          "points": [
+            [
+              72,
+              128,
+              420
+            ],
+            [
+              55,
+              128,
+              420
+            ],
+            [
+              55,
+              128,
+              410
+            ],
+            [
+              55,
+              128,
+              400
+            ],
+            [
+              55,
+              128,
+              403.5
+            ],
+            [
+              61,
+              128,
+              403.5
+            ],
+            [
+              70.2,
+              128,
+              403.5
+            ],
+            [
+              70.2,
+              128,
+              412.98
+            ],
+            [
+              67,
+              128,
+              412.98
+            ],
+            [
+              61,
+              128,
+              412.98
+            ],
+            [
+              61,
+              124.88888888888889,
+              403.5
+            ],
+            [
+              67,
+              124.88888888888889,
+              403.5
+            ],
+            [
+              67,
+              121.77777777777777,
+              412.98
+            ],
+            [
+              61,
+              121.77777777777777,
+              412.98
+            ],
+            [
+              61,
+              118.66666666666667,
+              403.5
+            ],
+            [
+              67,
+              118.66666666666667,
+              403.5
+            ],
+            [
+              67,
+              115.55555555555556,
+              412.98
+            ],
+            [
+              61,
+              115.55555555555556,
+              412.98
+            ],
+            [
+              61,
+              112.44444444444444,
+              403.5
+            ],
+            [
+              67,
+              112.44444444444444,
+              403.5
+            ],
+            [
+              67,
+              109.33333333333333,
+              412.98
+            ],
+            [
+              61,
+              109.33333333333333,
+              412.98
+            ],
+            [
+              61,
+              106.22222222222223,
+              403.5
+            ],
+            [
+              67,
+              106.22222222222223,
+              403.5
+            ],
+            [
+              67,
+              103.11111111111111,
+              412.98
+            ],
+            [
+              61,
+              103.11111111111111,
+              412.98
+            ],
+            [
+              61,
+              100,
+              403.5
+            ],
+            [
+              64,
+              100,
+              399
+            ],
+            [
+              66.5,
+              100,
+              391
+            ],
+            [
+              66.5,
+              100,
+              376
+            ],
+            [
+              61,
+              100,
+              375.5
+            ],
+            [
+              70.2,
+              100,
+              375.5
+            ],
+            [
+              70.2,
+              100,
+              384.98
+            ],
+            [
+              67,
+              100,
+              384.98
+            ],
+            [
+              61,
+              100,
+              384.98
+            ],
+            [
+              61,
+              96.8,
+              375.5
+            ],
+            [
+              67,
+              96.8,
+              375.5
+            ],
+            [
+              67,
+              93.6,
+              384.98
+            ],
+            [
+              61,
+              93.6,
+              384.98
+            ],
+            [
+              61,
+              90.4,
+              375.5
+            ],
+            [
+              67,
+              90.4,
+              375.5
+            ],
+            [
+              67,
+              87.2,
+              384.98
+            ],
+            [
+              61,
+              87.2,
+              384.98
+            ],
+            [
+              61,
+              84,
+              375.5
+            ],
+            [
+              55,
+              84,
+              375.5
+            ],
+            [
+              55,
+              84,
+              376
+            ],
+            [
+              55,
+              84,
+              350
+            ],
+            [
+              55,
+              84,
+              326
+            ],
+            [
+              55,
+              84,
+              300
+            ],
+            [
+              55,
+              84,
+              276
+            ],
+            [
+              55,
+              84,
+              250
+            ],
+            [
+              55,
+              84,
+              230
+            ],
+            [
+              55,
+              84,
+              210
+            ],
+            [
+              55,
+              84,
+              215.5
+            ],
+            [
+              61,
+              84,
+              215.5
+            ],
+            [
+              67,
+              84,
+              215.5
+            ],
+            [
+              67,
+              80.8,
+              224.98
+            ],
+            [
+              61,
+              80.8,
+              224.98
+            ],
+            [
+              61,
+              77.6,
+              215.5
+            ],
+            [
+              67,
+              77.6,
+              215.5
+            ],
+            [
+              67,
+              74.4,
+              224.98
+            ],
+            [
+              61,
+              74.4,
+              224.98
+            ],
+            [
+              61,
+              71.2,
+              215.5
+            ],
+            [
+              67,
+              71.2,
+              215.5
+            ],
+            [
+              67,
+              68,
+              224.98
+            ],
+            [
+              61,
+              68,
+              224.98
+            ],
+            [
+              61,
+              64.8,
+              215.5
+            ],
+            [
+              67,
+              64.8,
+              215.5
+            ],
+            [
+              67,
+              61.6,
+              224.98
+            ],
+            [
+              61,
+              61.6,
+              224.98
+            ],
+            [
+              61,
+              58.4,
+              215.5
+            ],
+            [
+              67,
+              58.4,
+              215.5
+            ],
+            [
+              67,
+              55.2,
+              224.98
+            ],
+            [
+              61,
+              55.2,
+              224.98
+            ],
+            [
+              61,
+              52,
+              215.5
+            ],
+            [
+              70.2,
+              52,
+              215.5
+            ],
+            [
+              70.2,
+              52,
+              224.98
+            ],
+            [
+              67,
+              52,
+              224.98
+            ],
+            [
+              61,
+              52,
+              224.98
+            ],
+            [
+              61,
+              48.888888888888886,
+              215.5
+            ],
+            [
+              67,
+              48.888888888888886,
+              215.5
+            ],
+            [
+              67,
+              45.77777777777778,
+              224.98
+            ],
+            [
+              61,
+              45.77777777777778,
+              224.98
+            ],
+            [
+              61,
+              42.66666666666667,
+              215.5
+            ],
+            [
+              67,
+              42.66666666666667,
+              215.5
+            ],
+            [
+              67,
+              39.55555555555556,
+              224.98
+            ],
+            [
+              61,
+              39.55555555555556,
+              224.98
+            ],
+            [
+              61,
+              36.44444444444444,
+              215.5
+            ],
+            [
+              67,
+              36.44444444444444,
+              215.5
+            ],
+            [
+              67,
+              33.333333333333336,
+              224.98
+            ],
+            [
+              61,
+              33.333333333333336,
+              224.98
+            ],
+            [
+              61,
+              30.22222222222222,
+              215.5
+            ],
+            [
+              67,
+              30.22222222222222,
+              215.5
+            ],
+            [
+              67,
+              27.11111111111111,
+              224.98
+            ],
+            [
+              61,
+              27.11111111111111,
+              224.98
+            ],
+            [
+              61,
+              24,
+              215.5
+            ],
+            [
+              67,
+              24,
+              215.5
+            ],
+            [
+              67,
+              21,
+              224.62
+            ],
+            [
+              61,
+              21,
+              224.62
+            ],
+            [
+              61,
+              18,
+              215.5
+            ],
+            [
+              67,
+              18,
+              215.5
+            ],
+            [
+              67,
+              15,
+              224.62
+            ],
+            [
+              61,
+              15,
+              224.62
+            ],
+            [
+              61,
+              12,
+              215.5
+            ],
+            [
+              67,
+              12,
+              215.5
+            ],
+            [
+              67,
+              9,
+              224.62
+            ],
+            [
+              61,
+              9,
+              224.62
+            ],
+            [
+              61,
+              6,
+              215.5
+            ],
+            [
+              67,
+              6,
+              215.5
+            ],
+            [
+              67,
+              3,
+              224.62
+            ],
+            [
+              61,
+              3,
+              224.62
+            ],
+            [
+              61,
+              0,
+              215.5
+            ],
+            [
+              55,
+              0,
+              210
+            ]
+          ],
+          "index": 113,
+          "status": "arrived",
+          "edgeIDs": [
+            "E0225",
+            "E0211",
+            "E0223",
+            "E0181",
+            "E0198",
+            "E0197",
+            "E0179",
+            "E0177",
+            "E0093",
+            "E0091",
+            "E0089",
+            "E0087",
+            "E0085",
+            "E0083",
+            "E0081",
+            "E0154",
+            "E0161",
+            "E0159",
+            "E0157",
+            "E0193"
+          ],
+          "navigationVersion": 2,
+          "blockedEdges": [],
+          "validationAttempts": 1
+        },
+        "pending": null,
+        "message": "Destination reached.",
+        "eventId": 36,
+        "events": [
+          {
+            "id": 1,
+            "time": 0.1,
+            "kind": "board-read",
+            "point": "directory"
+          },
+          {
+            "id": 2,
+            "time": 0.533,
+            "kind": "route-requested",
+            "source": "directory",
+            "destination": "poi-market"
+          },
+          {
+            "id": 3,
+            "time": 1.433,
+            "kind": "route-ready",
+            "destination": "poi-market",
+            "edges": [
+              "E0192",
+              "E0156",
+              "E0151",
+              "E0000",
+              "E0002",
+              "E0004",
+              "E0006",
+              "E0008",
+              "E0010",
+              "E0262"
+            ],
+            "validationSamples": 1681,
+            "blockedEdges": [],
+            "validationAttempts": 1
+          },
+          {
+            "id": 4,
+            "time": 48.083,
+            "kind": "discovered",
+            "point": "market-info"
+          },
+          {
+            "id": 5,
+            "time": 48.45,
+            "kind": "route-arrived",
+            "destination": "poi-market"
+          },
+          {
+            "id": 6,
+            "time": 48.983,
+            "kind": "board-read",
+            "point": "market-info"
+          },
+          {
+            "id": 7,
+            "time": 49.017,
+            "kind": "route-requested",
+            "source": "market-info",
+            "destination": "market-access"
+          },
+          {
+            "id": 8,
+            "time": 49.083,
+            "kind": "route-ready",
+            "destination": "market-access",
+            "edges": [
+              "E0264"
+            ],
+            "validationSamples": 120,
+            "blockedEdges": [],
+            "validationAttempts": 1
+          },
+          {
+            "id": 9,
+            "time": 52.4,
+            "kind": "route-arrived",
+            "destination": "market-access"
+          },
+          {
+            "id": 10,
+            "time": 56.7,
+            "kind": "board-read",
+            "point": "market-info"
+          },
+          {
+            "id": 11,
+            "time": 56.733,
+            "kind": "route-requested",
+            "source": "market-info",
+            "destination": "poi-maintenance"
+          },
+          {
+            "id": 12,
+            "time": 59.233,
+            "kind": "route-ready",
+            "destination": "poi-maintenance",
+            "edges": [
+              "E0263",
+              "E0122",
+              "E0032",
+              "E0034",
+              "E0036",
+              "E0162",
+              "E0170",
+              "E0165",
+              "E0077",
+              "E0075",
+              "E0073",
+              "E0071",
+              "E0138",
+              "E0190",
+              "E0271"
+            ],
+            "validationSamples": 2500,
+            "blockedEdges": [
+              "E0268"
+            ],
+            "validationAttempts": 2
+          },
+          {
+            "id": 13,
+            "time": 128.283,
+            "kind": "discovered",
+            "point": "maintenance-access"
+          },
+          {
+            "id": 14,
+            "time": 128.65,
+            "kind": "route-arrived",
+            "destination": "poi-maintenance"
+          },
+          {
+            "id": 15,
+            "time": 129.183,
+            "kind": "board-read",
+            "point": "maintenance-access"
+          },
+          {
+            "id": 16,
+            "time": 129.217,
+            "kind": "route-requested",
+            "source": "maintenance-access",
+            "destination": "service-upper-58.4"
+          },
+          {
+            "id": 17,
+            "time": 129.567,
+            "kind": "route-ready",
+            "destination": "service-upper-58.4",
+            "edges": [
+              "E0270",
+              "E0182",
+              "E0184",
+              "E0188"
+            ],
+            "validationSamples": 653,
+            "blockedEdges": [],
+            "validationAttempts": 1
+          },
+          {
+            "id": 18,
+            "time": 148.033,
+            "kind": "route-arrived",
+            "destination": "service-upper-58.4"
+          },
+          {
+            "id": 19,
+            "time": 174.25,
+            "kind": "board-read",
+            "point": "maintenance-access"
+          },
+          {
+            "id": 20,
+            "time": 174.283,
+            "kind": "route-requested",
+            "source": "maintenance-access",
+            "destination": "poi-station"
+          },
+          {
+            "id": 21,
+            "time": 176,
+            "kind": "route-ready",
+            "destination": "poi-station",
+            "edges": [
+              "E0270",
+              "E0191",
+              "E0139",
+              "E0070",
+              "E0072",
+              "E0074",
+              "E0076",
+              "E0164",
+              "E0172",
+              "E0167",
+              "E0118",
+              "E0131",
+              "E0099",
+              "E0097",
+              "E0095",
+              "E0176",
+              "E0178",
+              "E0196",
+              "E0272"
+            ],
+            "validationSamples": 3169,
+            "blockedEdges": [
+              "E0269"
+            ],
+            "validationAttempts": 2
+          },
+          {
+            "id": 22,
+            "time": 263.833,
+            "kind": "discovered",
+            "point": "station-info"
+          },
+          {
+            "id": 23,
+            "time": 264.2,
+            "kind": "route-arrived",
+            "destination": "poi-station"
+          },
+          {
+            "id": 24,
+            "time": 264.717,
+            "kind": "board-read",
+            "point": "station-info"
+          },
+          {
+            "id": 25,
+            "time": 264.75,
+            "kind": "route-requested",
+            "source": "station-info",
+            "destination": "pursuit-access"
+          },
+          {
+            "id": 26,
+            "time": 264.817,
+            "kind": "route-ready",
+            "destination": "pursuit-access",
+            "edges": [
+              "E0275"
+            ],
+            "validationSamples": 102,
+            "blockedEdges": [],
+            "validationAttempts": 1
+          },
+          {
+            "id": 27,
+            "time": 267.65,
+            "kind": "route-arrived",
+            "destination": "pursuit-access"
+          },
+          {
+            "id": 28,
+            "time": 270.917,
+            "kind": "board-read",
+            "point": "station-info"
+          },
+          {
+            "id": 29,
+            "time": 270.95,
+            "kind": "route-requested",
+            "source": "station-info",
+            "destination": "observation-deck"
+          },
+          {
+            "id": 30,
+            "time": 271.733,
+            "kind": "route-ready",
+            "destination": "observation-deck",
+            "edges": [
+              "E0273",
+              "E0199",
+              "E0180",
+              "E0222",
+              "E0210",
+              "E0224"
+            ],
+            "validationSamples": 1423,
+            "blockedEdges": [
+              "E0276"
+            ],
+            "validationAttempts": 2
+          },
+          {
+            "id": 31,
+            "time": 311.217,
+            "kind": "discovered",
+            "point": "observation"
+          },
+          {
+            "id": 32,
+            "time": 311.567,
+            "kind": "route-arrived",
+            "destination": "observation-deck"
+          },
+          {
+            "id": 33,
+            "time": 312.1,
+            "kind": "board-read",
+            "point": "observation"
+          },
+          {
+            "id": 34,
+            "time": 312.133,
+            "kind": "route-requested",
+            "source": "observation",
+            "destination": "ground-access"
+          },
+          {
+            "id": 35,
+            "time": 315.183,
+            "kind": "route-ready",
+            "destination": "ground-access",
+            "edges": [
+              "E0225",
+              "E0211",
+              "E0223",
+              "E0181",
+              "E0198",
+              "E0197",
+              "E0179",
+              "E0177",
+              "E0093",
+              "E0091",
+              "E0089",
+              "E0087",
+              "E0085",
+              "E0083",
+              "E0081",
+              "E0154",
+              "E0161",
+              "E0159",
+              "E0157",
+              "E0193"
+            ],
+            "validationSamples": 5574,
+            "blockedEdges": [],
+            "validationAttempts": 1
+          },
+          {
+            "id": 36,
+            "time": 469.767,
+            "kind": "route-arrived",
+            "destination": "ground-access"
+          }
+        ],
+        "error": null,
+        "points": [
+          {
+            "id": "market-info",
+            "title": "MARKET ASSEMBLY",
+            "position": [
+              64,
+              24,
+              356
+            ],
+            "board": [
+              65.25,
+              24.85,
+              354.3
+            ],
+            "graphNode": "poi-market",
+            "function": "market",
+            "collection": "SM_V02_MARKET"
+          },
+          {
+            "id": "maintenance-access",
+            "title": "MAINTENANCE ACCESS",
+            "position": [
+              86,
+              52,
+              314.8
+            ],
+            "board": [
+              87.4,
+              52.85,
+              313.7
+            ],
+            "graphNode": "poi-maintenance",
+            "function": "maintenance",
+            "collection": "SM_V02_SERVICE_YARDS"
+          },
+          {
+            "id": "observation",
+            "title": "OBSERVATION DECK",
+            "position": [
+              72,
+              128,
+              420
+            ],
+            "board": [
+              73.5,
+              128.85,
+              418
+            ],
+            "graphNode": "observation-deck",
+            "function": "observation",
+            "collection": "SM_V02_LANDMARKS"
+          },
+          {
+            "id": "station-info",
+            "title": "TRANSIT INFORMATION",
+            "position": [
+              73,
+              100,
+              382
+            ],
+            "board": [
+              74.65,
+              100.85,
+              382
+            ],
+            "graphNode": "poi-station",
+            "function": "station",
+            "collection": "SM_V02_TRANSIT_STRUCTURES"
+          }
+        ],
+        "directory": {
+          "id": "directory",
+          "title": "DISTRICT DIRECTORY",
+          "position": [
+            55,
+            0,
+            210
+          ],
+          "board": [
+            56.9,
+            0.85,
+            208
+          ],
+          "graphNode": "ground-access",
+          "function": "directory",
+          "collection": "SM_V02_GALLERIES"
+        },
+        "nearBoard": "directory",
+        "readingDisabledByEncounter": false,
+        "scope": "Four functional information/discovery locations and voluntary public route guidance; not final landmark architecture or complete V02 acceptance"
+      },
+      "inputSeconds": 470.31666666666666,
+      "diagnostics": {
+        "ready": true,
+        "clock": 470.3166666665676,
+        "discovered": [
+          {
+            "id": "market-info",
+            "time": 48.083
+          },
+          {
+            "id": "maintenance-access",
+            "time": 128.283
+          },
+          {
+            "id": "station-info",
+            "time": 263.833
+          },
+          {
+            "id": "observation",
+            "time": 311.217
+          }
+        ],
+        "openBoard": null,
+        "route": null,
+        "pending": null,
+        "message": "",
+        "eventId": 37,
+        "events": [
+          {
+            "id": 1,
+            "time": 0.1,
+            "kind": "board-read",
+            "point": "directory"
+          },
+          {
+            "id": 2,
+            "time": 0.533,
+            "kind": "route-requested",
+            "source": "directory",
+            "destination": "poi-market"
+          },
+          {
+            "id": 3,
+            "time": 1.433,
+            "kind": "route-ready",
+            "destination": "poi-market",
+            "edges": [
+              "E0192",
+              "E0156",
+              "E0151",
+              "E0000",
+              "E0002",
+              "E0004",
+              "E0006",
+              "E0008",
+              "E0010",
+              "E0262"
+            ],
+            "validationSamples": 1681,
+            "blockedEdges": [],
+            "validationAttempts": 1
+          },
+          {
+            "id": 4,
+            "time": 48.083,
+            "kind": "discovered",
+            "point": "market-info"
+          },
+          {
+            "id": 5,
+            "time": 48.45,
+            "kind": "route-arrived",
+            "destination": "poi-market"
+          },
+          {
+            "id": 6,
+            "time": 48.983,
+            "kind": "board-read",
+            "point": "market-info"
+          },
+          {
+            "id": 7,
+            "time": 49.017,
+            "kind": "route-requested",
+            "source": "market-info",
+            "destination": "market-access"
+          },
+          {
+            "id": 8,
+            "time": 49.083,
+            "kind": "route-ready",
+            "destination": "market-access",
+            "edges": [
+              "E0264"
+            ],
+            "validationSamples": 120,
+            "blockedEdges": [],
+            "validationAttempts": 1
+          },
+          {
+            "id": 9,
+            "time": 52.4,
+            "kind": "route-arrived",
+            "destination": "market-access"
+          },
+          {
+            "id": 10,
+            "time": 56.7,
+            "kind": "board-read",
+            "point": "market-info"
+          },
+          {
+            "id": 11,
+            "time": 56.733,
+            "kind": "route-requested",
+            "source": "market-info",
+            "destination": "poi-maintenance"
+          },
+          {
+            "id": 12,
+            "time": 59.233,
+            "kind": "route-ready",
+            "destination": "poi-maintenance",
+            "edges": [
+              "E0263",
+              "E0122",
+              "E0032",
+              "E0034",
+              "E0036",
+              "E0162",
+              "E0170",
+              "E0165",
+              "E0077",
+              "E0075",
+              "E0073",
+              "E0071",
+              "E0138",
+              "E0190",
+              "E0271"
+            ],
+            "validationSamples": 2500,
+            "blockedEdges": [
+              "E0268"
+            ],
+            "validationAttempts": 2
+          },
+          {
+            "id": 13,
+            "time": 128.283,
+            "kind": "discovered",
+            "point": "maintenance-access"
+          },
+          {
+            "id": 14,
+            "time": 128.65,
+            "kind": "route-arrived",
+            "destination": "poi-maintenance"
+          },
+          {
+            "id": 15,
+            "time": 129.183,
+            "kind": "board-read",
+            "point": "maintenance-access"
+          },
+          {
+            "id": 16,
+            "time": 129.217,
+            "kind": "route-requested",
+            "source": "maintenance-access",
+            "destination": "service-upper-58.4"
+          },
+          {
+            "id": 17,
+            "time": 129.567,
+            "kind": "route-ready",
+            "destination": "service-upper-58.4",
+            "edges": [
+              "E0270",
+              "E0182",
+              "E0184",
+              "E0188"
+            ],
+            "validationSamples": 653,
+            "blockedEdges": [],
+            "validationAttempts": 1
+          },
+          {
+            "id": 18,
+            "time": 148.033,
+            "kind": "route-arrived",
+            "destination": "service-upper-58.4"
+          },
+          {
+            "id": 19,
+            "time": 174.25,
+            "kind": "board-read",
+            "point": "maintenance-access"
+          },
+          {
+            "id": 20,
+            "time": 174.283,
+            "kind": "route-requested",
+            "source": "maintenance-access",
+            "destination": "poi-station"
+          },
+          {
+            "id": 21,
+            "time": 176,
+            "kind": "route-ready",
+            "destination": "poi-station",
+            "edges": [
+              "E0270",
+              "E0191",
+              "E0139",
+              "E0070",
+              "E0072",
+              "E0074",
+              "E0076",
+              "E0164",
+              "E0172",
+              "E0167",
+              "E0118",
+              "E0131",
+              "E0099",
+              "E0097",
+              "E0095",
+              "E0176",
+              "E0178",
+              "E0196",
+              "E0272"
+            ],
+            "validationSamples": 3169,
+            "blockedEdges": [
+              "E0269"
+            ],
+            "validationAttempts": 2
+          },
+          {
+            "id": 22,
+            "time": 263.833,
+            "kind": "discovered",
+            "point": "station-info"
+          },
+          {
+            "id": 23,
+            "time": 264.2,
+            "kind": "route-arrived",
+            "destination": "poi-station"
+          },
+          {
+            "id": 24,
+            "time": 264.717,
+            "kind": "board-read",
+            "point": "station-info"
+          },
+          {
+            "id": 25,
+            "time": 264.75,
+            "kind": "route-requested",
+            "source": "station-info",
+            "destination": "pursuit-access"
+          },
+          {
+            "id": 26,
+            "time": 264.817,
+            "kind": "route-ready",
+            "destination": "pursuit-access",
+            "edges": [
+              "E0275"
+            ],
+            "validationSamples": 102,
+            "blockedEdges": [],
+            "validationAttempts": 1
+          },
+          {
+            "id": 27,
+            "time": 267.65,
+            "kind": "route-arrived",
+            "destination": "pursuit-access"
+          },
+          {
+            "id": 28,
+            "time": 270.917,
+            "kind": "board-read",
+            "point": "station-info"
+          },
+          {
+            "id": 29,
+            "time": 270.95,
+            "kind": "route-requested",
+            "source": "station-info",
+            "destination": "observation-deck"
+          },
+          {
+            "id": 30,
+            "time": 271.733,
+            "kind": "route-ready",
+            "destination": "observation-deck",
+            "edges": [
+              "E0273",
+              "E0199",
+              "E0180",
+              "E0222",
+              "E0210",
+              "E0224"
+            ],
+            "validationSamples": 1423,
+            "blockedEdges": [
+              "E0276"
+            ],
+            "validationAttempts": 2
+          },
+          {
+            "id": 31,
+            "time": 311.217,
+            "kind": "discovered",
+            "point": "observation"
+          },
+          {
+            "id": 32,
+            "time": 311.567,
+            "kind": "route-arrived",
+            "destination": "observation-deck"
+          },
+          {
+            "id": 33,
+            "time": 312.1,
+            "kind": "board-read",
+            "point": "observation"
+          },
+          {
+            "id": 34,
+            "time": 312.133,
+            "kind": "route-requested",
+            "source": "observation",
+            "destination": "ground-access"
+          },
+          {
+            "id": 35,
+            "time": 315.183,
+            "kind": "route-ready",
+            "destination": "ground-access",
+            "edges": [
+              "E0225",
+              "E0211",
+              "E0223",
+              "E0181",
+              "E0198",
+              "E0197",
+              "E0179",
+              "E0177",
+              "E0093",
+              "E0091",
+              "E0089",
+              "E0087",
+              "E0085",
+              "E0083",
+              "E0081",
+              "E0154",
+              "E0161",
+              "E0159",
+              "E0157",
+              "E0193"
+            ],
+            "validationSamples": 5574,
+            "blockedEdges": [],
+            "validationAttempts": 1
+          },
+          {
+            "id": 36,
+            "time": 469.767,
+            "kind": "route-arrived",
+            "destination": "ground-access"
+          },
+          {
+            "id": 37,
+            "time": 470.317,
+            "kind": "route-ended",
+            "reason": "RESPAWN",
+            "destination": "ground-access"
+          }
+        ],
+        "error": null,
+        "points": [
+          {
+            "id": "market-info",
+            "title": "MARKET ASSEMBLY",
+            "position": [
+              64,
+              24,
+              356
+            ],
+            "board": [
+              65.25,
+              24.85,
+              354.3
+            ],
+            "graphNode": "poi-market",
+            "function": "market",
+            "collection": "SM_V02_MARKET"
+          },
+          {
+            "id": "maintenance-access",
+            "title": "MAINTENANCE ACCESS",
+            "position": [
+              86,
+              52,
+              314.8
+            ],
+            "board": [
+              87.4,
+              52.85,
+              313.7
+            ],
+            "graphNode": "poi-maintenance",
+            "function": "maintenance",
+            "collection": "SM_V02_SERVICE_YARDS"
+          },
+          {
+            "id": "observation",
+            "title": "OBSERVATION DECK",
+            "position": [
+              72,
+              128,
+              420
+            ],
+            "board": [
+              73.5,
+              128.85,
+              418
+            ],
+            "graphNode": "observation-deck",
+            "function": "observation",
+            "collection": "SM_V02_LANDMARKS"
+          },
+          {
+            "id": "station-info",
+            "title": "TRANSIT INFORMATION",
+            "position": [
+              73,
+              100,
+              382
+            ],
+            "board": [
+              74.65,
+              100.85,
+              382
+            ],
+            "graphNode": "poi-station",
+            "function": "station",
+            "collection": "SM_V02_TRANSIT_STRUCTURES"
+          }
+        ],
+        "directory": {
+          "id": "directory",
+          "title": "DISTRICT DIRECTORY",
+          "position": [
+            55,
+            0,
+            210
+          ],
+          "board": [
+            56.9,
+            0.85,
+            208
+          ],
+          "graphNode": "ground-access",
+          "function": "directory",
+          "collection": "SM_V02_GALLERIES"
+        },
+        "nearBoard": null,
+        "readingDisabledByEncounter": false,
+        "scope": "Four functional information/discovery locations and voluntary public route guidance; not final landmark architecture or complete V02 acceptance"
+      },
+      "fullTrace": "V02_Discovery_Tour.trace.json.gz",
+      "traceFrames": 28219
+    },
+    "lifecycle": [
+      {
+        "name": "matching XZ below the market does not discover or read its elevated board",
+        "pass": true
+      },
+      {
+        "name": "actual kiosk geometry prevents reading through its back; normal walking reaches its front",
+        "pass": true
+      },
+      {
+        "name": "standard controller Y opens information without changing combat state",
+        "pass": true
+      },
+      {
+        "name": "labelled native navigation refresh cancels an in-progress route check before publishing mixed-world guidance",
+        "pass": true
+      },
+      {
+        "name": "actual controller-look frames the readable front of the Blender kiosk and runtime label",
+        "pass": true
+      },
+      {
+        "name": "board Pause freezes clock and state; normal resume restores the reading",
+        "pass": true
+      },
+      {
+        "name": "CDP touch reads and chooses a public route; portrait/landscape Close and Pause remain reachable and combat controls return",
+        "pass": true
+      },
+      {
+        "name": "actual hero switching retains the guide without advancing it or replacing Sightline objectives",
+        "pass": true
+      },
+      {
+        "name": "labelled existing navigation-refresh API invalidates stale guidance; actual Clear route removes it",
+        "pass": true
+      }
+    ],
+    "authoring": "V02_Discovery_Authoring.json",
+    "scope": "Four useful information/discovery locations and voluntary supported public guidance; not final architectural landmarks or physical-device acceptance."
+  },
   "inputEdgeAdmission": {
     "status": "PARTIAL edge admission overlay; not full district acceptance",
-    "admitted": 54,
-    "total": 262,
+    "admitted": 104,
+    "total": 278,
     "scope": "Only input-observed directed ground edges. Stair polylines are circulation corridors, not planted-foot meshes. Abilities, NPCs, camera, train and failure recovery retain separate gates. Design graph is immutable to this tool.",
     "artifact": "V02_Input_Edge_Admission.json"
   }

@@ -91,6 +91,19 @@
       "evidenceNote": "First browser capture did not show the runner. Existing scenic templates carry distance-culling visibility; the clone now explicitly owns its visibility. No reliable before image is retained here.",
       "fix": "Explicit clone visibility, actual-camera-relative directional feedback, and normal controller-look capture of the stopped target.",
       "verification": "Current pursuit runnerVisual fields inspect actual model visibility, sole plane and camera projection; actual browser captures are reviewed separately."
+    },
+    {
+      "name": "public observation guide cuts across the required upper stairwell opening",
+      "evidence": "evidence/fixed-defects/discovery-opening-route-before.json",
+      "observedAirFrames": 7,
+      "fix": "Author the observation approach through the west spine and a supported right-angle turn; preserve the stair opening. The U128 public junction also follows its actual portal before turning. Elevated flat guide checks validate the footprint as well as centre support.",
+      "verification": "Current hash-bound V02_Discovery_Tour.json requires a complete four-location tour with every frame grounded."
+    },
+    {
+      "name": "pending route validation continues after native navigation revision changes",
+      "evidence": "evidence/fixed-defects/discovery-pending-revision-before.json",
+      "fix": "Capture the native navigation version when the route job begins and cancel before publishing guidance if it changes. Active guides retain their existing invalidation behavior.",
+      "verification": "V02_Discovery_Lifecycle.json labelled native refresh changes version 2 to 3 during a pending route; the pending job rejects it. This is an invalidation probe, not a destruction playthrough."
     }
   ]
 }

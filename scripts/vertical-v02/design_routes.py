@@ -127,7 +127,7 @@ for side,x in [('W',55),('E',96)]:
   structure(f'upper-gallery-{side}-{z0}',[x,127.7,((z0+3.5 if z0==(276 if side=='W'else 400) else z0)+(z1-3.5 if z1==430 else z1))/2],[6,.6,(z1-3.5 if z1==430 else z1)-(z0+3.5 if z0==(276 if side=='W'else 400) else z0)],'SM_V02_ROOFTOP_ROUTES','upper circulation',walkable=True);edge(f'{side}128_{z0}',f'{side}128_{z1}')
 for side,x in [('W',W),('E',E)]:
  for z in ([276,430]if side=='W'else[400,430]):structure(f'upper-endpad-{side}-{z}',[x,127.7,z],[6,.6,7],'SM_V02_ROOFTOP_ROUTES','supported upper turn',walkable=True)
-structure('upper-crossing',[(W+E)/2,127.7,430],[35,.6,7],'SM_V02_SKYBRIDGES','observation return crossing',walkable=True);edge('W128_430','E128_430');edge('V2-VT-B-128','E128_410');edge(U[128],'W128_400');edge('W128_410','observation-deck')
+structure('upper-crossing',[(W+E)/2,127.7,430],[35,.6,7],'SM_V02_SKYBRIDGES','observation return crossing',walkable=True);edge('W128_430','E128_430');edge('V2-VT-B-128','E128_410');edge(U[128],'W128_400',path=[[61,128,403.5],[55,128,403.5],[55,128,400]]);edge('W128_410','observation-deck',path=[[55,128,410],[55,128,420],[72,128,420]])
 # Momentum approach uses visible side faces, not inaccessible top-face targets.
 # The incoming velocity projected onto each uphill rail must cover gravity/friction.
 structure('momentum-launch-court',[54,83.7,290],[24,.6,24],'SM_V02_ROOFTOP_ROUTES','acceleration and precision cartridge staging before uphill shortcut',walkable=True)
@@ -187,6 +187,26 @@ edge('observation-deck','pursuit-interception','run');edge('pursuit-interception
 edge('pursuit-runner-start',U[100],'run',path=pursuit_path[:4],reverse=False,traversalAgent='pursuit-runner',requiredGameplayConditions=['transit-pursuit.active'])
 edge(U[100],U[128],'stairs',path=pursuit_stair,reverse=False,traversalAgent='pursuit-runner',requiredGameplayConditions=['transit-pursuit.active'])
 edge(U[128],'pursuit-exit','run',path=[by[U[128]]['position']]+pursuit_path[-4:],reverse=False,traversalAgent='pursuit-runner',requiredGameplayConditions=['transit-pursuit.active'])
+# Small functional kiosks stay outside the accepted landing/through areas.
+# These are graybox fixtures, not the later detailed landmark architecture.
+pois=[
+ {'id':'market-info','title':'MARKET ASSEMBLY','position':[64,24,356],'board':[65.25,24.85,354.3],'graphNode':'poi-market','function':'market','collection':'SM_V02_MARKET'},
+ {'id':'maintenance-access','title':'MAINTENANCE ACCESS','position':[86,52,314.8],'board':[87.4,52.85,313.7],'graphNode':'poi-maintenance','function':'maintenance','collection':'SM_V02_SERVICE_YARDS'},
+ {'id':'observation','title':'OBSERVATION DECK','position':[72,128,420],'board':[73.5,128.85,418],'graphNode':'observation-deck','function':'observation','collection':'SM_V02_LANDMARKS'},
+ {'id':'station-info','title':'TRANSIT INFORMATION','position':[73,100,382],'board':[74.65,100.85,382],'graphNode':'poi-station','function':'station','collection':'SM_V02_TRANSIT_STRUCTURES'}]
+directory={'id':'directory','title':'DISTRICT DIRECTORY','position':[55,0,210],'board':[56.9,.85,208],'graphNode':'ground-access','function':'directory','collection':'SM_V02_GALLERIES'}
+for p in [*pois,directory]:
+ if p['graphNode']not in by:node(p['graphNode'],*p['position'],'discovery-location')
+ x,y,z=p['board'];structure('kiosk-'+p['id'],[x,y,z],[.22,1.7,1.1],p['collection'],'physical public information fixture',material='steel')
+ structure('kiosk-trim-'+p['id'],[x-.12,y+.72,z],[.025,.06,.94],p['collection'],'restrained cyan information light',material='cyan',solid=False)
+edge('W24_350','poi-market','walk',path=[[55,24,350],[55,24,356],[64,24,356]])
+edge('poi-market','market-access','walk',path=[[64,24,356],[62,24,356],[62,24,375]])
+edge('W52_300','poi-maintenance','walk',path=[[55,52,300],[55,52,314.8],[86,52,314.8]])
+edge('E52_326','poi-maintenance','walk',path=[[96,52,326],[96,52,314.8],[86,52,314.8]])
+edge('poi-maintenance',Y[52],'walk',path=[[86,52,314.8],[71,52,314.8],[71,52,316.5]])
+edge('station-concourse','poi-station','walk',path=[[66.5,100,376],[73,100,376.8],[73,100,382]])
+edge('pursuit-access','poi-station','walk',path=[[73,100,364],[73,100,382]])
+edge('poi-station',U[100],'walk',path=[[73,100,382],[73,100,391],[64,100,399],[61,100,403.5]])
 # Named loops are full cycles, expanded over longitudinal nodes.
 def spine(side,y,a,b):return [f'{side}{y}_{z}'for z in zs if min(a,b)<=z<=max(a,b)][::1 if b>=a else -1]
 loops=[{'id':'lower','elevation':24,'nodes':spine('W',24,210,350)+spine('E',24,350,210)+['W24_210'],'destination':'suspended-market','layerConnections':['V2-VT-A','V2-VT-B'],'status':'PROPOSED; not input validated'}, {'id':'mid','elevation':52,'nodes':spine('W',52,276,350)+spine('E',52,350,276)+['W52_276'],'destination':'service-yard','layerConnections':['V2-VT-A','V2-VT-B'],'status':'PROPOSED; not input validated'}, {'id':'high','elevation':84,'nodes':spine('W',84,350,430)+spine('E',84,430,350)+['W84_350'],'destination':'station-concourse','layerConnections':['V2-VT-A','V2-VT-B','V2-VT-C','V2-VT-D','wall-shelves'],'status':'PROPOSED; not input validated'}]
@@ -215,6 +235,7 @@ while stack:
  seen.add(n);stack+=adj[n]
 assert 'station-concourse'in seen and 'observation-deck'in seen
 report={'schema':'sm-v02-movement-graph-1','axes':{'up':'Y','units':'metres','deckTopNotActorOrigin':True},'authority':w['provenance'],'metricsSHA256':hashlib.sha256((D/'V02_Movement_Measurements_Clean.json').read_bytes()).hexdigest(),'status':'DESIGN REVISION; original-volume precheck is not structural or gameplay acceptance','nodes':nodes,'edges':edges,'loops':loops,'stationApproaches':routes,'architecturalChanges':[{'id':'east-spine','fromX':105,'toX':96,'reason':'avoid building-160 spine/columns with facade and camera margin; no original building moved'},{'id':'V2-BR-M1','fromZ':280,'toZ':276,'reason':'original-box precheck retained; crossing now terminates at X96 instead of X105'},{'id':'station','fromX':80,'toX':66.5,'reason':'platform separated from original guideway; train integration still requires a full sweep'},{'id':'two-uphill-rails','reason':'single 16m rise exceeds kinetic energy of ordinary 16.36m/s Flow; split into two 8m rises with supported acceleration landing'}],'publicConnectivity':{'nodesReachable':len(seen),'stationReachable':True,'observationReachable':True,'claim':'topology only, zero resource; exact walking/stair contact not accepted'},'structures':structures,'publicStairs':stairs,'preservation':{'originalBuildings':310,'replaceOnly':'V1 vertical environment module in a separate V02 candidate','keepV1AndGameEntryUnchanged':True},'remainingGates':['Complete rail transfer/Pop and fall-brake measurements','Author stair contact fixture and prove first flight through normal inputs','Blender blockout and GLB coordinate checks','Every route, loop, recovery and camera through input traces','Triangle clearance and full train/traffic sweeps']}
+report['pointsOfInterest']=pois;report['directory']=directory
 report['encounters']=[{'id':'service-combat','title':'SERVICE YARD · COMBAT','trigger':[62,52,337],
  'positions':[[65,52,330],[73,52,327],[85.5,55.2,329]],'reward':350,
  'bounds':{'min':[51,51.9,308],'max':[99,61,343]},'actorType':'existing damage-taking sparring prototype',

@@ -7,6 +7,8 @@ import os,json,hashlib,subprocess,time,sys
 from pathlib import Path
 R=Path(__file__).resolve().parents[2];D=R/'development/vertical-city-v02'
 jobs=[
+ ('discovery-tour',['node','scripts/vertical-v02/test_discovery.cjs'],{}),
+ ('discovery-lifecycle',['node','scripts/vertical-v02/test_discovery_lifecycle.cjs'],{}),
  ('actor-stairs',['node','scripts/vertical-v02/test_actor_stairs.cjs'],{}),
  ('pursuit-intercept',['node','scripts/vertical-v02/test_pursuit.cjs'],{}),
  ('pursuit-chase',['node','scripts/vertical-v02/test_pursuit.cjs'],{'PURSUIT_CASE':'chase'}),
@@ -28,11 +30,13 @@ jobs=[
  ('short-catch',['node','scripts/vertical-v02/test_mastery_route.cjs'],{'SHORT_CATCH':'1'}),
  ('impact',['node','scripts/vertical-v02/test_impact_ownership.cjs'],{}),
  ('whip',['node','scripts/vertical-v02/test_preserved_whip_inputs.cjs'],{}),
+ ('physical-transfer',['node','scripts/vertical-v02/test_physical_transfer.cjs'],{}),
+ ('physical-transfer-no-pop',['node','scripts/vertical-v02/test_physical_transfer.cjs'],{'NO_POP':'1'}),
 ]
-files={'entry':'SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html','manifest':'assets/city/vertical-v02/graybox/manifest.json','encounters':'scripts/game_vertical_encounters_v02.js','market':'scripts/game_vertical_market_v02.js','pursuit':'scripts/game_vertical_pursuit_v02.js'}
+files={'entry':'SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html','manifest':'assets/city/vertical-v02/graybox/manifest.json','encounters':'scripts/game_vertical_encounters_v02.js','market':'scripts/game_vertical_market_v02.js','pursuit':'scripts/game_vertical_pursuit_v02.js','discovery':'scripts/game_vertical_discovery_v02.js'}
 hashes={k:hashlib.sha256((R/p).read_bytes()).hexdigest()for k,p in files.items()}
 report_file=D/'V02_Regression_Run.json'
-report={'status':'RUNNING','hashes':hashes,'jobs':[],'scope':'Current graybox circulation, actor stair clearance, pursuit, market rescue, local service combat and retained inputs; not complete V02 acceptance.'}
+report={'status':'RUNNING','hashes':hashes,'jobs':[],'scope':'Current graybox circulation, supported discovery/guidance, actor stair clearance, pursuit, market rescue, local service combat and retained inputs; not complete V02 acceptance.'}
 start=0
 if len(sys.argv)>2 and sys.argv[1]=='--from':
  start=next(i for i,(name,_,_)in enumerate(jobs)if name==sys.argv[2])

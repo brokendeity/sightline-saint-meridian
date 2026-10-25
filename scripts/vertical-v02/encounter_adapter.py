@@ -8,6 +8,7 @@ def compose_encounters(s):
   nonlocal s
   assert s.count(a)==1, 'Encounter patch mismatch: '+a[:100]
   s=s.replace(a,b,1)
+ edit('clock:()=>aw.clock};', 'clock:()=>aw.clock,navigationVersion:()=>aw.navigationVersion};')
  edit('function actorSweep(from,to,radius){for(const c of allColliders(from,to)){const box=c.box;',
       'function actorSweep(from,to,radius){for(const c of allColliders(from,to)){if(window.verticalDistrict?.actorRiserPass(from,to,c,radius))continue;const box=c.box;')
  edit('function spawnPractice(positions=null){','function spawnPractice(positions=null,options={}){')
@@ -30,15 +31,15 @@ def compose_encounters(s):
  edit("if(!c&&window.backspoolEncounterState?.().active)panel.hidden=true;",
       "if(!c&&window.backspoolEncounterState?.().active||window.verticalEncounters?.ownsPresentation()||window.verticalMarket?.ownsPresentation()||window.verticalPursuit?.ownsPresentation())panel.hidden=true;")
  edit("function resetPlayer(){window.threadrailGame?.lifecycle('RESPAWN');",
-      "function resetPlayer(){window.verticalPursuit?.reset('RESPAWN');window.verticalMarket?.reset('RESPAWN');window.verticalEncounters?.reset('RESPAWN');window.threadrailGame?.lifecycle('RESPAWN');")
+      "function resetPlayer(){window.verticalDiscovery?.reset('RESPAWN');window.verticalPursuit?.reset('RESPAWN');window.verticalMarket?.reset('RESPAWN');window.verticalEncounters?.reset('RESPAWN');window.threadrailGame?.lifecycle('RESPAWN');")
  edit('backspoolEncounters.tick(playerDt);actionWorld.tick(playerDt);',
-      'backspoolEncounters.tick(playerDt);actionWorld.tick(playerDt);window.verticalEncounters?.tick(playerDt);window.verticalMarket?.tick(worldDt);window.verticalPursuit?.tick(worldDt);')
+      'backspoolEncounters.tick(playerDt);actionWorld.tick(playerDt);window.verticalEncounters?.tick(playerDt);window.verticalMarket?.tick(worldDt);window.verticalPursuit?.tick(worldDt);window.verticalDiscovery?.tick(worldDt);')
  edit('backspoolPowers.ui();backspoolEncounters.present();threadrailGame.present();',
-      'backspoolPowers.ui();backspoolEncounters.present();threadrailGame.present();window.verticalEncounters?.present();window.verticalMarket?.present();window.verticalPursuit?.present();')
+      'backspoolPowers.ui();backspoolEncounters.present();threadrailGame.present();window.verticalEncounters?.present();window.verticalMarket?.present();window.verticalPursuit?.present();window.verticalDiscovery?.present();')
  edit('window.actionWorld?.present();adaptiveQuality.update(dt);',
-      'window.actionWorld?.present();window.verticalEncounters?.present();window.verticalMarket?.present();window.verticalPursuit?.present();adaptiveQuality.update(dt);')
+      'window.actionWorld?.present();window.verticalEncounters?.present();window.verticalMarket?.present();window.verticalPursuit?.present();window.verticalDiscovery?.present();adaptiveQuality.update(dt);')
  # Use the already established equipment-interact action on keyboard/controller.
  edit("function interact(){say('BACKSPOOL · EQUIPMENT READY');}",
-      "function interact(){if(window.verticalPursuit?.interact()||window.verticalMarket?.interact()||window.verticalEncounters?.interact())return;say('BACKSPOOL · EQUIPMENT READY');}")
+      "function interact(){if(window.verticalPursuit?.interact()||window.verticalMarket?.interact()||window.verticalEncounters?.interact()||window.verticalDiscovery?.interact())return;say('BACKSPOOL · EQUIPMENT READY');}")
  edit("function startContract(resume=false){if(!gameActive", "function startContract(resume=false){if(window.verticalPursuit?.isActive()){notice('Finish or end the transit pursuit first.');return false;}if(window.verticalMarket?.isActive()){notice('Finish or end the market rescue first.');return false;}if(!gameActive")
  return s

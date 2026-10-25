@@ -1,0 +1,71 @@
+{
+  "status": "FAIL sampled camera-centre penetration",
+  "scope": "Screen measured camera centres against actual exported solid V02 boxes.\nThis is a defect finder, not a certificate for framing, swept camera radius,\noriginal building triangles, visibility, or physical-device playtesting.",
+  "entrySHA256": "cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1",
+  "manifestSHA256": "d4fb49380ae1a0aed2aecaabc836b27836efea6455b1200716096cbd5370128c",
+  "interiorToleranceMetres": 0.02,
+  "traces": [
+    {
+      "summary": "V02_Momentum_Full_Zero_Flow.json",
+      "trace": "V02_Momentum_Full_Zero_Flow.trace.json.gz",
+      "traceSHA256": "5171d047f957efeb31f7f9a2f0d9aeb11a262f9c0c2145a331a0ccd8adc889a2",
+      "cameraSamples": 4415,
+      "interiorSamples": 0,
+      "maximumInteriorDepth": 0,
+      "hits": []
+    },
+    {
+      "summary": "V02_Mastery_Full_Zero.json",
+      "trace": "V02_Mastery_Full_Zero.trace.json.gz",
+      "traceSHA256": "b0f10e003663da21392af79ab0308c61b200d2940b9bad3d55e831a33bfd8494",
+      "cameraSamples": 6228,
+      "interiorSamples": 0,
+      "maximumInteriorDepth": 0,
+      "hits": []
+    },
+    {
+      "summary": "V02_Public_Roundtrip_Validation.json",
+      "trace": "V02_Public_Roundtrip_Validation.trace.json.gz",
+      "traceSHA256": "28e9377a1771b30105df8b767e2879c875722e57ec299a31b7489eb4132bc3a0",
+      "cameraSamples": 21227,
+      "interiorSamples": 0,
+      "maximumInteriorDepth": 0,
+      "hits": []
+    },
+    {
+      "summary": "V02_Discovery_Tour.json",
+      "trace": "V02_Discovery_Tour.trace.json.gz",
+      "traceSHA256": "72dc0e1e4d7b1e8325635f9bf4135a828d990daa59a56c641e021d100fcdae48",
+      "cameraSamples": 28219,
+      "interiorSamples": 0,
+      "maximumInteriorDepth": 0,
+      "hits": []
+    },
+    {
+      "summary": "V02_Physical_Rail_Transfer.json",
+      "trace": "V02_Physical_Rail_Transfer.trace.json.gz",
+      "traceSHA256": "0db3b3bac38f335c76f47e3b345993b2614f97654457037539b7da34f31c7fe4",
+      "cameraSamples": 1138,
+      "interiorSamples": 1,
+      "maximumInteriorDepth": 0.06170026883620494,
+      "hits": [
+        {
+          "frame": 15,
+          "camera": [
+            62.89860052099057,
+            127.9382997311638,
+            414.76100024275024
+          ],
+          "player": [
+            64,
+            128.42,
+            422
+          ],
+          "component": "observation-deck-opening-2",
+          "interiorDepthMetres": 0.06170026883620494
+        }
+      ]
+    }
+  ],
+  "classification": "The only detected interior sample is 0.317s after a labelled Y128 teleport fixture. The camera/focus were still travelling from the original spawn. This does not establish normal-route penetration; retain it and initialize the local camera in the controlled setup before repeating. No runtime camera fix or full camera acceptance is claimed."
+}

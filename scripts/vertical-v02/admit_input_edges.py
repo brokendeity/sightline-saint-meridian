@@ -22,7 +22,7 @@ def line_distance(p,a,b):
  t=max(0,min(1,sum((p[k]-a[k])*d[k]for k in range(3))/den))if den else 0
  return dist(p,[a[k]+d[k]*t for k in range(3)])
 traces=[];skipped=[]
-files=['V02_Loop_Validation.json','V02_Public_Route_Validation.json','V02_Public_Route_Run_Validation.json','V02_Public_Roundtrip_Validation.json','V02_Service_Encounter.json','V02_Market_Rescue_Public.json','V02_Market_Rescue_South.json','V02_Pursuit_intercept.json','V02_Pursuit_chase.json','V02_Pursuit_intercept_ground.json']
+files=['V02_Loop_Validation.json','V02_Public_Route_Validation.json','V02_Public_Route_Run_Validation.json','V02_Public_Roundtrip_Validation.json','V02_Service_Encounter.json','V02_Market_Rescue_Public.json','V02_Market_Rescue_South.json','V02_Pursuit_intercept.json','V02_Pursuit_chase.json','V02_Pursuit_intercept_ground.json','V02_Discovery_Tour.json']
 for name in files:
  p=D/name
  if not p.exists():skipped.append({'file':name,'reason':'missing'});continue
