@@ -1,0 +1,74 @@
+{
+  "status": "PASS new market directed access/stair edges and observation shelter walking",
+  "scope": "New market graph access/ascent/return, plus a separately labelled observation-pavilion fixture. Ordinary walk input only; no jumps, health writes, power releases or route-node teleporting.",
+  "results": [
+    {
+      "id": "detail-market-access",
+      "pass": true,
+      "seconds": 10.266666666666667,
+      "from": "poi-market",
+      "to": "detail-market-stair-entry",
+      "ability": "run"
+    },
+    {
+      "id": "detail-market-ascent",
+      "pass": true,
+      "seconds": 15.333333333333334,
+      "from": "detail-market-stair-entry",
+      "to": "detail-market-upper-terrace",
+      "ability": "stairs"
+    },
+    {
+      "id": "detail-market-ascent-return",
+      "pass": true,
+      "seconds": 15.25,
+      "from": "detail-market-upper-terrace",
+      "to": "detail-market-stair-entry",
+      "ability": "stairs"
+    },
+    {
+      "id": "detail-market-access-return",
+      "pass": true,
+      "seconds": 10.383333333333333,
+      "from": "detail-market-stair-entry",
+      "to": "poi-market",
+      "ability": "run"
+    },
+    {
+      "id": "observation-pavilion",
+      "pass": true,
+      "seconds": 10.933333333333334,
+      "scope": "Ordinary supported west-entry walk into shelter, along windscreen and out again"
+    }
+  ],
+  "setups": [
+    {
+      "scenario": "market",
+      "position": [
+        62,
+        24.42,
+        375
+      ],
+      "scope": "Initial helper fixture only; subsequently walk to the market information node"
+    },
+    {
+      "scenario": "observation",
+      "position": [
+        76,
+        128.42,
+        420
+      ],
+      "scope": "Separate initial public-deck fixture; not a traversal between graph nodes"
+    }
+  ],
+  "errors": [],
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_DETAILED.html",
+  "manifest": "assets/city/vertical-v02/detailed/manifest.json",
+  "stage": "detailed",
+  "entrySHA256": "ec12fa9b3ccadb8acd9c1dcf5136391ef2b675f9ca95702453bd740797ee82a7",
+  "manifestSHA256": "6a43c68fff7d3b75f6dc52df07f9d66e3a8d457f2ea5e6c0da0675ef0d6883fc",
+  "encounterSHA256": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+  "marketSHA256": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+  "fullTrace": "V02_Detailed_Public_Extensions.trace.json.gz",
+  "traceFrames": 4534
+}

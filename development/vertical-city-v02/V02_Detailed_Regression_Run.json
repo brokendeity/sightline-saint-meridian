@@ -1,0 +1,76 @@
+{
+  "status": "PASS six retained detailed local gameplay scenarios",
+  "hashes": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_DETAILED.html": "ec12fa9b3ccadb8acd9c1dcf5136391ef2b675f9ca95702453bd740797ee82a7",
+    "assets/city/vertical-v02/detailed/manifest.json": "6a43c68fff7d3b75f6dc52df07f9d66e3a8d457f2ea5e6c0da0675ef0d6883fc",
+    "scripts/game_vertical_discovery_v02.js": "7cfc8878103a13115fb9778c4d8ee15dadc0147a0ace29433a14a2ba651c0679",
+    "scripts/game_vertical_market_v02.js": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+    "scripts/game_vertical_pursuit_v02.js": "d26199eb208a5d3fc21ad26f70c97471bd14b8b3b8370dfd2611c7b0c0344d58",
+    "scripts/game_vertical_encounters_v02.js": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85"
+  },
+  "scope": "Repeat retained cases on the actual detailed entry without overwriting graybox evidence.\n\nThis bounded local suite is not the complete31-case/release acceptance suite.\nEvery child opens the detailed HTML and records its actual manifest hash.",
+  "jobs": [
+    {
+      "name": "market-lifecycle",
+      "file": "test_market_lifecycle.cjs",
+      "environment": {
+        "V02_STAGE": "detailed"
+      },
+      "returncode": 0,
+      "wallSeconds": 270.02624083310366,
+      "log": "evidence/detailed-regressions/market-lifecycle.log"
+    },
+    {
+      "name": "market-public",
+      "file": "test_market_rescue.cjs",
+      "environment": {
+        "V02_STAGE": "detailed"
+      },
+      "returncode": 0,
+      "wallSeconds": 314.1849598749541,
+      "log": "evidence/detailed-regressions/market-public.log"
+    },
+    {
+      "name": "market-south",
+      "file": "test_market_rescue.cjs",
+      "environment": {
+        "V02_STAGE": "detailed",
+        "LOCAL_ONLY": "1",
+        "SOUTH_ROUTE": "1"
+      },
+      "returncode": 0,
+      "wallSeconds": 234.0119012920186,
+      "log": "evidence/detailed-regressions/market-south.log"
+    },
+    {
+      "name": "service-echo",
+      "file": "test_service_replay.cjs",
+      "environment": {
+        "V02_STAGE": "detailed"
+      },
+      "returncode": 0,
+      "wallSeconds": 65.0306361252442,
+      "log": "evidence/detailed-regressions/service-echo.log"
+    },
+    {
+      "name": "discovery-lifecycle",
+      "file": "test_discovery_lifecycle.cjs",
+      "environment": {
+        "V02_STAGE": "detailed"
+      },
+      "returncode": 0,
+      "wallSeconds": 75.43798649962991,
+      "log": "evidence/detailed-regressions/discovery-lifecycle.log"
+    },
+    {
+      "name": "discovery-tour",
+      "file": "test_discovery.cjs",
+      "environment": {
+        "V02_STAGE": "detailed"
+      },
+      "returncode": 0,
+      "wallSeconds": 1609.3004142087884,
+      "log": "evidence/detailed-regressions/discovery-tour.log"
+    }
+  ]
+}

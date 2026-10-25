@@ -1,5 +1,5 @@
 {
-  "status": "Phase5 detailed architecture candidate under native validation",
+  "status": "Phase5 first detailed slice locally validated; architectural refinement continues",
   "acceptedGraybox": {
     "commit": "c33d9f5e30e88b4c7bbac58c9a27a7c4e8f7d0a8",
     "gate": "V02_Phase4_Gate.json",
@@ -17,9 +17,9 @@
   },
   "localRegression": {
     "file": "V02_Detailed_Regression_Run.json",
-    "status": "RUNNING",
-    "activeJob": "market-public",
-    "completed": 1,
+    "status": "PASS six retained detailed local gameplay scenarios",
+    "activeJob": null,
+    "completed": 6,
     "expected": 6
   },
   "fullGoalComplete": false,
@@ -30,5 +30,9 @@
     "Matched Blender/browser reference and lighting acceptance",
     "Matched >=60s performance and full original-game release checks"
   ],
-  "preservation": "Original WHIP, V1, accepted graybox, main and older snapshot refs remain intact. Only V02 development is changed."
+  "preservation": "Original WHIP, V1, accepted graybox, main and older snapshot refs remain intact. Only V02 development is changed.",
+  "newPublicExtensions": {
+    "status": "PASS new market directed access/stair edges and observation shelter walking",
+    "evidence": "evidence/detailed-regressions/V02_Detailed_Public_Extensions.json"
+  }
 }
