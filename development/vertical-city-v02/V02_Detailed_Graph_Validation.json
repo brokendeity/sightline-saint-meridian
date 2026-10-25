@@ -1,0 +1,64 @@
+{
+  "status": "PARTIAL detailed graph: schema/alignment passes; advanced-edge times remain unmeasured",
+  "scope": "Check detailed graph/schema/export alignment, not native traversal fidelity.",
+  "entrySHA256": "ec12fa9b3ccadb8acd9c1dcf5136391ef2b675f9ca95702453bd740797ee82a7",
+  "manifestSHA256": "6a43c68fff7d3b75f6dc52df07f9d66e3a8d457f2ea5e6c0da0675ef0d6883fc",
+  "graphSHA256": "003093642fa3772a59689d0d9d5bdcc02c5f7e71eca9da3c467e422745f489a2",
+  "nodes": 131,
+  "edges": 283,
+  "publicRuntimeEdges": 256,
+  "matrixRows": 283,
+  "unmeasuredTimings": [
+    {
+      "id": "E0230",
+      "ability": "threadrail",
+      "reason": "pending physical route test; no fabricated timing"
+    },
+    {
+      "id": "E0231",
+      "ability": "rail-pop",
+      "reason": "pending physical route test; no fabricated timing"
+    },
+    {
+      "id": "E0233",
+      "ability": "threadrail",
+      "reason": "pending physical route test; no fabricated timing"
+    },
+    {
+      "id": "E0234",
+      "ability": "rail-pop",
+      "reason": "pending physical route test; no fabricated timing"
+    },
+    {
+      "id": "E0246",
+      "ability": "threadrail",
+      "reason": "pending physical route test; no fabricated timing"
+    },
+    {
+      "id": "E0247",
+      "ability": "rail-pop",
+      "reason": "pending physical route test; no fabricated timing"
+    },
+    {
+      "id": "E0248",
+      "ability": "controlled-drop",
+      "reason": "pending physical route test; no fabricated timing"
+    },
+    {
+      "id": "E0249",
+      "ability": "controlled-drop",
+      "reason": "pending physical route test; no fabricated timing"
+    },
+    {
+      "id": "E0250",
+      "ability": "afterstep-transfer",
+      "reason": "pending physical route test; no fabricated timing"
+    }
+  ],
+  "timingScope": "Preserve unknown original design values explicitly. Do not fabricate timings or count schema coverage as complete design acceptance.",
+  "endpointRepairs": {
+    "railAttachmentOffsets": "Explicit source attachment positions and two-centimetre floor access",
+    "recoveryDrop": "Separate108m landing atZ377 and ordinary grounded exit toZ375"
+  },
+  "nativeTraversalAcceptance": "Separate current input evidence is required; this check does not certify gameplay"
+}

@@ -4,11 +4,15 @@ Snapshot branch: `snapshots/2026-10-25-current-game`. Tag: `snapshot-2026-10-25-
 
 ---
 
-# V02 development candidate — connected Blender graybox
+# V02 development candidate — detailed Blender architecture
+
+Current work build: [SIGHTLINE_SAINT_MERIDIAN_V02_DETAILED.html](SIGHTLINE_SAINT_MERIDIAN_V02_DETAILED.html), served at8766 with `?capture=backspool`. It adds a two-level market, framed storefronts/stalls, supported transit/observation shelters, glass parapets and packed PBR surfaces. Its new public stair passes walking and sampled camera tests; current retained scenario results are recorded separately. This is an unfinished phase5 candidate. [Reproduction, evidence and remaining work](development/vertical-city-v02/DETAILED_ARCHITECTURE.md).
+
+## Accepted phase4 rollback — connected Blender graybox
 
 Experimental entry: [SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html](SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html). Serve this repository at8766, open it with `?capture=backspool`, and select **Enter V02 district**. The original latest WHIP game and all saved snapshots below remain unchanged.
 
-**Phase4 essential gameplay gate passed.** The current graybox has31 passing sequential regression cases plus a complete ground-to-pursuit flow, actual Echo contact, two supported gallery escapes and reviewed camera/recovery evidence. [Hash-bound phase4 gate](development/vertical-city-v02/V02_Phase4_Gate.json). Detailed Blender architecture is next in a separate candidate. Final architecture, transit/world life, reference visuals, sustained performance and complete release checks remain unfinished.
+**Phase4 essential gameplay gate passed.** The current graybox has31 passing sequential regression cases plus a complete ground-to-pursuit flow, actual Echo contact, two supported gallery escapes and reviewed camera/recovery evidence. [Hash-bound phase4 gate](development/vertical-city-v02/V02_Phase4_Gate.json). Detailed architecture is now developed separately above. Final architecture, transit/world life, reference visuals, sustained performance and complete release checks remain unfinished.
 
 Three elevated loops, all three station approaches and the public ground→Y128→ground roundtrip pass normal-input tests. The momentum approach takes73.23s versus135.33s for ordinary public running; the wall/rail mastery approach takes103.78s. Zero/full initial bank variants are recorded. This remains a graybox milestone, **not the completed V02 city**. Service-yard combat and a market rescue now have playable prototypes. The rescue includes power isolation, a physically checked civilian escort, two routes and tested lifecycle controls. A transit pursuit prototype now uses the real upper stairs, with chase/interception/escape and lifecycle input cases. Four useful discovery/information locations and a street directory are implemented with supported public-route guidance; their current hash-bound tour and lifecycle reports are recorded separately. A fresh physical two-rail transfer and no-Pop endpoint recovery also pass local normal-input tests. Navigation/recovery breadth, guardrails, full camera review, final architecture, world life, transit sweeps and sustained visual/performance acceptance remain open. [Current evidence and remaining gates](development/vertical-city-v02/V02_Acceptance_Report.md) · [Blender master and reproduction workflow](development/vertical-city-v02/README.md).
 

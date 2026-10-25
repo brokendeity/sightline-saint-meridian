@@ -1,33 +1,34 @@
 {
-  "currentRuntimeHashes": {
-    "entry": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
-    "manifest": "3a524ca3b09823cf8fa9eec3c5116ff6a7ec11d1cb091bb7bcdf1ffec88703c1",
-    "encounters": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
-    "market": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
-    "pursuit": "d26199eb208a5d3fc21ad26f70c97471bd14b8b3b8370dfd2611c7b0c0344d58",
-    "discovery": "7cfc8878103a13115fb9778c4d8ee15dadc0147a0ace29433a14a2ba651c0679"
+  "status": "Phase5 detailed architecture candidate under native validation",
+  "acceptedGraybox": {
+    "commit": "c33d9f5e30e88b4c7bbac58c9a27a7c4e8f7d0a8",
+    "gate": "V02_Phase4_Gate.json",
+    "entrySHA256": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
+    "manifestSHA256": "3a524ca3b09823cf8fa9eec3c5116ff6a7ec11d1cb091bb7bcdf1ffec88703c1"
   },
-  "status": "PASS phase4 essential gameplay; detailed architecture next",
-  "lastAcceptedRuntimeCommit": "474ed47f4811d5b43e9c56cf2434172c60dd57a6",
-  "acceptedBuildId": "phase4-d425868e-3a524ca3",
-  "acceptanceGate": "V02_Phase4_Gate.json",
-  "regressionStatus": "PASS listed graybox regressions",
-  "completedJobs": 31,
-  "expectedRegressionJobs": 31,
-  "activeJob": null,
-  "activeSession": null,
-  "fullGoal": "Phase5of8next. Full25-sectionoriginalobjective remains incomplete.",
-  "additionalEvidence": [
-    "Fullgroundpublicapproach152.05s\u2192nativepursuitvictory",
-    "ActualversionedEcho31damageandtwosupportedgalleryescapes",
-    "Bothnorthportalwalkdirections",
-    "22CstairreferenceLOSrays/56mantlereferenceLOSrays0open",
-    "56orbits/44native60Hzdropframesandfivefast/airbornebodytracesclear"
+  "currentDetailed": {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_DETAILED.html",
+    "entrySHA256": "ec12fa9b3ccadb8acd9c1dcf5136391ef2b675f9ca95702453bd740797ee82a7",
+    "manifestSHA256": "6a43c68fff7d3b75f6dc52df07f9d66e3a8d457f2ea5e6c0da0675ef0d6883fc",
+    "notes": "DETAILED_ARCHITECTURE.md",
+    "newStair": "PASS ordinary walking and289 animated-body camera samples",
+    "source": "PASS saved Blender mesh bounds/material/UV and18 support contacts",
+    "glTF": "PASS27 modular files;0errors/0warnings"
+  },
+  "localRegression": {
+    "file": "V02_Detailed_Regression_Run.json",
+    "status": "RUNNING",
+    "activeJob": "market-public",
+    "completed": 1,
+    "expected": 6
+  },
+  "fullGoalComplete": false,
+  "remaining": [
+    "Finish detailed architecture and full detailed gameplay/camera acceptance",
+    "Resolve9 explicit unmeasured advanced-edge timings",
+    "Implement and test actual train/world-life changes; inherited train has3 convoy conflicts",
+    "Matched Blender/browser reference and lighting acceptance",
+    "Matched >=60s performance and full original-game release checks"
   ],
-  "knownOpen": [
-    "DetailedBlenderarchitecture,visualreferenceacceptanceandworldlife",
-    "Trainactualconvoy3inheritedpairenvelopeoverlaps;block-loopproposalisnotimplemented",
-    ">=60smatchedbaseline/candidateperformanceandfullretainedreleasechecks"
-  ],
-  "preservation": "OnlyV02featurebranchadvances. OriginalWHIP/V1andmain/snapshotrefsremainpreserved."
+  "preservation": "Original WHIP, V1, accepted graybox, main and older snapshot refs remain intact. Only V02 development is changed."
 }

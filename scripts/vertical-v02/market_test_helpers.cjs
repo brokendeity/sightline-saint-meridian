@@ -1,11 +1,16 @@
 const{chromium}=require('/opt/homebrew/lib/node_modules/playwright'),fs=require('fs'),path=require('path'),crypto=require('crypto'),assert=require('assert/strict');
-const R=path.resolve(__dirname,'../..'),D=path.join(R,'development/vertical-city-v02');
+const R=path.resolve(__dirname,'../..'),detailed=process.env.V02_STAGE==='detailed',
+ D=path.join(R,'development/vertical-city-v02',...(detailed?['evidence/detailed-regressions']:[])),
+ entry=detailed?'SIGHTLINE_SAINT_MERIDIAN_V02_DETAILED.html':'SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html',
+ manifest='assets/city/vertical-v02/'+(detailed?'detailed':'graybox')+'/manifest.json';
+if(detailed)fs.mkdirSync(path.join(D,'evidence'),{recursive:true});
 async function openMarket(report,{full=false,viewport={width:1280,height:800}}={}){
  const browser=await chromium.launch({headless:true,args:['--use-gl=angle','--use-angle=metal']});try{const p=await browser.newPage({viewport});
  report.trace=[];report.errors=[];
- for(const[key,file]of Object.entries({entrySHA256:'SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html',manifestSHA256:'assets/city/vertical-v02/graybox/manifest.json',encounterSHA256:'scripts/game_vertical_encounters_v02.js',marketSHA256:'scripts/game_vertical_market_v02.js'}))report[key]=crypto.createHash('sha256').update(fs.readFileSync(path.join(R,file))).digest('hex');
+ report.entry=entry;report.manifest=manifest;report.stage=detailed?'detailed':'graybox';
+ for(const[key,file]of Object.entries({entrySHA256:entry,manifestSHA256:manifest,encounterSHA256:'scripts/game_vertical_encounters_v02.js',marketSHA256:'scripts/game_vertical_market_v02.js'}))report[key]=crypto.createHash('sha256').update(fs.readFileSync(path.join(R,file))).digest('hex');
  p.on('pageerror',e=>report.errors.push(String(e)));p.on('console',m=>{if(m.type()==='error')report.errors.push(m.text())});
- await p.goto('http://127.0.0.1:8766/SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html?capture=backspool');
+ await p.goto('http://127.0.0.1:8766/'+entry+'?capture=backspool');
  await p.waitForFunction(()=>gameReady&&roadNetworkState().ready&&verticalDistrictState().ready&&characterState().active==='backspool'&&!characterState().busy&&verticalMarketState().config.id,null,{timeout:120000});await p.evaluate(()=>window.requestAnimationFrame=()=>0);await p.waitForTimeout(100);
  await p.evaluate(full=>{resetPlayer();clearInput();clearPad();startGame(false);s.pos.set(full?55:62,full?.42:24.42,full?210:375);s.vel.set(0,0,0);s.onGround=true;setMode(P.GROUND);s.yaw=cam.yaw=cam.targetYaw=0;cam.pitch=cam.targetPitch=-.12;cam.focus.copy(s.pos).add(new THREE.Vector3(0,1.2,0));camera.position.copy(s.pos).add(new THREE.Vector3(1.35,2.4,4.24));camera.lookAt(s.pos.clone().add(new THREE.Vector3(0,1.5,-15)));camera.updateMatrixWorld(true);window.marketPad={index:0,id:'V02 market normal-input controller',mapping:'standard',connected:true,axes:[0,0,0,0],buttons:Array.from({length:17},()=>({pressed:false,value:0}))};navigator.getGamepads=()=>[marketPad]},full);
  let frames=0;
