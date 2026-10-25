@@ -66,6 +66,31 @@
       "fix": "Real Blender side connection outside the final stair flight; hole remains over required stair headroom.",
       "evidence": "evidence/fixed-defects/station-exit-gap-before.trace.json.gz",
       "verification": "V02_Public_Roundtrip_Validation.json, zero unsupported frames"
+    },
+    {
+      "name": "rescued resident freezes in the final walking stride",
+      "observed": "Actual post-extraction browser capture shows crossed, frozen legs. Scenic walker prototype was reused without a stationary transition.",
+      "fix": "New market clones normalize the neutral visual sole pivot and blend stationary leg rotations to neutral over simulation time; physical bases/routes and hero animation are unchanged.",
+      "verification": "V02_Market_Rescue_Public.json and South variant inspect actual scene geometry soles and neutral leg transforms after a three-second stop; current hash-bound regressions required.",
+      "evidenceNote": "Observed in a browser capture before the idle fix; a reliable retained pre-fix image is unavailable. Current after-fix transforms and sole heights are recorded in the rescue reports."
+    },
+    {
+      "name": "native actor sweep snags new stair risers in ascent and descent",
+      "evidence": "evidence/fixed-defects/native-actor-stair-snag-before.json",
+      "fix": "Candidate-only low-riser overlap allowance for tagged V02 stairs/landings; native <=.2m centre support and all other walls/ledges remain authoritative.",
+      "verification": "V02_Actor_Stairs.json four actual C/D stair traversals and three negative clearance cases; pursuit input and lifecycle regressions."
+    },
+    {
+      "name": "proposed runner route crosses the actual station stairwell opening",
+      "evidence": "evidence/fixed-defects/pursuit-stairwell-preflight-before.log.txt",
+      "fix": "Move runner approach to the supported X73 east side corridor. No original building or stair opening modified.",
+      "verification": "Preflight plus continuous collision-checked 100\u2192128m runner movement in current pursuit traces."
+    },
+    {
+      "name": "runner clone visibility and target framing were not established in first capture",
+      "evidenceNote": "First browser capture did not show the runner. Existing scenic templates carry distance-culling visibility; the clone now explicitly owns its visibility. No reliable before image is retained here.",
+      "fix": "Explicit clone visibility, actual-camera-relative directional feedback, and normal controller-look capture of the stopped target.",
+      "verification": "Current pursuit runnerVisual fields inspect actual model visibility, sole plane and camera projection; actual browser captures are reviewed separately."
     }
   ]
 }

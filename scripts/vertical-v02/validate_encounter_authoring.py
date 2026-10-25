@@ -6,7 +6,7 @@ m=json.loads((R/'assets/city/vertical-v02/graybox/manifest.json').read_text())
 g=json.loads((D/'V02_Movement_Graph.json').read_text());assert m['encounters']==g['encounters']
 rows=[]
 for encounter in m['encounters']:
- for name,p in [('access',encounter['trigger'])]+[(f'actor-{i}',p)for i,p in enumerate(encounter['positions'])]:
+ for name,p in [('access',encounter['trigger'])]+[(f'actor-{i}',p)for i,p in enumerate(encounter['positions'])]+[(name,encounter[name])for name in ['isolation','extraction','escape','interception']if name in encounter]:
   id=encounter['id']+'-'+name;o=bpy.data.objects.get(id);assert o is not None,id
   actual=[o.location.x,o.location.z,-o.location.y]
   error=math.dist(actual,p);assert error<.0001,(id,actual,p)

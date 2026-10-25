@@ -869,6 +869,61 @@
       "structuralOwner": "v02:momentum-landing"
     },
     {
+      "id": "market-access",
+      "position": [
+        62,
+        24,
+        375
+      ],
+      "kind": "encounter-access",
+      "supportStatus": "planned; not yet imported",
+      "validation": "PROPOSED"
+    },
+    {
+      "id": "market-resident",
+      "position": [
+        85,
+        24,
+        361.8
+      ],
+      "kind": "civilian-interaction-stance",
+      "supportStatus": "planned; not yet imported",
+      "validation": "PROPOSED"
+    },
+    {
+      "id": "market-escort-origin",
+      "position": [
+        85,
+        24,
+        364
+      ],
+      "kind": "civilian-start",
+      "supportStatus": "planned; not yet imported",
+      "validation": "PROPOSED"
+    },
+    {
+      "id": "market-isolation",
+      "position": [
+        82,
+        24,
+        357
+      ],
+      "kind": "interaction",
+      "supportStatus": "planned; not yet imported",
+      "validation": "PROPOSED"
+    },
+    {
+      "id": "market-assembly",
+      "position": [
+        62,
+        24,
+        357
+      ],
+      "kind": "extraction",
+      "supportStatus": "planned; not yet imported",
+      "validation": "PROPOSED"
+    },
+    {
       "id": "V2-VT-A-0",
       "position": [
         61,
@@ -1380,6 +1435,50 @@
       "kind": "recovery-roof",
       "supportStatus": "planned; not yet imported",
       "validation": "PROPOSED"
+    },
+    {
+      "id": "pursuit-runner-start",
+      "position": [
+        73,
+        100,
+        373
+      ],
+      "kind": "pursuit-actor-start",
+      "supportStatus": "planned; not yet imported",
+      "validation": "PROPOSED"
+    },
+    {
+      "id": "pursuit-exit",
+      "position": [
+        84,
+        128,
+        420
+      ],
+      "kind": "pursuit-exit",
+      "supportStatus": "planned; not yet imported",
+      "validation": "PROPOSED"
+    },
+    {
+      "id": "pursuit-access",
+      "position": [
+        73,
+        100,
+        364
+      ],
+      "kind": "encounter-access",
+      "supportStatus": "planned; not yet imported",
+      "validation": "PROPOSED"
+    },
+    {
+      "id": "pursuit-interception",
+      "position": [
+        80,
+        128,
+        420
+      ],
+      "kind": "supported-interception",
+      "supportStatus": "planned; not yet imported",
+      "validation": "PROPOSED"
     }
   ],
   "edges": [
@@ -1414,7 +1513,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0001",
@@ -1447,7 +1547,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0002",
@@ -1480,7 +1581,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0003",
@@ -1513,7 +1615,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0004",
@@ -1546,7 +1649,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0005",
@@ -1579,7 +1683,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0006",
@@ -1612,7 +1717,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0007",
@@ -1645,7 +1751,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0008",
@@ -1678,7 +1785,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0009",
@@ -1711,7 +1819,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0010",
@@ -1744,7 +1853,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0011",
@@ -1777,7 +1887,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0012",
@@ -1810,7 +1921,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0013",
@@ -1843,7 +1955,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0014",
@@ -1876,7 +1989,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0015",
@@ -1909,7 +2023,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0016",
@@ -1942,7 +2057,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0017",
@@ -1975,7 +2091,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0018",
@@ -2008,7 +2125,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0019",
@@ -2041,7 +2159,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0020",
@@ -2074,7 +2193,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0021",
@@ -2107,7 +2227,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0022",
@@ -2140,7 +2261,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0023",
@@ -2173,7 +2295,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0024",
@@ -2206,7 +2329,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0025",
@@ -2239,7 +2363,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0026",
@@ -2272,7 +2397,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0027",
@@ -2305,7 +2431,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0028",
@@ -2338,7 +2465,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0029",
@@ -2371,7 +2499,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0030",
@@ -2404,7 +2533,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0031",
@@ -2437,7 +2567,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0032",
@@ -2470,7 +2601,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0033",
@@ -2503,7 +2635,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0034",
@@ -2536,7 +2669,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0035",
@@ -2569,7 +2703,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0036",
@@ -2602,7 +2737,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0037",
@@ -2635,7 +2771,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0038",
@@ -2668,7 +2805,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0039",
@@ -2701,7 +2839,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0040",
@@ -2734,7 +2873,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0041",
@@ -2767,7 +2907,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0042",
@@ -2800,7 +2941,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0043",
@@ -2833,7 +2975,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0044",
@@ -2866,7 +3009,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0045",
@@ -2899,7 +3043,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0046",
@@ -2932,7 +3077,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0047",
@@ -2965,7 +3111,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0048",
@@ -2998,7 +3145,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0049",
@@ -3031,7 +3179,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0050",
@@ -3064,7 +3213,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0051",
@@ -3097,7 +3247,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0052",
@@ -3130,7 +3281,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0053",
@@ -3163,7 +3315,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0054",
@@ -3196,7 +3349,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0055",
@@ -3229,7 +3383,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0056",
@@ -3262,7 +3417,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0057",
@@ -3295,7 +3451,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0058",
@@ -3328,7 +3485,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0059",
@@ -3361,7 +3519,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0060",
@@ -3394,7 +3553,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0061",
@@ -3427,7 +3587,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0062",
@@ -3460,7 +3621,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0063",
@@ -3493,7 +3655,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0064",
@@ -3526,7 +3689,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0065",
@@ -3559,7 +3723,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0066",
@@ -3592,7 +3757,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0067",
@@ -3625,7 +3791,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0068",
@@ -3658,7 +3825,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0069",
@@ -3691,7 +3859,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0070",
@@ -3724,7 +3893,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0071",
@@ -3757,7 +3927,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0072",
@@ -3790,7 +3961,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0073",
@@ -3823,7 +3995,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0074",
@@ -3856,7 +4029,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0075",
@@ -3889,7 +4063,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0076",
@@ -3922,7 +4097,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0077",
@@ -3955,7 +4131,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0078",
@@ -3988,7 +4165,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0079",
@@ -4021,7 +4199,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0080",
@@ -4054,7 +4233,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0081",
@@ -4087,7 +4267,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0082",
@@ -4120,7 +4301,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0083",
@@ -4153,7 +4335,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0084",
@@ -4186,7 +4369,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0085",
@@ -4219,7 +4403,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0086",
@@ -4252,7 +4437,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0087",
@@ -4285,7 +4471,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0088",
@@ -4318,7 +4505,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0089",
@@ -4351,7 +4539,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0090",
@@ -4384,7 +4573,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0091",
@@ -4417,7 +4607,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0092",
@@ -4450,7 +4641,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0093",
@@ -4483,7 +4675,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0094",
@@ -4516,7 +4709,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0095",
@@ -4549,7 +4743,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0096",
@@ -4582,7 +4777,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0097",
@@ -4615,7 +4811,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0098",
@@ -4648,7 +4845,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0099",
@@ -4681,7 +4879,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0100",
@@ -4714,7 +4913,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0101",
@@ -4747,7 +4947,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0102",
@@ -4780,7 +4981,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0103",
@@ -4813,7 +5015,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0104",
@@ -4846,7 +5049,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0105",
@@ -4879,7 +5083,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0106",
@@ -4912,7 +5117,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0107",
@@ -4945,7 +5151,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0108",
@@ -4978,7 +5185,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0109",
@@ -5011,7 +5219,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0110",
@@ -5044,7 +5253,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0111",
@@ -5077,7 +5287,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0112",
@@ -5110,7 +5321,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0113",
@@ -5143,7 +5355,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0114",
@@ -5176,7 +5389,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0115",
@@ -5209,7 +5423,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0116",
@@ -5242,7 +5457,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0117",
@@ -5275,7 +5491,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0118",
@@ -5308,7 +5525,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0119",
@@ -5341,7 +5559,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0120",
@@ -5374,7 +5593,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0121",
@@ -5407,7 +5627,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0122",
@@ -5440,7 +5661,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0123",
@@ -5473,7 +5695,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0124",
@@ -5506,7 +5729,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0125",
@@ -5539,7 +5763,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0126",
@@ -5572,7 +5797,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0127",
@@ -5605,7 +5831,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0128",
@@ -5638,7 +5865,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0129",
@@ -5671,7 +5899,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0130",
@@ -5704,7 +5933,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0131",
@@ -5737,7 +5967,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0132",
@@ -5770,7 +6001,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0133",
@@ -5803,7 +6035,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0134",
@@ -5812,13 +6045,23 @@
       "ability": "run",
       "directionality": "directed",
       "elevationChange": 0,
-      "horizontalDistance": 22.808989455914087,
-      "distance3D": 22.808989455914087,
+      "horizontalDistance": 30.5,
+      "distance3D": 30.5,
       "path": [
         [
           96,
           24,
           376
+        ],
+        [
+          89,
+          24,
+          376
+        ],
+        [
+          89,
+          24,
+          366
         ],
         [
           75.5,
@@ -5828,7 +6071,7 @@
       ],
       "requiredAfterstepImpulses": 0,
       "requiredReplaySlots": 0,
-      "expectedSeconds": 3.456,
+      "expectedSeconds": 4.621,
       "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
       "difficulty": "public",
       "risk": "low",
@@ -5836,7 +6079,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0135",
@@ -5845,13 +6089,23 @@
       "ability": "run",
       "directionality": "directed",
       "elevationChange": 0,
-      "horizontalDistance": 22.808989455914087,
-      "distance3D": 22.808989455914087,
+      "horizontalDistance": 30.5,
+      "distance3D": 30.5,
       "path": [
         [
           75.5,
           24,
           366
+        ],
+        [
+          89,
+          24,
+          366
+        ],
+        [
+          89,
+          24,
+          376
         ],
         [
           96,
@@ -5861,7 +6115,7 @@
       ],
       "requiredAfterstepImpulses": 0,
       "requiredReplaySlots": 0,
-      "expectedSeconds": 3.456,
+      "expectedSeconds": 4.621,
       "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
       "difficulty": "public",
       "risk": "low",
@@ -5869,7 +6123,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0136",
@@ -5902,7 +6157,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0137",
@@ -5935,7 +6191,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0138",
@@ -5968,7 +6225,8 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0139",
@@ -6001,10 +6259,430 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
       "id": "E0140",
+      "source": "W24_376",
+      "destination": "market-access",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 8.0,
+      "distance3D": 8.0,
+      "path": [
+        [
+          55,
+          24,
+          376
+        ],
+        [
+          62,
+          24,
+          376
+        ],
+        [
+          62,
+          24,
+          375
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 4.848,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0141",
+      "source": "market-access",
+      "destination": "W24_376",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 8.0,
+      "distance3D": 8.0,
+      "path": [
+        [
+          62,
+          24,
+          375
+        ],
+        [
+          62,
+          24,
+          376
+        ],
+        [
+          55,
+          24,
+          376
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 4.848,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0142",
+      "source": "market-access",
+      "destination": "market-resident",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 39.80000000000001,
+      "distance3D": 39.80000000000001,
+      "path": [
+        [
+          62,
+          24,
+          375
+        ],
+        [
+          62,
+          24,
+          360
+        ],
+        [
+          85,
+          24,
+          360
+        ],
+        [
+          85,
+          24,
+          361.8
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 24.121,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0143",
+      "source": "market-resident",
+      "destination": "market-access",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 39.80000000000001,
+      "distance3D": 39.80000000000001,
+      "path": [
+        [
+          85,
+          24,
+          361.8
+        ],
+        [
+          85,
+          24,
+          360
+        ],
+        [
+          62,
+          24,
+          360
+        ],
+        [
+          62,
+          24,
+          375
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 24.121,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0144",
+      "source": "market-resident",
+      "destination": "market-isolation",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 6.042640687119296,
+      "distance3D": 6.042640687119296,
+      "path": [
+        [
+          85,
+          24,
+          361.8
+        ],
+        [
+          85,
+          24,
+          360
+        ],
+        [
+          82,
+          24,
+          357
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 3.662,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0145",
+      "source": "market-isolation",
+      "destination": "market-resident",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 6.042640687119296,
+      "distance3D": 6.042640687119296,
+      "path": [
+        [
+          82,
+          24,
+          357
+        ],
+        [
+          85,
+          24,
+          360
+        ],
+        [
+          85,
+          24,
+          361.8
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 3.662,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0146",
+      "source": "market-isolation",
+      "destination": "market-assembly",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 20.0,
+      "distance3D": 20.0,
+      "path": [
+        [
+          82,
+          24,
+          357
+        ],
+        [
+          62,
+          24,
+          357
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 12.121,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0147",
+      "source": "market-assembly",
+      "destination": "market-isolation",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 20.0,
+      "distance3D": 20.0,
+      "path": [
+        [
+          62,
+          24,
+          357
+        ],
+        [
+          82,
+          24,
+          357
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 12.121,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0148",
+      "source": "market-escort-origin",
+      "destination": "market-assembly",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 30.0,
+      "distance3D": 30.0,
+      "path": [
+        [
+          85,
+          24,
+          364
+        ],
+        [
+          85,
+          24,
+          360
+        ],
+        [
+          77,
+          24,
+          360
+        ],
+        [
+          77,
+          24,
+          357
+        ],
+        [
+          62,
+          24,
+          357
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 13.636,
+      "timeEvidence": "authored civilian speed limit2.2m/s; waits and turns require measured input evidence",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Civilian waits on the last supported route if the player leaves; return without resetting",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "civilian",
+      "requiredGameplayConditions": [
+        "market-rescue.power-isolated",
+        "market-rescue.escort-started"
+      ]
+    },
+    {
+      "id": "E0149",
+      "source": "market-escort-origin",
+      "destination": "market-assembly",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 64.0,
+      "distance3D": 64.0,
+      "path": [
+        [
+          85,
+          24,
+          364
+        ],
+        [
+          89,
+          24,
+          364
+        ],
+        [
+          89,
+          24,
+          377
+        ],
+        [
+          62,
+          24,
+          377
+        ],
+        [
+          62,
+          24,
+          357
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 29.091,
+      "timeEvidence": "authored civilian speed limit2.2m/s; waits and turns require measured input evidence",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Both market entrances and the lower west gallery remain open",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "civilian",
+      "requiredGameplayConditions": [
+        "market-rescue.power-isolated",
+        "market-rescue.escort-started"
+      ],
+      "variant": "longer southern flank around market counters"
+    },
+    {
+      "id": "E0150",
       "source": "W24_210",
       "destination": "V2-VT-A-24",
       "ability": "run",
@@ -6039,10 +6717,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0141",
+      "id": "E0151",
       "source": "V2-VT-A-24",
       "destination": "W24_210",
       "ability": "run",
@@ -6077,10 +6756,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0142",
+      "id": "E0152",
       "source": "W52_210",
       "destination": "V2-VT-A-52",
       "ability": "run",
@@ -6115,10 +6795,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0143",
+      "id": "E0153",
       "source": "V2-VT-A-52",
       "destination": "W52_210",
       "ability": "run",
@@ -6153,10 +6834,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0144",
+      "id": "E0154",
       "source": "W84_210",
       "destination": "V2-VT-A-84",
       "ability": "run",
@@ -6191,10 +6873,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0145",
+      "id": "E0155",
       "source": "V2-VT-A-84",
       "destination": "W84_210",
       "ability": "run",
@@ -6229,10 +6912,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0146",
+      "id": "E0156",
       "source": "V2-VT-A-0",
       "destination": "V2-VT-A-24",
       "ability": "stairs",
@@ -6383,10 +7067,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0147",
+      "id": "E0157",
       "source": "V2-VT-A-24",
       "destination": "V2-VT-A-0",
       "ability": "stairs",
@@ -6537,10 +7222,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0148",
+      "id": "E0158",
       "source": "V2-VT-A-24",
       "destination": "V2-VT-A-52",
       "ability": "stairs",
@@ -6721,10 +7407,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0149",
+      "id": "E0159",
       "source": "V2-VT-A-52",
       "destination": "V2-VT-A-24",
       "ability": "stairs",
@@ -6905,10 +7592,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0150",
+      "id": "E0160",
       "source": "V2-VT-A-52",
       "destination": "V2-VT-A-84",
       "ability": "stairs",
@@ -7089,10 +7777,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0151",
+      "id": "E0161",
       "source": "V2-VT-A-84",
       "destination": "V2-VT-A-52",
       "ability": "stairs",
@@ -7273,10 +7962,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0152",
+      "id": "E0162",
       "source": "E24_410",
       "destination": "V2-VT-B-24",
       "ability": "run",
@@ -7311,10 +8001,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0153",
+      "id": "E0163",
       "source": "V2-VT-B-24",
       "destination": "E24_410",
       "ability": "run",
@@ -7349,10 +8040,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0154",
+      "id": "E0164",
       "source": "E52_410",
       "destination": "V2-VT-B-52",
       "ability": "run",
@@ -7387,10 +8079,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0155",
+      "id": "E0165",
       "source": "V2-VT-B-52",
       "destination": "E52_410",
       "ability": "run",
@@ -7425,10 +8118,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0156",
+      "id": "E0166",
       "source": "E84_410",
       "destination": "V2-VT-B-84",
       "ability": "run",
@@ -7463,10 +8157,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0157",
+      "id": "E0167",
       "source": "V2-VT-B-84",
       "destination": "E84_410",
       "ability": "run",
@@ -7501,10 +8196,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0158",
+      "id": "E0168",
       "source": "V2-VT-B-0",
       "destination": "V2-VT-B-24",
       "ability": "stairs",
@@ -7655,10 +8351,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0159",
+      "id": "E0169",
       "source": "V2-VT-B-24",
       "destination": "V2-VT-B-0",
       "ability": "stairs",
@@ -7809,10 +8506,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0160",
+      "id": "E0170",
       "source": "V2-VT-B-24",
       "destination": "V2-VT-B-52",
       "ability": "stairs",
@@ -7993,10 +8691,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0161",
+      "id": "E0171",
       "source": "V2-VT-B-52",
       "destination": "V2-VT-B-24",
       "ability": "stairs",
@@ -8177,10 +8876,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0162",
+      "id": "E0172",
       "source": "V2-VT-B-52",
       "destination": "V2-VT-B-84",
       "ability": "stairs",
@@ -8361,10 +9061,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0163",
+      "id": "E0173",
       "source": "V2-VT-B-84",
       "destination": "V2-VT-B-52",
       "ability": "stairs",
@@ -8545,10 +9246,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0164",
+      "id": "E0174",
       "source": "V2-VT-B-84",
       "destination": "V2-VT-B-128",
       "ability": "stairs",
@@ -8789,10 +9491,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0165",
+      "id": "E0175",
       "source": "V2-VT-B-128",
       "destination": "V2-VT-B-84",
       "ability": "stairs",
@@ -9033,10 +9736,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0166",
+      "id": "E0176",
       "source": "W84_376",
       "destination": "V2-VT-C-84",
       "ability": "run",
@@ -9071,10 +9775,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0167",
+      "id": "E0177",
       "source": "V2-VT-C-84",
       "destination": "W84_376",
       "ability": "run",
@@ -9109,10 +9814,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0168",
+      "id": "E0178",
       "source": "V2-VT-C-84",
       "destination": "V2-VT-C-100",
       "ability": "stairs",
@@ -9233,10 +9939,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0169",
+      "id": "E0179",
       "source": "V2-VT-C-100",
       "destination": "V2-VT-C-84",
       "ability": "stairs",
@@ -9357,10 +10064,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0170",
+      "id": "E0180",
       "source": "V2-VT-D-100",
       "destination": "V2-VT-D-128",
       "ability": "stairs",
@@ -9541,10 +10249,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0171",
+      "id": "E0181",
       "source": "V2-VT-D-128",
       "destination": "V2-VT-D-100",
       "ability": "stairs",
@@ -9725,10 +10434,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0172",
+      "id": "E0182",
       "source": "service-stair-52",
       "destination": "service-stair-55.2",
       "ability": "stairs",
@@ -9789,10 +10499,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0173",
+      "id": "E0183",
       "source": "service-stair-55.2",
       "destination": "service-stair-52",
       "ability": "stairs",
@@ -9853,10 +10564,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0174",
+      "id": "E0184",
       "source": "service-stair-55.2",
       "destination": "service-stair-58.4",
       "ability": "stairs",
@@ -9917,10 +10629,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0175",
+      "id": "E0185",
       "source": "service-stair-58.4",
       "destination": "service-stair-55.2",
       "ability": "stairs",
@@ -9981,10 +10694,11 @@
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
       },
-      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification"
+      "architectureGate": "Risers <=.18m; current narrow-box support requires explicit candidate contact integration before certification",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0176",
+      "id": "E0186",
       "source": "service-stair-55.2",
       "destination": "service-upper-55.2",
       "ability": "run",
@@ -10024,10 +10738,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0177",
+      "id": "E0187",
       "source": "service-upper-55.2",
       "destination": "service-stair-55.2",
       "ability": "run",
@@ -10067,10 +10782,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0178",
+      "id": "E0188",
       "source": "service-stair-58.4",
       "destination": "service-upper-58.4",
       "ability": "run",
@@ -10110,10 +10826,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0179",
+      "id": "E0189",
       "source": "service-upper-58.4",
       "destination": "service-stair-58.4",
       "ability": "run",
@@ -10153,10 +10870,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0180",
+      "id": "E0190",
       "source": "service-yard",
       "destination": "service-stair-52",
       "ability": "run",
@@ -10201,10 +10919,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0181",
+      "id": "E0191",
       "source": "service-stair-52",
       "destination": "service-yard",
       "ability": "run",
@@ -10249,10 +10968,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0182",
+      "id": "E0192",
       "source": "ground-access",
       "destination": "V2-VT-A-0",
       "ability": "run",
@@ -10282,10 +11002,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0183",
+      "id": "E0193",
       "source": "V2-VT-A-0",
       "destination": "ground-access",
       "ability": "run",
@@ -10315,10 +11036,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0184",
+      "id": "E0194",
       "source": "ground-access",
       "destination": "V2-VT-B-0",
       "ability": "run",
@@ -10358,10 +11080,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0185",
+      "id": "E0195",
       "source": "V2-VT-B-0",
       "destination": "ground-access",
       "ability": "run",
@@ -10401,10 +11124,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0186",
+      "id": "E0196",
       "source": "V2-VT-C-100",
       "destination": "station-concourse",
       "ability": "run",
@@ -10434,10 +11158,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0187",
+      "id": "E0197",
       "source": "station-concourse",
       "destination": "V2-VT-C-100",
       "ability": "run",
@@ -10467,10 +11192,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0188",
+      "id": "E0198",
       "source": "V2-VT-D-100",
       "destination": "station-concourse",
       "ability": "run",
@@ -10510,10 +11236,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0189",
+      "id": "E0199",
       "source": "station-concourse",
       "destination": "V2-VT-D-100",
       "ability": "run",
@@ -10553,10 +11280,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0190",
+      "id": "E0200",
       "source": "W128_276",
       "destination": "W128_300",
       "ability": "run",
@@ -10586,10 +11314,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0191",
+      "id": "E0201",
       "source": "W128_300",
       "destination": "W128_276",
       "ability": "run",
@@ -10619,10 +11348,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0192",
+      "id": "E0202",
       "source": "W128_300",
       "destination": "W128_326",
       "ability": "run",
@@ -10652,10 +11382,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0193",
+      "id": "E0203",
       "source": "W128_326",
       "destination": "W128_300",
       "ability": "run",
@@ -10685,10 +11416,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0194",
+      "id": "E0204",
       "source": "W128_326",
       "destination": "W128_350",
       "ability": "run",
@@ -10718,10 +11450,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0195",
+      "id": "E0205",
       "source": "W128_350",
       "destination": "W128_326",
       "ability": "run",
@@ -10751,10 +11484,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0196",
+      "id": "E0206",
       "source": "W128_350",
       "destination": "W128_376",
       "ability": "run",
@@ -10784,10 +11518,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0197",
+      "id": "E0207",
       "source": "W128_376",
       "destination": "W128_350",
       "ability": "run",
@@ -10817,10 +11552,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0198",
+      "id": "E0208",
       "source": "W128_376",
       "destination": "W128_400",
       "ability": "run",
@@ -10850,10 +11586,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0199",
+      "id": "E0209",
       "source": "W128_400",
       "destination": "W128_376",
       "ability": "run",
@@ -10883,10 +11620,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0200",
+      "id": "E0210",
       "source": "W128_400",
       "destination": "W128_410",
       "ability": "run",
@@ -10916,10 +11654,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0201",
+      "id": "E0211",
       "source": "W128_410",
       "destination": "W128_400",
       "ability": "run",
@@ -10949,10 +11688,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0202",
+      "id": "E0212",
       "source": "W128_410",
       "destination": "W128_430",
       "ability": "run",
@@ -10982,10 +11722,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0203",
+      "id": "E0213",
       "source": "W128_430",
       "destination": "W128_410",
       "ability": "run",
@@ -11015,10 +11756,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0204",
+      "id": "E0214",
       "source": "E128_400",
       "destination": "E128_410",
       "ability": "run",
@@ -11048,10 +11790,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0205",
+      "id": "E0215",
       "source": "E128_410",
       "destination": "E128_400",
       "ability": "run",
@@ -11081,10 +11824,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0206",
+      "id": "E0216",
       "source": "E128_410",
       "destination": "E128_430",
       "ability": "run",
@@ -11114,10 +11858,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0207",
+      "id": "E0217",
       "source": "E128_430",
       "destination": "E128_410",
       "ability": "run",
@@ -11147,10 +11892,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0208",
+      "id": "E0218",
       "source": "W128_430",
       "destination": "E128_430",
       "ability": "run",
@@ -11180,10 +11926,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0209",
+      "id": "E0219",
       "source": "E128_430",
       "destination": "W128_430",
       "ability": "run",
@@ -11213,10 +11960,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0210",
+      "id": "E0220",
       "source": "V2-VT-B-128",
       "destination": "E128_410",
       "ability": "run",
@@ -11246,10 +11994,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0211",
+      "id": "E0221",
       "source": "E128_410",
       "destination": "V2-VT-B-128",
       "ability": "run",
@@ -11279,10 +12028,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0212",
+      "id": "E0222",
       "source": "V2-VT-D-128",
       "destination": "W128_400",
       "ability": "run",
@@ -11312,10 +12062,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0213",
+      "id": "E0223",
       "source": "W128_400",
       "destination": "V2-VT-D-128",
       "ability": "run",
@@ -11345,10 +12096,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0214",
+      "id": "E0224",
       "source": "W128_410",
       "destination": "observation-deck",
       "ability": "run",
@@ -11378,10 +12130,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0215",
+      "id": "E0225",
       "source": "observation-deck",
       "destination": "W128_410",
       "ability": "run",
@@ -11411,10 +12164,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0216",
+      "id": "E0226",
       "source": "W84_300",
       "destination": "fast-launch",
       "ability": "flow-run",
@@ -11444,10 +12198,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0217",
+      "id": "E0227",
       "source": "fast-launch",
       "destination": "W84_300",
       "ability": "flow-run",
@@ -11477,10 +12232,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0218",
+      "id": "E0228",
       "source": "momentum-landing",
       "destination": "momentum-relaunch",
       "ability": "flow-run",
@@ -11515,10 +12271,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0219",
+      "id": "E0229",
       "source": "momentum-relaunch",
       "destination": "momentum-landing",
       "ability": "flow-run",
@@ -11553,10 +12310,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0220",
+      "id": "E0230",
       "source": "fast-launch",
       "destination": "momentum-pop-1",
       "ability": "threadrail",
@@ -11617,10 +12375,11 @@
         "friction": 0.45,
         "remainingSpecificEnergy": 39.752481877704014
       },
-      "physicalGate": "Precision A/B, ground acceleration and momentum catch; end at authored Pop window"
+      "physicalGate": "Precision A/B, ground acceleration and momentum catch; end at authored Pop window",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0221",
+      "id": "E0231",
       "source": "momentum-pop-1",
       "destination": "momentum-touchdown-1",
       "ability": "rail-pop",
@@ -11652,10 +12411,11 @@
         "input": "NOT TESTED"
       },
       "trajectorySource": "e3f72ff actual input trial; straight chord is a topology estimate, not collision proof",
-      "physicalGate": "Current swept arc, body contact and supported landing need real-input evidence"
+      "physicalGate": "Current swept arc, body contact and supported landing need real-input evidence",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0222",
+      "id": "E0232",
       "source": "momentum-touchdown-1",
       "destination": "momentum-landing",
       "ability": "run",
@@ -11685,10 +12445,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0223",
+      "id": "E0233",
       "source": "momentum-relaunch",
       "destination": "momentum-pop-2",
       "ability": "threadrail",
@@ -11749,10 +12510,11 @@
         "friction": 0.45,
         "remainingSpecificEnergy": 40.14243439007619
       },
-      "physicalGate": "Precision A/B, ground acceleration and momentum catch; end at authored Pop window"
+      "physicalGate": "Precision A/B, ground acceleration and momentum catch; end at authored Pop window",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0224",
+      "id": "E0234",
       "source": "momentum-pop-2",
       "destination": "momentum-touchdown-2",
       "ability": "rail-pop",
@@ -11784,10 +12546,11 @@
         "input": "NOT TESTED"
       },
       "trajectorySource": "e3f72ff actual input trial; straight chord is a topology estimate, not collision proof",
-      "physicalGate": "Current swept arc, body contact and supported landing need real-input evidence"
+      "physicalGate": "Current swept arc, body contact and supported landing need real-input evidence",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0225",
+      "id": "E0235",
       "source": "momentum-touchdown-2",
       "destination": "station-concourse",
       "ability": "run",
@@ -11817,10 +12580,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0226",
+      "id": "E0236",
       "source": "W84_300",
       "destination": "wall-entry",
       "ability": "flow-run",
@@ -11855,10 +12619,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0227",
+      "id": "E0237",
       "source": "wall-entry",
       "destination": "W84_300",
       "ability": "flow-run",
@@ -11893,10 +12658,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0228",
+      "id": "E0238",
       "source": "wall-entry",
       "destination": "wall-shelf-96",
       "ability": "wall-climb",
@@ -11937,10 +12703,11 @@
         "frontZ": 300,
         "top": 96
       },
-      "physicalGate": "Normal-input wall contact and mantle with supported touchdown, no power changes"
+      "physicalGate": "Normal-input wall contact and mantle with supported touchdown, no power changes",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0229",
+      "id": "E0239",
       "source": "wall-shelf-96",
       "destination": "wall-shelf-108",
       "ability": "wall-climb",
@@ -11981,10 +12748,11 @@
         "frontZ": 292,
         "top": 108
       },
-      "physicalGate": "Normal-input wall contact and mantle with supported touchdown, no power changes"
+      "physicalGate": "Normal-input wall contact and mantle with supported touchdown, no power changes",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0230",
+      "id": "E0240",
       "source": "wall-shelf-108",
       "destination": "wall-shelf-120",
       "ability": "wall-climb",
@@ -12025,10 +12793,11 @@
         "frontZ": 284,
         "top": 120
       },
-      "physicalGate": "Normal-input wall contact and mantle with supported touchdown, no power changes"
+      "physicalGate": "Normal-input wall contact and mantle with supported touchdown, no power changes",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0231",
+      "id": "E0241",
       "source": "wall-shelf-120",
       "destination": "wall-shelf-128",
       "ability": "wall-climb",
@@ -12069,10 +12838,11 @@
         "frontZ": 276,
         "top": 128
       },
-      "physicalGate": "Normal-input wall contact and mantle with supported touchdown, no power changes"
+      "physicalGate": "Normal-input wall contact and mantle with supported touchdown, no power changes",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0232",
+      "id": "E0242",
       "source": "wall-shelf-128",
       "destination": "W128_276",
       "ability": "run",
@@ -12107,10 +12877,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0233",
+      "id": "E0243",
       "source": "W128_276",
       "destination": "wall-shelf-128",
       "ability": "run",
@@ -12145,10 +12916,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0234",
+      "id": "E0244",
       "source": "W128_430",
       "destination": "high-rail-start",
       "ability": "flow-run",
@@ -12178,10 +12950,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0235",
+      "id": "E0245",
       "source": "high-rail-start",
       "destination": "W128_430",
       "ability": "flow-run",
@@ -12211,10 +12984,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0236",
+      "id": "E0246",
       "source": "high-rail-start",
       "destination": "pop-launch",
       "ability": "threadrail",
@@ -12261,10 +13035,11 @@
         64,
         128,
         440
-      ]
+      ],
+      "traversalAgent": "player"
     },
     {
-      "id": "E0237",
+      "id": "E0247",
       "source": "pop-launch",
       "destination": "mastery-recovery-118",
       "ability": "rail-pop",
@@ -12296,10 +13071,11 @@
         "input": "NOT TESTED"
       },
       "intent": "Pop from a full-speed catch, redirect onto lower roof; short catch returns to the supported upper exit deck",
-      "physicalGate": "Normal-input arc and exact supported landing required"
+      "physicalGate": "Normal-input arc and exact supported landing required",
+      "traversalAgent": "player"
     },
     {
-      "id": "E0238",
+      "id": "E0248",
       "source": "mastery-recovery-118",
       "destination": "mastery-recovery-108",
       "ability": "controlled-drop",
@@ -12334,10 +13110,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0239",
+      "id": "E0249",
       "source": "mastery-recovery-108",
       "destination": "station-concourse",
       "ability": "controlled-drop",
@@ -12377,10 +13154,11 @@
       "validation": {
         "geometry": "PASS original-volume broadphase only",
         "input": "NOT TESTED"
-      }
+      },
+      "traversalAgent": "player"
     },
     {
-      "id": "E0240",
+      "id": "E0250",
       "source": "mastery-recovery-108",
       "destination": "station-concourse",
       "ability": "afterstep-transfer",
@@ -12412,7 +13190,596 @@
         "input": "NOT TESTED"
       },
       "variant": "optional legal brake using a confirmed landing impulse",
-      "physicalGate": "Must consume an eligible physically banked contact through normal input"
+      "physicalGate": "Must consume an eligible physically banked contact through normal input",
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0251",
+      "source": "station-concourse",
+      "destination": "pursuit-access",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 18.5,
+      "distance3D": 18.5,
+      "path": [
+        [
+          66.5,
+          100,
+          376
+        ],
+        [
+          73,
+          100,
+          376
+        ],
+        [
+          73,
+          100,
+          364
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 2.803,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0252",
+      "source": "pursuit-access",
+      "destination": "station-concourse",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 18.5,
+      "distance3D": 18.5,
+      "path": [
+        [
+          73,
+          100,
+          364
+        ],
+        [
+          73,
+          100,
+          376
+        ],
+        [
+          66.5,
+          100,
+          376
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 2.803,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0253",
+      "source": "pursuit-access",
+      "destination": "V2-VT-D-100",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 44.136248974553844,
+      "distance3D": 44.136248974553844,
+      "path": [
+        [
+          73,
+          100,
+          364
+        ],
+        [
+          73,
+          100,
+          390
+        ],
+        [
+          64,
+          100,
+          399
+        ],
+        [
+          61,
+          100,
+          403.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 6.687,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0254",
+      "source": "V2-VT-D-100",
+      "destination": "pursuit-access",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 44.136248974553844,
+      "distance3D": 44.136248974553844,
+      "path": [
+        [
+          61,
+          100,
+          403.5
+        ],
+        [
+          64,
+          100,
+          399
+        ],
+        [
+          73,
+          100,
+          390
+        ],
+        [
+          73,
+          100,
+          364
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 6.687,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0255",
+      "source": "observation-deck",
+      "destination": "pursuit-interception",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 8.0,
+      "distance3D": 8.0,
+      "path": [
+        [
+          72,
+          128,
+          420
+        ],
+        [
+          80,
+          128,
+          420
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 1.212,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0256",
+      "source": "pursuit-interception",
+      "destination": "observation-deck",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 8.0,
+      "distance3D": 8.0,
+      "path": [
+        [
+          80,
+          128,
+          420
+        ],
+        [
+          72,
+          128,
+          420
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 1.212,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0257",
+      "source": "pursuit-interception",
+      "destination": "pursuit-exit",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 4.0,
+      "distance3D": 4.0,
+      "path": [
+        [
+          80,
+          128,
+          420
+        ],
+        [
+          84,
+          128,
+          420
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 0.606,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0258",
+      "source": "pursuit-exit",
+      "destination": "pursuit-interception",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 4.0,
+      "distance3D": 4.0,
+      "path": [
+        [
+          84,
+          128,
+          420
+        ],
+        [
+          80,
+          128,
+          420
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 0.606,
+      "timeEvidence": "geometric estimate from clean measured run speed; not stopwatch acceptance",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "E0259",
+      "source": "pursuit-runner-start",
+      "destination": "V2-VT-D-100",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 35.13624897455384,
+      "distance3D": 35.13624897455384,
+      "path": [
+        [
+          73,
+          100,
+          373
+        ],
+        [
+          73,
+          100,
+          390
+        ],
+        [
+          64,
+          100,
+          399
+        ],
+        [
+          61,
+          100,
+          403.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 13.013,
+      "timeEvidence": "authored runner maximum2.7m/s; physical stair height and corner pauses require runtime evidence",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "pursuit-runner",
+      "requiredGameplayConditions": [
+        "transit-pursuit.active"
+      ]
+    },
+    {
+      "id": "E0260",
+      "source": "V2-VT-D-100",
+      "destination": "V2-VT-D-128",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": 28,
+      "horizontalDistance": 161.20000000000016,
+      "distance3D": 165.67700663162458,
+      "path": [
+        [
+          61,
+          100,
+          403.5
+        ],
+        [
+          61,
+          100.0,
+          403.5
+        ],
+        [
+          61,
+          103.11111111111111,
+          412.98
+        ],
+        [
+          67,
+          103.11111111111111,
+          412.98
+        ],
+        [
+          67,
+          103.11111111111111,
+          412.98
+        ],
+        [
+          67,
+          106.22222222222223,
+          403.5
+        ],
+        [
+          61,
+          106.22222222222223,
+          403.5
+        ],
+        [
+          61,
+          106.22222222222223,
+          403.5
+        ],
+        [
+          61,
+          109.33333333333333,
+          412.98
+        ],
+        [
+          67,
+          109.33333333333333,
+          412.98
+        ],
+        [
+          67,
+          109.33333333333333,
+          412.98
+        ],
+        [
+          67,
+          112.44444444444444,
+          403.5
+        ],
+        [
+          61,
+          112.44444444444444,
+          403.5
+        ],
+        [
+          61,
+          112.44444444444444,
+          403.5
+        ],
+        [
+          61,
+          115.55555555555556,
+          412.98
+        ],
+        [
+          67,
+          115.55555555555556,
+          412.98
+        ],
+        [
+          67,
+          115.55555555555556,
+          412.98
+        ],
+        [
+          67,
+          118.66666666666667,
+          403.5
+        ],
+        [
+          61,
+          118.66666666666667,
+          403.5
+        ],
+        [
+          61,
+          118.66666666666667,
+          403.5
+        ],
+        [
+          61,
+          121.77777777777777,
+          412.98
+        ],
+        [
+          67,
+          121.77777777777777,
+          412.98
+        ],
+        [
+          67,
+          121.77777777777777,
+          412.98
+        ],
+        [
+          67,
+          124.88888888888889,
+          403.5
+        ],
+        [
+          61,
+          124.88888888888889,
+          403.5
+        ],
+        [
+          61,
+          124.88888888888889,
+          403.5
+        ],
+        [
+          61,
+          128.0,
+          412.98
+        ],
+        [
+          67,
+          128.0,
+          412.98
+        ],
+        [
+          70.2,
+          128,
+          412.98
+        ],
+        [
+          70.2,
+          128,
+          403.5
+        ],
+        [
+          61,
+          128,
+          403.5
+        ],
+        [
+          61,
+          128,
+          403.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 61.362,
+      "timeEvidence": "authored runner maximum2.7m/s; physical stair height and corner pauses require runtime evidence",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "pursuit-runner",
+      "requiredGameplayConditions": [
+        "transit-pursuit.active"
+      ]
+    },
+    {
+      "id": "E0261",
+      "source": "V2-VT-D-128",
+      "destination": "pursuit-exit",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 71.5,
+      "distance3D": 71.5,
+      "path": [
+        [
+          61,
+          128,
+          403.5
+        ],
+        [
+          55,
+          128,
+          403.5
+        ],
+        [
+          55,
+          128,
+          430
+        ],
+        [
+          84,
+          128,
+          430
+        ],
+        [
+          84,
+          128,
+          420
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 26.481,
+      "timeEvidence": "authored runner maximum2.7m/s; physical stair height and corner pauses require runtime evidence",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "return along supported public gallery",
+      "validation": {
+        "geometry": "PASS original-volume broadphase only",
+        "input": "NOT TESTED"
+      },
+      "traversalAgent": "pursuit-runner",
+      "requiredGameplayConditions": [
+        "transit-pursuit.active"
+      ]
     }
   ],
   "loops": [
@@ -12596,7 +13963,7 @@
     }
   ],
   "publicConnectivity": {
-    "nodesReachable": 104,
+    "nodesReachable": 111,
     "stationReachable": true,
     "observationReachable": true,
     "claim": "topology only, zero resource; exact walking/stair contact not accepted"
@@ -15176,6 +16543,400 @@
       "walkable": true
     },
     {
+      "id": "market-counter-west",
+      "center": [
+        71,
+        24.45,
+        365
+      ],
+      "size": [
+        4,
+        0.9,
+        2
+      ],
+      "collection": "SM_V02_MARKET",
+      "role": "merchant counter outside public and rescue paths",
+      "owner": "v02:market-counter-west",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          69.0,
+          24.0,
+          364.0
+        ],
+        "max": [
+          73.0,
+          24.9,
+          366.0
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "walkable": true
+    },
+    {
+      "id": "market-canopy-west",
+      "center": [
+        71,
+        27.55,
+        365
+      ],
+      "size": [
+        4.5,
+        0.3,
+        2.5
+      ],
+      "collection": "SM_V02_MARKET",
+      "role": "small commercial canopy with human/camera clearance",
+      "owner": "v02:market-canopy-west",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          68.75,
+          27.400000000000002,
+          363.75
+        ],
+        "max": [
+          73.25,
+          27.7,
+          366.25
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "walkable": true
+    },
+    {
+      "id": "market-post-west--1.9--0.9",
+      "center": [
+        69.1,
+        25.7,
+        364.1
+      ],
+      "size": [
+        0.16,
+        3.4,
+        0.16
+      ],
+      "collection": "SM_V02_MARKET",
+      "role": "visible stall canopy support",
+      "owner": "v02:market-post-west--1.9--0.9",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          69.02,
+          24.0,
+          364.02000000000004
+        ],
+        "max": [
+          69.17999999999999,
+          27.4,
+          364.18
+        ]
+      },
+      "originalGeometryConflicts": []
+    },
+    {
+      "id": "market-post-west--1.9-0.9",
+      "center": [
+        69.1,
+        25.7,
+        365.9
+      ],
+      "size": [
+        0.16,
+        3.4,
+        0.16
+      ],
+      "collection": "SM_V02_MARKET",
+      "role": "visible stall canopy support",
+      "owner": "v02:market-post-west--1.9-0.9",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          69.02,
+          24.0,
+          365.82
+        ],
+        "max": [
+          69.17999999999999,
+          27.4,
+          365.97999999999996
+        ]
+      },
+      "originalGeometryConflicts": []
+    },
+    {
+      "id": "market-post-west-1.9--0.9",
+      "center": [
+        72.9,
+        25.7,
+        364.1
+      ],
+      "size": [
+        0.16,
+        3.4,
+        0.16
+      ],
+      "collection": "SM_V02_MARKET",
+      "role": "visible stall canopy support",
+      "owner": "v02:market-post-west-1.9--0.9",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          72.82000000000001,
+          24.0,
+          364.02000000000004
+        ],
+        "max": [
+          72.98,
+          27.4,
+          364.18
+        ]
+      },
+      "originalGeometryConflicts": []
+    },
+    {
+      "id": "market-post-west-1.9-0.9",
+      "center": [
+        72.9,
+        25.7,
+        365.9
+      ],
+      "size": [
+        0.16,
+        3.4,
+        0.16
+      ],
+      "collection": "SM_V02_MARKET",
+      "role": "visible stall canopy support",
+      "owner": "v02:market-post-west-1.9-0.9",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          72.82000000000001,
+          24.0,
+          365.82
+        ],
+        "max": [
+          72.98,
+          27.4,
+          365.97999999999996
+        ]
+      },
+      "originalGeometryConflicts": []
+    },
+    {
+      "id": "market-counter-east",
+      "center": [
+        83,
+        24.45,
+        369
+      ],
+      "size": [
+        4,
+        0.9,
+        2
+      ],
+      "collection": "SM_V02_MARKET",
+      "role": "merchant counter outside public and rescue paths",
+      "owner": "v02:market-counter-east",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          81.0,
+          24.0,
+          368.0
+        ],
+        "max": [
+          85.0,
+          24.9,
+          370.0
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "walkable": true
+    },
+    {
+      "id": "market-canopy-east",
+      "center": [
+        83,
+        27.55,
+        369
+      ],
+      "size": [
+        4.5,
+        0.3,
+        2.5
+      ],
+      "collection": "SM_V02_MARKET",
+      "role": "small commercial canopy with human/camera clearance",
+      "owner": "v02:market-canopy-east",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          80.75,
+          27.400000000000002,
+          367.75
+        ],
+        "max": [
+          85.25,
+          27.7,
+          370.25
+        ]
+      },
+      "originalGeometryConflicts": [],
+      "walkable": true
+    },
+    {
+      "id": "market-post-east--1.9--0.9",
+      "center": [
+        81.1,
+        25.7,
+        368.1
+      ],
+      "size": [
+        0.16,
+        3.4,
+        0.16
+      ],
+      "collection": "SM_V02_MARKET",
+      "role": "visible stall canopy support",
+      "owner": "v02:market-post-east--1.9--0.9",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          81.02,
+          24.0,
+          368.02000000000004
+        ],
+        "max": [
+          81.17999999999999,
+          27.4,
+          368.18
+        ]
+      },
+      "originalGeometryConflicts": []
+    },
+    {
+      "id": "market-post-east--1.9-0.9",
+      "center": [
+        81.1,
+        25.7,
+        369.9
+      ],
+      "size": [
+        0.16,
+        3.4,
+        0.16
+      ],
+      "collection": "SM_V02_MARKET",
+      "role": "visible stall canopy support",
+      "owner": "v02:market-post-east--1.9-0.9",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          81.02,
+          24.0,
+          369.82
+        ],
+        "max": [
+          81.17999999999999,
+          27.4,
+          369.97999999999996
+        ]
+      },
+      "originalGeometryConflicts": []
+    },
+    {
+      "id": "market-post-east-1.9--0.9",
+      "center": [
+        84.9,
+        25.7,
+        368.1
+      ],
+      "size": [
+        0.16,
+        3.4,
+        0.16
+      ],
+      "collection": "SM_V02_MARKET",
+      "role": "visible stall canopy support",
+      "owner": "v02:market-post-east-1.9--0.9",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          84.82000000000001,
+          24.0,
+          368.02000000000004
+        ],
+        "max": [
+          84.98,
+          27.4,
+          368.18
+        ]
+      },
+      "originalGeometryConflicts": []
+    },
+    {
+      "id": "market-post-east-1.9-0.9",
+      "center": [
+        84.9,
+        25.7,
+        369.9
+      ],
+      "size": [
+        0.16,
+        3.4,
+        0.16
+      ],
+      "collection": "SM_V02_MARKET",
+      "role": "visible stall canopy support",
+      "owner": "v02:market-post-east-1.9-0.9",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          84.82000000000001,
+          24.0,
+          369.82
+        ],
+        "max": [
+          84.98,
+          27.4,
+          369.97999999999996
+        ]
+      },
+      "originalGeometryConflicts": []
+    },
+    {
+      "id": "market-isolator",
+      "center": [
+        82,
+        24.65,
+        355.4
+      ],
+      "size": [
+        0.8,
+        1.3,
+        0.55
+      ],
+      "collection": "SM_V02_MARKET",
+      "role": "physical power isolation cabinet for civilian rescue",
+      "owner": "v02:market-isolator",
+      "operation": "addition replacing V1 vertical prototype in V02 candidate only",
+      "bounds": {
+        "min": [
+          81.6,
+          24.0,
+          355.125
+        ],
+        "max": [
+          82.4,
+          25.299999999999997,
+          355.67499999999995
+        ]
+      },
+      "originalGeometryConflicts": []
+    },
+    {
       "id": "service-mezzanine-55.2",
       "center": [
         85.5,
@@ -16393,7 +18154,7 @@
       ],
       "publicPortal": true,
       "flightWidth": 3.2,
-      "landingWidth": 9.2,
+      "landingWidth": 12.4,
       "riseMax": 0.18,
       "tread": 0.36,
       "flightRiseMax": 3.2,
@@ -16418,7 +18179,7 @@
       ],
       "publicPortal": true,
       "flightWidth": 3.2,
-      "landingWidth": 9.2,
+      "landingWidth": 12.4,
       "riseMax": 0.18,
       "tread": 0.36,
       "flightRiseMax": 3.2,
@@ -16441,7 +18202,7 @@
       ],
       "publicPortal": true,
       "flightWidth": 3.2,
-      "landingWidth": 9.2,
+      "landingWidth": 12.4,
       "riseMax": 0.18,
       "tread": 0.36,
       "flightRiseMax": 3.2,
@@ -16461,7 +18222,7 @@
       ],
       "publicPortal": true,
       "flightWidth": 3.2,
-      "landingWidth": 9.2,
+      "landingWidth": 12.4,
       "riseMax": 0.18,
       "tread": 0.36,
       "flightRiseMax": 3.2,
@@ -16482,7 +18243,7 @@
       ],
       "publicPortal": false,
       "flightWidth": 3.2,
-      "landingWidth": 9.2,
+      "landingWidth": 12.4,
       "riseMax": 0.18,
       "tread": 0.36,
       "flightRiseMax": 3.2,
@@ -16547,6 +18308,348 @@
       },
       "actorType": "existing damage-taking sparring prototype",
       "status": "runtime adapter; acceptance is hash-bound external evidence, not this design record"
+    },
+    {
+      "id": "market-rescue",
+      "title": "SUSPENDED MARKET \u00b7 RESCUE",
+      "trigger": [
+        62,
+        24,
+        375
+      ],
+      "positions": [
+        [
+          85,
+          24,
+          364
+        ],
+        [
+          66,
+          24,
+          358
+        ],
+        [
+          77,
+          24,
+          373
+        ]
+      ],
+      "reward": 450,
+      "isolation": [
+        82,
+        24,
+        357
+      ],
+      "extraction": [
+        62,
+        24,
+        357
+      ],
+      "hazard": [
+        85,
+        24,
+        364
+      ],
+      "patrols": [
+        [
+          [
+            66,
+            24,
+            358
+          ],
+          [
+            74,
+            24,
+            358
+          ],
+          [
+            74,
+            24,
+            361
+          ],
+          [
+            66,
+            24,
+            361
+          ]
+        ],
+        [
+          [
+            77,
+            24,
+            373
+          ],
+          [
+            88,
+            24,
+            373
+          ],
+          [
+            88,
+            24,
+            376
+          ],
+          [
+            77,
+            24,
+            376
+          ]
+        ]
+      ],
+      "bounds": {
+        "min": [
+          51,
+          23.9,
+          349
+        ],
+        "max": [
+          99,
+          26,
+          381
+        ]
+      },
+      "actorType": "existing scenic pedestrian appearance; new collision-checked escort adapter",
+      "status": "new runtime adapter; acceptance requires normal-input incident, escort and lifecycle tests"
+    },
+    {
+      "id": "transit-pursuit",
+      "title": "TRANSIT INTERCHANGE \u00b7 PURSUIT",
+      "trigger": [
+        73,
+        100,
+        364
+      ],
+      "positions": [
+        [
+          73,
+          100,
+          373
+        ]
+      ],
+      "reward": 400,
+      "escape": [
+        84,
+        128,
+        420
+      ],
+      "path": [
+        [
+          73,
+          100,
+          373
+        ],
+        [
+          73,
+          100,
+          390
+        ],
+        [
+          64,
+          100,
+          399
+        ],
+        [
+          61,
+          100,
+          403.5
+        ],
+        [
+          61,
+          100.0,
+          403.5
+        ],
+        [
+          61,
+          103.11111111111111,
+          412.98
+        ],
+        [
+          67,
+          103.11111111111111,
+          412.98
+        ],
+        [
+          67,
+          103.11111111111111,
+          412.98
+        ],
+        [
+          67,
+          106.22222222222223,
+          403.5
+        ],
+        [
+          61,
+          106.22222222222223,
+          403.5
+        ],
+        [
+          61,
+          106.22222222222223,
+          403.5
+        ],
+        [
+          61,
+          109.33333333333333,
+          412.98
+        ],
+        [
+          67,
+          109.33333333333333,
+          412.98
+        ],
+        [
+          67,
+          109.33333333333333,
+          412.98
+        ],
+        [
+          67,
+          112.44444444444444,
+          403.5
+        ],
+        [
+          61,
+          112.44444444444444,
+          403.5
+        ],
+        [
+          61,
+          112.44444444444444,
+          403.5
+        ],
+        [
+          61,
+          115.55555555555556,
+          412.98
+        ],
+        [
+          67,
+          115.55555555555556,
+          412.98
+        ],
+        [
+          67,
+          115.55555555555556,
+          412.98
+        ],
+        [
+          67,
+          118.66666666666667,
+          403.5
+        ],
+        [
+          61,
+          118.66666666666667,
+          403.5
+        ],
+        [
+          61,
+          118.66666666666667,
+          403.5
+        ],
+        [
+          61,
+          121.77777777777777,
+          412.98
+        ],
+        [
+          67,
+          121.77777777777777,
+          412.98
+        ],
+        [
+          67,
+          121.77777777777777,
+          412.98
+        ],
+        [
+          67,
+          124.88888888888889,
+          403.5
+        ],
+        [
+          61,
+          124.88888888888889,
+          403.5
+        ],
+        [
+          61,
+          124.88888888888889,
+          403.5
+        ],
+        [
+          61,
+          128.0,
+          412.98
+        ],
+        [
+          67,
+          128.0,
+          412.98
+        ],
+        [
+          70.2,
+          128,
+          412.98
+        ],
+        [
+          70.2,
+          128,
+          403.5
+        ],
+        [
+          61,
+          128,
+          403.5
+        ],
+        [
+          61,
+          128,
+          403.5
+        ],
+        [
+          55,
+          128,
+          403.5
+        ],
+        [
+          55,
+          128,
+          430
+        ],
+        [
+          84,
+          128,
+          430
+        ],
+        [
+          84,
+          128,
+          420
+        ]
+      ],
+      "interception": [
+        80,
+        128,
+        420
+      ],
+      "speed": 2.7,
+      "cornerPause": 0.1,
+      "bounds": {
+        "min": [
+          51,
+          83.9,
+          353
+        ],
+        "max": [
+          99,
+          131,
+          446
+        ]
+      },
+      "actorType": "dedicated collision-checked runner; existing scenic civilian prototype appearance",
+      "status": "runtime prototype; original train envelope and wider gameplay acceptance remain separate"
     }
   ]
 }

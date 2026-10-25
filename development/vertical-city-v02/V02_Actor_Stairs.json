@@ -1,0 +1,104 @@
+{
+  "status": "PASS controlled actor stair ascent/descent and solid-wall/step/ledge rejection",
+  "scope": "Actual loaded stair collision and support, controlled NPC-only navigation probe; not player route acceptance",
+  "entrySHA256": "db8af3b20ec4d8f5e1378d7df5ffa8d74521947565503cd17b9dca567a29e8c7",
+  "cases": [
+    {
+      "id": "V2-VT-C",
+      "reverse": false,
+      "passed": true,
+      "frames": 2212,
+      "position": [
+        61,
+        100,
+        375.5
+      ],
+      "distance": 111.72962188372814,
+      "maxRise": 0.17777777777779136
+    },
+    {
+      "id": "V2-VT-C",
+      "reverse": true,
+      "passed": true,
+      "frames": 2212,
+      "position": [
+        61,
+        84,
+        375.5
+      ],
+      "distance": 111.73462056516219,
+      "maxRise": 0.17777777777779136
+    },
+    {
+      "id": "V2-VT-D",
+      "reverse": false,
+      "passed": true,
+      "frames": 3592,
+      "position": [
+        61,
+        127.99999999999999,
+        403.5
+      ],
+      "distance": 182.83844390668798,
+      "maxRise": 0.17283950617284916
+    },
+    {
+      "id": "V2-VT-D",
+      "reverse": true,
+      "passed": true,
+      "frames": 3592,
+      "position": [
+        61,
+        100,
+        403.5
+      ],
+      "distance": 182.84344258812285,
+      "maxRise": 0.17283950617284916
+    }
+  ],
+  "errors": [],
+  "negativeCases": [
+    {
+      "name": "solid wall cannot become a stair",
+      "from": [
+        64,
+        84,
+        301.2
+      ],
+      "to": [
+        64,
+        84,
+        299
+      ],
+      "rejected": true
+    },
+    {
+      "name": "counter above step limit remains solid",
+      "from": [
+        68,
+        24,
+        365
+      ],
+      "to": [
+        71,
+        24,
+        365
+      ],
+      "rejected": true
+    },
+    {
+      "name": "unsupported upper edge cannot become a teleport",
+      "from": [
+        55,
+        128,
+        395
+      ],
+      "to": [
+        49,
+        128,
+        395
+      ],
+      "rejected": true
+    }
+  ]
+}

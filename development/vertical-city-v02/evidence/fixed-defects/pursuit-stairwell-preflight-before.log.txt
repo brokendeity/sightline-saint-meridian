@@ -1,0 +1,12 @@
+AssertionError [ERR_ASSERTION]: {"phase":"idle","attempt":0,"elapsed":0,"runner":{"position":[70,100,373],"speedLimit":2.7},"canCapture":false,"waypoint":1,"rewarded":false,"error":"PREFLIGHT SEGMENT 1","events":[]}
+
+'idle' !== 'active'
+
+    at /Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/test_pursuit.cjs:20:174 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 'idle',
+  expected: 'active',
+  operator: 'strictEqual',
+  diff: 'simple'
+}

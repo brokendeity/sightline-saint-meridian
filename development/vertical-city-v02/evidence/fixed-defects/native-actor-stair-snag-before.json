@@ -1,0 +1,101 @@
+{
+  "status": "FAIL",
+  "scope": "Actual loaded stair collision and support, controlled NPC-only navigation probe; not player route acceptance",
+  "entrySHA256": "c998daaa2d492d332cdeb391051f96139d99ff889db099cbeb9f0dd3d8195531",
+  "cases": [
+    {
+      "id": "V2-VT-C",
+      "reverse": false,
+      "passed": false,
+      "frames": 24,
+      "position": [
+        61,
+        84,
+        376.5800000000004
+      ],
+      "requested": [
+        61,
+        84,
+        376.6250000000004
+      ],
+      "target": [
+        61,
+        87.2,
+        384.98
+      ],
+      "distance": 1.080000000000382,
+      "maxRise": 0
+    },
+    {
+      "id": "V2-VT-C",
+      "reverse": true,
+      "passed": false,
+      "frames": 662,
+      "position": [
+        61,
+        100,
+        383.13499999999937
+      ],
+      "requested": [
+        61,
+        100,
+        383.08999999999935
+      ],
+      "target": [
+        61,
+        96.8,
+        375.5
+      ],
+      "distance": 29.725000000000676,
+      "maxRise": 0
+    },
+    {
+      "id": "V2-VT-D",
+      "reverse": false,
+      "passed": false,
+      "frames": 24,
+      "position": [
+        61,
+        100,
+        404.5800000000004
+      ],
+      "requested": [
+        61,
+        100,
+        404.6250000000004
+      ],
+      "target": [
+        61,
+        103.11111111111111,
+        412.98
+      ],
+      "distance": 1.080000000000382,
+      "maxRise": 0
+    },
+    {
+      "id": "V2-VT-D",
+      "reverse": true,
+      "passed": false,
+      "frames": 662,
+      "position": [
+        61,
+        127.99999999999999,
+        411.13499999999937
+      ],
+      "requested": [
+        61,
+        127.99999999999999,
+        411.08999999999935
+      ],
+      "target": [
+        61,
+        124.88888888888889,
+        403.5
+      ],
+      "distance": 29.725000000000676,
+      "maxRise": 1.4210854715202004e-14
+    }
+  ],
+  "errors": [],
+  "failure": "AssertionError [ERR_ASSERTION]: Native NPC stairs are blocked"
+}

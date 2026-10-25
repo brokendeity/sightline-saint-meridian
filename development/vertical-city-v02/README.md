@@ -63,3 +63,20 @@ A real multi-level encounter now uses the shared damage-taking sparring system. 
 `test_service_encounter.cjs` proves three supported spawns, atomic placement failure, grounded access to both upper decks and victory through legal combat inputs. `test_service_lifecycle.cjs` covers simulated-controller and CDP-touch start, pause, restart without healing, actual hero-selector cleanup, respawn, coexistence with street contracts and natural defeat from incoming strikes. Broader Echo/knockback/camera/escape cases remain open, along with the two other encounters. SeeV02_Encounter_Design.md.
 
 After changes, run `python3 scripts/vertical-v02/run_graybox_regressions.py` for all listed circulation, local-combat and retained-input scenarios, then `python3 scripts/vertical-v02/report_milestone.py`. The runner records exact hashes and per-job logs. It does not certify the full city. Original builds and saved GitHub snapshot refs are unchanged.
+
+## Market-rescue prototype
+
+At the lower market access[62,24,375], pressI/controllerY or the contextual Start button. Find the resident, isolate the cabinet, return and escort them to assembly. Current scenic pedestrian appearance is reused with a new, separately owned escort adapter. NPCs follow validated ground steps; jumps, leaving the area and blocked shortcuts do not teleport them. Two surrounding residents circulate independently. The original courier rescue remains unchanged.
+
+Normal-input evidence includes a complete ground-to-market approach and northern extraction, a southern escort from a labelled local setup, and interruption/input/failure cases. Civilian bases/footprint support are validated; final pedestrian animation/contact presentation and camera acceptance remain open. SeeV02_Encounter_Design.md.
+
+The full regression runner now contains16sequential scenarios, fingerprints both external encounter modules as well as entry/manifest, and rejects any runtime change during acceptance. The aggregate report requires current passing reports and exact saved-Blender encounter-marker alignment. This remains a prototype milestone; pursuit, POIs, guardrails/recovery/graph admission and all later architecture/transit/visual/performance gates remain unfinished.
+
+
+### Transit pursuit and actor stairs
+
+The separate V02 candidate now loads `scripts/game_vertical_pursuit_v02.js`. Reach the station east corridor at[73,100,364] and interact with I/controllerY/context control. Chase up stairD or intercept across the observation deck. The runner reuses scenic prototype appearance, not a final enemy model. Physical staircase/clearance uses the shared actor solver with a V02-tag-only riser adapter; source WHIP/V1 builds are unchanged.
+
+Run `node scripts/vertical-v02/test_actor_stairs.cjs`; `node scripts/vertical-v02/test_pursuit.cjs`; then `PURSUIT_CASE=chase`, `escape` or `lifecycle` with the same test command. `FULL_PURSUIT=1 node scripts/vertical-v02/test_pursuit.cjs` validates the complete ordinary public ground approach before the incident, with no intermediate setup teleports. The regression driver now has21sequential cases; it must finish against one runtime fingerprint set. The new actor probe is collision evidence, not normal player input certification.
+
+`python3 scripts/vertical-v02/admit_input_edges.py` produces a separate conservative admission overlay for current hash-bound ground traces. It does not convert every proposed graph edge to PASS, and does not certify NPC behavior, abilities, camera or train clearance. Missing/stale/unsupported cases remain explicit. Keep the full original brief as completion authority.

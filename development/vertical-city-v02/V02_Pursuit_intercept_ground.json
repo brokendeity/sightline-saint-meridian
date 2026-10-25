@@ -1,0 +1,191 @@
+{
+  "status": "PASS intercept pursuit through supported upper route",
+  "scope": "Single ground setup; full ordinary public approach to station. Normal movement and interaction through connected 100/128m architecture. intercept",
+  "errors": [],
+  "stages": [
+    {
+      "label": "ground-access-complete",
+      "frame": 9091,
+      "p": [
+        72.99863729857236,
+        100.42,
+        364.1321873215539
+      ],
+      "target": [
+        73,
+        100,
+        373
+      ],
+      "phase": "idle",
+      "elapsed": 0
+    },
+    {
+      "label": "start",
+      "frame": 9094,
+      "p": [
+        72.99863729857236,
+        100.42,
+        364.1321873215539
+      ],
+      "target": [
+        73,
+        100,
+        373
+      ],
+      "phase": "active",
+      "elapsed": 0.05
+    },
+    {
+      "label": "stairs-entry",
+      "frame": 9577,
+      "p": [
+        61.073844658032236,
+        100.42,
+        403.3902968108383
+      ],
+      "target": [
+        72.01358604024492,
+        100,
+        390.98641395975596
+      ],
+      "phase": "active",
+      "elapsed": 8.099999999999982
+    },
+    {
+      "label": "upper-stair",
+      "frame": 11659,
+      "p": [
+        61.131110833316086,
+        128.42,
+        403.50188321008454
+      ],
+      "target": [
+        62.215000000000046,
+        115.55555555555556,
+        412.98
+      ],
+      "phase": "active",
+      "elapsed": 42.79999999999885
+    },
+    {
+      "label": "upper-approach",
+      "frame": 12192,
+      "p": [
+        81.7708117603955,
+        128.42,
+        419.99936359008257
+      ],
+      "target": [
+        61.0112262705466,
+        119.18518518518519,
+        405.88499701445613
+      ],
+      "phase": "active",
+      "elapsed": 51.68333333333168
+    },
+    {
+      "label": "victory",
+      "frame": 15610,
+      "p": [
+        81.7708117603955,
+        128.42,
+        419.99936359008257
+      ],
+      "target": [
+        84,
+        127.99999999999999,
+        420.27999999999656
+      ],
+      "phase": "victory",
+      "elapsed": 104.01666666666205
+    }
+  ],
+  "entrySHA256": "db8af3b20ec4d8f5e1378d7df5ffa8d74521947565503cd17b9dca567a29e8c7",
+  "manifestSHA256": "6c4fee7bf26402714b48240d14b7a9a87595886daa942117553baa4da1b03e09",
+  "pursuitSHA256": "d26199eb208a5d3fc21ad26f70c97471bd14b8b3b8370dfd2611c7b0c0344d58",
+  "fullGroundApproach": true,
+  "initialBank": 0,
+  "approachSeconds": 151.5,
+  "approachAirFrames": 0,
+  "runnerVisual": {
+    "visible": true,
+    "visualSoleY": 128,
+    "baseY": 127.99999999999999,
+    "ndc": [
+      -0.007736744289166634,
+      -0.06395362190738521,
+      0.9848928594560085
+    ]
+  },
+  "courierPreserved": true,
+  "maximumRunnerRise": 0.17283950617284916,
+  "maximumRunnerHorizontalStep": 0.045000000000024035,
+  "final": {
+    "p": [
+      81.7708117603955,
+      128.42,
+      419.99936359008257
+    ],
+    "v": [
+      0,
+      0,
+      0
+    ],
+    "grounded": true,
+    "trauma": 0,
+    "score": 400,
+    "active": true,
+    "pursuit": {
+      "phase": "victory",
+      "attempt": 1,
+      "elapsed": 104.01666666666205,
+      "runner": {
+        "position": [
+          84,
+          127.99999999999999,
+          420.27999999999656
+        ],
+        "speedLimit": 2.7
+      },
+      "canCapture": false,
+      "waypoint": 38,
+      "rewarded": true,
+      "error": null,
+      "events": [
+        {
+          "eventId": 38,
+          "attempt": 1,
+          "time": 251.85,
+          "kind": "waypoint",
+          "index": 37,
+          "position": [
+            84,
+            127.99999999999999,
+            430
+          ]
+        },
+        {
+          "eventId": 39,
+          "attempt": 1,
+          "time": 255.533,
+          "kind": "intercepted",
+          "position": [
+            84,
+            127.99999999999999,
+            420.27999999999656
+          ],
+          "player": [
+            81.7708117603955,
+            128.42,
+            419.99936359008257
+          ],
+          "reward": 400
+        }
+      ]
+    },
+    "bank": 0,
+    "releases": 0
+  },
+  "fullTrace": "V02_Pursuit_intercept_ground.trace.json.gz",
+  "traceFrames": 15610
+}

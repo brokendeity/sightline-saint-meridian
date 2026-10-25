@@ -12,7 +12,7 @@ from encounter_adapter import compose_encounters
 s=compose_encounters(s)
 needle='function updatePlayer(dt,realDt=dt)';assert s.count(needle)==1;s=s.replace(needle,(R/'scripts/game_vertical_district_v02.js').read_text()+'\n'+needle,1)
 # External candidate module executes after all shared combat/mission declarations.
-needle='</body>';assert s.count(needle)==1;s=s.replace(needle,'<script src="scripts/game_vertical_encounters_v02.js"></script>'+needle,1)
+needle='</body>';assert s.count(needle)==1;s=s.replace(needle,'<script src="scripts/game_vertical_encounters_v02.js"></script><script src="scripts/game_vertical_market_v02.js"></script><script src="scripts/game_vertical_pursuit_v02.js"></script>'+needle,1)
 old='verticalCity.build();}},100);';assert s.count(old)==1;s=s.replace(old,'verticalCity.build();verticalDistrict.build();}},100);')
 old='if(!start)return buildingColliders.flatMap(c=>c.parts||[c]).concat(propColliders);';assert s.count(old)==1;s=s.replace(old,'if(!start)return buildingColliders.flatMap(c=>c.parts||[c]).concat(propColliders,window.verticalDistrict?.colliders()||[]);')
 old='.concat(propColliders.filter(c=>c.box.intersectsBox(area)));';assert s.count(old)==1;s=s.replace(old,'.concat(propColliders.filter(c=>c.box.intersectsBox(area)),window.verticalDistrict?.colliders(start,end)||[]);')

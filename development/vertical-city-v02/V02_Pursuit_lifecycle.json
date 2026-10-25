@@ -1,0 +1,117 @@
+{
+  "status": "PASS lifecycle pursuit interruption/input cases",
+  "scope": "Single station setup. Normal movement and interaction through connected 100/128m architecture. lifecycle",
+  "errors": [],
+  "stages": [
+    {
+      "label": "start",
+      "frame": 6,
+      "p": [
+        73,
+        100.42,
+        364
+      ],
+      "target": [
+        73,
+        100,
+        373
+      ],
+      "phase": "active",
+      "elapsed": 0.05
+    }
+  ],
+  "entrySHA256": "db8af3b20ec4d8f5e1378d7df5ffa8d74521947565503cd17b9dca567a29e8c7",
+  "manifestSHA256": "6c4fee7bf26402714b48240d14b7a9a87595886daa942117553baa4da1b03e09",
+  "pursuitSHA256": "d26199eb208a5d3fc21ad26f70c97471bd14b8b3b8370dfd2611c7b0c0344d58",
+  "fullGroundApproach": false,
+  "results": [
+    {
+      "name": "actual pause freezes runner, route and clocks",
+      "pass": true
+    },
+    {
+      "name": "actual hero selector and simulated-controller Y resume the same runner",
+      "pass": true
+    },
+    {
+      "name": "labelled negative preflight obstruction preserves active attempt and runner",
+      "pass": true
+    },
+    {
+      "name": "labelled conflicting encounter APIs cannot replace the active pursuit",
+      "pass": true
+    },
+    {
+      "name": "actual End retains last supported position without reward",
+      "pass": true
+    },
+    {
+      "name": "CDP touch start and portrait/landscape controls remain accessible",
+      "pass": true
+    },
+    {
+      "name": "labelled existing respawn API retains failed outcome and safe runner position",
+      "pass": true
+    }
+  ],
+  "courierPreserved": "Not certified across the labelled native respawn; other encounter ownership is tested separately",
+  "maximumRunnerRise": 0,
+  "maximumRunnerHorizontalStep": 0.045000000000015916,
+  "final": {
+    "p": [
+      0,
+      0.42,
+      0
+    ],
+    "v": [
+      0,
+      0,
+      0
+    ],
+    "grounded": true,
+    "trauma": 0,
+    "score": 0,
+    "active": true,
+    "pursuit": {
+      "phase": "failed",
+      "attempt": 2,
+      "elapsed": 1.5333333333333328,
+      "runner": {
+        "position": [
+          73,
+          100,
+          373.94500000000033
+        ],
+        "speedLimit": 2.7
+      },
+      "canCapture": false,
+      "waypoint": 1,
+      "rewarded": false,
+      "error": null,
+      "events": [
+        {
+          "eventId": 5,
+          "attempt": 2,
+          "time": 0.217,
+          "kind": "started",
+          "position": [
+            73,
+            100,
+            373
+          ]
+        },
+        {
+          "eventId": 6,
+          "attempt": 2,
+          "time": 1.75,
+          "kind": "failed",
+          "reason": "RESPAWN"
+        }
+      ]
+    },
+    "bank": 0,
+    "releases": 0
+  },
+  "fullTrace": "V02_Pursuit_lifecycle.trace.json.gz",
+  "traceFrames": 352
+}

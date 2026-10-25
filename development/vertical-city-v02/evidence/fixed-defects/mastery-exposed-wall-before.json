@@ -1,0 +1,85 @@
+{
+  "status": "FAIL",
+  "scope": "Ground access, four wall ascents, upper rail and Pop to Y100 station",
+  "method": "One controlled initial setup (ground for full route, Y84 for local pilot). Normal R/Shift/Space keys and standard simulated controller movement/look after setup. No direct rail creation, actor/camera assignment, reset or resource injection during route.",
+  "errors": [],
+  "stages": [
+    {
+      "name": "ground approach start",
+      "frame": 259,
+      "p": [
+        55,
+        0.42,
+        210.16219459897232
+      ],
+      "clock": 4.3666666666666565,
+      "message": ""
+    },
+    {
+      "name": "public A 0 to 24",
+      "frame": 914,
+      "p": [
+        61.159003134409375,
+        24.42,
+        215.50432008795016
+      ],
+      "clock": 15.283333333333672,
+      "message": ""
+    },
+    {
+      "name": "public A 24 to 52",
+      "frame": 1777,
+      "p": [
+        61.05860536534933,
+        52.42,
+        215.5007294679946
+      ],
+      "clock": 29.666666666666263,
+      "message": ""
+    },
+    {
+      "name": "public A 52 to 84",
+      "frame": 2592,
+      "p": [
+        61.08052229875829,
+        84.42,
+        215.50031104383604
+      ],
+      "clock": 43.24999999999883,
+      "message": ""
+    },
+    {
+      "name": "courtyard reached from ground",
+      "frame": 2926,
+      "p": [
+        55.00013491735099,
+        84.42,
+        292.8528256107442
+      ],
+      "clock": 48.81666666666518,
+      "message": ""
+    },
+    {
+      "name": "mastery courtyard",
+      "frame": 2927,
+      "p": [
+        55.00013491735099,
+        84.42,
+        292.8528256107442
+      ],
+      "clock": 48.833333333331844,
+      "message": ""
+    }
+  ],
+  "entrySHA256": "c998daaa2d492d332cdeb391051f96139d99ff889db099cbeb9f0dd3d8195531",
+  "manifestSHA256": "79f8abf9f3d505fcd3212dc05c00666dd5c023a125ef327aafe47259a85f620c",
+  "initialBank": 5,
+  "preparationFrames": 257,
+  "routeStartFrame": 258,
+  "routeTraceStart": 258,
+  "failure": "Error: Wall route damage {\"frame\":0,\"p\":[63.831641758577824,84.42,301.19663368378764],\"v\":[0,0,0],\"grounded\":true,\"mode\":\"GROUND\",\"trauma\":8,\"rail\":null,\"rails\":[],\"anchors\":[],\"bank\":1,\"releases\":[],\"clock\":53.63333333333157,\"message\":\"\",\"deployment\":\"CAST INTERRUPTED\",\"precision\":false,\"source\":\"action-v2-flow-reaction\",\"advanced\":{\"kind\":null,\"clock\":53.383333333331585,\"cooldown\":0,\"floatRemaining\":6,\"wallJumps\":0,\"reason\":\"INELIGIBLE\",\"motion\":null,\"water\":null,\"anchor\":null,\"wallNormal\":null,\"wallTop\":null,\"wallPoint\":null,\"wallAge\":0,\"wallRegrabLocked\":false,\"events\":[],\"origin\":\"authored mechanics; source/native candidate poses\",\"ready\":true,\"waters\":[{\"id\":\"meridian-waterfront\",\"minX\":-36,\"maxX\":36,\"minZ\":1171.7387966456854,\"maxZ\":1231.7387966456854,\"surface\":0.06,\"depth\":2.5}],\"surfaceOnly\":true,\"wallPose\":null,\"pose\":\"action-v2-flow-reaction\"},\"camera\":[65.26425931056617,83.76193134039107,304.868602619027]}",
+  "fullTrace": "evidence/fixed-defects/mastery-exposed-wall-before.trace.json.gz",
+  "traceFrames": 3215,
+  "archivedFrom": "V02_Mastery_Full_Banked_Brake.json",
+  "originalFullTrace": "V02_Mastery_Full_Banked_Brake.trace.json.gz"
+}

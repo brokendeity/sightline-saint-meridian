@@ -1,0 +1,3173 @@
+{
+  "status": "PARTIAL edge admission overlay; not full district acceptance",
+  "entrySHA256": "db8af3b20ec4d8f5e1378d7df5ffa8d74521947565503cd17b9dca567a29e8c7",
+  "manifestSHA256": "6c4fee7bf26402714b48240d14b7a9a87595886daa942117553baa4da1b03e09",
+  "designGraphSHA256": "b3a4c96ab164f981dc5eb2dd9fbcff19f0f8238b23d52636c360a8f4cdad6b91",
+  "scope": "Only input-observed directed ground edges. Stair polylines are circulation corridors, not planted-foot meshes. Abilities, NPCs, camera, train and failure recovery retain separate gates. Design graph is immutable to this tool.",
+  "edges": [
+    {
+      "id": "E0000",
+      "source": "W24_210",
+      "destination": "W24_230",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:lower",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 0,
+        "endFrame": 189,
+        "seconds": 3.15,
+        "actualDistance": 19.635000000002265,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0001",
+      "source": "W24_230",
+      "destination": "W24_210",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0002",
+      "source": "W24_230",
+      "destination": "W24_250",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:lower",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 189,
+        "endFrame": 371,
+        "seconds": 3.033333333333333,
+        "actualDistance": 20.020000000002483,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0003",
+      "source": "W24_250",
+      "destination": "W24_230",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0004",
+      "source": "W24_250",
+      "destination": "W24_276",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:lower",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 371,
+        "endFrame": 607,
+        "seconds": 3.933333333333333,
+        "actualDistance": 25.96000000000322,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0005",
+      "source": "W24_276",
+      "destination": "W24_250",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0006",
+      "source": "W24_276",
+      "destination": "W24_300",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:lower",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 607,
+        "endFrame": 825,
+        "seconds": 3.6333333333333333,
+        "actualDistance": 23.980000000002974,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0007",
+      "source": "W24_300",
+      "destination": "W24_276",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0008",
+      "source": "W24_300",
+      "destination": "W24_326",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:lower",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 825,
+        "endFrame": 1061,
+        "seconds": 3.933333333333333,
+        "actualDistance": 25.96000000000322,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0009",
+      "source": "W24_326",
+      "destination": "W24_300",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0010",
+      "source": "W24_326",
+      "destination": "W24_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:lower",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 1061,
+        "endFrame": 1280,
+        "seconds": 3.65,
+        "actualDistance": 24.090000000002988,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0011",
+      "source": "W24_350",
+      "destination": "W24_326",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0012",
+      "source": "W24_350",
+      "destination": "W24_376",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0013",
+      "source": "W24_376",
+      "destination": "W24_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0014",
+      "source": "W24_376",
+      "destination": "W24_400",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0015",
+      "source": "W24_400",
+      "destination": "W24_376",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0016",
+      "source": "W24_400",
+      "destination": "W24_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0017",
+      "source": "W24_410",
+      "destination": "W24_400",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0018",
+      "source": "W24_410",
+      "destination": "W24_430",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0019",
+      "source": "W24_430",
+      "destination": "W24_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0020",
+      "source": "E24_210",
+      "destination": "E24_230",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0021",
+      "source": "E24_230",
+      "destination": "E24_210",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:lower",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 2743,
+        "endFrame": 2925,
+        "seconds": 3.033333333333333,
+        "actualDistance": 20.020000000002483,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0022",
+      "source": "E24_230",
+      "destination": "E24_250",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0023",
+      "source": "E24_250",
+      "destination": "E24_230",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:lower",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 2561,
+        "endFrame": 2743,
+        "seconds": 3.033333333333333,
+        "actualDistance": 20.020000000002483,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0024",
+      "source": "E24_250",
+      "destination": "E24_276",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0025",
+      "source": "E24_276",
+      "destination": "E24_250",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:lower",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 2325,
+        "endFrame": 2561,
+        "seconds": 3.933333333333333,
+        "actualDistance": 25.96000000000322,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0026",
+      "source": "E24_276",
+      "destination": "E24_300",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0027",
+      "source": "E24_300",
+      "destination": "E24_276",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:lower",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 2107,
+        "endFrame": 2325,
+        "seconds": 3.6333333333333333,
+        "actualDistance": 23.980000000002974,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0028",
+      "source": "E24_300",
+      "destination": "E24_326",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0029",
+      "source": "E24_326",
+      "destination": "E24_300",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:lower",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 1870,
+        "endFrame": 2107,
+        "seconds": 3.95,
+        "actualDistance": 26.070000000003233,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0030",
+      "source": "E24_326",
+      "destination": "E24_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0031",
+      "source": "E24_350",
+      "destination": "E24_326",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:lower",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 1652,
+        "endFrame": 1870,
+        "seconds": 3.6333333333333333,
+        "actualDistance": 23.980000000002917,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0032",
+      "source": "E24_350",
+      "destination": "E24_376",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0033",
+      "source": "E24_376",
+      "destination": "E24_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0034",
+      "source": "E24_376",
+      "destination": "E24_400",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0035",
+      "source": "E24_400",
+      "destination": "E24_376",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0036",
+      "source": "E24_400",
+      "destination": "E24_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0037",
+      "source": "E24_410",
+      "destination": "E24_400",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0038",
+      "source": "E24_410",
+      "destination": "E24_430",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0039",
+      "source": "E24_430",
+      "destination": "E24_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0040",
+      "source": "W52_210",
+      "destination": "W52_230",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0041",
+      "source": "W52_230",
+      "destination": "W52_210",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0042",
+      "source": "W52_230",
+      "destination": "W52_250",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0043",
+      "source": "W52_250",
+      "destination": "W52_230",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0044",
+      "source": "W52_250",
+      "destination": "W52_276",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0045",
+      "source": "W52_276",
+      "destination": "W52_250",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0046",
+      "source": "W52_276",
+      "destination": "W52_300",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:mid",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 0,
+        "endFrame": 225,
+        "seconds": 3.75,
+        "actualDistance": 23.595000000002756,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0047",
+      "source": "W52_300",
+      "destination": "W52_276",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0048",
+      "source": "W52_300",
+      "destination": "W52_326",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:mid",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 225,
+        "endFrame": 461,
+        "seconds": 3.933333333333333,
+        "actualDistance": 25.96000000000322,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0049",
+      "source": "W52_326",
+      "destination": "W52_300",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0050",
+      "source": "W52_326",
+      "destination": "W52_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:mid",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 461,
+        "endFrame": 680,
+        "seconds": 3.65,
+        "actualDistance": 24.090000000002988,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0051",
+      "source": "W52_350",
+      "destination": "W52_326",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0052",
+      "source": "W52_350",
+      "destination": "W52_376",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0053",
+      "source": "W52_376",
+      "destination": "W52_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0054",
+      "source": "W52_376",
+      "destination": "W52_400",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0055",
+      "source": "W52_400",
+      "destination": "W52_376",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0056",
+      "source": "W52_400",
+      "destination": "W52_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0057",
+      "source": "W52_410",
+      "destination": "W52_400",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0058",
+      "source": "W52_410",
+      "destination": "W52_430",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0059",
+      "source": "W52_430",
+      "destination": "W52_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0060",
+      "source": "E52_210",
+      "destination": "E52_230",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0061",
+      "source": "E52_230",
+      "destination": "E52_210",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0062",
+      "source": "E52_230",
+      "destination": "E52_250",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0063",
+      "source": "E52_250",
+      "destination": "E52_230",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0064",
+      "source": "E52_250",
+      "destination": "E52_276",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0065",
+      "source": "E52_276",
+      "destination": "E52_250",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0066",
+      "source": "E52_276",
+      "destination": "E52_300",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0067",
+      "source": "E52_300",
+      "destination": "E52_276",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:mid",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 1507,
+        "endFrame": 1725,
+        "seconds": 3.6333333333333333,
+        "actualDistance": 23.980000000002974,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0068",
+      "source": "E52_300",
+      "destination": "E52_326",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0069",
+      "source": "E52_326",
+      "destination": "E52_300",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:mid",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 1270,
+        "endFrame": 1507,
+        "seconds": 3.95,
+        "actualDistance": 26.070000000003233,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0070",
+      "source": "E52_326",
+      "destination": "E52_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0071",
+      "source": "E52_350",
+      "destination": "E52_326",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:mid",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 1052,
+        "endFrame": 1270,
+        "seconds": 3.6333333333333333,
+        "actualDistance": 23.980000000002917,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0072",
+      "source": "E52_350",
+      "destination": "E52_376",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0073",
+      "source": "E52_376",
+      "destination": "E52_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0074",
+      "source": "E52_376",
+      "destination": "E52_400",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0075",
+      "source": "E52_400",
+      "destination": "E52_376",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0076",
+      "source": "E52_400",
+      "destination": "E52_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0077",
+      "source": "E52_410",
+      "destination": "E52_400",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0078",
+      "source": "E52_410",
+      "destination": "E52_430",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0079",
+      "source": "E52_430",
+      "destination": "E52_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0080",
+      "source": "W84_210",
+      "destination": "W84_230",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0081",
+      "source": "W84_230",
+      "destination": "W84_210",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0082",
+      "source": "W84_230",
+      "destination": "W84_250",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Route_Validation.json:route",
+        "completeTrace": "V02_Public_Route_Validation.trace.json.gz",
+        "traceSHA256": "531dc2b8b80b6bac30216e69658b7c644e664cfc6cafd06da94a6f50381e663b",
+        "startFrame": 17734,
+        "endFrame": 18461,
+        "seconds": 12.116666666666667,
+        "actualDistance": 19.99250000000248,
+        "maximumHorizontalSpeed": 1.6500000000002046,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0083",
+      "source": "W84_250",
+      "destination": "W84_230",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0084",
+      "source": "W84_250",
+      "destination": "W84_276",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Route_Validation.json:route",
+        "completeTrace": "V02_Public_Route_Validation.trace.json.gz",
+        "traceSHA256": "531dc2b8b80b6bac30216e69658b7c644e664cfc6cafd06da94a6f50381e663b",
+        "startFrame": 18461,
+        "endFrame": 19407,
+        "seconds": 15.766666666666667,
+        "actualDistance": 26.01499999998302,
+        "maximumHorizontalSpeed": 1.6500000000002046,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0085",
+      "source": "W84_276",
+      "destination": "W84_250",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0086",
+      "source": "W84_276",
+      "destination": "W84_300",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Route_Validation.json:route",
+        "completeTrace": "V02_Public_Route_Validation.trace.json.gz",
+        "traceSHA256": "531dc2b8b80b6bac30216e69658b7c644e664cfc6cafd06da94a6f50381e663b",
+        "startFrame": 19407,
+        "endFrame": 20280,
+        "seconds": 14.55,
+        "actualDistance": 24.007499999978165,
+        "maximumHorizontalSpeed": 1.65,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0087",
+      "source": "W84_300",
+      "destination": "W84_276",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0088",
+      "source": "W84_300",
+      "destination": "W84_326",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Route_Validation.json:route",
+        "completeTrace": "V02_Public_Route_Validation.trace.json.gz",
+        "traceSHA256": "531dc2b8b80b6bac30216e69658b7c644e664cfc6cafd06da94a6f50381e663b",
+        "startFrame": 20280,
+        "endFrame": 21225,
+        "seconds": 15.75,
+        "actualDistance": 25.987499999976365,
+        "maximumHorizontalSpeed": 1.65,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0089",
+      "source": "W84_326",
+      "destination": "W84_300",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0090",
+      "source": "W84_326",
+      "destination": "W84_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Route_Validation.json:route",
+        "completeTrace": "V02_Public_Route_Validation.trace.json.gz",
+        "traceSHA256": "531dc2b8b80b6bac30216e69658b7c644e664cfc6cafd06da94a6f50381e663b",
+        "startFrame": 21225,
+        "endFrame": 22098,
+        "seconds": 14.55,
+        "actualDistance": 24.007499999978165,
+        "maximumHorizontalSpeed": 1.65,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0091",
+      "source": "W84_350",
+      "destination": "W84_326",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0092",
+      "source": "W84_350",
+      "destination": "W84_376",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:high",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 0,
+        "endFrame": 243,
+        "seconds": 4.05,
+        "actualDistance": 25.575000000003,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0093",
+      "source": "W84_376",
+      "destination": "W84_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0094",
+      "source": "W84_376",
+      "destination": "W84_400",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:high",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 243,
+        "endFrame": 461,
+        "seconds": 3.6333333333333333,
+        "actualDistance": 23.980000000002974,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0095",
+      "source": "W84_400",
+      "destination": "W84_376",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0096",
+      "source": "W84_400",
+      "destination": "W84_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:high",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 461,
+        "endFrame": 552,
+        "seconds": 1.5166666666666666,
+        "actualDistance": 10.010000000001241,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0097",
+      "source": "W84_410",
+      "destination": "W84_400",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0098",
+      "source": "W84_410",
+      "destination": "W84_430",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:high",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 552,
+        "endFrame": 734,
+        "seconds": 3.033333333333333,
+        "actualDistance": 20.020000000002483,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0099",
+      "source": "W84_430",
+      "destination": "W84_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0100",
+      "source": "E84_210",
+      "destination": "E84_230",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0101",
+      "source": "E84_230",
+      "destination": "E84_210",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0102",
+      "source": "E84_230",
+      "destination": "E84_250",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0103",
+      "source": "E84_250",
+      "destination": "E84_230",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0104",
+      "source": "E84_250",
+      "destination": "E84_276",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0105",
+      "source": "E84_276",
+      "destination": "E84_250",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0106",
+      "source": "E84_276",
+      "destination": "E84_300",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0107",
+      "source": "E84_300",
+      "destination": "E84_276",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0108",
+      "source": "E84_300",
+      "destination": "E84_326",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0109",
+      "source": "E84_326",
+      "destination": "E84_300",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0110",
+      "source": "E84_326",
+      "destination": "E84_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0111",
+      "source": "E84_350",
+      "destination": "E84_326",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0112",
+      "source": "E84_350",
+      "destination": "E84_376",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0113",
+      "source": "E84_376",
+      "destination": "E84_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:high",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 1599,
+        "endFrame": 1835,
+        "seconds": 3.933333333333333,
+        "actualDistance": 25.96000000000322,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0114",
+      "source": "E84_376",
+      "destination": "E84_400",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0115",
+      "source": "E84_400",
+      "destination": "E84_376",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:high",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 1380,
+        "endFrame": 1599,
+        "seconds": 3.65,
+        "actualDistance": 24.090000000002988,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0116",
+      "source": "E84_400",
+      "destination": "E84_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0117",
+      "source": "E84_410",
+      "destination": "E84_400",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:high",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 1289,
+        "endFrame": 1380,
+        "seconds": 1.5166666666666666,
+        "actualDistance": 10.010000000001241,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0118",
+      "source": "E84_410",
+      "destination": "E84_430",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0119",
+      "source": "E84_430",
+      "destination": "E84_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:high",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 1107,
+        "endFrame": 1289,
+        "seconds": 3.033333333333333,
+        "actualDistance": 20.020000000002426,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0120",
+      "source": "W24_210",
+      "destination": "E24_210",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0121",
+      "source": "E24_210",
+      "destination": "W24_210",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:lower",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 2925,
+        "endFrame": 3297,
+        "seconds": 6.2,
+        "actualDistance": 40.91999999999983,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0122",
+      "source": "W24_350",
+      "destination": "E24_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:lower",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 1280,
+        "endFrame": 1652,
+        "seconds": 6.2,
+        "actualDistance": 40.91999999999983,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0123",
+      "source": "E24_350",
+      "destination": "W24_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0124",
+      "source": "W52_276",
+      "destination": "E52_276",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0125",
+      "source": "E52_276",
+      "destination": "W52_276",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:mid",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 1725,
+        "endFrame": 2097,
+        "seconds": 6.2,
+        "actualDistance": 40.91999999999983,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0126",
+      "source": "W52_350",
+      "destination": "E52_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:mid",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 680,
+        "endFrame": 1052,
+        "seconds": 6.2,
+        "actualDistance": 40.91999999999983,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0127",
+      "source": "E52_350",
+      "destination": "W52_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0128",
+      "source": "W84_350",
+      "destination": "E84_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0129",
+      "source": "E84_350",
+      "destination": "W84_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:high",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 1835,
+        "endFrame": 2207,
+        "seconds": 6.2,
+        "actualDistance": 40.91999999999983,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0130",
+      "source": "W84_430",
+      "destination": "E84_430",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Loop_Validation.json:high",
+        "completeTrace": "V02_Loop_Validation.trace.json.gz",
+        "traceSHA256": "3ee30660fb359ca51b57a2af106df759b7649fea3c98fe53a730e5aab281e9b5",
+        "startFrame": 734,
+        "endFrame": 1107,
+        "seconds": 6.216666666666667,
+        "actualDistance": 41.029999999999845,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0131",
+      "source": "E84_430",
+      "destination": "W84_430",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0132",
+      "source": "W24_376",
+      "destination": "suspended-market",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0133",
+      "source": "suspended-market",
+      "destination": "W24_376",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0134",
+      "source": "E24_376",
+      "destination": "suspended-market",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0135",
+      "source": "suspended-market",
+      "destination": "E24_376",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0136",
+      "source": "W52_326",
+      "destination": "service-yard",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0137",
+      "source": "service-yard",
+      "destination": "W52_326",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0138",
+      "source": "E52_326",
+      "destination": "service-yard",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0139",
+      "source": "service-yard",
+      "destination": "E52_326",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0140",
+      "source": "W24_376",
+      "destination": "market-access",
+      "ability": "walk",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0141",
+      "source": "market-access",
+      "destination": "W24_376",
+      "ability": "walk",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0142",
+      "source": "market-access",
+      "destination": "market-resident",
+      "ability": "walk",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0143",
+      "source": "market-resident",
+      "destination": "market-access",
+      "ability": "walk",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0144",
+      "source": "market-resident",
+      "destination": "market-isolation",
+      "ability": "walk",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0145",
+      "source": "market-isolation",
+      "destination": "market-resident",
+      "ability": "walk",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0146",
+      "source": "market-isolation",
+      "destination": "market-assembly",
+      "ability": "walk",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0147",
+      "source": "market-assembly",
+      "destination": "market-isolation",
+      "ability": "walk",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0148",
+      "source": "market-escort-origin",
+      "destination": "market-assembly",
+      "ability": "walk",
+      "agent": "civilian",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "actor-specific behavior requires separate route and encounter evidence"
+    },
+    {
+      "id": "E0149",
+      "source": "market-escort-origin",
+      "destination": "market-assembly",
+      "ability": "walk",
+      "agent": "civilian",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "actor-specific behavior requires separate route and encounter evidence"
+    },
+    {
+      "id": "E0150",
+      "source": "W24_210",
+      "destination": "V2-VT-A-24",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0151",
+      "source": "V2-VT-A-24",
+      "destination": "W24_210",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0152",
+      "source": "W52_210",
+      "destination": "V2-VT-A-52",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0153",
+      "source": "V2-VT-A-52",
+      "destination": "W52_210",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0154",
+      "source": "W84_210",
+      "destination": "V2-VT-A-84",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0155",
+      "source": "V2-VT-A-84",
+      "destination": "W84_210",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0156",
+      "source": "V2-VT-A-0",
+      "destination": "V2-VT-A-24",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Route_Validation.json:route",
+        "completeTrace": "V02_Public_Route_Validation.trace.json.gz",
+        "traceSHA256": "531dc2b8b80b6bac30216e69658b7c644e664cfc6cafd06da94a6f50381e663b",
+        "startFrame": 412,
+        "endFrame": 4993,
+        "seconds": 76.35,
+        "actualDistance": 139.3396603516948,
+        "maximumHorizontalSpeed": 1.6500000000002046,
+        "endpointTolerance": 0.7,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0157",
+      "source": "V2-VT-A-24",
+      "destination": "V2-VT-A-0",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0158",
+      "source": "V2-VT-A-24",
+      "destination": "V2-VT-A-52",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Route_Validation.json:route",
+        "completeTrace": "V02_Public_Route_Validation.trace.json.gz",
+        "traceSHA256": "531dc2b8b80b6bac30216e69658b7c644e664cfc6cafd06da94a6f50381e663b",
+        "startFrame": 4993,
+        "endFrame": 11086,
+        "seconds": 101.55,
+        "actualDistance": 182.2221961230708,
+        "maximumHorizontalSpeed": 1.6500000000002046,
+        "endpointTolerance": 0.7,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0159",
+      "source": "V2-VT-A-52",
+      "destination": "V2-VT-A-24",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0160",
+      "source": "V2-VT-A-52",
+      "destination": "V2-VT-A-84",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Route_Validation.json:route",
+        "completeTrace": "V02_Public_Route_Validation.trace.json.gz",
+        "traceSHA256": "531dc2b8b80b6bac30216e69658b7c644e664cfc6cafd06da94a6f50381e663b",
+        "startFrame": 11086,
+        "endFrame": 16944,
+        "seconds": 97.63333333333334,
+        "actualDistance": 179.35558832080073,
+        "maximumHorizontalSpeed": 1.6500000000002046,
+        "endpointTolerance": 0.7,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0161",
+      "source": "V2-VT-A-84",
+      "destination": "V2-VT-A-52",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0162",
+      "source": "E24_410",
+      "destination": "V2-VT-B-24",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0163",
+      "source": "V2-VT-B-24",
+      "destination": "E24_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0164",
+      "source": "E52_410",
+      "destination": "V2-VT-B-52",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0165",
+      "source": "V2-VT-B-52",
+      "destination": "E52_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0166",
+      "source": "E84_410",
+      "destination": "V2-VT-B-84",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0167",
+      "source": "V2-VT-B-84",
+      "destination": "E84_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0168",
+      "source": "V2-VT-B-0",
+      "destination": "V2-VT-B-24",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0169",
+      "source": "V2-VT-B-24",
+      "destination": "V2-VT-B-0",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Roundtrip_Validation.json:route",
+        "completeTrace": "V02_Public_Roundtrip_Validation.trace.json.gz",
+        "traceSHA256": "249fd6e26019cb1c6496a1e08b5f81fbcacc38a38c913b5bbae5727704a15965",
+        "startFrame": 17481,
+        "endFrame": 18915,
+        "seconds": 23.9,
+        "actualDistance": 133.28492865874674,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.7,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0170",
+      "source": "V2-VT-B-24",
+      "destination": "V2-VT-B-52",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0171",
+      "source": "V2-VT-B-52",
+      "destination": "V2-VT-B-24",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Roundtrip_Validation.json:route",
+        "completeTrace": "V02_Public_Roundtrip_Validation.trace.json.gz",
+        "traceSHA256": "249fd6e26019cb1c6496a1e08b5f81fbcacc38a38c913b5bbae5727704a15965",
+        "startFrame": 15609,
+        "endFrame": 17481,
+        "seconds": 31.2,
+        "actualDistance": 174.89464296283865,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.7,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0172",
+      "source": "V2-VT-B-52",
+      "destination": "V2-VT-B-84",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0173",
+      "source": "V2-VT-B-84",
+      "destination": "V2-VT-B-52",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Roundtrip_Validation.json:route",
+        "completeTrace": "V02_Public_Roundtrip_Validation.trace.json.gz",
+        "traceSHA256": "249fd6e26019cb1c6496a1e08b5f81fbcacc38a38c913b5bbae5727704a15965",
+        "startFrame": 13791,
+        "endFrame": 15609,
+        "seconds": 30.3,
+        "actualDistance": 170.9803069347135,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.7,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0174",
+      "source": "V2-VT-B-84",
+      "destination": "V2-VT-B-128",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0175",
+      "source": "V2-VT-B-128",
+      "destination": "V2-VT-B-84",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Roundtrip_Validation.json:route",
+        "completeTrace": "V02_Public_Roundtrip_Validation.trace.json.gz",
+        "traceSHA256": "249fd6e26019cb1c6496a1e08b5f81fbcacc38a38c913b5bbae5727704a15965",
+        "startFrame": 11262,
+        "endFrame": 13791,
+        "seconds": 42.15,
+        "actualDistance": 238.6938306281521,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.7,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0176",
+      "source": "W84_376",
+      "destination": "V2-VT-C-84",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0177",
+      "source": "V2-VT-C-84",
+      "destination": "W84_376",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0178",
+      "source": "V2-VT-C-84",
+      "destination": "V2-VT-C-100",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Route_Validation.json:route",
+        "completeTrace": "V02_Public_Route_Validation.trace.json.gz",
+        "traceSHA256": "531dc2b8b80b6bac30216e69658b7c644e664cfc6cafd06da94a6f50381e663b",
+        "startFrame": 23240,
+        "endFrame": 26993,
+        "seconds": 62.55,
+        "actualDistance": 111.40779416034715,
+        "maximumHorizontalSpeed": 1.6500000000002046,
+        "endpointTolerance": 0.7,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0179",
+      "source": "V2-VT-C-100",
+      "destination": "V2-VT-C-84",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0180",
+      "source": "V2-VT-D-100",
+      "destination": "V2-VT-D-128",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Roundtrip_Validation.json:route",
+        "completeTrace": "V02_Public_Roundtrip_Validation.trace.json.gz",
+        "traceSHA256": "249fd6e26019cb1c6496a1e08b5f81fbcacc38a38c913b5bbae5727704a15965",
+        "startFrame": 8428,
+        "endFrame": 10286,
+        "seconds": 30.966666666666665,
+        "actualDistance": 174.34464296283886,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.7,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0181",
+      "source": "V2-VT-D-128",
+      "destination": "V2-VT-D-100",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0182",
+      "source": "service-stair-52",
+      "destination": "service-stair-55.2",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0183",
+      "source": "service-stair-55.2",
+      "destination": "service-stair-52",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0184",
+      "source": "service-stair-55.2",
+      "destination": "service-stair-58.4",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0185",
+      "source": "service-stair-58.4",
+      "destination": "service-stair-55.2",
+      "ability": "stairs",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0186",
+      "source": "service-stair-55.2",
+      "destination": "service-upper-55.2",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0187",
+      "source": "service-upper-55.2",
+      "destination": "service-stair-55.2",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0188",
+      "source": "service-stair-58.4",
+      "destination": "service-upper-58.4",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0189",
+      "source": "service-upper-58.4",
+      "destination": "service-stair-58.4",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0190",
+      "source": "service-yard",
+      "destination": "service-stair-52",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0191",
+      "source": "service-stair-52",
+      "destination": "service-yard",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0192",
+      "source": "ground-access",
+      "destination": "V2-VT-A-0",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0193",
+      "source": "V2-VT-A-0",
+      "destination": "ground-access",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0194",
+      "source": "ground-access",
+      "destination": "V2-VT-B-0",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0195",
+      "source": "V2-VT-B-0",
+      "destination": "ground-access",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0196",
+      "source": "V2-VT-C-100",
+      "destination": "station-concourse",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Route_Validation.json:route",
+        "completeTrace": "V02_Public_Route_Validation.trace.json.gz",
+        "traceSHA256": "531dc2b8b80b6bac30216e69658b7c644e664cfc6cafd06da94a6f50381e663b",
+        "startFrame": 27002,
+        "endFrame": 27239,
+        "seconds": 3.95,
+        "actualDistance": 5.712500000000674,
+        "maximumHorizontalSpeed": 1.6500000000002046,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0197",
+      "source": "station-concourse",
+      "destination": "V2-VT-C-100",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Route_Validation.json:route",
+        "completeTrace": "V02_Public_Route_Validation.trace.json.gz",
+        "traceSHA256": "531dc2b8b80b6bac30216e69658b7c644e664cfc6cafd06da94a6f50381e663b",
+        "startFrame": 26812,
+        "endFrame": 27002,
+        "seconds": 3.1666666666666665,
+        "actualDistance": 5.225000000000648,
+        "maximumHorizontalSpeed": 1.6500000000002046,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0198",
+      "source": "V2-VT-D-100",
+      "destination": "station-concourse",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0199",
+      "source": "station-concourse",
+      "destination": "V2-VT-D-100",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0200",
+      "source": "W128_276",
+      "destination": "W128_300",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0201",
+      "source": "W128_300",
+      "destination": "W128_276",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0202",
+      "source": "W128_300",
+      "destination": "W128_326",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0203",
+      "source": "W128_326",
+      "destination": "W128_300",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0204",
+      "source": "W128_326",
+      "destination": "W128_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0205",
+      "source": "W128_350",
+      "destination": "W128_326",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0206",
+      "source": "W128_350",
+      "destination": "W128_376",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0207",
+      "source": "W128_376",
+      "destination": "W128_350",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0208",
+      "source": "W128_376",
+      "destination": "W128_400",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0209",
+      "source": "W128_400",
+      "destination": "W128_376",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0210",
+      "source": "W128_400",
+      "destination": "W128_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0211",
+      "source": "W128_410",
+      "destination": "W128_400",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0212",
+      "source": "W128_410",
+      "destination": "W128_430",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Roundtrip_Validation.json:route",
+        "completeTrace": "V02_Public_Roundtrip_Validation.trace.json.gz",
+        "traceSHA256": "249fd6e26019cb1c6496a1e08b5f81fbcacc38a38c913b5bbae5727704a15965",
+        "startFrame": 10451,
+        "endFrame": 10633,
+        "seconds": 3.033333333333333,
+        "actualDistance": 20.020000000002483,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0213",
+      "source": "W128_430",
+      "destination": "W128_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0214",
+      "source": "E128_400",
+      "destination": "E128_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0215",
+      "source": "E128_410",
+      "destination": "E128_400",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0216",
+      "source": "E128_410",
+      "destination": "E128_430",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0217",
+      "source": "E128_430",
+      "destination": "E128_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Roundtrip_Validation.json:route",
+        "completeTrace": "V02_Public_Roundtrip_Validation.trace.json.gz",
+        "traceSHA256": "249fd6e26019cb1c6496a1e08b5f81fbcacc38a38c913b5bbae5727704a15965",
+        "startFrame": 11017,
+        "endFrame": 11210,
+        "seconds": 3.216666666666667,
+        "actualDistance": 19.880000000002283,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0218",
+      "source": "W128_430",
+      "destination": "E128_430",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Roundtrip_Validation.json:route",
+        "completeTrace": "V02_Public_Roundtrip_Validation.trace.json.gz",
+        "traceSHA256": "249fd6e26019cb1c6496a1e08b5f81fbcacc38a38c913b5bbae5727704a15965",
+        "startFrame": 10633,
+        "endFrame": 11017,
+        "seconds": 6.4,
+        "actualDistance": 40.889999999999844,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0219",
+      "source": "E128_430",
+      "destination": "W128_430",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0220",
+      "source": "V2-VT-B-128",
+      "destination": "E128_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0221",
+      "source": "E128_410",
+      "destination": "V2-VT-B-128",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Public_Roundtrip_Validation.json:route",
+        "completeTrace": "V02_Public_Roundtrip_Validation.trace.json.gz",
+        "traceSHA256": "249fd6e26019cb1c6496a1e08b5f81fbcacc38a38c913b5bbae5727704a15965",
+        "startFrame": 11210,
+        "endFrame": 11264,
+        "seconds": 0.9,
+        "actualDistance": 4.590000000000103,
+        "maximumHorizontalSpeed": 6.6000000000008185,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0222",
+      "source": "V2-VT-D-128",
+      "destination": "W128_400",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0223",
+      "source": "W128_400",
+      "destination": "V2-VT-D-128",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0224",
+      "source": "W128_410",
+      "destination": "observation-deck",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0225",
+      "source": "observation-deck",
+      "destination": "W128_410",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0226",
+      "source": "W84_300",
+      "destination": "fast-launch",
+      "ability": "flow-run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0227",
+      "source": "fast-launch",
+      "destination": "W84_300",
+      "ability": "flow-run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0228",
+      "source": "momentum-landing",
+      "destination": "momentum-relaunch",
+      "ability": "flow-run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0229",
+      "source": "momentum-relaunch",
+      "destination": "momentum-landing",
+      "ability": "flow-run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0230",
+      "source": "fast-launch",
+      "destination": "momentum-pop-1",
+      "ability": "threadrail",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "ability-specific contacts, resources and trajectory need separate admission"
+    },
+    {
+      "id": "E0231",
+      "source": "momentum-pop-1",
+      "destination": "momentum-touchdown-1",
+      "ability": "rail-pop",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "ability-specific contacts, resources and trajectory need separate admission"
+    },
+    {
+      "id": "E0232",
+      "source": "momentum-touchdown-1",
+      "destination": "momentum-landing",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0233",
+      "source": "momentum-relaunch",
+      "destination": "momentum-pop-2",
+      "ability": "threadrail",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "ability-specific contacts, resources and trajectory need separate admission"
+    },
+    {
+      "id": "E0234",
+      "source": "momentum-pop-2",
+      "destination": "momentum-touchdown-2",
+      "ability": "rail-pop",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "ability-specific contacts, resources and trajectory need separate admission"
+    },
+    {
+      "id": "E0235",
+      "source": "momentum-touchdown-2",
+      "destination": "station-concourse",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0236",
+      "source": "W84_300",
+      "destination": "wall-entry",
+      "ability": "flow-run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0237",
+      "source": "wall-entry",
+      "destination": "W84_300",
+      "ability": "flow-run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0238",
+      "source": "wall-entry",
+      "destination": "wall-shelf-96",
+      "ability": "wall-climb",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "ability-specific contacts, resources and trajectory need separate admission"
+    },
+    {
+      "id": "E0239",
+      "source": "wall-shelf-96",
+      "destination": "wall-shelf-108",
+      "ability": "wall-climb",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "ability-specific contacts, resources and trajectory need separate admission"
+    },
+    {
+      "id": "E0240",
+      "source": "wall-shelf-108",
+      "destination": "wall-shelf-120",
+      "ability": "wall-climb",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "ability-specific contacts, resources and trajectory need separate admission"
+    },
+    {
+      "id": "E0241",
+      "source": "wall-shelf-120",
+      "destination": "wall-shelf-128",
+      "ability": "wall-climb",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "ability-specific contacts, resources and trajectory need separate admission"
+    },
+    {
+      "id": "E0242",
+      "source": "wall-shelf-128",
+      "destination": "W128_276",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0243",
+      "source": "W128_276",
+      "destination": "wall-shelf-128",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0244",
+      "source": "W128_430",
+      "destination": "high-rail-start",
+      "ability": "flow-run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0245",
+      "source": "high-rail-start",
+      "destination": "W128_430",
+      "ability": "flow-run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0246",
+      "source": "high-rail-start",
+      "destination": "pop-launch",
+      "ability": "threadrail",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "ability-specific contacts, resources and trajectory need separate admission"
+    },
+    {
+      "id": "E0247",
+      "source": "pop-launch",
+      "destination": "mastery-recovery-118",
+      "ability": "rail-pop",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "ability-specific contacts, resources and trajectory need separate admission"
+    },
+    {
+      "id": "E0248",
+      "source": "mastery-recovery-118",
+      "destination": "mastery-recovery-108",
+      "ability": "controlled-drop",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "ability-specific contacts, resources and trajectory need separate admission"
+    },
+    {
+      "id": "E0249",
+      "source": "mastery-recovery-108",
+      "destination": "station-concourse",
+      "ability": "controlled-drop",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "ability-specific contacts, resources and trajectory need separate admission"
+    },
+    {
+      "id": "E0250",
+      "source": "mastery-recovery-108",
+      "destination": "station-concourse",
+      "ability": "afterstep-transfer",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "ability-specific contacts, resources and trajectory need separate admission"
+    },
+    {
+      "id": "E0251",
+      "source": "station-concourse",
+      "destination": "pursuit-access",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0252",
+      "source": "pursuit-access",
+      "destination": "station-concourse",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0253",
+      "source": "pursuit-access",
+      "destination": "V2-VT-D-100",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Pursuit_intercept.json:route",
+        "completeTrace": "V02_Pursuit_intercept.trace.json.gz",
+        "traceSHA256": "1183404b36708b87b4571fed822cb2585c014a1382738babf0e5af8f4a0a81ec",
+        "startFrame": 0,
+        "endFrame": 471,
+        "seconds": 7.85,
+        "actualDistance": 43.654674354305016,
+        "maximumHorizontalSpeed": 6.60000000000139,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0254",
+      "source": "V2-VT-D-100",
+      "destination": "pursuit-access",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0255",
+      "source": "observation-deck",
+      "destination": "pursuit-interception",
+      "ability": "run",
+      "agent": "player",
+      "status": "PASS observed ground passage",
+      "evidence": {
+        "trace": "V02_Pursuit_intercept.json:route",
+        "completeTrace": "V02_Pursuit_intercept.trace.json.gz",
+        "traceSHA256": "1183404b36708b87b4571fed822cb2585c014a1382738babf0e5af8f4a0a81ec",
+        "startFrame": 2992,
+        "endFrame": 3065,
+        "seconds": 1.2166666666666666,
+        "actualDistance": 8.02999999999954,
+        "maximumHorizontalSpeed": 6.600000000000001,
+        "endpointTolerance": 0.45,
+        "method": "ordered supported input passage within authored path corridor; not a new sweep or visual-camera certificate"
+      }
+    },
+    {
+      "id": "E0256",
+      "source": "pursuit-interception",
+      "destination": "observation-deck",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0257",
+      "source": "pursuit-interception",
+      "destination": "pursuit-exit",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0258",
+      "source": "pursuit-exit",
+      "destination": "pursuit-interception",
+      "ability": "run",
+      "agent": "player",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "no matching complete ordered passage in current hash-bound input evidence"
+    },
+    {
+      "id": "E0259",
+      "source": "pursuit-runner-start",
+      "destination": "V2-VT-D-100",
+      "ability": "run",
+      "agent": "pursuit-runner",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "actor-specific behavior requires separate route and encounter evidence"
+    },
+    {
+      "id": "E0260",
+      "source": "V2-VT-D-100",
+      "destination": "V2-VT-D-128",
+      "ability": "stairs",
+      "agent": "pursuit-runner",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "actor-specific behavior requires separate route and encounter evidence"
+    },
+    {
+      "id": "E0261",
+      "source": "V2-VT-D-128",
+      "destination": "pursuit-exit",
+      "ability": "run",
+      "agent": "pursuit-runner",
+      "status": "NOT ADMITTED",
+      "evidence": null,
+      "reason": "actor-specific behavior requires separate route and encounter evidence"
+    }
+  ],
+  "admitted": 54,
+  "total": 262,
+  "currentInputTraces": 12,
+  "skipped": []
+}

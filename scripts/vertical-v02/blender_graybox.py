@@ -133,7 +133,7 @@ meta={'schema':'sm-v02-graybox-1','pilot':pilot,'coordinateSystem':'game X/Y-up/
 # runtime positions. They are metadata, never invisible collision geometry.
 if not pilot:
  for encounter in G.get('encounters',[]):
-  for name,p in [('access',encounter['trigger'])]+[(f'actor-{i}',p)for i,p in enumerate(encounter['positions'])]:
+  for name,p in [('access',encounter['trigger'])]+[(f'actor-{i}',p)for i,p in enumerate(encounter['positions'])]+[(name,encounter[name])for name in ['isolation','extraction','escape','interception']if name in encounter]:
    o=bpy.data.objects.new(encounter['id']+'-'+name,None);collections['SM_V02_ENCOUNTER_POINTS'].objects.link(o);o.location=(p[0],-p[2],p[1]);o.empty_display_type='ARROWS';o.empty_display_size=.8;o['runtimePosition']=json.dumps(p);o['encounterID']=encounter['id'];o['exportRole']='metadata only'
 # Matching raw view bookmarks are created now; detailed render matching remains a later gate.
 from mathutils import Vector
