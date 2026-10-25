@@ -10,6 +10,31 @@ a=v.index(' for(const x of [62,104])');b=v.index(' for(const [j,y]of L.trafficBa
 s=s.replace(old,v,1)
 from encounter_adapter import compose_encounters
 s=compose_encounters(s)
+# Native warnings must describe the hero's current control preset. Traversal
+# reservesX/R for cartridges; its unconditional evade isC/D-padDown.
+old="showBanner('INCOMING SHOT','MOVE OFF THE RED LINE · E / X DODGE · Q / LB TIMED BRACE')";assert s.count(old)==1
+hint="characterState().active==='backspool'?(document.body.classList.contains('touchPlay')?'MOVE OFF THE RED LINE · EVADE OR GUARD':window.threadrailGame?.preset()==='traversal'?'MOVE OFF THE RED LINE · C / D-PAD DOWN EVADE · RMB / LT GUARD':'MOVE OFF THE RED LINE · C / X EVADE · RMB / LT GUARD'):(document.body.classList.contains('touchPlay')?'MOVE OFF THE RED LINE · DODGE OR BRACE':'MOVE OFF THE RED LINE · E / X DODGE · Q / LB TIMED BRACE')"
+s=s.replace(old,"showBanner('INCOMING SHOT',"+hint+")",1)
+# During fast drops the smoothed focus can remain above a roof while the
+# actor is already below it. In that descent, collision starts at the body,
+# rather than certifying visibility only from that stale composition target.
+old='const rayStart=cam.focus.clone().add(new THREE.Vector3(0,flightAligned?0:.18,0));'
+assert s.count(old)==1
+new="const rayStart=!flightAligned&&!s.onGround&&s.vel.y<-2&&characterState().active==='backspool'?s.pos.clone().add(new THREE.Vector3(0,1.5,0)):cam.focus.clone().add(new THREE.Vector3(0,flightAligned?0:.18,0));"
+s=s.replace(old,new,1)
+# A low landing pose can be hidden even when the standing focus clears a
+# roof edge. Correct only an observed opaque blockage of both actual body
+# anchors, using the same final shared collision solver.
+old='camera.position.copy(constrainCameraPosition(rayStart,camera.position,flightAligned));const lookDistance='
+assert s.count(old)==1
+repair="""camera.position.copy(constrainCameraPosition(rayStart,camera.position,flightAligned));
+ if(!flightAligned&&characterState().active==='backspool'){
+  model.updateMatrixWorld(true);const body=[];let blocked=0;
+  for(const name of ['mixamorigHips','mixamorigHead']){const bone=model.getObjectByName(name);if(!bone)break;const point=bone.getWorldPosition(new THREE.Vector3()),delta=point.clone().sub(camera.position),distance=delta.length();body.push(point);visibilityRaycaster.set(camera.position,delta.normalize());visibilityRaycaster.far=Math.max(0,distance-.02);const hits=visibilityRaycaster.intersectObjects(obstacleCandidates(camera.position,point),false);if(hits.some(hit=>{const m=Array.isArray(hit.object.material)?hit.object.material[hit.face?.materialIndex||0]:hit.object.material;return m?.visible!==false&&!(m?.transparent&&m.opacity<.5)}))blocked++;}
+  if(body.length===2&&blocked===2)camera.position.copy(constrainCameraPosition(body[0],camera.position,false));
+ }
+ const lookDistance="""
+s=s.replace(old,repair,1)
 needle='function updatePlayer(dt,realDt=dt)';assert s.count(needle)==1;s=s.replace(needle,(R/'scripts/game_vertical_district_v02.js').read_text()+'\n'+needle,1)
 # External candidate module executes after all shared combat/mission declarations.
 needle='</body>';assert s.count(needle)==1;s=s.replace(needle,'<script src="scripts/game_vertical_encounters_v02.js"></script><script src="scripts/game_vertical_market_v02.js"></script><script src="scripts/game_vertical_pursuit_v02.js"></script><script src="scripts/game_vertical_discovery_v02.js"></script>'+needle,1)

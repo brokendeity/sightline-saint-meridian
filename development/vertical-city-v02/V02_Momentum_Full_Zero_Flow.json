@@ -206,23 +206,34 @@
       "name": "station objective reached",
       "frame": 4395,
       "p": [
-        66.46037515857907,
+        66.46086194370736,
         100.42,
-        375.83431792970026
+        375.83635330864337
       ],
       "clock": 70.37499999999787,
       "message": "PERFECT RAIL POP"
     }
   ],
-  "entrySHA256": "cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1",
-  "manifestSHA256": "d4fb49380ae1a0aed2aecaabc836b27836efea6455b1200716096cbd5370128c",
+  "entrySHA256": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
+  "manifestSHA256": "3a524ca3b09823cf8fa9eec3c5116ff6a7ec11d1cb091bb7bcdf1ffec88703c1",
+  "cameraSamplePolicy": {
+    "sourceSHA256": "180467f581d7948bdf854280c9c2b7886b4270810b763376e1c2b5c7aa6dae45",
+    "intervalFrames": 6,
+    "scope": "Actual animated head/hips projection and native static-obstacle triangle rays during normal input, 10Hz at60Hz simulation. No gameplay state writes. Transparent glass below.5alpha excluded from opaque occlusion; moving objects absent from the native obstacle registry, HUD, between-sample frames and physical devices are not certified. Raw samples require context/visual review; collection is not camera acceptance."
+  },
   "initialBank": 0,
   "routeStartFrame": 1,
   "routeTraceStart": 1,
   "totalInputSeconds": 73.25,
   "seconds": 73.23333333333333,
-  "distance": 702.0389357718318,
+  "distance": 702.0091932022538,
   "powerReleases": 0,
+  "cameraVisibility": {
+    "scope": "Sampled animated head/hips visibility at10Hz during fast/airborne non-aim motion; not full-body, HUD, between-sample or hardware certification.",
+    "samples": 468,
+    "problemSamples": 0,
+    "captures": []
+  },
   "fullTrace": "V02_Momentum_Full_Zero_Flow.trace.json.gz",
   "traceFrames": 4415
 }

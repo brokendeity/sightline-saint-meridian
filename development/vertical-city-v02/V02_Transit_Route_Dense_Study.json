@@ -1,0 +1,223 @@
+{
+  "status": "PASS sampled convoy envelope precheck only",
+  "scope": "UNIMPLEMENTED DESIGN STUDY. Offline oriented bounds sampled at <=.25m through the actual candidate closed curve, all four simultaneous carriages, original compound building boxes, preserved non-V1 props and current solid V02 boxes. Conservative complete body envelopes, not exact triangle contact or continuous swept certification. Existing own-track wheel contact is excluded; aerial traffic, native playback, coupling and station operation remain separate.",
+  "entrySHA256": "cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1",
+  "manifestSHA256": "ec545e5e7f7cc4adea24bc9189b5db950ea4343f349a7fbad3edda07404da777",
+  "trainAssetSHA256": "8e96df9363e64d3da2510ff62f1bfcc02e50cd9d28cdf7363df4f76823714933",
+  "routeCodeSHA256": "ab8dfa7f69efde03c01cdaa4ad4d01aa41e1da823e697e7d09ae39868b8a0461",
+  "frontPrimitiveCount": 1,
+  "frontLocalBounds": {
+    "min": [
+      -1.5486866235733032,
+      -1.6036270499695093,
+      -6.9969282150268555
+    ],
+    "max": [
+      1.5475525856018066,
+      2.8895343780517577,
+      6.998562812805176
+    ]
+  },
+  "rearLocalBounds": {
+    "min": [
+      -1.62,
+      -1.8,
+      -6
+    ],
+    "max": [
+      1.62,
+      1.4,
+      6.8999999999999995
+    ]
+  },
+  "routeLength": 1038.9626533207215,
+  "spacing": 14.5,
+  "carriages": 4,
+  "samples": 41559,
+  "sampleIntervalMetres": 0.02499970291202198,
+  "worldConflicts": [],
+  "convoyConflicts": [],
+  "arcLengthDivisions": 2048,
+  "motionEnvelopeMetrics": {
+    "minimumAdjacentRootDistance": 13.60140544239762,
+    "maximumAdjacentYawDegrees": 71.2103614510026,
+    "minimumAdjacentSeparatingAxisGap": 0.2962096367843037,
+    "minimumRootStepRatio": 0.9776135746266466,
+    "maximumRootStepRatio": 1.0218689106755976,
+    "scope": "Sampled horizontal OBB separating-axis gap and native root/tangent motion, not a mechanical coupler/bogie model. Large articulation angles require explicit design validation."
+  },
+  "evaluatedProposal": {
+    "file": "output/local-scratch/v02-transit-study/selected-dense.json",
+    "sha256": "02e0a084c1ec1f4ae7002b00c603830c5d2e472fae9f4a950872f80989cae3bb",
+    "id": "u560-r12-s16-arc2048-s14.5-dense",
+    "closed": true,
+    "curveType": "centripetal",
+    "spacing": 14.5,
+    "points": [
+      [
+        80,
+        100,
+        180
+      ],
+      [
+        80,
+        100,
+        350
+      ],
+      [
+        80,
+        100,
+        430
+      ],
+      [
+        80,
+        100,
+        470
+      ],
+      [
+        71.5,
+        100,
+        530
+      ],
+      [
+        71.5,
+        100,
+        560
+      ],
+      [
+        72.41344560986457,
+        100,
+        564.5922011883811
+      ],
+      [
+        75.01471862576143,
+        100,
+        568.4852813742385
+      ],
+      [
+        78.90779881161892,
+        100,
+        571.0865543901355
+      ],
+      [
+        83.5,
+        100,
+        572
+      ],
+      [
+        88.09220118838108,
+        100,
+        571.0865543901355
+      ],
+      [
+        91.98528137423857,
+        100,
+        568.4852813742385
+      ],
+      [
+        94.58655439013543,
+        100,
+        564.5922011883811
+      ],
+      [
+        95.5,
+        100,
+        560
+      ],
+      [
+        95.5,
+        100,
+        530
+      ],
+      [
+        87,
+        100,
+        470
+      ],
+      [
+        87,
+        100,
+        430
+      ],
+      [
+        87,
+        100,
+        350
+      ],
+      [
+        87,
+        100,
+        180
+      ],
+      [
+        87,
+        100,
+        145
+      ],
+      [
+        95.5,
+        100,
+        110
+      ],
+      [
+        95.5,
+        100,
+        80
+      ],
+      [
+        94.58655439013543,
+        100,
+        75.40779881161892
+      ],
+      [
+        91.98528137423857,
+        100,
+        71.51471862576143
+      ],
+      [
+        88.09220118838108,
+        100,
+        68.91344560986457
+      ],
+      [
+        83.5,
+        100,
+        68
+      ],
+      [
+        78.90779881161892,
+        100,
+        68.91344560986457
+      ],
+      [
+        75.01471862576143,
+        100,
+        71.51471862576143
+      ],
+      [
+        72.41344560986457,
+        100,
+        75.40779881161892
+      ],
+      [
+        71.5,
+        100,
+        80
+      ],
+      [
+        71.5,
+        100,
+        110
+      ],
+      [
+        80,
+        100,
+        145
+      ]
+    ],
+    "scope": "Unimplemented route hypothesis. Current4bodyenvelopes; station mainstraight remainsX80/87. Source geometry/sample checks only.",
+    "arcLengthDivisions": 2048,
+    "sampleIntervalMetres": 0.025
+  },
+  "evaluationIsCurrentRuntime": false
+}

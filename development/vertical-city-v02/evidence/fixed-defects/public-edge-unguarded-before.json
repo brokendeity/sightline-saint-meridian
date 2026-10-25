@@ -1,0 +1,207 @@
+{
+  "status": "FAIL",
+  "scope": "Five labelled local player/camera fixtures, then ordinary walking toward public edges; no jump, Flow or resource use. Not a connected-route certificate.",
+  "cases": [
+    {
+      "id": "west-gallery-24",
+      "start": [
+        55,
+        24,
+        250
+      ],
+      "direction": [
+        -1,
+        0
+      ],
+      "frames": 112,
+      "unsupported": 1,
+      "damage": 0,
+      "pass": false,
+      "final": {
+        "probe": "west-gallery-24",
+        "frame": 111,
+        "p": [
+          51.98249999999963,
+          24.42,
+          250
+        ],
+        "v": [
+          -1.65,
+          0,
+          0
+        ],
+        "grounded": false,
+        "trauma": 0,
+        "flow": false,
+        "releases": 0,
+        "camera": [
+          53.42002808153376,
+          26.719059110182883,
+          254.79099021221643
+        ]
+      }
+    },
+    {
+      "id": "west-gallery-52",
+      "start": [
+        55,
+        52,
+        250
+      ],
+      "direction": [
+        -1,
+        0
+      ],
+      "frames": 112,
+      "unsupported": 1,
+      "damage": 0,
+      "pass": false,
+      "final": {
+        "probe": "west-gallery-52",
+        "frame": 111,
+        "p": [
+          51.98249999999963,
+          52.42,
+          250
+        ],
+        "v": [
+          -1.65,
+          0,
+          0
+        ],
+        "grounded": false,
+        "trauma": 0,
+        "flow": false,
+        "releases": 0,
+        "camera": [
+          53.42002808153376,
+          54.71905911018288,
+          254.79099021221643
+        ]
+      }
+    },
+    {
+      "id": "west-gallery-84",
+      "start": [
+        55,
+        84,
+        250
+      ],
+      "direction": [
+        -1,
+        0
+      ],
+      "frames": 112,
+      "unsupported": 1,
+      "damage": 0,
+      "pass": false,
+      "final": {
+        "probe": "west-gallery-84",
+        "frame": 111,
+        "p": [
+          51.98249999999963,
+          84.42,
+          250
+        ],
+        "v": [
+          -1.65,
+          0,
+          0
+        ],
+        "grounded": false,
+        "trauma": 0,
+        "flow": false,
+        "releases": 0,
+        "camera": [
+          53.42002808153376,
+          86.71905911018288,
+          254.79099021221643
+        ]
+      }
+    },
+    {
+      "id": "observation-east",
+      "start": [
+        83,
+        128,
+        420
+      ],
+      "direction": [
+        1,
+        0
+      ],
+      "frames": 112,
+      "unsupported": 1,
+      "damage": 0,
+      "pass": false,
+      "final": {
+        "probe": "observation-east",
+        "frame": 111,
+        "p": [
+          86.01750000000037,
+          128.42,
+          420
+        ],
+        "v": [
+          1.65,
+          0,
+          0
+        ],
+        "grounded": false,
+        "trauma": 0,
+        "flow": false,
+        "releases": 0,
+        "camera": [
+          87.0650463333131,
+          130.71905911018288,
+          424.7909902122164
+        ]
+      }
+    },
+    {
+      "id": "public-D-stair-side",
+      "start": [
+        61,
+        101.55555555555556,
+        408.06
+      ],
+      "direction": [
+        -1,
+        0
+      ],
+      "frames": 61,
+      "unsupported": 1,
+      "damage": 0,
+      "pass": false,
+      "final": {
+        "probe": "public-D-stair-side",
+        "frame": 60,
+        "p": [
+          59.384999999999806,
+          101.97555555555556,
+          408.06
+        ],
+        "v": [
+          -1.65,
+          0,
+          0
+        ],
+        "grounded": false,
+        "trauma": 0,
+        "flow": false,
+        "releases": 0,
+        "camera": [
+          60.82252695008942,
+          104.27461466655048,
+          412.85099021236135
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "entrySHA256": "cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1",
+  "manifestSHA256": "d4fb49380ae1a0aed2aecaabc836b27836efea6455b1200716096cbd5370128c",
+  "failure": "AssertionError [ERR_ASSERTION]: Ordinary walking left public support at west-gallery-24, west-gallery-52, west-gallery-84, observation-east, public-D-stair-side",
+  "fullTrace": "V02_Public_Edge_Safety.trace.json.gz",
+  "traceFrames": 509
+}

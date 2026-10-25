@@ -1,0 +1,77 @@
+{
+  "status": "FAIL",
+  "errors": [],
+  "ambientHits": [
+    {
+      "frame": 7186,
+      "damage": 8,
+      "position": [
+        66.53499999999995,
+        90.82000000000001,
+        375.5500000000202
+      ],
+      "evidence": [
+        {
+          "attack": "projectile",
+          "target": "backspool",
+          "result": "HIT",
+          "time": 119.833
+        }
+      ]
+    }
+  ],
+  "method": "One controlled ground start [55,.42,210]; WASD ordinary run; ground to Y128 and back via two transfer stacks, no hero/position reset after setup. No jump, rail, Drive, teleport or position assignment after start.",
+  "entrySHA256": "cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1",
+  "manifestSHA256": "663122f61a14c753bc1adcf4c220868ba0ee5673927cd60d3a9013cdd47e26db",
+  "initialBank": 0,
+  "segments": [
+    {
+      "name": "ground access",
+      "seconds": 2.4,
+      "at": [
+        60.909999999999975,
+        0.42,
+        215.4450000000005
+      ]
+    },
+    {
+      "name": "A stair 0 to 24",
+      "seconds": 23.933333333333334,
+      "at": [
+        61.01999999999997,
+        24.42,
+        215.55500000000052
+      ]
+    },
+    {
+      "name": "A stair 24 to 52",
+      "seconds": 31.183333333333334,
+      "at": [
+        61.09999999999998,
+        52.42,
+        215.53000000000048
+      ]
+    },
+    {
+      "name": "A stair 52 to 84",
+      "seconds": 30.133333333333333,
+      "at": [
+        61.09999999999998,
+        84.42,
+        215.53000000000048
+      ]
+    },
+    {
+      "name": "station public approach",
+      "seconds": 26.933333333333334,
+      "at": [
+        60.90499999999998,
+        84.42,
+        375.4400000000202
+      ]
+    }
+  ],
+  "failure": "Error: Ordinary-run public route exposed to projectile fire {\"damage\":8,\"damageEvidence\":[{\"attack\":\"projectile\",\"target\":\"backspool\",\"result\":\"HIT\",\"time\":119.833}],\"combatClock\":119.83333333332781,\"p\":[66.53499999999995,90.82000000000001,375.5500000000202],\"v\":[-4.649999999999998,0,0],\"grounded\":true,\"mode\":\"GROUND\",\"trauma\":8,\"support\":90.82000000000001,\"camera\":[68.17520327806251,92.79602779047683,379.8280362465537]}",
+  "fullTrace": "V02_Public_Roundtrip_Validation.trace.json.gz",
+  "traceFrames": 7186
+}

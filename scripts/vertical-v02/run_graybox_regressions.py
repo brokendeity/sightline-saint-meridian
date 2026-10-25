@@ -7,6 +7,9 @@ import os,json,hashlib,subprocess,time,sys
 from pathlib import Path
 R=Path(__file__).resolve().parents[2];D=R/'development/vertical-city-v02'
 jobs=[
+ ('public-edge-safety',['node','scripts/vertical-v02/test_public_edge_safety.cjs'],{}),
+ ('station-circulation',['node','scripts/vertical-v02/test_station_circulation.cjs'],{}),
+ ('stair-projectile-cover',['node','scripts/vertical-v02/test_stair_cover_projectiles.cjs'],{}),
  ('discovery-tour',['node','scripts/vertical-v02/test_discovery.cjs'],{}),
  ('discovery-lifecycle',['node','scripts/vertical-v02/test_discovery_lifecycle.cjs'],{}),
  ('actor-stairs',['node','scripts/vertical-v02/test_actor_stairs.cjs'],{}),
@@ -32,7 +35,15 @@ jobs=[
  ('whip',['node','scripts/vertical-v02/test_preserved_whip_inputs.cjs'],{}),
  ('physical-transfer',['node','scripts/vertical-v02/test_physical_transfer.cjs'],{}),
  ('physical-transfer-no-pop',['node','scripts/vertical-v02/test_physical_transfer.cjs'],{'NO_POP':'1'}),
+ ('physical-transfer-overshoot',['node','scripts/vertical-v02/test_physical_transfer.cjs'],{'V02_OVERSHOOT_RECOVERY':'1'}),
+ ('failed-anchor-recovery',['node','scripts/vertical-v02/test_failed_anchor_recovery.cjs'],{}),
+ ('camera-orbits',['node','scripts/vertical-v02/test_camera_orbits.cjs'],{}),
 ]
+# Exercise formerly failing ability/exit cases before long public tours.
+# Every case still runs exactly once against the same runtime fingerprints.
+priority=['short-catch','mastery-zero','mastery-brake','physical-transfer','physical-transfer-no-pop','physical-transfer-overshoot','momentum-zero','momentum-banked']
+jobs=sorted(jobs,key=lambda job:priority.index(job[0])if job[0]in priority else len(priority))
+assert len(jobs)==31 and len({j[0]for j in jobs})==31
 files={'entry':'SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html','manifest':'assets/city/vertical-v02/graybox/manifest.json','encounters':'scripts/game_vertical_encounters_v02.js','market':'scripts/game_vertical_market_v02.js','pursuit':'scripts/game_vertical_pursuit_v02.js','discovery':'scripts/game_vertical_discovery_v02.js'}
 hashes={k:hashlib.sha256((R/p).read_bytes()).hexdigest()for k,p in files.items()}
 report_file=D/'V02_Regression_Run.json'

@@ -193,32 +193,37 @@
     },
     {
       "name": "station objective reached",
-      "frame": 3539,
+      "frame": 3537,
       "p": [
-        66.46751154919379,
+        66.46743741636037,
         100.42,
-        375.8355185496083
+        375.83514323236
       ],
-      "clock": 56.108333333332006,
+      "clock": 56.074999999998674,
       "message": "PERFECT RAIL POP"
     }
   ],
-  "entrySHA256": "cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1",
-  "manifestSHA256": "d4fb49380ae1a0aed2aecaabc836b27836efea6455b1200716096cbd5370128c",
+  "entrySHA256": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
+  "manifestSHA256": "3a524ca3b09823cf8fa9eec3c5116ff6a7ec11d1cb091bb7bcdf1ffec88703c1",
+  "cameraSamplePolicy": {
+    "sourceSHA256": "180467f581d7948bdf854280c9c2b7886b4270810b763376e1c2b5c7aa6dae45",
+    "intervalFrames": 6,
+    "scope": "Actual animated head/hips projection and native static-obstacle triangle rays during normal input, 10Hz at60Hz simulation. No gameplay state writes. Transparent glass below.5alpha excluded from opaque occlusion; moving objects absent from the native obstacle registry, HUD, between-sample frames and physical devices are not certified. Raw samples require context/visual review; collection is not camera acceptance."
+  },
   "initialBank": 0,
   "routeStartFrame": 1,
   "routeTraceStart": 1,
   "failureRecovery": "Short running catch returns to the upper exit deck before controlled descent; no reset or resource injection",
-  "totalInputSeconds": 59,
-  "seconds": 58.983333333333334,
-  "distance": 353.842630714979,
+  "totalInputSeconds": 58.96666666666667,
+  "seconds": 58.95,
+  "distance": 353.81041279704806,
   "powerReleases": [],
   "final": {
     "frame": 0,
     "p": [
-      66.46751154919379,
+      66.46743741636037,
       100.42,
-      375.8355185496083
+      375.83514323236
     ],
     "v": [
       0,
@@ -282,14 +287,14 @@
     ],
     "bank": 5,
     "releases": [],
-    "clock": 56.12499999999867,
+    "clock": 56.09166666666534,
     "message": "PERFECT RAIL POP",
     "deployment": "attached",
     "precision": false,
     "source": "forspoken-threadrail-relaxed-idle",
     "advanced": {
       "kind": null,
-      "clock": 49.024999999999075,
+      "clock": 48.99166666666574,
       "cooldown": 0,
       "floatRemaining": 6,
       "wallJumps": 0,
@@ -414,11 +419,17 @@
       "pose": "forspoken-threadrail-relaxed-idle"
     },
     "camera": [
-      67.82203453316882,
-      102.39963630077585,
-      380.0688376213829
+      67.82195392186681,
+      102.39963649358513,
+      380.06842931142313
     ]
   },
+  "cameraVisibility": {
+    "scope": "Sampled animated head/hips visibility at10Hz during fast/airborne non-aim motion; not full-body, HUD, between-sample or hardware certification.",
+    "samples": 307,
+    "problemSamples": 0,
+    "captures": []
+  },
   "fullTrace": "V02_Mastery_Pilot_Zero_ShortCatch.trace.json.gz",
-  "traceFrames": 3540
+  "traceFrames": 3538
 }

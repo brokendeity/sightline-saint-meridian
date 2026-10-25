@@ -1,0 +1,98 @@
+{
+  "status": "FAIL",
+  "scope": "Ground access, four wall ascents, upper rail and Pop to Y100 station",
+  "method": "One controlled initial setup (ground for full route, Y84 for local pilot). Normal R/Shift/Space keys and standard simulated controller movement/look after setup. No direct rail creation, actor/camera assignment, reset or resource injection during route.",
+  "errors": [],
+  "stages": [
+    {
+      "name": "ground approach start",
+      "frame": 2,
+      "p": [
+        55,
+        0.42,
+        210
+      ],
+      "clock": 0.08333333333333333,
+      "message": ""
+    },
+    {
+      "name": "public A 0 to 24",
+      "frame": 692,
+      "p": [
+        61.1590031344088,
+        24.42,
+        215.5043200879496
+      ],
+      "clock": 11.583333333333488,
+      "message": ""
+    },
+    {
+      "name": "public A 24 to 52",
+      "frame": 1555,
+      "p": [
+        61.05860536534933,
+        52.42,
+        215.5007294679946
+      ],
+      "clock": 25.966666666666473,
+      "message": ""
+    },
+    {
+      "name": "public A 52 to 84",
+      "frame": 2370,
+      "p": [
+        61.08052229875829,
+        84.42,
+        215.50031104383604
+      ],
+      "clock": 39.54999999999904,
+      "message": ""
+    },
+    {
+      "name": "courtyard reached from ground",
+      "frame": 2704,
+      "p": [
+        55.00013491735099,
+        84.42,
+        292.8528256107442
+      ],
+      "clock": 45.11666666666539,
+      "message": ""
+    },
+    {
+      "name": "mastery courtyard",
+      "frame": 2705,
+      "p": [
+        55.00013491735099,
+        84.42,
+        292.8528256107442
+      ],
+      "clock": 45.133333333332054,
+      "message": ""
+    },
+    {
+      "name": "wall boost to 96",
+      "frame": 3022,
+      "p": [
+        63.831641758577824,
+        86.67915525530671,
+        300.62
+      ],
+      "clock": 50.41666666666509,
+      "message": ""
+    }
+  ],
+  "entrySHA256": "cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1",
+  "manifestSHA256": "ec545e5e7f7cc4adea24bc9189b5db950ea4343f349a7fbad3edda07404da777",
+  "cameraSamplePolicy": {
+    "sourceSHA256": "09a5741abaab7933dea3303e7c2e6455c8a27a53240f9d7ff6bcc88e9abdb073",
+    "intervalFrames": 6,
+    "scope": "Actual animated head/hips projection and native static-obstacle triangle rays during normal input, 10Hz at60Hz simulation. No gameplay state writes. Transparent glass below.5alpha excluded from opaque occlusion; moving objects absent from the native obstacle registry, HUD, between-sample frames and physical devices are not certified. Raw samples require context/visual review; collection is not camera acceptance."
+  },
+  "initialBank": 0,
+  "routeStartFrame": 1,
+  "routeTraceStart": 1,
+  "failure": "Error: Wall route damage {\"frame\":0,\"p\":[63.831641758577824,96.13775384550905,300.62],\"v\":[0,1.7092328747034458,0],\"grounded\":false,\"mode\":\"AIR\",\"trauma\":8,\"damage\":8,\"damageEvidence\":[{\"attack\":\"projectile\",\"target\":\"backspool\",\"result\":\"HIT\",\"time\":52.35}],\"combatClock\":52.34999999999831,\"rail\":null,\"rails\":[],\"anchors\":[],\"bank\":0,\"releases\":[],\"clock\":52.34999999999831,\"message\":\"\",\"deployment\":\"HERO CHANGE\",\"precision\":false,\"source\":\"action-v2-flow-reaction\",\"advanced\":{\"kind\":\"mantle\",\"clock\":52.333333333331645,\"cooldown\":0,\"floatRemaining\":6,\"wallJumps\":1,\"reason\":null,\"motion\":{\"ownsMovement\":true,\"position\":{\"x\":63.831641758577824,\"y\":96.13775384550905,\"z\":300.62},\"velocity\":{\"x\":0,\"y\":1.7092328747034458,\"z\":0},\"kind\":\"mantle\",\"phase\":0.4065040650406506,\"sourceTime\":0.6500000000000004,\"landed\":false},\"water\":null,\"anchor\":null,\"wallNormal\":{\"x\":0,\"y\":0,\"z\":1},\"wallTop\":96,\"wallPoint\":{\"x\":63.831641758577824,\"y\":84.42,\"z\":300.62},\"wallAge\":1.7666666666666653,\"wallRegrabLocked\":false,\"events\":[{\"eventId\":1,\"time\":49.916666666665115,\"kind\":\"wall-start\"},{\"eventId\":2,\"time\":50.383333333331755,\"kind\":\"wall-boost\",\"count\":1},{\"eventId\":3,\"time\":51.68333333333168,\"kind\":\"mantle-start\"}],\"origin\":\"authored mechanics; source/native candidate poses\",\"ready\":true,\"waters\":[{\"id\":\"meridian-waterfront\",\"minX\":-36,\"maxX\":36,\"minZ\":1171.7387966456854,\"maxZ\":1231.7387966456854,\"surface\":0.06,\"depth\":2.5}],\"surfaceOnly\":true,\"wallPose\":null,\"pose\":\"action-v2-flow-reaction\"},\"camera\":[64.66265409874016,93.79645168970175,307.3949271862726],\"cameraProbe\":{\"frame\":3138,\"targets\":{\"head\":{\"world\":[63.74231627180487,97.33407031987811,300.69172269097317],\"ndc\":[-0.05980250294810554,-0.06731873607210263,0.9869026382309576],\"framed\":true,\"occluded\":false,\"blocker\":null},\"hips\":{\"world\":[63.816575545789505,96.98223848604906,300.97568766867977],\"ndc\":[-0.05676818932996016,-0.09895165846207744,0.9861203627675424],\"framed\":true,\"occluded\":false,\"blocker\":null}}}}",
+  "fullTrace": "V02_Mastery_Full_Zero.trace.json.gz",
+  "traceFrames": 3138
+}

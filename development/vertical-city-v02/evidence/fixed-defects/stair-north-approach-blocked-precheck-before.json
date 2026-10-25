@@ -1,0 +1,66 @@
+{
+  "status": "FAIL authored horizontal centre-line obstruction",
+  "scope": "Exact exported solid cuboid bounds versus each authored player horizontal segment at floor+1.32m. This is a geometric defect finder, not body-radius, support, stair/air arc or normal-input certification. Some ability-path lines are intent rather than integrated trajectories; their conflicts require classification.",
+  "entrySHA256": "cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1",
+  "manifestSHA256": "5d94d1f9b9609c295e5265d5499aa07271d8a892761e5284a8f396ae4626b610",
+  "graphSHA256": "cb50a20473d051547a5f722830e214dae1b61faabf89b322110c6f83e495febe",
+  "segments": 552,
+  "conflicts": [
+    {
+      "edge": "E0235",
+      "ability": "run",
+      "source": "momentum-touchdown-2",
+      "destination": "station-concourse",
+      "segment": 0,
+      "from": [
+        63.19367,
+        101.32,
+        362.17536
+      ],
+      "to": [
+        66.5,
+        101.32,
+        376
+      ],
+      "hits": [
+        {
+          "owner": "station-stair-weather-north-0",
+          "point": [
+            65.31614758141984,
+            101.32,
+            371.05
+          ],
+          "distance": 9.124918970228164
+        }
+      ]
+    },
+    {
+      "edge": "E0249",
+      "ability": "controlled-drop",
+      "source": "mastery-recovery-108",
+      "destination": "station-concourse",
+      "segment": 2,
+      "from": [
+        64,
+        101.32,
+        363
+      ],
+      "to": [
+        66.5,
+        101.32,
+        376
+      ],
+      "hits": [
+        {
+          "owner": "station-stair-weather-north-0",
+          "point": [
+            65.54807692307692,
+            101.32,
+            371.05
+          ],
+          "distance": 8.197502190287203
+        }
+      ]
+    }
+  ]
+}

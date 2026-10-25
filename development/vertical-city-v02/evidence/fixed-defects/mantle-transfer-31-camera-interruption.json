@@ -1,0 +1,122 @@
+{
+  "status": "Intentional interruption for confirmed visible camera defect; not observation timeout or natural child failure",
+  "rootPID": 88495,
+  "processes": [
+    {
+      "pid": 88495,
+      "ppid": 82398,
+      "args": "/opt/homebrew/Cellar/python@3.11/3.11.2_1/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python scripts/vertical-v02/run_graybox_regressions.py"
+    },
+    {
+      "pid": 88740,
+      "ppid": 88495,
+      "args": "node scripts/vertical-v02/test_physical_transfer.cjs"
+    },
+    {
+      "pid": 88741,
+      "ppid": 88740,
+      "args": "/Users/richardmpayi/Library/Caches/ms-playwright/chromium_headless_shell-1208/chrome-headless-shell-mac-arm64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --use-gl=angle --use-angle=metal --user-data-dir=/var/folders/v4/17ypxcpx4djf1my214n05g9w0000gn/T/playwright_chromiumdev_profile-o8F0p0 --remote-debugging-pipe --no-startup-window"
+    },
+    {
+      "pid": 88743,
+      "ppid": 88741,
+      "args": "/Users/richardmpayi/Library/Caches/ms-playwright/chromium_headless_shell-1208/chrome-headless-shell-mac-arm64/chrome-headless-shell --type=gpu-process --no-sandbox --disable-breakpad --headless --use-angle=metal --enable-unsafe-swiftshader --gpu-preferences=SAAAAAAAAAAgAAAEAAAAAAAAAAAAAGAAAwAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --use-gl=angle --shared-files --field-trial-handle=1718379636,r,8183468151109794852,14502474945471097671,262144 --enable-features=CDPScreenshotNewSurface --disable-features=AutoDeElevate,AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,OptimizationHints,PaintHolding,RenderDocument,ThirdPartyStoragePartitioning,Translate --variations-seed-version --trace-process-track-uuid=3190708988185955192"
+    },
+    {
+      "pid": 88744,
+      "ppid": 88741,
+      "args": "/Users/richardmpayi/Library/Caches/ms-playwright/chromium_headless_shell-1208/chrome-headless-shell-mac-arm64/chrome-headless-shell --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --no-sandbox --use-angle=metal --use-gl=angle --mute-audio --headless=old --shared-files --field-trial-handle=1718379636,r,8183468151109794852,14502474945471097671,262144 --enable-features=CDPScreenshotNewSurface --disable-features=AutoDeElevate,AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,OptimizationHints,PaintHolding,RenderDocument,ThirdPartyStoragePartitioning,Translate --variations-seed-version --trace-process-track-uuid=3190708989122997041"
+    },
+    {
+      "pid": 88745,
+      "ppid": 88741,
+      "args": "/Users/richardmpayi/Library/Caches/ms-playwright/chromium_headless_shell-1208/chrome-headless-shell-mac-arm64/chrome-headless-shell --type=renderer --headless=old --no-sandbox --disable-back-forward-cache --disable-background-timer-throttling --disable-breakpad --enable-automation --force-color-profile=srgb --remote-debugging-pipe --allow-pre-commit-input --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --lang=en-US --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1790329829098401 --launch-time-ticks=2617653930023 --shared-files --field-trial-handle=1718379636,r,8183468151109794852,14502474945471097671,262144 --enable-features=CDPScreenshotNewSurface --disable-features=AutoDeElevate,AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,OptimizationHints,PaintHolding,RenderDocument,ThirdPartyStoragePartitioning,Translate --variations-seed-version --trace-process-track-uuid=3190708990060038890"
+    },
+    {
+      "pid": 88747,
+      "ppid": 88741,
+      "args": "/Users/richardmpayi/Library/Caches/ms-playwright/chromium_headless_shell-1208/chrome-headless-shell-mac-arm64/chrome-headless-shell --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=audio --no-sandbox --use-angle=metal --use-gl=angle --mute-audio --message-loop-type-ui --headless=old --shared-files --field-trial-handle=1718379636,r,8183468151109794852,14502474945471097671,262144 --enable-features=CDPScreenshotNewSurface --disable-features=AutoDeElevate,AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,OptimizationHints,PaintHolding,RenderDocument,ThirdPartyStoragePartitioning,Translate --variations-seed-version --trace-process-track-uuid=3190708990997080739"
+    }
+  ],
+  "previousRun": {
+    "status": "RUNNING",
+    "hashes": {
+      "entry": "d24a1fe8c233c298d1b4244fc6c4512773096674211c3f6002f03b9b3d12bf84",
+      "manifest": "3a524ca3b09823cf8fa9eec3c5116ff6a7ec11d1cb091bb7bcdf1ffec88703c1",
+      "encounters": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+      "market": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+      "pursuit": "d26199eb208a5d3fc21ad26f70c97471bd14b8b3b8370dfd2611c7b0c0344d58",
+      "discovery": "7cfc8878103a13115fb9778c4d8ee15dadc0147a0ace29433a14a2ba651c0679"
+    },
+    "jobs": [
+      {
+        "name": "mastery-zero",
+        "command": [
+          "node",
+          "scripts/vertical-v02/test_mastery_route.cjs"
+        ],
+        "environment": {
+          "FULL_ROUTE": "1"
+        },
+        "returncode": 0,
+        "wallSeconds": 131.98,
+        "log": "development/vertical-city-v02/evidence/regression-mastery-zero.log"
+      },
+      {
+        "name": "mastery-brake",
+        "command": [
+          "node",
+          "scripts/vertical-v02/test_mastery_route.cjs"
+        ],
+        "environment": {
+          "FULL_ROUTE": "1",
+          "BANKED_START": "1",
+          "USE_BRAKE": "1"
+        },
+        "returncode": 0,
+        "wallSeconds": 136.2,
+        "log": "development/vertical-city-v02/evidence/regression-mastery-brake.log"
+      },
+      {
+        "name": "short-catch",
+        "command": [
+          "node",
+          "scripts/vertical-v02/test_mastery_route.cjs"
+        ],
+        "environment": {
+          "SHORT_CATCH": "1"
+        },
+        "returncode": 0,
+        "wallSeconds": 64.6,
+        "log": "development/vertical-city-v02/evidence/regression-short-catch.log"
+      },
+      {
+        "name": "physical-transfer",
+        "command": [
+          "node",
+          "scripts/vertical-v02/test_physical_transfer.cjs"
+        ],
+        "environment": {},
+        "returncode": 0,
+        "wallSeconds": 17.56,
+        "log": "development/vertical-city-v02/evidence/regression-physical-transfer.log"
+      },
+      {
+        "name": "physical-transfer-no-pop",
+        "command": [
+          "node",
+          "scripts/vertical-v02/test_physical_transfer.cjs"
+        ],
+        "environment": {
+          "NO_POP": "1"
+        },
+        "returncode": 0,
+        "wallSeconds": 14.9,
+        "log": "development/vertical-city-v02/evidence/regression-physical-transfer-no-pop.log"
+      }
+    ],
+    "scope": "Current graybox circulation, supported discovery/guidance, actor stair clearance, pursuit, market rescue, local service combat and retained inputs; not complete V02 acceptance.",
+    "active": "physical-transfer-overshoot"
+  },
+  "reason": "Native fullmasteryzero PASSmovement, but actualexactframe5970PNG shows roof hidesactor during108-to100drop. Change actualbodycollisionorigin, then freshfingerprintfullrun required."
+}

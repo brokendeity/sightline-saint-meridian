@@ -248,31 +248,36 @@
     },
     {
       "name": "station objective reached",
-      "frame": 6227,
+      "frame": 6226,
       "p": [
-        66.46752428521206,
+        66.46793437195397,
         100.42,
-        375.8349377247629
+        375.8370220468818
       ],
-      "clock": 100.90833333332755,
+      "clock": 100.89166666666088,
       "message": "PERFECT RAIL POP"
     }
   ],
-  "entrySHA256": "cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1",
-  "manifestSHA256": "d4fb49380ae1a0aed2aecaabc836b27836efea6455b1200716096cbd5370128c",
+  "entrySHA256": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
+  "manifestSHA256": "3a524ca3b09823cf8fa9eec3c5116ff6a7ec11d1cb091bb7bcdf1ffec88703c1",
+  "cameraSamplePolicy": {
+    "sourceSHA256": "180467f581d7948bdf854280c9c2b7886b4270810b763376e1c2b5c7aa6dae45",
+    "intervalFrames": 6,
+    "scope": "Actual animated head/hips projection and native static-obstacle triangle rays during normal input, 10Hz at60Hz simulation. No gameplay state writes. Transparent glass below.5alpha excluded from opaque occlusion; moving objects absent from the native obstacle registry, HUD, between-sample frames and physical devices are not certified. Raw samples require context/visual review; collection is not camera acceptance."
+  },
   "initialBank": 0,
   "routeStartFrame": 1,
   "routeTraceStart": 1,
-  "totalInputSeconds": 103.8,
-  "seconds": 103.78333333333333,
-  "distance": 933.7535326399267,
+  "totalInputSeconds": 103.78333333333333,
+  "seconds": 103.76666666666667,
+  "distance": 933.7238215715848,
   "powerReleases": [],
   "final": {
     "frame": 0,
     "p": [
-      66.46752428521206,
+      66.46793437195397,
       100.42,
-      375.8349377247629
+      375.8370220468818
     ],
     "v": [
       0,
@@ -334,16 +339,16 @@
         "valid": true
       }
     ],
-    "bank": 4,
+    "bank": 5,
     "releases": [],
-    "clock": 100.92499999999421,
+    "clock": 100.90833333332755,
     "message": "PERFECT RAIL POP",
     "deployment": "attached",
     "precision": false,
     "source": "forspoken-threadrail-relaxed-idle",
     "advanced": {
       "kind": null,
-      "clock": 95.59166666666118,
+      "clock": 95.57499999999452,
       "cooldown": 0,
       "floatRemaining": 6,
       "wallJumps": 0,
@@ -468,11 +473,17 @@
       "pose": "forspoken-threadrail-relaxed-idle"
     },
     "camera": [
-      67.82500176939176,
-      102.3994662006877,
-      380.06727129466196
+      67.82542548704473,
+      102.39946639350099,
+      380.0694247039932
     ]
   },
+  "cameraVisibility": {
+    "scope": "Sampled animated head/hips visibility at10Hz during fast/airborne non-aim motion; not full-body, HUD, between-sample or hardware certification.",
+    "samples": 694,
+    "problemSamples": 0,
+    "captures": []
+  },
   "fullTrace": "V02_Mastery_Full_Zero.trace.json.gz",
-  "traceFrames": 6228
+  "traceFrames": 6227
 }

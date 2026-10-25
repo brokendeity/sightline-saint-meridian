@@ -120,6 +120,8 @@ node('ground-access',55,0,210,'ground-access');edge('ground-access',A[0]);edge('
 edge(C[100],'station-concourse');edge(U[100],'station-concourse',path=[[61,100,403.5],[64,100,399],[66.5,100,391],[66.5,100,376]])
 structure('station-exit-side-link',[68.5,99.7,377.5],[9,.6,3],'SM_V02_TRANSIT_STRUCTURES','continuous station circulation beside the final stair flight',walkable=True,besideStairFlight=True)
 structure('station-north-access',[64,99.7,399],[12,.6,12],'SM_V02_TRANSIT_STRUCTURES','public upper stair connection kept west of guideway',walkable=True)
+from station_stair_enclosure import author_station_stair_enclosure
+author_station_stair_enclosure(structure)
 # Upper ring and deck: free space above train; include endpoints, not a vertical alignment shortcut.
 for side,x in [('W',55),('E',96)]:
  for z in ([276,300,326,350,376,400,410,430]if side=='W'else[400,410,430]):node(f'{side}128_{z}',x,128,z,'upper-gallery')
@@ -163,6 +165,8 @@ for i,y in enumerate([96,108,120,128]):
  structure(f'mastery-wall-room-{y}',[64,(last_y+y)/2,front-6],[8,y-last_y,12],'SM_V02_ROOFTOP_ROUTES','climbable service-room face and supported recovery roof',walkable=True)
  edge(last,id,'wall-climb',reverse=False,risk='medium',recovery='previous room roof / Y84 launch courtyard',maxUnsupportedRise=y-last_y,wallFace={'normal':[0,0,1],'frontZ':front,'top':y},physicalGate='Normal-input wall contact and mantle with supported touchdown, no power changes');last=id;last_y=y
 structure('mastery-upper-link',[59,127.7,274.5],[2,.6,3],'SM_V02_ROOFTOP_ROUTES','final room roof connects to upper west gallery',walkable=True)
+from wall_mantle_cover import author_wall_mantle_cover
+author_wall_mantle_cover(structure)
 edge(last,'W128_276','run',path=[[64,128,275.35],[55,128,275.35],[55,128,276]])
 node('high-rail-start',64,128,424,'threadrail-launch');edge('W128_430','high-rail-start','flow-run')
 structure('mastery-rail-runup',[64,127.7,435],[8,.6,22],'SM_V02_ROOFTOP_ROUTES','supported run-up for full rail catch momentum',walkable=True)
@@ -177,14 +181,15 @@ edge('mastery-recovery-108','station-concourse','afterstep-transfer',reverse=Fal
 # The pursuit follows real stair geometry, not a spline floating between levels.
 # Players can follow its outer observation loop or intercept across the deck.
 pursuit_stair=next(e['path']for e in edges if e['source']==U[100]and e['destination']==U[128])
-pursuit_start=[73,100,373];pursuit_exit=[84,128,420]
-pursuit_path=[pursuit_start,[73,100,390],[64,100,399],[61,100,403.5]]+pursuit_stair[1:]+[[55,128,403.5],[55,128,430],[84,128,430],pursuit_exit]
+pursuit_start=[73.7,100,373];pursuit_exit=[84,128,420]
+pursuit_approach=[pursuit_start,[73.7,100,390],[68,100,390],[68,100,399],[64,100,399],[61,100,403.5]]
+pursuit_path=pursuit_approach+pursuit_stair[1:]+[[55,128,403.5],[55,128,430],[84,128,430],pursuit_exit]
 node('pursuit-runner-start',*pursuit_start,'pursuit-actor-start');node('pursuit-exit',*pursuit_exit,'pursuit-exit')
 node('pursuit-access',73,100,364,'encounter-access');node('pursuit-interception',80,128,420,'supported-interception')
-edge('station-concourse','pursuit-access','run',path=[[66.5,100,376],[73,100,376],[73,100,364]])
-edge('pursuit-access',U[100],'run',path=[[73,100,364],[73,100,390],[64,100,399],[61,100,403.5]])
+edge('station-concourse','pursuit-access','run',path=[[66.5,100,376],[66.5,100,376.8],[73.7,100,376.8],[73.7,100,364],[73,100,364]])
+edge('pursuit-access',U[100],'run',path=[[73,100,364],[73.7,100,364],[73.7,100,390],[68,100,390],[68,100,399],[64,100,399],[61,100,403.5]])
 edge('observation-deck','pursuit-interception','run');edge('pursuit-interception','pursuit-exit','run')
-edge('pursuit-runner-start',U[100],'run',path=pursuit_path[:4],reverse=False,traversalAgent='pursuit-runner',requiredGameplayConditions=['transit-pursuit.active'])
+edge('pursuit-runner-start',U[100],'run',path=pursuit_approach,reverse=False,traversalAgent='pursuit-runner',requiredGameplayConditions=['transit-pursuit.active'])
 edge(U[100],U[128],'stairs',path=pursuit_stair,reverse=False,traversalAgent='pursuit-runner',requiredGameplayConditions=['transit-pursuit.active'])
 edge(U[128],'pursuit-exit','run',path=[by[U[128]]['position']]+pursuit_path[-4:],reverse=False,traversalAgent='pursuit-runner',requiredGameplayConditions=['transit-pursuit.active'])
 # Small functional kiosks stay outside the accepted landing/through areas.
@@ -202,11 +207,11 @@ for p in [*pois,directory]:
 edge('W24_350','poi-market','walk',path=[[55,24,350],[55,24,356],[64,24,356]])
 edge('poi-market','market-access','walk',path=[[64,24,356],[62,24,356],[62,24,375]])
 edge('W52_300','poi-maintenance','walk',path=[[55,52,300],[55,52,314.8],[86,52,314.8]])
-edge('E52_326','poi-maintenance','walk',path=[[96,52,326],[96,52,314.8],[86,52,314.8]])
+edge('E52_326','poi-maintenance','walk',path=[[96,52,326],[96,52,315.5],[86,52,315.5],[86,52,314.8]])
 edge('poi-maintenance',Y[52],'walk',path=[[86,52,314.8],[71,52,314.8],[71,52,316.5]])
-edge('station-concourse','poi-station','walk',path=[[66.5,100,376],[73,100,376.8],[73,100,382]])
-edge('pursuit-access','poi-station','walk',path=[[73,100,364],[73,100,382]])
-edge('poi-station',U[100],'walk',path=[[73,100,382],[73,100,391],[64,100,399],[61,100,403.5]])
+edge('station-concourse','poi-station','walk',path=[[66.5,100,376],[66.5,100,376.8],[73.7,100,376.8],[73.7,100,382],[73,100,382]])
+edge('pursuit-access','poi-station','walk',path=[[73,100,364],[73.7,100,364],[73.7,100,382],[73,100,382]])
+edge('poi-station',U[100],'walk',path=[[73,100,382],[73.7,100,382],[73.7,100,390],[68,100,390],[68,100,399],[64,100,399],[61,100,403.5]])
 # Named loops are full cycles, expanded over longitudinal nodes.
 def spine(side,y,a,b):return [f'{side}{y}_{z}'for z in zs if min(a,b)<=z<=max(a,b)][::1 if b>=a else -1]
 loops=[{'id':'lower','elevation':24,'nodes':spine('W',24,210,350)+spine('E',24,350,210)+['W24_210'],'destination':'suspended-market','layerConnections':['V2-VT-A','V2-VT-B'],'status':'PROPOSED; not input validated'}, {'id':'mid','elevation':52,'nodes':spine('W',52,276,350)+spine('E',52,350,276)+['W52_276'],'destination':'service-yard','layerConnections':['V2-VT-A','V2-VT-B'],'status':'PROPOSED; not input validated'}, {'id':'high','elevation':84,'nodes':spine('W',84,350,430)+spine('E',84,430,350)+['W84_350'],'destination':'station-concourse','layerConnections':['V2-VT-A','V2-VT-B','V2-VT-C','V2-VT-D','wall-shelves'],'status':'PROPOSED; not input validated'}]
@@ -252,6 +257,7 @@ report['encounters']=[{'id':'service-combat','title':'SERVICE YARD · COMBAT','t
   'bounds':{'min':[51,83.9,353],'max':[99,131,446]},
   'actorType':'dedicated collision-checked runner; existing scenic civilian prototype appearance',
   'status':'runtime prototype; original train envelope and wider gameplay acceptance remain separate'}]
+report['guardrailOpenings']=[{'id':'upper-physical-rail-departure','box':{'min':[62,127.9,410.5],'max':[68,128.1,412]},'purpose':'two physical upper rails cross the observation edge; keep their Y118/Y108 recovery route and input acceptance'}, {'id':'upper-physical-rail-transfer-exit','box':{'min':[62,127.9,401.5],'max':[68.5,128.1,406]},'purpose':'both physical rail lines and their body envelopes pass the D stair north landing before Pop; prevent its parapets intercepting the second cartridge or striking the actor. Lower Y118/Y108 roofs remain the deliberate recovery route.'}]
 (D/'V02_Movement_Graph.json').write_text(json.dumps(report,indent=2)+'\n')
 (D/'V02_Design_Clearance.json').write_text(json.dumps({'status':'box precheck only','checkedStructures':len(checks),'failures':[c for c in checks if c['status'].startswith('FAIL')],'edgeFailures':[{'id':e['id'],'source':e['source'],'destination':e['destination'],'hits':e.get('originalConflicts')}for e in edges if e['validation']['geometry'].startswith('FAIL')],'checks':checks,'excluded':'V1 vertical prototype is replaced only in V02 candidate; original city and non-V1 props included'},indent=2)+'\n')
 with (D/'V02_AbilityRoute_Matrix.csv').open('w',newline='')as f:

@@ -25,7 +25,7 @@ const variant=process.env.PURSUIT_CASE||'intercept',full=process.env.FULL_PURSUI
   const paths=await p.evaluate(()=>verticalDistrictState().paths);for(const seg of paths['V2-VT-A'].segments)for(const t of seg.points)await move(t);
   for(const t of [[55,84,215.5],[55,84,375.5],[61,84,375.5]])await move(t);
   for(const seg of paths['V2-VT-C'].segments)for(const t of seg.points)await move(t);
-  for(const t of [[64.5,100,375.5],[64.5,100,376.8],[73,100,376.8],[73,100,364]])await move(t);
+  for(const t of [[64.5,100,375.5],[64.5,100,376.8],[73.7,100,376.8],[73.7,100,364],[73,100,364]])await move(t);
   report.approachSeconds=frame/60;report.approachAirFrames=report.trace.filter(t=>!t.grounded).length;assert.equal(report.approachAirFrames,0);await mark('ground-access-complete');
  }
  const before=await p.evaluate(()=>({score:s.score,mission:{number:courier.missionNumber,passengers:courier.passengers.length,civilians:courier.civilians.map(c=>({uuid:c.group.uuid,rescued:c.rescued,position:c.group.position.toArray()}))},condition:courier.trauma}));await p.keyboard.press('i');let st=await step(2);assert.equal(st.pursuit.phase,'active',JSON.stringify(st.pursuit));await mark('start');
@@ -45,7 +45,7 @@ const variant=process.env.PURSUIT_CASE||'intercept',full=process.env.FULL_PURSUI
   const escaped=st,attempt=st.pursuit.attempt,condition=st.trauma;await p.keyboard.press('i');const retried=await step(2);assert.equal(retried.pursuit.phase,'active');assert.equal(retried.pursuit.attempt,attempt+1);assert.equal(retried.score,before.score);assert.equal(retried.trauma,condition);report.retry={input:'DOM KeyI at original access; player never moved or reset',attempt:retried.pursuit.attempt,noHealthRefill:true,noReward:true};await p.evaluate(()=>renderNight(0));await p.locator('#v02PursuitEnd').click();await step(2);st=escaped;
  }else{
   if(variant==='chase')for(let i=0;i<27;i++)await step(100);if(await p.evaluate(()=>backspoolFlow.walking()))await p.keyboard.press('o');
-  const approaches=variant==='chase'?[[73,100,390],[64,100,399],[61,100,403.5]]:[[73,100,390],[64,100,399],[61,100,403.5]];
+  const approaches=variant==='chase'?[[73.7,100,364],[73.7,100,390],[68,100,390],[68,100,399],[64,100,399],[61,100,403.5]]:[[73.7,100,364],[73.7,100,390],[68,100,390],[68,100,399],[64,100,399],[61,100,403.5]];
   for(const t of approaches)await move(t);await mark('stairs-entry');
   const paths=await p.evaluate(()=>verticalDistrictState().paths['V2-VT-D'].segments);
   for(const seg of paths)for(const t of seg.points)await move(t);await mark('upper-stair');

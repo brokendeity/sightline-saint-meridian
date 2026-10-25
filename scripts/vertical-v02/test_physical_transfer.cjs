@@ -2,8 +2,8 @@
  * Local high-city fixture only; not a ground approach or a graph certificate. */
 const {chromium}=require('/opt/homebrew/lib/node_modules/playwright'),fs=require('fs'),path=require('path'),assert=require('assert/strict'),crypto=require('crypto');
 const {saveEvidence}=require('./evidence_io.cjs');const R=path.resolve(__dirname,'../..'),D=path.join(R,'development/vertical-city-v02');
-const full=false,noPop=process.env.NO_POP==='1',reportName='V02_Physical_Rail_Transfer'+(noPop?'_NoPop':'')+'.json';
-(async()=>{const browser=await chromium.launch({headless:true,args:['--use-gl=angle','--use-angle=metal']}),report={status:'FAIL',scope:'Local Y128 fixture, four physical cartridges, two parallel rails, actual input transfer, '+(noPop?'natural endpoint exit without Pop':'Pop')+' and supported recovery',method:'One labelled controlled Y128 player/camera start fixture. Normal R/Shift/Space keys and standard simulated controller movement/look after setup. No direct rail creation, actor/camera assignment, reset or resource injection during route.',trace:[],errors:[],stages:[]};let page;try{
+const full=false,noPop=process.env.NO_POP==='1',overshoot=process.env.V02_OVERSHOOT_RECOVERY==='1',reportName='V02_Physical_Rail_Transfer'+(overshoot?'_Overshoot':noPop?'_NoPop':'')+'.json';assert(!(noPop&&overshoot),'Choose one recovery variant');
+(async()=>{const browser=await chromium.launch({headless:true,args:['--use-gl=angle','--use-angle=metal']}),report={status:'FAIL',scope:'Local Y128 fixture, four physical cartridges, two parallel rails, actual input transfer, '+(overshoot?'late Pop coasting beyond the391m landing target, recovery-roof catch and descent to the station':noPop?'natural endpoint exit without Pop':'Pop')+' and supported recovery',method:'One labelled controlled Y128 player/camera start fixture. Normal R/Shift/Space keys and standard simulated controller movement/look after setup. No direct rail creation, actor/camera assignment, reset or resource injection during route.',trace:[],errors:[],stages:[]};let page;try{
 page=await browser.newPage({viewport:{width:1280,height:800}});page.on('pageerror',e=>report.errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')report.errors.push(m.text())});
 await page.goto('http://127.0.0.1:8766/SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html?capture=backspool');await page.waitForFunction(()=>gameReady&&roadNetworkState().ready&&verticalDistrictState().ready&&characterState().active==='backspool'&&!characterState().busy&&threadrailGame.state().whipCast.ready&&threadrailCartridgeState().ready,null,{timeout:120000});await page.evaluate(()=>window.requestAnimationFrame=()=>0);await page.waitForTimeout(100);
 for(const [key,file]of Object.entries({entrySHA256:'SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html',manifestSHA256:'assets/city/vertical-v02/graybox/manifest.json'}))report[key]=crypto.createHash('sha256').update(fs.readFileSync(path.join(R,file))).digest('hex');
@@ -34,12 +34,33 @@ assert(st.rail&&st.rail.railId!==first,'R must transfer to the other physical ra
 assert(Math.abs(st.rail.speed)<=Math.abs(report.beforeTransfer.rail.speed)+.001,'Transfer must not create energy');report.transfer=transferred.events.findLast(e=>e.type==='transfer');await mark('actual input rail transfer');
 let popped=false;for(let i=0;i<300;i++){
  st=await step();if(noPop&&!st.rail){await mark('natural endpoint exit without Pop');popped=true;break;}assert(st.rail,'Transferred rail ended before Pop');const seg=st.rails.find(r=>r.id===st.rail.railId),remaining=st.rail.signedSpeed>0?seg.length-st.rail.distance:st.rail.distance;
- if(!noPop&&remaining/Math.max(.1,Math.abs(st.rail.speed))<.13){await page.keyboard.press('Space');await mark('transferred near-end Pop');popped=true;break;}
+ if(!noPop&&remaining/Math.max(.1,Math.abs(st.rail.speed))<(overshoot?.03:.13)){await page.keyboard.press('Space');await mark('transferred near-end Pop');popped=true;break;}
 }
 assert(popped,'No '+(noPop?'natural endpoint exit':'Pop window')+' reached after transfer');await page.keyboard.press('Shift');let landed=false;
 for(let i=0;i<300;i++){
- await page.evaluate(()=>{const dx=64-s.pos.x,dz=391-s.pos.z,d=Math.hypot(dx,dz),mag=.7;routePad.axes[0]=(dx*Math.cos(cam.yaw)-dz*Math.sin(cam.yaw))/Math.max(1,d)*mag;routePad.axes[1]=-(-dx*Math.sin(cam.yaw)-dz*Math.cos(cam.yaw))/Math.max(1,d)*mag;});
- st=await step();assert.equal(st.trauma,0,'Transfer/Pop recovery must not injure');if(st.grounded&&(Math.abs(st.p[1]-118.42)<.04||noPop&&Math.abs(st.p[1]-128.42)<.04)){landed=true;break;}assert(st.p[1]>117.9,'Missed Y118 recovery roof');
+ // A deliberately late Pop followed by neutral stick preserves momentum
+ // past the first recovery roof. Steering toward375 immediately brakes to
+ // ordinary air-control speed and lands safely on118, not an overshoot.
+ if(overshoot&&!report.overshootCrossing)await page.evaluate(()=>routePad.axes=[0,0,0,0]);
+ else await page.evaluate(targetZ=>{const dx=64-s.pos.x,dz=targetZ-s.pos.z,d=Math.hypot(dx,dz),mag=.7;routePad.axes[0]=(dx*Math.cos(cam.yaw)-dz*Math.sin(cam.yaw))/Math.max(1,d)*mag;routePad.axes[1]=-(-dx*Math.sin(cam.yaw)-dz*Math.cos(cam.yaw))/Math.max(1,d)*mag;},overshoot?375:391);
+ st=await step();assert.equal(st.trauma,0,'Transfer/Pop recovery must not injure');
+ // Overshoot is measured against the intended391m landing, not an
+ // invented requirement to miss an entire14m recovery roof. Native late-Pop
+ // neutral coasting travels beyond that target; its first safe catch is118.
+ if(st.grounded&&(Math.abs(st.p[1]-118.42)<.04||noPop&&Math.abs(st.p[1]-128.42)<.04)){landed=true;break;}assert(st.p[1]>117.9,'Missed required recovery roof');
 }
-assert(landed,'No supported recovery after transfer');await stop();await mark('supported recovery landing');assert.deepEqual(report.errors,[]);assert.equal(st.releases.length,0);report.final=st;report.seconds=frames/60;report.status='PASS physical V02 casts, input rail transfer, '+(noPop?'no-Pop endpoint recovery':'Pop and supported recovery');console.log(report.status,report.seconds);
+assert(landed,'No supported recovery after transfer');await stop();await mark('supported recovery landing');
+if(overshoot){
+ report.overshoot={intendedLanding:[64,118.42,391],actualCatch:st.p,metresBeyondIntendedZ:391-st.p[2],policy:'Late Pop below30ms remaining then neutral coast; no powered impulse, air braking or hidden steering. The wide118m roof is the intended failure catch, not the original391m landing point.'};
+ assert(report.overshoot.metresBeyondIntendedZ>5,'Must demonstrate a substantial actual overshoot beyond the391m intended landing');
+ for(const [height,targetZ]of [[108,375],[100,363]]){
+  let supported=false;for(let i=0;i<450;i++){
+   await page.evaluate(z=>{const dx=64-s.pos.x,dz=z-s.pos.z,d=Math.hypot(dx,dz),mag=.7;routePad.axes[0]=(dx*Math.cos(cam.yaw)-dz*Math.sin(cam.yaw))/Math.max(1,d)*mag;routePad.axes[1]=-(-dx*Math.sin(cam.yaw)-dz*Math.cos(cam.yaw))/Math.max(1,d)*mag;},targetZ);
+   st=await step();assert.equal(st.trauma,0,'Overshoot descent must not injure');if(st.grounded&&Math.abs(st.p[1]-(height+.42))<.04){supported=true;break;}assert(st.p[1]>height-.1,'Missed recovery descent surface');
+  }
+  assert(supported,'No usable recovery descent to'+height);await stop();await mark('overshoot recovery descent '+height);
+ }
+ await move([66.5,100,376]);st=await step();await mark('overshoot recovered to public station');
+}
+assert.deepEqual(report.errors,[]);assert.equal(st.releases.length,0);report.final=st;report.seconds=frames/60;report.status='PASS physical V02 casts, input rail transfer, '+(overshoot?'late-Pop overshoot catch,108m descent and public station':noPop?'no-Pop endpoint recovery':'Pop and supported recovery');console.log(report.status,report.seconds);
 }catch(e){report.failure=String(e);console.error(e);process.exitCode=1;}finally{if(page){await page.evaluate(()=>renderNight(0)).catch(()=>{});await page.screenshot({path:path.join(D,'evidence/'+reportName.replace('.json','.png'))}).catch(()=>{})}saveEvidence(D,reportName,report);await browser.close()}})();

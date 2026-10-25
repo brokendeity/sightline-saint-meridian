@@ -1,0 +1,64 @@
+{
+  "status": "PASS sampled fast/airborne body visibility geometry",
+  "scope": "Summarize real animated-body camera probes from current normal-input routes.\nNo old traces, direct actor positioning, or centre-only proxies substitute for\nthese measurements. Visual review and the separately tested orbits still apply. Actual head/hips at10Hz; non-aim movement above8m/s or airborne. At least one of the two body points must be both framed and unoccluded. This does not certify limb/full-body framing, aim composition, HUD, moving obstacles missing from the native query, between-sample frames or physical devices. Problem samples require context and rendered review, not silent removal.",
+  "entrySHA256": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
+  "manifestSHA256": "3a524ca3b09823cf8fa9eec3c5116ff6a7ec11d1cb091bb7bcdf1ffec88703c1",
+  "probeSHA256": "180467f581d7948bdf854280c9c2b7886b4270810b763376e1c2b5c7aa6dae45",
+  "routes": [
+    {
+      "summary": "V02_Momentum_Full_Zero_Flow.json",
+      "fullTrace": "V02_Momentum_Full_Zero_Flow.trace.json.gz",
+      "traceSHA256": "2ed8c028ec35bd03800ae4aec36ac64edaac88a1138eb2257e9d7636978e3e65",
+      "allSamples": 735,
+      "fastOrAirborneNonAimSamples": 468,
+      "maximumSpeed": 16.363650000000003,
+      "neitherBodyPointFramed": 0,
+      "bothBodyPointsOpaqueOccluded": 0,
+      "problemSamples": []
+    },
+    {
+      "summary": "V02_Momentum_Full_Banked_Flow.json",
+      "fullTrace": "V02_Momentum_Full_Banked_Flow.trace.json.gz",
+      "traceSHA256": "cd977af8413f12d62bd1531fbfc6b1d8a887cb75c485fb5435b45985f0085170",
+      "allSamples": 772,
+      "fastOrAirborneNonAimSamples": 509,
+      "maximumSpeed": 16.363650000000003,
+      "neitherBodyPointFramed": 0,
+      "bothBodyPointsOpaqueOccluded": 0,
+      "problemSamples": []
+    },
+    {
+      "summary": "V02_Mastery_Full_Zero.json",
+      "fullTrace": "V02_Mastery_Full_Zero.trace.json.gz",
+      "traceSHA256": "031a358ce3815d34ff8548268aeda6e1aa504bb9a4f92cd4949d0b3103da0bd1",
+      "allSamples": 1037,
+      "fastOrAirborneNonAimSamples": 694,
+      "maximumSpeed": 21.740671553515373,
+      "neitherBodyPointFramed": 0,
+      "bothBodyPointsOpaqueOccluded": 0,
+      "problemSamples": []
+    },
+    {
+      "summary": "V02_Mastery_Full_Banked_Brake.json",
+      "fullTrace": "V02_Mastery_Full_Banked_Brake.trace.json.gz",
+      "traceSHA256": "c9eaadac057b5dd6ae327def19a5e7ce529a27721927dd47edc5c4919d49a01f",
+      "allSamples": 1076,
+      "fastOrAirborneNonAimSamples": 736,
+      "maximumSpeed": 21.740671553515373,
+      "neitherBodyPointFramed": 0,
+      "bothBodyPointsOpaqueOccluded": 0,
+      "problemSamples": []
+    },
+    {
+      "summary": "V02_Mastery_Pilot_Zero_ShortCatch.json",
+      "fullTrace": "V02_Mastery_Pilot_Zero_ShortCatch.trace.json.gz",
+      "traceSHA256": "2aa00784d7872ea29c157fc8270fbed67ebe5a6a580323706faecd72cfdaaf58",
+      "allSamples": 589,
+      "fastOrAirborneNonAimSamples": 307,
+      "maximumSpeed": 21.51691643374972,
+      "neitherBodyPointFramed": 0,
+      "bothBodyPointsOpaqueOccluded": 0,
+      "problemSamples": []
+    }
+  ]
+}

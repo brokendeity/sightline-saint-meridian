@@ -13,9 +13,11 @@ collections={}
 for n in ['SM_EXISTING_REFERENCE','SM_V02_BLOCKOUT','SM_V02_SKYBRIDGES','SM_V02_GALLERIES','SM_V02_TRANSIT_STRUCTURES','SM_V02_ELEVATED_ROADS','SM_V02_VERTICAL_TRANSFERS','SM_V02_BUILDING_EXTENSIONS','SM_V02_SERVICE_YARDS','SM_V02_MARKET','SM_V02_ROOFTOP_ROUTES','SM_V02_LANDMARKS','SM_V02_COLLISION','SM_V02_THREADRAIL_SURFACES','SM_V02_TRAIN_ROUTES','SM_V02_AERIAL_TRAFFIC_ROUTES','SM_V02_ENCOUNTER_POINTS','SM_V02_CAMERA_BOOKMARKS','SM_V02_EXPORT']:
  c=bpy.data.collections.new(n);bpy.context.scene.collection.children.link(c);collections[n]=c
 materials={}
-for name,color,metal,rough in [('deck',(0.06,.12,.18,1),.45,.5),('steel',(.035,.07,.1,1),.65,.4),('cyan',(.025,.65,.78,1),.2,.4),('warm',(.8,.42,.14,1),.15,.6),('reference',(.045,.075,.105,1),.25,.6)]:
+for name,color,metal,rough in [('deck',(0.06,.12,.18,1),.45,.5),('steel',(.035,.07,.1,1),.65,.4),('cyan',(.025,.65,.78,1),.2,.4),('warm',(.8,.42,.14,1),.15,.6),('glass',(.065,.18,.24,.22),.1,.15),('reference',(.045,.075,.105,1),.25,.6)]:
  m=bpy.data.materials.new('V02_'+name);m.diffuse_color=color;m.use_nodes=True;p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=color;p.inputs['Metallic'].default_value=metal;p.inputs['Roughness'].default_value=rough
  if name in['cyan','warm']:p.inputs['Emission Color'].default_value=color;p.inputs['Emission Strength'].default_value=.7
+ if name=='glass':
+  p.inputs['Alpha'].default_value=color[3];m.surface_render_method='DITHERED'
  materials[name]=m
 # Exact reference mesh data, no procedural substitute towers.
 C=Matrix(((1,0,0,0),(0,0,-1,0),(0,1,0,0),(0,0,0,1)))
@@ -118,6 +120,12 @@ else:
  # District support cadence and visible structural continuity, outside central road lane.
  for x in[59.4,91]:
   for z in[204,270,346,386,438]:add(f'column-{x}-{z}',[x,64,z],[1.2,128,1.2],kind='steel')
+guardrail_report=None
+if not pilot:
+ sys.path.insert(0,str(Path(__file__).parent))
+ from public_guardrails import build_public_guardrails
+ guardrail_report=build_public_guardrails(records,G,raw_add)
+ (D/'V02_Guardrail_Authoring.json').write_text(json.dumps(guardrail_report,indent=2)+'\n')
 # Source objects are grouped by spatial chunk/material, with matching metadata IDs.
 manifest=[]
 for (zone,kind),v in chunks.items():
@@ -127,7 +135,7 @@ for (zone,kind),v in chunks.items():
  manifest.append({'id':name,'url':str(file.relative_to(R)),'sha256':hashlib.sha256(file.read_bytes()).hexdigest(),'bytes':file.stat().st_size,'triangles':len(v['faces'])*2,'recordIDs':v['records']})
 # No reference object may enter a chunk export.
 assert all(not id.startswith('building-')for v in chunks.values()for id in v['records'])
-meta={'schema':'sm-v02-graybox-1','pilot':pilot,'coordinateSystem':'game X/Y-up/Z metres; deck tops and actor +.42 are distinct','sourceEntrySHA256':world['provenance']['entrySHA256'],'graphSHA256':hashlib.sha256((D/'V02_Movement_Graph.json').read_bytes()).hexdigest(),'records':records,'paths':walkpaths,'encounters':G.get('encounters',[]),'pointsOfInterest':G.get('pointsOfInterest',[]),'directory':G.get('directory'),'navigation':{'nodes':[{k:n[k]for k in ['id','position','kind']}for n in G['nodes']],'edges':[{k:e[k]for k in ['id','source','destination','ability','path','distance3D']}for e in G['edges']if e['traversalAgent']=='player'and e['ability']in ['walk','run','stairs']and not e['requiredAfterstepImpulses']and not e.get('requiredGameplayConditions')]},'chunks':manifest,'referenceOnlyBuildingCount':0 if pilot else len(world['buildings']),'status':'EXPERIMENTAL GRAYBOX; no gameplay acceptance claim'}
+meta={'schema':'sm-v02-graybox-1','pilot':pilot,'coordinateSystem':'game X/Y-up/Z metres; deck tops and actor +.42 are distinct','sourceEntrySHA256':world['provenance']['entrySHA256'],'graphSHA256':hashlib.sha256((D/'V02_Movement_Graph.json').read_bytes()).hexdigest(),'records':records,'guardrails':guardrail_report,'paths':walkpaths,'encounters':G.get('encounters',[]),'pointsOfInterest':G.get('pointsOfInterest',[]),'directory':G.get('directory'),'navigation':{'nodes':[{k:n[k]for k in ['id','position','kind']}for n in G['nodes']],'edges':[{k:e[k]for k in ['id','source','destination','ability','path','distance3D']}for e in G['edges']if e['traversalAgent']=='player'and e['ability']in ['walk','run','stairs']and not e['requiredAfterstepImpulses']and not e.get('requiredGameplayConditions')]},'chunks':manifest,'referenceOnlyBuildingCount':0 if pilot else len(world['buildings']),'status':'EXPERIMENTAL GRAYBOX; no gameplay acceptance claim'}
 (OUT/'manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 # Encounter authoring markers stay editable and reference the exact exported
 # runtime positions. They are metadata, never invisible collision geometry.

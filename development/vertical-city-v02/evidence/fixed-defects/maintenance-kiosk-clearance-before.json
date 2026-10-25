@@ -1,0 +1,76 @@
+{
+  "scope": "Native actor-clearance diagnostic only, not normal-input route acceptance",
+  "rows": [
+    {
+      "edge": "E0178",
+      "source": "V2-VT-C-84",
+      "destination": "V2-VT-C-100",
+      "failure": null
+    },
+    {
+      "edge": "E0191",
+      "source": "service-stair-52",
+      "destination": "service-yard",
+      "failure": null
+    },
+    {
+      "edge": "E0196",
+      "source": "V2-VT-C-100",
+      "destination": "station-concourse",
+      "failure": null
+    },
+    {
+      "edge": "E0197",
+      "source": "station-concourse",
+      "destination": "V2-VT-C-100",
+      "failure": null
+    },
+    {
+      "edge": "E0254",
+      "source": "V2-VT-D-100",
+      "destination": "pursuit-access",
+      "failure": null
+    },
+    {
+      "edge": "E0269",
+      "source": "poi-maintenance",
+      "destination": "E52_326",
+      "failure": {
+        "from": [
+          86.71428571428571,
+          52,
+          314.8
+        ],
+        "to": [
+          86.89285714285714,
+          52,
+          314.8
+        ],
+        "guards": [
+          {
+            "id": "kiosk-maintenance-access",
+            "box": {
+              "min": [
+                87.29,
+                52,
+                313.15
+              ],
+              "max": [
+                87.51,
+                53.7,
+                314.25
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "edge": "E0270",
+      "source": "poi-maintenance",
+      "destination": "service-stair-52",
+      "failure": null
+    }
+  ],
+  "manifestSHA256": "244fa383bdc320f12e2cfd06ec97c31e7e9c6ce4a69022b07beaf43bd7f0b165"
+}

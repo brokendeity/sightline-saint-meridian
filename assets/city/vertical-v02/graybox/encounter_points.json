@@ -1,5 +1,5 @@
 {
-  "sourceManifestSHA256": "d4fb49380ae1a0aed2aecaabc836b27836efea6455b1200716096cbd5370128c",
+  "sourceManifestSHA256": "3a524ca3b09823cf8fa9eec3c5116ff6a7ec11d1cb091bb7bcdf1ffec88703c1",
   "status": "graybox; full V02 acceptance incomplete",
   "runtimeEncounters": [
     {
@@ -155,7 +155,7 @@
       ],
       "positions": [
         [
-          73,
+          73.7,
           100,
           373
         ]
@@ -168,14 +168,24 @@
       ],
       "path": [
         [
-          73,
+          73.7,
           100,
           373
         ],
         [
-          73,
+          73.7,
           100,
           390
+        ],
+        [
+          68,
+          100,
+          390
+        ],
+        [
+          68,
+          100,
+          399
         ],
         [
           64,
@@ -388,40 +398,90 @@
   ],
   "points": [
     {
-      "id": "market-incident-poi",
+      "id": "market-info",
+      "title": "MARKET ASSEMBLY",
       "position": [
         64,
         24,
-        366
+        356
       ],
-      "status": "planned gameplay adapter; not an active encounter"
+      "board": [
+        65.25,
+        24.85,
+        354.3
+      ],
+      "graphNode": "poi-market",
+      "function": "market",
+      "collection": "SM_V02_MARKET"
     },
     {
-      "id": "maintenance-poi",
+      "id": "maintenance-access",
+      "title": "MAINTENANCE ACCESS",
       "position": [
         86,
         52,
-        320
+        314.8
       ],
-      "status": "planned gameplay adapter; not an active encounter"
+      "board": [
+        87.4,
+        52.85,
+        313.7
+      ],
+      "graphNode": "poi-maintenance",
+      "function": "maintenance",
+      "collection": "SM_V02_SERVICE_YARDS"
     },
     {
-      "id": "observation-poi",
+      "id": "observation",
+      "title": "OBSERVATION DECK",
       "position": [
         72,
         128,
         420
       ],
-      "status": "planned gameplay adapter; not an active encounter"
+      "board": [
+        73.5,
+        128.85,
+        418
+      ],
+      "graphNode": "observation-deck",
+      "function": "observation",
+      "collection": "SM_V02_LANDMARKS"
     },
     {
-      "id": "signal-desk-poi",
+      "id": "station-info",
+      "title": "TRANSIT INFORMATION",
       "position": [
-        68,
+        73,
         100,
         382
       ],
-      "status": "planned gameplay adapter; not an active encounter"
+      "board": [
+        74.65,
+        100.85,
+        382
+      ],
+      "graphNode": "poi-station",
+      "function": "station",
+      "collection": "SM_V02_TRANSIT_STRUCTURES"
     }
-  ]
+  ],
+  "directory": {
+    "id": "directory",
+    "title": "DISTRICT DIRECTORY",
+    "position": [
+      55,
+      0,
+      210
+    ],
+    "board": [
+      56.9,
+      0.85,
+      208
+    ],
+    "graphNode": "ground-access",
+    "function": "directory",
+    "collection": "SM_V02_GALLERIES"
+  },
+  "pointPolicy": "Actual supported information/discovery stances from the same exported manifest; runtime route and interaction acceptance is separate."
 }

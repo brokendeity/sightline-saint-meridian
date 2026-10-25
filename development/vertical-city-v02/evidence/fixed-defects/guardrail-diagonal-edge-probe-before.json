@@ -1,0 +1,104 @@
+{
+  "scope": "Native actor-clearance diagnostic only, not normal-input route acceptance",
+  "rows": [
+    {
+      "edge": "E0178",
+      "source": "V2-VT-C-84",
+      "destination": "V2-VT-C-100",
+      "failure": null
+    },
+    {
+      "edge": "E0191",
+      "source": "service-stair-52",
+      "destination": "service-yard",
+      "failure": null
+    },
+    {
+      "edge": "E0196",
+      "source": "V2-VT-C-100",
+      "destination": "station-concourse",
+      "failure": null
+    },
+    {
+      "edge": "E0197",
+      "source": "station-concourse",
+      "destination": "V2-VT-C-100",
+      "failure": null
+    },
+    {
+      "edge": "E0254",
+      "source": "V2-VT-D-100",
+      "destination": "pursuit-access",
+      "failure": {
+        "from": [
+          69.32394366197182,
+          100,
+          393.67605633802816
+        ],
+        "to": [
+          69.45070422535211,
+          100,
+          393.5492957746479
+        ],
+        "guards": [
+          {
+            "id": "public-guard-0194",
+            "box": {
+              "min": [
+                70,
+                100,
+                392.90999999999997
+              ],
+              "max": [
+                72.44999999999999,
+                101.1,
+                392.99
+              ]
+            }
+          },
+          {
+            "id": "public-guard-0221",
+            "box": {
+              "min": [
+                69.91,
+                100,
+                393
+              ],
+              "max": [
+                69.99000000000001,
+                101.1,
+                402
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "edge": "E0269",
+      "source": "poi-maintenance",
+      "destination": "E52_326",
+      "failure": {
+        "from": [
+          86.71428571428571,
+          52,
+          314.8
+        ],
+        "to": [
+          86.89285714285714,
+          52,
+          314.8
+        ],
+        "guards": []
+      }
+    },
+    {
+      "edge": "E0270",
+      "source": "poi-maintenance",
+      "destination": "service-stair-52",
+      "failure": null
+    }
+  ],
+  "entrySHA256": "cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1",
+  "manifestSHA256": "79300e2672524f8dc0a7317add9ac03ed37f686cbb194a902e54f2982b733cbc"
+}

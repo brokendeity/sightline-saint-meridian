@@ -259,25 +259,30 @@
     },
     {
       "name": "station objective reached",
-      "frame": 6457,
+      "frame": 6455,
       "p": [
-        66.46746000769255,
+        66.4658678900658,
         100.42,
-        375.83498816053464
+        375.82691445677483
       ],
-      "clock": 104.74166666666066,
+      "clock": 104.70833333332733,
       "message": "DRIVE · BRAKE"
     }
   ],
-  "entrySHA256": "cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1",
-  "manifestSHA256": "d4fb49380ae1a0aed2aecaabc836b27836efea6455b1200716096cbd5370128c",
+  "entrySHA256": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
+  "manifestSHA256": "3a524ca3b09823cf8fa9eec3c5116ff6a7ec11d1cb091bb7bcdf1ffec88703c1",
+  "cameraSamplePolicy": {
+    "sourceSHA256": "180467f581d7948bdf854280c9c2b7886b4270810b763376e1c2b5c7aa6dae45",
+    "intervalFrames": 6,
+    "scope": "Actual animated head/hips projection and native static-obstacle triangle rays during normal input, 10Hz at60Hz simulation. No gameplay state writes. Transparent glass below.5alpha excluded from opaque occlusion; moving objects absent from the native obstacle registry, HUD, between-sample frames and physical devices are not certified. Raw samples require context/visual review; collection is not camera acceptance."
+  },
   "initialBank": 5,
   "preparationFrames": 257,
   "routeStartFrame": 258,
   "routeTraceStart": 258,
-  "totalInputSeconds": 107.63333333333334,
-  "seconds": 103.33333333333333,
-  "distance": 933.5489530902904,
+  "totalInputSeconds": 107.6,
+  "seconds": 103.3,
+  "distance": 933.5088885531882,
   "powerReleases": [
     {
       "type": "release",
@@ -303,9 +308,9 @@
   "final": {
     "frame": 0,
     "p": [
-      66.46746000769255,
+      66.4658678900658,
       100.42,
-      375.83498816053464
+      375.82691445677483
     ],
     "v": [
       0,
@@ -390,14 +395,14 @@
         "doubleStep": 0
       }
     ],
-    "clock": 104.75833333332733,
+    "clock": 104.724999999994,
     "message": "DRIVE · BRAKE",
     "deployment": "attached",
     "precision": false,
     "source": "forspoken-threadrail-relaxed-idle",
     "advanced": {
       "kind": null,
-      "clock": 99.4249999999943,
+      "clock": 99.39166666666097,
       "cooldown": 0,
       "floatRemaining": 6,
       "wallJumps": 0,
@@ -522,11 +527,52 @@
       "pose": "forspoken-threadrail-relaxed-idle"
     },
     "camera": [
-      67.81712483402993,
-      102.39958824828848,
-      380.0698407379099
-    ]
+      67.81552428316782,
+      102.39958844109889,
+      380.0617240743671
+    ],
+    "cameraProbe": {
+      "frame": 6456,
+      "targets": {
+        "head": {
+          "world": [
+            66.46930242650807,
+            101.56636209410921,
+            375.83467629899224
+          ],
+          "ndc": [
+            -0.30450896488327994,
+            -0.1883091790991494,
+            0.9770621353027207
+          ],
+          "framed": true,
+          "occluded": false,
+          "blocker": null
+        },
+        "hips": {
+          "world": [
+            66.46863756322023,
+            101.0529494201287,
+            375.8409596002894
+          ],
+          "ndc": [
+            -0.30193249159527696,
+            -0.4058120940408064,
+            0.9772766523693867
+          ],
+          "framed": true,
+          "occluded": false,
+          "blocker": null
+        }
+      }
+    }
+  },
+  "cameraVisibility": {
+    "scope": "Sampled animated head/hips visibility at10Hz during fast/airborne non-aim motion; not full-body, HUD, between-sample or hardware certification.",
+    "samples": 736,
+    "problemSamples": 0,
+    "captures": []
   },
   "fullTrace": "V02_Mastery_Full_Banked_Brake.trace.json.gz",
-  "traceFrames": 6458
+  "traceFrames": 6456
 }

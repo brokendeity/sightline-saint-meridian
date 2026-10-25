@@ -1,0 +1,382 @@
+{
+  "status": "FAIL",
+  "scope": "Local Y128 fixture, four physical cartridges, two parallel rails, actual input transfer, Pop overshoot past the118m roof to108m, then the station and supported recovery",
+  "method": "One labelled controlled Y128 player/camera start fixture. Normal R/Shift/Space keys and standard simulated controller movement/look after setup. No direct rail creation, actor/camera assignment, reset or resource injection during route.",
+  "errors": [],
+  "stages": [
+    {
+      "name": "labelled upper start",
+      "frame": 1,
+      "p": [
+        64,
+        128.42,
+        422
+      ],
+      "clock": 0.06666666666666667,
+      "message": ""
+    },
+    {
+      "name": "physical cartridge 1",
+      "frame": 141,
+      "p": [
+        64,
+        128.42,
+        422
+      ],
+      "clock": 1.4900000000000009,
+      "message": "POINT A ATTACHED · AIM B"
+    },
+    {
+      "name": "physical cartridge 2",
+      "frame": 325,
+      "p": [
+        64,
+        128.42,
+        422
+      ],
+      "clock": 3.3866666666666654,
+      "message": "PERFECT CROSS-STREET"
+    },
+    {
+      "name": "physical cartridge 3",
+      "frame": 492,
+      "p": [
+        64,
+        128.42,
+        422
+      ],
+      "clock": 4.956666666666664,
+      "message": "POINT A ATTACHED · AIM B"
+    },
+    {
+      "name": "physical cartridge 4",
+      "frame": 647,
+      "p": [
+        64,
+        128.42,
+        422
+      ],
+      "clock": 6.608333333333329,
+      "message": "PERFECT CROSS-STREET"
+    },
+    {
+      "name": "first physical rail caught",
+      "frame": 936,
+      "p": [
+        64.00352252180923,
+        128.42377229080932,
+        425.0763752921533
+      ],
+      "clock": 11.42500000000016,
+      "message": "CLEAN CATCH"
+    },
+    {
+      "name": "actual input rail transfer",
+      "frame": 959,
+      "p": [
+        64.46586991354052,
+        128.4412227222283,
+        419.94395163410036
+      ],
+      "clock": 11.808333333333513,
+      "message": "STABLE CATCH"
+    },
+    {
+      "name": "transferred near-end Pop",
+      "frame": 1012,
+      "p": [
+        66.20906333408882,
+        128.56844479916725,
+        407.3312839789904
+      ],
+      "clock": 12.69166666666689,
+      "message": "PERFECT RAIL POP"
+    }
+  ],
+  "entrySHA256": "d24a1fe8c233c298d1b4244fc6c4512773096674211c3f6002f03b9b3d12bf84",
+  "manifestSHA256": "3a33e43fa14b5bb2bdf44f4f953574c9c430996996fab8a1b6e5ce80bac2bb7e",
+  "initialBank": 0,
+  "constructedRails": [
+    {
+      "id": "rail-1",
+      "a": "anchor-1",
+      "b": "anchor-2",
+      "length": 24.10228578787441,
+      "tangent": {
+        "x": -0.0005689655969395532,
+        "y": 0,
+        "z": -0.9999998381390617
+      },
+      "slope": 0,
+      "createdAt": 3.3699999999999988,
+      "expiresAt": 33.37
+    },
+    {
+      "id": "rail-2",
+      "a": "anchor-3",
+      "b": "anchor-4",
+      "length": 18.282223802299733,
+      "tangent": {
+        "x": -0.015139248014549685,
+        "y": 0.0015904848152261527,
+        "z": -0.9998841300508806
+      },
+      "slope": 0.09112810571237713,
+      "createdAt": 6.591666666666662,
+      "expiresAt": 36.59166666666666
+    }
+  ],
+  "constructedAnchors": [
+    {
+      "id": "anchor-1",
+      "position": {
+        "x": 64.01867755192472,
+        "y": 128.44,
+        "z": 424.02760442787564
+      },
+      "normal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "ownerId": "v02:observation-deck-opening-1",
+      "revision": 0,
+      "valid": true
+    },
+    {
+      "id": "anchor-2",
+      "position": {
+        "x": 64.00496418050382,
+        "y": 128.44,
+        "z": 399.9253225412198
+      },
+      "normal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "ownerId": "v02:pop-end-deck-opening-1",
+      "revision": 0,
+      "valid": true
+    },
+    {
+      "id": "anchor-3",
+      "position": {
+        "x": 66.46129458986957,
+        "y": 128.44,
+        "z": 423.990105441958
+      },
+      "normal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "ownerId": "v02:observation-deck-opening-1",
+      "revision": 0,
+      "valid": true
+    },
+    {
+      "id": "anchor-4",
+      "position": {
+        "x": 66.18451546946905,
+        "y": 128.46907759934612,
+        "z": 405.71000000000004
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "ownerId": "v02:public-guard-3599",
+      "revision": 0,
+      "valid": true
+    }
+  ],
+  "beforeTransfer": {
+    "frame": 0,
+    "p": [
+      64.016357964908,
+      128.44,
+      419.9507557506477
+    ],
+    "v": [
+      -0.0092463437520592,
+      0,
+      -16.2511447180165
+    ],
+    "grounded": false,
+    "mode": "AIR",
+    "trauma": 0,
+    "damage": 0,
+    "rail": {
+      "railId": "rail-1",
+      "distance": 4.076849337110615,
+      "signedSpeed": 16.25114734844246,
+      "speed": 16.25114734844246,
+      "position": {
+        "x": 64.016357964908,
+        "y": 128.44,
+        "z": 419.9507557506477
+      },
+      "velocity": {
+        "x": -0.0092463437520592,
+        "y": 0,
+        "z": -16.2511447180165
+      },
+      "hero": "backspool",
+      "direction": null
+    },
+    "rails": [
+      {
+        "id": "rail-1",
+        "a": "anchor-1",
+        "b": "anchor-2",
+        "length": 24.10228578787441,
+        "tangent": {
+          "x": -0.0005689655969395532,
+          "y": 0,
+          "z": -0.9999998381390617
+        },
+        "slope": 0,
+        "createdAt": 3.3699999999999988,
+        "expiresAt": 33.37
+      },
+      {
+        "id": "rail-2",
+        "a": "anchor-3",
+        "b": "anchor-4",
+        "length": 18.282223802299733,
+        "tangent": {
+          "x": -0.015139248014549685,
+          "y": 0.0015904848152261527,
+          "z": -0.9998841300508806
+        },
+        "slope": 0.09112810571237713,
+        "createdAt": 6.591666666666662,
+        "expiresAt": 36.59166666666666
+      }
+    ],
+    "anchors": [
+      {
+        "id": "anchor-1",
+        "position": {
+          "x": 64.01867755192472,
+          "y": 128.44,
+          "z": 424.02760442787564
+        },
+        "normal": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "ownerId": "v02:observation-deck-opening-1",
+        "revision": 0,
+        "valid": true
+      },
+      {
+        "id": "anchor-2",
+        "position": {
+          "x": 64.00496418050382,
+          "y": 128.44,
+          "z": 399.9253225412198
+        },
+        "normal": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "ownerId": "v02:pop-end-deck-opening-1",
+        "revision": 0,
+        "valid": true
+      },
+      {
+        "id": "anchor-3",
+        "position": {
+          "x": 66.46129458986957,
+          "y": 128.44,
+          "z": 423.990105441958
+        },
+        "normal": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "ownerId": "v02:observation-deck-opening-1",
+        "revision": 0,
+        "valid": true
+      },
+      {
+        "id": "anchor-4",
+        "position": {
+          "x": 66.18451546946905,
+          "y": 128.46907759934612,
+          "z": 405.71000000000004
+        },
+        "normal": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "ownerId": "v02:public-guard-3599",
+        "revision": 0,
+        "valid": true
+      }
+    ],
+    "bank": 5,
+    "releases": [],
+    "clock": 11.775000000000178,
+    "message": "CLEAN CATCH",
+    "deployment": "attached",
+    "precision": false,
+    "source": "forspoken-threadrail-grind",
+    "advanced": {
+      "kind": null,
+      "clock": 11.391666666666826,
+      "cooldown": 0,
+      "floatRemaining": 6,
+      "wallJumps": 0,
+      "reason": "INPUT RESET",
+      "motion": null,
+      "water": null,
+      "anchor": null,
+      "wallNormal": null,
+      "wallTop": null,
+      "wallPoint": null,
+      "wallAge": 0,
+      "wallRegrabLocked": false,
+      "events": [],
+      "origin": "authored mechanics; source/native candidate poses",
+      "ready": true,
+      "waters": [
+        {
+          "id": "meridian-waterfront",
+          "minX": -36,
+          "maxX": 36,
+          "minZ": 1171.7387966456854,
+          "maxZ": 1231.7387966456854,
+          "surface": 0.06,
+          "depth": 2.5
+        }
+      ],
+      "surfaceOnly": true,
+      "wallPose": null,
+      "pose": "forspoken-threadrail-grind"
+    },
+    "camera": [
+      64.30061195569745,
+      130.7894262092666,
+      426.98093897315107
+    ]
+  },
+  "transfer": {
+    "id": 9,
+    "type": "transfer",
+    "time": 11.641666666666838,
+    "fromId": "rail-1",
+    "railId": "rail-2",
+    "speed": 16.249401681396183
+  },
+  "failure": "AssertionError [ERR_ASSERTION]: Transfer/Pop recovery must not injure\n\n5.25 !== 0\n",
+  "fullTrace": "V02_Physical_Rail_Transfer_Overshoot.trace.json.gz",
+  "traceFrames": 1020
+}

@@ -1,0 +1,275 @@
+{
+  "status": "PASS sampled convoy envelope precheck only",
+  "scope": "UNIMPLEMENTED DESIGN STUDY. Offline oriented bounds sampled at <=.25m through the actual candidate closed curve, all four simultaneous carriages, original compound building boxes, preserved non-V1 props and current solid V02 boxes. Conservative complete body envelopes, not exact triangle contact or continuous swept certification. Existing own-track wheel contact is excluded; aerial traffic, native playback, coupling and station operation remain separate.",
+  "entrySHA256": "cc4b595a92129c7a149c37393a7ca21c628c51888c0d35cf7d0e53e329c6edb1",
+  "manifestSHA256": "ec545e5e7f7cc4adea24bc9189b5db950ea4343f349a7fbad3edda07404da777",
+  "trainAssetSHA256": "8e96df9363e64d3da2510ff62f1bfcc02e50cd9d28cdf7363df4f76823714933",
+  "routeCodeSHA256": "ab8dfa7f69efde03c01cdaa4ad4d01aa41e1da823e697e7d09ae39868b8a0461",
+  "frontPrimitiveCount": 1,
+  "frontLocalBounds": {
+    "min": [
+      -1.5486866235733032,
+      -1.6036270499695093,
+      -6.9969282150268555
+    ],
+    "max": [
+      1.5475525856018066,
+      2.8895343780517577,
+      6.998562812805176
+    ]
+  },
+  "rearLocalBounds": {
+    "min": [
+      -1.5486866235733032,
+      -1.6036270499695093,
+      -6.9969282150268555
+    ],
+    "max": [
+      1.5475525856018066,
+      2.8895343780517577,
+      6.998562812805176
+    ]
+  },
+  "routeLength": 1238.8108420907154,
+  "spacing": 15,
+  "carriages": 4,
+  "samples": 49553,
+  "sampleIntervalMetres": 0.02499971428754496,
+  "worldConflicts": [],
+  "convoyConflicts": [],
+  "arcLengthDivisions": 8192,
+  "consistEnvelopePolicy": "UNIMPLEMENTED consistent-family target: all four cars use the unchanged full Hi3D front-car envelope. Later authored meshes must fit/revalidate this envelope.",
+  "motionEnvelopeMetrics": {
+    "minimumAdjacentRootDistance": 14.724768794152094,
+    "maximumAdjacentYawDegrees": 37.0830062960278,
+    "minimumAdjacentSeparatingAxisGap": 0.45828944153042617,
+    "minimumRootStepRatio": 0.28875340537570604,
+    "maximumRootStepRatio": 1.8444207042890255,
+    "scope": "Sampled horizontal OBB separating-axis gap and native root/tangent motion, not a mechanical coupler/bogie model. Large articulation angles require explicit design validation."
+  },
+  "evaluatedProposal": {
+    "file": "output/local-scratch/v02-transit-study/block-family-dense.json",
+    "sha256": "35e594e4bb6a3b1a81f36f32c99b2e227d0df564b0abbc073cd6d05093279e8f",
+    "id": "block80-240-r24-s15-consistent-family-dense",
+    "closed": true,
+    "curveType": "centripetal",
+    "spacing": 15,
+    "arcLengthDivisions": 8192,
+    "points": [
+      [
+        80,
+        100,
+        104
+      ],
+      [
+        80,
+        100,
+        180
+      ],
+      [
+        80,
+        100,
+        350
+      ],
+      [
+        80,
+        100,
+        430
+      ],
+      [
+        80,
+        100,
+        536
+      ],
+      [
+        80.46115327032247,
+        100,
+        540.6821677283871
+      ],
+      [
+        81.82689121972912,
+        100,
+        545.1844023767621
+      ],
+      [
+        84.04472930473891,
+        100,
+        549.3336855924705
+      ],
+      [
+        87.02943725152286,
+        100,
+        552.9705627484772
+      ],
+      [
+        90.66631440752955,
+        100,
+        555.9552706952611
+      ],
+      [
+        94.81559762323785,
+        100,
+        558.1731087802709
+      ],
+      [
+        99.31783227161293,
+        100,
+        559.5388467296775
+      ],
+      [
+        104,
+        100,
+        560
+      ],
+      [
+        216,
+        100,
+        560
+      ],
+      [
+        220.68216772838707,
+        100,
+        559.5388467296775
+      ],
+      [
+        225.18440237676216,
+        100,
+        558.1731087802709
+      ],
+      [
+        229.33368559247046,
+        100,
+        555.9552706952611
+      ],
+      [
+        232.97056274847714,
+        100,
+        552.9705627484772
+      ],
+      [
+        235.95527069526108,
+        100,
+        549.3336855924705
+      ],
+      [
+        238.17310878027087,
+        100,
+        545.1844023767621
+      ],
+      [
+        239.53884672967752,
+        100,
+        540.6821677283871
+      ],
+      [
+        240,
+        100,
+        536
+      ],
+      [
+        240,
+        100,
+        430
+      ],
+      [
+        240,
+        100,
+        350
+      ],
+      [
+        240,
+        100,
+        180
+      ],
+      [
+        240,
+        100,
+        104
+      ],
+      [
+        239.53884672967752,
+        100,
+        99.31783227161293
+      ],
+      [
+        238.17310878027087,
+        100,
+        94.81559762323785
+      ],
+      [
+        235.95527069526108,
+        100,
+        90.66631440752954
+      ],
+      [
+        232.97056274847714,
+        100,
+        87.02943725152286
+      ],
+      [
+        229.33368559247046,
+        100,
+        84.04472930473892
+      ],
+      [
+        225.18440237676216,
+        100,
+        81.82689121972912
+      ],
+      [
+        220.68216772838707,
+        100,
+        80.46115327032247
+      ],
+      [
+        216,
+        100,
+        80
+      ],
+      [
+        104,
+        100,
+        80
+      ],
+      [
+        99.31783227161293,
+        100,
+        80.46115327032247
+      ],
+      [
+        94.81559762323785,
+        100,
+        81.82689121972912
+      ],
+      [
+        90.66631440752955,
+        100,
+        84.04472930473891
+      ],
+      [
+        87.02943725152286,
+        100,
+        87.02943725152286
+      ],
+      [
+        84.04472930473891,
+        100,
+        90.66631440752954
+      ],
+      [
+        81.82689121972912,
+        100,
+        94.81559762323784
+      ],
+      [
+        80.46115327032247,
+        100,
+        99.31783227161291
+      ]
+    ],
+    "scope": "Unimplemented block-circling metro design; main station approach remainsX80, new opposite corridorX240. No original building or public layout changes.",
+    "sameBodyEnvelopeForAllCars": true,
+    "sampleIntervalMetres": 0.025
+  },
+  "evaluationIsCurrentRuntime": false
+}

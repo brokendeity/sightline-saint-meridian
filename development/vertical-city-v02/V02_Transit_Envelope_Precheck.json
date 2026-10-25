@@ -1,0 +1,128 @@
+{
+  "status": "FAIL sampled convoy envelope conflicts",
+  "scope": "Offline oriented bounds sampled at <=.25m through the actual candidate closed curve, all four simultaneous carriages, original compound building boxes, preserved non-V1 props and current solid V02 boxes. Conservative complete body envelopes, not exact triangle contact or continuous swept certification. Existing own-track wheel contact is excluded; aerial traffic, native playback, coupling and station operation remain separate.",
+  "entrySHA256": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
+  "manifestSHA256": "3a524ca3b09823cf8fa9eec3c5116ff6a7ec11d1cb091bb7bcdf1ffec88703c1",
+  "trainAssetSHA256": "8e96df9363e64d3da2510ff62f1bfcc02e50cd9d28cdf7363df4f76823714933",
+  "routeCodeSHA256": "ab8dfa7f69efde03c01cdaa4ad4d01aa41e1da823e697e7d09ae39868b8a0461",
+  "frontPrimitiveCount": 1,
+  "frontLocalBounds": {
+    "min": [
+      -1.5486866235733032,
+      -1.6036270499695093,
+      -6.9969282150268555
+    ],
+    "max": [
+      1.5475525856018066,
+      2.8895343780517577,
+      6.998562812805176
+    ]
+  },
+  "rearLocalBounds": {
+    "min": [
+      -1.62,
+      -1.8,
+      -6
+    ],
+    "max": [
+      1.62,
+      1.4,
+      6.8999999999999995
+    ]
+  },
+  "routeLength": 601.8887730942436,
+  "spacing": 14,
+  "carriages": 4,
+  "samples": 2408,
+  "sampleIntervalMetres": 0.24995380942451975,
+  "worldConflicts": [],
+  "convoyConflicts": [
+    {
+      "cars": [
+        0,
+        1
+      ],
+      "firstDistance": 3.749307141367796,
+      "firstPositions": [
+        [
+          79.96990145541889,
+          100.64295366404113,
+          183.72352925459478
+        ],
+        [
+          82.61730507118264,
+          99.8,
+          170.57163454855174
+        ]
+      ],
+      "sampleCount": 421
+    },
+    {
+      "cars": [
+        1,
+        2
+      ],
+      "firstDistance": 5.748937616763954,
+      "firstPositions": [
+        [
+          81.92359026050124,
+          99.8,
+          172.45299251823758
+        ],
+        [
+          85.56125975681641,
+          99.8,
+          180.98415214503345
+        ]
+      ],
+      "sampleCount": 60
+    },
+    {
+      "cars": [
+        2,
+        3
+      ],
+      "firstDistance": 19.746350944537063,
+      "firstPositions": [
+        [
+          81.92444603046722,
+          99.8,
+          172.45053924627481
+        ],
+        [
+          85.56177822531816,
+          99.8,
+          180.98668217388882
+        ]
+      ],
+      "sampleCount": 60
+    }
+  ],
+  "arcLengthDivisions": 200,
+  "consistEnvelopePolicy": "Actual shipped Hi3D front and three procedural rear-car envelopes.",
+  "motionEnvelopeMetrics": {
+    "minimumAdjacentRootDistance": 4.00771157501454,
+    "maximumAdjacentYawDegrees": 165.78691969305999,
+    "minimumAdjacentSeparatingAxisGap": -2.243375657032364,
+    "minimumRootStepRatio": 0.6096064848995841,
+    "maximumRootStepRatio": 1.40727975131141,
+    "scope": "Sampled horizontal OBB separating-axis gap and native root/tangent motion, not a mechanical coupler/bogie model. Large articulation angles require explicit design validation."
+  },
+  "predictedNativeFrameSpeedRatios": [
+    {
+      "requestedSpeed": 8,
+      "simulationHz": 60,
+      "minimum": 0.5665702080816915,
+      "maximum": 1.406862240455861,
+      "scope": "Offline prediction using the same native getPointAt call at fixed60Hz; browser motion/variable frame times remain untested."
+    },
+    {
+      "requestedSpeed": 16,
+      "simulationHz": 60,
+      "minimum": 0.6106860895744083,
+      "maximum": 1.3698669237144536,
+      "scope": "Offline prediction using the same native getPointAt call at fixed60Hz; browser motion/variable frame times remain untested."
+    }
+  ],
+  "evaluationIsCurrentRuntime": true
+}
