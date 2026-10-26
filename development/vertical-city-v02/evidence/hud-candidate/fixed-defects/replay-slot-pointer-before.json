@@ -1,0 +1,109 @@
+{
+  "status": "FAIL",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_HUD_CANDIDATE.html",
+  "scope": "UI disclosure, native pause/resources/control callbacks, responsive layouts. Not full retained-gameplay, final architecture or sustained performance acceptance.",
+  "results": [
+    {
+      "name": "desktop UI bounds and playfield protection",
+      "coverage": 0.10002970679012346
+    },
+    {
+      "name": "Tools invokes native pause, clears held movement/guard and freezes world clocks"
+    },
+    {
+      "name": "Paused hero switch remains paused; Sightline grounded aim still locks position"
+    },
+    {
+      "name": "Audio and native controls disclosure retain callbacks in pause tools"
+    },
+    {
+      "name": "Animation preview opens and restores the existing paused state"
+    },
+    {
+      "name": "Nearby public board opens/closes with normal input and live choices"
+    }
+  ],
+  "captures": [
+    "evidence/hud-candidate/desktop.png",
+    "evidence/hud-candidate/paused-hero-tools.png",
+    "evidence/hud-candidate/paused-controls.png",
+    "evidence/hud-candidate/public-information.png",
+    "evidence/hud-candidate/failure.png"
+  ],
+  "errors": [],
+  "hashes": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_HUD_CANDIDATE.html": "c0b4465e40b882c5f76b776f1c5a4761585af7a09d54fdb4a7ffa5da4608b99e",
+    "scripts/game_vertical_hud_v02.js": "301a855a1ac6509e561ae1d108ef0914b1edb1a76e69c2903864913963afb650",
+    "scripts/game_vertical_hud_v02.css": "6971512083517bf17fd2928b4f71e7fa276241c58816248549f1ece0d6650a54",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_VISUAL_CANDIDATE.html": "096be78a4f7dddf42dafd4de5d3749f7d0cfbcf31bd934c27531b6520fd953a4"
+  },
+  "desktop": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "coverage": 0.10002970679012346,
+    "boxes": [
+      {
+        "id": "v02Toolbar",
+        "x": 14,
+        "y": 14,
+        "width": 212.4375,
+        "height": 44
+      },
+      {
+        "id": "flightVitals",
+        "x": 14,
+        "y": 644.21875,
+        "width": 235,
+        "height": 241.78125
+      },
+      {
+        "id": "mission",
+        "x": 1126,
+        "y": 14,
+        "width": 300,
+        "height": 48.1875
+      },
+      {
+        "id": "actionHint",
+        "x": 550,
+        "y": 844,
+        "width": 340,
+        "height": 40
+      },
+      {
+        "id": "v02DiscoveryHUD",
+        "x": 1156,
+        "y": 84,
+        "width": 270,
+        "height": 131.171875
+      }
+    ],
+    "buttons": [],
+    "overflow": false
+  },
+  "previewButtons": [
+    {
+      "id": "backspoolPlay",
+      "text": "Play preview"
+    },
+    {
+      "id": "backspoolClose",
+      "text": "Return to game"
+    },
+    {
+      "id": "backspoolControllerEvidence",
+      "text": "Recovered controller / contacts"
+    },
+    {
+      "id": "backspoolBipedEvidence",
+      "text": "Biped bindings / pose buffers"
+    },
+    {
+      "id": "backspoolSourceEvidence",
+      "text": "Original source evidence"
+    }
+  ],
+  "failure": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#bankSlot1')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"bankSlot1\">2 · EMPTY</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <canvas width=\"1440\" height=\"900\"></canvas> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <canvas width=\"1440\" height=\"900\"></canvas> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <canvas width=\"1440\" height=\"900\"></canvas> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+}

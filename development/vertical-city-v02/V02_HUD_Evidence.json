@@ -1,0 +1,85 @@
+{
+  "status": "PASS bounded contextual HUD, native input/pause and responsive milestone; full city NOT COMPLETE",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_HUD_CANDIDATE.html",
+  "entrySHA256": "c0b4465e40b882c5f76b776f1c5a4761585af7a09d54fdb4a7ffa5da4608b99e",
+  "evidence": {
+    "build": {
+      "status": "UI CANDIDATE \u2014 interaction and responsive acceptance pending",
+      "source": "SIGHTLINE_SAINT_MERIDIAN_V02_VISUAL_CANDIDATE.html",
+      "sourceSHA256": "096be78a4f7dddf42dafd4de5d3749f7d0cfbcf31bd934c27531b6520fd953a4",
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_HUD_CANDIDATE.html",
+      "entrySHA256": "c0b4465e40b882c5f76b776f1c5a4761585af7a09d54fdb4a7ffa5da4608b99e",
+      "adapterSHA256": "301a855a1ac6509e561ae1d108ef0914b1edb1a76e69c2903864913963afb650",
+      "cssSHA256": "e3ba778d33387c5cf771ef2cb26832995f7dcd5d487302b72e945a0dcb991cdf",
+      "boundedChanges": [
+        "Threadrail touch host prefers new action deck",
+        "One presentation callback after native UI owners",
+        "Load UI adapter"
+      ],
+      "geometryPhysicsCombatAnimationChanged": false
+    },
+    "tests": {
+      "file": "V02_HUD_Candidate_Tests.json",
+      "sha256": "1ab2a2c6927689f4ad6243ba73066e636ec4f0ab46a5e76441b0880b05209fa0",
+      "groups": 15
+    },
+    "stock": {
+      "shot-0.png": "3da11882ad4402adff89c409a1381ad6c39bf06a0449ec364c1b04570969ce12",
+      "state-0.json": "d711850b078abfb2c6786767789a8cf0e9c36c4dad72d990e7139efd999fb2eb"
+    }
+  },
+  "rescue": {
+    "file": "evidence/hud-regressions/V02_Market_Rescue_Public.json",
+    "sha256": "72631b645760c1bbe398f016fb5d5960019cf2e5f92a8aa20b2e474d92b21bfd",
+    "fullTraceSHA256": "9224b4eaebb28e01d6cab02906b676acc18ed920db09e09fe25822d2d1299a38",
+    "secondsToExtraction": 28.433333333333334,
+    "totalInputSeconds": 37.18333333333333,
+    "scope": "One labelled local setup, complete incident and alternate escort through normal inputs."
+  },
+  "captures": [
+    "evidence/hud-candidate/desktop.png",
+    "evidence/hud-candidate/paused-hero-tools.png",
+    "evidence/hud-candidate/paused-controls.png",
+    "evidence/hud-candidate/public-information.png",
+    "evidence/hud-candidate/combat-feedback.png",
+    "evidence/hud-candidate/portrait.png",
+    "evidence/hud-candidate/portrait-paused-equipment.png",
+    "evidence/hud-candidate/portrait-resumed.png",
+    "evidence/hud-candidate/landscape.png",
+    "evidence/hud-candidate/landscape-paused-practice.png"
+  ],
+  "desktopHUDCoverage": 0.10002970679012346,
+  "portraitHUDCoverage": 0.3025462558638587,
+  "landscapeHUDCoverage": 0.3111823472901487,
+  "sourceVerification": "Exact inverse of three presentation-only edits reproduces accepted visual entry byte for byte. No geometry/physics/combat/animation edits.",
+  "protectedEntries": {
+    "SIGHTLINE_BACKSPOOL_WHIP_THROW.html": "fac92161657cb93c8500d6afbc2900748b7cadfc015c019eeddf0366cdf070e4",
+    "SIGHTLINE_VERTICAL_MEGACITY_V1.html": "45d868dcfcd1d0d9a382563bc984ebc657848cd6b2987f21bdf132edcf86d03b",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_DETAILED.html": "ec12fa9b3ccadb8acd9c1dcf5136391ef2b675f9ca95702453bd740797ee82a7",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT.html": "48ee6dff434a6a2e1c1e5dbbf86d673b83109922c804f5749b0411ffc525c80f",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT_STATION.html": "b96967c97064d9f549e92aa599ed140a2a99e7c0c8e08f0c118c55eb35e3cba1",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_WORLD_LIFE.html": "1f739d8e9dd53892988a9d67d3b18cafd175dc5b5d114f5bffb8b886b73ed296",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_VISUAL_CANDIDATE.html": "096be78a4f7dddf42dafd4de5d3749f7d0cfbcf31bd934c27531b6520fd953a4"
+  },
+  "verifiedScope": [
+    "Actual keyboard/pointer pause, held movement/guard clearing and frozen train/world-life clocks",
+    "Paused hero selection; Sightline grounded aim remains position-locked",
+    "Original audio and help callbacks; animation preview returning to pause",
+    "Live public board; native practice activation and strike recording/slot selection",
+    "Simulated controller four-button hero chord in both directions",
+    "Complete local civilian rescue/one reward/grounded escort/unchanged courier/departure/native contract-tool return",
+    "Simulated touch Flow toggle, combat state, jump/landing and pause/resume",
+    "Desktop/portrait/landscape layouts, visible native health/resources, unobstructed primary44px touch targets and central playfield"
+  ],
+  "limitations": [
+    "This is a separate UI candidate, not promotion of the stable game.",
+    "Physical controller and physical touchscreen not tested.",
+    "Full retained mission/combat/traversal/destruction suite has not been rerun on this combined entry.",
+    "One complete local rescue is verified. Full ground approach, other encounters, pursuit and their failure paths need combined-entry regressions.",
+    "Final reference-matched architecture/material/lighting acceptance remains incomplete.",
+    "Nine advanced route timing fields remain unmeasured.",
+    ">=60-second matched active CPU/render/GPU/performance gate remains outstanding."
+  ],
+  "fullGoalComplete": false
+}

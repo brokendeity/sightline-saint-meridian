@@ -1,0 +1,102 @@
+{
+  "status": "FAIL",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_HUD_CANDIDATE.html",
+  "scope": "UI disclosure, native pause/resources/control callbacks, responsive layouts. Not full retained-gameplay, final architecture or sustained performance acceptance.",
+  "results": [
+    {
+      "name": "desktop UI bounds and playfield protection",
+      "coverage": 0.10002970679012346
+    },
+    {
+      "name": "Tools invokes native pause, clears held movement/guard and freezes world clocks"
+    },
+    {
+      "name": "Paused hero switch remains paused; Sightline grounded aim still locks position"
+    },
+    {
+      "name": "Audio and native controls disclosure retain callbacks in pause tools"
+    }
+  ],
+  "captures": [
+    "evidence/hud-candidate/desktop.png",
+    "evidence/hud-candidate/paused-hero-tools.png",
+    "evidence/hud-candidate/paused-controls.png",
+    "evidence/hud-candidate/failure.png"
+  ],
+  "errors": [],
+  "hashes": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_HUD_CANDIDATE.html": "c0b4465e40b882c5f76b776f1c5a4761585af7a09d54fdb4a7ffa5da4608b99e",
+    "scripts/game_vertical_hud_v02.js": "c963b7f9e962b209a221ab5d684b520549894790e24ab2a96530f5f6f9003467",
+    "scripts/game_vertical_hud_v02.css": "d6d87940889f8e5fc0c28edc87601b805f86f8e8a62694b995d3da88383fe027",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_VISUAL_CANDIDATE.html": "096be78a4f7dddf42dafd4de5d3749f7d0cfbcf31bd934c27531b6520fd953a4"
+  },
+  "desktop": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "coverage": 0.10002970679012346,
+    "boxes": [
+      {
+        "id": "v02Toolbar",
+        "x": 14,
+        "y": 14,
+        "width": 212.4375,
+        "height": 44
+      },
+      {
+        "id": "flightVitals",
+        "x": 14,
+        "y": 644.21875,
+        "width": 235,
+        "height": 241.78125
+      },
+      {
+        "id": "mission",
+        "x": 1126,
+        "y": 14,
+        "width": 300,
+        "height": 48.1875
+      },
+      {
+        "id": "actionHint",
+        "x": 550,
+        "y": 844,
+        "width": 340,
+        "height": 40
+      },
+      {
+        "id": "v02DiscoveryHUD",
+        "x": 1156,
+        "y": 84,
+        "width": 270,
+        "height": 131.171875
+      }
+    ],
+    "buttons": [],
+    "overflow": false
+  },
+  "previewButtons": [
+    {
+      "id": "backspoolPlay",
+      "text": "Play preview"
+    },
+    {
+      "id": "backspoolClose",
+      "text": "Return to game"
+    },
+    {
+      "id": "backspoolControllerEvidence",
+      "text": "Recovered controller / contacts"
+    },
+    {
+      "id": "backspoolBipedEvidence",
+      "text": "Biped bindings / pose buffers"
+    },
+    {
+      "id": "backspoolSourceEvidence",
+      "text": "Original source evidence"
+    }
+  ],
+  "failure": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(closeID)\n"
+}
