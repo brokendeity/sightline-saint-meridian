@@ -1,13 +1,15 @@
 const{chromium}=require('/opt/homebrew/lib/node_modules/playwright'),fs=require('fs'),path=require('path'),crypto=require('crypto'),assert=require('assert/strict');
+const evidenceRun=process.env.V02_EVIDENCE_RUN||'detailed-regressions';
+assert(/^[a-z0-9-]+$/.test(evidenceRun),'Evidence run must be a simple directory name');
 const R=path.resolve(__dirname,'../..'),detailed=process.env.V02_STAGE==='detailed',
- D=path.join(R,'development/vertical-city-v02',...(detailed?['evidence/detailed-regressions']:[])),
+ D=path.join(R,'development/vertical-city-v02',...(detailed?['evidence/'+evidenceRun]:[])),
  entry=detailed?'SIGHTLINE_SAINT_MERIDIAN_V02_DETAILED.html':'SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html',
  manifest='assets/city/vertical-v02/'+(detailed?'detailed':'graybox')+'/manifest.json';
 if(detailed)fs.mkdirSync(path.join(D,'evidence'),{recursive:true});
 async function openMarket(report,{full=false,viewport={width:1280,height:800}}={}){
  const browser=await chromium.launch({headless:true,args:['--use-gl=angle','--use-angle=metal']});try{const p=await browser.newPage({viewport});
  report.trace=[];report.errors=[];
- report.entry=entry;report.manifest=manifest;report.stage=detailed?'detailed':'graybox';
+ report.entry=entry;report.manifest=manifest;report.stage=detailed?'detailed':'graybox';if(detailed)report.evidenceRun=evidenceRun;
  for(const[key,file]of Object.entries({entrySHA256:entry,manifestSHA256:manifest,encounterSHA256:'scripts/game_vertical_encounters_v02.js',marketSHA256:'scripts/game_vertical_market_v02.js'}))report[key]=crypto.createHash('sha256').update(fs.readFileSync(path.join(R,file))).digest('hex');
  p.on('pageerror',e=>report.errors.push(String(e)));p.on('console',m=>{if(m.type()==='error')report.errors.push(m.text())});
  await p.goto('http://127.0.0.1:8766/'+entry+'?capture=backspool');
@@ -28,4 +30,4 @@ async function openMarket(report,{full=false,viewport={width:1280,height:800}}={
  await step(4);return{browser,p,step,stop,walking,move,capture,mark,press,reachEscort,frames:()=>frames};
  }catch(error){await browser.close();throw error;}
 }
-module.exports={openMarket,R,D};
+module.exports={openMarket,R,D,entry,manifest};

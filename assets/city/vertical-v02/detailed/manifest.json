@@ -3,7 +3,7 @@
   "pilot": false,
   "coordinateSystem": "game X/Y-up/Z metres; deck tops and actor +.42 are distinct",
   "sourceEntrySHA256": "fac92161657cb93c8500d6afbc2900748b7cadfc015c019eeddf0366cdf070e4",
-  "graphSHA256": "003093642fa3772a59689d0d9d5bdcc02c5f7e71eca9da3c467e422745f489a2",
+  "graphSHA256": "67e5082013113889398e73489aef85035a8141d9dd398393a1562eaa111fadb3",
   "records": [
     {
       "id": "gallery-W-24-210",
@@ -3532,7 +3532,8 @@
       "walkable": true,
       "material": "deck",
       "collection": "SM_V02_SERVICE_YARDS",
-      "sourceStructure": "service-cover-west"
+      "sourceStructure": "service-cover-west",
+      "visualPolicy": "framed closed envelope; contact box and outer dimensions preserved"
     },
     {
       "id": "service-cover-south",
@@ -3563,7 +3564,8 @@
       "walkable": true,
       "material": "deck",
       "collection": "SM_V02_SERVICE_YARDS",
-      "sourceStructure": "service-cover-south"
+      "sourceStructure": "service-cover-south",
+      "visualPolicy": "framed closed envelope; contact box and outer dimensions preserved"
     },
     {
       "id": "service-overhead-post-82",
@@ -3593,7 +3595,8 @@
       "solid": true,
       "walkable": false,
       "material": "deck",
-      "collection": "SM_V02_SERVICE_YARDS"
+      "collection": "SM_V02_SERVICE_YARDS",
+      "visualPolicy": "framed closed envelope; contact box and outer dimensions preserved"
     },
     {
       "id": "service-overhead-post-90.5",
@@ -3623,7 +3626,8 @@
       "solid": true,
       "walkable": false,
       "material": "deck",
-      "collection": "SM_V02_SERVICE_YARDS"
+      "collection": "SM_V02_SERVICE_YARDS",
+      "visualPolicy": "framed closed envelope; contact box and outer dimensions preserved"
     },
     {
       "id": "service-jump-shelf",
@@ -3654,7 +3658,8 @@
       "walkable": true,
       "material": "deck",
       "collection": "SM_V02_SERVICE_YARDS",
-      "sourceStructure": "service-jump-shelf"
+      "sourceStructure": "service-jump-shelf",
+      "visualPolicy": "framed closed envelope; contact box and outer dimensions preserved"
     },
     {
       "id": "station-exit-side-link",
@@ -329789,6 +329794,369 @@
       "detail": true
     },
     {
+      "id": "detail-service-utility-bank",
+      "owner": "v02:detail-service-utility-bank",
+      "center": [
+        76.9,
+        53.8,
+        312.9
+      ],
+      "size": [
+        4.8,
+        3.6,
+        1.2
+      ],
+      "box": {
+        "min": [
+          74.5,
+          52.0,
+          312.29999999999995
+        ],
+        "max": [
+          79.30000000000001,
+          55.599999999999994,
+          313.5
+        ]
+      },
+      "solid": true,
+      "walkable": true,
+      "material": "steel",
+      "collection": "SM_V02_SERVICE_YARDS",
+      "detail": true,
+      "role": "closed ventilation and power cabinet; no invented interaction",
+      "visualPolicy": "framed closed envelope; contact box and outer dimensions preserved"
+    },
+    {
+      "id": "detail-service-grille-0",
+      "owner": "v02:detail-service-grille-0",
+      "center": [
+        75.35,
+        54.1,
+        313.535
+      ],
+      "size": [
+        1.08,
+        1.08,
+        0.07
+      ],
+      "box": {
+        "min": [
+          74.80999999999999,
+          53.56,
+          313.5
+        ],
+        "max": [
+          75.89,
+          54.64,
+          313.57000000000005
+        ]
+      },
+      "solid": false,
+      "walkable": false,
+      "material": "steel",
+      "collection": "SM_V02_SERVICE_YARDS",
+      "detail": true,
+      "sourceSurface": "detail-service-utility-bank",
+      "role": "surface-mounted ventilation grille attached to the closed cabinet face"
+    },
+    {
+      "id": "detail-service-vent-label-0",
+      "owner": "v02:detail-service-vent-label-0",
+      "center": [
+        75.35,
+        52.85,
+        313.505
+      ],
+      "size": [
+        1.1,
+        0.07,
+        0.01
+      ],
+      "box": {
+        "min": [
+          74.8,
+          52.815000000000005,
+          313.5
+        ],
+        "max": [
+          75.89999999999999,
+          52.885,
+          313.51
+        ]
+      },
+      "solid": false,
+      "walkable": false,
+      "material": "warm",
+      "collection": "SM_V02_SERVICE_YARDS",
+      "detail": true,
+      "sourceSurface": "detail-service-utility-bank",
+      "role": "equipment indicator inset in cabinet face"
+    },
+    {
+      "id": "detail-service-grille-1",
+      "owner": "v02:detail-service-grille-1",
+      "center": [
+        76.9,
+        54.1,
+        313.535
+      ],
+      "size": [
+        1.08,
+        1.08,
+        0.07
+      ],
+      "box": {
+        "min": [
+          76.36,
+          53.56,
+          313.5
+        ],
+        "max": [
+          77.44000000000001,
+          54.64,
+          313.57000000000005
+        ]
+      },
+      "solid": false,
+      "walkable": false,
+      "material": "steel",
+      "collection": "SM_V02_SERVICE_YARDS",
+      "detail": true,
+      "sourceSurface": "detail-service-utility-bank",
+      "role": "surface-mounted ventilation grille attached to the closed cabinet face"
+    },
+    {
+      "id": "detail-service-vent-label-1",
+      "owner": "v02:detail-service-vent-label-1",
+      "center": [
+        76.9,
+        52.85,
+        313.505
+      ],
+      "size": [
+        1.1,
+        0.07,
+        0.01
+      ],
+      "box": {
+        "min": [
+          76.35000000000001,
+          52.815000000000005,
+          313.5
+        ],
+        "max": [
+          77.45,
+          52.885,
+          313.51
+        ]
+      },
+      "solid": false,
+      "walkable": false,
+      "material": "warm",
+      "collection": "SM_V02_SERVICE_YARDS",
+      "detail": true,
+      "sourceSurface": "detail-service-utility-bank",
+      "role": "equipment indicator inset in cabinet face"
+    },
+    {
+      "id": "detail-service-grille-2",
+      "owner": "v02:detail-service-grille-2",
+      "center": [
+        78.45,
+        54.1,
+        313.535
+      ],
+      "size": [
+        1.08,
+        1.08,
+        0.07
+      ],
+      "box": {
+        "min": [
+          77.91,
+          53.56,
+          313.5
+        ],
+        "max": [
+          78.99000000000001,
+          54.64,
+          313.57000000000005
+        ]
+      },
+      "solid": false,
+      "walkable": false,
+      "material": "steel",
+      "collection": "SM_V02_SERVICE_YARDS",
+      "detail": true,
+      "sourceSurface": "detail-service-utility-bank",
+      "role": "surface-mounted ventilation grille attached to the closed cabinet face"
+    },
+    {
+      "id": "detail-service-vent-label-2",
+      "owner": "v02:detail-service-vent-label-2",
+      "center": [
+        78.45,
+        52.85,
+        313.505
+      ],
+      "size": [
+        1.1,
+        0.07,
+        0.01
+      ],
+      "box": {
+        "min": [
+          77.9,
+          52.815000000000005,
+          313.5
+        ],
+        "max": [
+          79.0,
+          52.885,
+          313.51
+        ]
+      },
+      "solid": false,
+      "walkable": false,
+      "material": "warm",
+      "collection": "SM_V02_SERVICE_YARDS",
+      "detail": true,
+      "sourceSurface": "detail-service-utility-bank",
+      "role": "equipment indicator inset in cabinet face"
+    },
+    {
+      "id": "detail-service-bank-label",
+      "owner": "v02:detail-service-bank-label",
+      "center": [
+        76.90012741088867,
+        55.30525016784668,
+        313.5069885253906
+      ],
+      "size": [
+        2.3732528686523438,
+        0.17499923706054688,
+        0.001220703125
+      ],
+      "box": {
+        "min": [
+          75.7135009765625,
+          55.217750549316406,
+          313.5063781738281
+        ],
+        "max": [
+          78.08675384521484,
+          55.39274978637695,
+          313.5075988769531
+        ]
+      },
+      "solid": false,
+      "walkable": false,
+      "material": "warm",
+      "collection": "SM_V02_SERVICE_YARDS",
+      "detail": true,
+      "text": "MAINTENANCE / 52M",
+      "role": "physical architectural wayfinding lettering"
+    },
+    {
+      "id": "detail-service-deck-edge-marker-0",
+      "owner": "v02:detail-service-deck-edge-marker-0",
+      "center": [
+        62.5,
+        51.96,
+        312.02
+      ],
+      "size": [
+        1.4,
+        0.035,
+        0.025
+      ],
+      "box": {
+        "min": [
+          61.8,
+          51.9425,
+          312.0075
+        ],
+        "max": [
+          63.2,
+          51.9775,
+          312.03249999999997
+        ]
+      },
+      "solid": false,
+      "walkable": false,
+      "material": "warm",
+      "collection": "SM_V02_SERVICE_YARDS",
+      "detail": true,
+      "sourceSurface": "service-yard",
+      "role": "flush fascia marker below the existing floor"
+    },
+    {
+      "id": "detail-service-deck-edge-marker-1",
+      "owner": "v02:detail-service-deck-edge-marker-1",
+      "center": [
+        65.5,
+        51.96,
+        312.02
+      ],
+      "size": [
+        1.4,
+        0.035,
+        0.025
+      ],
+      "box": {
+        "min": [
+          64.8,
+          51.9425,
+          312.0075
+        ],
+        "max": [
+          66.2,
+          51.9775,
+          312.03249999999997
+        ]
+      },
+      "solid": false,
+      "walkable": false,
+      "material": "warm",
+      "collection": "SM_V02_SERVICE_YARDS",
+      "detail": true,
+      "sourceSurface": "service-yard",
+      "role": "flush fascia marker below the existing floor"
+    },
+    {
+      "id": "detail-service-deck-edge-marker-2",
+      "owner": "v02:detail-service-deck-edge-marker-2",
+      "center": [
+        68.5,
+        51.96,
+        312.02
+      ],
+      "size": [
+        1.4,
+        0.035,
+        0.025
+      ],
+      "box": {
+        "min": [
+          67.8,
+          51.9425,
+          312.0075
+        ],
+        "max": [
+          69.2,
+          51.9775,
+          312.03249999999997
+        ]
+      },
+      "solid": false,
+      "walkable": false,
+      "material": "warm",
+      "collection": "SM_V02_SERVICE_YARDS",
+      "detail": true,
+      "sourceSurface": "service-yard",
+      "role": "flush fascia marker below the existing floor"
+    },
+    {
       "id": "detail-wall-room-fin-96--1",
       "owner": "v02:detail-wall-room-fin-96--1",
       "center": [
@@ -349211,9 +349579,9 @@
     {
       "id": "v02-detailed-01-05",
       "url": "assets/city/vertical-v02/detailed/v02-detailed-01-05.glb",
-      "sha256": "18b17d9c909fcf38c6c47a644ea7a5ae66443a2cf864eb523eb64929a2dd39f9",
-      "bytes": 1147780,
-      "triangles": 6948,
+      "sha256": "6fa81a44daecb7cd841af275d6d28b394c319251fa39d88429248109ec505561",
+      "bytes": 1370948,
+      "triangles": 9206,
       "recordIDs": [
         "gallery-W-52-300",
         "gallery-W-52-326",
@@ -349421,7 +349789,18 @@
         "detail-market-terrace-roof-trim",
         "detail-market-terrace-ceiling-355.1",
         "detail-market-terrace-ceiling-356.65",
-        "detail-market-terrace-ceiling-358.2"
+        "detail-market-terrace-ceiling-358.2",
+        "detail-service-utility-bank",
+        "detail-service-grille-0",
+        "detail-service-vent-label-0",
+        "detail-service-grille-1",
+        "detail-service-vent-label-1",
+        "detail-service-grille-2",
+        "detail-service-vent-label-2",
+        "detail-service-bank-label",
+        "detail-service-deck-edge-marker-0",
+        "detail-service-deck-edge-marker-1",
+        "detail-service-deck-edge-marker-2"
       ]
     },
     {
@@ -356265,6 +356644,18 @@
       "upper": "detail-observation-pavilion-roof"
     }
   ],
+  "serviceArchitecture": {
+    "id": "service-maintenance-architecture",
+    "preservedContactRecords": [
+      "service-cover-west",
+      "service-cover-south",
+      "service-jump-shelf",
+      "service-overhead-post-82",
+      "service-overhead-post-90.5"
+    ],
+    "newCabinet": "detail-service-utility-bank",
+    "status": "Authored; actual export, source and native input acceptance required"
+  },
   "acceptedGrayboxManifestSHA256": "3a524ca3b09823cf8fa9eec3c5116ff6a7ec11d1cb091bb7bcdf1ffec88703c1",
   "architectureStage": "first detailed authoring pass; validation pending",
   "detailedPublicRoutes": [

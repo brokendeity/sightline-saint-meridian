@@ -4,7 +4,7 @@ Keeps the accepted graybox, original city and gameplay files immutable. Existing
 contact records retain their exact boxes/IDs. New architecture has visible
 geometry, ownership and explicit collision/support records of its own.
 """
-import bpy, bmesh, json, math, hashlib, random
+import bpy, bmesh, json, math, hashlib, random, sys
 from pathlib import Path
 from mathutils import Vector
 
@@ -28,6 +28,9 @@ bpy.data.collections['SM_V02_EXPORT'].hide_viewport=False
 bpy.data.collections['SM_V02_EXPORT'].hide_render=False
 records=json.loads(json.dumps(base['records']))
 materials={name:bpy.data.materials['V02_'+name] for name in ['deck','steel','cyan','warm','glass']}
+sys.path.insert(0,str(Path(__file__).parent))
+from apply_reference_appearance import apply as apply_reference_appearance
+reference_appearance=apply_reference_appearance(bpy,R,D)
 
 # Actual embedded PBR images, with metre-scaled UVs. No unsupported procedural
 # shader is silently substituted by the browser export.
@@ -295,6 +298,9 @@ for sign,z in [('north',414.2),('south',425.8)]:
 for z in [415.5,418.5,421.5,424.5]:
     add('detail-observation-pavilion-ceiling-'+str(z),[80.6,131.575,z],[3.4,.025,.10],C,'warm',False,bevel=0)
 
+from architecture_service_detail import build as build_service_detail
+service_detail=build_service_detail(globals())
+
 # Flush side/front detailing leaves the central measured wall-climb band clear.
 for height in [96,108,120,128]:
     parent=next(r for r in base['records']if r['id']=='mastery-wall-room-'+str(height))
@@ -343,7 +349,7 @@ for record in records:
     if id.startswith('detail-observation-pavilion-post-'):
         support_connections.extend([{'lower':'observation-deck-opening-1','upper':id},{'lower':id,'upper':'detail-observation-pavilion-roof'}])
 metadata={**base,'schema':'sm-v02-detailed-1','records':records,'chunks':chunks,'phase4GateSHA256':sha(D/'V02_Phase4_Gate.json'),
- 'supportConnections':support_connections,
+ 'supportConnections':support_connections,'serviceArchitecture':service_detail,
  'acceptedGrayboxManifestSHA256':sha(BASE),'architectureStage':'first detailed authoring pass; validation pending',
  'detailedPublicRoutes':[{'id':'market-upper-terrace','ability':'stairs','requiredAfterstepImpulses':0,
   'path':[[76,24,353.9],[76.95,24,353.9],[84.3,27.6,353.9],[85.1,27.6,353.4],[88,27.6,353.4],[88,27.6,357]]}],
@@ -384,6 +390,8 @@ bpy.ops.wm.save_as_mainfile(filepath=str(target))
 report={'status':'FIRST DETAILED AUTHORING PASS; validation pending','master':str(target.relative_to(R)),'masterSHA256':sha(target),
  'sourcePhase4GateSHA256':sha(D/'V02_Phase4_Gate.json'),'sourceGrayboxManifestSHA256':sha(BASE),'authoringScriptSHA256':SCRIPT_SHA,
  'refinedBevelComponents':refined,'physicalGlassParapets':glass_guards,'baseRecords':len(base['records']),
+ 'referenceAppearance':reference_appearance,'serviceArchitecture':service_detail,
+ 'dependencies':{str(p.relative_to(R)):sha(p)for p in [Path(__file__).parent/'architecture_service_detail.py',Path(__file__).parent/'apply_reference_appearance.py',D/'V02_Reference_Appearance.json']},
  'newRecords':len(records)-len(base['records']),'chunks':len(chunks),'triangles':sum(c['triangles']for c in chunks),
  'bytes':sum(c['bytes']for c in chunks),'originalBuildingCopiesExported':0,
  'remaining':['Export integrity, original-volume/route sweeps and real game import','Upper commercial stair input acceptance','Reference views and landmark silhouette refinement','Gameplay/camera/performance regression and later transit/world-life phases']}

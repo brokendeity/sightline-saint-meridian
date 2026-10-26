@@ -1,17 +1,89 @@
 {
   "status": "FIRST DETAILED AUTHORING PASS; validation pending",
   "master": "development/vertical-city-v02/blender/SaintMeridian_V02_Detailed_Master.blend",
-  "masterSHA256": "124cca3d0f4839ed7930489fafc8d0dcee6a338ee93235dda6fa51541a4442d7",
+  "masterSHA256": "34ea869622914fc1a592964261cd41ebe3c3a84d537e0ccb45d117d2233a2096",
   "sourcePhase4GateSHA256": "bc54b40fb7645cf807c7b8e2b2d79b8bf4471001a6aca681afc04b1ae5c05eb7",
   "sourceGrayboxManifestSHA256": "3a524ca3b09823cf8fa9eec3c5116ff6a7ec11d1cb091bb7bcdf1ffec88703c1",
-  "authoringScriptSHA256": "9ec159521f70f21d601f21a4d2157f2c078235e62b596b6b6cfa7793cc337da2",
+  "authoringScriptSHA256": "6f7898bc8b89a86101ae3558630b276d844450be1e0618dae22d6d73e96ceaa4",
   "refinedBevelComponents": 320,
   "physicalGlassParapets": 3695,
   "baseRecords": 9236,
-  "newRecords": 633,
+  "referenceAppearance": {
+    "sourceSHA256": "d8a129444f19b619207e93f21f35228f8eaf5a3c10c33b70c83587b70dc6e693",
+    "families": [
+      {
+        "family": 0,
+        "objects": 62,
+        "triangles": 6832,
+        "palette": 7
+      },
+      {
+        "family": 1,
+        "objects": 58,
+        "triangles": 6296,
+        "palette": 7
+      },
+      {
+        "family": 2,
+        "objects": 15,
+        "triangles": 3340,
+        "palette": 8
+      },
+      {
+        "family": 3,
+        "objects": 45,
+        "triangles": 6108,
+        "palette": 8
+      },
+      {
+        "family": 4,
+        "objects": 24,
+        "triangles": 7736,
+        "palette": 8
+      },
+      {
+        "family": 5,
+        "objects": 20,
+        "triangles": 4560,
+        "palette": 9
+      },
+      {
+        "family": 6,
+        "objects": 11,
+        "triangles": 13044,
+        "palette": 7
+      },
+      {
+        "family": 7,
+        "objects": 75,
+        "triangles": 10252,
+        "palette": 8
+      }
+    ],
+    "objects": 310,
+    "scope": "Original source-face colors/emission on reference-only geometry. Principled shading is a Blender interpretation, not runtime-toon visual certification."
+  },
+  "serviceArchitecture": {
+    "id": "service-maintenance-architecture",
+    "preservedContactRecords": [
+      "service-cover-west",
+      "service-cover-south",
+      "service-jump-shelf",
+      "service-overhead-post-82",
+      "service-overhead-post-90.5"
+    ],
+    "newCabinet": "detail-service-utility-bank",
+    "status": "Authored; actual export, source and native input acceptance required"
+  },
+  "dependencies": {
+    "scripts/vertical-v02/architecture_service_detail.py": "4310fbbd99bc79b89c75d3ca98f4c7dca94b8c7a4e378797ddb505c8445f509f",
+    "scripts/vertical-v02/apply_reference_appearance.py": "5459c88b08dc16906bcbbf74529633051cb9d404a37ce701ff8efb7a709a2ba3",
+    "development/vertical-city-v02/V02_Reference_Appearance.json": "d8a129444f19b619207e93f21f35228f8eaf5a3c10c33b70c83587b70dc6e693"
+  },
+  "newRecords": 644,
   "chunks": 27,
-  "triangles": 285656,
-  "bytes": 40317272,
+  "triangles": 287914,
+  "bytes": 40540440,
   "originalBuildingCopiesExported": 0,
   "remaining": [
     "Export integrity, original-volume/route sweeps and real game import",

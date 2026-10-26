@@ -14,6 +14,7 @@ graphSHA256=build_graph()
 metadata=json.loads(manifest.read_text())
 authoring=json.loads((D/'V02_Detailed_Authoring.json').read_text())
 assert authoring['authoringScriptSHA256']==sha(R/'scripts/vertical-v02/blender_architecture.py'),'Detailed authoring script/report differ; do not publish a failed or stale export'
+assert all(sha(R/file)==digest for file,digest in authoring.get('dependencies',{}).items()),'Detailed helper/source appearance changed since export'
 assert authoring['masterSHA256']==sha(R/authoring['master'])
 assert all(sha(R/c['url'])==c['sha256']for c in metadata['chunks'])
 assert metadata['acceptedGrayboxManifestSHA256']==gate['manifestSHA256']

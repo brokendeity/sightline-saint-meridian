@@ -97,7 +97,7 @@ def build():
             'requiredAfterstepImpulses','requiredReplaySlots','expectedSeconds','timeEvidence','directionality',
             'difficulty','risk','failureRecovery','validation']
     with (D/'V02_Detailed_AbilityRoute_Matrix.csv').open('w',newline='')as f:
-        writer=csv.DictWriter(f,fieldnames=fields);writer.writeheader()
+        writer=csv.DictWriter(f,fieldnames=fields,lineterminator='\n');writer.writeheader()
         writer.writerows({k:json.dumps(e[k])if isinstance(e[k],dict)else e[k]for k in fields}for e in edges)
     m['graphSHA256']=sha(file);m['navigation']={'nodes':[nodes[n['id']]for n in m['navigation']['nodes']],
       'edges':[next(e for e in edges if e['id']==id)for id in public_edges]}

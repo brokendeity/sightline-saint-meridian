@@ -1,5 +1,5 @@
 {
-  "status": "Phase5 first detailed slice locally validated; architectural refinement continues",
+  "status": "Phase5 detailed base source and focused gameplay milestone passed; transit integration next",
   "acceptedGraybox": {
     "commit": "c33d9f5e30e88b4c7bbac58c9a27a7c4e8f7d0a8",
     "gate": "V02_Phase4_Gate.json",
@@ -9,18 +9,18 @@
   "currentDetailed": {
     "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_DETAILED.html",
     "entrySHA256": "ec12fa9b3ccadb8acd9c1dcf5136391ef2b675f9ca95702453bd740797ee82a7",
-    "manifestSHA256": "6a43c68fff7d3b75f6dc52df07f9d66e3a8d457f2ea5e6c0da0675ef0d6883fc",
+    "manifestSHA256": "b1077f43e3530abe5acbca7b709f8a968ef0088435c95f0be0c5ba9744e55f4e",
     "notes": "DETAILED_ARCHITECTURE.md",
-    "newStair": "PASS ordinary walking and289 animated-body camera samples",
-    "source": "PASS saved Blender mesh bounds/material/UV and18 support contacts",
+    "newStair": "Geometry unchanged; first-slice normal-input/camera evidence is versioned separately",
+    "source": "PASS9,880 saved component bounds/UV/materials,18 support contacts and310 reference face palettes",
     "glTF": "PASS27 modular files;0errors/0warnings"
   },
   "localRegression": {
-    "file": "V02_Detailed_Regression_Run.json",
-    "status": "PASS six retained detailed local gameplay scenarios",
+    "status": "PASS focused service combat/flank/Echo/escapes and stock-client checks",
     "activeJob": null,
-    "completed": 6,
-    "expected": 6
+    "activeSession": null,
+    "evidence": "V02_Detailed_Service_Revision_Evidence.json",
+    "scope": "Previous six-case/public-extension results remain versioned at4091369. Full current release acceptance remains pending."
   },
   "fullGoalComplete": false,
   "remaining": [
@@ -33,6 +33,14 @@
   "preservation": "Original WHIP, V1, accepted graybox, main and older snapshot refs remain intact. Only V02 development is changed.",
   "newPublicExtensions": {
     "status": "PASS new market directed access/stair edges and observation shelter walking",
-    "evidence": "evidence/detailed-regressions/V02_Detailed_Public_Extensions.json"
-  }
+    "evidence": "evidence/detailed-regressions/V02_Detailed_Public_Extensions.json",
+    "manifestSHA256": "6a43c68fff7d3b75f6dc52df07f9d66e3a8d457f2ea5e6c0da0675ef0d6883fc",
+    "scope": "Previous detailed slice; route geometry remains unchanged and full current release checks remain pending"
+  },
+  "previousDetailedSlice": {
+    "commit": "4091369",
+    "evidence": "V02_Detailed_Stage1_Evidence.json",
+    "scope": "Six retained scenarios, new public extensions and stair/camera tests belong to previous detailed manifest6a43c68f; retained as versioned evidence."
+  },
+  "nextPhase": "Transit and world life integration, followed by final visual/performance acceptance"
 }

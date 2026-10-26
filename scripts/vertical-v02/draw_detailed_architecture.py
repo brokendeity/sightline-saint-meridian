@@ -68,3 +68,30 @@ text(40,1090,'Manifest '+digest[:24]+' / native gameplay acceptance remains sepa
 target=D/'V02_Detailed_Architecture_Source_Sheet.png';im.save(target)
 (D/'V02_Detailed_Architecture_Source_Sheet.json').write_text(json.dumps({'scope':__doc__.strip(),'manifestSHA256':digest,'file':target.name},indent=2)+'\n')
 print('Wrote',target.name)
+
+if any(r['id']=='detail-service-utility-bank'for r in m['records']):
+    # A second source sheet documents the service revision without replacing
+    # the market/observation sheet or claiming to be a rendered inspection.
+    im=Image.new('RGB',(1600,1000),bg);d=ImageDraw.Draw(im)
+    text(40,25,'SAINT MERIDIAN V02 / SERVICE ARCHITECTURE',28)
+    text(40,69,'Actual exported placement / plan + front elevation / not a rendered gameplay view',17,amber)
+    panel('01 / SERVICE FLOOR52m',40,120,810,740,58,93,311,341,52)
+    text(890,125,'02 / CLOSED UTILITY BANK / +Z FRONT',18)
+    bank=next(r for r in m['records']if r['id']=='detail-service-utility-bank')
+    scale=112;xy=lambda x,y:(900+(x-bank['box']['min'][0])*scale,790-(y-52)*scale)
+    lo=xy(bank['box']['min'][0],bank['box']['max'][1]);hi=xy(bank['box']['max'][0],bank['box']['min'][1])
+    d.rectangle((*lo,*hi),fill='#243c4a',outline=cyan,width=2)
+    for r in m['records']:
+        if r['id'].startswith('detail-service-grille-'):
+            a=xy(r['box']['min'][0],r['box']['max'][1]);b=xy(r['box']['max'][0],r['box']['min'][1])
+            d.ellipse((*a,*b),fill=bg,outline='#a4bdca',width=5)
+        if r['id'].startswith('detail-service-vent-label-'):
+            a=xy(r['box']['min'][0],r['box']['max'][1]);b=xy(r['box']['max'][0],r['box']['min'][1]);d.rectangle((*a,*b),fill=amber)
+    text(900,825,'4.8m wide /3.6m high /1.2m deep',17,cyan)
+    text(900,855,'Grilles surface-mounted on the +Z face.',15)
+    text(40,900,'Retained cover/column contact boxes are unchanged. New cabinet clearance is checked separately.',16)
+    text(40,933,'Combat, stair/flank, Echo and camera inspection require actual native input evidence.',16,amber)
+    text(40,970,'Manifest '+digest[:24],13,'#91afbf')
+    target=D/'V02_Service_Architecture_Source_Sheet.png';im.save(target)
+    (D/'V02_Service_Architecture_Source_Sheet.json').write_text(json.dumps({'scope':__doc__.strip(),'manifestSHA256':digest,'file':target.name},indent=2)+'\n')
+    print('Wrote',target.name)

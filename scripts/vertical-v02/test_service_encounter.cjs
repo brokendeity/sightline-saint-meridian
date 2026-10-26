@@ -3,9 +3,9 @@
 const {chromium}=require('/opt/homebrew/lib/node_modules/playwright');
 const fs=require('fs'),path=require('path'),crypto=require('crypto'),assert=require('assert/strict');
 const {saveEvidence}=require('./evidence_io.cjs');
-const R=path.resolve(__dirname,'../..'),D=path.join(R,'development/vertical-city-v02');
-const report={scope:'Service-yard local encounter; single initial fixture, no route-node teleporting or injected damage. Other district encounters and full V02 acceptance remain pending.',entry:'SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html',results:[],trace:[],errors:[]};
-for(const [key,file]of Object.entries({entrySHA256:report.entry,manifestSHA256:'assets/city/vertical-v02/graybox/manifest.json',encounterSHA256:'scripts/game_vertical_encounters_v02.js',marketSHA256:'scripts/game_vertical_market_v02.js'}))report[key]=crypto.createHash('sha256').update(fs.readFileSync(path.join(R,file))).digest('hex');
+const{R,D,entry,manifest}=require('./market_test_helpers.cjs');
+const report={scope:'Service-yard local encounter; single initial fixture, no route-node teleporting or injected damage. Other district encounters and full V02 acceptance remain pending.',entry,manifest,results:[],trace:[],errors:[]};
+for(const [key,file]of Object.entries({entrySHA256:report.entry,manifestSHA256:manifest,encounterSHA256:'scripts/game_vertical_encounters_v02.js',marketSHA256:'scripts/game_vertical_market_v02.js'}))report[key]=crypto.createHash('sha256').update(fs.readFileSync(path.join(R,file))).digest('hex');
 (async()=>{const browser=await chromium.launch({headless:true,args:['--use-gl=angle','--use-angle=metal']});let p;
 try{
  p=await browser.newPage({viewport:{width:1280,height:800}});p.on('pageerror',e=>report.errors.push(String(e)));p.on('console',m=>{if(m.type()==='error')report.errors.push(m.text())});
@@ -57,6 +57,15 @@ try{
  await move([80.2,55.2,316.5]);await move([80.2,55.2,321]);await fight(55.2);await step(3);
  const victory=await p.evaluate(()=>({district:verticalEncounterState(),encounter:backspoolEncounterState(),score:s.score}));
  assert.equal(victory.district.phase,'victory');assert.equal(victory.encounter.outcome,'victory');assert(victory.district.opponents.every(t=>t.hp===0));await step(180);assert.equal(await p.evaluate(()=>s.score),victory.score,'Completion award repeats');await capture('victory');report.results.push({name:'legal heavy contacts defeat lower and upper opponents, award once',pass:true,victory});
+ if(process.env.V02_STAGE==='detailed'){
+  report.utilityInspection=await p.evaluate(()=>{camera.position.set(76.9,54.4,318.7);camera.lookAt(76.9,54.0,312.9);camera.fov=50;camera.updateProjectionMatrix();camera.updateMatrixWorld(true);scene.updateMatrixWorld(true);
+   const points=[75.35,76.9,78.45].map(x=>new THREE.Vector3(x+.5,54.1,313.57));
+   const samples=points.map(point=>{const delta=point.clone().sub(camera.position),distance=delta.length();const hit=new THREE.Raycaster(camera.position,delta.normalize(),0,distance+.1).intersectObjects(obstacleCandidates(camera.position,point),false).find(h=>{const mat=Array.isArray(h.object.material)?h.object.material[h.face?.materialIndex||0]:h.object.material;return!(mat?.transparent&&mat.opacity<.5)});return{point:point.toArray(),distance,firstHitDistance:hit?.distance,mesh:hit?.object.name,error:hit?Math.abs(distance-hit.distance):null}});
+   renderNight(0);return{scope:'Camera-only actual detailed game import inspection after legal encounter completion. Not player-camera or traversal acceptance.',samples,png:renderer.domElement.toDataURL('image/png')};
+  });
+  const file='evidence/service-utility-inspection.png';fs.writeFileSync(path.join(D,file),Buffer.from(report.utilityInspection.png.split(',')[1],'base64'));delete report.utilityInspection.png;report.utilityInspection.file=file;
+  assert(report.utilityInspection.samples.every(r=>r.error!==null&&r.error<.035),'Imported grille is hidden by another opaque surface '+JSON.stringify(report.utilityInspection.samples));
+ }
  report.status='PASS local service encounter';assert.deepEqual(report.errors,[]);
-}catch(e){report.failure=String(e);console.error(e);process.exitCode=1;}
+}catch(e){report.status='FAIL';report.failure=String(e);console.error(e);process.exitCode=1;}
 finally{if(p){await p.evaluate(()=>renderNight(0)).catch(()=>{});await p.screenshot({path:path.join(D,'evidence/service-final.png')}).catch(()=>{});}saveEvidence(D,'V02_Service_Encounter.json',report);await browser.close();}})();
