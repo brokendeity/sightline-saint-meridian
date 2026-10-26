@@ -1,0 +1,338 @@
+{
+  "status": "FAIL",
+  "scope": "Actual rendering and original-owner preservation; direct native breach/collapse API fixtures are labelled and do not establish legal gameplay input or final visual/performance acceptance.",
+  "hashes": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_VISUAL_CANDIDATE.html": "096be78a4f7dddf42dafd4de5d3749f7d0cfbcf31bd934c27531b6520fd953a4",
+    "scripts/game_vertical_appearance_v02.js": "a4fed6c8b79922a2da89f4b834968dffeba44bbcf446abcd4792a4a675873511",
+    "assets/city/vertical-v02/visual/facades.json": "241e6aba8f38f58037adf2ddeaa2394ffea3a0301c4dce4e5138d6060f23bdac",
+    "assets/city/vertical-v02/transit-world/manifest.json": "b30986c9d6f82f7680885cea47760cfde4b69cabed629dc6863173dc4b21a37b"
+  },
+  "results": [
+    "Visual load preserves all310originalbuildings/geometry/transforms/compoundparts, current V02 records, roads, light count and frozen clocks",
+    "Actual new material shaders compile and all original-owner facade chunks render in the paired A/B views",
+    "Native facade breach removes supported decorative bays instead of leaving fittings across the hole"
+  ],
+  "captures": [
+    {
+      "id": "A",
+      "position": [
+        78,
+        132,
+        185
+      ],
+      "projection": [
+        1.2062851427866268,
+        0,
+        0,
+        0,
+        0,
+        2.1445069205095586,
+        0,
+        0,
+        0,
+        0,
+        -1.0000555570988083,
+        -1,
+        0,
+        0,
+        -0.10000277785494041,
+        0
+      ],
+      "viewMatrix": [
+        -0.9998269783926317,
+        0.005153285847791199,
+        -0.017873357917036963,
+        0,
+        8.673617379884032e-19,
+        0.9608592374504552,
+        0.277037047714073,
+        0,
+        0.01860143215614198,
+        0.276989114318777,
+        -0.9606929880407369,
+        0,
+        74.54523936573902,
+        -178.47836178856153,
+        142.55343440680758,
+        1
+      ],
+      "appearance": {
+        "ready": true,
+        "loading": false,
+        "error": null,
+        "bays": 999,
+        "hiddenBays": 0,
+        "owners": [
+          {
+            "id": "building-141",
+            "parent": true,
+            "damage": 0,
+            "hiddenBays": 0,
+            "originalDestroyed": false,
+            "visible": true
+          },
+          {
+            "id": "building-160",
+            "parent": true,
+            "damage": 0,
+            "hiddenBays": 0,
+            "originalDestroyed": false,
+            "visible": true
+          },
+          {
+            "id": "building-162",
+            "parent": true,
+            "damage": 0,
+            "hiddenBays": 0,
+            "originalDestroyed": false,
+            "visible": true
+          }
+        ],
+        "fillMaterials": 2,
+        "dynamicLights": 0
+      },
+      "sceneCalls": 470,
+      "sceneTriangles": 803198,
+      "file": "evidence/visual-candidate/browser-A.png"
+    },
+    {
+      "id": "B",
+      "position": [
+        80,
+        2,
+        185
+      ],
+      "projection": [
+        1.2062851427866268,
+        0,
+        0,
+        0,
+        0,
+        2.1445069205095586,
+        0,
+        0,
+        0,
+        0,
+        -1.0000555570988083,
+        -1,
+        0,
+        0,
+        -0.10000277785494041,
+        0
+      ],
+      "viewMatrix": [
+        -1.0000000000000002,
+        0,
+        0,
+        0,
+        0,
+        0.9254783729668286,
+        -0.378800450330609,
+        0,
+        0,
+        -0.378800450330609,
+        -0.9254783729668289,
+        0,
+        80.00000000000004,
+        68.227126565229,
+        171.97109989952457,
+        1.0000000000000002
+      ],
+      "appearance": {
+        "ready": true,
+        "loading": false,
+        "error": null,
+        "bays": 999,
+        "hiddenBays": 0,
+        "owners": [
+          {
+            "id": "building-141",
+            "parent": true,
+            "damage": 0,
+            "hiddenBays": 0,
+            "originalDestroyed": false,
+            "visible": true
+          },
+          {
+            "id": "building-160",
+            "parent": true,
+            "damage": 0,
+            "hiddenBays": 0,
+            "originalDestroyed": false,
+            "visible": true
+          },
+          {
+            "id": "building-162",
+            "parent": true,
+            "damage": 0,
+            "hiddenBays": 0,
+            "originalDestroyed": false,
+            "visible": true
+          }
+        ],
+        "fillMaterials": 2,
+        "dynamicLights": 0
+      },
+      "sceneCalls": 453,
+      "sceneTriangles": 863125,
+      "file": "evidence/visual-candidate/browser-B.png"
+    }
+  ],
+  "errors": [],
+  "fixture": {
+    "scope": "Direct existing carveBuilding/collapseBuilding APIs on one source-supported bay; no legal-impact-input claim",
+    "owner": "building-141",
+    "bay": "building-141-light-bay-198",
+    "sourcePoint": [
+      50.74684535753295,
+      75.2,
+      307.70244157128036
+    ]
+  },
+  "breach": {
+    "carved": true,
+    "before": {
+      "ready": true,
+      "loading": false,
+      "error": null,
+      "bays": 999,
+      "hiddenBays": 0,
+      "owners": [
+        {
+          "id": "building-141",
+          "parent": true,
+          "damage": 0,
+          "hiddenBays": 0,
+          "originalDestroyed": false,
+          "visible": true
+        },
+        {
+          "id": "building-160",
+          "parent": true,
+          "damage": 0,
+          "hiddenBays": 0,
+          "originalDestroyed": false,
+          "visible": true
+        },
+        {
+          "id": "building-162",
+          "parent": true,
+          "damage": 0,
+          "hiddenBays": 0,
+          "originalDestroyed": false,
+          "visible": true
+        }
+      ],
+      "fillMaterials": 2,
+      "dynamicLights": 0
+    },
+    "after": {
+      "ready": true,
+      "loading": false,
+      "error": null,
+      "bays": 999,
+      "hiddenBays": 1,
+      "owners": [
+        {
+          "id": "building-141",
+          "parent": true,
+          "damage": 1,
+          "hiddenBays": 1,
+          "originalDestroyed": false,
+          "visible": true
+        },
+        {
+          "id": "building-160",
+          "parent": true,
+          "damage": 0,
+          "hiddenBays": 0,
+          "originalDestroyed": false,
+          "visible": true
+        },
+        {
+          "id": "building-162",
+          "parent": true,
+          "damage": 0,
+          "hiddenBays": 0,
+          "originalDestroyed": false,
+          "visible": true
+        }
+      ],
+      "fillMaterials": 2,
+      "dynamicLights": 0
+    },
+    "damage": 1,
+    "parts": 40
+  },
+  "collapse": {
+    "destroyed": true,
+    "ownerInScene": true,
+    "state": {
+      "ready": true,
+      "loading": false,
+      "error": null,
+      "bays": 999,
+      "hiddenBays": 1,
+      "owners": [
+        {
+          "id": "building-141",
+          "parent": true,
+          "damage": 1,
+          "hiddenBays": 1,
+          "originalDestroyed": true,
+          "visible": false
+        },
+        {
+          "id": "building-160",
+          "parent": true,
+          "damage": 0,
+          "hiddenBays": 0,
+          "originalDestroyed": false,
+          "visible": true
+        },
+        {
+          "id": "building-162",
+          "parent": true,
+          "damage": 0,
+          "hiddenBays": 0,
+          "originalDestroyed": false,
+          "visible": true
+        }
+      ],
+      "fillMaterials": 2,
+      "dynamicLights": 0
+    }
+  },
+  "failure": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(!report.collapse.ownerInScene)\n",
+  "beforeFingerprint": {
+    "buildings": 310,
+    "geometryTransformsAndCompoundPartsSHA256": "d6a5aa9cd1853b8fd1867351b57d763b6ee5972abbc0aa17783ee6015ac886cf",
+    "district": 11251,
+    "roads": {
+      "lanes": 668,
+      "ready": true
+    },
+    "originalLights": 9,
+    "trainClock": 0,
+    "lifeClock": 0
+  },
+  "afterFingerprint": {
+    "buildings": 310,
+    "geometryTransformsAndCompoundPartsSHA256": "d6a5aa9cd1853b8fd1867351b57d763b6ee5972abbc0aa17783ee6015ac886cf",
+    "district": 11251,
+    "roads": {
+      "lanes": 668,
+      "ready": true
+    },
+    "originalLights": 9,
+    "trainClock": 0,
+    "lifeClock": 0
+  },
+  "originalStatePreserved": true,
+  "fullEvidence": {
+    "file": "collapse-test-assumption-before.full.json.gz",
+    "sha256": "f616116f3d036b5ae727e2ce5c7f78376deac74dcbb0cd4e9d2a18fb43f95ff0",
+    "rawSHA256": "014e6ec2bdafbfca2c07ec5aaa0ba5591fcf46b71e3bf8677348a75139de7333",
+    "scope": "Exact original native JSON bytes, including every original source geometry hash, transform and compound collision part. No failed evidence discarded."
+  }
+}

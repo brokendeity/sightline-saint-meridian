@@ -1,0 +1,35 @@
+{
+  "status": "FAIL",
+  "scope": "Actual rendering and original-owner preservation; direct native breach/collapse API fixtures are labelled and do not establish legal gameplay input or final visual/performance acceptance.",
+  "hashes": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_VISUAL_CANDIDATE.html": "096be78a4f7dddf42dafd4de5d3749f7d0cfbcf31bd934c27531b6520fd953a4",
+    "scripts/game_vertical_appearance_v02.js": "d8ddaa248467b446e01cdfa3cc8604270e3570497a0fb90e2c7c4d226985ca00",
+    "assets/city/vertical-v02/visual/facades.json": "34b89e64199b6c14c3a712b71a6bbf80873d614e7c49b1176e058d0b8ef806f4",
+    "assets/city/vertical-v02/transit-world/manifest.json": "b30986c9d6f82f7680885cea47760cfde4b69cabed629dc6863173dc4b21a37b"
+  },
+  "results": [],
+  "captures": [],
+  "errors": [
+    "ReferenceError: verticalAppearanceState is not defined"
+  ],
+  "failure": "Error: page.waitForFunction: ReferenceError: verticalAppearanceState is not defined\n    at eval (eval at predicate (eval at evaluate (:290:30)), <anonymous>:1:38)\n    at predicate (eval at evaluate (:290:30), <anonymous>:7:23)\n    at next (eval at evaluate (:290:30), <anonymous>:29:29)\n    at eval (eval at evaluate (:290:30), <anonymous>:42:9)\n    at UtilityScript.evaluate (<anonymous>:292:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+  "beforeFingerprint": {
+    "buildings": 310,
+    "geometryTransformsAndCompoundPartsSHA256": "d6a5aa9cd1853b8fd1867351b57d763b6ee5972abbc0aa17783ee6015ac886cf",
+    "district": 11251,
+    "roads": {
+      "lanes": 668,
+      "ready": true
+    },
+    "originalLights": 9,
+    "trainClock": 0,
+    "lifeClock": 0
+  },
+  "originalStatePreserved": null,
+  "fullEvidence": {
+    "file": "test-readiness-reference-before.full.json.gz",
+    "sha256": "e6b99d4108bb82b31b4b73d3061f375ea11615a70ba7f7ef171496bf95f9a290",
+    "rawSHA256": "97c216750eb387a0bf7cbc7cabc8cbb7c2bda4d00932b2108a4958388836269a",
+    "scope": "Exact original native JSON bytes, including every original source geometry hash, transform and compound collision part. No failed evidence discarded."
+  }
+}

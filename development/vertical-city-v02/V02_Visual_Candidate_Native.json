@@ -1,0 +1,358 @@
+{
+  "status": "PASS visual loading, original-owner preservation and labelled native damage cleanup",
+  "scope": "Actual rendering and original-owner preservation; direct native breach/collapse API fixtures are labelled and do not establish legal gameplay input or final visual/performance acceptance.",
+  "hashes": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_VISUAL_CANDIDATE.html": "096be78a4f7dddf42dafd4de5d3749f7d0cfbcf31bd934c27531b6520fd953a4",
+    "scripts/game_vertical_appearance_v02.js": "ec5474241c1e2a86886c3f61d1c4f9fd5df5e7908b6c1e794911106dca5f1f81",
+    "assets/city/vertical-v02/visual/facades.json": "778a9fea161a9801da3d56b68f21c1335c10a8e29f09671ed8e6e54cf18a2668",
+    "assets/city/vertical-v02/visual/runtime_facades.json.gz": "66dcd1a52d2977c8c912d05f2d582e873aa4c5ed880b00e2621e95457df1c4c7",
+    "development/vertical-city-v02/V02_Visual_Asset_Package.json": "11e17d1ae6eefe567240fa88f551199ef131002df2f60d769ce58ae0167b0133",
+    "assets/city/vertical-v02/visual/soffit_fill.json": "8530410a5a5a862070b5992048beae281865dccbf3a88054b3abcadf1ffe7779",
+    "assets/city/vertical-v02/visual/soffit_fill.png": "e4433effd434a1c926308ec6af480ca22ebfbb04e572344f4beff1d72074a7e8",
+    "assets/city/vertical-v02/transit-world/manifest.json": "b30986c9d6f82f7680885cea47760cfde4b69cabed629dc6863173dc4b21a37b"
+  },
+  "results": [
+    "Visual load preserves all310originalbuildings/geometry/transforms/compoundparts, current V02 records, roads, light count and frozen clocks",
+    "Actual new material shaders compile and all original-owner facade chunks render in the paired A/B views",
+    "Native facade breach removes supported decorative bays instead of leaving fittings across the hole",
+    "Native original building collapse removes its attached visual cladding with the original owner"
+  ],
+  "captures": [
+    {
+      "id": "A",
+      "position": [
+        78,
+        132,
+        185
+      ],
+      "projection": [
+        1.2062851427866268,
+        0,
+        0,
+        0,
+        0,
+        2.1445069205095586,
+        0,
+        0,
+        0,
+        0,
+        -1.0000555570988083,
+        -1,
+        0,
+        0,
+        -0.10000277785494041,
+        0
+      ],
+      "viewMatrix": [
+        -0.9998269783926317,
+        0.005153285847791199,
+        -0.017873357917036963,
+        0,
+        8.673617379884032e-19,
+        0.9608592374504552,
+        0.277037047714073,
+        0,
+        0.01860143215614198,
+        0.276989114318777,
+        -0.9606929880407369,
+        0,
+        74.54523936573902,
+        -178.47836178856153,
+        142.55343440680758,
+        1
+      ],
+      "appearance": {
+        "ready": true,
+        "loading": false,
+        "error": null,
+        "bays": 4215,
+        "hiddenBays": 0,
+        "owners": [
+          {
+            "id": "building-141",
+            "parent": true,
+            "damage": 0,
+            "hiddenBays": 0,
+            "originalDestroyed": false,
+            "visible": true
+          },
+          {
+            "id": "building-160",
+            "parent": true,
+            "damage": 0,
+            "hiddenBays": 0,
+            "originalDestroyed": false,
+            "visible": true
+          },
+          {
+            "id": "building-162",
+            "parent": true,
+            "damage": 0,
+            "hiddenBays": 0,
+            "originalDestroyed": false,
+            "visible": true
+          }
+        ],
+        "fillMaterials": 2,
+        "dynamicLights": 0,
+        "fillFixtures": 232,
+        "fillAtlasPixels": 393216,
+        "fillTextureRGBABytes": 1572864
+      },
+      "sceneCalls": 476,
+      "sceneTriangles": 1147898,
+      "file": "evidence/visual-candidate/browser-A.png"
+    },
+    {
+      "id": "B",
+      "position": [
+        80,
+        2,
+        185
+      ],
+      "projection": [
+        1.2062851427866268,
+        0,
+        0,
+        0,
+        0,
+        2.1445069205095586,
+        0,
+        0,
+        0,
+        0,
+        -1.0000555570988083,
+        -1,
+        0,
+        0,
+        -0.10000277785494041,
+        0
+      ],
+      "viewMatrix": [
+        -1.0000000000000002,
+        0,
+        0,
+        0,
+        0,
+        0.9254783729668286,
+        -0.378800450330609,
+        0,
+        0,
+        -0.378800450330609,
+        -0.9254783729668289,
+        0,
+        80.00000000000004,
+        68.227126565229,
+        171.97109989952457,
+        1.0000000000000002
+      ],
+      "appearance": {
+        "ready": true,
+        "loading": false,
+        "error": null,
+        "bays": 4215,
+        "hiddenBays": 0,
+        "owners": [
+          {
+            "id": "building-141",
+            "parent": true,
+            "damage": 0,
+            "hiddenBays": 0,
+            "originalDestroyed": false,
+            "visible": true
+          },
+          {
+            "id": "building-160",
+            "parent": true,
+            "damage": 0,
+            "hiddenBays": 0,
+            "originalDestroyed": false,
+            "visible": true
+          },
+          {
+            "id": "building-162",
+            "parent": true,
+            "damage": 0,
+            "hiddenBays": 0,
+            "originalDestroyed": false,
+            "visible": true
+          }
+        ],
+        "fillMaterials": 2,
+        "dynamicLights": 0,
+        "fillFixtures": 232,
+        "fillAtlasPixels": 393216,
+        "fillTextureRGBABytes": 1572864
+      },
+      "sceneCalls": 459,
+      "sceneTriangles": 1207825,
+      "file": "evidence/visual-candidate/browser-B.png"
+    }
+  ],
+  "errors": [],
+  "fixture": {
+    "scope": "Direct existing carveBuilding/collapseBuilding APIs on one source-supported bay; no legal-impact-input claim",
+    "owner": "building-141",
+    "bay": "building-141-light-bay-front-741",
+    "sourcePoint": [
+      21.899473486421634,
+      96.20000000000002,
+      304.9161685787153
+    ]
+  },
+  "breach": {
+    "carved": true,
+    "before": {
+      "ready": true,
+      "loading": false,
+      "error": null,
+      "bays": 4215,
+      "hiddenBays": 0,
+      "owners": [
+        {
+          "id": "building-141",
+          "parent": true,
+          "damage": 0,
+          "hiddenBays": 0,
+          "originalDestroyed": false,
+          "visible": true
+        },
+        {
+          "id": "building-160",
+          "parent": true,
+          "damage": 0,
+          "hiddenBays": 0,
+          "originalDestroyed": false,
+          "visible": true
+        },
+        {
+          "id": "building-162",
+          "parent": true,
+          "damage": 0,
+          "hiddenBays": 0,
+          "originalDestroyed": false,
+          "visible": true
+        }
+      ],
+      "fillMaterials": 2,
+      "dynamicLights": 0,
+      "fillFixtures": 232,
+      "fillAtlasPixels": 393216,
+      "fillTextureRGBABytes": 1572864
+    },
+    "after": {
+      "ready": true,
+      "loading": false,
+      "error": null,
+      "bays": 4215,
+      "hiddenBays": 1,
+      "owners": [
+        {
+          "id": "building-141",
+          "parent": true,
+          "damage": 1,
+          "hiddenBays": 1,
+          "originalDestroyed": false,
+          "visible": true
+        },
+        {
+          "id": "building-160",
+          "parent": true,
+          "damage": 0,
+          "hiddenBays": 0,
+          "originalDestroyed": false,
+          "visible": true
+        },
+        {
+          "id": "building-162",
+          "parent": true,
+          "damage": 0,
+          "hiddenBays": 0,
+          "originalDestroyed": false,
+          "visible": true
+        }
+      ],
+      "fillMaterials": 2,
+      "dynamicLights": 0,
+      "fillFixtures": 232,
+      "fillAtlasPixels": 393216,
+      "fillTextureRGBABytes": 1572864
+    },
+    "damage": 1,
+    "parts": 40
+  },
+  "collapse": {
+    "destroyed": true,
+    "ownerInScene": true,
+    "ownerVisible": false,
+    "state": {
+      "ready": true,
+      "loading": false,
+      "error": null,
+      "bays": 4215,
+      "hiddenBays": 1,
+      "owners": [
+        {
+          "id": "building-141",
+          "parent": true,
+          "damage": 1,
+          "hiddenBays": 1,
+          "originalDestroyed": true,
+          "visible": false
+        },
+        {
+          "id": "building-160",
+          "parent": true,
+          "damage": 0,
+          "hiddenBays": 0,
+          "originalDestroyed": false,
+          "visible": true
+        },
+        {
+          "id": "building-162",
+          "parent": true,
+          "damage": 0,
+          "hiddenBays": 0,
+          "originalDestroyed": false,
+          "visible": true
+        }
+      ],
+      "fillMaterials": 2,
+      "dynamicLights": 0,
+      "fillFixtures": 232,
+      "fillAtlasPixels": 393216,
+      "fillTextureRGBABytes": 1572864
+    }
+  },
+  "beforeFingerprint": {
+    "buildings": 310,
+    "geometryTransformsAndCompoundPartsSHA256": "d6a5aa9cd1853b8fd1867351b57d763b6ee5972abbc0aa17783ee6015ac886cf",
+    "district": 11251,
+    "roads": {
+      "lanes": 668,
+      "ready": true
+    },
+    "originalLights": 9,
+    "trainClock": 0,
+    "lifeClock": 0
+  },
+  "afterFingerprint": {
+    "buildings": 310,
+    "geometryTransformsAndCompoundPartsSHA256": "d6a5aa9cd1853b8fd1867351b57d763b6ee5972abbc0aa17783ee6015ac886cf",
+    "district": 11251,
+    "roads": {
+      "lanes": 668,
+      "ready": true
+    },
+    "originalLights": 9,
+    "trainClock": 0,
+    "lifeClock": 0
+  },
+  "originalStatePreserved": true,
+  "fullEvidence": {
+    "file": "V02_Visual_Candidate_Native.full.json.gz",
+    "sha256": "169ea3fa59fdfae8151881f62085dc6f2625d2b5ab2b1cba18f9c5583cba0fdb",
+    "rawSHA256": "6d04ccb304367c74002de9b0f4cb9156fb5868563066c4b6a244d281de041096",
+    "scope": "Exact original native JSON bytes, including every original source geometry hash, transform and compound collision part. No failed evidence discarded."
+  }
+}

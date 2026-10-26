@@ -1,0 +1,142 @@
+{
+  "status": "PASS bounded source preservation, paired cameras and facade/fill iteration; final visual target NOT ACHIEVED",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_VISUAL_CANDIDATE.html",
+  "entrySHA256": "096be78a4f7dddf42dafd4de5d3749f7d0cfbcf31bd934c27531b6520fd953a4",
+  "sourceWorldLifeCommit": "b92d788de6634b881e16d1dc9935f54d54e2adbc",
+  "master": "development/vertical-city-v02/blender/SaintMeridian_V02_Visual_Detail_Candidate.blend",
+  "masterSHA256": "3f1daf36b53f67f40df3fb638485bce35d1f1469dcc4db4551a517e6c090338c",
+  "evidence": {
+    "exports": {
+      "file": "V02_Facade_Export_Validation.json",
+      "sha256": "bf1980acb2314fa2a3805abf1cc33a100491a9c3bcc89ce9043db8ebd10bc96f",
+      "status": "PASS source-owned shallow facade vertices and Khronos validation"
+    },
+    "savedMaster": {
+      "file": "V02_Visual_Master_Validation.json",
+      "sha256": "fa30ad901317918713ab4ebb1c06cb147af04dd97d1b40568b24e634dac70acf",
+      "status": "PASS actual saved original geometry/transforms, accepted architecture and authored facade meshes"
+    },
+    "native": {
+      "file": "V02_Visual_Candidate_Native.json",
+      "sha256": "61fc1c048bd8a6b4f0be8d9fa643a9df4733b694a7069557a80d41a0719d78a4",
+      "status": "PASS visual loading, original-owner preservation and labelled native damage cleanup"
+    },
+    "browserBaseline": {
+      "file": "V02_Reference_Browser_Baseline.json",
+      "sha256": "61154164639fe8725413a49f9c953ab9eb21be25c623a4751b1674f28cbc1e96",
+      "status": "PASS native clock-zero reference captures only; visual acceptance pending"
+    },
+    "blenderBaseline": {
+      "file": "V02_Reference_Blender_Baseline.json",
+      "sha256": "bc457f5674f2634335779a4061de0ff58a2c850a77a6ddd9d206cf50cb962c78",
+      "status": "PASS matched camera projection and baseline Blender renders only; final visual acceptance pending"
+    },
+    "blenderCandidate": {
+      "file": "V02_Reference_Blender_Candidate.json",
+      "sha256": "5b5cf4bc5409ab420e935a254eaaf94b47866ae90361fd2ea1744ca44e4f6ca5",
+      "status": "PASS matched camera projection and baseline Blender renders only; final visual acceptance pending"
+    },
+    "shipping": {
+      "file": "V02_Visual_Asset_Package.json",
+      "sha256": "11e17d1ae6eefe567240fa88f551199ef131002df2f60d769ce58ae0167b0133",
+      "status": "PASS lossless facade packaging only"
+    }
+  },
+  "captures": [
+    {
+      "source": "browserBaseline",
+      "view": "A",
+      "file": "evidence/reference-baseline/browser-A.png",
+      "sha256": "bda4964d06651b7c67f3b0df6bd1576be8d841206b2bf33ba30f8ed25de7e73d"
+    },
+    {
+      "source": "browserBaseline",
+      "view": "B",
+      "file": "evidence/reference-baseline/browser-B.png",
+      "sha256": "a990864b4a4c819f835e2b9d19ffe877181b2e79383a1fc563eda96a5b426bd7"
+    },
+    {
+      "source": "blenderBaseline",
+      "view": "A",
+      "file": "evidence/reference-baseline/blender-A.png",
+      "sha256": "8942be86a2890cf0cd4bc7a71fb3de1ec7b7e88fa916772045232ed748f05a09"
+    },
+    {
+      "source": "blenderBaseline",
+      "view": "B",
+      "file": "evidence/reference-baseline/blender-B.png",
+      "sha256": "5f89118818e5adc855e3620e97270877fe00dca38c5049f36ebf4527ec47fb3c"
+    },
+    {
+      "source": "native",
+      "view": "A",
+      "file": "evidence/visual-candidate/browser-A.png",
+      "sha256": "3b7dcedcc8801836f684f3b605b91137c163d1f4462a482b6f1f5e862e8f9092"
+    },
+    {
+      "source": "native",
+      "view": "B",
+      "file": "evidence/visual-candidate/browser-B.png",
+      "sha256": "2b43880f9ecf2a0fc915404503b0372d945bbc5fa87bae0da07c5d3197846c91"
+    },
+    {
+      "source": "blenderCandidate",
+      "view": "A",
+      "file": "evidence/visual-candidate/blender-A.png",
+      "sha256": "abbe73ed18d9ec9b73fbc119f7c27c57aafccb1d511b30ab8409134ea5e255cc"
+    },
+    {
+      "source": "blenderCandidate",
+      "view": "B",
+      "file": "evidence/visual-candidate/blender-B.png",
+      "sha256": "ae9da1fabbaa537062298e86d56e4cfb8cdae8ca3cb2c3dc5318ebf6459ec4b5"
+    }
+  ],
+  "metrics": {
+    "originalBuildings": 310,
+    "preservedArchitecturalRecords": 11251,
+    "decoratedOriginalOwners": 3,
+    "shallowBays": 4215,
+    "newFacadeTriangles": 404640,
+    "sourceSoffitFixtures": 232,
+    "additionalDynamicLights": 0,
+    "maximumPairedLandmarkProjectionErrorPixels": 0.00015917584360389798,
+    "rawFacadeBytes": 23994892,
+    "compressedFacadeBytes": 2535165,
+    "runtimeManifestCompressedBytes": 141446,
+    "nativeConsoleErrors": 0
+  },
+  "protectedEntries": {
+    "SIGHTLINE_BACKSPOOL_WHIP_THROW.html": "fac92161657cb93c8500d6afbc2900748b7cadfc015c019eeddf0366cdf070e4",
+    "SIGHTLINE_VERTICAL_MEGACITY_V1.html": "45d868dcfcd1d0d9a382563bc984ebc657848cd6b2987f21bdf132edcf86d03b",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_DETAILED.html": "ec12fa9b3ccadb8acd9c1dcf5136391ef2b675f9ca95702453bd740797ee82a7",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT.html": "48ee6dff434a6a2e1c1e5dbbf86d673b83109922c804f5749b0411ffc525c80f",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT_STATION.html": "b96967c97064d9f549e92aa599ed140a2a99e7c0c8e08f0c118c55eb35e3cba1",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_WORLD_LIFE.html": "1f739d8e9dd53892988a9d67d3b18cafd175dc5b5d114f5bffb8b886b73ed296"
+  },
+  "verificationScope": [
+    "Actual original geometry hashes/transforms/compound collision parts and roads/light counts/clocks match before/after visual load.",
+    "Breach/collapse use labelled direct existing native APIs, not legal impact input.",
+    "Camera optics and five landmark projections match. Reference art has no calibrated source camera; these are corresponding compositions, not recovered exact cameras.",
+    "Blender Principled/AgX interprets native toon/ACES; procedural pavement, sky, fog, drones and hero are not fully reproduced in the Blender study.",
+    "Static paired captures show the hollow-frame/depth-bias improvement; continuous camera-motion/depth precision acceptance is still required.",
+    "Installed skill client ran a short actual input burst; its reviewed image/state are import evidence, not a full route or performance test.",
+    "Lossless packaging reduces network bytes; it does not reduce GPU triangle count or establish sustained performance."
+  ],
+  "visualReview": {
+    "warmFacadeAndSoffitDirection": "PARTIAL implementation on three original owners and installed V02 soffits",
+    "approvedReferenceFinalQuality": "NOT ACHIEVED: further architectural variety, material depth, lighting, transit framing and skyline/readability work required",
+    "hudAndPrototypeActors": "NOT ACHIEVED: inherited HUD clutter and simple civilian/traffic appearance remain",
+    "matchedSixtySecondActivePerformance": "NOT TESTED on this final candidate"
+  },
+  "remaining": [
+    "Continue visual architecture/material/lighting and readable transit composition against both approved references.",
+    "Compact contextual HUD and desktop/portrait/landscape review.",
+    "Resolve nine advanced movement graph timing gaps.",
+    "Full retained hero, route, mission, encounter, collision, recovery and destruction input regressions on the final integrated world.",
+    "At least60s matched active baseline/candidate frame/CPU/render/memory/load/error performance and final release checks."
+  ],
+  "fullVisualAcceptance": false,
+  "fullGoalComplete": false
+}

@@ -1,0 +1,25 @@
+/* Shallow cladding on actual supported dark planes; no new room or doorway. */
+const fs=require('fs'),path=require('path'),THREE=require('../vendor/three-r128.js'),crypto=require('crypto'),assert=require('assert/strict');
+const R=path.resolve(__dirname,'../..'),D=path.join(R,'development/vertical-city-v02'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f))),sha=f=>crypto.createHash('sha256').update(fs.readFileSync(path.join(R,f))).digest('hex');
+const world=read('development/vertical-city-v02/V02_LiveWorld_Authoritative.json'),geos=read('development/vertical-city-v02/V02_BuildingGeometry.json').geometries,appearance=read('development/vertical-city-v02/V02_Reference_Appearance.json'),manifest=read('assets/city/vertical-v02/transit-world/manifest.json'),bays=[],rejected={};
+const targets=world.buildings.filter(b=>{const a=b.visualWorldBounds;return a.max[2]>220&&a.min[2]<460&&((a.max[0]<80&&a.max[0]>20)||(a.min[0]>80&&a.min[0]<130));});
+for(const b of targets){
+ const g=geos.find(g=>g.id===b.geometry),geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.Float32BufferAttribute(g.positions,3));if(g.indices)geometry.setIndex(g.indices);geometry.computeVertexNormals();const mesh=new THREE.Mesh(geometry,new THREE.MeshBasicMaterial({side:THREE.DoubleSide}));mesh.matrixAutoUpdate=false;mesh.matrix.fromArray(b.transform.matrixWorld);mesh.updateMatrixWorld(true);const bb=b.visualWorldBounds,family=appearance.families.find(f=>f.family===b.family);let serial=0;
+ const inward=b.transform.position[0]<80?1:-1;
+ for(const [axis,sign,face]of[[0,inward,'corridor'],[2,-1,'front'],[2,1,'rear'],[0,-inward,'outer']]){
+  const uAxis=axis===0?2:0,normal=new THREE.Vector3().setComponent(axis,sign),low=bb.min[uAxis]+3,high=bb.max[uAxis]-3;
+  function hit(y,u){const origin=new THREE.Vector3().setComponent(1,y).setComponent(uAxis,u).setComponent(axis,sign>0?bb.max[axis]+5:bb.min[axis]-5);return new THREE.Raycaster(origin,normal.clone().negate(),0,180).intersectObject(mesh,false)[0];}
+  for(let y=8;y<Math.min(156,bb.max[1]-4);y+=4.2)for(let u=low;u<high;u+=3.6){
+   const centre=hit(y,u);let reason=null;if(!centre)reason='no solid source face';else if(Math.abs(centre.face.normal.getComponent(axis))<.98)reason='nonfacade face';
+   if(!reason){const palette=family.palette[family.faceMaterials[centre.faceIndex]];if(Math.max(...palette.emission)>.005||Math.max(...palette.color)>.3)reason='existing lit or bright detail';}
+   const probes=[];if(!reason)for(const dy of[-1.16,1.16])for(const du of[-.82,.82]){const h=hit(y+dy,u+du);if(!h||Math.abs(h.point.getComponent(axis)-centre.point.getComponent(axis))>.015){reason='edge, opening or protrusion';break;}probes.push({face:h.faceIndex,point:h.point.toArray()});}
+   if(!reason&&![centre.point.toArray(),...probes.map(p=>p.point)].every(p=>b.parts.some(part=>new THREE.Box3(new THREE.Vector3(...part.box.min),new THREE.Vector3(...part.box.max)).expandByScalar(.025).containsPoint(new THREE.Vector3(...p)))))reason='source collision lacks panel support';
+   let box;if(!reason){const c=centre.point.clone().addScaledVector(normal,.045),half=new THREE.Vector3().setComponent(axis,.04).setComponent(1,1.18).setComponent(uAxis,.84);box=new THREE.Box3(c.clone().sub(half),c.clone().add(half));if(manifest.records.some(r=>box.clone().expandByScalar(.08).intersectsBox(new THREE.Box3(new THREE.Vector3(...r.box.min),new THREE.Vector3(...r.box.max)))))reason='existing V02 attachment clearance';}
+   if(reason){rejected[reason]=(rejected[reason]||0)+1;continue;}
+   const id=b.id+'-light-bay-'+face+'-'+serial++,occupancy=crypto.createHash('sha256').update(b.id+':'+face+':'+y.toFixed(3)+':'+u.toFixed(3)).digest(),choice=occupancy.readUInt32LE(0)%100;
+   bays.push({id,owner:b.id,face,axis,uAxis,sourceIndex:b.sourceIndex,cityBuildingId:b.cityBuildingId,centre:centre.point.clone().addScaledVector(normal,.045).toArray(),normal:normal.toArray(),sourceFace:centre.faceIndex,sourcePoint:centre.point.toArray(),sourceProbes:probes,box:{min:box.min.toArray(),max:box.max.toArray()},style:choice<35?['warm','warm-soft','warm-neutral'][occupancy[4]%3]:choice<45?'cool':'dark',role:'Shallow facade lighting/glazing cladding; no new doorway, room, collision volume or traversal ability'});
+  }
+ }
+}
+assert(bays.length>0);const report={status:'ADMITTED source-face decorative candidates; native/export/destruction acceptance pending',scope:'Four-corner source-ray/collision support and attachment clearance. Original source geometry/physics unchanged.',sources:Object.fromEntries(['development/vertical-city-v02/V02_LiveWorld_Authoritative.json','development/vertical-city-v02/V02_BuildingGeometry.json','development/vertical-city-v02/V02_Reference_Appearance.json','assets/city/vertical-v02/transit-world/manifest.json'].map(f=>[f,sha(f)])),targets:targets.map(b=>b.id),rejected,bays};
+fs.writeFileSync(path.join(D,'V02_Facade_Light_Bays.json'),JSON.stringify(report,null,2)+'\n');console.log('Admitted',bays.length,'bays',report.targets,JSON.stringify(rejected));

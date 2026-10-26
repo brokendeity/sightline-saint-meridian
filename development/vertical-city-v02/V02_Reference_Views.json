@@ -1,0 +1,54 @@
+{
+  "schema": "sm-v02-reference-views-1",
+  "scope": "Shared optical contract for approved-reference comparison. Coordinates preserve existing V02 A/B intent; supplied reference art has no calibrated camera metadata, so these are corresponding compositions, not recovered exact source cameras.",
+  "width": 1664,
+  "height": 936,
+  "verticalFOVDegrees": 50,
+  "near": 0.05,
+  "far": 1800,
+  "views": [
+    {
+      "id": "A",
+      "role": "high-angle overlook",
+      "position": [
+        78,
+        132,
+        185
+      ],
+      "look": [
+        82,
+        70,
+        400
+      ]
+    },
+    {
+      "id": "B",
+      "role": "lower upward angle",
+      "position": [
+        80,
+        2,
+        185
+      ],
+      "look": [
+        80,
+        90,
+        400
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "A",
+      "file": "development/vertical-city-v02/references/approved-A.png",
+      "source": "/var/folders/v4/17ypxcpx4djf1my214n05g9w0000gn/T/codex-clipboard-d8f878cc-6de0-4dad-a423-b29c9614096c.png",
+      "sha256": "6425b1ebdb44b0cffad24f34b5a47c8d94fc1aabf38eb4c74d3f20e8e311fd59"
+    },
+    {
+      "id": "B",
+      "file": "development/vertical-city-v02/references/approved-B.png",
+      "source": "/var/folders/v4/17ypxcpx4djf1my214n05g9w0000gn/T/codex-clipboard-bfcfce85-b173-4ca8-aa82-7a669d1121bd.png",
+      "sha256": "0a58d5ae6720e762e9ba424372a49b87b8949d3156356927ed3ab74a99de45a5"
+    }
+  ],
+  "fullVisualAcceptance": false
+}
