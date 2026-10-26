@@ -1,0 +1,93 @@
+{
+  "scope": "Deterministic motion/controller tests, not native geometry or boarding acceptance.",
+  "definitionSHA256": "6fdd3fe36b3cf237abb185c88e75f81a05d5255b6cdca6602a5a6baa7fb721b4",
+  "cases": [
+    {
+      "name": "full closed loop, two precise stops and corner speed limits at 60Hz",
+      "pass": true,
+      "samples": 8221,
+      "travel": 1318.775773821783,
+      "minCurveSpeed": 6.634391269523494,
+      "maxAcceleration": 1.7000000000000526,
+      "events": [
+        {
+          "id": 1,
+          "type": "opening",
+          "clock": 15.083333333333117,
+          "distance": 298.0007582009705,
+          "speed": 0,
+          "phase": "opening"
+        },
+        {
+          "id": 2,
+          "type": "dwell",
+          "clock": 15.883333333333072,
+          "distance": 298.0007582009705,
+          "speed": 0,
+          "phase": "dwell"
+        },
+        {
+          "id": 3,
+          "type": "closing",
+          "clock": 23.88333333333262,
+          "distance": 298.0007582009705,
+          "speed": 0,
+          "phase": "closing"
+        },
+        {
+          "id": 4,
+          "type": "approach",
+          "clock": 24.683333333332573,
+          "distance": 298.0007582009705,
+          "speed": 0,
+          "phase": "approach"
+        },
+        {
+          "id": 5,
+          "type": "opening",
+          "clock": 137.00833333337306,
+          "distance": 1536.7765320227536,
+          "speed": 0,
+          "phase": "opening"
+        }
+      ]
+    },
+    {
+      "name": "variable frame rate preserves distance, stop positions and event order",
+      "pass": true,
+      "travel": 1318.775773821783,
+      "samples": 2041
+    },
+    {
+      "name": "pause freezes approach, doors and dwell with no duplicate transition events",
+      "pass": true,
+      "events": [
+        {
+          "id": 1,
+          "type": "opening",
+          "clock": 15.083333333333117,
+          "distance": 298.0007582009705,
+          "speed": 0,
+          "phase": "opening"
+        },
+        {
+          "id": 2,
+          "type": "dwell",
+          "clock": 15.883333333333072,
+          "distance": 298.0007582009705,
+          "speed": 0,
+          "phase": "dwell"
+        },
+        {
+          "id": 3,
+          "type": "closing",
+          "clock": 23.88333333333262,
+          "distance": 298.0007582009705,
+          "speed": 0,
+          "phase": "closing"
+        }
+      ]
+    }
+  ],
+  "status": "PASS controller behavior"
+}

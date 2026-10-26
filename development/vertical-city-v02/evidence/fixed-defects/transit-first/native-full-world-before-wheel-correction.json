@@ -1,0 +1,3930 @@
+{
+  "scope": "Actual V02 transit candidate import, normal simulation-clock movement, station door/pause and camera collision. Not boarding, pedestrian, support continuity or full release acceptance.",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT.html",
+  "errors": [],
+  "captures": [
+    {
+      "file": "evidence/transit-first/approach.png",
+      "scope": "Explicit camera-only inspection",
+      "position": [
+        99,
+        112,
+        426
+      ],
+      "look": [
+        80,
+        101,
+        366
+      ]
+    },
+    {
+      "file": "evidence/transit-first/station-dwell.png",
+      "scope": "Explicit camera-only inspection",
+      "position": [
+        70,
+        104.2,
+        397
+      ],
+      "look": [
+        80,
+        101.2,
+        378
+      ]
+    },
+    {
+      "file": "evidence/transit-first/turn.png",
+      "scope": "Explicit camera-only inspection",
+      "position": [
+        123,
+        118,
+        591
+      ],
+      "look": [
+        97,
+        101,
+        547
+      ]
+    },
+    {
+      "file": "evidence/transit-first/portrait.png",
+      "scope": "Explicit camera-only inspection",
+      "position": [
+        97,
+        112,
+        420
+      ],
+      "look": [
+        80,
+        101,
+        370
+      ]
+    },
+    {
+      "file": "evidence/transit-first/landscape.png",
+      "scope": "Explicit camera-only inspection",
+      "position": [
+        99,
+        112,
+        426
+      ],
+      "look": [
+        80,
+        101,
+        366
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "actual imported lead, three articulated passenger cars and replacement track; no old train",
+      "pass": true,
+      "initial": {
+        "transit": {
+          "ready": true,
+          "loading": false,
+          "error": null,
+          "publicBoarding": false,
+          "cameraCollision": true,
+          "source": "Blender passenger cars and unchanged Hi3D lead car",
+          "limitations": [
+            "Hi3D front has fused doors and bogies; those remain closed and rigid.",
+            "Passenger boarding and station gap/gates are not yet accepted.",
+            "Track supports, aerial traffic and sustained performance require later acceptance."
+          ],
+          "motion": {
+            "clock": 0.016666666666666666,
+            "distance": 218.00092486763717,
+            "routeDistance": 218.0009248676372,
+            "speed": 0.02,
+            "phase": "approach",
+            "phaseTime": 0,
+            "door": 0,
+            "arrivals": 0,
+            "nextStop": 298.0007582009705,
+            "stationDistance": 298.0007582009705,
+            "routeLength": 1238.775773821783,
+            "speedLimit": 16,
+            "events": [],
+            "config": {
+              "maxSpeed": 16,
+              "acceleration": 1.2,
+              "braking": 1.7,
+              "lateralAcceleration": 2.5,
+              "opening": 0.8,
+              "dwell": 8,
+              "closing": 0.8
+            }
+          },
+          "carriages": [
+            {
+              "id": 0,
+              "position": [
+                80,
+                100,
+                322.00016667231006
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "doors": [],
+              "bogies": [],
+              "wheelAngles": []
+            },
+            {
+              "id": 1,
+              "position": [
+                80,
+                100,
+                307.0001666723101
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "doors": [
+                {
+                  "id": "door_left_0_0",
+                  "side": "left",
+                  "position": [
+                    -1.4900000095367432,
+                    0,
+                    -4.505000114440918
+                  ],
+                  "homeZ": -4.505000114440918
+                },
+                {
+                  "id": "door_left_0_1",
+                  "side": "left",
+                  "position": [
+                    -1.4900000095367432,
+                    0,
+                    -3.7950000762939453
+                  ],
+                  "homeZ": -3.7950000762939453
+                },
+                {
+                  "id": "door_left_1_0",
+                  "side": "left",
+                  "position": [
+                    -1.4900000095367432,
+                    0,
+                    3.7950000762939453
+                  ],
+                  "homeZ": 3.7950000762939453
+                },
+                {
+                  "id": "door_left_1_1",
+                  "side": "left",
+                  "position": [
+                    -1.4900000095367432,
+                    0,
+                    4.505000114440918
+                  ],
+                  "homeZ": 4.505000114440918
+                },
+                {
+                  "id": "door_right_0_0",
+                  "side": "right",
+                  "position": [
+                    1.4900000095367432,
+                    0,
+                    -4.505000114440918
+                  ],
+                  "homeZ": -4.505000114440918
+                },
+                {
+                  "id": "door_right_0_1",
+                  "side": "right",
+                  "position": [
+                    1.4900000095367432,
+                    0,
+                    -3.7950000762939453
+                  ],
+                  "homeZ": -3.7950000762939453
+                },
+                {
+                  "id": "door_right_1_0",
+                  "side": "right",
+                  "position": [
+                    1.4900000095367432,
+                    0,
+                    3.7950000762939453
+                  ],
+                  "homeZ": 3.7950000762939453
+                },
+                {
+                  "id": "door_right_1_1",
+                  "side": "right",
+                  "position": [
+                    1.4900000095367432,
+                    0,
+                    4.505000114440918
+                  ],
+                  "homeZ": 4.505000114440918
+                }
+              ],
+              "bogies": [
+                {
+                  "id": "bogie_0",
+                  "position": [
+                    80,
+                    98.95,
+                    302.60016667230997
+                  ],
+                  "yaw": 0
+                },
+                {
+                  "id": "bogie_1",
+                  "position": [
+                    80,
+                    98.95,
+                    311.40016667231015
+                  ],
+                  "yaw": 0
+                }
+              ],
+              "wheelAngles": [
+                -37.50041666666668,
+                -37.50041666666668,
+                -37.50041666666668,
+                -37.50041666666668
+              ]
+            },
+            {
+              "id": 2,
+              "position": [
+                80,
+                100,
+                292.00016667231006
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "doors": [
+                {
+                  "id": "door_left_0_0",
+                  "side": "left",
+                  "position": [
+                    -1.4900000095367432,
+                    0,
+                    -4.505000114440918
+                  ],
+                  "homeZ": -4.505000114440918
+                },
+                {
+                  "id": "door_left_0_1",
+                  "side": "left",
+                  "position": [
+                    -1.4900000095367432,
+                    0,
+                    -3.7950000762939453
+                  ],
+                  "homeZ": -3.7950000762939453
+                },
+                {
+                  "id": "door_left_1_0",
+                  "side": "left",
+                  "position": [
+                    -1.4900000095367432,
+                    0,
+                    3.7950000762939453
+                  ],
+                  "homeZ": 3.7950000762939453
+                },
+                {
+                  "id": "door_left_1_1",
+                  "side": "left",
+                  "position": [
+                    -1.4900000095367432,
+                    0,
+                    4.505000114440918
+                  ],
+                  "homeZ": 4.505000114440918
+                },
+                {
+                  "id": "door_right_0_0",
+                  "side": "right",
+                  "position": [
+                    1.4900000095367432,
+                    0,
+                    -4.505000114440918
+                  ],
+                  "homeZ": -4.505000114440918
+                },
+                {
+                  "id": "door_right_0_1",
+                  "side": "right",
+                  "position": [
+                    1.4900000095367432,
+                    0,
+                    -3.7950000762939453
+                  ],
+                  "homeZ": -3.7950000762939453
+                },
+                {
+                  "id": "door_right_1_0",
+                  "side": "right",
+                  "position": [
+                    1.4900000095367432,
+                    0,
+                    3.7950000762939453
+                  ],
+                  "homeZ": 3.7950000762939453
+                },
+                {
+                  "id": "door_right_1_1",
+                  "side": "right",
+                  "position": [
+                    1.4900000095367432,
+                    0,
+                    4.505000114440918
+                  ],
+                  "homeZ": 4.505000114440918
+                }
+              ],
+              "bogies": [
+                {
+                  "id": "bogie_0",
+                  "position": [
+                    80,
+                    98.95,
+                    287.60016667231
+                  ],
+                  "yaw": 0
+                },
+                {
+                  "id": "bogie_1",
+                  "position": [
+                    80,
+                    98.95,
+                    296.40016667231015
+                  ],
+                  "yaw": 0
+                }
+              ],
+              "wheelAngles": [
+                -75.00041666666668,
+                -75.00041666666668,
+                -75.00041666666668,
+                -75.00041666666668
+              ]
+            },
+            {
+              "id": 3,
+              "position": [
+                80,
+                100,
+                277.00016667231006
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "doors": [
+                {
+                  "id": "door_left_0_0",
+                  "side": "left",
+                  "position": [
+                    -1.4900000095367432,
+                    0,
+                    -4.505000114440918
+                  ],
+                  "homeZ": -4.505000114440918
+                },
+                {
+                  "id": "door_left_0_1",
+                  "side": "left",
+                  "position": [
+                    -1.4900000095367432,
+                    0,
+                    -3.7950000762939453
+                  ],
+                  "homeZ": -3.7950000762939453
+                },
+                {
+                  "id": "door_left_1_0",
+                  "side": "left",
+                  "position": [
+                    -1.4900000095367432,
+                    0,
+                    3.7950000762939453
+                  ],
+                  "homeZ": 3.7950000762939453
+                },
+                {
+                  "id": "door_left_1_1",
+                  "side": "left",
+                  "position": [
+                    -1.4900000095367432,
+                    0,
+                    4.505000114440918
+                  ],
+                  "homeZ": 4.505000114440918
+                },
+                {
+                  "id": "door_right_0_0",
+                  "side": "right",
+                  "position": [
+                    1.4900000095367432,
+                    0,
+                    -4.505000114440918
+                  ],
+                  "homeZ": -4.505000114440918
+                },
+                {
+                  "id": "door_right_0_1",
+                  "side": "right",
+                  "position": [
+                    1.4900000095367432,
+                    0,
+                    -3.7950000762939453
+                  ],
+                  "homeZ": -3.7950000762939453
+                },
+                {
+                  "id": "door_right_1_0",
+                  "side": "right",
+                  "position": [
+                    1.4900000095367432,
+                    0,
+                    3.7950000762939453
+                  ],
+                  "homeZ": 3.7950000762939453
+                },
+                {
+                  "id": "door_right_1_1",
+                  "side": "right",
+                  "position": [
+                    1.4900000095367432,
+                    0,
+                    4.505000114440918
+                  ],
+                  "homeZ": 4.505000114440918
+                }
+              ],
+              "bogies": [
+                {
+                  "id": "bogie_0",
+                  "position": [
+                    80,
+                    98.95,
+                    272.60016667231
+                  ],
+                  "yaw": 0
+                },
+                {
+                  "id": "bogie_1",
+                  "position": [
+                    80,
+                    98.95,
+                    281.40016667231015
+                  ],
+                  "yaw": 0
+                }
+              ],
+              "wheelAngles": [
+                -112.50041666666668,
+                -112.50041666666668,
+                -112.50041666666668,
+                -112.50041666666668
+              ]
+            }
+          ],
+          "trackChunks": 20
+        },
+        "city": {
+          "ready": true,
+          "error": null,
+          "phase": "v02-transit-host",
+          "clock": 0.016666666666666666,
+          "accepted": 0,
+          "rejected": [],
+          "trainDistance": 0,
+          "vehicles": 24,
+          "trainAssetStatus": "loaded",
+          "trainAsset": "Unchanged Hi3D front; V02 Blender passenger carriages",
+          "train": false,
+          "batches": 0,
+          "layers": [],
+          "collisionBoxes": 0,
+          "quality": "medium",
+          "trafficGraph": [
+            {
+              "id": "air-0-0",
+              "type": "taxi",
+              "speed": 10,
+              "elevation": 38,
+              "scenic": true
+            },
+            {
+              "id": "air-0-1",
+              "type": "delivery",
+              "speed": 10,
+              "elevation": 38,
+              "scenic": true
+            },
+            {
+              "id": "air-0-2",
+              "type": "municipal",
+              "speed": 10,
+              "elevation": 38,
+              "scenic": true
+            },
+            {
+              "id": "air-0-3",
+              "type": "halo",
+              "speed": 10,
+              "elevation": 38,
+              "scenic": true
+            },
+            {
+              "id": "air-0-4",
+              "type": "taxi",
+              "speed": 10,
+              "elevation": 38,
+              "scenic": true
+            },
+            {
+              "id": "air-0-5",
+              "type": "delivery",
+              "speed": 10,
+              "elevation": 38,
+              "scenic": true
+            },
+            {
+              "id": "air-0-6",
+              "type": "municipal",
+              "speed": 10,
+              "elevation": 38,
+              "scenic": true
+            },
+            {
+              "id": "air-0-7",
+              "type": "halo",
+              "speed": 10,
+              "elevation": 38,
+              "scenic": true
+            },
+            {
+              "id": "air-1-0",
+              "type": "taxi",
+              "speed": 13,
+              "elevation": 65,
+              "scenic": true
+            },
+            {
+              "id": "air-1-1",
+              "type": "delivery",
+              "speed": 13,
+              "elevation": 65,
+              "scenic": true
+            },
+            {
+              "id": "air-1-2",
+              "type": "municipal",
+              "speed": 13,
+              "elevation": 65,
+              "scenic": true
+            },
+            {
+              "id": "air-1-3",
+              "type": "halo",
+              "speed": 13,
+              "elevation": 65,
+              "scenic": true
+            },
+            {
+              "id": "air-1-4",
+              "type": "taxi",
+              "speed": 13,
+              "elevation": 65,
+              "scenic": true
+            },
+            {
+              "id": "air-1-5",
+              "type": "delivery",
+              "speed": 13,
+              "elevation": 65,
+              "scenic": true
+            },
+            {
+              "id": "air-1-6",
+              "type": "municipal",
+              "speed": 13,
+              "elevation": 65,
+              "scenic": true
+            },
+            {
+              "id": "air-1-7",
+              "type": "halo",
+              "speed": 13,
+              "elevation": 65,
+              "scenic": true
+            },
+            {
+              "id": "air-2-0",
+              "type": "taxi",
+              "speed": 16,
+              "elevation": 114,
+              "scenic": true
+            },
+            {
+              "id": "air-2-1",
+              "type": "delivery",
+              "speed": 16,
+              "elevation": 114,
+              "scenic": true
+            },
+            {
+              "id": "air-2-2",
+              "type": "municipal",
+              "speed": 16,
+              "elevation": 114,
+              "scenic": true
+            },
+            {
+              "id": "air-2-3",
+              "type": "halo",
+              "speed": 16,
+              "elevation": 114,
+              "scenic": true
+            },
+            {
+              "id": "air-2-4",
+              "type": "taxi",
+              "speed": 16,
+              "elevation": 114,
+              "scenic": true
+            },
+            {
+              "id": "air-2-5",
+              "type": "delivery",
+              "speed": 16,
+              "elevation": 114,
+              "scenic": true
+            },
+            {
+              "id": "air-2-6",
+              "type": "municipal",
+              "speed": 16,
+              "elevation": 114,
+              "scenic": true
+            },
+            {
+              "id": "air-2-7",
+              "type": "halo",
+              "speed": 16,
+              "elevation": 114,
+              "scenic": true
+            }
+          ],
+          "limitations": [
+            "prototype composition; not reference-quality acceptance",
+            "train/traffic scenic without vehicle physics",
+            "independent non-destructible structure frame",
+            "full uninterrupted traversal acceptance pending"
+          ]
+        },
+        "meshes": 27,
+        "old": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "name": "scheduled arrival aligns all cars; only left passenger doors open while stopped",
+      "pass": true,
+      "arrival": {
+        "motion": {
+          "clock": 15.916666666666403,
+          "distance": 298.0007582009705,
+          "routeDistance": 298.0007582009705,
+          "speed": 0,
+          "phase": "dwell",
+          "phaseTime": 0.03333333333333333,
+          "door": 1,
+          "arrivals": 1,
+          "nextStop": 298.0007582009705,
+          "stationDistance": 298.0007582009705,
+          "routeLength": 1238.775773821783,
+          "speedLimit": 16,
+          "events": [
+            {
+              "id": 1,
+              "type": "opening",
+              "clock": 15.083333333333117,
+              "distance": 298.0007582009705,
+              "speed": 0,
+              "phase": "opening"
+            },
+            {
+              "id": 2,
+              "type": "dwell",
+              "clock": 15.883333333333072,
+              "distance": 298.0007582009705,
+              "speed": 0,
+              "phase": "dwell"
+            }
+          ],
+          "config": {
+            "maxSpeed": 16,
+            "acceleration": 1.2,
+            "braking": 1.7,
+            "lateralAcceleration": 2.5,
+            "opening": 0.8,
+            "dwell": 8,
+            "closing": 0.8
+          }
+        },
+        "carriages": [
+          {
+            "id": 0,
+            "position": [
+              80,
+              100,
+              402.0000000056434
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "doors": [],
+            "bogies": [],
+            "wheelAngles": []
+          },
+          {
+            "id": 1,
+            "position": [
+              80,
+              100,
+              387.0000000056434
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "doors": [
+              {
+                "id": "door_left_0_0",
+                "side": "left",
+                "position": [
+                  -1.5900000095367433,
+                  0,
+                  -5.205000114440918
+                ],
+                "homeZ": -4.505000114440918
+              },
+              {
+                "id": "door_left_0_1",
+                "side": "left",
+                "position": [
+                  -1.5900000095367433,
+                  0,
+                  -3.095000076293945
+                ],
+                "homeZ": -3.7950000762939453
+              },
+              {
+                "id": "door_left_1_0",
+                "side": "left",
+                "position": [
+                  -1.5900000095367433,
+                  0,
+                  3.095000076293945
+                ],
+                "homeZ": 3.7950000762939453
+              },
+              {
+                "id": "door_left_1_1",
+                "side": "left",
+                "position": [
+                  -1.5900000095367433,
+                  0,
+                  5.205000114440918
+                ],
+                "homeZ": 4.505000114440918
+              },
+              {
+                "id": "door_right_0_0",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  -4.505000114440918
+                ],
+                "homeZ": -4.505000114440918
+              },
+              {
+                "id": "door_right_0_1",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  -3.7950000762939453
+                ],
+                "homeZ": -3.7950000762939453
+              },
+              {
+                "id": "door_right_1_0",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  3.7950000762939453
+                ],
+                "homeZ": 3.7950000762939453
+              },
+              {
+                "id": "door_right_1_1",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  4.505000114440918
+                ],
+                "homeZ": 4.505000114440918
+              }
+            ],
+            "bogies": [
+              {
+                "id": "bogie_0",
+                "position": [
+                  80,
+                  98.95,
+                  382.6000000056433
+                ],
+                "yaw": 0
+              },
+              {
+                "id": "bogie_1",
+                "position": [
+                  80,
+                  98.95,
+                  391.4000000056435
+                ],
+                "yaw": 0
+              }
+            ],
+            "wheelAngles": [
+              -237.5,
+              -237.5,
+              -237.5,
+              -237.5
+            ]
+          },
+          {
+            "id": 2,
+            "position": [
+              80,
+              100,
+              372.0000000056434
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "doors": [
+              {
+                "id": "door_left_0_0",
+                "side": "left",
+                "position": [
+                  -1.5900000095367433,
+                  0,
+                  -5.205000114440918
+                ],
+                "homeZ": -4.505000114440918
+              },
+              {
+                "id": "door_left_0_1",
+                "side": "left",
+                "position": [
+                  -1.5900000095367433,
+                  0,
+                  -3.095000076293945
+                ],
+                "homeZ": -3.7950000762939453
+              },
+              {
+                "id": "door_left_1_0",
+                "side": "left",
+                "position": [
+                  -1.5900000095367433,
+                  0,
+                  3.095000076293945
+                ],
+                "homeZ": 3.7950000762939453
+              },
+              {
+                "id": "door_left_1_1",
+                "side": "left",
+                "position": [
+                  -1.5900000095367433,
+                  0,
+                  5.205000114440918
+                ],
+                "homeZ": 4.505000114440918
+              },
+              {
+                "id": "door_right_0_0",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  -4.505000114440918
+                ],
+                "homeZ": -4.505000114440918
+              },
+              {
+                "id": "door_right_0_1",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  -3.7950000762939453
+                ],
+                "homeZ": -3.7950000762939453
+              },
+              {
+                "id": "door_right_1_0",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  3.7950000762939453
+                ],
+                "homeZ": 3.7950000762939453
+              },
+              {
+                "id": "door_right_1_1",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  4.505000114440918
+                ],
+                "homeZ": 4.505000114440918
+              }
+            ],
+            "bogies": [
+              {
+                "id": "bogie_0",
+                "position": [
+                  80,
+                  98.95,
+                  367.6000000056433
+                ],
+                "yaw": 0
+              },
+              {
+                "id": "bogie_1",
+                "position": [
+                  80,
+                  98.95,
+                  376.4000000056435
+                ],
+                "yaw": 0
+              }
+            ],
+            "wheelAngles": [
+              -275,
+              -275,
+              -275,
+              -275
+            ]
+          },
+          {
+            "id": 3,
+            "position": [
+              80,
+              100,
+              357.0000000056434
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "doors": [
+              {
+                "id": "door_left_0_0",
+                "side": "left",
+                "position": [
+                  -1.5900000095367433,
+                  0,
+                  -5.205000114440918
+                ],
+                "homeZ": -4.505000114440918
+              },
+              {
+                "id": "door_left_0_1",
+                "side": "left",
+                "position": [
+                  -1.5900000095367433,
+                  0,
+                  -3.095000076293945
+                ],
+                "homeZ": -3.7950000762939453
+              },
+              {
+                "id": "door_left_1_0",
+                "side": "left",
+                "position": [
+                  -1.5900000095367433,
+                  0,
+                  3.095000076293945
+                ],
+                "homeZ": 3.7950000762939453
+              },
+              {
+                "id": "door_left_1_1",
+                "side": "left",
+                "position": [
+                  -1.5900000095367433,
+                  0,
+                  5.205000114440918
+                ],
+                "homeZ": 4.505000114440918
+              },
+              {
+                "id": "door_right_0_0",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  -4.505000114440918
+                ],
+                "homeZ": -4.505000114440918
+              },
+              {
+                "id": "door_right_0_1",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  -3.7950000762939453
+                ],
+                "homeZ": -3.7950000762939453
+              },
+              {
+                "id": "door_right_1_0",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  3.7950000762939453
+                ],
+                "homeZ": 3.7950000762939453
+              },
+              {
+                "id": "door_right_1_1",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  4.505000114440918
+                ],
+                "homeZ": 4.505000114440918
+              }
+            ],
+            "bogies": [
+              {
+                "id": "bogie_0",
+                "position": [
+                  80,
+                  98.95,
+                  352.6000000162125
+                ],
+                "yaw": 0
+              },
+              {
+                "id": "bogie_1",
+                "position": [
+                  80,
+                  98.95,
+                  361.4000000056435
+                ],
+                "yaw": 0
+              }
+            ],
+            "wheelAngles": [
+              -312.5,
+              -312.5,
+              -312.5,
+              -312.5
+            ]
+          }
+        ],
+        "player": [
+          67,
+          100.42,
+          382
+        ],
+        "active": true
+      }
+    },
+    {
+      "name": "native game pause freezes all transit timelines and transforms",
+      "pass": true
+    },
+    {
+      "name": "shared actual camera collision stops at moving passenger geometry",
+      "pass": true,
+      "cameraContact": {
+        "origin": [
+          72,
+          101.3,
+          387
+        ],
+        "candidate": [
+          87,
+          101.3,
+          387
+        ],
+        "fixed": [
+          72.04000213623047,
+          101.3,
+          387
+        ],
+        "hits": [
+          {
+            "name": "passenger_body_3",
+            "distance": 6.512500047683716,
+            "transit": true
+          },
+          {
+            "name": "passenger_body_3",
+            "distance": 6.567499995231628,
+            "transit": true
+          },
+          {
+            "name": "passenger_body_3",
+            "distance": 9.432500004768372,
+            "transit": true
+          },
+          {
+            "name": "passenger_body_3",
+            "distance": 9.487499952316284,
+            "transit": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "full loop returns to precise station stop with measured articulated bogie and wheel motion",
+      "pass": true,
+      "secondArrival": {
+        "motion": {
+          "clock": 137.01666666670639,
+          "distance": 1536.7765320227536,
+          "routeDistance": 298.0007582009705,
+          "speed": 0,
+          "phase": "opening",
+          "phaseTime": 0.008333333333333333,
+          "door": 0.010416666666666666,
+          "arrivals": 2,
+          "nextStop": 1536.7765320227536,
+          "stationDistance": 298.0007582009705,
+          "routeLength": 1238.775773821783,
+          "speedLimit": 16,
+          "events": [
+            {
+              "id": 1,
+              "type": "opening",
+              "clock": 15.083333333333117,
+              "distance": 298.0007582009705,
+              "speed": 0,
+              "phase": "opening"
+            },
+            {
+              "id": 2,
+              "type": "dwell",
+              "clock": 15.883333333333072,
+              "distance": 298.0007582009705,
+              "speed": 0,
+              "phase": "dwell"
+            },
+            {
+              "id": 3,
+              "type": "closing",
+              "clock": 23.88333333333262,
+              "distance": 298.0007582009705,
+              "speed": 0,
+              "phase": "closing"
+            },
+            {
+              "id": 4,
+              "type": "approach",
+              "clock": 24.683333333332573,
+              "distance": 298.0007582009705,
+              "speed": 0,
+              "phase": "approach"
+            },
+            {
+              "id": 5,
+              "type": "opening",
+              "clock": 137.00833333337306,
+              "distance": 1536.7765320227536,
+              "speed": 0,
+              "phase": "opening"
+            }
+          ],
+          "config": {
+            "maxSpeed": 16,
+            "acceleration": 1.2,
+            "braking": 1.7,
+            "lateralAcceleration": 2.5,
+            "opening": 0.8,
+            "dwell": 8,
+            "closing": 0.8
+          }
+        },
+        "carriages": [
+          {
+            "id": 0,
+            "position": [
+              80,
+              100,
+              402.0000000056434
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "doors": [],
+            "bogies": [],
+            "wheelAngles": []
+          },
+          {
+            "id": 1,
+            "position": [
+              80,
+              100,
+              387.0000000056434
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "doors": [
+              {
+                "id": "door_left_0_0",
+                "side": "left",
+                "position": [
+                  -1.4941666762034098,
+                  0,
+                  -4.505000114440918
+                ],
+                "homeZ": -4.505000114440918
+              },
+              {
+                "id": "door_left_0_1",
+                "side": "left",
+                "position": [
+                  -1.4941666762034098,
+                  0,
+                  -3.7950000762939453
+                ],
+                "homeZ": -3.7950000762939453
+              },
+              {
+                "id": "door_left_1_0",
+                "side": "left",
+                "position": [
+                  -1.4941666762034098,
+                  0,
+                  3.7950000762939453
+                ],
+                "homeZ": 3.7950000762939453
+              },
+              {
+                "id": "door_left_1_1",
+                "side": "left",
+                "position": [
+                  -1.4941666762034098,
+                  0,
+                  4.505000114440918
+                ],
+                "homeZ": 4.505000114440918
+              },
+              {
+                "id": "door_right_0_0",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  -4.505000114440918
+                ],
+                "homeZ": -4.505000114440918
+              },
+              {
+                "id": "door_right_0_1",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  -3.7950000762939453
+                ],
+                "homeZ": -3.7950000762939453
+              },
+              {
+                "id": "door_right_1_0",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  3.7950000762939453
+                ],
+                "homeZ": 3.7950000762939453
+              },
+              {
+                "id": "door_right_1_1",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  4.505000114440918
+                ],
+                "homeZ": 4.505000114440918
+              }
+            ],
+            "bogies": [
+              {
+                "id": "bogie_0",
+                "position": [
+                  80,
+                  98.95,
+                  382.6000000056433
+                ],
+                "yaw": 0
+              },
+              {
+                "id": "bogie_1",
+                "position": [
+                  80,
+                  98.95,
+                  391.4000000056435
+                ],
+                "yaw": 0
+              }
+            ],
+            "wheelAngles": [
+              -3334.4394345544574,
+              -3334.4394345544574,
+              -3334.4394345544574,
+              -3334.4394345544574
+            ]
+          },
+          {
+            "id": 2,
+            "position": [
+              80,
+              100,
+              372.0000000056434
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "doors": [
+              {
+                "id": "door_left_0_0",
+                "side": "left",
+                "position": [
+                  -1.4941666762034098,
+                  0,
+                  -4.505000114440918
+                ],
+                "homeZ": -4.505000114440918
+              },
+              {
+                "id": "door_left_0_1",
+                "side": "left",
+                "position": [
+                  -1.4941666762034098,
+                  0,
+                  -3.7950000762939453
+                ],
+                "homeZ": -3.7950000762939453
+              },
+              {
+                "id": "door_left_1_0",
+                "side": "left",
+                "position": [
+                  -1.4941666762034098,
+                  0,
+                  3.7950000762939453
+                ],
+                "homeZ": 3.7950000762939453
+              },
+              {
+                "id": "door_left_1_1",
+                "side": "left",
+                "position": [
+                  -1.4941666762034098,
+                  0,
+                  4.505000114440918
+                ],
+                "homeZ": 4.505000114440918
+              },
+              {
+                "id": "door_right_0_0",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  -4.505000114440918
+                ],
+                "homeZ": -4.505000114440918
+              },
+              {
+                "id": "door_right_0_1",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  -3.7950000762939453
+                ],
+                "homeZ": -3.7950000762939453
+              },
+              {
+                "id": "door_right_1_0",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  3.7950000762939453
+                ],
+                "homeZ": 3.7950000762939453
+              },
+              {
+                "id": "door_right_1_1",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  4.505000114440918
+                ],
+                "homeZ": 4.505000114440918
+              }
+            ],
+            "bogies": [
+              {
+                "id": "bogie_0",
+                "position": [
+                  80,
+                  98.95,
+                  367.6000000056433
+                ],
+                "yaw": 0
+              },
+              {
+                "id": "bogie_1",
+                "position": [
+                  80,
+                  98.95,
+                  376.4000000056435
+                ],
+                "yaw": 0
+              }
+            ],
+            "wheelAngles": [
+              -3371.9394345544574,
+              -3371.9394345544574,
+              -3371.9394345544574,
+              -3371.9394345544574
+            ]
+          },
+          {
+            "id": 3,
+            "position": [
+              80,
+              100,
+              357.0000000056434
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "doors": [
+              {
+                "id": "door_left_0_0",
+                "side": "left",
+                "position": [
+                  -1.4941666762034098,
+                  0,
+                  -4.505000114440918
+                ],
+                "homeZ": -4.505000114440918
+              },
+              {
+                "id": "door_left_0_1",
+                "side": "left",
+                "position": [
+                  -1.4941666762034098,
+                  0,
+                  -3.7950000762939453
+                ],
+                "homeZ": -3.7950000762939453
+              },
+              {
+                "id": "door_left_1_0",
+                "side": "left",
+                "position": [
+                  -1.4941666762034098,
+                  0,
+                  3.7950000762939453
+                ],
+                "homeZ": 3.7950000762939453
+              },
+              {
+                "id": "door_left_1_1",
+                "side": "left",
+                "position": [
+                  -1.4941666762034098,
+                  0,
+                  4.505000114440918
+                ],
+                "homeZ": 4.505000114440918
+              },
+              {
+                "id": "door_right_0_0",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  -4.505000114440918
+                ],
+                "homeZ": -4.505000114440918
+              },
+              {
+                "id": "door_right_0_1",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  -3.7950000762939453
+                ],
+                "homeZ": -3.7950000762939453
+              },
+              {
+                "id": "door_right_1_0",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  3.7950000762939453
+                ],
+                "homeZ": 3.7950000762939453
+              },
+              {
+                "id": "door_right_1_1",
+                "side": "right",
+                "position": [
+                  1.4900000095367432,
+                  0,
+                  4.505000114440918
+                ],
+                "homeZ": 4.505000114440918
+              }
+            ],
+            "bogies": [
+              {
+                "id": "bogie_0",
+                "position": [
+                  80,
+                  98.95,
+                  352.6000000162125
+                ],
+                "yaw": 0
+              },
+              {
+                "id": "bogie_1",
+                "position": [
+                  80,
+                  98.95,
+                  361.4000000056435
+                ],
+                "yaw": 0
+              }
+            ],
+            "wheelAngles": [
+              -3409.4394345544574,
+              -3409.4394345544574,
+              -3409.4394345544574,
+              -3409.4394345544574
+            ]
+          }
+        ],
+        "player": [
+          67,
+          100.42,
+          382
+        ],
+        "active": true
+      }
+    }
+  ],
+  "hashes": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT.html": "48ee6dff434a6a2e1c1e5dbbf86d673b83109922c804f5749b0411ffc525c80f",
+    "assets/city/vertical-v02/detailed/manifest.json": "b1077f43e3530abe5acbca7b709f8a968ef0088435c95f0be0c5ba9744e55f4e",
+    "assets/city/vertical-v02/transit/assets.json": "eb61f55c98e9a1b33865f2b8183725e0ae9089e170668bf354651010b44bde19",
+    "assets/city/vertical-v02/transit/definition.json": "6fdd3fe36b3cf237abb185c88e75f81a05d5255b6cdca6602a5a6baa7fb721b4",
+    "scripts/game_vertical_transit_v02.js": "e778dc68aa9f398b52fa27292259f86a7dfd6b74aea30920362a41bf13998681",
+    "scripts/vertical_transit_core_v02.js": "72a14aba5f86f19544cec334e7527baad3bfe25e9e78904e66058cb3fc7752fd"
+  },
+  "turn": {
+    "motion": {
+      "clock": 40.21666666666503,
+      "distance": 426.36529158781076,
+      "routeDistance": 426.3652915878108,
+      "speed": 8.885452682854297,
+      "phase": "approach",
+      "phaseTime": 0,
+      "door": 0,
+      "arrivals": 1,
+      "nextStop": 1536.7765320227536,
+      "stationDistance": 298.0007582009705,
+      "routeLength": 1238.775773821783,
+      "speedLimit": 8.8523645051114,
+      "events": [
+        {
+          "id": 1,
+          "type": "opening",
+          "clock": 15.083333333333117,
+          "distance": 298.0007582009705,
+          "speed": 0,
+          "phase": "opening"
+        },
+        {
+          "id": 2,
+          "type": "dwell",
+          "clock": 15.883333333333072,
+          "distance": 298.0007582009705,
+          "speed": 0,
+          "phase": "dwell"
+        },
+        {
+          "id": 3,
+          "type": "closing",
+          "clock": 23.88333333333262,
+          "distance": 298.0007582009705,
+          "speed": 0,
+          "phase": "closing"
+        },
+        {
+          "id": 4,
+          "type": "approach",
+          "clock": 24.683333333332573,
+          "distance": 298.0007582009705,
+          "speed": 0,
+          "phase": "approach"
+        }
+      ],
+      "config": {
+        "maxSpeed": 16,
+        "acceleration": 1.2,
+        "braking": 1.7,
+        "lateralAcceleration": 2.5,
+        "opening": 0.8,
+        "dwell": 8,
+        "closing": 0.8
+      }
+    },
+    "carriages": [
+      {
+        "id": 0,
+        "position": [
+          80,
+          100,
+          530.3645333924837
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "doors": [],
+        "bogies": [],
+        "wheelAngles": []
+      },
+      {
+        "id": 1,
+        "position": [
+          80,
+          100,
+          515.3645333924837
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "doors": [
+          {
+            "id": "door_left_0_0",
+            "side": "left",
+            "position": [
+              -1.4900000095367432,
+              0,
+              -4.505000114440918
+            ],
+            "homeZ": -4.505000114440918
+          },
+          {
+            "id": "door_left_0_1",
+            "side": "left",
+            "position": [
+              -1.4900000095367432,
+              0,
+              -3.7950000762939453
+            ],
+            "homeZ": -3.7950000762939453
+          },
+          {
+            "id": "door_left_1_0",
+            "side": "left",
+            "position": [
+              -1.4900000095367432,
+              0,
+              3.7950000762939453
+            ],
+            "homeZ": 3.7950000762939453
+          },
+          {
+            "id": "door_left_1_1",
+            "side": "left",
+            "position": [
+              -1.4900000095367432,
+              0,
+              4.505000114440918
+            ],
+            "homeZ": 4.505000114440918
+          },
+          {
+            "id": "door_right_0_0",
+            "side": "right",
+            "position": [
+              1.4900000095367432,
+              0,
+              -4.505000114440918
+            ],
+            "homeZ": -4.505000114440918
+          },
+          {
+            "id": "door_right_0_1",
+            "side": "right",
+            "position": [
+              1.4900000095367432,
+              0,
+              -3.7950000762939453
+            ],
+            "homeZ": -3.7950000762939453
+          },
+          {
+            "id": "door_right_1_0",
+            "side": "right",
+            "position": [
+              1.4900000095367432,
+              0,
+              3.7950000762939453
+            ],
+            "homeZ": 3.7950000762939453
+          },
+          {
+            "id": "door_right_1_1",
+            "side": "right",
+            "position": [
+              1.4900000095367432,
+              0,
+              4.505000114440918
+            ],
+            "homeZ": 4.505000114440918
+          }
+        ],
+        "bogies": [
+          {
+            "id": "bogie_0",
+            "position": [
+              80,
+              98.95,
+              510.9645333924836
+            ],
+            "yaw": 0
+          },
+          {
+            "id": "bogie_1",
+            "position": [
+              80,
+              98.95,
+              519.7645333924836
+            ],
+            "yaw": 0
+          }
+        ],
+        "wheelAngles": [
+          -558.4113334671006,
+          -558.4113334671006,
+          -558.4113334671006,
+          -558.4113334671006
+        ]
+      },
+      {
+        "id": 2,
+        "position": [
+          80,
+          100,
+          500.3645333924837
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "doors": [
+          {
+            "id": "door_left_0_0",
+            "side": "left",
+            "position": [
+              -1.4900000095367432,
+              0,
+              -4.505000114440918
+            ],
+            "homeZ": -4.505000114440918
+          },
+          {
+            "id": "door_left_0_1",
+            "side": "left",
+            "position": [
+              -1.4900000095367432,
+              0,
+              -3.7950000762939453
+            ],
+            "homeZ": -3.7950000762939453
+          },
+          {
+            "id": "door_left_1_0",
+            "side": "left",
+            "position": [
+              -1.4900000095367432,
+              0,
+              3.7950000762939453
+            ],
+            "homeZ": 3.7950000762939453
+          },
+          {
+            "id": "door_left_1_1",
+            "side": "left",
+            "position": [
+              -1.4900000095367432,
+              0,
+              4.505000114440918
+            ],
+            "homeZ": 4.505000114440918
+          },
+          {
+            "id": "door_right_0_0",
+            "side": "right",
+            "position": [
+              1.4900000095367432,
+              0,
+              -4.505000114440918
+            ],
+            "homeZ": -4.505000114440918
+          },
+          {
+            "id": "door_right_0_1",
+            "side": "right",
+            "position": [
+              1.4900000095367432,
+              0,
+              -3.7950000762939453
+            ],
+            "homeZ": -3.7950000762939453
+          },
+          {
+            "id": "door_right_1_0",
+            "side": "right",
+            "position": [
+              1.4900000095367432,
+              0,
+              3.7950000762939453
+            ],
+            "homeZ": 3.7950000762939453
+          },
+          {
+            "id": "door_right_1_1",
+            "side": "right",
+            "position": [
+              1.4900000095367432,
+              0,
+              4.505000114440918
+            ],
+            "homeZ": 4.505000114440918
+          }
+        ],
+        "bogies": [
+          {
+            "id": "bogie_0",
+            "position": [
+              80,
+              98.95,
+              495.96453339248365
+            ],
+            "yaw": 0
+          },
+          {
+            "id": "bogie_1",
+            "position": [
+              80,
+              98.95,
+              504.7645333924836
+            ],
+            "yaw": 0
+          }
+        ],
+        "wheelAngles": [
+          -595.9113334671006,
+          -595.9113334671006,
+          -595.9113334671006,
+          -595.9113334671006
+        ]
+      },
+      {
+        "id": 3,
+        "position": [
+          80,
+          100,
+          485.36453339248374
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "doors": [
+          {
+            "id": "door_left_0_0",
+            "side": "left",
+            "position": [
+              -1.4900000095367432,
+              0,
+              -4.505000114440918
+            ],
+            "homeZ": -4.505000114440918
+          },
+          {
+            "id": "door_left_0_1",
+            "side": "left",
+            "position": [
+              -1.4900000095367432,
+              0,
+              -3.7950000762939453
+            ],
+            "homeZ": -3.7950000762939453
+          },
+          {
+            "id": "door_left_1_0",
+            "side": "left",
+            "position": [
+              -1.4900000095367432,
+              0,
+              3.7950000762939453
+            ],
+            "homeZ": 3.7950000762939453
+          },
+          {
+            "id": "door_left_1_1",
+            "side": "left",
+            "position": [
+              -1.4900000095367432,
+              0,
+              4.505000114440918
+            ],
+            "homeZ": 4.505000114440918
+          },
+          {
+            "id": "door_right_0_0",
+            "side": "right",
+            "position": [
+              1.4900000095367432,
+              0,
+              -4.505000114440918
+            ],
+            "homeZ": -4.505000114440918
+          },
+          {
+            "id": "door_right_0_1",
+            "side": "right",
+            "position": [
+              1.4900000095367432,
+              0,
+              -3.7950000762939453
+            ],
+            "homeZ": -3.7950000762939453
+          },
+          {
+            "id": "door_right_1_0",
+            "side": "right",
+            "position": [
+              1.4900000095367432,
+              0,
+              3.7950000762939453
+            ],
+            "homeZ": 3.7950000762939453
+          },
+          {
+            "id": "door_right_1_1",
+            "side": "right",
+            "position": [
+              1.4900000095367432,
+              0,
+              4.505000114440918
+            ],
+            "homeZ": 4.505000114440918
+          }
+        ],
+        "bogies": [
+          {
+            "id": "bogie_0",
+            "position": [
+              80,
+              98.95,
+              480.96453339248365
+            ],
+            "yaw": 0
+          },
+          {
+            "id": "bogie_1",
+            "position": [
+              80,
+              98.95,
+              489.76453339248354
+            ],
+            "yaw": 0
+          }
+        ],
+        "wheelAngles": [
+          -633.4113334671006,
+          -633.4113334671006,
+          -633.4113334671006,
+          -633.4113334671006
+        ]
+      }
+    ],
+    "player": [
+      67,
+      100.42,
+      382
+    ],
+    "active": true
+  },
+  "stateText": {
+    "visuals": {
+      "resolutionScale": 1,
+      "pixelRatio": 1,
+      "fallback": false,
+      "outlineStrength": 0.18,
+      "puddles": 148,
+      "rippleEvents": {},
+      "activeRipples": 0,
+      "buildings": {
+        "status": "ready",
+        "families": [
+          {
+            "file": "building_01.glb",
+            "count": 62,
+            "triangles": 6832,
+            "lodTriangles": 2324
+          },
+          {
+            "file": "building_02.glb",
+            "count": 58,
+            "triangles": 6296,
+            "lodTriangles": 2692
+          },
+          {
+            "file": "building_03.glb",
+            "count": 15,
+            "triangles": 3340,
+            "lodTriangles": 1180
+          },
+          {
+            "file": "building_04.glb",
+            "count": 45,
+            "triangles": 6108,
+            "lodTriangles": 3088
+          },
+          {
+            "file": "building_05.glb",
+            "count": 24,
+            "triangles": 7736,
+            "lodTriangles": 3716
+          },
+          {
+            "file": "building_06.glb",
+            "count": 20,
+            "triangles": 4560,
+            "lodTriangles": 1168
+          },
+          {
+            "file": "building_07.glb",
+            "count": 11,
+            "triangles": 13044,
+            "lodTriangles": 1000
+          },
+          {
+            "file": "building_08.glb",
+            "count": 75,
+            "triangles": 10252,
+            "lodTriangles": 1856
+          }
+        ],
+        "buildings": 310,
+        "near": 44,
+        "far": 266,
+        "error": null
+      },
+      "polish": {
+        "ready": true,
+        "businesses": 16,
+        "signInstances": 606,
+        "visibleSigns": 47,
+        "streetLamps": 50,
+        "visibleLamps": 5,
+        "lightPools": 656,
+        "visiblePools": 32,
+        "sharedTextures": 1,
+        "extraDrawCalls": 4,
+        "materialUpgrades": 31,
+        "clock": 3.2222000002861035,
+        "exposure": 0.98,
+        "fogDensity": 0.00108,
+        "projectedSources": [
+          {
+            "position": [
+              129.26937502529472,
+              6.200000544823707,
+              449.36426134548316
+            ],
+            "radius": 34,
+            "color": 4663100
+          },
+          {
+            "position": [
+              74.45,
+              7.0600000000000005,
+              467.2
+            ],
+            "radius": 32,
+            "color": 2308156
+          },
+          {
+            "position": [
+              129.26937502529472,
+              6.200000544823707,
+              492.47698707516616
+            ],
+            "radius": 34,
+            "color": 4663100
+          },
+          {
+            "position": [
+              129.0398150419351,
+              6.199997853487727,
+              346.28252964593406
+            ],
+            "radius": 28,
+            "color": 4663100
+          }
+        ],
+        "pointLights": 2,
+        "shadowExtent": 360,
+        "packedDepthStencil": true
+      }
+    },
+    "presentation": {
+      "diagnostics": false,
+      "objective": {
+        "label": "BACKSPOOL CONTRACTS",
+        "distance": 0,
+        "edge": true,
+        "behind": false
+      },
+      "hint": "RT / LMB · combo / hold heavy · LT / RMB · guard · R3 / F · lock"
+    },
+    "runtime": {
+      "beamRaycasts": 29517,
+      "beamCacheHits": 266439,
+      "cameraClamps": 50,
+      "sceneCalls": 485,
+      "sceneTriangles": 1033606,
+      "actionCost": {
+        "units": "CPU milliseconds; render is submission time",
+        "simulation": {
+          "samples": 240,
+          "p50": 106.7999997138977,
+          "p95": 112.19999980926514
+        },
+        "render": {
+          "samples": 83,
+          "p50": 2.5999999046325684,
+          "p95": 124
+        }
+      },
+      "steps": 0,
+      "simulationHz": 60,
+      "droppedTime": 1.0272999997138978
+    },
+    "courier": {
+      "passengers": 0,
+      "civilians": [
+        {
+          "role": "PRECISION",
+          "rescued": false,
+          "position": [
+            180.88553178001018,
+            45.24153459120171,
+            132.41027564884212
+          ]
+        },
+        {
+          "role": "DISRUPTION",
+          "rescued": false,
+          "position": [
+            296.03388143982113,
+            95.32259588743842,
+            118.29181084145682
+          ]
+        },
+        {
+          "role": "CROSSCUT",
+          "rescued": false,
+          "position": [
+            461.0822977121941,
+            117.70248626441803,
+            163.08774056055313
+          ]
+        }
+      ],
+      "crosscuts": 0,
+      "debt": 0,
+      "trauma": 0,
+      "exposure": 0,
+      "mastery": 0,
+      "rank": "—",
+      "resultsOpen": false,
+      "crosscutRemaining": 0,
+      "routes": [
+        {
+          "role": "PRECISION",
+          "stop": [
+            105.77391231529172,
+            176.17876777834314,
+            130.13633146472273
+          ],
+          "approach": [
+            180.88553178001018,
+            188.17876777834314,
+            132.41027564884212
+          ],
+          "clear": true
+        },
+        {
+          "role": "DISRUPTION",
+          "stop": [
+            180.88553178001018,
+            48.24153459120171,
+            132.41027564884212
+          ],
+          "approach": [
+            296.03388143982113,
+            111.32259588743842,
+            118.29181084145682
+          ],
+          "clear": true
+        },
+        {
+          "role": "CROSSCUT",
+          "stop": [
+            354.1165545308031,
+            32.85054105098503,
+            170.48782366694883
+          ],
+          "approach": [
+            461.0822977121941,
+            145.70248626441804,
+            163.08774056055313
+          ],
+          "clear": true
+        }
+      ],
+      "forecast": {
+        "tier": "RED",
+        "color": 16733026,
+        "score": 100,
+        "reason": "NO LOCK",
+        "load": 0,
+        "incoming": 0
+      },
+      "blindDrones": 0
+    },
+    "mechanics": {
+      "charging": 0,
+      "incoming": 0,
+      "nearestShot": 0,
+      "maxAttackers": 2,
+      "maxProjectiles": 4,
+      "guardWindow": 0,
+      "guardCooldown": 0,
+      "perfectBraces": 0,
+      "jumps": 0,
+      "coyoteJumps": 0,
+      "bufferedJumps": 0,
+      "jumpBuffer": 0,
+      "feedback": "",
+      "shots": 0
+    },
+    "roads": {
+      "ready": true,
+      "error": null,
+      "clock": 137.01666666666785,
+      "seed": 481516,
+      "clearanceFailures": 0,
+      "rejectedTurns": 0,
+      "closedSections": 38,
+      "meshDraws": 10,
+      "walkers": 28,
+      "vehicleActors": 0,
+      "policeActors": 0,
+      "boulevards": 130,
+      "localStreets": 131,
+      "intersections": 132,
+      "lanes": 668,
+      "activeLanes": 632,
+      "turnConnections": 2042,
+      "patrolComponents": 1,
+      "pedestrianNodes": 6999,
+      "pedestrianEdges": 7511,
+      "crossings": 528,
+      "openCrossings": 132,
+      "plazaEntrances": 16,
+      "storefronts": 76,
+      "stagingBays": 35,
+      "signals": [
+        {
+          "node": "n0",
+          "EW": "amber",
+          "NS": "red",
+          "time": 17.016666666667845
+        },
+        {
+          "node": "n2",
+          "EW": "red",
+          "NS": "green",
+          "time": 21.016666666667845
+        },
+        {
+          "node": "n3",
+          "EW": "red",
+          "NS": "green",
+          "time": 23.016666666667845
+        },
+        {
+          "node": "n4",
+          "EW": "amber",
+          "NS": "red",
+          "time": 17.016666666667845
+        }
+      ],
+      "surfacePatches": 7973
+    },
+    "actionWorld": {
+      "clock": 137.01666666666785,
+      "hero": "backspool",
+      "navigationVersion": 2,
+      "invalidatedEdges": 0,
+      "droneClamps": 3212,
+      "debrisBounces": 0,
+      "contractsCompleted": 0,
+      "lastImpactAt": -100,
+      "geometryRevision": 1,
+      "heroScores": {
+        "sightline": 0,
+        "backspool": 0
+      },
+      "rank": null,
+      "audio": {
+        "priorityEvents": 0,
+        "suppressedSecondary": 0,
+        "footsteps": {
+          "events": 0,
+          "clock": 137.01666666666785,
+          "last": -100,
+          "foot": null
+        }
+      },
+      "statue": "ready",
+      "contracts": {
+        "next": "intercept",
+        "completed": 0,
+        "notice": "Contract interrupted · start a new attempt.",
+        "active": null,
+        "history": []
+      },
+      "navigation": {
+        "version": 2,
+        "invalidatedEdges": 0,
+        "activeLanes": 632,
+        "activeTurns": 2042,
+        "ready": true
+      }
+    },
+    "combatants": {
+      "hero": "backspool",
+      "clock": 137.01666666666785,
+      "heroes": {
+        "sightline": {
+          "trauma": 0,
+          "pressure": 0,
+          "debt": 0,
+          "lastDamage": -100,
+          "defeated": false
+        },
+        "backspool": {
+          "trauma": 0,
+          "pressure": 0,
+          "debt": 0,
+          "lastDamage": -100,
+          "defeated": false
+        }
+      },
+      "combatants": 38
+    },
+    "actionCamera": {
+      "mode": "exploration",
+      "blend": 0
+    },
+    "character": {
+      "active": "backspool",
+      "busy": false,
+      "animations": 2321,
+      "preview": null
+    },
+    "combat": {
+      "clock": 137.01666666666785,
+      "inputClock": 137.01666666666785,
+      "pending": null,
+      "action": null,
+      "phase": "idle",
+      "charge": 0,
+      "charging": false,
+      "target": null,
+      "lockPhase": "none",
+      "lockAge": 137.01666666666785,
+      "hits": 0,
+      "blocked": 0,
+      "evaded": 0,
+      "sequence": 0,
+      "chain": 0,
+      "buffer": false,
+      "hitstop": 0,
+      "focus": 0,
+      "evadeUntil": -1,
+      "guardSince": -100,
+      "reactionUntil": 0,
+      "cameraMode": "exploration",
+      "lastResult": null,
+      "interruptionReason": "HERO CHANGE",
+      "groundLift": 0,
+      "groundClearance": null,
+      "responseLatency": 0,
+      "statePending": null,
+      "evadeStarted": -100,
+      "counterUntil": 0,
+      "counterSequence": 0,
+      "invulnerable": false,
+      "staggered": false,
+      "defensiveWindow": {
+        "movement": 0.3,
+        "recovery": 0.48,
+        "invulnerableStart": 0.04,
+        "invulnerableEnd": 0.22,
+        "perfectGuard": 0.18
+      },
+      "style": "flow",
+      "groundMoves": 10,
+      "airMoves": 2,
+      "importedClips": 322,
+      "acrobatics": null,
+      "practice": [],
+      "ledger": [],
+      "contactEvents": []
+    },
+    "powers": {
+      "clock": 137.01666666666785,
+      "strain": 0,
+      "selected": 0,
+      "recording": null,
+      "armed": false,
+      "echoes": 0,
+      "retraces": 0,
+      "crossbeats": 0,
+      "message": "MOVE · BANK · RELEASE",
+      "messageUntil": 2,
+      "eventCursor": 0,
+      "selectedRoute": null,
+      "retracing": null,
+      "slots": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": 0,
+          "playing": false,
+          "expiresIn": 0,
+          "moveId": null,
+          "moveVersion": null,
+          "combatState": null,
+          "executedContacts": []
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": 0,
+          "playing": false,
+          "expiresIn": 0,
+          "moveId": null,
+          "moveVersion": null,
+          "combatState": null,
+          "executedContacts": []
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": 0,
+          "playing": false,
+          "expiresIn": 0,
+          "moveId": null,
+          "moveVersion": null,
+          "combatState": null,
+          "executedContacts": []
+        }
+      ],
+      "events": []
+    },
+    "encounter": {
+      "active": false,
+      "lesson": false,
+      "stage": 0,
+      "clock": 0,
+      "message": "",
+      "completed": false,
+      "outcome": "idle",
+      "attacks": 0,
+      "guardBreaks": 0,
+      "recordingId": null,
+      "targetId": null,
+      "attackerId": null,
+      "nextAttackAt": 0,
+      "eventCursor": 0,
+      "interruptionReason": null,
+      "attempt": 0,
+      "notice": "",
+      "opponents": []
+    },
+    "traversal": {
+      "clock": 137.01666666666785,
+      "speed": 0,
+      "jumpRemaining": 0,
+      "coyoteRemaining": 0.11,
+      "action": null,
+      "duration": null,
+      "reason": "PAUSE",
+      "origin": "authored; source behavior unverified",
+      "completed": 0,
+      "locomotion": null,
+      "pose": null,
+      "source": "Forspoken-only traversal curves; authored physics-owned travel",
+      "segments": {
+        "vault": {
+          "role": "vault",
+          "id": "traversal-source-2811b68d",
+          "sourceId": "traversal-source-2811b68d",
+          "sourceAnimationId": "0x2811b68d",
+          "sourceStart": 0,
+          "sourceEnd": 1.7999999523162842,
+          "playbackRate": 1,
+          "duration": 1.7999999523162842,
+          "sourceSha256": "2f3a5916a315d5cb2763b5ed1b88a3aef86ea88247edd1976c1270de4f2bf289",
+          "rootTranslation": "physics-owned; native bone lengths and local translations retained",
+          "visualAnchor": [
+            {
+              "time": 0,
+              "minimumY": 0.024870943219859207
+            },
+            {
+              "time": 0.016666666666666666,
+              "minimumY": 0.05548145075625727
+            },
+            {
+              "time": 0.03333333333333333,
+              "minimumY": 0.08146091484947916
+            },
+            {
+              "time": 0.05,
+              "minimumY": 0.10333913362560203
+            },
+            {
+              "time": 0.06666666666666667,
+              "minimumY": 0.13808082125884816
+            },
+            {
+              "time": 0.08333333333333333,
+              "minimumY": 0.1742475558623994
+            },
+            {
+              "time": 0.1,
+              "minimumY": 0.2025578760302699
+            },
+            {
+              "time": 0.11666666666666667,
+              "minimumY": 0.2283056992286407
+            },
+            {
+              "time": 0.13333333333333333,
+              "minimumY": 0.24611575423931975
+            },
+            {
+              "time": 0.15,
+              "minimumY": 0.24517401289299956
+            },
+            {
+              "time": 0.16666666666666666,
+              "minimumY": 0.24516770492540058
+            },
+            {
+              "time": 0.18333333333333332,
+              "minimumY": 0.24094794204245995
+            },
+            {
+              "time": 0.2,
+              "minimumY": 0.22949669882660462
+            },
+            {
+              "time": 0.21666666666666667,
+              "minimumY": 0.2148661170935053
+            },
+            {
+              "time": 0.23333333333333334,
+              "minimumY": 0.19474121178822054
+            },
+            {
+              "time": 0.25,
+              "minimumY": 0.16915429375337035
+            },
+            {
+              "time": 0.26666666666666666,
+              "minimumY": 0.1400450100709015
+            },
+            {
+              "time": 0.2833333333333333,
+              "minimumY": 0.1094449671745131
+            },
+            {
+              "time": 0.3,
+              "minimumY": 0.08190286286901496
+            },
+            {
+              "time": 0.31666666666666665,
+              "minimumY": 0.06185804161381931
+            },
+            {
+              "time": 0.3333333333333333,
+              "minimumY": 0.0481259676096708
+            },
+            {
+              "time": 0.35,
+              "minimumY": 0.0382154471090214
+            },
+            {
+              "time": 0.36666666666666664,
+              "minimumY": 0.031132637152520824
+            },
+            {
+              "time": 0.38333333333333336,
+              "minimumY": 0.025229704362512605
+            },
+            {
+              "time": 0.4,
+              "minimumY": 0.019672345414587192
+            },
+            {
+              "time": 0.4166666666666667,
+              "minimumY": 0.015000845755204443
+            },
+            {
+              "time": 0.43333333333333335,
+              "minimumY": 0.01063524130376872
+            },
+            {
+              "time": 0.45,
+              "minimumY": 0.005795664954666092
+            },
+            {
+              "time": 0.4666666666666667,
+              "minimumY": 0.003500151062730024
+            },
+            {
+              "time": 0.48333333333333334,
+              "minimumY": 0.004512229508110979
+            },
+            {
+              "time": 0.5,
+              "minimumY": -0.0024270100727667755
+            },
+            {
+              "time": 0.5166666666666667,
+              "minimumY": -0.0031351734485459753
+            },
+            {
+              "time": 0.5333333333333333,
+              "minimumY": 0.0003241131767491366
+            },
+            {
+              "time": 0.55,
+              "minimumY": 0.012441775750268584
+            },
+            {
+              "time": 0.5666666666666667,
+              "minimumY": 0.024482443780282113
+            },
+            {
+              "time": 0.5833333333333334,
+              "minimumY": 0.048750527755395345
+            },
+            {
+              "time": 0.6,
+              "minimumY": 0.08842612663665216
+            },
+            {
+              "time": 0.6166666666666667,
+              "minimumY": 0.13282293836481887
+            },
+            {
+              "time": 0.6333333333333333,
+              "minimumY": 0.17854065518394593
+            },
+            {
+              "time": 0.65,
+              "minimumY": 0.22073736825024515
+            },
+            {
+              "time": 0.6666666666666666,
+              "minimumY": 0.25573860709248497
+            },
+            {
+              "time": 0.6833333333333333,
+              "minimumY": 0.28343529727705713
+            },
+            {
+              "time": 0.7,
+              "minimumY": 0.299632711173331
+            },
+            {
+              "time": 0.7166666666666667,
+              "minimumY": 0.30334443305942127
+            },
+            {
+              "time": 0.7333333333333333,
+              "minimumY": 0.29274638093911465
+            },
+            {
+              "time": 0.75,
+              "minimumY": 0.2838677869308154
+            },
+            {
+              "time": 0.7666666666666667,
+              "minimumY": 0.2763793582060054
+            },
+            {
+              "time": 0.7833333333333333,
+              "minimumY": 0.2698220867549332
+            },
+            {
+              "time": 0.8,
+              "minimumY": 0.2648115622176674
+            },
+            {
+              "time": 0.8166666666666667,
+              "minimumY": 0.26077493305186417
+            },
+            {
+              "time": 0.8333333333333334,
+              "minimumY": 0.2572983222483497
+            },
+            {
+              "time": 0.85,
+              "minimumY": 0.2547412563183553
+            },
+            {
+              "time": 0.8666666666666667,
+              "minimumY": 0.2518392444219738
+            },
+            {
+              "time": 0.8833333333333333,
+              "minimumY": 0.2478781686086315
+            },
+            {
+              "time": 0.9,
+              "minimumY": 0.24217987439408709
+            },
+            {
+              "time": 0.9166666666666666,
+              "minimumY": 0.2352123607088949
+            },
+            {
+              "time": 0.9333333333333333,
+              "minimumY": 0.2273352027434276
+            },
+            {
+              "time": 0.95,
+              "minimumY": 0.21910778600693356
+            },
+            {
+              "time": 0.9666666666666667,
+              "minimumY": 0.21029679486051867
+            },
+            {
+              "time": 0.9833333333333333,
+              "minimumY": 0.19938811362210385
+            },
+            {
+              "time": 1,
+              "minimumY": 0.1861221957377688
+            },
+            {
+              "time": 1.0166666666666666,
+              "minimumY": 0.17250422149394187
+            },
+            {
+              "time": 1.0333333333333334,
+              "minimumY": 0.14802288558265633
+            },
+            {
+              "time": 1.05,
+              "minimumY": 0.11160165553167374
+            },
+            {
+              "time": 1.0666666666666667,
+              "minimumY": 0.1011622972912381
+            },
+            {
+              "time": 1.0833333333333333,
+              "minimumY": 0.1053946135663072
+            },
+            {
+              "time": 1.1,
+              "minimumY": 0.13074518442906335
+            },
+            {
+              "time": 1.1166666666666667,
+              "minimumY": 0.16751591390930498
+            },
+            {
+              "time": 1.1333333333333333,
+              "minimumY": 0.21095683327046147
+            },
+            {
+              "time": 1.15,
+              "minimumY": 0.24358826823664556
+            },
+            {
+              "time": 1.1666666666666667,
+              "minimumY": 0.265123117350046
+            },
+            {
+              "time": 1.1833333333333333,
+              "minimumY": 0.2790681361316002
+            },
+            {
+              "time": 1.2,
+              "minimumY": 0.2683765328604563
+            },
+            {
+              "time": 1.2166666666666666,
+              "minimumY": 0.24823388949447658
+            },
+            {
+              "time": 1.2333333333333334,
+              "minimumY": 0.24656157021299444
+            },
+            {
+              "time": 1.25,
+              "minimumY": 0.256922718713556
+            },
+            {
+              "time": 1.2666666666666666,
+              "minimumY": 0.25904002340078525
+            },
+            {
+              "time": 1.2833333333333334,
+              "minimumY": 0.2531943183348793
+            },
+            {
+              "time": 1.3,
+              "minimumY": 0.25068308945574314
+            },
+            {
+              "time": 1.3166666666666667,
+              "minimumY": 0.2520331353036545
+            },
+            {
+              "time": 1.3333333333333333,
+              "minimumY": 0.2573628879523361
+            },
+            {
+              "time": 1.35,
+              "minimumY": 0.26752325721165293
+            },
+            {
+              "time": 1.3666666666666667,
+              "minimumY": 0.2616992174368083
+            },
+            {
+              "time": 1.3833333333333333,
+              "minimumY": 0.24520414506894533
+            },
+            {
+              "time": 1.4,
+              "minimumY": 0.22810253409437012
+            },
+            {
+              "time": 1.4166666666666667,
+              "minimumY": 0.21138381044711257
+            },
+            {
+              "time": 1.4333333333333333,
+              "minimumY": 0.1921567861838325
+            },
+            {
+              "time": 1.45,
+              "minimumY": 0.18172272852689522
+            },
+            {
+              "time": 1.4666666666666666,
+              "minimumY": 0.17527173190781214
+            },
+            {
+              "time": 1.4833333333333334,
+              "minimumY": 0.16898267080890814
+            },
+            {
+              "time": 1.5,
+              "minimumY": 0.15847476646490974
+            },
+            {
+              "time": 1.5166666666666666,
+              "minimumY": 0.14254173473583354
+            },
+            {
+              "time": 1.5333333333333334,
+              "minimumY": 0.12766353958438217
+            },
+            {
+              "time": 1.55,
+              "minimumY": 0.11665467215623933
+            },
+            {
+              "time": 1.5666666666666667,
+              "minimumY": 0.10925733630168889
+            },
+            {
+              "time": 1.5833333333333333,
+              "minimumY": 0.10565932881140037
+            },
+            {
+              "time": 1.6,
+              "minimumY": 0.10400184575772119
+            },
+            {
+              "time": 1.6166666666666667,
+              "minimumY": 0.10386383347781061
+            },
+            {
+              "time": 1.6333333333333333,
+              "minimumY": 0.10481636342902832
+            },
+            {
+              "time": 1.65,
+              "minimumY": 0.10899947501940516
+            },
+            {
+              "time": 1.6666666666666667,
+              "minimumY": 0.11432919385825244
+            },
+            {
+              "time": 1.6833333333333333,
+              "minimumY": 0.11705313634298849
+            },
+            {
+              "time": 1.7,
+              "minimumY": 0.11902016752668095
+            },
+            {
+              "time": 1.7166666666666666,
+              "minimumY": 0.12192935230917058
+            },
+            {
+              "time": 1.7333333333333334,
+              "minimumY": 0.12460474156689356
+            },
+            {
+              "time": 1.75,
+              "minimumY": 0.12711432519978044
+            },
+            {
+              "time": 1.7666666666666666,
+              "minimumY": 0.12762174039905605
+            },
+            {
+              "time": 1.7833333333333334,
+              "minimumY": 0.12501394251540904
+            },
+            {
+              "time": 1.7999999523162842,
+              "minimumY": 0.12501394251540904
+            }
+          ],
+          "sourcePoseConsumer": "Ghidra FUN_140507700 parent-composed no-scale skeletal path",
+          "gameplayBehavior": "authored swept vault path; not original movement code"
+        }
+      }
+    },
+    "ladders": {
+      "attached": false,
+      "ladderId": null,
+      "stage": null,
+      "phase": 0,
+      "direction": 0,
+      "clock": 137.01666666666785,
+      "completed": 0,
+      "reason": "PAUSE",
+      "origin": "authored ladder controller; original source behavior unverified",
+      "ready": true,
+      "ladders": [
+        {
+          "id": "maintenance-0",
+          "bottom": {
+            "x": 297.034633070292,
+            "y": 0.42,
+            "z": -4.0102844178168615
+          },
+          "top": {
+            "x": 297.034633070292,
+            "y": 77.94840656773268,
+            "z": -4.0102844178168615
+          },
+          "normal": {
+            "x": -1,
+            "z": 0
+          },
+          "exitTop": {
+            "x": 298.134633070292,
+            "y": 77.94840656773268,
+            "z": -4.0102844178168615
+          },
+          "exitBottom": {
+            "x": 296.484633070292,
+            "y": 0.42,
+            "z": -4.0102844178168615
+          }
+        },
+        {
+          "id": "maintenance-1",
+          "bottom": {
+            "x": 278.8924904479132,
+            "y": 1.2620616217924379,
+            "z": -122.89461534585539
+          },
+          "top": {
+            "x": 278.8924904479132,
+            "y": 45.329918468985724,
+            "z": -122.89461534585539
+          },
+          "normal": {
+            "x": -1,
+            "z": 0
+          },
+          "exitTop": {
+            "x": 279.9924904479132,
+            "y": 45.329918468985724,
+            "z": -122.89461534585539
+          },
+          "exitBottom": {
+            "x": 278.3424904479132,
+            "y": 1.2620616217924379,
+            "z": -122.89461534585539
+          }
+        },
+        {
+          "id": "maintenance-2",
+          "bottom": {
+            "x": 282.74289217076796,
+            "y": 0.42,
+            "z": 151.76085888325878
+          },
+          "top": {
+            "x": 282.74289217076796,
+            "y": 80.7283142286448,
+            "z": 151.76085888325878
+          },
+          "normal": {
+            "x": -1,
+            "z": 0
+          },
+          "exitTop": {
+            "x": 283.842892170768,
+            "y": 80.7283142286448,
+            "z": 151.76085888325878
+          },
+          "exitBottom": {
+            "x": 282.19289217076795,
+            "y": 0.42,
+            "z": 151.76085888325878
+          }
+        },
+        {
+          "id": "maintenance-3",
+          "bottom": {
+            "x": -344.7009507420867,
+            "y": 0.42,
+            "z": 202.6566071419118
+          },
+          "top": {
+            "x": -344.7009507420867,
+            "y": 71.48105397244318,
+            "z": 202.6566071419118
+          },
+          "normal": {
+            "x": 1,
+            "z": 0
+          },
+          "exitTop": {
+            "x": -345.80095074208674,
+            "y": 71.48105397244318,
+            "z": 202.6566071419118
+          },
+          "exitBottom": {
+            "x": -344.1509507420867,
+            "y": 0.42,
+            "z": 202.6566071419118
+          }
+        }
+      ],
+      "motion": {
+        "ownsMovement": false
+      },
+      "grace": 0
+    },
+    "posture": {
+      "crouched": false,
+      "reason": null,
+      "settle": 0,
+      "height": 1.72,
+      "active": false,
+      "canStand": true,
+      "locomotion": null
+    },
+    "hop": {
+      "clock": 137.01666666666785,
+      "phase": "ground",
+      "ownsAir": false,
+      "chain": 0,
+      "carrySpeed": 0,
+      "landingWindow": 0,
+      "lastJump": -1,
+      "reason": "PAUSE",
+      "events": [],
+      "rush": {
+        "active": false,
+        "remaining": 0,
+        "cue": false,
+        "nextCue": null,
+        "count": 0
+      },
+      "origin": "authored rhythm; native jacket-safe jump fallback",
+      "lastResult": null,
+      "peakDownSpeed": 0
+    },
+    "advanced": {
+      "kind": null,
+      "clock": 137.01666666666785,
+      "cooldown": 0,
+      "floatRemaining": 6,
+      "wallJumps": 0,
+      "reason": "PAUSE",
+      "motion": null,
+      "water": null,
+      "anchor": null,
+      "wallNormal": null,
+      "wallTop": null,
+      "wallPoint": null,
+      "wallAge": 0,
+      "wallRegrabLocked": false,
+      "events": [],
+      "origin": "authored mechanics; source/native candidate poses",
+      "ready": true,
+      "waters": [
+        {
+          "id": "meridian-waterfront",
+          "minX": -36,
+          "maxX": 36,
+          "minZ": 1171.7387966456854,
+          "maxZ": 1231.7387966456854,
+          "surface": 0.06,
+          "depth": 2.5
+        }
+      ],
+      "surfaceOnly": true,
+      "wallPose": null,
+      "pose": "forspoken-threadrail-relaxed-idle"
+    },
+    "flow": {
+      "clock": 137.01666666666785,
+      "action": null,
+      "time": 0,
+      "duration": 0,
+      "rollRole": null,
+      "airDash": 1,
+      "airLift": 1,
+      "waterHop": 0,
+      "airRolls": 2,
+      "skipCooldown": 0,
+      "charging": false,
+      "charge": 0,
+      "pendingRelease": null,
+      "jumpAge": 236.01666666675098,
+      "reason": "INPUT RESET",
+      "cooldown": 0,
+      "events": [],
+      "motion": null,
+      "ready": true,
+      "magicTrails": 0,
+      "walkMode": false,
+      "flipCount": 0,
+      "poseRole": "relaxedIdle",
+      "sourcePlayback": {
+        "role": "relaxedIdle",
+        "sourceAnimationId": "0x281116bb",
+        "originalMotionName": "ntl_idle_loop_base_n000a_lp",
+        "time": 2.016666666667845,
+        "duration": 3,
+        "loop": true,
+        "rate": 1,
+        "pelvisTranslation": false
+      },
+      "visualSupportBias": 0,
+      "poseTail": null,
+      "aimingTether": false,
+      "aimAge": 0,
+      "anchors": [
+        {
+          "id": "launch-0",
+          "position": [
+            -18,
+            5.5,
+            1153.7387966456854
+          ],
+          "launch": "horizontal"
+        },
+        {
+          "id": "launch-1",
+          "position": [
+            18,
+            5.5,
+            1153.7387966456854
+          ],
+          "launch": "vertical"
+        }
+      ],
+      "trees": [
+        [
+          -52,
+          0,
+          1178.7387966456854
+        ],
+        [
+          -66,
+          0,
+          1190.7387966456854
+        ]
+      ],
+      "ramps": [
+        {
+          "id": "waterfront-ramp",
+          "minX": -92,
+          "maxX": -82,
+          "minZ": 1158.7387966456854,
+          "maxZ": 1170.7387966456854,
+          "rise": 3
+        }
+      ],
+      "sourceOnly": true,
+      "landing": null,
+      "contactPolicy": "sole",
+      "contactCorrection": 1.591018872204586e-9,
+      "landingApproach": null
+    },
+    "equipment": {
+      "cartridgeAsset": {
+        "ready": true,
+        "error": null,
+        "sourceTask": "b71871c5-e9e6-4e89-b6f7-723182ab3c8e",
+        "diameter": 0.12,
+        "thickness": 0.03,
+        "dt": 0.01666666666667993,
+        "modelBounds": [
+          0.081000001810248,
+          0.024879999546101317,
+          0.08100000445693827
+        ],
+        "count": 2,
+        "instances": [
+          {
+            "id": "belt-A",
+            "pair": "A",
+            "mode": "folded",
+            "deployment": 0,
+            "faceNormal": [
+              -2.2204460492503126e-16,
+              -2.4651903288156613e-32,
+              0.9999999999999998
+            ],
+            "position": [
+              67.0006843740714,
+              101.02817959028945,
+              382.18
+            ],
+            "threadExit": [
+              67.05168437684301,
+              101.02817959028945,
+              382.1905000003241
+            ],
+            "coreIntensity": 0.3,
+            "surfaceGlow": false,
+            "speedTrail": false,
+            "trailPoints": 0
+          },
+          {
+            "id": "belt-B",
+            "pair": "B",
+            "mode": "folded",
+            "deployment": 0,
+            "faceNormal": [
+              2.2204460492503126e-16,
+              -2.4651903288156613e-32,
+              -0.9999999999999998
+            ],
+            "position": [
+              67.0006843740714,
+              101.02817959028945,
+              381.82
+            ],
+            "threadExit": [
+              67.05168437684301,
+              101.02817959028945,
+              381.8094999996759
+            ],
+            "coreIntensity": 0.3,
+            "surfaceGlow": false,
+            "speedTrail": false,
+            "trailPoints": 0
+          }
+        ]
+      },
+      "whipCast": {
+        "ready": true,
+        "error": null,
+        "active": null,
+        "sourceAnimationId": "0x2811be99",
+        "releaseTiming": "authored"
+      },
+      "snapback": {
+        "bank": null,
+        "clock": 137.01666666666785,
+        "reason": "HERO CHANGE",
+        "distance": 0,
+        "tension": 0,
+        "remaining": 0,
+        "events": []
+      },
+      "surf": {
+        "active": false,
+        "railId": null,
+        "phase": "off",
+        "age": 0,
+        "speed": 0,
+        "lean": 0,
+        "crouch": 0,
+        "compression": 0,
+        "source": "0x2811926e",
+        "provenance": "authored slide-derived posture",
+        "offsets": {
+          "spinePitch": 0,
+          "spineRoll": 0,
+          "knee": 0,
+          "armBalance": 0.06
+        }
+      },
+      "mastery": {
+        "rails": [],
+        "lastCatch": null,
+        "lastPop": null,
+        "style": 0,
+        "events": []
+      },
+      "deployment": {
+        "clock": 137.01666666666785,
+        "status": "HERO CHANGE",
+        "tensionAt": null,
+        "tensionProgress": 0,
+        "shots": [],
+        "events": []
+      },
+      "motion": {
+        "position": {
+          "x": 67,
+          "y": 100.42,
+          "z": 382
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "grounded": true,
+        "mode": "GROUND",
+        "flow": null,
+        "advanced": null,
+        "sourcePose": {
+          "role": "relaxedIdle",
+          "sourceAnimationId": "0x281116bb",
+          "originalMotionName": "ntl_idle_loop_base_n000a_lp",
+          "time": 2.016666666667845,
+          "duration": 3,
+          "loop": true,
+          "rate": 1,
+          "pelvisTranslation": false
+        },
+        "contact": {
+          "policy": "sole",
+          "correction": 1.591018872204586e-9,
+          "support": 100.42
+        }
+      },
+      "camera": {
+        "mode": "exploration",
+        "clock": 137.01666666666785,
+        "manualRemaining": 0,
+        "releaseRemaining": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "composition": null
+      },
+      "afterimages": {
+        "bound": true,
+        "disposed": false,
+        "sourceVertices": 56190,
+        "sourceIndices": 56190,
+        "capacity": 3,
+        "poolCapacity": 4,
+        "history": 1,
+        "config": {
+          "quality": "high",
+          "maxShards": 96,
+          "shardCount": 48,
+          "shardSize": 1,
+          "shardOpacity": 0.25,
+          "shardSpeed": 5.5,
+          "shardLifetime": 0.68,
+          "shardRotation": 0.7,
+          "violetBalance": 0.28,
+          "outlineBrightness": 1.3,
+          "afterimageCount": 3,
+          "afterimageOpacity": 0.22,
+          "afterimageSpacing": 0.85,
+          "afterimageFade": 0.55,
+          "outletBrightness": 1.3,
+          "intensity": 1,
+          "trailLength": 7
+        },
+        "active": 0,
+        "activeKinds": [],
+        "footCapacity": 8,
+        "footprints": 0,
+        "pending": 0,
+        "drawCalls": 0,
+        "maxDrawCalls": 2,
+        "captures": 0,
+        "peakCaptureMs": 0,
+        "last": {
+          "kind": "reset",
+          "reason": "MODEL CHANGE"
+        }
+      },
+      "lastFailure": null,
+      "impulses": [],
+      "releaseEvents": [],
+      "movementReady": true,
+      "hero": "backspool",
+      "clock": 137.01666666666785,
+      "owner": {
+        "frame": 8221,
+        "owner": "ordinary",
+        "reason": null,
+        "conflicts": 0,
+        "commits": 1
+      },
+      "sprint": false,
+      "preset": "traversal",
+      "mode": "auto",
+      "wheel": false,
+      "drive": {
+        "now": 137.01666666666785,
+        "strain": 0,
+        "capacity": 5,
+        "bank": [],
+        "lastBeat": null,
+        "lastRelease": null,
+        "doubleStep": null,
+        "eventSequence": 0,
+        "reason": "HERO CHANGE"
+      },
+      "rail": {
+        "time": 137.01666666666785,
+        "anchors": [],
+        "rails": [],
+        "current": null,
+        "events": [
+          {
+            "id": 5,
+            "type": "reset",
+            "time": 0,
+            "reason": "HERO CHANGE"
+          }
+        ],
+        "lastReason": "HERO CHANGE",
+        "limits": {
+          "minSpan": 6,
+          "maxSpan": 100,
+          "maxSlope": 55,
+          "maxRails": 4,
+          "maxAnchors": 8,
+          "lifetime": 30,
+          "attachReach": 2,
+          "transferReach": 3,
+          "maxSpeed": 28,
+          "gravity": 9.81,
+          "friction": 0.45,
+          "junctionAngle": 75,
+          "jumpImpulse": 4.8,
+          "slingshotImpulse": 6.5
+        }
+      },
+      "route": {
+        "status": "empty",
+        "reason": "HERO CHANGE",
+        "time": 0,
+        "route": null,
+        "recording": null,
+        "token": null,
+        "reservedIds": [],
+        "consumedIds": [],
+        "actionIndex": 0,
+        "counters": {
+          "recordings": 0,
+          "replays": 0,
+          "completed": 0,
+          "interrupted": 0,
+          "executed": 0,
+          "rejectedActions": 0
+        },
+        "limits": {
+          "maxSeconds": 4,
+          "maxActions": 8,
+          "maxSamples": 120,
+          "reconnectDistance": 1.35,
+          "maxDeviation": 1.5
+        },
+        "nextIds": {
+          "route": 1,
+          "action": 1,
+          "trace": 1,
+          "replay": 1
+        }
+      },
+      "exhaust": {
+        "bound": true,
+        "source": "bone:mixamorigHips",
+        "enabled": true,
+        "disposed": false,
+        "outletPosition": {
+          "x": 67.17225677594129,
+          "y": 101.04198061057016,
+          "z": 382.03956414682546
+        },
+        "outlets": [
+          {
+            "x": 67.19962809690344,
+            "y": 101.04178255054333,
+            "z": 381.91043331564583
+          },
+          {
+            "x": 67.14488545497915,
+            "y": 101.042178670597,
+            "z": 382.1686949780051
+          }
+        ],
+        "outletOffsetMeters": {
+          "x": 0,
+          "y": -0.02,
+          "z": -0.19
+        },
+        "emissionDirection": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "activeCounts": {
+          "slivers": 0,
+          "rings": 0,
+          "threads": 0,
+          "slices": 0
+        },
+        "capacities": {
+          "slivers": 96,
+          "rings": 24,
+          "threads": 64,
+          "slices": 12
+        },
+        "activeTotal": 0,
+        "visibleDrawCalls": 0,
+        "maxDrawCalls": 3,
+        "lastRelease": null,
+        "lastBank": null,
+        "lastReset": "model bind",
+        "emitted": 0,
+        "overwritten": 0,
+        "flash": 0,
+        "config": {
+          "quality": "high",
+          "maxShards": 96,
+          "shardCount": 48,
+          "shardSize": 1,
+          "shardOpacity": 0.25,
+          "shardSpeed": 5.5,
+          "shardLifetime": 0.68,
+          "shardRotation": 0.7,
+          "violetBalance": 0.28,
+          "outlineBrightness": 1.3,
+          "afterimageCount": 3,
+          "afterimageOpacity": 0.22,
+          "afterimageSpacing": 0.85,
+          "afterimageFade": 0.55,
+          "outletBrightness": 1.3,
+          "intensity": 1,
+          "trailLength": 7
+        },
+        "refraction": {
+          "supported": null,
+          "remaining": 0,
+          "captureCount": 0,
+          "rect": null,
+          "textureSize": 128
+        }
+      },
+      "precision": false,
+      "pendingAnchor": null,
+      "lastMessage": "",
+      "course": null,
+      "activeAnimation": "forspoken-threadrail-relaxed-idle",
+      "animationTime": 2.016666666667845,
+      "contactEvents": []
+    },
+    "coordinates": "feet position; +Y up, -Z forward at yaw 0",
+    "ready": true,
+    "active": true,
+    "mode": "GROUND",
+    "pos": [
+      67,
+      100.42,
+      382
+    ],
+    "velocity": [
+      0,
+      0,
+      0
+    ],
+    "aiming": false,
+    "pressure": 0,
+    "score": 0,
+    "combo": 0,
+    "carrying": false,
+    "queued": false,
+    "overload": 0,
+    "vip": [
+      180.88553178001018,
+      45.24153459120171,
+      132.41027564884212
+    ],
+    "extraction": [
+      -654.4250274126205,
+      0.08,
+      131.83240481559224
+    ],
+    "enemies": 36,
+    "vaultCourse": {
+      "imported": {
+        "barrier": {
+          "status": "ready",
+          "instances": 3,
+          "bounds": [
+            4.975,
+            0.52,
+            0.6380000000000017
+          ]
+        },
+        "planter": {
+          "status": "ready",
+          "instances": 3,
+          "bounds": [
+            4.975,
+            0.7000000000000001,
+            0.9879999999999995
+          ]
+        }
+      },
+      "ready": true,
+      "error": null,
+      "location": "Central plaza, straight ahead from spawn",
+      "start": [
+        0,
+        0.42,
+        8
+      ],
+      "obstacles": [
+        {
+          "id": "barrier",
+          "name": "LOW BARRIER",
+          "z": -14,
+          "width": 5,
+          "depth": 0.65,
+          "top": 0.92,
+          "color": 1320497
+        },
+        {
+          "id": "planter",
+          "name": "PLANTER",
+          "z": -40,
+          "width": 5,
+          "depth": 1,
+          "top": 1.1,
+          "color": 1716279
+        },
+        {
+          "id": "cargo",
+          "name": "CARGO CASES",
+          "z": -66,
+          "width": 5,
+          "depth": 0.65,
+          "top": 1.23,
+          "color": 2108473
+        }
+      ],
+      "run": null,
+      "drawCalls": 15
+    },
+    "district": {
+      "axes": "X/Y-up/Z metres; actor origin .42m above architectural floor",
+      "market": {
+        "phase": "idle",
+        "target": [
+          85,
+          24,
+          364
+        ],
+        "civilians": [
+          {
+            "id": 0,
+            "position": [
+              85,
+              24,
+              364
+            ],
+            "walked": 0,
+            "blocked": 0
+          },
+          {
+            "id": 1,
+            "position": [
+              71.42541221687904,
+              24,
+              358.0217670035984
+            ],
+            "walked": 157.5691666666156,
+            "blocked": 0
+          },
+          {
+            "id": 2,
+            "position": [
+              82.86176586671459,
+              24,
+              375.96379715208
+            ],
+            "walked": 157.56916666668752,
+            "blocked": 0
+          }
+        ],
+        "powerIsolated": false,
+        "waitingReason": null
+      },
+      "service": {
+        "phase": "idle",
+        "opponents": []
+      },
+      "pursuit": {
+        "phase": "idle",
+        "runner": {
+          "position": [
+            73.7,
+            100,
+            373
+          ],
+          "speedLimit": 2.7
+        },
+        "canCapture": false,
+        "waypoint": 1
+      },
+      "discovery": {
+        "found": [],
+        "openBoard": null,
+        "route": null
+      }
+    }
+  },
+  "status": "PASS bounded native transit behavior",
+  "fullTrace": "native-full-world-before-wheel-correction.trace.json.gz",
+  "traceFrames": 2760
+}

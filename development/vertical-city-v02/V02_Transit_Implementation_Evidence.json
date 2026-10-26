@@ -1,0 +1,126 @@
+{
+  "status": "PASS bounded scheduled transit implementation; phase6 and full goal INCOMPLETE",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT.html",
+  "entrySHA256": "48ee6dff434a6a2e1c1e5dbbf86d673b83109922c804f5749b0411ffc525c80f",
+  "assetManifestSHA256": "da5fd88e7b27c3b4e38f42ff4237137f1c6f143089707a7644ce4570c9963d7d",
+  "master": "development/vertical-city-v02/blender/SaintMeridian_V02_Transit_Assets.blend",
+  "masterSHA256": "c10517ac19d47e19157cc1e049a22213c98ffe9deba9da7854911198950f76ab",
+  "acceptedBaseEntrySHA256": "ec12fa9b3ccadb8acd9c1dcf5136391ef2b675f9ca95702453bd740797ee82a7",
+  "evidence": {
+    "controller": {
+      "file": "V02_Transit_Controller_Tests.json",
+      "sha256": "f4072bf0baf972c6d341a24ac383f85d0f15961ff0ab31577173fd4f1bf7c334"
+    },
+    "savedBlenderContacts": {
+      "file": "V02_Transit_Authoring_Validation.json",
+      "sha256": "ab59efd28b8ed1e204c3427b276939eaa113605e8e95f9831a6a845e2bcc80a7"
+    },
+    "exportedBoundsAndTriangles": {
+      "file": "V02_Transit_Geometry.json",
+      "sha256": "55542b98e492b90a1ba41d80fd6adf72993373ca398014946ee5612a4840be20"
+    },
+    "nativeAdapterCycle": {
+      "file": "V02_Transit_Native.json",
+      "sha256": "327bb10b15d4435632a1b98f4cb700f70e63e28cdb9580505a9d68ce764aaf84"
+    },
+    "nativeAdapterFullTrace": {
+      "file": "V02_Transit_Native.trace.json.gz",
+      "sha256": "a578e26a8fcefe070d7eb296f73fb4a501f88ae2ae4764254946f4e9d936ec59"
+    },
+    "historicalFullWorldCycleBeforeWheelFix": {
+      "file": "evidence/fixed-defects/transit-first/native-full-world-before-wheel-correction.json",
+      "sha256": "7b7f6246ec206db888b4614c2731b8c61c17417d969a9357be5f926599f7a8e7"
+    },
+    "stockState": {
+      "file": "evidence/stock-transit-first/state-0.json",
+      "sha256": "907a140a6ac510828d441e6508629f8ff046e685a83f9f58f8ac9138aa6b432c"
+    },
+    "stockImage": {
+      "file": "evidence/stock-transit-first/shot-0.png",
+      "sha256": "c81834c55a0060a23745578e87f02eb09311a32114743a7191963529d4ce3540"
+    }
+  },
+  "currentNativeScope": "Native adapter-only cycle after initial whole-game frames; NOT a full-world gameplay regression",
+  "captureEvidence": [
+    {
+      "file": "evidence/transit-wheel-revision/approach.png",
+      "sha256": "1797a3a32933d2e1fc954f3af21d2d0f03633d6b5d21d7bd31df5c49fea886f6",
+      "pixels": {
+        "width": 1280,
+        "height": 800,
+        "coloredFraction": 0.9747087240693378
+      }
+    },
+    {
+      "file": "evidence/transit-wheel-revision/station-dwell.png",
+      "sha256": "1b83a5b3622e9c6eb05bafe3d50f06d5f7d9af6601c3dd9723efbb8dc9100eb6",
+      "pixels": {
+        "width": 1280,
+        "height": 800,
+        "coloredFraction": 0.9905276120109879
+      }
+    },
+    {
+      "file": "evidence/transit-wheel-revision/turn.png",
+      "sha256": "942ed055eeaf9eeab252f594e727f55297c3abdc7ab0165a81ac8271d00ef919",
+      "pixels": {
+        "width": 1280,
+        "height": 800,
+        "coloredFraction": 0.9982002462820877
+      }
+    },
+    {
+      "file": "evidence/transit-wheel-revision/portrait.png",
+      "sha256": "41f3f153197c49307973a842a04b451fa21e442f58bc0dddf8ca96df655cffa1",
+      "pixels": {
+        "width": 430,
+        "height": 932,
+        "coloredFraction": 0.9859632139399807
+      }
+    },
+    {
+      "file": "evidence/transit-wheel-revision/landscape.png",
+      "sha256": "e2111885b87f93c80b69341a0e908eb47b613f3b672f2fb0b3339e682eabc232",
+      "pixels": {
+        "width": 932,
+        "height": 430,
+        "coloredFraction": 0.9757986447241046
+      }
+    }
+  ],
+  "historicalRunPolicy": "The full-world run predates wheel alignment and exact phase-timer corrections. Retained as historical evidence, never substituted for the current adapter-only run or future full release regressions.",
+  "metrics": {
+    "routeLengthMetres": 1238.775773821783,
+    "carriages": 4,
+    "passengerCars": 3,
+    "carriagePoses": 49552,
+    "maximumSampleIntervalMetres": 0.09999804438341807,
+    "minimumAdjacentSampledOBBGapMetres": 0.28792618458707064,
+    "worldConflicts": 0,
+    "convoyConflicts": 0,
+    "staticTrackTriangleConflicts": 0,
+    "stationOpenDoorConflicts": 0,
+    "glbFiles": 21,
+    "newAssetBytes": 1375392,
+    "nativeAdapterTraceSamples": 2720,
+    "nativeAdapterConsoleErrors": 0
+  },
+  "protectedEntries": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_DETAILED.html": "ec12fa9b3ccadb8acd9c1dcf5136391ef2b675f9ca95702453bd740797ee82a7",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
+    "SIGHTLINE_BACKSPOOL_WHIP_THROW.html": "fac92161657cb93c8500d6afbc2900748b7cadfc015c019eeddf0366cdf070e4",
+    "SIGHTLINE_VERTICAL_MEGACITY_V1.html": "45d868dcfcd1d0d9a382563bc984ebc657848cd6b2987f21bdf132edcf86d03b"
+  },
+  "frontAssetPreserved": true,
+  "remaining": [
+    "Blender structural support continuity around the entire new loop; current free spans are not certified.",
+    "Connected safe station platform/access, gap protection, functional physical carriage support/collision and boarding if admitted; currently not boardable.",
+    "Fused original front bogies/doors remain rigid; passenger cars alone have articulated parts.",
+    "Rework and sweep aerial traffic envelopes; add appropriate pedestrian/ambient destination activity.",
+    "All retained route, hero, power, mission and encounter scenarios on the final integrated revision.",
+    "Nine previously unmeasured advanced movement-edge timings.",
+    "Matched Blender/browser reference camera renders, architecture/lighting/HUD refinement.",
+    "At least 60s matched active baseline/candidate performance with CPU/render/GPU distinctions and full release checks."
+  ],
+  "fullGoalComplete": false
+}
