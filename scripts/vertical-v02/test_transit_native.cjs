@@ -2,12 +2,14 @@
  * no train position/speed/phase writes. Motion comes only from tickFrame. */
 const{chromium}=require('/opt/homebrew/lib/node_modules/playwright'),fs=require('fs'),path=require('path'),crypto=require('crypto'),assert=require('assert/strict');
 const adapterOnly=process.env.TRANSIT_ADAPTER_ONLY==='1';
-const R=path.resolve(__dirname,'../..'),D=path.join(R,'development/vertical-city-v02'),E=path.join(D,'evidence/'+(adapterOnly?'transit-wheel-revision':'transit-first'));fs.mkdirSync(E,{recursive:true});
+const stationWorld=process.env.V02_TRANSIT_WORLD==='station',reportName=stationWorld?'V02_Transit_Station_Native.json':'V02_Transit_Native.json';
+const R=path.resolve(__dirname,'../..'),D=path.join(R,'development/vertical-city-v02'),E=path.join(D,'evidence/'+(stationWorld?'transit-station-cycle':adapterOnly?'transit-wheel-revision':'transit-first'));fs.mkdirSync(E,{recursive:true});
 const{saveEvidence}=require('./evidence_io.cjs');
 const sha=f=>crypto.createHash('sha256').update(fs.readFileSync(path.join(R,f))).digest('hex');
 const report={scope:'Actual V02 transit candidate import, normal simulation-clock movement, station door/pause and camera collision. Not boarding, pedestrian, support continuity or full release acceptance.',entry:'SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT.html',errors:[],trace:[],captures:[],tests:[]};
+if(stationWorld)report.entry='SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT_STATION.html';
 report.mode=adapterOnly?'Native adapter-only cycle after initial whole-game frames; NOT a full-world gameplay regression':'Whole-game tickFrame for every train frame';
-report.hashes=Object.fromEntries([report.entry,'assets/city/vertical-v02/detailed/manifest.json','assets/city/vertical-v02/transit/assets.json','assets/city/vertical-v02/transit/definition.json','scripts/game_vertical_transit_v02.js','scripts/vertical_transit_core_v02.js'].map(f=>[f,sha(f)]));
+report.hashes=Object.fromEntries([report.entry,'assets/city/vertical-v02/'+(stationWorld?'transit-world':'detailed')+'/manifest.json','assets/city/vertical-v02/transit/assets.json','assets/city/vertical-v02/transit/definition.json','scripts/game_vertical_transit_v02.js','scripts/vertical_transit_core_v02.js'].map(f=>[f,sha(f)]));
 (async()=>{const browser=await chromium.launch({headless:true,args:['--use-gl=angle','--use-angle=metal']});let p;
 try{
  p=await browser.newPage({viewport:{width:1280,height:800}});p.on('pageerror',e=>report.errors.push(String(e)));p.on('console',m=>{if(m.type()==='error')report.errors.push(m.text())});
@@ -35,8 +37,8 @@ try{
  report.tests.push({name:'scheduled arrival aligns all cars; only left passenger doors open while stopped',pass:true,arrival:st});await capture('station-dwell',[70,104.2,397],[80,101.2,378]);
  // Pause through the actual game flag; clocks, wheel/door transforms and events must freeze.
  const paused=await p.evaluate(()=>{gameActive=false;return verticalTransitState()});await step(180);assert.deepEqual(await p.evaluate(()=>verticalTransitState()),paused);await p.evaluate(()=>gameActive=true);report.tests.push({name:'native game pause freezes all transit timelines and transforms',pass:true});
- const cameraContact=await p.evaluate(()=>{const origin=new THREE.Vector3(76.5,101.3,387),candidate=new THREE.Vector3(87,101.3,387);const targets=obstacleCandidates(origin,candidate,.22),ray=new THREE.Raycaster(origin,candidate.clone().sub(origin).normalize(),0,10.5);const hits=ray.intersectObjects(targets,false);const fixed=constrainCameraPosition(origin,candidate);return{origin:origin.toArray(),candidate:candidate.toArray(),fixed:fixed.toArray(),hits:hits.slice(0,4).map(h=>({name:h.object.name,distance:h.distance,transit:!!h.object.userData.transitDynamic}))};});
- assert(cameraContact.hits[0]?.transit,'The first camera obstruction must be the train, not a station guard');assert(cameraContact.fixed[0]>76.5&&cameraContact.fixed[0]<78.55,'Camera did not stop at actual train side');report.tests.push({name:'isolated shared camera collision stops at actual moving passenger geometry',pass:true,cameraContact});
+ const cameraContact=await p.evaluate(stationWorld=>{const origin=new THREE.Vector3(stationWorld?84:76.5,101.3,387),candidate=new THREE.Vector3(stationWorld?76.5:87,101.3,387);const targets=obstacleCandidates(origin,candidate,.22),ray=new THREE.Raycaster(origin,candidate.clone().sub(origin).normalize(),0,origin.distanceTo(candidate));const hits=ray.intersectObjects(targets,false);const fixed=constrainCameraPosition(origin,candidate);return{origin:origin.toArray(),candidate:candidate.toArray(),fixed:fixed.toArray(),hits:hits.slice(0,4).map(h=>({name:h.object.name,distance:h.distance,transit:!!h.object.userData.transitDynamic}))};},stationWorld);
+ assert(cameraContact.hits[0]?.transit,'The first camera obstruction must be the train, not a station guard');assert(stationWorld?cameraContact.fixed[0]<84&&cameraContact.fixed[0]>81.45:cameraContact.fixed[0]>76.5&&cameraContact.fixed[0]<78.55,'Camera did not stop at actual train side');report.tests.push({name:'isolated shared camera collision stops at actual moving passenger geometry',pass:true,cameraContact});
  for(let i=0;st.motion.phase!=='approach'&&i<140;i++)st=await step(6);
  assert.equal(st.motion.phase,'approach');assert.equal(st.motion.door,0);
  let corner=false;
@@ -50,4 +52,4 @@ try{
  await p.setViewportSize({width:430,height:932});await capture('portrait',[97,112,420],[80,101,370]);await p.setViewportSize({width:932,height:430});await capture('landscape',[99,112,426],[80,101,366]);
  report.stateText=await p.evaluate(()=>JSON.parse(render_game_to_text()));assert.deepEqual(report.errors,[]);report.status='PASS bounded native transit behavior';
 }catch(error){report.status='FAIL';report.failure=String(error);console.error(error);process.exitCode=1;if(p)await p.screenshot({path:path.join(E,'failure.png')}).catch(()=>{});}
-finally{saveEvidence(D,'V02_Transit_Native.json',report);await browser.close();console.log(JSON.stringify({status:report.status,tests:report.tests.map(t=>t.name),samples:report.trace.length,failure:report.failure,errors:report.errors}));}})();
+finally{saveEvidence(D,reportName,report);await browser.close();console.log(JSON.stringify({status:report.status,tests:report.tests.map(t=>t.name),samples:report.trace.length,failure:report.failure,errors:report.errors}));}})();

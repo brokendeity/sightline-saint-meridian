@@ -1,0 +1,220 @@
+{
+  "scope": "Actual exported meshes, articulated bogie bounds, all four simultaneous carriage OBBs at <=0.10m distance intervals against original compound buildings, preserved props and selected world solids. Conservative bounds, sampled rather than continuous triangle certification; train-owned rail contact is intentionally excluded. Fixed track triangles separately checked against the same world.",
+  "manifest": "assets/city/vertical-v02/transit-world/manifest.json",
+  "hashes": {
+    "assets/city/vertical-v02/transit/definition.json": "6fdd3fe36b3cf237abb185c88e75f81a05d5255b6cdca6602a5a6baa7fb721b4",
+    "assets/city/vertical-v02/transit/assets.json": "da5fd88e7b27c3b4e38f42ff4237137f1c6f143089707a7644ce4570c9963d7d",
+    "assets/city/vertical-v02/transit-world/manifest.json": "b30986c9d6f82f7680885cea47760cfde4b69cabed629dc6863173dc4b21a37b",
+    "scripts/vertical_transit_core_v02.js": "75b8e9f71b7853f586f42b5d2b031140a7851711d8f05646ba9de57ab3a88353"
+  },
+  "routeLength": 1238.775773821783,
+  "samples": 12388,
+  "intervalMetres": 0.09999804438341807,
+  "carriagePoses": 49552,
+  "frontLocalBounds": {
+    "min": [
+      -1.5486866235733032,
+      -1.6036270499695093,
+      -6.9969282150268555
+    ],
+    "max": [
+      1.5475525856018066,
+      2.8895343780517577,
+      6.998562812805176
+    ]
+  },
+  "passengerStaticBounds": {
+    "min": [
+      -1.5225000381469727,
+      -0.824999988079071,
+      -7.099999904632568
+    ],
+    "max": [
+      1.5225000381469727,
+      3,
+      7.099999904632568
+    ]
+  },
+  "minimumAdjacentOBBGap": 0.28792618458707064,
+  "maximumBogieYawRadians": 0.19969911474760474,
+  "worldConflicts": [],
+  "convoyConflicts": [],
+  "trackTriangles": 39968,
+  "trackConflicts": [],
+  "stationDoorConflicts": [],
+  "status": "PASS sampled export geometry only",
+  "glbResults": [
+    {
+      "file": "assets/city/vertical-v02/transit/passenger_car.glb",
+      "sha256": "74c686d6dbf34e62c153775a9b621922d4a44e86cdbef915257a6f246cd2a057",
+      "errors": 0,
+      "warnings": 0,
+      "messages": [
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/meshes/9/primitives/0/attributes/TEXCOORD_0"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/meshes/10/primitives/0/attributes/TEXCOORD_0"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/meshes/12/primitives/0/attributes/TEXCOORD_0"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/meshes/13/primitives/0/attributes/TEXCOORD_0"
+        }
+      ]
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_00.glb",
+      "sha256": "bae1fc481b0a4021b3d6ff552e28ae61a0e9f3d17f653a9968580f71e047e8fd",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_01.glb",
+      "sha256": "fcebde2a7b3a54e60ecb5b386ae1b6cf1800399f8dcb6d4e95a18e32dced0a5e",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_02.glb",
+      "sha256": "0b537c9fbc7b6b0ff02d85219772999a27c2606c9418858900df92754c553cdb",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_03.glb",
+      "sha256": "dff0875e3f803eaeaa6243538fd634a2f74fde0f2df7c5a6be03a5e209a519f2",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_04.glb",
+      "sha256": "f3b1e3ccc6035e3a321db6260e3039e135f4a22a93c80093b74675bb38984880",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_05.glb",
+      "sha256": "45fcfbe0384173779a69a822ec72554433c2faf1a34db2d3bf11b6a2902d1d26",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_06.glb",
+      "sha256": "c0049bf6edd852040d03a5875a35251bcf881f7e4755b8ad369de334cbcb9fa9",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_07.glb",
+      "sha256": "190182f55136d332ee6d389d1ad54cdcafe42250fba3c0dc2c08ebbfe85d77d4",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_08.glb",
+      "sha256": "e0101ad4519c326ecb4c15285854a7bc7f8e32f72455faeabb9b9fba6bfbefea",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_09.glb",
+      "sha256": "45d923a514c0d6ee1b955be9aa62801596d915b730fa7f62717491778f7c496c",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_10.glb",
+      "sha256": "74a542f50b428d5359d125c1a2e304b3099460e790543fd97ce590008b5344f6",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_11.glb",
+      "sha256": "e89a011642a96d875cb7b9c650342d55990ed2c3a883f8a5023a9f6c5ce7ab8e",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_12.glb",
+      "sha256": "9385755032ba7111893e259bd450613a2e04c10e112785f8134e829d254c24e4",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_13.glb",
+      "sha256": "deb4d835685012fd1687f0ee1f59d87212a26bc800230de640e053977537862f",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_14.glb",
+      "sha256": "64803e10bc77232a49ca282b3d5cfb276d82d8a7ec695ab35cc8b91ba6c4e166",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_15.glb",
+      "sha256": "f17887b346f51614a5b4262606d5b01ca924bd7d2b1258c4282e025fc9f3754a",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_16.glb",
+      "sha256": "ae0977bcfcecfe2c34e7f2ca563e2915d1a4baf88492b77c45bd5126836eed9b",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_17.glb",
+      "sha256": "bd19bfe066dc40e2c2dc3c976e5d6d654fd7d13b67c56a40d500d0f9aabe4915",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_18.glb",
+      "sha256": "71ba316a0ef8923dbb826ae3d65ca9c9bbd5729546427913854fc7a94d90e05e",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "assets/city/vertical-v02/transit/track_chunk_19.glb",
+      "sha256": "968b5522ee41f4b44f32adcce240437d3232f6c6ba02193a2d4738f080dd6a80",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    }
+  ]
+}

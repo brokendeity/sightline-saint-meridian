@@ -1,0 +1,215 @@
+{
+  "status": "PASS bounded public station and source support continuity milestone; full goal INCOMPLETE",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT_STATION.html",
+  "entrySHA256": "b96967c97064d9f549e92aa599ed140a2a99e7c0c8e08f0c118c55eb35e3cba1",
+  "manifestSHA256": "b30986c9d6f82f7680885cea47760cfde4b69cabed629dc6863173dc4b21a37b",
+  "master": "development/vertical-city-v02/blender/SaintMeridian_V02_Transit_Master.blend",
+  "masterSHA256": "f7d1da05c03f37fccb855176bca991e7fb1e4371d7e565f0a6e7ff5c8617b5c7",
+  "evidence": {
+    "preflight": {
+      "file": "V02_Transit_Environment_Preflight.json",
+      "sha256": "05ebafc5de25b0d5a651f9a463924e6333187280b66059fd937e562bf3335daf",
+      "status": "PASS transit environment preservation/compatibility preflight only"
+    },
+    "savedSource": {
+      "file": "V02_Transit_Master_Validation.json",
+      "sha256": "c43adf6f1780511ee141f68e660b198f3469daceea9723bf21d809f079172f15",
+      "status": "PASS saved transit master bounds and support contacts"
+    },
+    "exports": {
+      "file": "V02_Transit_World_GLB_Validation.json",
+      "sha256": "e5be1ef2005492e3d2940b793d246c1d81bf245af34aa746517cf118fe52b18a",
+      "status": "PASS nonempty transit world exports and Khronos validation"
+    },
+    "convoy": {
+      "file": "V02_Transit_Station_Geometry.json",
+      "sha256": "beac1bd0b38373a76da592d9b9d6273f79229083329b05ca6e9a58909fce7bf7",
+      "status": "PASS sampled export geometry only"
+    },
+    "graph": {
+      "file": "V02_Transit_Graph_Validation.json",
+      "sha256": "e1795584c25c6269950a5b752a858987b0e13b901fcb2e420316dfaedc398a90",
+      "status": "PASS new station topology/support metadata; inherited timing gaps remain"
+    },
+    "stationInput": {
+      "file": "V02_Transit_Station_Input.json",
+      "sha256": "7e42471493ba602bf01964303930bf425caa7c271b36b55612f39f2cc2315faf",
+      "status": "PASS local public station walking and boundary contacts"
+    },
+    "nativeAdapter": {
+      "file": "V02_Transit_Station_Native.json",
+      "sha256": "5d4a17b96f5bfab1bdd487dbf85e8149883c4a556badf734efc7e10043f03b33",
+      "status": "PASS bounded native transit behavior"
+    }
+  },
+  "captures": [
+    {
+      "file": "evidence/transit-station/north-platform.png",
+      "scope": "Actual third-person player camera",
+      "sha256": "2e2203faee5cbea7061744ba0726eab0648eb2529224d4c49a7be5a543edaf30"
+    },
+    {
+      "file": "evidence/transit-station/south-platform.png",
+      "scope": "Actual third-person player camera",
+      "sha256": "af518d2b99e37a48c1ee2ae59ad72cb9da675576e16626c59b6fa0210a4dead7"
+    },
+    {
+      "file": "evidence/transit-station/concourse-return.png",
+      "scope": "Actual third-person player camera",
+      "sha256": "bb640d26e917ca94c488004338b53ae0ca74bf9786d0397516eaf6e5186e8ff3"
+    },
+    {
+      "file": "evidence/transit-station/structure-inspection.png",
+      "scope": "Explicit camera-only station/track inspection",
+      "sha256": "fc90de1a96930dd2a845bd4045494a6ad5d217f0c2b23438a48fcbf9b1ffafd7"
+    },
+    {
+      "file": "evidence/transit-station-cycle/approach.png",
+      "scope": "Explicit camera-only inspection",
+      "position": [
+        99,
+        112,
+        426
+      ],
+      "look": [
+        80,
+        101,
+        366
+      ],
+      "pixels": {
+        "width": 1280,
+        "height": 800,
+        "coloredFraction": 0.974803447949228
+      },
+      "sha256": "b47dafb0ddf49c874c8704123a622316b98e7919aa2d680f0e54b1572f195920"
+    },
+    {
+      "file": "evidence/transit-station-cycle/station-dwell.png",
+      "scope": "Explicit camera-only inspection",
+      "position": [
+        70,
+        104.2,
+        397
+      ],
+      "look": [
+        80,
+        101.2,
+        378
+      ],
+      "pixels": {
+        "width": 1280,
+        "height": 800,
+        "coloredFraction": 0.9902434403713176
+      },
+      "sha256": "2106c94e4cede2d973ba89c2c1e54f8a62050e23c7a54ed1609f57ec9a847e92"
+    },
+    {
+      "file": "evidence/transit-station-cycle/turn.png",
+      "scope": "Explicit camera-only inspection",
+      "position": [
+        123,
+        118,
+        591
+      ],
+      "look": [
+        97,
+        101,
+        547
+      ],
+      "pixels": {
+        "width": 1280,
+        "height": 800,
+        "coloredFraction": 0.9975371791228569
+      },
+      "sha256": "aef7ab209801f2345d2162eaeefb9ecc21a1cb2325397255f58fd15384e036e7"
+    },
+    {
+      "file": "evidence/transit-station-cycle/portrait.png",
+      "scope": "Explicit camera-only inspection",
+      "position": [
+        97,
+        112,
+        420
+      ],
+      "look": [
+        80,
+        101,
+        370
+      ],
+      "pixels": {
+        "width": 430,
+        "height": 932,
+        "coloredFraction": 0.9859632139399807
+      },
+      "sha256": "057ca16d483e64725d8bc6cc8d0b8069f6174b14e93923019a5d3d26de4c0d00"
+    },
+    {
+      "file": "evidence/transit-station-cycle/landscape.png",
+      "scope": "Explicit camera-only inspection",
+      "position": [
+        99,
+        112,
+        426
+      ],
+      "look": [
+        80,
+        101,
+        366
+      ],
+      "pixels": {
+        "width": 932,
+        "height": 430,
+        "coloredFraction": 0.9757986447241046
+      },
+      "sha256": "37f98c08b7e4409af5b966773ab05b99bd6d34798c5567cd3fac636677e7faa9"
+    }
+  ],
+  "metrics": {
+    "sourceComponentMeshes": 11251,
+    "originalReferenceBuildings": 310,
+    "originalBuildingCopiesExported": 0,
+    "preservedDetailedContactRecords": 9878,
+    "explicitV02GuardRetirements": [
+      "public-guard-0185",
+      "public-guard-0185-cap"
+    ],
+    "supports": 50,
+    "newGroundPiers": 48,
+    "maximumSupportSpacingMetres": 34.99366592716902,
+    "actualSavedSupportContacts": 72,
+    "glbs": 63,
+    "glbBytes": 42826468,
+    "triangles": 304510,
+    "nativeStationFrames": 1738,
+    "nativeStationSimulationSeconds": 28.966666666666665,
+    "nativeStationTargets": 11,
+    "nativeConsoleErrors": 0,
+    "newDirectedStationEdges": 8,
+    "graphNodes": 135,
+    "graphEdges": 291,
+    "convoySampledPoses": 49552
+  },
+  "protectedEntries": {
+    "SIGHTLINE_BACKSPOOL_WHIP_THROW.html": "fac92161657cb93c8500d6afbc2900748b7cadfc015c019eeddf0366cdf070e4",
+    "SIGHTLINE_VERTICAL_MEGACITY_V1.html": "45d868dcfcd1d0d9a382563bc984ebc657848cd6b2987f21bdf132edcf86d03b",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_DETAILED.html": "ec12fa9b3ccadb8acd9c1dcf5136391ef2b675f9ca95702453bd740797ee82a7",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT.html": "48ee6dff434a6a2e1c1e5dbbf86d673b83109922c804f5749b0411ffc525c80f"
+  },
+  "scopeLimits": [
+    "Source contacts and <=0.10m sampled convoy envelopes do not establish continuous collision or engineering load/soil certification.",
+    "Station test uses one explicit local fixture, then normal controller input; it is not a newly rerun whole street-to-station approach.",
+    "Full train loop on this revision is actual browser adapter stepping after120 whole-game frames, not a full-world regression.",
+    "The public platform remains behind a full-height screen. Moving character support and train boarding are not implemented.",
+    "Original lead-car doors and bogies remain fused.",
+    "Stock arrow burst is an import/capture check, not movement acceptance."
+  ],
+  "remaining": [
+    "Rework and validate aerial traffic routes and appropriate ambient/pedestrian activity.",
+    "Run all retained route, hero, mission and encounter input scenarios on the final integrated world.",
+    "Resolve nine explicitly unmeasured advanced-edge timing fields.",
+    "Matched Blender/browser reference renders and final architecture/material/lighting/HUD review.",
+    "At least60s matched active baseline/candidate performance and full release checks."
+  ],
+  "fullGoalComplete": false
+}

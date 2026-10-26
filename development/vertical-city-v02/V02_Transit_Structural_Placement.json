@@ -1,0 +1,3989 @@
+{
+  "status": "PASS foundation/crosshead placement preflight only",
+  "sourceManifestSHA256": "b1077f43e3530abe5acbca7b709f8a968ef0088435c95f0be0c5ba9744e55f4e",
+  "engineeringSHA256": "105a1320c9dcb6881d11c7d176cb6f60f506a65dbd561ded29d38eb314788870",
+  "scriptSHA256": "8f81639ae35488222cd2b1d6c618fa78bca9ae9a6b548f242a7183867f31afbd",
+  "routeLength": 1238.775773821783,
+  "supports": [
+    {
+      "id": "support-000",
+      "distance": 0,
+      "head": [
+        80,
+        100,
+        104
+      ],
+      "foundation": [
+        72,
+        104
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-000",
+          "owner": "v02:transit-pier-000",
+          "center": [
+            72,
+            48.125,
+            104
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              0.0,
+              103.4
+            ],
+            "max": [
+              72.6,
+              96.25,
+              104.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-000",
+          "owner": "v02:transit-crosshead-000",
+          "center": [
+            76.0,
+            96.95,
+            104.0
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              96.25,
+              103.4
+            ],
+            "max": [
+              80.6,
+              97.65,
+              104.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-000"
+        }
+      ]
+    },
+    {
+      "id": "support-001",
+      "distance": 24.99547566226358,
+      "head": [
+        80,
+        100,
+        128.9947174669364
+      ],
+      "foundation": [
+        72,
+        128.9947174669364
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-001",
+          "owner": "v02:transit-pier-001",
+          "center": [
+            72,
+            48.125,
+            128.9947174669364
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              0.0,
+              128.3947174669364
+            ],
+            "max": [
+              72.6,
+              96.25,
+              129.5947174669364
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-001",
+          "owner": "v02:transit-crosshead-001",
+          "center": [
+            76.0,
+            96.95,
+            128.9947174669364
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              96.25,
+              128.3947174669364
+            ],
+            "max": [
+              80.6,
+              97.65,
+              129.5947174669364
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-001"
+        }
+      ]
+    },
+    {
+      "id": "support-002",
+      "distance": 49.99095132452716,
+      "head": [
+        80,
+        100,
+        153.99019312920015
+      ],
+      "foundation": [
+        72,
+        153.99019312920015
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-002",
+          "owner": "v02:transit-pier-002",
+          "center": [
+            72,
+            48.125,
+            153.99019312920015
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              0.0,
+              153.39019312920016
+            ],
+            "max": [
+              72.6,
+              96.25,
+              154.59019312920014
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-002",
+          "owner": "v02:transit-crosshead-002",
+          "center": [
+            76.0,
+            96.95,
+            153.99019312920015
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              96.25,
+              153.39019312920016
+            ],
+            "max": [
+              80.6,
+              97.65,
+              154.59019312920014
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-002"
+        }
+      ]
+    },
+    {
+      "id": "support-003",
+      "distance": 74.98642698679075,
+      "head": [
+        80,
+        100,
+        178.98566894022682
+      ],
+      "foundation": [
+        72,
+        178.98566894022682
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-003",
+          "owner": "v02:transit-pier-003",
+          "center": [
+            72,
+            48.125,
+            178.98566894022682
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              0.0,
+              178.38566894022682
+            ],
+            "max": [
+              72.6,
+              96.25,
+              179.5856689402268
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-003",
+          "owner": "v02:transit-crosshead-003",
+          "center": [
+            76.0,
+            96.95,
+            178.98566894022682
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              96.25,
+              178.38566894022682
+            ],
+            "max": [
+              80.6,
+              97.65,
+              179.5856689402268
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-003"
+        }
+      ]
+    },
+    {
+      "id": "support-004",
+      "distance": 99.98190264905432,
+      "head": [
+        80,
+        100,
+        203.98114445372715
+      ],
+      "foundation": [
+        91,
+        204
+      ],
+      "existingColumn": "column-91-204",
+      "records": [
+        {
+          "id": "transit-approach-004",
+          "owner": "v02:transit-approach-004",
+          "center": [
+            91.0,
+            96.95,
+            203.99057222686358
+          ],
+          "size": [
+            1.2,
+            1.4,
+            1.2188555462728459
+          ],
+          "box": {
+            "min": [
+              90.4,
+              96.25,
+              203.38114445372716
+            ],
+            "max": [
+              91.6,
+              97.65,
+              204.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "column-91-204"
+        },
+        {
+          "id": "transit-crosshead-004",
+          "owner": "v02:transit-crosshead-004",
+          "center": [
+            85.5,
+            96.95,
+            203.98114445372715
+          ],
+          "size": [
+            12.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              79.4,
+              96.25,
+              203.38114445372716
+            ],
+            "max": [
+              91.6,
+              97.65,
+              204.58114445372715
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "column-91-204"
+        }
+      ]
+    },
+    {
+      "id": "support-005",
+      "distance": 124.9773783113179,
+      "head": [
+        80,
+        100,
+        228.9766201159907
+      ],
+      "foundation": [
+        70,
+        228.9766201159907
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-005",
+          "owner": "v02:transit-pier-005",
+          "center": [
+            70,
+            48.125,
+            228.9766201159907
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              69.4,
+              0.0,
+              228.3766201159907
+            ],
+            "max": [
+              70.6,
+              96.25,
+              229.5766201159907
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-005",
+          "owner": "v02:transit-crosshead-005",
+          "center": [
+            75.0,
+            96.95,
+            228.9766201159907
+          ],
+          "size": [
+            11.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              69.4,
+              96.25,
+              228.3766201159907
+            ],
+            "max": [
+              80.6,
+              97.65,
+              229.5766201159907
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-005"
+        }
+      ]
+    },
+    {
+      "id": "support-006",
+      "distance": 149.9728539735815,
+      "head": [
+        80,
+        100,
+        253.97209577825444
+      ],
+      "foundation": [
+        72,
+        253.97209577825444
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-006",
+          "owner": "v02:transit-pier-006",
+          "center": [
+            72,
+            48.125,
+            253.97209577825444
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              0.0,
+              253.37209577825445
+            ],
+            "max": [
+              72.6,
+              96.25,
+              254.57209577825444
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-006",
+          "owner": "v02:transit-crosshead-006",
+          "center": [
+            76.0,
+            96.95,
+            253.97209577825444
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              96.25,
+              253.37209577825445
+            ],
+            "max": [
+              80.6,
+              97.65,
+              254.57209577825444
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-006"
+        }
+      ]
+    },
+    {
+      "id": "support-007",
+      "distance": 176.96796768882615,
+      "head": [
+        80,
+        100,
+        280.96720949349896
+      ],
+      "foundation": [
+        72,
+        280.96720949349896
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-007",
+          "owner": "v02:transit-pier-007",
+          "center": [
+            72,
+            48.125,
+            280.96720949349896
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              0.0,
+              280.36720949349893
+            ],
+            "max": [
+              72.6,
+              96.25,
+              281.567209493499
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-007",
+          "owner": "v02:transit-crosshead-007",
+          "center": [
+            76.0,
+            96.95,
+            280.96720949349896
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              96.25,
+              280.36720949349893
+            ],
+            "max": [
+              80.6,
+              97.65,
+              281.567209493499
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-007"
+        }
+      ]
+    },
+    {
+      "id": "support-008",
+      "distance": 199.96380529810864,
+      "head": [
+        80,
+        100,
+        303.96304710278145
+      ],
+      "foundation": [
+        88,
+        303.96304710278145
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-008",
+          "owner": "v02:transit-pier-008",
+          "center": [
+            88,
+            48.125,
+            303.96304710278145
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              87.4,
+              0.0,
+              303.3630471027814
+            ],
+            "max": [
+              88.6,
+              96.25,
+              304.56304710278147
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-008",
+          "owner": "v02:transit-crosshead-008",
+          "center": [
+            84.0,
+            96.95,
+            303.96304710278145
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              79.4,
+              96.25,
+              303.3630471027814
+            ],
+            "max": [
+              88.6,
+              97.65,
+              304.56304710278147
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-008"
+        }
+      ]
+    },
+    {
+      "id": "support-009",
+      "distance": 224.9592809603722,
+      "head": [
+        80,
+        100,
+        328.958522765045
+      ],
+      "foundation": [
+        100,
+        328.958522765045
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-009",
+          "owner": "v02:transit-pier-009",
+          "center": [
+            100,
+            48.125,
+            328.958522765045
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              99.4,
+              0.0,
+              328.358522765045
+            ],
+            "max": [
+              100.6,
+              96.25,
+              329.55852276504504
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-009",
+          "owner": "v02:transit-crosshead-009",
+          "center": [
+            90.0,
+            96.95,
+            328.958522765045
+          ],
+          "size": [
+            21.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              79.4,
+              96.25,
+              328.358522765045
+            ],
+            "max": [
+              100.6,
+              97.65,
+              329.55852276504504
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-009"
+        }
+      ]
+    },
+    {
+      "id": "support-010",
+      "distance": 241.95620441071148,
+      "head": [
+        80,
+        100,
+        345.95544621418105
+      ],
+      "foundation": [
+        91,
+        346
+      ],
+      "existingColumn": "column-91-346",
+      "records": [
+        {
+          "id": "transit-approach-010",
+          "owner": "v02:transit-approach-010",
+          "center": [
+            91.0,
+            96.95,
+            345.9777231070905
+          ],
+          "size": [
+            1.2,
+            1.4,
+            1.2445537858189482
+          ],
+          "box": {
+            "min": [
+              90.4,
+              96.25,
+              345.35544621418103
+            ],
+            "max": [
+              91.6,
+              97.65,
+              346.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "column-91-346"
+        },
+        {
+          "id": "transit-crosshead-010",
+          "owner": "v02:transit-crosshead-010",
+          "center": [
+            85.5,
+            96.95,
+            345.95544621418105
+          ],
+          "size": [
+            12.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              79.4,
+              96.25,
+              345.35544621418103
+            ],
+            "max": [
+              91.6,
+              97.65,
+              346.5554462141811
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "column-91-346"
+        }
+      ]
+    },
+    {
+      "id": "support-011",
+      "distance": 276.9498703378805,
+      "head": [
+        80,
+        100,
+        380.94911214255353
+      ],
+      "foundation": [
+        88,
+        380.94911214255353
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-011",
+          "owner": "v02:transit-pier-011",
+          "center": [
+            88,
+            48.125,
+            380.94911214255353
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              87.4,
+              0.0,
+              380.3491121425535
+            ],
+            "max": [
+              88.6,
+              96.25,
+              381.54911214255355
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-011",
+          "owner": "v02:transit-crosshead-011",
+          "center": [
+            84.0,
+            96.95,
+            380.94911214255353
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              79.4,
+              96.25,
+              380.3491121425535
+            ],
+            "max": [
+              88.6,
+              97.65,
+              381.54911214255355
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-011"
+        }
+      ]
+    },
+    {
+      "id": "support-012",
+      "distance": 307.9442601590873,
+      "head": [
+        80,
+        100,
+        411.94350196376035
+      ],
+      "foundation": [
+        70,
+        411.94350196376035
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-012",
+          "owner": "v02:transit-pier-012",
+          "center": [
+            70,
+            48.125,
+            411.94350196376035
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              69.4,
+              0.0,
+              411.34350196376033
+            ],
+            "max": [
+              70.6,
+              96.25,
+              412.5435019637604
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-012",
+          "owner": "v02:transit-crosshead-012",
+          "center": [
+            75.0,
+            96.95,
+            411.94350196376035
+          ],
+          "size": [
+            11.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              69.4,
+              96.25,
+              411.34350196376033
+            ],
+            "max": [
+              80.6,
+              97.65,
+              412.5435019637604
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-012"
+        }
+      ]
+    },
+    {
+      "id": "support-013",
+      "distance": 320.9419075034644,
+      "head": [
+        80,
+        100,
+        424.9411493081373
+      ],
+      "foundation": [
+        72,
+        424.9411493081373
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-013",
+          "owner": "v02:transit-pier-013",
+          "center": [
+            72,
+            48.125,
+            424.9411493081373
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              0.0,
+              424.3411493081373
+            ],
+            "max": [
+              72.6,
+              96.25,
+              425.54114930813734
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-013",
+          "owner": "v02:transit-crosshead-013",
+          "center": [
+            76.0,
+            96.95,
+            424.9411493081373
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              96.25,
+              424.3411493081373
+            ],
+            "max": [
+              80.6,
+              97.65,
+              425.54114930813734
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-013"
+        }
+      ]
+    },
+    {
+      "id": "support-014",
+      "distance": 349.93665927169013,
+      "head": [
+        80,
+        100,
+        453.9359010763631
+      ],
+      "foundation": [
+        72,
+        453.9359010763631
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-014",
+          "owner": "v02:transit-pier-014",
+          "center": [
+            72,
+            48.125,
+            453.9359010763631
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              0.0,
+              453.3359010763631
+            ],
+            "max": [
+              72.6,
+              96.25,
+              454.53590107636313
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-014",
+          "owner": "v02:transit-crosshead-014",
+          "center": [
+            76.0,
+            96.95,
+            453.9359010763631
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              96.25,
+              453.3359010763631
+            ],
+            "max": [
+              80.6,
+              97.65,
+              454.53590107636313
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-014"
+        }
+      ]
+    },
+    {
+      "id": "support-015",
+      "distance": 374.9321349339537,
+      "head": [
+        80,
+        100,
+        478.93137673862657
+      ],
+      "foundation": [
+        72,
+        478.93137673862657
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-015",
+          "owner": "v02:transit-pier-015",
+          "center": [
+            72,
+            48.125,
+            478.93137673862657
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              0.0,
+              478.33137673862655
+            ],
+            "max": [
+              72.6,
+              96.25,
+              479.5313767386266
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-015",
+          "owner": "v02:transit-crosshead-015",
+          "center": [
+            76.0,
+            96.95,
+            478.93137673862657
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              96.25,
+              478.33137673862655
+            ],
+            "max": [
+              80.6,
+              97.65,
+              479.5313767386266
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-015"
+        }
+      ]
+    },
+    {
+      "id": "support-016",
+      "distance": 399.9276105962173,
+      "head": [
+        80,
+        100,
+        503.92685240089037
+      ],
+      "foundation": [
+        72,
+        503.92685240089037
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-016",
+          "owner": "v02:transit-pier-016",
+          "center": [
+            72,
+            48.125,
+            503.92685240089037
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              0.0,
+              503.32685240089035
+            ],
+            "max": [
+              72.6,
+              96.25,
+              504.5268524008904
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-016",
+          "owner": "v02:transit-crosshead-016",
+          "center": [
+            76.0,
+            96.95,
+            503.92685240089037
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              96.25,
+              503.32685240089035
+            ],
+            "max": [
+              80.6,
+              97.65,
+              504.5268524008904
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-016"
+        }
+      ]
+    },
+    {
+      "id": "support-017",
+      "distance": 424.9230862584809,
+      "head": [
+        80,
+        100,
+        528.9223280631538
+      ],
+      "foundation": [
+        72,
+        528.9223280631538
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-017",
+          "owner": "v02:transit-pier-017",
+          "center": [
+            72,
+            48.125,
+            528.9223280631538
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              0.0,
+              528.3223280631538
+            ],
+            "max": [
+              72.6,
+              96.25,
+              529.5223280631539
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-017",
+          "owner": "v02:transit-crosshead-017",
+          "center": [
+            76.0,
+            96.95,
+            528.9223280631538
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              71.4,
+              96.25,
+              528.3223280631538
+            ],
+            "max": [
+              80.6,
+              97.65,
+              529.5223280631539
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-017"
+        }
+      ]
+    },
+    {
+      "id": "support-018",
+      "distance": 449.9185619207444,
+      "head": [
+        86.38554893444686,
+        100,
+        552.3007674355309
+      ],
+      "foundation": [
+        86.38554893444686,
+        544.3007674355309
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-018",
+          "owner": "v02:transit-pier-018",
+          "center": [
+            86.38554893444686,
+            48.125,
+            544.3007674355309
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              85.78554893444687,
+              0.0,
+              543.7007674355309
+            ],
+            "max": [
+              86.98554893444685,
+              96.25,
+              544.900767435531
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-approach-018",
+          "owner": "v02:transit-approach-018",
+          "center": [
+            86.38554893444686,
+            96.95,
+            548.3007674355309
+          ],
+          "size": [
+            1.2,
+            1.4,
+            9.2
+          ],
+          "box": {
+            "min": [
+              85.78554893444687,
+              96.25,
+              543.7007674355309
+            ],
+            "max": [
+              86.98554893444685,
+              97.65,
+              552.900767435531
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-018"
+        }
+      ]
+    },
+    {
+      "id": "support-019",
+      "distance": 474.91403758300805,
+      "head": [
+        109.21935013273665,
+        100,
+        560
+      ],
+      "foundation": [
+        101.21935013273665,
+        560
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-019",
+          "owner": "v02:transit-pier-019",
+          "center": [
+            101.21935013273665,
+            48.125,
+            560
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              100.61935013273666,
+              0.0,
+              559.4
+            ],
+            "max": [
+              101.81935013273664,
+              96.25,
+              560.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-019",
+          "owner": "v02:transit-crosshead-019",
+          "center": [
+            105.21935013273665,
+            96.95,
+            560.0
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              100.61935013273666,
+              96.25,
+              559.4
+            ],
+            "max": [
+              109.81935013273664,
+              97.65,
+              560.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-019"
+        }
+      ]
+    },
+    {
+      "id": "support-020",
+      "distance": 499.9095132452716,
+      "head": [
+        134.21482579500014,
+        100,
+        560
+      ],
+      "foundation": [
+        126.21482579500014,
+        560
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-020",
+          "owner": "v02:transit-pier-020",
+          "center": [
+            126.21482579500014,
+            48.125,
+            560
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              125.61482579500014,
+              0.0,
+              559.4
+            ],
+            "max": [
+              126.81482579500013,
+              96.25,
+              560.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-020",
+          "owner": "v02:transit-crosshead-020",
+          "center": [
+            130.21482579500014,
+            96.95,
+            560.0
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              125.61482579500014,
+              96.25,
+              559.4
+            ],
+            "max": [
+              134.81482579500013,
+              97.65,
+              560.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-020"
+        }
+      ]
+    },
+    {
+      "id": "support-021",
+      "distance": 524.9049889075352,
+      "head": [
+        159.2103014572637,
+        100,
+        560
+      ],
+      "foundation": [
+        151.2103014572637,
+        560
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-021",
+          "owner": "v02:transit-pier-021",
+          "center": [
+            151.2103014572637,
+            48.125,
+            560
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              150.61030145726372,
+              0.0,
+              559.4
+            ],
+            "max": [
+              151.8103014572637,
+              96.25,
+              560.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-021",
+          "owner": "v02:transit-crosshead-021",
+          "center": [
+            155.2103014572637,
+            96.95,
+            560.0
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              150.61030145726372,
+              96.25,
+              559.4
+            ],
+            "max": [
+              159.8103014572637,
+              97.65,
+              560.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-021"
+        }
+      ]
+    },
+    {
+      "id": "support-022",
+      "distance": 549.9004645697988,
+      "head": [
+        184.20577711952745,
+        100,
+        560
+      ],
+      "foundation": [
+        176.20577711952745,
+        560
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-022",
+          "owner": "v02:transit-pier-022",
+          "center": [
+            176.20577711952745,
+            48.125,
+            560
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              175.60577711952746,
+              0.0,
+              559.4
+            ],
+            "max": [
+              176.80577711952745,
+              96.25,
+              560.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-022",
+          "owner": "v02:transit-crosshead-022",
+          "center": [
+            180.20577711952745,
+            96.95,
+            560.0
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              175.60577711952746,
+              96.25,
+              559.4
+            ],
+            "max": [
+              184.80577711952745,
+              97.65,
+              560.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-022"
+        }
+      ]
+    },
+    {
+      "id": "support-023",
+      "distance": 574.8959402320623,
+      "head": [
+        209.20125278179069,
+        100,
+        560
+      ],
+      "foundation": [
+        201.20125278179069,
+        560
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-023",
+          "owner": "v02:transit-pier-023",
+          "center": [
+            201.20125278179069,
+            48.125,
+            560
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              200.6012527817907,
+              0.0,
+              559.4
+            ],
+            "max": [
+              201.80125278179068,
+              96.25,
+              560.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-023",
+          "owner": "v02:transit-crosshead-023",
+          "center": [
+            205.20125278179069,
+            96.95,
+            560.0
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              200.6012527817907,
+              96.25,
+              559.4
+            ],
+            "max": [
+              209.80125278179068,
+              97.65,
+              560.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-023"
+        }
+      ]
+    },
+    {
+      "id": "support-024",
+      "distance": 599.891415894326,
+      "head": [
+        232.50446907573846,
+        100,
+        553.4239317982247
+      ],
+      "foundation": [
+        232.50446907573846,
+        545.4239317982247
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-024",
+          "owner": "v02:transit-pier-024",
+          "center": [
+            232.50446907573846,
+            48.125,
+            545.4239317982247
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.90446907573846,
+              0.0,
+              544.8239317982246
+            ],
+            "max": [
+              233.10446907573845,
+              96.25,
+              546.0239317982247
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-approach-024",
+          "owner": "v02:transit-approach-024",
+          "center": [
+            232.50446907573846,
+            96.95,
+            549.4239317982247
+          ],
+          "size": [
+            1.2,
+            1.4,
+            9.2
+          ],
+          "box": {
+            "min": [
+              231.90446907573846,
+              96.25,
+              544.8239317982246
+            ],
+            "max": [
+              233.10446907573845,
+              97.65,
+              554.0239317982247
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-024"
+        }
+      ]
+    },
+    {
+      "id": "support-025",
+      "distance": 624.8868915565895,
+      "head": [
+        240,
+        100,
+        530.5017251487961
+      ],
+      "foundation": [
+        232,
+        530.5017251487961
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-025",
+          "owner": "v02:transit-pier-025",
+          "center": [
+            232,
+            48.125,
+            530.5017251487961
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              0.0,
+              529.9017251487961
+            ],
+            "max": [
+              232.6,
+              96.25,
+              531.1017251487962
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-025",
+          "owner": "v02:transit-crosshead-025",
+          "center": [
+            236.0,
+            96.95,
+            530.5017251487961
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              96.25,
+              529.9017251487961
+            ],
+            "max": [
+              240.6,
+              97.65,
+              531.1017251487962
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-025"
+        }
+      ]
+    },
+    {
+      "id": "support-026",
+      "distance": 649.8823672188531,
+      "head": [
+        240,
+        100,
+        505.5062494865245
+      ],
+      "foundation": [
+        232,
+        505.5062494865245
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-026",
+          "owner": "v02:transit-pier-026",
+          "center": [
+            232,
+            48.125,
+            505.5062494865245
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              0.0,
+              504.9062494865245
+            ],
+            "max": [
+              232.6,
+              96.25,
+              506.1062494865245
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-026",
+          "owner": "v02:transit-crosshead-026",
+          "center": [
+            236.0,
+            96.95,
+            505.5062494865245
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              96.25,
+              504.9062494865245
+            ],
+            "max": [
+              240.6,
+              97.65,
+              506.1062494865245
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-026"
+        }
+      ]
+    },
+    {
+      "id": "support-027",
+      "distance": 674.8778428811166,
+      "head": [
+        240,
+        100,
+        480.5107738242292
+      ],
+      "foundation": [
+        232,
+        480.5107738242292
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-027",
+          "owner": "v02:transit-pier-027",
+          "center": [
+            232,
+            48.125,
+            480.5107738242292
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              0.0,
+              479.9107738242292
+            ],
+            "max": [
+              232.6,
+              96.25,
+              481.1107738242292
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-027",
+          "owner": "v02:transit-crosshead-027",
+          "center": [
+            236.0,
+            96.95,
+            480.5107738242292
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              96.25,
+              479.9107738242292
+            ],
+            "max": [
+              240.6,
+              97.65,
+              481.1107738242292
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-027"
+        }
+      ]
+    },
+    {
+      "id": "support-028",
+      "distance": 699.8733185433803,
+      "head": [
+        240,
+        100,
+        455.5152981619339
+      ],
+      "foundation": [
+        232,
+        455.5152981619339
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-028",
+          "owner": "v02:transit-pier-028",
+          "center": [
+            232,
+            48.125,
+            455.5152981619339
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              0.0,
+              454.9152981619339
+            ],
+            "max": [
+              232.6,
+              96.25,
+              456.11529816193394
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-028",
+          "owner": "v02:transit-crosshead-028",
+          "center": [
+            236.0,
+            96.95,
+            455.5152981619339
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              96.25,
+              454.9152981619339
+            ],
+            "max": [
+              240.6,
+              97.65,
+              456.11529816193394
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-028"
+        }
+      ]
+    },
+    {
+      "id": "support-029",
+      "distance": 724.8687942056438,
+      "head": [
+        240,
+        100,
+        430.51982283782394
+      ],
+      "foundation": [
+        232,
+        430.51982283782394
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-029",
+          "owner": "v02:transit-pier-029",
+          "center": [
+            232,
+            48.125,
+            430.51982283782394
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              0.0,
+              429.9198228378239
+            ],
+            "max": [
+              232.6,
+              96.25,
+              431.11982283782396
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-029",
+          "owner": "v02:transit-crosshead-029",
+          "center": [
+            236.0,
+            96.95,
+            430.51982283782394
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              96.25,
+              429.9198228378239
+            ],
+            "max": [
+              240.6,
+              97.65,
+              431.11982283782396
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-029"
+        }
+      ]
+    },
+    {
+      "id": "support-030",
+      "distance": 743.8653557089642,
+      "head": [
+        240,
+        100,
+        411.52326099633717
+      ],
+      "foundation": [
+        228,
+        411.52326099633717
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-030",
+          "owner": "v02:transit-pier-030",
+          "center": [
+            228,
+            48.125,
+            411.52326099633717
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              227.4,
+              0.0,
+              410.92326099633715
+            ],
+            "max": [
+              228.6,
+              96.25,
+              412.1232609963372
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-030",
+          "owner": "v02:transit-crosshead-030",
+          "center": [
+            234.0,
+            96.95,
+            411.52326099633717
+          ],
+          "size": [
+            13.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              227.4,
+              96.25,
+              410.92326099633715
+            ],
+            "max": [
+              240.6,
+              97.65,
+              412.1232609963372
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-030"
+        }
+      ]
+    },
+    {
+      "id": "support-031",
+      "distance": 774.859745530171,
+      "head": [
+        240,
+        100,
+        380.5288711751616
+      ],
+      "foundation": [
+        232,
+        380.5288711751616
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-031",
+          "owner": "v02:transit-pier-031",
+          "center": [
+            232,
+            48.125,
+            380.5288711751616
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              0.0,
+              379.9288711751616
+            ],
+            "max": [
+              232.6,
+              96.25,
+              381.12887117516163
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-031",
+          "owner": "v02:transit-crosshead-031",
+          "center": [
+            236.0,
+            96.95,
+            380.5288711751616
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              96.25,
+              379.9288711751616
+            ],
+            "max": [
+              240.6,
+              97.65,
+              381.12887117516163
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-031"
+        }
+      ]
+    },
+    {
+      "id": "support-032",
+      "distance": 799.8552211924346,
+      "head": [
+        240,
+        100,
+        355.5333955129237
+      ],
+      "foundation": [
+        232,
+        355.5333955129237
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-032",
+          "owner": "v02:transit-pier-032",
+          "center": [
+            232,
+            48.125,
+            355.5333955129237
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              0.0,
+              354.93339551292365
+            ],
+            "max": [
+              232.6,
+              96.25,
+              356.1333955129237
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-032",
+          "owner": "v02:transit-crosshead-032",
+          "center": [
+            236.0,
+            96.95,
+            355.5333955129237
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              96.25,
+              354.93339551292365
+            ],
+            "max": [
+              240.6,
+              97.65,
+              356.1333955129237
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-032"
+        }
+      ]
+    },
+    {
+      "id": "support-033",
+      "distance": 824.8506968546982,
+      "head": [
+        240,
+        100,
+        330.53791985065965
+      ],
+      "foundation": [
+        232,
+        330.53791985065965
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-033",
+          "owner": "v02:transit-pier-033",
+          "center": [
+            232,
+            48.125,
+            330.53791985065965
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              0.0,
+              329.9379198506596
+            ],
+            "max": [
+              232.6,
+              96.25,
+              331.13791985065967
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-033",
+          "owner": "v02:transit-crosshead-033",
+          "center": [
+            236.0,
+            96.95,
+            330.53791985065965
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              96.25,
+              329.9379198506596
+            ],
+            "max": [
+              240.6,
+              97.65,
+              331.13791985065967
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-033"
+        }
+      ]
+    },
+    {
+      "id": "support-034",
+      "distance": 849.8461725169618,
+      "head": [
+        240,
+        100,
+        305.54244418839573
+      ],
+      "foundation": [
+        232,
+        305.54244418839573
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-034",
+          "owner": "v02:transit-pier-034",
+          "center": [
+            232,
+            48.125,
+            305.54244418839573
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              0.0,
+              304.9424441883957
+            ],
+            "max": [
+              232.6,
+              96.25,
+              306.14244418839576
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-034",
+          "owner": "v02:transit-crosshead-034",
+          "center": [
+            236.0,
+            96.95,
+            305.54244418839573
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              96.25,
+              304.9424441883957
+            ],
+            "max": [
+              240.6,
+              97.65,
+              306.14244418839576
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-034"
+        }
+      ]
+    },
+    {
+      "id": "support-035",
+      "distance": 874.8416481792253,
+      "head": [
+        240,
+        100,
+        280.5469685261318
+      ],
+      "foundation": [
+        232,
+        280.5469685261318
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-035",
+          "owner": "v02:transit-pier-035",
+          "center": [
+            232,
+            48.125,
+            280.5469685261318
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              0.0,
+              279.9469685261318
+            ],
+            "max": [
+              232.6,
+              96.25,
+              281.14696852613184
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-035",
+          "owner": "v02:transit-crosshead-035",
+          "center": [
+            236.0,
+            96.95,
+            280.5469685261318
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              96.25,
+              279.9469685261318
+            ],
+            "max": [
+              240.6,
+              97.65,
+              281.14696852613184
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-035"
+        }
+      ]
+    },
+    {
+      "id": "support-036",
+      "distance": 899.8371238414888,
+      "head": [
+        240,
+        100,
+        255.55149286386845
+      ],
+      "foundation": [
+        232,
+        255.55149286386845
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-036",
+          "owner": "v02:transit-pier-036",
+          "center": [
+            232,
+            48.125,
+            255.55149286386845
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              0.0,
+              254.95149286386845
+            ],
+            "max": [
+              232.6,
+              96.25,
+              256.15149286386844
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-036",
+          "owner": "v02:transit-crosshead-036",
+          "center": [
+            236.0,
+            96.95,
+            255.55149286386845
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              96.25,
+              254.95149286386845
+            ],
+            "max": [
+              240.6,
+              97.65,
+              256.15149286386844
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-036"
+        }
+      ]
+    },
+    {
+      "id": "support-037",
+      "distance": 926.8322375567336,
+      "head": [
+        240,
+        100,
+        228.556379148625
+      ],
+      "foundation": [
+        228,
+        228.556379148625
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-037",
+          "owner": "v02:transit-pier-037",
+          "center": [
+            228,
+            48.125,
+            228.556379148625
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              227.4,
+              0.0,
+              227.95637914862502
+            ],
+            "max": [
+              228.6,
+              96.25,
+              229.156379148625
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-037",
+          "owner": "v02:transit-crosshead-037",
+          "center": [
+            234.0,
+            96.95,
+            228.556379148625
+          ],
+          "size": [
+            13.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              227.4,
+              96.25,
+              227.95637914862502
+            ],
+            "max": [
+              240.6,
+              97.65,
+              229.156379148625
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-037"
+        }
+      ]
+    },
+    {
+      "id": "support-038",
+      "distance": 949.8280751660161,
+      "head": [
+        240,
+        100,
+        205.56054153934318
+      ],
+      "foundation": [
+        232,
+        205.56054153934318
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-038",
+          "owner": "v02:transit-pier-038",
+          "center": [
+            232,
+            48.125,
+            205.56054153934318
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              0.0,
+              204.96054153934318
+            ],
+            "max": [
+              232.6,
+              96.25,
+              206.16054153934317
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-038",
+          "owner": "v02:transit-crosshead-038",
+          "center": [
+            236.0,
+            96.95,
+            205.56054153934318
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              96.25,
+              204.96054153934318
+            ],
+            "max": [
+              240.6,
+              97.65,
+              206.16054153934317
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-038"
+        }
+      ]
+    },
+    {
+      "id": "support-039",
+      "distance": 974.8235508282796,
+      "head": [
+        240,
+        100,
+        180.5650660504698
+      ],
+      "foundation": [
+        232,
+        180.5650660504698
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-039",
+          "owner": "v02:transit-pier-039",
+          "center": [
+            232,
+            48.125,
+            180.5650660504698
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              0.0,
+              179.9650660504698
+            ],
+            "max": [
+              232.6,
+              96.25,
+              181.1650660504698
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-039",
+          "owner": "v02:transit-crosshead-039",
+          "center": [
+            236.0,
+            96.95,
+            180.5650660504698
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              96.25,
+              179.9650660504698
+            ],
+            "max": [
+              240.6,
+              97.65,
+              181.1650660504698
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-039"
+        }
+      ]
+    },
+    {
+      "id": "support-040",
+      "distance": 999.8190264905433,
+      "head": [
+        240,
+        100,
+        155.5695902148168
+      ],
+      "foundation": [
+        232,
+        155.5695902148168
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-040",
+          "owner": "v02:transit-pier-040",
+          "center": [
+            232,
+            48.125,
+            155.5695902148168
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              0.0,
+              154.9695902148168
+            ],
+            "max": [
+              232.6,
+              96.25,
+              156.1695902148168
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-040",
+          "owner": "v02:transit-crosshead-040",
+          "center": [
+            236.0,
+            96.95,
+            155.5695902148168
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              96.25,
+              154.9695902148168
+            ],
+            "max": [
+              240.6,
+              97.65,
+              156.1695902148168
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-040"
+        }
+      ]
+    },
+    {
+      "id": "support-041",
+      "distance": 1024.8145021528069,
+      "head": [
+        240,
+        100,
+        130.57411455255314
+      ],
+      "foundation": [
+        232,
+        130.57411455255314
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-041",
+          "owner": "v02:transit-pier-041",
+          "center": [
+            232,
+            48.125,
+            130.57411455255314
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              0.0,
+              129.97411455255315
+            ],
+            "max": [
+              232.6,
+              96.25,
+              131.17411455255314
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-041",
+          "owner": "v02:transit-crosshead-041",
+          "center": [
+            236.0,
+            96.95,
+            130.57411455255314
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.4,
+              96.25,
+              129.97411455255315
+            ],
+            "max": [
+              240.6,
+              97.65,
+              131.17411455255314
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-041"
+        }
+      ]
+    },
+    {
+      "id": "support-042",
+      "distance": 1049.8099778150704,
+      "head": [
+        240.03440510489116,
+        100,
+        105.57886259755236
+      ],
+      "foundation": [
+        232.03440510489116,
+        105.57886259755236
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-042",
+          "owner": "v02:transit-pier-042",
+          "center": [
+            232.03440510489116,
+            48.125,
+            105.57886259755236
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.43440510489117,
+              0.0,
+              104.97886259755236
+            ],
+            "max": [
+              232.63440510489116,
+              96.25,
+              106.17886259755235
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-042",
+          "owner": "v02:transit-crosshead-042",
+          "center": [
+            236.03440510489116,
+            96.95,
+            105.57886259755236
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              231.43440510489117,
+              96.25,
+              104.97886259755236
+            ],
+            "max": [
+              240.63440510489116,
+              97.65,
+              106.17886259755235
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-042"
+        }
+      ]
+    },
+    {
+      "id": "support-043",
+      "distance": 1074.805453477334,
+      "head": [
+        229.45188788893958,
+        100,
+        84.12423190236974
+      ],
+      "foundation": [
+        221.45188788893958,
+        84.12423190236974
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-043",
+          "owner": "v02:transit-pier-043",
+          "center": [
+            221.45188788893958,
+            48.125,
+            84.12423190236974
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              220.8518878889396,
+              0.0,
+              83.52423190236975
+            ],
+            "max": [
+              222.05188788893958,
+              96.25,
+              84.72423190236974
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-043",
+          "owner": "v02:transit-crosshead-043",
+          "center": [
+            225.45188788893958,
+            96.95,
+            84.12423190236974
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              220.8518878889396,
+              96.25,
+              83.52423190236975
+            ],
+            "max": [
+              230.05188788893958,
+              97.65,
+              84.72423190236974
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-043"
+        }
+      ]
+    },
+    {
+      "id": "support-044",
+      "distance": 1099.8009291395977,
+      "head": [
+        205.28164522156015,
+        100,
+        80
+      ],
+      "foundation": [
+        197.28164522156015,
+        80
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-044",
+          "owner": "v02:transit-pier-044",
+          "center": [
+            197.28164522156015,
+            48.125,
+            80
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              196.68164522156016,
+              0.0,
+              79.4
+            ],
+            "max": [
+              197.88164522156015,
+              96.25,
+              80.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-044",
+          "owner": "v02:transit-crosshead-044",
+          "center": [
+            201.28164522156015,
+            96.95,
+            80.0
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              196.68164522156016,
+              96.25,
+              79.4
+            ],
+            "max": [
+              205.88164522156015,
+              97.65,
+              80.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-044"
+        }
+      ]
+    },
+    {
+      "id": "support-045",
+      "distance": 1124.7964048018612,
+      "head": [
+        180.2861695592964,
+        100,
+        80
+      ],
+      "foundation": [
+        172.2861695592964,
+        80
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-045",
+          "owner": "v02:transit-pier-045",
+          "center": [
+            172.2861695592964,
+            48.125,
+            80
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              171.68616955929642,
+              0.0,
+              79.4
+            ],
+            "max": [
+              172.8861695592964,
+              96.25,
+              80.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-045",
+          "owner": "v02:transit-crosshead-045",
+          "center": [
+            176.2861695592964,
+            96.95,
+            80.0
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              171.68616955929642,
+              96.25,
+              79.4
+            ],
+            "max": [
+              180.8861695592964,
+              97.65,
+              80.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-045"
+        }
+      ]
+    },
+    {
+      "id": "support-046",
+      "distance": 1149.7918804641247,
+      "head": [
+        155.29069389703304,
+        100,
+        80
+      ],
+      "foundation": [
+        147.29069389703304,
+        80
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-046",
+          "owner": "v02:transit-pier-046",
+          "center": [
+            147.29069389703304,
+            48.125,
+            80
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              146.69069389703304,
+              0.0,
+              79.4
+            ],
+            "max": [
+              147.89069389703303,
+              96.25,
+              80.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-046",
+          "owner": "v02:transit-crosshead-046",
+          "center": [
+            151.29069389703304,
+            96.95,
+            80.0
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              146.69069389703304,
+              96.25,
+              79.4
+            ],
+            "max": [
+              155.89069389703303,
+              97.65,
+              80.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-046"
+        }
+      ]
+    },
+    {
+      "id": "support-047",
+      "distance": 1174.7873561263882,
+      "head": [
+        130.2952182347698,
+        100,
+        80
+      ],
+      "foundation": [
+        122.2952182347698,
+        80
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-047",
+          "owner": "v02:transit-pier-047",
+          "center": [
+            122.2952182347698,
+            48.125,
+            80
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              121.69521823476981,
+              0.0,
+              79.4
+            ],
+            "max": [
+              122.8952182347698,
+              96.25,
+              80.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-047",
+          "owner": "v02:transit-crosshead-047",
+          "center": [
+            126.2952182347698,
+            96.95,
+            80.0
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              121.69521823476981,
+              96.25,
+              79.4
+            ],
+            "max": [
+              130.8952182347698,
+              97.65,
+              80.6
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-047"
+        }
+      ]
+    },
+    {
+      "id": "support-048",
+      "distance": 1199.782831788652,
+      "head": [
+        105.29996618643189,
+        100,
+        79.96677216114263
+      ],
+      "foundation": [
+        113.29996618643189,
+        79.96677216114263
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-048",
+          "owner": "v02:transit-pier-048",
+          "center": [
+            113.29996618643189,
+            48.125,
+            79.96677216114263
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              112.6999661864319,
+              0.0,
+              79.36677216114263
+            ],
+            "max": [
+              113.89996618643188,
+              96.25,
+              80.56677216114262
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-048",
+          "owner": "v02:transit-crosshead-048",
+          "center": [
+            109.29996618643189,
+            96.95,
+            79.96677216114263
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              104.6999661864319,
+              96.25,
+              79.36677216114263
+            ],
+            "max": [
+              113.89996618643188,
+              97.65,
+              80.56677216114262
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-048"
+        }
+      ]
+    },
+    {
+      "id": "support-049",
+      "distance": 1224.7783074509155,
+      "head": [
+        83.96924795841782,
+        100,
+        90.77999764666998
+      ],
+      "foundation": [
+        91.96924795841782,
+        90.77999764666998
+      ],
+      "existingColumn": null,
+      "records": [
+        {
+          "id": "transit-pier-049",
+          "owner": "v02:transit-pier-049",
+          "center": [
+            91.96924795841782,
+            48.125,
+            90.77999764666998
+          ],
+          "size": [
+            1.2,
+            96.25,
+            1.2
+          ],
+          "box": {
+            "min": [
+              91.36924795841783,
+              0.0,
+              90.17999764666999
+            ],
+            "max": [
+              92.56924795841782,
+              96.25,
+              91.37999764666998
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "foundation to crosshead underside"
+        },
+        {
+          "id": "transit-crosshead-049",
+          "owner": "v02:transit-crosshead-049",
+          "center": [
+            87.96924795841782,
+            96.95,
+            90.77999764666998
+          ],
+          "size": [
+            9.2,
+            1.4,
+            1.2
+          ],
+          "box": {
+            "min": [
+              83.36924795841783,
+              96.25,
+              90.17999764666999
+            ],
+            "max": [
+              92.56924795841782,
+              97.65,
+              91.37999764666998
+            ]
+          },
+          "material": "steel",
+          "solid": true,
+          "walkable": false,
+          "collection": "SM_V02_TRANSIT_STRUCTURES",
+          "role": "box girder connection",
+          "supportParent": "transit-pier-049"
+        }
+      ]
+    }
+  ],
+  "maximumSupportSpacing": 34.99366592716902,
+  "unresolvedSpans": [],
+  "roadVehicleEnvelopeSamples": 26494,
+  "pedestrianEnvelopeSegments": 472,
+  "acceptedBodySamples": 190010,
+  "rejectionCounts": {
+    "foundation:pedestrian": 15,
+    "foundation:accepted-body": 1,
+    "foundation:vehicle": 383,
+    "foundation:V2-BR-M1": 8,
+    "foundation:momentum-landing": 15,
+    "foundation:service-yard": 58,
+    "foundation:gallery-E-24-326": 5,
+    "foundation:V2-BR-L2": 15,
+    "foundation:suspended-market": 25,
+    "foundation:gallery-E-24-350": 1,
+    "foundation:station-stair-weather-east-1": 1,
+    "foundation:gallery-E-24-400": 13,
+    "foundation:gallery-W-24-400": 5,
+    "foundation:V2-BR-H2": 26,
+    "foundation:gallery-E-24-376": 4,
+    "foundation:endpad-E-24-430": 2
+  },
+  "limitations": [
+    "Preflight only: independent exported mesh, train sweep and native route checks required.",
+    "Continuous longitudinal girder and station platform are authored separately.",
+    "No structural load or foundation soil certification is implied."
+  ]
+}

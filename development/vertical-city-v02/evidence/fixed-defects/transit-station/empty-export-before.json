@@ -1,0 +1,21 @@
+{
+  "status": "FAIL",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT_STATION.html",
+  "manifest": "assets/city/vertical-v02/transit-world/manifest.json",
+  "scope": "Local public station approach, full waiting platform return and real guard/screen contact. Single initial station fixture; not a full street-to-station route or train boarding acceptance.",
+  "results": [],
+  "captures": [],
+  "errors": [
+    "V02 graybox Error: V02 Blender/game coordinate mismatch\n    at Object.build (http://127.0.0.1:8766/SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT_STATION.html?capture=backspool:11418:44)"
+  ],
+  "hashes": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT_STATION.html": "b96967c97064d9f549e92aa599ed140a2a99e7c0c8e08f0c118c55eb35e3cba1",
+    "assets/city/vertical-v02/transit-world/manifest.json": "46336651fa63ff72204cbf164639b888e00c6d829fa5bc36d9ec7eb71b64760e",
+    "scripts/game_vertical_transit_v02.js": "0403f887673e0008f7e493a916bcbc8502794978f048b2e8ca806fe5de731ecb",
+    "scripts/vertical_transit_core_v02.js": "75b8e9f71b7853f586f42b5d2b031140a7851711d8f05646ba9de57ab3a88353"
+  },
+  "failure": "TimeoutError: page.waitForFunction: Timeout 120000ms exceeded.",
+  "traceFrames": 0,
+  "originalSummarySHA256": "c50e5830eec474bbb8f4e975b3ad117e0425455935b8656edefb5c94cdb703cd",
+  "archiveNote": "Original failure summary and screenshot preserved. Zero simulation frames. The original empty trace sidecar was replaced during rerun and is not claimed as archived evidence."
+}
