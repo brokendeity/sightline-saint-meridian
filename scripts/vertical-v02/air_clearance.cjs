@@ -1,0 +1,10 @@
+/* Full 3D OBB SAT and spatially filtered source-world queries. */
+const THREE=require('../vendor/three-r128.js');
+function orientedBox(min,max,position,quaternion){const h=new THREE.Vector3(...max).sub(new THREE.Vector3(...min)).multiplyScalar(.5),c=new THREE.Vector3(...min).add(new THREE.Vector3(...max)).multiplyScalar(.5).applyQuaternion(quaternion).add(position),axes=[[1,0,0],[0,1,0],[0,0,1]].map(a=>new THREE.Vector3(...a).applyQuaternion(quaternion)),extent=new THREE.Vector3();for(let k=0;k<3;k++)extent.addScaledVector(new THREE.Vector3(Math.abs(axes[k].x),Math.abs(axes[k].y),Math.abs(axes[k].z)),h.getComponent(k));return{c,h,axes,box:new THREE.Box3(c.clone().sub(extent),c.clone().add(extent))};}
+function separation(a,b){let maximum=-Infinity;const delta=b.c.clone().sub(a.c),axes=[...a.axes,...b.axes];for(const x of a.axes)for(const y of b.axes){const cross=new THREE.Vector3().crossVectors(x,y);if(cross.lengthSq()>1e-10)axes.push(cross.normalize());}for(const axis of axes){let radius=0;for(let k=0;k<3;k++)radius+=Math.abs(a.axes[k].dot(axis))*a.h.getComponent(k)+Math.abs(b.axes[k].dot(axis))*b.h.getComponent(k);maximum=Math.max(maximum,Math.abs(delta.dot(axis))-radius);}return maximum;}
+function worldIndex(world,manifest){const obstacles=world.buildings.flatMap(b=>b.parts.map(p=>({id:p.id,box:p.box}))).concat(world.props.filter(p=>p.type!=='vertical-structure').map(p=>({id:p.id,box:p.box})),manifest.records.map(r=>({id:r.id,box:r.box}))),grid=new Map(),CELL=24;
+ function cells(box,fn){for(let x=Math.floor(box.min.x/CELL);x<=Math.floor(box.max.x/CELL);x++)for(let y=Math.floor(box.min.y/CELL);y<=Math.floor(box.max.y/CELL);y++)for(let z=Math.floor(box.min.z/CELL);z<=Math.floor(box.max.z/CELL);z++)fn(x+','+y+','+z);}
+ for(const o of obstacles){o.obb=orientedBox(o.box.min,o.box.max,new THREE.Vector3(),new THREE.Quaternion());cells(o.obb.box,key=>{if(!grid.has(key))grid.set(key,[]);grid.get(key).push(o)});}
+ return{obstacles,nearby:box=>{const found=new Set();cells(box,key=>{for(const o of grid.get(key)||[])if(o.obb.box.intersectsBox(box))found.add(o);});return found;}};
+}
+module.exports={orientedBox,separation,worldIndex};

@@ -1,0 +1,24 @@
+{
+  "status": "PASS scenic flow controller only",
+  "definitionSHA256": "10e1aeb641e2d9249f62373c8c52755f3b89f7c996077c38510bed5599c4e571",
+  "coreSHA256": "e518c60772284ec255757bca341a3c4a420d095baa10011e38426d621e70e811",
+  "cases": [
+    {
+      "name": "600s varied-speed flow: full loops, bounded braking and no overlapping aircraft",
+      "pass": true,
+      "minimumGap": 15.663606345792687,
+      "maximumBankRadians": 0.20067810631164934,
+      "maxAcceleration": 1.600000000000037,
+      "minimumPairSeparation": 8.488568829042404
+    },
+    {
+      "name": "pause freezes every vehicle, bank and clock",
+      "pass": true
+    },
+    {
+      "name": "equivalent frame partitions retain the same traffic positions",
+      "pass": true
+    }
+  ],
+  "scope": "Pure motion/spacing tests, not native rendering or complete city performance acceptance."
+}

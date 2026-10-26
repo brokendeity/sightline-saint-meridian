@@ -1,0 +1,4024 @@
+{
+  "status": "PASS local public station walking and boundary contacts",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_WORLD_LIFE.html",
+  "manifest": "assets/city/vertical-v02/transit-world/manifest.json",
+  "scope": "Local public station approach, full waiting platform return and real guard/screen contact. Single initial station fixture; not a full street-to-station route or train boarding acceptance.",
+  "results": [
+    {
+      "target": [
+        73,
+        100,
+        385.4
+      ],
+      "frames": 62,
+      "seconds": 1.0333333333333334,
+      "pass": true
+    },
+    {
+      "target": [
+        76.55,
+        100,
+        385.4
+      ],
+      "frames": 62,
+      "seconds": 1.0333333333333334,
+      "pass": true
+    },
+    {
+      "target": [
+        76.55,
+        100,
+        405
+      ],
+      "frames": 209,
+      "seconds": 3.4833333333333334,
+      "pass": true
+    },
+    {
+      "target": [
+        76.55,
+        100,
+        405
+      ],
+      "frames": 31,
+      "seconds": 0.5166666666666667,
+      "pass": true
+    },
+    {
+      "target": [
+        76.55,
+        100,
+        352
+      ],
+      "frames": 512,
+      "seconds": 8.533333333333333,
+      "pass": true
+    },
+    {
+      "target": [
+        76.55,
+        100,
+        385.4
+      ],
+      "frames": 332,
+      "seconds": 5.533333333333333,
+      "pass": true
+    },
+    {
+      "target": [
+        73,
+        100,
+        385.4
+      ],
+      "frames": 62,
+      "seconds": 1.0333333333333334,
+      "pass": true
+    },
+    {
+      "target": [
+        73,
+        100,
+        383
+      ],
+      "frames": 53,
+      "seconds": 0.8833333333333333,
+      "pass": true
+    },
+    {
+      "target": [
+        73,
+        100,
+        383
+      ],
+      "frames": 36,
+      "seconds": 0.6,
+      "pass": true
+    },
+    {
+      "target": [
+        73,
+        100,
+        385.4
+      ],
+      "frames": 53,
+      "seconds": 0.8833333333333333,
+      "pass": true
+    },
+    {
+      "target": [
+        73,
+        100,
+        382
+      ],
+      "frames": 60,
+      "seconds": 1,
+      "pass": true
+    }
+  ],
+  "captures": [
+    {
+      "file": "evidence/world-life-station/north-platform.png",
+      "scope": "Actual third-person player camera"
+    },
+    {
+      "file": "evidence/world-life-station/south-platform.png",
+      "scope": "Actual third-person player camera"
+    },
+    {
+      "file": "evidence/world-life-station/concourse-return.png",
+      "scope": "Actual third-person player camera"
+    },
+    {
+      "file": "evidence/world-life-station/structure-inspection.png",
+      "scope": "Explicit camera-only station/track inspection"
+    }
+  ],
+  "errors": [],
+  "hashes": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_WORLD_LIFE.html": "1f739d8e9dd53892988a9d67d3b18cafd175dc5b5d114f5bffb8b886b73ed296",
+    "assets/city/vertical-v02/transit-world/manifest.json": "b30986c9d6f82f7680885cea47760cfde4b69cabed629dc6863173dc4b21a37b",
+    "scripts/game_vertical_transit_v02.js": "0403f887673e0008f7e493a916bcbc8502794978f048b2e8ca806fe5de731ecb",
+    "scripts/vertical_transit_core_v02.js": "75b8e9f71b7853f586f42b5d2b031140a7851711d8f05646ba9de57ab3a88353",
+    "scripts/game_vertical_world_life_v02.js": "08561d9ce00f53fb9d0b13dd7324639c2389cf5a7e1422512fd1dada07a28639",
+    "scripts/game_aerial_traffic_core_v02.js": "e518c60772284ec255757bca341a3c4a420d095baa10011e38426d621e70e811",
+    "assets/city/vertical-v02/world-life/air_routes.json": "10e1aeb641e2d9249f62373c8c52755f3b89f7c996077c38510bed5599c4e571",
+    "assets/city/vertical-v02/world-life/air_assets.json": "9a51757f1496492eaf522116dde3d6580a8be8104583c0c5715d33524c095356",
+    "assets/city/vertical-v02/world-life/ambient_routes.json": "20a988d28c9a5db2a8760177c6aa2a7bd6e65aa0a8b527cb6b40c392ae5b5140"
+  },
+  "setup": {
+    "position": [
+      73,
+      100.42,
+      382
+    ],
+    "equipment": {
+      "cartridgeAsset": {
+        "ready": true,
+        "error": null,
+        "sourceTask": "b71871c5-e9e6-4e89-b6f7-723182ab3c8e",
+        "diameter": 0.12,
+        "thickness": 0.03,
+        "dt": 0,
+        "modelBounds": [
+          0.081000001810248,
+          0.024879999546101317,
+          0.08100000445693827
+        ],
+        "count": 0,
+        "instances": []
+      },
+      "whipCast": {
+        "ready": true,
+        "error": null,
+        "active": null,
+        "sourceAnimationId": "0x2811be99",
+        "releaseTiming": "authored"
+      },
+      "snapback": {
+        "bank": null,
+        "clock": 0,
+        "reason": "INPUT RESET",
+        "distance": 0,
+        "tension": 0,
+        "remaining": 0,
+        "events": []
+      },
+      "surf": {
+        "active": false,
+        "railId": null,
+        "phase": "off",
+        "age": 0,
+        "speed": 0,
+        "lean": 0,
+        "crouch": 0,
+        "compression": 0,
+        "source": "0x2811926e",
+        "provenance": "authored slide-derived posture",
+        "offsets": {
+          "spinePitch": 0,
+          "spineRoll": 0,
+          "knee": 0,
+          "armBalance": 0.06
+        }
+      },
+      "mastery": {
+        "rails": [],
+        "lastCatch": null,
+        "lastPop": null,
+        "style": 0,
+        "events": []
+      },
+      "deployment": {
+        "clock": 0,
+        "status": "INPUT RESET",
+        "tensionAt": null,
+        "tensionProgress": 0,
+        "shots": [],
+        "events": []
+      },
+      "motion": {
+        "position": {
+          "x": 73,
+          "y": 100.42,
+          "z": 382
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "grounded": true,
+        "mode": "GROUND",
+        "flow": null,
+        "advanced": null,
+        "sourcePose": null,
+        "contact": {
+          "policy": "sole",
+          "correction": 0,
+          "support": 100.42
+        }
+      },
+      "camera": {
+        "mode": "exploration",
+        "clock": 0,
+        "manualRemaining": 0,
+        "releaseRemaining": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "composition": null
+      },
+      "afterimages": {
+        "bound": false,
+        "disposed": false,
+        "sourceVertices": 0,
+        "sourceIndices": 0,
+        "capacity": 3,
+        "poolCapacity": 4,
+        "history": 0,
+        "config": {
+          "quality": "high",
+          "maxShards": 96,
+          "shardCount": 48,
+          "shardSize": 1,
+          "shardOpacity": 0.25,
+          "shardSpeed": 5.5,
+          "shardLifetime": 0.68,
+          "shardRotation": 0.7,
+          "violetBalance": 0.28,
+          "outlineBrightness": 1.3,
+          "afterimageCount": 3,
+          "afterimageOpacity": 0.22,
+          "afterimageSpacing": 0.85,
+          "afterimageFade": 0.55,
+          "outletBrightness": 1.3,
+          "intensity": 1,
+          "trailLength": 7
+        },
+        "active": 0,
+        "activeKinds": [],
+        "footCapacity": 8,
+        "footprints": 0,
+        "pending": 0,
+        "drawCalls": 0,
+        "maxDrawCalls": 2,
+        "captures": 0,
+        "peakCaptureMs": 0,
+        "last": {
+          "kind": "reset",
+          "reason": "INPUT RESET"
+        }
+      },
+      "lastFailure": null,
+      "impulses": [],
+      "releaseEvents": [],
+      "movementReady": true,
+      "hero": "backspool",
+      "clock": 0,
+      "owner": {
+        "frame": 0,
+        "owner": null,
+        "reason": null,
+        "conflicts": 0,
+        "commits": 0
+      },
+      "sprint": false,
+      "preset": "traversal",
+      "mode": "auto",
+      "wheel": false,
+      "drive": {
+        "now": 0,
+        "strain": 0,
+        "capacity": 5,
+        "bank": [],
+        "lastBeat": null,
+        "lastRelease": null,
+        "doubleStep": null,
+        "eventSequence": 0,
+        "reason": "CONTROLLER DISCONNECTED"
+      },
+      "rail": {
+        "time": 0,
+        "anchors": [],
+        "rails": [],
+        "current": null,
+        "events": [
+          {
+            "id": 4,
+            "type": "reset",
+            "time": 0,
+            "reason": "CONTROLLER DISCONNECTED"
+          }
+        ],
+        "lastReason": "CONTROLLER DISCONNECTED",
+        "limits": {
+          "minSpan": 6,
+          "maxSpan": 100,
+          "maxSlope": 55,
+          "maxRails": 4,
+          "maxAnchors": 8,
+          "lifetime": 30,
+          "attachReach": 2,
+          "transferReach": 3,
+          "maxSpeed": 28,
+          "gravity": 9.81,
+          "friction": 0.45,
+          "junctionAngle": 75,
+          "jumpImpulse": 4.8,
+          "slingshotImpulse": 6.5
+        }
+      },
+      "route": {
+        "status": "empty",
+        "reason": "INPUT RESET",
+        "time": 0,
+        "route": null,
+        "recording": null,
+        "token": null,
+        "reservedIds": [],
+        "consumedIds": [],
+        "actionIndex": 0,
+        "counters": {
+          "recordings": 0,
+          "replays": 0,
+          "completed": 0,
+          "interrupted": 0,
+          "executed": 0,
+          "rejectedActions": 0
+        },
+        "limits": {
+          "maxSeconds": 4,
+          "maxActions": 8,
+          "maxSamples": 120,
+          "reconnectDistance": 1.35,
+          "maxDeviation": 1.5
+        },
+        "nextIds": {
+          "route": 1,
+          "action": 1,
+          "trace": 1,
+          "replay": 1
+        }
+      },
+      "exhaust": {
+        "bound": false,
+        "source": "unbound",
+        "enabled": true,
+        "disposed": false,
+        "outletPosition": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "outlets": [
+          {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        ],
+        "outletOffsetMeters": {
+          "x": 0,
+          "y": -0.02,
+          "z": -0.19
+        },
+        "emissionDirection": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "activeCounts": {
+          "slivers": 0,
+          "rings": 0,
+          "threads": 0,
+          "slices": 0
+        },
+        "capacities": {
+          "slivers": 96,
+          "rings": 24,
+          "threads": 64,
+          "slices": 12
+        },
+        "activeTotal": 0,
+        "visibleDrawCalls": 0,
+        "maxDrawCalls": 3,
+        "lastRelease": null,
+        "lastBank": null,
+        "lastReset": "INPUT RESET",
+        "emitted": 0,
+        "overwritten": 0,
+        "flash": 0,
+        "config": {
+          "quality": "high",
+          "maxShards": 96,
+          "shardCount": 48,
+          "shardSize": 1,
+          "shardOpacity": 0.25,
+          "shardSpeed": 5.5,
+          "shardLifetime": 0.68,
+          "shardRotation": 0.7,
+          "violetBalance": 0.28,
+          "outlineBrightness": 1.3,
+          "afterimageCount": 3,
+          "afterimageOpacity": 0.22,
+          "afterimageSpacing": 0.85,
+          "afterimageFade": 0.55,
+          "outletBrightness": 1.3,
+          "intensity": 1,
+          "trailLength": 7
+        },
+        "refraction": {
+          "supported": null,
+          "remaining": 0,
+          "captureCount": 0,
+          "rect": null,
+          "textureSize": 128
+        }
+      },
+      "precision": false,
+      "pendingAnchor": null,
+      "lastMessage": "",
+      "course": null,
+      "activeAnimation": "forspoken-flow-idle",
+      "animationTime": 0,
+      "contactEvents": []
+    }
+  },
+  "loaded": {
+    "ready": true,
+    "error": null,
+    "phase": "detailed-architecture",
+    "pilot": false,
+    "records": 11251,
+    "chunks": 63,
+    "collisions": 7012,
+    "coordinateFailures": [],
+    "stepPasses": 0,
+    "paths": {
+      "V2-VT-A": {
+        "segments": [
+          {
+            "from": 0,
+            "to": 24,
+            "points": [
+              [
+                61,
+                0,
+                215.5
+              ],
+              [
+                61,
+                0,
+                215.5
+              ],
+              [
+                61,
+                3,
+                224.62
+              ],
+              [
+                67,
+                3,
+                224.62
+              ],
+              [
+                67,
+                3,
+                224.62
+              ],
+              [
+                67,
+                6,
+                215.5
+              ],
+              [
+                61,
+                6,
+                215.5
+              ],
+              [
+                61,
+                6,
+                215.5
+              ],
+              [
+                61,
+                9,
+                224.62
+              ],
+              [
+                67,
+                9,
+                224.62
+              ],
+              [
+                67,
+                9,
+                224.62
+              ],
+              [
+                67,
+                12,
+                215.5
+              ],
+              [
+                61,
+                12,
+                215.5
+              ],
+              [
+                61,
+                12,
+                215.5
+              ],
+              [
+                61,
+                15,
+                224.62
+              ],
+              [
+                67,
+                15,
+                224.62
+              ],
+              [
+                67,
+                15,
+                224.62
+              ],
+              [
+                67,
+                18,
+                215.5
+              ],
+              [
+                61,
+                18,
+                215.5
+              ],
+              [
+                61,
+                18,
+                215.5
+              ],
+              [
+                61,
+                21,
+                224.62
+              ],
+              [
+                67,
+                21,
+                224.62
+              ],
+              [
+                67,
+                21,
+                224.62
+              ],
+              [
+                67,
+                24,
+                215.5
+              ],
+              [
+                61,
+                24,
+                215.5
+              ],
+              [
+                61,
+                24,
+                215.5
+              ]
+            ]
+          },
+          {
+            "from": 24,
+            "to": 52,
+            "points": [
+              [
+                61,
+                24,
+                215.5
+              ],
+              [
+                61,
+                24,
+                215.5
+              ],
+              [
+                61,
+                27.11111111111111,
+                224.98
+              ],
+              [
+                67,
+                27.11111111111111,
+                224.98
+              ],
+              [
+                67,
+                27.11111111111111,
+                224.98
+              ],
+              [
+                67,
+                30.22222222222222,
+                215.5
+              ],
+              [
+                61,
+                30.22222222222222,
+                215.5
+              ],
+              [
+                61,
+                30.22222222222222,
+                215.5
+              ],
+              [
+                61,
+                33.333333333333336,
+                224.98
+              ],
+              [
+                67,
+                33.333333333333336,
+                224.98
+              ],
+              [
+                67,
+                33.333333333333336,
+                224.98
+              ],
+              [
+                67,
+                36.44444444444445,
+                215.5
+              ],
+              [
+                61,
+                36.44444444444445,
+                215.5
+              ],
+              [
+                61,
+                36.44444444444444,
+                215.5
+              ],
+              [
+                61,
+                39.55555555555556,
+                224.98
+              ],
+              [
+                67,
+                39.55555555555556,
+                224.98
+              ],
+              [
+                67,
+                39.55555555555556,
+                224.98
+              ],
+              [
+                67,
+                42.66666666666667,
+                215.5
+              ],
+              [
+                61,
+                42.66666666666667,
+                215.5
+              ],
+              [
+                61,
+                42.66666666666667,
+                215.5
+              ],
+              [
+                61,
+                45.777777777777786,
+                224.98
+              ],
+              [
+                67,
+                45.777777777777786,
+                224.98
+              ],
+              [
+                67,
+                45.77777777777778,
+                224.98
+              ],
+              [
+                67,
+                48.88888888888889,
+                215.5
+              ],
+              [
+                61,
+                48.88888888888889,
+                215.5
+              ],
+              [
+                61,
+                48.888888888888886,
+                215.5
+              ],
+              [
+                61,
+                52,
+                224.98
+              ],
+              [
+                67,
+                52,
+                224.98
+              ],
+              [
+                70.2,
+                52,
+                224.98
+              ],
+              [
+                70.2,
+                52,
+                215.5
+              ],
+              [
+                61,
+                52,
+                215.5
+              ],
+              [
+                61,
+                52,
+                215.5
+              ]
+            ]
+          },
+          {
+            "from": 52,
+            "to": 84,
+            "points": [
+              [
+                61,
+                52,
+                215.5
+              ],
+              [
+                61,
+                52,
+                215.5
+              ],
+              [
+                61,
+                55.2,
+                224.98
+              ],
+              [
+                67,
+                55.2,
+                224.98
+              ],
+              [
+                67,
+                55.2,
+                224.98
+              ],
+              [
+                67,
+                58.400000000000006,
+                215.5
+              ],
+              [
+                61,
+                58.400000000000006,
+                215.5
+              ],
+              [
+                61,
+                58.4,
+                215.5
+              ],
+              [
+                61,
+                61.6,
+                224.98
+              ],
+              [
+                67,
+                61.6,
+                224.98
+              ],
+              [
+                67,
+                61.6,
+                224.98
+              ],
+              [
+                67,
+                64.8,
+                215.5
+              ],
+              [
+                61,
+                64.8,
+                215.5
+              ],
+              [
+                61,
+                64.8,
+                215.5
+              ],
+              [
+                61,
+                68,
+                224.98
+              ],
+              [
+                67,
+                68,
+                224.98
+              ],
+              [
+                67,
+                68,
+                224.98
+              ],
+              [
+                67,
+                71.2,
+                215.5
+              ],
+              [
+                61,
+                71.2,
+                215.5
+              ],
+              [
+                61,
+                71.2,
+                215.5
+              ],
+              [
+                61,
+                74.4,
+                224.98
+              ],
+              [
+                67,
+                74.4,
+                224.98
+              ],
+              [
+                67,
+                74.4,
+                224.98
+              ],
+              [
+                67,
+                77.60000000000001,
+                215.5
+              ],
+              [
+                61,
+                77.60000000000001,
+                215.5
+              ],
+              [
+                61,
+                77.6,
+                215.5
+              ],
+              [
+                61,
+                80.8,
+                224.98
+              ],
+              [
+                67,
+                80.8,
+                224.98
+              ],
+              [
+                67,
+                80.8,
+                224.98
+              ],
+              [
+                67,
+                84,
+                215.5
+              ],
+              [
+                61,
+                84,
+                215.5
+              ],
+              [
+                61,
+                84,
+                215.5
+              ]
+            ]
+          }
+        ],
+        "endHeight": 84
+      },
+      "V2-VT-B": {
+        "segments": [
+          {
+            "from": 0,
+            "to": 24,
+            "points": [
+              [
+                100,
+                0,
+                409.5
+              ],
+              [
+                100,
+                0,
+                409.5
+              ],
+              [
+                100,
+                3,
+                418.62
+              ],
+              [
+                106,
+                3,
+                418.62
+              ],
+              [
+                106,
+                3,
+                418.62
+              ],
+              [
+                106,
+                6,
+                409.5
+              ],
+              [
+                100,
+                6,
+                409.5
+              ],
+              [
+                100,
+                6,
+                409.5
+              ],
+              [
+                100,
+                9,
+                418.62
+              ],
+              [
+                106,
+                9,
+                418.62
+              ],
+              [
+                106,
+                9,
+                418.62
+              ],
+              [
+                106,
+                12,
+                409.5
+              ],
+              [
+                100,
+                12,
+                409.5
+              ],
+              [
+                100,
+                12,
+                409.5
+              ],
+              [
+                100,
+                15,
+                418.62
+              ],
+              [
+                106,
+                15,
+                418.62
+              ],
+              [
+                106,
+                15,
+                418.62
+              ],
+              [
+                106,
+                18,
+                409.5
+              ],
+              [
+                100,
+                18,
+                409.5
+              ],
+              [
+                100,
+                18,
+                409.5
+              ],
+              [
+                100,
+                21,
+                418.62
+              ],
+              [
+                106,
+                21,
+                418.62
+              ],
+              [
+                106,
+                21,
+                418.62
+              ],
+              [
+                106,
+                24,
+                409.5
+              ],
+              [
+                100,
+                24,
+                409.5
+              ],
+              [
+                100,
+                24,
+                409.5
+              ]
+            ]
+          },
+          {
+            "from": 24,
+            "to": 52,
+            "points": [
+              [
+                100,
+                24,
+                409.5
+              ],
+              [
+                100,
+                24,
+                409.5
+              ],
+              [
+                100,
+                27.11111111111111,
+                418.98
+              ],
+              [
+                106,
+                27.11111111111111,
+                418.98
+              ],
+              [
+                106,
+                27.11111111111111,
+                418.98
+              ],
+              [
+                106,
+                30.22222222222222,
+                409.5
+              ],
+              [
+                100,
+                30.22222222222222,
+                409.5
+              ],
+              [
+                100,
+                30.22222222222222,
+                409.5
+              ],
+              [
+                100,
+                33.333333333333336,
+                418.98
+              ],
+              [
+                106,
+                33.333333333333336,
+                418.98
+              ],
+              [
+                106,
+                33.333333333333336,
+                418.98
+              ],
+              [
+                106,
+                36.44444444444445,
+                409.5
+              ],
+              [
+                100,
+                36.44444444444445,
+                409.5
+              ],
+              [
+                100,
+                36.44444444444444,
+                409.5
+              ],
+              [
+                100,
+                39.55555555555556,
+                418.98
+              ],
+              [
+                106,
+                39.55555555555556,
+                418.98
+              ],
+              [
+                106,
+                39.55555555555556,
+                418.98
+              ],
+              [
+                106,
+                42.66666666666667,
+                409.5
+              ],
+              [
+                100,
+                42.66666666666667,
+                409.5
+              ],
+              [
+                100,
+                42.66666666666667,
+                409.5
+              ],
+              [
+                100,
+                45.777777777777786,
+                418.98
+              ],
+              [
+                106,
+                45.777777777777786,
+                418.98
+              ],
+              [
+                106,
+                45.77777777777778,
+                418.98
+              ],
+              [
+                106,
+                48.88888888888889,
+                409.5
+              ],
+              [
+                100,
+                48.88888888888889,
+                409.5
+              ],
+              [
+                100,
+                48.888888888888886,
+                409.5
+              ],
+              [
+                100,
+                52,
+                418.98
+              ],
+              [
+                106,
+                52,
+                418.98
+              ],
+              [
+                109.2,
+                52,
+                418.98
+              ],
+              [
+                109.2,
+                52,
+                409.5
+              ],
+              [
+                100,
+                52,
+                409.5
+              ],
+              [
+                100,
+                52,
+                409.5
+              ]
+            ]
+          },
+          {
+            "from": 52,
+            "to": 84,
+            "points": [
+              [
+                100,
+                52,
+                409.5
+              ],
+              [
+                100,
+                52,
+                409.5
+              ],
+              [
+                100,
+                55.2,
+                418.98
+              ],
+              [
+                106,
+                55.2,
+                418.98
+              ],
+              [
+                106,
+                55.2,
+                418.98
+              ],
+              [
+                106,
+                58.400000000000006,
+                409.5
+              ],
+              [
+                100,
+                58.400000000000006,
+                409.5
+              ],
+              [
+                100,
+                58.4,
+                409.5
+              ],
+              [
+                100,
+                61.6,
+                418.98
+              ],
+              [
+                106,
+                61.6,
+                418.98
+              ],
+              [
+                106,
+                61.6,
+                418.98
+              ],
+              [
+                106,
+                64.8,
+                409.5
+              ],
+              [
+                100,
+                64.8,
+                409.5
+              ],
+              [
+                100,
+                64.8,
+                409.5
+              ],
+              [
+                100,
+                68,
+                418.98
+              ],
+              [
+                106,
+                68,
+                418.98
+              ],
+              [
+                106,
+                68,
+                418.98
+              ],
+              [
+                106,
+                71.2,
+                409.5
+              ],
+              [
+                100,
+                71.2,
+                409.5
+              ],
+              [
+                100,
+                71.2,
+                409.5
+              ],
+              [
+                100,
+                74.4,
+                418.98
+              ],
+              [
+                106,
+                74.4,
+                418.98
+              ],
+              [
+                106,
+                74.4,
+                418.98
+              ],
+              [
+                106,
+                77.60000000000001,
+                409.5
+              ],
+              [
+                100,
+                77.60000000000001,
+                409.5
+              ],
+              [
+                100,
+                77.6,
+                409.5
+              ],
+              [
+                100,
+                80.8,
+                418.98
+              ],
+              [
+                106,
+                80.8,
+                418.98
+              ],
+              [
+                106,
+                80.8,
+                418.98
+              ],
+              [
+                106,
+                84,
+                409.5
+              ],
+              [
+                100,
+                84,
+                409.5
+              ],
+              [
+                100,
+                84,
+                409.5
+              ]
+            ]
+          },
+          {
+            "from": 84,
+            "to": 128,
+            "points": [
+              [
+                100,
+                84,
+                409.5
+              ],
+              [
+                100,
+                84,
+                409.5
+              ],
+              [
+                100,
+                87.14285714285714,
+                418.98
+              ],
+              [
+                106,
+                87.14285714285714,
+                418.98
+              ],
+              [
+                106,
+                87.14285714285714,
+                418.98
+              ],
+              [
+                106,
+                90.28571428571428,
+                409.5
+              ],
+              [
+                100,
+                90.28571428571428,
+                409.5
+              ],
+              [
+                100,
+                90.28571428571429,
+                409.5
+              ],
+              [
+                100,
+                93.42857142857143,
+                418.98
+              ],
+              [
+                106,
+                93.42857142857143,
+                418.98
+              ],
+              [
+                106,
+                93.42857142857143,
+                418.98
+              ],
+              [
+                106,
+                96.57142857142857,
+                409.5
+              ],
+              [
+                100,
+                96.57142857142857,
+                409.5
+              ],
+              [
+                100,
+                96.57142857142857,
+                409.5
+              ],
+              [
+                100,
+                99.71428571428571,
+                418.98
+              ],
+              [
+                106,
+                99.71428571428571,
+                418.98
+              ],
+              [
+                106,
+                99.71428571428571,
+                418.98
+              ],
+              [
+                106,
+                102.85714285714285,
+                409.5
+              ],
+              [
+                100,
+                102.85714285714285,
+                409.5
+              ],
+              [
+                100,
+                102.85714285714286,
+                409.5
+              ],
+              [
+                100,
+                106,
+                418.98
+              ],
+              [
+                106,
+                106,
+                418.98
+              ],
+              [
+                106,
+                106,
+                418.98
+              ],
+              [
+                106,
+                109.14285714285714,
+                409.5
+              ],
+              [
+                100,
+                109.14285714285714,
+                409.5
+              ],
+              [
+                100,
+                109.14285714285714,
+                409.5
+              ],
+              [
+                100,
+                112.28571428571428,
+                418.98
+              ],
+              [
+                106,
+                112.28571428571428,
+                418.98
+              ],
+              [
+                106,
+                112.28571428571428,
+                418.98
+              ],
+              [
+                106,
+                115.42857142857142,
+                409.5
+              ],
+              [
+                100,
+                115.42857142857142,
+                409.5
+              ],
+              [
+                100,
+                115.42857142857143,
+                409.5
+              ],
+              [
+                100,
+                118.57142857142857,
+                418.98
+              ],
+              [
+                106,
+                118.57142857142857,
+                418.98
+              ],
+              [
+                106,
+                118.57142857142857,
+                418.98
+              ],
+              [
+                106,
+                121.71428571428571,
+                409.5
+              ],
+              [
+                100,
+                121.71428571428571,
+                409.5
+              ],
+              [
+                100,
+                121.71428571428572,
+                409.5
+              ],
+              [
+                100,
+                124.85714285714286,
+                418.98
+              ],
+              [
+                106,
+                124.85714285714286,
+                418.98
+              ],
+              [
+                106,
+                124.85714285714286,
+                418.98
+              ],
+              [
+                106,
+                128,
+                409.5
+              ],
+              [
+                100,
+                128,
+                409.5
+              ],
+              [
+                100,
+                128,
+                409.5
+              ]
+            ]
+          }
+        ],
+        "endHeight": 128
+      },
+      "V2-VT-C": {
+        "segments": [
+          {
+            "from": 84,
+            "to": 100,
+            "points": [
+              [
+                61,
+                84,
+                375.5
+              ],
+              [
+                61,
+                84,
+                375.5
+              ],
+              [
+                61,
+                87.2,
+                384.98
+              ],
+              [
+                67,
+                87.2,
+                384.98
+              ],
+              [
+                67,
+                87.2,
+                384.98
+              ],
+              [
+                67,
+                90.4,
+                375.5
+              ],
+              [
+                61,
+                90.4,
+                375.5
+              ],
+              [
+                61,
+                90.4,
+                375.5
+              ],
+              [
+                61,
+                93.60000000000001,
+                384.98
+              ],
+              [
+                67,
+                93.60000000000001,
+                384.98
+              ],
+              [
+                67,
+                93.6,
+                384.98
+              ],
+              [
+                67,
+                96.8,
+                375.5
+              ],
+              [
+                61,
+                96.8,
+                375.5
+              ],
+              [
+                61,
+                96.8,
+                375.5
+              ],
+              [
+                61,
+                100,
+                384.98
+              ],
+              [
+                67,
+                100,
+                384.98
+              ],
+              [
+                70.2,
+                100,
+                384.98
+              ],
+              [
+                70.2,
+                100,
+                375.5
+              ],
+              [
+                61,
+                100,
+                375.5
+              ],
+              [
+                61,
+                100,
+                375.5
+              ]
+            ]
+          }
+        ],
+        "endHeight": 100
+      },
+      "V2-VT-D": {
+        "segments": [
+          {
+            "from": 100,
+            "to": 128,
+            "points": [
+              [
+                61,
+                100,
+                403.5
+              ],
+              [
+                61,
+                100,
+                403.5
+              ],
+              [
+                61,
+                103.11111111111111,
+                412.98
+              ],
+              [
+                67,
+                103.11111111111111,
+                412.98
+              ],
+              [
+                67,
+                103.11111111111111,
+                412.98
+              ],
+              [
+                67,
+                106.22222222222223,
+                403.5
+              ],
+              [
+                61,
+                106.22222222222223,
+                403.5
+              ],
+              [
+                61,
+                106.22222222222223,
+                403.5
+              ],
+              [
+                61,
+                109.33333333333334,
+                412.98
+              ],
+              [
+                67,
+                109.33333333333334,
+                412.98
+              ],
+              [
+                67,
+                109.33333333333333,
+                412.98
+              ],
+              [
+                67,
+                112.44444444444444,
+                403.5
+              ],
+              [
+                61,
+                112.44444444444444,
+                403.5
+              ],
+              [
+                61,
+                112.44444444444444,
+                403.5
+              ],
+              [
+                61,
+                115.55555555555556,
+                412.98
+              ],
+              [
+                67,
+                115.55555555555556,
+                412.98
+              ],
+              [
+                67,
+                115.55555555555556,
+                412.98
+              ],
+              [
+                67,
+                118.66666666666667,
+                403.5
+              ],
+              [
+                61,
+                118.66666666666667,
+                403.5
+              ],
+              [
+                61,
+                118.66666666666667,
+                403.5
+              ],
+              [
+                61,
+                121.77777777777779,
+                412.98
+              ],
+              [
+                67,
+                121.77777777777779,
+                412.98
+              ],
+              [
+                67,
+                121.77777777777777,
+                412.98
+              ],
+              [
+                67,
+                124.88888888888889,
+                403.5
+              ],
+              [
+                61,
+                124.88888888888889,
+                403.5
+              ],
+              [
+                61,
+                124.88888888888889,
+                403.5
+              ],
+              [
+                61,
+                128,
+                412.98
+              ],
+              [
+                67,
+                128,
+                412.98
+              ],
+              [
+                70.2,
+                128,
+                412.98
+              ],
+              [
+                70.2,
+                128,
+                403.5
+              ],
+              [
+                61,
+                128,
+                403.5
+              ],
+              [
+                61,
+                128,
+                403.5
+              ]
+            ]
+          }
+        ],
+        "endHeight": 128
+      },
+      "service-stair": {
+        "segments": [
+          {
+            "from": 52,
+            "to": 55.2,
+            "points": [
+              [
+                71,
+                52,
+                316.5
+              ],
+              [
+                71,
+                52,
+                316.5
+              ],
+              [
+                71,
+                55.2,
+                325.98
+              ],
+              [
+                77,
+                55.2,
+                325.98
+              ],
+              [
+                80.2,
+                55.2,
+                325.98
+              ],
+              [
+                80.2,
+                55.2,
+                316.5
+              ],
+              [
+                71,
+                55.2,
+                316.5
+              ],
+              [
+                71,
+                55.2,
+                316.5
+              ]
+            ]
+          },
+          {
+            "from": 55.2,
+            "to": 58.4,
+            "points": [
+              [
+                71,
+                55.2,
+                316.5
+              ],
+              [
+                71,
+                55.2,
+                316.5
+              ],
+              [
+                71,
+                58.4,
+                325.98
+              ],
+              [
+                77,
+                58.4,
+                325.98
+              ],
+              [
+                80.2,
+                58.4,
+                325.98
+              ],
+              [
+                80.2,
+                58.4,
+                316.5
+              ],
+              [
+                71,
+                58.4,
+                316.5
+              ],
+              [
+                71,
+                58.4,
+                316.5
+              ]
+            ]
+          }
+        ],
+        "endHeight": 58.4
+      },
+      "market-terrace": {
+        "segments": [
+          {
+            "from": 24,
+            "to": 27.6,
+            "points": [
+              [
+                76,
+                24,
+                353.9
+              ],
+              [
+                76.95,
+                24,
+                353.9
+              ],
+              [
+                77.18,
+                24.18,
+                353.9
+              ],
+              [
+                77.54,
+                24.36,
+                353.9
+              ],
+              [
+                77.9,
+                24.54,
+                353.9
+              ],
+              [
+                78.26,
+                24.72,
+                353.9
+              ],
+              [
+                78.62,
+                24.9,
+                353.9
+              ],
+              [
+                78.98,
+                25.08,
+                353.9
+              ],
+              [
+                79.34,
+                25.26,
+                353.9
+              ],
+              [
+                79.7,
+                25.44,
+                353.9
+              ],
+              [
+                80.06,
+                25.62,
+                353.9
+              ],
+              [
+                80.42,
+                25.8,
+                353.9
+              ],
+              [
+                80.78,
+                25.98,
+                353.9
+              ],
+              [
+                81.14,
+                26.16,
+                353.9
+              ],
+              [
+                81.5,
+                26.34,
+                353.9
+              ],
+              [
+                81.86,
+                26.52,
+                353.9
+              ],
+              [
+                82.22,
+                26.7,
+                353.9
+              ],
+              [
+                82.58,
+                26.88,
+                353.9
+              ],
+              [
+                82.94,
+                27.06,
+                353.9
+              ],
+              [
+                83.3,
+                27.24,
+                353.9
+              ],
+              [
+                83.66,
+                27.42,
+                353.9
+              ],
+              [
+                84.02,
+                27.6,
+                353.9
+              ],
+              [
+                84.3,
+                27.6,
+                353.9
+              ],
+              [
+                85.1,
+                27.6,
+                353.4
+              ],
+              [
+                88,
+                27.6,
+                353.4
+              ],
+              [
+                88,
+                27.6,
+                357
+              ]
+            ]
+          }
+        ],
+        "endHeight": 27.6
+      }
+    },
+    "status": "experimental: not full V02 acceptance"
+  },
+  "screenContact": {
+    "position": [
+      77.48499999999999,
+      100.42,
+      404.87220235786907
+    ],
+    "grounded": true
+  },
+  "guardContact": {
+    "position": [
+      74.335,
+      100.42,
+      383.1279087754141
+    ],
+    "grounded": true
+  },
+  "finalEquipment": {
+    "cartridgeAsset": {
+      "ready": true,
+      "error": null,
+      "sourceTask": "b71871c5-e9e6-4e89-b6f7-723182ab3c8e",
+      "diameter": 0.12,
+      "thickness": 0.03,
+      "dt": 0.01666666666666572,
+      "modelBounds": [
+        0.081000001810248,
+        0.024879999546101317,
+        0.08100000445693827
+      ],
+      "count": 2,
+      "instances": [
+        {
+          "id": "belt-A",
+          "pair": "A",
+          "mode": "folded",
+          "deployment": 0,
+          "faceNormal": [
+            -0.9999974351282345,
+            -1.1102230246251565e-16,
+            0.0022648922606462053
+          ],
+          "position": [
+            72.81870765672684,
+            101.03081829927474,
+            382.14752388239424
+          ],
+          "threadExit": [
+            72.8082079449505,
+            101.08181817123788,
+            382.14766317297904
+          ],
+          "coreIntensity": 0.3,
+          "surfaceGlow": false,
+          "speedTrail": false,
+          "trailPoints": 0
+        },
+        {
+          "id": "belt-B",
+          "pair": "B",
+          "mode": "folded",
+          "deployment": 0,
+          "faceNormal": [
+            0.9999974351282345,
+            -1.1102230246251565e-16,
+            -0.0022648922606462053
+          ],
+          "position": [
+            73.178706733373,
+            101.03081829927474,
+            382.1467085211804
+          ],
+          "threadExit": [
+            73.18920696838255,
+            100.9798184273116,
+            382.1468002490262
+          ],
+          "coreIntensity": 0.3,
+          "surfaceGlow": false,
+          "speedTrail": false,
+          "trailPoints": 0
+        }
+      ]
+    },
+    "whipCast": {
+      "ready": true,
+      "error": null,
+      "active": null,
+      "sourceAnimationId": "0x2811be99",
+      "releaseTiming": "authored"
+    },
+    "snapback": {
+      "bank": null,
+      "clock": 28.966666666666303,
+      "reason": "HERO CHANGE",
+      "distance": 0,
+      "tension": 0,
+      "remaining": 0,
+      "events": []
+    },
+    "surf": {
+      "active": false,
+      "railId": null,
+      "phase": "off",
+      "age": 0,
+      "speed": 0,
+      "lean": 0,
+      "crouch": 0,
+      "compression": 0,
+      "source": "0x2811926e",
+      "provenance": "authored slide-derived posture",
+      "offsets": {
+        "spinePitch": 0,
+        "spineRoll": 0,
+        "knee": 0,
+        "armBalance": 0.06
+      }
+    },
+    "mastery": {
+      "rails": [],
+      "lastCatch": null,
+      "lastPop": null,
+      "style": 0,
+      "events": []
+    },
+    "deployment": {
+      "clock": 28.966666666666303,
+      "status": "HERO CHANGE",
+      "tensionAt": null,
+      "tensionProgress": 0,
+      "shots": [],
+      "events": []
+    },
+    "motion": {
+      "position": {
+        "x": 73.00030794381307,
+        "y": 100.42,
+        "z": 382.14184000568156
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "speed": 0,
+      "grounded": true,
+      "mode": "GROUND",
+      "flow": null,
+      "advanced": null,
+      "sourcePose": {
+        "role": "relaxedIdle",
+        "sourceAnimationId": "0x281116bb",
+        "originalMotionName": "ntl_idle_loop_base_n000a_lp",
+        "time": 1.9666666666663026,
+        "duration": 3,
+        "loop": true,
+        "rate": 1,
+        "pelvisTranslation": false
+      },
+      "contact": {
+        "policy": "sole",
+        "correction": 2.3825776906960527e-9,
+        "support": 100.42
+      }
+    },
+    "camera": {
+      "mode": "exploration",
+      "clock": 28.966666666666303,
+      "manualRemaining": 0,
+      "releaseRemaining": 0,
+      "yaw": 0,
+      "pitch": 0,
+      "composition": null
+    },
+    "afterimages": {
+      "bound": true,
+      "disposed": false,
+      "sourceVertices": 56190,
+      "sourceIndices": 56190,
+      "capacity": 3,
+      "poolCapacity": 4,
+      "history": 8,
+      "config": {
+        "quality": "high",
+        "maxShards": 96,
+        "shardCount": 48,
+        "shardSize": 1,
+        "shardOpacity": 0.25,
+        "shardSpeed": 5.5,
+        "shardLifetime": 0.68,
+        "shardRotation": 0.7,
+        "violetBalance": 0.28,
+        "outlineBrightness": 1.3,
+        "afterimageCount": 3,
+        "afterimageOpacity": 0.22,
+        "afterimageSpacing": 0.85,
+        "afterimageFade": 0.55,
+        "outletBrightness": 1.3,
+        "intensity": 1,
+        "trailLength": 7
+      },
+      "active": 0,
+      "activeKinds": [],
+      "footCapacity": 8,
+      "footprints": 0,
+      "pending": 0,
+      "drawCalls": 0,
+      "maxDrawCalls": 2,
+      "captures": 0,
+      "peakCaptureMs": 0,
+      "last": {
+        "kind": "reset",
+        "reason": "MODEL CHANGE"
+      }
+    },
+    "lastFailure": null,
+    "impulses": [
+      {
+        "id": "physical-13",
+        "remaining": 1.583333333333698,
+        "modes": {
+          "standard": {
+            "cost": 8,
+            "eligible": true,
+            "compatible": true,
+            "requiresWorldValidation": true
+          },
+          "directional": {
+            "cost": 10,
+            "eligible": false,
+            "compatible": false,
+            "requiresWorldValidation": true
+          },
+          "launch": {
+            "cost": 14,
+            "eligible": false,
+            "compatible": false,
+            "requiresWorldValidation": true
+          },
+          "ghoststep": {
+            "cost": 10,
+            "eligible": false,
+            "compatible": false,
+            "requiresWorldValidation": true
+          },
+          "brake": {
+            "cost": 8,
+            "eligible": false,
+            "compatible": false,
+            "requiresWorldValidation": true
+          },
+          "double-step": {
+            "cost": 8,
+            "eligible": false,
+            "compatible": false,
+            "requiresWorldValidation": true
+          },
+          "rail": {
+            "cost": 8,
+            "eligible": false,
+            "compatible": false,
+            "requiresWorldValidation": true
+          },
+          "snapback": {
+            "cost": 12,
+            "eligible": false,
+            "compatible": false,
+            "requiresWorldValidation": true
+          }
+        }
+      },
+      {
+        "id": "physical-14",
+        "remaining": 3.5500000000002494,
+        "modes": {
+          "standard": {
+            "cost": 8,
+            "eligible": true,
+            "compatible": true,
+            "requiresWorldValidation": true
+          },
+          "directional": {
+            "cost": 10,
+            "eligible": false,
+            "compatible": false,
+            "requiresWorldValidation": true
+          },
+          "launch": {
+            "cost": 14,
+            "eligible": false,
+            "compatible": false,
+            "requiresWorldValidation": true
+          },
+          "ghoststep": {
+            "cost": 10,
+            "eligible": true,
+            "compatible": true,
+            "requiresWorldValidation": true
+          },
+          "brake": {
+            "cost": 8,
+            "eligible": false,
+            "compatible": false,
+            "requiresWorldValidation": true
+          },
+          "double-step": {
+            "cost": 8,
+            "eligible": true,
+            "compatible": true,
+            "requiresWorldValidation": true
+          },
+          "rail": {
+            "cost": 8,
+            "eligible": false,
+            "compatible": false,
+            "requiresWorldValidation": true
+          },
+          "snapback": {
+            "cost": 12,
+            "eligible": false,
+            "compatible": false,
+            "requiresWorldValidation": true
+          }
+        }
+      },
+      {
+        "id": "physical-15",
+        "remaining": 7.116666666666713,
+        "modes": {
+          "standard": {
+            "cost": 8,
+            "eligible": true,
+            "compatible": true,
+            "requiresWorldValidation": true
+          },
+          "directional": {
+            "cost": 10,
+            "eligible": false,
+            "compatible": false,
+            "requiresWorldValidation": true
+          },
+          "launch": {
+            "cost": 14,
+            "eligible": false,
+            "compatible": false,
+            "requiresWorldValidation": true
+          },
+          "ghoststep": {
+            "cost": 10,
+            "eligible": false,
+            "compatible": false,
+            "requiresWorldValidation": true
+          },
+          "brake": {
+            "cost": 8,
+            "eligible": false,
+            "compatible": false,
+            "requiresWorldValidation": true
+          },
+          "double-step": {
+            "cost": 8,
+            "eligible": false,
+            "compatible": false,
+            "requiresWorldValidation": true
+          },
+          "rail": {
+            "cost": 8,
+            "eligible": false,
+            "compatible": false,
+            "requiresWorldValidation": true
+          },
+          "snapback": {
+            "cost": 12,
+            "eligible": false,
+            "compatible": false,
+            "requiresWorldValidation": true
+          }
+        }
+      }
+    ],
+    "releaseEvents": [],
+    "movementReady": true,
+    "hero": "backspool",
+    "clock": 28.966666666666303,
+    "owner": {
+      "frame": 1738,
+      "owner": "ordinary",
+      "reason": null,
+      "conflicts": 0,
+      "commits": 1
+    },
+    "sprint": false,
+    "preset": "traversal",
+    "mode": "auto",
+    "wheel": false,
+    "drive": {
+      "now": 28.966666666666303,
+      "strain": 0,
+      "capacity": 5,
+      "bank": [
+        {
+          "id": "physical-13",
+          "action": "footplant",
+          "direction": {
+            "x": -0.9992100790407809,
+            "y": 0,
+            "z": 0.039739375225538276
+          },
+          "magnitude": 0.84,
+          "vector": {
+            "x": -0.8393364663942559,
+            "y": 0,
+            "z": 0.03338107518945215
+          },
+          "time": 22.55,
+          "expiresAt": 30.55,
+          "reservedBy": null
+        },
+        {
+          "id": "physical-14",
+          "action": "footplant",
+          "direction": {
+            "x": 1,
+            "y": 0,
+            "z": -1.608122649676636e-16
+          },
+          "magnitude": 1.2,
+          "vector": {
+            "x": 1.2,
+            "y": 0,
+            "z": -1.9297471796119633e-16
+          },
+          "time": 24.516666666666556,
+          "expiresAt": 32.51666666666655,
+          "reservedBy": null
+        },
+        {
+          "id": "physical-15",
+          "action": "footplant",
+          "direction": {
+            "x": -0.0021710594682170224,
+            "y": 0,
+            "z": -0.9999976432476158
+          },
+          "magnitude": 0.8400000000000002,
+          "vector": {
+            "x": -0.0018236899533022992,
+            "y": 0,
+            "z": -0.8399980203279974
+          },
+          "time": 28.08333333333302,
+          "expiresAt": 36.083333333333016,
+          "reservedBy": null
+        }
+      ],
+      "lastBeat": 28.08333333333302,
+      "lastRelease": null,
+      "doubleStep": null,
+      "eventSequence": 10,
+      "reason": "CONTACT"
+    },
+    "rail": {
+      "time": 28.966666666666303,
+      "anchors": [],
+      "rails": [],
+      "current": null,
+      "events": [
+        {
+          "id": 5,
+          "type": "reset",
+          "time": 0,
+          "reason": "HERO CHANGE"
+        }
+      ],
+      "lastReason": "HERO CHANGE",
+      "limits": {
+        "minSpan": 6,
+        "maxSpan": 100,
+        "maxSlope": 55,
+        "maxRails": 4,
+        "maxAnchors": 8,
+        "lifetime": 30,
+        "attachReach": 2,
+        "transferReach": 3,
+        "maxSpeed": 28,
+        "gravity": 9.81,
+        "friction": 0.45,
+        "junctionAngle": 75,
+        "jumpImpulse": 4.8,
+        "slingshotImpulse": 6.5
+      }
+    },
+    "route": {
+      "status": "empty",
+      "reason": "HERO CHANGE",
+      "time": 0,
+      "route": null,
+      "recording": null,
+      "token": null,
+      "reservedIds": [],
+      "consumedIds": [],
+      "actionIndex": 0,
+      "counters": {
+        "recordings": 0,
+        "replays": 0,
+        "completed": 0,
+        "interrupted": 0,
+        "executed": 0,
+        "rejectedActions": 0
+      },
+      "limits": {
+        "maxSeconds": 4,
+        "maxActions": 8,
+        "maxSamples": 120,
+        "reconnectDistance": 1.35,
+        "maxDeviation": 1.5
+      },
+      "nextIds": {
+        "route": 1,
+        "action": 1,
+        "trace": 1,
+        "replay": 1
+      }
+    },
+    "exhaust": {
+      "bound": true,
+      "source": "bone:mixamorigHips",
+      "enabled": true,
+      "disposed": false,
+      "outletPosition": {
+        "x": 72.96246018172421,
+        "y": 101.0446168294332,
+        "z": 382.31936778981753
+      },
+      "outlets": [
+        {
+          "x": 73.09206274424764,
+          "y": 101.0442180056851,
+          "z": 382.34440809187174
+        },
+        {
+          "x": 72.83285761920078,
+          "y": 101.0450156531813,
+          "z": 382.2943274877633
+        }
+      ],
+      "outletOffsetMeters": {
+        "x": 0,
+        "y": -0.02,
+        "z": -0.19
+      },
+      "emissionDirection": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "activeCounts": {
+        "slivers": 0,
+        "rings": 0,
+        "threads": 0,
+        "slices": 0
+      },
+      "capacities": {
+        "slivers": 96,
+        "rings": 24,
+        "threads": 64,
+        "slices": 12
+      },
+      "activeTotal": 0,
+      "visibleDrawCalls": 0,
+      "maxDrawCalls": 3,
+      "lastRelease": null,
+      "lastBank": {
+        "id": "afterstep-10",
+        "at": 28.08333333333302,
+        "type": "contact"
+      },
+      "lastReset": "model bind",
+      "emitted": 60,
+      "overwritten": 0,
+      "flash": 0,
+      "config": {
+        "quality": "high",
+        "maxShards": 96,
+        "shardCount": 48,
+        "shardSize": 1,
+        "shardOpacity": 0.25,
+        "shardSpeed": 5.5,
+        "shardLifetime": 0.68,
+        "shardRotation": 0.7,
+        "violetBalance": 0.28,
+        "outlineBrightness": 1.3,
+        "afterimageCount": 3,
+        "afterimageOpacity": 0.22,
+        "afterimageSpacing": 0.85,
+        "afterimageFade": 0.55,
+        "outletBrightness": 1.3,
+        "intensity": 1,
+        "trailLength": 7
+      },
+      "refraction": {
+        "supported": null,
+        "remaining": 0,
+        "captureCount": 0,
+        "rect": null,
+        "textureSize": 128
+      }
+    },
+    "precision": false,
+    "pendingAnchor": null,
+    "lastMessage": "",
+    "course": null,
+    "activeAnimation": "forspoken-threadrail-relaxed-idle",
+    "animationTime": 1.9666666666663026,
+    "contactEvents": [
+      {
+        "type": "contact",
+        "id": "afterstep-3",
+        "sequence": 3,
+        "time": 7.866666666666644,
+        "contactId": "physical-3",
+        "action": "footplant",
+        "vector": {
+          "x": -1.4135240643197735,
+          "y": 0,
+          "z": 0.19320325402716287
+        },
+        "direction": {
+          "x": -0.9907878955512437,
+          "y": 0,
+          "z": 0.13542284160782453
+        },
+        "magnitude": 1.4266666666666659,
+        "replaced": null
+      },
+      {
+        "type": "contact",
+        "id": "afterstep-4",
+        "sequence": 4,
+        "time": 8.483333333333334,
+        "contactId": "physical-4",
+        "action": "footplant",
+        "vector": {
+          "x": -0.0020948501325331746,
+          "y": 0,
+          "z": -0.8399973878548211
+        },
+        "direction": {
+          "x": -0.0024938692053966365,
+          "y": 0,
+          "z": -0.9999968903033584
+        },
+        "magnitude": 0.8400000000000001,
+        "replaced": null
+      },
+      {
+        "type": "contact",
+        "id": "afterstep-5",
+        "sequence": 5,
+        "time": 8.733333333333347,
+        "contactId": "physical-5",
+        "action": "footplant",
+        "vector": {
+          "x": -0.006583814702247449,
+          "y": 0,
+          "z": -2.639991790400865
+        },
+        "direction": {
+          "x": -0.002493869205396762,
+          "y": 0,
+          "z": -0.9999968903033583
+        },
+        "magnitude": 2.6399999999999992,
+        "replaced": null
+      },
+      {
+        "type": "contact",
+        "id": "afterstep-6",
+        "sequence": 6,
+        "time": 8.98333333333336,
+        "contactId": "physical-6",
+        "action": "footplant",
+        "vector": {
+          "x": -0.0065838147022472485,
+          "y": 0,
+          "z": -2.639991790400865
+        },
+        "direction": {
+          "x": -0.002493869205396686,
+          "y": 0,
+          "z": -0.9999968903033583
+        },
+        "magnitude": 2.6399999999999992,
+        "replaced": null
+      },
+      {
+        "type": "contact",
+        "id": "afterstep-7",
+        "sequence": 7,
+        "time": 9.233333333333372,
+        "contactId": "physical-7",
+        "action": "footplant",
+        "vector": {
+          "x": -0.006583814702247038,
+          "y": 0,
+          "z": -2.639991790400865
+        },
+        "direction": {
+          "x": -0.002493869205396606,
+          "y": 0,
+          "z": -0.9999968903033583
+        },
+        "magnitude": 2.6399999999999992,
+        "replaced": null
+      },
+      {
+        "type": "contact",
+        "id": "afterstep-8",
+        "sequence": 8,
+        "time": 22.55,
+        "contactId": "physical-13",
+        "action": "footplant",
+        "vector": {
+          "x": -0.8393364663942559,
+          "y": 0,
+          "z": 0.03338107518945215
+        },
+        "direction": {
+          "x": -0.9992100790407809,
+          "y": 0,
+          "z": 0.039739375225538276
+        },
+        "magnitude": 0.84,
+        "replaced": null
+      },
+      {
+        "type": "contact",
+        "id": "afterstep-9",
+        "sequence": 9,
+        "time": 24.516666666666556,
+        "contactId": "physical-14",
+        "action": "footplant",
+        "vector": {
+          "x": 1.2,
+          "y": 0,
+          "z": -1.9297471796119633e-16
+        },
+        "direction": {
+          "x": 1,
+          "y": 0,
+          "z": -1.608122649676636e-16
+        },
+        "magnitude": 1.2,
+        "replaced": null
+      },
+      {
+        "type": "contact",
+        "id": "afterstep-10",
+        "sequence": 10,
+        "time": 28.08333333333302,
+        "contactId": "physical-15",
+        "action": "footplant",
+        "vector": {
+          "x": -0.0018236899533022992,
+          "y": 0,
+          "z": -0.8399980203279974
+        },
+        "direction": {
+          "x": -0.0021710594682170224,
+          "y": 0,
+          "z": -0.9999976432476158
+        },
+        "magnitude": 0.8400000000000002,
+        "replaced": null
+      }
+    ]
+  },
+  "simulationSeconds": 28.966666666666665,
+  "worldLife": {
+    "ready": true,
+    "loading": false,
+    "error": null,
+    "aircraft": 36,
+    "visitors": 8,
+    "source": "Shared Blender hover vehicles and existing street pedestrian geometry",
+    "blockedMoves": 159,
+    "events": [
+      {
+        "id": 1,
+        "kind": "ready",
+        "clock": 0
+      },
+      {
+        "id": 2,
+        "kind": "destination",
+        "clock": 0.016666666666666666,
+        "visitor": "observation-visitors-1",
+        "waypoint": 2,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 3,
+        "kind": "destination",
+        "clock": 0.16666666666666666,
+        "visitor": "market-visitors-2",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 4,
+        "kind": "destination",
+        "clock": 2.5999999999999956,
+        "visitor": "market-visitors-0",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 5,
+        "kind": "destination",
+        "clock": 3.4666666666666592,
+        "visitor": "observation-visitors-0",
+        "waypoint": 1,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 6,
+        "kind": "destination",
+        "clock": 6.06666666666665,
+        "visitor": "market-visitors-1",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 7,
+        "kind": "destination",
+        "clock": 6.449999999999982,
+        "visitor": "station-commuters-1",
+        "waypoint": 3,
+        "purpose": "Walk between transit information and the protected waiting platform"
+      },
+      {
+        "id": 8,
+        "kind": "destination",
+        "clock": 12.466666666666866,
+        "visitor": "market-visitors-2",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 9,
+        "kind": "destination",
+        "clock": 13.70000000000026,
+        "visitor": "observation-visitors-0",
+        "waypoint": 2,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 10,
+        "kind": "destination",
+        "clock": 14.10000000000028,
+        "visitor": "station-commuters-2",
+        "waypoint": 0,
+        "purpose": "Walk between transit information and the protected waiting platform"
+      },
+      {
+        "id": 11,
+        "kind": "destination",
+        "clock": 14.90000000000032,
+        "visitor": "market-visitors-0",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 12,
+        "kind": "destination",
+        "clock": 17.18333333333364,
+        "visitor": "observation-visitors-1",
+        "waypoint": 1,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 13,
+        "kind": "destination",
+        "clock": 18.366666666666905,
+        "visitor": "market-visitors-1",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 14,
+        "kind": "destination",
+        "clock": 20.750000000000103,
+        "visitor": "station-commuters-0",
+        "waypoint": 3,
+        "purpose": "Walk between transit information and the protected waiting platform"
+      },
+      {
+        "id": 15,
+        "kind": "destination",
+        "clock": 24.9333333333332,
+        "visitor": "market-visitors-2",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 16,
+        "kind": "destination",
+        "clock": 27.199999999999736,
+        "visitor": "market-visitors-0",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 17,
+        "kind": "destination",
+        "clock": 27.41666666666639,
+        "visitor": "observation-visitors-1",
+        "waypoint": 2,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      }
+    ],
+    "eventId": 17,
+    "clock": 28.966666666666303,
+    "scenicOnly": true,
+    "dynamicLights": 0,
+    "air": {
+      "clock": 28.966666666666303,
+      "emergencyBrakes": 0,
+      "settings": {
+        "acceleration": 0.9,
+        "braking": 1.6,
+        "lateralAcceleration": 2,
+        "minimumGap": 10,
+        "timeGap": 1.6,
+        "maxBank": 0.20943951023931953
+      },
+      "lanes": [
+        {
+          "id": "aerial-band-0",
+          "length": 1257.6072224958739,
+          "agents": [
+            {
+              "id": "aerial-band-0-0",
+              "variant": 0,
+              "distance": 307.020824961211,
+              "speed": 10.8,
+              "preferred": 10.8,
+              "bank": 9.824908776111411e-64,
+              "laps": 0,
+              "position": [
+                77,
+                38,
+                410.88033095897134
+              ],
+              "quaternion": [
+                0,
+                0,
+                4.912454388055706e-64,
+                1
+              ],
+              "gapAhead": 117.47667277917367
+            },
+            {
+              "id": "aerial-band-0-1",
+              "variant": 1,
+              "distance": 424.49749774038463,
+              "speed": 8.678312707712228,
+              "preferred": 11.100000000000001,
+              "bank": 0.007556677638869778,
+              "laps": 0,
+              "position": [
+                77.0005445889943,
+                38,
+                528.3570020900534
+              ],
+              "quaternion": [
+                -0.000004191253559781815,
+                -0.0011092794520287913,
+                0.003778327504958863,
+                0.9999922468313421
+              ],
+              "gapAhead": 74.12800733269137
+            },
+            {
+              "id": "aerial-band-0-2",
+              "variant": 2,
+              "distance": 498.62550507307606,
+              "speed": 9.572810730578045,
+              "preferred": 11.4,
+              "bank": 5.205607929525801e-7,
+              "laps": 0,
+              "position": [
+                128.08371624929606,
+                38,
+                563
+              ],
+              "quaternion": [
+                1.8404603335830576e-7,
+                0.7071067811865235,
+                1.840460333583058e-7,
+                0.7071067811865236
+              ],
+              "gapAhead": 95.69473178300063
+            },
+            {
+              "id": "aerial-band-0-3",
+              "variant": 0,
+              "distance": 594.3202368560767,
+              "speed": 6.841025520299317,
+              "preferred": 11.700000000000001,
+              "bank": -0.17240831369400078,
+              "laps": 0,
+              "position": [
+                223.6745373142925,
+                38,
+                561.8795827711377
+              ],
+              "quaternion": [
+                -0.06875347524890862,
+                0.7955890687624971,
+                -0.05182400181896091,
+                0.5996876404781816
+              ],
+              "gapAhead": 71.77291291610481
+            },
+            {
+              "id": "aerial-band-0-4",
+              "variant": 1,
+              "distance": 666.0931497721815,
+              "speed": 10.673971079714939,
+              "preferred": 12,
+              "bank": 6.583144115183091e-10,
+              "laps": 0,
+              "position": [
+                243,
+                38,
+                498.85090822633566
+              ],
+              "quaternion": [
+                3.2915720575915456e-10,
+                1,
+                2.015506592246177e-26,
+                6.123233995736766e-17
+              ],
+              "gapAhead": 135.32229793041165
+            },
+            {
+              "id": "aerial-band-0-5",
+              "variant": 2,
+              "distance": 801.4154477025932,
+              "speed": 10.8,
+              "preferred": 10.8,
+              "bank": 4.082355197130167e-37,
+              "laps": 0,
+              "position": [
+                243,
+                38,
+                363.52861029589343
+              ],
+              "quaternion": [
+                2.0411775985650837e-37,
+                1,
+                1.2498608062870054e-53,
+                6.123233995736766e-17
+              ],
+              "gapAhead": 141.69574885915745
+            },
+            {
+              "id": "aerial-band-0-6",
+              "variant": 0,
+              "distance": 943.1111965617505,
+              "speed": 11.100000000000001,
+              "preferred": 11.100000000000001,
+              "bank": 1.1614753435465573e-63,
+              "laps": 0,
+              "position": [
+                243,
+                38,
+                221.83286143685945
+              ],
+              "quaternion": [
+                5.807376717732787e-64,
+                1,
+                3.55599265440716e-80,
+                6.123233995736766e-17
+              ],
+              "gapAhead": 116.03375205264638
+            },
+            {
+              "id": "aerial-band-0-7",
+              "variant": 1,
+              "distance": 1059.144948614397,
+              "speed": 7.530902089751674,
+              "preferred": 11.4,
+              "bank": -0.03297529224183367,
+              "laps": 0,
+              "position": [
+                243.01995103058675,
+                38,
+                105.79940305637167
+              ],
+              "quaternion": [
+                0.01648672425388157,
+                -0.9998534766738508,
+                -0.00007593484622123173,
+                0.00460514283042719
+              ],
+              "gapAhead": 72.66595142289793
+            },
+            {
+              "id": "aerial-band-0-8",
+              "variant": 2,
+              "distance": 1131.810900037295,
+              "speed": 9.977781164027533,
+              "preferred": 11.700000000000001,
+              "bank": 5.229636237284084e-8,
+              "laps": 0,
+              "position": [
+                187.53454332427378,
+                38,
+                77
+              ],
+              "quaternion": [
+                -1.848955623261238e-8,
+                -0.7071067811865472,
+                1.848955623261238e-8,
+                0.7071067811865474
+              ],
+              "gapAhead": 93.13130879118671
+            },
+            {
+              "id": "aerial-band-0-9",
+              "variant": 0,
+              "distance": 1224.9422088284816,
+              "speed": 6.810635356461056,
+              "preferred": 12,
+              "bank": -0.18631216344751575,
+              "laps": 0,
+              "position": [
+                94.59878408095531,
+                38,
+                78.68894743398558
+              ],
+              "quaternion": [
+                0.053124792692469655,
+                -0.5686266471512345,
+                -0.07635926995868415,
+                0.8173192487897887
+              ],
+              "gapAhead": 65.91321085914115
+            },
+            {
+              "id": "aerial-band-0-10",
+              "variant": 1,
+              "distance": 1290.8554196876228,
+              "speed": 10.32912866164002,
+              "preferred": 10.8,
+              "bank": 4.4108697190084405e-9,
+              "laps": 1,
+              "position": [
+                77,
+                38,
+                137.10770318950924
+              ],
+              "quaternion": [
+                0,
+                0,
+                2.2054348595042202e-9,
+                1
+              ],
+              "gapAhead": 144.15736615563765
+            },
+            {
+              "id": "aerial-band-0-11",
+              "variant": 2,
+              "distance": 1435.0127858432604,
+              "speed": 11.100000000000001,
+              "preferred": 11.100000000000001,
+              "bank": 2.3943724122528317e-37,
+              "laps": 1,
+              "position": [
+                77,
+                38,
+                281.2650693451469
+              ],
+              "quaternion": [
+                0,
+                0,
+                1.1971862061264159e-37,
+                1
+              ],
+              "gapAhead": 129.6152616138245
+            }
+          ]
+        },
+        {
+          "id": "aerial-band-1",
+          "length": 1257.607222495181,
+          "agents": [
+            {
+              "id": "aerial-band-1-0",
+              "variant": 1,
+              "distance": 258.99949288142705,
+              "speed": 12.969127230155959,
+              "preferred": 13.5,
+              "bank": 2.3194983241493794e-15,
+              "laps": 0,
+              "position": [
+                243,
+                65,
+                171.81665847973207
+              ],
+              "quaternion": [
+                0,
+                0,
+                1.1597491620746897e-15,
+                1
+              ],
+              "gapAhead": 166.46107736981207
+            },
+            {
+              "id": "aerial-band-1-1",
+              "variant": 2,
+              "distance": 425.46057025123923,
+              "speed": 13.875,
+              "preferred": 13.875,
+              "bank": 1.4191859926863276e-41,
+              "laps": 0,
+              "position": [
+                243,
+                65,
+                338.2777358495358
+              ],
+              "quaternion": [
+                0,
+                0,
+                7.095929963431638e-42,
+                1
+              ],
+              "gapAhead": 188.88662720033085
+            },
+            {
+              "id": "aerial-band-1-2",
+              "variant": 0,
+              "distance": 614.34719745157,
+              "speed": 9.181671450930592,
+              "preferred": 14.250000000000002,
+              "bank": -0.00029117411242923503,
+              "laps": 0,
+              "position": [
+                243.0000691087145,
+                65,
+                527.1643631330968
+              ],
+              "quaternion": [
+                -7.400080217681046e-9,
+                0.00005082924511152403,
+                -0.00014558705551224666,
+                0.9999999881103985
+              ],
+              "gapAhead": 56.51011513615913
+            },
+            {
+              "id": "aerial-band-1-3",
+              "variant": 1,
+              "distance": 670.8573125877291,
+              "speed": 7.516396699064974,
+              "preferred": 14.625000000000002,
+              "bank": 0.04296707963411879,
+              "laps": 0,
+              "position": [
+                210.72766280197416,
+                65,
+                563.021297428323
+              ],
+              "quaternion": [
+                -0.015296244407473729,
+                -0.7118887844563432,
+                0.015082983369115354,
+                0.7019635938458517
+              ],
+              "gapAhead": 79.7278077319636
+            },
+            {
+              "id": "aerial-band-1-4",
+              "variant": 2,
+              "distance": 750.5851203196926,
+              "speed": 11.987544046653344,
+              "preferred": 15,
+              "bank": 2.4688760840173474e-18,
+              "laps": 0,
+              "position": [
+                130.9999832564976,
+                65,
+                563
+              ],
+              "quaternion": [
+                -8.728795104589773e-19,
+                -0.7071067811865475,
+                8.728795104589775e-19,
+                0.7071067811865476
+              ],
+              "gapAhead": 54.193227763974164
+            },
+            {
+              "id": "aerial-band-1-5",
+              "variant": 0,
+              "distance": 804.7783480836669,
+              "speed": 7.342010797061132,
+              "preferred": 13.5,
+              "bank": 0.20037523517267503,
+              "laps": 0,
+              "position": [
+                81.17503752648125,
+                65,
+                550.4208803377109
+              ],
+              "quaternion": [
+                -0.09606801839074681,
+                -0.9556707299959496,
+                0.02783801860760496,
+                0.276928576336005
+              ],
+              "gapAhead": 82.48555237237952
+            },
+            {
+              "id": "aerial-band-1-6",
+              "variant": 1,
+              "distance": 887.2639004560464,
+              "speed": 12.9296521817094,
+              "preferred": 13.875,
+              "bank": 1.8563567688576985e-15,
+              "laps": 0,
+              "position": [
+                77,
+                65,
+                468.72249794161115
+              ],
+              "quaternion": [
+                9.281783844288492e-16,
+                1,
+                5.683453437642758e-32,
+                6.123233995736766e-17
+              ],
+              "gapAhead": 171.01058739916857
+            },
+            {
+              "id": "aerial-band-1-7",
+              "variant": 2,
+              "distance": 1058.2744878552148,
+              "speed": 14.250000000000002,
+              "preferred": 14.250000000000002,
+              "bank": 1.2477047051805586e-41,
+              "laps": 0,
+              "position": [
+                77,
+                65,
+                297.7119105425823
+              ],
+              "quaternion": [
+                6.238523525902793e-42,
+                1,
+                3.819993933701158e-58,
+                6.123233995736766e-17
+              ],
+              "gapAhead": 190.71369388993935
+            },
+            {
+              "id": "aerial-band-1-8",
+              "variant": 0,
+              "distance": 1248.9881817451542,
+              "speed": 8.162430611433276,
+              "preferred": 14.625000000000002,
+              "bank": -0.03435790894773962,
+              "laps": 0,
+              "position": [
+                76.97543826510267,
+                65,
+                106.99839579051907
+              ],
+              "quaternion": [
+                0.0171775125739447,
+                -0.9998177000717048,
+                -0.00014320783715658642,
+                0.008335417003002126
+              ],
+              "gapAhead": 54.40669464611233
+            },
+            {
+              "id": "aerial-band-1-9",
+              "variant": 1,
+              "distance": 1303.3948763912665,
+              "speed": 7.95143664291987,
+              "preferred": 15,
+              "bank": -0.014263092752074564,
+              "laps": 1,
+              "position": [
+                113.00620563571977,
+                65,
+                77.0021727662224
+              ],
+              "quaternion": [
+                -0.005042949606546113,
+                0.707120706689071,
+                -0.005042494499173606,
+                0.7070568916855562
+              ],
+              "gapAhead": 61.44438262185008
+            },
+            {
+              "id": "aerial-band-1-10",
+              "variant": 2,
+              "distance": 1364.8392590131166,
+              "speed": 13.186436642920066,
+              "preferred": 13.5,
+              "bank": 7.152688302437941e-16,
+              "laps": 1,
+              "position": [
+                174.45058747893447,
+                65,
+                77
+              ],
+              "quaternion": [
+                2.5288572011837813e-16,
+                0.7071067811865475,
+                2.528857201183782e-16,
+                0.7071067811865476
+              ],
+              "gapAhead": 69.87326018486556
+            },
+            {
+              "id": "aerial-band-1-11",
+              "variant": 0,
+              "distance": 1434.7125191979821,
+              "speed": 7.2901456834164176,
+              "preferred": 13.875,
+              "bank": 0.2004151226840898,
+              "laps": 1,
+              "position": [
+                239.40903437700086,
+                65,
+                90.54706900695167
+              ],
+              "quaternion": [
+                0.025795179135469606,
+                0.25655529079963046,
+                0.09665711617584623,
+                0.9613383345048999
+              ],
+              "gapAhead": 81.89419617862609
+            }
+          ]
+        },
+        {
+          "id": "aerial-band-2",
+          "length": 1219.913818405767,
+          "agents": [
+            {
+              "id": "aerial-band-2-0",
+              "variant": 2,
+              "distance": 413.998096403409,
+              "speed": 10.098600513586346,
+              "preferred": 16.2,
+              "bank": 7.694168839111666e-64,
+              "laps": 0,
+              "position": [
+                83,
+                114,
+                518.136793557315
+              ],
+              "quaternion": [
+                0,
+                0,
+                3.847084419555833e-64,
+                1
+              ],
+              "gapAhead": 65.41528876955863
+            },
+            {
+              "id": "aerial-band-2-1",
+              "variant": 0,
+              "distance": 479.4133851729677,
+              "speed": 8.060135066447787,
+              "preferred": 16.650000000000002,
+              "bank": 0.000050794609839683325,
+              "laps": 0,
+              "position": [
+                118.57414025118496,
+                114,
+                557
+              ],
+              "quaternion": [
+                0.000017958606530751882,
+                0.7071067809584973,
+                0.000017958606530751886,
+                0.7071067809584974
+              ],
+              "gapAhead": 68.42031982721642
+            },
+            {
+              "id": "aerial-band-2-2",
+              "variant": 1,
+              "distance": 547.8337050001842,
+              "speed": 11.674683625731397,
+              "preferred": 17.1,
+              "bank": 8.187916053889478e-19,
+              "laps": 0,
+              "position": [
+                186.994460078364,
+                114,
+                557
+              ],
+              "quaternion": [
+                2.894865482745723e-19,
+                0.7071067811865475,
+                2.8948654827457235e-19,
+                0.7071067811865476
+              ],
+              "gapAhead": 46.969488323324185
+            },
+            {
+              "id": "aerial-band-2-3",
+              "variant": 2,
+              "distance": 594.8031933235083,
+              "speed": 6.525317232368588,
+              "preferred": 17.55,
+              "bank": -0.20040552858408806,
+              "laps": 0,
+              "position": [
+                231.8541938381363,
+                114,
+                549.769242130743
+              ],
+              "quaternion": [
+                -0.09370377723477785,
+                0.9320097495188953,
+                -0.03502337148601449,
+                0.3483544062925199
+              ],
+              "gapAhead": 47.59820193318865
+            },
+            {
+              "id": "aerial-band-2-4",
+              "variant": 0,
+              "distance": 642.4013952566969,
+              "speed": 9.815951146082403,
+              "preferred": 18,
+              "bank": 1.3663690545346567e-9,
+              "laps": 0,
+              "position": [
+                237,
+                114,
+                503.41677405637347
+              ],
+              "quaternion": [
+                6.831845272673283e-10,
+                1,
+                4.1832987227246565e-26,
+                6.123233995736766e-17
+              ],
+              "gapAhead": 197.9588686635882
+            },
+            {
+              "id": "aerial-band-2-5",
+              "variant": 1,
+              "distance": 840.3602639202851,
+              "speed": 16.2,
+              "preferred": 16.2,
+              "bank": 4.063983013115638e-39,
+              "laps": 0,
+              "position": [
+                237,
+                114,
+                305.4579053927866
+              ],
+              "quaternion": [
+                2.031991506557819e-39,
+                1,
+                1.2442359472003205e-55,
+                6.123233995736766e-17
+              ],
+              "gapAhead": 187.26135974501085
+            },
+            {
+              "id": "aerial-band-2-6",
+              "variant": 2,
+              "distance": 1027.6216236652958,
+              "speed": 9.50775071935658,
+              "preferred": 16.650000000000002,
+              "bank": 8.337761860891445e-64,
+              "laps": 0,
+              "position": [
+                237,
+                114,
+                118.19654564795667
+              ],
+              "quaternion": [
+                4.1688809304457225e-64,
+                1,
+                2.552703343748397e-80,
+                6.123233995736766e-17
+              ],
+              "gapAhead": 65.09646000356133
+            },
+            {
+              "id": "aerial-band-2-7",
+              "variant": 0,
+              "distance": 1092.7180836688572,
+              "speed": 8.420098201364791,
+              "preferred": 17.1,
+              "bank": 0.000006343842417187247,
+              "laps": 0,
+              "position": [
+                198.0781183263982,
+                114,
+                83
+              ],
+              "quaternion": [
+                -0.0000022428869959822195,
+                -0.7071067811829903,
+                0.00000224288699598222,
+                0.7071067811829904
+              ],
+              "gapAhead": 67.7493136465514
+            },
+            {
+              "id": "aerial-band-2-8",
+              "variant": 1,
+              "distance": 1160.4673973154086,
+              "speed": 11.302854355079996,
+              "preferred": 17.55,
+              "bank": 2.6357768827805783e-19,
+              "laps": 0,
+              "position": [
+                130.32880467992737,
+                114,
+                83
+              ],
+              "quaternion": [
+                -9.318878537544433e-20,
+                -0.7071067811865475,
+                9.318878537544434e-20,
+                0.7071067811865476
+              ],
+              "gapAhead": 44.727144360059356
+            },
+            {
+              "id": "aerial-band-2-9",
+              "variant": 2,
+              "distance": 1205.194541675468,
+              "speed": 6.502758013607962,
+              "preferred": 18,
+              "bank": -0.20037709313558466,
+              "laps": 0,
+              "position": [
+                87.86425041906435,
+                114,
+                90.56153842160589
+              ],
+              "quaternion": [
+                0.034060601107887604,
+                -0.3388267627442637,
+                -0.09404296779816276,
+                0.9355170872347152
+              ],
+              "gapAhead": 47.171506162319474
+            },
+            {
+              "id": "aerial-band-2-10",
+              "variant": 0,
+              "distance": 1252.3660478377874,
+              "speed": 9.81538062320346,
+              "preferred": 16.2,
+              "bank": 1.5314995638877402e-9,
+              "laps": 1,
+              "position": [
+                83,
+                114,
+                136.5909265859264
+              ],
+              "quaternion": [
+                0,
+                0,
+                7.657497819438701e-10,
+                1
+              ],
+              "gapAhead": 200.7667248495943
+            },
+            {
+              "id": "aerial-band-2-11",
+              "variant": 1,
+              "distance": 1453.1327726873817,
+              "speed": 16.650000000000002,
+              "preferred": 16.650000000000002,
+              "bank": 4.1390747550883687e-39,
+              "laps": 1,
+              "position": [
+                83,
+                114,
+                337.3576514355207
+              ],
+              "quaternion": [
+                0,
+                0,
+                2.0695373775441843e-39,
+                1
+              ],
+              "gapAhead": 180.7791421217944
+            }
+          ]
+        }
+      ]
+    },
+    "airBatches": 17,
+    "people": [
+      {
+        "id": "station-commuters-0",
+        "route": "station-commuters",
+        "position": [
+          76.9658678170937,
+          100,
+          399.18198229384114
+        ],
+        "target": 5,
+        "dwell": 0,
+        "walked": 26.699166666683762,
+        "arrivals": 4,
+        "lastReason": null,
+        "blocked": 40,
+        "soleOffset": 0.006823542772658075
+      },
+      {
+        "id": "station-commuters-1",
+        "route": "station-commuters",
+        "position": [
+          73.93256025406015,
+          100,
+          385.80024207468506
+        ],
+        "target": 7,
+        "dwell": 0,
+        "walked": 27.17833333333658,
+        "arrivals": 4,
+        "lastReason": null,
+        "blocked": 15,
+        "soleOffset": 0.006935083375249018
+      },
+      {
+        "id": "station-commuters-2",
+        "route": "station-commuters",
+        "position": [
+          76.09557346719349,
+          100,
+          389.86059172283746
+        ],
+        "target": 3,
+        "dwell": 0,
+        "walked": 26.814166666654728,
+        "arrivals": 6,
+        "lastReason": null,
+        "blocked": 32,
+        "soleOffset": 0.007114897363114776
+      },
+      {
+        "id": "market-visitors-0",
+        "route": "market-visitors",
+        "position": [
+          65.47083138993874,
+          24,
+          356.10032171730194
+        ],
+        "target": 2,
+        "dwell": 3.2333333333333396,
+        "walked": 19.645833333330625,
+        "arrivals": 5,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": -9.92209273056755e-10
+      },
+      {
+        "id": "market-visitors-1",
+        "route": "market-visitors",
+        "position": [
+          64.46488421224161,
+          24,
+          361.47832687029285
+        ],
+        "target": 3,
+        "dwell": 0,
+        "walked": 20.489166666663394,
+        "arrivals": 5,
+        "lastReason": null,
+        "blocked": 62,
+        "soleOffset": 0.0052910051868615615
+      },
+      {
+        "id": "market-visitors-2",
+        "route": "market-visitors",
+        "position": [
+          62.52916854734913,
+          24,
+          361.4996782831255
+        ],
+        "target": 0,
+        "dwell": 0.9666666666666808,
+        "walked": 16.847499999998142,
+        "arrivals": 5,
+        "lastReason": null,
+        "blocked": 10,
+        "soleOffset": -1.3351440130653182e-9
+      },
+      {
+        "id": "observation-visitors-0",
+        "route": "observation-visitors",
+        "position": [
+          77.80175204684507,
+          128,
+          417.01095003791534
+        ],
+        "target": 1,
+        "dwell": 0,
+        "walked": 21.696666666665426,
+        "arrivals": 4,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 0.003286080258063905
+      },
+      {
+        "id": "observation-visitors-1",
+        "route": "observation-visitors",
+        "position": [
+          79.99989226793089,
+          128,
+          422.9800755088007
+        ],
+        "target": 3,
+        "dwell": 3.4500000000000055,
+        "walked": 19.89499999999906,
+        "arrivals": 5,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 2.310000599552004e-9
+      }
+    ]
+  },
+  "fullTrace": "V02_World_Life_Station_Input.trace.json.gz",
+  "traceFrames": 1738
+}

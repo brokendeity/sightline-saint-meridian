@@ -1,0 +1,3310 @@
+{
+  "status": "PASS native fleet geometry bindings, culling and local visitor yield",
+  "scope": "Actual native mesh instance binding, camera culling, closer asset inspection and visitor yielding; adapter-only time stepping after one labelled hero setup. No full-game performance claim.",
+  "hashes": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_WORLD_LIFE.html": "1f739d8e9dd53892988a9d67d3b18cafd175dc5b5d114f5bffb8b886b73ed296",
+    "scripts/game_vertical_world_life_v02.js": "08561d9ce00f53fb9d0b13dd7324639c2389cf5a7e1422512fd1dada07a28639",
+    "scripts/game_aerial_traffic_core_v02.js": "e518c60772284ec255757bca341a3c4a420d095baa10011e38426d621e70e811",
+    "assets/city/vertical-v02/world-life/air_assets.json": "9a51757f1496492eaf522116dde3d6580a8be8104583c0c5715d33524c095356",
+    "assets/city/vertical-v02/world-life/air_routes.json": "10e1aeb641e2d9249f62373c8c52755f3b89f7c996077c38510bed5599c4e571",
+    "assets/city/vertical-v02/world-life/ambient_routes.json": "20a988d28c9a5db2a8760177c6aa2a7bd6e65aa0a8b527cb6b40c392ae5b5140"
+  },
+  "results": [
+    {
+      "name": "loaded complete commuter geometry follows actual actor transform",
+      "variant": 0,
+      "actualBatches": 5,
+      "results": [
+        {
+          "id": "aerial-band-0-0",
+          "vertices": 488,
+          "error": 0.0000011007075547619332
+        }
+      ]
+    },
+    {
+      "name": "loaded complete delivery geometry follows actual actor transform",
+      "variant": 1,
+      "actualBatches": 6,
+      "results": [
+        {
+          "id": "aerial-band-0-1",
+          "vertices": 512,
+          "error": 4.5054181896375667e-7
+        }
+      ]
+    },
+    {
+      "name": "loaded complete municipal geometry follows actual actor transform",
+      "variant": 2,
+      "actualBatches": 6,
+      "results": [
+        {
+          "id": "aerial-band-0-2",
+          "vertices": 488,
+          "error": 0.0000019228493783884915
+        }
+      ]
+    },
+    {
+      "name": "far-camera culling hides every batch and collapses every inactive instance",
+      "batches": 17,
+      "visible": 0,
+      "nonzero": 0
+    },
+    {
+      "name": "existing hero makes station visitor wait, then moving away resumes the same route",
+      "before": {
+        "id": "station-commuters-0",
+        "route": "station-commuters",
+        "position": [
+          73,
+          100,
+          384.2999999999979
+        ],
+        "target": 1,
+        "dwell": 0,
+        "walked": 2.299999999997908,
+        "arrivals": 0,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 0.007094125570464383
+      },
+      "waiting": {
+        "id": "station-commuters-0",
+        "route": "station-commuters",
+        "position": [
+          73,
+          100,
+          384.2999999999979
+        ],
+        "target": 1,
+        "dwell": 0,
+        "walked": 2.299999999997908,
+        "arrivals": 0,
+        "lastReason": "hero nearby",
+        "blocked": 120,
+        "soleOffset": -1.30417389440416e-9
+      },
+      "resumed": {
+        "id": "station-commuters-0",
+        "route": "station-commuters",
+        "position": [
+          75.70243483790776,
+          100,
+          385.0471002419301
+        ],
+        "target": 2,
+        "dwell": 0,
+        "walked": 5.730833333329851,
+        "arrivals": 1,
+        "lastReason": null,
+        "blocked": 120,
+        "soleOffset": 0.005555411741566763
+      }
+    }
+  ],
+  "captures": [
+    {
+      "file": "evidence/world-life-binding/vehicle-commuter.png",
+      "scope": "Camera-only actual import inspection; actor transforms unchanged",
+      "position": [
+        83.99988298772007,
+        41.30024819645842,
+        127.79019275109769
+      ],
+      "look": [
+        77,
+        38,
+        120.79019275109769
+      ]
+    },
+    {
+      "file": "evidence/world-life-binding/vehicle-delivery.png",
+      "scope": "Camera-only actual import inspection; actor transforms unchanged",
+      "position": [
+        84,
+        41.3,
+        237.86010787241682
+      ],
+      "look": [
+        77,
+        38,
+        230.86010787241682
+      ]
+    },
+    {
+      "file": "evidence/world-life-binding/vehicle-municipal.png",
+      "scope": "Camera-only actual import inspection; actor transforms unchanged",
+      "position": [
+        84,
+        41.3,
+        343.2607097470725
+      ],
+      "look": [
+        77,
+        38,
+        336.2607097470725
+      ]
+    },
+    {
+      "file": "evidence/world-life-binding/market-close.png",
+      "scope": "Camera-only actual import inspection; actor transforms unchanged",
+      "position": [
+        62.970833333332834,
+        26,
+        359.1
+      ]
+    },
+    {
+      "file": "evidence/world-life-binding/observation-close.png",
+      "scope": "Camera-only actual import inspection; actor transforms unchanged",
+      "position": [
+        77.46749999999933,
+        130,
+        420
+      ]
+    },
+    {
+      "file": "evidence/world-life-binding/station-close.png",
+      "scope": "Camera-only actual import inspection; actor transforms unchanged",
+      "position": [
+        73.20243483790776,
+        102,
+        388.0471002419301
+      ]
+    }
+  ],
+  "errors": [],
+  "final": {
+    "world": {
+      "ready": true,
+      "loading": false,
+      "error": null,
+      "aircraft": 36,
+      "visitors": 8,
+      "source": "Shared Blender hover vehicles and existing street pedestrian geometry",
+      "blockedMoves": 182,
+      "events": [
+        {
+          "id": 1,
+          "kind": "ready",
+          "clock": 0
+        },
+        {
+          "id": 2,
+          "kind": "destination",
+          "clock": 0.016666666666666666,
+          "visitor": "observation-visitors-1",
+          "waypoint": 2,
+          "purpose": "Walk through the sheltered observation area and pause at the outlook"
+        },
+        {
+          "id": 3,
+          "kind": "destination",
+          "clock": 0.16666666666666666,
+          "visitor": "market-visitors-2",
+          "waypoint": 3,
+          "purpose": "Visit the suspended commercial gallery and storefront approach"
+        },
+        {
+          "id": 4,
+          "kind": "destination",
+          "clock": 2.5999999999999956,
+          "visitor": "market-visitors-0",
+          "waypoint": 1,
+          "purpose": "Visit the suspended commercial gallery and storefront approach"
+        },
+        {
+          "id": 5,
+          "kind": "destination",
+          "clock": 3.4666666666666592,
+          "visitor": "observation-visitors-0",
+          "waypoint": 1,
+          "purpose": "Walk through the sheltered observation area and pause at the outlook"
+        },
+        {
+          "id": 6,
+          "kind": "destination",
+          "clock": 6.06666666666665,
+          "visitor": "market-visitors-1",
+          "waypoint": 3,
+          "purpose": "Visit the suspended commercial gallery and storefront approach"
+        },
+        {
+          "id": 7,
+          "kind": "destination",
+          "clock": 6.199999999999983,
+          "visitor": "station-commuters-1",
+          "waypoint": 3,
+          "purpose": "Walk between transit information and the protected waiting platform"
+        }
+      ],
+      "eventId": 7,
+      "clock": 6.9999999999999805,
+      "scenicOnly": true,
+      "dynamicLights": 0,
+      "air": {
+        "clock": 6.9999999999999805,
+        "emergencyBrakes": 0,
+        "settings": {
+          "acceleration": 0.9,
+          "braking": 1.6,
+          "lateralAcceleration": 2,
+          "minimumGap": 10,
+          "timeGap": 1.6,
+          "maxBank": 0.20943951023931953
+        },
+        "lanes": [
+          {
+            "id": "aerial-band-0",
+            "length": 1257.6072224958739,
+            "agents": [
+              {
+                "id": "aerial-band-0-0",
+                "variant": 0,
+                "distance": 69.78082496120206,
+                "speed": 10.8,
+                "preferred": 10.8,
+                "bank": 4.924238987879898e-16,
+                "laps": 0,
+                "position": [
+                  77,
+                  38,
+                  173.64033095896224
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  2.462119493939949e-16,
+                  1
+                ],
+                "gapAhead": 112.71977691345501
+              },
+              {
+                "id": "aerial-band-0-1",
+                "variant": 1,
+                "distance": 182.5006018746571,
+                "speed": 11.100000000000001,
+                "preferred": 11.100000000000001,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  77,
+                  38,
+                  286.36010787241753
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 106.90060187465428
+              },
+              {
+                "id": "aerial-band-0-2",
+                "variant": 2,
+                "distance": 289.4012037493114,
+                "speed": 11.4,
+                "preferred": 11.4,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  77,
+                  38,
+                  393.2607097470718
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 106.90060187465428
+              },
+              {
+                "id": "aerial-band-0-3",
+                "variant": 0,
+                "distance": 396.3018056239656,
+                "speed": 11.700000000000001,
+                "preferred": 11.700000000000001,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  77,
+                  38,
+                  500.1613116217261
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 74.39331282713329
+              },
+              {
+                "id": "aerial-band-0-4",
+                "variant": 1,
+                "distance": 470.6951184510988,
+                "speed": 6.422810730578019,
+                "preferred": 12,
+                "bank": -0.17997990008651527,
+                "laps": 0,
+                "position": [
+                  100.16668964113995,
+                  38,
+                  562.702578076174
+                ],
+                "quaternion": [
+                  -0.05945746497031615,
+                  0.6589277904914349,
+                  -0.06738816160976886,
+                  0.7468184601710345
+                ],
+                "gapAhead": 121.54722116719631
+              },
+              {
+                "id": "aerial-band-0-5",
+                "variant": 2,
+                "distance": 592.2423396182952,
+                "speed": 6.930999233480473,
+                "preferred": 10.8,
+                "bank": -0.14263292077538706,
+                "laps": 0,
+                "position": [
+                  221.65624779306162,
+                  38,
+                  562.371588906415
+                ],
+                "quaternion": [
+                  -0.055221347460589085,
+                  0.7730010171616515,
+                  -0.04503358257449621,
+                  0.6303903605641469
+                ],
+                "gapAhead": 107.03885694352721
+              },
+              {
+                "id": "aerial-band-0-6",
+                "variant": 0,
+                "distance": 699.2811965618224,
+                "speed": 11.100000000000001,
+                "preferred": 11.100000000000001,
+                "bank": 5.821308167317989e-16,
+                "laps": 0,
+                "position": [
+                  243,
+                  38,
+                  465.6628614366923
+                ],
+                "quaternion": [
+                  2.9106540836589944e-16,
+                  1,
+                  1.78226160348908e-32,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 114.12301656079353
+              },
+              {
+                "id": "aerial-band-0-7",
+                "variant": 1,
+                "distance": 813.404213122616,
+                "speed": 11.4,
+                "preferred": 11.4,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  243,
+                  38,
+                  351.53984487587036
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 106.90060187465406
+              },
+              {
+                "id": "aerial-band-0-8",
+                "variant": 2,
+                "distance": 920.3048149972702,
+                "speed": 11.700000000000001,
+                "preferred": 11.700000000000001,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  243,
+                  38,
+                  244.63924300131544
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 106.90060187465406
+              },
+              {
+                "id": "aerial-band-0-9",
+                "variant": 0,
+                "distance": 1027.2054168719244,
+                "speed": 12,
+                "preferred": 12,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  243,
+                  38,
+                  137.7386411267527
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 72.30695627826344
+              },
+              {
+                "id": "aerial-band-0-10",
+                "variant": 1,
+                "distance": 1099.5123731501878,
+                "speed": 6.437781164027492,
+                "preferred": 10.8,
+                "bank": -0.17950436268372622,
+                "laps": 0,
+                "position": [
+                  219.81981561150502,
+                  38,
+                  77.29573164189617
+                ],
+                "quaternion": [
+                  0.0671960290752342,
+                  -0.7466726668189002,
+                  -0.05931728953251393,
+                  0.6591252395900099
+                ],
+                "gapAhead": 122.2526857696455
+              },
+              {
+                "id": "aerial-band-0-11",
+                "variant": 2,
+                "distance": 1221.7650589198333,
+                "speed": 7.020914209611549,
+                "preferred": 11.100000000000001,
+                "bank": -0.1511695894805555,
+                "laps": 0,
+                "position": [
+                  97.64118190906323,
+                  38,
+                  77.78146306482603
+                ],
+                "quaternion": [
+                  0.047010088239429336,
+                  -0.6207667884539945,
+                  -0.05909518926588936,
+                  0.7803501807277701
+                ],
+                "gapAhead": 105.62298853724269
+              }
+            ]
+          },
+          {
+            "id": "aerial-band-1",
+            "length": 1257.607222495181,
+            "agents": [
+              {
+                "id": "aerial-band-1-0",
+                "variant": 1,
+                "distance": 50.85504290452597,
+                "speed": 8.506436642919889,
+                "preferred": 13.5,
+                "bank": 0.00014833481591922676,
+                "laps": 0,
+                "position": [
+                  118.07359386552501,
+                  65,
+                  77
+                ],
+                "quaternion": [
+                  0.00005244427706319079,
+                  0.7071067792417194,
+                  0.0000524442770631908,
+                  0.7071067792417195
+                ],
+                "gapAhead": 118.54365106580849
+              },
+              {
+                "id": "aerial-band-1-1",
+                "variant": 2,
+                "distance": 169.39869397033453,
+                "speed": 7.391796547167957,
+                "preferred": 13.875,
+                "bank": 0.2005432348879357,
+                "laps": 0,
+                "position": [
+                  234.67317488117322,
+                  65,
+                  84.50045847432924
+                ],
+                "quaternion": [
+                  0.03932493408128011,
+                  0.39086882692945885,
+                  0.09205593406988313,
+                  0.9149867838918839
+                ],
+                "gapAhead": 139.95250977886712
+              },
+              {
+                "id": "aerial-band-1-2",
+                "variant": 0,
+                "distance": 309.3512037492016,
+                "speed": 14.250000000000002,
+                "preferred": 14.250000000000002,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  243,
+                  65,
+                  222.16836934750222
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 107.42560187458412
+              },
+              {
+                "id": "aerial-band-1-3",
+                "variant": 1,
+                "distance": 416.7768056237857,
+                "speed": 14.625000000000002,
+                "preferred": 14.625000000000002,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  243,
+                  65,
+                  329.59397122208236
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 107.42560187460799
+              },
+              {
+                "id": "aerial-band-1-4",
+                "variant": 2,
+                "distance": 524.2024074983938,
+                "speed": 15,
+                "preferred": 15,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  243,
+                  65,
+                  437.0195730966883
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 88.99275752398466
+              },
+              {
+                "id": "aerial-band-1-5",
+                "variant": 0,
+                "distance": 613.1951650223784,
+                "speed": 9.3792929866974,
+                "preferred": 13.5,
+                "bank": -0.000012741669530012477,
+                "laps": 0,
+                "position": [
+                  243.00000000020114,
+                  65,
+                  526.0123308148053
+                ],
+                "quaternion": [
+                  -1.3322314326009646e-11,
+                  0.0000020911410854675275,
+                  -0.000006370834764949213,
+                  0.9999999999775198
+                ],
+                "gapAhead": 66.14044867201983
+              },
+              {
+                "id": "aerial-band-1-6",
+                "variant": 1,
+                "distance": 679.3356136943983,
+                "speed": 8.476396699064981,
+                "preferred": 13.875,
+                "bank": 0.00013515469179761863,
+                "laps": 0,
+                "position": [
+                  202.24948988170988,
+                  65,
+                  563
+                ],
+                "quaternion": [
+                  -0.00004778439950326751,
+                  -0.707106779571976,
+                  0.00004778439950326752,
+                  0.7071067795719761
+                ],
+                "gapAhead": 118.90032670095093
+              },
+              {
+                "id": "aerial-band-1-7",
+                "variant": 2,
+                "distance": 798.2359403953491,
+                "speed": 7.391798132330482,
+                "preferred": 14.250000000000002,
+                "bank": 0.20056412568877888,
+                "laps": 0,
+                "position": [
+                  85.30256878900843,
+                  65,
+                  555.4763030707425
+                ],
+                "quaternion": [
+                  -0.09208963796286243,
+                  -0.9152258003651971,
+                  0.03927244410992225,
+                  0.39030617220252384
+                ],
+                "gapAhead": 142.5438746014288
+              },
+              {
+                "id": "aerial-band-1-8",
+                "variant": 0,
+                "distance": 940.7798149967779,
+                "speed": 14.625000000000002,
+                "preferred": 14.625000000000002,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  77,
+                  65,
+                  415.2065834009099
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 107.42560187460799
+              },
+              {
+                "id": "aerial-band-1-9",
+                "variant": 1,
+                "distance": 1048.2054168713858,
+                "speed": 15,
+                "preferred": 15,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  77,
+                  65,
+                  307.7809815263993
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 94.30060187456024
+              },
+              {
+                "id": "aerial-band-1-10",
+                "variant": 2,
+                "distance": 1142.506018745946,
+                "speed": 13.5,
+                "preferred": 13.5,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  77,
+                  65,
+                  213.48037965195135
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 100.67859892016759
+              },
+              {
+                "id": "aerial-band-1-11",
+                "variant": 0,
+                "distance": 1243.1846176661136,
+                "speed": 9.229097278099967,
+                "preferred": 13.875,
+                "bank": -0.0002801591790318502,
+                "laps": 0,
+                "position": [
+                  76.99993135318772,
+                  65,
+                  112.8017807006085
+                ],
+                "quaternion": [
+                  0.00014007958889157896,
+                  -0.9999999890021547,
+                  -6.8243338186855875e-9,
+                  0.000048717545487048985
+                ],
+                "gapAhead": 65.27764773359354
+              }
+            ]
+          },
+          {
+            "id": "aerial-band-2",
+            "length": 1219.913818405767,
+            "agents": [
+              {
+                "id": "aerial-band-2-0",
+                "variant": 2,
+                "distance": 73.42215274931762,
+                "speed": 13.637432535616906,
+                "preferred": 16.2,
+                "bank": 3.856313278857739e-16,
+                "laps": 0,
+                "position": [
+                  83,
+                  114,
+                  177.56084990322395
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  1.9281566394288696e-16,
+                  1
+                ],
+                "gapAhead": 144.78733211783106
+              },
+              {
+                "id": "aerial-band-2-1",
+                "variant": 0,
+                "distance": 218.20948486714866,
+                "speed": 16.650000000000002,
+                "preferred": 16.650000000000002,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  83,
+                  114,
+                  322.3481820210546
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 104.80948486715101
+              },
+              {
+                "id": "aerial-band-2-2",
+                "variant": 1,
+                "distance": 323.01896973429973,
+                "speed": 17.1,
+                "preferred": 17.1,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  83,
+                  114,
+                  427.15766688820804
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 88.92638220537424
+              },
+              {
+                "id": "aerial-band-2-3",
+                "variant": 2,
+                "distance": 411.945351939674,
+                "speed": 10.420951672315901,
+                "preferred": 17.55,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  83,
+                  114,
+                  516.08404909358
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 46.60744643261546
+              },
+              {
+                "id": "aerial-band-2-4",
+                "variant": 0,
+                "distance": 458.55279837228954,
+                "speed": 6.239625315129013,
+                "preferred": 18,
+                "bank": -0.1956199129460463,
+                "laps": 0,
+                "position": [
+                  97.80385567923791,
+                  114,
+                  556.0657385117405
+                ],
+                "quaternion": [
+                  -0.05795880595765139,
+                  0.5906746462759858,
+                  -0.07859450029931782,
+                  0.8009788658768738
+                ],
+                "gapAhead": 124.4727797911114
+              },
+              {
+                "id": "aerial-band-2-5",
+                "variant": 1,
+                "distance": 583.0255781634011,
+                "speed": 6.070777949658043,
+                "preferred": 16.2,
+                "bank": -0.181072024652476,
+                "laps": 0,
+                "position": [
+                  222.10059057680016,
+                  114,
+                  556.090768559935
+                ],
+                "quaternion": [
+                  -0.07243661346657493,
+                  0.7978989571794238,
+                  -0.05410485507328378,
+                  0.5959721938303674
+                ],
+                "gapAhead": 100.00382047507355
+              },
+              {
+                "id": "aerial-band-2-6",
+                "variant": 2,
+                "distance": 683.0293986384747,
+                "speed": 13.58748063365605,
+                "preferred": 16.650000000000002,
+                "bank": 4.1788817547993134e-16,
+                "laps": 0,
+                "position": [
+                  237,
+                  114,
+                  462.7887706745933
+                ],
+                "quaternion": [
+                  2.0894408773996567e-16,
+                  1,
+                  1.2794135412575634e-32,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 148.28699543154266
+              },
+              {
+                "id": "aerial-band-2-7",
+                "variant": 0,
+                "distance": 831.3163940700174,
+                "speed": 17.1,
+                "preferred": 17.1,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  237,
+                  114,
+                  314.5017752430438
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 104.80948486716807
+              },
+              {
+                "id": "aerial-band-2-8",
+                "variant": 1,
+                "distance": 936.1258789371856,
+                "speed": 17.55,
+                "preferred": 17.55,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  237,
+                  114,
+                  209.69229037599186
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 86.42345204064577
+              },
+              {
+                "id": "aerial-band-2-9",
+                "variant": 2,
+                "distance": 1022.5493309778312,
+                "speed": 10.32987744127362,
+                "preferred": 18,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  237,
+                  114,
+                  123.26883833541564
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 45.97948989062661
+              },
+              {
+                "id": "aerial-band-2-10",
+                "variant": 0,
+                "distance": 1068.5288208684578,
+                "speed": 6.233237178029576,
+                "preferred": 16.2,
+                "bank": -0.19567017092853609,
+                "laps": 0,
+                "position": [
+                  222.17792764669178,
+                  114,
+                  83.92863615848641
+                ],
+                "quaternion": [
+                  0.07858811966386936,
+                  -0.800706805811482,
+                  -0.05800957827488151,
+                  0.5910392604584245
+                ],
+                "gapAhead": 124.453514150003
+              },
+              {
+                "id": "aerial-band-2-11",
+                "variant": 1,
+                "distance": 1192.9823350184608,
+                "speed": 6.070793560037826,
+                "preferred": 16.650000000000002,
+                "bank": -0.1810708490147401,
+                "laps": 0,
+                "position": [
+                  97.89960141278863,
+                  114,
+                  83.90917462498605
+                ],
+                "quaternion": [
+                  0.054104901243281225,
+                  -0.5959765930936893,
+                  -0.072435848292995,
+                  0.7978957375672389
+                ],
+                "gapAhead": 100.35363613662366
+              }
+            ]
+          }
+        ]
+      },
+      "airBatches": 17,
+      "people": [
+        {
+          "id": "station-commuters-0",
+          "route": "station-commuters",
+          "position": [
+            75.70243483790776,
+            100,
+            385.0471002419301
+          ],
+          "target": 2,
+          "dwell": 0,
+          "walked": 5.730833333329851,
+          "arrivals": 1,
+          "lastReason": null,
+          "blocked": 120,
+          "soleOffset": 0.005555411741566763
+        },
+        {
+          "id": "station-commuters-1",
+          "route": "station-commuters",
+          "position": [
+            76.12,
+            100,
+            401.97749999999354
+          ],
+          "target": 4,
+          "dwell": 4.200000000000003,
+          "walked": 7.110833333326866,
+          "arrivals": 1,
+          "lastReason": null,
+          "blocked": 0,
+          "soleOffset": 0.000004859157535470637
+        },
+        {
+          "id": "station-commuters-2",
+          "route": "station-commuters",
+          "position": [
+            76.98,
+            100,
+            385.956666666674
+          ],
+          "target": 5,
+          "dwell": 0,
+          "walked": 8.049999999992679,
+          "arrivals": 0,
+          "lastReason": null,
+          "blocked": 0,
+          "soleOffset": 0.006111518852434242
+        },
+        {
+          "id": "market-visitors-0",
+          "route": "market-visitors",
+          "position": [
+            65.47083333333283,
+            24,
+            356.1
+          ],
+          "target": 2,
+          "dwell": 0.600000000000013,
+          "walked": 2.970833333332834,
+          "arrivals": 1,
+          "lastReason": null,
+          "blocked": 0,
+          "soleOffset": -1.335144013124284e-9
+        },
+        {
+          "id": "market-visitors-1",
+          "route": "market-visitors",
+          "position": [
+            62.529238298753334,
+            24,
+            361.49979695625865
+          ],
+          "target": 0,
+          "dwell": 4.06666666666667,
+          "walked": 5.749999999997205,
+          "arrivals": 2,
+          "lastReason": null,
+          "blocked": 62,
+          "soleOffset": 0.0000013458165990514616
+        },
+        {
+          "id": "market-visitors-2",
+          "route": "market-visitors",
+          "position": [
+            62.516860863268285,
+            24,
+            359.41086042355136
+          ],
+          "target": 0,
+          "dwell": 0,
+          "walked": 2.2616666666674283,
+          "arrivals": 1,
+          "lastReason": null,
+          "blocked": 0,
+          "soleOffset": 0.005360790865767451
+        },
+        {
+          "id": "observation-visitors-0",
+          "route": "observation-visitors",
+          "position": [
+            79.96749999999933,
+            128,
+            417
+          ],
+          "target": 2,
+          "dwell": 1.4666666666666792,
+          "walked": 3.9674999999993332,
+          "arrivals": 1,
+          "lastReason": null,
+          "blocked": 0,
+          "soleOffset": -1.3351440048458489e-9
+        },
+        {
+          "id": "observation-visitors-1",
+          "route": "observation-visitors",
+          "position": [
+            77.73833333333371,
+            128,
+            423
+          ],
+          "target": 3,
+          "dwell": 0,
+          "walked": 2.2616666666662866,
+          "arrivals": 1,
+          "lastReason": null,
+          "blocked": 0,
+          "soleOffset": 0.0069447974305103695
+        }
+      ]
+    },
+    "district": {
+      "ready": true,
+      "error": null,
+      "phase": "detailed-architecture",
+      "pilot": false,
+      "records": 11251,
+      "chunks": 63,
+      "collisions": 7012,
+      "coordinateFailures": [],
+      "stepPasses": 0,
+      "paths": {
+        "V2-VT-A": {
+          "segments": [
+            {
+              "from": 0,
+              "to": 24,
+              "points": [
+                [
+                  61,
+                  0,
+                  215.5
+                ],
+                [
+                  61,
+                  0,
+                  215.5
+                ],
+                [
+                  61,
+                  3,
+                  224.62
+                ],
+                [
+                  67,
+                  3,
+                  224.62
+                ],
+                [
+                  67,
+                  3,
+                  224.62
+                ],
+                [
+                  67,
+                  6,
+                  215.5
+                ],
+                [
+                  61,
+                  6,
+                  215.5
+                ],
+                [
+                  61,
+                  6,
+                  215.5
+                ],
+                [
+                  61,
+                  9,
+                  224.62
+                ],
+                [
+                  67,
+                  9,
+                  224.62
+                ],
+                [
+                  67,
+                  9,
+                  224.62
+                ],
+                [
+                  67,
+                  12,
+                  215.5
+                ],
+                [
+                  61,
+                  12,
+                  215.5
+                ],
+                [
+                  61,
+                  12,
+                  215.5
+                ],
+                [
+                  61,
+                  15,
+                  224.62
+                ],
+                [
+                  67,
+                  15,
+                  224.62
+                ],
+                [
+                  67,
+                  15,
+                  224.62
+                ],
+                [
+                  67,
+                  18,
+                  215.5
+                ],
+                [
+                  61,
+                  18,
+                  215.5
+                ],
+                [
+                  61,
+                  18,
+                  215.5
+                ],
+                [
+                  61,
+                  21,
+                  224.62
+                ],
+                [
+                  67,
+                  21,
+                  224.62
+                ],
+                [
+                  67,
+                  21,
+                  224.62
+                ],
+                [
+                  67,
+                  24,
+                  215.5
+                ],
+                [
+                  61,
+                  24,
+                  215.5
+                ],
+                [
+                  61,
+                  24,
+                  215.5
+                ]
+              ]
+            },
+            {
+              "from": 24,
+              "to": 52,
+              "points": [
+                [
+                  61,
+                  24,
+                  215.5
+                ],
+                [
+                  61,
+                  24,
+                  215.5
+                ],
+                [
+                  61,
+                  27.11111111111111,
+                  224.98
+                ],
+                [
+                  67,
+                  27.11111111111111,
+                  224.98
+                ],
+                [
+                  67,
+                  27.11111111111111,
+                  224.98
+                ],
+                [
+                  67,
+                  30.22222222222222,
+                  215.5
+                ],
+                [
+                  61,
+                  30.22222222222222,
+                  215.5
+                ],
+                [
+                  61,
+                  30.22222222222222,
+                  215.5
+                ],
+                [
+                  61,
+                  33.333333333333336,
+                  224.98
+                ],
+                [
+                  67,
+                  33.333333333333336,
+                  224.98
+                ],
+                [
+                  67,
+                  33.333333333333336,
+                  224.98
+                ],
+                [
+                  67,
+                  36.44444444444445,
+                  215.5
+                ],
+                [
+                  61,
+                  36.44444444444445,
+                  215.5
+                ],
+                [
+                  61,
+                  36.44444444444444,
+                  215.5
+                ],
+                [
+                  61,
+                  39.55555555555556,
+                  224.98
+                ],
+                [
+                  67,
+                  39.55555555555556,
+                  224.98
+                ],
+                [
+                  67,
+                  39.55555555555556,
+                  224.98
+                ],
+                [
+                  67,
+                  42.66666666666667,
+                  215.5
+                ],
+                [
+                  61,
+                  42.66666666666667,
+                  215.5
+                ],
+                [
+                  61,
+                  42.66666666666667,
+                  215.5
+                ],
+                [
+                  61,
+                  45.777777777777786,
+                  224.98
+                ],
+                [
+                  67,
+                  45.777777777777786,
+                  224.98
+                ],
+                [
+                  67,
+                  45.77777777777778,
+                  224.98
+                ],
+                [
+                  67,
+                  48.88888888888889,
+                  215.5
+                ],
+                [
+                  61,
+                  48.88888888888889,
+                  215.5
+                ],
+                [
+                  61,
+                  48.888888888888886,
+                  215.5
+                ],
+                [
+                  61,
+                  52,
+                  224.98
+                ],
+                [
+                  67,
+                  52,
+                  224.98
+                ],
+                [
+                  70.2,
+                  52,
+                  224.98
+                ],
+                [
+                  70.2,
+                  52,
+                  215.5
+                ],
+                [
+                  61,
+                  52,
+                  215.5
+                ],
+                [
+                  61,
+                  52,
+                  215.5
+                ]
+              ]
+            },
+            {
+              "from": 52,
+              "to": 84,
+              "points": [
+                [
+                  61,
+                  52,
+                  215.5
+                ],
+                [
+                  61,
+                  52,
+                  215.5
+                ],
+                [
+                  61,
+                  55.2,
+                  224.98
+                ],
+                [
+                  67,
+                  55.2,
+                  224.98
+                ],
+                [
+                  67,
+                  55.2,
+                  224.98
+                ],
+                [
+                  67,
+                  58.400000000000006,
+                  215.5
+                ],
+                [
+                  61,
+                  58.400000000000006,
+                  215.5
+                ],
+                [
+                  61,
+                  58.4,
+                  215.5
+                ],
+                [
+                  61,
+                  61.6,
+                  224.98
+                ],
+                [
+                  67,
+                  61.6,
+                  224.98
+                ],
+                [
+                  67,
+                  61.6,
+                  224.98
+                ],
+                [
+                  67,
+                  64.8,
+                  215.5
+                ],
+                [
+                  61,
+                  64.8,
+                  215.5
+                ],
+                [
+                  61,
+                  64.8,
+                  215.5
+                ],
+                [
+                  61,
+                  68,
+                  224.98
+                ],
+                [
+                  67,
+                  68,
+                  224.98
+                ],
+                [
+                  67,
+                  68,
+                  224.98
+                ],
+                [
+                  67,
+                  71.2,
+                  215.5
+                ],
+                [
+                  61,
+                  71.2,
+                  215.5
+                ],
+                [
+                  61,
+                  71.2,
+                  215.5
+                ],
+                [
+                  61,
+                  74.4,
+                  224.98
+                ],
+                [
+                  67,
+                  74.4,
+                  224.98
+                ],
+                [
+                  67,
+                  74.4,
+                  224.98
+                ],
+                [
+                  67,
+                  77.60000000000001,
+                  215.5
+                ],
+                [
+                  61,
+                  77.60000000000001,
+                  215.5
+                ],
+                [
+                  61,
+                  77.6,
+                  215.5
+                ],
+                [
+                  61,
+                  80.8,
+                  224.98
+                ],
+                [
+                  67,
+                  80.8,
+                  224.98
+                ],
+                [
+                  67,
+                  80.8,
+                  224.98
+                ],
+                [
+                  67,
+                  84,
+                  215.5
+                ],
+                [
+                  61,
+                  84,
+                  215.5
+                ],
+                [
+                  61,
+                  84,
+                  215.5
+                ]
+              ]
+            }
+          ],
+          "endHeight": 84
+        },
+        "V2-VT-B": {
+          "segments": [
+            {
+              "from": 0,
+              "to": 24,
+              "points": [
+                [
+                  100,
+                  0,
+                  409.5
+                ],
+                [
+                  100,
+                  0,
+                  409.5
+                ],
+                [
+                  100,
+                  3,
+                  418.62
+                ],
+                [
+                  106,
+                  3,
+                  418.62
+                ],
+                [
+                  106,
+                  3,
+                  418.62
+                ],
+                [
+                  106,
+                  6,
+                  409.5
+                ],
+                [
+                  100,
+                  6,
+                  409.5
+                ],
+                [
+                  100,
+                  6,
+                  409.5
+                ],
+                [
+                  100,
+                  9,
+                  418.62
+                ],
+                [
+                  106,
+                  9,
+                  418.62
+                ],
+                [
+                  106,
+                  9,
+                  418.62
+                ],
+                [
+                  106,
+                  12,
+                  409.5
+                ],
+                [
+                  100,
+                  12,
+                  409.5
+                ],
+                [
+                  100,
+                  12,
+                  409.5
+                ],
+                [
+                  100,
+                  15,
+                  418.62
+                ],
+                [
+                  106,
+                  15,
+                  418.62
+                ],
+                [
+                  106,
+                  15,
+                  418.62
+                ],
+                [
+                  106,
+                  18,
+                  409.5
+                ],
+                [
+                  100,
+                  18,
+                  409.5
+                ],
+                [
+                  100,
+                  18,
+                  409.5
+                ],
+                [
+                  100,
+                  21,
+                  418.62
+                ],
+                [
+                  106,
+                  21,
+                  418.62
+                ],
+                [
+                  106,
+                  21,
+                  418.62
+                ],
+                [
+                  106,
+                  24,
+                  409.5
+                ],
+                [
+                  100,
+                  24,
+                  409.5
+                ],
+                [
+                  100,
+                  24,
+                  409.5
+                ]
+              ]
+            },
+            {
+              "from": 24,
+              "to": 52,
+              "points": [
+                [
+                  100,
+                  24,
+                  409.5
+                ],
+                [
+                  100,
+                  24,
+                  409.5
+                ],
+                [
+                  100,
+                  27.11111111111111,
+                  418.98
+                ],
+                [
+                  106,
+                  27.11111111111111,
+                  418.98
+                ],
+                [
+                  106,
+                  27.11111111111111,
+                  418.98
+                ],
+                [
+                  106,
+                  30.22222222222222,
+                  409.5
+                ],
+                [
+                  100,
+                  30.22222222222222,
+                  409.5
+                ],
+                [
+                  100,
+                  30.22222222222222,
+                  409.5
+                ],
+                [
+                  100,
+                  33.333333333333336,
+                  418.98
+                ],
+                [
+                  106,
+                  33.333333333333336,
+                  418.98
+                ],
+                [
+                  106,
+                  33.333333333333336,
+                  418.98
+                ],
+                [
+                  106,
+                  36.44444444444445,
+                  409.5
+                ],
+                [
+                  100,
+                  36.44444444444445,
+                  409.5
+                ],
+                [
+                  100,
+                  36.44444444444444,
+                  409.5
+                ],
+                [
+                  100,
+                  39.55555555555556,
+                  418.98
+                ],
+                [
+                  106,
+                  39.55555555555556,
+                  418.98
+                ],
+                [
+                  106,
+                  39.55555555555556,
+                  418.98
+                ],
+                [
+                  106,
+                  42.66666666666667,
+                  409.5
+                ],
+                [
+                  100,
+                  42.66666666666667,
+                  409.5
+                ],
+                [
+                  100,
+                  42.66666666666667,
+                  409.5
+                ],
+                [
+                  100,
+                  45.777777777777786,
+                  418.98
+                ],
+                [
+                  106,
+                  45.777777777777786,
+                  418.98
+                ],
+                [
+                  106,
+                  45.77777777777778,
+                  418.98
+                ],
+                [
+                  106,
+                  48.88888888888889,
+                  409.5
+                ],
+                [
+                  100,
+                  48.88888888888889,
+                  409.5
+                ],
+                [
+                  100,
+                  48.888888888888886,
+                  409.5
+                ],
+                [
+                  100,
+                  52,
+                  418.98
+                ],
+                [
+                  106,
+                  52,
+                  418.98
+                ],
+                [
+                  109.2,
+                  52,
+                  418.98
+                ],
+                [
+                  109.2,
+                  52,
+                  409.5
+                ],
+                [
+                  100,
+                  52,
+                  409.5
+                ],
+                [
+                  100,
+                  52,
+                  409.5
+                ]
+              ]
+            },
+            {
+              "from": 52,
+              "to": 84,
+              "points": [
+                [
+                  100,
+                  52,
+                  409.5
+                ],
+                [
+                  100,
+                  52,
+                  409.5
+                ],
+                [
+                  100,
+                  55.2,
+                  418.98
+                ],
+                [
+                  106,
+                  55.2,
+                  418.98
+                ],
+                [
+                  106,
+                  55.2,
+                  418.98
+                ],
+                [
+                  106,
+                  58.400000000000006,
+                  409.5
+                ],
+                [
+                  100,
+                  58.400000000000006,
+                  409.5
+                ],
+                [
+                  100,
+                  58.4,
+                  409.5
+                ],
+                [
+                  100,
+                  61.6,
+                  418.98
+                ],
+                [
+                  106,
+                  61.6,
+                  418.98
+                ],
+                [
+                  106,
+                  61.6,
+                  418.98
+                ],
+                [
+                  106,
+                  64.8,
+                  409.5
+                ],
+                [
+                  100,
+                  64.8,
+                  409.5
+                ],
+                [
+                  100,
+                  64.8,
+                  409.5
+                ],
+                [
+                  100,
+                  68,
+                  418.98
+                ],
+                [
+                  106,
+                  68,
+                  418.98
+                ],
+                [
+                  106,
+                  68,
+                  418.98
+                ],
+                [
+                  106,
+                  71.2,
+                  409.5
+                ],
+                [
+                  100,
+                  71.2,
+                  409.5
+                ],
+                [
+                  100,
+                  71.2,
+                  409.5
+                ],
+                [
+                  100,
+                  74.4,
+                  418.98
+                ],
+                [
+                  106,
+                  74.4,
+                  418.98
+                ],
+                [
+                  106,
+                  74.4,
+                  418.98
+                ],
+                [
+                  106,
+                  77.60000000000001,
+                  409.5
+                ],
+                [
+                  100,
+                  77.60000000000001,
+                  409.5
+                ],
+                [
+                  100,
+                  77.6,
+                  409.5
+                ],
+                [
+                  100,
+                  80.8,
+                  418.98
+                ],
+                [
+                  106,
+                  80.8,
+                  418.98
+                ],
+                [
+                  106,
+                  80.8,
+                  418.98
+                ],
+                [
+                  106,
+                  84,
+                  409.5
+                ],
+                [
+                  100,
+                  84,
+                  409.5
+                ],
+                [
+                  100,
+                  84,
+                  409.5
+                ]
+              ]
+            },
+            {
+              "from": 84,
+              "to": 128,
+              "points": [
+                [
+                  100,
+                  84,
+                  409.5
+                ],
+                [
+                  100,
+                  84,
+                  409.5
+                ],
+                [
+                  100,
+                  87.14285714285714,
+                  418.98
+                ],
+                [
+                  106,
+                  87.14285714285714,
+                  418.98
+                ],
+                [
+                  106,
+                  87.14285714285714,
+                  418.98
+                ],
+                [
+                  106,
+                  90.28571428571428,
+                  409.5
+                ],
+                [
+                  100,
+                  90.28571428571428,
+                  409.5
+                ],
+                [
+                  100,
+                  90.28571428571429,
+                  409.5
+                ],
+                [
+                  100,
+                  93.42857142857143,
+                  418.98
+                ],
+                [
+                  106,
+                  93.42857142857143,
+                  418.98
+                ],
+                [
+                  106,
+                  93.42857142857143,
+                  418.98
+                ],
+                [
+                  106,
+                  96.57142857142857,
+                  409.5
+                ],
+                [
+                  100,
+                  96.57142857142857,
+                  409.5
+                ],
+                [
+                  100,
+                  96.57142857142857,
+                  409.5
+                ],
+                [
+                  100,
+                  99.71428571428571,
+                  418.98
+                ],
+                [
+                  106,
+                  99.71428571428571,
+                  418.98
+                ],
+                [
+                  106,
+                  99.71428571428571,
+                  418.98
+                ],
+                [
+                  106,
+                  102.85714285714285,
+                  409.5
+                ],
+                [
+                  100,
+                  102.85714285714285,
+                  409.5
+                ],
+                [
+                  100,
+                  102.85714285714286,
+                  409.5
+                ],
+                [
+                  100,
+                  106,
+                  418.98
+                ],
+                [
+                  106,
+                  106,
+                  418.98
+                ],
+                [
+                  106,
+                  106,
+                  418.98
+                ],
+                [
+                  106,
+                  109.14285714285714,
+                  409.5
+                ],
+                [
+                  100,
+                  109.14285714285714,
+                  409.5
+                ],
+                [
+                  100,
+                  109.14285714285714,
+                  409.5
+                ],
+                [
+                  100,
+                  112.28571428571428,
+                  418.98
+                ],
+                [
+                  106,
+                  112.28571428571428,
+                  418.98
+                ],
+                [
+                  106,
+                  112.28571428571428,
+                  418.98
+                ],
+                [
+                  106,
+                  115.42857142857142,
+                  409.5
+                ],
+                [
+                  100,
+                  115.42857142857142,
+                  409.5
+                ],
+                [
+                  100,
+                  115.42857142857143,
+                  409.5
+                ],
+                [
+                  100,
+                  118.57142857142857,
+                  418.98
+                ],
+                [
+                  106,
+                  118.57142857142857,
+                  418.98
+                ],
+                [
+                  106,
+                  118.57142857142857,
+                  418.98
+                ],
+                [
+                  106,
+                  121.71428571428571,
+                  409.5
+                ],
+                [
+                  100,
+                  121.71428571428571,
+                  409.5
+                ],
+                [
+                  100,
+                  121.71428571428572,
+                  409.5
+                ],
+                [
+                  100,
+                  124.85714285714286,
+                  418.98
+                ],
+                [
+                  106,
+                  124.85714285714286,
+                  418.98
+                ],
+                [
+                  106,
+                  124.85714285714286,
+                  418.98
+                ],
+                [
+                  106,
+                  128,
+                  409.5
+                ],
+                [
+                  100,
+                  128,
+                  409.5
+                ],
+                [
+                  100,
+                  128,
+                  409.5
+                ]
+              ]
+            }
+          ],
+          "endHeight": 128
+        },
+        "V2-VT-C": {
+          "segments": [
+            {
+              "from": 84,
+              "to": 100,
+              "points": [
+                [
+                  61,
+                  84,
+                  375.5
+                ],
+                [
+                  61,
+                  84,
+                  375.5
+                ],
+                [
+                  61,
+                  87.2,
+                  384.98
+                ],
+                [
+                  67,
+                  87.2,
+                  384.98
+                ],
+                [
+                  67,
+                  87.2,
+                  384.98
+                ],
+                [
+                  67,
+                  90.4,
+                  375.5
+                ],
+                [
+                  61,
+                  90.4,
+                  375.5
+                ],
+                [
+                  61,
+                  90.4,
+                  375.5
+                ],
+                [
+                  61,
+                  93.60000000000001,
+                  384.98
+                ],
+                [
+                  67,
+                  93.60000000000001,
+                  384.98
+                ],
+                [
+                  67,
+                  93.6,
+                  384.98
+                ],
+                [
+                  67,
+                  96.8,
+                  375.5
+                ],
+                [
+                  61,
+                  96.8,
+                  375.5
+                ],
+                [
+                  61,
+                  96.8,
+                  375.5
+                ],
+                [
+                  61,
+                  100,
+                  384.98
+                ],
+                [
+                  67,
+                  100,
+                  384.98
+                ],
+                [
+                  70.2,
+                  100,
+                  384.98
+                ],
+                [
+                  70.2,
+                  100,
+                  375.5
+                ],
+                [
+                  61,
+                  100,
+                  375.5
+                ],
+                [
+                  61,
+                  100,
+                  375.5
+                ]
+              ]
+            }
+          ],
+          "endHeight": 100
+        },
+        "V2-VT-D": {
+          "segments": [
+            {
+              "from": 100,
+              "to": 128,
+              "points": [
+                [
+                  61,
+                  100,
+                  403.5
+                ],
+                [
+                  61,
+                  100,
+                  403.5
+                ],
+                [
+                  61,
+                  103.11111111111111,
+                  412.98
+                ],
+                [
+                  67,
+                  103.11111111111111,
+                  412.98
+                ],
+                [
+                  67,
+                  103.11111111111111,
+                  412.98
+                ],
+                [
+                  67,
+                  106.22222222222223,
+                  403.5
+                ],
+                [
+                  61,
+                  106.22222222222223,
+                  403.5
+                ],
+                [
+                  61,
+                  106.22222222222223,
+                  403.5
+                ],
+                [
+                  61,
+                  109.33333333333334,
+                  412.98
+                ],
+                [
+                  67,
+                  109.33333333333334,
+                  412.98
+                ],
+                [
+                  67,
+                  109.33333333333333,
+                  412.98
+                ],
+                [
+                  67,
+                  112.44444444444444,
+                  403.5
+                ],
+                [
+                  61,
+                  112.44444444444444,
+                  403.5
+                ],
+                [
+                  61,
+                  112.44444444444444,
+                  403.5
+                ],
+                [
+                  61,
+                  115.55555555555556,
+                  412.98
+                ],
+                [
+                  67,
+                  115.55555555555556,
+                  412.98
+                ],
+                [
+                  67,
+                  115.55555555555556,
+                  412.98
+                ],
+                [
+                  67,
+                  118.66666666666667,
+                  403.5
+                ],
+                [
+                  61,
+                  118.66666666666667,
+                  403.5
+                ],
+                [
+                  61,
+                  118.66666666666667,
+                  403.5
+                ],
+                [
+                  61,
+                  121.77777777777779,
+                  412.98
+                ],
+                [
+                  67,
+                  121.77777777777779,
+                  412.98
+                ],
+                [
+                  67,
+                  121.77777777777777,
+                  412.98
+                ],
+                [
+                  67,
+                  124.88888888888889,
+                  403.5
+                ],
+                [
+                  61,
+                  124.88888888888889,
+                  403.5
+                ],
+                [
+                  61,
+                  124.88888888888889,
+                  403.5
+                ],
+                [
+                  61,
+                  128,
+                  412.98
+                ],
+                [
+                  67,
+                  128,
+                  412.98
+                ],
+                [
+                  70.2,
+                  128,
+                  412.98
+                ],
+                [
+                  70.2,
+                  128,
+                  403.5
+                ],
+                [
+                  61,
+                  128,
+                  403.5
+                ],
+                [
+                  61,
+                  128,
+                  403.5
+                ]
+              ]
+            }
+          ],
+          "endHeight": 128
+        },
+        "service-stair": {
+          "segments": [
+            {
+              "from": 52,
+              "to": 55.2,
+              "points": [
+                [
+                  71,
+                  52,
+                  316.5
+                ],
+                [
+                  71,
+                  52,
+                  316.5
+                ],
+                [
+                  71,
+                  55.2,
+                  325.98
+                ],
+                [
+                  77,
+                  55.2,
+                  325.98
+                ],
+                [
+                  80.2,
+                  55.2,
+                  325.98
+                ],
+                [
+                  80.2,
+                  55.2,
+                  316.5
+                ],
+                [
+                  71,
+                  55.2,
+                  316.5
+                ],
+                [
+                  71,
+                  55.2,
+                  316.5
+                ]
+              ]
+            },
+            {
+              "from": 55.2,
+              "to": 58.4,
+              "points": [
+                [
+                  71,
+                  55.2,
+                  316.5
+                ],
+                [
+                  71,
+                  55.2,
+                  316.5
+                ],
+                [
+                  71,
+                  58.4,
+                  325.98
+                ],
+                [
+                  77,
+                  58.4,
+                  325.98
+                ],
+                [
+                  80.2,
+                  58.4,
+                  325.98
+                ],
+                [
+                  80.2,
+                  58.4,
+                  316.5
+                ],
+                [
+                  71,
+                  58.4,
+                  316.5
+                ],
+                [
+                  71,
+                  58.4,
+                  316.5
+                ]
+              ]
+            }
+          ],
+          "endHeight": 58.4
+        },
+        "market-terrace": {
+          "segments": [
+            {
+              "from": 24,
+              "to": 27.6,
+              "points": [
+                [
+                  76,
+                  24,
+                  353.9
+                ],
+                [
+                  76.95,
+                  24,
+                  353.9
+                ],
+                [
+                  77.18,
+                  24.18,
+                  353.9
+                ],
+                [
+                  77.54,
+                  24.36,
+                  353.9
+                ],
+                [
+                  77.9,
+                  24.54,
+                  353.9
+                ],
+                [
+                  78.26,
+                  24.72,
+                  353.9
+                ],
+                [
+                  78.62,
+                  24.9,
+                  353.9
+                ],
+                [
+                  78.98,
+                  25.08,
+                  353.9
+                ],
+                [
+                  79.34,
+                  25.26,
+                  353.9
+                ],
+                [
+                  79.7,
+                  25.44,
+                  353.9
+                ],
+                [
+                  80.06,
+                  25.62,
+                  353.9
+                ],
+                [
+                  80.42,
+                  25.8,
+                  353.9
+                ],
+                [
+                  80.78,
+                  25.98,
+                  353.9
+                ],
+                [
+                  81.14,
+                  26.16,
+                  353.9
+                ],
+                [
+                  81.5,
+                  26.34,
+                  353.9
+                ],
+                [
+                  81.86,
+                  26.52,
+                  353.9
+                ],
+                [
+                  82.22,
+                  26.7,
+                  353.9
+                ],
+                [
+                  82.58,
+                  26.88,
+                  353.9
+                ],
+                [
+                  82.94,
+                  27.06,
+                  353.9
+                ],
+                [
+                  83.3,
+                  27.24,
+                  353.9
+                ],
+                [
+                  83.66,
+                  27.42,
+                  353.9
+                ],
+                [
+                  84.02,
+                  27.6,
+                  353.9
+                ],
+                [
+                  84.3,
+                  27.6,
+                  353.9
+                ],
+                [
+                  85.1,
+                  27.6,
+                  353.4
+                ],
+                [
+                  88,
+                  27.6,
+                  353.4
+                ],
+                [
+                  88,
+                  27.6,
+                  357
+                ]
+              ]
+            }
+          ],
+          "endHeight": 27.6
+        }
+      },
+      "status": "experimental: not full V02 acceptance"
+    },
+    "market": {
+      "phase": "idle",
+      "savedPhase": null,
+      "attempt": 0,
+      "elapsed": 0,
+      "powerIsolated": false,
+      "rewarded": false,
+      "waitingReason": null,
+      "message": "",
+      "clock": 1.9999999999999978,
+      "eventId": 0,
+      "events": [],
+      "queue": [],
+      "lastPathPoint": null,
+      "pathMetres": 0,
+      "escortMetres": 0,
+      "error": null,
+      "config": {
+        "id": "market-rescue",
+        "title": "SUSPENDED MARKET · RESCUE",
+        "trigger": [
+          62,
+          24,
+          375
+        ],
+        "positions": [
+          [
+            85,
+            24,
+            364
+          ],
+          [
+            66,
+            24,
+            358
+          ],
+          [
+            77,
+            24,
+            373
+          ]
+        ],
+        "reward": 450,
+        "isolation": [
+          82,
+          24,
+          357
+        ],
+        "extraction": [
+          62,
+          24,
+          357
+        ],
+        "hazard": [
+          85,
+          24,
+          364
+        ],
+        "patrols": [
+          [
+            [
+              66,
+              24,
+              358
+            ],
+            [
+              74,
+              24,
+              358
+            ],
+            [
+              74,
+              24,
+              361
+            ],
+            [
+              66,
+              24,
+              361
+            ]
+          ],
+          [
+            [
+              77,
+              24,
+              373
+            ],
+            [
+              88,
+              24,
+              373
+            ],
+            [
+              88,
+              24,
+              376
+            ],
+            [
+              77,
+              24,
+              376
+            ]
+          ]
+        ],
+        "bounds": {
+          "min": [
+            51,
+            23.9,
+            349
+          ],
+          "max": [
+            99,
+            26,
+            381
+          ]
+        },
+        "actorType": "existing scenic pedestrian appearance; new collision-checked escort adapter",
+        "status": "new runtime adapter; acceptance requires normal-input incident, escort and lifecycle tests"
+      },
+      "appearance": "existing scenic pedestrian clone; shared source geometry/materials are never disposed",
+      "nearAccess": false,
+      "onMarket": false,
+      "target": [
+        85,
+        24,
+        364
+      ],
+      "civilians": [
+        {
+          "id": 0,
+          "position": [
+            85,
+            24,
+            364
+          ],
+          "walked": 0,
+          "blocked": 0
+        },
+        {
+          "id": 1,
+          "position": [
+            68.29999999999961,
+            24,
+            358
+          ],
+          "walked": 2.2999999999996135,
+          "blocked": 0
+        },
+        {
+          "id": 2,
+          "position": [
+            79.29999999999961,
+            24,
+            373
+          ],
+          "walked": 2.2999999999996135,
+          "blocked": 0
+        }
+      ],
+      "scope": "New market incident/escort adapter with existing scenic civilian appearance; not original courier pickup or full V02 acceptance"
+    },
+    "pursuit": {
+      "phase": "idle",
+      "attempt": 0,
+      "clock": 1.9999999999999978,
+      "elapsed": 0,
+      "waypoint": 1,
+      "distance": 0,
+      "rewarded": false,
+      "blockedFor": 0,
+      "message": "",
+      "events": [],
+      "eventId": 0,
+      "error": null,
+      "config": {
+        "id": "transit-pursuit",
+        "title": "TRANSIT INTERCHANGE · PURSUIT",
+        "trigger": [
+          73,
+          100,
+          364
+        ],
+        "positions": [
+          [
+            73.7,
+            100,
+            373
+          ]
+        ],
+        "reward": 400,
+        "escape": [
+          84,
+          128,
+          420
+        ],
+        "path": [
+          [
+            73.7,
+            100,
+            373
+          ],
+          [
+            73.7,
+            100,
+            390
+          ],
+          [
+            68,
+            100,
+            390
+          ],
+          [
+            68,
+            100,
+            399
+          ],
+          [
+            64,
+            100,
+            399
+          ],
+          [
+            61,
+            100,
+            403.5
+          ],
+          [
+            61,
+            100,
+            403.5
+          ],
+          [
+            61,
+            103.11111111111111,
+            412.98
+          ],
+          [
+            67,
+            103.11111111111111,
+            412.98
+          ],
+          [
+            67,
+            103.11111111111111,
+            412.98
+          ],
+          [
+            67,
+            106.22222222222223,
+            403.5
+          ],
+          [
+            61,
+            106.22222222222223,
+            403.5
+          ],
+          [
+            61,
+            106.22222222222223,
+            403.5
+          ],
+          [
+            61,
+            109.33333333333333,
+            412.98
+          ],
+          [
+            67,
+            109.33333333333333,
+            412.98
+          ],
+          [
+            67,
+            109.33333333333333,
+            412.98
+          ],
+          [
+            67,
+            112.44444444444444,
+            403.5
+          ],
+          [
+            61,
+            112.44444444444444,
+            403.5
+          ],
+          [
+            61,
+            112.44444444444444,
+            403.5
+          ],
+          [
+            61,
+            115.55555555555556,
+            412.98
+          ],
+          [
+            67,
+            115.55555555555556,
+            412.98
+          ],
+          [
+            67,
+            115.55555555555556,
+            412.98
+          ],
+          [
+            67,
+            118.66666666666667,
+            403.5
+          ],
+          [
+            61,
+            118.66666666666667,
+            403.5
+          ],
+          [
+            61,
+            118.66666666666667,
+            403.5
+          ],
+          [
+            61,
+            121.77777777777777,
+            412.98
+          ],
+          [
+            67,
+            121.77777777777777,
+            412.98
+          ],
+          [
+            67,
+            121.77777777777777,
+            412.98
+          ],
+          [
+            67,
+            124.88888888888889,
+            403.5
+          ],
+          [
+            61,
+            124.88888888888889,
+            403.5
+          ],
+          [
+            61,
+            124.88888888888889,
+            403.5
+          ],
+          [
+            61,
+            128,
+            412.98
+          ],
+          [
+            67,
+            128,
+            412.98
+          ],
+          [
+            70.2,
+            128,
+            412.98
+          ],
+          [
+            70.2,
+            128,
+            403.5
+          ],
+          [
+            61,
+            128,
+            403.5
+          ],
+          [
+            61,
+            128,
+            403.5
+          ],
+          [
+            55,
+            128,
+            403.5
+          ],
+          [
+            55,
+            128,
+            430
+          ],
+          [
+            84,
+            128,
+            430
+          ],
+          [
+            84,
+            128,
+            420
+          ]
+        ],
+        "interception": [
+          80,
+          128,
+          420
+        ],
+        "speed": 2.7,
+        "cornerPause": 0.1,
+        "bounds": {
+          "min": [
+            51,
+            83.9,
+            353
+          ],
+          "max": [
+            99,
+            131,
+            446
+          ]
+        },
+        "actorType": "dedicated collision-checked runner; existing scenic civilian prototype appearance",
+        "status": "runtime prototype; original train envelope and wider gameplay acceptance remain separate"
+      },
+      "runner": {
+        "position": [
+          73.7,
+          100,
+          373
+        ],
+        "speedLimit": 2.7
+      },
+      "canCapture": false,
+      "atAccess": false,
+      "scope": "Supported pursuit prototype, not final character art or train-envelope certification"
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "schema": "sm-v02-ambient-routes-1",
+  "worldManifestSHA256": "b30986c9d6f82f7680885cea47760cfde4b69cabed629dc6863173dc4b21a37b",
+  "routes": [
+    {
+      "id": "station-commuters",
+      "purpose": "Walk between transit information and the protected waiting platform",
+      "count": 3,
+      "points": [
+        [
+          73,
+          100,
+          382
+        ],
+        [
+          73,
+          100,
+          385.05
+        ],
+        [
+          76.12,
+          100,
+          385.05
+        ],
+        [
+          76.12,
+          100,
+          402
+        ],
+        [
+          76.98,
+          100,
+          402
+        ],
+        [
+          76.98,
+          100,
+          385.8
+        ],
+        [
+          73.9,
+          100,
+          385.8
+        ],
+        [
+          73.9,
+          100,
+          382
+        ]
+      ],
+      "dwellAt": [
+        0,
+        3
+      ],
+      "closed": true,
+      "baseSpeed": 1.15,
+      "minimumSpacing": 0.68,
+      "dwellSeconds": 5,
+      "length": 47.96000000000001
+    },
+    {
+      "id": "market-visitors",
+      "purpose": "Visit the suspended commercial gallery and storefront approach",
+      "count": 3,
+      "points": [
+        [
+          62.5,
+          24,
+          356.1
+        ],
+        [
+          65.5,
+          24,
+          356.1
+        ],
+        [
+          65.5,
+          24,
+          361.5
+        ],
+        [
+          62.5,
+          24,
+          361.5
+        ]
+      ],
+      "dwellAt": [
+        1,
+        3
+      ],
+      "closed": true,
+      "baseSpeed": 1.15,
+      "minimumSpacing": 0.68,
+      "dwellSeconds": 5,
+      "length": 16.799999999999955
+    },
+    {
+      "id": "observation-visitors",
+      "purpose": "Walk through the sheltered observation area and pause at the outlook",
+      "count": 2,
+      "points": [
+        [
+          76,
+          128,
+          417
+        ],
+        [
+          80,
+          128,
+          417
+        ],
+        [
+          80,
+          128,
+          423
+        ],
+        [
+          76,
+          128,
+          423
+        ]
+      ],
+      "dwellAt": [
+        1,
+        2
+      ],
+      "closed": true,
+      "baseSpeed": 1.15,
+      "minimumSpacing": 0.68,
+      "dwellSeconds": 5,
+      "length": 20
+    }
+  ],
+  "actorCount": 8,
+  "limits": [
+    "Scenic visitors, no combat/quest/reward ownership",
+    "Existing source pedestrian appearance reused; final visual review remains separate"
+  ]
+}

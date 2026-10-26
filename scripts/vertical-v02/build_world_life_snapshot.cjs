@@ -1,0 +1,6 @@
+/* Exact clock-zero runtime routes/poses for the separate Blender world master. */
+const fs=require('fs'),path=require('path'),crypto=require('crypto'),THREE=require('../vendor/three-r128.js'),create=require('../game_aerial_traffic_core_v02.js');
+const R=path.resolve(__dirname,'../..'),D=path.join(R,'development/vertical-city-v02'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f))),sha=f=>crypto.createHash('sha256').update(fs.readFileSync(path.join(R,f))).digest('hex');
+const routes='assets/city/vertical-v02/world-life/air_routes.json',ambient='assets/city/vertical-v02/world-life/ambient_routes.json',flow=create(THREE,read(routes)),state=flow.state();
+const result={scope:'Exact clock-zero shared runtime traffic, sampled route displays and public pedestrian route metadata. Not a matched visual reference render.',sources:Object.fromEntries([routes,ambient,'scripts/game_aerial_traffic_core_v02.js'].map(f=>[f,sha(f)])),lanes:flow.lanes.map(l=>({id:l.id,length:l.length,displayPoints:Array.from({length:Math.ceil(l.length/.5)},(_,i)=>l.curve.getPointAt(i/Math.ceil(l.length/.5)).toArray()),agents:state.lanes.find(a=>a.id===l.id).agents})),ambient:read(ambient)};
+fs.writeFileSync(path.join(D,'V02_World_Life_Authoring_Snapshot.json'),JSON.stringify(result)+'\n');console.log('Prepared',state.lanes.reduce((n,l)=>n+l.agents.length,0),'clock-zero fleet instances');
