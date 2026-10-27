@@ -1,0 +1,13 @@
+body.v02CityView > :not([data-v02-world-canvas]):not(#v02CityViews){display:none!important}
+#v02CityViews[hidden]{display:none!important}
+#v02CityViews{position:fixed;inset:0;z-index:1000;pointer-events:none;color:#dceff3;font:12px/1.4 ui-monospace,monospace}
+#v02ViewBar{position:absolute;top:max(14px,env(safe-area-inset-top));left:14px;right:14px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+#v02ViewBar>div{padding:9px 12px;background:#07151ee8;border-left:2px solid #73d1de}
+#v02ViewBar span{font-size:10px;letter-spacing:.12em;color:#9cc5cd}
+#v02ViewTitle{font:14px/1.4 ui-monospace,monospace;margin:3px 0 0}
+#v02ViewChoices{position:absolute;left:14px;bottom:max(42px,calc(env(safe-area-inset-bottom) + 42px));display:flex;gap:8px}
+#v02CityViews button{pointer-events:auto;min-height:44px;min-width:44px;padding:9px 12px;margin:0;background:#07151ee8;color:#dceff3;border:1px solid #598493;border-radius:4px;font:12px/1.4 ui-monospace,monospace;touch-action:manipulation}
+#v02CityViews button[aria-pressed=true]{border-color:#b3f4ff;color:#b3f4ff;background:#12303ee8}
+#v02CityViews button:focus-visible{outline:2px solid #b3f4ff;outline-offset:3px}
+#v02ViewHint{position:absolute;bottom:max(9px,env(safe-area-inset-bottom));left:14px;margin:0;color:#b9d3dc;background:#07151ee8;padding:4px 8px;font-size:10px}
+@media(max-width:600px){#v02ViewBar{left:10px;right:10px;align-items:flex-start}#v02ViewBar>div{padding:7px 8px}#v02ViewTitle{font-size:12px}#v02ViewsClose{max-width:110px}#v02ViewHint{display:none}#v02ViewChoices{left:10px;right:10px;bottom:max(14px,env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1fr}}

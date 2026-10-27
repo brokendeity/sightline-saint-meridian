@@ -1,0 +1,547 @@
+{
+  "status": "PASS bounded native camera/pause/controller/touch inspection cases",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT_VIEWS.html",
+  "entrySHA256": "07400d9ec481c5212b2d1f4e999699730b389b1752926b391b31b1bd3b57bfe7",
+  "contractSHA256": "af49662f1e65d8c4294c6051a82dedd3f23877c36c2f7d054fd4256c64661e3e",
+  "scriptSHA256": "0f2ee6e9f3c8d555c8c5189d076c4b8daf33f2d15b0c672edbf1e8aa2a4d9f21",
+  "cssSHA256": "e7d4f26dbe2ab0c6646ac8ce7148f211ad4d566f485fb120869a1c80d55e3aad",
+  "results": [
+    {
+      "name": "Two loaded-source camera poses clear structural colliders; actual native captures retained",
+      "views": [
+        {
+          "id": "A",
+          "position": [
+            68,
+            120,
+            225
+          ]
+        },
+        {
+          "id": "B",
+          "position": [
+            80,
+            2,
+            295
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Movement, jump, cartridge, bank and direct native resume cannot advance inspection"
+    },
+    {
+      "name": "Keyboard view switching, focus containment and Escape restore exact pre-inspection camera and pause"
+    },
+    {
+      "name": "Blur, visibility and pointer-lock events preserve the inspection pause boundary"
+    },
+    {
+      "name": "Post-movement native pause freezes actor/resources/world; closing restores camera; Resume restarts simulation"
+    },
+    {
+      "name": "Simulated controller consumes hero chord/axes, D-pad selects view, B returns without resuming"
+    },
+    {
+      "name": "Controller Start closes inspection and consumes its edge before native Resume"
+    },
+    {
+      "name": "Touch view selection, portrait/landscape resize, 44px hit targets and native Resume"
+    }
+  ],
+  "captures": [
+    {
+      "file": "evidence/transit-views/browser-A.png",
+      "sha256": "7761c502ee9a0947c9bef5357e2907039b14d3190f897c4f24030a0502d7da90"
+    },
+    {
+      "file": "evidence/transit-views/browser-B.png",
+      "sha256": "9fdecd9eb8f7ea76f96fdd791fea5a1fe5b58d6363e097f6c4403ef46ec0f85a"
+    },
+    {
+      "file": "evidence/transit-views/portrait.png",
+      "sha256": "ec24af2cdd8a92f0baea4cd72c2978ecd3a1b9f311dc75c645957710bcf7d1a7"
+    },
+    {
+      "file": "evidence/transit-views/landscape.png",
+      "sha256": "26ec20f9d8595eed00c990a03df109dc7e45ec7c666a7acafc1017c7dbe62aba"
+    }
+  ],
+  "errors": [],
+  "scope": "Paused camera/input/native state preservation and source/native projection evidence only; not final reference-quality, whole gameplay or sustained performance acceptance.",
+  "initialPausedSnapshot": {
+    "active": false,
+    "hero": "backspool",
+    "p": [
+      0,
+      0.42,
+      0
+    ],
+    "v": [
+      0,
+      0,
+      0
+    ],
+    "health": {
+      "trauma": 0,
+      "pressure": 0,
+      "debt": 0,
+      "lastDamage": -100,
+      "defeated": false,
+      "hero": "backspool",
+      "condition": 100
+    },
+    "train": 0,
+    "life": 0,
+    "slots": [],
+    "drive": [],
+    "courier": {
+      "clock": 0,
+      "missionNumber": 1,
+      "missionStarted": 0,
+      "scoreStart": 0,
+      "safeLandings": 0,
+      "passengers": 0,
+      "mastery": 0,
+      "debt": 0,
+      "mistakes": 0,
+      "resultsOpen": false
+    },
+    "camera": {
+      "position": [
+        1.35,
+        2.4,
+        4.2364
+      ],
+      "quaternion": [
+        -0.012554206685936115,
+        0.02570008775582541,
+        0.0003227762894327663,
+        0.9995908128825998
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "fov": 56,
+      "near": 0.05,
+      "far": 1800,
+      "zoom": 1
+    },
+    "view": {
+      "ready": true,
+      "error": null,
+      "active": false,
+      "selected": "A",
+      "contract": "assets/city/vertical-v02/reference_views.json",
+      "scope": "Paused camera inspection only; player and world stay at their native paused state."
+    }
+  },
+  "views": [
+    {
+      "id": "A",
+      "position": [
+        68,
+        120,
+        225
+      ],
+      "quaternion": [
+        0.007131034548073586,
+        0.9902404772533837,
+        0.12773799604863056,
+        -0.055280646891520256
+      ],
+      "projection": [
+        1.2062851427866268,
+        0,
+        0,
+        0,
+        0,
+        2.1445069205095586,
+        0,
+        0,
+        0,
+        0,
+        -1.0000555570988083,
+        -1,
+        0,
+        0,
+        -0.10000277785494041,
+        0
+      ],
+      "viewMatrix": [
+        -0.993786396851059,
+        0.02824575621677904,
+        -0.10766046019562073,
+        0,
+        -6.938893903907233e-18,
+        0.9672643054235085,
+        0.2537710847468202,
+        0,
+        0.11130407644731863,
+        0.2521942519355271,
+        -0.9612541088894705,
+        0,
+        42.534057785225315,
+        -174.73613475905557,
+        193.15055562381465,
+        1
+      ],
+      "blocked": [],
+      "support": 81.22,
+      "train": [
+        {
+          "id": 0,
+          "position": [
+            80,
+            100,
+            322.0000000056434
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": 1,
+          "position": [
+            80,
+            100,
+            307.0000000056434
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": 2,
+          "position": [
+            80,
+            100,
+            292.00000000564336
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "position": [
+            80,
+            100,
+            277.00000000564336
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "drawCalls": 1,
+      "triangles": 2
+    },
+    {
+      "id": "B",
+      "position": [
+        80,
+        2,
+        295
+      ],
+      "quaternion": [
+        0,
+        0.9787109068260845,
+        -0.20524366216685752,
+        0
+      ],
+      "projection": [
+        1.2062851427866268,
+        0,
+        0,
+        0,
+        0,
+        2.1445069205095586,
+        0,
+        0,
+        0,
+        0,
+        -1.0000555570988083,
+        -1,
+        0,
+        0,
+        -0.10000277785494041,
+        0
+      ],
+      "viewMatrix": [
+        -1.0000000000000004,
+        0,
+        0,
+        0,
+        0,
+        0.9157500782806737,
+        -0.4017484214392635,
+        0,
+        0,
+        -0.4017484214392635,
+        -0.915750078280674,
+        0,
+        80.00000000000004,
+        116.68428416802138,
+        270.94976993567735,
+        1
+      ],
+      "blocked": [],
+      "support": 0.42,
+      "train": [
+        {
+          "id": 0,
+          "position": [
+            80,
+            100,
+            322.0000000056434
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": 1,
+          "position": [
+            80,
+            100,
+            307.0000000056434
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": 2,
+          "position": [
+            80,
+            100,
+            292.00000000564336
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "position": [
+            80,
+            100,
+            277.00000000564336
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "drawCalls": 1,
+      "triangles": 2
+    }
+  ],
+  "postNativePauseSnapshot": {
+    "active": false,
+    "hero": "backspool",
+    "p": [
+      55,
+      0.42,
+      210.17999999999998
+    ],
+    "v": [
+      -2.9391523179536476e-16,
+      0,
+      2.4
+    ],
+    "health": {
+      "trauma": 0,
+      "pressure": 0,
+      "debt": 0,
+      "lastDamage": -100,
+      "defeated": false,
+      "hero": "backspool",
+      "condition": 100
+    },
+    "train": 3.133333333333325,
+    "life": 3.133333333333327,
+    "slots": [
+      {
+        "index": 0,
+        "kind": null,
+        "frames": 0,
+        "playing": false,
+        "expiresIn": 0,
+        "moveId": null,
+        "moveVersion": null,
+        "combatState": null,
+        "executedContacts": []
+      },
+      {
+        "index": 1,
+        "kind": null,
+        "frames": 0,
+        "playing": false,
+        "expiresIn": 0,
+        "moveId": null,
+        "moveVersion": null,
+        "combatState": null,
+        "executedContacts": []
+      },
+      {
+        "index": 2,
+        "kind": null,
+        "frames": 0,
+        "playing": false,
+        "expiresIn": 0,
+        "moveId": null,
+        "moveVersion": null,
+        "combatState": null,
+        "executedContacts": []
+      }
+    ],
+    "drive": [
+      {
+        "id": "physical-1",
+        "action": "footplant",
+        "direction": {
+          "x": -1.2246467991473535e-16,
+          "y": 0,
+          "z": 1
+        },
+        "magnitude": 0.8400000000000001,
+        "vector": {
+          "x": -1.028703311283777e-16,
+          "y": 0,
+          "z": 0.8400000000000001
+        },
+        "time": 3.1166666666666605,
+        "expiresAt": 11.11666666666666,
+        "reservedBy": null
+      }
+    ],
+    "courier": {
+      "clock": 3.133333333333327,
+      "missionNumber": 1,
+      "missionStarted": 3.133333333333327,
+      "scoreStart": 0,
+      "safeLandings": 0,
+      "passengers": 0,
+      "mastery": 0,
+      "debt": 0,
+      "mistakes": 0,
+      "resultsOpen": false
+    },
+    "camera": {
+      "position": [
+        53.64999999999998,
+        2.3996374493689827,
+        205.81005865613048
+      ],
+      "quaternion": [
+        0.0011818115840929483,
+        0.9986140645435583,
+        0.04591022731216561,
+        -0.025706116885267295
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "fov": 56,
+      "near": 0.05,
+      "far": 1800,
+      "zoom": 1
+    },
+    "view": {
+      "ready": true,
+      "error": null,
+      "active": false,
+      "selected": "A",
+      "contract": "assets/city/vertical-v02/reference_views.json",
+      "scope": "Paused camera inspection only; player and world stay at their native paused state."
+    }
+  },
+  "portrait": {
+    "overflow": false,
+    "buttons": [
+      {
+        "id": "v02ViewsClose",
+        "x": 310,
+        "y": 14,
+        "w": 110,
+        "h": 53.59375,
+        "hit": true
+      },
+      {
+        "id": "v02View-A",
+        "x": 10,
+        "y": 874,
+        "w": 201,
+        "h": 44,
+        "hit": true
+      },
+      {
+        "id": "v02View-B",
+        "x": 219,
+        "y": 874,
+        "w": 201,
+        "h": 44,
+        "hit": true
+      }
+    ]
+  },
+  "landscape": {
+    "overflow": false,
+    "buttons": [
+      {
+        "id": "v02ViewsClose",
+        "x": 785.890625,
+        "y": 20.6875,
+        "w": 132.109375,
+        "h": 44,
+        "hit": true
+      },
+      {
+        "id": "v02View-A",
+        "x": 14,
+        "y": 344,
+        "w": 172.90625,
+        "h": 44,
+        "hit": true
+      },
+      {
+        "id": "v02View-B",
+        "x": 194.90625,
+        "y": 344,
+        "w": 164.75,
+        "h": 44,
+        "hit": true
+      }
+    ]
+  }
+}

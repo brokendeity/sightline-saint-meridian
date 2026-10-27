@@ -1,0 +1,38 @@
+{
+  "status": "CANDIDATE; native input/render acceptance pending",
+  "source": "SIGHTLINE_SAINT_MERIDIAN_V02_ARCHITECTURE_FINISH.html",
+  "sourceSHA256": "3f880651dad66adb161880c0c9300ec130e429972fb88728958ba55be182a9c9",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT_VIEWS.html",
+  "entrySHA256": "07400d9ec481c5212b2d1f4e999699730b389b1752926b391b31b1bd3b57bfe7",
+  "patches": [
+    [
+      "function activateGame(){",
+      "function activateGame(){if(window.verticalViews?.active())return;"
+    ],
+    [
+      "function startGame(withPointer=false){",
+      "function startGame(withPointer=false){if(window.verticalViews?.active())return;"
+    ],
+    [
+      "if(handleHeroSwitchChord(gp)){",
+      "if(window.verticalViews?.poll(gp))return;\n if(handleHeroSwitchChord(gp)){"
+    ],
+    [
+      "document.addEventListener('pointerlockchange',()=>{pointer=document.pointerLockElement===renderer.domElement;",
+      "document.addEventListener('pointerlockchange',()=>{pointer=document.pointerLockElement===renderer.domElement;if(window.verticalViews?.active()){if(pointer)document.exitPointerLock();return;}"
+    ],
+    [
+      "window.verticalHUD?.present();adaptiveQuality",
+      "window.verticalHUD?.present();window.verticalViews?.present();adaptiveQuality"
+    ],
+    [
+      "<script src=\"scripts/game_vertical_hud_v02.js\"></script>",
+      "<script src=\"scripts/game_vertical_hud_v02.js\"></script><script src=\"scripts/game_vertical_views_v02.js\"></script>"
+    ]
+  ],
+  "sourceInverseExact": true,
+  "contractSHA256": "af49662f1e65d8c4294c6051a82dedd3f23877c36c2f7d054fd4256c64661e3e",
+  "scriptSHA256": "0f2ee6e9f3c8d555c8c5189d076c4b8daf33f2d15b0c672edbf1e8aa2a4d9f21",
+  "cssSHA256": "e7d4f26dbe2ab0c6646ac8ce7148f211ad4d566f485fb120869a1c80d55e3aad",
+  "scope": "Paused inspection camera ownership and explicit input boundaries only. Architecture, geometry, materials, hero actions, physics, missions, resource rules and existing camera director unchanged."
+}
