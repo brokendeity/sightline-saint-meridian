@@ -1,46 +1,46 @@
 {
-  "status": "Phase5 detailed base source and focused gameplay milestone passed; transit integration next",
-  "acceptedGraybox": {
-    "commit": "c33d9f5e30e88b4c7bbac58c9a27a7c4e8f7d0a8",
-    "gate": "V02_Phase4_Gate.json",
-    "entrySHA256": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
-    "manifestSHA256": "3a524ca3b09823cf8fa9eec3c5116ff6a7ec11d1cb091bb7bcdf1ffec88703c1"
+  "status": "Current complete material-response candidate; bounded source/routes/input checks PASS; full V02 goal INCOMPLETE",
+  "branch": "feature/saint-meridian-aaa-vertical-city-v02",
+  "currentCandidate": {
+    "status": "CANDIDATE; source/native/gameplay/visual validation pending",
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_MATERIAL_RESPONSE.html",
+    "entrySHA256": "3954b264ef205ad17150fd026238820af11b93d984ffca680e3bd201af51da9a",
+    "source": "SIGHTLINE_SAINT_MERIDIAN_V02_MAINTENANCE_ACCESS.html",
+    "sourceSHA256": "08249105dfcbb14efd16d027b407dcb6122e186951ef6b18122e5953ac644cd7",
+    "manifest": "assets/city/vertical-v02/maintenance-access/runtime/manifest.json",
+    "manifestSHA256": "5372f2b0dd49b9418e24595c4ab0e488ccc0ad5b961644c5d2436329c1f79727",
+    "script": "scripts/game_vertical_material_response_v02.js",
+    "scriptSHA256": "ebb79da99d48a59b5b20336b4730a9b1813cd4769274b137ce708cfbea84cb04",
+    "materialContract": "assets/city/vertical-v02/material-response/materials.json",
+    "materialContractSHA256": "39346dc34536c1b6222c49815e748b9de94fdf5145d62c3acef34b789260f9f6",
+    "scope": "Only one additive material-response script in the complete current game. Architecture payload, camera, physics, controller, animations, powers and missions unchanged."
   },
-  "currentDetailed": {
-    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_DETAILED.html",
-    "entrySHA256": "ec12fa9b3ccadb8acd9c1dcf5136391ef2b675f9ca95702453bd740797ee82a7",
-    "manifestSHA256": "b1077f43e3530abe5acbca7b709f8a968ef0088435c95f0be0c5ba9744e55f4e",
-    "notes": "DETAILED_ARCHITECTURE.md",
-    "newStair": "Geometry unchanged; first-slice normal-input/camera evidence is versioned separately",
-    "source": "PASS9,880 saved component bounds/UV/materials,18 support contacts and310 reference face palettes",
-    "glTF": "PASS27 modular files;0errors/0warnings"
+  "sourceMaster": {
+    "file": "development/vertical-city-v02/blender/SaintMeridian_V02_Material_Response.blend",
+    "sha256": "c9f21cdb00097e3de137e178f656d967890e213ab8448438eb7b824945046a67"
   },
-  "localRegression": {
-    "status": "PASS focused service combat/flank/Echo/escapes and stock-client checks",
-    "activeJob": null,
-    "activeSession": null,
-    "evidence": "V02_Detailed_Service_Revision_Evidence.json",
-    "scope": "Previous six-case/public-extension results remain versioned at4091369. Full current release acceptance remains pending."
-  },
+  "evidence": "V02_Material_Response_Evidence.json",
+  "notes": "V02_MATERIAL_RESPONSE.md",
+  "historicalStatus": "V02_Candidate_Status_Pre_Material_Response.json",
   "fullGoalComplete": false,
+  "visualReferenceGate": "FAIL",
+  "performance": {
+    "boundedFixedResolutionRun": "V02_Material_Response_Benchmark.json",
+    "medianFrameMs": [
+      8.399999999997817,
+      8.400000000001455
+    ],
+    "medianGpuMs": [
+      4.454541,
+      6.50775
+    ],
+    "combinedReleaseGate": "NOT COMPLETE"
+  },
   "remaining": [
-    "Finish detailed architecture and full detailed gameplay/camera acceptance",
-    "Resolve9 explicit unmeasured advanced-edge timings",
-    "Implement and test actual train/world-life changes; inherited train has3 convoy conflicts",
-    "Matched Blender/browser reference and lighting acceptance",
-    "Matched >=60s performance and full original-game release checks"
+    "Substantial approved-reference facade massing/depth/material/light balance",
+    "Full current encounter/replay/destruction/mission/failure regressions",
+    "Combined sustained gameplay release benchmark and increased PBR GPU cost",
+    "Broader camera coverage and physical controller/touchscreen playtesting"
   ],
-  "preservation": "Original WHIP, V1, accepted graybox, main and older snapshot refs remain intact. Only V02 development is changed.",
-  "newPublicExtensions": {
-    "status": "PASS new market directed access/stair edges and observation shelter walking",
-    "evidence": "evidence/detailed-regressions/V02_Detailed_Public_Extensions.json",
-    "manifestSHA256": "6a43c68fff7d3b75f6dc52df07f9d66e3a8d457f2ea5e6c0da0675ef0d6883fc",
-    "scope": "Previous detailed slice; route geometry remains unchanged and full current release checks remain pending"
-  },
-  "previousDetailedSlice": {
-    "commit": "4091369",
-    "evidence": "V02_Detailed_Stage1_Evidence.json",
-    "scope": "Six retained scenarios, new public extensions and stair/camera tests belong to previous detailed manifest6a43c68f; retained as versioned evidence."
-  },
-  "nextPhase": "Transit and world life integration, followed by final visual/performance acceptance"
+  "preservation": "All previous full game HTML files and their exact content retained. Original310 building geometry and native contact preserved. Earlier GitHub snapshots remain unchanged."
 }

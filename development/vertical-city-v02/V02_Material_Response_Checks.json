@@ -1,0 +1,91 @@
+{
+  "status": "PASS bounded native material, six station approaches, three public loops, HUD/input and installed-client movement",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_MATERIAL_RESPONSE.html",
+  "identities": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_MATERIAL_RESPONSE.html": "3954b264ef205ad17150fd026238820af11b93d984ffca680e3bd201af51da9a",
+    "assets/city/vertical-v02/maintenance-access/runtime/manifest.json": "5372f2b0dd49b9418e24595c4ab0e488ccc0ad5b961644c5d2436329c1f79727",
+    "scripts/game_vertical_material_response_v02.js": "ebb79da99d48a59b5b20336b4730a9b1813cd4769274b137ce708cfbea84cb04",
+    "assets/city/vertical-v02/material-response/materials.json": "39346dc34536c1b6222c49815e748b9de94fdf5145d62c3acef34b789260f9f6"
+  },
+  "jobs": [
+    {
+      "name": "native",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_material_response.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 21.88033404201269,
+      "log": "evidence/material-response-checks/native.txt"
+    },
+    {
+      "name": "station-routes",
+      "command": [
+        "python3",
+        "scripts/vertical-v02/run_current_station_routes.py"
+      ],
+      "environment": {
+        "V02_ROUTE_BUILD_REPORT": "V02_Material_Response_Build.json",
+        "V02_ROUTE_SUITE": "material-response-routes",
+        "V02_ROUTE_REPORT": "V02_Material_Response_Routes.json"
+      },
+      "returncode": 0,
+      "wallSeconds": 488.26549666700885,
+      "log": "evidence/material-response-checks/station-routes.txt"
+    },
+    {
+      "name": "loops",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_current_city_loops.cjs"
+      ],
+      "environment": {
+        "V02_LOOP_BUILD": "V02_Material_Response_Build.json",
+        "V02_LOOP_RUN": "material-response-loops",
+        "V02_LOOP_REPORT": "V02_Material_Response_Loops.json"
+      },
+      "returncode": 0,
+      "wallSeconds": 78.87911720806733,
+      "log": "evidence/material-response-checks/loops.txt"
+    },
+    {
+      "name": "hud",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_hud_candidate.cjs"
+      ],
+      "environment": {
+        "V02_HUD_ENTRY": "SIGHTLINE_SAINT_MERIDIAN_V02_MATERIAL_RESPONSE.html",
+        "V02_HUD_RUN": "material-response-hud",
+        "V02_HUD_REPORT": "V02_Material_Response_HUD.json"
+      },
+      "returncode": 0,
+      "wallSeconds": 25.117895709350705,
+      "log": "evidence/material-response-checks/hud.txt"
+    },
+    {
+      "name": "stock",
+      "command": [
+        "node",
+        "development/vertical-city-v02/tools/run-skill-client.cjs",
+        "--url",
+        "http://127.0.0.1:8766/SIGHTLINE_SAINT_MERIDIAN_V02_MATERIAL_RESPONSE.html?capture=backspool",
+        "--click-selector",
+        "#v02Start",
+        "--actions-json",
+        "{\"steps\": [{\"buttons\": [\"a\"], \"frames\": 45}, {\"buttons\": [], \"frames\": 12}]}",
+        "--iterations",
+        "1",
+        "--pause-ms",
+        "250",
+        "--screenshot-dir",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/development/vertical-city-v02/evidence/stock-material-response"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 11.703626625239849,
+      "log": "evidence/material-response-checks/stock.txt"
+    }
+  ]
+}

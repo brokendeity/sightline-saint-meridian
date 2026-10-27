@@ -1,0 +1,123 @@
+{
+  "status": "PASS saved-source parity, PBR contract and six-axis HDR probe calibration",
+  "masterSHA256": "c9f21cdb00097e3de137e178f656d967890e213ab8448438eb7b824945046a67",
+  "sourceMasterSHA256": "95755eaa2f36827840a825fb7732ff30e31a7cf96a18abd0cc2793a490eb9a6f",
+  "contractSHA256": "39346dc34536c1b6222c49815e748b9de94fdf5145d62c3acef34b789260f9f6",
+  "validatorSHA256": "1432fa01493d9a8ece4680cb575b0d4c669d6dd78edc2f3d0fdfdb202fcba081",
+  "checks": [
+    "All original source objects/locals/parents preserved; three controlled material bindings only; exact coordinates/normals/UV/indices/face assignments unchanged",
+    "Probe raw bytes/hash/finite nonnegative scene-linear HDR values validated",
+    "Six-axis source panorama matches Three.js equirectangular +X/+Z/+Y and bottom-first RGBA orientation"
+  ],
+  "scope": "Saved Blender geometry/material and HDR orientation/data checks; not native visual or full fidelity acceptance",
+  "radiance": {
+    "minimum": 0.0,
+    "maximum": 2.591796875,
+    "rawBytes": 4194304,
+    "packedBytes": 2914895
+  },
+  "axisSamples": [
+    {
+      "direction": "+X",
+      "uv": [
+        0.5,
+        0.5
+      ],
+      "expected": [
+        1,
+        0,
+        0
+      ],
+      "actual": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "direction": "-X",
+      "uv": [
+        0.01,
+        0.5
+      ],
+      "expected": [
+        0,
+        1,
+        1
+      ],
+      "actual": [
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "direction": "+Y",
+      "uv": [
+        0.5,
+        0.99
+      ],
+      "expected": [
+        0,
+        1,
+        0
+      ],
+      "actual": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "direction": "-Y",
+      "uv": [
+        0.5,
+        0.01
+      ],
+      "expected": [
+        1,
+        0,
+        1
+      ],
+      "actual": [
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "direction": "+Z",
+      "uv": [
+        0.75,
+        0.5
+      ],
+      "expected": [
+        0,
+        0,
+        1
+      ],
+      "actual": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "direction": "-Z",
+      "uv": [
+        0.25,
+        0.5
+      ],
+      "expected": [
+        1,
+        1,
+        0
+      ],
+      "actual": [
+        1.0,
+        1.0,
+        0.0
+      ]
+    }
+  ]
+}

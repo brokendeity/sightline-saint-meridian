@@ -1,0 +1,22 @@
+{
+  "status": "PASS saved-source A/B renders and matched native optics; visual reference gate still open",
+  "masterSHA256": "c9f21cdb00097e3de137e178f656d967890e213ab8448438eb7b824945046a67",
+  "nativeReportSHA256": "ee37737ac75ad3b9177131ee3b7e1986e5381859d0e9054737c79bd86bafc0cc",
+  "captures": [
+    {
+      "id": "A",
+      "file": "evidence/material-response/blender-A.png",
+      "sha256": "aeee11d4c3650d0ff6ccf9b7d037f9b3dbd718116955eda615ea2e649de4cd8e",
+      "maximumProjectionErrorPixels": 0.00012086160761140294,
+      "samples": 16
+    },
+    {
+      "id": "B",
+      "file": "evidence/material-response/blender-B.png",
+      "sha256": "c2748906385295081cbe076880329d6161072a04e814eb9105f32de611ece164",
+      "maximumProjectionErrorPixels": 0.004345980513655727,
+      "samples": 16
+    }
+  ],
+  "scope": "Saved-source material response and actual native optics only; browser/source shading equality and full reference quality remain unaccepted"
+}

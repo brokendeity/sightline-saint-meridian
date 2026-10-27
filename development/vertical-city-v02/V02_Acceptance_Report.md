@@ -141,3 +141,8 @@ See `V02_SERVICE_TOWER.md` and hash-bound `V02_Service_Tower_Evidence.json` for 
 ## Current upper maintenance access — 2026-10-27
 
 See `V02_MAINTENANCE_ACCESS.md` and `V02_Maintenance_Access_Evidence.json` for the latest complete candidate. All four plant rooms now have usable circulation:12ordinary stair flights, supported upper galleries and actual side doors. Current native tour,16directed edge admissions, six station journeys, three public loops and retained input cases pass. Actual descent review caught an offscreen-hips camera failure; stepped low guards fix the reproduced first-flight case without camera/controller changes. Broader camera/orbit/device coverage remains separate. Full approved-reference visual quality remains FAIL, and current complete game/regression/performance release gates remain open. Previous candidates and their evidence remain intact.
+
+
+## Current source-authored material response — 2026-10-27
+
+See `V02_MATERIAL_RESPONSE.md` and `V02_Material_Response_Evidence.json` for the latest complete candidate. Three original corridor owners gain source-authored PBR and an actual scene HDR probe. Geometry/contact/light/exposure preservation, saved-source HDR calibration, six current station routes, three loops, retained input cases and stock movement pass. Five actual world views add no draws/triangles. The fixed1280x800 lower-loop comparison measures stable8.4ms median frame interval, but GPU median rises4.45→6.51ms; this is explicitly not final combined performance acceptance. Full reference art remains FAIL; all broader release gates remain open. Previous candidates and snapshots remain available.

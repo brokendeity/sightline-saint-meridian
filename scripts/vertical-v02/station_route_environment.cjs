@@ -10,6 +10,8 @@ function load(){
   const build=JSON.parse(fs.readFileSync(path.join(D,name)));
   assert.equal(sha(build.entry),build.entrySHA256);
   assert.equal(sha(build.manifest),build.manifestSHA256);
+  if(build.script)assert.equal(sha(build.script),build.scriptSHA256);
+  if(build.materialContract)assert.equal(sha(build.materialContract),build.materialContractSHA256);
   const run=process.env.V02_ROUTE_RUN;assert(run&&/^[a-z0-9-]+$/.test(run),'Separate current evidence run required');
   const suite=process.env.V02_ROUTE_SUITE||'current-station-routes';assert(/^[a-z0-9-]+$/.test(suite),'Separate evidence suite must be a simple directory name');
   const output=path.join(D,'evidence',suite,run);fs.mkdirSync(path.join(output,'evidence'),{recursive:true});
@@ -17,7 +19,7 @@ function load(){
 }
 async function ready(page,environment){
   if(!environment.current)return;
-  await page.waitForFunction(()=>window.verticalWorldLifeState?.().ready&&window.verticalAppearanceState?.().ready&&window.verticalViewsState?.().ready&&window.verticalHUDState?.().ready&&window.v02CameraRays,null,{timeout:120000});
+  await page.waitForFunction(()=>window.verticalWorldLifeState?.().ready&&window.verticalAppearanceState?.().ready&&window.verticalViewsState?.().ready&&window.verticalHUDState?.().ready&&window.v02CameraRays&&(!window.verticalMaterialResponseState||verticalMaterialResponseState().ready),null,{timeout:120000});
   // Deferred view/UI scripts must finish bootstrapping before RAF is frozen.
   await page.evaluate(()=>renderNight(0));
 }
