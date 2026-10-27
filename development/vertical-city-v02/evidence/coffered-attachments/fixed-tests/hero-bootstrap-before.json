@@ -1,0 +1,139 @@
+{
+  "status": "FAIL",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_ARCHITECTURE_FINISH.html",
+  "entrySHA256": "71cd5a70da09940bd8fd2239a4c63f110f04ad1bc35a3b230b5699ed050c71df",
+  "scope": "One controlled street setup, normal R precision input and standard simulated controller look. No direct anchors, rails, aim/camera writes after setup or resource injection.",
+  "results": [
+    {
+      "target": [
+        59.75,
+        23.465,
+        208.25
+      ],
+      "attached": false,
+      "state": {
+        "deployment": {
+          "clock": 5.566666666666652,
+          "status": "HERO CHANGE",
+          "tensionAt": null,
+          "tensionProgress": 0,
+          "shots": [],
+          "events": []
+        },
+        "anchors": [],
+        "asset": {
+          "ready": true,
+          "error": null,
+          "sourceTask": "b71871c5-e9e6-4e89-b6f7-723182ab3c8e",
+          "diameter": 0.12,
+          "thickness": 0.03,
+          "dt": 0.016666666666666607,
+          "modelBounds": [
+            0.081000001810248,
+            0.024879999546101317,
+            0.08100000445693827
+          ],
+          "count": 2,
+          "instances": [
+            {
+              "id": "belt-A",
+              "pair": "A",
+              "mode": "folded",
+              "deployment": 0,
+              "faceNormal": [
+                0.9999999999999998,
+                0,
+                1.224646799147353e-16
+              ],
+              "position": [
+                75.68,
+                1.187975232675114,
+                183.99931562592863
+              ],
+              "threadExit": [
+                75.6905000003241,
+                1.136975229903498,
+                183.99931562592863
+              ],
+              "coreIntensity": 0.3,
+              "surfaceGlow": false,
+              "speedTrail": false,
+              "trailPoints": 0
+            },
+            {
+              "id": "belt-B",
+              "pair": "B",
+              "mode": "folded",
+              "deployment": 0,
+              "faceNormal": [
+                -0.9999999999999998,
+                0,
+                -1.224646799147353e-16
+              ],
+              "position": [
+                75.32,
+                1.187975232675114,
+                183.99931562592863
+              ],
+              "threadExit": [
+                75.3094999996759,
+                1.23897523544673,
+                183.99931562592863
+              ],
+              "coreIntensity": 0.3,
+              "surfaceGlow": false,
+              "speedTrail": false,
+              "trailPoints": 0
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "failure": "AssertionError [ERR_ASSERTION]: Physical ceiling cast failed",
+  "finalDiagnostic": {
+    "rail": {
+      "time": 5.566666666666652,
+      "anchors": [],
+      "rails": [],
+      "current": null,
+      "events": [
+        {
+          "id": 5,
+          "type": "reset",
+          "time": 0,
+          "reason": "HERO CHANGE"
+        }
+      ],
+      "lastReason": "HERO CHANGE",
+      "limits": {
+        "minSpan": 6,
+        "maxSpan": 100,
+        "maxSlope": 55,
+        "maxRails": 4,
+        "maxAnchors": 8,
+        "lifetime": 30,
+        "attachReach": 2,
+        "transferReach": 3,
+        "maxSpeed": 28,
+        "gravity": 9.81,
+        "friction": 0.45,
+        "junctionAngle": 75,
+        "jumpImpulse": 4.8,
+        "slingshotImpulse": 6.5
+      }
+    },
+    "deployment": {
+      "clock": 5.566666666666652,
+      "status": "HERO CHANGE",
+      "tensionAt": null,
+      "tensionProgress": 0,
+      "shots": [],
+      "events": []
+    },
+    "last": ""
+  },
+  "fullTrace": "V02_Coffered_Attachments.trace.json.gz",
+  "traceFrames": 334
+}

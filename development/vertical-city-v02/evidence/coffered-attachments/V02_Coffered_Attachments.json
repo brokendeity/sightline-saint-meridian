@@ -1,0 +1,564 @@
+{
+  "status": "PASS physical ceiling casts use actual recessed faces; native headroom rejects unsafe rail",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_ARCHITECTURE_FINISH.html",
+  "entrySHA256": "3f880651dad66adb161880c0c9300ec130e429972fb88728958ba55be182a9c9",
+  "scope": "One controlled street setup, normal R precision input and standard simulated controller look. No direct anchors, rails or resource injection. One labelled read-only close camera inspection between casts restores the exact original camera before further input.",
+  "results": [
+    {
+      "target": [
+        59.75,
+        23.465,
+        208.25
+      ],
+      "attached": true,
+      "state": {
+        "deployment": {
+          "clock": 1.9666666666666657,
+          "status": "attached",
+          "tensionAt": 1.783333333333333,
+          "tensionProgress": 1,
+          "shots": [
+            {
+              "target": {
+                "id": "anchor-1",
+                "position": {
+                  "x": 59.66196992325197,
+                  "y": 22.74500015258789,
+                  "z": 208.50499169303052
+                },
+                "normal": {
+                  "x": 0,
+                  "y": -1,
+                  "z": 0
+                },
+                "ownerId": "v02:V1-BR-L1-rebuilt",
+                "revision": 0,
+                "valid": true,
+                "contact": {
+                  "x": 59.66196992325197,
+                  "y": 23.46500015258789,
+                  "z": 208.50499169303052
+                }
+              },
+              "index": 0,
+              "handIndex": 0,
+              "throwId": "1:0",
+              "status": "attached",
+              "gestureAt": 0.6333333333333347,
+              "gestureUntil": 1.287619047619049,
+              "releaseAt": 0.9190476190476204,
+              "sourceAnimationId": "0x2811be99",
+              "position": {
+                "x": 59.66196992325197,
+                "y": 23.46500015258789,
+                "z": 208.50499169303052
+              },
+              "age": 0.8666666666666677,
+              "autoCatch": false
+            }
+          ],
+          "events": [
+            {
+              "id": 1,
+              "time": 0.6333333333333347,
+              "type": "begin",
+              "count": 1,
+              "autoCatch": false
+            },
+            {
+              "id": 2,
+              "time": 0.9333333333333357,
+              "type": "release",
+              "index": 0,
+              "handIndex": 0,
+              "throwId": "1:0",
+              "sourceAnimationId": "0x2811be99",
+              "position": {
+                "x": 74.97442716744771,
+                "y": 1.5107779177068525,
+                "z": 184.6750476246738
+              }
+            },
+            {
+              "id": 3,
+              "time": 1.783333333333333,
+              "type": "impact",
+              "index": 0,
+              "handIndex": 0,
+              "target": "anchor-1"
+            },
+            {
+              "id": 4,
+              "time": 1.783333333333333,
+              "type": "tension-start"
+            },
+            {
+              "id": 5,
+              "time": 1.9666666666666657,
+              "type": "tension"
+            }
+          ]
+        },
+        "anchors": [],
+        "asset": {
+          "ready": true,
+          "error": null,
+          "sourceTask": "b71871c5-e9e6-4e89-b6f7-723182ab3c8e",
+          "diameter": 0.12,
+          "thickness": 0.03,
+          "dt": 0.016666666666666607,
+          "modelBounds": [
+            0.081000001810248,
+            0.024879999546101317,
+            0.08100000445693827
+          ],
+          "count": 3,
+          "instances": [
+            {
+              "id": "belt-A",
+              "pair": "A",
+              "mode": "folded",
+              "deployment": 0,
+              "faceNormal": [
+                0.9999999999999998,
+                0,
+                1.224646799147353e-16
+              ],
+              "position": [
+                75.68,
+                1.1882130758270608,
+                183.99931562592863
+              ],
+              "threadExit": [
+                75.6905000003241,
+                1.1372130730554448,
+                183.99931562592863
+              ],
+              "coreIntensity": 0.3,
+              "surfaceGlow": false,
+              "speedTrail": false,
+              "trailPoints": 0
+            },
+            {
+              "id": "belt-B",
+              "pair": "B",
+              "mode": "folded",
+              "deployment": 0,
+              "faceNormal": [
+                -0.9999999999999998,
+                0,
+                -1.224646799147353e-16
+              ],
+              "position": [
+                75.32,
+                1.1882130758270608,
+                183.99931562592863
+              ],
+              "threadExit": [
+                75.3094999996759,
+                1.2392130785986768,
+                183.99931562592863
+              ],
+              "coreIntensity": 0.3,
+              "surfaceGlow": false,
+              "speedTrail": false,
+              "trailPoints": 0
+            },
+            {
+              "id": "anchor-1",
+              "pair": "A",
+              "mode": "anchored",
+              "deployment": 0.9877226600969313,
+              "faceNormal": [
+                0,
+                -1,
+                0
+              ],
+              "position": [
+                59.66196992325197,
+                23.449000152587892,
+                208.50499169303052
+              ],
+              "threadExit": [
+                59.61096992048035,
+                23.438500152263792,
+                208.50499169303052
+              ],
+              "coreIntensity": 2.4,
+              "surfaceGlow": true,
+              "speedTrail": false,
+              "trailPoints": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "target": [
+        91.25,
+        23.465,
+        208.25
+      ],
+      "attached": true,
+      "state": {
+        "deployment": {
+          "clock": 3.819999999999995,
+          "status": "attached",
+          "tensionAt": 3.6366666666666623,
+          "tensionProgress": 1,
+          "shots": [
+            {
+              "target": {
+                "id": "anchor-2",
+                "position": {
+                  "x": 91.86800332542795,
+                  "y": 22.74500015258789,
+                  "z": 207.5775865056639
+                },
+                "normal": {
+                  "x": 0,
+                  "y": -1,
+                  "z": 0
+                },
+                "ownerId": "v02:V1-BR-L1-rebuilt",
+                "revision": 0,
+                "valid": true,
+                "contact": {
+                  "x": 91.86800332542795,
+                  "y": 23.46500015258789,
+                  "z": 207.5775865056639
+                }
+              },
+              "index": 0,
+              "handIndex": 1,
+              "throwId": "2:0",
+              "status": "attached",
+              "gestureAt": 2.503333333333333,
+              "gestureUntil": 3.1576190476190473,
+              "releaseAt": 2.7890476190476186,
+              "sourceAnimationId": "0x2811be99",
+              "position": {
+                "x": 91.86800332542795,
+                "y": 23.46500015258789,
+                "z": 207.5775865056639
+              },
+              "age": 0.850000000000001,
+              "autoCatch": false
+            }
+          ],
+          "events": [
+            {
+              "id": 1,
+              "time": 0.6333333333333347,
+              "type": "begin",
+              "count": 1,
+              "autoCatch": false
+            },
+            {
+              "id": 2,
+              "time": 0.9333333333333357,
+              "type": "release",
+              "index": 0,
+              "handIndex": 0,
+              "throwId": "1:0",
+              "sourceAnimationId": "0x2811be99",
+              "position": {
+                "x": 74.97442716744771,
+                "y": 1.5107779177068525,
+                "z": 184.6750476246738
+              }
+            },
+            {
+              "id": 3,
+              "time": 1.783333333333333,
+              "type": "impact",
+              "index": 0,
+              "handIndex": 0,
+              "target": "anchor-1"
+            },
+            {
+              "id": 4,
+              "time": 1.783333333333333,
+              "type": "tension-start"
+            },
+            {
+              "id": 5,
+              "time": 1.9666666666666657,
+              "type": "tension"
+            },
+            {
+              "id": 6,
+              "time": 2.503333333333333,
+              "type": "begin",
+              "count": 1,
+              "autoCatch": false
+            },
+            {
+              "id": 7,
+              "time": 2.803333333333332,
+              "type": "release",
+              "index": 0,
+              "handIndex": 1,
+              "throwId": "2:0",
+              "sourceAnimationId": "0x2811be99",
+              "position": {
+                "x": 75.7142353301008,
+                "y": 1.5047351480277946,
+                "z": 184.83372870189564
+              }
+            },
+            {
+              "id": 8,
+              "time": 3.6366666666666623,
+              "type": "impact",
+              "index": 0,
+              "handIndex": 1,
+              "target": "anchor-2"
+            },
+            {
+              "id": 9,
+              "time": 3.6366666666666623,
+              "type": "tension-start"
+            },
+            {
+              "id": 10,
+              "time": 3.819999999999995,
+              "type": "tension"
+            }
+          ]
+        },
+        "anchors": [],
+        "asset": {
+          "ready": true,
+          "error": null,
+          "sourceTask": "b71871c5-e9e6-4e89-b6f7-723182ab3c8e",
+          "diameter": 0.12,
+          "thickness": 0.03,
+          "dt": 0.016666666666666607,
+          "modelBounds": [
+            0.081000001810248,
+            0.024879999546101317,
+            0.08100000445693827
+          ],
+          "count": 2,
+          "instances": [
+            {
+              "id": "belt-A",
+              "pair": "A",
+              "mode": "folded",
+              "deployment": 0,
+              "faceNormal": [
+                0.9999999999999998,
+                0,
+                1.224646799147353e-16
+              ],
+              "position": [
+                75.68,
+                1.188203536480044,
+                183.99931562592863
+              ],
+              "threadExit": [
+                75.6905000003241,
+                1.137203533708428,
+                183.99931562592863
+              ],
+              "coreIntensity": 0.3,
+              "surfaceGlow": false,
+              "speedTrail": false,
+              "trailPoints": 0
+            },
+            {
+              "id": "belt-B",
+              "pair": "B",
+              "mode": "folded",
+              "deployment": 0,
+              "faceNormal": [
+                -0.9999999999999998,
+                0,
+                -1.224646799147353e-16
+              ],
+              "position": [
+                75.32,
+                1.188203536480044,
+                183.99931562592863
+              ],
+              "threadExit": [
+                75.3094999996759,
+                1.23920353925166,
+                183.99931562592863
+              ],
+              "coreIntensity": 0.3,
+              "surfaceGlow": false,
+              "speedTrail": false,
+              "trailPoints": 0
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "inspection": {
+    "saved": {
+      "position": [
+        76.29840028687373,
+        0.22000000000000075,
+        180.43912740282775
+      ],
+      "quaternion": [
+        0.08051428116155139,
+        0.9186085510463855,
+        -0.2937005167084021,
+        0.2518249133003251
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "hero": [
+      75.5,
+      0.58,
+      184
+    ],
+    "contact": {
+      "x": 59.66196992325197,
+      "y": 23.46500015258789,
+      "z": 208.50499169303052
+    },
+    "scope": "Read-only close camera inspection after a real physical cast; no actor move or simulation step"
+  },
+  "final": {
+    "anchors": [],
+    "rails": [],
+    "deployment": {
+      "clock": 3.819999999999995,
+      "status": "attached",
+      "tensionAt": 3.6366666666666623,
+      "tensionProgress": 1,
+      "shots": [
+        {
+          "target": {
+            "id": "anchor-2",
+            "position": {
+              "x": 91.86800332542795,
+              "y": 22.74500015258789,
+              "z": 207.5775865056639
+            },
+            "normal": {
+              "x": 0,
+              "y": -1,
+              "z": 0
+            },
+            "ownerId": "v02:V1-BR-L1-rebuilt",
+            "revision": 0,
+            "valid": true,
+            "contact": {
+              "x": 91.86800332542795,
+              "y": 23.46500015258789,
+              "z": 207.5775865056639
+            }
+          },
+          "index": 0,
+          "handIndex": 1,
+          "throwId": "2:0",
+          "status": "attached",
+          "gestureAt": 2.503333333333333,
+          "gestureUntil": 3.1576190476190473,
+          "releaseAt": 2.7890476190476186,
+          "sourceAnimationId": "0x2811be99",
+          "position": {
+            "x": 91.86800332542795,
+            "y": 23.46500015258789,
+            "z": 207.5775865056639
+          },
+          "age": 0.850000000000001,
+          "autoCatch": false
+        }
+      ],
+      "events": [
+        {
+          "id": 1,
+          "time": 0.6333333333333347,
+          "type": "begin",
+          "count": 1,
+          "autoCatch": false
+        },
+        {
+          "id": 2,
+          "time": 0.9333333333333357,
+          "type": "release",
+          "index": 0,
+          "handIndex": 0,
+          "throwId": "1:0",
+          "sourceAnimationId": "0x2811be99",
+          "position": {
+            "x": 74.97442716744771,
+            "y": 1.5107779177068525,
+            "z": 184.6750476246738
+          }
+        },
+        {
+          "id": 3,
+          "time": 1.783333333333333,
+          "type": "impact",
+          "index": 0,
+          "handIndex": 0,
+          "target": "anchor-1"
+        },
+        {
+          "id": 4,
+          "time": 1.783333333333333,
+          "type": "tension-start"
+        },
+        {
+          "id": 5,
+          "time": 1.9666666666666657,
+          "type": "tension"
+        },
+        {
+          "id": 6,
+          "time": 2.503333333333333,
+          "type": "begin",
+          "count": 1,
+          "autoCatch": false
+        },
+        {
+          "id": 7,
+          "time": 2.803333333333332,
+          "type": "release",
+          "index": 0,
+          "handIndex": 1,
+          "throwId": "2:0",
+          "sourceAnimationId": "0x2811be99",
+          "position": {
+            "x": 75.7142353301008,
+            "y": 1.5047351480277946,
+            "z": 184.83372870189564
+          }
+        },
+        {
+          "id": 8,
+          "time": 3.6366666666666623,
+          "type": "impact",
+          "index": 0,
+          "handIndex": 1,
+          "target": "anchor-2"
+        },
+        {
+          "id": 9,
+          "time": 3.6366666666666623,
+          "type": "tension-start"
+        },
+        {
+          "id": 10,
+          "time": 3.819999999999995,
+          "type": "tension"
+        }
+      ]
+    }
+  },
+  "fullTrace": "V02_Coffered_Attachments.trace.json.gz",
+  "traceFrames": 302
+}

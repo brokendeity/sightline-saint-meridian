@@ -1,0 +1,24 @@
+{
+  "status": "PASS paired source renders and camera projection only; full visual target remains unaccepted",
+  "masterSHA256": "769e0d5db778a47e7773a9b7b980d2eaff7d80e9626ef1891802d04fb5d68641",
+  "nativeSHA256": "43b8b81c18b0ed6e013e2841c6e32093e29c7c93673dbb805362d68cd3acf1ec",
+  "viewsSHA256": "61cbc13933606a36d8ccdbde1987c7e6e6ca5d060df98049d94420093bcb4d4b",
+  "fillDefinitionSHA256": "b64306a15e0f6dbaefa491b5e8cb536f626cdadc80cc7356ea40a50fd0327f56",
+  "captures": [
+    {
+      "id": "A",
+      "file": "evidence/coffered-candidate/blender-A.png",
+      "sha256": "fb344022bd141a757db143d0e1e024979680283975bb5038cd16c63d2b17a6b7",
+      "maximumLandmarkProjectionErrorPixels": 0.00015917584360389798,
+      "samples": 16
+    },
+    {
+      "id": "B",
+      "file": "evidence/coffered-candidate/blender-B.png",
+      "sha256": "0e9cea4511b15c8b8707053f8d12ffb26830b388ad14f819839a620ffcbd6d86",
+      "maximumLandmarkProjectionErrorPixels": 0.0001159860210668651,
+      "samples": 16
+    }
+  ],
+  "scope": "Actual saved-source Cycles16sample paired renders. Native toon/ACES and Blender Principled/AgX shading differ; camera agreement does not establish final visual quality."
+}
