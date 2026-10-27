@@ -1,0 +1,6 @@
+{
+  "scope": "Native trace accounting correction",
+  "initialReportedActiveInputSeconds": 6.166666666666667,
+  "missingIntentionalSettleSteps": 32,
+  "reason": "Four8-tick native stops executed during each enter/outlook/return path were omitted from the retained trace count. Revised harness retains them; complete elapsed simulation duration is6.7s. No route or game behavior changed."
+}

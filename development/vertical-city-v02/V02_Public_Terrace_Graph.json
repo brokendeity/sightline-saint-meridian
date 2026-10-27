@@ -1,0 +1,313 @@
+{
+  "status": "PASS directed graph extension; native admission remains separate",
+  "nodes": [
+    {
+      "id": "public-terrace-24-outlook",
+      "position": [
+        38,
+        24,
+        297.7
+      ],
+      "kind": "sheltered public outlook",
+      "supportStatus": "Source-authored terrace floor; native input acceptance separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING",
+      "layer": 24,
+      "structuralOwner": "v02:public-terrace-24-floor"
+    },
+    {
+      "id": "public-terrace-52-outlook",
+      "position": [
+        38,
+        52,
+        297.7
+      ],
+      "kind": "sheltered public outlook",
+      "supportStatus": "Source-authored terrace floor; native input acceptance separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING",
+      "layer": 52,
+      "structuralOwner": "v02:public-terrace-52-floor"
+    },
+    {
+      "id": "public-terrace-128-outlook",
+      "position": [
+        38,
+        128,
+        297.7
+      ],
+      "kind": "sheltered public outlook",
+      "supportStatus": "Source-authored terrace floor; native input acceptance separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING",
+      "layer": 128,
+      "structuralOwner": "v02:public-terrace-128-floor"
+    }
+  ],
+  "edges": [
+    {
+      "id": "public-terrace-24-approach",
+      "source": "W24_300",
+      "destination": "public-terrace-24-outlook",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 19.30000000000001,
+      "distance3D": 19.30000000000001,
+      "path": [
+        [
+          55,
+          24,
+          300
+        ],
+        [
+          48,
+          24,
+          300
+        ],
+        [
+          38,
+          24,
+          300
+        ],
+        [
+          38,
+          24,
+          297.7
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 2.924,
+      "timeEvidence": "Source geometry / clean native run-speed estimate; stopwatch evidence remains separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Perimeter-protected supported terrace; return through the same gallery portal",
+      "validation": {
+        "geometry": "Source-volume and portal body preflight PASS",
+        "input": "NOT TESTED at manifest authoring; see matching candidate native report"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "public-terrace-24-return",
+      "source": "public-terrace-24-outlook",
+      "destination": "W24_300",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 19.30000000000001,
+      "distance3D": 19.30000000000001,
+      "path": [
+        [
+          38,
+          24,
+          297.7
+        ],
+        [
+          38,
+          24,
+          300
+        ],
+        [
+          48,
+          24,
+          300
+        ],
+        [
+          55,
+          24,
+          300
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 2.924,
+      "timeEvidence": "Source geometry / clean native run-speed estimate; stopwatch evidence remains separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Perimeter-protected supported terrace; return through the same gallery portal",
+      "validation": {
+        "geometry": "Source-volume and portal body preflight PASS",
+        "input": "NOT TESTED at manifest authoring; see matching candidate native report"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "public-terrace-52-approach",
+      "source": "W52_300",
+      "destination": "public-terrace-52-outlook",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 19.30000000000001,
+      "distance3D": 19.30000000000001,
+      "path": [
+        [
+          55,
+          52,
+          300
+        ],
+        [
+          48,
+          52,
+          300
+        ],
+        [
+          38,
+          52,
+          300
+        ],
+        [
+          38,
+          52,
+          297.7
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 2.924,
+      "timeEvidence": "Source geometry / clean native run-speed estimate; stopwatch evidence remains separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Perimeter-protected supported terrace; return through the same gallery portal",
+      "validation": {
+        "geometry": "Source-volume and portal body preflight PASS",
+        "input": "NOT TESTED at manifest authoring; see matching candidate native report"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "public-terrace-52-return",
+      "source": "public-terrace-52-outlook",
+      "destination": "W52_300",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 19.30000000000001,
+      "distance3D": 19.30000000000001,
+      "path": [
+        [
+          38,
+          52,
+          297.7
+        ],
+        [
+          38,
+          52,
+          300
+        ],
+        [
+          48,
+          52,
+          300
+        ],
+        [
+          55,
+          52,
+          300
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 2.924,
+      "timeEvidence": "Source geometry / clean native run-speed estimate; stopwatch evidence remains separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Perimeter-protected supported terrace; return through the same gallery portal",
+      "validation": {
+        "geometry": "Source-volume and portal body preflight PASS",
+        "input": "NOT TESTED at manifest authoring; see matching candidate native report"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "public-terrace-128-approach",
+      "source": "W128_300",
+      "destination": "public-terrace-128-outlook",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 19.30000000000001,
+      "distance3D": 19.30000000000001,
+      "path": [
+        [
+          55,
+          128,
+          300
+        ],
+        [
+          48,
+          128,
+          300
+        ],
+        [
+          38,
+          128,
+          300
+        ],
+        [
+          38,
+          128,
+          297.7
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 2.924,
+      "timeEvidence": "Source geometry / clean native run-speed estimate; stopwatch evidence remains separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Perimeter-protected supported terrace; return through the same gallery portal",
+      "validation": {
+        "geometry": "Source-volume and portal body preflight PASS",
+        "input": "NOT TESTED at manifest authoring; see matching candidate native report"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "public-terrace-128-return",
+      "source": "public-terrace-128-outlook",
+      "destination": "W128_300",
+      "ability": "run",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 19.30000000000001,
+      "distance3D": 19.30000000000001,
+      "path": [
+        [
+          38,
+          128,
+          297.7
+        ],
+        [
+          38,
+          128,
+          300
+        ],
+        [
+          48,
+          128,
+          300
+        ],
+        [
+          55,
+          128,
+          300
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 2.924,
+      "timeEvidence": "Source geometry / clean native run-speed estimate; stopwatch evidence remains separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Perimeter-protected supported terrace; return through the same gallery portal",
+      "validation": {
+        "geometry": "Source-volume and portal body preflight PASS",
+        "input": "NOT TESTED at manifest authoring; see matching candidate native report"
+      },
+      "traversalAgent": "player"
+    }
+  ],
+  "preservedNodes": 134,
+  "preservedEdges": 264,
+  "planSHA256": "43d6574fad35f457efcfe024a1b5280880d79043652515ec936e8d6179443f4b"
+}

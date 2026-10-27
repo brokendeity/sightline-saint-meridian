@@ -1,0 +1,76 @@
+{
+  "status": "PASS source-route body and continuous complete-envelope traffic separation",
+  "sourceRouteSegments": 970,
+  "sourceRouteFailures": [],
+  "airRadius": 3.737131371624291,
+  "air": [
+    {
+      "id": "aerial-band-0",
+      "min": [
+        73.17339973128855,
+        34.26286762837571,
+        73.17556811909216
+      ],
+      "max": [
+        246.82651898635194,
+        41.73713237162429,
+        566.8244318809077
+      ],
+      "radius": 3.737131371624291,
+      "maximumCubicReconstructionError": 2.382173337059642e-13,
+      "proof": "Every native Catmull-Rom cubic lies in its Bezier control hull; direction-independent radius encloses full vehicle geometry"
+    },
+    {
+      "id": "aerial-band-1",
+      "min": [
+        73.17339973128853,
+        61.26286762837571,
+        73.17556811909213
+      ],
+      "max": [
+        246.826518986352,
+        68.73713237162428,
+        566.8244318809077
+      ],
+      "radius": 3.737131371624291,
+      "maximumCubicReconstructionError": 2.3437142008433856e-13,
+      "proof": "Every native Catmull-Rom cubic lies in its Bezier control hull; direction-independent radius encloses full vehicle geometry"
+    },
+    {
+      "id": "aerial-band-2",
+      "min": [
+        79.17961449713243,
+        110.26286762837572,
+        79.18189642021449
+      ],
+      "max": [
+        240.82047429872276,
+        117.73713237162428,
+        560.8181035797857
+      ],
+      "radius": 3.737131371624291,
+      "maximumCubicReconstructionError": 2.31335954426011e-13,
+      "proof": "Every native Catmull-Rom cubic lies in its Bezier control hull; direction-independent radius encloses full vehicle geometry"
+    }
+  ],
+  "train": {
+    "min": [
+      69.92258748600227,
+      89.999999,
+      69.92360824903533
+    ],
+    "max": [
+      250.0774125139977,
+      110.000001,
+      570.0763917509645
+    ],
+    "radius": 10,
+    "maximumCubicReconstructionError": 2.8421709430404007e-13,
+    "proof": "Every native Catmull-Rom cubic lies in its Bezier control hull; direction-independent radius encloses full vehicle geometry",
+    "scope": "10m vehicle radius must also be confirmed against loaded car geometry in the matching native report"
+  },
+  "newGeometryMaxX": 52,
+  "minimumAirHorizontalGap": 21.173399731288526,
+  "minimumTrainHorizontalGap": 17.92258748600227,
+  "planSHA256": "43d6574fad35f457efcfe024a1b5280880d79043652515ec936e8d6179443f4b"
+}

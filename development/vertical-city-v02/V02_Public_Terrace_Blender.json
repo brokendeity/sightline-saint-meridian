@@ -1,0 +1,30 @@
+{
+  "status": "PASS paired source renders and projection; full reference quality remains unaccepted",
+  "masterSHA256": "b2732c592a363053cf6d4777e34927ab2d751492ab61383a3285fd0f3063bec0",
+  "nativeReportSHA256": "c6c9ef4d3a9d06a11c5d7498759fb6fae68c1f7e23d11332e2817702504d374a",
+  "contractSHA256": "af49662f1e65d8c4294c6051a82dedd3f23877c36c2f7d054fd4256c64661e3e",
+  "captures": [
+    {
+      "id": "A",
+      "file": "evidence/public-terraces/blender-A.png",
+      "sha256": "fa98618168348292771be1ef30da34fbb27d57193eca823518952a85c70d0443",
+      "maximumLandmarkProjectionErrorPixels": 6.278291823384293e-05,
+      "samples": 16
+    },
+    {
+      "id": "B",
+      "file": "evidence/public-terraces/blender-B.png",
+      "sha256": "3cd967dd463550cdad74ce56b10a7098a756bc6138b039c3af3b17b55fe4406f",
+      "maximumLandmarkProjectionErrorPixels": 0.003379802851933891,
+      "samples": 16
+    },
+    {
+      "id": "E",
+      "file": "evidence/public-terraces/blender-E.png",
+      "sha256": "9890b0bfbd2bc245b290647a1427369c49634d5af3fd5ac158c8ba529e5017e8",
+      "maximumLandmarkProjectionErrorPixels": 0.009178216717236194,
+      "samples": 16
+    }
+  ],
+  "scope": "Saved-source Cycles16sample renders and geometric projection only. Not full visual-reference acceptance; toon/ACES vs Principled/AgX shading and animated world presentation remain separate."
+}
