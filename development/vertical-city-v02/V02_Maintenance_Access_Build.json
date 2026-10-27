@@ -1,0 +1,12 @@
+{
+  "status": "CANDIDATE; source/shipping/native/visual acceptance pending",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_MAINTENANCE_ACCESS.html",
+  "entrySHA256": "08249105dfcbb14efd16d027b407dcb6122e186951ef6b18122e5953ac644cd7",
+  "source": "SIGHTLINE_SAINT_MERIDIAN_V02_SERVICE_TOWER.html",
+  "sourceSHA256": "dd9db92b5c108f885ef43a4cf58d70892fb79ae44407b5b509652aac5b05509f",
+  "oldSelector": "(state.pilot?'pilot':'service-tower/runtime')",
+  "newSelector": "(state.pilot?'pilot':'maintenance-access/runtime')",
+  "manifest": "assets/city/vertical-v02/maintenance-access/runtime/manifest.json",
+  "manifestSHA256": "5372f2b0dd49b9418e24595c4ab0e488ccc0ad5b961644c5d2436329c1f79727",
+  "scope": "Only the architecture-manifest selector changes; no runtime control/camera/physics/power/shader changes"
+}

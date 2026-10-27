@@ -136,3 +136,8 @@ See the hash-bound JSON, complete compressed traces, retained failures and route
 ## Current stepped service tower checkpoint — 2026-10-27
 
 See `V02_SERVICE_TOWER.md` and hash-bound `V02_Service_Tower_Evidence.json` for the latest complete game candidate, preserved older builds, actual architectural replacement and current journey/loop/input validation. This supersedes earlier candidate identities only; historical evidence remains intact. Full approved-reference visual quality remains FAIL, upper plant maintenance access remains incomplete, and the combined current release/regression/performance/physical-device gates are still open.
+
+
+## Current upper maintenance access — 2026-10-27
+
+See `V02_MAINTENANCE_ACCESS.md` and `V02_Maintenance_Access_Evidence.json` for the latest complete candidate. All four plant rooms now have usable circulation:12ordinary stair flights, supported upper galleries and actual side doors. Current native tour,16directed edge admissions, six station journeys, three public loops and retained input cases pass. Actual descent review caught an offscreen-hips camera failure; stepped low guards fix the reproduced first-flight case without camera/controller changes. Broader camera/orbit/device coverage remains separate. Full approved-reference visual quality remains FAIL, and current complete game/regression/performance release gates remain open. Previous candidates and their evidence remain intact.

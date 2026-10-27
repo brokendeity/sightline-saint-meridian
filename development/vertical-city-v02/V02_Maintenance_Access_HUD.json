@@ -1,0 +1,632 @@
+{
+  "status": "PASS bounded HUD/input/pause/responsive cases",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_MAINTENANCE_ACCESS.html",
+  "scope": "UI disclosure, native pause/resources/control callbacks, responsive layouts. Not full retained-gameplay, final architecture or sustained performance acceptance.",
+  "results": [
+    {
+      "name": "desktop UI bounds and playfield protection",
+      "coverage": 0.10002970679012346
+    },
+    {
+      "name": "Tools invokes native pause, clears held movement/guard and freezes world clocks"
+    },
+    {
+      "name": "Paused hero switch remains paused; Sightline grounded aim still locks position"
+    },
+    {
+      "name": "Audio and native controls disclosure retain callbacks in pause tools"
+    },
+    {
+      "name": "Animation preview opens and restores the existing paused state"
+    },
+    {
+      "name": "Nearby public board opens/closes with normal input and live choices"
+    },
+    {
+      "name": "Original recording owner updates moved replay slots; slot selection retains native callback"
+    },
+    {
+      "name": "Practice command resumes before original callback; LMB starts native authored strike"
+    },
+    {
+      "name": "Native Escape and Resume still own gameplay pause"
+    },
+    {
+      "name": "Native L3 + LT + RT + R3 toggles both heroes through simulated controller"
+    },
+    {
+      "name": "portrait UI bounds and playfield protection",
+      "coverage": 0.3025462558638587
+    },
+    {
+      "name": "Touch Flow toggles, disclosed state cycling and native jump/landing"
+    },
+    {
+      "name": "portrait-resumed UI bounds and playfield protection",
+      "coverage": 0.3025462558638587
+    },
+    {
+      "name": "landscape UI bounds and playfield protection",
+      "coverage": 0.3111823472901487
+    },
+    {
+      "name": "Touch pause/resume and responsive tools preserve live action deck"
+    }
+  ],
+  "captures": [
+    "evidence/maintenance-access-hud/desktop.png",
+    "evidence/maintenance-access-hud/paused-hero-tools.png",
+    "evidence/maintenance-access-hud/paused-controls.png",
+    "evidence/maintenance-access-hud/public-information.png",
+    "evidence/maintenance-access-hud/combat-feedback.png",
+    "evidence/maintenance-access-hud/portrait.png",
+    "evidence/maintenance-access-hud/portrait-paused-equipment.png",
+    "evidence/maintenance-access-hud/portrait-resumed.png",
+    "evidence/maintenance-access-hud/landscape.png",
+    "evidence/maintenance-access-hud/landscape-paused-practice.png"
+  ],
+  "errors": [],
+  "hashes": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_MAINTENANCE_ACCESS.html": "08249105dfcbb14efd16d027b407dcb6122e186951ef6b18122e5953ac644cd7",
+    "scripts/game_vertical_hud_v02.js": "301a855a1ac6509e561ae1d108ef0914b1edb1a76e69c2903864913963afb650",
+    "scripts/game_vertical_hud_v02.css": "e3ba778d33387c5cf771ef2cb26832995f7dcd5d487302b72e945a0dcb991cdf",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_VISUAL_CANDIDATE.html": "096be78a4f7dddf42dafd4de5d3749f7d0cfbcf31bd934c27531b6520fd953a4"
+  },
+  "desktop": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "coverage": 0.10002970679012346,
+    "boxes": [
+      {
+        "id": "v02Toolbar",
+        "x": 14,
+        "y": 14,
+        "width": 212.4375,
+        "height": 44
+      },
+      {
+        "id": "flightVitals",
+        "x": 14,
+        "y": 644.21875,
+        "width": 235,
+        "height": 241.78125
+      },
+      {
+        "id": "mission",
+        "x": 1126,
+        "y": 14,
+        "width": 300,
+        "height": 48.1875
+      },
+      {
+        "id": "actionHint",
+        "x": 550,
+        "y": 844,
+        "width": 340,
+        "height": 40
+      },
+      {
+        "id": "v02DiscoveryHUD",
+        "x": 1156,
+        "y": 84,
+        "width": 270,
+        "height": 131.171875
+      }
+    ],
+    "buttons": [],
+    "overflow": false
+  },
+  "renderViews": {
+    "desktop": {
+      "average": 47.03373015873016,
+      "size": [
+        1440,
+        900
+      ],
+      "cameraAspect": 1.6,
+      "viewport": [
+        1440,
+        900
+      ],
+      "contextLost": false
+    },
+    "paused-hero-tools": {
+      "average": 44.13492063492063,
+      "size": [
+        1440,
+        900
+      ],
+      "cameraAspect": 1.6,
+      "viewport": [
+        1440,
+        900
+      ],
+      "contextLost": false
+    },
+    "paused-controls": {
+      "average": 48.55357142857143,
+      "size": [
+        1440,
+        900
+      ],
+      "cameraAspect": 1.6,
+      "viewport": [
+        1440,
+        900
+      ],
+      "contextLost": false
+    },
+    "public-information": {
+      "average": 48.77579365079365,
+      "size": [
+        1440,
+        900
+      ],
+      "cameraAspect": 1.6,
+      "viewport": [
+        1440,
+        900
+      ],
+      "contextLost": false
+    },
+    "combat-feedback": {
+      "average": 66.65674603174604,
+      "size": [
+        1440,
+        900
+      ],
+      "cameraAspect": 1.6,
+      "viewport": [
+        1440,
+        900
+      ],
+      "contextLost": false
+    },
+    "portrait": {
+      "average": 47.801587301587304,
+      "size": [
+        430,
+        932
+      ],
+      "cameraAspect": 0.4613733905579399,
+      "viewport": [
+        430,
+        932
+      ],
+      "contextLost": false
+    },
+    "portrait-paused-equipment": {
+      "average": 50.458333333333336,
+      "size": [
+        430,
+        932
+      ],
+      "cameraAspect": 0.4613733905579399,
+      "viewport": [
+        430,
+        932
+      ],
+      "contextLost": false
+    },
+    "portrait-resumed": {
+      "average": 52.90873015873016,
+      "size": [
+        430,
+        932
+      ],
+      "cameraAspect": 0.4613733905579399,
+      "viewport": [
+        430,
+        932
+      ],
+      "contextLost": false
+    },
+    "landscape": {
+      "average": 51.60912698412698,
+      "size": [
+        932,
+        430
+      ],
+      "cameraAspect": 2.167441860465116,
+      "viewport": [
+        932,
+        430
+      ],
+      "contextLost": false
+    },
+    "landscape-paused-practice": {
+      "average": 53.888888888888886,
+      "size": [
+        932,
+        430
+      ],
+      "cameraAspect": 2.167441860465116,
+      "viewport": [
+        932,
+        430
+      ],
+      "contextLost": false
+    }
+  },
+  "previewButtons": [
+    {
+      "id": "backspoolPlay",
+      "text": "Play preview"
+    },
+    {
+      "id": "backspoolClose",
+      "text": "Return to game"
+    },
+    {
+      "id": "backspoolControllerEvidence",
+      "text": "Recovered controller / contacts"
+    },
+    {
+      "id": "backspoolBipedEvidence",
+      "text": "Biped bindings / pose buffers"
+    },
+    {
+      "id": "backspoolSourceEvidence",
+      "text": "Original source evidence"
+    }
+  ],
+  "portrait": {
+    "viewport": [
+      430,
+      932
+    ],
+    "coverage": 0.3025462558638587,
+    "boxes": [
+      {
+        "id": "v02Toolbar",
+        "x": 10,
+        "y": 10,
+        "width": 132.109375,
+        "height": 44
+      },
+      {
+        "id": "flightVitals",
+        "x": 14,
+        "y": 68,
+        "width": 180,
+        "height": 234.375
+      },
+      {
+        "id": "mission",
+        "x": 190,
+        "y": 10,
+        "width": 230,
+        "height": 55
+      },
+      {
+        "id": "v02TouchActions",
+        "x": 208,
+        "y": 778,
+        "width": 210,
+        "height": 142
+      },
+      {
+        "id": "v02DiscoveryHUD",
+        "x": 210,
+        "y": 76,
+        "width": 210,
+        "height": 146.5625
+      }
+    ],
+    "buttons": [
+      {
+        "id": "combatTouchAttack",
+        "x": 208,
+        "y": 778,
+        "width": 66.65625,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "combatTouchHeavy",
+        "x": 279.65625,
+        "y": 778,
+        "width": 66.671875,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "combatTouchGuard",
+        "x": 351.328125,
+        "y": 778,
+        "width": 66.65625,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "combatTouchEvade",
+        "x": 208,
+        "y": 876,
+        "width": 66.65625,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "tJump",
+        "x": 208,
+        "y": 827,
+        "width": 66.65625,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "tSprint",
+        "x": 279.65625,
+        "y": 827,
+        "width": 66.671875,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "tAfterstep",
+        "x": 279.65625,
+        "y": 876,
+        "width": 66.671875,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "v02TouchMore",
+        "x": 351.328125,
+        "y": 876,
+        "width": 66.65625,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "tThreadrail",
+        "x": 351.328125,
+        "y": 827,
+        "width": 66.65625,
+        "height": 44,
+        "hit": true
+      }
+    ],
+    "overflow": false
+  },
+  "portrait-resumed": {
+    "viewport": [
+      430,
+      932
+    ],
+    "coverage": 0.3025462558638587,
+    "boxes": [
+      {
+        "id": "v02Toolbar",
+        "x": 10,
+        "y": 10,
+        "width": 132.109375,
+        "height": 44
+      },
+      {
+        "id": "flightVitals",
+        "x": 14,
+        "y": 68,
+        "width": 180,
+        "height": 234.375
+      },
+      {
+        "id": "mission",
+        "x": 190,
+        "y": 10,
+        "width": 230,
+        "height": 55
+      },
+      {
+        "id": "v02TouchActions",
+        "x": 208,
+        "y": 778,
+        "width": 210,
+        "height": 142
+      },
+      {
+        "id": "v02DiscoveryHUD",
+        "x": 210,
+        "y": 76,
+        "width": 210,
+        "height": 146.5625
+      }
+    ],
+    "buttons": [
+      {
+        "id": "combatTouchAttack",
+        "x": 208,
+        "y": 778,
+        "width": 66.65625,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "combatTouchHeavy",
+        "x": 279.65625,
+        "y": 778,
+        "width": 66.671875,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "combatTouchGuard",
+        "x": 351.328125,
+        "y": 778,
+        "width": 66.65625,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "combatTouchEvade",
+        "x": 208,
+        "y": 876,
+        "width": 66.65625,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "tJump",
+        "x": 208,
+        "y": 827,
+        "width": 66.65625,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "tSprint",
+        "x": 279.65625,
+        "y": 827,
+        "width": 66.671875,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "tAfterstep",
+        "x": 279.65625,
+        "y": 876,
+        "width": 66.671875,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "v02TouchMore",
+        "x": 351.328125,
+        "y": 876,
+        "width": 66.65625,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "tThreadrail",
+        "x": 351.328125,
+        "y": 827,
+        "width": 66.65625,
+        "height": 44,
+        "hit": true
+      }
+    ],
+    "overflow": false
+  },
+  "landscape": {
+    "viewport": [
+      932,
+      430
+    ],
+    "coverage": 0.3111823472901487,
+    "boxes": [
+      {
+        "id": "v02Toolbar",
+        "x": 14,
+        "y": 14,
+        "width": 212.4375,
+        "height": 44
+      },
+      {
+        "id": "flightVitals",
+        "x": 10,
+        "y": 64,
+        "width": 170,
+        "height": 232.96875
+      },
+      {
+        "id": "mission",
+        "x": 622,
+        "y": 10,
+        "width": 300,
+        "height": 48.1875
+      },
+      {
+        "id": "v02TouchActions",
+        "x": 710,
+        "y": 276,
+        "width": 210,
+        "height": 142
+      },
+      {
+        "id": "v02DiscoveryHUD",
+        "x": 682,
+        "y": 68,
+        "width": 240,
+        "height": 131.171875
+      }
+    ],
+    "buttons": [
+      {
+        "id": "combatTouchAttack",
+        "x": 710,
+        "y": 276,
+        "width": 66.65625,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "combatTouchHeavy",
+        "x": 781.65625,
+        "y": 276,
+        "width": 66.671875,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "combatTouchGuard",
+        "x": 853.328125,
+        "y": 276,
+        "width": 66.65625,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "combatTouchEvade",
+        "x": 710,
+        "y": 374,
+        "width": 66.65625,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "tJump",
+        "x": 710,
+        "y": 325,
+        "width": 66.65625,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "tSprint",
+        "x": 781.65625,
+        "y": 325,
+        "width": 66.671875,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "tAfterstep",
+        "x": 781.65625,
+        "y": 374,
+        "width": 66.671875,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "v02TouchMore",
+        "x": 853.328125,
+        "y": 374,
+        "width": 66.65625,
+        "height": 44,
+        "hit": true
+      },
+      {
+        "id": "tThreadrail",
+        "x": 853.328125,
+        "y": 325,
+        "width": 66.65625,
+        "height": 44,
+        "hit": true
+      }
+    ],
+    "overflow": false
+  }
+}

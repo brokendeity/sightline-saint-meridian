@@ -1,0 +1,60 @@
+{
+  "status": "PASS three current public loops, retained HUD/input cases and installed skill client",
+  "entrySHA256": "08249105dfcbb14efd16d027b407dcb6122e186951ef6b18122e5953ac644cd7",
+  "manifestSHA256": "5372f2b0dd49b9418e24595c4ab0e488ccc0ad5b961644c5d2436329c1f79727",
+  "jobs": [
+    {
+      "name": "loops",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_current_city_loops.cjs"
+      ],
+      "environment": {
+        "V02_LOOP_BUILD": "V02_Maintenance_Access_Build.json",
+        "V02_LOOP_RUN": "maintenance-access-loops",
+        "V02_LOOP_REPORT": "V02_Maintenance_Access_Loops.json"
+      },
+      "returncode": 0,
+      "wallSeconds": 73.28776074992493,
+      "log": "evidence/maintenance-access-checks/loops.txt"
+    },
+    {
+      "name": "hud",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_hud_candidate.cjs"
+      ],
+      "environment": {
+        "V02_HUD_ENTRY": "SIGHTLINE_SAINT_MERIDIAN_V02_MAINTENANCE_ACCESS.html",
+        "V02_HUD_RUN": "maintenance-access-hud",
+        "V02_HUD_REPORT": "V02_Maintenance_Access_HUD.json"
+      },
+      "returncode": 0,
+      "wallSeconds": 24.806090708822012,
+      "log": "evidence/maintenance-access-checks/hud.txt"
+    },
+    {
+      "name": "stock",
+      "command": [
+        "node",
+        "development/vertical-city-v02/tools/run-skill-client.cjs",
+        "--url",
+        "http://127.0.0.1:8766/SIGHTLINE_SAINT_MERIDIAN_V02_MAINTENANCE_ACCESS.html?capture=backspool",
+        "--click-selector",
+        "#v02Start",
+        "--actions-json",
+        "{\"steps\": [{\"buttons\": [\"a\"], \"frames\": 45}, {\"buttons\": [], \"frames\": 12}]}",
+        "--iterations",
+        "1",
+        "--pause-ms",
+        "250",
+        "--screenshot-dir",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/development/vertical-city-v02/evidence/stock-maintenance-access"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 11.46129291690886,
+      "log": "evidence/maintenance-access-checks/stock.txt"
+    }
+  ]
+}

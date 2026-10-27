@@ -1,0 +1,959 @@
+{
+  "status": "PASS explicit maintenance navigation and source contact adjacency",
+  "contacts": [
+    {
+      "lower": "maintenance-portal-post-41.35-289.03",
+      "upper": "maintenance-core-roof",
+      "type": "source-bounds-contact"
+    },
+    {
+      "lower": "maintenance-portal-post-41.35-300.97",
+      "upper": "maintenance-core-roof",
+      "type": "source-bounds-contact"
+    },
+    {
+      "lower": "maintenance-portal-post-49.05-289.03",
+      "upper": "maintenance-core-roof",
+      "type": "source-bounds-contact"
+    },
+    {
+      "lower": "maintenance-portal-post-49.05-300.97",
+      "upper": "maintenance-core-roof",
+      "type": "source-bounds-contact"
+    },
+    {
+      "lower": "momentum-canopy-post-42.2-297.8",
+      "upper": "momentum-court-canopy",
+      "type": "source-bounds-contact"
+    }
+  ],
+  "newNodes": [
+    {
+      "id": "MAINT_ENTRY84",
+      "position": [
+        47.8,
+        84,
+        299.5
+      ],
+      "kind": "maintenance-entrance",
+      "layer": 84,
+      "supportStatus": "Explicit source tread/landing/gallery floor; current native input acceptance is separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING"
+    },
+    {
+      "id": "MAINT_CORE84",
+      "position": [
+        42.6,
+        84,
+        299.5
+      ],
+      "kind": "public-stair",
+      "layer": 84,
+      "supportStatus": "Explicit source tread/landing/gallery floor; current native input acceptance is separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING"
+    },
+    {
+      "id": "MAINT_CORE96",
+      "position": [
+        42.6,
+        96,
+        299.5
+      ],
+      "kind": "public-stair",
+      "layer": 96,
+      "supportStatus": "Explicit source tread/landing/gallery floor; current native input acceptance is separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING"
+    },
+    {
+      "id": "MAINT_PLANT96",
+      "position": [
+        61.3,
+        96,
+        289.6
+      ],
+      "kind": "maintenance-destination",
+      "layer": 96,
+      "supportStatus": "Explicit source tread/landing/gallery floor; current native input acceptance is separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING"
+    },
+    {
+      "id": "MAINT_CORE108",
+      "position": [
+        42.6,
+        108,
+        299.5
+      ],
+      "kind": "public-stair",
+      "layer": 108,
+      "supportStatus": "Explicit source tread/landing/gallery floor; current native input acceptance is separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING"
+    },
+    {
+      "id": "MAINT_PLANT108",
+      "position": [
+        61.3,
+        108,
+        281.6
+      ],
+      "kind": "maintenance-destination",
+      "layer": 108,
+      "supportStatus": "Explicit source tread/landing/gallery floor; current native input acceptance is separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING"
+    },
+    {
+      "id": "MAINT_CORE120",
+      "position": [
+        42.6,
+        120,
+        299.5
+      ],
+      "kind": "public-stair",
+      "layer": 120,
+      "supportStatus": "Explicit source tread/landing/gallery floor; current native input acceptance is separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING"
+    },
+    {
+      "id": "MAINT_PLANT120",
+      "position": [
+        61.3,
+        120,
+        273.6
+      ],
+      "kind": "maintenance-destination",
+      "layer": 120,
+      "supportStatus": "Explicit source tread/landing/gallery floor; current native input acceptance is separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING"
+    }
+  ],
+  "newEdges": [
+    {
+      "id": "MAINT_E_000",
+      "source": "W84_300",
+      "destination": "MAINT_ENTRY84",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 7.700000000000003,
+      "distance3D": 7.700000000000003,
+      "path": [
+        [
+          55,
+          84,
+          300
+        ],
+        [
+          55,
+          84,
+          299.5
+        ],
+        [
+          47.8,
+          84,
+          299.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 1.1666666666666672,
+      "timeEvidence": "Geometric estimate; actual native trace measurement is separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Supported guarded stair landings and84m gallery return",
+      "validation": {
+        "geometry": "Source-cleared; independently reopened source/export checks remain required",
+        "input": "NOT TESTED at metadata generation; current native report is separate"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "MAINT_E_001",
+      "source": "MAINT_ENTRY84",
+      "destination": "W84_300",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 7.700000000000003,
+      "distance3D": 7.700000000000003,
+      "path": [
+        [
+          47.8,
+          84,
+          299.5
+        ],
+        [
+          55,
+          84,
+          299.5
+        ],
+        [
+          55,
+          84,
+          300
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 1.1666666666666672,
+      "timeEvidence": "Geometric estimate; actual native trace measurement is separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Supported guarded stair landings and84m gallery return",
+      "validation": {
+        "geometry": "Source-cleared; independently reopened source/export checks remain required",
+        "input": "NOT TESTED at metadata generation; current native report is separate"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "MAINT_E_002",
+      "source": "MAINT_ENTRY84",
+      "destination": "MAINT_CORE84",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 5.199999999999996,
+      "distance3D": 5.199999999999996,
+      "path": [
+        [
+          47.8,
+          84,
+          299.5
+        ],
+        [
+          42.6,
+          84,
+          299.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 0.7878787878787873,
+      "timeEvidence": "Geometric estimate; actual native trace measurement is separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Supported guarded stair landings and84m gallery return",
+      "validation": {
+        "geometry": "Source-cleared; independently reopened source/export checks remain required",
+        "input": "NOT TESTED at metadata generation; current native report is separate"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "MAINT_E_003",
+      "source": "MAINT_CORE84",
+      "destination": "MAINT_ENTRY84",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 5.199999999999996,
+      "distance3D": 5.199999999999996,
+      "path": [
+        [
+          42.6,
+          84,
+          299.5
+        ],
+        [
+          47.8,
+          84,
+          299.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 0.7878787878787873,
+      "timeEvidence": "Geometric estimate; actual native trace measurement is separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Supported guarded stair landings and84m gallery return",
+      "validation": {
+        "geometry": "Source-cleared; independently reopened source/export checks remain required",
+        "input": "NOT TESTED at metadata generation; current native report is separate"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "MAINT_E_004",
+      "source": "MAINT_CORE84",
+      "destination": "MAINT_CORE96",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": 12,
+      "horizontalDistance": 57.280000000000015,
+      "distance3D": 59.20299988282168,
+      "path": [
+        [
+          42.6,
+          84,
+          299.5
+        ],
+        [
+          42.599999999999994,
+          87,
+          290.38
+        ],
+        [
+          47.8,
+          87,
+          290.38
+        ],
+        [
+          47.8,
+          90,
+          299.5
+        ],
+        [
+          42.6,
+          90,
+          299.5
+        ],
+        [
+          42.599999999999994,
+          93,
+          290.38
+        ],
+        [
+          47.8,
+          93,
+          290.38
+        ],
+        [
+          47.8,
+          96,
+          299.5
+        ],
+        [
+          42.6,
+          96,
+          299.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 8.970151497397225,
+      "timeEvidence": "Geometric estimate; actual native trace measurement is separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Supported guarded stair landings and84m gallery return",
+      "validation": {
+        "geometry": "Source-cleared; independently reopened source/export checks remain required",
+        "input": "NOT TESTED at metadata generation; current native report is separate"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "MAINT_E_005",
+      "source": "MAINT_CORE96",
+      "destination": "MAINT_CORE84",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": -12,
+      "horizontalDistance": 57.280000000000015,
+      "distance3D": 59.20299988282167,
+      "path": [
+        [
+          42.6,
+          96,
+          299.5
+        ],
+        [
+          47.8,
+          96,
+          299.5
+        ],
+        [
+          47.8,
+          93,
+          290.38
+        ],
+        [
+          42.599999999999994,
+          93,
+          290.38
+        ],
+        [
+          42.6,
+          90,
+          299.5
+        ],
+        [
+          47.8,
+          90,
+          299.5
+        ],
+        [
+          47.8,
+          87,
+          290.38
+        ],
+        [
+          42.599999999999994,
+          87,
+          290.38
+        ],
+        [
+          42.6,
+          84,
+          299.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 8.970151497397223,
+      "timeEvidence": "Geometric estimate; actual native trace measurement is separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Supported guarded stair landings and84m gallery return",
+      "validation": {
+        "geometry": "Source-cleared; independently reopened source/export checks remain required",
+        "input": "NOT TESTED at metadata generation; current native report is separate"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "MAINT_E_006",
+      "source": "MAINT_CORE96",
+      "destination": "MAINT_PLANT96",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 28.599999999999973,
+      "distance3D": 28.599999999999973,
+      "path": [
+        [
+          42.6,
+          96,
+          299.5
+        ],
+        [
+          58.3,
+          96,
+          299.5
+        ],
+        [
+          58.3,
+          96,
+          289.6
+        ],
+        [
+          61.3,
+          96,
+          289.6
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 4.3333333333333295,
+      "timeEvidence": "Geometric estimate; actual native trace measurement is separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Supported guarded stair landings and84m gallery return",
+      "validation": {
+        "geometry": "Source-cleared; independently reopened source/export checks remain required",
+        "input": "NOT TESTED at metadata generation; current native report is separate"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "MAINT_E_007",
+      "source": "MAINT_PLANT96",
+      "destination": "MAINT_CORE96",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 28.599999999999973,
+      "distance3D": 28.599999999999973,
+      "path": [
+        [
+          61.3,
+          96,
+          289.6
+        ],
+        [
+          58.3,
+          96,
+          289.6
+        ],
+        [
+          58.3,
+          96,
+          299.5
+        ],
+        [
+          42.6,
+          96,
+          299.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 4.3333333333333295,
+      "timeEvidence": "Geometric estimate; actual native trace measurement is separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Supported guarded stair landings and84m gallery return",
+      "validation": {
+        "geometry": "Source-cleared; independently reopened source/export checks remain required",
+        "input": "NOT TESTED at metadata generation; current native report is separate"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "MAINT_E_008",
+      "source": "MAINT_CORE96",
+      "destination": "MAINT_CORE108",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": 12,
+      "horizontalDistance": 57.280000000000015,
+      "distance3D": 59.20299988282168,
+      "path": [
+        [
+          42.6,
+          96,
+          299.5
+        ],
+        [
+          42.599999999999994,
+          99,
+          290.38
+        ],
+        [
+          47.8,
+          99,
+          290.38
+        ],
+        [
+          47.8,
+          102,
+          299.5
+        ],
+        [
+          42.6,
+          102,
+          299.5
+        ],
+        [
+          42.599999999999994,
+          105,
+          290.38
+        ],
+        [
+          47.8,
+          105,
+          290.38
+        ],
+        [
+          47.8,
+          108,
+          299.5
+        ],
+        [
+          42.6,
+          108,
+          299.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 8.970151497397225,
+      "timeEvidence": "Geometric estimate; actual native trace measurement is separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Supported guarded stair landings and84m gallery return",
+      "validation": {
+        "geometry": "Source-cleared; independently reopened source/export checks remain required",
+        "input": "NOT TESTED at metadata generation; current native report is separate"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "MAINT_E_009",
+      "source": "MAINT_CORE108",
+      "destination": "MAINT_CORE96",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": -12,
+      "horizontalDistance": 57.280000000000015,
+      "distance3D": 59.20299988282167,
+      "path": [
+        [
+          42.6,
+          108,
+          299.5
+        ],
+        [
+          47.8,
+          108,
+          299.5
+        ],
+        [
+          47.8,
+          105,
+          290.38
+        ],
+        [
+          42.599999999999994,
+          105,
+          290.38
+        ],
+        [
+          42.6,
+          102,
+          299.5
+        ],
+        [
+          47.8,
+          102,
+          299.5
+        ],
+        [
+          47.8,
+          99,
+          290.38
+        ],
+        [
+          42.599999999999994,
+          99,
+          290.38
+        ],
+        [
+          42.6,
+          96,
+          299.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 8.970151497397223,
+      "timeEvidence": "Geometric estimate; actual native trace measurement is separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Supported guarded stair landings and84m gallery return",
+      "validation": {
+        "geometry": "Source-cleared; independently reopened source/export checks remain required",
+        "input": "NOT TESTED at metadata generation; current native report is separate"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "MAINT_E_010",
+      "source": "MAINT_CORE108",
+      "destination": "MAINT_PLANT108",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 36.59999999999997,
+      "distance3D": 36.59999999999997,
+      "path": [
+        [
+          42.6,
+          108,
+          299.5
+        ],
+        [
+          58.3,
+          108,
+          299.5
+        ],
+        [
+          58.3,
+          108,
+          281.6
+        ],
+        [
+          61.3,
+          108,
+          281.6
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 5.545454545454541,
+      "timeEvidence": "Geometric estimate; actual native trace measurement is separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Supported guarded stair landings and84m gallery return",
+      "validation": {
+        "geometry": "Source-cleared; independently reopened source/export checks remain required",
+        "input": "NOT TESTED at metadata generation; current native report is separate"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "MAINT_E_011",
+      "source": "MAINT_PLANT108",
+      "destination": "MAINT_CORE108",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 36.59999999999997,
+      "distance3D": 36.59999999999997,
+      "path": [
+        [
+          61.3,
+          108,
+          281.6
+        ],
+        [
+          58.3,
+          108,
+          281.6
+        ],
+        [
+          58.3,
+          108,
+          299.5
+        ],
+        [
+          42.6,
+          108,
+          299.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 5.545454545454541,
+      "timeEvidence": "Geometric estimate; actual native trace measurement is separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Supported guarded stair landings and84m gallery return",
+      "validation": {
+        "geometry": "Source-cleared; independently reopened source/export checks remain required",
+        "input": "NOT TESTED at metadata generation; current native report is separate"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "MAINT_E_012",
+      "source": "MAINT_CORE108",
+      "destination": "MAINT_CORE120",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": 12,
+      "horizontalDistance": 57.280000000000015,
+      "distance3D": 59.20299988282168,
+      "path": [
+        [
+          42.6,
+          108,
+          299.5
+        ],
+        [
+          42.599999999999994,
+          111,
+          290.38
+        ],
+        [
+          47.8,
+          111,
+          290.38
+        ],
+        [
+          47.8,
+          114,
+          299.5
+        ],
+        [
+          42.6,
+          114,
+          299.5
+        ],
+        [
+          42.599999999999994,
+          117,
+          290.38
+        ],
+        [
+          47.8,
+          117,
+          290.38
+        ],
+        [
+          47.8,
+          120,
+          299.5
+        ],
+        [
+          42.6,
+          120,
+          299.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 8.970151497397225,
+      "timeEvidence": "Geometric estimate; actual native trace measurement is separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Supported guarded stair landings and84m gallery return",
+      "validation": {
+        "geometry": "Source-cleared; independently reopened source/export checks remain required",
+        "input": "NOT TESTED at metadata generation; current native report is separate"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "MAINT_E_013",
+      "source": "MAINT_CORE120",
+      "destination": "MAINT_CORE108",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": -12,
+      "horizontalDistance": 57.280000000000015,
+      "distance3D": 59.20299988282167,
+      "path": [
+        [
+          42.6,
+          120,
+          299.5
+        ],
+        [
+          47.8,
+          120,
+          299.5
+        ],
+        [
+          47.8,
+          117,
+          290.38
+        ],
+        [
+          42.599999999999994,
+          117,
+          290.38
+        ],
+        [
+          42.6,
+          114,
+          299.5
+        ],
+        [
+          47.8,
+          114,
+          299.5
+        ],
+        [
+          47.8,
+          111,
+          290.38
+        ],
+        [
+          42.599999999999994,
+          111,
+          290.38
+        ],
+        [
+          42.6,
+          108,
+          299.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 8.970151497397223,
+      "timeEvidence": "Geometric estimate; actual native trace measurement is separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Supported guarded stair landings and84m gallery return",
+      "validation": {
+        "geometry": "Source-cleared; independently reopened source/export checks remain required",
+        "input": "NOT TESTED at metadata generation; current native report is separate"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "MAINT_E_014",
+      "source": "MAINT_CORE120",
+      "destination": "MAINT_PLANT120",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 44.59999999999997,
+      "distance3D": 44.59999999999997,
+      "path": [
+        [
+          42.6,
+          120,
+          299.5
+        ],
+        [
+          58.3,
+          120,
+          299.5
+        ],
+        [
+          58.3,
+          120,
+          273.6
+        ],
+        [
+          61.3,
+          120,
+          273.6
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 6.757575757575754,
+      "timeEvidence": "Geometric estimate; actual native trace measurement is separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Supported guarded stair landings and84m gallery return",
+      "validation": {
+        "geometry": "Source-cleared; independently reopened source/export checks remain required",
+        "input": "NOT TESTED at metadata generation; current native report is separate"
+      },
+      "traversalAgent": "player"
+    },
+    {
+      "id": "MAINT_E_015",
+      "source": "MAINT_PLANT120",
+      "destination": "MAINT_CORE120",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 44.59999999999997,
+      "distance3D": 44.59999999999997,
+      "path": [
+        [
+          61.3,
+          120,
+          273.6
+        ],
+        [
+          58.3,
+          120,
+          273.6
+        ],
+        [
+          58.3,
+          120,
+          299.5
+        ],
+        [
+          42.6,
+          120,
+          299.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 6.757575757575754,
+      "timeEvidence": "Geometric estimate; actual native trace measurement is separate",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Supported guarded stair landings and84m gallery return",
+      "validation": {
+        "geometry": "Source-cleared; independently reopened source/export checks remain required",
+        "input": "NOT TESTED at metadata generation; current native report is separate"
+      },
+      "traversalAgent": "player"
+    }
+  ],
+  "manifestSHA256": "3ea503d42f1496fc833dfb3dea93def20ae213f2b102fb2dedf83ff2088042c3",
+  "limits": [
+    "Source adjacency is not structural engineering certification",
+    "Native movement and graph admission remain separate"
+  ]
+}

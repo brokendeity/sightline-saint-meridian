@@ -1,0 +1,116 @@
+{
+  "status": "PASS uninterrupted ground-to-station physical circulation",
+  "errors": [],
+  "ambientHits": [],
+  "method": "One controlled ground start [55,.42,210]; WASD only (O walk in baseline, ordinary run in RUN_PUBLIC variant). No jump, rail, Drive, teleport or position assignment after start.",
+  "entrySHA256": "08249105dfcbb14efd16d027b407dcb6122e186951ef6b18122e5953ac644cd7",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_MAINTENANCE_ACCESS.html",
+  "manifest": "assets/city/vertical-v02/maintenance-access/runtime/manifest.json",
+  "buildReport": "V02_Maintenance_Access_Build.json",
+  "manifestSHA256": "5372f2b0dd49b9418e24595c4ab0e488ccc0ad5b961644c5d2436329c1f79727",
+  "testConfigurationSHA256": "916584e4a073b41e088aba5bf8c375aaf13e9e49ea8022f3a4777190ad52715d",
+  "evidenceRun": "public-banked",
+  "evidenceSuite": "maintenance-access-routes",
+  "testSourceSHA256": "d5f4d5cd6baab74f16007b3c2775364161e25e1cedb08ba3e5f1068310cf3875",
+  "initialBank": 5,
+  "preparationStartFrame": 0,
+  "spawnBank": 0,
+  "preparationFrames": 268,
+  "routeStartFrame": 268,
+  "routeTraceStart": 268,
+  "segments": [
+    {
+      "name": "ground access",
+      "seconds": 2.25,
+      "at": [
+        60.909999999999975,
+        0.42,
+        215.47219083333394
+      ]
+    },
+    {
+      "name": "A stair 0 to 24",
+      "seconds": 23.8,
+      "at": [
+        61.01999999999997,
+        24.42,
+        215.58219083333395
+      ]
+    },
+    {
+      "name": "A stair 24 to 52",
+      "seconds": 31.216666666666665,
+      "at": [
+        61.09999999999998,
+        52.42,
+        215.55719083333392
+      ]
+    },
+    {
+      "name": "A stair 52 to 84",
+      "seconds": 30.133333333333333,
+      "at": [
+        61.09999999999998,
+        84.42,
+        215.55719083333392
+      ]
+    },
+    {
+      "name": "Y84 west public gallery",
+      "seconds": 26.9,
+      "at": [
+        60.90499999999998,
+        84.42,
+        375.4671908333536
+      ]
+    },
+    {
+      "name": "C stair 84 to 100",
+      "seconds": 19.25,
+      "at": [
+        61.094999999999985,
+        100.42,
+        375.55219083335356
+      ]
+    },
+    {
+      "name": "station arrival",
+      "seconds": 1.5333333333333334,
+      "at": [
+        66.42999999999996,
+        100.42,
+        375.94219083335355
+      ]
+    }
+  ],
+  "final": {
+    "p": [
+      66.42999999999996,
+      100.42,
+      375.94219083335355
+    ],
+    "onGround": true,
+    "trauma": 0,
+    "releases": 0
+  },
+  "seconds": 135.08333333333334,
+  "distance": 773.9782163119702,
+  "airFrames": 0,
+  "maxUncommandedHorizontal": 2.731148640577885e-14,
+  "combatExposure": "No incoming or physical damage in this trial",
+  "capture": {
+    "player": [
+      66.42999999999996,
+      100.42,
+      375.94219083335355
+    ],
+    "camera": [
+      67.77149126756072,
+      102.39963744936892,
+      380.0987228766615
+    ],
+    "policy": "Actual final native camera; render only, no camera override"
+  },
+  "fullTrace": "V02_Public_Route_Run_Validation.trace.json.gz",
+  "traceFrames": 8373
+}
