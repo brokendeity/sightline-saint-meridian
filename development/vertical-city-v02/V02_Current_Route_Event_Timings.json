@@ -1,0 +1,1441 @@
+{
+  "status": "PASS measured nine formerly untimed native ability phases and four wall ascents; planned-node reconciliation remains OPEN",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_PUBLIC_TERRACES.html",
+  "entrySHA256": "cba3baa2921a1baedd6cff24838e819342acaa08cacc52f5aed5ffff08662ad8",
+  "manifest": "assets/city/vertical-v02/public-terraces/runtime/manifest.json",
+  "manifestSHA256": "8405531008ccf2c873a5d1a1d93848f4dbbe40e10606f0de15491057411abff2",
+  "routeRunReportSHA256": "8b8db248cab6512e0a033fc3591178d558589cc8b363d7299e5c0668b38589bb",
+  "sourceGraphSHA256": "21c5c14f04dafe89cd55b223e86c53df8a6cdc89f71ecd118267dea49a22f886",
+  "measurementSourceSHA256": "49ab8a372f6b16184c40b6dff1bf45a6eec842b588ed9bbd218773667b0a0a9d",
+  "sources": {
+    "momentum-zero": {
+      "report": "evidence/current-station-routes/momentum-zero/V02_Momentum_Full_Zero_Flow.json",
+      "reportSHA256": "068f332aebe1a7844216c8cf88566e75d222a39be7f5e4f3a937f926833579f8",
+      "trace": "evidence/current-station-routes/momentum-zero/V02_Momentum_Full_Zero_Flow.trace.json.gz",
+      "traceSHA256": "51a4135d534463bb5940d6cd24154ce73f35d522a1cb6645589b9576f1b0181f"
+    },
+    "mastery-zero": {
+      "report": "evidence/current-station-routes/mastery-zero/V02_Mastery_Full_Zero.json",
+      "reportSHA256": "f51e1cc5052c0d2702f0478d776a32e5d5ea59364164c81654f9bc62a70ffea8",
+      "trace": "evidence/current-station-routes/mastery-zero/V02_Mastery_Full_Zero.trace.json.gz",
+      "traceSHA256": "1fe953faddd1464b4e089a6277da4e1bbe95617586140ed3537fd2e7614242ec"
+    },
+    "momentum-banked": {
+      "report": "evidence/current-station-routes/momentum-banked/V02_Momentum_Full_Banked_Flow.json",
+      "reportSHA256": "ddd1103b85b923df55e1ae77db88de5ea2cb0337faad9585cea37414df7f8d6b",
+      "trace": "evidence/current-station-routes/momentum-banked/V02_Momentum_Full_Banked_Flow.trace.json.gz",
+      "traceSHA256": "03d10201299f734630e5eda363fba4ed6d443c903cbc6c0837a276991301b634"
+    },
+    "mastery-brake": {
+      "report": "evidence/current-station-routes/mastery-brake/V02_Mastery_Full_Banked_Brake.json",
+      "reportSHA256": "d1f56e0a109e04aac6b7fa26260e1aa4428feb015abe5b8b6c3863e9e728e039",
+      "trace": "evidence/current-station-routes/mastery-brake/V02_Mastery_Full_Banked_Brake.trace.json.gz",
+      "traceSHA256": "76b5f81e91fbbaf9dc6bc9f81662497dc2c578cbae504aba39c254145fbe0680"
+    }
+  },
+  "records": [
+    {
+      "edgeID": "E0230",
+      "run": "momentum-zero",
+      "ability": "threadrail",
+      "boundary": "First actual rail-current event through input-triggered Pop; includes native catch easing",
+      "beginFrame": 3217,
+      "endFrame": 3342,
+      "inputSeconds": 2.0833333333333335,
+      "sequenceClockSeconds": 2.083333333333215,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        54.220602268631275,
+        84.00105024005487,
+        293.90483866462074
+      ],
+      "actualEndFoot": [
+        68.71467928929268,
+        91.12065455460679,
+        314.1809620184065
+      ],
+      "plannedStart": [
+        55,
+        84,
+        295
+      ],
+      "plannedEnd": [
+        68.71468,
+        91.12065,
+        314.18096
+      ],
+      "startDistanceFromPlannedNode": 1.3441875900247595,
+      "endDistanceFromPlannedNode": 5.032247267126385e-06,
+      "actualTravelMetres": 25.994982885997604,
+      "airborneFrames": 126,
+      "airborneSeconds": 2.1,
+      "releases": [],
+      "initialBank": 4,
+      "finalBank": 4,
+      "railStartAuthority": {
+        "x": 55.016277484686334,
+        "y": 84.44,
+        "z": 295.0137441737592
+      },
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0231",
+      "run": "momentum-zero",
+      "ability": "rail-pop",
+      "boundary": "Input-triggered Pop through first supported touchdown",
+      "beginFrame": 3342,
+      "endFrame": 3380,
+      "inputSeconds": 0.6333333333333333,
+      "sequenceClockSeconds": 0.6333333333332973,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        68.71467928929268,
+        91.12065455460679,
+        314.1809620184065
+      ],
+      "actualEndFoot": [
+        71.73783823282942,
+        92.0,
+        318.41105738838456
+      ],
+      "plannedStart": [
+        68.71468,
+        91.12065,
+        314.18096
+      ],
+      "plannedEnd": [
+        71.73784,
+        92,
+        318.41106
+      ],
+      "startDistanceFromPlannedNode": 5.032247267126385e-06,
+      "endDistanceFromPlannedNode": 3.153320025345888e-06,
+      "actualTravelMetres": 5.831071748250056,
+      "airborneFrames": 38,
+      "airborneSeconds": 0.6333333333333333,
+      "releases": [],
+      "initialBank": 4,
+      "finalBank": 5,
+      "railStartAuthority": null,
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0233",
+      "run": "momentum-zero",
+      "ability": "threadrail",
+      "boundary": "First actual rail-current event through input-triggered Pop; includes native catch easing",
+      "beginFrame": 4072,
+      "endFrame": 4203,
+      "inputSeconds": 2.183333333333333,
+      "sequenceClockSeconds": 2.1833333333332092,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        76.57080115526705,
+        92.00105024005487,
+        333.7934502913594
+      ],
+      "actualEndFoot": [
+        65.41073377343353,
+        99.19866573333564,
+        357.4823113679128
+      ],
+      "plannedStart": [
+        76,
+        92,
+        335
+      ],
+      "plannedEnd": [
+        65.41073,
+        99.19867,
+        357.48231
+      ],
+      "startDistanceFromPlannedNode": 1.3347573791813394,
+      "endDistanceFromPlannedNode": 5.857850367138914e-06,
+      "actualTravelMetres": 27.22784993813766,
+      "airborneFrames": 132,
+      "airborneSeconds": 2.2,
+      "releases": [],
+      "initialBank": 5,
+      "finalBank": 5,
+      "railStartAuthority": {
+        "x": 76.01759057498124,
+        "y": 92.44,
+        "z": 335.0298209774986
+      },
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0234",
+      "run": "momentum-zero",
+      "ability": "rail-pop",
+      "boundary": "Input-triggered Pop through first supported touchdown",
+      "beginFrame": 4203,
+      "endFrame": 4241,
+      "inputSeconds": 0.6333333333333333,
+      "sequenceClockSeconds": 0.6333333333332973,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        65.41073377343353,
+        99.19866573333564,
+        357.4823113679128
+      ],
+      "actualEndFoot": [
+        63.19367335088347,
+        100.0,
+        362.17536311393144
+      ],
+      "plannedStart": [
+        65.41073,
+        99.19867,
+        357.48231
+      ],
+      "plannedEnd": [
+        63.19367,
+        100,
+        362.17536
+      ],
+      "startDistanceFromPlannedNode": 5.857850367138914e-06,
+      "endDistanceFromPlannedNode": 4.574384001743103e-06,
+      "actualTravelMetres": 5.8173613529714805,
+      "airborneFrames": 38,
+      "airborneSeconds": 0.6333333333333333,
+      "releases": [],
+      "initialBank": 5,
+      "finalBank": 5,
+      "railStartAuthority": null,
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0246",
+      "run": "mastery-zero",
+      "ability": "threadrail",
+      "boundary": "First actual upper rail-current event through input-triggered early Pop",
+      "beginFrame": 5291,
+      "endFrame": 5382,
+      "inputSeconds": 1.5166666666666666,
+      "sequenceClockSeconds": 1.5166666666665805,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        63.99968394552861,
+        128.00105024005487,
+        425.23783148687806
+      ],
+      "actualEndFoot": [
+        64.00673835571922,
+        128.12194444444447,
+        401.553465942484
+      ],
+      "plannedStart": [
+        64,
+        128,
+        424
+      ],
+      "plannedEnd": [
+        64,
+        128,
+        400
+      ],
+      "startDistanceFromPlannedNode": 1.2378319727658365,
+      "endDistanceFromPlannedNode": 1.5582593774550006,
+      "actualTravelMetres": 23.703709267641102,
+      "airborneFrames": 92,
+      "airborneSeconds": 1.5333333333333334,
+      "releases": [],
+      "initialBank": 3,
+      "finalBank": 3,
+      "railStartAuthority": {
+        "x": 63.994533027661355,
+        "y": 128.44,
+        "z": 424.0205847181227
+      },
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0247",
+      "run": "mastery-zero",
+      "ability": "rail-pop",
+      "boundary": "Upper Pop through first supported118m touchdown",
+      "beginFrame": 5382,
+      "endFrame": 5471,
+      "inputSeconds": 1.4833333333333334,
+      "sequenceClockSeconds": 1.483333333333249,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        64.00673835571922,
+        128.12194444444447,
+        401.553465942484
+      ],
+      "actualEndFoot": [
+        63.99951835598678,
+        118.0,
+        390.0898873476369
+      ],
+      "plannedStart": [
+        64,
+        128,
+        400
+      ],
+      "plannedEnd": [
+        64,
+        118,
+        391
+      ],
+      "startDistanceFromPlannedNode": 1.5582593774550006,
+      "endDistanceFromPlannedNode": 0.9101127798094025,
+      "actualTravelMetres": 18.522631479115717,
+      "airborneFrames": 89,
+      "airborneSeconds": 1.4833333333333334,
+      "releases": [],
+      "initialBank": 3,
+      "finalBank": 4,
+      "railStartAuthority": null,
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0248",
+      "run": "mastery-zero",
+      "ability": "controlled-drop",
+      "boundary": "After deliberate118m stop, supported walk-off and fall through108m touchdown",
+      "beginFrame": 5491,
+      "endFrame": 5702,
+      "inputSeconds": 3.5166666666666666,
+      "sequenceClockSeconds": 3.5166666666664668,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        63.99951835598678,
+        118.0,
+        390.0898873476369
+      ],
+      "actualEndFoot": [
+        63.99987877502985,
+        108.0,
+        378.7979733836131
+      ],
+      "plannedStart": [
+        64,
+        118,
+        391
+      ],
+      "plannedEnd": [
+        64,
+        108,
+        377
+      ],
+      "startDistanceFromPlannedNode": 0.9101127798094025,
+      "endDistanceFromPlannedNode": 1.7979733876997945,
+      "actualTravelMetres": 18.035156708760038,
+      "airborneFrames": 65,
+      "airborneSeconds": 1.0833333333333333,
+      "releases": [],
+      "initialBank": 4,
+      "finalBank": 4,
+      "railStartAuthority": null,
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0249",
+      "run": "mastery-zero",
+      "ability": "controlled-drop",
+      "boundary": "Supported108m source-node capture through first supported station-node arrival; excludes setup/catch exit and final pause",
+      "beginFrame": 5832,
+      "endFrame": 6201,
+      "inputSeconds": 6.15,
+      "sequenceClockSeconds": 6.14999999999965,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        63.99990643781971,
+        108.0,
+        375.19297338371985
+      ],
+      "actualEndFoot": [
+        66.46156381062723,
+        100.0,
+        375.8046427950624
+      ],
+      "plannedStart": [
+        64,
+        108,
+        375
+      ],
+      "plannedEnd": [
+        66.5,
+        100,
+        376
+      ],
+      "startDistanceFromPlannedNode": 0.19297340640142185,
+      "endDistanceFromPlannedNode": 0.19910243136266104,
+      "actualTravelMetres": 29.872303215553586,
+      "airborneFrames": 59,
+      "airborneSeconds": 0.9833333333333333,
+      "releases": [],
+      "initialBank": 5,
+      "finalBank": 5,
+      "railStartAuthority": null,
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0238",
+      "run": "mastery-zero",
+      "ability": "wall-climb",
+      "boundary": "Supported departure through next supported wall shelf; native wall boost and mantle retained",
+      "beginFrame": 2993,
+      "endFrame": 3196,
+      "inputSeconds": 3.3833333333333333,
+      "sequenceClockSeconds": 3.383333333333141,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        63.831641758577824,
+        84.0,
+        301.19663368378764
+      ],
+      "actualEndFoot": [
+        63.831641758577824,
+        96.0,
+        299.365
+      ],
+      "plannedStart": [
+        64,
+        84,
+        301.2
+      ],
+      "plannedEnd": [
+        64,
+        96,
+        299.35
+      ],
+      "startDistanceFromPlannedNode": 0.16839189273717795,
+      "endDistanceFromPlannedNode": 0.16902513852905815,
+      "actualTravelMetres": 13.62276600385601,
+      "airborneFrames": 201,
+      "airborneSeconds": 3.35,
+      "releases": [],
+      "initialBank": 3,
+      "finalBank": 0,
+      "railStartAuthority": null,
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0239",
+      "run": "mastery-zero",
+      "ability": "wall-climb",
+      "boundary": "Supported departure through next supported wall shelf; native wall boost and mantle retained",
+      "beginFrame": 3196,
+      "endFrame": 3448,
+      "inputSeconds": 4.2,
+      "sequenceClockSeconds": 4.199999999999761,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        63.831641758577824,
+        96.0,
+        299.365
+      ],
+      "actualEndFoot": [
+        63.831641758577824,
+        108.0,
+        291.12
+      ],
+      "plannedStart": [
+        64,
+        96,
+        299.35
+      ],
+      "plannedEnd": [
+        64,
+        108,
+        291.35
+      ],
+      "startDistanceFromPlannedNode": 0.16902513852905815,
+      "endDistanceFromPlannedNode": 0.28503420400852963,
+      "actualTravelMetres": 20.030067804344263,
+      "airborneFrames": 201,
+      "airborneSeconds": 3.35,
+      "releases": [],
+      "initialBank": 0,
+      "finalBank": 1,
+      "railStartAuthority": null,
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0240",
+      "run": "mastery-zero",
+      "ability": "wall-climb",
+      "boundary": "Supported departure through next supported wall shelf; native wall boost and mantle retained",
+      "beginFrame": 3448,
+      "endFrame": 3674,
+      "inputSeconds": 3.7666666666666666,
+      "sequenceClockSeconds": 3.7666666666664526,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        63.831641758577824,
+        108.0,
+        291.12
+      ],
+      "actualEndFoot": [
+        63.831641758577824,
+        120.0,
+        283.09727250000003
+      ],
+      "plannedStart": [
+        64,
+        108,
+        291.35
+      ],
+      "plannedEnd": [
+        64,
+        120,
+        283.35
+      ],
+      "startDistanceFromPlannedNode": 0.28503420400852963,
+      "endDistanceFromPlannedNode": 0.3036703586308903,
+      "actualTravelMetres": 19.818814734069086,
+      "airborneFrames": 201,
+      "airborneSeconds": 3.35,
+      "releases": [],
+      "initialBank": 1,
+      "finalBank": 1,
+      "railStartAuthority": null,
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0241",
+      "run": "mastery-zero",
+      "ability": "wall-climb",
+      "boundary": "Supported departure through next supported wall shelf; native wall boost and mantle retained",
+      "beginFrame": 3674,
+      "endFrame": 3857,
+      "inputSeconds": 3.05,
+      "sequenceClockSeconds": 3.0499999999998337,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        63.831641758577824,
+        120.0,
+        283.09727250000003
+      ],
+      "actualEndFoot": [
+        63.831641758577824,
+        127.99999999999999,
+        275.09727250000003
+      ],
+      "plannedStart": [
+        64,
+        120,
+        283.35
+      ],
+      "plannedEnd": [
+        64,
+        128,
+        275.35
+      ],
+      "startDistanceFromPlannedNode": 0.3036703586308903,
+      "endDistanceFromPlannedNode": 0.3036703586308903,
+      "actualTravelMetres": 15.806121011101663,
+      "airborneFrames": 158,
+      "airborneSeconds": 2.6333333333333333,
+      "releases": [],
+      "initialBank": 1,
+      "finalBank": 0,
+      "railStartAuthority": null,
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0230",
+      "run": "momentum-banked",
+      "ability": "threadrail",
+      "boundary": "First actual rail-current event through input-triggered Pop; includes native catch easing",
+      "beginFrame": 3439,
+      "endFrame": 3564,
+      "inputSeconds": 2.0833333333333335,
+      "sequenceClockSeconds": 2.083333333333215,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        54.220602268631275,
+        84.00105024005487,
+        293.90483866462074
+      ],
+      "actualEndFoot": [
+        68.71467928929268,
+        91.12065455460679,
+        314.1809620184065
+      ],
+      "plannedStart": [
+        55,
+        84,
+        295
+      ],
+      "plannedEnd": [
+        68.71468,
+        91.12065,
+        314.18096
+      ],
+      "startDistanceFromPlannedNode": 1.3441875900247595,
+      "endDistanceFromPlannedNode": 5.032247267126385e-06,
+      "actualTravelMetres": 25.994982885997604,
+      "airborneFrames": 126,
+      "airborneSeconds": 2.1,
+      "releases": [],
+      "initialBank": 5,
+      "finalBank": 5,
+      "railStartAuthority": {
+        "x": 55.016277484686334,
+        "y": 84.44,
+        "z": 295.0137441737592
+      },
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0231",
+      "run": "momentum-banked",
+      "ability": "rail-pop",
+      "boundary": "Input-triggered Pop through first supported touchdown",
+      "beginFrame": 3564,
+      "endFrame": 3602,
+      "inputSeconds": 0.6333333333333333,
+      "sequenceClockSeconds": 0.6333333333332973,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        68.71467928929268,
+        91.12065455460679,
+        314.1809620184065
+      ],
+      "actualEndFoot": [
+        71.73783823282942,
+        92.0,
+        318.41105738838456
+      ],
+      "plannedStart": [
+        68.71468,
+        91.12065,
+        314.18096
+      ],
+      "plannedEnd": [
+        71.73784,
+        92,
+        318.41106
+      ],
+      "startDistanceFromPlannedNode": 5.032247267126385e-06,
+      "endDistanceFromPlannedNode": 3.153320025345888e-06,
+      "actualTravelMetres": 5.831071748250056,
+      "airborneFrames": 38,
+      "airborneSeconds": 0.6333333333333333,
+      "releases": [],
+      "initialBank": 5,
+      "finalBank": 5,
+      "railStartAuthority": null,
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0233",
+      "run": "momentum-banked",
+      "ability": "threadrail",
+      "boundary": "First actual rail-current event through input-triggered Pop; includes native catch easing",
+      "beginFrame": 4294,
+      "endFrame": 4425,
+      "inputSeconds": 2.183333333333333,
+      "sequenceClockSeconds": 2.1833333333332092,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        76.57080115526705,
+        92.00105024005487,
+        333.7934502913594
+      ],
+      "actualEndFoot": [
+        65.41073377343353,
+        99.19866573333564,
+        357.4823113679128
+      ],
+      "plannedStart": [
+        76,
+        92,
+        335
+      ],
+      "plannedEnd": [
+        65.41073,
+        99.19867,
+        357.48231
+      ],
+      "startDistanceFromPlannedNode": 1.3347573791813394,
+      "endDistanceFromPlannedNode": 5.857850367138914e-06,
+      "actualTravelMetres": 27.22784993813766,
+      "airborneFrames": 132,
+      "airborneSeconds": 2.2,
+      "releases": [],
+      "initialBank": 5,
+      "finalBank": 5,
+      "railStartAuthority": {
+        "x": 76.01759057498124,
+        "y": 92.44,
+        "z": 335.0298209774986
+      },
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0234",
+      "run": "momentum-banked",
+      "ability": "rail-pop",
+      "boundary": "Input-triggered Pop through first supported touchdown",
+      "beginFrame": 4425,
+      "endFrame": 4463,
+      "inputSeconds": 0.6333333333333333,
+      "sequenceClockSeconds": 0.6333333333332973,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        65.41073377343353,
+        99.19866573333564,
+        357.4823113679128
+      ],
+      "actualEndFoot": [
+        63.19367335088347,
+        100.0,
+        362.17536311393144
+      ],
+      "plannedStart": [
+        65.41073,
+        99.19867,
+        357.48231
+      ],
+      "plannedEnd": [
+        63.19367,
+        100,
+        362.17536
+      ],
+      "startDistanceFromPlannedNode": 5.857850367138914e-06,
+      "endDistanceFromPlannedNode": 4.574384001743103e-06,
+      "actualTravelMetres": 5.8173613529714805,
+      "airborneFrames": 38,
+      "airborneSeconds": 0.6333333333333333,
+      "releases": [],
+      "initialBank": 5,
+      "finalBank": 5,
+      "railStartAuthority": null,
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0246",
+      "run": "mastery-brake",
+      "ability": "threadrail",
+      "boundary": "First actual upper rail-current event through input-triggered early Pop",
+      "beginFrame": 5513,
+      "endFrame": 5604,
+      "inputSeconds": 1.5166666666666666,
+      "sequenceClockSeconds": 1.5166666666665805,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        63.99968394552861,
+        128.00105024005487,
+        425.23783148687806
+      ],
+      "actualEndFoot": [
+        64.00673835571922,
+        128.12194444444447,
+        401.553465942484
+      ],
+      "plannedStart": [
+        64,
+        128,
+        424
+      ],
+      "plannedEnd": [
+        64,
+        128,
+        400
+      ],
+      "startDistanceFromPlannedNode": 1.2378319727658365,
+      "endDistanceFromPlannedNode": 1.5582593774550006,
+      "actualTravelMetres": 23.703709267641102,
+      "airborneFrames": 92,
+      "airborneSeconds": 1.5333333333333334,
+      "releases": [],
+      "initialBank": 4,
+      "finalBank": 4,
+      "railStartAuthority": {
+        "x": 63.994533027661355,
+        "y": 128.44,
+        "z": 424.0205847181227
+      },
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0247",
+      "run": "mastery-brake",
+      "ability": "rail-pop",
+      "boundary": "Upper Pop through first supported118m touchdown",
+      "beginFrame": 5604,
+      "endFrame": 5693,
+      "inputSeconds": 1.4833333333333334,
+      "sequenceClockSeconds": 1.483333333333249,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        64.00673835571922,
+        128.12194444444447,
+        401.553465942484
+      ],
+      "actualEndFoot": [
+        63.99951835598678,
+        118.0,
+        390.0898873476369
+      ],
+      "plannedStart": [
+        64,
+        128,
+        400
+      ],
+      "plannedEnd": [
+        64,
+        118,
+        391
+      ],
+      "startDistanceFromPlannedNode": 1.5582593774550006,
+      "endDistanceFromPlannedNode": 0.9101127798094025,
+      "actualTravelMetres": 18.522631479115717,
+      "airborneFrames": 89,
+      "airborneSeconds": 1.4833333333333334,
+      "releases": [],
+      "initialBank": 4,
+      "finalBank": 5,
+      "railStartAuthority": null,
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0248",
+      "run": "mastery-brake",
+      "ability": "controlled-drop",
+      "boundary": "After deliberate118m stop, supported walk-off and fall through108m touchdown",
+      "beginFrame": 5713,
+      "endFrame": 5924,
+      "inputSeconds": 3.5166666666666666,
+      "sequenceClockSeconds": 3.5166666666664668,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        63.99951835598678,
+        118.0,
+        390.0898873476369
+      ],
+      "actualEndFoot": [
+        63.99987877502985,
+        108.0,
+        378.7979733836131
+      ],
+      "plannedStart": [
+        64,
+        118,
+        391
+      ],
+      "plannedEnd": [
+        64,
+        108,
+        377
+      ],
+      "startDistanceFromPlannedNode": 0.9101127798094025,
+      "endDistanceFromPlannedNode": 1.7979733876997945,
+      "actualTravelMetres": 18.035156708760038,
+      "airborneFrames": 65,
+      "airborneSeconds": 1.0833333333333333,
+      "releases": [],
+      "initialBank": 5,
+      "finalBank": 5,
+      "railStartAuthority": null,
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0250",
+      "run": "mastery-brake",
+      "ability": "afterstep-transfer",
+      "boundary": "Supported108m source-node capture through first supported station-node arrival; excludes setup/catch exit and final pause",
+      "beginFrame": 6054,
+      "endFrame": 6431,
+      "inputSeconds": 6.283333333333333,
+      "sequenceClockSeconds": 6.283333333332976,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        63.99990643781971,
+        108.0,
+        375.19297338371985
+      ],
+      "actualEndFoot": [
+        66.4626756016339,
+        100.0,
+        375.8107262112069
+      ],
+      "plannedStart": [
+        64,
+        108,
+        375
+      ],
+      "plannedEnd": [
+        66.5,
+        100,
+        376
+      ],
+      "startDistanceFromPlannedNode": 0.19297340640142185,
+      "endDistanceFromPlannedNode": 0.1929188374355707,
+      "actualTravelMetres": 29.841360968126946,
+      "airborneFrames": 67,
+      "airborneSeconds": 1.1166666666666667,
+      "releases": [
+        {
+          "type": "release",
+          "id": "afterstep-49",
+          "sequence": 49,
+          "time": 100.35833333332758,
+          "mode": "brake",
+          "contactId": "physical-175",
+          "action": "landing",
+          "perfect": false,
+          "cost": 8,
+          "deltaVelocity": {
+            "x": -2.0929340653211527e-05,
+            "y": 6.4467620544794935,
+            "z": 2.72750050641339
+          },
+          "spent": [
+            "physical-175"
+          ],
+          "doubleStep": 0
+        }
+      ],
+      "initialBank": 2,
+      "finalBank": 1,
+      "railStartAuthority": null,
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0238",
+      "run": "mastery-brake",
+      "ability": "wall-climb",
+      "boundary": "Supported departure through next supported wall shelf; native wall boost and mantle retained",
+      "beginFrame": 3215,
+      "endFrame": 3418,
+      "inputSeconds": 3.3833333333333333,
+      "sequenceClockSeconds": 3.383333333333141,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        63.831641758577824,
+        84.0,
+        301.19663368378764
+      ],
+      "actualEndFoot": [
+        63.831641758577824,
+        96.0,
+        299.365
+      ],
+      "plannedStart": [
+        64,
+        84,
+        301.2
+      ],
+      "plannedEnd": [
+        64,
+        96,
+        299.35
+      ],
+      "startDistanceFromPlannedNode": 0.16839189273717795,
+      "endDistanceFromPlannedNode": 0.16902513852905815,
+      "actualTravelMetres": 13.62276600385601,
+      "airborneFrames": 201,
+      "airborneSeconds": 3.35,
+      "releases": [],
+      "initialBank": 1,
+      "finalBank": 0,
+      "railStartAuthority": null,
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0239",
+      "run": "mastery-brake",
+      "ability": "wall-climb",
+      "boundary": "Supported departure through next supported wall shelf; native wall boost and mantle retained",
+      "beginFrame": 3418,
+      "endFrame": 3670,
+      "inputSeconds": 4.2,
+      "sequenceClockSeconds": 4.199999999999761,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        63.831641758577824,
+        96.0,
+        299.365
+      ],
+      "actualEndFoot": [
+        63.831641758577824,
+        108.0,
+        291.12
+      ],
+      "plannedStart": [
+        64,
+        96,
+        299.35
+      ],
+      "plannedEnd": [
+        64,
+        108,
+        291.35
+      ],
+      "startDistanceFromPlannedNode": 0.16902513852905815,
+      "endDistanceFromPlannedNode": 0.28503420400852963,
+      "actualTravelMetres": 20.030067804344263,
+      "airborneFrames": 201,
+      "airborneSeconds": 3.35,
+      "releases": [],
+      "initialBank": 0,
+      "finalBank": 1,
+      "railStartAuthority": null,
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0240",
+      "run": "mastery-brake",
+      "ability": "wall-climb",
+      "boundary": "Supported departure through next supported wall shelf; native wall boost and mantle retained",
+      "beginFrame": 3670,
+      "endFrame": 3896,
+      "inputSeconds": 3.7666666666666666,
+      "sequenceClockSeconds": 3.7666666666664597,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        63.831641758577824,
+        108.0,
+        291.12
+      ],
+      "actualEndFoot": [
+        63.831641758577824,
+        120.0,
+        283.09727250000003
+      ],
+      "plannedStart": [
+        64,
+        108,
+        291.35
+      ],
+      "plannedEnd": [
+        64,
+        120,
+        283.35
+      ],
+      "startDistanceFromPlannedNode": 0.28503420400852963,
+      "endDistanceFromPlannedNode": 0.3036703586308903,
+      "actualTravelMetres": 19.818814734069086,
+      "airborneFrames": 201,
+      "airborneSeconds": 3.35,
+      "releases": [],
+      "initialBank": 1,
+      "finalBank": 1,
+      "railStartAuthority": null,
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    },
+    {
+      "edgeID": "E0241",
+      "run": "mastery-brake",
+      "ability": "wall-climb",
+      "boundary": "Supported departure through next supported wall shelf; native wall boost and mantle retained",
+      "beginFrame": 3896,
+      "endFrame": 4079,
+      "inputSeconds": 3.05,
+      "sequenceClockSeconds": 3.0499999999998266,
+      "boundaryResolutionSeconds": 0.016666666666666666,
+      "actualStartFoot": [
+        63.831641758577824,
+        120.0,
+        283.09727250000003
+      ],
+      "actualEndFoot": [
+        63.831641758577824,
+        127.99999999999999,
+        275.09727250000003
+      ],
+      "plannedStart": [
+        64,
+        120,
+        283.35
+      ],
+      "plannedEnd": [
+        64,
+        128,
+        275.35
+      ],
+      "startDistanceFromPlannedNode": 0.3036703586308903,
+      "endDistanceFromPlannedNode": 0.3036703586308903,
+      "actualTravelMetres": 15.806121011101663,
+      "airborneFrames": 158,
+      "airborneSeconds": 2.6333333333333333,
+      "releases": [],
+      "initialBank": 1,
+      "finalBank": 0,
+      "railStartAuthority": null,
+      "status": "MEASURED native event phase; exact planned-node passage is separate"
+    }
+  ],
+  "distinctPreviouslyUntimedPhases": 9,
+  "plannedNodeDiscrepancies": [
+    {
+      "edgeID": "E0230",
+      "run": "momentum-zero",
+      "actualStartFoot": [
+        54.220602268631275,
+        84.00105024005487,
+        293.90483866462074
+      ],
+      "actualEndFoot": [
+        68.71467928929268,
+        91.12065455460679,
+        314.1809620184065
+      ],
+      "plannedStart": [
+        55,
+        84,
+        295
+      ],
+      "plannedEnd": [
+        68.71468,
+        91.12065,
+        314.18096
+      ],
+      "startDistanceFromPlannedNode": 1.3441875900247595,
+      "endDistanceFromPlannedNode": 5.032247267126385e-06
+    },
+    {
+      "edgeID": "E0233",
+      "run": "momentum-zero",
+      "actualStartFoot": [
+        76.57080115526705,
+        92.00105024005487,
+        333.7934502913594
+      ],
+      "actualEndFoot": [
+        65.41073377343353,
+        99.19866573333564,
+        357.4823113679128
+      ],
+      "plannedStart": [
+        76,
+        92,
+        335
+      ],
+      "plannedEnd": [
+        65.41073,
+        99.19867,
+        357.48231
+      ],
+      "startDistanceFromPlannedNode": 1.3347573791813394,
+      "endDistanceFromPlannedNode": 5.857850367138914e-06
+    },
+    {
+      "edgeID": "E0246",
+      "run": "mastery-zero",
+      "actualStartFoot": [
+        63.99968394552861,
+        128.00105024005487,
+        425.23783148687806
+      ],
+      "actualEndFoot": [
+        64.00673835571922,
+        128.12194444444447,
+        401.553465942484
+      ],
+      "plannedStart": [
+        64,
+        128,
+        424
+      ],
+      "plannedEnd": [
+        64,
+        128,
+        400
+      ],
+      "startDistanceFromPlannedNode": 1.2378319727658365,
+      "endDistanceFromPlannedNode": 1.5582593774550006
+    },
+    {
+      "edgeID": "E0247",
+      "run": "mastery-zero",
+      "actualStartFoot": [
+        64.00673835571922,
+        128.12194444444447,
+        401.553465942484
+      ],
+      "actualEndFoot": [
+        63.99951835598678,
+        118.0,
+        390.0898873476369
+      ],
+      "plannedStart": [
+        64,
+        128,
+        400
+      ],
+      "plannedEnd": [
+        64,
+        118,
+        391
+      ],
+      "startDistanceFromPlannedNode": 1.5582593774550006,
+      "endDistanceFromPlannedNode": 0.9101127798094025
+    },
+    {
+      "edgeID": "E0248",
+      "run": "mastery-zero",
+      "actualStartFoot": [
+        63.99951835598678,
+        118.0,
+        390.0898873476369
+      ],
+      "actualEndFoot": [
+        63.99987877502985,
+        108.0,
+        378.7979733836131
+      ],
+      "plannedStart": [
+        64,
+        118,
+        391
+      ],
+      "plannedEnd": [
+        64,
+        108,
+        377
+      ],
+      "startDistanceFromPlannedNode": 0.9101127798094025,
+      "endDistanceFromPlannedNode": 1.7979733876997945
+    },
+    {
+      "edgeID": "E0240",
+      "run": "mastery-zero",
+      "actualStartFoot": [
+        63.831641758577824,
+        108.0,
+        291.12
+      ],
+      "actualEndFoot": [
+        63.831641758577824,
+        120.0,
+        283.09727250000003
+      ],
+      "plannedStart": [
+        64,
+        108,
+        291.35
+      ],
+      "plannedEnd": [
+        64,
+        120,
+        283.35
+      ],
+      "startDistanceFromPlannedNode": 0.28503420400852963,
+      "endDistanceFromPlannedNode": 0.3036703586308903
+    },
+    {
+      "edgeID": "E0241",
+      "run": "mastery-zero",
+      "actualStartFoot": [
+        63.831641758577824,
+        120.0,
+        283.09727250000003
+      ],
+      "actualEndFoot": [
+        63.831641758577824,
+        127.99999999999999,
+        275.09727250000003
+      ],
+      "plannedStart": [
+        64,
+        120,
+        283.35
+      ],
+      "plannedEnd": [
+        64,
+        128,
+        275.35
+      ],
+      "startDistanceFromPlannedNode": 0.3036703586308903,
+      "endDistanceFromPlannedNode": 0.3036703586308903
+    },
+    {
+      "edgeID": "E0230",
+      "run": "momentum-banked",
+      "actualStartFoot": [
+        54.220602268631275,
+        84.00105024005487,
+        293.90483866462074
+      ],
+      "actualEndFoot": [
+        68.71467928929268,
+        91.12065455460679,
+        314.1809620184065
+      ],
+      "plannedStart": [
+        55,
+        84,
+        295
+      ],
+      "plannedEnd": [
+        68.71468,
+        91.12065,
+        314.18096
+      ],
+      "startDistanceFromPlannedNode": 1.3441875900247595,
+      "endDistanceFromPlannedNode": 5.032247267126385e-06
+    },
+    {
+      "edgeID": "E0233",
+      "run": "momentum-banked",
+      "actualStartFoot": [
+        76.57080115526705,
+        92.00105024005487,
+        333.7934502913594
+      ],
+      "actualEndFoot": [
+        65.41073377343353,
+        99.19866573333564,
+        357.4823113679128
+      ],
+      "plannedStart": [
+        76,
+        92,
+        335
+      ],
+      "plannedEnd": [
+        65.41073,
+        99.19867,
+        357.48231
+      ],
+      "startDistanceFromPlannedNode": 1.3347573791813394,
+      "endDistanceFromPlannedNode": 5.857850367138914e-06
+    },
+    {
+      "edgeID": "E0246",
+      "run": "mastery-brake",
+      "actualStartFoot": [
+        63.99968394552861,
+        128.00105024005487,
+        425.23783148687806
+      ],
+      "actualEndFoot": [
+        64.00673835571922,
+        128.12194444444447,
+        401.553465942484
+      ],
+      "plannedStart": [
+        64,
+        128,
+        424
+      ],
+      "plannedEnd": [
+        64,
+        128,
+        400
+      ],
+      "startDistanceFromPlannedNode": 1.2378319727658365,
+      "endDistanceFromPlannedNode": 1.5582593774550006
+    },
+    {
+      "edgeID": "E0247",
+      "run": "mastery-brake",
+      "actualStartFoot": [
+        64.00673835571922,
+        128.12194444444447,
+        401.553465942484
+      ],
+      "actualEndFoot": [
+        63.99951835598678,
+        118.0,
+        390.0898873476369
+      ],
+      "plannedStart": [
+        64,
+        128,
+        400
+      ],
+      "plannedEnd": [
+        64,
+        118,
+        391
+      ],
+      "startDistanceFromPlannedNode": 1.5582593774550006,
+      "endDistanceFromPlannedNode": 0.9101127798094025
+    },
+    {
+      "edgeID": "E0248",
+      "run": "mastery-brake",
+      "actualStartFoot": [
+        63.99951835598678,
+        118.0,
+        390.0898873476369
+      ],
+      "actualEndFoot": [
+        63.99987877502985,
+        108.0,
+        378.7979733836131
+      ],
+      "plannedStart": [
+        64,
+        118,
+        391
+      ],
+      "plannedEnd": [
+        64,
+        108,
+        377
+      ],
+      "startDistanceFromPlannedNode": 0.9101127798094025,
+      "endDistanceFromPlannedNode": 1.7979733876997945
+    },
+    {
+      "edgeID": "E0240",
+      "run": "mastery-brake",
+      "actualStartFoot": [
+        63.831641758577824,
+        108.0,
+        291.12
+      ],
+      "actualEndFoot": [
+        63.831641758577824,
+        120.0,
+        283.09727250000003
+      ],
+      "plannedStart": [
+        64,
+        108,
+        291.35
+      ],
+      "plannedEnd": [
+        64,
+        120,
+        283.35
+      ],
+      "startDistanceFromPlannedNode": 0.28503420400852963,
+      "endDistanceFromPlannedNode": 0.3036703586308903
+    },
+    {
+      "edgeID": "E0241",
+      "run": "mastery-brake",
+      "actualStartFoot": [
+        63.831641758577824,
+        120.0,
+        283.09727250000003
+      ],
+      "actualEndFoot": [
+        63.831641758577824,
+        127.99999999999999,
+        275.09727250000003
+      ],
+      "plannedStart": [
+        64,
+        120,
+        283.35
+      ],
+      "plannedEnd": [
+        64,
+        128,
+        275.35
+      ],
+      "startDistanceFromPlannedNode": 0.3036703586308903,
+      "endDistanceFromPlannedNode": 0.3036703586308903
+    }
+  ],
+  "graphTimingFieldsChanged": false,
+  "limits": [
+    "Timings are60Hz input-step intervals and the actual shared sequence-clock intervals, not wall-clock performance or human benchmarks.",
+    "Event boundaries have one-frame quantization; native rail catch blends actor position toward the authoritative rail state.",
+    "Some original planned Pop and landing nodes differ from the executed route. Exact graph endpoint/timing admission is OPEN; original graph null timings remain unchanged.",
+    "End-to-end route acceptance and measured event phases do not certify every variant, between-sample camera visibility, physical devices or complete release quality."
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "status": "PASS all three current approaches, zero/full legal bank starts",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_PUBLIC_TERRACES.html",
+  "entrySHA256": "cba3baa2921a1baedd6cff24838e819342acaa08cacc52f5aed5ffff08662ad8",
+  "manifest": "assets/city/vertical-v02/public-terraces/runtime/manifest.json",
+  "manifestSHA256": "8405531008ccf2c873a5d1a1d93848f4dbbe40e10606f0de15491057411abff2",
+  "hashes": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_PUBLIC_TERRACES.html": "cba3baa2921a1baedd6cff24838e819342acaa08cacc52f5aed5ffff08662ad8",
+    "assets/city/vertical-v02/public-terraces/runtime/manifest.json": "8405531008ccf2c873a5d1a1d93848f4dbbe40e10606f0de15491057411abff2",
+    "scripts/vertical-v02/station_route_environment.cjs": "4a63175b03b6862590dc7e57142b2f7a8c87dc772ae7aee926de83efea4137c2",
+    "scripts/vertical-v02/route_camera_probe.cjs": "180467f581d7948bdf854280c9c2b7886b4270810b763376e1c2b5c7aa6dae45",
+    "scripts/vertical-v02/test_public_station.cjs": "d5f4d5cd6baab74f16007b3c2775364161e25e1cedb08ba3e5f1068310cf3875",
+    "scripts/vertical-v02/test_momentum_route.cjs": "f6971ae3531e06f1b812eb238ad75ebf6d60fec996a7f7088f4d52b120f9b5fd",
+    "scripts/vertical-v02/test_mastery_route.cjs": "e723f77aca6f3454687798cb846596e82f4b60ceab06cfd42ccfb9e3d22f07ec",
+    "scripts/vertical-v02/run_current_station_routes.py": "74198a1304e72669d570606ca6ae05d051bede9bdda5eccfa685b9a546497621",
+    "scripts/game_motion_loadout.js": "4c83cf50c8646ebd1ca39e80399a8d4271d2352df7c9e5a9d73f78460cf93eb8",
+    "scripts/game_vertical_encounters_v02.js": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+    "scripts/game_vertical_market_v02.js": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+    "scripts/game_vertical_pursuit_v02.js": "d26199eb208a5d3fc21ad26f70c97471bd14b8b3b8370dfd2611c7b0c0344d58",
+    "scripts/game_vertical_discovery_v02.js": "7cfc8878103a13115fb9778c4d8ee15dadc0147a0ace29433a14a2ba651c0679",
+    "scripts/vertical_transit_core_v02.js": "75b8e9f71b7853f586f42b5d2b031140a7851711d8f05646ba9de57ab3a88353",
+    "scripts/game_vertical_transit_v02.js": "0403f887673e0008f7e493a916bcbc8502794978f048b2e8ca806fe5de731ecb",
+    "scripts/game_aerial_traffic_core_v02.js": "e518c60772284ec255757bca341a3c4a420d095baa10011e38426d621e70e811",
+    "scripts/game_vertical_world_life_v02.js": "08561d9ce00f53fb9d0b13dd7324639c2389cf5a7e1422512fd1dada07a28639",
+    "scripts/game_vertical_appearance_facade_v02.js": "2705ecadebe14ebddf1756ba5b3cfb7f6b955ac6955ccae9ec1480d08bb245ae",
+    "scripts/game_vertical_hud_v02.js": "301a855a1ac6509e561ae1d108ef0914b1edb1a76e69c2903864913963afb650",
+    "scripts/game_vertical_views_v02.js": "0f2ee6e9f3c8d555c8c5189d076c4b8daf33f2d15b0c672edbf1e8aa2a4d9f21",
+    "scripts/v02_exact_camera_rays.js": "bd9856c17f746f8741d522ce53f47428b7d6bba4ad953ed4ca094a56f5ade670"
+  },
+  "scope": "Six uninterrupted normal-input station approaches on the current combined city. One labelled starting fixture per run; full bank is earned by actual running. Not full city/release/performance acceptance.",
+  "jobs": [
+    {
+      "name": "momentum-zero",
+      "file": "test_momentum_route.cjs",
+      "environment": {
+        "FULL_ROUTE": "1",
+        "RUN_PREFIX": "flow"
+      },
+      "returncode": 0,
+      "reused": true,
+      "wallSeconds": 0.03948866715654731,
+      "report": "evidence/current-station-routes/momentum-zero/V02_Momentum_Full_Zero_Flow.json",
+      "reportSHA256": "068f332aebe1a7844216c8cf88566e75d222a39be7f5e4f3a937f926833579f8",
+      "trace": "evidence/current-station-routes/momentum-zero/V02_Momentum_Full_Zero_Flow.trace.json.gz",
+      "traceSHA256": "51a4135d534463bb5940d6cd24154ce73f35d522a1cb6645589b9576f1b0181f",
+      "seconds": 73.23333333333333,
+      "distance": 702.0091932022538,
+      "initialBank": 0,
+      "finalPosition": [
+        66.46086194370736,
+        100.42,
+        375.83635330864337
+      ],
+      "cameraVisibility": {
+        "scope": "Sampled animated head/hips visibility at10Hz during fast/airborne non-aim motion; not full-body, HUD, between-sample or hardware certification.",
+        "samples": 468,
+        "problemSamples": 0,
+        "captures": []
+      }
+    },
+    {
+      "name": "mastery-zero",
+      "file": "test_mastery_route.cjs",
+      "environment": {
+        "FULL_ROUTE": "1"
+      },
+      "returncode": 0,
+      "reused": true,
+      "wallSeconds": 0.1211496670730412,
+      "report": "evidence/current-station-routes/mastery-zero/V02_Mastery_Full_Zero.json",
+      "reportSHA256": "f51e1cc5052c0d2702f0478d776a32e5d5ea59364164c81654f9bc62a70ffea8",
+      "trace": "evidence/current-station-routes/mastery-zero/V02_Mastery_Full_Zero.trace.json.gz",
+      "traceSHA256": "1fe953faddd1464b4e089a6277da4e1bbe95617586140ed3537fd2e7614242ec",
+      "seconds": 103.76666666666667,
+      "distance": 933.7238215715848,
+      "initialBank": 0,
+      "finalPosition": [
+        66.46793437195397,
+        100.42,
+        375.8370220468818
+      ],
+      "cameraVisibility": {
+        "scope": "Sampled animated head/hips visibility at10Hz during fast/airborne non-aim motion; not full-body, HUD, between-sample or hardware certification.",
+        "samples": 694,
+        "problemSamples": 0,
+        "captures": []
+      }
+    },
+    {
+      "name": "momentum-banked",
+      "file": "test_momentum_route.cjs",
+      "environment": {
+        "FULL_ROUTE": "1",
+        "RUN_PREFIX": "flow",
+        "BANKED_START": "1"
+      },
+      "returncode": 0,
+      "reused": true,
+      "wallSeconds": 0.05192920798435807,
+      "report": "evidence/current-station-routes/momentum-banked/V02_Momentum_Full_Banked_Flow.json",
+      "reportSHA256": "ddd1103b85b923df55e1ae77db88de5ea2cb0337faad9585cea37414df7f8d6b",
+      "trace": "evidence/current-station-routes/momentum-banked/V02_Momentum_Full_Banked_Flow.trace.json.gz",
+      "traceSHA256": "03d10201299f734630e5eda363fba4ed6d443c903cbc6c0837a276991301b634",
+      "seconds": 72.65,
+      "distance": 701.8417024312835,
+      "initialBank": 5,
+      "finalPosition": [
+        66.46086194370736,
+        100.42,
+        375.83635330864337
+      ],
+      "cameraVisibility": {
+        "scope": "Sampled animated head/hips visibility at10Hz during fast/airborne non-aim motion; not full-body, HUD, between-sample or hardware certification.",
+        "samples": 509,
+        "problemSamples": 0,
+        "captures": []
+      }
+    },
+    {
+      "name": "mastery-brake",
+      "file": "test_mastery_route.cjs",
+      "environment": {
+        "FULL_ROUTE": "1",
+        "BANKED_START": "1",
+        "USE_BRAKE": "1"
+      },
+      "returncode": 0,
+      "reused": true,
+      "wallSeconds": 0.12535445764660835,
+      "report": "evidence/current-station-routes/mastery-brake/V02_Mastery_Full_Banked_Brake.json",
+      "reportSHA256": "d1f56e0a109e04aac6b7fa26260e1aa4428feb015abe5b8b6c3863e9e728e039",
+      "trace": "evidence/current-station-routes/mastery-brake/V02_Mastery_Full_Banked_Brake.trace.json.gz",
+      "traceSHA256": "76b5f81e91fbbaf9dc6bc9f81662497dc2c578cbae504aba39c254145fbe0680",
+      "seconds": 103.3,
+      "distance": 933.5088885531882,
+      "initialBank": 5,
+      "finalPosition": [
+        66.4658678900658,
+        100.42,
+        375.82691445677483
+      ],
+      "cameraVisibility": {
+        "scope": "Sampled animated head/hips visibility at10Hz during fast/airborne non-aim motion; not full-body, HUD, between-sample or hardware certification.",
+        "samples": 736,
+        "problemSamples": 0,
+        "captures": []
+      }
+    },
+    {
+      "name": "public-zero",
+      "file": "test_public_station.cjs",
+      "environment": {
+        "RUN_PUBLIC": "1"
+      },
+      "returncode": 0,
+      "reused": true,
+      "wallSeconds": 0.033150999806821346,
+      "report": "evidence/current-station-routes/public-zero/V02_Public_Route_Run_Validation.json",
+      "reportSHA256": "df199a03f57579735e21daee90d8cd3ae74e5b2b5471fb408ec256f470b4310e",
+      "trace": "evidence/current-station-routes/public-zero/V02_Public_Route_Run_Validation.trace.json.gz",
+      "traceSHA256": "3717de43bbb3a2956121862b9784be7b43b9afc2cd43dad2181b0494593b755e",
+      "seconds": 135.33333333333334,
+      "distance": 774.3808671453033,
+      "initialBank": 0,
+      "finalPosition": [
+        66.42999999999996,
+        100.42,
+        375.91500000002014
+      ],
+      "cameraVisibility": null
+    },
+    {
+      "name": "public-banked",
+      "file": "test_public_station.cjs",
+      "environment": {
+        "RUN_PUBLIC": "1",
+        "BANKED_START": "1"
+      },
+      "returncode": 0,
+      "reused": true,
+      "wallSeconds": 0.0272925840690732,
+      "report": "evidence/current-station-routes/public-banked/V02_Public_Route_Run_Validation.json",
+      "reportSHA256": "98f2f22a7f174ffe276efee500be5e88aa28f82e0174ef145b2857953f2cffa4",
+      "trace": "evidence/current-station-routes/public-banked/V02_Public_Route_Run_Validation.trace.json.gz",
+      "traceSHA256": "d6f98602697bf86131b74dd1ad7f366e2b1f77868538d119f8260e70e625367b",
+      "seconds": 135.08333333333334,
+      "distance": 773.9782163119702,
+      "initialBank": 5,
+      "finalPosition": [
+        66.42999999999996,
+        100.42,
+        375.94219083335355
+      ],
+      "cameraVisibility": null
+    }
+  ]
+}
