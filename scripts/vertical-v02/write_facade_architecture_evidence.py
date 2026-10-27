@@ -1,0 +1,26 @@
+"""Bind the actual facade candidate and evidence without upgrading visual status."""
+from pathlib import Path
+import json,hashlib,gzip
+R=Path(__file__).resolve().parents[2];D=R/'development/vertical-city-v02';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();read=lambda p:json.loads(p.read_text())
+build=read(D/'V02_Facade_Architecture_Build.json');plan=read(D/'V02_Facade_Architecture_Plan.json');author=read(R/build['canonicalManifest']);pack=read(D/'V02_Facade_Architecture_Package.json');exports=read(D/'V02_Facade_Architecture_Exports.json');native=read(D/'V02_Facade_Architecture_Native.json');hud=read(D/'V02_Facade_Architecture_HUD.json');blender=read(D/'V02_Facade_Architecture_Blender.json');base=read(D/'V02_Views_Evidence.json')
+assert sha(R/build['entry'])==build['entrySHA256']==native['entrySHA256']==hud['hashes'][build['entry']]
+assert sha(R/build['canonicalManifest'])==build['canonicalManifestSHA256']==pack['canonicalManifestSHA256']==exports['manifestSHA256']==native['manifestSHA256']
+assert sha(R/author['master'])==author['masterSHA256']==pack['masterSHA256']==exports['masterSHA256']==blender['masterSHA256']
+assert sha(R/build['script'])==build['scriptSHA256']==native['scriptSHA256']
+assert sha(D/'V02_Facade_Architecture_Plan.json')==author['planSHA256'];assert sha(R/author['sourceMaster'])==author['sourceMasterSHA256']==base['masterSHA256']
+assert all(sha(R/f)==h for f,h in plan['sources'].items())
+assert blender['nativeReportSHA256']==sha(D/'V02_Facade_Architecture_Native.json')
+for report in [pack,exports,native,hud,blender]:assert report['status'].startswith('PASS')and not report.get('failure')
+assert not native['errors']and not hud['errors']
+for m in pack['models']:
+ for key in ['raw','shipping','compressed']:assert sha(R/m[key+'URL'])==m[key+'SHA256']
+ assert gzip.decompress((R/m['compressedURL']).read_bytes())==(R/m['shippingURL']).read_bytes()
+assert (R/build['entry']).read_text().replace(Path(build['script']).name,Path(build['sourceAppearance']).name,1)==(R/build['source']).read_text()
+assert (R/build['script']).read_text().replace(build['payloadNew'],build['payloadOld'],1)==(R/build['sourceAppearance']).read_text()
+protected={**base['protectedEntries'],base['entry']:base['entrySHA256']}
+for f,h in protected.items():assert sha(R/f)==h,f
+for c in native['captures']+blender['captures']:assert sha(D/c['file'])==c['sha256']
+stock=D/'evidence/stock-facade-architecture';assert sorted(p.name for p in stock.iterdir())==['shot-0.png','state-0.json'];state=read(stock/'state-0.json');assert state['ready']and state['active']and state['visuals']['buildings']['buildings']==310;assert abs(state['pos'][0]-55)>.02,'Supported stock KeyA smoke did not move the actor'
+reports=['V02_Facade_Architecture_Plan.json','V02_Facade_Architecture_Package.json','V02_Facade_Architecture_Build.json','V02_Facade_Architecture_Exports.json','V02_Facade_Architecture_Native.json','V02_Facade_Architecture_HUD.json','V02_Facade_Architecture_Blender.json','V02_Views_Evidence.json']
+result={'status':'PASS bounded original-owner facade refinement; full V02 remains INCOMPLETE','entry':build['entry'],'entrySHA256':build['entrySHA256'],'master':author['master'],'masterSHA256':author['masterSHA256'],'reports':{f:sha(D/f)for f in reports},'protectedEntries':protected,'sourceEntryAndAppearanceInverseExact':True,'unchangedSourceObjects':author['unchangedSourceObjects'],'replacedDecorativeMeshes':author['replacedDecorativeMeshes'],'retainedWindowLocations':sum(c['windowBays']for c in author['chunks']),'newFeatures':len(plan['features']),'featureKinds':{k:sum(f['kind']==k for f in plan['features'])for k in ['spine','fascia']},'triangles':sum(c['triangles']for c in author['chunks']),'addedTriangles':sum(c['triangles']for c in author['chunks'])-404640,'dynamicLightsAdded':0,'newSharedMaterials':2,'formatErrors':sum(c['errors']for c in exports['results']),'formatWarnings':sum(c['warnings']for c in exports['results']),'maximumCameraProjectionErrorPixels':max(c['maximumLandmarkProjectionErrorPixels']for c in blender['captures']),'nativeGroups':len(native['results']),'retainedHUDGroups':len(hud['results']),'stock':{'files':{p.name:sha(p)for p in stock.iterdir()},'position':state['pos'],'scope':'Installed unchanged client, supported KeyA and short live smoke. Not a completed route or sustained-performance acceptance. Actual CPU/drop-time values remain in state.'},'visualReview':{'actualNativeBeforeAfterAndBlenderImagesOpened':True,'actualPortraitLandscapeOpened':True,'improvements':['Chamfered source-backed window frames and recessed glazing replace the flat rectangular attachments.','Vertical cyan seams and dark six-row floor groupings are visible in the actual A/B views.'],'finalReferenceQuality':'FAIL / still unfinished','remaining':['Large central support/roof mass and overly repeated tower silhouettes remain.','No inhabited balcony depth or complete skyline layering has been added by this shallow facade pass.','Native material appearance remains visibly flatter than the approved art and differs from Blender.','Final whole-build visual/gameplay/performance acceptance remains required.']},'knownRemaining':base['knownRemaining'],'fullGoalComplete':False}
+(D/'V02_Facade_Architecture_Evidence.json').write_text(json.dumps(result,indent=2)+'\n');print(result['status'])

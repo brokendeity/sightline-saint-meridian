@@ -1,0 +1,23 @@
+{
+  "status": "PASS paired source renders and projection; full reference quality remains unaccepted",
+  "masterSHA256": "0fc39bd7a19888fb45c9bbe8a2999be7f7a9623713c2a5d66632b10cd1946136",
+  "nativeReportSHA256": "d70cab8829696e83303f28f6df6b1ebc7a8d428e0f2704e3ea047dafcd51e4eb",
+  "contractSHA256": "af49662f1e65d8c4294c6051a82dedd3f23877c36c2f7d054fd4256c64661e3e",
+  "captures": [
+    {
+      "id": "A",
+      "file": "evidence/facade-architecture/blender-A.png",
+      "sha256": "d470f628a24a906b5a6fe4ea36cfd6676275e0aad036b6ea0c0982a375606ca7",
+      "maximumLandmarkProjectionErrorPixels": 6.278291823384293e-05,
+      "samples": 16
+    },
+    {
+      "id": "B",
+      "file": "evidence/facade-architecture/blender-B.png",
+      "sha256": "3333b2177d2f39a29d7afa8c5a8b2c7061f8a4d1eb6142e4debad6a303d64621",
+      "maximumLandmarkProjectionErrorPixels": 0.003379802851933891,
+      "samples": 16
+    }
+  ],
+  "scope": "Saved-source Cycles16sample renders and geometric projection only. Not full visual-reference acceptance; toon/ACES vs Principled/AgX shading and animated world presentation remain separate."
+}
