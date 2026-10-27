@@ -1,0 +1,9 @@
+"""Keep the arcade build immutable; change only the two camera ray call sites."""
+from pathlib import Path
+import hashlib,json
+R=Path(__file__).resolve().parents[2];D=R/'development/vertical-city-v02';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();source=R/'SIGHTLINE_SAINT_MERIDIAN_V02_GALLERY_ARCADES.html';prior=json.loads((D/'V02_Gallery_Arcade_Evidence.json').read_text());assert sha(source)==prior['entrySHA256'];text=source.read_text();edits=[]
+for old,new in [('cameraProbeRaycaster.intersectObjects(targets,false)',"(window.v02CameraRays?window.v02CameraRays.intersect(cameraProbeRaycaster,targets):cameraProbeRaycaster.intersectObjects(targets,false))"),('visibilityRaycaster.intersectObjects(obstacleCandidates(camera.position,point),false)',"(window.v02CameraRays?window.v02CameraRays.intersect(visibilityRaycaster,obstacleCandidates(camera.position,point)):visibilityRaycaster.intersectObjects(obstacleCandidates(camera.position,point),false))"),('</body>','<script src="scripts/v02_exact_camera_rays.js"></script></body>')]:
+ assert text.count(old)==1,old;text=text.replace(old,new,1);edits.append({'old':old,'new':new})
+entry=R/'SIGHTLINE_SAINT_MERIDIAN_V02_CAMERA_ACCELERATION.html';entry.write_text(text)
+for e in reversed(edits):text=text.replace(e['new'],e['old'],1)
+assert text==source.read_text();report={'status':'CANDIDATE; exact contact/input/performance acceptance pending','entry':entry.name,'entrySHA256':sha(entry),'source':source.name,'sourceSHA256':sha(source),'script':'scripts/v02_exact_camera_rays.js','scriptSHA256':sha(R/'scripts/v02_exact_camera_rays.js'),'edits':edits,'sourceInverseExact':True,'scope':'Only two camera ray call sites use exact static V02 spatial partition; all rendering/geometry/physics/powers/other rays unchanged.'};(D/'V02_Camera_Acceleration_Build.json').write_text(json.dumps(report,indent=2)+'\n');print(report['entry'],report['entrySHA256'])

@@ -1,0 +1,5211 @@
+{
+  "status": "PASS bounded exact ray parity, camera clamps and native underpasses",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_CAMERA_ACCELERATION.html",
+  "entrySHA256": "3a6c3a6630f4e429c24d8a1070aa2832345d370f530036d44b18db336fa89ccc",
+  "results": [
+    "Native hit-list/UV/normal/face/material/layer/near-far parity; supported source meshes and camera clamps match",
+    "lower normal-input underpass and native camera",
+    "middle normal-input underpass and native camera",
+    "upper normal-input underpass and native camera"
+  ],
+  "errors": [],
+  "scope": "Exact native hit lists, static geometry preservation, camera clamps and bounded input passages; not final full city release.",
+  "parity": {
+    "counts": {
+      "syntheticRays": 150,
+      "sourceRays": 1056,
+      "cameraProbes": 56,
+      "meshes": 176,
+      "mutableFallback": 12
+    },
+    "failures": [],
+    "geometryUnchanged": true,
+    "invalidated": 1,
+    "stats": {
+      "builds": 86,
+      "invalidations": 1,
+      "queries": 1781,
+      "acceleratedMeshes": 3469,
+      "nativeMeshes": 1812,
+      "leafTests": 6203,
+      "indexBytes": 5131104,
+      "buildMs": 281.4999985694885,
+      "scope": "Exact static V02 camera triangles; native fallback for original and unsupported meshes"
+    }
+  },
+  "lower": {
+    "scope": "One labelled starting fixture, W/native simulation thereafter",
+    "trace": [
+      {
+        "p": [
+          55,
+          24.42,
+          346.995
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          346.985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          346.97
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          346.95000000000005
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          346.92500000000007
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          346.8950000000001
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          346.86000000000007
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          346.82000000000005
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          346.77500000000003
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          346.725
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          346.67
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          346.61
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          346.545
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          346.475
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          346.40000000000003
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          346.32000000000005
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          346.23500000000007
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          346.1450000000001
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          346.05000000000007
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          345.95000000000005
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          345.845
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          345.735
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          345.625
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          345.515
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          345.405
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          345.29499999999996
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          345.18499999999995
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          345.07499999999993
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          344.9649999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          344.8549999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          344.7449999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          344.6349999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          344.52499999999986
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          344.41499999999985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          344.30499999999984
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          344.1949999999998
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          344.0849999999998
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          343.9749999999998
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          343.8649999999998
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          343.75499999999977
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          343.64499999999975
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          343.53499999999974
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          343.4249999999997
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          343.3149999999997
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          343.2049999999997
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          343.0949999999997
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          342.9849999999997
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          342.87499999999966
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          342.76499999999965
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          342.65499999999963
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          342.5449999999996
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          342.4349999999996
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          342.3249999999996
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          342.2149999999996
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          342.10499999999956
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          341.99499999999955
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          341.88499999999954
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          341.7749999999995
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          341.6649999999995
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          341.5549999999995
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          341.4449999999995
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          341.33499999999947
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          341.22499999999945
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          341.11499999999944
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          341.0049999999994
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          340.8949999999994
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          340.7849999999994
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          340.6749999999994
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          340.5649999999994
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          340.45499999999936
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          340.34499999999935
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          340.23499999999933
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          340.1249999999993
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          340.0149999999993
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          339.9049999999993
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          339.7949999999993
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          339.68499999999926
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          339.57499999999925
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          339.46499999999924
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          339.3549999999992
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          339.2449999999992
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          339.1349999999992
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          339.0249999999992
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          338.91499999999917
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          338.80499999999915
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          338.69499999999914
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          338.5849999999991
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          338.4749999999991
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          338.3649999999991
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          338.2549999999991
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          338.1449999999991
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          338.03499999999906
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          337.92499999999905
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          337.81499999999903
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          337.704999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          337.594999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          337.484999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          337.374999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          337.26499999999896
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          337.15499999999895
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          337.04499999999894
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          336.9349999999989
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          336.8249999999989
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          336.7149999999989
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          336.6049999999989
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          336.49499999999887
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          336.38499999999885
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          336.27499999999884
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          336.1649999999988
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          336.0549999999988
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          335.9449999999988
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          335.8349999999988
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          335.7249999999988
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          335.61499999999876
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          335.50499999999874
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          335.39499999999873
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          335.2849999999987
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          335.1749999999987
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          335.0649999999987
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          334.9549999999987
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          334.84499999999866
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          334.73499999999865
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          334.62499999999864
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          334.5149999999986
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          334.4049999999986
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          334.2949999999986
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          334.1849999999986
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          334.07499999999857
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          333.96499999999855
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          333.85499999999854
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          333.7449999999985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          333.6349999999985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          333.5249999999985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          333.4149999999985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          333.3049999999985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          333.19499999999846
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          333.08499999999844
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          332.97499999999843
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          332.8649999999984
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          332.7549999999984
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          332.6449999999984
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          332.5349999999984
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          332.42499999999836
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          332.31499999999835
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          332.20499999999834
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          332.0949999999983
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          331.9849999999983
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          331.8749999999983
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          331.7649999999983
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          331.65499999999827
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          331.54499999999825
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          331.43499999999824
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          331.3249999999982
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          331.2149999999982
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          331.1049999999982
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          330.9949999999982
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          330.8849999999982
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          330.77499999999816
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          330.66499999999814
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          330.55499999999813
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          330.4449999999981
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          330.3349999999981
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          330.2249999999981
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          330.1149999999981
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          330.00499999999806
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          329.89499999999805
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          329.78499999999804
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          329.674999999998
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          329.564999999998
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          329.454999999998
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          329.344999999998
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          329.23499999999797
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          329.12499999999795
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          329.01499999999794
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          328.9049999999979
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          328.7949999999979
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          328.6849999999979
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          328.5749999999979
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          328.4649999999979
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          328.35499999999786
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          328.24499999999784
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          328.13499999999783
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          328.0249999999978
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          24.42,
+          327.9149999999978
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      }
+    ]
+  },
+  "middle": {
+    "scope": "One labelled starting fixture, W/native simulation thereafter",
+    "trace": [
+      {
+        "p": [
+          96,
+          52.42,
+          326.995
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          326.985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          326.97
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          326.95000000000005
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          326.92500000000007
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          326.8950000000001
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          326.86000000000007
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          326.82000000000005
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          326.77500000000003
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          326.725
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          326.67
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          326.61
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          326.545
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          326.475
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          326.40000000000003
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          326.32000000000005
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          326.23500000000007
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          326.1450000000001
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          326.05000000000007
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          325.95000000000005
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          325.845
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          325.735
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          325.625
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          325.515
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          325.405
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          325.29499999999996
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          325.18499999999995
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          325.07499999999993
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          324.9649999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          324.8549999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          324.7449999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          324.6349999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          324.52499999999986
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          324.41499999999985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          324.30499999999984
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          324.1949999999998
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          324.0849999999998
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          323.9749999999998
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          323.8649999999998
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          323.75499999999977
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          323.64499999999975
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          323.53499999999974
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          323.4249999999997
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          323.3149999999997
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          323.2049999999997
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          323.0949999999997
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          322.9849999999997
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          322.87499999999966
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          322.76499999999965
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          322.65499999999963
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          322.5449999999996
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          322.4349999999996
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          322.3249999999996
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          322.2149999999996
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          322.10499999999956
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          321.99499999999955
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          321.88499999999954
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          321.7749999999995
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          321.6649999999995
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          321.5549999999995
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          321.4449999999995
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          321.33499999999947
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          321.22499999999945
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          321.11499999999944
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          321.0049999999994
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          320.8949999999994
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          320.7849999999994
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          320.6749999999994
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          320.5649999999994
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          320.45499999999936
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          320.34499999999935
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          320.23499999999933
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          320.1249999999993
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          320.0149999999993
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          319.9049999999993
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          319.7949999999993
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          319.68499999999926
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          319.57499999999925
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          319.46499999999924
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          319.3549999999992
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          319.2449999999992
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          319.1349999999992
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          319.0249999999992
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          318.91499999999917
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          318.80499999999915
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          318.69499999999914
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          318.5849999999991
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          318.4749999999991
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          318.3649999999991
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          318.2549999999991
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          318.1449999999991
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          318.03499999999906
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          317.92499999999905
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          317.81499999999903
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          317.704999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          317.594999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          317.484999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          317.374999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          317.26499999999896
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          317.15499999999895
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          317.04499999999894
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          316.9349999999989
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          316.8249999999989
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          316.7149999999989
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          316.6049999999989
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          316.49499999999887
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          316.38499999999885
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          316.27499999999884
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          316.1649999999988
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          316.0549999999988
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          315.9449999999988
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          315.8349999999988
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          315.7249999999988
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          315.61499999999876
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          315.50499999999874
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          315.39499999999873
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          315.2849999999987
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          315.1749999999987
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          315.0649999999987
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          314.9549999999987
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          314.84499999999866
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          314.73499999999865
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          314.62499999999864
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          314.5149999999986
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          314.4049999999986
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          314.2949999999986
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          314.1849999999986
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          314.07499999999857
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          313.96499999999855
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          313.85499999999854
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          313.7449999999985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          313.6349999999985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          313.5249999999985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          313.4149999999985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          313.3049999999985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          313.19499999999846
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          313.08499999999844
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          312.97499999999843
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          312.8649999999984
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          312.7549999999984
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          312.6449999999984
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          312.5349999999984
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          312.42499999999836
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          312.31499999999835
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          312.20499999999834
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          312.0949999999983
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          311.9849999999983
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          311.8749999999983
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          311.7649999999983
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          311.65499999999827
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          311.54499999999825
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          311.43499999999824
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          311.3249999999982
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          311.2149999999982
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          311.1049999999982
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          310.9949999999982
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          310.8849999999982
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          310.77499999999816
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          310.66499999999814
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          310.55499999999813
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          310.4449999999981
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          310.3349999999981
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          310.2249999999981
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          310.1149999999981
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          310.00499999999806
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          96,
+          52.42,
+          309.89499999999805
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      }
+    ]
+  },
+  "upper": {
+    "scope": "One labelled starting fixture, W/native simulation thereafter",
+    "trace": [
+      {
+        "p": [
+          55,
+          84.42,
+          394.995
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          394.985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          394.97
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          394.95000000000005
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          394.92500000000007
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          394.8950000000001
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          394.86000000000007
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          394.82000000000005
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          394.77500000000003
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          394.725
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          394.67
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          394.61
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          394.545
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          394.475
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          394.40000000000003
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          394.32000000000005
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          394.23500000000007
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          394.1450000000001
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          394.05000000000007
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          393.95000000000005
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          393.845
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          393.735
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          393.625
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          393.515
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          393.405
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          393.29499999999996
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          393.18499999999995
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          393.07499999999993
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          392.9649999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          392.8549999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          392.7449999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          392.6349999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          392.52499999999986
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          392.41499999999985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          392.30499999999984
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          392.1949999999998
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          392.0849999999998
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          391.9749999999998
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          391.8649999999998
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          391.75499999999977
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          391.64499999999975
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          391.53499999999974
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          391.4249999999997
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          391.3149999999997
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          391.2049999999997
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          391.0949999999997
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          390.9849999999997
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          390.87499999999966
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          390.76499999999965
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          390.65499999999963
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          390.5449999999996
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          390.4349999999996
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          390.3249999999996
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          390.2149999999996
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          390.10499999999956
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          389.99499999999955
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          389.88499999999954
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          389.7749999999995
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          389.6649999999995
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          389.5549999999995
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          389.4449999999995
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          389.33499999999947
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          389.22499999999945
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          389.11499999999944
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          389.0049999999994
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          388.8949999999994
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          388.7849999999994
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          388.6749999999994
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          388.5649999999994
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          388.45499999999936
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          388.34499999999935
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          388.23499999999933
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          388.1249999999993
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          388.0149999999993
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          387.9049999999993
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          387.7949999999993
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          387.68499999999926
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          387.57499999999925
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          387.46499999999924
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          387.3549999999992
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          387.2449999999992
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          387.1349999999992
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          387.0249999999992
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          386.91499999999917
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          386.80499999999915
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          386.69499999999914
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          386.5849999999991
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          386.4749999999991
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          386.3649999999991
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          386.2549999999991
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          386.1449999999991
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          386.03499999999906
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          385.92499999999905
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          385.81499999999903
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          385.704999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          385.594999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          385.484999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          385.374999999999
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          385.26499999999896
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          385.15499999999895
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          385.04499999999894
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          384.9349999999989
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          384.8249999999989
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          384.7149999999989
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          384.6049999999989
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          384.49499999999887
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          384.38499999999885
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          384.27499999999884
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          384.1649999999988
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          384.0549999999988
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          383.9449999999988
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          383.8349999999988
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          383.7249999999988
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          383.61499999999876
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          383.50499999999874
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          383.39499999999873
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          383.2849999999987
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          383.1749999999987
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          383.0649999999987
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          382.9549999999987
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          382.84499999999866
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          382.73499999999865
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          382.62499999999864
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          382.5149999999986
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          382.4049999999986
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          382.2949999999986
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          382.1849999999986
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          382.07499999999857
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          381.96499999999855
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          381.85499999999854
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          381.7449999999985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          381.6349999999985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          381.5249999999985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          381.4149999999985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          381.3049999999985
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          381.19499999999846
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          381.08499999999844
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          380.97499999999843
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          380.8649999999984
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          380.7549999999984
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          380.6449999999984
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          380.5349999999984
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          380.42499999999836
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          380.31499999999835
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          380.20499999999834
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          380.0949999999983
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          379.9849999999983
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          379.8749999999983
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          379.7649999999983
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          379.65499999999827
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          379.54499999999825
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          379.43499999999824
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          379.3249999999982
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          379.2149999999982
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          379.1049999999982
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          378.9949999999982
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          378.8849999999982
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          378.77499999999816
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          378.66499999999814
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          378.55499999999813
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          378.4449999999981
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          378.3349999999981
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          378.2249999999981
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          378.1149999999981
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          378.00499999999806
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      },
+      {
+        "p": [
+          55,
+          84.42,
+          377.89499999999805
+        ],
+        "ground": true,
+        "trauma": 0,
+        "cameraInside": []
+      }
+    ]
+  }
+}

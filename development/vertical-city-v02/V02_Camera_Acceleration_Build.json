@@ -1,0 +1,25 @@
+{
+  "status": "CANDIDATE; exact contact/input/performance acceptance pending",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_CAMERA_ACCELERATION.html",
+  "entrySHA256": "3a6c3a6630f4e429c24d8a1070aa2832345d370f530036d44b18db336fa89ccc",
+  "source": "SIGHTLINE_SAINT_MERIDIAN_V02_GALLERY_ARCADES.html",
+  "sourceSHA256": "dd36050e630cf2e2761d491b0f812e13b73ec688f519c10d01b8916db6814c97",
+  "script": "scripts/v02_exact_camera_rays.js",
+  "scriptSHA256": "bd9856c17f746f8741d522ce53f47428b7d6bba4ad953ed4ca094a56f5ade670",
+  "edits": [
+    {
+      "old": "cameraProbeRaycaster.intersectObjects(targets,false)",
+      "new": "(window.v02CameraRays?window.v02CameraRays.intersect(cameraProbeRaycaster,targets):cameraProbeRaycaster.intersectObjects(targets,false))"
+    },
+    {
+      "old": "visibilityRaycaster.intersectObjects(obstacleCandidates(camera.position,point),false)",
+      "new": "(window.v02CameraRays?window.v02CameraRays.intersect(visibilityRaycaster,obstacleCandidates(camera.position,point)):visibilityRaycaster.intersectObjects(obstacleCandidates(camera.position,point),false))"
+    },
+    {
+      "old": "</body>",
+      "new": "<script src=\"scripts/v02_exact_camera_rays.js\"></script></body>"
+    }
+  ],
+  "sourceInverseExact": true,
+  "scope": "Only two camera ray call sites use exact static V02 spatial partition; all rendering/geometry/physics/powers/other rays unchanged."
+}

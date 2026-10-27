@@ -1,0 +1,160 @@
+{
+  "status": "PASS bounded exact camera acceleration, three current public loops and matched lower-loop CPU workload; full V02 remains INCOMPLETE",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_CAMERA_ACCELERATION.html",
+  "entrySHA256": "3a6c3a6630f4e429c24d8a1070aa2832345d370f530036d44b18db336fa89ccc",
+  "script": "scripts/v02_exact_camera_rays.js",
+  "scriptSHA256": "bd9856c17f746f8741d522ce53f47428b7d6bba4ad953ed4ca094a56f5ade670",
+  "sourceInverseExact": true,
+  "unchangedMaster": "development/vertical-city-v02/blender/SaintMeridian_V02_Gallery_Arcades.blend",
+  "unchangedMasterSHA256": "19ffd485be23319084b6e2ffe7ee0e1a1a8ac20beb493f7782692e1709282682",
+  "unchangedManifest": "assets/city/vertical-v02/gallery-arcades/runtime/manifest.json",
+  "unchangedManifestSHA256": "07f6303067ec01d1096e7b684873e1b62542a4f940acfd9e1a4ab6ac94044e67",
+  "protectedEntries": {
+    "SIGHTLINE_BACKSPOOL_WHIP_THROW.html": "fac92161657cb93c8500d6afbc2900748b7cadfc015c019eeddf0366cdf070e4",
+    "SIGHTLINE_VERTICAL_MEGACITY_V1.html": "45d868dcfcd1d0d9a382563bc984ebc657848cd6b2987f21bdf132edcf86d03b",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_DETAILED.html": "ec12fa9b3ccadb8acd9c1dcf5136391ef2b675f9ca95702453bd740797ee82a7",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT.html": "48ee6dff434a6a2e1c1e5dbbf86d673b83109922c804f5749b0411ffc525c80f",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT_STATION.html": "b96967c97064d9f549e92aa599ed140a2a99e7c0c8e08f0c118c55eb35e3cba1",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_WORLD_LIFE.html": "1f739d8e9dd53892988a9d67d3b18cafd175dc5b5d114f5bffb8b886b73ed296",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_VISUAL_CANDIDATE.html": "096be78a4f7dddf42dafd4de5d3749f7d0cfbcf31bd934c27531b6520fd953a4",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_HUD_CANDIDATE.html": "c0b4465e40b882c5f76b776f1c5a4761585af7a09d54fdb4a7ffa5da4608b99e",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_ARCHITECTURE_FINISH.html": "3f880651dad66adb161880c0c9300ec130e429972fb88728958ba55be182a9c9",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT_VIEWS.html": "07400d9ec481c5212b2d1f4e999699730b389b1752926b391b31b1bd3b57bfe7",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_FACADE_ARCHITECTURE.html": "7f50a422fd5ce777e5bce1fdc89635d09e992e42d4813c0eee3f151d69d009d3",
+    "SIGHTLINE_SAINT_MERIDIAN_V02_GALLERY_ARCADES.html": "dd36050e630cf2e2761d491b0f812e13b73ec688f519c10d01b8916db6814c97"
+  },
+  "reports": {
+    "V02_Camera_Acceleration_Build.json": "6403833aba3cab8877c0cbcdd93366a620feae4052127c21fbd3e64e73317e40",
+    "V02_Camera_Acceleration_Native.json": "7b4667d2c1720a489785c2e029a1d86f86a65112f2a4775bae5c56d643c358ff",
+    "V02_Camera_Acceleration_HUD.json": "c69e4661bb91cc18f2f37db3dff7b6a289f79d078e7b4520fa86392030abdadb",
+    "V02_Current_City_Loops.json": "12afc0a7644d0eda6c78b8f6ff007a1a78bb8060036fe164bedf58801a01aa48",
+    "V02_Camera_Acceleration_Benchmark.json": "949fd7db05939e2f81532ebef42dd15ae661c7f017b287daff41a1c1ea40cd8c",
+    "V02_Camera_Acceleration_Benchmark_Initial.json": "5c04a4338cb59480b8142b70d81336536c9d8057690f70f66f8d21287127dc7f",
+    "V02_Gallery_Arcade_Evidence.json": "f51963aef53c481502e2fbedac6c7b84dc8d19b604d074c2742aa1fde176b03e"
+  },
+  "parity": {
+    "syntheticRays": 150,
+    "sourceRays": 1056,
+    "cameraProbes": 56,
+    "meshes": 176,
+    "mutableFallback": 12
+  },
+  "nativeUnderpasses": 3,
+  "retainedHUDGroups": 15,
+  "completePublicLoops": [
+    {
+      "id": "lower",
+      "simSeconds": 55.36666666666667,
+      "distance": 361.40500000004465,
+      "cameraInsideFrames": 0,
+      "powerReleases": 0
+    },
+    {
+      "id": "mid",
+      "simSeconds": 35.36666666666667,
+      "distance": 229.405000000023,
+      "cameraInsideFrames": 0,
+      "powerReleases": 0
+    },
+    {
+      "id": "high",
+      "simSeconds": 37.2,
+      "distance": 241.5050000000245,
+      "cameraInsideFrames": 0,
+      "powerReleases": 0
+    }
+  ],
+  "performance": {
+    "workload": "Matched 60 simulation-second lower public loop through native RAF, standard simulated controller and rendering. No combat/replay/destruction stress; not final combined release acceptance.",
+    "videoSeconds": {
+      "baseline": 144.2,
+      "candidate": 69.96
+    },
+    "simulationSecondsEach": 60,
+    "distanceEach": 640.6535539148827,
+    "highSpeedSecondsEach": 29.5,
+    "baselineSimulationCpuMs": {
+      "samples": 3600,
+      "p50": 21.90000009536743,
+      "p95": 82.10000038146973,
+      "max": 98
+    },
+    "candidateSimulationCpuMs": {
+      "samples": 3600,
+      "p50": 8.599999904632568,
+      "p95": 16.40000009536743,
+      "max": 64.89999961853027
+    },
+    "medianCpuReductionPercent": 60.73059421377924,
+    "p95CpuReductionPercent": 80.02436051258658,
+    "baselineFrameIntervalsMs": {
+      "samples": 1830,
+      "p50": 16.099999999976717,
+      "p95": 465,
+      "max": 550.1999999999971
+    },
+    "candidateFrameIntervalsMs": {
+      "samples": 5689,
+      "p50": 7.80000000000291,
+      "p95": 16.5,
+      "max": 120.5
+    },
+    "maxSampledPositionDifference": 0,
+    "maxSampledCameraDifference": 0,
+    "gpuTiming": "NOT MEASURED",
+    "drawDistributions": "World-scene counters; wall-frame-weighted distributions differ because baseline stalls. They do not establish a change in geometry or same-frame GPU cost.",
+    "qualityCaveat": "Native adaptive resolution remains active. Its state method is absent, so the attempted start/end quality fields are null; fixed internal-resolution performance is not established by this run.",
+    "clockCaveat": "Reported droppedTime comes from the inherited accumulator; the native loop also clamps elapsed time before consumption. It is not a full accounting of wall-time loss.",
+    "memoryCaveat": "Coarse start/end JS heap observations only; no peak/GPU/resource-leak certification."
+  },
+  "artifacts": {
+    "evidence/camera-acceleration/upper.png": "afacdcfe24179370943cc37f9e72d20fc7a0e376ae083b64edde1870b9711f71",
+    "evidence/camera-acceleration/lower.png": "13a6793a711eea5eb0a4a044530175626c6f6e14f0dee8c2290032b7939b0868",
+    "evidence/camera-acceleration/middle.png": "0d72dc836bf88c04d3fae7d783dc1a91433cc1b2a66f5194ca01d20f58cc0b48",
+    "evidence/camera-acceleration-hud/desktop.png": "8da2fc39c79c882e349c4ae1b1feec221a73812caa82ef8e58585ffdc91710cc",
+    "evidence/camera-acceleration-hud/paused-controls.png": "08ca0488a7f3180021a3dde46d06b4a3c71559e6530ec170b80762183302cf1b",
+    "evidence/camera-acceleration-hud/landscape.png": "001adbee57ee1dc2f3d5df5c19842ef9f5f4df925cfc5d57b440e161a77cb484",
+    "evidence/camera-acceleration-hud/portrait.png": "b8a5ffae411b2efc0e7f1d4c19d4ab48276f9940ec82bfd47b16fd787423b76f",
+    "evidence/camera-acceleration-hud/public-information.png": "71fe246d639c518248a8b10ad6674d41ab50601654d5fc29158b9c7eaba6e371",
+    "evidence/camera-acceleration-hud/combat-feedback.png": "a55a3752bd872c1ba676c9e2c3c4d419fd803c6ec26be8c90954a2ec7769fb3a",
+    "evidence/camera-acceleration-hud/paused-hero-tools.png": "90aa49c5d364757836aac5f837afced653d47db45ca4a25a053d4d21f08fc9bf",
+    "evidence/camera-acceleration-hud/portrait-resumed.png": "36da1a07ad0b8dade69038dbb9f8c7fa13a50f933d12ec568878eda0ed76a06d",
+    "evidence/camera-acceleration-hud/landscape-paused-practice.png": "7ba2d2902b6bbe20ce24a6ee7fd80cc02f1b630f134ecc75433bfd121d86e2d5",
+    "evidence/camera-acceleration-hud/portrait-paused-equipment.png": "514d71c565447749d3036a38adf741b881a955b42475a1f66cbd55e2668b42d4",
+    "evidence/current-city-loops/lower.png": "d45f41cc8a38757ef6c74e66f5964756d2942094fa92567445854f22115e6560",
+    "evidence/current-city-loops/mid.png": "7f4cd1dfb3a89883eaf2756ea88c5a6a1be24f619fa2814c53f6f82b4c5c1a75",
+    "evidence/current-city-loops/high.png": "ed6bdae039e108124dcd70218bb58045acfb22309a126af648ebeb007655929a",
+    "evidence/stock-camera-acceleration/shot-0.png": "f5d080d11414fe3e3c9dea5d85bcf479c654f0b2ea29939a7a9734644311e12e",
+    "evidence/stock-camera-acceleration/state-0.json": "9dfbe7466b014db3f5c36e8b6159ecca904e8b763dd1d11131b8ed53a32de126",
+    "evidence/camera-benchmark/baseline-timeline.png": "39fa8e10641d078fb15d67123af8287e8cafffa3e107ceeaad2b016dc59007fa",
+    "evidence/camera-benchmark/baseline.webm": "25e3faab17dedd59cd70a899f2f5a7017113ed6d8bc2f510ce8da6bc622d7259",
+    "evidence/camera-benchmark/candidate-end.png": "aa699ebc89f23f9007fe20de2e26e41d25952ae8419e8b25c3abae80d29e95c7",
+    "evidence/camera-benchmark/candidate-timeline.png": "803a49e08e3cbf90892f1590126610fe0d5ee4797b4e45a3729201b861bb425b",
+    "evidence/camera-benchmark/candidate.webm": "731fa18e5b7aaa7d15d4bc87707c12531bac3789e030eb8b0c76c4b479c1b2d8",
+    "evidence/camera-benchmark/baseline-end.png": "75131478c7fbc1f0fe601a481eeee8091da4fd82cabf8623f94338bdd1f3b854",
+    "evidence/camera-benchmark-initial/baseline.webm": "93c1dc49ffe09625e78d544ae9fc7a033f9495e796bad457688c6f916e64761d",
+    "evidence/camera-benchmark-initial/candidate-end.png": "fcaf4d83e59a1f59ad9c13747ea2fa5a79d02f268c525cac5968aaa549cfdb5f",
+    "evidence/camera-benchmark-initial/candidate.webm": "2b9dadb74470694a9b0f0ddd2f78a5fe7f2be3ad59f9589fb70e51c0b3a3e58d",
+    "evidence/camera-benchmark-initial/baseline-end.png": "65088cd612e14a871869401036d476668459591dc5c1703b08cb9bdca57f7d9f"
+  },
+  "review": {
+    "nativeUnderpassAndPublicLoopScreenshotsOpened": true,
+    "desktopPortraitLandscapeAndStockScreenshotsOpened": true,
+    "actualVideoChronologicalKeyframeSheetsOpened": true,
+    "videoReviewLimit": "Chronological keyframe review, not a claim of exhaustive frame-by-frame visual or animation acceptance.",
+    "initialMetricFailure": "Initial full-run draw/triangle counters sampled final compositor; retained explicitly invalid and corrected in the final benchmark.",
+    "fullReferenceQuality": "FAIL / still unfinished"
+  },
+  "fullGoalComplete": false,
+  "remaining": [
+    "Final approved-reference visual quality is not achieved: facade variety, structural proportions, stair presentation, train composition and skyline depth still need refinement",
+    "Nine advanced route timing fields remain unmeasured",
+    "Entire retained end-to-end gameplay/failure-path suite on the eventual final combined build",
+    ">=60second matched active baseline/candidate performance, including frame CPU/GPU distinctions, memory/loading and error checks",
+    "Physical controller and touchscreen playtesting",
+    "Conservative movement/camera slab proxies retain their original envelopes;6.5cm decorative underside relief is confirmed by separate cartridge triangle contact",
+    "Profile and address substantial simulation CPU cost observed in short live smoke traces before claiming a responsive release.",
+    "Full combined final regression/stress workload and fixed-resolution/GPU-aware release measurements remain required."
+  ]
+}
