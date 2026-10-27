@@ -1,0 +1,2154 @@
+{
+  "status": "PASS source-volume/route-envelope preflight",
+  "sources": {
+    "assets/city/vertical-v02/coffered/runtime/manifest.json": "019822e90f1564a8b99375e9f0eeaddd46ee32adce5c440e6e817b9c6b7e56ed",
+    "development/vertical-city-v02/V02_LiveWorld_Authoritative.json": "a3981d42a0d45c893a304cc896a36c30204489e4cf4269c2365a63c8ccba53b9",
+    "development/vertical-city-v02/V02_Movement_Graph.json": "2cab25710a3e61009c10299f202c292a785160eeec4212352b43706791e7f438",
+    "assets/city/vertical-v02/world-life/air_routes.json": "10e1aeb641e2d9249f62373c8c52755f3b89f7c996077c38510bed5599c4e571"
+  },
+  "arcades": [
+    {
+      "id": "lower",
+      "floor": "gallery-W-24-326",
+      "center": [
+        55,
+        24,
+        337
+      ],
+      "length": 14,
+      "width": 6.2,
+      "roofID": "arcade-lower-roof",
+      "roofTop": 28.6,
+      "minimumBeamHeadroom": 4.05,
+      "minimumCentralPassageWidth": 5.16,
+      "recordIDs": [
+        "arcade-lower-roof",
+        "arcade-lower-beam-0",
+        "arcade-lower-post-0--1",
+        "arcade-lower-post-0-1",
+        "arcade-lower-beam-1",
+        "arcade-lower-post-1--1",
+        "arcade-lower-post-1-1",
+        "arcade-lower-beam-2",
+        "arcade-lower-post-2--1",
+        "arcade-lower-post-2-1",
+        "arcade-lower-edge--1",
+        "arcade-lower-edge-light--1",
+        "arcade-lower-edge-1",
+        "arcade-lower-edge-light-1",
+        "arcade-lower-soffit-0",
+        "arcade-lower-soffit-1",
+        "arcade-lower-soffit-2",
+        "arcade-lower-soffit-3"
+      ],
+      "function": "Public weather shelter on the existing connected gallery; no false building entrance or new district lore"
+    },
+    {
+      "id": "middle",
+      "floor": "gallery-E-52-300",
+      "center": [
+        96,
+        52,
+        318
+      ],
+      "length": 12,
+      "width": 6.2,
+      "roofID": "arcade-middle-roof",
+      "roofTop": 56.6,
+      "minimumBeamHeadroom": 4.05,
+      "minimumCentralPassageWidth": 5.16,
+      "recordIDs": [
+        "arcade-middle-roof",
+        "arcade-middle-beam-0",
+        "arcade-middle-post-0--1",
+        "arcade-middle-post-0-1",
+        "arcade-middle-beam-1",
+        "arcade-middle-post-1--1",
+        "arcade-middle-post-1-1",
+        "arcade-middle-beam-2",
+        "arcade-middle-post-2--1",
+        "arcade-middle-post-2-1",
+        "arcade-middle-edge--1",
+        "arcade-middle-edge-light--1",
+        "arcade-middle-edge-1",
+        "arcade-middle-edge-light-1",
+        "arcade-middle-soffit-0",
+        "arcade-middle-soffit-1",
+        "arcade-middle-soffit-2",
+        "arcade-middle-soffit-3"
+      ],
+      "function": "Public weather shelter on the existing connected gallery; no false building entrance or new district lore"
+    },
+    {
+      "id": "upper",
+      "floor": "gallery-W-84-376",
+      "center": [
+        55,
+        84,
+        386
+      ],
+      "length": 12,
+      "width": 6.2,
+      "roofID": "arcade-upper-roof",
+      "roofTop": 88.6,
+      "minimumBeamHeadroom": 4.05,
+      "minimumCentralPassageWidth": 5.16,
+      "recordIDs": [
+        "arcade-upper-roof",
+        "arcade-upper-beam-0",
+        "arcade-upper-post-0--1",
+        "arcade-upper-post-0-1",
+        "arcade-upper-beam-1",
+        "arcade-upper-post-1--1",
+        "arcade-upper-post-1-1",
+        "arcade-upper-beam-2",
+        "arcade-upper-post-2--1",
+        "arcade-upper-post-2-1",
+        "arcade-upper-edge--1",
+        "arcade-upper-edge-light--1",
+        "arcade-upper-edge-1",
+        "arcade-upper-edge-light-1",
+        "arcade-upper-soffit-0",
+        "arcade-upper-soffit-1",
+        "arcade-upper-soffit-2",
+        "arcade-upper-soffit-3"
+      ],
+      "function": "Public weather shelter on the existing connected gallery; no false building entrance or new district lore"
+    }
+  ],
+  "records": [
+    {
+      "id": "arcade-lower-roof",
+      "owner": "v02:arcade-lower-roof",
+      "center": [
+        55,
+        28.475,
+        337
+      ],
+      "size": [
+        6.2,
+        0.25,
+        14.4
+      ],
+      "box": {
+        "min": [
+          51.9,
+          28.35,
+          329.8
+        ],
+        "max": [
+          58.1,
+          28.6,
+          344.2
+        ]
+      },
+      "material": "deck",
+      "solid": true,
+      "walkable": true,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Closed coffered weather roof; physical maintenance/landing surface, not a new public navigation edge"
+    },
+    {
+      "id": "arcade-lower-beam-0",
+      "owner": "v02:arcade-lower-beam-0",
+      "center": [
+        55,
+        28.2,
+        330.4
+      ],
+      "size": [
+        5.7,
+        0.3,
+        0.24
+      ],
+      "box": {
+        "min": [
+          52.15,
+          28.05,
+          330.28
+        ],
+        "max": [
+          57.85,
+          28.349999999999998,
+          330.52
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Public arcade portal beam, directly supported by paired columns"
+    },
+    {
+      "id": "arcade-lower-post-0--1",
+      "owner": "v02:arcade-lower-post-0--1",
+      "center": [
+        52.32,
+        26.025,
+        330.4
+      ],
+      "size": [
+        0.2,
+        4.05,
+        0.24
+      ],
+      "box": {
+        "min": [
+          52.22,
+          24.0,
+          330.28
+        ],
+        "max": [
+          52.42,
+          28.049999999999997,
+          330.52
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Source-floor-supported arcade column; central public passage remains open",
+      "supportFloor": "gallery-W-24-326"
+    },
+    {
+      "id": "arcade-lower-post-0-1",
+      "owner": "v02:arcade-lower-post-0-1",
+      "center": [
+        57.68,
+        26.025,
+        330.4
+      ],
+      "size": [
+        0.2,
+        4.05,
+        0.24
+      ],
+      "box": {
+        "min": [
+          57.58,
+          24.0,
+          330.28
+        ],
+        "max": [
+          57.78,
+          28.049999999999997,
+          330.52
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Source-floor-supported arcade column; central public passage remains open",
+      "supportFloor": "gallery-W-24-326"
+    },
+    {
+      "id": "arcade-lower-beam-1",
+      "owner": "v02:arcade-lower-beam-1",
+      "center": [
+        55,
+        28.2,
+        337
+      ],
+      "size": [
+        5.7,
+        0.3,
+        0.24
+      ],
+      "box": {
+        "min": [
+          52.15,
+          28.05,
+          336.88
+        ],
+        "max": [
+          57.85,
+          28.349999999999998,
+          337.12
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Public arcade portal beam, directly supported by paired columns"
+    },
+    {
+      "id": "arcade-lower-post-1--1",
+      "owner": "v02:arcade-lower-post-1--1",
+      "center": [
+        52.32,
+        26.025,
+        337
+      ],
+      "size": [
+        0.2,
+        4.05,
+        0.24
+      ],
+      "box": {
+        "min": [
+          52.22,
+          24.0,
+          336.88
+        ],
+        "max": [
+          52.42,
+          28.049999999999997,
+          337.12
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Source-floor-supported arcade column; central public passage remains open",
+      "supportFloor": "gallery-W-24-326"
+    },
+    {
+      "id": "arcade-lower-post-1-1",
+      "owner": "v02:arcade-lower-post-1-1",
+      "center": [
+        57.68,
+        26.025,
+        337
+      ],
+      "size": [
+        0.2,
+        4.05,
+        0.24
+      ],
+      "box": {
+        "min": [
+          57.58,
+          24.0,
+          336.88
+        ],
+        "max": [
+          57.78,
+          28.049999999999997,
+          337.12
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Source-floor-supported arcade column; central public passage remains open",
+      "supportFloor": "gallery-W-24-326"
+    },
+    {
+      "id": "arcade-lower-beam-2",
+      "owner": "v02:arcade-lower-beam-2",
+      "center": [
+        55,
+        28.2,
+        343.6
+      ],
+      "size": [
+        5.7,
+        0.3,
+        0.24
+      ],
+      "box": {
+        "min": [
+          52.15,
+          28.05,
+          343.48
+        ],
+        "max": [
+          57.85,
+          28.349999999999998,
+          343.72
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Public arcade portal beam, directly supported by paired columns"
+    },
+    {
+      "id": "arcade-lower-post-2--1",
+      "owner": "v02:arcade-lower-post-2--1",
+      "center": [
+        52.32,
+        26.025,
+        343.6
+      ],
+      "size": [
+        0.2,
+        4.05,
+        0.24
+      ],
+      "box": {
+        "min": [
+          52.22,
+          24.0,
+          343.48
+        ],
+        "max": [
+          52.42,
+          28.049999999999997,
+          343.72
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Source-floor-supported arcade column; central public passage remains open",
+      "supportFloor": "gallery-W-24-326"
+    },
+    {
+      "id": "arcade-lower-post-2-1",
+      "owner": "v02:arcade-lower-post-2-1",
+      "center": [
+        57.68,
+        26.025,
+        343.6
+      ],
+      "size": [
+        0.2,
+        4.05,
+        0.24
+      ],
+      "box": {
+        "min": [
+          57.58,
+          24.0,
+          343.48
+        ],
+        "max": [
+          57.78,
+          28.049999999999997,
+          343.72
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Source-floor-supported arcade column; central public passage remains open",
+      "supportFloor": "gallery-W-24-326"
+    },
+    {
+      "id": "arcade-lower-edge--1",
+      "owner": "v02:arcade-lower-edge--1",
+      "center": [
+        51.875,
+        28.470000000000002,
+        337
+      ],
+      "size": [
+        0.05,
+        0.2,
+        14.35
+      ],
+      "box": {
+        "min": [
+          51.85,
+          28.37,
+          329.825
+        ],
+        "max": [
+          51.9,
+          28.570000000000004,
+          344.175
+        ]
+      },
+      "material": "steel",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Attached dark folded drip-edge fascia; shallow cosmetic roof edge"
+    },
+    {
+      "id": "arcade-lower-edge-light--1",
+      "owner": "v02:arcade-lower-edge-light--1",
+      "center": [
+        51.848,
+        28.51,
+        337
+      ],
+      "size": [
+        0.008,
+        0.035,
+        14.15
+      ],
+      "box": {
+        "min": [
+          51.844,
+          28.492500000000003,
+          329.925
+        ],
+        "max": [
+          51.852,
+          28.5275,
+          344.075
+        ]
+      },
+      "material": "cyan",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Thin cyan roof-edge source, no dynamic light"
+    },
+    {
+      "id": "arcade-lower-edge-1",
+      "owner": "v02:arcade-lower-edge-1",
+      "center": [
+        58.125,
+        28.470000000000002,
+        337
+      ],
+      "size": [
+        0.05,
+        0.2,
+        14.35
+      ],
+      "box": {
+        "min": [
+          58.1,
+          28.37,
+          329.825
+        ],
+        "max": [
+          58.15,
+          28.570000000000004,
+          344.175
+        ]
+      },
+      "material": "steel",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Attached dark folded drip-edge fascia; shallow cosmetic roof edge"
+    },
+    {
+      "id": "arcade-lower-edge-light-1",
+      "owner": "v02:arcade-lower-edge-light-1",
+      "center": [
+        58.152,
+        28.51,
+        337
+      ],
+      "size": [
+        0.008,
+        0.035,
+        14.15
+      ],
+      "box": {
+        "min": [
+          58.148,
+          28.492500000000003,
+          329.925
+        ],
+        "max": [
+          58.156,
+          28.5275,
+          344.075
+        ]
+      },
+      "material": "cyan",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Thin cyan roof-edge source, no dynamic light"
+    },
+    {
+      "id": "arcade-lower-soffit-0",
+      "owner": "v02:arcade-lower-soffit-0",
+      "center": [
+        55,
+        28.337500000000002,
+        331.75
+      ],
+      "size": [
+        0.09,
+        0.025,
+        1.2
+      ],
+      "box": {
+        "min": [
+          54.955,
+          28.325000000000003,
+          331.15
+        ],
+        "max": [
+          55.045,
+          28.35,
+          332.35
+        ]
+      },
+      "material": "warm",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "sourceSurface": "arcade-lower-roof",
+      "role": "Warm strip flush-mounted on the closed centre rib, not a dynamic light"
+    },
+    {
+      "id": "arcade-lower-soffit-1",
+      "owner": "v02:arcade-lower-soffit-1",
+      "center": [
+        55,
+        28.337500000000002,
+        335.25
+      ],
+      "size": [
+        0.09,
+        0.025,
+        1.2
+      ],
+      "box": {
+        "min": [
+          54.955,
+          28.325000000000003,
+          334.65
+        ],
+        "max": [
+          55.045,
+          28.35,
+          335.85
+        ]
+      },
+      "material": "warm",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "sourceSurface": "arcade-lower-roof",
+      "role": "Warm strip flush-mounted on the closed centre rib, not a dynamic light"
+    },
+    {
+      "id": "arcade-lower-soffit-2",
+      "owner": "v02:arcade-lower-soffit-2",
+      "center": [
+        55,
+        28.337500000000002,
+        338.75
+      ],
+      "size": [
+        0.09,
+        0.025,
+        1.2
+      ],
+      "box": {
+        "min": [
+          54.955,
+          28.325000000000003,
+          338.15
+        ],
+        "max": [
+          55.045,
+          28.35,
+          339.35
+        ]
+      },
+      "material": "warm",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "sourceSurface": "arcade-lower-roof",
+      "role": "Warm strip flush-mounted on the closed centre rib, not a dynamic light"
+    },
+    {
+      "id": "arcade-lower-soffit-3",
+      "owner": "v02:arcade-lower-soffit-3",
+      "center": [
+        55,
+        28.337500000000002,
+        342.25
+      ],
+      "size": [
+        0.09,
+        0.025,
+        1.2
+      ],
+      "box": {
+        "min": [
+          54.955,
+          28.325000000000003,
+          341.65
+        ],
+        "max": [
+          55.045,
+          28.35,
+          342.85
+        ]
+      },
+      "material": "warm",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "sourceSurface": "arcade-lower-roof",
+      "role": "Warm strip flush-mounted on the closed centre rib, not a dynamic light"
+    },
+    {
+      "id": "arcade-middle-roof",
+      "owner": "v02:arcade-middle-roof",
+      "center": [
+        96,
+        56.475,
+        318
+      ],
+      "size": [
+        6.2,
+        0.25,
+        12.4
+      ],
+      "box": {
+        "min": [
+          92.9,
+          56.35,
+          311.8
+        ],
+        "max": [
+          99.1,
+          56.6,
+          324.2
+        ]
+      },
+      "material": "deck",
+      "solid": true,
+      "walkable": true,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Closed coffered weather roof; physical maintenance/landing surface, not a new public navigation edge"
+    },
+    {
+      "id": "arcade-middle-beam-0",
+      "owner": "v02:arcade-middle-beam-0",
+      "center": [
+        96,
+        56.2,
+        312.4
+      ],
+      "size": [
+        5.7,
+        0.3,
+        0.24
+      ],
+      "box": {
+        "min": [
+          93.15,
+          56.050000000000004,
+          312.28
+        ],
+        "max": [
+          98.85,
+          56.35,
+          312.52
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Public arcade portal beam, directly supported by paired columns"
+    },
+    {
+      "id": "arcade-middle-post-0--1",
+      "owner": "v02:arcade-middle-post-0--1",
+      "center": [
+        93.32,
+        54.025,
+        312.4
+      ],
+      "size": [
+        0.2,
+        4.05,
+        0.24
+      ],
+      "box": {
+        "min": [
+          93.22,
+          52.0,
+          312.28
+        ],
+        "max": [
+          93.41999999999999,
+          56.05,
+          312.52
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Source-floor-supported arcade column; central public passage remains open",
+      "supportFloor": "gallery-E-52-300"
+    },
+    {
+      "id": "arcade-middle-post-0-1",
+      "owner": "v02:arcade-middle-post-0-1",
+      "center": [
+        98.68,
+        54.025,
+        312.4
+      ],
+      "size": [
+        0.2,
+        4.05,
+        0.24
+      ],
+      "box": {
+        "min": [
+          98.58000000000001,
+          52.0,
+          312.28
+        ],
+        "max": [
+          98.78,
+          56.05,
+          312.52
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Source-floor-supported arcade column; central public passage remains open",
+      "supportFloor": "gallery-E-52-300"
+    },
+    {
+      "id": "arcade-middle-beam-1",
+      "owner": "v02:arcade-middle-beam-1",
+      "center": [
+        96,
+        56.2,
+        318
+      ],
+      "size": [
+        5.7,
+        0.3,
+        0.24
+      ],
+      "box": {
+        "min": [
+          93.15,
+          56.050000000000004,
+          317.88
+        ],
+        "max": [
+          98.85,
+          56.35,
+          318.12
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Public arcade portal beam, directly supported by paired columns"
+    },
+    {
+      "id": "arcade-middle-post-1--1",
+      "owner": "v02:arcade-middle-post-1--1",
+      "center": [
+        93.32,
+        54.025,
+        318
+      ],
+      "size": [
+        0.2,
+        4.05,
+        0.24
+      ],
+      "box": {
+        "min": [
+          93.22,
+          52.0,
+          317.88
+        ],
+        "max": [
+          93.41999999999999,
+          56.05,
+          318.12
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Source-floor-supported arcade column; central public passage remains open",
+      "supportFloor": "gallery-E-52-300"
+    },
+    {
+      "id": "arcade-middle-post-1-1",
+      "owner": "v02:arcade-middle-post-1-1",
+      "center": [
+        98.68,
+        54.025,
+        318
+      ],
+      "size": [
+        0.2,
+        4.05,
+        0.24
+      ],
+      "box": {
+        "min": [
+          98.58000000000001,
+          52.0,
+          317.88
+        ],
+        "max": [
+          98.78,
+          56.05,
+          318.12
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Source-floor-supported arcade column; central public passage remains open",
+      "supportFloor": "gallery-E-52-300"
+    },
+    {
+      "id": "arcade-middle-beam-2",
+      "owner": "v02:arcade-middle-beam-2",
+      "center": [
+        96,
+        56.2,
+        323.6
+      ],
+      "size": [
+        5.7,
+        0.3,
+        0.24
+      ],
+      "box": {
+        "min": [
+          93.15,
+          56.050000000000004,
+          323.48
+        ],
+        "max": [
+          98.85,
+          56.35,
+          323.72
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Public arcade portal beam, directly supported by paired columns"
+    },
+    {
+      "id": "arcade-middle-post-2--1",
+      "owner": "v02:arcade-middle-post-2--1",
+      "center": [
+        93.32,
+        54.025,
+        323.6
+      ],
+      "size": [
+        0.2,
+        4.05,
+        0.24
+      ],
+      "box": {
+        "min": [
+          93.22,
+          52.0,
+          323.48
+        ],
+        "max": [
+          93.41999999999999,
+          56.05,
+          323.72
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Source-floor-supported arcade column; central public passage remains open",
+      "supportFloor": "gallery-E-52-300"
+    },
+    {
+      "id": "arcade-middle-post-2-1",
+      "owner": "v02:arcade-middle-post-2-1",
+      "center": [
+        98.68,
+        54.025,
+        323.6
+      ],
+      "size": [
+        0.2,
+        4.05,
+        0.24
+      ],
+      "box": {
+        "min": [
+          98.58000000000001,
+          52.0,
+          323.48
+        ],
+        "max": [
+          98.78,
+          56.05,
+          323.72
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Source-floor-supported arcade column; central public passage remains open",
+      "supportFloor": "gallery-E-52-300"
+    },
+    {
+      "id": "arcade-middle-edge--1",
+      "owner": "v02:arcade-middle-edge--1",
+      "center": [
+        92.875,
+        56.47,
+        318
+      ],
+      "size": [
+        0.05,
+        0.2,
+        12.35
+      ],
+      "box": {
+        "min": [
+          92.85,
+          56.37,
+          311.825
+        ],
+        "max": [
+          92.9,
+          56.57,
+          324.175
+        ]
+      },
+      "material": "steel",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Attached dark folded drip-edge fascia; shallow cosmetic roof edge"
+    },
+    {
+      "id": "arcade-middle-edge-light--1",
+      "owner": "v02:arcade-middle-edge-light--1",
+      "center": [
+        92.848,
+        56.51,
+        318
+      ],
+      "size": [
+        0.008,
+        0.035,
+        12.15
+      ],
+      "box": {
+        "min": [
+          92.844,
+          56.4925,
+          311.925
+        ],
+        "max": [
+          92.852,
+          56.527499999999996,
+          324.075
+        ]
+      },
+      "material": "cyan",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Thin cyan roof-edge source, no dynamic light"
+    },
+    {
+      "id": "arcade-middle-edge-1",
+      "owner": "v02:arcade-middle-edge-1",
+      "center": [
+        99.125,
+        56.47,
+        318
+      ],
+      "size": [
+        0.05,
+        0.2,
+        12.35
+      ],
+      "box": {
+        "min": [
+          99.1,
+          56.37,
+          311.825
+        ],
+        "max": [
+          99.15,
+          56.57,
+          324.175
+        ]
+      },
+      "material": "steel",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Attached dark folded drip-edge fascia; shallow cosmetic roof edge"
+    },
+    {
+      "id": "arcade-middle-edge-light-1",
+      "owner": "v02:arcade-middle-edge-light-1",
+      "center": [
+        99.152,
+        56.51,
+        318
+      ],
+      "size": [
+        0.008,
+        0.035,
+        12.15
+      ],
+      "box": {
+        "min": [
+          99.148,
+          56.4925,
+          311.925
+        ],
+        "max": [
+          99.156,
+          56.527499999999996,
+          324.075
+        ]
+      },
+      "material": "cyan",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Thin cyan roof-edge source, no dynamic light"
+    },
+    {
+      "id": "arcade-middle-soffit-0",
+      "owner": "v02:arcade-middle-soffit-0",
+      "center": [
+        96,
+        56.3375,
+        313.5
+      ],
+      "size": [
+        0.09,
+        0.025,
+        1.2
+      ],
+      "box": {
+        "min": [
+          95.955,
+          56.324999999999996,
+          312.9
+        ],
+        "max": [
+          96.045,
+          56.35,
+          314.1
+        ]
+      },
+      "material": "warm",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "sourceSurface": "arcade-middle-roof",
+      "role": "Warm strip flush-mounted on the closed centre rib, not a dynamic light"
+    },
+    {
+      "id": "arcade-middle-soffit-1",
+      "owner": "v02:arcade-middle-soffit-1",
+      "center": [
+        96,
+        56.3375,
+        316.5
+      ],
+      "size": [
+        0.09,
+        0.025,
+        1.2
+      ],
+      "box": {
+        "min": [
+          95.955,
+          56.324999999999996,
+          315.9
+        ],
+        "max": [
+          96.045,
+          56.35,
+          317.1
+        ]
+      },
+      "material": "warm",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "sourceSurface": "arcade-middle-roof",
+      "role": "Warm strip flush-mounted on the closed centre rib, not a dynamic light"
+    },
+    {
+      "id": "arcade-middle-soffit-2",
+      "owner": "v02:arcade-middle-soffit-2",
+      "center": [
+        96,
+        56.3375,
+        319.5
+      ],
+      "size": [
+        0.09,
+        0.025,
+        1.2
+      ],
+      "box": {
+        "min": [
+          95.955,
+          56.324999999999996,
+          318.9
+        ],
+        "max": [
+          96.045,
+          56.35,
+          320.1
+        ]
+      },
+      "material": "warm",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "sourceSurface": "arcade-middle-roof",
+      "role": "Warm strip flush-mounted on the closed centre rib, not a dynamic light"
+    },
+    {
+      "id": "arcade-middle-soffit-3",
+      "owner": "v02:arcade-middle-soffit-3",
+      "center": [
+        96,
+        56.3375,
+        322.5
+      ],
+      "size": [
+        0.09,
+        0.025,
+        1.2
+      ],
+      "box": {
+        "min": [
+          95.955,
+          56.324999999999996,
+          321.9
+        ],
+        "max": [
+          96.045,
+          56.35,
+          323.1
+        ]
+      },
+      "material": "warm",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "sourceSurface": "arcade-middle-roof",
+      "role": "Warm strip flush-mounted on the closed centre rib, not a dynamic light"
+    },
+    {
+      "id": "arcade-upper-roof",
+      "owner": "v02:arcade-upper-roof",
+      "center": [
+        55,
+        88.475,
+        386
+      ],
+      "size": [
+        6.2,
+        0.25,
+        12.4
+      ],
+      "box": {
+        "min": [
+          51.9,
+          88.35,
+          379.8
+        ],
+        "max": [
+          58.1,
+          88.6,
+          392.2
+        ]
+      },
+      "material": "deck",
+      "solid": true,
+      "walkable": true,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Closed coffered weather roof; physical maintenance/landing surface, not a new public navigation edge"
+    },
+    {
+      "id": "arcade-upper-beam-0",
+      "owner": "v02:arcade-upper-beam-0",
+      "center": [
+        55,
+        88.2,
+        380.4
+      ],
+      "size": [
+        5.7,
+        0.3,
+        0.24
+      ],
+      "box": {
+        "min": [
+          52.15,
+          88.05,
+          380.28
+        ],
+        "max": [
+          57.85,
+          88.35000000000001,
+          380.52
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Public arcade portal beam, directly supported by paired columns"
+    },
+    {
+      "id": "arcade-upper-post-0--1",
+      "owner": "v02:arcade-upper-post-0--1",
+      "center": [
+        52.32,
+        86.025,
+        380.4
+      ],
+      "size": [
+        0.2,
+        4.05,
+        0.24
+      ],
+      "box": {
+        "min": [
+          52.22,
+          84.0,
+          380.28
+        ],
+        "max": [
+          52.42,
+          88.05000000000001,
+          380.52
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Source-floor-supported arcade column; central public passage remains open",
+      "supportFloor": "gallery-W-84-376"
+    },
+    {
+      "id": "arcade-upper-post-0-1",
+      "owner": "v02:arcade-upper-post-0-1",
+      "center": [
+        57.68,
+        86.025,
+        380.4
+      ],
+      "size": [
+        0.2,
+        4.05,
+        0.24
+      ],
+      "box": {
+        "min": [
+          57.58,
+          84.0,
+          380.28
+        ],
+        "max": [
+          57.78,
+          88.05000000000001,
+          380.52
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Source-floor-supported arcade column; central public passage remains open",
+      "supportFloor": "gallery-W-84-376"
+    },
+    {
+      "id": "arcade-upper-beam-1",
+      "owner": "v02:arcade-upper-beam-1",
+      "center": [
+        55,
+        88.2,
+        386
+      ],
+      "size": [
+        5.7,
+        0.3,
+        0.24
+      ],
+      "box": {
+        "min": [
+          52.15,
+          88.05,
+          385.88
+        ],
+        "max": [
+          57.85,
+          88.35000000000001,
+          386.12
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Public arcade portal beam, directly supported by paired columns"
+    },
+    {
+      "id": "arcade-upper-post-1--1",
+      "owner": "v02:arcade-upper-post-1--1",
+      "center": [
+        52.32,
+        86.025,
+        386
+      ],
+      "size": [
+        0.2,
+        4.05,
+        0.24
+      ],
+      "box": {
+        "min": [
+          52.22,
+          84.0,
+          385.88
+        ],
+        "max": [
+          52.42,
+          88.05000000000001,
+          386.12
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Source-floor-supported arcade column; central public passage remains open",
+      "supportFloor": "gallery-W-84-376"
+    },
+    {
+      "id": "arcade-upper-post-1-1",
+      "owner": "v02:arcade-upper-post-1-1",
+      "center": [
+        57.68,
+        86.025,
+        386
+      ],
+      "size": [
+        0.2,
+        4.05,
+        0.24
+      ],
+      "box": {
+        "min": [
+          57.58,
+          84.0,
+          385.88
+        ],
+        "max": [
+          57.78,
+          88.05000000000001,
+          386.12
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Source-floor-supported arcade column; central public passage remains open",
+      "supportFloor": "gallery-W-84-376"
+    },
+    {
+      "id": "arcade-upper-beam-2",
+      "owner": "v02:arcade-upper-beam-2",
+      "center": [
+        55,
+        88.2,
+        391.6
+      ],
+      "size": [
+        5.7,
+        0.3,
+        0.24
+      ],
+      "box": {
+        "min": [
+          52.15,
+          88.05,
+          391.48
+        ],
+        "max": [
+          57.85,
+          88.35000000000001,
+          391.72
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Public arcade portal beam, directly supported by paired columns"
+    },
+    {
+      "id": "arcade-upper-post-2--1",
+      "owner": "v02:arcade-upper-post-2--1",
+      "center": [
+        52.32,
+        86.025,
+        391.6
+      ],
+      "size": [
+        0.2,
+        4.05,
+        0.24
+      ],
+      "box": {
+        "min": [
+          52.22,
+          84.0,
+          391.48
+        ],
+        "max": [
+          52.42,
+          88.05000000000001,
+          391.72
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Source-floor-supported arcade column; central public passage remains open",
+      "supportFloor": "gallery-W-84-376"
+    },
+    {
+      "id": "arcade-upper-post-2-1",
+      "owner": "v02:arcade-upper-post-2-1",
+      "center": [
+        57.68,
+        86.025,
+        391.6
+      ],
+      "size": [
+        0.2,
+        4.05,
+        0.24
+      ],
+      "box": {
+        "min": [
+          57.58,
+          84.0,
+          391.48
+        ],
+        "max": [
+          57.78,
+          88.05000000000001,
+          391.72
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Source-floor-supported arcade column; central public passage remains open",
+      "supportFloor": "gallery-W-84-376"
+    },
+    {
+      "id": "arcade-upper-edge--1",
+      "owner": "v02:arcade-upper-edge--1",
+      "center": [
+        51.875,
+        88.47,
+        386
+      ],
+      "size": [
+        0.05,
+        0.2,
+        12.35
+      ],
+      "box": {
+        "min": [
+          51.85,
+          88.37,
+          379.825
+        ],
+        "max": [
+          51.9,
+          88.57,
+          392.175
+        ]
+      },
+      "material": "steel",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Attached dark folded drip-edge fascia; shallow cosmetic roof edge"
+    },
+    {
+      "id": "arcade-upper-edge-light--1",
+      "owner": "v02:arcade-upper-edge-light--1",
+      "center": [
+        51.848,
+        88.50999999999999,
+        386
+      ],
+      "size": [
+        0.008,
+        0.035,
+        12.15
+      ],
+      "box": {
+        "min": [
+          51.844,
+          88.49249999999999,
+          379.925
+        ],
+        "max": [
+          51.852,
+          88.52749999999999,
+          392.075
+        ]
+      },
+      "material": "cyan",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Thin cyan roof-edge source, no dynamic light"
+    },
+    {
+      "id": "arcade-upper-edge-1",
+      "owner": "v02:arcade-upper-edge-1",
+      "center": [
+        58.125,
+        88.47,
+        386
+      ],
+      "size": [
+        0.05,
+        0.2,
+        12.35
+      ],
+      "box": {
+        "min": [
+          58.1,
+          88.37,
+          379.825
+        ],
+        "max": [
+          58.15,
+          88.57,
+          392.175
+        ]
+      },
+      "material": "steel",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Attached dark folded drip-edge fascia; shallow cosmetic roof edge"
+    },
+    {
+      "id": "arcade-upper-edge-light-1",
+      "owner": "v02:arcade-upper-edge-light-1",
+      "center": [
+        58.152,
+        88.50999999999999,
+        386
+      ],
+      "size": [
+        0.008,
+        0.035,
+        12.15
+      ],
+      "box": {
+        "min": [
+          58.148,
+          88.49249999999999,
+          379.925
+        ],
+        "max": [
+          58.156,
+          88.52749999999999,
+          392.075
+        ]
+      },
+      "material": "cyan",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "role": "Thin cyan roof-edge source, no dynamic light"
+    },
+    {
+      "id": "arcade-upper-soffit-0",
+      "owner": "v02:arcade-upper-soffit-0",
+      "center": [
+        55,
+        88.33749999999999,
+        381.5
+      ],
+      "size": [
+        0.09,
+        0.025,
+        1.2
+      ],
+      "box": {
+        "min": [
+          54.955,
+          88.32499999999999,
+          380.9
+        ],
+        "max": [
+          55.045,
+          88.35,
+          382.1
+        ]
+      },
+      "material": "warm",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "sourceSurface": "arcade-upper-roof",
+      "role": "Warm strip flush-mounted on the closed centre rib, not a dynamic light"
+    },
+    {
+      "id": "arcade-upper-soffit-1",
+      "owner": "v02:arcade-upper-soffit-1",
+      "center": [
+        55,
+        88.33749999999999,
+        384.5
+      ],
+      "size": [
+        0.09,
+        0.025,
+        1.2
+      ],
+      "box": {
+        "min": [
+          54.955,
+          88.32499999999999,
+          383.9
+        ],
+        "max": [
+          55.045,
+          88.35,
+          385.1
+        ]
+      },
+      "material": "warm",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "sourceSurface": "arcade-upper-roof",
+      "role": "Warm strip flush-mounted on the closed centre rib, not a dynamic light"
+    },
+    {
+      "id": "arcade-upper-soffit-2",
+      "owner": "v02:arcade-upper-soffit-2",
+      "center": [
+        55,
+        88.33749999999999,
+        387.5
+      ],
+      "size": [
+        0.09,
+        0.025,
+        1.2
+      ],
+      "box": {
+        "min": [
+          54.955,
+          88.32499999999999,
+          386.9
+        ],
+        "max": [
+          55.045,
+          88.35,
+          388.1
+        ]
+      },
+      "material": "warm",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "sourceSurface": "arcade-upper-roof",
+      "role": "Warm strip flush-mounted on the closed centre rib, not a dynamic light"
+    },
+    {
+      "id": "arcade-upper-soffit-3",
+      "owner": "v02:arcade-upper-soffit-3",
+      "center": [
+        55,
+        88.33749999999999,
+        390.5
+      ],
+      "size": [
+        0.09,
+        0.025,
+        1.2
+      ],
+      "box": {
+        "min": [
+          54.955,
+          88.32499999999999,
+          389.9
+        ],
+        "max": [
+          55.045,
+          88.35,
+          391.1
+        ]
+      },
+      "material": "warm",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_GALLERIES",
+      "detail": true,
+      "arcade": true,
+      "sourceSurface": "arcade-upper-roof",
+      "role": "Warm strip flush-mounted on the closed centre rib, not a dynamic light"
+    }
+  ],
+  "supportConnections": [
+    {
+      "lower": "arcade-lower-beam-0",
+      "upper": "arcade-lower-roof"
+    },
+    {
+      "lower": "gallery-W-24-326",
+      "upper": "arcade-lower-post-0--1"
+    },
+    {
+      "lower": "arcade-lower-post-0--1",
+      "upper": "arcade-lower-beam-0"
+    },
+    {
+      "lower": "gallery-W-24-326",
+      "upper": "arcade-lower-post-0-1"
+    },
+    {
+      "lower": "arcade-lower-post-0-1",
+      "upper": "arcade-lower-beam-0"
+    },
+    {
+      "lower": "arcade-lower-beam-1",
+      "upper": "arcade-lower-roof"
+    },
+    {
+      "lower": "gallery-W-24-326",
+      "upper": "arcade-lower-post-1--1"
+    },
+    {
+      "lower": "arcade-lower-post-1--1",
+      "upper": "arcade-lower-beam-1"
+    },
+    {
+      "lower": "gallery-W-24-326",
+      "upper": "arcade-lower-post-1-1"
+    },
+    {
+      "lower": "arcade-lower-post-1-1",
+      "upper": "arcade-lower-beam-1"
+    },
+    {
+      "lower": "arcade-lower-beam-2",
+      "upper": "arcade-lower-roof"
+    },
+    {
+      "lower": "gallery-W-24-326",
+      "upper": "arcade-lower-post-2--1"
+    },
+    {
+      "lower": "arcade-lower-post-2--1",
+      "upper": "arcade-lower-beam-2"
+    },
+    {
+      "lower": "gallery-W-24-326",
+      "upper": "arcade-lower-post-2-1"
+    },
+    {
+      "lower": "arcade-lower-post-2-1",
+      "upper": "arcade-lower-beam-2"
+    },
+    {
+      "lower": "arcade-middle-beam-0",
+      "upper": "arcade-middle-roof"
+    },
+    {
+      "lower": "gallery-E-52-300",
+      "upper": "arcade-middle-post-0--1"
+    },
+    {
+      "lower": "arcade-middle-post-0--1",
+      "upper": "arcade-middle-beam-0"
+    },
+    {
+      "lower": "gallery-E-52-300",
+      "upper": "arcade-middle-post-0-1"
+    },
+    {
+      "lower": "arcade-middle-post-0-1",
+      "upper": "arcade-middle-beam-0"
+    },
+    {
+      "lower": "arcade-middle-beam-1",
+      "upper": "arcade-middle-roof"
+    },
+    {
+      "lower": "gallery-E-52-300",
+      "upper": "arcade-middle-post-1--1"
+    },
+    {
+      "lower": "arcade-middle-post-1--1",
+      "upper": "arcade-middle-beam-1"
+    },
+    {
+      "lower": "gallery-E-52-300",
+      "upper": "arcade-middle-post-1-1"
+    },
+    {
+      "lower": "arcade-middle-post-1-1",
+      "upper": "arcade-middle-beam-1"
+    },
+    {
+      "lower": "arcade-middle-beam-2",
+      "upper": "arcade-middle-roof"
+    },
+    {
+      "lower": "gallery-E-52-300",
+      "upper": "arcade-middle-post-2--1"
+    },
+    {
+      "lower": "arcade-middle-post-2--1",
+      "upper": "arcade-middle-beam-2"
+    },
+    {
+      "lower": "gallery-E-52-300",
+      "upper": "arcade-middle-post-2-1"
+    },
+    {
+      "lower": "arcade-middle-post-2-1",
+      "upper": "arcade-middle-beam-2"
+    },
+    {
+      "lower": "arcade-upper-beam-0",
+      "upper": "arcade-upper-roof"
+    },
+    {
+      "lower": "gallery-W-84-376",
+      "upper": "arcade-upper-post-0--1"
+    },
+    {
+      "lower": "arcade-upper-post-0--1",
+      "upper": "arcade-upper-beam-0"
+    },
+    {
+      "lower": "gallery-W-84-376",
+      "upper": "arcade-upper-post-0-1"
+    },
+    {
+      "lower": "arcade-upper-post-0-1",
+      "upper": "arcade-upper-beam-0"
+    },
+    {
+      "lower": "arcade-upper-beam-1",
+      "upper": "arcade-upper-roof"
+    },
+    {
+      "lower": "gallery-W-84-376",
+      "upper": "arcade-upper-post-1--1"
+    },
+    {
+      "lower": "arcade-upper-post-1--1",
+      "upper": "arcade-upper-beam-1"
+    },
+    {
+      "lower": "gallery-W-84-376",
+      "upper": "arcade-upper-post-1-1"
+    },
+    {
+      "lower": "arcade-upper-post-1-1",
+      "upper": "arcade-upper-beam-1"
+    },
+    {
+      "lower": "arcade-upper-beam-2",
+      "upper": "arcade-upper-roof"
+    },
+    {
+      "lower": "gallery-W-84-376",
+      "upper": "arcade-upper-post-2--1"
+    },
+    {
+      "lower": "arcade-upper-post-2--1",
+      "upper": "arcade-upper-beam-2"
+    },
+    {
+      "lower": "gallery-W-84-376",
+      "upper": "arcade-upper-post-2-1"
+    },
+    {
+      "lower": "arcade-upper-post-2-1",
+      "upper": "arcade-upper-beam-2"
+    }
+  ],
+  "existingRouteSegmentChecks": 970,
+  "airClearance": [
+    {
+      "lane": "aerial-band-0",
+      "bankInclusiveVerticalEnvelope": [
+        36.628590792194714,
+        39.371409207805286
+      ],
+      "minimumVerticalGap": 8.028590792194713,
+      "proof": "Every route position; conservative complete banked vehicle envelope"
+    },
+    {
+      "lane": "aerial-band-1",
+      "bankInclusiveVerticalEnvelope": [
+        63.628590792194714,
+        66.37140920780529
+      ],
+      "minimumVerticalGap": 7.028590792194713,
+      "proof": "Every route position; conservative complete banked vehicle envelope"
+    },
+    {
+      "lane": "aerial-band-2",
+      "bankInclusiveVerticalEnvelope": [
+        112.62859079219471,
+        115.37140920780529
+      ],
+      "minimumVerticalGap": 24.02859079219472,
+      "proof": "Every route position; conservative complete banked vehicle envelope"
+    }
+  ],
+  "trainClearance": {
+    "conservativeY": [
+      96,
+      106
+    ],
+    "minimumVerticalGap": 7.400000000000006
+  },
+  "failures": [],
+  "scope": "Actual compound source/prop/V02 boxes and conservative graph body corridors. No original building/route relocation. Normal input, native support/camera, source/export and visual acceptance remain separate."
+}
