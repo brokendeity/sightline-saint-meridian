@@ -1,0 +1,36 @@
+{
+  "status": "PASS saved-source A/B/S renders and projection only; full reference quality remains unaccepted",
+  "masterSHA256": "e862d3717c8117ab7e151aff992633c6e3bd61b077d167107639c0d8a8d4f668",
+  "nativeReportSHA256": "19c755f3dc513196615d725907113f213bc227ae109502bda9cfce36b057f2a2",
+  "captures": [
+    {
+      "id": "A",
+      "file": "evidence/service-tower/blender-A.png",
+      "sha256": "a3c8599e638fba1aa50ce3070ec80e8263bb071629a908edfbf611436b43c769",
+      "maximumProjectionErrorPixels": 6.278291823384293e-05,
+      "samples": 16
+    },
+    {
+      "id": "B",
+      "file": "evidence/service-tower/blender-B.png",
+      "sha256": "2a40b1e7c868c30632acd638f1615d2b463678bbe2670ad5ccc59912ee2a036a",
+      "maximumProjectionErrorPixels": 0.003379802851933891,
+      "samples": 16
+    },
+    {
+      "id": "S",
+      "file": "evidence/service-tower/blender-S.png",
+      "sha256": "78081b4b791cd70fa60813e873a9b03bd2c604c8bae26df51088e6bb4fed82d2",
+      "maximumProjectionErrorPixels": 0.00030278663289112187,
+      "samples": 16
+    },
+    {
+      "id": "P",
+      "file": "evidence/service-tower/blender-P.png",
+      "sha256": "2d40043313e03a267aad66b1531cc827a2314abfac0d8daca5c579cf21fc4ff0",
+      "maximumProjectionErrorPixels": 0.0013288535467267956,
+      "samples": 16
+    }
+  ],
+  "scope": "Actual saved-source renders and geometric optics; not native/Blender shading equivalence or full approved-reference quality"
+}

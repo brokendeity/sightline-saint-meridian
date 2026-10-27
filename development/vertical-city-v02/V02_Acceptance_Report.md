@@ -131,3 +131,8 @@ See the hash-bound JSON, complete compressed traces, retained failures and route
 - actual hero switching retains the guide without advancing it or replacing Sightline objectives
 - labelled existing navigation-refresh API invalidates stale guidance; actual Clear route removes it
 - The readable kiosk front and portrait/landscape screenshots are reviewed separately. These prototypes do not establish final landmark art or high-speed camera acceptance.
+
+
+## Current stepped service tower checkpoint — 2026-10-27
+
+See `V02_SERVICE_TOWER.md` and hash-bound `V02_Service_Tower_Evidence.json` for the latest complete game candidate, preserved older builds, actual architectural replacement and current journey/loop/input validation. This supersedes earlier candidate identities only; historical evidence remains intact. Full approved-reference visual quality remains FAIL, upper plant maintenance access remains incomplete, and the combined current release/regression/performance/physical-device gates are still open.

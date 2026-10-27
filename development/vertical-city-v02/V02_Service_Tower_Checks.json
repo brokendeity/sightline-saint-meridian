@@ -1,0 +1,60 @@
+{
+  "status": "PASS three current public loops, retained HUD/input cases and installed skill client",
+  "entrySHA256": "dd9db92b5c108f885ef43a4cf58d70892fb79ae44407b5b509652aac5b05509f",
+  "manifestSHA256": "a39dc410368fcfce70a5b1f45d463c074532ddc053badb9aeb37bdeef2f556bb",
+  "jobs": [
+    {
+      "name": "loops",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_current_city_loops.cjs"
+      ],
+      "environment": {
+        "V02_LOOP_BUILD": "V02_Service_Tower_Build.json",
+        "V02_LOOP_RUN": "service-tower-loops",
+        "V02_LOOP_REPORT": "V02_Service_Tower_Loops.json"
+      },
+      "returncode": 0,
+      "wallSeconds": 67.57431629113853,
+      "log": "evidence/service-tower-checks/loops.txt"
+    },
+    {
+      "name": "hud",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_hud_candidate.cjs"
+      ],
+      "environment": {
+        "V02_HUD_ENTRY": "SIGHTLINE_SAINT_MERIDIAN_V02_SERVICE_TOWER.html",
+        "V02_HUD_RUN": "service-tower-hud",
+        "V02_HUD_REPORT": "V02_Service_Tower_HUD.json"
+      },
+      "returncode": 0,
+      "wallSeconds": 23.668889875058085,
+      "log": "evidence/service-tower-checks/hud.txt"
+    },
+    {
+      "name": "stock",
+      "command": [
+        "node",
+        "development/vertical-city-v02/tools/run-skill-client.cjs",
+        "--url",
+        "http://127.0.0.1:8766/SIGHTLINE_SAINT_MERIDIAN_V02_SERVICE_TOWER.html?capture=backspool",
+        "--click-selector",
+        "#v02Start",
+        "--actions-json",
+        "{\"steps\": [{\"buttons\": [\"a\"], \"frames\": 45}, {\"buttons\": [], \"frames\": 12}]}",
+        "--iterations",
+        "1",
+        "--pause-ms",
+        "250",
+        "--screenshot-dir",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/development/vertical-city-v02/evidence/stock-service-tower"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 11.074794500134885,
+      "log": "evidence/service-tower-checks/stock.txt"
+    }
+  ]
+}
