@@ -1,0 +1,4 @@
+{
+  "status": "Rejected test setup, not roof collision failure",
+  "reason": "Repeated fixture called clearPad after startGame. clearPad intentionally pauses an active game on controller disconnect. Native position/velocity/sequence clock remained unchanged. Reorder labelled setup to clear input/pad before startGame; leave runtime behavior unchanged."
+}

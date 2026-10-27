@@ -7,11 +7,13 @@ This runner does not alter the game, synthesize rails or inject resources.
 from pathlib import Path
 import gzip,hashlib,json,os,re,subprocess,sys,time
 R=Path(__file__).resolve().parents[2];D=R/'development/vertical-city-v02'
-build=json.loads((D/'V02_Public_Terrace_Build.json').read_text())
+buildName=os.environ.get('V02_ROUTE_BUILD_REPORT','V02_Public_Terrace_Build.json');assert Path(buildName).name==buildName
+build=json.loads((D/buildName).read_text())
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 assert sha(R/build['entry'])==build['entrySHA256']
 assert sha(R/build['manifest'])==build['manifestSHA256']
-base=D/'evidence/current-station-routes';base.mkdir(parents=True,exist_ok=True)
+suite=os.environ.get('V02_ROUTE_SUITE','current-station-routes');assert re.fullmatch('[a-z0-9-]+',suite)
+base=D/'evidence'/suite;base.mkdir(parents=True,exist_ok=True)
 files=[build['entry'],build['manifest'],'scripts/vertical-v02/station_route_environment.cjs',
        'scripts/vertical-v02/route_camera_probe.cjs','scripts/vertical-v02/test_public_station.cjs',
        'scripts/vertical-v02/test_momentum_route.cjs','scripts/vertical-v02/test_mastery_route.cjs',
@@ -31,7 +33,8 @@ jobs=[
 report={'status':'RUNNING','entry':build['entry'],'entrySHA256':build['entrySHA256'],
  'manifest':build['manifest'],'manifestSHA256':build['manifestSHA256'],'hashes':locked,
  'scope':'Six uninterrupted normal-input station approaches on the current combined city. One labelled starting fixture per run; full bank is earned by actual running. Not full city/release/performance acceptance.', 'jobs':[]}
-out=D/'V02_Current_Station_Routes.json'
+reportName=os.environ.get('V02_ROUTE_REPORT','V02_Current_Station_Routes.json');assert Path(reportName).name==reportName
+out=D/reportName
 def save():out.write_text(json.dumps(report,indent=2)+'\n')
 def valid(name,file,summary):
  p=base/name/summary
@@ -45,7 +48,7 @@ for name,file,summary,env in jobs:
  else:
   print('START',name,flush=True)
   with log.open('w')as f:
-   run=subprocess.run(['node','scripts/vertical-v02/'+file],cwd=R,stdout=f,stderr=subprocess.STDOUT,env={**os.environ,**env,'V02_ROUTE_BUILD':'V02_Public_Terrace_Build.json','V02_ROUTE_RUN':name})
+   run=subprocess.run(['node','scripts/vertical-v02/'+file],cwd=R,stdout=f,stderr=subprocess.STDOUT,env={**os.environ,**env,'V02_ROUTE_BUILD':buildName,'V02_ROUTE_RUN':name,'V02_ROUTE_SUITE':suite})
   code=run.returncode
  assert fingerprint()==locked,'Runtime/test configuration changed during route acceptance'
  if code or not valid(name,file,summary):

@@ -1,0 +1,6 @@
+"""Derive the latest complete game with only the station-pavilion asset selector."""
+from pathlib import Path
+import hashlib,json
+R=Path(__file__).resolve().parents[2];D=R/'development/vertical-city-v02';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();prior=json.loads((D/'V02_Public_Terrace_Build.json').read_text());source=R/prior['entry'];assert sha(source)==prior['entrySHA256'];s=source.read_text();old="(state.pilot?'pilot':'public-terraces/runtime')";new="(state.pilot?'pilot':'station-pavilion/runtime')";assert s.count(old)==1
+entry=R/'SIGHTLINE_SAINT_MERIDIAN_V02_STATION_PAVILION.html';entry.write_text(s.replace(old,new,1));assert entry.read_text().replace(new,old,1)==s;manifest='assets/city/vertical-v02/station-pavilion/runtime/manifest.json'
+report={'status':'CANDIDATE; source/shipping/native/visual acceptance pending','entry':entry.name,'entrySHA256':sha(entry),'source':source.name,'sourceSHA256':sha(source),'oldSelector':old,'newSelector':new,'manifest':manifest,'manifestSHA256':sha(R/manifest),'scope':'Only the architecture-manifest selector changes; no runtime control/camera/physics/power/shader changes'};(D/'V02_Station_Pavilion_Build.json').write_text(json.dumps(report,indent=2)+'\n');print(entry.name,report['entrySHA256'])

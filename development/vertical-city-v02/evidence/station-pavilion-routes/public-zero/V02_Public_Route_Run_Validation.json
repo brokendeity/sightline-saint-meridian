@@ -1,0 +1,113 @@
+{
+  "status": "PASS uninterrupted ground-to-station physical circulation",
+  "errors": [],
+  "ambientHits": [],
+  "method": "One controlled ground start [55,.42,210]; WASD only (O walk in baseline, ordinary run in RUN_PUBLIC variant). No jump, rail, Drive, teleport or position assignment after start.",
+  "entrySHA256": "37ceb8fc39a275e4cba5518f4ffd83d25de2dc6cc8d94d12043a9501b227ab67",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_STATION_PAVILION.html",
+  "manifest": "assets/city/vertical-v02/station-pavilion/runtime/manifest.json",
+  "buildReport": "V02_Station_Pavilion_Build.json",
+  "manifestSHA256": "201eaa0a45e7703c6ff1097c79ec97b571acf71848010850cf4d6b9d2d8cd107",
+  "testConfigurationSHA256": "916584e4a073b41e088aba5bf8c375aaf13e9e49ea8022f3a4777190ad52715d",
+  "evidenceRun": "public-zero",
+  "evidenceSuite": "station-pavilion-routes",
+  "testSourceSHA256": "d5f4d5cd6baab74f16007b3c2775364161e25e1cedb08ba3e5f1068310cf3875",
+  "initialBank": 0,
+  "routeStartFrame": 0,
+  "routeTraceStart": 0,
+  "segments": [
+    {
+      "name": "ground access",
+      "seconds": 2.4,
+      "at": [
+        60.909999999999975,
+        0.42,
+        215.4450000000005
+      ]
+    },
+    {
+      "name": "A stair 0 to 24",
+      "seconds": 23.933333333333334,
+      "at": [
+        61.01999999999997,
+        24.42,
+        215.55500000000052
+      ]
+    },
+    {
+      "name": "A stair 24 to 52",
+      "seconds": 31.183333333333334,
+      "at": [
+        61.09999999999998,
+        52.42,
+        215.53000000000048
+      ]
+    },
+    {
+      "name": "A stair 52 to 84",
+      "seconds": 30.133333333333333,
+      "at": [
+        61.09999999999998,
+        84.42,
+        215.53000000000048
+      ]
+    },
+    {
+      "name": "Y84 west public gallery",
+      "seconds": 26.933333333333334,
+      "at": [
+        60.90499999999998,
+        84.42,
+        375.4400000000202
+      ]
+    },
+    {
+      "name": "C stair 84 to 100",
+      "seconds": 19.216666666666665,
+      "at": [
+        61.094999999999985,
+        100.42,
+        375.52500000002016
+      ]
+    },
+    {
+      "name": "station arrival",
+      "seconds": 1.5333333333333334,
+      "at": [
+        66.42999999999996,
+        100.42,
+        375.91500000002014
+      ]
+    }
+  ],
+  "final": {
+    "p": [
+      66.42999999999996,
+      100.42,
+      375.91500000002014
+    ],
+    "onGround": true,
+    "trauma": 0,
+    "releases": 0
+  },
+  "seconds": 135.33333333333334,
+  "distance": 774.3808671453033,
+  "airFrames": 0,
+  "maxUncommandedHorizontal": 2.731148640577885e-14,
+  "combatExposure": "No incoming or physical damage in this trial",
+  "capture": {
+    "player": [
+      66.42999999999996,
+      100.42,
+      375.91500000002014
+    ],
+    "camera": [
+      67.77149126756072,
+      102.39963744936892,
+      380.0715320433281
+    ],
+    "policy": "Actual final native camera; render only, no camera override"
+  },
+  "fullTrace": "V02_Public_Route_Run_Validation.trace.json.gz",
+  "traceFrames": 8120
+}

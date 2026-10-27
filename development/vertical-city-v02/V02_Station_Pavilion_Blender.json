@@ -1,0 +1,29 @@
+{
+  "status": "PASS saved-source A/B/S renders and projection only; full reference quality remains unaccepted",
+  "masterSHA256": "f2d228a806613f428f690b29c7b3a9559b4ac0f0e9b1110f7796e09d013490cb",
+  "nativeReportSHA256": "a4d81e7139effe8565506c7e1d049fde1462d3447dddc6aee3398772744ec85f",
+  "captures": [
+    {
+      "id": "A",
+      "file": "evidence/station-pavilion/blender-A.png",
+      "sha256": "b46619de611a0a18a3a0ba3586f91ea7d60d50cb6ec6645b4f837d428638554b",
+      "maximumProjectionErrorPixels": 6.278291823384293e-05,
+      "samples": 16
+    },
+    {
+      "id": "B",
+      "file": "evidence/station-pavilion/blender-B.png",
+      "sha256": "ae58bc550f498026090a8517a4843a90f3d6b6c766b656fa0091bf6a7d36c6d8",
+      "maximumProjectionErrorPixels": 0.003379802851933891,
+      "samples": 16
+    },
+    {
+      "id": "S",
+      "file": "evidence/station-pavilion/blender-S.png",
+      "sha256": "ae92301984ff1a327d41160ae94021fc8054b88290572cce0cdbbfc7db0b6b33",
+      "maximumProjectionErrorPixels": 0.00030278663289112187,
+      "samples": 16
+    }
+  ],
+  "scope": "Actual saved-source renders and geometric optics; not native/Blender shading equivalence or full approved-reference quality"
+}

@@ -1,0 +1,60 @@
+{
+  "status": "PASS three current public loops, retained HUD/input cases and installed skill client",
+  "entrySHA256": "37ceb8fc39a275e4cba5518f4ffd83d25de2dc6cc8d94d12043a9501b227ab67",
+  "manifestSHA256": "201eaa0a45e7703c6ff1097c79ec97b571acf71848010850cf4d6b9d2d8cd107",
+  "jobs": [
+    {
+      "name": "loops",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_current_city_loops.cjs"
+      ],
+      "environment": {
+        "V02_LOOP_BUILD": "V02_Station_Pavilion_Build.json",
+        "V02_LOOP_RUN": "station-pavilion-loops",
+        "V02_LOOP_REPORT": "V02_Station_Pavilion_Loops.json"
+      },
+      "returncode": 0,
+      "wallSeconds": 69.38720929063857,
+      "log": "evidence/station-pavilion-checks/loops.txt"
+    },
+    {
+      "name": "hud",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_hud_candidate.cjs"
+      ],
+      "environment": {
+        "V02_HUD_ENTRY": "SIGHTLINE_SAINT_MERIDIAN_V02_STATION_PAVILION.html",
+        "V02_HUD_RUN": "station-pavilion-hud",
+        "V02_HUD_REPORT": "V02_Station_Pavilion_HUD.json"
+      },
+      "returncode": 0,
+      "wallSeconds": 24.06351974979043,
+      "log": "evidence/station-pavilion-checks/hud.txt"
+    },
+    {
+      "name": "stock",
+      "command": [
+        "node",
+        "development/vertical-city-v02/tools/run-skill-client.cjs",
+        "--url",
+        "http://127.0.0.1:8766/SIGHTLINE_SAINT_MERIDIAN_V02_STATION_PAVILION.html?capture=backspool",
+        "--click-selector",
+        "#v02Start",
+        "--actions-json",
+        "{\"steps\": [{\"buttons\": [\"KeyA\"], \"frames\": 45}, {\"buttons\": [], \"frames\": 12}]}",
+        "--iterations",
+        "1",
+        "--pause-ms",
+        "250",
+        "--screenshot-dir",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/development/vertical-city-v02/evidence/stock-station-pavilion"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 11.775629333220422,
+      "log": "evidence/station-pavilion-checks/stock.txt"
+    }
+  ]
+}

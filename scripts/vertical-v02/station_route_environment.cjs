@@ -11,8 +11,9 @@ function load(){
   assert.equal(sha(build.entry),build.entrySHA256);
   assert.equal(sha(build.manifest),build.manifestSHA256);
   const run=process.env.V02_ROUTE_RUN;assert(run&&/^[a-z0-9-]+$/.test(run),'Separate current evidence run required');
-  const output=path.join(D,'evidence/current-station-routes',run);fs.mkdirSync(path.join(output,'evidence'),{recursive:true});
-  return {entry:build.entry,manifest:build.manifest,output,current:true,evidence:{entry:build.entry,manifest:build.manifest,buildReport:name,entrySHA256:sha(build.entry),manifestSHA256:sha(build.manifest),testConfigurationSHA256:sha(path.relative(R,__filename)),evidenceRun:run}};
+  const suite=process.env.V02_ROUTE_SUITE||'current-station-routes';assert(/^[a-z0-9-]+$/.test(suite),'Separate evidence suite must be a simple directory name');
+  const output=path.join(D,'evidence',suite,run);fs.mkdirSync(path.join(output,'evidence'),{recursive:true});
+  return {entry:build.entry,manifest:build.manifest,output,current:true,evidence:{entry:build.entry,manifest:build.manifest,buildReport:name,entrySHA256:sha(build.entry),manifestSHA256:sha(build.manifest),testConfigurationSHA256:sha(path.relative(R,__filename)),evidenceRun:run,evidenceSuite:suite}};
 }
 async function ready(page,environment){
   if(!environment.current)return;
