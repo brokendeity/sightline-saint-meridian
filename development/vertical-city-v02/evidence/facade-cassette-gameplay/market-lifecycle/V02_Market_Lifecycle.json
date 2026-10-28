@@ -1,0 +1,194 @@
+{
+  "scope": "Local controlled start; actual keys, standard controller, CDP touch and hero selector. Negative API and respawn cases labelled. No injected hazard damage or encounter state.",
+  "results": [
+    {
+      "name": "actual pause/resume freezes all civilians and both incident clocks",
+      "pass": true
+    },
+    {
+      "name": "hero selector pauses/resumes resident and walked route without resetting progress",
+      "pass": true
+    },
+    {
+      "name": "native jump pauses breadcrumb recording; resident stays on supported floor and resumes",
+      "pass": true
+    },
+    {
+      "name": "normal departure beyond market leaves resident safely waiting; marked path reconnection resumes the same rescue",
+      "pass": true
+    },
+    {
+      "name": "labelled negative street-contract API cannot replace active rescue",
+      "pass": true
+    },
+    {
+      "name": "actual End clears escort ownership/route without warping resident or awarding completion",
+      "pass": true
+    },
+    {
+      "name": "CDP touch starts incident through an unobscured 44px control; responsive captures",
+      "pass": true
+    },
+    {
+      "name": "standard simulated controller Y starts the same incident",
+      "pass": true
+    },
+    {
+      "name": "real electrical contact causes shared-health defeat; no injected damage or false rescue award",
+      "pass": true,
+      "attempt": 3,
+      "shockEvents": 13
+    },
+    {
+      "name": "labelled existing respawn API retains failed incident and safe resident position",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_FACADE_CASSETTES.html",
+  "manifest": "assets/city/vertical-v02/upper-anchor-mounts/runtime/manifest.json",
+  "stage": "hud",
+  "evidenceRun": "facade-cassette-gameplay/market-lifecycle",
+  "entrySHA256": "1677e30f9866c3f80119185b72c0db7bbb648942c83788953b9c3f8088c7d0c1",
+  "manifestSHA256": "792e4bb30a68c364bd2ce9123e10eb5e462af8f4b583922e104f14ff8aaf38bd",
+  "encounterSHA256": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+  "marketSHA256": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+  "cassetteReadiness": {
+    "adapterSHA256": "28a515f9c0ab555b3d4b3b24f11470efd7ca42b27fbaa0043cc35140514012ad",
+    "state": {
+      "ready": true,
+      "loading": false,
+      "error": null,
+      "owners": [
+        {
+          "id": "building-141",
+          "parent": true,
+          "features": 1117,
+          "hidden": 0,
+          "visible": true
+        },
+        {
+          "id": "building-160",
+          "parent": true,
+          "features": 837,
+          "hidden": 0,
+          "visible": true
+        },
+        {
+          "id": "building-162",
+          "parent": true,
+          "features": 474,
+          "hidden": 0,
+          "visible": true
+        }
+      ],
+      "features": 2428,
+      "hidden": 0,
+      "triangles": 155392,
+      "newDynamicLights": 0,
+      "newCollisionRecords": 0,
+      "sourceMasterSHA256": "de5e381572d622623943d48a40bb911b89d141812f21d8c902828777de42d8e2"
+    },
+    "scope": "Fully loaded before the actual input sequence; original helper initial fixture precedes this guard"
+  },
+  "stages": [
+    {
+      "name": "resident found",
+      "frame": 469,
+      "p": [
+        84.99105939160164,
+        24.42,
+        361.67286694116126
+      ],
+      "phase": "isolate",
+      "civilians": [
+        [
+          85,
+          24,
+          364
+        ],
+        [
+          73.95783491854309,
+          24,
+          359.05391931740826
+        ],
+        [
+          85.98916666666516,
+          24,
+          373
+        ]
+      ]
+    },
+    {
+      "name": "power isolated",
+      "frame": 591,
+      "p": [
+        82.086610550307,
+        24.42,
+        357.0905008266443
+      ],
+      "phase": "rendezvous",
+      "civilians": [
+        [
+          85,
+          24,
+          364
+        ],
+        [
+          73.53853930639936,
+          24,
+          360.935733315693
+        ],
+        [
+          87.93505935694034,
+          24,
+          373.4023742776788
+        ]
+      ]
+    },
+    {
+      "name": "escort begins",
+      "frame": 715,
+      "p": [
+        84.99335781813694,
+        24.42,
+        361.67266392085105
+      ],
+      "phase": "escort",
+      "civilians": [
+        [
+          84.99947677157884,
+          24,
+          363.81666741330827
+        ],
+        [
+          71.16195899960378,
+          24,
+          360.9559938635392
+        ],
+        [
+          87.99445746459912,
+          24,
+          375.7782985839727
+        ]
+      ]
+    }
+  ],
+  "uiTransitions": [
+    {
+      "action": "hero",
+      "hero": "sightline",
+      "throughPauseTools": true,
+      "resumed": true
+    },
+    {
+      "action": "hero",
+      "hero": "backspool",
+      "throughPauseTools": true,
+      "resumed": true
+    }
+  ],
+  "status": "PASS market interruption/input/failure cases",
+  "fullTrace": "V02_Market_Lifecycle.trace.json.gz",
+  "traceFrames": 4411
+}

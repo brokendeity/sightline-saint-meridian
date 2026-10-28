@@ -16,6 +16,8 @@ Experimental lighting build: [SIGHTLINE_SAINT_MERIDIAN_V02_DIFFUSE_LIGHTING.html
 
 Experimental camera/upper-rail build: [SIGHTLINE_SAINT_MERIDIAN_V02_UPPER_ANCHORS.html](SIGHTLINE_SAINT_MERIDIAN_V02_UPPER_ANCHORS.html). Adds two Blender-authored physical receiving bollards, body-aware camera composition and responsive HUD placement. Six current station approaches, short-catch recovery, all three public loops and12retained encounter/replay/discovery cases pass their stated checks. A fixed-resolution60-second matched lower-loop benchmark is recorded. This remains unpromoted; final reference architecture and combined release acceptance are unfinished. [Exact evidence and limits](development/vertical-city-v02/V02_UPPER_ANCHORS.md) · [Reference-surface diagnosis](development/vertical-city-v02/V02_REFERENCE_SURFACE_STUDY.md).
 
+Experimental facade build: [SIGHTLINE_SAINT_MERIDIAN_V02_FACADE_CASSETTES.html](SIGHTLINE_SAINT_MERIDIAN_V02_FACADE_CASSETTES.html) retains the complete upper-receiver/body-framing game and adds 2,428 Blender-authored window surrounds on three original building owners. Current loops, six station approaches, recovery and 12 encounter/replay/discovery cases pass their bounded checks. A matched 60-second fixed-resolution CPU/GPU comparison is included. The default checkpoint remains unchanged; V02 reference architecture, lighting and final release acceptance are unfinished. [Source, gameplay and measurement limits](development/vertical-city-v02/V02_FACADE_CASSETTES.md).
+
 ## Earlier checkpoints
 
 The entries below are historical. Their files, snapshots and branches remain available for rollback.

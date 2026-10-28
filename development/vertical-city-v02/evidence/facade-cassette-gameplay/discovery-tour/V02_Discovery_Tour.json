@@ -1,0 +1,1799 @@
+{
+  "status": "PASS four-location normal-input discovery and public information tour",
+  "scope": "One ground start, four supported discoveries and their useful routes, then public return. No player, health, resource or discovery writes during gameplay.",
+  "stages": [
+    {
+      "name": "directory",
+      "frame": 32,
+      "found": [],
+      "route": null
+    },
+    {
+      "name": "market",
+      "frame": 2941,
+      "found": [
+        "market-info"
+      ],
+      "route": {
+        "destination": "poi-market",
+        "status": "arrived",
+        "index": 28,
+        "edges": [
+          "E0192",
+          "E0156",
+          "E0151",
+          "E0000",
+          "E0002",
+          "E0004",
+          "E0006",
+          "E0008",
+          "E0010",
+          "E0262"
+        ],
+        "blockedEdges": []
+      }
+    },
+    {
+      "name": "maintenance",
+      "frame": 6217,
+      "found": [
+        "market-info",
+        "maintenance-access"
+      ],
+      "route": {
+        "destination": "poi-maintenance",
+        "status": "arrived",
+        "index": 39,
+        "edges": [
+          "E0263",
+          "E0011",
+          "E0009",
+          "public-terrace-24-approach",
+          "LOGGIA_E_016",
+          "LOGGIA_E_000",
+          "LOGGIA_E_002",
+          "LOGGIA_E_019",
+          "public-terrace-52-return",
+          "E0266"
+        ],
+        "blockedEdges": []
+      }
+    },
+    {
+      "name": "overhead",
+      "frame": 7379,
+      "found": [
+        "market-info",
+        "maintenance-access"
+      ],
+      "route": {
+        "destination": "service-upper-58.4",
+        "status": "arrived",
+        "index": 16,
+        "edges": [
+          "E0270",
+          "E0182",
+          "E0184",
+          "E0188"
+        ],
+        "blockedEdges": []
+      }
+    },
+    {
+      "name": "station",
+      "frame": 13941,
+      "found": [
+        "market-info",
+        "maintenance-access",
+        "station-info"
+      ],
+      "route": {
+        "destination": "poi-station",
+        "status": "arrived",
+        "index": 57,
+        "edges": [
+          "E0269",
+          "E0070",
+          "E0072",
+          "E0074",
+          "E0076",
+          "E0164",
+          "E0172",
+          "E0167",
+          "E0118",
+          "E0131",
+          "E0099",
+          "E0097",
+          "E0095",
+          "E0176",
+          "E0178",
+          "E0196",
+          "E0272"
+        ],
+        "blockedEdges": []
+      }
+    },
+    {
+      "name": "observation",
+      "frame": 16722,
+      "found": [
+        "market-info",
+        "maintenance-access",
+        "station-info",
+        "observation"
+      ],
+      "route": {
+        "destination": "observation-deck",
+        "status": "arrived",
+        "index": 33,
+        "edges": [
+          "E0276",
+          "E0180",
+          "E0222",
+          "E0210",
+          "E0224"
+        ],
+        "blockedEdges": []
+      }
+    },
+    {
+      "name": "street-return",
+      "frame": 25014,
+      "found": [
+        "market-info",
+        "maintenance-access",
+        "station-info",
+        "observation"
+      ],
+      "route": {
+        "destination": "ground-access",
+        "status": "arrived",
+        "index": 119,
+        "edges": [
+          "E0225",
+          "E0211",
+          "E0209",
+          "E0207",
+          "E0205",
+          "E0203",
+          "public-terrace-128-approach",
+          "LOGGIA_E_020",
+          "LOGGIA_E_009",
+          "LOGGIA_E_007",
+          "LOGGIA_E_005",
+          "LOGGIA_E_003",
+          "LOGGIA_E_001",
+          "LOGGIA_E_017",
+          "public-terrace-24-return",
+          "E0007",
+          "E0005",
+          "E0003",
+          "E0001",
+          "E0150",
+          "E0157",
+          "E0193"
+        ],
+        "blockedEdges": []
+      }
+    }
+  ],
+  "results": [
+    {
+      "name": "Market information guides to the real rescue interaction without starting or replacing its encounter",
+      "pass": true
+    },
+    {
+      "name": "Maintenance information marks a physical upper flank; ascent and return use actual stairs",
+      "pass": true
+    },
+    {
+      "name": "Station information guides to the actual pursuit access and reports through-service availability",
+      "pass": true
+    },
+    {
+      "name": "Observation information supplies an actual public street return; all four unique records persist without changing courier progress or power resources; hostile exposure is recorded separately",
+      "pass": true
+    },
+    {
+      "name": "labelled existing respawn API preserves all four unique discovery records and clears guidance",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_FACADE_CASSETTES.html",
+  "manifest": "assets/city/vertical-v02/upper-anchor-mounts/runtime/manifest.json",
+  "stage": "hud",
+  "evidenceRun": "facade-cassette-gameplay/discovery-tour",
+  "entrySHA256": "1677e30f9866c3f80119185b72c0db7bbb648942c83788953b9c3f8088c7d0c1",
+  "manifestSHA256": "792e4bb30a68c364bd2ce9123e10eb5e462af8f4b583922e104f14ff8aaf38bd",
+  "encounterSHA256": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+  "marketSHA256": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+  "cassetteReadiness": {
+    "adapterSHA256": "28a515f9c0ab555b3d4b3b24f11470efd7ca42b27fbaa0043cc35140514012ad",
+    "state": {
+      "ready": true,
+      "loading": false,
+      "error": null,
+      "owners": [
+        {
+          "id": "building-141",
+          "parent": true,
+          "features": 1117,
+          "hidden": 0,
+          "visible": true
+        },
+        {
+          "id": "building-160",
+          "parent": true,
+          "features": 837,
+          "hidden": 0,
+          "visible": true
+        },
+        {
+          "id": "building-162",
+          "parent": true,
+          "features": 474,
+          "hidden": 0,
+          "visible": true
+        }
+      ],
+      "features": 2428,
+      "hidden": 0,
+      "triangles": 155392,
+      "newDynamicLights": 0,
+      "newCollisionRecords": 0,
+      "sourceMasterSHA256": "de5e381572d622623943d48a40bb911b89d141812f21d8c902828777de42d8e2"
+    },
+    "scope": "Fully loaded before the actual input sequence; original helper initial fixture precedes this guard"
+  },
+  "discoverySHA256": "7cfc8878103a13115fb9778c4d8ee15dadc0147a0ace29433a14a2ba651c0679",
+  "confirmedAmbientHits": [],
+  "finalCondition": 100,
+  "final": {
+    "ready": true,
+    "clock": 416.8999999999495,
+    "discovered": [
+      {
+        "id": "market-info",
+        "time": 48.117
+      },
+      {
+        "id": "maintenance-access",
+        "time": 102.733
+      },
+      {
+        "id": "station-info",
+        "time": 231.383
+      },
+      {
+        "id": "observation",
+        "time": 277.817
+      }
+    ],
+    "openBoard": null,
+    "route": {
+      "title": "Street-level return",
+      "destination": "ground-access",
+      "points": [
+        [
+          72,
+          128,
+          420
+        ],
+        [
+          55,
+          128,
+          420
+        ],
+        [
+          55,
+          128,
+          410
+        ],
+        [
+          55,
+          128,
+          400
+        ],
+        [
+          55,
+          128,
+          376
+        ],
+        [
+          55,
+          128,
+          350
+        ],
+        [
+          55,
+          128,
+          326
+        ],
+        [
+          55,
+          128,
+          300
+        ],
+        [
+          48,
+          128,
+          300
+        ],
+        [
+          38,
+          128,
+          300
+        ],
+        [
+          38,
+          128,
+          297.7
+        ],
+        [
+          36.4,
+          128,
+          297.7
+        ],
+        [
+          36.4,
+          128,
+          294.2
+        ],
+        [
+          39.1,
+          128,
+          294.2
+        ],
+        [
+          39.1,
+          124,
+          284.2
+        ],
+        [
+          36.4,
+          124,
+          284.2
+        ],
+        [
+          33.5,
+          124,
+          284.2
+        ],
+        [
+          33.5,
+          120,
+          294.2
+        ],
+        [
+          36.4,
+          120,
+          294.2
+        ],
+        [
+          39.1,
+          120,
+          294.2
+        ],
+        [
+          39.1,
+          116,
+          284.2
+        ],
+        [
+          36.4,
+          116,
+          284.2
+        ],
+        [
+          33.5,
+          116,
+          284.2
+        ],
+        [
+          33.5,
+          112,
+          294.2
+        ],
+        [
+          36.4,
+          112,
+          294.2
+        ],
+        [
+          39.1,
+          112,
+          294.2
+        ],
+        [
+          39.1,
+          108,
+          284.2
+        ],
+        [
+          36.4,
+          108,
+          284.2
+        ],
+        [
+          33.5,
+          108,
+          284.2
+        ],
+        [
+          33.5,
+          104,
+          294.2
+        ],
+        [
+          36.4,
+          104,
+          294.2
+        ],
+        [
+          39.1,
+          104,
+          294.2
+        ],
+        [
+          39.1,
+          100,
+          284.2
+        ],
+        [
+          36.4,
+          100,
+          284.2
+        ],
+        [
+          33.5,
+          100,
+          284.2
+        ],
+        [
+          33.5,
+          96,
+          294.2
+        ],
+        [
+          36.4,
+          96,
+          294.2
+        ],
+        [
+          39.1,
+          96,
+          294.2
+        ],
+        [
+          39.1,
+          92,
+          284.2
+        ],
+        [
+          36.4,
+          92,
+          284.2
+        ],
+        [
+          33.5,
+          92,
+          284.2
+        ],
+        [
+          33.5,
+          88,
+          294.2
+        ],
+        [
+          36.4,
+          88,
+          294.2
+        ],
+        [
+          39.1,
+          88,
+          294.2
+        ],
+        [
+          39.1,
+          84,
+          284.2
+        ],
+        [
+          36.4,
+          84,
+          284.2
+        ],
+        [
+          33.5,
+          84,
+          284.2
+        ],
+        [
+          33.5,
+          80,
+          294.2
+        ],
+        [
+          36.4,
+          80,
+          294.2
+        ],
+        [
+          39.1,
+          80,
+          294.2
+        ],
+        [
+          39.1,
+          76,
+          284.2
+        ],
+        [
+          36.4,
+          76,
+          284.2
+        ],
+        [
+          33.5,
+          76,
+          284.2
+        ],
+        [
+          33.5,
+          72,
+          294.2
+        ],
+        [
+          36.4,
+          72,
+          294.2
+        ],
+        [
+          39.1,
+          72,
+          294.2
+        ],
+        [
+          39.1,
+          68,
+          284.2
+        ],
+        [
+          36.4,
+          68,
+          284.2
+        ],
+        [
+          33.5,
+          68,
+          284.2
+        ],
+        [
+          33.5,
+          64,
+          294.2
+        ],
+        [
+          36.4,
+          64,
+          294.2
+        ],
+        [
+          39.1,
+          64,
+          294.2
+        ],
+        [
+          39.1,
+          60,
+          284.2
+        ],
+        [
+          36.4,
+          60,
+          284.2
+        ],
+        [
+          33.5,
+          60,
+          284.2
+        ],
+        [
+          33.5,
+          56,
+          294.2
+        ],
+        [
+          36.4,
+          56,
+          294.2
+        ],
+        [
+          39.1,
+          56,
+          294.2
+        ],
+        [
+          39.1,
+          52,
+          284.2
+        ],
+        [
+          36.4,
+          52,
+          284.2
+        ],
+        [
+          33.5,
+          52,
+          284.2
+        ],
+        [
+          33.5,
+          48,
+          294.2
+        ],
+        [
+          36.4,
+          48,
+          294.2
+        ],
+        [
+          39.1,
+          48,
+          294.2
+        ],
+        [
+          39.1,
+          44,
+          284.2
+        ],
+        [
+          36.4,
+          44,
+          284.2
+        ],
+        [
+          33.5,
+          44,
+          284.2
+        ],
+        [
+          33.5,
+          40,
+          294.2
+        ],
+        [
+          36.4,
+          40,
+          294.2
+        ],
+        [
+          39.1,
+          40,
+          294.2
+        ],
+        [
+          39.1,
+          36,
+          284.2
+        ],
+        [
+          36.4,
+          36,
+          284.2
+        ],
+        [
+          33.5,
+          36,
+          284.2
+        ],
+        [
+          33.5,
+          32,
+          294.2
+        ],
+        [
+          36.4,
+          32,
+          294.2
+        ],
+        [
+          39.1,
+          32,
+          294.2
+        ],
+        [
+          39.1,
+          28,
+          284.2
+        ],
+        [
+          36.4,
+          28,
+          284.2
+        ],
+        [
+          33.5,
+          28,
+          284.2
+        ],
+        [
+          33.5,
+          24,
+          294.2
+        ],
+        [
+          36.4,
+          24,
+          294.2
+        ],
+        [
+          36.4,
+          24,
+          297.7
+        ],
+        [
+          38,
+          24,
+          297.7
+        ],
+        [
+          38,
+          24,
+          300
+        ],
+        [
+          48,
+          24,
+          300
+        ],
+        [
+          55,
+          24,
+          300
+        ],
+        [
+          55,
+          24,
+          276
+        ],
+        [
+          55,
+          24,
+          250
+        ],
+        [
+          55,
+          24,
+          230
+        ],
+        [
+          55,
+          24,
+          210
+        ],
+        [
+          55,
+          24,
+          215.5
+        ],
+        [
+          61,
+          24,
+          215.5
+        ],
+        [
+          67,
+          24,
+          215.5
+        ],
+        [
+          67,
+          21,
+          224.62
+        ],
+        [
+          61,
+          21,
+          224.62
+        ],
+        [
+          61,
+          18,
+          215.5
+        ],
+        [
+          67,
+          18,
+          215.5
+        ],
+        [
+          67,
+          15,
+          224.62
+        ],
+        [
+          61,
+          15,
+          224.62
+        ],
+        [
+          61,
+          12,
+          215.5
+        ],
+        [
+          67,
+          12,
+          215.5
+        ],
+        [
+          67,
+          9,
+          224.62
+        ],
+        [
+          61,
+          9,
+          224.62
+        ],
+        [
+          61,
+          6,
+          215.5
+        ],
+        [
+          67,
+          6,
+          215.5
+        ],
+        [
+          67,
+          3,
+          224.62
+        ],
+        [
+          61,
+          3,
+          224.62
+        ],
+        [
+          61,
+          0,
+          215.5
+        ],
+        [
+          55,
+          0,
+          210
+        ]
+      ],
+      "index": 119,
+      "status": "arrived",
+      "edgeIDs": [
+        "E0225",
+        "E0211",
+        "E0209",
+        "E0207",
+        "E0205",
+        "E0203",
+        "public-terrace-128-approach",
+        "LOGGIA_E_020",
+        "LOGGIA_E_009",
+        "LOGGIA_E_007",
+        "LOGGIA_E_005",
+        "LOGGIA_E_003",
+        "LOGGIA_E_001",
+        "LOGGIA_E_017",
+        "public-terrace-24-return",
+        "E0007",
+        "E0005",
+        "E0003",
+        "E0001",
+        "E0150",
+        "E0157",
+        "E0193"
+      ],
+      "navigationVersion": 2,
+      "blockedEdges": [],
+      "validationAttempts": 1
+    },
+    "pending": null,
+    "message": "Destination reached.",
+    "eventId": 36,
+    "events": [
+      {
+        "id": 1,
+        "time": 0.1,
+        "kind": "board-read",
+        "point": "directory"
+      },
+      {
+        "id": 2,
+        "time": 0.533,
+        "kind": "route-requested",
+        "source": "directory",
+        "destination": "poi-market"
+      },
+      {
+        "id": 3,
+        "time": 1.467,
+        "kind": "route-ready",
+        "destination": "poi-market",
+        "edges": [
+          "E0192",
+          "E0156",
+          "E0151",
+          "E0000",
+          "E0002",
+          "E0004",
+          "E0006",
+          "E0008",
+          "E0010",
+          "E0262"
+        ],
+        "validationSamples": 1681,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      },
+      {
+        "id": 4,
+        "time": 48.117,
+        "kind": "discovered",
+        "point": "market-info"
+      },
+      {
+        "id": 5,
+        "time": 48.483,
+        "kind": "route-arrived",
+        "destination": "poi-market"
+      },
+      {
+        "id": 6,
+        "time": 49.017,
+        "kind": "board-read",
+        "point": "market-info"
+      },
+      {
+        "id": 7,
+        "time": 49.05,
+        "kind": "route-requested",
+        "source": "market-info",
+        "destination": "market-access"
+      },
+      {
+        "id": 8,
+        "time": 49.117,
+        "kind": "route-ready",
+        "destination": "market-access",
+        "edges": [
+          "E0264"
+        ],
+        "validationSamples": 120,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      },
+      {
+        "id": 9,
+        "time": 52.433,
+        "kind": "route-arrived",
+        "destination": "market-access"
+      },
+      {
+        "id": 10,
+        "time": 56.733,
+        "kind": "board-read",
+        "point": "market-info"
+      },
+      {
+        "id": 11,
+        "time": 56.767,
+        "kind": "route-requested",
+        "source": "market-info",
+        "destination": "poi-maintenance"
+      },
+      {
+        "id": 12,
+        "time": 57.667,
+        "kind": "route-ready",
+        "destination": "poi-maintenance",
+        "edges": [
+          "E0263",
+          "E0011",
+          "E0009",
+          "public-terrace-24-approach",
+          "LOGGIA_E_016",
+          "LOGGIA_E_000",
+          "LOGGIA_E_002",
+          "LOGGIA_E_019",
+          "public-terrace-52-return",
+          "E0266"
+        ],
+        "validationSamples": 1602,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      },
+      {
+        "id": 13,
+        "time": 102.733,
+        "kind": "discovered",
+        "point": "maintenance-access"
+      },
+      {
+        "id": 14,
+        "time": 103.1,
+        "kind": "route-arrived",
+        "destination": "poi-maintenance"
+      },
+      {
+        "id": 15,
+        "time": 103.617,
+        "kind": "board-read",
+        "point": "maintenance-access"
+      },
+      {
+        "id": 16,
+        "time": 103.65,
+        "kind": "route-requested",
+        "source": "maintenance-access",
+        "destination": "service-upper-58.4"
+      },
+      {
+        "id": 17,
+        "time": 104,
+        "kind": "route-ready",
+        "destination": "service-upper-58.4",
+        "edges": [
+          "E0270",
+          "E0182",
+          "E0184",
+          "E0188"
+        ],
+        "validationSamples": 653,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      },
+      {
+        "id": 18,
+        "time": 122.467,
+        "kind": "route-arrived",
+        "destination": "service-upper-58.4"
+      },
+      {
+        "id": 19,
+        "time": 148.683,
+        "kind": "board-read",
+        "point": "maintenance-access"
+      },
+      {
+        "id": 20,
+        "time": 148.717,
+        "kind": "route-requested",
+        "source": "maintenance-access",
+        "destination": "poi-station"
+      },
+      {
+        "id": 21,
+        "time": 151.033,
+        "kind": "route-ready",
+        "destination": "poi-station",
+        "edges": [
+          "E0269",
+          "E0070",
+          "E0072",
+          "E0074",
+          "E0076",
+          "E0164",
+          "E0172",
+          "E0167",
+          "E0118",
+          "E0131",
+          "E0099",
+          "E0097",
+          "E0095",
+          "E0176",
+          "E0178",
+          "E0196",
+          "E0272"
+        ],
+        "validationSamples": 2903,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      },
+      {
+        "id": 22,
+        "time": 231.383,
+        "kind": "discovered",
+        "point": "station-info"
+      },
+      {
+        "id": 23,
+        "time": 231.85,
+        "kind": "route-arrived",
+        "destination": "poi-station"
+      },
+      {
+        "id": 24,
+        "time": 232.35,
+        "kind": "board-read",
+        "point": "station-info"
+      },
+      {
+        "id": 25,
+        "time": 232.383,
+        "kind": "route-requested",
+        "source": "station-info",
+        "destination": "pursuit-access"
+      },
+      {
+        "id": 26,
+        "time": 232.45,
+        "kind": "route-ready",
+        "destination": "pursuit-access",
+        "edges": [
+          "E0275"
+        ],
+        "validationSamples": 110,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      },
+      {
+        "id": 27,
+        "time": 235.417,
+        "kind": "route-arrived",
+        "destination": "pursuit-access"
+      },
+      {
+        "id": 28,
+        "time": 238.733,
+        "kind": "board-read",
+        "point": "station-info"
+      },
+      {
+        "id": 29,
+        "time": 238.767,
+        "kind": "route-requested",
+        "source": "station-info",
+        "destination": "observation-deck"
+      },
+      {
+        "id": 30,
+        "time": 239.583,
+        "kind": "route-ready",
+        "destination": "observation-deck",
+        "edges": [
+          "E0276",
+          "E0180",
+          "E0222",
+          "E0210",
+          "E0224"
+        ],
+        "validationSamples": 1380,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      },
+      {
+        "id": 31,
+        "time": 277.817,
+        "kind": "discovered",
+        "point": "observation"
+      },
+      {
+        "id": 32,
+        "time": 278.167,
+        "kind": "route-arrived",
+        "destination": "observation-deck"
+      },
+      {
+        "id": 33,
+        "time": 278.7,
+        "kind": "board-read",
+        "point": "observation"
+      },
+      {
+        "id": 34,
+        "time": 278.733,
+        "kind": "route-requested",
+        "source": "observation",
+        "destination": "ground-access"
+      },
+      {
+        "id": 35,
+        "time": 282,
+        "kind": "route-ready",
+        "destination": "ground-access",
+        "edges": [
+          "E0225",
+          "E0211",
+          "E0209",
+          "E0207",
+          "E0205",
+          "E0203",
+          "public-terrace-128-approach",
+          "LOGGIA_E_020",
+          "LOGGIA_E_009",
+          "LOGGIA_E_007",
+          "LOGGIA_E_005",
+          "LOGGIA_E_003",
+          "LOGGIA_E_001",
+          "LOGGIA_E_017",
+          "public-terrace-24-return",
+          "E0007",
+          "E0005",
+          "E0003",
+          "E0001",
+          "E0150",
+          "E0157",
+          "E0193"
+        ],
+        "validationSamples": 4777,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      },
+      {
+        "id": 36,
+        "time": 416.383,
+        "kind": "route-arrived",
+        "destination": "ground-access"
+      }
+    ],
+    "error": null,
+    "points": [
+      {
+        "id": "market-info",
+        "title": "MARKET ASSEMBLY",
+        "position": [
+          64,
+          24,
+          356
+        ],
+        "board": [
+          65.25,
+          24.85,
+          354.3
+        ],
+        "graphNode": "poi-market",
+        "function": "market",
+        "collection": "SM_V02_MARKET"
+      },
+      {
+        "id": "maintenance-access",
+        "title": "MAINTENANCE ACCESS",
+        "position": [
+          86,
+          52,
+          314.8
+        ],
+        "board": [
+          87.4,
+          52.85,
+          313.7
+        ],
+        "graphNode": "poi-maintenance",
+        "function": "maintenance",
+        "collection": "SM_V02_SERVICE_YARDS"
+      },
+      {
+        "id": "observation",
+        "title": "OBSERVATION DECK",
+        "position": [
+          72,
+          128,
+          420
+        ],
+        "board": [
+          73.5,
+          128.85,
+          418
+        ],
+        "graphNode": "observation-deck",
+        "function": "observation",
+        "collection": "SM_V02_LANDMARKS"
+      },
+      {
+        "id": "station-info",
+        "title": "TRANSIT INFORMATION",
+        "position": [
+          73,
+          100,
+          382
+        ],
+        "board": [
+          74.65,
+          100.85,
+          382
+        ],
+        "graphNode": "poi-station",
+        "function": "station",
+        "collection": "SM_V02_TRANSIT_STRUCTURES"
+      }
+    ],
+    "directory": {
+      "id": "directory",
+      "title": "DISTRICT DIRECTORY",
+      "position": [
+        55,
+        0,
+        210
+      ],
+      "board": [
+        56.9,
+        0.85,
+        208
+      ],
+      "graphNode": "ground-access",
+      "function": "directory",
+      "collection": "SM_V02_GALLERIES"
+    },
+    "nearBoard": "directory",
+    "readingDisabledByEncounter": false,
+    "scope": "Four functional information/discovery locations and voluntary public route guidance; not final landmark architecture or complete V02 acceptance"
+  },
+  "inputSeconds": 416.9166666666667,
+  "diagnostics": {
+    "ready": true,
+    "clock": 416.91666666661615,
+    "discovered": [
+      {
+        "id": "market-info",
+        "time": 48.117
+      },
+      {
+        "id": "maintenance-access",
+        "time": 102.733
+      },
+      {
+        "id": "station-info",
+        "time": 231.383
+      },
+      {
+        "id": "observation",
+        "time": 277.817
+      }
+    ],
+    "openBoard": null,
+    "route": null,
+    "pending": null,
+    "message": "",
+    "eventId": 37,
+    "events": [
+      {
+        "id": 1,
+        "time": 0.1,
+        "kind": "board-read",
+        "point": "directory"
+      },
+      {
+        "id": 2,
+        "time": 0.533,
+        "kind": "route-requested",
+        "source": "directory",
+        "destination": "poi-market"
+      },
+      {
+        "id": 3,
+        "time": 1.467,
+        "kind": "route-ready",
+        "destination": "poi-market",
+        "edges": [
+          "E0192",
+          "E0156",
+          "E0151",
+          "E0000",
+          "E0002",
+          "E0004",
+          "E0006",
+          "E0008",
+          "E0010",
+          "E0262"
+        ],
+        "validationSamples": 1681,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      },
+      {
+        "id": 4,
+        "time": 48.117,
+        "kind": "discovered",
+        "point": "market-info"
+      },
+      {
+        "id": 5,
+        "time": 48.483,
+        "kind": "route-arrived",
+        "destination": "poi-market"
+      },
+      {
+        "id": 6,
+        "time": 49.017,
+        "kind": "board-read",
+        "point": "market-info"
+      },
+      {
+        "id": 7,
+        "time": 49.05,
+        "kind": "route-requested",
+        "source": "market-info",
+        "destination": "market-access"
+      },
+      {
+        "id": 8,
+        "time": 49.117,
+        "kind": "route-ready",
+        "destination": "market-access",
+        "edges": [
+          "E0264"
+        ],
+        "validationSamples": 120,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      },
+      {
+        "id": 9,
+        "time": 52.433,
+        "kind": "route-arrived",
+        "destination": "market-access"
+      },
+      {
+        "id": 10,
+        "time": 56.733,
+        "kind": "board-read",
+        "point": "market-info"
+      },
+      {
+        "id": 11,
+        "time": 56.767,
+        "kind": "route-requested",
+        "source": "market-info",
+        "destination": "poi-maintenance"
+      },
+      {
+        "id": 12,
+        "time": 57.667,
+        "kind": "route-ready",
+        "destination": "poi-maintenance",
+        "edges": [
+          "E0263",
+          "E0011",
+          "E0009",
+          "public-terrace-24-approach",
+          "LOGGIA_E_016",
+          "LOGGIA_E_000",
+          "LOGGIA_E_002",
+          "LOGGIA_E_019",
+          "public-terrace-52-return",
+          "E0266"
+        ],
+        "validationSamples": 1602,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      },
+      {
+        "id": 13,
+        "time": 102.733,
+        "kind": "discovered",
+        "point": "maintenance-access"
+      },
+      {
+        "id": 14,
+        "time": 103.1,
+        "kind": "route-arrived",
+        "destination": "poi-maintenance"
+      },
+      {
+        "id": 15,
+        "time": 103.617,
+        "kind": "board-read",
+        "point": "maintenance-access"
+      },
+      {
+        "id": 16,
+        "time": 103.65,
+        "kind": "route-requested",
+        "source": "maintenance-access",
+        "destination": "service-upper-58.4"
+      },
+      {
+        "id": 17,
+        "time": 104,
+        "kind": "route-ready",
+        "destination": "service-upper-58.4",
+        "edges": [
+          "E0270",
+          "E0182",
+          "E0184",
+          "E0188"
+        ],
+        "validationSamples": 653,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      },
+      {
+        "id": 18,
+        "time": 122.467,
+        "kind": "route-arrived",
+        "destination": "service-upper-58.4"
+      },
+      {
+        "id": 19,
+        "time": 148.683,
+        "kind": "board-read",
+        "point": "maintenance-access"
+      },
+      {
+        "id": 20,
+        "time": 148.717,
+        "kind": "route-requested",
+        "source": "maintenance-access",
+        "destination": "poi-station"
+      },
+      {
+        "id": 21,
+        "time": 151.033,
+        "kind": "route-ready",
+        "destination": "poi-station",
+        "edges": [
+          "E0269",
+          "E0070",
+          "E0072",
+          "E0074",
+          "E0076",
+          "E0164",
+          "E0172",
+          "E0167",
+          "E0118",
+          "E0131",
+          "E0099",
+          "E0097",
+          "E0095",
+          "E0176",
+          "E0178",
+          "E0196",
+          "E0272"
+        ],
+        "validationSamples": 2903,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      },
+      {
+        "id": 22,
+        "time": 231.383,
+        "kind": "discovered",
+        "point": "station-info"
+      },
+      {
+        "id": 23,
+        "time": 231.85,
+        "kind": "route-arrived",
+        "destination": "poi-station"
+      },
+      {
+        "id": 24,
+        "time": 232.35,
+        "kind": "board-read",
+        "point": "station-info"
+      },
+      {
+        "id": 25,
+        "time": 232.383,
+        "kind": "route-requested",
+        "source": "station-info",
+        "destination": "pursuit-access"
+      },
+      {
+        "id": 26,
+        "time": 232.45,
+        "kind": "route-ready",
+        "destination": "pursuit-access",
+        "edges": [
+          "E0275"
+        ],
+        "validationSamples": 110,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      },
+      {
+        "id": 27,
+        "time": 235.417,
+        "kind": "route-arrived",
+        "destination": "pursuit-access"
+      },
+      {
+        "id": 28,
+        "time": 238.733,
+        "kind": "board-read",
+        "point": "station-info"
+      },
+      {
+        "id": 29,
+        "time": 238.767,
+        "kind": "route-requested",
+        "source": "station-info",
+        "destination": "observation-deck"
+      },
+      {
+        "id": 30,
+        "time": 239.583,
+        "kind": "route-ready",
+        "destination": "observation-deck",
+        "edges": [
+          "E0276",
+          "E0180",
+          "E0222",
+          "E0210",
+          "E0224"
+        ],
+        "validationSamples": 1380,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      },
+      {
+        "id": 31,
+        "time": 277.817,
+        "kind": "discovered",
+        "point": "observation"
+      },
+      {
+        "id": 32,
+        "time": 278.167,
+        "kind": "route-arrived",
+        "destination": "observation-deck"
+      },
+      {
+        "id": 33,
+        "time": 278.7,
+        "kind": "board-read",
+        "point": "observation"
+      },
+      {
+        "id": 34,
+        "time": 278.733,
+        "kind": "route-requested",
+        "source": "observation",
+        "destination": "ground-access"
+      },
+      {
+        "id": 35,
+        "time": 282,
+        "kind": "route-ready",
+        "destination": "ground-access",
+        "edges": [
+          "E0225",
+          "E0211",
+          "E0209",
+          "E0207",
+          "E0205",
+          "E0203",
+          "public-terrace-128-approach",
+          "LOGGIA_E_020",
+          "LOGGIA_E_009",
+          "LOGGIA_E_007",
+          "LOGGIA_E_005",
+          "LOGGIA_E_003",
+          "LOGGIA_E_001",
+          "LOGGIA_E_017",
+          "public-terrace-24-return",
+          "E0007",
+          "E0005",
+          "E0003",
+          "E0001",
+          "E0150",
+          "E0157",
+          "E0193"
+        ],
+        "validationSamples": 4777,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      },
+      {
+        "id": 36,
+        "time": 416.383,
+        "kind": "route-arrived",
+        "destination": "ground-access"
+      },
+      {
+        "id": 37,
+        "time": 416.917,
+        "kind": "route-ended",
+        "reason": "RESPAWN",
+        "destination": "ground-access"
+      }
+    ],
+    "error": null,
+    "points": [
+      {
+        "id": "market-info",
+        "title": "MARKET ASSEMBLY",
+        "position": [
+          64,
+          24,
+          356
+        ],
+        "board": [
+          65.25,
+          24.85,
+          354.3
+        ],
+        "graphNode": "poi-market",
+        "function": "market",
+        "collection": "SM_V02_MARKET"
+      },
+      {
+        "id": "maintenance-access",
+        "title": "MAINTENANCE ACCESS",
+        "position": [
+          86,
+          52,
+          314.8
+        ],
+        "board": [
+          87.4,
+          52.85,
+          313.7
+        ],
+        "graphNode": "poi-maintenance",
+        "function": "maintenance",
+        "collection": "SM_V02_SERVICE_YARDS"
+      },
+      {
+        "id": "observation",
+        "title": "OBSERVATION DECK",
+        "position": [
+          72,
+          128,
+          420
+        ],
+        "board": [
+          73.5,
+          128.85,
+          418
+        ],
+        "graphNode": "observation-deck",
+        "function": "observation",
+        "collection": "SM_V02_LANDMARKS"
+      },
+      {
+        "id": "station-info",
+        "title": "TRANSIT INFORMATION",
+        "position": [
+          73,
+          100,
+          382
+        ],
+        "board": [
+          74.65,
+          100.85,
+          382
+        ],
+        "graphNode": "poi-station",
+        "function": "station",
+        "collection": "SM_V02_TRANSIT_STRUCTURES"
+      }
+    ],
+    "directory": {
+      "id": "directory",
+      "title": "DISTRICT DIRECTORY",
+      "position": [
+        55,
+        0,
+        210
+      ],
+      "board": [
+        56.9,
+        0.85,
+        208
+      ],
+      "graphNode": "ground-access",
+      "function": "directory",
+      "collection": "SM_V02_GALLERIES"
+    },
+    "nearBoard": null,
+    "readingDisabledByEncounter": false,
+    "scope": "Four functional information/discovery locations and voluntary public route guidance; not final landmark architecture or complete V02 acceptance"
+  },
+  "fullTrace": "V02_Discovery_Tour.trace.json.gz",
+  "traceFrames": 25015
+}

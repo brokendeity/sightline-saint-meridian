@@ -1,0 +1,182 @@
+{
+  "scope": "Local service-yard lifecycle, normal controller and touch start; direct respawn API case labelled. Physical devices and other encounters untested.",
+  "results": [
+    {
+      "name": "standard simulated controller Y starts fixed encounter",
+      "pass": true
+    },
+    {
+      "name": "pause freezes positions and local clock; resume keeps attempt",
+      "pass": true
+    },
+    {
+      "name": "restart replaces exactly three opponents without healing or stale target lock",
+      "pass": true
+    },
+    {
+      "name": "actual hero selector clears encounter actors and locks",
+      "pass": true
+    },
+    {
+      "name": "CDP touch starts encounter with unobscured 44px portrait/landscape buttons",
+      "pass": true
+    },
+    {
+      "name": "labelled direct respawn lifecycle clears district actors",
+      "pass": true
+    },
+    {
+      "name": "labelled negative district-start API preserves street contract actors/progress and usable existing End control",
+      "pass": true
+    },
+    {
+      "name": "ordinary enemy strikes cause natural defeat; retry cannot refill condition",
+      "pass": true,
+      "attacks": 13,
+      "elapsed": 33.34999999999939
+    }
+  ],
+  "errors": [],
+  "entrySHA256": "1677e30f9866c3f80119185b72c0db7bbb648942c83788953b9c3f8088c7d0c1",
+  "manifestSHA256": "792e4bb30a68c364bd2ce9123e10eb5e462af8f4b583922e104f14ff8aaf38bd",
+  "encounterSHA256": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+  "marketSHA256": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+  "uiTransitions": [
+    {
+      "action": "hero",
+      "hero": "sightline",
+      "throughPauseTools": true,
+      "resumed": true
+    },
+    {
+      "action": "hero",
+      "hero": "backspool",
+      "throughPauseTools": true,
+      "resumed": true
+    },
+    {
+      "action": "#contractStart",
+      "throughPauseTools": true
+    },
+    {
+      "action": "#contractEnd",
+      "throughPauseTools": true
+    }
+  ],
+  "contractPresentation": {
+    "active": true,
+    "hero": "backspool",
+    "body": "v02CompactHUD equipmentPlay v02HUDBackspool backspoolCombatActive touchPlay v02HUDPlaying",
+    "contract": {
+      "id": 1,
+      "type": "intercept",
+      "status": "active",
+      "elapsed": 6.333333333333316,
+      "encounterAttempt": 4,
+      "powerCursor": 0,
+      "echoTargets": [],
+      "retraces": 0,
+      "startHealth": 100,
+      "lowestHealth": 100,
+      "actors": [
+        {
+          "id": "encounter-4-0",
+          "hp": 180,
+          "maxHp": 180,
+          "role": "drill",
+          "name": "Replay drill",
+          "position": [
+            77.70356963984469,
+            52,
+            332.56559452228436
+          ],
+          "home": [
+            80.86728555526881,
+            52,
+            327.24697864085533
+          ],
+          "guarding": false
+        },
+        {
+          "id": "encounter-4-1",
+          "hp": 180,
+          "maxHp": 180,
+          "role": "guard",
+          "name": "Halo sparring · guard",
+          "position": [
+            82.02600696075025,
+            52,
+            330.52942798730663
+          ],
+          "home": [
+            84.86725523483447,
+            52,
+            327.26255306075984
+          ],
+          "guarding": false
+        },
+        {
+          "id": "encounter-4-2",
+          "hp": 180,
+          "maxHp": 180,
+          "role": "striker",
+          "name": "Halo sparring · striker",
+          "position": [
+            88.22686818770052,
+            52,
+            327.8968119422439
+          ],
+          "home": [
+            88.86722491440014,
+            52,
+            327.27812748066435
+          ],
+          "guarding": false
+        }
+      ],
+      "rewarded": false,
+      "score": 0,
+      "rank": null
+    },
+    "panels": [
+      {
+        "id": "heroContractHUD",
+        "hidden": false,
+        "classes": "",
+        "display": "block",
+        "text": "STREET INTERCEPTIONDefeat the three Halo sparring opponents.0/3 DEFEATED · 6s · ECHO 0 · RETRACE 0"
+      },
+      {
+        "id": "backspoolTrainingHUD",
+        "hidden": false,
+        "classes": "v02LowerPriority",
+        "display": "none",
+        "text": "BACKSPOOL · SPARRINGOrange flash: evade or guard. Charged strikes break cyan guards.3 opponents remainingRestart End encounter"
+      },
+      {
+        "id": "v02EncounterHUD",
+        "hidden": true,
+        "classes": "",
+        "display": "none",
+        "text": "SERVICE YARD · COMBATEncounter ended. Your condition and global Halo consequences remain.I / Y · START AT ACCESS MARKERStart encounterEnd"
+      },
+      {
+        "id": "v02PursuitHUD",
+        "hidden": true,
+        "classes": "",
+        "display": "none",
+        "text": "TRANSIT INTERCHANGE · PURSUITStart pursuitEnd"
+      },
+      {
+        "id": "v02MarketHUD",
+        "hidden": true,
+        "classes": "",
+        "display": "none",
+        "text": "Start rescueEnd"
+      }
+    ]
+  },
+  "status": "PASS local service lifecycle",
+  "fullTrace": "V02_Service_Lifecycle.trace.json.gz",
+  "traceFrames": 486
+}

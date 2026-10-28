@@ -1,0 +1,15 @@
+resident found {"name":"resident found","frame":469,"p":[84.99105939160164,24.42,361.67286694116126],"phase":"isolate","civilians":[[85,24,364],[73.95783491854309,24,359.05391931740826],[85.98916666666516,24,373]]}
+power isolated {"name":"power isolated","frame":591,"p":[82.086610550307,24.42,357.0905008266443],"phase":"rendezvous","civilians":[[85,24,364],[73.53853930639936,24,360.935733315693],[87.93505935694034,24,373.4023742776788]]}
+escort begins {"name":"escort begins","frame":715,"p":[84.99335781813694,24.42,361.67266392085105],"phase":"escort","civilians":[[84.99947677157884,24,363.81666741330827],[71.16195899960378,24,360.9559938635392],[87.99445746459912,24,375.7782985839727]]}
+PASS market interruption/input/failure cases [
+  'actual pause/resume freezes all civilians and both incident clocks',
+  'hero selector pauses/resumes resident and walked route without resetting progress',
+  'native jump pauses breadcrumb recording; resident stays on supported floor and resumes',
+  'normal departure beyond market leaves resident safely waiting; marked path reconnection resumes the same rescue',
+  'labelled negative street-contract API cannot replace active rescue',
+  'actual End clears escort ownership/route without warping resident or awarding completion',
+  'CDP touch starts incident through an unobscured 44px control; responsive captures',
+  'standard simulated controller Y starts the same incident',
+  'real electrical contact causes shared-health defeat; no injected damage or false rescue award',
+  'labelled existing respawn API retains failed incident and safe resident position'
+]
