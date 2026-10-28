@@ -1,0 +1,256 @@
+{
+  "status": "AUTHORED UV2 and real source full-diffuse-light atlas; independent export/native/visual verification pending",
+  "sourceMaster": "development/vertical-city-v02/blender/SaintMeridian_V02_Loggia_Terraces.blend",
+  "sourceMasterSHA256": "5ccbb46478111f9a2ff265dcafb9d045caaba7777ca12bb84d25aad2a1df9927",
+  "scriptSHA256": "bf560a339b335ae98ccbc2501f0e8ef29c402cee3122c7a1968254916d9f9708",
+  "scope": "Blender-authored UV2/full-diffuse-light pilot for existing public loggia rooms.\n\nOnly the loggia export UV2 and twelve existing ceiling fixture material bindings\nchange. Geometry, base UVs and every unrelated source component remain unchanged. This creates\nsource/export data; it does not install a runtime candidate or pass visual review.",
+  "stages": [
+    {
+      "name": "source UV2 exported",
+      "wallSeconds": 9.853260999545455,
+      "file": "assets/city/vertical-v02/diffuse-pilot/loggia-rooms-uv2.glb",
+      "sha256": "6bab8d341b8a4725ef6a3bb67787729a8050d75feadb521af9b3827ddb17ec61",
+      "bytes": 1012812,
+      "primitives": 7,
+      "uv2Primitives": 7
+    },
+    {
+      "name": "baking source direct and indirect diffuse",
+      "wallSeconds": 10.05323849990964,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "samples": 1024,
+      "physicalSourceComponents": 102,
+      "overlappingSourceDuplicatesHidden": true,
+      "sourceRenderUV": "Metres_2_4",
+      "bakeUV": "V02_Diffuse_Atlas"
+    },
+    {
+      "name": "saved source pilot",
+      "wallSeconds": 98.92649683356285,
+      "masterSHA256": "0ab598f955d6452a7090ab7220284846275be5684b5f6b0eb22e85e4644445d4"
+    },
+    {
+      "name": "rendering local source reflection",
+      "wallSeconds": 98.93623416684568,
+      "floor": 40,
+      "samples": 64
+    },
+    {
+      "name": "rendering local source reflection",
+      "wallSeconds": 111.17763083381578,
+      "floor": 68,
+      "samples": 64
+    },
+    {
+      "name": "rendering local source reflection",
+      "wallSeconds": 122.73209070879966,
+      "floor": 100,
+      "samples": 64
+    },
+    {
+      "name": "source diffuse and three room reflections authored",
+      "wallSeconds": 134.28342954162508,
+      "masterSHA256": "0ab598f955d6452a7090ab7220284846275be5684b5f6b0eb22e85e4644445d4"
+    }
+  ],
+  "luminaire": {
+    "material": "V02_loggia_luminaire",
+    "fixtureIDs": [
+      "loggia-room-40-warm-33.2",
+      "loggia-room-40-warm-35.3",
+      "loggia-room-40-warm-37.5",
+      "loggia-room-40-warm-39.6",
+      "loggia-room-68-warm-33.2",
+      "loggia-room-68-warm-35.3",
+      "loggia-room-68-warm-37.5",
+      "loggia-room-68-warm-39.6",
+      "loggia-room-100-warm-33.2",
+      "loggia-room-100-warm-35.3",
+      "loggia-room-100-warm-37.5",
+      "loggia-room-100-warm-39.6"
+    ],
+    "emissionColor": [
+      0.8,
+      0.42,
+      0.14
+    ],
+    "emissionStrength": 34.0,
+    "previousStrength": 0.85,
+    "policy": "Twelve existing ceiling strips only; source geometry/base UV/placement unchanged; no new dynamic lights."
+  },
+  "sourceImages": [
+    {
+      "name": "1A240517-7816-4A19-B701-A45E9BD744F6.png",
+      "source": "FILE",
+      "packed": true,
+      "filepath": "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/development/vertical-city-v02/evidence/reference-baseline/native-textures/1A240517-7816-4A19-B701-A45E9BD744F6.png",
+      "exists": true
+    },
+    {
+      "name": "Render Result",
+      "source": "VIEWER",
+      "packed": false,
+      "filepath": "",
+      "exists": true
+    },
+    {
+      "name": "soffit_fill.png",
+      "source": "FILE",
+      "packed": true,
+      "filepath": "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/assets/city/vertical-v02/visual/soffit_fill.png",
+      "exists": true
+    },
+    {
+      "name": "V02_MetalPanel_BaseColor",
+      "source": "FILE",
+      "packed": true,
+      "filepath": "",
+      "exists": true
+    },
+    {
+      "name": "V02_MetalPanel_Normal",
+      "source": "FILE",
+      "packed": true,
+      "filepath": "",
+      "exists": true
+    },
+    {
+      "name": "V02_MetalPanel_Roughness",
+      "source": "FILE",
+      "packed": true,
+      "filepath": "",
+      "exists": true
+    },
+    {
+      "name": "Viewer Node",
+      "source": "VIEWER",
+      "packed": false,
+      "filepath": "",
+      "exists": true
+    }
+  ],
+  "uv": {
+    "name": "V02_Diffuse_Atlas",
+    "loops": 9120,
+    "min": [
+      0.0,
+      0.0
+    ],
+    "max": [
+      1.0,
+      1.0
+    ],
+    "baseUVPreserved": true
+  },
+  "export": {
+    "file": "assets/city/vertical-v02/diffuse-pilot/loggia-rooms-uv2.glb",
+    "sha256": "6bab8d341b8a4725ef6a3bb67787729a8050d75feadb521af9b3827ddb17ec61",
+    "bytes": 1012812,
+    "primitives": 7,
+    "uv2Primitives": 7
+  },
+  "stage": "source diffuse and three room reflections authored",
+  "atlas": {
+    "file": "assets/city/vertical-v02/diffuse-pilot/loggia-diffuse.rgba16f.gz",
+    "sha256": "065159bfcd719d958f1f374736463a409b38d0f6f1d48d5a04566465ea82d1be",
+    "rawSHA256": "cfca6ea292d3bab37140b6f0218ec3c367f8d9c6078ee524c3582e29eac7a483",
+    "bytes": 4187673,
+    "rawBytes": 8388608,
+    "width": 1024,
+    "height": 1024,
+    "components": 4,
+    "format": "little-endian IEEE754 binary16 RGBA, scene-linear uncolored source direct and indirect diffuse, top row first",
+    "uv": "glTF TEXCOORD_1 / texture.flipY=false; runtime orientation validation pending",
+    "samples": 1024,
+    "coveredPixels": 550621,
+    "litPixels": 663167,
+    "minRGB": 0.0,
+    "maxRGB": 4.544084072113037
+  },
+  "master": "development/vertical-city-v02/blender/SaintMeridian_V02_Diffuse_Pilot.blend",
+  "masterSHA256": "0ab598f955d6452a7090ab7220284846275be5684b5f6b0eb22e85e4644445d4",
+  "unchangedSourceObjects": 47069,
+  "controlledFixtureMaterialBindings": [
+    "loggia-room-40-warm-33.2",
+    "loggia-room-40-warm-35.3",
+    "loggia-room-40-warm-37.5",
+    "loggia-room-40-warm-39.6",
+    "loggia-room-68-warm-33.2",
+    "loggia-room-68-warm-35.3",
+    "loggia-room-68-warm-37.5",
+    "loggia-room-68-warm-39.6",
+    "loggia-room-100-warm-33.2",
+    "loggia-room-100-warm-35.3",
+    "loggia-room-100-warm-37.5",
+    "loggia-room-100-warm-39.6"
+  ],
+  "controlledSourceUVChange": "loggia-rooms hidden export only",
+  "geometryBaseUVSignature": "3964d4773b7aeec3a700adde5aba630be019eb8814d58946bb4ab12ffa86dd93",
+  "newDynamicLights": 0,
+  "runtimeLightingPolicy": "Replace selected materials diffuse contributions with source bake; preserve original specular/environment and emissive terms. Never add the full bake on top of existing scene diffuse.",
+  "localReflectionProbes": [
+    {
+      "floor": 40,
+      "position": [
+        36.4,
+        41.6,
+        299.5
+      ],
+      "url": "assets/city/vertical-v02/diffuse-pilot/room-40-radiance.rgba16f.gz",
+      "sha256": "96416a8ab71e35eb25c9ee0a6dde481cfd5ff93bdc51b5ec0aaf0a2c629a3eda",
+      "rawSHA256": "d1a81b3f9a66e91b7d7272ba427e5aa0879b9d88523dc5b25f95cbe5c47f4748",
+      "bytes": 701500,
+      "rawBytes": 1048576,
+      "width": 512,
+      "height": 256,
+      "samples": 64,
+      "format": "scene-linear RGBA16F little endian, bottom row first, equirectangular north at v=1; flipY=false",
+      "mapping": "centre +X, right +Z, up +Y in game coordinates",
+      "sourceMasterSHA256": "0ab598f955d6452a7090ab7220284846275be5684b5f6b0eb22e85e4644445d4",
+      "static": true
+    },
+    {
+      "floor": 68,
+      "position": [
+        36.4,
+        69.6,
+        299.5
+      ],
+      "url": "assets/city/vertical-v02/diffuse-pilot/room-68-radiance.rgba16f.gz",
+      "sha256": "72b57bf879581289af22be39166140272fe1af1c9097993b38528fcb368dcc2b",
+      "rawSHA256": "ab023e1c9abbbac9fb1087a8b0c26444c0d48e2db1bffbe66762c9d49c8e8be5",
+      "bytes": 704875,
+      "rawBytes": 1048576,
+      "width": 512,
+      "height": 256,
+      "samples": 64,
+      "format": "scene-linear RGBA16F little endian, bottom row first, equirectangular north at v=1; flipY=false",
+      "mapping": "centre +X, right +Z, up +Y in game coordinates",
+      "sourceMasterSHA256": "0ab598f955d6452a7090ab7220284846275be5684b5f6b0eb22e85e4644445d4",
+      "static": true
+    },
+    {
+      "floor": 100,
+      "position": [
+        36.4,
+        101.6,
+        299.5
+      ],
+      "url": "assets/city/vertical-v02/diffuse-pilot/room-100-radiance.rgba16f.gz",
+      "sha256": "733897678c333a91dd3b53d50074604e4a9ee6f30decad676a7244e30d7febcd",
+      "rawSHA256": "19b5ba0804fc60ae9f73b34d70fcda99639106f67f439502f4a41fb46ec68503",
+      "bytes": 699348,
+      "rawBytes": 1048576,
+      "width": 512,
+      "height": 256,
+      "samples": 64,
+      "format": "scene-linear RGBA16F little endian, bottom row first, equirectangular north at v=1; flipY=false",
+      "mapping": "centre +X, right +Z, up +Y in game coordinates",
+      "sourceMasterSHA256": "0ab598f955d6452a7090ab7220284846275be5684b5f6b0eb22e85e4644445d4",
+      "static": true
+    }
+  ]
+}

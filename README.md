@@ -12,6 +12,8 @@ Includes three public loggias, a connected 26-flight stair from24to128m, the exi
 
 All12current gameplay scenarios, six station approaches, three public loops,18HUD/input cases and the complete stair tour pass their stated checks. Saved Blender geometry, modular exports, physical contacts, vehicle separation and current60-second matched performance evidence are included. **V02 remains unfinished:** approved-reference visual refinement, broader combat-camera framing, remaining release regressions and combined stress/performance work are open. [Implementation and exact limits](development/vertical-city-v02/V02_LOGGIA_TERRACES.md) · [Current candidate identity](development/vertical-city-v02/V02_Current_Candidate_Status.json) · [Bounded evidence package](development/vertical-city-v02/V02_Loggia_Terraces_Evidence.json).
 
+Experimental lighting build: [SIGHTLINE_SAINT_MERIDIAN_V02_DIFFUSE_LIGHTING.html](SIGHTLINE_SAINT_MERIDIAN_V02_DIFFUSE_LIGHTING.html) adds source-baked diffuse light and room-local reflections to the three loggias. It preserves the complete game and is not promoted over the checkpoint above. [Lighting evidence and remaining visual limits](development/vertical-city-v02/V02_DIFFUSE_LIGHTING.md).
+
 ## Earlier checkpoints
 
 The entries below are historical. Their files, snapshots and branches remain available for rollback.

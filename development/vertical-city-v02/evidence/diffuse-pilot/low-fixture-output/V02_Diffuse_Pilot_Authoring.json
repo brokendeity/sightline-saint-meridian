@@ -1,0 +1,132 @@
+{
+  "status": "AUTHORED UV2 and real source full-diffuse-light atlas; independent export/native/visual verification pending",
+  "sourceMaster": "development/vertical-city-v02/blender/SaintMeridian_V02_Loggia_Terraces.blend",
+  "sourceMasterSHA256": "5ccbb46478111f9a2ff265dcafb9d045caaba7777ca12bb84d25aad2a1df9927",
+  "scriptSHA256": "e125b29801a79cabc60ef39b7074f201b6f4723136060b1f7c3d481a23e715ea",
+  "scope": "Blender-authored UV2/full-diffuse-light pilot for existing public loggia rooms.\n\nOnly a hidden export object's additional UV layer and private bake materials\nchange. All original physical/source components remain unchanged. This creates\nsource/export data; it does not install a runtime candidate or pass visual review.",
+  "stages": [
+    {
+      "name": "source UV2 exported",
+      "wallSeconds": 10.066677125170827,
+      "file": "assets/city/vertical-v02/diffuse-pilot/loggia-rooms-uv2.glb",
+      "sha256": "795301fee98d60500b0f583b3ae0e26b11469e8a61e97ecf625e8db1f2187b9c",
+      "bytes": 1012676,
+      "primitives": 7,
+      "uv2Primitives": 7
+    },
+    {
+      "name": "baking source direct and indirect diffuse",
+      "wallSeconds": 10.28477454232052,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "samples": 64,
+      "physicalSourceComponents": 102,
+      "overlappingSourceDuplicatesHidden": true,
+      "sourceRenderUV": "Metres_2_4",
+      "bakeUV": "V02_Diffuse_Atlas"
+    },
+    {
+      "name": "saved source pilot",
+      "wallSeconds": 38.52971116732806,
+      "masterSHA256": "128f5ba98d79f5ea0bc7100e0a535cbd9406efab9a3a61a15a51d5a16a8326ac"
+    }
+  ],
+  "sourceImages": [
+    {
+      "name": "1A240517-7816-4A19-B701-A45E9BD744F6.png",
+      "source": "FILE",
+      "packed": true,
+      "filepath": "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/development/vertical-city-v02/evidence/reference-baseline/native-textures/1A240517-7816-4A19-B701-A45E9BD744F6.png",
+      "exists": true
+    },
+    {
+      "name": "Render Result",
+      "source": "VIEWER",
+      "packed": false,
+      "filepath": "",
+      "exists": true
+    },
+    {
+      "name": "soffit_fill.png",
+      "source": "FILE",
+      "packed": true,
+      "filepath": "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/assets/city/vertical-v02/visual/soffit_fill.png",
+      "exists": true
+    },
+    {
+      "name": "V02_MetalPanel_BaseColor",
+      "source": "FILE",
+      "packed": true,
+      "filepath": "",
+      "exists": true
+    },
+    {
+      "name": "V02_MetalPanel_Normal",
+      "source": "FILE",
+      "packed": true,
+      "filepath": "",
+      "exists": true
+    },
+    {
+      "name": "V02_MetalPanel_Roughness",
+      "source": "FILE",
+      "packed": true,
+      "filepath": "",
+      "exists": true
+    },
+    {
+      "name": "Viewer Node",
+      "source": "VIEWER",
+      "packed": false,
+      "filepath": "",
+      "exists": true
+    }
+  ],
+  "uv": {
+    "name": "V02_Diffuse_Atlas",
+    "loops": 9120,
+    "min": [
+      0.0,
+      0.0
+    ],
+    "max": [
+      1.0,
+      1.0
+    ],
+    "baseUVPreserved": true
+  },
+  "export": {
+    "file": "assets/city/vertical-v02/diffuse-pilot/loggia-rooms-uv2.glb",
+    "sha256": "795301fee98d60500b0f583b3ae0e26b11469e8a61e97ecf625e8db1f2187b9c",
+    "bytes": 1012676,
+    "primitives": 7,
+    "uv2Primitives": 7
+  },
+  "stage": "saved source pilot",
+  "atlas": {
+    "file": "assets/city/vertical-v02/diffuse-pilot/loggia-diffuse.rgba16f.gz",
+    "sha256": "86463ccffb277ee71354248d24b924b8867f6bbf617faafa388fb74bb74abd90",
+    "rawSHA256": "5e4fe4de0213b71f0632245bce1690c118514503a937d306f282e43704a7a9f2",
+    "bytes": 4132252,
+    "rawBytes": 8388608,
+    "width": 1024,
+    "height": 1024,
+    "components": 4,
+    "format": "little-endian IEEE754 binary16 RGBA, scene-linear uncolored source direct and indirect diffuse, top row first",
+    "uv": "glTF TEXCOORD_1 / texture.flipY=false; runtime orientation validation pending",
+    "samples": 64,
+    "coveredPixels": 550621,
+    "litPixels": 662423,
+    "minRGB": 0.0,
+    "maxRGB": 1.6662715673446655
+  },
+  "master": "development/vertical-city-v02/blender/SaintMeridian_V02_Diffuse_Pilot.blend",
+  "masterSHA256": "128f5ba98d79f5ea0bc7100e0a535cbd9406efab9a3a61a15a51d5a16a8326ac",
+  "unchangedSourceObjects": 47081,
+  "controlledSourceUVChange": "loggia-rooms hidden export only",
+  "geometryBaseUVSignature": "3964d4773b7aeec3a700adde5aba630be019eb8814d58946bb4ab12ffa86dd93",
+  "newDynamicLights": 0,
+  "runtimeLightingPolicy": "Replace selected materials diffuse contributions with source bake; preserve original specular/environment and emissive terms. Never add the full bake on top of existing scene diffuse."
+}

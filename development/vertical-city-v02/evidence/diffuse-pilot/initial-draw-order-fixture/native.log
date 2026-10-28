@@ -1,0 +1,58 @@
+AssertionError [ERR_ASSERTION]: Actual visible loggia draw calls/triangles must remain identical
++ actual - expected
+... Skipped lines
+
+  [
+    {
++     material: 'V02_steel',
++     name: 'loggia-rooms_2',
++     triangles: 1452
++   },
++   {
+      material: 'V02_cyan',
+      name: 'loggia-rooms_5',
+      triangles: 216
+    },
+    {
++     material: 'V02_warm',
++     name: 'loggia-rooms_7',
++     triangles: 144
++   },
++   {
+      material: 'V02_deck',
+      name: 'loggia-rooms_1',
+      triangles: 1788
+    },
+    {
+-     material: 'V02_steel',
+-     name: 'loggia-rooms_2',
+-     triangles: 1452
+-   },
+-   {
+      material: 'V02_arcade_soffit',
+      name: 'loggia-rooms_3',
+      triangles: 96
+    },
+    {
+...
+    {
+-     material: 'V02_warm',
+-     name: 'loggia-rooms_7',
+-     triangles: 144
+-   },
+-   {
+      material: 'V02_glass',
+      name: 'loggia-rooms_4',
+      triangles: 216
+    }
+  ]
+
+    at /Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/test_diffuse_lighting.cjs:22:285 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: [Array],
+  expected: [Array],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+FAIL

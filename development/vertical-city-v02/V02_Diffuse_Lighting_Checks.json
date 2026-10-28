@@ -1,0 +1,49 @@
+{
+  "status": "PASS18HUD/input checks and installed-client actual movement after explicit source-light readiness",
+  "identities": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_DIFFUSE_LIGHTING.html": "50bd5427f2f133ec53ff399be44b6760492bd099181550a8915486bf65c9e84c",
+    "assets/city/vertical-v02/diffuse-pilot/runtime/manifest.json": "1a7999c9678ffcf04634cd453c4797bc909a0cfbd21068886d41b25b0773d6bf",
+    "scripts/game_vertical_diffuse_lighting_v02.js": "99bb11e0709d8b6372731bc4c17a05cd3fc7d090f85a876e1f84822c34ce644d",
+    "assets/city/vertical-v02/diffuse-pilot/runtime/lighting.json": "f9743db14f8272150bc628c9925259fc85dff48883deaac3d6a543f582e84002"
+  },
+  "jobs": [
+    {
+      "name": "hud",
+      "returncode": 0,
+      "seconds": 29.505371790844947,
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_hud_candidate.cjs"
+      ],
+      "environment": {
+        "V02_HUD_ENTRY": "SIGHTLINE_SAINT_MERIDIAN_V02_DIFFUSE_LIGHTING.html",
+        "V02_HUD_RUN": "diffuse-lighting-hud",
+        "V02_HUD_REPORT": "V02_Diffuse_Lighting_HUD.json"
+      },
+      "log": "evidence/diffuse-pilot/hud.log"
+    },
+    {
+      "name": "stock",
+      "returncode": 0,
+      "seconds": 13.032301249913871,
+      "command": [
+        "node",
+        "development/vertical-city-v02/tools/run-skill-client.cjs",
+        "--url",
+        "http://127.0.0.1:8766/SIGHTLINE_SAINT_MERIDIAN_V02_DIFFUSE_LIGHTING.html?capture=backspool",
+        "--click-selector",
+        "#v02Start",
+        "--actions-json",
+        "{\"steps\": [{\"buttons\": [\"a\"], \"frames\": 45}, {\"buttons\": [], \"frames\": 12}]}",
+        "--iterations",
+        "1",
+        "--pause-ms",
+        "250",
+        "--screenshot-dir",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/development/vertical-city-v02/evidence/stock-diffuse-lighting"
+      ],
+      "environment": {},
+      "log": "evidence/diffuse-pilot/stock.log"
+    }
+  ]
+}

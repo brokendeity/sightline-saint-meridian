@@ -1,0 +1,5 @@
+{
+  "status": "FAIL export tangent parity",
+  "cause": "Exporter derived tangents from newly active UV2 even though UV0 was render-active. UV0/geometry were preserved but normal-map tangent directions changed.",
+  "resolution": "Set active UV index to original UV0 before export; explicit UV2 still selected for bake."
+}
