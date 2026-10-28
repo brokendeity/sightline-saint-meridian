@@ -1,0 +1,303 @@
+{
+  "scope": "Service-yard local encounter; single initial fixture, no route-node teleporting or injected damage. Other district encounters and full V02 acceptance remain pending.",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html",
+  "manifest": "assets/city/vertical-v02/loggia-terraces/runtime/manifest.json",
+  "results": [
+    {
+      "name": "real keyboard starts three supported, damage-taking opponents on two elevations",
+      "pass": true
+    },
+    {
+      "name": "partial invalid placement preserves all existing actors and attempt",
+      "pass": true,
+      "evidence": {
+        "accepted": false,
+        "before": 1,
+        "after": 1,
+        "hp": [
+          180,
+          180,
+          180
+        ],
+        "afterHp": [
+          180,
+          180,
+          180
+        ]
+      }
+    },
+    {
+      "name": "normal controller movement climbs to mezzanine and overhead maintenance route",
+      "pass": true,
+      "airFrames": 0
+    },
+    {
+      "name": "legal heavy contacts defeat lower and upper opponents, award once",
+      "pass": true,
+      "victory": {
+        "district": {
+          "phase": "victory",
+          "attempt": 2,
+          "elapsed": 52.28333333333165,
+          "rewarded": true,
+          "message": "Yard secured · +350. Continue to the market or transit interchange.",
+          "reason": null,
+          "history": [
+            {
+              "attempt": 1,
+              "outcome": "ENDED",
+              "elapsed": 0.06666666666666667
+            },
+            {
+              "attempt": 2,
+              "outcome": "victory",
+              "elapsed": 52.28333333333165,
+              "reward": 350
+            }
+          ],
+          "events": [
+            {
+              "eventId": 1,
+              "time": 0.067,
+              "attempt": 1,
+              "kind": "started",
+              "positions": [
+                [
+                  65,
+                  52,
+                  330
+                ],
+                [
+                  73,
+                  52,
+                  327
+                ],
+                [
+                  85.5,
+                  55.2,
+                  329
+                ]
+              ]
+            },
+            {
+              "eventId": 2,
+              "time": 0.133,
+              "attempt": 1,
+              "kind": "ended",
+              "reason": "ENDED"
+            },
+            {
+              "eventId": 3,
+              "time": 28.017,
+              "attempt": 2,
+              "kind": "started",
+              "positions": [
+                [
+                  65,
+                  52,
+                  330
+                ],
+                [
+                  73,
+                  52,
+                  327
+                ],
+                [
+                  85.5,
+                  55.2,
+                  329
+                ]
+              ]
+            },
+            {
+              "eventId": 4,
+              "time": 80.3,
+              "attempt": 2,
+              "kind": "victory",
+              "reward": 350
+            }
+          ],
+          "eventId": 4,
+          "config": {
+            "id": "service-combat",
+            "title": "SERVICE YARD · COMBAT",
+            "trigger": [
+              62,
+              52,
+              337
+            ],
+            "positions": [
+              [
+                65,
+                52,
+                330
+              ],
+              [
+                73,
+                52,
+                327
+              ],
+              [
+                85.5,
+                55.2,
+                329
+              ]
+            ],
+            "reward": 350,
+            "bounds": {
+              "min": [
+                51,
+                51.9,
+                308
+              ],
+              "max": [
+                99,
+                61,
+                343
+              ]
+            },
+            "actorType": "existing damage-taking sparring prototype",
+            "status": "runtime adapter; acceptance is hash-bound external evidence, not this design record"
+          },
+          "near": false,
+          "inside": true,
+          "opponents": [
+            {
+              "id": "encounter-2-0",
+              "hp": 0,
+              "phase": "heavy-stagger",
+              "position": [
+                65.92064527748195,
+                52,
+                324.60848319357166
+              ]
+            },
+            {
+              "id": "encounter-2-1",
+              "hp": 0,
+              "phase": "guard-break",
+              "position": [
+                71.20007443256662,
+                52,
+                333.5757812946773
+              ]
+            },
+            {
+              "id": "encounter-2-2",
+              "hp": 0,
+              "phase": "heavy-stagger",
+              "position": [
+                88.29146346645929,
+                55.2,
+                332.54286404202
+              ]
+            }
+          ],
+          "scope": "Service-yard prototype combat only; rescue and pursuit pending"
+        },
+        "encounter": {
+          "active": true,
+          "lesson": false,
+          "stage": 0,
+          "clock": 53.299999999998256,
+          "message": "",
+          "completed": false,
+          "outcome": "victory",
+          "attacks": 4,
+          "guardBreaks": 2,
+          "recordingId": null,
+          "targetId": "encounter-2-0",
+          "attackerId": null,
+          "nextAttackAt": 43.533333333332166,
+          "eventCursor": 0,
+          "interruptionReason": null,
+          "attempt": 2,
+          "notice": "",
+          "opponents": [
+            {
+              "id": "encounter-2-0",
+              "role": "drill",
+              "phase": "heavy-stagger",
+              "hp": 0,
+              "guarding": false,
+              "position": [
+                65.92064527748195,
+                52,
+                324.60848319357166
+              ],
+              "home": [
+                65,
+                52,
+                330
+              ],
+              "aim": [
+                0.4337127616093503,
+                0,
+                0.9010511863469195
+              ],
+              "windup": 1.2,
+              "stagger": 1.2
+            },
+            {
+              "id": "encounter-2-1",
+              "role": "guard",
+              "phase": "guard-break",
+              "hp": 0,
+              "guarding": false,
+              "position": [
+                71.20007443256662,
+                52,
+                333.5757812946773
+              ],
+              "home": [
+                73,
+                52,
+                327
+              ],
+              "aim": [
+                -0.5397448564789453,
+                0,
+                -0.8418286582817922
+              ],
+              "windup": 1.2,
+              "stagger": 1.2
+            },
+            {
+              "id": "encounter-2-2",
+              "role": "striker",
+              "phase": "heavy-stagger",
+              "hp": 0,
+              "guarding": false,
+              "position": [
+                88.29146346645929,
+                55.2,
+                332.54286404202
+              ],
+              "home": [
+                85.5,
+                55.2,
+                329
+              ],
+              "aim": [
+                -0.5694849674945307,
+                0,
+                -0.8220017468337604
+              ],
+              "windup": 1.2,
+              "stagger": 1.2
+            }
+          ]
+        },
+        "score": 2510
+      }
+    }
+  ],
+  "errors": [],
+  "entrySHA256": "85762c3518a57f5c9860640900c94b8fff11f707137b9baf780856410a256f3e",
+  "manifestSHA256": "266c0f8a4df4c6bfbbcd59b749b6f656867ec3b1cbc22bef8df29742d7ac74ce",
+  "encounterSHA256": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+  "marketSHA256": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+  "status": "PASS local service encounter",
+  "fullTrace": "V02_Service_Encounter.trace.json.gz",
+  "traceFrames": 3019
+}

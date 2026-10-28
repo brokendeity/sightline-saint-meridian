@@ -1,0 +1,57 @@
+{
+  "status": "REVIEWED current baseline/candidate active timeline sheets and endpoint captures",
+  "benchmarkSHA256": "b836cb1e353c639a8604dc16f217f36e6155a573c6827fd0335414957f1232e0",
+  "videos": [
+    {
+      "name": "baseline",
+      "file": "evidence/loggia-terraces-benchmark/baseline.webm",
+      "sha256": "f5f5bac7dc33470dcfa1517f0e95d7148e91482537e85c29fb5fb5e0a4fa2d26",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 400
+          }
+        ],
+        "format": {
+          "duration": "75.960000"
+        }
+      },
+      "timeline": "evidence/loggia-terraces-benchmark/baseline-timeline.png",
+      "timelineSHA256": "a343cbb7851b9614cfd13d69099cf165ad5c68da9b40e4459ed2ed5f88fdd56f"
+    },
+    {
+      "name": "candidate",
+      "file": "evidence/loggia-terraces-benchmark/candidate.webm",
+      "sha256": "960b0c58835b03d8af4a749ad2d3e954dc306becf41b155ef987e46515a37c31",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 400
+          }
+        ],
+        "format": {
+          "duration": "71.240000"
+        }
+      },
+      "timeline": "evidence/loggia-terraces-benchmark/candidate-timeline.png",
+      "timelineSHA256": "e036ca279e23be8818c32764748b35069e8b1b319befe0ff0f945488fb39da05"
+    }
+  ],
+  "findings": [
+    "Both recordings show supported active traversal, turning and existing Afterstep presentation through the same lower loop",
+    "Candidate includes the new source-built stair/loggia massing in the actual game",
+    "No black-world/context-loss interval is visible in the sampled active frames; unused contact-sheet cells are blank beyond video duration",
+    "Native/source A/B and room/stair images reviewed separately; full visual reference gate remains FAIL"
+  ],
+  "limits": [
+    "Timeline sheets sample every10seconds; they do not certify every video frame",
+    "Videos include loading and post-measurement inactive frames; only JSON-measured60simseconds establish benchmark scope",
+    "A sustained combined combat/replay/destruction workload remains separate"
+  ]
+}

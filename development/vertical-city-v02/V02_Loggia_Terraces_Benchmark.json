@@ -1,0 +1,1760 @@
+{
+  "status": "MEASURED fixed-resolution bounded material workload; full combined release benchmark remains separate",
+  "scope": "Matched 60 simulation-second fixed1280x800 lower public loop through native RAF, standard simulated controller and rendering. No combat/replay/destruction stress; not final combined release acceptance.",
+  "viewport": [
+    1280,
+    800
+  ],
+  "video": [
+    640,
+    400
+  ],
+  "route": [
+    [
+      55,
+      24,
+      210
+    ],
+    [
+      55,
+      24,
+      230
+    ],
+    [
+      55,
+      24,
+      250
+    ],
+    [
+      55,
+      24,
+      276
+    ],
+    [
+      55,
+      24,
+      300
+    ],
+    [
+      55,
+      24,
+      326
+    ],
+    [
+      55,
+      24,
+      350
+    ],
+    [
+      96,
+      24,
+      350
+    ],
+    [
+      96,
+      24,
+      326
+    ],
+    [
+      96,
+      24,
+      300
+    ],
+    [
+      96,
+      24,
+      276
+    ],
+    [
+      96,
+      24,
+      250
+    ],
+    [
+      96,
+      24,
+      230
+    ],
+    [
+      96,
+      24,
+      210
+    ],
+    [
+      55,
+      24,
+      210
+    ]
+  ],
+  "runs": [
+    {
+      "id": "baseline",
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_MATERIAL_RESPONSE.html",
+      "entrySHA256": "3954b264ef205ad17150fd026238820af11b93d984ffca680e3bd201af51da9a",
+      "loadWallMs": 8199,
+      "wallSeconds": 60.502,
+      "simulationSeconds": 60,
+      "frameIntervalsMs": {
+        "samples": 4491,
+        "p50": 8.5,
+        "p95": 25,
+        "max": 129.10000000000218
+      },
+      "simulationCpuMs": {
+        "samples": 3600,
+        "p50": 9.400000095367432,
+        "p95": 17.699999809265137,
+        "max": 60.19999980926514
+      },
+      "renderSubmissionCpuMs": {
+        "samples": 4492,
+        "p50": 3.5999999046325684,
+        "p95": 4.300000190734863,
+        "max": 59.09999990463257
+      },
+      "gpuTimeMs": {
+        "samples": 1123,
+        "p50": 6.805458,
+        "p95": 9.778999,
+        "max": 24.241875
+      },
+      "gpuTiming": {
+        "supported": true,
+        "disjointSamples": 0,
+        "scope": "Asynchronous elapsed GPU time for renderNight, including world, cartridge capture and post pass"
+      },
+      "internalResolution": [
+        1280,
+        800
+      ],
+      "renderedFrames": 4492,
+      "drawCalls": {
+        "samples": 4492,
+        "p50": 420,
+        "p95": 496,
+        "max": 502
+      },
+      "renderedTriangles": {
+        "samples": 4492,
+        "p50": 1583414,
+        "p95": 1716565,
+        "max": 1756482
+      },
+      "distance": 640.6535539148827,
+      "highSpeedSeconds": 29.5,
+      "laps": 1,
+      "droppedTime": 0.47840000009536743,
+      "memory": {
+        "start": {
+          "used": 322000000,
+          "total": 410000000
+        },
+        "end": {
+          "used": 322000000,
+          "total": 410000000
+        }
+      },
+      "startQuality": null,
+      "end": {
+        "quality": null,
+        "position": [
+          95.99999998953633,
+          24.42,
+          250.6105369099554
+        ],
+        "trauma": 0,
+        "grounded": true,
+        "simulation": {
+          "units": "CPU milliseconds; render is submission time",
+          "simulation": {
+            "samples": 240,
+            "p50": 7.199999809265137,
+            "p95": 12
+          },
+          "render": {
+            "samples": 240,
+            "p50": 3.5999999046325684,
+            "p95": 4.300000190734863
+          }
+        },
+        "acceleration": {
+          "builds": 16,
+          "invalidations": 0,
+          "queries": 79486,
+          "acceleratedMeshes": 315071,
+          "nativeMeshes": 65974,
+          "leafTests": 255957,
+          "indexBytes": 1588544,
+          "buildMs": 99.20000076293945,
+          "scope": "Exact static V02 camera triangles; native fallback for original and unsupported meshes"
+        }
+      },
+      "trace": [
+        {
+          "step": 120,
+          "simSeconds": 2,
+          "wallMs": 1998.3999996185303,
+          "position": [
+            55,
+            24.42,
+            229.4237845412517
+          ],
+          "velocity": [
+            0,
+            0,
+            1.9636380000000002
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            234.37057668130444
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 1,
+          "source": "traversal-locomotion-walk"
+        },
+        {
+          "step": 240,
+          "simSeconds": 4,
+          "wallMs": 3985.7999997138977,
+          "position": [
+            55,
+            24.42,
+            249.28663741586766
+          ],
+          "velocity": [
+            0,
+            0,
+            1.982788404959545
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            254.15773708402776
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 2,
+          "source": "traversal-locomotion-walk"
+        },
+        {
+          "step": 360,
+          "simSeconds": 6,
+          "wallMs": 5998.599999904633,
+          "position": [
+            55,
+            24.42,
+            272.7205766522048
+          ],
+          "velocity": [
+            0,
+            0,
+            11.405240515025023
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            276.437612520074
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 3,
+          "source": "traversal-locomotion-parkourRun"
+        },
+        {
+          "step": 480,
+          "simSeconds": 8,
+          "wallMs": 7990.199999809265,
+          "position": [
+            55,
+            24.42,
+            292.1653015996369
+          ],
+          "velocity": [
+            0,
+            0,
+            16.36365
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            295.5412539158319
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 4,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 600,
+          "simSeconds": 10,
+          "wallMs": 9988.5,
+          "position": [
+            55,
+            24.42,
+            311.52314531664786
+          ],
+          "velocity": [
+            0,
+            0,
+            16.36365
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            314.9060946907559
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 5,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 720,
+          "simSeconds": 12,
+          "wallMs": 12109,
+          "position": [
+            55,
+            24.42,
+            330.6643068335931
+          ],
+          "velocity": [
+            0,
+            0,
+            13.363638000000009
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            334.5578145800366
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 6,
+          "source": "traversal-locomotion-parkourRun"
+        },
+        {
+          "step": 840,
+          "simSeconds": 14,
+          "wallMs": 14351.799999713898,
+          "position": [
+            56.84222714415983,
+            24.42,
+            349.72281007388125
+          ],
+          "velocity": [
+            8.263430964944606,
+            0,
+            0.05849515055651511
+          ],
+          "camera": [
+            58.01491245743975,
+            26.43160332695665,
+            354.36930319866013
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 7,
+          "source": "traversal-locomotion-fastRun"
+        },
+        {
+          "step": 960,
+          "simSeconds": 16,
+          "wallMs": 16530,
+          "position": [
+            87.81374577227875,
+            24.42,
+            349.94205116790204
+          ],
+          "velocity": [
+            16.363240029332825,
+            0,
+            0.11583205488878312
+          ],
+          "camera": [
+            87.90388264405551,
+            26.43133720100682,
+            354.5658546558419
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 7,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 1080,
+          "simSeconds": 18,
+          "wallMs": 18506.299999713898,
+          "position": [
+            95.84243197687722,
+            24.42,
+            339.00238081830724
+          ],
+          "velocity": [
+            0.1982866609690963,
+            0,
+            -16.362448585788794
+          ],
+          "camera": [
+            97.18082728819108,
+            26.43160332695665,
+            344.59523126731517
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 8,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 1200,
+          "simSeconds": 20,
+          "wallMs": 20512.5,
+          "position": [
+            95.99747185792833,
+            24.42,
+            319.6315357114011
+          ],
+          "velocity": [
+            0.001991401694673,
+            0,
+            -15.463637871774019
+          ],
+          "camera": [
+            97.3473760074022,
+            26.43160332695665,
+            325.01505144445395
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 9,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 1320,
+          "simSeconds": 22,
+          "wallMs": 22508.89999961853,
+          "position": [
+            95.999965215992,
+            24.42,
+            298.71697510113324
+          ],
+          "velocity": [
+            0.000011734486845135796,
+            0,
+            -7.663637999991014
+          ],
+          "camera": [
+            97.34996749869525,
+            26.43160332695665,
+            303.4499614151566
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 10,
+          "source": "traversal-locomotion-fastRun"
+        },
+        {
+          "step": 1440,
+          "simSeconds": 24,
+          "wallMs": 24507.39999961853,
+          "position": [
+            95.99999955073821,
+            24.42,
+            276.21385285163774
+          ],
+          "velocity": [
+            4.393648637216195e-8,
+            0,
+            -2.5636379999999996
+          ],
+          "camera": [
+            97.35000008150917,
+            26.43160332695665,
+            280.49518050198117
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 11,
+          "source": "traversal-locomotion-jog"
+        },
+        {
+          "step": 1560,
+          "simSeconds": 26,
+          "wallMs": 26501.699999809265,
+          "position": [
+            95.9999999784023,
+            24.42,
+            251.26019606013864
+          ],
+          "velocity": [
+            8.864372700246333e-8,
+            0,
+            -5.172241092223033
+          ],
+          "camera": [
+            97.34999997613416,
+            26.43160332695665,
+            256.02766727485226
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 11,
+          "source": "traversal-locomotion-run"
+        },
+        {
+          "step": 1680,
+          "simSeconds": 28,
+          "wallMs": 28500.89999961853,
+          "position": [
+            95.99999999960582,
+            24.42,
+            231.6468808190145
+          ],
+          "velocity": [
+            1.6298984369977101e-9,
+            0,
+            -6.809583698284386
+          ],
+          "camera": [
+            97.34999999955,
+            26.43160332695665,
+            236.5152018509887
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 12,
+          "source": "traversal-locomotion-fastRun"
+        },
+        {
+          "step": 1800,
+          "simSeconds": 30,
+          "wallMs": 30501.599999904633,
+          "position": [
+            95.99999999999272,
+            24.42,
+            212.14316414999246
+          ],
+          "velocity": [
+            2.882409317907473e-11,
+            0,
+            -8.487030644258066
+          ],
+          "camera": [
+            97.3499999999914,
+            26.43160332695665,
+            217.17013995710565
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 13,
+          "source": "traversal-locomotion-fastRun"
+        },
+        {
+          "step": 1920,
+          "simSeconds": 32,
+          "wallMs": 32515.599999904633,
+          "position": [
+            77.6404357435222,
+            24.42,
+            210.15783689505423
+          ],
+          "velocity": [
+            -16.363252367520122,
+            0,
+            -0.1140757614356827
+          ],
+          "camera": [
+            80.1134516771029,
+            26.43160332695665,
+            214.80079388469878
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 14,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 2040,
+          "simSeconds": 34,
+          "wallMs": 34517.59999990463,
+          "position": [
+            55.28440355009892,
+            24.42,
+            210.44379918320732
+          ],
+          "velocity": [
+            -0.06345316937792188,
+            0,
+            4.363176628368359
+          ],
+          "camera": [
+            56.476147096239146,
+            26.43160332695665,
+            215.1622716579956
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 1,
+          "source": "traversal-locomotion-run"
+        },
+        {
+          "step": 2160,
+          "simSeconds": 36,
+          "wallMs": 36500.09999990463,
+          "position": [
+            55.004184109349836,
+            24.42,
+            229.947504222896
+          ],
+          "velocity": [
+            -0.0007227150169160589,
+            0,
+            3.4636379245999436
+          ],
+          "camera": [
+            56.35053081789945,
+            26.43160332695665,
+            234.89366714260728
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 2,
+          "source": "traversal-locomotion-jog"
+        },
+        {
+          "step": 2280,
+          "simSeconds": 38,
+          "wallMs": 38499,
+          "position": [
+            55.00005926310882,
+            24.42,
+            249.75329844779353
+          ],
+          "velocity": [
+            -0.0000051111270055750054,
+            0,
+            2.26363799999423
+          ],
+          "camera": [
+            56.3499825122326,
+            26.43160332695665,
+            254.7522932086714
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 3,
+          "source": "traversal-locomotion-jog"
+        },
+        {
+          "step": 2400,
+          "simSeconds": 40,
+          "wallMs": 40506.5,
+          "position": [
+            55.0000030434425,
+            24.42,
+            274.65210704238706
+          ],
+          "velocity": [
+            -0.000012560087688465191,
+            0,
+            5.562665885093364
+          ],
+          "camera": [
+            56.350003667979905,
+            26.43160332695665,
+            279.0106371530014
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 3,
+          "source": "traversal-locomotion-run"
+        },
+        {
+          "step": 2520,
+          "simSeconds": 42,
+          "wallMs": 42500.89999961853,
+          "position": [
+            55.00000011235018,
+            24.42,
+            295.7877632470771
+          ],
+          "velocity": [
+            -3.586624000329466e-7,
+            0,
+            13.446983333333336
+          ],
+          "camera": [
+            56.35000014194342,
+            26.43160332695665,
+            299.3133796170928
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 4,
+          "source": "traversal-locomotion-parkourRun"
+        },
+        {
+          "step": 2640,
+          "simSeconds": 44,
+          "wallMs": 44497.5,
+          "position": [
+            55.000000003163834,
+            24.42,
+            315.340162146254
+          ],
+          "velocity": [
+            -4.856721248141926e-9,
+            0,
+            16.36365
+          ],
+          "camera": [
+            56.35000000353751,
+            26.43160332695665,
+            318.7162864800678
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 5,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 2760,
+          "simSeconds": 46,
+          "wallMs": 46503.199999809265,
+          "position": [
+            55.00000000005464,
+            24.42,
+            334.25791928309155
+          ],
+          "velocity": [
+            -5.679655230039061e-11,
+            0,
+            16.36365
+          ],
+          "camera": [
+            56.350000000058714,
+            26.43160332695665,
+            337.71729848677313
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 6,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 2880,
+          "simSeconds": 48,
+          "wallMs": 48502.5,
+          "position": [
+            59.29534817346175,
+            24.42,
+            349.74052638876
+          ],
+          "velocity": [
+            12.463326582704633,
+            0,
+            0.08810611722353694
+          ],
+          "camera": [
+            60.00529329400928,
+            26.43160332695665,
+            354.37178185029836
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 7,
+          "source": "traversal-locomotion-parkourRun"
+        },
+        {
+          "step": 3000,
+          "simSeconds": 50,
+          "wallMs": 50499.199999809265,
+          "position": [
+            91.48640324313007,
+            24.42,
+            349.96809234819307
+          ],
+          "velocity": [
+            13.867257012740074,
+            0,
+            0.0980308237784669
+          ],
+          "camera": [
+            91.69347699421405,
+            26.43160016651088,
+            354.5951120997332
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 7,
+          "source": "traversal-locomotion-parkourRun"
+        },
+        {
+          "step": 3120,
+          "simSeconds": 52,
+          "wallMs": 52499.699999809265,
+          "position": [
+            95.88869844565498,
+            24.42,
+            335.1844789308312
+          ],
+          "velocity": [
+            0.19828734686845234,
+            0,
+            -16.36244857747678
+          ],
+          "camera": [
+            97.22699612630171,
+            26.43160332695665,
+            340.78527453917746
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 8,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 3240,
+          "simSeconds": 54,
+          "wallMs": 54499,
+          "position": [
+            95.99796160400565,
+            24.42,
+            315.82835400660423
+          ],
+          "velocity": [
+            0.002107332090401803,
+            0,
+            -16.36364986430752
+          ],
+          "camera": [
+            97.34783886477713,
+            26.43160332695665,
+            321.41676125149314
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 9,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 3360,
+          "simSeconds": 56,
+          "wallMs": 56503,
+          "position": [
+            95.99996875761698,
+            24.42,
+            296.4037919219022
+          ],
+          "velocity": [
+            0.00001816565880464877,
+            0,
+            -11.863637999986098
+          ],
+          "camera": [
+            97.34996821542614,
+            26.43160332695665,
+            301.44409868513014
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 10,
+          "source": "traversal-locomotion-parkourRun"
+        },
+        {
+          "step": 3480,
+          "simSeconds": 58,
+          "wallMs": 58498.09999990463,
+          "position": [
+            95.99999956998487,
+            24.42,
+            275.0906697571935
+          ],
+          "velocity": [
+            1.1591825558344105e-7,
+            0,
+            -6.763637999999998
+          ],
+          "camera": [
+            97.34999962289274,
+            26.43160332695665,
+            279.7250619865008
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 11,
+          "source": "traversal-locomotion-fastRun"
+        },
+        {
+          "step": 3600,
+          "simSeconds": 60,
+          "wallMs": 60502,
+          "position": [
+            95.99999998953633,
+            24.42,
+            250.6105369099554
+          ],
+          "velocity": [
+            3.365371844345988e-8,
+            0,
+            -1.9636380000000002
+          ],
+          "camera": [
+            97.34999999467087,
+            26.43160332695665,
+            254.94607412467857
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 11,
+          "source": "traversal-locomotion-walk"
+        }
+      ],
+      "errors": [],
+      "video": "evidence/loggia-terraces-benchmark/baseline.webm"
+    },
+    {
+      "id": "candidate",
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html",
+      "entrySHA256": "85762c3518a57f5c9860640900c94b8fff11f707137b9baf780856410a256f3e",
+      "loadWallMs": 8834,
+      "wallSeconds": 60.06089999961853,
+      "simulationSeconds": 60,
+      "frameIntervalsMs": {
+        "samples": 4852,
+        "p50": 8.600000000000364,
+        "p95": 17.5,
+        "max": 109.09999999999854
+      },
+      "simulationCpuMs": {
+        "samples": 3600,
+        "p50": 8.799999713897705,
+        "p95": 16.100000381469727,
+        "max": 58
+      },
+      "renderSubmissionCpuMs": {
+        "samples": 4853,
+        "p50": 3.5,
+        "p95": 4.200000286102295,
+        "max": 68.5
+      },
+      "gpuTimeMs": {
+        "samples": 1214,
+        "p50": 6.681208,
+        "p95": 9.045249,
+        "max": 28.917749
+      },
+      "gpuTiming": {
+        "supported": true,
+        "disjointSamples": 0,
+        "scope": "Asynchronous elapsed GPU time for renderNight, including world, cartridge capture and post pass"
+      },
+      "internalResolution": [
+        1280,
+        800
+      ],
+      "renderedFrames": 4853,
+      "drawCalls": {
+        "samples": 4853,
+        "p50": 416,
+        "p95": 505,
+        "max": 512
+      },
+      "renderedTriangles": {
+        "samples": 4853,
+        "p50": 1676077,
+        "p95": 1830115,
+        "max": 1856757
+      },
+      "distance": 640.6535539148827,
+      "highSpeedSeconds": 29.5,
+      "laps": 1,
+      "droppedTime": 0.059599999904632606,
+      "memory": {
+        "start": {
+          "used": 322000000,
+          "total": 410000000
+        },
+        "end": {
+          "used": 322000000,
+          "total": 410000000
+        }
+      },
+      "startQuality": null,
+      "end": {
+        "quality": null,
+        "position": [
+          95.99999998953633,
+          24.42,
+          250.6105369099554
+        ],
+        "trauma": 0,
+        "grounded": true,
+        "simulation": {
+          "units": "CPU milliseconds; render is submission time",
+          "simulation": {
+            "samples": 240,
+            "p50": 7.200000286102295,
+            "p95": 15.199999809265137
+          },
+          "render": {
+            "samples": 240,
+            "p50": 3.4000000953674316,
+            "p95": 4.099999904632568
+          }
+        },
+        "acceleration": {
+          "builds": 16,
+          "invalidations": 0,
+          "queries": 79508,
+          "acceleratedMeshes": 315077,
+          "nativeMeshes": 65969,
+          "leafTests": 255959,
+          "indexBytes": 1588544,
+          "buildMs": 110.50000047683716,
+          "scope": "Exact static V02 camera triangles; native fallback for original and unsupported meshes"
+        }
+      },
+      "trace": [
+        {
+          "step": 120,
+          "simSeconds": 2,
+          "wallMs": 1990.8999996185303,
+          "position": [
+            55,
+            24.42,
+            229.4237845412517
+          ],
+          "velocity": [
+            0,
+            0,
+            1.9636380000000002
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            234.37057668130444
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 1,
+          "source": "traversal-locomotion-walk"
+        },
+        {
+          "step": 240,
+          "simSeconds": 4,
+          "wallMs": 3988.699999809265,
+          "position": [
+            55,
+            24.42,
+            249.28663741586766
+          ],
+          "velocity": [
+            0,
+            0,
+            1.982788404959545
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            254.15773708402776
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 2,
+          "source": "traversal-locomotion-walk"
+        },
+        {
+          "step": 360,
+          "simSeconds": 6,
+          "wallMs": 5991.199999809265,
+          "position": [
+            55,
+            24.42,
+            272.7205766522048
+          ],
+          "velocity": [
+            0,
+            0,
+            11.405240515025023
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            276.437612520074
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 3,
+          "source": "traversal-locomotion-parkourRun"
+        },
+        {
+          "step": 480,
+          "simSeconds": 8,
+          "wallMs": 7986.199999809265,
+          "position": [
+            55,
+            24.42,
+            292.1653015996369
+          ],
+          "velocity": [
+            0,
+            0,
+            16.36365
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            295.5412539158319
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 4,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 600,
+          "simSeconds": 10,
+          "wallMs": 9988,
+          "position": [
+            55,
+            24.42,
+            311.52314531664786
+          ],
+          "velocity": [
+            0,
+            0,
+            16.36365
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            314.9060946907559
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 5,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 720,
+          "simSeconds": 12,
+          "wallMs": 12060.699999809265,
+          "position": [
+            55,
+            24.42,
+            330.6643068335931
+          ],
+          "velocity": [
+            0,
+            0,
+            13.363638000000009
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            334.5578145800366
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 6,
+          "source": "traversal-locomotion-parkourRun"
+        },
+        {
+          "step": 840,
+          "simSeconds": 14,
+          "wallMs": 14130.5,
+          "position": [
+            56.84222714415983,
+            24.42,
+            349.72281007388125
+          ],
+          "velocity": [
+            8.263430964944606,
+            0,
+            0.05849515055651511
+          ],
+          "camera": [
+            58.01491245743975,
+            26.43160332695665,
+            354.36930319866013
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 7,
+          "source": "traversal-locomotion-fastRun"
+        },
+        {
+          "step": 960,
+          "simSeconds": 16,
+          "wallMs": 16082.5,
+          "position": [
+            87.81374577227875,
+            24.42,
+            349.94205116790204
+          ],
+          "velocity": [
+            16.363240029332825,
+            0,
+            0.11583205488878312
+          ],
+          "camera": [
+            87.90388264405551,
+            26.43133720100682,
+            354.5658546558419
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 7,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 1080,
+          "simSeconds": 18,
+          "wallMs": 18112.799999713898,
+          "position": [
+            95.84243197687722,
+            24.42,
+            339.00238081830724
+          ],
+          "velocity": [
+            0.1982866609690963,
+            0,
+            -16.362448585788794
+          ],
+          "camera": [
+            97.18082728819108,
+            26.43160332695665,
+            344.59523126731517
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 8,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 1200,
+          "simSeconds": 20,
+          "wallMs": 20059.39999961853,
+          "position": [
+            95.99747185792833,
+            24.42,
+            319.6315357114011
+          ],
+          "velocity": [
+            0.001991401694673,
+            0,
+            -15.463637871774019
+          ],
+          "camera": [
+            97.3473760074022,
+            26.43160332695665,
+            325.01505144445395
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 9,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 1320,
+          "simSeconds": 22,
+          "wallMs": 22065.199999809265,
+          "position": [
+            95.999965215992,
+            24.42,
+            298.71697510113324
+          ],
+          "velocity": [
+            0.000011734486845135796,
+            0,
+            -7.663637999991014
+          ],
+          "camera": [
+            97.34996749869525,
+            26.43160332695665,
+            303.4499614151566
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 10,
+          "source": "traversal-locomotion-fastRun"
+        },
+        {
+          "step": 1440,
+          "simSeconds": 24,
+          "wallMs": 24069.199999809265,
+          "position": [
+            95.99999955073821,
+            24.42,
+            276.21385285163774
+          ],
+          "velocity": [
+            4.393648637216195e-8,
+            0,
+            -2.5636379999999996
+          ],
+          "camera": [
+            97.35000008150917,
+            26.43160332695665,
+            280.49518050198117
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 11,
+          "source": "traversal-locomotion-jog"
+        },
+        {
+          "step": 1560,
+          "simSeconds": 26,
+          "wallMs": 26071.299999713898,
+          "position": [
+            95.9999999784023,
+            24.42,
+            251.26019606013864
+          ],
+          "velocity": [
+            8.864372700246333e-8,
+            0,
+            -5.172241092223033
+          ],
+          "camera": [
+            97.34999997613416,
+            26.43160332695665,
+            256.02766727485226
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 11,
+          "source": "traversal-locomotion-run"
+        },
+        {
+          "step": 1680,
+          "simSeconds": 28,
+          "wallMs": 28067,
+          "position": [
+            95.99999999960582,
+            24.42,
+            231.6468808190145
+          ],
+          "velocity": [
+            1.6298984369977101e-9,
+            0,
+            -6.809583698284386
+          ],
+          "camera": [
+            97.34999999955,
+            26.43160332695665,
+            236.5152018509887
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 12,
+          "source": "traversal-locomotion-fastRun"
+        },
+        {
+          "step": 1800,
+          "simSeconds": 30,
+          "wallMs": 30063.699999809265,
+          "position": [
+            95.99999999999272,
+            24.42,
+            212.14316414999246
+          ],
+          "velocity": [
+            2.882409317907473e-11,
+            0,
+            -8.487030644258066
+          ],
+          "camera": [
+            97.3499999999914,
+            26.43160332695665,
+            217.17013995710565
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 13,
+          "source": "traversal-locomotion-fastRun"
+        },
+        {
+          "step": 1920,
+          "simSeconds": 32,
+          "wallMs": 32079.299999713898,
+          "position": [
+            77.6404357435222,
+            24.42,
+            210.15783689505423
+          ],
+          "velocity": [
+            -16.363252367520122,
+            0,
+            -0.1140757614356827
+          ],
+          "camera": [
+            80.1134516771029,
+            26.43160332695665,
+            214.80079388469878
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 14,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 2040,
+          "simSeconds": 34,
+          "wallMs": 34064.39999961853,
+          "position": [
+            55.28440355009892,
+            24.42,
+            210.44379918320732
+          ],
+          "velocity": [
+            -0.06345316937792188,
+            0,
+            4.363176628368359
+          ],
+          "camera": [
+            56.476147096239146,
+            26.43160332695665,
+            215.1622716579956
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 1,
+          "source": "traversal-locomotion-run"
+        },
+        {
+          "step": 2160,
+          "simSeconds": 36,
+          "wallMs": 36069.199999809265,
+          "position": [
+            55.004184109349836,
+            24.42,
+            229.947504222896
+          ],
+          "velocity": [
+            -0.0007227150169160589,
+            0,
+            3.4636379245999436
+          ],
+          "camera": [
+            56.35053081789945,
+            26.43160332695665,
+            234.89366714260728
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 2,
+          "source": "traversal-locomotion-jog"
+        },
+        {
+          "step": 2280,
+          "simSeconds": 38,
+          "wallMs": 38062.199999809265,
+          "position": [
+            55.00005926310882,
+            24.42,
+            249.75329844779353
+          ],
+          "velocity": [
+            -0.0000051111270055750054,
+            0,
+            2.26363799999423
+          ],
+          "camera": [
+            56.3499825122326,
+            26.43160332695665,
+            254.7522932086714
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 3,
+          "source": "traversal-locomotion-jog"
+        },
+        {
+          "step": 2400,
+          "simSeconds": 40,
+          "wallMs": 40074,
+          "position": [
+            55.0000030434425,
+            24.42,
+            274.65210704238706
+          ],
+          "velocity": [
+            -0.000012560087688465191,
+            0,
+            5.562665885093364
+          ],
+          "camera": [
+            56.350003667979905,
+            26.43160332695665,
+            279.0106371530014
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 3,
+          "source": "traversal-locomotion-run"
+        },
+        {
+          "step": 2520,
+          "simSeconds": 42,
+          "wallMs": 42061.5,
+          "position": [
+            55.00000011235018,
+            24.42,
+            295.7877632470771
+          ],
+          "velocity": [
+            -3.586624000329466e-7,
+            0,
+            13.446983333333336
+          ],
+          "camera": [
+            56.35000014194342,
+            26.43160332695665,
+            299.3133796170928
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 4,
+          "source": "traversal-locomotion-parkourRun"
+        },
+        {
+          "step": 2640,
+          "simSeconds": 44,
+          "wallMs": 44069.699999809265,
+          "position": [
+            55.000000003163834,
+            24.42,
+            315.340162146254
+          ],
+          "velocity": [
+            -4.856721248141926e-9,
+            0,
+            16.36365
+          ],
+          "camera": [
+            56.35000000353751,
+            26.43160332695665,
+            318.7162864800678
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 5,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 2760,
+          "simSeconds": 46,
+          "wallMs": 46064.59999990463,
+          "position": [
+            55.00000000005464,
+            24.42,
+            334.25791928309155
+          ],
+          "velocity": [
+            -5.679655230039061e-11,
+            0,
+            16.36365
+          ],
+          "camera": [
+            56.350000000058714,
+            26.43160332695665,
+            337.71729848677313
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 6,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 2880,
+          "simSeconds": 48,
+          "wallMs": 48071.09999990463,
+          "position": [
+            59.29534817346175,
+            24.42,
+            349.74052638876
+          ],
+          "velocity": [
+            12.463326582704633,
+            0,
+            0.08810611722353694
+          ],
+          "camera": [
+            60.00529329400928,
+            26.43160332695665,
+            354.37178185029836
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 7,
+          "source": "traversal-locomotion-parkourRun"
+        },
+        {
+          "step": 3000,
+          "simSeconds": 50,
+          "wallMs": 50064.89999961853,
+          "position": [
+            91.48640324313007,
+            24.42,
+            349.96809234819307
+          ],
+          "velocity": [
+            13.867257012740074,
+            0,
+            0.0980308237784669
+          ],
+          "camera": [
+            91.69347699421405,
+            26.43160016651088,
+            354.5951120997332
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 7,
+          "source": "traversal-locomotion-parkourRun"
+        },
+        {
+          "step": 3120,
+          "simSeconds": 52,
+          "wallMs": 52064.89999961853,
+          "position": [
+            95.88869844565498,
+            24.42,
+            335.1844789308312
+          ],
+          "velocity": [
+            0.19828734686845234,
+            0,
+            -16.36244857747678
+          ],
+          "camera": [
+            97.22699612630171,
+            26.43160332695665,
+            340.78527453917746
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 8,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 3240,
+          "simSeconds": 54,
+          "wallMs": 54059.199999809265,
+          "position": [
+            95.99796160400565,
+            24.42,
+            315.82835400660423
+          ],
+          "velocity": [
+            0.002107332090401803,
+            0,
+            -16.36364986430752
+          ],
+          "camera": [
+            97.34783886477713,
+            26.43160332695665,
+            321.41676125149314
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 9,
+          "source": "traversal-locomotion-parkourSprint"
+        },
+        {
+          "step": 3360,
+          "simSeconds": 56,
+          "wallMs": 56064.39999961853,
+          "position": [
+            95.99996875761698,
+            24.42,
+            296.4037919219022
+          ],
+          "velocity": [
+            0.00001816565880464877,
+            0,
+            -11.863637999986098
+          ],
+          "camera": [
+            97.34996821542614,
+            26.43160332695665,
+            301.44409868513014
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 10,
+          "source": "traversal-locomotion-parkourRun"
+        },
+        {
+          "step": 3480,
+          "simSeconds": 58,
+          "wallMs": 58059.199999809265,
+          "position": [
+            95.99999956998487,
+            24.42,
+            275.0906697571935
+          ],
+          "velocity": [
+            1.1591825558344105e-7,
+            0,
+            -6.763637999999998
+          ],
+          "camera": [
+            97.34999962289274,
+            26.43160332695665,
+            279.7250619865008
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 11,
+          "source": "traversal-locomotion-fastRun"
+        },
+        {
+          "step": 3600,
+          "simSeconds": 60,
+          "wallMs": 60060.7999997139,
+          "position": [
+            95.99999998953633,
+            24.42,
+            250.6105369099554
+          ],
+          "velocity": [
+            3.365371844345988e-8,
+            0,
+            -1.9636380000000002
+          ],
+          "camera": [
+            97.34999999467087,
+            26.43160332695665,
+            254.94607412467857
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 11,
+          "source": "traversal-locomotion-walk"
+        }
+      ],
+      "errors": [],
+      "video": "evidence/loggia-terraces-benchmark/candidate.webm"
+    }
+  ],
+  "gpuTiming": "Asynchronous full-render GPU timer query where supported; CPU render submission reported separately",
+  "physicalDevices": "NOT TESTED",
+  "hashes": {
+    "scripts/vertical-v02/benchmark_loggia_terraces.cjs": "412ada4606e33d51c2d3d5adbfb726d16cc27cfbb8ac5cb4a2d748570d7a9c8b",
+    "scripts/game_vertical_loggia_material_v02.js": "062587fe36e8b753d841adf836ea04ad345e1749f7843c967f91efd854fc3c4f",
+    "assets/city/vertical-v02/loggia-terraces/materials.json": "94464ec3dfd838f07bbf58c47afd1cd57d466a01594a9d73b0f71181af2f54f6",
+    "assets/city/vertical-v02/loggia-terraces/runtime/manifest.json": "266c0f8a4df4c6bfbbcd59b749b6f656867ec3b1cbc22bef8df29742d7ac74ce"
+  },
+  "comparison": {
+    "simulationMedianRatio": 0.9361701728316554,
+    "simulationP95Ratio": 0.9096045511278545,
+    "frameMedianRatio": 1.0117647058823958,
+    "maxPositionDifference": 0,
+    "maxCameraDifference": 0
+  }
+}

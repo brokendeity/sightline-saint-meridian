@@ -1,0 +1,55 @@
+{
+  "scope": "Local service-yard lifecycle, normal controller and touch start; direct respawn API case labelled. Physical devices and other encounters untested.",
+  "results": [
+    {
+      "name": "standard simulated controller Y starts fixed encounter",
+      "pass": true
+    },
+    {
+      "name": "pause freezes positions and local clock; resume keeps attempt",
+      "pass": true
+    },
+    {
+      "name": "restart replaces exactly three opponents without healing or stale target lock",
+      "pass": true
+    },
+    {
+      "name": "actual hero selector clears encounter actors and locks",
+      "pass": true
+    },
+    {
+      "name": "CDP touch starts encounter with unobscured 44px portrait/landscape buttons",
+      "pass": true
+    },
+    {
+      "name": "labelled direct respawn lifecycle clears district actors",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "entrySHA256": "18b8486781e2b0190b1258f38f085bc478df15825c4c754f2ef0a3371c6c86d1",
+  "manifestSHA256": "266c0f8a4df4c6bfbbcd59b749b6f656867ec3b1cbc22bef8df29742d7ac74ce",
+  "encounterSHA256": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+  "marketSHA256": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+  "uiTransitions": [
+    {
+      "action": "hero",
+      "hero": "sightline",
+      "throughPauseTools": true,
+      "resumed": true
+    },
+    {
+      "action": "hero",
+      "hero": "backspool",
+      "throughPauseTools": true,
+      "resumed": true
+    },
+    {
+      "action": "#contractStart",
+      "throughPauseTools": true
+    }
+  ],
+  "failure": "AssertionError [ERR_ASSERTION]: Yard UI hides the existing contract\n\nfalse !== true\n",
+  "fullTrace": "V02_Service_Lifecycle.trace.json.gz",
+  "traceFrames": 378
+}

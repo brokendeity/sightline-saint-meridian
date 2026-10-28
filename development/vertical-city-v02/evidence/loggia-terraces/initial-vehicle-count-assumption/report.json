@@ -1,0 +1,1329 @@
+{
+  "status": "FAIL",
+  "scope": "Loaded original train body, arbitrary bogie yaw/wheel rotation, full configured sliding-door range, coupling convexity and complete air-model vertices. Only the additional loggia-versus-existing-transit separation is certified by combination with the continuous clearance hull.",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html",
+  "hashes": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html": "85762c3518a57f5c9860640900c94b8fff11f707137b9baf780856410a256f3e",
+    "assets/city/vertical-v02/loggia-terraces/runtime/manifest.json": "266c0f8a4df4c6bfbbcd59b749b6f656867ec3b1cbc22bef8df29742d7ac74ce",
+    "assets/city/vertical-v02/transit/assets.json": "da5fd88e7b27c3b4e38f42ff4237137f1c6f143089707a7644ce4570c9963d7d",
+    "assets/city/vertical-v02/transit/definition.json": "6fdd3fe36b3cf237abb185c88e75f81a05d5255b6cdca6602a5a6baa7fb721b4",
+    "assets/city/vertical-v02/world-life/air_assets.json": "9a51757f1496492eaf522116dde3d6580a8be8104583c0c5715d33524c095356",
+    "assets/city/vertical-v02/world-life/air_routes.json": "10e1aeb641e2d9249f62373c8c52755f3b89f7c996077c38510bed5599c4e571",
+    "scripts/game_vertical_transit_v02.js": "0403f887673e0008f7e493a916bcbc8502794978f048b2e8ca806fe5de731ecb",
+    "scripts/game_vertical_world_life_v02.js": "08561d9ce00f53fb9d0b13dd7324639c2389cf5a7e1422512fd1dada07a28639",
+    "scripts/vertical-v02/test_loggia_vehicle_bounds.cjs": "0b121e78fc801c51e25d6b6706a92e254e5103e45560416caf4bfea8caee1ad7",
+    "development/vertical-city-v02/V02_Loggia_Terraces_Clearance.json": "96758c6517af706c91f8fe2d7d5abf7ab43c1989ccb413a97c9c6ebd6ca9a880",
+    "assets/city/vertical-v02/world-life/air_commuter.glb": "fa915f3b8e38fd2e5a007bc5d4a31fbab613150ee3ec734fbed2437a71f4041d",
+    "assets/city/vertical-v02/world-life/air_delivery.glb": "04f3462fe59fc6bed915e444a2de4858f9bff90156ca331790ab5d986c3a1cfc",
+    "assets/city/vertical-v02/world-life/air_municipal.glb": "7dd74e4aab95f7784884fc40430ebbf0fafb8f8ea526fa62567b74a1ea8e566d"
+  },
+  "errors": [],
+  "bounds": {
+    "cars": [
+      {
+        "id": 0,
+        "meshes": 1,
+        "vertices": 179941,
+        "maxRadius": 7.043574004112143,
+        "parts": [
+          {
+            "mesh": "Train_Front_lod0",
+            "bound": 7.043574004112143,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "meshes": 37,
+        "vertices": 3456,
+        "maxRadius": 7.355569277787383,
+        "parts": [
+          {
+            "mesh": "axle_0_0",
+            "bound": 2.6647055502824957,
+            "proof": "Route-following bogie pivot minus1.05m; arbitrary bogie yaw and full axle rotation enclosed by pivot-offset plus vertex sphere",
+            "geometryRadius": 0.9281197252894834,
+            "pivotRadius": 0.6865858249930126,
+            "axleScale": 1,
+            "bogieScale": 1
+          },
+          {
+            "mesh": "axle_0_1",
+            "bound": 2.6647055502824957,
+            "proof": "Route-following bogie pivot minus1.05m; arbitrary bogie yaw and full axle rotation enclosed by pivot-offset plus vertex sphere",
+            "geometryRadius": 0.9281197252894834,
+            "pivotRadius": 0.6865858249930126,
+            "axleScale": 1,
+            "bogieScale": 1
+          },
+          {
+            "mesh": "bogie_frame_0",
+            "bound": 2.392395244428152,
+            "proof": "Route-following bogie pivot minus1.05m plus rigid vertex sphere under arbitrary yaw"
+          },
+          {
+            "mesh": "axle_1_0",
+            "bound": 2.6647055502824957,
+            "proof": "Route-following bogie pivot minus1.05m; arbitrary bogie yaw and full axle rotation enclosed by pivot-offset plus vertex sphere",
+            "geometryRadius": 0.9281197252894834,
+            "pivotRadius": 0.6865858249930126,
+            "axleScale": 1,
+            "bogieScale": 1
+          },
+          {
+            "mesh": "axle_1_1",
+            "bound": 2.6647055502824957,
+            "proof": "Route-following bogie pivot minus1.05m; arbitrary bogie yaw and full axle rotation enclosed by pivot-offset plus vertex sphere",
+            "geometryRadius": 0.9281197252894834,
+            "pivotRadius": 0.6865858249930126,
+            "axleScale": 1,
+            "bogieScale": 1
+          },
+          {
+            "mesh": "bogie_frame_1",
+            "bound": 2.392395244428152,
+            "proof": "Route-following bogie pivot minus1.05m plus rigid vertex sphere under arbitrary yaw"
+          },
+          {
+            "mesh": "passenger_body_1",
+            "bound": 6.976521583558877,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          },
+          {
+            "mesh": "passenger_body_2",
+            "bound": 7.355569277787383,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          },
+          {
+            "mesh": "passenger_body_3",
+            "bound": 7.015590218362449,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          },
+          {
+            "mesh": "passenger_body_4",
+            "bound": 6.696463829444711,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          },
+          {
+            "mesh": "passenger_body_5",
+            "bound": 6.903921024021367,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          },
+          {
+            "mesh": "door_left_0_0_1",
+            "bound": 6.3523560285043335,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.552356028504334,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_0_0_2",
+            "bound": 6.19258818207984,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.39258818207984,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_0_0_3",
+            "bound": 5.882291776600929,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.082291776600929,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_0_1_1",
+            "bound": 5.744265060714095,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.944265060714095,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_0_1_2",
+            "bound": 5.576798807064336,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.776798807064337,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_0_1_3",
+            "bound": 4.767913685535124,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 3.9679136855351236,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_1_0_1",
+            "bound": 5.744265060714095,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.944265060714095,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_1_0_2",
+            "bound": 5.576798807064336,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.776798807064337,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_1_0_3",
+            "bound": 4.767913685535124,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 3.9679136855351236,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_1_1_1",
+            "bound": 6.3523560285043335,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.552356028504334,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_1_1_2",
+            "bound": 6.19258818207984,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.39258818207984,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_1_1_3",
+            "bound": 5.882291776600929,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.082291776600929,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_0_0_1",
+            "bound": 6.3523560285043335,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.552356028504334,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_0_0_2",
+            "bound": 6.19258818207984,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.39258818207984,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_0_0_3",
+            "bound": 5.882291776600929,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.082291776600929,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_0_1_1",
+            "bound": 5.744265060714095,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.944265060714095,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_0_1_2",
+            "bound": 5.576798807064336,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.776798807064337,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_0_1_3",
+            "bound": 4.767913685535124,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 3.9679136855351236,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_1_0_1",
+            "bound": 5.744265060714095,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.944265060714095,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_1_0_2",
+            "bound": 5.576798807064336,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.776798807064337,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_1_0_3",
+            "bound": 4.767913685535124,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 3.9679136855351236,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_1_1_1",
+            "bound": 6.3523560285043335,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.552356028504334,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_1_1_2",
+            "bound": 6.19258818207984,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.39258818207984,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_1_1_3",
+            "bound": 5.882291776600929,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.082291776600929,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "coupling_socket_-685",
+            "bound": 7.141547357340923,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          },
+          {
+            "mesh": "coupling_socket_685",
+            "bound": 7.141547357340923,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "meshes": 37,
+        "vertices": 3456,
+        "maxRadius": 7.355569277787383,
+        "parts": [
+          {
+            "mesh": "axle_0_0",
+            "bound": 2.664705550282509,
+            "proof": "Route-following bogie pivot minus1.05m; arbitrary bogie yaw and full axle rotation enclosed by pivot-offset plus vertex sphere",
+            "geometryRadius": 0.9281197252894962,
+            "pivotRadius": 0.6865858249930126,
+            "axleScale": 1,
+            "bogieScale": 1
+          },
+          {
+            "mesh": "axle_0_1",
+            "bound": 2.664705550282509,
+            "proof": "Route-following bogie pivot minus1.05m; arbitrary bogie yaw and full axle rotation enclosed by pivot-offset plus vertex sphere",
+            "geometryRadius": 0.9281197252894962,
+            "pivotRadius": 0.6865858249930126,
+            "axleScale": 1,
+            "bogieScale": 1
+          },
+          {
+            "mesh": "bogie_frame_0",
+            "bound": 2.392395244428152,
+            "proof": "Route-following bogie pivot minus1.05m plus rigid vertex sphere under arbitrary yaw"
+          },
+          {
+            "mesh": "axle_1_0",
+            "bound": 2.664705550282509,
+            "proof": "Route-following bogie pivot minus1.05m; arbitrary bogie yaw and full axle rotation enclosed by pivot-offset plus vertex sphere",
+            "geometryRadius": 0.9281197252894962,
+            "pivotRadius": 0.6865858249930126,
+            "axleScale": 1,
+            "bogieScale": 1
+          },
+          {
+            "mesh": "axle_1_1",
+            "bound": 2.664705550282509,
+            "proof": "Route-following bogie pivot minus1.05m; arbitrary bogie yaw and full axle rotation enclosed by pivot-offset plus vertex sphere",
+            "geometryRadius": 0.9281197252894962,
+            "pivotRadius": 0.6865858249930126,
+            "axleScale": 1,
+            "bogieScale": 1
+          },
+          {
+            "mesh": "bogie_frame_1",
+            "bound": 2.392395244428152,
+            "proof": "Route-following bogie pivot minus1.05m plus rigid vertex sphere under arbitrary yaw"
+          },
+          {
+            "mesh": "passenger_body_1",
+            "bound": 6.976521583558877,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          },
+          {
+            "mesh": "passenger_body_2",
+            "bound": 7.355569277787383,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          },
+          {
+            "mesh": "passenger_body_3",
+            "bound": 7.015590218362449,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          },
+          {
+            "mesh": "passenger_body_4",
+            "bound": 6.696463829444711,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          },
+          {
+            "mesh": "passenger_body_5",
+            "bound": 6.903921024021367,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          },
+          {
+            "mesh": "door_left_0_0_1",
+            "bound": 6.3523560285043335,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.552356028504334,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_0_0_2",
+            "bound": 6.19258818207984,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.39258818207984,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_0_0_3",
+            "bound": 5.882291776600929,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.082291776600929,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_0_1_1",
+            "bound": 5.744265060714095,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.944265060714095,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_0_1_2",
+            "bound": 5.576798807064336,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.776798807064337,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_0_1_3",
+            "bound": 4.767913685535124,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 3.9679136855351236,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_1_0_1",
+            "bound": 5.744265060714095,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.944265060714095,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_1_0_2",
+            "bound": 5.576798807064336,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.776798807064337,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_1_0_3",
+            "bound": 4.767913685535124,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 3.9679136855351236,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_1_1_1",
+            "bound": 6.3523560285043335,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.552356028504334,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_1_1_2",
+            "bound": 6.19258818207984,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.39258818207984,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_1_1_3",
+            "bound": 5.882291776600929,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.082291776600929,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_0_0_1",
+            "bound": 6.3523560285043335,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.552356028504334,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_0_0_2",
+            "bound": 6.19258818207984,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.39258818207984,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_0_0_3",
+            "bound": 5.882291776600929,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.082291776600929,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_0_1_1",
+            "bound": 5.744265060714095,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.944265060714095,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_0_1_2",
+            "bound": 5.576798807064336,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.776798807064337,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_0_1_3",
+            "bound": 4.767913685535124,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 3.9679136855351236,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_1_0_1",
+            "bound": 5.744265060714095,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.944265060714095,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_1_0_2",
+            "bound": 5.576798807064336,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.776798807064337,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_1_0_3",
+            "bound": 4.767913685535124,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 3.9679136855351236,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_1_1_1",
+            "bound": 6.3523560285043335,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.552356028504334,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_1_1_2",
+            "bound": 6.19258818207984,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.39258818207984,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_1_1_3",
+            "bound": 5.882291776600929,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.082291776600929,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "coupling_socket_-685",
+            "bound": 7.141547357340923,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          },
+          {
+            "mesh": "coupling_socket_685",
+            "bound": 7.141547357340923,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "meshes": 37,
+        "vertices": 3456,
+        "maxRadius": 7.355569277787383,
+        "parts": [
+          {
+            "mesh": "axle_0_0",
+            "bound": 2.6647055502824957,
+            "proof": "Route-following bogie pivot minus1.05m; arbitrary bogie yaw and full axle rotation enclosed by pivot-offset plus vertex sphere",
+            "geometryRadius": 0.9281197252894834,
+            "pivotRadius": 0.6865858249930126,
+            "axleScale": 1,
+            "bogieScale": 1
+          },
+          {
+            "mesh": "axle_0_1",
+            "bound": 2.6647055502824957,
+            "proof": "Route-following bogie pivot minus1.05m; arbitrary bogie yaw and full axle rotation enclosed by pivot-offset plus vertex sphere",
+            "geometryRadius": 0.9281197252894834,
+            "pivotRadius": 0.6865858249930126,
+            "axleScale": 1,
+            "bogieScale": 1
+          },
+          {
+            "mesh": "bogie_frame_0",
+            "bound": 2.392395244428152,
+            "proof": "Route-following bogie pivot minus1.05m plus rigid vertex sphere under arbitrary yaw"
+          },
+          {
+            "mesh": "axle_1_0",
+            "bound": 2.6647055502824957,
+            "proof": "Route-following bogie pivot minus1.05m; arbitrary bogie yaw and full axle rotation enclosed by pivot-offset plus vertex sphere",
+            "geometryRadius": 0.9281197252894834,
+            "pivotRadius": 0.6865858249930126,
+            "axleScale": 1,
+            "bogieScale": 1
+          },
+          {
+            "mesh": "axle_1_1",
+            "bound": 2.6647055502824957,
+            "proof": "Route-following bogie pivot minus1.05m; arbitrary bogie yaw and full axle rotation enclosed by pivot-offset plus vertex sphere",
+            "geometryRadius": 0.9281197252894834,
+            "pivotRadius": 0.6865858249930126,
+            "axleScale": 1,
+            "bogieScale": 1
+          },
+          {
+            "mesh": "bogie_frame_1",
+            "bound": 2.392395244428152,
+            "proof": "Route-following bogie pivot minus1.05m plus rigid vertex sphere under arbitrary yaw"
+          },
+          {
+            "mesh": "passenger_body_1",
+            "bound": 6.976521583558877,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          },
+          {
+            "mesh": "passenger_body_2",
+            "bound": 7.355569277787383,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          },
+          {
+            "mesh": "passenger_body_3",
+            "bound": 7.015590218362449,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          },
+          {
+            "mesh": "passenger_body_4",
+            "bound": 6.696463829444711,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          },
+          {
+            "mesh": "passenger_body_5",
+            "bound": 6.903921024021367,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          },
+          {
+            "mesh": "door_left_0_0_1",
+            "bound": 6.3523560285043335,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.552356028504334,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_0_0_2",
+            "bound": 6.19258818207984,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.39258818207984,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_0_0_3",
+            "bound": 5.882291776600929,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.082291776600929,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_0_1_1",
+            "bound": 5.744265060714095,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.944265060714095,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_0_1_2",
+            "bound": 5.576798807064336,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.776798807064337,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_0_1_3",
+            "bound": 4.767913685535124,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 3.9679136855351236,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_1_0_1",
+            "bound": 5.744265060714095,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.944265060714095,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_1_0_2",
+            "bound": 5.576798807064336,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.776798807064337,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_1_0_3",
+            "bound": 4.767913685535124,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 3.9679136855351236,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_1_1_1",
+            "bound": 6.3523560285043335,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.552356028504334,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_1_1_2",
+            "bound": 6.19258818207984,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.39258818207984,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_left_1_1_3",
+            "bound": 5.882291776600929,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.082291776600929,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_0_0_1",
+            "bound": 6.3523560285043335,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.552356028504334,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_0_0_2",
+            "bound": 6.19258818207984,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.39258818207984,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_0_0_3",
+            "bound": 5.882291776600929,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.082291776600929,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_0_1_1",
+            "bound": 5.744265060714095,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.944265060714095,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_0_1_2",
+            "bound": 5.576798807064336,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.776798807064337,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_0_1_3",
+            "bound": 4.767913685535124,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 3.9679136855351236,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_1_0_1",
+            "bound": 5.744265060714095,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.944265060714095,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_1_0_2",
+            "bound": 5.576798807064336,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 4.776798807064337,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_1_0_3",
+            "bound": 4.767913685535124,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 3.9679136855351236,
+            "slide": -0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_1_1_1",
+            "bound": 6.3523560285043335,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.552356028504334,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_1_1_2",
+            "bound": 6.19258818207984,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.39258818207984,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "door_right_1_1_3",
+            "bound": 5.882291776600929,
+            "proof": "Every closed-pose vertex plus triangle-inequality bound for entire0.10m plug and configured sliding range",
+            "closedRadius": 5.082291776600929,
+            "slide": 0.7,
+            "parentScale": 1
+          },
+          {
+            "mesh": "coupling_socket_-685",
+            "bound": 7.141547357340923,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          },
+          {
+            "mesh": "coupling_socket_685",
+            "bound": 7.141547357340923,
+            "proof": "Every actual rigid body vertex relative to the route pivot"
+          }
+        ]
+      }
+    ],
+    "couplingRadius": 7.12740350342856,
+    "aircraft": [
+      {
+        "id": "commuter",
+        "meshes": 5,
+        "vertices": 488,
+        "maxRadius": 2.784259240143812
+      },
+      {
+        "id": "delivery",
+        "meshes": 6,
+        "vertices": 512,
+        "maxRadius": 2.784259240143812
+      },
+      {
+        "id": "municipal",
+        "meshes": 6,
+        "vertices": 488,
+        "maxRadius": 2.784259240143812
+      }
+    ],
+    "maximumTrainRadius": 7.355569277787383,
+    "maximumAirRadius": 2.784259240143812,
+    "transit": {
+      "ready": true,
+      "loading": false,
+      "error": null,
+      "publicBoarding": false,
+      "cameraCollision": true,
+      "source": "Blender passenger cars and unchanged Hi3D lead car",
+      "limitations": [
+        "Hi3D front has fused doors and bogies; those remain closed and rigid.",
+        "Passenger boarding and station gap/gates are not yet accepted.",
+        "Track supports, aerial traffic and sustained performance require later acceptance."
+      ],
+      "motion": {
+        "clock": 0,
+        "distance": 218.0007582009705,
+        "routeDistance": 218.0007582009705,
+        "speed": 0,
+        "phase": "approach",
+        "phaseTime": 0,
+        "door": 0,
+        "arrivals": 0,
+        "nextStop": 298.0007582009705,
+        "stationDistance": 298.0007582009705,
+        "routeLength": 1238.775773821783,
+        "speedLimit": 16,
+        "events": [],
+        "config": {
+          "maxSpeed": 16,
+          "acceleration": 1.2,
+          "braking": 1.7,
+          "lateralAcceleration": 2.5,
+          "opening": 0.8,
+          "dwell": 8,
+          "closing": 0.8
+        }
+      },
+      "carriages": [
+        {
+          "id": 0,
+          "position": [
+            80,
+            100,
+            322.0000000056434
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "doors": [],
+          "bogies": [],
+          "wheelAngles": []
+        },
+        {
+          "id": 1,
+          "position": [
+            80,
+            100,
+            307.0000000056434
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "doors": [
+            {
+              "id": "door_left_0_0",
+              "side": "left",
+              "position": [
+                -1.4900000095367432,
+                0,
+                -4.505000114440918
+              ],
+              "homeZ": -4.505000114440918
+            },
+            {
+              "id": "door_left_0_1",
+              "side": "left",
+              "position": [
+                -1.4900000095367432,
+                0,
+                -3.7950000762939453
+              ],
+              "homeZ": -3.7950000762939453
+            },
+            {
+              "id": "door_left_1_0",
+              "side": "left",
+              "position": [
+                -1.4900000095367432,
+                0,
+                3.7950000762939453
+              ],
+              "homeZ": 3.7950000762939453
+            },
+            {
+              "id": "door_left_1_1",
+              "side": "left",
+              "position": [
+                -1.4900000095367432,
+                0,
+                4.505000114440918
+              ],
+              "homeZ": 4.505000114440918
+            },
+            {
+              "id": "door_right_0_0",
+              "side": "right",
+              "position": [
+                1.4900000095367432,
+                0,
+                -4.505000114440918
+              ],
+              "homeZ": -4.505000114440918
+            },
+            {
+              "id": "door_right_0_1",
+              "side": "right",
+              "position": [
+                1.4900000095367432,
+                0,
+                -3.7950000762939453
+              ],
+              "homeZ": -3.7950000762939453
+            },
+            {
+              "id": "door_right_1_0",
+              "side": "right",
+              "position": [
+                1.4900000095367432,
+                0,
+                3.7950000762939453
+              ],
+              "homeZ": 3.7950000762939453
+            },
+            {
+              "id": "door_right_1_1",
+              "side": "right",
+              "position": [
+                1.4900000095367432,
+                0,
+                4.505000114440918
+              ],
+              "homeZ": 4.505000114440918
+            }
+          ],
+          "bogies": [
+            {
+              "id": "bogie_0",
+              "position": [
+                80,
+                98.95,
+                302.60000000564327
+              ],
+              "yaw": 0
+            },
+            {
+              "id": "bogie_1",
+              "position": [
+                80,
+                98.95,
+                311.4000000056435
+              ],
+              "yaw": 0
+            }
+          ],
+          "wheelAngles": [
+            -37.5,
+            -37.5,
+            -37.5,
+            -37.5
+          ]
+        },
+        {
+          "id": 2,
+          "position": [
+            80,
+            100,
+            292.00000000564336
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "doors": [
+            {
+              "id": "door_left_0_0",
+              "side": "left",
+              "position": [
+                -1.4900000095367432,
+                0,
+                -4.505000114440918
+              ],
+              "homeZ": -4.505000114440918
+            },
+            {
+              "id": "door_left_0_1",
+              "side": "left",
+              "position": [
+                -1.4900000095367432,
+                0,
+                -3.7950000762939453
+              ],
+              "homeZ": -3.7950000762939453
+            },
+            {
+              "id": "door_left_1_0",
+              "side": "left",
+              "position": [
+                -1.4900000095367432,
+                0,
+                3.7950000762939453
+              ],
+              "homeZ": 3.7950000762939453
+            },
+            {
+              "id": "door_left_1_1",
+              "side": "left",
+              "position": [
+                -1.4900000095367432,
+                0,
+                4.505000114440918
+              ],
+              "homeZ": 4.505000114440918
+            },
+            {
+              "id": "door_right_0_0",
+              "side": "right",
+              "position": [
+                1.4900000095367432,
+                0,
+                -4.505000114440918
+              ],
+              "homeZ": -4.505000114440918
+            },
+            {
+              "id": "door_right_0_1",
+              "side": "right",
+              "position": [
+                1.4900000095367432,
+                0,
+                -3.7950000762939453
+              ],
+              "homeZ": -3.7950000762939453
+            },
+            {
+              "id": "door_right_1_0",
+              "side": "right",
+              "position": [
+                1.4900000095367432,
+                0,
+                3.7950000762939453
+              ],
+              "homeZ": 3.7950000762939453
+            },
+            {
+              "id": "door_right_1_1",
+              "side": "right",
+              "position": [
+                1.4900000095367432,
+                0,
+                4.505000114440918
+              ],
+              "homeZ": 4.505000114440918
+            }
+          ],
+          "bogies": [
+            {
+              "id": "bogie_0",
+              "position": [
+                80,
+                98.95,
+                287.6000000056433
+              ],
+              "yaw": 0
+            },
+            {
+              "id": "bogie_1",
+              "position": [
+                80,
+                98.95,
+                296.40000000564345
+              ],
+              "yaw": 0
+            }
+          ],
+          "wheelAngles": [
+            -75,
+            -75,
+            -75,
+            -75
+          ]
+        },
+        {
+          "id": 3,
+          "position": [
+            80,
+            100,
+            277.00000000564336
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "doors": [
+            {
+              "id": "door_left_0_0",
+              "side": "left",
+              "position": [
+                -1.4900000095367432,
+                0,
+                -4.505000114440918
+              ],
+              "homeZ": -4.505000114440918
+            },
+            {
+              "id": "door_left_0_1",
+              "side": "left",
+              "position": [
+                -1.4900000095367432,
+                0,
+                -3.7950000762939453
+              ],
+              "homeZ": -3.7950000762939453
+            },
+            {
+              "id": "door_left_1_0",
+              "side": "left",
+              "position": [
+                -1.4900000095367432,
+                0,
+                3.7950000762939453
+              ],
+              "homeZ": 3.7950000762939453
+            },
+            {
+              "id": "door_left_1_1",
+              "side": "left",
+              "position": [
+                -1.4900000095367432,
+                0,
+                4.505000114440918
+              ],
+              "homeZ": 4.505000114440918
+            },
+            {
+              "id": "door_right_0_0",
+              "side": "right",
+              "position": [
+                1.4900000095367432,
+                0,
+                -4.505000114440918
+              ],
+              "homeZ": -4.505000114440918
+            },
+            {
+              "id": "door_right_0_1",
+              "side": "right",
+              "position": [
+                1.4900000095367432,
+                0,
+                -3.7950000762939453
+              ],
+              "homeZ": -3.7950000762939453
+            },
+            {
+              "id": "door_right_1_0",
+              "side": "right",
+              "position": [
+                1.4900000095367432,
+                0,
+                3.7950000762939453
+              ],
+              "homeZ": 3.7950000762939453
+            },
+            {
+              "id": "door_right_1_1",
+              "side": "right",
+              "position": [
+                1.4900000095367432,
+                0,
+                4.505000114440918
+              ],
+              "homeZ": 4.505000114440918
+            }
+          ],
+          "bogies": [
+            {
+              "id": "bogie_0",
+              "position": [
+                80,
+                98.95,
+                272.6000000056433
+              ],
+              "yaw": 0
+            },
+            {
+              "id": "bogie_1",
+              "position": [
+                80,
+                98.95,
+                281.40000000564345
+              ],
+              "yaw": 0
+            }
+          ],
+          "wheelAngles": [
+            -112.5,
+            -112.5,
+            -112.5,
+            -112.5
+          ]
+        }
+      ],
+      "trackChunks": 20
+    },
+    "worldLife": 36
+  },
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n36 !== 24\n"
+}

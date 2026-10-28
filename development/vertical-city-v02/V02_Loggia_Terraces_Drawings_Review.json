@@ -1,0 +1,19 @@
+{
+  "status": "PASS bounded source-envelope drawing readability review",
+  "drawingReportSHA256": "5834df10b8bd64a15aaccef6e184526220af93030ea71dda32d7ac890926a59e",
+  "sourceMasterSHA256": "5ccbb46478111f9a2ff265dcafb9d045caaba7777ca12bb84d25aad2a1df9927",
+  "reviewed": [
+    "drawings/loggia-terraces/V02_Loggia_Source_Floor_Plans.png",
+    "drawings/loggia-terraces/V02_Loggia_Source_Stair_Sections.png"
+  ],
+  "findings": [
+    "Room floors, front access and both cross-core configurations are readable at equal plan scale",
+    "Both stair-lane sections show actual alternating flight levels and40/68/100m shelters",
+    "Dimensions and source identities are legible"
+  ],
+  "limits": [
+    "Component bounding-envelope cuts, not triangle-exact construction drawings",
+    "Off-plane frame columns are omitted by the named sections; these pictures alone do not establish structural support",
+    "No movement connectivity is inferred from projected/section geometry; native route evidence remains separate"
+  ]
+}

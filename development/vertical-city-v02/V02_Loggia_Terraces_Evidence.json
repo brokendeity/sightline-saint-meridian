@@ -1,0 +1,2081 @@
+{
+  "status": "PASS bounded current loggia source/native/routes/12gameplay/input checkpoint; full V02 goal INCOMPLETE",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html",
+  "entrySHA256": "85762c3518a57f5c9860640900c94b8fff11f707137b9baf780856410a256f3e",
+  "manifest": "assets/city/vertical-v02/loggia-terraces/runtime/manifest.json",
+  "manifestSHA256": "266c0f8a4df4c6bfbbcd59b749b6f656867ec3b1cbc22bef8df29742d7ac74ce",
+  "master": "development/vertical-city-v02/blender/SaintMeridian_V02_Loggia_Terraces.blend",
+  "masterSHA256": "5ccbb46478111f9a2ff265dcafb9d045caaba7777ca12bb84d25aad2a1df9927",
+  "sourceMaster": "development/vertical-city-v02/blender/SaintMeridian_V02_Material_Response.blend",
+  "sourceMasterSHA256": "c9f21cdb00097e3de137e178f656d967890e213ab8448438eb7b824945046a67",
+  "originalPreservation": {
+    "originalBuildings": 310,
+    "originalSHA256": "cafc60f0b4ca42e9e39f5ae1bef1a448a8d0b490d5153ba9717d45d450693796",
+    "roads": 642,
+    "lights": 9,
+    "colliderCount": 9619
+  },
+  "additions": 3109,
+  "controlledOldRailChanges": 6,
+  "newDynamicLights": 0,
+  "newGraphNodes": 9,
+  "newDirectedEdges": 22,
+  "publicStair": {
+    "flights": 26,
+    "simulationSeconds": 235.36666666666667,
+    "metres": 1045.0504801487054,
+    "traceFrames": 14122,
+    "framingScope": "Head/hips on every flight up and down; not full-body/every-orbit certification"
+  },
+  "hudFixes": [
+    "Owning street contract has priority over its internal sparring panel",
+    "Service-yard panel participates in shared responsive context stack"
+  ],
+  "loadedVehicleRadiusProof": {
+    "train": 7.355569277787383,
+    "air": 2.784259240143812,
+    "scope": "Loaded original train body, arbitrary bogie yaw/wheel rotation, full configured sliding-door range, coupling convexity and complete air-model vertices. Only the additional loggia-versus-existing-transit separation is certified by combination with the continuous clearance hull."
+  },
+  "protectedPreviousEntries": [
+    {
+      "entry": "SIGHTLINE_BACKSPOOL_AFTERSTEP_VFX.html",
+      "sha256": "64db0f722b6e889a49c3258e901008de9e05f293d9c0ccd1fce409dcc9ee52ff"
+    },
+    {
+      "entry": "SIGHTLINE_BACKSPOOL_CARTRIDGE.html",
+      "sha256": "8a428989b27c2f4a4ac8850b045f2fb11bc15a54a95930ad2dd275cf12654119"
+    },
+    {
+      "entry": "SIGHTLINE_BACKSPOOL_GROUND_TEXTURES.html",
+      "sha256": "e4220818a1d89dcee9f062bafcb8ef7ce3496989b6b92e097fc005a5e174c134"
+    },
+    {
+      "entry": "SIGHTLINE_BACKSPOOL_HALO_PATROLS.html",
+      "sha256": "ce6623b11fb18f8b1fc1f897f6ced163316a98212e7bd583582182df42a7cbcc"
+    },
+    {
+      "entry": "SIGHTLINE_BACKSPOOL_THREADRAIL_CANDIDATE.html",
+      "sha256": "66bbea3c3c0be5a09054676df6f1e8ddcabcf2ba197d7941846be148379ac124"
+    },
+    {
+      "entry": "SIGHTLINE_BACKSPOOL_THREADRAIL_FUSION_V3.html",
+      "sha256": "0db230d8cdc66d2417185d2e94eb3d2757eb5054247da744f767391774b42e7c"
+    },
+    {
+      "entry": "SIGHTLINE_BACKSPOOL_THREADRAIL_FUSION_V4.html",
+      "sha256": "bb94ed715a6cf08b03e29ff6fdf5d6c2260981ff2384737c40d6a24356ed1a79"
+    },
+    {
+      "entry": "SIGHTLINE_BACKSPOOL_THREADRAIL_FUSION_V5.html",
+      "sha256": "c2a66fc9655a7af6053e50add958dd1627fe9c73e0b1c4275e1ee4f7062e34b9"
+    },
+    {
+      "entry": "SIGHTLINE_BACKSPOOL_THREADRAIL_FUSION_V6.html",
+      "sha256": "9aca79e7ea05ba2a741a246cb2ecee2ff93f56b24b3e90f5da1a322d8f10273b"
+    },
+    {
+      "entry": "SIGHTLINE_BACKSPOOL_THREADRAIL_V1.html",
+      "sha256": "b702d85b7c0da20d5fed4a7ce5ea2365005967beb63e66443575c96d007fb179"
+    },
+    {
+      "entry": "SIGHTLINE_BACKSPOOL_THREADRAIL_V2.html",
+      "sha256": "a9128294928c13bf91f95162d3b23d12ebe4432e878b87045f3150caff4ae163"
+    },
+    {
+      "entry": "SIGHTLINE_BACKSPOOL_THREADRAIL_V3.html",
+      "sha256": "66bbea3c3c0be5a09054676df6f1e8ddcabcf2ba197d7941846be148379ac124"
+    },
+    {
+      "entry": "SIGHTLINE_BACKSPOOL_TRAVERSAL_CANDIDATE.html",
+      "sha256": "3c852ba5de9f4262ac9b290c941ca686bd3f21fae64d477171ede4ecd8a3a03b"
+    },
+    {
+      "entry": "SIGHTLINE_BACKSPOOL_TRIPO_CITY.html",
+      "sha256": "caf18cbe58d6ce440b8a2e3a86c8921c12e0d9eea4fe9921fb10e07ecd005db5"
+    },
+    {
+      "entry": "SIGHTLINE_BACKSPOOL_VAULT_PLAYGROUND.html",
+      "sha256": "93c255087728508d028c382acffc20f80b48e6dffbff36f2b206b4df1b208e6d"
+    },
+    {
+      "entry": "SIGHTLINE_BACKSPOOL_WHIP_THROW.html",
+      "sha256": "fac92161657cb93c8500d6afbc2900748b7cadfc015c019eeddf0366cdf070e4"
+    },
+    {
+      "entry": "SIGHTLINE_BACKSPOOL_WHIP_THROW_PRE_HI3D_TRAIN.html",
+      "sha256": "45d868dcfcd1d0d9a382563bc984ebc657848cd6b2987f21bdf132edcf86d03b"
+    },
+    {
+      "entry": "SIGHTLINE_BACKSPOOL_WHIP_THROW_PRE_MEGACITY.html",
+      "sha256": "8734d68c3e50087dc577260dc1cf2a8460cb944a3995f8c3895c3eb320a56728"
+    },
+    {
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_TOON.html",
+      "sha256": "58f8de3207eb6b5ff5289a0a636e079fe030bbe970761933da1e2890081d1063"
+    },
+    {
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_ARCHITECTURE_FINISH.html",
+      "sha256": "3f880651dad66adb161880c0c9300ec130e429972fb88728958ba55be182a9c9"
+    },
+    {
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_CAMERA_ACCELERATION.html",
+      "sha256": "3a6c3a6630f4e429c24d8a1070aa2832345d370f530036d44b18db336fa89ccc"
+    },
+    {
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_DETAILED.html",
+      "sha256": "ec12fa9b3ccadb8acd9c1dcf5136391ef2b675f9ca95702453bd740797ee82a7"
+    },
+    {
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_FACADE_ARCHITECTURE.html",
+      "sha256": "7f50a422fd5ce777e5bce1fdc89635d09e992e42d4813c0eee3f151d69d009d3"
+    },
+    {
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_GALLERY_ARCADES.html",
+      "sha256": "dd36050e630cf2e2761d491b0f812e13b73ec688f519c10d01b8916db6814c97"
+    },
+    {
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_GRAYBOX.html",
+      "sha256": "d425868ef4e117b3c8a3ab3b845e520ede0210a6599ee02f5af139e97ac151a8"
+    },
+    {
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_HUD_CANDIDATE.html",
+      "sha256": "c0b4465e40b882c5f76b776f1c5a4761585af7a09d54fdb4a7ffa5da4608b99e"
+    },
+    {
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_MAINTENANCE_ACCESS.html",
+      "sha256": "08249105dfcbb14efd16d027b407dcb6122e186951ef6b18122e5953ac644cd7"
+    },
+    {
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_MATERIAL_RESPONSE.html",
+      "sha256": "3954b264ef205ad17150fd026238820af11b93d984ffca680e3bd201af51da9a"
+    },
+    {
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_PUBLIC_TERRACES.html",
+      "sha256": "cba3baa2921a1baedd6cff24838e819342acaa08cacc52f5aed5ffff08662ad8"
+    },
+    {
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_SERVICE_TOWER.html",
+      "sha256": "dd9db92b5c108f885ef43a4cf58d70892fb79ae44407b5b509652aac5b05509f"
+    },
+    {
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_STATION_PAVILION.html",
+      "sha256": "37ceb8fc39a275e4cba5518f4ffd83d25de2dc6cc8d94d12043a9501b227ab67"
+    },
+    {
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT.html",
+      "sha256": "48ee6dff434a6a2e1c1e5dbbf86d673b83109922c804f5749b0411ffc525c80f"
+    },
+    {
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT_STATION.html",
+      "sha256": "b96967c97064d9f549e92aa599ed140a2a99e7c0c8e08f0c118c55eb35e3cba1"
+    },
+    {
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_TRANSIT_VIEWS.html",
+      "sha256": "07400d9ec481c5212b2d1f4e999699730b389b1752926b391b31b1bd3b57bfe7"
+    },
+    {
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_VISUAL_CANDIDATE.html",
+      "sha256": "096be78a4f7dddf42dafd4de5d3749f7d0cfbcf31bd934c27531b6520fd953a4"
+    },
+    {
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_WORLD_LIFE.html",
+      "sha256": "1f739d8e9dd53892988a9d67d3b18cafd175dc5b5d114f5bffb8b886b73ed296"
+    },
+    {
+      "entry": "SIGHTLINE_VERTICAL_MEGACITY_V1.html",
+      "sha256": "45d868dcfcd1d0d9a382563bc984ebc657848cd6b2987f21bdf132edcf86d03b"
+    }
+  ],
+  "protectedBaselineRevision": "281d1b6585bb6897ae6034383995966024dd3d7b",
+  "fullApprovedReferenceVisualQuality": "FAIL",
+  "fullGoalComplete": false,
+  "unresolved": [
+    "Substantial approved-reference facade/massing/material/light refinement",
+    "Remaining current mission/destruction/failure regressions and complete release coverage",
+    "Final combined sustained combat/replay/destruction/city performance and GPU optimization",
+    "Broader camera and physical controller/touchscreen playtesting"
+  ],
+  "limitations": [
+    "Static local reflection probe does not update after destruction or for dynamic transit",
+    "Not every parent graph edge is independently recertified by the22edge admission",
+    "Bounded benchmark has no combat/replay/destruction stress; endpoint images follow synthetic inactive flag",
+    "GPU and frame-tail cost observations are not optimization claims; heap/drop counters have stated scope limitations"
+  ],
+  "artifacts": [
+    {
+      "file": "SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html",
+      "sha256": "85762c3518a57f5c9860640900c94b8fff11f707137b9baf780856410a256f3e",
+      "bytes": 1617278
+    },
+    {
+      "file": "assets/city/vertical-v02/loggia-terraces/corridor-radiance.rgba16f.gz",
+      "sha256": "b725f3f3dc7fed08a1d24fa8dee61b589da922ea1170814af7b3b475b28edf3c",
+      "bytes": 2917473
+    },
+    {
+      "file": "assets/city/vertical-v02/loggia-terraces/loggia-portal-replacement-0.glb",
+      "sha256": "a3a7920c3435473639ce6fb54639673e11005b1df4b3b681e787041fa215b6e0",
+      "bytes": 637388
+    },
+    {
+      "file": "assets/city/vertical-v02/loggia-terraces/loggia-portal-replacement-1.glb",
+      "sha256": "40ed15a621010465930c71d3cde3df7a4558d638bb18753cd3d074a828974ad9",
+      "bytes": 637384
+    },
+    {
+      "file": "assets/city/vertical-v02/loggia-terraces/loggia-portal-replacement-2.glb",
+      "sha256": "91c7c96e7d2c58d0f1e0a34f98b319e62ece9e80f4b41c34999fdc6a48e8f254",
+      "bytes": 637864
+    },
+    {
+      "file": "assets/city/vertical-v02/loggia-terraces/loggia-public-stair.glb",
+      "sha256": "7f4325f8e80c138286a5317e89440919955ae578d1c8e882af38ab919d6d97ef",
+      "bytes": 11178028
+    },
+    {
+      "file": "assets/city/vertical-v02/loggia-terraces/loggia-rooms.glb",
+      "sha256": "4a23a8da48c66624dcc3bfcccc47b0e07a29a309d5aaf5314f3c26b045d7863e",
+      "bytes": 902704
+    },
+    {
+      "file": "assets/city/vertical-v02/loggia-terraces/manifest.json",
+      "sha256": "c41e4eb87e3c7961a413c4ee06ed3be1a6bfeb336629294bc27aa88cc7de226d",
+      "bytes": 12671878
+    },
+    {
+      "file": "assets/city/vertical-v02/loggia-terraces/materials.json",
+      "sha256": "94464ec3dfd838f07bbf58c47afd1cd57d466a01594a9d73b0f71181af2f54f6",
+      "bytes": 20949
+    },
+    {
+      "file": "assets/city/vertical-v02/loggia-terraces/runtime/collisions.json",
+      "sha256": "fb3199d4562ec231ffac9b2ed9b8fea90ad623d33db73edf41ccbeec54e99c11",
+      "bytes": 3573502
+    },
+    {
+      "file": "assets/city/vertical-v02/loggia-terraces/runtime/loggia-portal-replacement-0.glb",
+      "sha256": "94ad439213cf7a1992066e9f39ab1c5a282167d7ad67d34636f4557d756f5679",
+      "bytes": 630196
+    },
+    {
+      "file": "assets/city/vertical-v02/loggia-terraces/runtime/loggia-portal-replacement-1.glb",
+      "sha256": "c16a9a9618f4d21ee3612f98593196dbeb21f010f498f35317d351ac9d433239",
+      "bytes": 630196
+    },
+    {
+      "file": "assets/city/vertical-v02/loggia-terraces/runtime/loggia-portal-replacement-2.glb",
+      "sha256": "54b62368b410ba9494922e4cc54393bcc0a512be759e57d54bb662d1447f2014",
+      "bytes": 630676
+    },
+    {
+      "file": "assets/city/vertical-v02/loggia-terraces/runtime/loggia-public-stair.glb",
+      "sha256": "a70deabe393c057ac70a87f78c55b2b3f2be606c253a704deaa0add282a40e73",
+      "bytes": 10380996
+    },
+    {
+      "file": "assets/city/vertical-v02/loggia-terraces/runtime/loggia-rooms.glb",
+      "sha256": "cc3018792332385fbb9aaba9bd419e6908fb302b92fcf293d28ccb76242ff908",
+      "bytes": 889460
+    },
+    {
+      "file": "assets/city/vertical-v02/loggia-terraces/runtime/manifest.json",
+      "sha256": "266c0f8a4df4c6bfbbcd59b749b6f656867ec3b1cbc22bef8df29742d7ac74ce",
+      "bytes": 12671398
+    },
+    {
+      "file": "assets/city/vertical-v02/loggia-terraces/runtime/structure_ownership.json",
+      "sha256": "c5e0b6b1dfee42f42ab27b3256d2725dd4a4e4f0e6228d4b1049c36b06a2b384",
+      "bytes": 3946517
+    },
+    {
+      "file": "assets/city/vertical-v02/loggia-terraces/runtime/threadrail_surfaces.json",
+      "sha256": "6d5117ee3a96827bd8da08077d14966e8fa49ab3085e95398e9cd9ff99767147",
+      "bytes": 3541169
+    },
+    {
+      "file": "development/vertical-city-v02/V02_LOGGIA_TERRACES.md",
+      "sha256": "4a508be7c4ef357f17bd13796e7877dafe60a83efa21157795b32eea27f4efa0",
+      "bytes": 13541
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_AbilityRoute_Matrix.csv",
+      "sha256": "3c6e7f8327dafc9577affb15677aa4abef4b1f26ef3e71a015a26737b5947ef6",
+      "bytes": 6543
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Candidate_Validation.json",
+      "sha256": "20d239085af81e0e68e92c58535d4dbf8f4662657ebb9fb28eb25c5ffcea5a98",
+      "bytes": 47731
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Movement_Graph.json",
+      "sha256": "835363618c4c32e6a6b9e827cf5a1647251950ef69024b18e64018fc9f294400",
+      "bytes": 939137
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Admission.json",
+      "sha256": "05973da7ce38eaaa41cdf342e0d24d78e50f0a73b880f3b54fe012126b3ed093",
+      "bytes": 15850
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Admission_Validation.json",
+      "sha256": "847b444f58b4513c1c8b2470dde02ab28bddb201242f769c7b9cc316df4094f2",
+      "bytes": 663
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Authoring.json",
+      "sha256": "3953793037f236f30773fbbd786453dd7b3e85ca6513e62095c76ef22ff49192",
+      "bytes": 130839
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Benchmark.json",
+      "sha256": "b836cb1e353c639a8604dc16f217f36e6155a573c6827fd0335414957f1232e0",
+      "bytes": 43105
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Blender.json",
+      "sha256": "277221289102f5962071619fc959f7db36a8406d63a8c0d68d487af7a36f3db0",
+      "bytes": 1212
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Build.json",
+      "sha256": "a9bd779e588418eeb45c519ca78993fcb353afb8f8a8c773f6af03b88c0a35af",
+      "bytes": 1510
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Checks.json",
+      "sha256": "540ef16eec3c57327f3fe8bbb85a2154766f9577d114238463c22e388f008368",
+      "bytes": 3399
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Clearance.json",
+      "sha256": "96758c6517af706c91f8fe2d7d5abf7ab43c1989ccb413a97c9c6ebd6ca9a880",
+      "bytes": 2485
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Drawings.json",
+      "sha256": "5834df10b8bd64a15aaccef6e184526220af93030ea71dda32d7ac890926a59e",
+      "bytes": 7554
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Drawings_Review.json",
+      "sha256": "e5e05dbb153e4717f7e60dea87e624d72b40f23ac82cbfbb38778208cd11dd1e",
+      "bytes": 1019
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Exports.json",
+      "sha256": "3e9a9f8fc56d75b60d34b4969b2b4898da2b4c087d0bedf5be27fd10af37bc7a",
+      "bytes": 1635
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_HUD.json",
+      "sha256": "e2433efc9c911bfc0214f8d16a6cc443fe4e8bc5cd999024002021884ac07f97",
+      "bytes": 19865
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Loops.json",
+      "sha256": "46b21b507a97a106a0e0a7eab16bc24af66052617fc12418364211a8e94f833e",
+      "bytes": 3214371
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Master_Validation.json",
+      "sha256": "afc629c7223e50fa37129a0c34f177991f37902b1597b670f2f5bf982946c8ad",
+      "bytes": 1121344
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Metadata.json",
+      "sha256": "17ea4481b6ab250e970bafb2d81d0582ae23531ac2f6762f10aab73268bea86e",
+      "bytes": 37602
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Native.json",
+      "sha256": "4d1d0393575aaa4dfa254dbe90e52c76ae1e5b4efce33bd446312cfb48603e4c",
+      "bytes": 112035
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Package.json",
+      "sha256": "92f085618883ba8cae89cdf290e31206f0025bb2d94db6d4d4b9364ca042e67f",
+      "bytes": 3312
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Plan.json",
+      "sha256": "b0d78fd03a962b41f760691aa300f35dc3afb373f2e3671d1576d3f9f8dee167",
+      "bytes": 2234870
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Routes.json",
+      "sha256": "29c3faaf6a5c66cd6499abda12f6a0c2702bd1c13c30a08a5be4dc9da0f5fc46",
+      "bytes": 9431
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Vehicle_Bounds.json",
+      "sha256": "44f19fff1af1f4d2ca1205319c8c0d5337555cc8af4b46f1b1d39e49a45d77ea",
+      "bytes": 48416
+    },
+    {
+      "file": "development/vertical-city-v02/V02_Loggia_Terraces_Video_Review.json",
+      "sha256": "bd5a9ac829a08cae2b425f70b5c25fc6870cf515913b6fd90033558d96802c88",
+      "bytes": 2221
+    },
+    {
+      "file": "development/vertical-city-v02/blender/SaintMeridian_V02_Loggia_Terraces.blend",
+      "sha256": "5ccbb46478111f9a2ff265dcafb9d045caaba7777ca12bb84d25aad2a1df9927",
+      "bytes": 36419451
+    },
+    {
+      "file": "development/vertical-city-v02/blender/SaintMeridian_V02_Material_Response.blend",
+      "sha256": "c9f21cdb00097e3de137e178f656d967890e213ab8448438eb7b824945046a67",
+      "bytes": 33277153
+    },
+    {
+      "file": "development/vertical-city-v02/drawings/loggia-terraces/V02_Loggia_Source_Floor_Plans.png",
+      "sha256": "6d4481422ddb112b5bc78d2f72132ac50e1091223e1a6d8faeea4c6be118efcb",
+      "bytes": 62454
+    },
+    {
+      "file": "development/vertical-city-v02/drawings/loggia-terraces/V02_Loggia_Source_Floor_Plans.svg",
+      "sha256": "56eabb54b93afcc02cbce48c6ab711662583266388bf05e6639b988642f9e0b3",
+      "bytes": 40190
+    },
+    {
+      "file": "development/vertical-city-v02/drawings/loggia-terraces/V02_Loggia_Source_Stair_Sections.png",
+      "sha256": "d77405156989f9abb774b25ca2efcd63e865ffe17c7f0c980a780320d8f57438",
+      "bytes": 56427
+    },
+    {
+      "file": "development/vertical-city-v02/drawings/loggia-terraces/V02_Loggia_Source_Stair_Sections.svg",
+      "sha256": "0ea03a04573a50b2df493d05cd2a83e31bfd660eb2b154e2bb9a3b5e9501b8f6",
+      "bytes": 140653
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-candidate-validation/gameplay.log",
+      "sha256": "c3e54a41050823d46d49e3637983fa3e6a2529d9be14fe03b5d80a51db70bc8e",
+      "bytes": 611
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-candidate-validation/graph-admission.log",
+      "sha256": "bd6542758745019d6c1d9d7037f6faa362c1fdbc786082ee191fb7bcce3cc143",
+      "bytes": 79
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-candidate-validation/graph-independent.log",
+      "sha256": "b116725b9cad3c380f6c6cf6b9d94fe7d8b285f2fc9a900aeee9ce8962e1c726",
+      "bytes": 100
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-candidate-validation/loaded-vehicles.log",
+      "sha256": "0e84d3f8edce02ade8eb282824f4c87591c5cf917ab5d73428fd402844288c4c",
+      "bytes": 146
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-candidate-validation/native-routes-input.log",
+      "sha256": "0eba870d0c63ddf23ca5063833da6f719c2215cb1c4cf79ff55b8b386217e7df",
+      "bytes": 255
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-candidate-validation/performance.log",
+      "sha256": "31bb7fd110308aad38317f08524567449acb9df91da6faa753b31d14a367e5cb",
+      "bytes": 1258
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-candidate-validation/source-renders.log",
+      "sha256": "ac33a1ba54df2b5443f0ae93b1fc7eaf79fc9adc0031f5dce41429cb275fb048",
+      "bytes": 898
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-A.png",
+      "sha256": "bea181a2ce4e02bc6d65ee73b1cf65ed0dc6959c5468bef56bcac24e100ae2be",
+      "bytes": 1466372
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-B.png",
+      "sha256": "5cf246030456a45da286a92de6ee9e3e4958288b8cb483bc745543c238288629",
+      "bytes": 1469761
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-L.png",
+      "sha256": "224ad445456d132fff48f28a51ad1bf8b8c4c56c56ffb230f42f17ae5ae79d57",
+      "bytes": 1304783
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-S.png",
+      "sha256": "20e4c8f9ab71f7c06f273378c0237d738897e466c18c6ef4fda0756c0bb5c7a7",
+      "bytes": 1312111
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-old-terrace-128.png",
+      "sha256": "3d1ee9cde9f62c156f560d0ca68f143794d17918f1af3ee452409e1ef3b7e9fd",
+      "bytes": 1435353
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-old-terrace-52.png",
+      "sha256": "8adc94b837c6b1293a3a3a7219de9ab784eb63722afd25d2163b5553d5c9b1af",
+      "bytes": 1541404
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-returned-24.png",
+      "sha256": "f9ca98cfc70e98a028cb7c760ef4f2c2d935fa492bb6b4aa636bb76d39db1c22",
+      "bytes": 1572766
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-room-100.png",
+      "sha256": "08be049a07fe4e664855c5b91b91f34411aa87f8ee47ae0c71ff2aaa64932271",
+      "bytes": 1393043
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-room-40.png",
+      "sha256": "796f47658b8b686423d8952846debe627e622ee6f25daa368e24d4ea8a7027b1",
+      "bytes": 1530597
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-room-68.png",
+      "sha256": "bd30217e27a6883b3ee9a7873273546a14c1d04b4c0f22da82d20a2a6640dadc",
+      "bytes": 1413820
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-stair-down-0.png",
+      "sha256": "c99c75d830bfa1ebf7e7de8cf8aafa6d2b1fbda4deef32fd7cae59b4ad61be7b",
+      "bytes": 2183439
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-stair-down-12.png",
+      "sha256": "e028d3c591a18f699a23345f15379f5dc9720b100278397c233b80c65e1a867e",
+      "bytes": 1992469
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-stair-down-18.png",
+      "sha256": "2d92dff8d2fb838511ebf774f49d4511893271b594cfdc5a125547cf1f38a0ae",
+      "bytes": 1746838
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-stair-down-24.png",
+      "sha256": "37e505a7f6a1e4e176315deca81daf879c34b5b286e284f06266ef52f9461909",
+      "bytes": 1900944
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-stair-down-6.png",
+      "sha256": "8c0274b60054a5cdccfd74727c8d6d2119b432c20bc025395c4473c8bc9ffb39",
+      "bytes": 1811082
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-stair-up-0.png",
+      "sha256": "4c0b7c79a0d63bbd1d5b991e6989c9953fb03f55868aeeded3e2af937f269132",
+      "bytes": 2255182
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-stair-up-12.png",
+      "sha256": "f58f11ada508254c77a8fb2fc82c0c3fcc15bcfea9d7e935954ff5a6515d7bea",
+      "bytes": 2020863
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-stair-up-18.png",
+      "sha256": "d1b0c074823d24879140720028ca014b7569101f3e72b2e69dd69fec07806adf",
+      "bytes": 1751926
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-stair-up-24.png",
+      "sha256": "5aca63d163d4adae7e9f1cc80fc77e0b6fa245bc8c6bae09a0f3f8b88d4deb4c",
+      "bytes": 1962280
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/after-stair-up-6.png",
+      "sha256": "9ea6e620c0124ae544b19c5a4ad35624a31c121931b0fe28de5356fcb1151587",
+      "bytes": 1815138
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/before-A.png",
+      "sha256": "3947b15df8a27b58b6d6d7f5ca1b9772bccc63f36259e05cc95bf574614ed777",
+      "bytes": 1335701
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/before-B.png",
+      "sha256": "8ee02c46d35e2e999f8441db98bbbceb9e6aa4328c32c0deeda816be5e22ef18",
+      "bytes": 1468657
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/before-L.png",
+      "sha256": "64f5dfe13bc1286c6aab21b4d4c91d6bfbee0e213b1df8ff2981e07878413faa",
+      "bytes": 1240657
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/before-S.png",
+      "sha256": "386a27f31e4e34d1d6d4157cfdaaab425c06b8662e5e367e9c00e1ab1ef1deaf",
+      "bytes": 1314222
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/blender-A.png",
+      "sha256": "a13cfd2b0ef5d7f4f035bc52b5e2f07970bd9bb83c1ff5f66fb3fdda5738f7cf",
+      "bytes": 2112579
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/blender-B.png",
+      "sha256": "2f2fb8770cf29b5a95d986f3c65b5cea9fec782af589b80c1a670142339c0a32",
+      "bytes": 2119076
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/blender-L.png",
+      "sha256": "ceb5029f6990c271ca7ecfe81a2b5c15c4ccc8ff3948923a73dffce37a5302d4",
+      "bytes": 2038485
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/corridor-radiance.exr",
+      "sha256": "b6ea7fa4f9a13957d9dfbcc3236efb563ca9935267f6ade94ad73805cecccbfe",
+      "bytes": 1973265
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/corridor-radiance.png",
+      "sha256": "6a6765365fda8c3c8bb67c8a4fbb4129c6fbe634b5e9d3e90ce507052bfcd869",
+      "bytes": 728067
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/failure.png",
+      "sha256": "96ca62d1e7c467dfcc78f11d79c578300fbd2ccfe562c2ceaf65dabd00ceac97",
+      "bytes": 952098
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/initial-source-overlaps.json",
+      "sha256": "c56f40afca6ac0022ca33e11854b0bd144c2de5e4ecf2ebe60d12993bdfccea9",
+      "bytes": 2223969
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/initial-top-landing-failure/authoring.json",
+      "sha256": "10c338771564bf2c5b2f5b1f784fc21659d40acc156353ec79a2bb7f6ce34f81",
+      "bytes": 131106
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/initial-top-landing-failure/failure.png",
+      "sha256": "96ca62d1e7c467dfcc78f11d79c578300fbd2ccfe562c2ceaf65dabd00ceac97",
+      "bytes": 952098
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/initial-top-landing-failure/native.json",
+      "sha256": "a4ed47f66b1b2adc6bb870fdffe5401b6420238610bd46f6be8efd5914272b1f",
+      "bytes": 40164
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/initial-top-landing-failure/plan.json",
+      "sha256": "b36f08181d6e09981749d70884c859075cced40d86e24c690ad59a2b4afd4d17",
+      "bytes": 2238921
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/initial-top-landing-failure/planner.py",
+      "sha256": "0f4e08e1e0cf2c1c7439bbb9e9f817334a9df00e90b5828984c88b75865016c0",
+      "bytes": 9824
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/initial-top-landing-failure/source-before-core-fix.blend",
+      "sha256": "6327996ededfb6d16f419008ce0b07a351f52cbea245098e021ec49818da0105",
+      "bytes": 36420463
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/initial-vehicle-count-assumption/report.json",
+      "sha256": "80e428f151432ed8ea6109f8cc03a915708c9505de8870792796ea233e17aadd",
+      "bytes": 48412
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/initial-vehicle-count-assumption/test.cjs",
+      "sha256": "0b121e78fc801c51e25d6b6706a92e254e5103e45560416caf4bfea8caee1ad7",
+      "bytes": 8328
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/loggia-tour.trace.json.gz",
+      "sha256": "3ec219ea22c1ef19dd0a2c061e28a8d0e324f43e604acae758739a269de38bd4",
+      "bytes": 443378
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html",
+      "sha256": "18b8486781e2b0190b1258f38f085bc478df15825c4c754f2ef0a3371c6c86d1",
+      "bytes": 1617256
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/V02_Loggia_Terraces_Admission.json",
+      "sha256": "4e07073cb7f4ad982c7cc6daeb5de26d46192f4c8a30bffbe3cef59312daa357",
+      "bytes": 15850
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/V02_Loggia_Terraces_Admission_Validation.json",
+      "sha256": "2b303d3e057c807266b6ea18931fad236c9ba9121b53c25e2c8886443d183192",
+      "bytes": 663
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/V02_Loggia_Terraces_Benchmark.json",
+      "sha256": "3b91c5d2b986d34bbbf687462d6f39d970c6d1eddcb4705e4c62e6b3b61b0409",
+      "bytes": 43157
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/V02_Loggia_Terraces_Blender.json",
+      "sha256": "2d58fb4710753db698ffec74945c73ff409dc5a433f0c4f6f888901ad535333d",
+      "bytes": 1212
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/V02_Loggia_Terraces_Build.json",
+      "sha256": "813ef14a278b680287f45640e26538532734d0d4b86431e859fb79f770ac5b49",
+      "bytes": 1197
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/V02_Loggia_Terraces_Checks.json",
+      "sha256": "81225fc6cc6522a47079b99c04d5f4a7b0245d3606e57bdbf791bec8a8f5b132",
+      "bytes": 3284
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/V02_Loggia_Terraces_HUD.json",
+      "sha256": "d5eb463e07f1c8999219a614c7039c24263c7f246b48956ad23e7a1f3f31bbb8",
+      "bytes": 13315
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/V02_Loggia_Terraces_Loops.json",
+      "sha256": "e40151c4a451d7b108c6bb163a019ad76b7dd6540e76c47266e9835697a049bf",
+      "bytes": 3214371
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/V02_Loggia_Terraces_Native.json",
+      "sha256": "9bac94a243bfb9186c12a3b366e957113b8f7205a7017db5e2b5110d429ae2be",
+      "bytes": 112035
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/V02_Loggia_Terraces_Routes.json",
+      "sha256": "d20978f9e6e9c8a51d93ceb25ba52ab4a942e48942370734133f86ec91e10917",
+      "bytes": 9423
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/benchmark/baseline-end.png",
+      "sha256": "ec00fb7eb16489aadaf6346140c73ede8ea336ad3256345187bbc1b57ef399d8",
+      "bytes": 767216
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/benchmark/baseline-timeline.png",
+      "sha256": "7ea8b3efe5f9c8d46371af1864375dcaa12e63d3bf92d4d70933b795bf3188b0",
+      "bytes": 1412373
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/benchmark/baseline.webm",
+      "sha256": "928ca1058b25142cb53d40770619181b9980ab667140c4981e0c783e0ec068be",
+      "bytes": 8105868
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/benchmark/candidate-end.png",
+      "sha256": "b4eab6d45c7bd5e7fa1a1e5a0a24e60f6994fda0b88df11dd223c6eef1e0e120",
+      "bytes": 766184
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/benchmark/candidate-timeline.png",
+      "sha256": "e207f008e6562a33b3702dc5c3bd9e74d6ad763c6c0ce61b0ba6b60ff7e022a6",
+      "bytes": 1457807
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/benchmark/candidate.webm",
+      "sha256": "b954863d382fcbb516a96ad51f7d85de36046df4bcec0163563d84a25f5f4a48",
+      "bytes": 8090835
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/build_loggia_terraces.py",
+      "sha256": "e0c99ff6dea05f0049c90e3f95209c0c8a76585f53a7ef827006bab65c0e9efc",
+      "bytes": 1999
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/game_vertical_hud_v02.js",
+      "sha256": "301a855a1ac6509e561ae1d108ef0914b1edb1a76e69c2903864913963afb650",
+      "bytes": 9187
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/historical-artifacts.json",
+      "sha256": "a39d89cf18f0617af8d5d889d35f1a66e86298e7b1071b7eabdb568d009a37de",
+      "bytes": 11035
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/loggia-tour.trace.json.gz",
+      "sha256": "37dcc22adec7443305454a586459b3c91231339179ef6b795421c8e305719da5",
+      "bytes": 443377
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/source-captures/blender-A.png",
+      "sha256": "54a2c169e0fbd401d50885b9679022101253889c0574be83b9e23d27c9232261",
+      "bytes": 2112579
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/source-captures/blender-B.png",
+      "sha256": "6046987ab42a69db337149ae4f91ad683e156e76e23c09609f64503a244f51d3",
+      "bytes": 2119076
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/source-captures/blender-L.png",
+      "sha256": "aa2aae32a54dd36d9b23fdd686e46152ebbae67f270ad82f7e8e658867ecd5b6",
+      "bytes": 2038485
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces/pre-contract-hud-fix/trace-recovery.json",
+      "sha256": "d3a2cf42a1a93da5fcb792044f583a55b331d9c8de0989b906b0329b7feb2bcf",
+      "bytes": 683
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-benchmark/baseline-end.png",
+      "sha256": "8f14cb7e088a2a30e56433d541e6ca5ca5d76a4bc3310901f4c1ff5b8d36c48a",
+      "bytes": 767528
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-benchmark/baseline-timeline.png",
+      "sha256": "a343cbb7851b9614cfd13d69099cf165ad5c68da9b40e4459ed2ed5f88fdd56f",
+      "bytes": 1458441
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-benchmark/baseline.webm",
+      "sha256": "f5f5bac7dc33470dcfa1517f0e95d7148e91482537e85c29fb5fb5e0a4fa2d26",
+      "bytes": 8136559
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-benchmark/candidate-end.png",
+      "sha256": "6e54bedfe033422238a7a79134f694d49df1a81d338dbb088994625387831f58",
+      "bytes": 766694
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-benchmark/candidate-timeline.png",
+      "sha256": "e036ca279e23be8818c32764748b35069e8b1b319befe0ff0f945488fb39da05",
+      "bytes": 1281922
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-benchmark/candidate.webm",
+      "sha256": "960b0c58835b03d8af4a749ad2d3e954dc306becf41b155ef987e46515a37c31",
+      "bytes": 7970033
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-checks/hud.txt",
+      "sha256": "29335479de324a6c2c0a0bbb3873156a070ddf42cdd65d503f5af55959825bef",
+      "bytes": 1350
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-checks/loops.txt",
+      "sha256": "8bc291d6cf416ca4f6614c71305cfac2e9cb701b7a957e09ae15ddfad36e8874",
+      "bytes": 260
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-checks/native.txt",
+      "sha256": "d97b047dda9b2f28807fdfaae7ffa6c76195dfc6c90614ae52fbd760116da07b",
+      "bytes": 83
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-checks/station-routes.txt",
+      "sha256": "23fd0c02f0af69c35fcbab292ec8eb9022d7a94d2d2a7efbc4190a10038d655a",
+      "bytes": 490
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-checks/stock.txt",
+      "sha256": "4fd8fd4145a25e36fea9efdcfa668401bf37467dc4d48c18326b68eef7f3679c",
+      "bytes": 532
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/discovery-lifecycle/V02_Discovery_Lifecycle.json",
+      "sha256": "b32e704a337e971c3930fe0d068e5d00cc40653ed1ed21b4fa14e0c228e78095",
+      "bytes": 6845
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/discovery-lifecycle/V02_Discovery_Lifecycle.trace.json.gz",
+      "sha256": "53aa2a613caf17d25766788a528f275ceaf4d5006f43c42a738e393e965c6089",
+      "bytes": 165634
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/discovery-lifecycle/evidence/discovery-kiosk-front.png",
+      "sha256": "ee9de8b102ec9b4a6b8ce455a18f74daef3090e5f137b6d800b66b57e0d91836",
+      "bytes": 1307653
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/discovery-lifecycle/evidence/discovery-lifecycle-final.png",
+      "sha256": "e43ef62d202594f341734b0417265f64dcbd1aa208de613f5fb53f8765a6ef93",
+      "bytes": 457431
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/discovery-lifecycle/evidence/discovery-touch-landscape.png",
+      "sha256": "dcec975f60279fe561567c1e13568424f7ed03149993340d57c6de161b0a6149",
+      "bytes": 475800
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/discovery-lifecycle/evidence/discovery-touch-portrait.png",
+      "sha256": "943a3fa8e2480f84ebc47165309937e6e5f79b1a90cf44d0e1942e4b7320fac5",
+      "bytes": 470640
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/discovery-lifecycle.log",
+      "sha256": "6637e12070088c1a0438c0863bcd7c77ac2f181bb57e65d1acf547de5f428d23",
+      "bytes": 83
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/discovery-tour/V02_Discovery_Tour.json",
+      "sha256": "6a2d39dc52c571afb2a2489024feb9ea3a9d59d3daef634cbf527e595d9198f1",
+      "bytes": 34054
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/discovery-tour/V02_Discovery_Tour.trace.json.gz",
+      "sha256": "825cc3f7142a40488c4d80bad6e3781f8576e19c775e3664149afec2cb6056ca",
+      "bytes": 2538202
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/discovery-tour/evidence/discovery-directory.png",
+      "sha256": "99786923bb361016fb7e0664bf08b78f972f1d25788b2eb3016bee747bbb58c8",
+      "bytes": 1019621
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/discovery-tour/evidence/discovery-final.png",
+      "sha256": "baf3a7230737ad1c0230000757f7d88b86843a93b1966ea623714b623f354aa6",
+      "bytes": 1009964
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/discovery-tour/evidence/discovery-maintenance.png",
+      "sha256": "5e1aceb8f47e5adaa8eb8ee8cd08297e3e7b5ecd421f9e2973fb874d7a3f99ad",
+      "bytes": 717819
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/discovery-tour/evidence/discovery-market.png",
+      "sha256": "9398120c4bc8fe1acf7ae45798ec5cef3df6cf41b075683c88dd882b8ed7b1ff",
+      "bytes": 671733
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/discovery-tour/evidence/discovery-observation.png",
+      "sha256": "fcfbde3727e005974fc935216dabd8f2ee911a7b516c912859016b22fc6bd8c1",
+      "bytes": 691219
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/discovery-tour/evidence/discovery-overhead.png",
+      "sha256": "df017be903f430c7b7afab8339f317ae1dbc512e22320883eaa04bef82eee3b4",
+      "bytes": 687410
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/discovery-tour/evidence/discovery-station.png",
+      "sha256": "3d581c85b2c8eabe9fba79510fe3ce0dd943841436cefca46da2cc8f31b4cdfa",
+      "bytes": 608944
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/discovery-tour/evidence/discovery-street-return.png",
+      "sha256": "4063598c390dfb0035a419ddacf5e7c889765161c0353345655057fbce65315b",
+      "bytes": 1047215
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/discovery-tour.log",
+      "sha256": "434647916afff95c35b003b9fc06ed3acc6f18e1b8b0e9a4a4df34f7a6acb5c5",
+      "bytes": 2044
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-contract-visibility-failure/failed-case/V02_Service_Lifecycle.json",
+      "sha256": "bdb1612044fceedb9e5dc37e4890ba97ea656edbf30b50cf1e01f5fde25859f0",
+      "bytes": 1745
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-contract-visibility-failure/failed-case/V02_Service_Lifecycle.trace.json.gz",
+      "sha256": "966b0024717505fac6969355526aa82f289fa9352afb27a86335c26c766e6a6c",
+      "bytes": 32566
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-contract-visibility-failure/failed-case/evidence/service-lifecycle-final.png",
+      "sha256": "f593553951c7f0734104d008eb09abebda09e8c04081568e9ff772e3b27a7476",
+      "bytes": 653963
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-contract-visibility-failure/failed-case/evidence/service-touch-landscape.png",
+      "sha256": "440950e4681d68b1ceed1bbb5678a7c38123a4c0ecaa006a80e383b8ea3f10c3",
+      "bytes": 314199
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-contract-visibility-failure/failed-case/evidence/service-touch-portrait.png",
+      "sha256": "1d53df1ba9e0b808f9711a3e2f32fcf5c6bc0798d51cee100f56b564874f1173",
+      "bytes": 301078
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-contract-visibility-failure/run.json",
+      "sha256": "5337e7d0e5db4dab6279b1aad5ce90cb079ac144b68eeb7ed433825f53794a60",
+      "bytes": 4623
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-contract-visibility-failure/service-lifecycle.log",
+      "sha256": "d5fbd9a647817f637848f457b69b8826ccb6e6a81bb37c51a7dea9e910b6989f",
+      "bytes": 354
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-current-stage-harness/failed-case/V02_Market_Rescue_Public.json",
+      "sha256": "1fd95525828434c044752c0cf2e9327a8e58b46ee74d2731bb2a1f6158bd9a0f",
+      "bytes": 10025
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-current-stage-harness/failed-case/V02_Market_Rescue_Public.trace.json.gz",
+      "sha256": "f17bf902d6f8d17cb0faf3e04c192309fd316f91fd4a07939f8a076610c61749",
+      "bytes": 580715
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-current-stage-harness/failed-case/evidence/market-public-access.png",
+      "sha256": "84ea6474d0b6d60b91c8bca2fbd7611c012bc1dac0e395a40a7d1a74069579ff",
+      "bytes": 660754
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-current-stage-harness/failed-case/evidence/market-public-escort-start.png",
+      "sha256": "7c4c94f4b910a01bc8e1d65387ecd085028680302cb849a6852ae201e8b745a1",
+      "bytes": 668863
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-current-stage-harness/failed-case/evidence/market-public-extracted.png",
+      "sha256": "c3c63a8e70cdd553e05cee40522623d09f59fd2b20be472ea6c44cdf9fee9054",
+      "bytes": 639647
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-current-stage-harness/failed-case/evidence/market-public-final.png",
+      "sha256": "3bada39c01eddf61e47535fba7edf2a270f10dd851e2545163879fdb6beb8438",
+      "bytes": 611852
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-current-stage-harness/market-public.log",
+      "sha256": "602edc0be1095123e5906cf652c082a30a9b2c7dc392c3a371dd59bd51cb55f2",
+      "bytes": 2706
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-current-stage-harness/run.json",
+      "sha256": "c7d3dfaa2dc9a671b6c311bcb3c9d166f3e03b344df8a0c64f941bee081988e1",
+      "bytes": 5392
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-hidden-selector-harness/failed-case/V02_Service_Lifecycle.json",
+      "sha256": "dd481487f41361121b0ed8a5297f8ef8b543d4a70d5849df19eefb9032e802d2",
+      "bytes": 1966
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-hidden-selector-harness/failed-case/V02_Service_Lifecycle.trace.json.gz",
+      "sha256": "7a00ce149a4bf2402fe1ea80e72613d532ad170857f86c1e71281cd475587191",
+      "bytes": 2024
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-hidden-selector-harness/failed-case/evidence/service-lifecycle-final.png",
+      "sha256": "fdf9c66f19ff389ba56b7d1aa70340d69fac4ea794003a02a8e021079ef94205",
+      "bytes": 960181
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-hidden-selector-harness/market_test_helpers.cjs",
+      "sha256": "e44233fbc5440de735c47023c9396dcb1c23657854d5fb30fdbc23bdfc40d409",
+      "bytes": 7115
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-hidden-selector-harness/run.json",
+      "sha256": "3756fc8b611415e1463ccf92a89365e88f43015632d44739cb9ef6f547934ea2",
+      "bytes": 4623
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-hidden-selector-harness/run_current_gameplay_regressions.py",
+      "sha256": "dbd6791a90981c00c47e0438bb107c99c24c9f26cdf0ac49d2a5fed56bbd99f9",
+      "bytes": 3596
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-hidden-selector-harness/service-lifecycle.log",
+      "sha256": "d7bf8f7fc728cd477adedaf08eb9b48e012b64f49f3d9c2e9f6265b2b8c5eeb0",
+      "bytes": 962
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-hidden-selector-harness/test_service_lifecycle.cjs",
+      "sha256": "0b35cdb6445f96026c06bc4f5e0d35c3438793055db8d3aabe3e5bd03c21be88",
+      "bytes": 8759
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-stale-presentation-harness/failed-case/V02_Service_Lifecycle.json",
+      "sha256": "8f23e6c96077fddcba0248c34a889462a0e0672a27eb42dc23af4f7f7be3bed5",
+      "bytes": 1931
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-stale-presentation-harness/failed-case/V02_Service_Lifecycle.trace.json.gz",
+      "sha256": "af7cf8344ea7e805a0e998bc13072d3558b91d32b5ba8d5407caea0329ab04e8",
+      "bytes": 2008
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-stale-presentation-harness/failed-case/evidence/service-lifecycle-final.png",
+      "sha256": "e7652a30db90ab5e2e20c72e6f74e28eae7324aeb270bc422976121177c83923",
+      "bytes": 958734
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-stale-presentation-harness/market_test_helpers.cjs",
+      "sha256": "b189834a8039f810a106661f27d84a91f49bcfcb469eaee5e64b95a7a6e72ee1",
+      "bytes": 8288
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-stale-presentation-harness/run.json",
+      "sha256": "7e5422a8d11d638f83ede477b3999a94924c6c1127f83c34b323cb92bc7a3c2d",
+      "bytes": 4624
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-stale-presentation-harness/run_current_gameplay_regressions.py",
+      "sha256": "dbd6791a90981c00c47e0438bb107c99c24c9f26cdf0ac49d2a5fed56bbd99f9",
+      "bytes": 3596
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-stale-presentation-harness/service-lifecycle.log",
+      "sha256": "35c2960346ab48ad7045fe6e64fee216a401aef971e50adf1a2109885a904381",
+      "bytes": 1222
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/initial-stale-presentation-harness/test_service_lifecycle.cjs",
+      "sha256": "c047172327de75b6149664708746dd6c59da845c395ba3ffcb08eaebdc02b4fe",
+      "bytes": 8831
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-lifecycle/V02_Market_Lifecycle.json",
+      "sha256": "8ac3db3f0f9d3cf052656d9f139fcd0a5ffca7975daf8f61ef9e6169ea38ca60",
+      "bytes": 3953
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-lifecycle/V02_Market_Lifecycle.trace.json.gz",
+      "sha256": "08ed40f5ef482e9b7944264f53d902e4ed6a820ffa1866bca2563abfb16de0d8",
+      "bytes": 392080
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-lifecycle/evidence/market-fault-defeat.png",
+      "sha256": "25fe35e1ec67dc79efb60f7fa58b118764df26f42a192c1a97f42b14c616f6ad",
+      "bytes": 738435
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-lifecycle/evidence/market-lifecycle-final.png",
+      "sha256": "92f9095bb0d0fbf6f48566e2be281eedb4ddcaf74c3f58f530c0f93dfa65458c",
+      "bytes": 1085327
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-lifecycle/evidence/market-touch-landscape.png",
+      "sha256": "3005b5d50df1d2922aeaf2a789d1f7692273831c4731a19165436afb874dd0e2",
+      "bytes": 284521
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-lifecycle/evidence/market-touch-portrait.png",
+      "sha256": "06385c77697fce30ae61c711e167f11ea8f87c062b87e1dc9aa93e9032e1e754",
+      "bytes": 289126
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-lifecycle.log",
+      "sha256": "6a5ae31180e74a5e242025d46e2efc66e9d33bb314bd6cf9d571da175a9b3b3d",
+      "bytes": 1613
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-public/V02_Market_Rescue_Public.json",
+      "sha256": "81b12b7d64cb523dc88e5ab379139c1d4a6335ab9e4e6b94880110431f49e171",
+      "bytes": 10078
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-public/V02_Market_Rescue_Public.trace.json.gz",
+      "sha256": "c4fba0863c2958af9f07ca363cc3f3e1853fd4232d3bf35c20c37b4a6cf18d16",
+      "bytes": 580842
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-public/evidence/market-public-access.png",
+      "sha256": "e23d6390f7b2938306ed984aab56d6d5f8d8227834734155b4c40d4cbcbf95e9",
+      "bytes": 661180
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-public/evidence/market-public-escort-start.png",
+      "sha256": "199e702b32114d02b591192ab1e6d0bebc8f707ea36b88bd43f09d2274abd0cf",
+      "bytes": 671146
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-public/evidence/market-public-extracted.png",
+      "sha256": "b6e207fa7832474f731a64e9f6f6f81ae0a15dc26949a8c322c5af850ca393c6",
+      "bytes": 640052
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-public/evidence/market-public-final.png",
+      "sha256": "3c3a32f3a794d8067ef4e8983874622ddf3576a4effbdd083c8a35a19b37b4bb",
+      "bytes": 625781
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-public-fixed/V02_Market_Rescue_Public.json",
+      "sha256": "c4f6a2ea1f85d43f511760a82d4c5bcbe952978d7417c63751e416586dc570ad",
+      "bytes": 10084
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-public-fixed/V02_Market_Rescue_Public.trace.json.gz",
+      "sha256": "d4edf2b0dc8eeadcace7abc1d5ee93a83c7f711df070e4eb8fb8224e6b76056e",
+      "bytes": 580847
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-public-fixed/evidence/market-public-access.png",
+      "sha256": "569aeac3c6fa99b3b10cd9254c42bf1e2257c0f814e4d35e899a7d17e25b4f67",
+      "bytes": 660005
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-public-fixed/evidence/market-public-escort-start.png",
+      "sha256": "71054905bedd2feaca4edf1d01247bde5cdb48d45c79be7a0d6340e45df8ba69",
+      "bytes": 668969
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-public-fixed/evidence/market-public-extracted.png",
+      "sha256": "272e372d5615ed9bbaf15a17cadaaa8bfb9f60494ff771e422462aa9ca4a3c3f",
+      "bytes": 639745
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-public-fixed/evidence/market-public-final.png",
+      "sha256": "b6e6d6179a398e6ddec07f704840cd669cc917c10a9d7f11b1f43523d9e471a4",
+      "bytes": 622250
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-public.log",
+      "sha256": "7af796a53fdf957df72dab07a7d9870e6b7bd7c36cad2be301409c7014bc7043",
+      "bytes": 2444
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-south/V02_Market_Rescue_South.json",
+      "sha256": "b659d0ae458b87aebcf2fd3d99899a698ba117a5d04ddbe3f36a69ed65470f20",
+      "bytes": 9523
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-south/V02_Market_Rescue_South.trace.json.gz",
+      "sha256": "71aeb2b15ed4cda9ae971192b3f22a7478375e4bdba592638eea7ab6c1b69d91",
+      "bytes": 391269
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-south/evidence/market-south-access.png",
+      "sha256": "76d3dc8c45af2eaa64a48f8b4eed9af46531718f7f9264aa0ff4f3e6552f8ea8",
+      "bytes": 659809
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-south/evidence/market-south-escort-start.png",
+      "sha256": "5b39059437ba612be0a895090857b5a67b1f222cfd235e459ae7c2f4c9049ddd",
+      "bytes": 669173
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-south/evidence/market-south-extracted.png",
+      "sha256": "f8d35305ada91f7cbcdacb49a7b57e450a51397de05537d5941e8a5d63fa85a4",
+      "bytes": 667212
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-south/evidence/market-south-final.png",
+      "sha256": "317a47fafdfca26e44a9156cfcef936e20ce450bf8ecefafba04e34b6570969e",
+      "bytes": 619840
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/market-south.log",
+      "sha256": "250b4e92fce5bf08cc658693a1144cdbe2cb9ce656446256ef346d2da1f86589",
+      "bytes": 2191
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-chase/V02_Pursuit_chase.json",
+      "sha256": "f0309ff3a73ded066b03fc2cd002da395fc4d1016fe91ad96559073e83a34a9d",
+      "bytes": 3679
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-chase/V02_Pursuit_chase.trace.json.gz",
+      "sha256": "d3663a0aff78d59eff493ff8da2e1927c4a33615a0ccd89640fd862a0b8ffaa8",
+      "bytes": 205992
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-chase/evidence/pursuit-chase-final.png",
+      "sha256": "5ea6fc7867bbd0d7c889b0427a65835366d347e917b464badb6e40845173e574",
+      "bytes": 842936
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-chase/evidence/pursuit-chase-stairs-entry.png",
+      "sha256": "97ba49dd57299c988d0a33a56f3417ee26ba4be4d21607263298f68a16519d73",
+      "bytes": 701080
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-chase/evidence/pursuit-chase-start.png",
+      "sha256": "5d7e82fbbabb5b5d27d81a14a14d872d96bd771fb2534c816700f18d4fbeb7a3",
+      "bytes": 619624
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-chase/evidence/pursuit-chase-upper-approach.png",
+      "sha256": "3b83cd167a8f98c56e0cc76bf1f5157d74fd3137099415804238b18097d54d38",
+      "bytes": 598861
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-chase/evidence/pursuit-chase-upper-stair.png",
+      "sha256": "acc8c54d69acd828b0ff2973480bc5bd2a90e879e1d53357880455e1caa8fe04",
+      "bytes": 644683
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-chase/evidence/pursuit-chase-victory.png",
+      "sha256": "5ea6fc7867bbd0d7c889b0427a65835366d347e917b464badb6e40845173e574",
+      "bytes": 842936
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-chase.log",
+      "sha256": "cc8eaea6dde9c38cfcce88438f66d57e4ec36b74e632af6b4a4bedf7a3335f1d",
+      "bytes": 971
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-escape/V02_Pursuit_escape.json",
+      "sha256": "566265f104791b8ff5dc92be6ef3e514e10b79e42ee60385038bf697c799d8b5",
+      "bytes": 2482
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-escape/V02_Pursuit_escape.trace.json.gz",
+      "sha256": "3813311e3363ef6c0dad3ebbce4fae3cad389a8f40c72cd1d0d896320a1aaf6f",
+      "bytes": 115410
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-escape/evidence/pursuit-escape-escaped.png",
+      "sha256": "315289747acf78549e0af66a909147b14ca2fd7c14cb6ef35e4eed037312bf26",
+      "bytes": 671602
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-escape/evidence/pursuit-escape-final.png",
+      "sha256": "64ed8e3729c41177d362b641d9ea866ac42375e16a3c53ac5a6539cc8c1004eb",
+      "bytes": 669663
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-escape/evidence/pursuit-escape-start.png",
+      "sha256": "56227abdfa3d9c31c6794cb3dd104c9a174e47bf05420b83860918342a6d892c",
+      "bytes": 619305
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-escape.log",
+      "sha256": "d9f35a6f21aeb186f1c8de02dcc801fb63837062b6aa3184c4b07cb8ee8ca3c9",
+      "bytes": 320
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-intercept/V02_Pursuit_intercept.json",
+      "sha256": "4c84bef2d3973c13c5a54eeebc86e095c0958425673e4c5587cab6480a406625",
+      "bytes": 3669
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-intercept/V02_Pursuit_intercept.trace.json.gz",
+      "sha256": "f8b200ef743f04d15c61f8b4271e6a56af327b99cf44034801ddb7408896cc4b",
+      "bytes": 215990
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-intercept/evidence/pursuit-intercept-final.png",
+      "sha256": "aa091e7ddef2a7dd6f47d8552956bd8c2d49a863070c1c005d2d2280aec32395",
+      "bytes": 805276
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-intercept/evidence/pursuit-intercept-stairs-entry.png",
+      "sha256": "42e572a0ea7fe53ac4ffb1438b3becf8a75ae8e92bbc4a01a8b54fcae6430438",
+      "bytes": 701035
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-intercept/evidence/pursuit-intercept-start.png",
+      "sha256": "1667a2a6b48b9cb0909b8d154b74a8ebe28130cc5e49262d43c539024223dbe5",
+      "bytes": 618511
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-intercept/evidence/pursuit-intercept-upper-approach.png",
+      "sha256": "0f8816e453b92dc29f5870dda7e7191a90d9b7a3aca2a855a6e464e662c4ec58",
+      "bytes": 613245
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-intercept/evidence/pursuit-intercept-upper-stair.png",
+      "sha256": "0dd13d4c56447a1608040d9d45318067420831c93ee3d42b314e1c998d777af9",
+      "bytes": 635641
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-intercept/evidence/pursuit-intercept-victory.png",
+      "sha256": "aa091e7ddef2a7dd6f47d8552956bd8c2d49a863070c1c005d2d2280aec32395",
+      "bytes": 805276
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-intercept.log",
+      "sha256": "18dcd38330070a98423f9817958ad06b7fb5e529ac27333ec0de6642ba52b324",
+      "bytes": 951
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-lifecycle/V02_Pursuit_lifecycle.json",
+      "sha256": "90e079fe2b1b04f948ff8fbf7a2869c2d4b098d238f18d0966415d35e7cc09f2",
+      "bytes": 3058
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-lifecycle/V02_Pursuit_lifecycle.trace.json.gz",
+      "sha256": "95c81b3fda054329e51f39a32963ae58c373debf07998557a505aebc8b680014",
+      "bytes": 2684
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-lifecycle/evidence/pursuit-lifecycle-final.png",
+      "sha256": "7f3eba3d80709773fad4fc39e10315be3de945fdd6d4200fc773588465388545",
+      "bytes": 441085
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-lifecycle/evidence/pursuit-lifecycle-start.png",
+      "sha256": "0ac75c1789d0fd184ed3330684a0f6e24bb2fb0206bd151b372ff2326839019c",
+      "bytes": 617945
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-lifecycle/evidence/pursuit-lifecycle-touch-landscape.png",
+      "sha256": "a549ce4a17377e047e6b3bbc62d6e7ab51dece18816e0c9c27b42d0f44238039",
+      "bytes": 302331
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-lifecycle/evidence/pursuit-lifecycle-touch-portrait.png",
+      "sha256": "a005900fdd67c08567cf9ed31d1211c8903c18ae04d461b3de70d9fc60c20db5",
+      "bytes": 280340
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/pursuit-lifecycle.log",
+      "sha256": "4853817c715a8272f7ec48fdc76fca069d5e412de69aee8279c92eaa37e878d6",
+      "bytes": 158
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/run.json",
+      "sha256": "2d5acda0d3c653a546d28f4bff1c6ecba96099f6e1a7f05b043beef18697afd9",
+      "bytes": 8685
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service/V02_Service_Encounter.json",
+      "sha256": "96002a2b8faacfd994d727416a21e9c068021b0e0591b3142c05cf1c22f28fd9",
+      "bytes": 8040
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service/V02_Service_Encounter.trace.json.gz",
+      "sha256": "9abe351fe13f89e5ca9c5ac6aa7439bb98df0ada3061634b4d34ad178fabfaf2",
+      "bytes": 77290
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service/evidence/service-active.png",
+      "sha256": "1995a168f02c2988c24da4e26df2d3a4796b19c91e1ea4fc5d9f1ff0016bb26b",
+      "bytes": 640281
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service/evidence/service-final.png",
+      "sha256": "c703bd8bd53d363de088c6820864030888497d7ec5b3c22736682a7ef0a72f15",
+      "bytes": 609576
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service/evidence/service-lower-cleared.png",
+      "sha256": "0e546b366ff43ee5ef21a794d0ca80b65b4e9771d295f523face650281b62957",
+      "bytes": 635839
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service/evidence/service-overhead.png",
+      "sha256": "5b9087cdba9be748c1b81e8b827384e93590e3d3013675d271d13f91e5b414b3",
+      "bytes": 684618
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service/evidence/service-space-inspection.png",
+      "sha256": "af130fbabe79cd1f2fdd3cd3fefdd5177ff4361e1e4115efdbdda8a6cbc0c2eb",
+      "bytes": 751495
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service/evidence/service-stairs-55.2.png",
+      "sha256": "938779e768e869168db262a4d69df6be4e97ac5f2964ae7ef34f12714d9d310b",
+      "bytes": 621314
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service/evidence/service-stairs-58.4.png",
+      "sha256": "720ea35b09737fc7c6770746a28946cbf32d3718142464a39a1219defb4f0d23",
+      "bytes": 799311
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service/evidence/service-victory.png",
+      "sha256": "c703bd8bd53d363de088c6820864030888497d7ec5b3c22736682a7ef0a72f15",
+      "bytes": 609576
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle/V02_Service_Lifecycle.json",
+      "sha256": "48794dcabb3e953c599d3358194b9c69fe6be1e3241206363337f6b19bfac8a2",
+      "bytes": 5103
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle/V02_Service_Lifecycle.trace.json.gz",
+      "sha256": "89bc947693840da62c6b354ed7b093c6eb732fcf9114aa2585e52eb5a2ecea13",
+      "bytes": 39568
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle/evidence/service-contract-visibility.png",
+      "sha256": "03dac972199bb3eb619df9ac0bbf6f1bc019ac497c453cbbb0c8c4fb62be7bdb",
+      "bytes": 656311
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle/evidence/service-defeat.png",
+      "sha256": "bc45d4b0858b00a28c67b44d76b29b96d9a199aebcf2233ba07374524a729a68",
+      "bytes": 751603
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle/evidence/service-lifecycle-final.png",
+      "sha256": "f0bb3230876c29782c72ef93908ce431f2dc8b58abea56334aa9e2643ec7a930",
+      "bytes": 650375
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle/evidence/service-touch-landscape.png",
+      "sha256": "de4610c4aa51514025a84c439bd3e4a40d4a85a57a24f23ad60343923a618736",
+      "bytes": 309552
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle/evidence/service-touch-portrait.png",
+      "sha256": "8018711330df2db616ca7bde20c683b087fe9929d3bd8245e3a3fb36019d44f3",
+      "bytes": 294324
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle-diagnostic/V02_Service_Lifecycle.json",
+      "sha256": "3f7b72fa04e779aeb42e6cd950bedb81b9d34a04a3b4734effb7c95d3f2ffb8d",
+      "bytes": 4745
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle-diagnostic/V02_Service_Lifecycle.trace.json.gz",
+      "sha256": "dbc2d33c808c2025f1233640640841f57469a305435ea9d49cacc7c3ef781582",
+      "bytes": 33218
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle-diagnostic/evidence/service-contract-visibility.png",
+      "sha256": "df4d6bdcf38c1b0a58f7a9bd0d2dc938f9a31f8d0a1c2fc9f3d68c82fc7d575d",
+      "bytes": 650721
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle-diagnostic/evidence/service-lifecycle-final.png",
+      "sha256": "df4d6bdcf38c1b0a58f7a9bd0d2dc938f9a31f8d0a1c2fc9f3d68c82fc7d575d",
+      "bytes": 650721
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle-diagnostic/evidence/service-touch-landscape.png",
+      "sha256": "7368245179a192e7b76bebeabe393a6bc55a068d9d8690dca5e62a9870d13600",
+      "bytes": 312890
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle-diagnostic/evidence/service-touch-portrait.png",
+      "sha256": "990c2ec4b66bec37177203e3dd194820dcff75bd975a9099e4639c80dd426056",
+      "bytes": 297912
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle-fixed/V02_Service_Lifecycle.json",
+      "sha256": "a724f2edb99ab77aaecfb3b178c0b00f0802b74ec661307adc19aa09746bca74",
+      "bytes": 5103
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle-fixed/V02_Service_Lifecycle.trace.json.gz",
+      "sha256": "6e3fd9c2643c8f685a3246f9c46645c75e376c05b2358b518fbf1eaf9e19dc76",
+      "bytes": 39567
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle-fixed/evidence/service-contract-visibility.png",
+      "sha256": "a2298ac08d9a21f415f13a24f902f048d1307ceaa720af49465d9241e1a8fdb5",
+      "bytes": 655648
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle-fixed/evidence/service-defeat.png",
+      "sha256": "5a6778466c26f31f752bd5a692a109b69256ba949a534bee10b2b785f683a937",
+      "bytes": 726705
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle-fixed/evidence/service-lifecycle-final.png",
+      "sha256": "52862a7a3d33d13aa0fe6ba2bac99eead1d6a50887a02f185685a0453b3cef06",
+      "bytes": 652624
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle-fixed/evidence/service-touch-landscape.png",
+      "sha256": "7cad4b6fdf416c3739084ab4a5d3c2865fefd0bb7729e0b1d0fc01bd796a90ad",
+      "bytes": 314448
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle-fixed/evidence/service-touch-portrait.png",
+      "sha256": "88863390a4a6f43fb009d962d2e10c8044e0a71e00f0efd01d4ad23187c7ddf5",
+      "bytes": 301477
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-lifecycle.log",
+      "sha256": "1da0011773ceda72853dfb313ee0c1ba7804df2b6ac4c91ec6296fe8d1e9b9e6",
+      "bytes": 640
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-replay/V02_Service_Replay_Escape.json",
+      "sha256": "66fd1b312f6e63ce507840da820bc04a5a6ade1efa2d95d26bd11e2e8dfe35f8",
+      "bytes": 39476
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-replay/V02_Service_Replay_Escape.trace.json.gz",
+      "sha256": "68bb67a329b99483a47183f64073d48c7e2a1fee45635c5b465d1d2a05495552",
+      "bytes": 96793
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-replay/evidence/service-replay-banked.png",
+      "sha256": "0212460b6c4d78b368e61d19691bd9ff5ac3a8758119f6e24989cddc68fb3f4c",
+      "bytes": 662388
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-replay/evidence/service-replay-east-escape.png",
+      "sha256": "439c28dd33bdf211b18957a0cc1993f68fb51526f3096ecf04583c53d787cca3",
+      "bytes": 601261
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-replay/evidence/service-replay-echo.png",
+      "sha256": "72b5d90e3a4f1debb094e0f3e751c253b599e08fcad25cbaf23b9081e840d91e",
+      "bytes": 708562
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-replay/evidence/service-replay-ended.png",
+      "sha256": "c8143a798c09b0ebc634146304b79855dddd8befd050514e150392c43d042016",
+      "bytes": 584627
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-replay/evidence/service-replay-final.png",
+      "sha256": "c8143a798c09b0ebc634146304b79855dddd8befd050514e150392c43d042016",
+      "bytes": 584627
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-replay/evidence/service-replay-west-escape.png",
+      "sha256": "87d1bac02e6c29d47825878e74000c362d028dcdd4b44d29b98e72a46a873810",
+      "bytes": 559857
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service-replay.log",
+      "sha256": "55d3d89185658c24bfc1e201e0321e7896606127d109066968ec7b2b283efada",
+      "bytes": 2584
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-gameplay/service.log",
+      "sha256": "96567d415a82d0f754f73576c4afd73dcccfdd64398c2e9caebb554a32c12edf",
+      "bytes": 614
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-hud/combat-feedback.png",
+      "sha256": "145fa2a0fdec0d1c1ca123a68eb38f364c6c38259c392cfff0ffb293986d00ad",
+      "bytes": 1148053
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-hud/desktop.png",
+      "sha256": "9668f3b1ecd0695ba9836253e543a81d5cc2117d4c47f71fee8e0995bd6b447b",
+      "bytes": 1280008
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-hud/initial-yard-camera-fixture/report.json",
+      "sha256": "f2a64c516127cac04bc0238c4b0a7683227154940f6afe136650701b2adcf884",
+      "bytes": 18865
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-hud/initial-yard-camera-fixture/service-landscape.png",
+      "sha256": "a1c5aab575b83e8a72667fa3e24d9b21e3961024ec96dc22b5495f64873c3006",
+      "bytes": 274538
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-hud/initial-yard-camera-fixture/service-portrait.png",
+      "sha256": "6e85fc2caa56747b72c01d34397f5942741fc2ae74c5aebb0c8f921c575d3d43",
+      "bytes": 186564
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-hud/landscape-paused-practice.png",
+      "sha256": "c8561672f84abea3c96a6b17100762ba57e75f61d36e11d8c3b3375e5ed79341",
+      "bytes": 59173
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-hud/landscape.png",
+      "sha256": "0cb12bf9d2c28b83f540a3fd57c76f6d3c947f60c6e098fe1dd0dc705fdbfaa0",
+      "bytes": 406011
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-hud/paused-controls.png",
+      "sha256": "fce4040e31914c5c243b511ee2c05572c1cc2e8cec1532cc4e861fc8dfebb2c6",
+      "bytes": 227847
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-hud/paused-hero-tools.png",
+      "sha256": "9330dc8724e8f07901c6761913b4b24b3190f67e257974fa40292d44458d3388",
+      "bytes": 227288
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-hud/portrait-paused-equipment.png",
+      "sha256": "59c63eee3f56f124fc509f2ee650c3b91f9f43ee537b683d19cbdd04c7aa2fbe",
+      "bytes": 90974
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-hud/portrait-resumed.png",
+      "sha256": "cbe75e09e7054fa92293a441a81a9dd65086fb1bda228c1e53e8306ee2f41a30",
+      "bytes": 387787
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-hud/portrait.png",
+      "sha256": "264172ed974db75f4dbc096ec6476a429cdadfbf44c2379ec5f5a436b686fc6e",
+      "bytes": 413204
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-hud/public-information.png",
+      "sha256": "b359c15002661d018ebbfdf55f6b742daca6c255a01211ed52becd74726d999d",
+      "bytes": 1236739
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-hud/service-landscape.png",
+      "sha256": "3d2cbc064e23e488b7f8ca134e72ea7ff79b41388e266665a54d6cc7ad316941",
+      "bytes": 303874
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-hud/service-portrait.png",
+      "sha256": "06957140aa8931c77be90535f8ea3640a3c20b2dea628c9f1186a08d5dc2862c",
+      "bytes": 291417
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-loops/high.png",
+      "sha256": "f3bd9a70863eadf0e20702bb55ffe024fc2fb2de511c85791043dabcef820718",
+      "bytes": 484241
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-loops/lower.png",
+      "sha256": "38082fc08700995226006c7d5f1ed00055e777646498b83cf2a6624fab831932",
+      "bytes": 762996
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-loops/mid.png",
+      "sha256": "86f81f1fc78926cd0d5aa220c69f6663e9e98859b018eb243a320440620e8260",
+      "bytes": 690338
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-brake/V02_Mastery_Full_Banked_Brake.json",
+      "sha256": "4476ef0eedc02e620ed0cf7f4f348ee4bea4e65e5a03f36a61f72cba40f39dd8",
+      "bytes": 13985
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-brake/V02_Mastery_Full_Banked_Brake.trace.json.gz",
+      "sha256": "a8517a5c84db46446c382c0339f1093922d9298dc0414ceca13302ab9860c941",
+      "bytes": 669468
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-brake/evidence/V02_Mastery_Full_Banked_Brake-10.png",
+      "sha256": "a30073356e442972e13c43862e0d50f70ffe7132985f2a618e8d4a25fd008efc",
+      "bytes": 464518
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-brake/evidence/V02_Mastery_Full_Banked_Brake-12.png",
+      "sha256": "e37b52fd6617da6de36d9c6ffbdd5603a84dba169abf52e311257d7919417381",
+      "bytes": 461696
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-brake/evidence/V02_Mastery_Full_Banked_Brake-14.png",
+      "sha256": "00983fc89f9f0829a3b5bdd944f1fa8b0dd8024f02313e3a8c8639b3cf6f5986",
+      "bytes": 459652
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-brake/evidence/V02_Mastery_Full_Banked_Brake-17.png",
+      "sha256": "6759a36af80e6dad397733e0947053bf6dffa57a30af873bd79cebf21fbf5ad6",
+      "bytes": 652027
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-brake/evidence/V02_Mastery_Full_Banked_Brake-19.png",
+      "sha256": "e4b0fbbb5a5ae638e60ff8489fa92f578458e13c36d8e48434b8f18445612f18",
+      "bytes": 703916
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-brake/evidence/V02_Mastery_Full_Banked_Brake-20.png",
+      "sha256": "5e890c3c36b17e390a0b54d04c105f62079a0983fcc9ce46969439d8ea1a10b3",
+      "bytes": 668793
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-brake/evidence/V02_Mastery_Full_Banked_Brake-21.png",
+      "sha256": "9dc62c1e8365b54fb783af53e8311dee351bb3cabb2e075435c510c64479de41",
+      "bytes": 631065
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-brake/evidence/V02_Mastery_Full_Banked_Brake-23.png",
+      "sha256": "839ec8525d54b7e0f9b6f24efce363a4329a6ed9df159bc9fa65b29f41e69933",
+      "bytes": 736083
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-brake/evidence/V02_Mastery_Full_Banked_Brake-8.png",
+      "sha256": "45713f3a1b1c05edba4232b238c5c28439861404506b5a389735810e4b69f1f2",
+      "bytes": 339429
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-brake/evidence/V02_Mastery_Full_Banked_Brake.png",
+      "sha256": "3633c13cce9d4b0735229cdd2336b6a793a345d11f4527d8c15a3e1933418f0f",
+      "bytes": 590899
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-brake.log",
+      "sha256": "fc7f8103ab22b02aff8aef181d8020ec90eb0d291f0a763444074bd6fe9936fd",
+      "bytes": 3847
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-zero/V02_Mastery_Full_Zero.json",
+      "sha256": "73ddc789d66055fcda20f36243ca15e0bfe0cbba671cf3cde74b91ff346ac65f",
+      "bytes": 11946
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-zero/V02_Mastery_Full_Zero.trace.json.gz",
+      "sha256": "5c727a796efd79fd29f70f10f55d5ef95840c9393c0ec3a8fd9dac6fac414a46",
+      "bytes": 652574
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-zero/evidence/V02_Mastery_Full_Zero-10.png",
+      "sha256": "c9d554edbbcf87deceadbbb5442d1d304407f125fb2bbc8a9c547b31beeb25e3",
+      "bytes": 469853
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-zero/evidence/V02_Mastery_Full_Zero-12.png",
+      "sha256": "8d831cd03a039bc9b7f5a65242ccf45651f58c8b91fb8899d4f6d58f90d23429",
+      "bytes": 466269
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-zero/evidence/V02_Mastery_Full_Zero-14.png",
+      "sha256": "605d3f5689282f103badfd672b7be28bc9aed95ae96414426388402ff79dd336",
+      "bytes": 466148
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-zero/evidence/V02_Mastery_Full_Zero-17.png",
+      "sha256": "0a8fb96b4793be89cfcb959548ac4fb739fe24e818aac70001fe5187a8cc7cc0",
+      "bytes": 652900
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-zero/evidence/V02_Mastery_Full_Zero-19.png",
+      "sha256": "d00f2a675d128736c938fdd484b7273176dd8b3b66fc2a359862b58d843cf343",
+      "bytes": 703686
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-zero/evidence/V02_Mastery_Full_Zero-20.png",
+      "sha256": "9b7900d9bbe5d48b53e331cc416d65bfe4a8b4adb02c9682920195384f00ae9b",
+      "bytes": 668718
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-zero/evidence/V02_Mastery_Full_Zero-21.png",
+      "sha256": "51286d817db806fea33c8ef8fa1f9df19123ae9fb3475aa708d3673d30084359",
+      "bytes": 631687
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-zero/evidence/V02_Mastery_Full_Zero-22.png",
+      "sha256": "a642f62b2cd27f3359abf4df0c8145535744b8e99fa9c595b623361bd44c04d1",
+      "bytes": 714252
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-zero/evidence/V02_Mastery_Full_Zero-8.png",
+      "sha256": "caad59de2891fe8758f96a16789384939c551bbe5690790346cd8419636558af",
+      "bytes": 339496
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-zero/evidence/V02_Mastery_Full_Zero.png",
+      "sha256": "c4f4bcd8ac78c2140e4565073841513c20269501a6d86d972dad727840c6d795",
+      "bytes": 590450
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/mastery-zero.log",
+      "sha256": "82da40798dbde65a0ad68e259f0aec62ace56897f07579d5b5542e898c7e4e11",
+      "bytes": 3638
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-banked/V02_Momentum_Full_Banked_Flow.json",
+      "sha256": "b27ad3275273ca162c0fd8ad91310735bf54a98cc0e18caa68f168111c53c328",
+      "bytes": 6580
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-banked/V02_Momentum_Full_Banked_Flow.trace.json.gz",
+      "sha256": "defd432496f99438c2c51702893fea63e09b71f0e8a6524ed3c03adfcf8d03ed",
+      "bytes": 429431
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-banked/evidence/V02_Momentum_Full_Banked_Flow-11.png",
+      "sha256": "abf49c35f0ff09b9bd5a366b821bb77ba2c4dfc4b85409f570dc2ae49cd7f9a7",
+      "bytes": 791289
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-banked/evidence/V02_Momentum_Full_Banked_Flow-12.png",
+      "sha256": "2bef518e53d26c14d4b1999f7f373b274e1efa8c2fc50271bca78ed0b2e87c5f",
+      "bytes": 767118
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-banked/evidence/V02_Momentum_Full_Banked_Flow-14.png",
+      "sha256": "649aad58fff089d8af7846fae3df8a92f6335ebf78f4650215a9a6f080c24733",
+      "bytes": 577165
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-banked/evidence/V02_Momentum_Full_Banked_Flow-17.png",
+      "sha256": "f49560f35281baefcf644a2ff08f8f056b2e2d6d3f5012d216bf5f78d6660464",
+      "bytes": 710884
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-banked/evidence/V02_Momentum_Full_Banked_Flow-18.png",
+      "sha256": "3cd488f219ae2cdaca947e8756bb84587b4dca6be3834070ed131617de2535ca",
+      "bytes": 724149
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-banked/evidence/V02_Momentum_Full_Banked_Flow-8.png",
+      "sha256": "2f48f94cdfdf51b0c50f1ed37005c33a833e26e0612e38ad2527ad3ca5c26789",
+      "bytes": 669701
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-banked/evidence/V02_Momentum_Full_Banked_Flow.png",
+      "sha256": "a194fc655238f1fa716ad995a34c61ae40e2168cb5754499e93b1cb037e807e3",
+      "bytes": 665120
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-banked.log",
+      "sha256": "b0b4d0919cbe58fec00fbb0bc571118cfdc8ba878c354252616d562bec6ade42",
+      "bytes": 3129
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-zero/V02_Momentum_Full_Zero_Flow.json",
+      "sha256": "dffacaa128ed140a2e8e03646d8f7e21f6166020abc1ac7efee6105703bdeaa6",
+      "bytes": 6539
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-zero/V02_Momentum_Full_Zero_Flow.trace.json.gz",
+      "sha256": "d3043b9c792dfec20f43f82d1ed17c82173bd559ecacac74120333b8c1b48727",
+      "bytes": 416764
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-zero/evidence/V02_Momentum_Full_Zero_Flow-11.png",
+      "sha256": "90d07a7440ec7672cb215c1e89bce42cfd4a4ad9bf6f4daa19d9678707717c1b",
+      "bytes": 793577
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-zero/evidence/V02_Momentum_Full_Zero_Flow-12.png",
+      "sha256": "c3c9b576aa17f9cdba2822ea417ed7654e66c8f6143e2352a614348e1771238d",
+      "bytes": 769665
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-zero/evidence/V02_Momentum_Full_Zero_Flow-14.png",
+      "sha256": "b31e56370905840a9074531120ad587eda0c4306ab839259c87c9808026fa714",
+      "bytes": 577436
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-zero/evidence/V02_Momentum_Full_Zero_Flow-17.png",
+      "sha256": "aac5cc8940f53f0a21f66df6320fe4435ae55dec0c256c04117edea998320687",
+      "bytes": 712097
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-zero/evidence/V02_Momentum_Full_Zero_Flow-18.png",
+      "sha256": "4fff76d9f89b984c98eec266d1265eb52c350f048014d174a72ec50e8cd897c5",
+      "bytes": 723969
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-zero/evidence/V02_Momentum_Full_Zero_Flow-8.png",
+      "sha256": "604a9c1e0cb4f7065408f9a3b04143be275f5566364520452564fd5b915e2c3b",
+      "bytes": 670441
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-zero/evidence/V02_Momentum_Full_Zero_Flow.png",
+      "sha256": "976cf65e1ed962f8d044ef9b516cf5f9ce4cf4427f24aff439839e6b3d7a83c7",
+      "bytes": 664666
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/momentum-zero.log",
+      "sha256": "86530c5141acb76b3693b83525780c344220567d32d0630ca37069663af1a9b1",
+      "bytes": 3112
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/public-banked/V02_Public_Route_Run_Validation.json",
+      "sha256": "097f6956332342c1a0078c75664e01cbc224d5239d52ae0e1a051d25ecebf915",
+      "bytes": 3012
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/public-banked/V02_Public_Route_Run_Validation.trace.json.gz",
+      "sha256": "a491c8d9ed6872441f60a1d33f1636c47bd34bae5df59173163c94ac59cb4426",
+      "bytes": 249928
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/public-banked/evidence/public-station-run-arrival.png",
+      "sha256": "638c8903663265c64ca5eb67aa887833e128b80e019e4f966fdcca44745dfaa1",
+      "bytes": 585116
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/public-banked.log",
+      "sha256": "dfb837be0ff07bd2024d96bc44bb22776c8f060b0e0d765904f0f7bf1e87f799",
+      "bytes": 653
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/public-zero/V02_Public_Route_Run_Validation.json",
+      "sha256": "e3bd8b2439729c5356414eb649c9a851cd6da080a693b3ae22a0039989be1934",
+      "bytes": 2969
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/public-zero/V02_Public_Route_Run_Validation.trace.json.gz",
+      "sha256": "65b230659e9cf312507fabc00b6fba7a286197ae63640280b9b31ba94024b2de",
+      "bytes": 242613
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/public-zero/evidence/public-station-run-arrival.png",
+      "sha256": "9b14740bdabe0f8c21503e195103b34f7c1f3e3b834a479d104c83405221cd5e",
+      "bytes": 584109
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/loggia-terraces-routes/public-zero.log",
+      "sha256": "a85f5b3e7c1abc4cc48d9473c6eac92e8eb6609c7c7a2d0e54258936a05810b9",
+      "bytes": 652
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/stock-loggia-terraces/shot-0.png",
+      "sha256": "8cbef6fc6ad98b2509d2f7e0b3b71d88d429e163c703e96329cd54910cef6fe7",
+      "bytes": 1367865
+    },
+    {
+      "file": "development/vertical-city-v02/evidence/stock-loggia-terraces/state-0.json",
+      "sha256": "0004b16cb140ad3d8c0172c961e10f498ea8b2a3559ccc873379e2012950e9fd",
+      "bytes": 26295
+    },
+    {
+      "file": "scripts/game_vertical_loggia_hud_v02.js",
+      "sha256": "73ffa63e9ab875bded2f37dd40fc6afc4fe2537bf850bebb14b01bd3684386dc",
+      "bytes": 9628
+    },
+    {
+      "file": "scripts/game_vertical_loggia_material_v02.js",
+      "sha256": "062587fe36e8b753d841adf836ea04ad345e1749f7843c967f91efd854fc3c4f",
+      "bytes": 6401
+    },
+    {
+      "file": "scripts/vertical-v02/admit_loggia_routes.py",
+      "sha256": "0dd73ac8651c1918501bc744a0dce8d5209f744ac7febb25e301bfd37b089090",
+      "bytes": 5746
+    },
+    {
+      "file": "scripts/vertical-v02/benchmark_loggia_terraces.cjs",
+      "sha256": "412ada4606e33d51c2d3d5adbfb726d16cc27cfbb8ac5cb4a2d748570d7a9c8b",
+      "bytes": 10419
+    },
+    {
+      "file": "scripts/vertical-v02/blender_loggia_terraces.py",
+      "sha256": "5bd747c726f05b308d5f3f2c275dd7280b46facbf6e928da00403dc783e32fad",
+      "bytes": 9127
+    },
+    {
+      "file": "scripts/vertical-v02/build_loggia_terraces.py",
+      "sha256": "43b7a7ccef0dc05cc500522a036d21d364bd54122297227a4e2965ab7874e9d6",
+      "bytes": 3307
+    },
+    {
+      "file": "scripts/vertical-v02/draw_loggia_plans.py",
+      "sha256": "769636b73d3709d255e569452bcf73850258d062c745da2aed6e30f8e4b6204c",
+      "bytes": 5677
+    },
+    {
+      "file": "scripts/vertical-v02/finalize_loggia_terraces.py",
+      "sha256": "4d2a2f7203e067b3c1bbfbce0195da38be43f922f899e5dacd4f0131ad117af3",
+      "bytes": 3465
+    },
+    {
+      "file": "scripts/vertical-v02/package_loggia_terraces.mjs",
+      "sha256": "855acd2f0d5f85b63ad77036a27a2187ba68ab541f8def6b07ec782efb5c2e86",
+      "bytes": 5146
+    },
+    {
+      "file": "scripts/vertical-v02/plan_loggia_terraces.py",
+      "sha256": "b43060699afa6d52192c76cfa7383c269c3043e9d9618430a8fbd0e187ca92a0",
+      "bytes": 9820
+    },
+    {
+      "file": "scripts/vertical-v02/render_loggia_terraces.py",
+      "sha256": "46c7ccc1160ce8094e61f11475c36b853c4ac06dd8959a1ba77cea6a509b3f51",
+      "bytes": 2776
+    },
+    {
+      "file": "scripts/vertical-v02/run_loggia_candidate_validation.py",
+      "sha256": "2a47b9ec5fb57b45f35ac99ff1f8f0d9f772187e5a83fdfaa1804e6d3bb9b169",
+      "bytes": 3604
+    },
+    {
+      "file": "scripts/vertical-v02/run_loggia_terraces_checks.py",
+      "sha256": "edb5aae576c43bd70141c582dac6213dfd285cf8e5187cb47a904fdeef39bb32",
+      "bytes": 3198
+    },
+    {
+      "file": "scripts/vertical-v02/test_loggia_terraces.cjs",
+      "sha256": "9726fea780216829b0e82931742b11351930660c8622d58036c123a9d9c1b95e",
+      "bytes": 11791
+    },
+    {
+      "file": "scripts/vertical-v02/test_loggia_vehicle_bounds.cjs",
+      "sha256": "9562ecbd92176da9cbb44aeac184114c8e9d2124ec3bb25571cf21f14207b2fe",
+      "bytes": 8478
+    },
+    {
+      "file": "scripts/vertical-v02/validate_loggia_admission.py",
+      "sha256": "ff5bd266d893f03167a33f3f84e4f9ea0c30c66c3eb5128dc868f243eaedb603",
+      "bytes": 3830
+    },
+    {
+      "file": "scripts/vertical-v02/validate_loggia_terraces_clearance.cjs",
+      "sha256": "758bc10fe79f0abe86b62ba6de66bd0397d646c19fff4109a1a68eab92bbf39e",
+      "bytes": 3570
+    },
+    {
+      "file": "scripts/vertical-v02/validate_loggia_terraces_exports.cjs",
+      "sha256": "1cefe14acf25c37e3d116a2d16f26b932c1e7c0ba11d11d72a0527f2a76602f3",
+      "bytes": 3706
+    },
+    {
+      "file": "scripts/vertical-v02/validate_loggia_terraces_master.py",
+      "sha256": "6240257270abb7a850821703c5b092f3b92ee05215cdef7a17976d0bb9e41785",
+      "bytes": 4105
+    },
+    {
+      "file": "scripts/vertical-v02/write_loggia_terraces_evidence.py",
+      "sha256": "cd1da31d5046b2fd5f26e1c4623268fe4afb7ed24914e29c29c487f365cb1455",
+      "bytes": 8654
+    }
+  ]
+}

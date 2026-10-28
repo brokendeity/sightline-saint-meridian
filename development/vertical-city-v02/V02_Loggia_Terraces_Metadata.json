@@ -1,0 +1,1738 @@
+{
+  "status": "PASS source-proposed 3D loggia/stair metadata",
+  "newNodes": [
+    {
+      "id": "LOGGIA_CORE24",
+      "position": [
+        36.4,
+        24,
+        294.2
+      ],
+      "kind": "public-stair",
+      "layer": 24,
+      "supportStatus": "Real source floor/tread/landing; saved-source and native acceptance separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING"
+    },
+    {
+      "id": "LOGGIA_CORE40",
+      "position": [
+        36.4,
+        40,
+        294.2
+      ],
+      "kind": "public-stair",
+      "layer": 40,
+      "supportStatus": "Real source floor/tread/landing; saved-source and native acceptance separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING"
+    },
+    {
+      "id": "LOGGIA_CORE52",
+      "position": [
+        36.4,
+        52,
+        284.2
+      ],
+      "kind": "public-stair",
+      "layer": 52,
+      "supportStatus": "Real source floor/tread/landing; saved-source and native acceptance separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING"
+    },
+    {
+      "id": "LOGGIA_CORE68",
+      "position": [
+        36.4,
+        68,
+        284.2
+      ],
+      "kind": "public-stair",
+      "layer": 68,
+      "supportStatus": "Real source floor/tread/landing; saved-source and native acceptance separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING"
+    },
+    {
+      "id": "LOGGIA_CORE100",
+      "position": [
+        36.4,
+        100,
+        284.2
+      ],
+      "kind": "public-stair",
+      "layer": 100,
+      "supportStatus": "Real source floor/tread/landing; saved-source and native acceptance separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING"
+    },
+    {
+      "id": "LOGGIA_CORE128",
+      "position": [
+        36.4,
+        128,
+        294.2
+      ],
+      "kind": "public-stair",
+      "layer": 128,
+      "supportStatus": "Real source floor/tread/landing; saved-source and native acceptance separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING"
+    },
+    {
+      "id": "LOGGIA_ROOM40",
+      "position": [
+        36.4,
+        40,
+        300.5
+      ],
+      "kind": "public-loggia",
+      "layer": 40,
+      "supportStatus": "Real source floor/tread/landing; saved-source and native acceptance separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING"
+    },
+    {
+      "id": "LOGGIA_ROOM68",
+      "position": [
+        36.4,
+        68,
+        300.5
+      ],
+      "kind": "public-loggia",
+      "layer": 68,
+      "supportStatus": "Real source floor/tread/landing; saved-source and native acceptance separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING"
+    },
+    {
+      "id": "LOGGIA_ROOM100",
+      "position": [
+        36.4,
+        100,
+        300.5
+      ],
+      "kind": "public-loggia",
+      "layer": 100,
+      "supportStatus": "Real source floor/tread/landing; saved-source and native acceptance separate",
+      "validation": "CURRENT INPUT ADMISSION PENDING"
+    }
+  ],
+  "newEdges": [
+    {
+      "id": "LOGGIA_E_000",
+      "source": "LOGGIA_CORE24",
+      "destination": "LOGGIA_CORE40",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": 16,
+      "horizontalDistance": 62.400000000000006,
+      "distance3D": 65.48131845707604,
+      "path": [
+        [
+          36.4,
+          24,
+          294.2
+        ],
+        [
+          33.5,
+          24,
+          294.2
+        ],
+        [
+          33.5,
+          28,
+          284.2
+        ],
+        [
+          36.4,
+          28,
+          284.2
+        ],
+        [
+          39.1,
+          28,
+          284.2
+        ],
+        [
+          39.1,
+          32,
+          294.2
+        ],
+        [
+          36.4,
+          32,
+          294.2
+        ],
+        [
+          33.5,
+          32,
+          294.2
+        ],
+        [
+          33.5,
+          36,
+          284.2
+        ],
+        [
+          36.4,
+          36,
+          284.2
+        ],
+        [
+          39.1,
+          36,
+          284.2
+        ],
+        [
+          39.1,
+          40,
+          294.2
+        ],
+        [
+          36.4,
+          40,
+          294.2
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 9.921411887435765,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_001",
+      "source": "LOGGIA_CORE40",
+      "destination": "LOGGIA_CORE24",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": -16,
+      "horizontalDistance": 62.400000000000006,
+      "distance3D": 65.48131845707604,
+      "path": [
+        [
+          36.4,
+          40,
+          294.2
+        ],
+        [
+          39.1,
+          40,
+          294.2
+        ],
+        [
+          39.1,
+          36,
+          284.2
+        ],
+        [
+          36.4,
+          36,
+          284.2
+        ],
+        [
+          33.5,
+          36,
+          284.2
+        ],
+        [
+          33.5,
+          32,
+          294.2
+        ],
+        [
+          36.4,
+          32,
+          294.2
+        ],
+        [
+          39.1,
+          32,
+          294.2
+        ],
+        [
+          39.1,
+          28,
+          284.2
+        ],
+        [
+          36.4,
+          28,
+          284.2
+        ],
+        [
+          33.5,
+          28,
+          284.2
+        ],
+        [
+          33.5,
+          24,
+          294.2
+        ],
+        [
+          36.4,
+          24,
+          294.2
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 9.921411887435765,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_002",
+      "source": "LOGGIA_CORE40",
+      "destination": "LOGGIA_CORE52",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": 12,
+      "horizontalDistance": 47.0,
+      "distance3D": 49.31098884280703,
+      "path": [
+        [
+          36.4,
+          40,
+          294.2
+        ],
+        [
+          33.5,
+          40,
+          294.2
+        ],
+        [
+          33.5,
+          44,
+          284.2
+        ],
+        [
+          36.4,
+          44,
+          284.2
+        ],
+        [
+          39.1,
+          44,
+          284.2
+        ],
+        [
+          39.1,
+          48,
+          294.2
+        ],
+        [
+          36.4,
+          48,
+          294.2
+        ],
+        [
+          33.5,
+          48,
+          294.2
+        ],
+        [
+          33.5,
+          52,
+          284.2
+        ],
+        [
+          36.4,
+          52,
+          284.2
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 7.4713619458798535,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_003",
+      "source": "LOGGIA_CORE52",
+      "destination": "LOGGIA_CORE40",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": -12,
+      "horizontalDistance": 47.0,
+      "distance3D": 49.31098884280703,
+      "path": [
+        [
+          36.4,
+          52,
+          284.2
+        ],
+        [
+          33.5,
+          52,
+          284.2
+        ],
+        [
+          33.5,
+          48,
+          294.2
+        ],
+        [
+          36.4,
+          48,
+          294.2
+        ],
+        [
+          39.1,
+          48,
+          294.2
+        ],
+        [
+          39.1,
+          44,
+          284.2
+        ],
+        [
+          36.4,
+          44,
+          284.2
+        ],
+        [
+          33.5,
+          44,
+          284.2
+        ],
+        [
+          33.5,
+          40,
+          294.2
+        ],
+        [
+          36.4,
+          40,
+          294.2
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 7.4713619458798535,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_004",
+      "source": "LOGGIA_CORE52",
+      "destination": "LOGGIA_CORE68",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": 16,
+      "horizontalDistance": 62.400000000000006,
+      "distance3D": 65.48131845707604,
+      "path": [
+        [
+          36.4,
+          52,
+          284.2
+        ],
+        [
+          39.1,
+          52,
+          284.2
+        ],
+        [
+          39.1,
+          56,
+          294.2
+        ],
+        [
+          36.4,
+          56,
+          294.2
+        ],
+        [
+          33.5,
+          56,
+          294.2
+        ],
+        [
+          33.5,
+          60,
+          284.2
+        ],
+        [
+          36.4,
+          60,
+          284.2
+        ],
+        [
+          39.1,
+          60,
+          284.2
+        ],
+        [
+          39.1,
+          64,
+          294.2
+        ],
+        [
+          36.4,
+          64,
+          294.2
+        ],
+        [
+          33.5,
+          64,
+          294.2
+        ],
+        [
+          33.5,
+          68,
+          284.2
+        ],
+        [
+          36.4,
+          68,
+          284.2
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 9.921411887435765,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_005",
+      "source": "LOGGIA_CORE68",
+      "destination": "LOGGIA_CORE52",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": -16,
+      "horizontalDistance": 62.400000000000006,
+      "distance3D": 65.48131845707604,
+      "path": [
+        [
+          36.4,
+          68,
+          284.2
+        ],
+        [
+          33.5,
+          68,
+          284.2
+        ],
+        [
+          33.5,
+          64,
+          294.2
+        ],
+        [
+          36.4,
+          64,
+          294.2
+        ],
+        [
+          39.1,
+          64,
+          294.2
+        ],
+        [
+          39.1,
+          60,
+          284.2
+        ],
+        [
+          36.4,
+          60,
+          284.2
+        ],
+        [
+          33.5,
+          60,
+          284.2
+        ],
+        [
+          33.5,
+          56,
+          294.2
+        ],
+        [
+          36.4,
+          56,
+          294.2
+        ],
+        [
+          39.1,
+          56,
+          294.2
+        ],
+        [
+          39.1,
+          52,
+          284.2
+        ],
+        [
+          36.4,
+          52,
+          284.2
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 9.921411887435765,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_006",
+      "source": "LOGGIA_CORE68",
+      "destination": "LOGGIA_CORE100",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": 32,
+      "horizontalDistance": 124.80000000000004,
+      "distance3D": 130.96263691415209,
+      "path": [
+        [
+          36.4,
+          68,
+          284.2
+        ],
+        [
+          39.1,
+          68,
+          284.2
+        ],
+        [
+          39.1,
+          72,
+          294.2
+        ],
+        [
+          36.4,
+          72,
+          294.2
+        ],
+        [
+          33.5,
+          72,
+          294.2
+        ],
+        [
+          33.5,
+          76,
+          284.2
+        ],
+        [
+          36.4,
+          76,
+          284.2
+        ],
+        [
+          39.1,
+          76,
+          284.2
+        ],
+        [
+          39.1,
+          80,
+          294.2
+        ],
+        [
+          36.4,
+          80,
+          294.2
+        ],
+        [
+          33.5,
+          80,
+          294.2
+        ],
+        [
+          33.5,
+          84,
+          284.2
+        ],
+        [
+          36.4,
+          84,
+          284.2
+        ],
+        [
+          39.1,
+          84,
+          284.2
+        ],
+        [
+          39.1,
+          88,
+          294.2
+        ],
+        [
+          36.4,
+          88,
+          294.2
+        ],
+        [
+          33.5,
+          88,
+          294.2
+        ],
+        [
+          33.5,
+          92,
+          284.2
+        ],
+        [
+          36.4,
+          92,
+          284.2
+        ],
+        [
+          39.1,
+          92,
+          284.2
+        ],
+        [
+          39.1,
+          96,
+          294.2
+        ],
+        [
+          36.4,
+          96,
+          294.2
+        ],
+        [
+          33.5,
+          96,
+          294.2
+        ],
+        [
+          33.5,
+          100,
+          284.2
+        ],
+        [
+          36.4,
+          100,
+          284.2
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 19.84282377487153,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_007",
+      "source": "LOGGIA_CORE100",
+      "destination": "LOGGIA_CORE68",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": -32,
+      "horizontalDistance": 124.80000000000004,
+      "distance3D": 130.96263691415209,
+      "path": [
+        [
+          36.4,
+          100,
+          284.2
+        ],
+        [
+          33.5,
+          100,
+          284.2
+        ],
+        [
+          33.5,
+          96,
+          294.2
+        ],
+        [
+          36.4,
+          96,
+          294.2
+        ],
+        [
+          39.1,
+          96,
+          294.2
+        ],
+        [
+          39.1,
+          92,
+          284.2
+        ],
+        [
+          36.4,
+          92,
+          284.2
+        ],
+        [
+          33.5,
+          92,
+          284.2
+        ],
+        [
+          33.5,
+          88,
+          294.2
+        ],
+        [
+          36.4,
+          88,
+          294.2
+        ],
+        [
+          39.1,
+          88,
+          294.2
+        ],
+        [
+          39.1,
+          84,
+          284.2
+        ],
+        [
+          36.4,
+          84,
+          284.2
+        ],
+        [
+          33.5,
+          84,
+          284.2
+        ],
+        [
+          33.5,
+          80,
+          294.2
+        ],
+        [
+          36.4,
+          80,
+          294.2
+        ],
+        [
+          39.1,
+          80,
+          294.2
+        ],
+        [
+          39.1,
+          76,
+          284.2
+        ],
+        [
+          36.4,
+          76,
+          284.2
+        ],
+        [
+          33.5,
+          76,
+          284.2
+        ],
+        [
+          33.5,
+          72,
+          294.2
+        ],
+        [
+          36.4,
+          72,
+          294.2
+        ],
+        [
+          39.1,
+          72,
+          294.2
+        ],
+        [
+          39.1,
+          68,
+          284.2
+        ],
+        [
+          36.4,
+          68,
+          284.2
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 19.84282377487153,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_008",
+      "source": "LOGGIA_CORE100",
+      "destination": "LOGGIA_CORE128",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": 28,
+      "horizontalDistance": 109.00000000000003,
+      "distance3D": 114.39230729988307,
+      "path": [
+        [
+          36.4,
+          100,
+          284.2
+        ],
+        [
+          39.1,
+          100,
+          284.2
+        ],
+        [
+          39.1,
+          104,
+          294.2
+        ],
+        [
+          36.4,
+          104,
+          294.2
+        ],
+        [
+          33.5,
+          104,
+          294.2
+        ],
+        [
+          33.5,
+          108,
+          284.2
+        ],
+        [
+          36.4,
+          108,
+          284.2
+        ],
+        [
+          39.1,
+          108,
+          284.2
+        ],
+        [
+          39.1,
+          112,
+          294.2
+        ],
+        [
+          36.4,
+          112,
+          294.2
+        ],
+        [
+          33.5,
+          112,
+          294.2
+        ],
+        [
+          33.5,
+          116,
+          284.2
+        ],
+        [
+          36.4,
+          116,
+          284.2
+        ],
+        [
+          39.1,
+          116,
+          284.2
+        ],
+        [
+          39.1,
+          120,
+          294.2
+        ],
+        [
+          36.4,
+          120,
+          294.2
+        ],
+        [
+          33.5,
+          120,
+          294.2
+        ],
+        [
+          33.5,
+          124,
+          284.2
+        ],
+        [
+          36.4,
+          124,
+          284.2
+        ],
+        [
+          39.1,
+          124,
+          284.2
+        ],
+        [
+          39.1,
+          128,
+          294.2
+        ],
+        [
+          36.4,
+          128,
+          294.2
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 17.332167772709557,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_009",
+      "source": "LOGGIA_CORE128",
+      "destination": "LOGGIA_CORE100",
+      "ability": "stairs",
+      "directionality": "directed",
+      "elevationChange": -28,
+      "horizontalDistance": 109.00000000000003,
+      "distance3D": 114.39230729988307,
+      "path": [
+        [
+          36.4,
+          128,
+          294.2
+        ],
+        [
+          39.1,
+          128,
+          294.2
+        ],
+        [
+          39.1,
+          124,
+          284.2
+        ],
+        [
+          36.4,
+          124,
+          284.2
+        ],
+        [
+          33.5,
+          124,
+          284.2
+        ],
+        [
+          33.5,
+          120,
+          294.2
+        ],
+        [
+          36.4,
+          120,
+          294.2
+        ],
+        [
+          39.1,
+          120,
+          294.2
+        ],
+        [
+          39.1,
+          116,
+          284.2
+        ],
+        [
+          36.4,
+          116,
+          284.2
+        ],
+        [
+          33.5,
+          116,
+          284.2
+        ],
+        [
+          33.5,
+          112,
+          294.2
+        ],
+        [
+          36.4,
+          112,
+          294.2
+        ],
+        [
+          39.1,
+          112,
+          294.2
+        ],
+        [
+          39.1,
+          108,
+          284.2
+        ],
+        [
+          36.4,
+          108,
+          284.2
+        ],
+        [
+          33.5,
+          108,
+          284.2
+        ],
+        [
+          33.5,
+          104,
+          294.2
+        ],
+        [
+          36.4,
+          104,
+          294.2
+        ],
+        [
+          39.1,
+          104,
+          294.2
+        ],
+        [
+          39.1,
+          100,
+          284.2
+        ],
+        [
+          36.4,
+          100,
+          284.2
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 17.332167772709557,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_010",
+      "source": "LOGGIA_CORE40",
+      "destination": "LOGGIA_ROOM40",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 6.300000000000011,
+      "distance3D": 6.300000000000011,
+      "path": [
+        [
+          36.4,
+          40,
+          294.2
+        ],
+        [
+          36.4,
+          40,
+          298
+        ],
+        [
+          36.4,
+          40,
+          300.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 0.9545454545454564,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_011",
+      "source": "LOGGIA_ROOM40",
+      "destination": "LOGGIA_CORE40",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 6.300000000000011,
+      "distance3D": 6.300000000000011,
+      "path": [
+        [
+          36.4,
+          40,
+          300.5
+        ],
+        [
+          36.4,
+          40,
+          298
+        ],
+        [
+          36.4,
+          40,
+          294.2
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 0.9545454545454564,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_012",
+      "source": "LOGGIA_CORE68",
+      "destination": "LOGGIA_ROOM68",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 16.30000000000001,
+      "distance3D": 16.30000000000001,
+      "path": [
+        [
+          36.4,
+          68,
+          284.2
+        ],
+        [
+          36.4,
+          68,
+          294.2
+        ],
+        [
+          36.4,
+          68,
+          298
+        ],
+        [
+          36.4,
+          68,
+          300.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 2.4696969696969715,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_013",
+      "source": "LOGGIA_ROOM68",
+      "destination": "LOGGIA_CORE68",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 16.30000000000001,
+      "distance3D": 16.30000000000001,
+      "path": [
+        [
+          36.4,
+          68,
+          300.5
+        ],
+        [
+          36.4,
+          68,
+          298
+        ],
+        [
+          36.4,
+          68,
+          294.2
+        ],
+        [
+          36.4,
+          68,
+          284.2
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 2.4696969696969715,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_014",
+      "source": "LOGGIA_CORE100",
+      "destination": "LOGGIA_ROOM100",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 16.30000000000001,
+      "distance3D": 16.30000000000001,
+      "path": [
+        [
+          36.4,
+          100,
+          284.2
+        ],
+        [
+          36.4,
+          100,
+          294.2
+        ],
+        [
+          36.4,
+          100,
+          298
+        ],
+        [
+          36.4,
+          100,
+          300.5
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 2.4696969696969715,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_015",
+      "source": "LOGGIA_ROOM100",
+      "destination": "LOGGIA_CORE100",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 16.30000000000001,
+      "distance3D": 16.30000000000001,
+      "path": [
+        [
+          36.4,
+          100,
+          300.5
+        ],
+        [
+          36.4,
+          100,
+          298
+        ],
+        [
+          36.4,
+          100,
+          294.2
+        ],
+        [
+          36.4,
+          100,
+          284.2
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 2.4696969696969715,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_016",
+      "source": "public-terrace-24-outlook",
+      "destination": "LOGGIA_CORE24",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 5.100000000000001,
+      "distance3D": 5.100000000000001,
+      "path": [
+        [
+          38,
+          24,
+          297.7
+        ],
+        [
+          36.4,
+          24,
+          297.7
+        ],
+        [
+          36.4,
+          24,
+          294.2
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 0.7727272727272729,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_017",
+      "source": "LOGGIA_CORE24",
+      "destination": "public-terrace-24-outlook",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 5.100000000000001,
+      "distance3D": 5.100000000000001,
+      "path": [
+        [
+          36.4,
+          24,
+          294.2
+        ],
+        [
+          36.4,
+          24,
+          297.7
+        ],
+        [
+          38,
+          24,
+          297.7
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 0.7727272727272729,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_018",
+      "source": "public-terrace-52-outlook",
+      "destination": "LOGGIA_CORE52",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 15.100000000000001,
+      "distance3D": 15.100000000000001,
+      "path": [
+        [
+          38,
+          52,
+          297.7
+        ],
+        [
+          36.4,
+          52,
+          297.7
+        ],
+        [
+          36.4,
+          52,
+          294.2
+        ],
+        [
+          36.4,
+          52,
+          284.2
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 2.287878787878788,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_019",
+      "source": "LOGGIA_CORE52",
+      "destination": "public-terrace-52-outlook",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 15.100000000000001,
+      "distance3D": 15.100000000000001,
+      "path": [
+        [
+          36.4,
+          52,
+          284.2
+        ],
+        [
+          36.4,
+          52,
+          294.2
+        ],
+        [
+          36.4,
+          52,
+          297.7
+        ],
+        [
+          38,
+          52,
+          297.7
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 2.287878787878788,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_020",
+      "source": "public-terrace-128-outlook",
+      "destination": "LOGGIA_CORE128",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 5.100000000000001,
+      "distance3D": 5.100000000000001,
+      "path": [
+        [
+          38,
+          128,
+          297.7
+        ],
+        [
+          36.4,
+          128,
+          297.7
+        ],
+        [
+          36.4,
+          128,
+          294.2
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 0.7727272727272729,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    },
+    {
+      "id": "LOGGIA_E_021",
+      "source": "LOGGIA_CORE128",
+      "destination": "public-terrace-128-outlook",
+      "ability": "walk",
+      "directionality": "directed",
+      "elevationChange": 0,
+      "horizontalDistance": 5.100000000000001,
+      "distance3D": 5.100000000000001,
+      "path": [
+        [
+          36.4,
+          128,
+          294.2
+        ],
+        [
+          36.4,
+          128,
+          297.7
+        ],
+        [
+          38,
+          128,
+          297.7
+        ]
+      ],
+      "requiredAfterstepImpulses": 0,
+      "requiredReplaySlots": 0,
+      "expectedSeconds": 0.7727272727272729,
+      "timeEvidence": "Geometric estimate until actual native trace admission",
+      "difficulty": "public",
+      "risk": "low",
+      "failureRecovery": "Guarded4m landings and three sheltered loggias; retained24/52/128public galleries",
+      "traversalAgent": "player",
+      "validation": {
+        "geometry": "Source preflight only; saved-source/export checks separate",
+        "input": "NOT TESTED at metadata generation"
+      }
+    }
+  ],
+  "sourceContacts": [
+    {
+      "lower": "terrace-frame-32.5-296.4",
+      "upper": "loggia-room-40-floor-beam-32.5"
+    },
+    {
+      "lower": "terrace-frame-32.5-303.6",
+      "upper": "loggia-room-40-floor-beam-32.5"
+    },
+    {
+      "lower": "terrace-frame-40.8-296.4",
+      "upper": "loggia-room-40-floor-beam-40.8"
+    },
+    {
+      "lower": "terrace-frame-40.8-303.6",
+      "upper": "loggia-room-40-floor-beam-40.8"
+    },
+    {
+      "lower": "terrace-frame-32.5-296.4",
+      "upper": "loggia-room-68-floor-beam-32.5"
+    },
+    {
+      "lower": "terrace-frame-32.5-303.6",
+      "upper": "loggia-room-68-floor-beam-32.5"
+    },
+    {
+      "lower": "terrace-frame-40.8-296.4",
+      "upper": "loggia-room-68-floor-beam-40.8"
+    },
+    {
+      "lower": "terrace-frame-40.8-303.6",
+      "upper": "loggia-room-68-floor-beam-40.8"
+    },
+    {
+      "lower": "terrace-frame-32.5-296.4",
+      "upper": "loggia-room-100-floor-beam-32.5"
+    },
+    {
+      "lower": "terrace-frame-32.5-303.6",
+      "upper": "loggia-room-100-floor-beam-32.5"
+    },
+    {
+      "lower": "terrace-frame-40.8-296.4",
+      "upper": "loggia-room-100-floor-beam-40.8"
+    },
+    {
+      "lower": "terrace-frame-40.8-303.6",
+      "upper": "loggia-room-100-floor-beam-40.8"
+    }
+  ],
+  "manifestSHA256": "c41e4eb87e3c7961a413c4ee06ed3be1a6bfeb336629294bc27aa88cc7de226d",
+  "limits": [
+    "Actual directed input admission remains separate",
+    "Source adjacency does not certify structural engineering"
+  ]
+}

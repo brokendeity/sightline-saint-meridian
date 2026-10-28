@@ -1,0 +1,61 @@
+{
+  "status": "FAIL",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html",
+  "manifest": "assets/city/vertical-v02/loggia-terraces/runtime/manifest.json",
+  "hashes": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html": "18b8486781e2b0190b1258f38f085bc478df15825c4c754f2ef0a3371c6c86d1",
+    "assets/city/vertical-v02/loggia-terraces/materials.json": "94464ec3dfd838f07bbf58c47afd1cd57d466a01594a9d73b0f71181af2f54f6",
+    "assets/city/vertical-v02/loggia-terraces/runtime/manifest.json": "266c0f8a4df4c6bfbbcd59b749b6f656867ec3b1cbc22bef8df29742d7ac74ce",
+    "scripts/game_aerial_traffic_core_v02.js": "e518c60772284ec255757bca341a3c4a420d095baa10011e38426d621e70e811",
+    "scripts/game_motion_loadout.js": "4c83cf50c8646ebd1ca39e80399a8d4271d2352df7c9e5a9d73f78460cf93eb8",
+    "scripts/game_vertical_appearance_facade_v02.js": "2705ecadebe14ebddf1756ba5b3cfb7f6b955ac6955ccae9ec1480d08bb245ae",
+    "scripts/game_vertical_discovery_v02.js": "7cfc8878103a13115fb9778c4d8ee15dadc0147a0ace29433a14a2ba651c0679",
+    "scripts/game_vertical_encounters_v02.js": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+    "scripts/game_vertical_hud_v02.js": "301a855a1ac6509e561ae1d108ef0914b1edb1a76e69c2903864913963afb650",
+    "scripts/game_vertical_loggia_material_v02.js": "062587fe36e8b753d841adf836ea04ad345e1749f7843c967f91efd854fc3c4f",
+    "scripts/game_vertical_market_v02.js": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+    "scripts/game_vertical_pursuit_v02.js": "d26199eb208a5d3fc21ad26f70c97471bd14b8b3b8370dfd2611c7b0c0344d58",
+    "scripts/game_vertical_transit_v02.js": "0403f887673e0008f7e493a916bcbc8502794978f048b2e8ca806fe5de731ecb",
+    "scripts/game_vertical_views_v02.js": "0f2ee6e9f3c8d555c8c5189d076c4b8daf33f2d15b0c672edbf1e8aa2a4d9f21",
+    "scripts/game_vertical_world_life_v02.js": "08561d9ce00f53fb9d0b13dd7324639c2389cf5a7e1422512fd1dada07a28639",
+    "scripts/v02_exact_camera_rays.js": "bd9856c17f746f8741d522ce53f47428b7d6bba4ad953ed4ca094a56f5ade670",
+    "scripts/vertical-v02/evidence_io.cjs": "e41a051fcddd33b0d0d03059d3c4ce7d26653a2eea029e11b3b210d3705bdf51",
+    "scripts/vertical-v02/market_test_helpers.cjs": "f553a6f800f1f7048a08bceb1a85d56e94d0324f2ce3d86b72c3e28a9c3e763d",
+    "scripts/vertical-v02/run_current_gameplay_regressions.py": "dbd6791a90981c00c47e0438bb107c99c24c9f26cdf0ac49d2a5fed56bbd99f9",
+    "scripts/vertical-v02/test_discovery.cjs": "8858c26174c2db0d0183ea4a3544906e55f1847f41cceedbfc6e411a6373ba96",
+    "scripts/vertical-v02/test_discovery_lifecycle.cjs": "1bb0a42fe7cd750a657af1f386c53d43d2a381969d06f158d12853080ecf3fef",
+    "scripts/vertical-v02/test_market_lifecycle.cjs": "b10f00ee3bccaa41ffbb191de248824f537c0e36b968cbc17ed915ffbfa527d4",
+    "scripts/vertical-v02/test_market_rescue.cjs": "c52db7db1fdf00373eaafb8d8a2471c4e7fe6519777979b6c1ef825611added6",
+    "scripts/vertical-v02/test_pursuit.cjs": "5ded9290750847934590dbe3b8186444b34d5a9f32ea9666fcd13778e0fb04f9",
+    "scripts/vertical-v02/test_service_encounter.cjs": "1b77e8ddcc65b612df6ea281b1e99fbeaebd9a49402894d2cab110640b8a1a04",
+    "scripts/vertical-v02/test_service_lifecycle.cjs": "c6d62f348d421b8775f2616fd0a29d263e2ba85364164c3e696df80a12b7482d",
+    "scripts/vertical-v02/test_service_replay.cjs": "c50bd452d716cecf9eb1f579efb1a80dfd5ad7543ab9ddbda9dc1424a1669cc9",
+    "scripts/vertical_transit_core_v02.js": "75b8e9f71b7853f586f42b5d2b031140a7851711d8f05646ba9de57ab3a88353"
+  },
+  "jobs": [
+    {
+      "name": "service",
+      "script": "test_service_encounter.cjs",
+      "environment": {
+        "V02_GAMEPLAY_BUILD": "V02_Loggia_Terraces_Build.json",
+        "V02_EVIDENCE_RUN": "loggia-terraces-gameplay/service"
+      },
+      "returncode": 0,
+      "wallSeconds": 63.05081437481567,
+      "log": "evidence/loggia-terraces-gameplay/service.log"
+    },
+    {
+      "name": "service-lifecycle",
+      "script": "test_service_lifecycle.cjs",
+      "environment": {
+        "V02_GAMEPLAY_BUILD": "V02_Loggia_Terraces_Build.json",
+        "V02_EVIDENCE_RUN": "loggia-terraces-gameplay/service-lifecycle"
+      },
+      "returncode": 1,
+      "wallSeconds": 20.26799579197541,
+      "log": "evidence/loggia-terraces-gameplay/service-lifecycle.log"
+    }
+  ],
+  "scope": "Run retained gameplay cases on an explicit immutable current candidate.\n\nEach case retains its own complete reports/images, with real entry/manifest\nhashes. Resume only at the first unfinished case with identical fingerprints.\nThese tests do not establish final art quality or sustained combined performance.",
+  "active": "service-lifecycle"
+}

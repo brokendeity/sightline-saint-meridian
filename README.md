@@ -1,3 +1,23 @@
+# V02 current development checkpoint — 28 October 2026
+
+Current branch: `feature/saint-meridian-aaa-vertical-city-v02`.
+
+Current complete game: [SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html](SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html). Serve this repository, then open `http://127.0.0.1:8766/SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html?capture=backspool` and select **Enter V02 district**.
+
+```sh
+python3 -m http.server 8766 --bind 127.0.0.1
+```
+
+Includes three public loggias, a connected 26-flight stair from24to128m, the existing market rescue/service combat/transit pursuit and three station approaches. The original310buildings, roads, plaza, heroes and older complete builds are preserved. Contract-owned sparring no longer hides its street objective; yard controls use the shared responsive HUD.
+
+All12current gameplay scenarios, six station approaches, three public loops,18HUD/input cases and the complete stair tour pass their stated checks. Saved Blender geometry, modular exports, physical contacts, vehicle separation and current60-second matched performance evidence are included. **V02 remains unfinished:** approved-reference visual refinement, broader combat-camera framing, remaining release regressions and combined stress/performance work are open. [Implementation and exact limits](development/vertical-city-v02/V02_LOGGIA_TERRACES.md) · [Current candidate identity](development/vertical-city-v02/V02_Current_Candidate_Status.json) · [Bounded evidence package](development/vertical-city-v02/V02_Loggia_Terraces_Evidence.json).
+
+## Earlier checkpoints
+
+The entries below are historical. Their files, snapshots and branches remain available for rollback.
+
+---
+
 # Latest saved update — 25 October 2026
 
 Snapshot branch: `snapshots/2026-10-25-current-game`. Tag: `snapshot-2026-10-25-current-game`. Includes the current playable game, Hi3D train inspector and newer experimental V02 work. [Launch instructions and checkpoint limits](docs/snapshots/2026-10-25-current-game.md). Older snapshots and main are preserved.

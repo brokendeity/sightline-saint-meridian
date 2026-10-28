@@ -1,0 +1,25 @@
+{
+  "scope": "Local service-yard lifecycle, normal controller and touch start; direct respawn API case labelled. Physical devices and other encounters untested.",
+  "results": [
+    {
+      "name": "standard simulated controller Y starts fixed encounter",
+      "pass": true
+    },
+    {
+      "name": "pause freezes positions and local clock; resume keeps attempt",
+      "pass": true
+    },
+    {
+      "name": "restart replaces exactly three opponents without healing or stale target lock",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "entrySHA256": "18b8486781e2b0190b1258f38f085bc478df15825c4c754f2ef0a3371c6c86d1",
+  "manifestSHA256": "266c0f8a4df4c6bfbbcd59b749b6f656867ec3b1cbc22bef8df29742d7ac74ce",
+  "encounterSHA256": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+  "marketSHA256": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+  "failure": "TimeoutError: page.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#characterChoice')\u001b[22m\n\u001b[2m    - locator resolved to <select id=\"characterChoice\" aria-label=\"Choose character\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    60 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying select option action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+  "fullTrace": "V02_Service_Lifecycle.trace.json.gz",
+  "traceFrames": 7
+}

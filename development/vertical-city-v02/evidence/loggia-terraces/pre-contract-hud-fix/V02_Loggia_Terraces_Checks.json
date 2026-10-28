@@ -1,0 +1,91 @@
+{
+  "status": "PASS bounded native material, six station approaches, three public loops, HUD/input and installed-client movement",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html",
+  "identities": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html": "18b8486781e2b0190b1258f38f085bc478df15825c4c754f2ef0a3371c6c86d1",
+    "assets/city/vertical-v02/loggia-terraces/runtime/manifest.json": "266c0f8a4df4c6bfbbcd59b749b6f656867ec3b1cbc22bef8df29742d7ac74ce",
+    "scripts/game_vertical_loggia_material_v02.js": "062587fe36e8b753d841adf836ea04ad345e1749f7843c967f91efd854fc3c4f",
+    "assets/city/vertical-v02/loggia-terraces/materials.json": "94464ec3dfd838f07bbf58c47afd1cd57d466a01594a9d73b0f71181af2f54f6"
+  },
+  "jobs": [
+    {
+      "name": "native",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_loggia_terraces.cjs"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 157.8226293749176,
+      "log": "evidence/loggia-terraces-checks/native.txt"
+    },
+    {
+      "name": "station-routes",
+      "command": [
+        "python3",
+        "scripts/vertical-v02/run_current_station_routes.py"
+      ],
+      "environment": {
+        "V02_ROUTE_BUILD_REPORT": "V02_Loggia_Terraces_Build.json",
+        "V02_ROUTE_SUITE": "loggia-terraces-routes",
+        "V02_ROUTE_REPORT": "V02_Loggia_Terraces_Routes.json"
+      },
+      "returncode": 0,
+      "wallSeconds": 482.4916222086176,
+      "log": "evidence/loggia-terraces-checks/station-routes.txt"
+    },
+    {
+      "name": "loops",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_current_city_loops.cjs"
+      ],
+      "environment": {
+        "V02_LOOP_BUILD": "V02_Loggia_Terraces_Build.json",
+        "V02_LOOP_RUN": "loggia-terraces-loops",
+        "V02_LOOP_REPORT": "V02_Loggia_Terraces_Loops.json"
+      },
+      "returncode": 0,
+      "wallSeconds": 72.59118983289227,
+      "log": "evidence/loggia-terraces-checks/loops.txt"
+    },
+    {
+      "name": "hud",
+      "command": [
+        "node",
+        "scripts/vertical-v02/test_hud_candidate.cjs"
+      ],
+      "environment": {
+        "V02_HUD_ENTRY": "SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html",
+        "V02_HUD_RUN": "loggia-terraces-hud",
+        "V02_HUD_REPORT": "V02_Loggia_Terraces_HUD.json"
+      },
+      "returncode": 0,
+      "wallSeconds": 25.665087208151817,
+      "log": "evidence/loggia-terraces-checks/hud.txt"
+    },
+    {
+      "name": "stock",
+      "command": [
+        "node",
+        "development/vertical-city-v02/tools/run-skill-client.cjs",
+        "--url",
+        "http://127.0.0.1:8766/SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html?capture=backspool",
+        "--click-selector",
+        "#v02Start",
+        "--actions-json",
+        "{\"steps\": [{\"buttons\": [\"a\"], \"frames\": 45}, {\"buttons\": [], \"frames\": 12}]}",
+        "--iterations",
+        "1",
+        "--pause-ms",
+        "250",
+        "--screenshot-dir",
+        "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/development/vertical-city-v02/evidence/stock-loggia-terraces"
+      ],
+      "environment": {},
+      "returncode": 0,
+      "wallSeconds": 12.296844624914229,
+      "log": "evidence/loggia-terraces-checks/stock.txt"
+    }
+  ]
+}

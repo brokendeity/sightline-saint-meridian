@@ -1,38 +1,44 @@
 {
-  "status": "Current complete material-response candidate; bounded source/routes/input checks PASS; full V02 goal INCOMPLETE",
+  "status": "Current complete loggia candidate; listed bounded source/gameplay/input checks PASS; full V02 goal INCOMPLETE",
   "branch": "feature/saint-meridian-aaa-vertical-city-v02",
   "currentCandidate": {
-    "status": "CANDIDATE; source/native/gameplay/visual validation pending",
-    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_MATERIAL_RESPONSE.html",
-    "entrySHA256": "3954b264ef205ad17150fd026238820af11b93d984ffca680e3bd201af51da9a",
-    "source": "SIGHTLINE_SAINT_MERIDIAN_V02_MAINTENANCE_ACCESS.html",
-    "sourceSHA256": "08249105dfcbb14efd16d027b407dcb6122e186951ef6b18122e5953ac644cd7",
-    "manifest": "assets/city/vertical-v02/maintenance-access/runtime/manifest.json",
-    "manifestSHA256": "5372f2b0dd49b9418e24595c4ab0e488ccc0ad5b961644c5d2436329c1f79727",
-    "script": "scripts/game_vertical_material_response_v02.js",
-    "scriptSHA256": "ebb79da99d48a59b5b20336b4730a9b1813cd4769274b137ce708cfbea84cb04",
-    "materialContract": "assets/city/vertical-v02/material-response/materials.json",
-    "materialContractSHA256": "39346dc34536c1b6222c49815e748b9de94fdf5145d62c3acef34b789260f9f6",
-    "scope": "Only one additive material-response script in the complete current game. Architecture payload, camera, physics, controller, animations, powers and missions unchanged."
+    "status": "Bounded source/native/routes/12gameplay/input candidate validated; full visual/release gates open",
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html",
+    "entrySHA256": "85762c3518a57f5c9860640900c94b8fff11f707137b9baf780856410a256f3e",
+    "source": "SIGHTLINE_SAINT_MERIDIAN_V02_MATERIAL_RESPONSE.html",
+    "sourceSHA256": "3954b264ef205ad17150fd026238820af11b93d984ffca680e3bd201af51da9a",
+    "manifest": "assets/city/vertical-v02/loggia-terraces/runtime/manifest.json",
+    "manifestSHA256": "266c0f8a4df4c6bfbbcd59b749b6f656867ec3b1cbc22bef8df29742d7ac74ce",
+    "script": "scripts/game_vertical_loggia_material_v02.js",
+    "scriptSHA256": "062587fe36e8b753d841adf836ea04ad345e1749f7843c967f91efd854fc3c4f",
+    "materialContract": "assets/city/vertical-v02/loggia-terraces/materials.json",
+    "materialContractSHA256": "94464ec3dfd838f07bbf58c47afd1cd57d466a01594a9d73b0f71181af2f54f6",
+    "sourceScript": "scripts/game_vertical_material_response_v02.js",
+    "sourceScriptSHA256": "ebb79da99d48a59b5b20336b4730a9b1813cd4769274b137ce708cfbea84cb04",
+    "hudScript": "scripts/game_vertical_loggia_hud_v02.js",
+    "hudScriptSHA256": "73ffa63e9ab875bded2f37dd40fc6afc4fe2537bf850bebb14b01bd3684386dc",
+    "sourceHUDScript": "scripts/game_vertical_hud_v02.js",
+    "sourceHUDScriptSHA256": "301a855a1ac6509e561ae1d108ef0914b1edb1a76e69c2903864913963afb650",
+    "scope": "Architecture/material selectors and copied HUD priority rule for contract-owned sparring only; camera/control/physics/heroes/powers/mission logic unchanged"
   },
   "sourceMaster": {
-    "file": "development/vertical-city-v02/blender/SaintMeridian_V02_Material_Response.blend",
-    "sha256": "c9f21cdb00097e3de137e178f656d967890e213ab8448438eb7b824945046a67"
+    "file": "development/vertical-city-v02/blender/SaintMeridian_V02_Loggia_Terraces.blend",
+    "sha256": "5ccbb46478111f9a2ff265dcafb9d045caaba7777ca12bb84d25aad2a1df9927"
   },
-  "evidence": "V02_Material_Response_Evidence.json",
-  "notes": "V02_MATERIAL_RESPONSE.md",
+  "evidence": "V02_Loggia_Terraces_Evidence.json",
+  "notes": "V02_LOGGIA_TERRACES.md",
   "historicalStatus": "V02_Candidate_Status_Pre_Material_Response.json",
   "fullGoalComplete": false,
   "visualReferenceGate": "FAIL",
   "performance": {
-    "boundedFixedResolutionRun": "V02_Material_Response_Benchmark.json",
+    "boundedFixedResolutionRun": "V02_Loggia_Terraces_Benchmark.json",
     "medianFrameMs": [
-      8.399999999997817,
-      8.400000000001455
+      8.5,
+      8.600000000000364
     ],
     "medianGpuMs": [
-      4.454541,
-      6.50775
+      6.805458,
+      6.681208
     ],
     "combinedReleaseGate": "NOT COMPLETE"
   },
@@ -42,5 +48,10 @@
     "Combined sustained gameplay release benchmark and increased PBR GPU cost",
     "Broader camera coverage and physical controller/touchscreen playtesting"
   ],
-  "preservation": "All previous full game HTML files and their exact content retained. Original310 building geometry and native contact preserved. Earlier GitHub snapshots remain unchanged."
+  "preservation": "All previous complete game HTML files and runtime owners retained. Original310 building geometry,642lanes and9lights preserved; six controlled old terrace guard/cap spans changed to give real stair access. Older GitHub snapshots remain unchanged.",
+  "sourceParentMaster": {
+    "file": "development/vertical-city-v02/blender/SaintMeridian_V02_Material_Response.blend",
+    "sha256": "c9f21cdb00097e3de137e178f656d967890e213ab8448438eb7b824945046a67"
+  },
+  "previousUploadedCheckpoint": "281d1b6585bb6897ae6034383995966024dd3d7b"
 }

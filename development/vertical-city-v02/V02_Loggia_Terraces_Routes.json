@@ -1,0 +1,198 @@
+{
+  "status": "PASS all three current approaches, zero/full legal bank starts",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html",
+  "entrySHA256": "85762c3518a57f5c9860640900c94b8fff11f707137b9baf780856410a256f3e",
+  "manifest": "assets/city/vertical-v02/loggia-terraces/runtime/manifest.json",
+  "manifestSHA256": "266c0f8a4df4c6bfbbcd59b749b6f656867ec3b1cbc22bef8df29742d7ac74ce",
+  "hashes": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html": "85762c3518a57f5c9860640900c94b8fff11f707137b9baf780856410a256f3e",
+    "assets/city/vertical-v02/loggia-terraces/runtime/manifest.json": "266c0f8a4df4c6bfbbcd59b749b6f656867ec3b1cbc22bef8df29742d7ac74ce",
+    "scripts/vertical-v02/station_route_environment.cjs": "425579dbc1a5fa7ae5edd3a987509558a0899696fa616175ce058ff96f65a40b",
+    "scripts/vertical-v02/route_camera_probe.cjs": "180467f581d7948bdf854280c9c2b7886b4270810b763376e1c2b5c7aa6dae45",
+    "scripts/vertical-v02/test_public_station.cjs": "d5f4d5cd6baab74f16007b3c2775364161e25e1cedb08ba3e5f1068310cf3875",
+    "scripts/vertical-v02/test_momentum_route.cjs": "f6971ae3531e06f1b812eb238ad75ebf6d60fec996a7f7088f4d52b120f9b5fd",
+    "scripts/vertical-v02/test_mastery_route.cjs": "e723f77aca6f3454687798cb846596e82f4b60ceab06cfd42ccfb9e3d22f07ec",
+    "scripts/vertical-v02/run_current_station_routes.py": "b81b232b7770a79878d4a85c640ac2b444f91ac33fc564ab2e4b77fb3ef3e9b6",
+    "scripts/game_motion_loadout.js": "4c83cf50c8646ebd1ca39e80399a8d4271d2352df7c9e5a9d73f78460cf93eb8",
+    "scripts/game_vertical_encounters_v02.js": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+    "scripts/game_vertical_market_v02.js": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+    "scripts/game_vertical_pursuit_v02.js": "d26199eb208a5d3fc21ad26f70c97471bd14b8b3b8370dfd2611c7b0c0344d58",
+    "scripts/game_vertical_discovery_v02.js": "7cfc8878103a13115fb9778c4d8ee15dadc0147a0ace29433a14a2ba651c0679",
+    "scripts/vertical_transit_core_v02.js": "75b8e9f71b7853f586f42b5d2b031140a7851711d8f05646ba9de57ab3a88353",
+    "scripts/game_vertical_transit_v02.js": "0403f887673e0008f7e493a916bcbc8502794978f048b2e8ca806fe5de731ecb",
+    "scripts/game_aerial_traffic_core_v02.js": "e518c60772284ec255757bca341a3c4a420d095baa10011e38426d621e70e811",
+    "scripts/game_vertical_world_life_v02.js": "08561d9ce00f53fb9d0b13dd7324639c2389cf5a7e1422512fd1dada07a28639",
+    "scripts/game_vertical_appearance_facade_v02.js": "2705ecadebe14ebddf1756ba5b3cfb7f6b955ac6955ccae9ec1480d08bb245ae",
+    "scripts/game_vertical_loggia_hud_v02.js": "73ffa63e9ab875bded2f37dd40fc6afc4fe2537bf850bebb14b01bd3684386dc",
+    "scripts/game_vertical_views_v02.js": "0f2ee6e9f3c8d555c8c5189d076c4b8daf33f2d15b0c672edbf1e8aa2a4d9f21",
+    "scripts/v02_exact_camera_rays.js": "bd9856c17f746f8741d522ce53f47428b7d6bba4ad953ed4ca094a56f5ade670",
+    "scripts/game_vertical_loggia_material_v02.js": "062587fe36e8b753d841adf836ea04ad345e1749f7843c967f91efd854fc3c4f"
+  },
+  "scope": "Six uninterrupted normal-input station approaches on the current combined city. One labelled starting fixture per run; full bank is earned by actual running. Not full city/release/performance acceptance.",
+  "jobs": [
+    {
+      "name": "momentum-zero",
+      "file": "test_momentum_route.cjs",
+      "environment": {
+        "FULL_ROUTE": "1",
+        "RUN_PREFIX": "flow"
+      },
+      "returncode": 0,
+      "reused": false,
+      "wallSeconds": 57.61412795772776,
+      "report": "evidence/loggia-terraces-routes/momentum-zero/V02_Momentum_Full_Zero_Flow.json",
+      "reportSHA256": "dffacaa128ed140a2e8e03646d8f7e21f6166020abc1ac7efee6105703bdeaa6",
+      "trace": "evidence/loggia-terraces-routes/momentum-zero/V02_Momentum_Full_Zero_Flow.trace.json.gz",
+      "traceSHA256": "d3043b9c792dfec20f43f82d1ed17c82173bd559ecacac74120333b8c1b48727",
+      "seconds": 73.23333333333333,
+      "distance": 702.0091932022538,
+      "initialBank": 0,
+      "finalPosition": [
+        66.46086194370736,
+        100.42,
+        375.83635330864337
+      ],
+      "cameraVisibility": {
+        "scope": "Sampled animated head/hips visibility at10Hz during fast/airborne non-aim motion; not full-body, HUD, between-sample or hardware certification.",
+        "samples": 468,
+        "problemSamples": 0,
+        "captures": []
+      }
+    },
+    {
+      "name": "mastery-zero",
+      "file": "test_mastery_route.cjs",
+      "environment": {
+        "FULL_ROUTE": "1"
+      },
+      "returncode": 0,
+      "reused": false,
+      "wallSeconds": 84.57670729234815,
+      "report": "evidence/loggia-terraces-routes/mastery-zero/V02_Mastery_Full_Zero.json",
+      "reportSHA256": "73ddc789d66055fcda20f36243ca15e0bfe0cbba671cf3cde74b91ff346ac65f",
+      "trace": "evidence/loggia-terraces-routes/mastery-zero/V02_Mastery_Full_Zero.trace.json.gz",
+      "traceSHA256": "5c727a796efd79fd29f70f10f55d5ef95840c9393c0ec3a8fd9dac6fac414a46",
+      "seconds": 103.76666666666667,
+      "distance": 933.7238215715848,
+      "initialBank": 0,
+      "finalPosition": [
+        66.46793437195397,
+        100.42,
+        375.8370220468818
+      ],
+      "cameraVisibility": {
+        "scope": "Sampled animated head/hips visibility at10Hz during fast/airborne non-aim motion; not full-body, HUD, between-sample or hardware certification.",
+        "samples": 694,
+        "problemSamples": 0,
+        "captures": []
+      }
+    },
+    {
+      "name": "momentum-banked",
+      "file": "test_momentum_route.cjs",
+      "environment": {
+        "FULL_ROUTE": "1",
+        "RUN_PREFIX": "flow",
+        "BANKED_START": "1"
+      },
+      "returncode": 0,
+      "reused": false,
+      "wallSeconds": 64.27481258288026,
+      "report": "evidence/loggia-terraces-routes/momentum-banked/V02_Momentum_Full_Banked_Flow.json",
+      "reportSHA256": "b27ad3275273ca162c0fd8ad91310735bf54a98cc0e18caa68f168111c53c328",
+      "trace": "evidence/loggia-terraces-routes/momentum-banked/V02_Momentum_Full_Banked_Flow.trace.json.gz",
+      "traceSHA256": "defd432496f99438c2c51702893fea63e09b71f0e8a6524ed3c03adfcf8d03ed",
+      "seconds": 72.65,
+      "distance": 701.8417024312835,
+      "initialBank": 5,
+      "finalPosition": [
+        66.46086194370736,
+        100.42,
+        375.83635330864337
+      ],
+      "cameraVisibility": {
+        "scope": "Sampled animated head/hips visibility at10Hz during fast/airborne non-aim motion; not full-body, HUD, between-sample or hardware certification.",
+        "samples": 509,
+        "problemSamples": 0,
+        "captures": []
+      }
+    },
+    {
+      "name": "mastery-brake",
+      "file": "test_mastery_route.cjs",
+      "environment": {
+        "FULL_ROUTE": "1",
+        "BANKED_START": "1",
+        "USE_BRAKE": "1"
+      },
+      "returncode": 0,
+      "reused": false,
+      "wallSeconds": 86.6925375838764,
+      "report": "evidence/loggia-terraces-routes/mastery-brake/V02_Mastery_Full_Banked_Brake.json",
+      "reportSHA256": "4476ef0eedc02e620ed0cf7f4f348ee4bea4e65e5a03f36a61f72cba40f39dd8",
+      "trace": "evidence/loggia-terraces-routes/mastery-brake/V02_Mastery_Full_Banked_Brake.trace.json.gz",
+      "traceSHA256": "a8517a5c84db46446c382c0339f1093922d9298dc0414ceca13302ab9860c941",
+      "seconds": 103.3,
+      "distance": 933.5088885531882,
+      "initialBank": 5,
+      "finalPosition": [
+        66.4658678900658,
+        100.42,
+        375.82691445677483
+      ],
+      "cameraVisibility": {
+        "scope": "Sampled animated head/hips visibility at10Hz during fast/airborne non-aim motion; not full-body, HUD, between-sample or hardware certification.",
+        "samples": 736,
+        "problemSamples": 0,
+        "captures": []
+      }
+    },
+    {
+      "name": "public-zero",
+      "file": "test_public_station.cjs",
+      "environment": {
+        "RUN_PUBLIC": "1"
+      },
+      "returncode": 0,
+      "reused": false,
+      "wallSeconds": 100.80030762497336,
+      "report": "evidence/loggia-terraces-routes/public-zero/V02_Public_Route_Run_Validation.json",
+      "reportSHA256": "e3bd8b2439729c5356414eb649c9a851cd6da080a693b3ae22a0039989be1934",
+      "trace": "evidence/loggia-terraces-routes/public-zero/V02_Public_Route_Run_Validation.trace.json.gz",
+      "traceSHA256": "65b230659e9cf312507fabc00b6fba7a286197ae63640280b9b31ba94024b2de",
+      "seconds": 135.33333333333334,
+      "distance": 774.3808671453033,
+      "initialBank": 0,
+      "finalPosition": [
+        66.42999999999996,
+        100.42,
+        375.91500000002014
+      ],
+      "cameraVisibility": null
+    },
+    {
+      "name": "public-banked",
+      "file": "test_public_station.cjs",
+      "environment": {
+        "RUN_PUBLIC": "1",
+        "BANKED_START": "1"
+      },
+      "returncode": 0,
+      "reused": false,
+      "wallSeconds": 96.74335537524894,
+      "report": "evidence/loggia-terraces-routes/public-banked/V02_Public_Route_Run_Validation.json",
+      "reportSHA256": "097f6956332342c1a0078c75664e01cbc224d5239d52ae0e1a051d25ecebf915",
+      "trace": "evidence/loggia-terraces-routes/public-banked/V02_Public_Route_Run_Validation.trace.json.gz",
+      "traceSHA256": "a491c8d9ed6872441f60a1d33f1636c47bd34bae5df59173163c94ac59cb4426",
+      "seconds": 135.08333333333334,
+      "distance": 773.9782163119702,
+      "initialBank": 5,
+      "finalPosition": [
+        66.42999999999996,
+        100.42,
+        375.94219083335355
+      ],
+      "cameraVisibility": null
+    }
+  ]
+}

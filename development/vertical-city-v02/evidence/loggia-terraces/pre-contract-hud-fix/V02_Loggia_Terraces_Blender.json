@@ -1,0 +1,29 @@
+{
+  "status": "PASS saved-source A/B renders and matched native optics; visual reference gate still open",
+  "masterSHA256": "5ccbb46478111f9a2ff265dcafb9d045caaba7777ca12bb84d25aad2a1df9927",
+  "nativeReportSHA256": "9bac94a243bfb9186c12a3b366e957113b8f7205a7017db5e2b5110d429ae2be",
+  "captures": [
+    {
+      "id": "A",
+      "file": "evidence/loggia-terraces/blender-A.png",
+      "sha256": "54a2c169e0fbd401d50885b9679022101253889c0574be83b9e23d27c9232261",
+      "maximumProjectionErrorPixels": 0.00012086160761140294,
+      "samples": 16
+    },
+    {
+      "id": "B",
+      "file": "evidence/loggia-terraces/blender-B.png",
+      "sha256": "6046987ab42a69db337149ae4f91ad683e156e76e23c09609f64503a244f51d3",
+      "maximumProjectionErrorPixels": 0.004345980513655727,
+      "samples": 16
+    },
+    {
+      "id": "L",
+      "file": "evidence/loggia-terraces/blender-L.png",
+      "sha256": "aa2aae32a54dd36d9b23fdd686e46152ebbae67f270ad82f7e8e658867ecd5b6",
+      "maximumProjectionErrorPixels": 0.0002015239090661868,
+      "samples": 16
+    }
+  ],
+  "scope": "Saved-source material response and actual native optics only; browser/source shading equality and full reference quality remain unaccepted"
+}

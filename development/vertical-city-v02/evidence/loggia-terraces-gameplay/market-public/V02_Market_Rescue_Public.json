@@ -1,0 +1,504 @@
+{
+  "fullGroundApproach": true,
+  "southernVariant": false,
+  "scope": "One controlled ground setup, then normal public circulation and complete incident/escort inputs. No actor/health/power writes during gameplay.",
+  "results": [
+    {
+      "name": "Ground-to-market public approach through stairs and gallery",
+      "pass": true
+    },
+    {
+      "name": "Find resident, isolate live supply, return and begin escort",
+      "pass": true
+    },
+    {
+      "name": "Northern escort around stalls",
+      "pass": true
+    },
+    {
+      "name": "Grounded civilians, bounded movement, one completion award and unchanged original courier mission",
+      "pass": true
+    },
+    {
+      "name": "completed rescue releases objective presentation after normal departure from market",
+      "pass": true
+    }
+  ],
+  "stages": [
+    {
+      "name": "market reached from ground",
+      "frame": 3548,
+      "p": [
+        61.87100440141939,
+        24.42,
+        374.99751044785506
+      ],
+      "phase": "idle",
+      "civilians": [
+        [
+          85,
+          24,
+          364
+        ],
+        [
+          68.799672725225,
+          24,
+          358.0439664723172
+        ],
+        [
+          87.96685880309526,
+          24,
+          374.64829233092826
+        ]
+      ]
+    },
+    {
+      "name": "resident found",
+      "frame": 4013,
+      "p": [
+        84.99105861618166,
+        24.42,
+        361.6728663413832
+      ],
+      "phase": "isolate",
+      "civilians": [
+        [
+          85,
+          24,
+          364
+        ],
+        [
+          73.15525740724696,
+          24,
+          360.93950545608214
+        ],
+        [
+          80.3701467199937,
+          24,
+          375.97918563927686
+        ]
+      ]
+    },
+    {
+      "name": "power isolated",
+      "frame": 4135,
+      "p": [
+        82.08661053609642,
+        24.42,
+        357.09050081025265
+      ],
+      "phase": "rendezvous",
+      "civilians": [
+        [
+          85,
+          24,
+          364
+        ],
+        [
+          70.8170076409567,
+          24,
+          360.959274326036
+        ],
+        [
+          78.03185798231408,
+          24,
+          375.9936271426604
+        ]
+      ]
+    },
+    {
+      "name": "escort begins",
+      "frame": 4259,
+      "p": [
+        84.99335781803842,
+        24.42,
+        361.67266392056706
+      ],
+      "phase": "escort",
+      "civilians": [
+        [
+          84.99947677157111,
+          24,
+          363.81666741330827
+        ],
+        [
+          68.44042591128463,
+          24,
+          360.97936727582515
+        ],
+        [
+          77.03877864723827,
+          24,
+          374.58163856987835
+        ]
+      ]
+    },
+    {
+      "name": "escort waypoint 85,24,360",
+      "frame": 4330,
+      "p": [
+        84.99944429339791,
+        24.42,
+        360.1399405179057
+      ],
+      "phase": "escort",
+      "civilians": [
+        [
+          84.99522767112516,
+          24,
+          361.21334547092624
+        ],
+        [
+          67.07964121123047,
+          24,
+          360.9908721099803
+        ],
+        [
+          77.00542373123596,
+          24,
+          373.22121407337266
+        ]
+      ]
+    },
+    {
+      "name": "escort waypoint 77,24,360",
+      "frame": 4631,
+      "p": [
+        77.14108755487491,
+        24.42,
+        360.00246815463373
+      ],
+      "phase": "escort",
+      "civilians": [
+        [
+          78.07195773408564,
+          24,
+          360.0187525926784
+        ],
+        [
+          67.82220765898913,
+          24,
+          358.0522305081175
+        ],
+        [
+          82.61739166149813,
+          24,
+          373.0332435234574
+        ]
+      ]
+    },
+    {
+      "name": "escort waypoint 77,24,357",
+      "frame": 4750,
+      "p": [
+        77.00682303551945,
+        24.42,
+        357.14520024025705
+      ],
+      "phase": "escort",
+      "civilians": [
+        [
+          77.04855937125554,
+          24,
+          358.0332153922578
+        ],
+        [
+          70.10295948020668,
+          24,
+          358.0329477579166
+        ],
+        [
+          84.89818149579219,
+          24,
+          373.0191571390152
+        ]
+      ]
+    },
+    {
+      "name": "escort waypoint 62,24,357",
+      "frame": 5306,
+      "p": [
+        62.13890486345518,
+        24.42,
+        357.00134398996374
+      ],
+      "phase": "victory",
+      "civilians": [
+        [
+          64.16593026382456,
+          24,
+          357.02095670708917
+        ],
+        [
+          70.10786631839326,
+          24,
+          360.9652698029892
+        ],
+        [
+          83.30259079267059,
+          24,
+          375.96107457357436
+        ]
+      ]
+    },
+    {
+      "name": "resident extracted",
+      "frame": 5488,
+      "p": [
+        62.13890486345518,
+        24.42,
+        357.00134398996374
+      ],
+      "phase": "victory",
+      "civilians": [
+        [
+          64.16593026382456,
+          24,
+          357.02095670708917
+        ],
+        [
+          66.61965765064878,
+          24,
+          360.99476106800466
+        ],
+        [
+          79.81432398727968,
+          24,
+          375.98261845566236
+        ]
+      ]
+    }
+  ],
+  "errors": [],
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_LOGGIA_TERRACES.html",
+  "manifest": "assets/city/vertical-v02/loggia-terraces/runtime/manifest.json",
+  "stage": "hud",
+  "evidenceRun": "loggia-terraces-gameplay/market-public",
+  "entrySHA256": "85762c3518a57f5c9860640900c94b8fff11f707137b9baf780856410a256f3e",
+  "manifestSHA256": "266c0f8a4df4c6bfbbcd59b749b6f656867ec3b1cbc22bef8df29742d7ac74ce",
+  "encounterSHA256": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+  "marketSHA256": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+  "secondsToExtraction": 87.5,
+  "incidentSeconds": 28.333333333333005,
+  "residentIdle": {
+    "visualSoleY": 24,
+    "baseY": 24,
+    "legAngles": [
+      0,
+      0
+    ]
+  },
+  "courierPreserved": true,
+  "powerReleases": 0,
+  "final": {
+    "phase": "victory",
+    "savedPhase": null,
+    "attempt": 1,
+    "elapsed": 28.333333333333005,
+    "powerIsolated": true,
+    "rewarded": true,
+    "waitingReason": null,
+    "message": "Resident safely evacuated · +450. The market remains open.",
+    "clock": 88.44999999999627,
+    "eventId": 5,
+    "events": [
+      {
+        "eventId": 1,
+        "attempt": 1,
+        "time": 59.167,
+        "kind": "started",
+        "resident": [
+          85,
+          24,
+          364
+        ]
+      },
+      {
+        "eventId": 2,
+        "attempt": 1,
+        "time": 66.833,
+        "kind": "resident-found"
+      },
+      {
+        "eventId": 3,
+        "attempt": 1,
+        "time": 68.867,
+        "kind": "power-isolated"
+      },
+      {
+        "eventId": 4,
+        "attempt": 1,
+        "time": 70.9,
+        "kind": "escort-started"
+      },
+      {
+        "eventId": 5,
+        "attempt": 1,
+        "time": 87.5,
+        "kind": "extracted",
+        "resident": [
+          64.16593026382456,
+          24,
+          357.02095670708917
+        ],
+        "reward": 450
+      }
+    ],
+    "queue": [],
+    "lastPathPoint": [
+      63.64994823965923,
+      24,
+      357.01596426373845
+    ],
+    "pathMetres": 27.531259946193295,
+    "escortMetres": 26.9133333333319,
+    "error": null,
+    "config": {
+      "id": "market-rescue",
+      "title": "SUSPENDED MARKET · RESCUE",
+      "trigger": [
+        62,
+        24,
+        375
+      ],
+      "positions": [
+        [
+          85,
+          24,
+          364
+        ],
+        [
+          66,
+          24,
+          358
+        ],
+        [
+          77,
+          24,
+          373
+        ]
+      ],
+      "reward": 450,
+      "isolation": [
+        82,
+        24,
+        357
+      ],
+      "extraction": [
+        62,
+        24,
+        357
+      ],
+      "hazard": [
+        85,
+        24,
+        364
+      ],
+      "patrols": [
+        [
+          [
+            66,
+            24,
+            358
+          ],
+          [
+            74,
+            24,
+            358
+          ],
+          [
+            74,
+            24,
+            361
+          ],
+          [
+            66,
+            24,
+            361
+          ]
+        ],
+        [
+          [
+            77,
+            24,
+            373
+          ],
+          [
+            88,
+            24,
+            373
+          ],
+          [
+            88,
+            24,
+            376
+          ],
+          [
+            77,
+            24,
+            376
+          ]
+        ]
+      ],
+      "bounds": {
+        "min": [
+          51,
+          23.9,
+          349
+        ],
+        "max": [
+          99,
+          26,
+          381
+        ]
+      },
+      "actorType": "existing scenic pedestrian appearance; new collision-checked escort adapter",
+      "status": "new runtime adapter; acceptance requires normal-input incident, escort and lifecycle tests"
+    },
+    "appearance": "existing scenic pedestrian clone; shared source geometry/materials are never disposed",
+    "nearAccess": false,
+    "onMarket": true,
+    "target": [
+      62,
+      24,
+      357
+    ],
+    "civilians": [
+      {
+        "id": 0,
+        "position": [
+          64.16593026382456,
+          24,
+          357.02095670708917
+        ],
+        "walked": 26.9133333333319,
+        "blocked": 0
+      },
+      {
+        "id": 1,
+        "position": [
+          70.08870033670236,
+          24,
+          360.96543184290687
+        ],
+        "walked": 101.71749999998184,
+        "blocked": 0
+      },
+      {
+        "id": 2,
+        "position": [
+          83.28342449154206,
+          24,
+          375.9611929465529
+        ],
+        "walked": 101.71749999999962,
+        "blocked": 0
+      }
+    ],
+    "scope": "New market incident/escort adapter with existing scenic civilian appearance; not original courier pickup or full V02 acceptance"
+  },
+  "status": "PASS ground-to-market civilian rescue",
+  "totalInputSeconds": 96.25,
+  "fullTrace": "V02_Market_Rescue_Public.trace.json.gz",
+  "traceFrames": 5775
+}
