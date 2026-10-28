@@ -1,0 +1,308 @@
+{
+  "status": "PASS current source/native surface admission and original city/contact preservation; full input and continuous vehicle clearance pending",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_UPPER_ANCHORS.html",
+  "entrySHA256": "f2c97a196680317ad1de579737624642a2b8baa9fb4430f0f2ed9ff063d8a489",
+  "manifestSHA256": "792e4bb30a68c364bd2ce9123e10eb5e462af8f4b583922e104f14ff8aaf38bd",
+  "testSourceSHA256": "95701e53cae024ed23b7839574415f6a714ed5dcb49394317bbe0a6878bd02e8",
+  "scope": "Original city and prior contact preservation, visible geometry/box admission, original building/prop clearance and labelled source/native surface studies. No full route or throw certification.",
+  "captures": [
+    {
+      "id": "upper-anchor-departure",
+      "file": "evidence/upper-anchor-mounts/native-upper-anchor-departure.png",
+      "sha256": "a2a54c76ea27cda0f53116713482a6304215370ee763d33f879c17479428ac25",
+      "scope": "Labelled supported fixture and native settled third-person camera; not a route",
+      "position": [
+        63.7,
+        128.42,
+        424
+      ],
+      "grounded": true,
+      "trauma": 0,
+      "cameraWorld": [
+        0.051525051225121854,
+        0,
+        0.998671702360815,
+        0,
+        0.1597059640234715,
+        0.9871302399904993,
+        -0.008239802887990283,
+        0,
+        -0.9858190372231518,
+        0.159918383234384,
+        0.05086193618137724,
+        0,
+        59.46359274821388,
+        130.39963744936892,
+        425.35,
+        1
+      ],
+      "projection": [
+        1.0579086367573118,
+        0,
+        0,
+        0,
+        0,
+        1.880726465346332,
+        0,
+        0,
+        0,
+        0,
+        -1.0000555570988083,
+        -1,
+        0,
+        0,
+        -0.10000277785494041,
+        0
+      ],
+      "fov": 56,
+      "aspect": 1.7777777777777777
+    },
+    {
+      "id": "upper-anchor-arrival",
+      "file": "evidence/upper-anchor-mounts/native-upper-anchor-arrival.png",
+      "sha256": "430488cb05e6ea5ae90914fdd0e112d4e17548b3f3bb5e10e35923f93c1f44cf",
+      "scope": "Labelled supported fixture and native settled third-person camera; not a route",
+      "position": [
+        64.3,
+        128.42,
+        400.8
+      ],
+      "grounded": true,
+      "trauma": 0,
+      "cameraWorld": [
+        0.4609027678485962,
+        4.163336342344337e-17,
+        0.8874506400862545,
+        0,
+        0.14191967156291324,
+        0.9871302399904992,
+        -0.07370682546260027,
+        0,
+        -0.8760293633280665,
+        0.15991838323438426,
+        0.45497105983867014,
+        0,
+        61.00444740650416,
+        130.39963744936892,
+        403.7847913673302,
+        1
+      ],
+      "projection": [
+        1.0579086367573118,
+        0,
+        0,
+        0,
+        0,
+        1.880726465346332,
+        0,
+        0,
+        0,
+        0,
+        -1.0000555570988083,
+        -1,
+        0,
+        0,
+        -0.10000277785494041,
+        0
+      ],
+      "fov": 56,
+      "aspect": 1.7777777777777777
+    }
+  ],
+  "errors": [],
+  "preservation": {
+    "originalBuildings": 310,
+    "originalGeometryTransformsPartsExact": true,
+    "lanes": 642,
+    "lights": 9,
+    "priorContacts": 9619,
+    "newContacts": [
+      {
+        "id": "upper-anchor-departure-housing",
+        "box": {
+          "min": [
+            65.25,
+            128,
+            423.65
+          ],
+          "max": [
+            65.75,
+            128.94,
+            424.35
+          ]
+        }
+      },
+      {
+        "id": "upper-anchor-departure-shoe",
+        "box": {
+          "min": [
+            65.25,
+            128,
+            423.55
+          ],
+          "max": [
+            65.94999999999999,
+            128.12,
+            424.45
+          ]
+        }
+      },
+      {
+        "id": "upper-anchor-departure-receiver",
+        "box": {
+          "min": [
+            65.21000000000001,
+            128.70000000000002,
+            423.76
+          ],
+          "max": [
+            65.25,
+            128.9,
+            424.24
+          ]
+        }
+      },
+      {
+        "id": "upper-anchor-arrival-housing",
+        "box": {
+          "min": [
+            64.95,
+            128,
+            399.65
+          ],
+          "max": [
+            65.45,
+            128.94,
+            400.35
+          ]
+        }
+      },
+      {
+        "id": "upper-anchor-arrival-shoe",
+        "box": {
+          "min": [
+            64.95,
+            128,
+            399.55
+          ],
+          "max": [
+            65.64999999999999,
+            128.12,
+            400.45
+          ]
+        }
+      },
+      {
+        "id": "upper-anchor-arrival-receiver",
+        "box": {
+          "min": [
+            64.96000000000001,
+            128.70000000000002,
+            400.35
+          ],
+          "max": [
+            65.44,
+            128.9,
+            400.39
+          ]
+        }
+      }
+    ]
+  },
+  "originalClearance": {
+    "failures": [],
+    "method": "All actual original compound building parts and registered prop boxes against six new solid mount volumes"
+  },
+  "trainGeometry": {
+    "cars": [
+      {
+        "id": 0,
+        "staticRadius": 7.789798963648134,
+        "doorTravel": 0,
+        "bogies": []
+      },
+      {
+        "id": 1,
+        "staticRadius": 8.842510253440189,
+        "doorTravel": 0.7999999999999999,
+        "bogies": [
+          {
+            "id": "bogie_0",
+            "offset": 4.4,
+            "localRadius": 1.6147055502824958
+          },
+          {
+            "id": "bogie_1",
+            "offset": 4.4,
+            "localRadius": 1.6147055502824958
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "staticRadius": 8.842510253440189,
+        "doorTravel": 0.7999999999999999,
+        "bogies": [
+          {
+            "id": "bogie_0",
+            "offset": 4.4,
+            "localRadius": 1.6147055502824958
+          },
+          {
+            "id": "bogie_1",
+            "offset": 4.4,
+            "localRadius": 1.6147055502824958
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "staticRadius": 8.842510253440189,
+        "doorTravel": 0.7999999999999999,
+        "bogies": [
+          {
+            "id": "bogie_0",
+            "offset": 4.4,
+            "localRadius": 1.6147055502824958
+          },
+          {
+            "id": "bogie_1",
+            "offset": 4.4,
+            "localRadius": 1.6147055502824958
+          }
+        ]
+      }
+    ],
+    "scope": "Native loaded static/door bounds and rotation-independent bogie subtree bounds. Continuous curve mapping bound is computed separately from identical native route data."
+  },
+  "surfaces": [
+    {
+      "mount": "upper-anchor-departure",
+      "contact": [
+        65.21000671386719,
+        128.8,
+        424
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "owner": "v02:upper-anchor-departure-receiver"
+    },
+    {
+      "mount": "upper-anchor-arrival",
+      "contact": [
+        65.2,
+        128.8,
+        400.3899841308594
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "owner": "v02:upper-anchor-arrival-receiver"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+ground approach start {"name":"ground approach start","frame":2,"p":[55,0.42,210],"clock":0.08333333333333333,"message":""}
+public A 0 to 24 {"name":"public A 0 to 24","frame":692,"p":[61.1590031344088,24.42,215.5043200879496],"clock":11.583333333333488,"message":""}
+public A 24 to 52 {"name":"public A 24 to 52","frame":1555,"p":[61.05860536534933,52.42,215.5007294679946],"clock":25.966666666666473,"message":""}
+public A 52 to 84 {"name":"public A 52 to 84","frame":2370,"p":[61.08052229875829,84.42,215.50031104383604],"clock":39.54999999999904,"message":""}
+courtyard reached from ground {"name":"courtyard reached from ground","frame":2704,"p":[55.00013491735099,84.42,292.8528256107442],"clock":45.11666666666539,"message":""}
+mastery courtyard {"name":"mastery courtyard","frame":2705,"p":[55.00013491735099,84.42,292.8528256107442],"clock":45.133333333332054,"message":""}
+wall boost to 96 {"name":"wall boost to 96","frame":3052,"p":[63.831641758577824,86.67915525530671,300.62],"clock":50.91666666666506,"message":""}
+wall roof landing 96 {"name":"wall roof landing 96","frame":3226,"p":[63.831641758577824,96.42,299.365],"clock":53.816666666664894,"message":""}
+wall boost to 108 {"name":"wall boost to 108","frame":3304,"p":[63.831641758577824,98.67915525530671,292.62],"clock":55.11666666666482,"message":""}
+wall roof landing 108 {"name":"wall roof landing 108","frame":3478,"p":[63.831641758577824,108.42,291.12],"clock":58.016666666664655,"message":""}
+wall boost to 120 {"name":"wall boost to 120","frame":3530,"p":[63.831641758577824,110.67915525530671,284.62],"clock":58.88333333333127,"message":""}
+wall roof landing 120 {"name":"wall roof landing 120","frame":3704,"p":[63.831641758577824,120.42,283.09727250000003],"clock":61.78333333333111,"message":""}
+wall boost to 128 {"name":"wall boost to 128","frame":3756,"p":[63.831641758577824,122.67915525530671,276.62],"clock":62.649999999997725,"message":""}
+wall roof landing 128 {"name":"wall roof landing 128","frame":3887,"p":[63.831641758577824,128.42,275.09727250000003],"clock":64.83333333333094,"message":""}
+upper rail staging {"name":"upper rail staging","frame":4635,"p":[63.962542391186034,128.42,422.0075946567995],"clock":77.2999999999969,"message":""}
+upper cartridge A {"name":"upper cartridge A","frame":4872,"p":[63.962542391186034,128.42,422.0075946567995],"clock":79.27833333332921,"message":"POINT A ATTACHED · AIM B"}
+upper rail constructed {"name":"upper rail constructed","frame":5065,"p":[63.962542391186034,128.42,422.0075946567995],"clock":81.19499999999518,"message":"blocked-path"}
+AssertionError [ERR_ASSERTION]: No momentum catch {"frame":0,"p":[64.00000137290999,128.42,423.94165665256935],"v":[0.00038506221486355987,0,-16.36364999546944],"grounded":true,"mode":"GROUND","trauma":0,"damage":0,"rail":null,"rails":[],"anchors":[],"bank":5,"releases":[],"clock":89.46166666666137,"message":"AIM AT A SOLID SURFACE","deployment":"attached","precision":false,"source":"traversal-locomotion-parkourSprint","advanced":{"kind":null,"clock":89.39499999999471,"cooldown":0,"floatRemaining":6,"wallJumps":0,"reason":"ROOFTOP REACHED","motion":null,"water":null,"anchor":null,"wallNormal":null,"wallTop":null,"wallPoint":null,"wallAge":0,"wallRegrabLocked":false,"events":[{"eventId":1,"time":50.41666666666509,"kind":"wall-start"},{"eventId":2,"time":50.88333333333173,"kind":"wall-boost","count":1},{"eventId":3,"time":52.18333333333165,"kind":"mantle-start"},{"eventId":4,"time":53.78333333333156,"kind":"end","mode":"mantle","reason":"ROOFTOP REACHED"},{"eventId":5,"time":54.59999999999818,"kind":"wall-start"},{"eventId":6,"time":55.06666666666482,"kind":"wall-boost","count":1},{"eventId":7,"time":56.36666666666475,"kind":"mantle-start"},{"eventId":8,"time":57.96666666666466,"kind":"end","mode":"mantle","reason":"ROOFTOP REACHED"},{"eventId":9,"time":58.34999999999797,"kind":"wall-start"},{"eventId":10,"time":58.81666666666461,"kind":"wall-boost","count":1},{"eventId":11,"time":60.116666666664536,"kind":"mantle-start"},{"eventId":12,"time":61.716666666664445,"kind":"end","mode":"mantle","reason":"ROOFTOP REACHED"},{"eventId":13,"time":62.099999999997756,"kind":"wall-start"},{"eventId":14,"time":62.566666666664396,"kind":"wall-boost","count":1},{"eventId":15,"time":63.149999999997696,"kind":"mantle-start"},{"eventId":16,"time":64.74999999999761,"kind":"end","mode":"mantle","reason":"ROOFTOP REACHED"}],"origin":"authored mechanics; source/native candidate poses","ready":true,"waters":[{"id":"meridian-waterfront","minX":-36,"maxX":36,"minZ":1171.7387966456854,"maxZ":1231.7387966456854,"surface":0.06,"depth":2.5}],"surfaceOnly":true,"wallPose":null,"pose":"traversal-locomotion-parkourSprint"},"camera":[64.8180759420125,128.31415898157576,427.4783719786419]}
+    at ride (/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/test_mastery_route.cjs:22:1)
+    at async /Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/test_mastery_route.cjs:50:158 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}

@@ -1,0 +1,147 @@
+{
+  "status": "PASS native CDP touch look delta and persistent manual camera ownership",
+  "scope": "Actual CDP finger drag through native pointer-captured lookPad; matched supported room starts, portrait/landscape. No physical touchscreen or combat-locked camera certification.",
+  "runs": [
+    {
+      "view": "portrait",
+      "variant": "baseline",
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_DIFFUSE_LIGHTING.html",
+      "entrySHA256": "50bd5427f2f133ec53ff399be44b6760492bd099181550a8915486bf65c9e84c",
+      "before": {
+        "raw": -0.08,
+        "view": -0.09090242263113167,
+        "body": null
+      },
+      "after": {
+        "raw": 0.24,
+        "view": 0.229250753836687,
+        "body": null
+      },
+      "rawDelta": 0.32,
+      "viewDelta": 0.32015317646781866
+    },
+    {
+      "view": "portrait",
+      "variant": "candidate",
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_BODY_FRAMING.html",
+      "entrySHA256": "149603ae97d17f78eae52424f4ae23b81e0b15ed82303efecf4c4138d864e602",
+      "before": {
+        "raw": -0.08,
+        "view": -0.3855596710552662,
+        "body": {
+          "manualPitch": false,
+          "compositionOwner": "automatic",
+          "heldYaw": 0.04653804938401907,
+          "heldPitch": -0.2946572484241345,
+          "frames": 180,
+          "adjusted": 180,
+          "eligible": true,
+          "reason": "native body composition",
+          "positionDelta": 0,
+          "fov": 56.00000002374936,
+          "yawCorrection": -0.045071056450098124,
+          "pitchCorrection": -0.2950337062735625,
+          "unresolved": 0,
+          "fit": true,
+          "hasTarget": false,
+          "groundEnvelope": true
+        }
+      },
+      "after": {
+        "raw": 0.24,
+        "view": -0.06540649459338997,
+        "body": {
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": 0.04653804938401907,
+          "heldPitch": -0.2946572484241345,
+          "frames": 260,
+          "adjusted": 180,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 56.00000002374936,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        }
+      },
+      "rawDelta": 0.32,
+      "viewDelta": 0.3201531764618762
+    },
+    {
+      "view": "landscape",
+      "variant": "baseline",
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_DIFFUSE_LIGHTING.html",
+      "entrySHA256": "50bd5427f2f133ec53ff399be44b6760492bd099181550a8915486bf65c9e84c",
+      "before": {
+        "raw": -0.08,
+        "view": -0.09082161503363102,
+        "body": null
+      },
+      "after": {
+        "raw": 0.24,
+        "view": 0.22914751217711152,
+        "body": null
+      },
+      "rawDelta": 0.32,
+      "viewDelta": 0.31996912721074255
+    },
+    {
+      "view": "landscape",
+      "variant": "candidate",
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_BODY_FRAMING.html",
+      "entrySHA256": "149603ae97d17f78eae52424f4ae23b81e0b15ed82303efecf4c4138d864e602",
+      "before": {
+        "raw": -0.08,
+        "view": -0.38729720580554394,
+        "body": {
+          "manualPitch": false,
+          "compositionOwner": "automatic",
+          "heldYaw": 6.730727086790012e-16,
+          "heldPitch": -0.29647559077191293,
+          "frames": 180,
+          "adjusted": 180,
+          "eligible": true,
+          "reason": "native body composition",
+          "positionDelta": 0,
+          "fov": 56,
+          "yawCorrection": 0,
+          "pitchCorrection": -0.29647559077192087,
+          "unresolved": 0,
+          "fit": true,
+          "hasTarget": false,
+          "groundEnvelope": true
+        }
+      },
+      "after": {
+        "raw": 0.24,
+        "view": -0.06732807861788187,
+        "body": {
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": 6.730727086790012e-16,
+          "heldPitch": -0.29647559077191293,
+          "frames": 260,
+          "adjusted": 180,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 56,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        }
+      },
+      "rawDelta": 0.32,
+      "viewDelta": 0.3199691271876621
+    }
+  ],
+  "errors": []
+}

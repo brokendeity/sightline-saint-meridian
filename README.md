@@ -14,6 +14,8 @@ All12current gameplay scenarios, six station approaches, three public loops,18HU
 
 Experimental lighting build: [SIGHTLINE_SAINT_MERIDIAN_V02_DIFFUSE_LIGHTING.html](SIGHTLINE_SAINT_MERIDIAN_V02_DIFFUSE_LIGHTING.html) adds source-baked diffuse light and room-local reflections to the three loggias. It preserves the complete game and is not promoted over the checkpoint above. [Lighting evidence and remaining visual limits](development/vertical-city-v02/V02_DIFFUSE_LIGHTING.md).
 
+Experimental camera/upper-rail build: [SIGHTLINE_SAINT_MERIDIAN_V02_UPPER_ANCHORS.html](SIGHTLINE_SAINT_MERIDIAN_V02_UPPER_ANCHORS.html). Adds two Blender-authored physical receiving bollards, body-aware camera composition and responsive HUD placement. Six current station approaches, short-catch recovery, all three public loops and12retained encounter/replay/discovery cases pass their stated checks. A fixed-resolution60-second matched lower-loop benchmark is recorded. This remains unpromoted; final reference architecture and combined release acceptance are unfinished. [Exact evidence and limits](development/vertical-city-v02/V02_UPPER_ANCHORS.md) · [Reference-surface diagnosis](development/vertical-city-v02/V02_REFERENCE_SURFACE_STUDY.md).
+
 ## Earlier checkpoints
 
 The entries below are historical. Their files, snapshots and branches remain available for rollback.

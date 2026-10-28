@@ -1,0 +1,276 @@
+{
+  "status": "PASS source swept running/rail body clearance and continuous loaded-vehicle separation; actual input and Pop trajectory remain separate",
+  "entrySHA256": "f2c97a196680317ad1de579737624642a2b8baa9fb4430f0f2ed9ff063d8a489",
+  "manifestSHA256": "792e4bb30a68c364bd2ce9123e10eb5e462af8f4b583922e104f14ff8aaf38bd",
+  "planSHA256": "f57b0f547d5aa0d7afabd4f9d7486fb49d7ecf820a530bb442f7141d4d75eec7",
+  "nativeReportSHA256": "1dc2032e71ae8f177013d1156babac82f7195aca442dce8a39638fabf31445f8",
+  "hashes": {
+    "scripts/vertical-v02/validate_upper_anchor_clearance.cjs": "20022b8a439bda450ea0197555c7f5260f0f9eb2f084614133660c7044edd5ec",
+    "scripts/vendor/three-r128.js": "ba0c6cb529517d7e286dadcd68d37ff5220aa638e4ac2cd7fcb316aae580924d",
+    "scripts/game_vertical_transit_v02.js": "0403f887673e0008f7e493a916bcbc8502794978f048b2e8ca806fe5de731ecb",
+    "scripts/vertical_transit_core_v02.js": "75b8e9f71b7853f586f42b5d2b031140a7851711d8f05646ba9de57ab3a88353",
+    "assets/city/vertical-v02/transit/definition.json": "6fdd3fe36b3cf237abb185c88e75f81a05d5255b6cdca6602a5a6baa7fb721b4",
+    "scripts/game_aerial_traffic_core_v02.js": "e518c60772284ec255757bca341a3c4a420d095baa10011e38426d621e70e811",
+    "assets/city/vertical-v02/world-life/air_routes.json": "10e1aeb641e2d9249f62373c8c52755f3b89f7c996077c38510bed5599c4e571",
+    "assets/city/vertical-v02/world-life/air_assets.json": "9a51757f1496492eaf522116dde3d6580a8be8104583c0c5715d33524c095356",
+    "assets/city/vertical-v02/world-life/air_commuter.glb": "fa915f3b8e38fd2e5a007bc5d4a31fbab613150ee3ec734fbed2437a71f4041d",
+    "assets/city/vertical-v02/world-life/air_delivery.glb": "04f3462fe59fc6bed915e444a2de4858f9bff90156ca331790ab5d986c3a1cfc",
+    "assets/city/vertical-v02/world-life/air_municipal.glb": "7dd74e4aab95f7784884fc40430ebbf0fafb8f8ea526fa62567b74a1ea8e566d",
+    "assets/city/vertical-v02/transit/assets.json": "da5fd88e7b27c3b4e38f42ff4237137f1c6f143089707a7644ce4570c9963d7d",
+    "assets/city/vertical-v02/transit/passenger_car.glb": "74c686d6dbf34e62c153775a9b621922d4a44e86cdbef915257a6f246cd2a057"
+  },
+  "trainRadius": 8.842510253440189,
+  "trainArticulation": {
+    "carBounds": [
+      {
+        "id": 0,
+        "staticRadius": 7.789798963648134,
+        "doorTravel": 0,
+        "bogies": [],
+        "radius": 7.789798963648134
+      },
+      {
+        "id": 1,
+        "staticRadius": 8.842510253440189,
+        "doorTravel": 0.7999999999999999,
+        "bogies": [
+          {
+            "id": "bogie_0",
+            "offset": 4.4,
+            "localRadius": 1.6147055502824958,
+            "completeRadius": 7.1033389514835745
+          },
+          {
+            "id": "bogie_1",
+            "offset": 4.4,
+            "localRadius": 1.6147055502824958,
+            "completeRadius": 7.1033389514835745
+          }
+        ],
+        "radius": 8.842510253440189
+      },
+      {
+        "id": 2,
+        "staticRadius": 8.842510253440189,
+        "doorTravel": 0.7999999999999999,
+        "bogies": [
+          {
+            "id": "bogie_0",
+            "offset": 4.4,
+            "localRadius": 1.6147055502824958,
+            "completeRadius": 7.1033389514835745
+          },
+          {
+            "id": "bogie_1",
+            "offset": 4.4,
+            "localRadius": 1.6147055502824958,
+            "completeRadius": 7.1033389514835745
+          }
+        ],
+        "radius": 8.842510253440189
+      },
+      {
+        "id": 3,
+        "staticRadius": 8.842510253440189,
+        "doorTravel": 0.7999999999999999,
+        "bogies": [
+          {
+            "id": "bogie_0",
+            "offset": 4.4,
+            "localRadius": 1.6147055502824958,
+            "completeRadius": 7.1033389514835745
+          },
+          {
+            "id": "bogie_1",
+            "offset": 4.4,
+            "localRadius": 1.6147055502824958,
+            "completeRadius": 7.1033389514835745
+          }
+        ],
+        "radius": 8.842510253440189
+      }
+    ],
+    "curveToArcPolygonDeviationBound": 0.01931670060053913,
+    "method": "Static/door bounds from loaded native meshes. Bogie pivot distance is bounded by native polygon arc displacement |offset| plus twice the curve/polygon deviation; add1.05m vertical drop and a rotation-independent subtree radius. Coupler cylinders lie between bounded carriage endpoints."
+  },
+  "trainHull": {
+    "min": [
+      71.08007723256208,
+      91.1574887465598,
+      71.08109799559513
+    ],
+    "max": [
+      248.9199227674379,
+      108.8425112534402,
+      568.9189020044047
+    ],
+    "radius": 8.842510253440189,
+    "maximumCubicReconstructionError": 2.8421709430404007e-13,
+    "maximumParametricSpeed": 1265.9392905569325,
+    "arcTableIntervals": 32768,
+    "curveToArcPolygonDeviationBound": 0.01931670060053913,
+    "proof": "Each Catmull-Rom cubic lies in its Bezier control hull. Native arc remapping changes speed, not the curve image. A K-Lipschitz curve differs from linear interpolation over one table interval by at most K/(2N)."
+  },
+  "airRadius": 3.737131371624291,
+  "airHulls": [
+    {
+      "id": "aerial-band-0",
+      "min": [
+        73.17339973128855,
+        34.26286762837571,
+        73.17556811909216
+      ],
+      "max": [
+        246.82651898635194,
+        41.73713237162429,
+        566.8244318809077
+      ],
+      "radius": 3.737131371624291,
+      "maximumCubicReconstructionError": 2.382173337059642e-13,
+      "maximumParametricSpeed": 1451.6771811143126,
+      "arcTableIntervals": 32768,
+      "curveToArcPolygonDeviationBound": 0.022150835893467904,
+      "proof": "Each Catmull-Rom cubic lies in its Bezier control hull. Native arc remapping changes speed, not the curve image. A K-Lipschitz curve differs from linear interpolation over one table interval by at most K/(2N)."
+    },
+    {
+      "id": "aerial-band-1",
+      "min": [
+        73.17339973128853,
+        61.26286762837571,
+        73.17556811909213
+      ],
+      "max": [
+        246.826518986352,
+        68.73713237162428,
+        566.8244318809077
+      ],
+      "radius": 3.737131371624291,
+      "maximumCubicReconstructionError": 2.3437142008433856e-13,
+      "maximumParametricSpeed": 1451.6771811143471,
+      "arcTableIntervals": 32768,
+      "curveToArcPolygonDeviationBound": 0.022150835893468432,
+      "proof": "Each Catmull-Rom cubic lies in its Bezier control hull. Native arc remapping changes speed, not the curve image. A K-Lipschitz curve differs from linear interpolation over one table interval by at most K/(2N)."
+    },
+    {
+      "id": "aerial-band-2",
+      "min": [
+        79.17961449713243,
+        110.26286762837572,
+        79.18189642021449
+      ],
+      "max": [
+        240.82047429872276,
+        117.73713237162428,
+        560.8181035797857
+      ],
+      "radius": 3.737131371624291,
+      "maximumCubicReconstructionError": 2.31335954426011e-13,
+      "maximumParametricSpeed": 1275.493123093381,
+      "arcTableIntervals": 32768,
+      "curveToArcPolygonDeviationBound": 0.019462480515951248,
+      "proof": "Each Catmull-Rom cubic lies in its Bezier control hull. Native arc remapping changes speed, not the curve image. A K-Lipschitz curve differs from linear interpolation over one table interval by at most K/(2N)."
+    }
+  ],
+  "gaps": [
+    {
+      "kind": "train",
+      "gap": 19.157488746559807
+    },
+    {
+      "kind": "aerial-band-0",
+      "gap": 86.26286762837572
+    },
+    {
+      "kind": "aerial-band-1",
+      "gap": 59.262867628375716
+    },
+    {
+      "kind": "aerial-band-2",
+      "gap": 13.229614497132445
+    }
+  ],
+  "newGeometryBox": {
+    "min": [
+      64.9175,
+      128,
+      399.55
+    ],
+    "max": [
+      65.94999999999999,
+      128.94,
+      424.45
+    ]
+  },
+  "bodyTests": [
+    {
+      "id": "existing-running-lane",
+      "a": [
+        64,
+        128.42,
+        422
+      ],
+      "b": [
+        64,
+        128.42,
+        440
+      ]
+    },
+    {
+      "id": "nominal-physical-rail",
+      "a": [
+        64.49,
+        128.8,
+        424
+      ],
+      "b": [
+        65.2,
+        128.8,
+        401.11
+      ]
+    }
+  ],
+  "bodyReference": {
+    "radius": 0.575,
+    "sourceRadius": 0.55,
+    "padding": 0.025,
+    "rootBelow": 0.4,
+    "rootAbove": 1.72
+  },
+  "failures": [],
+  "scope": "No forced camera/actor/rail injection. Analytic static admission does not replace normal-input casting, riding, Pop, landing or failure recovery.",
+  "airGeometry": [
+    {
+      "id": "commuter",
+      "radius": 2.7842592401438115,
+      "scope": "Every source GLB vertex about the rigid agent origin; this sphere encloses all yaw/bank rotations"
+    },
+    {
+      "id": "delivery",
+      "radius": 2.7842592401438115,
+      "scope": "Every source GLB vertex about the rigid agent origin; this sphere encloses all yaw/bank rotations"
+    },
+    {
+      "id": "municipal",
+      "radius": 2.7842592401438115,
+      "scope": "Every source GLB vertex about the rigid agent origin; this sphere encloses all yaw/bank rotations"
+    }
+  ],
+  "bogieSourceScales": [
+    {
+      "name": "bogie_0",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "bogie_1",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "status": "PASS discovery elevation, line-of-sight, pause, input, hero and invalidation cases",
+  "scope": "One labelled below-POI ground setup, then normal walking/keys/controller/CDP touch. Navigation-refresh API is an explicitly labelled invalidation probe, not a destruction playthrough.",
+  "results": [
+    {
+      "name": "matching XZ below the market does not discover or read its elevated board",
+      "pass": true
+    },
+    {
+      "name": "actual kiosk geometry prevents reading through its back; normal walking reaches its front",
+      "pass": true
+    },
+    {
+      "name": "standard controller Y opens information without changing combat state",
+      "pass": true
+    },
+    {
+      "name": "labelled native navigation refresh cancels an in-progress route check before publishing mixed-world guidance",
+      "pass": true
+    },
+    {
+      "name": "actual controller-look frames the readable front of the Blender kiosk and runtime label",
+      "pass": true
+    },
+    {
+      "name": "board Pause freezes clock and state; normal resume restores the reading",
+      "pass": true
+    },
+    {
+      "name": "CDP touch reads and chooses a public route; portrait/landscape Close and Pause remain reachable and combat controls return",
+      "pass": true
+    },
+    {
+      "name": "actual hero switching retains the guide without advancing it or replacing Sightline objectives",
+      "pass": true
+    },
+    {
+      "name": "labelled existing navigation-refresh API invalidates stale guidance; actual Clear route removes it",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_UPPER_ANCHORS.html",
+  "manifest": "assets/city/vertical-v02/upper-anchor-mounts/runtime/manifest.json",
+  "stage": "hud",
+  "evidenceRun": "upper-anchor-gameplay/discovery-lifecycle",
+  "entrySHA256": "f2c97a196680317ad1de579737624642a2b8baa9fb4430f0f2ed9ff063d8a489",
+  "manifestSHA256": "792e4bb30a68c364bd2ce9123e10eb5e462af8f4b583922e104f14ff8aaf38bd",
+  "encounterSHA256": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+  "marketSHA256": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+  "discoverySHA256": "7cfc8878103a13115fb9778c4d8ee15dadc0147a0ace29433a14a2ba651c0679",
+  "controlledSetup": [
+    64,
+    0.42,
+    356
+  ],
+  "signView": {
+    "front": 0.5949676136814451,
+    "ndc": [
+      0.008124104824301084,
+      0.006984928394429848,
+      0.9835926800256783
+    ]
+  },
+  "uiTransitions": [
+    {
+      "action": "hero",
+      "hero": "sightline",
+      "throughPauseTools": true,
+      "resumed": true
+    },
+    {
+      "action": "hero",
+      "hero": "backspool",
+      "throughPauseTools": true,
+      "resumed": true
+    }
+  ],
+  "diagnostics": {
+    "ready": true,
+    "clock": 32.41666666666611,
+    "discovered": [],
+    "openBoard": null,
+    "route": null,
+    "pending": null,
+    "message": "",
+    "eventId": 11,
+    "events": [
+      {
+        "id": 1,
+        "time": 26.55,
+        "kind": "board-read",
+        "point": "directory"
+      },
+      {
+        "id": 2,
+        "time": 26.6,
+        "kind": "route-requested",
+        "source": "directory",
+        "destination": "poi-market"
+      },
+      {
+        "id": 3,
+        "time": 26.617,
+        "kind": "route-rejected",
+        "reason": "WORLD REVISION",
+        "from": 2,
+        "to": 3
+      },
+      {
+        "id": 4,
+        "time": 29.183,
+        "kind": "board-read",
+        "point": "directory"
+      },
+      {
+        "id": 5,
+        "time": 29.217,
+        "kind": "route-requested",
+        "source": "directory",
+        "destination": "poi-market"
+      },
+      {
+        "id": 6,
+        "time": 30.133,
+        "kind": "route-ready",
+        "destination": "poi-market",
+        "edges": [
+          "E0192",
+          "E0156",
+          "E0151",
+          "E0000",
+          "E0002",
+          "E0004",
+          "E0006",
+          "E0008",
+          "E0010",
+          "E0262"
+        ],
+        "validationSamples": 1692,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      },
+      {
+        "id": 7,
+        "time": 30.15,
+        "kind": "board-read",
+        "point": "directory"
+      },
+      {
+        "id": 8,
+        "time": 30.217,
+        "kind": "route-hero-change",
+        "hero": "sightline"
+      },
+      {
+        "id": 9,
+        "time": 32.283,
+        "kind": "route-hero-change",
+        "hero": "backspool"
+      },
+      {
+        "id": 10,
+        "time": 32.367,
+        "kind": "route-invalidated",
+        "navigationVersion": 4
+      },
+      {
+        "id": 11,
+        "time": 32.383,
+        "kind": "route-ended",
+        "reason": "CANCELLED",
+        "destination": "poi-market"
+      }
+    ],
+    "error": null,
+    "points": [
+      {
+        "id": "market-info",
+        "title": "MARKET ASSEMBLY",
+        "position": [
+          64,
+          24,
+          356
+        ],
+        "board": [
+          65.25,
+          24.85,
+          354.3
+        ],
+        "graphNode": "poi-market",
+        "function": "market",
+        "collection": "SM_V02_MARKET"
+      },
+      {
+        "id": "maintenance-access",
+        "title": "MAINTENANCE ACCESS",
+        "position": [
+          86,
+          52,
+          314.8
+        ],
+        "board": [
+          87.4,
+          52.85,
+          313.7
+        ],
+        "graphNode": "poi-maintenance",
+        "function": "maintenance",
+        "collection": "SM_V02_SERVICE_YARDS"
+      },
+      {
+        "id": "observation",
+        "title": "OBSERVATION DECK",
+        "position": [
+          72,
+          128,
+          420
+        ],
+        "board": [
+          73.5,
+          128.85,
+          418
+        ],
+        "graphNode": "observation-deck",
+        "function": "observation",
+        "collection": "SM_V02_LANDMARKS"
+      },
+      {
+        "id": "station-info",
+        "title": "TRANSIT INFORMATION",
+        "position": [
+          73,
+          100,
+          382
+        ],
+        "board": [
+          74.65,
+          100.85,
+          382
+        ],
+        "graphNode": "poi-station",
+        "function": "station",
+        "collection": "SM_V02_TRANSIT_STRUCTURES"
+      }
+    ],
+    "directory": {
+      "id": "directory",
+      "title": "DISTRICT DIRECTORY",
+      "position": [
+        55,
+        0,
+        210
+      ],
+      "board": [
+        56.9,
+        0.85,
+        208
+      ],
+      "graphNode": "ground-access",
+      "function": "directory",
+      "collection": "SM_V02_GALLERIES"
+    },
+    "nearBoard": "directory",
+    "readingDisabledByEncounter": false,
+    "scope": "Four functional information/discovery locations and voluntary public route guidance; not final landmark architecture or complete V02 acceptance"
+  },
+  "fullTrace": "V02_Discovery_Lifecycle.trace.json.gz",
+  "traceFrames": 2075
+}

@@ -1,0 +1,35 @@
+ground approach start {"name":"ground approach start","frame":2,"p":[55,0.42,210],"clock":0.08333333333333333,"message":""}
+public A 0 to 24 {"name":"public A 0 to 24","frame":692,"p":[61.1590031344088,24.42,215.5043200879496],"clock":11.583333333333488,"message":""}
+public A 24 to 52 {"name":"public A 24 to 52","frame":1555,"p":[61.05860536534933,52.42,215.5007294679946],"clock":25.966666666666473,"message":""}
+public A 52 to 84 {"name":"public A 52 to 84","frame":2370,"p":[61.08052229875829,84.42,215.50031104383604],"clock":39.54999999999904,"message":""}
+courtyard reached from ground {"name":"courtyard reached from ground","frame":2704,"p":[55.00013491735099,84.42,292.8528256107442],"clock":45.11666666666539,"message":""}
+mastery courtyard {"name":"mastery courtyard","frame":2705,"p":[55.00013491735099,84.42,292.8528256107442],"clock":45.133333333332054,"message":""}
+wall boost to 96 {"name":"wall boost to 96","frame":3052,"p":[63.831641758577824,86.67915525530671,300.62],"clock":50.91666666666506,"message":""}
+wall roof landing 96 {"name":"wall roof landing 96","frame":3226,"p":[63.831641758577824,96.42,299.365],"clock":53.816666666664894,"message":""}
+wall boost to 108 {"name":"wall boost to 108","frame":3304,"p":[63.831641758577824,98.67915525530671,292.62],"clock":55.11666666666482,"message":""}
+wall roof landing 108 {"name":"wall roof landing 108","frame":3478,"p":[63.831641758577824,108.42,291.12],"clock":58.016666666664655,"message":""}
+wall boost to 120 {"name":"wall boost to 120","frame":3530,"p":[63.831641758577824,110.67915525530671,284.62],"clock":58.88333333333127,"message":""}
+wall roof landing 120 {"name":"wall roof landing 120","frame":3704,"p":[63.831641758577824,120.42,283.09727250000003],"clock":61.78333333333111,"message":""}
+wall boost to 128 {"name":"wall boost to 128","frame":3756,"p":[63.831641758577824,122.67915525530671,276.62],"clock":62.649999999997725,"message":""}
+wall roof landing 128 {"name":"wall roof landing 128","frame":3887,"p":[63.831641758577824,128.42,275.09727250000003],"clock":64.83333333333094,"message":""}
+upper rail staging {"name":"upper rail staging","frame":4635,"p":[63.962542391186034,128.42,422.0075946567995],"clock":77.2999999999969,"message":""}
+upper cartridge A {"name":"upper cartridge A","frame":4822,"p":[63.962542391186034,128.42,422.0075946567995],"clock":78.98666666666281,"message":"POINT A ATTACHED · AIM B"}
+upper rail constructed {"name":"upper rail constructed","frame":5016,"p":[63.962542391186034,128.42,422.0075946567995],"clock":80.91999999999544,"message":"PERFECT CROSS-STREET"}
+rail attached {"name":"rail attached","frame":5329,"p":[64.45699977463171,128.49221499764406,425.0633820921918],"clock":86.13666666666181,"message":"CLEAN CATCH"}
+near-end Pop {"name":"near-end Pop","frame":5414,"p":[65.16623318008773,128.91817586826164,402.8545281306387],"clock":87.5533333333284,"message":"PERFECT RAIL POP"}
+recovery roof landing 118 {"name":"recovery roof landing 118","frame":5522,"p":[63.98946175549857,118.42,390.95000107026993],"clock":89.3533333333283,"message":"PERFECT RAIL POP"}
+recovery roof landing 108 {"name":"recovery roof landing 108","frame":5764,"p":[63.99750379743338,108.42,378.77808975720404],"clock":93.3866666666614,"message":"PERFECT RAIL POP"}
+recovery roof landing 100 {"name":"recovery roof landing 100","frame":6052,"p":[63.999946141606365,100.42,363.34043013188085],"clock":98.18666666666113,"message":"PERFECT RAIL POP"}
+station objective reached {"name":"station objective reached","frame":6286,"p":[66.46709857575497,100.42,375.8333964376039],"clock":102.0866666666609,"message":"PERFECT RAIL POP"}
+AssertionError [ERR_ASSERTION]: Animated hero obscured or out of frame during fast/airborne motion; inspect exact-frame captures
+
+47 !== 0
+
+    at /Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/test_mastery_route.cjs:68:963 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 47,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}

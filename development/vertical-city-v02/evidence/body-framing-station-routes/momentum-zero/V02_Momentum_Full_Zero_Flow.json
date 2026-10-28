@@ -1,0 +1,892 @@
+{
+  "status": "PASS uninterrupted ground-to-station momentum approach",
+  "scope": "Ground access to Y100 station through public stair A and two physical uphill rails",
+  "method": "One controlled initial setup (ground for full route, Y84 for local pilot). Normal R/Shift/Space keys and standard simulated controller movement/look after setup. No direct rail creation, actor/camera assignment, reset or resource injection during route.",
+  "errors": [],
+  "stages": [
+    {
+      "name": "ground approach start",
+      "frame": 2,
+      "p": [
+        55,
+        0.42,
+        210
+      ],
+      "clock": 0.08333333333333333,
+      "message": ""
+    },
+    {
+      "name": "public A 0 to 24",
+      "frame": 692,
+      "p": [
+        61.1590031344088,
+        24.42,
+        215.5043200879496
+      ],
+      "clock": 11.583333333333488,
+      "message": ""
+    },
+    {
+      "name": "public A 24 to 52",
+      "frame": 1555,
+      "p": [
+        61.05860536534933,
+        52.42,
+        215.5007294679946
+      ],
+      "clock": 25.966666666666473,
+      "message": ""
+    },
+    {
+      "name": "public A 52 to 84",
+      "frame": 2370,
+      "p": [
+        61.08052229875829,
+        84.42,
+        215.50031104383604
+      ],
+      "clock": 39.54999999999904,
+      "message": ""
+    },
+    {
+      "name": "courtyard reached from ground",
+      "frame": 2704,
+      "p": [
+        55.00013491735099,
+        84.42,
+        292.8528256107442
+      ],
+      "clock": 45.11666666666539,
+      "message": ""
+    },
+    {
+      "name": "initial launch court",
+      "frame": 2705,
+      "p": [
+        55.00013491735099,
+        84.42,
+        292.8528256107442
+      ],
+      "clock": 45.133333333332054,
+      "message": ""
+    },
+    {
+      "name": "first cartridge A",
+      "frame": 2836,
+      "p": [
+        55.00013491735099,
+        84.42,
+        292.8528256107442
+      ],
+      "clock": 46.49333333333214,
+      "message": "POINT A ATTACHED · AIM B"
+    },
+    {
+      "name": "first rail constructed",
+      "frame": 3008,
+      "p": [
+        55.00013491735099,
+        84.42,
+        292.8528256107442
+      ],
+      "clock": 48.38499999999889,
+      "message": "PERFECT GROUND-RAMP"
+    },
+    {
+      "name": "first acceleration start",
+      "frame": 3152,
+      "p": [
+        46.39004693668464,
+        84.42,
+        282.90711771236636
+      ],
+      "clock": 50.78499999999875,
+      "message": "PERFECT GROUND-RAMP"
+    },
+    {
+      "name": "rail attached",
+      "frame": 3262,
+      "p": [
+        54.332805551213724,
+        84.42377229080932,
+        294.06174807028685
+      ],
+      "clock": 52.61833333333198,
+      "message": "CLEAN CATCH"
+    },
+    {
+      "name": "near-end Pop",
+      "frame": 3387,
+      "p": [
+        68.74284188143791,
+        91.60216471520053,
+        314.2767977187022
+      ],
+      "clock": 54.7016666666652,
+      "message": "PERFECT RAIL POP"
+    },
+    {
+      "name": "middle landing",
+      "frame": 3427,
+      "p": [
+        71.77338408927184,
+        92.42,
+        318.52903252268044
+      ],
+      "clock": 55.368333333331826,
+      "message": "PERFECT RAIL POP"
+    },
+    {
+      "name": "second cartridge A",
+      "frame": 3735,
+      "p": [
+        75.95288452006871,
+        92.42,
+        332.83868735835836
+      ],
+      "clock": 59.48333333333179,
+      "message": "POINT A ATTACHED · AIM B"
+    },
+    {
+      "name": "second rail constructed",
+      "frame": 3929,
+      "p": [
+        75.95288452006871,
+        92.42,
+        332.83868735835836
+      ],
+      "clock": 61.52499999999858,
+      "message": "PERFECT GROUND-RAMP"
+    },
+    {
+      "name": "second acceleration start",
+      "frame": 4070,
+      "p": [
+        82.32656142876448,
+        92.42,
+        321.58729335259653
+      ],
+      "clock": 63.874999999998444,
+      "message": "PERFECT GROUND-RAMP"
+    },
+    {
+      "name": "rail attached",
+      "frame": 4194,
+      "p": [
+        76.48781863508414,
+        92.42377229080932,
+        333.9713032174931
+      ],
+      "clock": 65.941666666665,
+      "message": "CLEAN CATCH"
+    },
+    {
+      "name": "near-end Pop",
+      "frame": 4323,
+      "p": [
+        65.44824340766694,
+        99.54276010376518,
+        357.3994117687148
+      ],
+      "clock": 68.09166666666488,
+      "message": "PERFECT RAIL POP"
+    },
+    {
+      "name": "station landing",
+      "frame": 4361,
+      "p": [
+        63.24902448366156,
+        100.42,
+        362.06185565438074
+      ],
+      "clock": 68.72499999999818,
+      "message": "PERFECT RAIL POP"
+    },
+    {
+      "name": "station objective reached",
+      "frame": 4514,
+      "p": [
+        66.46217567411206,
+        100.42,
+        375.83783301001426
+      ],
+      "clock": 71.27499999999803,
+      "message": "PERFECT RAIL POP"
+    }
+  ],
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_BODY_FRAMING.html",
+  "manifest": "assets/city/vertical-v02/diffuse-pilot/runtime/manifest.json",
+  "buildReport": "V02_Body_Framing_Build.json",
+  "entrySHA256": "149603ae97d17f78eae52424f4ae23b81e0b15ed82303efecf4c4138d864e602",
+  "manifestSHA256": "1a7999c9678ffcf04634cd453c4797bc909a0cfbd21068886d41b25b0773d6bf",
+  "testConfigurationSHA256": "425579dbc1a5fa7ae5edd3a987509558a0899696fa616175ce058ff96f65a40b",
+  "evidenceRun": "momentum-zero",
+  "evidenceSuite": "body-framing-station-routes",
+  "testSourceSHA256": "08195c77dc7815f3535327caddc429ddd09c79bdc54c81b45046de4d86f70ac8",
+  "cameraSamplePolicy": {
+    "sourceSHA256": "180467f581d7948bdf854280c9c2b7886b4270810b763376e1c2b5c7aa6dae45",
+    "intervalFrames": 6,
+    "scope": "Actual animated head/hips projection and native static-obstacle triangle rays during normal input, 10Hz at60Hz simulation. No gameplay state writes. Transparent glass below.5alpha excluded from opaque occlusion; moving objects absent from the native obstacle registry, HUD, between-sample frames and physical devices are not certified. Raw samples require context/visual review; collection is not camera acceptance."
+  },
+  "initialBank": 0,
+  "routeStartFrame": 1,
+  "routeTraceStart": 1,
+  "aimCoastEvidence": [
+    {
+      "target": [
+        55,
+        84,
+        295
+      ],
+      "arrivalError": {
+        "dy": -0.0007245863692375565,
+        "dp": -0.0006077421268962935,
+        "hit": {
+          "x": 55.00428115798502,
+          "y": 84,
+          "z": 295.00351538411877
+        }
+      },
+      "settled": {
+        "dy": -0.0015811178357720832,
+        "dp": -0.00026902082734170385,
+        "rawPitch": -0.7578539807530602,
+        "targetPitch": -0.7579602046185012,
+        "body": {
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": 0,
+          "heldPitch": 0,
+          "frames": 2784,
+          "adjusted": 696,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 59.18874586731684,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "hit": {
+          "x": 55.00649096542432,
+          "y": 84,
+          "z": 294.99990351013207
+        }
+      },
+      "accepted": false
+    },
+    {
+      "target": [
+        55,
+        84,
+        295
+      ],
+      "arrivalError": {
+        "dy": -0.0012466513674844748,
+        "dp": -0.00039041653875715454,
+        "hit": {
+          "x": 55.005580814936145,
+          "y": 84,
+          "z": 295.0012338844049
+        }
+      },
+      "settled": {
+        "dy": -0.00116067252566765,
+        "dp": -0.0003599477926367056,
+        "rawPitch": -0.7579598935631886,
+        "targetPitch": -0.7579602046185012,
+        "body": {
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": 0,
+          "heldPitch": 0,
+          "frames": 2798,
+          "adjusted": 696,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 59.18874586731684,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "hit": {
+          "x": 55.00518606835762,
+          "y": 84,
+          "z": 295.00112552299794
+        }
+      },
+      "accepted": true
+    },
+    {
+      "target": [
+        70,
+        91.75,
+        315
+      ],
+      "arrivalError": {
+        "dy": -0.0005696935764620825,
+        "dp": -0.0002154743011748561,
+        "hit": {
+          "x": 70,
+          "y": 91.7518589699331,
+          "z": 314.9704196512447
+        }
+      },
+      "settled": {
+        "dy": -0.001216934495588351,
+        "dp": 0.00234136750572031,
+        "rawPitch": 0.2206655965952625,
+        "targetPitch": 0.22056066399364901,
+        "body": {
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": 0,
+          "heldPitch": 0,
+          "frames": 2917,
+          "adjusted": 696,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 59.18874586731684,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "hit": {
+          "x": 70,
+          "y": 91.66355692279654,
+          "z": 314.93687357199013
+        }
+      },
+      "accepted": false
+    },
+    {
+      "target": [
+        70,
+        91.75,
+        315
+      ],
+      "arrivalError": {
+        "dy": 0.00004192464014662889,
+        "dp": 0.0010497851127621027,
+        "hit": {
+          "x": 70,
+          "y": 91.71641629041439,
+          "z": 315.00217865325305
+        }
+      },
+      "settled": {
+        "dy": 0.0015774182250787305,
+        "dp": -0.0005836289582613619,
+        "rawPitch": 0.22404751862023042,
+        "targetPitch": 0.22411618260140562,
+        "body": {
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": 0,
+          "heldPitch": 0,
+          "frames": 2929,
+          "adjusted": 696,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 59.18874586731684,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "hit": {
+          "x": 70,
+          "y": 91.78309616610427,
+          "z": 315.0821790435283
+        }
+      },
+      "accepted": false
+    },
+    {
+      "target": [
+        70,
+        91.75,
+        315
+      ],
+      "arrivalError": {
+        "dy": 0.0009820137832408096,
+        "dp": -0.0006400000780378556,
+        "hit": {
+          "x": 70,
+          "y": 91.77955301115794,
+          "z": 315.0511181653508
+        }
+      },
+      "settled": {
+        "dy": 0.0005863021810603719,
+        "dp": -0.000643515931717048,
+        "rawPitch": 0.22411598153269052,
+        "targetPitch": 0.22411618260140562,
+        "body": {
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": 0,
+          "heldPitch": 0,
+          "frames": 2943,
+          "adjusted": 696,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 59.18874586731684,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "hit": {
+          "x": 70,
+          "y": 91.7760995826823,
+          "z": 315.0304986376614
+        }
+      },
+      "accepted": true
+    },
+    {
+      "target": [
+        55,
+        85.84,
+        295
+      ],
+      "arrivalError": {
+        "dy": -0.0005870390206577091,
+        "dp": 0.0012719744527907428,
+        "hit": {
+          "x": 93.00999999999999,
+          "y": 85.03570632940395,
+          "z": 340.51847377604093
+        }
+      },
+      "settled": {
+        "dy": -0.0006624543726023724,
+        "dp": 0.00027055801141051897,
+        "rawPitch": 0.00048576300809848754,
+        "targetPitch": 0.0005350523129118121,
+        "body": {
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": 0,
+          "heldPitch": 0,
+          "frames": 3187,
+          "adjusted": 696,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 59.18874586731684,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "hit": {
+          "x": 98.91,
+          "y": 85.031101657038,
+          "z": 347.56335933432706
+        }
+      },
+      "accepted": true
+    },
+    {
+      "target": [
+        76,
+        92,
+        335
+      ],
+      "arrivalError": {
+        "dy": -0.00003461117581693429,
+        "dp": -0.001367561349218338,
+        "hit": {
+          "x": 76.00814503262886,
+          "y": 92,
+          "z": 335.0123273837442
+        }
+      },
+      "settled": {
+        "dy": -0.00003426951534946099,
+        "dp": -0.0015523847217073783,
+        "rawPitch": -0.6411694367650883,
+        "targetPitch": -0.6411951097673674,
+        "body": {
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": -7.105427357601002e-15,
+          "heldPitch": -0.0608226198031976,
+          "frames": 3685,
+          "adjusted": 764,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 56.000000099683874,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "hit": {
+          "x": 76.00921540701859,
+          "y": 92,
+          "z": 335.0139947705547
+        }
+      },
+      "accepted": false
+    },
+    {
+      "target": [
+        76,
+        92,
+        335
+      ],
+      "arrivalError": {
+        "dy": -0.000041751176433901804,
+        "dp": -0.0014044767890583065,
+        "hit": {
+          "x": 76.00838287634915,
+          "y": 92,
+          "z": 335.01262587753234
+        }
+      },
+      "settled": {
+        "dy": -0.00004388084612871879,
+        "dp": -0.0013489386578315887,
+        "rawPitch": -0.6418431071878432,
+        "targetPitch": -0.6418561781438721,
+        "body": {
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": -7.105427357601002e-15,
+          "heldPitch": -0.0608226198031976,
+          "frames": 3697,
+          "adjusted": 764,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 56.000000099683874,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "hit": {
+          "x": 76.00806521847265,
+          "y": 92,
+          "z": 335.01211048729346
+        }
+      },
+      "accepted": true
+    },
+    {
+      "target": [
+        65,
+        99.75,
+        359
+      ],
+      "arrivalError": {
+        "dy": -0.0008762314806181059,
+        "dp": 0.0007037684310892967,
+        "hit": {
+          "x": 65.0303717563994,
+          "y": 99.72387478667717,
+          "z": 359
+        }
+      },
+      "settled": {
+        "dy": -0.005102204903585151,
+        "dp": 0.005132226485843661,
+        "rawPitch": 0.2754653753597856,
+        "targetPitch": 0.2752838980077643,
+        "body": {
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": -7.105427357601002e-15,
+          "heldPitch": -0.0608226198031976,
+          "frames": 3818,
+          "adjusted": 764,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 56.000000099683874,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "hit": {
+          "x": 65.17651903517165,
+          "y": 99.56347814265519,
+          "z": 359
+        }
+      },
+      "accepted": false
+    },
+    {
+      "target": [
+        65,
+        99.75,
+        359
+      ],
+      "arrivalError": {
+        "dy": -0.0005754832646434059,
+        "dp": 0.00046478010907116674,
+        "hit": {
+          "x": 65.01994466922012,
+          "y": 99.73276536455312,
+          "z": 359
+        }
+      },
+      "settled": {
+        "dy": 0.0023134165889189258,
+        "dp": -0.002485115412854566,
+        "rawPitch": 0.28417538656095587,
+        "targetPitch": 0.2842967554804757,
+        "body": {
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": -7.105427357601002e-15,
+          "heldPitch": -0.0608226198031976,
+          "frames": 3832,
+          "adjusted": 764,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 56.000000099683874,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "hit": {
+          "x": 64.91971760019076,
+          "y": 99.84043033528852,
+          "z": 359
+        }
+      },
+      "accepted": false
+    },
+    {
+      "target": [
+        65,
+        99.75,
+        359
+      ],
+      "arrivalError": {
+        "dy": 0.00027701927638457136,
+        "dp": -0.00035469404662719084,
+        "hit": {
+          "x": 64.990394884763,
+          "y": 99.76274995099246,
+          "z": 359
+        }
+      },
+      "settled": {
+        "dy": 0.001961623135599666,
+        "dp": -0.0020757277871827073,
+        "rawPitch": 0.2836973874017821,
+        "targetPitch": 0.2837693456514264,
+        "body": {
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": -7.105427357601002e-15,
+          "heldPitch": -0.0608226198031976,
+          "frames": 3850,
+          "adjusted": 764,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 56.000000099683874,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "hit": {
+          "x": 64.93193482865038,
+          "y": 99.82558960993813,
+          "z": 359
+        }
+      },
+      "accepted": false
+    },
+    {
+      "target": [
+        65,
+        99.75,
+        359
+      ],
+      "arrivalError": {
+        "dy": 0.0006729180329534401,
+        "dp": -0.0007375698798963437,
+        "hit": {
+          "x": 64.976662344916,
+          "y": 99.77677347220322,
+          "z": 359
+        }
+      },
+      "settled": {
+        "dy": -0.0009487523756996907,
+        "dp": 0.0009305835731903411,
+        "rawPitch": 0.28026040824146126,
+        "targetPitch": 0.2801910782333683,
+        "body": {
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": -7.105427357601002e-15,
+          "heldPitch": -0.0608226198031976,
+          "frames": 3862,
+          "adjusted": 764,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 56.000000099683874,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "hit": {
+          "x": 65.03288048856507,
+          "y": 99.71601071030565,
+          "z": 359
+        }
+      },
+      "accepted": true
+    },
+    {
+      "target": [
+        76,
+        93.84,
+        335
+      ],
+      "arrivalError": {
+        "dy": -0.0011176050253682845,
+        "dp": -0.00006300075706977114,
+        "hit": {
+          "x": 62.32055997414726,
+          "y": 94.06812289064554,
+          "z": 371.05
+        }
+      },
+      "settled": {
+        "dy": -0.0005965591717980169,
+        "dp": -0.0025217890060808944,
+        "rawPitch": 0.08235098333968723,
+        "targetPitch": 0.08246953059258408,
+        "body": {
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": -7.105427357601002e-15,
+          "heldPitch": -0.0608226198031976,
+          "frames": 4103,
+          "adjusted": 764,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 56.000000099683874,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "hit": {
+          "x": 62.29063555328925,
+          "y": 94.24205594789221,
+          "z": 371.05
+        }
+      },
+      "accepted": false
+    },
+    {
+      "target": [
+        76,
+        93.84,
+        335
+      ],
+      "arrivalError": {
+        "dy": -0.0005755438247563306,
+        "dp": -0.0010158075386391503,
+        "hit": {
+          "x": 62.28879518156308,
+          "y": 94.1509837626895,
+          "z": 371.05
+        }
+      },
+      "settled": {
+        "dy": -0.0005734367234788706,
+        "dp": -0.0005374012153064626,
+        "rawPitch": 0.07985933806745846,
+        "targetPitch": 0.07983496899974851,
+        "body": {
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": -7.105427357601002e-15,
+          "heldPitch": -0.0608226198031976,
+          "frames": 4119,
+          "adjusted": 764,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 56.000000099683874,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "hit": {
+          "x": 62.288547862294934,
+          "y": 94.11295300212721,
+          "z": 371.05
+        }
+      },
+      "accepted": true
+    }
+  ],
+  "totalInputSeconds": 75.23333333333333,
+  "seconds": 75.21666666666667,
+  "distance": 701.9731352377592,
+  "powerReleases": 0,
+  "cameraVisibility": {
+    "scope": "Sampled animated head/hips visibility at10Hz during fast/airborne non-aim motion; not full-body, HUD, between-sample or hardware certification.",
+    "samples": 467,
+    "problemSamples": 0,
+    "captures": []
+  },
+  "fullTrace": "V02_Momentum_Full_Zero_Flow.trace.json.gz",
+  "traceFrames": 4534
+}

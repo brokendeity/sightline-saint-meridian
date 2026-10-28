@@ -1,0 +1,246 @@
+{
+  "status": "PASS current source/native surface admission and original city/contact preservation; full input and continuous vehicle clearance pending",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_UPPER_ANCHORS.html",
+  "entrySHA256": "19b195c2a2a7c78c6e305ebb34f954716faf32335302f39011b3ae8746395290",
+  "manifestSHA256": "fbba60efad8fe437780eb6d72444594535f870d553e685bbc9b9ff43accdd111",
+  "testSourceSHA256": "8c1262f900d477a040dbb21c32fb27dc4d66f640b48a40687349fbe010ec8471",
+  "scope": "Original city and prior contact preservation, visible geometry/box admission, original building/prop clearance and labelled source/native surface studies. No full route or throw certification.",
+  "captures": [
+    {
+      "id": "upper-anchor-departure",
+      "file": "evidence/upper-anchor-mounts/native-upper-anchor-departure.png",
+      "sha256": "c5a37f0c025e79ef6b1bf494c266a9181b482744a6b03591b041a479b90a5163",
+      "scope": "Labelled supported fixture and native settled third-person camera; not a route",
+      "position": [
+        63.7,
+        128.42,
+        424
+      ],
+      "grounded": true,
+      "trauma": 0,
+      "cameraWorld": [
+        0.051525051225121854,
+        0,
+        0.998671702360815,
+        0,
+        0.1597059640234715,
+        0.9871302399904993,
+        -0.008239802887990283,
+        0,
+        -0.9858190372231518,
+        0.159918383234384,
+        0.05086193618137724,
+        0,
+        59.46359274821388,
+        130.39963744936892,
+        425.35,
+        1
+      ],
+      "projection": [
+        1.0579086367573118,
+        0,
+        0,
+        0,
+        0,
+        1.880726465346332,
+        0,
+        0,
+        0,
+        0,
+        -1.0000555570988083,
+        -1,
+        0,
+        0,
+        -0.10000277785494041,
+        0
+      ],
+      "fov": 56,
+      "aspect": 1.7777777777777777
+    },
+    {
+      "id": "upper-anchor-arrival",
+      "file": "evidence/upper-anchor-mounts/native-upper-anchor-arrival.png",
+      "sha256": "896aa45c519c19a27719cf3e812ce4c599711031e65e230d075e48dae6474544",
+      "scope": "Labelled supported fixture and native settled third-person camera; not a route",
+      "position": [
+        63.7,
+        128.42,
+        400
+      ],
+      "grounded": true,
+      "trauma": 0,
+      "cameraWorld": [
+        0.051525051225121854,
+        0,
+        0.998671702360815,
+        0,
+        0.1597059640234715,
+        0.9871302399904993,
+        -0.008239802887990283,
+        0,
+        -0.9858190372231518,
+        0.159918383234384,
+        0.05086193618137724,
+        0,
+        59.46359274821388,
+        130.39963744936892,
+        401.35,
+        1
+      ],
+      "projection": [
+        1.0579086367573118,
+        0,
+        0,
+        0,
+        0,
+        1.880726465346332,
+        0,
+        0,
+        0,
+        0,
+        -1.0000555570988083,
+        -1,
+        0,
+        0,
+        -0.10000277785494041,
+        0
+      ],
+      "fov": 56,
+      "aspect": 1.7777777777777777
+    }
+  ],
+  "errors": [],
+  "preservation": {
+    "originalBuildings": 310,
+    "originalGeometryTransformsPartsExact": true,
+    "lanes": 642,
+    "lights": 9,
+    "priorContacts": 9619,
+    "newContacts": [
+      {
+        "id": "upper-anchor-departure-housing",
+        "box": {
+          "min": [
+            65.25,
+            128,
+            423.65
+          ],
+          "max": [
+            65.75,
+            129.60000000000002,
+            424.35
+          ]
+        }
+      },
+      {
+        "id": "upper-anchor-departure-shoe",
+        "box": {
+          "min": [
+            65.25,
+            128,
+            423.55
+          ],
+          "max": [
+            65.94999999999999,
+            128.12,
+            424.45
+          ]
+        }
+      },
+      {
+        "id": "upper-anchor-departure-receiver",
+        "box": {
+          "min": [
+            65.21000000000001,
+            128.53,
+            423.76
+          ],
+          "max": [
+            65.25,
+            129.17,
+            424.24
+          ]
+        }
+      },
+      {
+        "id": "upper-anchor-arrival-housing",
+        "box": {
+          "min": [
+            65.25,
+            128,
+            399.65
+          ],
+          "max": [
+            65.75,
+            129.60000000000002,
+            400.35
+          ]
+        }
+      },
+      {
+        "id": "upper-anchor-arrival-shoe",
+        "box": {
+          "min": [
+            65.25,
+            128,
+            399.55
+          ],
+          "max": [
+            65.94999999999999,
+            128.12,
+            400.45
+          ]
+        }
+      },
+      {
+        "id": "upper-anchor-arrival-receiver",
+        "box": {
+          "min": [
+            65.21000000000001,
+            128.53,
+            399.76
+          ],
+          "max": [
+            65.25,
+            129.17,
+            400.24
+          ]
+        }
+      }
+    ]
+  },
+  "originalClearance": {
+    "failures": [],
+    "method": "All actual original compound building parts and registered prop boxes against six new solid mount volumes"
+  },
+  "surfaces": [
+    {
+      "mount": "upper-anchor-departure",
+      "contact": [
+        65.21000671386719,
+        128.85,
+        424
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "owner": "v02:upper-anchor-departure-receiver"
+    },
+    {
+      "mount": "upper-anchor-arrival",
+      "contact": [
+        65.21000671386719,
+        128.85,
+        400
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "owner": "v02:upper-anchor-arrival-receiver"
+    }
+  ]
+}

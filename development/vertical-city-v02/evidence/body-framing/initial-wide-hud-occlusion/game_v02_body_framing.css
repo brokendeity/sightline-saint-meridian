@@ -1,0 +1,16 @@
+/* Narrow desktop windows need the same clear lower playfield as touch layouts.
+ * No controls/resources are removed; only this candidate's panel placement changes. */
+@media(max-width:700px){
+ body.v02CompactHUD:not(.touchPlay) #flightVitals{top:68px;bottom:auto;left:10px;width:170px;padding:9px;font-size:9px}
+ body.v02CompactHUD:not(.touchPlay) #vitalSpeed{font-size:22px}
+ body.v02CompactHUD:not(.touchPlay) #flightVitals .vitalBars{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+ body.v02CompactHUD:not(.touchPlay) #flightVitals .vitalHeader{margin-bottom:5px}
+ body.v02CompactHUD:not(.touchPlay).v02HUDBackspool #flightVitals .vitalFooter{display:none}
+ body.v02CompactHUD:not(.touchPlay) #v02CombatFeedback{top:348px;left:10px;width:170px}
+}
+@media(max-width:700px){
+ body.v02CompactHUD #v02ContextStack > #v02NativeNotice{pointer-events:none!important}
+ body.v02CompactHUD #v02NativeNotice #banner{position:static;inset:auto;transform:none;text-align:left;transition:opacity .15s}
+ body.v02CompactHUD #v02NativeNotice .bannerBig{font-size:14px;letter-spacing:.03em;text-shadow:none}
+ body.v02CompactHUD #v02NativeNotice .bannerSub{font-size:9px;letter-spacing:.04em;line-height:1.45}
+}

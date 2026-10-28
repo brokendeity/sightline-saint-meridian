@@ -1,0 +1,48 @@
+START native
+DONE native 0
+START clearance
+DONE clearance 0
+START settled
+DONE settled 0
+START ownership
+DONE ownership 0
+START touch-look
+DONE touch-look 0
+START movement
+DONE movement 0
+START movement-touch
+DONE movement-touch 0
+START stairs
+DONE stairs 0
+START orbits
+DONE orbits 0
+START hud
+DONE hud 0
+START notices
+DONE notices 0
+START stock
+DONE stock 0
+START replay
+DONE replay 0
+START station-routes
+DONE station-routes 1
+START momentum-zero
+ground approach start {"name":"ground approach start","frame":2,"p":[55,0.42,210],"clock":0.08333333333333333,"message":""}
+public A 0 to 24 {"name":"public A 0 to 24","frame":692,"p":[61.1590031344088,24.42,215.5043200879496],"clock":11.583333333333488,"message":""}
+public A 24 to 52 {"name":"public A 24 to 52","frame":1555,"p":[61.05860536534933,52.42,215.5007294679946],"clock":25.966666666666473,"message":""}
+public A 52 to 84 {"name":"public A 52 to 84","frame":2370,"p":[61.08052229875829,84.42,215.50031104383604],"clock":39.54999999999904,"message":""}
+courtyard reached from ground {"name":"courtyard reached from ground","frame":2704,"p":[55.00013491735099,84.42,292.8528256107442],"clock":45.11666666666539,"message":""}
+initial launch court {"name":"initial launch court","frame":2705,"p":[55.00013491735099,84.42,292.8528256107442],"clock":45.133333333332054,"message":""}
+first cartridge A {"name":"first cartridge A","frame":2840,"p":[55.00013491735099,84.42,292.8528256107442],"clock":46.51666666666548,"message":"POINT A ATTACHED · AIM B"}
+first rail constructed {"name":"first rail constructed","frame":3010,"p":[55.00013491735099,84.42,292.8528256107442],"clock":48.39666666666556,"message":"PERFECT GROUND-RAMP"}
+first acceleration start {"name":"first acceleration start","frame":3154,"p":[46.39004693668464,84.42,282.90711771236636],"clock":50.79666666666542,"message":"PERFECT GROUND-RAMP"}
+rail attached {"name":"rail attached","frame":3268,"p":[54.33291093980091,84.42377229080932,294.0617430238394],"clock":52.696666666665315,"message":"CLEAN CATCH"}
+near-end Pop {"name":"near-end Pop","frame":3393,"p":[68.73769502857805,91.60741587013602,314.2670278246071],"clock":54.77999999999853,"message":"PERFECT RAIL POP"}
+middle landing {"name":"middle landing","frame":3433,"p":[71.76966730931183,92.42,318.520885586822],"clock":55.44666666666516,"message":"PERFECT RAIL POP"}
+second cartridge A {"name":"second cartridge A","frame":3735,"p":[75.95284331478236,92.42,332.838597318335],"clock":59.526666666665115,"message":"POINT A ATTACHED · AIM B"}
+Error: Aim failed {"target":[65,99.75,359],"err":{"dy":0.00017510250966967789,"dp":-0.0001745297258618772,"nativeYawDrift":0.0016203791348172736,"nativePitchDrift":0.001622947057697277,"hit":{"x":64.99392860322467,"y":99.7563730424765,"z":359}}}
+    at aim (/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/test_momentum_route.cjs:17:1409)
+    at async cast (/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/test_momentum_route.cjs:18:72)
+    at async /Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/test_momentum_route.cjs:38:82
+
+

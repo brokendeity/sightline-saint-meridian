@@ -1,0 +1,455 @@
+{
+  "status": "PLANNED: manifest AABB/source/native/envelope/input acceptance still pending",
+  "sourceMaster": "development/vertical-city-v02/blender/SaintMeridian_V02_Diffuse_Pilot.blend",
+  "sourceMasterSHA256": "0ab598f955d6452a7090ab7220284846275be5684b5f6b0eb22e85e4644445d4",
+  "sourceManifest": "assets/city/vertical-v02/diffuse-pilot/runtime/manifest.json",
+  "sourceManifestSHA256": "1a7999c9678ffcf04634cd453c4797bc909a0cfbd21068886d41b25b0773d6bf",
+  "failureEvidence": "development/vertical-city-v02/evidence/body-framing-station-routes/mastery-zero/V02_Mastery_Full_Zero.json",
+  "problem": "Grazing roof aim struck a vertical platform edge4.5mm below floor; the0.72m lateral anchor offset did not provide capsule floor clearance. Previous lucky top hits are not a robust receiving surface.",
+  "scope": "Two physical, visible receiving posts beside the retained x64m running lane. No original geometry, power limits, body dimensions or gameplay controller changes.",
+  "mounts": [
+    {
+      "id": "upper-anchor-departure",
+      "supportID": "observation-deck-opening-1",
+      "target": [
+        65.21,
+        128.85,
+        424
+      ],
+      "contactNormal": [
+        -1,
+        0,
+        0
+      ],
+      "expectedRailRoot": [
+        64.49,
+        128.85,
+        424
+      ],
+      "laneRootX": 64,
+      "existingSupportFloor": 128
+    },
+    {
+      "id": "upper-anchor-arrival",
+      "supportID": "pop-end-deck-opening-1",
+      "target": [
+        65.21,
+        128.85,
+        400
+      ],
+      "contactNormal": [
+        -1,
+        0,
+        0
+      ],
+      "expectedRailRoot": [
+        64.49,
+        128.85,
+        400
+      ],
+      "laneRootX": 64,
+      "existingSupportFloor": 128
+    }
+  ],
+  "additions": [
+    {
+      "id": "upper-anchor-departure-housing",
+      "owner": "v02:upper-anchor-departure-housing",
+      "center": [
+        65.5,
+        128.8,
+        424
+      ],
+      "size": [
+        0.5,
+        1.6,
+        0.7
+      ],
+      "box": {
+        "min": [
+          65.25,
+          128.0,
+          423.65
+        ],
+        "max": [
+          65.75,
+          129.60000000000002,
+          424.35
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_UPPER_ANCHOR_MOUNTS",
+      "upperAnchorMount": true,
+      "nonDestructible": true
+    },
+    {
+      "id": "upper-anchor-departure-shoe",
+      "owner": "v02:upper-anchor-departure-shoe",
+      "center": [
+        65.6,
+        128.06,
+        424
+      ],
+      "size": [
+        0.7,
+        0.12,
+        0.9
+      ],
+      "box": {
+        "min": [
+          65.25,
+          128.0,
+          423.55
+        ],
+        "max": [
+          65.94999999999999,
+          128.12,
+          424.45
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_UPPER_ANCHOR_MOUNTS",
+      "upperAnchorMount": true,
+      "nonDestructible": true
+    },
+    {
+      "id": "upper-anchor-departure-receiver",
+      "owner": "v02:upper-anchor-departure-receiver",
+      "center": [
+        65.23,
+        128.85,
+        424
+      ],
+      "size": [
+        0.04,
+        0.64,
+        0.48
+      ],
+      "box": {
+        "min": [
+          65.21000000000001,
+          128.53,
+          423.76
+        ],
+        "max": [
+          65.25,
+          129.17,
+          424.24
+        ]
+      },
+      "material": "deck",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_UPPER_ANCHOR_MOUNTS",
+      "upperAnchorMount": true,
+      "nonDestructible": true,
+      "structuralAttachment": "upper-anchor-departure-housing"
+    },
+    {
+      "id": "upper-anchor-departure-cyan-left",
+      "owner": "v02:upper-anchor-departure-cyan-left",
+      "center": [
+        65.205,
+        128.85,
+        423.73
+      ],
+      "size": [
+        0.018,
+        0.72,
+        0.025
+      ],
+      "box": {
+        "min": [
+          65.196,
+          128.48999999999998,
+          423.71750000000003
+        ],
+        "max": [
+          65.214,
+          129.21,
+          423.7425
+        ]
+      },
+      "material": "cyan",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_UPPER_ANCHOR_MOUNTS",
+      "upperAnchorMount": true,
+      "nonDestructible": true
+    },
+    {
+      "id": "upper-anchor-departure-cyan-right",
+      "owner": "v02:upper-anchor-departure-cyan-right",
+      "center": [
+        65.205,
+        128.85,
+        424.27
+      ],
+      "size": [
+        0.018,
+        0.72,
+        0.025
+      ],
+      "box": {
+        "min": [
+          65.196,
+          128.48999999999998,
+          424.2575
+        ],
+        "max": [
+          65.214,
+          129.21,
+          424.28249999999997
+        ]
+      },
+      "material": "cyan",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_UPPER_ANCHOR_MOUNTS",
+      "upperAnchorMount": true,
+      "nonDestructible": true
+    },
+    {
+      "id": "upper-anchor-departure-status",
+      "owner": "v02:upper-anchor-departure-status",
+      "center": [
+        65.203,
+        129.24,
+        424
+      ],
+      "size": [
+        0.02,
+        0.055,
+        0.22
+      ],
+      "box": {
+        "min": [
+          65.193,
+          129.2125,
+          423.89
+        ],
+        "max": [
+          65.21300000000001,
+          129.2675,
+          424.11
+        ]
+      },
+      "material": "warm",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_UPPER_ANCHOR_MOUNTS",
+      "upperAnchorMount": true,
+      "nonDestructible": true
+    },
+    {
+      "id": "upper-anchor-arrival-housing",
+      "owner": "v02:upper-anchor-arrival-housing",
+      "center": [
+        65.5,
+        128.8,
+        400
+      ],
+      "size": [
+        0.5,
+        1.6,
+        0.7
+      ],
+      "box": {
+        "min": [
+          65.25,
+          128.0,
+          399.65
+        ],
+        "max": [
+          65.75,
+          129.60000000000002,
+          400.35
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_UPPER_ANCHOR_MOUNTS",
+      "upperAnchorMount": true,
+      "nonDestructible": true
+    },
+    {
+      "id": "upper-anchor-arrival-shoe",
+      "owner": "v02:upper-anchor-arrival-shoe",
+      "center": [
+        65.6,
+        128.06,
+        400
+      ],
+      "size": [
+        0.7,
+        0.12,
+        0.9
+      ],
+      "box": {
+        "min": [
+          65.25,
+          128.0,
+          399.55
+        ],
+        "max": [
+          65.94999999999999,
+          128.12,
+          400.45
+        ]
+      },
+      "material": "steel",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_UPPER_ANCHOR_MOUNTS",
+      "upperAnchorMount": true,
+      "nonDestructible": true
+    },
+    {
+      "id": "upper-anchor-arrival-receiver",
+      "owner": "v02:upper-anchor-arrival-receiver",
+      "center": [
+        65.23,
+        128.85,
+        400
+      ],
+      "size": [
+        0.04,
+        0.64,
+        0.48
+      ],
+      "box": {
+        "min": [
+          65.21000000000001,
+          128.53,
+          399.76
+        ],
+        "max": [
+          65.25,
+          129.17,
+          400.24
+        ]
+      },
+      "material": "deck",
+      "solid": true,
+      "walkable": false,
+      "collection": "SM_V02_UPPER_ANCHOR_MOUNTS",
+      "upperAnchorMount": true,
+      "nonDestructible": true,
+      "structuralAttachment": "upper-anchor-arrival-housing"
+    },
+    {
+      "id": "upper-anchor-arrival-cyan-left",
+      "owner": "v02:upper-anchor-arrival-cyan-left",
+      "center": [
+        65.205,
+        128.85,
+        399.73
+      ],
+      "size": [
+        0.018,
+        0.72,
+        0.025
+      ],
+      "box": {
+        "min": [
+          65.196,
+          128.48999999999998,
+          399.71750000000003
+        ],
+        "max": [
+          65.214,
+          129.21,
+          399.7425
+        ]
+      },
+      "material": "cyan",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_UPPER_ANCHOR_MOUNTS",
+      "upperAnchorMount": true,
+      "nonDestructible": true
+    },
+    {
+      "id": "upper-anchor-arrival-cyan-right",
+      "owner": "v02:upper-anchor-arrival-cyan-right",
+      "center": [
+        65.205,
+        128.85,
+        400.27
+      ],
+      "size": [
+        0.018,
+        0.72,
+        0.025
+      ],
+      "box": {
+        "min": [
+          65.196,
+          128.48999999999998,
+          400.2575
+        ],
+        "max": [
+          65.214,
+          129.21,
+          400.28249999999997
+        ]
+      },
+      "material": "cyan",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_UPPER_ANCHOR_MOUNTS",
+      "upperAnchorMount": true,
+      "nonDestructible": true
+    },
+    {
+      "id": "upper-anchor-arrival-status",
+      "owner": "v02:upper-anchor-arrival-status",
+      "center": [
+        65.203,
+        129.24,
+        400
+      ],
+      "size": [
+        0.02,
+        0.055,
+        0.22
+      ],
+      "box": {
+        "min": [
+          65.193,
+          129.2125,
+          399.89
+        ],
+        "max": [
+          65.21300000000001,
+          129.2675,
+          400.11
+        ]
+      },
+      "material": "warm",
+      "solid": false,
+      "walkable": false,
+      "collection": "SM_V02_UPPER_ANCHOR_MOUNTS",
+      "upperAnchorMount": true,
+      "nonDestructible": true
+    }
+  ],
+  "referenceEnvelope": {
+    "actorRadius": 0.575,
+    "actorRootFloorOffset": 0.42,
+    "nominalRailHeightAboveFloor": 0.85,
+    "nominalPostClearanceAtRailRoot": 0.145
+  },
+  "acceptance": [
+    "Independently reopen source; verify all unrelated object signatures and each manifold/UV/normal/bounds",
+    "Continuous train/aerial and original building clearance; supported mounting footprints",
+    "Physical source mesh attachment and collision-checked complete rails, normal catches/Pop/descent atzero/full legal bank",
+    "Repeat whole public routes/loops and original city preservation; inspect current native/source images",
+    "Retain failed grazing-hit case as a separate failure/recovery requirement, never certify with the new success"
+  ]
+}

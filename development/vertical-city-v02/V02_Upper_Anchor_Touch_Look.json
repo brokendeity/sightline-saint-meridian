@@ -1,0 +1,155 @@
+{
+  "status": "PASS native CDP touch look delta and persistent manual camera ownership",
+  "scope": "Actual CDP finger drag through native pointer-captured lookPad; matched supported room starts, portrait/landscape. No physical touchscreen or combat-locked camera certification.",
+  "runs": [
+    {
+      "view": "portrait",
+      "variant": "baseline",
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_DIFFUSE_LIGHTING.html",
+      "entrySHA256": "50bd5427f2f133ec53ff399be44b6760492bd099181550a8915486bf65c9e84c",
+      "before": {
+        "raw": -0.08,
+        "view": -0.09090242263113167,
+        "body": null
+      },
+      "after": {
+        "raw": 0.24,
+        "view": 0.22925075383074653,
+        "body": null
+      },
+      "rawDelta": 0.32,
+      "viewDelta": 0.3201531764618782
+    },
+    {
+      "view": "portrait",
+      "variant": "candidate",
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_UPPER_ANCHORS.html",
+      "entrySHA256": "f2c97a196680317ad1de579737624642a2b8baa9fb4430f0f2ed9ff063d8a489",
+      "before": {
+        "raw": -0.08,
+        "view": -0.3855596710552662,
+        "body": {
+          "compositionFamily": "exploration",
+          "quietPitch": 2.9833333333333276,
+          "manualPitch": false,
+          "compositionOwner": "automatic",
+          "heldYaw": 0.04653804938401907,
+          "heldPitch": -0.2946572484241345,
+          "frames": 180,
+          "adjusted": 180,
+          "eligible": true,
+          "reason": "native body composition",
+          "positionDelta": 0,
+          "fov": 56.00000002374936,
+          "yawCorrection": -0.045071056450098124,
+          "pitchCorrection": -0.2950337062735625,
+          "unresolved": 0,
+          "fit": true,
+          "hasTarget": false,
+          "groundEnvelope": true
+        }
+      },
+      "after": {
+        "raw": 0.24,
+        "view": -0.06540649444233061,
+        "body": {
+          "compositionFamily": "exploration",
+          "quietPitch": 1.0666666666666678,
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": 0.04653804938401907,
+          "heldPitch": -0.2946572484241345,
+          "frames": 260,
+          "adjusted": 180,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 56.00000002374936,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        }
+      },
+      "rawDelta": 0.32,
+      "viewDelta": 0.3201531766129356
+    },
+    {
+      "view": "landscape",
+      "variant": "baseline",
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_DIFFUSE_LIGHTING.html",
+      "entrySHA256": "50bd5427f2f133ec53ff399be44b6760492bd099181550a8915486bf65c9e84c",
+      "before": {
+        "raw": -0.08,
+        "view": -0.09082161503363102,
+        "body": null
+      },
+      "after": {
+        "raw": 0.24,
+        "view": 0.2291475121481645,
+        "body": null
+      },
+      "rawDelta": 0.32,
+      "viewDelta": 0.31996912718179554
+    },
+    {
+      "view": "landscape",
+      "variant": "candidate",
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_UPPER_ANCHORS.html",
+      "entrySHA256": "f2c97a196680317ad1de579737624642a2b8baa9fb4430f0f2ed9ff063d8a489",
+      "before": {
+        "raw": -0.08,
+        "view": -0.38729720580554394,
+        "body": {
+          "compositionFamily": "exploration",
+          "quietPitch": 2.9833333333333276,
+          "manualPitch": false,
+          "compositionOwner": "automatic",
+          "heldYaw": 6.730727086790012e-16,
+          "heldPitch": -0.29647559077191293,
+          "frames": 180,
+          "adjusted": 180,
+          "eligible": true,
+          "reason": "native body composition",
+          "positionDelta": 0,
+          "fov": 56,
+          "yawCorrection": 0,
+          "pitchCorrection": -0.29647559077192087,
+          "unresolved": 0,
+          "fit": true,
+          "hasTarget": false,
+          "groundEnvelope": true
+        }
+      },
+      "after": {
+        "raw": 0.24,
+        "view": -0.06732807858891175,
+        "body": {
+          "compositionFamily": "exploration",
+          "quietPitch": 0.9833333333333347,
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": 6.730727086790012e-16,
+          "heldPitch": -0.29647559077191293,
+          "frames": 260,
+          "adjusted": 180,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 56,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        }
+      },
+      "rawDelta": 0.32,
+      "viewDelta": 0.3199691272166322
+    }
+  ],
+  "errors": []
+}

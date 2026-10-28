@@ -19,7 +19,7 @@ function load(){
 }
 async function ready(page,environment){
   if(!environment.current)return;
-  await page.waitForFunction(()=>window.verticalWorldLifeState?.().ready&&window.verticalAppearanceState?.().ready&&window.verticalViewsState?.().ready&&window.verticalHUDState?.().ready&&window.v02CameraRays&&(!window.verticalMaterialResponseState||verticalMaterialResponseState().ready),null,{timeout:120000});
+  await page.waitForFunction(()=>window.verticalWorldLifeState?.().ready&&window.verticalAppearanceState?.().ready&&window.verticalViewsState?.().ready&&window.verticalHUDState?.().ready&&window.v02CameraRays&&(!window.verticalMaterialResponseState||verticalMaterialResponseState().ready)&&(!window.verticalDiffuseLightingState||verticalDiffuseLightingState().ready),null,{timeout:120000});
   // Deferred view/UI scripts must finish bootstrapping before RAF is frozen.
   await page.evaluate(()=>renderNight(0));
 }
