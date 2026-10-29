@@ -1,0 +1,46 @@
+{
+  "status": "FAIL source room lighting",
+  "sourceMaster": "development/vertical-city-v02/blender/SaintMeridian_V02_Furnished_Public_Rooms.blend",
+  "sourceMasterSHA256": "fa776b198ec1abf35dcd851fc3d40dc920ada1f91e743a852548e8fd44e2143b",
+  "scriptSHA256": "96ce2fa34ef3de150d5629d4831eaf5a88dc88e91d386de6f480fcbd1f03148a",
+  "savedSceneSnapshotSHA256": "f9fc3f6eb98d8b4b86bda52d48798ef0a916adef36c2969a20ae196ccd05bf84",
+  "stages": [
+    {
+      "name": "baking isolated new-fixture diffuse",
+      "wallSeconds": 9.965835584327579,
+      "floor": 24,
+      "resolution": [
+        512,
+        512
+      ],
+      "samples": 512,
+      "sourceObjects": 30,
+      "temporaryGlobalLightingIsolation": true
+    }
+  ],
+  "rooms": [],
+  "exports": [],
+  "newDynamicLights": 0,
+  "scope": "Current furnished-room UV2, fixture-only atlases and matching reflection probes.\nDerived from the independently validated prior bake workflow. Current source\nincludes flared bridges, real seating and graph-backed public route boards.\n\nThe room source remains immutable. UV2, packed local-emitter atlases and a new96-strength ceiling-fixture material\nare added in a separate master. All original materials and global lights are\nrestored before source save; geometry, base UV, contacts and actors are unchanged.",
+  "luminaire": {
+    "material": "V02_east_loggia_luminaire_v2",
+    "emissionColor": [
+      0.8,
+      0.42,
+      0.14
+    ],
+    "emissionStrength": 96,
+    "previousStrength": 96,
+    "physicalFixtureIDs": [
+      "east-loggia-24-warm-ceiling-306.6",
+      "east-loggia-24-warm-ceiling-313.4",
+      "east-loggia-52-warm-ceiling-306.6",
+      "east-loggia-52-warm-ceiling-313.4",
+      "east-loggia-84-warm-ceiling-306.6",
+      "east-loggia-84-warm-ceiling-313.4"
+    ]
+  },
+  "bakeScope": "Only the six new room fixtures: full direct+indirect diffuse. Sun, sky, old emitters and global lights are excluded from these atlases.",
+  "stage": "baking isolated new-fixture diffuse",
+  "error": ""
+}

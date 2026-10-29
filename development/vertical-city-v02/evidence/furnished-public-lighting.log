@@ -1,0 +1,308 @@
+00:01.325  blend            | Read blend: "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/development/vertical-city-v02/blender/SaintMeridian_V02_Furnished_Public_Rooms.blend"
+/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/validate_upper_anchor_master.py:16: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  data={'useNodes':m.use_nodes,'diffuse':list(m.diffuse_color)}
+/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/validate_upper_anchor_master.py:17: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if m.use_nodes:data.update({'nodes':sorted([{'name':n.name,'type':n.bl_idname,'inputs':[(i.identifier,value(i.default_value))for i in n.inputs if hasattr(i,'default_value')],'image':n.image.name if getattr(n,'image',None)else None}for n in m.node_tree.nodes],key=lambda x:x['name']),'links':sorted((l.from_node.name,l.from_socket.identifier,l.to_node.name,l.to_socket.identifier)for l in m.node_tree.links)})
+/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/blender_furnished_public_lighting.py:113: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  black_world.use_nodes=True
+/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/blender_furnished_public_lighting.py:121: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if material==lamp or not material.use_nodes:
+baking isolated new-fixture diffuse {'floor': 24, 'resolution': [1024, 1024], 'samples': 512, 'sourceObjects': 30, 'temporaryGlobalLightingIsolation': True}
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+source diffuse atlas packed {'floor': 24, 'coveredPixels': 604326, 'litPixels': 606017}
+baking isolated new-fixture diffuse {'floor': 52, 'resolution': [1024, 1024], 'samples': 512, 'sourceObjects': 30, 'temporaryGlobalLightingIsolation': True}
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+source diffuse atlas packed {'floor': 52, 'coveredPixels': 604326, 'litPixels': 600004}
+baking isolated new-fixture diffuse {'floor': 84, 'resolution': [1024, 1024], 'samples': 512, 'sourceObjects': 30, 'temporaryGlobalLightingIsolation': True}
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+source diffuse atlas packed {'floor': 84, 'coveredPixels': 604326, 'litPixels': 588175}
+INFO Draco mesh compression is available, use library at /Applications/Blender.app/Contents/Resources/5.1/scripts/addons_core/io_scene_gltf2/libextern_draco.dylib
+15:50:55 | INFO: Starting glTF 2.0 export
+15:50:55 | INFO: Extracting primitive: east-loggia-24-back
+15:50:56 | INFO: Primitives created: 2
+15:50:56 | INFO: Extracting primitive: east-loggia-24-bench-307.4__furnished
+15:50:56 | INFO: Primitives created: 2
+15:50:56 | INFO: Extracting primitive: east-loggia-24-bench-312.6__furnished
+15:50:56 | INFO: Primitives created: 2
+15:50:56 | INFO: Extracting primitive: east-loggia-24-bridge-edge-308.46
+15:50:56 | INFO: Primitives created: 1
+15:50:56 | INFO: Extracting primitive: east-loggia-24-bridge-edge-308.46-cap
+15:50:56 | INFO: Primitives created: 1
+15:50:56 | INFO: Extracting primitive: east-loggia-24-bridge-edge-311.54
+15:50:56 | INFO: Primitives created: 1
+15:50:56 | INFO: Extracting primitive: east-loggia-24-bridge-edge-311.54-cap
+15:50:56 | INFO: Primitives created: 1
+15:50:56 | INFO: Extracting primitive: east-loggia-24-bridge-floor
+15:50:56 | INFO: Primitives created: 1
+15:50:56 | INFO: Extracting primitive: east-loggia-24-canopy-cyan
+15:50:56 | INFO: Primitives created: 1
+15:50:56 | INFO: Extracting primitive: east-loggia-24-canopy-post-100.85-306.15
+15:50:56 | INFO: Primitives created: 2
+15:50:56 | INFO: Extracting primitive: east-loggia-24-canopy-post-100.85-313.85
+15:50:56 | INFO: Primitives created: 2
+15:50:56 | INFO: Extracting primitive: east-loggia-24-canopy-post-104.1-306.15
+15:50:56 | INFO: Primitives created: 2
+15:50:56 | INFO: Extracting primitive: east-loggia-24-canopy-post-104.1-313.85
+15:50:56 | INFO: Primitives created: 2
+15:50:56 | INFO: Extracting primitive: east-loggia-24-floor-girder-306.8
+15:50:56 | INFO: Primitives created: 2
+15:50:56 | INFO: Extracting primitive: east-loggia-24-floor-girder-313.2
+15:50:56 | INFO: Primitives created: 2
+15:50:56 | INFO: Extracting primitive: east-loggia-24-foliage-306.7
+15:50:56 | INFO: Primitives created: 1
+15:50:56 | INFO: Extracting primitive: east-loggia-24-foliage-313.3
+15:50:56 | INFO: Primitives created: 1
+15:50:56 | INFO: Extracting primitive: east-loggia-24-front-glazing-307.3
+15:50:56 | INFO: Primitives created: 1
+15:50:56 | INFO: Extracting primitive: east-loggia-24-front-glazing-312.7
+15:50:56 | INFO: Primitives created: 1
+15:50:56 | INFO: Extracting primitive: east-loggia-24-planter-306.7
+15:50:56 | INFO: Primitives created: 2
+15:50:56 | INFO: Extracting primitive: east-loggia-24-planter-313.3
+15:50:56 | INFO: Primitives created: 2
+15:50:56 | INFO: Extracting primitive: east-loggia-24-roof
+15:50:56 | INFO: Primitives created: 3
+15:50:56 | INFO: Extracting primitive: east-loggia-24-room-floor
+15:50:56 | INFO: Primitives created: 1
+15:50:56 | INFO: Extracting primitive: east-loggia-24-side-glazing-306.05
+15:50:56 | INFO: Primitives created: 1
+15:50:56 | INFO: Extracting primitive: east-loggia-24-side-glazing-313.95
+15:50:56 | INFO: Primitives created: 1
+15:50:56 | INFO: Extracting primitive: east-loggia-24-warm-ceiling-306.6
+15:50:56 | INFO: Primitives created: 1
+15:50:56 | INFO: Extracting primitive: east-loggia-24-warm-ceiling-313.4
+15:50:56 | INFO: Primitives created: 1
+15:50:56 | INFO: Extracting primitive: east-loggia-24-wayfinding
+15:50:56 | INFO: Primitives created: 1
+15:50:56 | INFO: Extracting primitive: east-loggia-24-wayfinding__diagram
+15:50:56 | INFO: Primitives created: 1
+15:50:56 | INFO: Extracting primitive: east-loggia-24-wayfinding__wall-ribs
+15:50:56 | INFO: Primitives created: 1
+15:50:56 | INFO: Finished glTF 2.0 export in 1.070755958557129 s
+
+15:50:57 | INFO: Starting glTF 2.0 export
+15:50:58 | INFO: Extracting primitive: east-loggia-52-back
+15:50:58 | INFO: Primitives created: 2
+15:50:58 | INFO: Extracting primitive: east-loggia-52-bench-307.4__furnished
+15:50:58 | INFO: Primitives created: 2
+15:50:58 | INFO: Extracting primitive: east-loggia-52-bench-312.6__furnished
+15:50:58 | INFO: Primitives created: 2
+15:50:58 | INFO: Extracting primitive: east-loggia-52-bridge-edge-308.46
+15:50:58 | INFO: Primitives created: 1
+15:50:58 | INFO: Extracting primitive: east-loggia-52-bridge-edge-308.46-cap
+15:50:58 | INFO: Primitives created: 1
+15:50:58 | INFO: Extracting primitive: east-loggia-52-bridge-edge-311.54
+15:50:58 | INFO: Primitives created: 1
+15:50:58 | INFO: Extracting primitive: east-loggia-52-bridge-edge-311.54-cap
+15:50:58 | INFO: Primitives created: 1
+15:50:58 | INFO: Extracting primitive: east-loggia-52-bridge-floor
+15:50:58 | INFO: Primitives created: 1
+15:50:58 | INFO: Extracting primitive: east-loggia-52-canopy-cyan
+15:50:58 | INFO: Primitives created: 1
+15:50:58 | INFO: Extracting primitive: east-loggia-52-canopy-post-100.85-306.15
+15:50:58 | INFO: Primitives created: 2
+15:50:58 | INFO: Extracting primitive: east-loggia-52-canopy-post-100.85-313.85
+15:50:58 | INFO: Primitives created: 2
+15:50:58 | INFO: Extracting primitive: east-loggia-52-canopy-post-104.1-306.15
+15:50:58 | INFO: Primitives created: 2
+15:50:58 | INFO: Extracting primitive: east-loggia-52-canopy-post-104.1-313.85
+15:50:58 | INFO: Primitives created: 2
+15:50:58 | INFO: Extracting primitive: east-loggia-52-floor-girder-306.8
+15:50:58 | INFO: Primitives created: 2
+15:50:58 | INFO: Extracting primitive: east-loggia-52-floor-girder-313.2
+15:50:58 | INFO: Primitives created: 2
+15:50:58 | INFO: Extracting primitive: east-loggia-52-foliage-306.7
+15:50:58 | INFO: Primitives created: 1
+15:50:58 | INFO: Extracting primitive: east-loggia-52-foliage-313.3
+15:50:58 | INFO: Primitives created: 1
+15:50:58 | INFO: Extracting primitive: east-loggia-52-front-glazing-307.3
+15:50:58 | INFO: Primitives created: 1
+15:50:58 | INFO: Extracting primitive: east-loggia-52-front-glazing-312.7
+15:50:58 | INFO: Primitives created: 1
+15:50:58 | INFO: Extracting primitive: east-loggia-52-planter-306.7
+15:50:58 | INFO: Primitives created: 2
+15:50:58 | INFO: Extracting primitive: east-loggia-52-planter-313.3
+15:50:58 | INFO: Primitives created: 2
+15:50:58 | INFO: Extracting primitive: east-loggia-52-roof
+15:50:58 | INFO: Primitives created: 3
+15:50:58 | INFO: Extracting primitive: east-loggia-52-room-floor
+15:50:58 | INFO: Primitives created: 1
+15:50:58 | INFO: Extracting primitive: east-loggia-52-side-glazing-306.05
+15:50:58 | INFO: Primitives created: 1
+15:50:58 | INFO: Extracting primitive: east-loggia-52-side-glazing-313.95
+15:50:58 | INFO: Primitives created: 1
+15:50:58 | INFO: Extracting primitive: east-loggia-52-warm-ceiling-306.6
+15:50:58 | INFO: Primitives created: 1
+15:50:58 | INFO: Extracting primitive: east-loggia-52-warm-ceiling-313.4
+15:50:58 | INFO: Primitives created: 1
+15:50:58 | INFO: Extracting primitive: east-loggia-52-wayfinding
+15:50:58 | INFO: Primitives created: 1
+15:50:58 | INFO: Extracting primitive: east-loggia-52-wayfinding__diagram
+15:50:58 | INFO: Primitives created: 1
+15:50:58 | INFO: Extracting primitive: east-loggia-52-wayfinding__wall-ribs
+15:50:58 | INFO: Primitives created: 1
+15:50:58 | INFO: Finished glTF 2.0 export in 0.8534777164459229 s
+
+15:50:59 | INFO: Starting glTF 2.0 export
+15:51:00 | INFO: Extracting primitive: east-loggia-84-back
+15:51:00 | INFO: Primitives created: 2
+15:51:00 | INFO: Extracting primitive: east-loggia-84-bench-307.4__furnished
+15:51:00 | INFO: Primitives created: 2
+15:51:00 | INFO: Extracting primitive: east-loggia-84-bench-312.6__furnished
+15:51:00 | INFO: Primitives created: 2
+15:51:00 | INFO: Extracting primitive: east-loggia-84-bridge-edge-308.46
+15:51:00 | INFO: Primitives created: 1
+15:51:00 | INFO: Extracting primitive: east-loggia-84-bridge-edge-308.46-cap
+15:51:00 | INFO: Primitives created: 1
+15:51:00 | INFO: Extracting primitive: east-loggia-84-bridge-edge-311.54
+15:51:00 | INFO: Primitives created: 1
+15:51:00 | INFO: Extracting primitive: east-loggia-84-bridge-edge-311.54-cap
+15:51:00 | INFO: Primitives created: 1
+15:51:00 | INFO: Extracting primitive: east-loggia-84-bridge-floor
+15:51:00 | INFO: Primitives created: 1
+15:51:00 | INFO: Extracting primitive: east-loggia-84-canopy-cyan
+15:51:00 | INFO: Primitives created: 1
+15:51:00 | INFO: Extracting primitive: east-loggia-84-canopy-post-100.85-306.15
+15:51:00 | INFO: Primitives created: 2
+15:51:00 | INFO: Extracting primitive: east-loggia-84-canopy-post-100.85-313.85
+15:51:00 | INFO: Primitives created: 2
+15:51:00 | INFO: Extracting primitive: east-loggia-84-canopy-post-104.1-306.15
+15:51:00 | INFO: Primitives created: 2
+15:51:00 | INFO: Extracting primitive: east-loggia-84-canopy-post-104.1-313.85
+15:51:00 | INFO: Primitives created: 2
+15:51:00 | INFO: Extracting primitive: east-loggia-84-floor-girder-306.8
+15:51:00 | INFO: Primitives created: 2
+15:51:00 | INFO: Extracting primitive: east-loggia-84-floor-girder-313.2
+15:51:00 | INFO: Primitives created: 2
+15:51:00 | INFO: Extracting primitive: east-loggia-84-foliage-306.7
+15:51:00 | INFO: Primitives created: 1
+15:51:00 | INFO: Extracting primitive: east-loggia-84-foliage-313.3
+15:51:00 | INFO: Primitives created: 1
+15:51:00 | INFO: Extracting primitive: east-loggia-84-front-glazing-307.3
+15:51:00 | INFO: Primitives created: 1
+15:51:00 | INFO: Extracting primitive: east-loggia-84-front-glazing-312.7
+15:51:00 | INFO: Primitives created: 1
+15:51:00 | INFO: Extracting primitive: east-loggia-84-planter-306.7
+15:51:00 | INFO: Primitives created: 2
+15:51:00 | INFO: Extracting primitive: east-loggia-84-planter-313.3
+15:51:00 | INFO: Primitives created: 2
+15:51:00 | INFO: Extracting primitive: east-loggia-84-roof
+15:51:00 | INFO: Primitives created: 3
+15:51:00 | INFO: Extracting primitive: east-loggia-84-room-floor
+15:51:00 | INFO: Primitives created: 1
+15:51:00 | INFO: Extracting primitive: east-loggia-84-side-glazing-306.05
+15:51:00 | INFO: Primitives created: 1
+15:51:00 | INFO: Extracting primitive: east-loggia-84-side-glazing-313.95
+15:51:00 | INFO: Primitives created: 1
+15:51:00 | INFO: Extracting primitive: east-loggia-84-warm-ceiling-306.6
+15:51:00 | INFO: Primitives created: 1
+15:51:00 | INFO: Extracting primitive: east-loggia-84-warm-ceiling-313.4
+15:51:00 | INFO: Primitives created: 1
+15:51:00 | INFO: Extracting primitive: east-loggia-84-wayfinding
+15:51:00 | INFO: Primitives created: 1
+15:51:00 | INFO: Extracting primitive: east-loggia-84-wayfinding__diagram
+15:51:00 | INFO: Primitives created: 1
+15:51:00 | INFO: Extracting primitive: east-loggia-84-wayfinding__wall-ribs
+15:51:00 | INFO: Primitives created: 1
+15:51:00 | INFO: Finished glTF 2.0 export in 0.988123893737793 s
+06:55.869  blend            | Read blend: "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/development/vertical-city-v02/blender/SaintMeridian_V02_Furnished_Public_Lighting.blend"
+
+Info: Saved as "SaintMeridian_V02_Furnished_Public_Lighting.blend"
+saved and reopened source lighting master {'masterSHA256': '491bc0e50571debe92fc0707bc312fc28f97fb70b0bc4d581932f1bd15dc32b1'}
+rendering source room reflection {'floor': 24}
+07:19.374  render           | Saved: '/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/development/vertical-city-v02/evidence/furnished-public-rooms/room-24-radiance.exr'
+rendering source room reflection {'floor': 52}
+07:32.617  render           | Saved: '/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/development/vertical-city-v02/evidence/furnished-public-rooms/room-52-radiance.exr'
+rendering source room reflection {'floor': 84}
+07:44.748  render           | Saved: '/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/development/vertical-city-v02/evidence/furnished-public-rooms/room-84-radiance.exr'
+source room lighting complete {}
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

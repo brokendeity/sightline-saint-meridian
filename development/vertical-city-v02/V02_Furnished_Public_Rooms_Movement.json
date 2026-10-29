@@ -1,0 +1,1183 @@
+{
+  "status": "PASS nine native public-room entry/return/continuation cases with support, camera and body framing checks; visual/reference/release acceptance separate",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_FURNISHED_PUBLIC_ROOMS.html",
+  "entrySHA256": "0fe895d6f438c7a640f9903f98a28dd89229f2186e050093f4bbdf7cc847a289",
+  "manifestSHA256": "d5ecc2e184a9f31f46eff3495cd8aec6387a4614e0bfea92e9ccb493de1514d6",
+  "testSHA256": "6710443b8fe770f454b73bd3596fd3c0c40660bcd0bc1742cd54aa3b17a8cea3",
+  "scope": "Normal input enters and exits three actual public rooms, with desktop keyboard and simulated-controller portrait/landscape layouts. Initial fixture only is positioned directly. No physical-device, arbitrary route or visual-quality acceptance.",
+  "cases": [
+    {
+      "view": "desktop",
+      "driver": "keyboard",
+      "floor": 24,
+      "walking": true,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/desktop-24-gallery.png",
+          "sha256": "d9ae8c30d3f99641e24f88ba986cd2afb20854935d186e7a814d6806616143a3"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/desktop-24-room.png",
+          "sha256": "f1a4e81dcfa89138e7c388abcb1e0d72641e33a2c797179dee231d8506d710e3"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/desktop-24-return.png",
+          "sha256": "da221450a04e30008357ddbd6a5376d586df593497a64da06262d21e4c54cbdc"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/desktop-24-continue.png",
+          "sha256": "99099c2828c135db87ff6ec95858060cd70c63f19d4065665a03c2fe5d129f76"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/desktop-24-reverse-gallery.png",
+          "sha256": "0d85b1b25f458b20cba0f4d811ccf650a8d3f0354bdc609983d7c5c3a0613cc6"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/desktop-24-start-return.png",
+          "sha256": "8554638b73c2d63860e7083850c8d1627f0aae27d4172b4512b4a57c9aa8508e"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96,
+            24.42,
+            309.892499999991
+          ],
+          "frame": 392
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            24,
+            310
+          ],
+          "position": [
+            102.01500000000074,
+            24.42,
+            309.919999999991
+          ],
+          "frame": 644
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            309.919999999991
+          ],
+          "frame": 892
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            24,
+            326
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            325.9174999999764
+          ],
+          "frame": 1506
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            310.0849999999908
+          ],
+          "frame": 2114
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            24,
+            300
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            300.0824999999999
+          ],
+          "frame": 2510
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 0.9400411339898763,
+      "seconds": 41.833333333333336,
+      "frames": 2510
+    },
+    {
+      "view": "desktop",
+      "driver": "keyboard",
+      "floor": 52,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/desktop-52-gallery.png",
+          "sha256": "916fc50054c57208f9c97ee15a20af8d5a7048097f5db1633a7ad5a23656e98c"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/desktop-52-room.png",
+          "sha256": "54ae63533319027deb5b6369f4f64d69b1bd0658f2c9c3ba10c0eda0906ce1d3"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/desktop-52-return.png",
+          "sha256": "5a3e89e426637a6492e118cba196d3bd0b647af229d2ce6d49e233cb0e8e63a8"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/desktop-52-continue.png",
+          "sha256": "25a86461c39adf3bbc0e2fe3084176ef763c446fa2794db2cd51c4185308f662"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/desktop-52-reverse-gallery.png",
+          "sha256": "09b35300669982d0d75ac611c03c7a5ad6ff3f3645e81a20155872ec84e3bbdd"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/desktop-52-start-return.png",
+          "sha256": "2101b45680fc1a5366d3e1037095042a8efafabb2fd001aea6b5b877ec0d045a"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96,
+            52.42,
+            309.95500000000106
+          ],
+          "frame": 131
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            52,
+            310
+          ],
+          "position": [
+            101.99499999999998,
+            52.42,
+            309.95500000000106
+          ],
+          "frame": 226
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.11,
+            52.42,
+            309.95500000000106
+          ],
+          "frame": 320
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            52,
+            326
+          ],
+          "position": [
+            96.11,
+            52.42,
+            325.9600000000029
+          ],
+          "frame": 506
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.11,
+            52.42,
+            310.0650000000011
+          ],
+          "frame": 691
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            52,
+            300
+          ],
+          "position": [
+            96.11,
+            52.42,
+            300
+          ],
+          "frame": 823
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 0.8904683535404747,
+      "seconds": 13.716666666666667,
+      "frames": 823
+    },
+    {
+      "view": "desktop",
+      "driver": "keyboard",
+      "floor": 84,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/desktop-84-gallery.png",
+          "sha256": "18a64d123f777b1c304602126b2e78754fb1217cf28d413d8e4a7c987d5b16f2"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/desktop-84-room.png",
+          "sha256": "02a45faf46b99dfbdf7a3ad2934051a8b1b46950171ed21fc8cdd27408c4e2d7"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/desktop-84-return.png",
+          "sha256": "37b60e2aec8e2bb3b69a971cd997665b165428b3472335796d810a8493ec80ba"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/desktop-84-continue.png",
+          "sha256": "80aac4aa681a0504183b05d2dc6e82cd9b607fa5b0b1e651ac2065356b15dd83"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/desktop-84-reverse-gallery.png",
+          "sha256": "17b114d2f3703916879b11885e7f34d5fd8de17dab775ab47b0824000f456037"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/desktop-84-start-return.png",
+          "sha256": "0033e69d53a8ab221d5989e07b1e7dae20b6700aad60159191b5d6dd8794c01a"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96,
+            84.42,
+            309.95500000000106
+          ],
+          "frame": 131
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            84,
+            310
+          ],
+          "position": [
+            101.99499999999998,
+            84.42,
+            309.95500000000106
+          ],
+          "frame": 226
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.11,
+            84.42,
+            309.95500000000106
+          ],
+          "frame": 320
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            84,
+            326
+          ],
+          "position": [
+            96.11,
+            84.42,
+            325.9600000000029
+          ],
+          "frame": 506
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.11,
+            84.42,
+            310.0650000000011
+          ],
+          "frame": 691
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            84,
+            300
+          ],
+          "position": [
+            96.11,
+            84.42,
+            300
+          ],
+          "frame": 823
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 0.8900597580573264,
+      "seconds": 13.716666666666667,
+      "frames": 823
+    },
+    {
+      "view": "portrait",
+      "driver": "controller",
+      "floor": 24,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/portrait-24-gallery.png",
+          "sha256": "fc45b6cfba3bb131d08866b5fadaf3603e6eff0773e3ef61d5ebacd3d15b2149"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/portrait-24-room.png",
+          "sha256": "a122a7558a414a87bd39c3b612201facaa288f997d5427a9a255b77ceb38891a"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/portrait-24-return.png",
+          "sha256": "40f59d50a00343b279fe487f071644db44612ef4d81ce1ce2490138f3e33af11"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/portrait-24-continue.png",
+          "sha256": "a4abdd4b80fb631cc56acd1f48e1c498eae44693abf584266031464f81832fcc"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/portrait-24-reverse-gallery.png",
+          "sha256": "08f4ea7518101f0269585d8457851b9f69b2e7d3f6f0a1d193a3e2e34f13c9e7"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/portrait-24-start-return.png",
+          "sha256": "d246fc4c175b9c7a521e13351e4b77a5736dd2f241dbeff2978b1be1bc6a7195"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96,
+            24.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            24,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            24.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            24.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            24,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            24.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            24.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            24,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            24.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.0001130398217986,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "portrait",
+      "driver": "controller",
+      "floor": 52,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/portrait-52-gallery.png",
+          "sha256": "8ae067856cd3ec0b4535ba60df031b11119e49c1bb3b3f36cf82540d7d7b65a7"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/portrait-52-room.png",
+          "sha256": "531630d486f7d73b9d66620ecef0c9aba83b2e526e53e410bf87313d9d12472f"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/portrait-52-return.png",
+          "sha256": "782f624fb12afef8a26e67edb300af28b3303b91e65ca87b7e3165ae1db9011c"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/portrait-52-continue.png",
+          "sha256": "45d58037b311b0820255f582ad7033280f69a716b74356c3540677ada7a80811"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/portrait-52-reverse-gallery.png",
+          "sha256": "4ff3df3858eea7a3834f3266f379a0e7579f3bf480b291cb31bf59be569f4cbf"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/portrait-52-start-return.png",
+          "sha256": "bcb40c6b446fe014eee872b86e0a305301f357e7c6ed16865b85dabcf7a24ec8"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96,
+            52.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            52,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            52.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            52.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            52,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            52.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            52.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            52,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            52.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.0311195992159452,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "portrait",
+      "driver": "controller",
+      "floor": 84,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/portrait-84-gallery.png",
+          "sha256": "0644c5f6d5edc36e9fcfcf8ceff1b49c7367df0d42e48a5dc516179de88f13e3"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/portrait-84-room.png",
+          "sha256": "1998c64dc2713decd19159bed6c2427bfed0be579f9b8c99ecac5eeea21b1bdc"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/portrait-84-return.png",
+          "sha256": "dec36642fbcfddd4b0ffa7f23f281a9789e257de74b7be34b05303d512b6169f"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/portrait-84-continue.png",
+          "sha256": "cf67ee7ab5e1c47c0ea53a811d34be6ce711acb1e297be8a75e1b744347a2e2a"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/portrait-84-reverse-gallery.png",
+          "sha256": "c1bb9af2f30c8687d5b977a8778d6e17c91357fd15758ad6182252ce14f1cc18"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/portrait-84-start-return.png",
+          "sha256": "5ff9ce11b210ade9ffec6214e7e5faeeaa07149b8a0c02c57b1dff7e31406a6b"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96,
+            84.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            84,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            84.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            84.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            84,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            84.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            84.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            84,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            84.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.0039923591208997,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "landscape",
+      "driver": "controller",
+      "floor": 24,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/landscape-24-gallery.png",
+          "sha256": "e3f8fa9525627d717da64f168c3a4eb68ed27c3e5ceb0014faca89a541cdbd90"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/landscape-24-room.png",
+          "sha256": "91e14d6444dd3338f5dbdbd59682d631041bfebf2d880d9c981bd6c48803aa01"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/landscape-24-return.png",
+          "sha256": "ba8d6df91075b953947ade1e3d3702d24ac723c033600ecd5f5789a0e45648be"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/landscape-24-continue.png",
+          "sha256": "0c77e9723e60a3c117869094243b0992d9a01dd2fec2f01b8ae686432b234cc9"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/landscape-24-reverse-gallery.png",
+          "sha256": "f470fdadffdfa6fbae1855e728cb4b0ed831aae7235f22ae179e050a74783290"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/landscape-24-start-return.png",
+          "sha256": "c623dda42ae3d56d53e1becda4c0da3392012996fd605d941f7cc15ac2338250"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96,
+            24.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            24,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            24.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            24.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            24,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            24.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            24.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            24,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            24.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 0.9316523455802239,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "landscape",
+      "driver": "controller",
+      "floor": 52,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/landscape-52-gallery.png",
+          "sha256": "398a00de948555bbd338f2203f27df66c41c3262e59ba527a3c96e9bb5ef36a2"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/landscape-52-room.png",
+          "sha256": "caec566cf0fc4154c128f2965812892c84afa738c48233f8168090aede9e9b6c"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/landscape-52-return.png",
+          "sha256": "628e0c8ef976e025b977e3f5326758676419ddd24eae539bee0c8dbd0f99c8a4"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/landscape-52-continue.png",
+          "sha256": "5405023a2f9f0eadda6a77ba2636d6d75d9d831b92273bdc08e33a33b64f6a7e"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/landscape-52-reverse-gallery.png",
+          "sha256": "4d65bc6fc6a40954b0e3c9f8b667463e338a2003f23bdf1801140bbbceb048c9"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/landscape-52-start-return.png",
+          "sha256": "c4cb153da5d09f68ad6ed224e81ed6928ae2a8bcb807323b90f60135f24e0c70"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96,
+            52.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            52,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            52.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            52.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            52,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            52.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            52.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            52,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            52.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.0003399240424267,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "landscape",
+      "driver": "controller",
+      "floor": 84,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/landscape-84-gallery.png",
+          "sha256": "5a715abe1e35eeb55bcdda78bc09b993d2ea85b3ce8f7c3f4dc9952b0f2c2b84"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/landscape-84-room.png",
+          "sha256": "005099c781ef782a91751e2c34e868b496dcde82027e1434f1ee93ac2f748f7f"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/landscape-84-return.png",
+          "sha256": "7c7e26dc55f1ce888019eda2649d0ce93b8b63887ecb79ab2ef8b274ed8253f2"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/landscape-84-continue.png",
+          "sha256": "c41d4bef9f6c79965d122f2e8a4da9773496e3e988c6e9a9f6536b1167154ddd"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/landscape-84-reverse-gallery.png",
+          "sha256": "18d2864b025202d93af77bc0fcc48077a68a03e97ec055331f7dcf925b3f55d0"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/furnished-public-room-movement/landscape-84-start-return.png",
+          "sha256": "865d88206f0354dce6aef8aa9cab8d5e25fa1389a107d28f1017422ec466474d"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96,
+            84.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            84,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            84.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            84.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            84,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            84.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            84.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            84,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            84.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.5532143655531745,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    }
+  ],
+  "errors": [],
+  "traces": "development/vertical-city-v02/evidence/furnished-public-room-movement/traces.json.gz",
+  "tracesSHA256": "190bf42dea838b59128ff21086a96f47a75a9d7b396b723559b72ab830641f36"
+}

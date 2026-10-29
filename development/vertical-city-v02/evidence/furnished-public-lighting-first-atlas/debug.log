@@ -1,0 +1,52 @@
+00:01.415  blend            | Read blend: "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/development/vertical-city-v02/blender/SaintMeridian_V02_Furnished_Public_Rooms.blend"
+/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/validate_upper_anchor_master.py:16: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  data={'useNodes':m.use_nodes,'diffuse':list(m.diffuse_color)}
+/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/validate_upper_anchor_master.py:17: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if m.use_nodes:data.update({'nodes':sorted([{'name':n.name,'type':n.bl_idname,'inputs':[(i.identifier,value(i.default_value))for i in n.inputs if hasattr(i,'default_value')],'image':n.image.name if getattr(n,'image',None)else None}for n in m.node_tree.nodes],key=lambda x:x['name']),'links':sorted((l.from_node.name,l.from_socket.identifier,l.to_node.name,l.to_socket.identifier)for l in m.node_tree.links)})
+/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/debug_furnished_bake.py:113: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  black_world.use_nodes=True
+/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/debug_furnished_bake.py:121: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if material==lamp or not material.use_nodes:
+baking isolated new-fixture diffuse {'floor': 24, 'resolution': [512, 512], 'samples': 512, 'sourceObjects': 30, 'temporaryGlobalLightingIsolation': True}
+BAKE_DIAGNOSTIC [('east-loggia-24-room-floor', True, [('Metres_2_4', 120, 168.24135598843628), ('V02_East_Diffuse', 120, 111.33230633654684)]), ('east-loggia-24-bridge-floor', True, [('Metres_2_4', 120, 67.09437224972689), ('V02_East_Diffuse', 120, 123.97953587241057)]), ('east-loggia-24-bridge-edge-308.46', True, [('Metres_2_4', 24, 7.95757552449675), ('V02_East_Diffuse', 24, 21.393989236771276)]), ('east-loggia-24-bridge-edge-308.46-cap', True, [('Metres_2_4', 24, 5.709862418932777), ('V02_East_Diffuse', 24, 23.557868393329365)]), ('east-loggia-24-bridge-edge-311.54', True, [('Metres_2_4', 24, 7.95757552449675), ('V02_East_Diffuse', 24, 22.263196565102824)]), ('east-loggia-24-bridge-edge-311.54-cap', True, [('Metres_2_4', 24, 5.709862418932777), ('V02_East_Diffuse', 24, 23.80243847585311)]), ('east-loggia-24-roof', True, [('Metres_2_4', 448, 429.61286499475193), ('V02_East_Diffuse', 448, 270.2023985357073)]), ('east-loggia-24-back', True, [('Metres_2_4', 120, 172.18768576642012), ('V02_East_Diffuse', 120, 113.81128854907381)]), ('east-loggia-24-side-glazing-306.05', True, [('Metres_2_4', 24, 20.812210340448885), ('V02_East_Diffuse', 24, 18.82228691060006)]), ('east-loggia-24-side-glazing-313.95', True, [('Metres_2_4', 24, 20.812210340448885), ('V02_East_Diffuse', 24, 18.280157086350265)]), ('east-loggia-24-front-glazing-307.3', True, [('Metres_2_4', 24, 18.754837223309863), ('V02_East_Diffuse', 24, 21.652364800711783)]), ('east-loggia-24-front-glazing-312.7', True, [('Metres_2_4', 24, 18.754837223309863), ('V02_East_Diffuse', 24, 20.469631682988425)]), ('east-loggia-24-canopy-post-100.85-306.15', True, [('Metres_2_4', 120, 69.5062643851315), ('V02_East_Diffuse', 120, 121.05878228483898)]), ('east-loggia-24-canopy-post-100.85-313.85', True, [('Metres_2_4', 120, 69.5062643851315), ('V02_East_Diffuse', 120, 120.76758776956787)]), ('east-loggia-24-canopy-post-104.1-306.15', True, [('Metres_2_4', 120, 69.5062643851315), ('V02_East_Diffuse', 120, 120.84664535445468)]), ('east-loggia-24-canopy-post-104.1-313.85', True, [('Metres_2_4', 120, 69.5062643851315), ('V02_East_Diffuse', 120, 123.2968860896035)]), ('east-loggia-24-floor-girder-306.8', True, [('Metres_2_4', 120, 62.39352743772757), ('V02_East_Diffuse', 120, 130.0544857861612)]), ('east-loggia-24-floor-girder-313.2', True, [('Metres_2_4', 120, 62.39352743772757), ('V02_East_Diffuse', 120, 131.62094472542822)]), ('east-loggia-24-bench-307.4', True, [('Metres_2_4', 1200, 264.3720321608825), ('V02_East_Diffuse', 1200, 1155.162452702857)]), ('east-loggia-24-bench-312.6', True, [('Metres_2_4', 1200, 264.3720321608825), ('V02_East_Diffuse', 1200, 1159.8208762181982)]), ('east-loggia-24-planter-306.7', True, [('Metres_2_4', 120, 34.74812758915849), ('V02_East_Diffuse', 120, 124.78094327376608)]), ('east-loggia-24-foliage-306.7', True, [('Metres_2_4', 216, 28.384235289629633), ('V02_East_Diffuse', 216, 243.6682262784679)]), ('east-loggia-24-planter-313.3', True, [('Metres_2_4', 120, 34.74812758915849), ('V02_East_Diffuse', 120, 121.05236789290795)]), ('east-loggia-24-foliage-313.3', True, [('Metres_2_4', 216, 28.384235289629633), ('V02_East_Diffuse', 216, 244.67713279831108)]), ('east-loggia-24-warm-ceiling-306.6', True, [('Metres_2_4', 24, 10.974826285916865), ('V02_East_Diffuse', 24, 22.892600391290692)]), ('east-loggia-24-warm-ceiling-313.4', True, [('Metres_2_4', 24, 10.974826285916865), ('V02_East_Diffuse', 24, 22.94951592293481)]), ('east-loggia-24-canopy-cyan', True, [('Metres_2_4', 24, 27.410377209881517), ('V02_East_Diffuse', 24, 22.094115997255347)]), ('east-loggia-24-wayfinding', True, [('Metres_2_4', 120, 70.57892493649376), ('V02_East_Diffuse', 120, 103.15993524821883)]), ('east-loggia-24-wayfinding-diagram', True, [('Wayfinding_UV', 4, 3.414213562373095), ('V02_East_Diffuse', 4, 1.7159948504426055)]), ('east-loggia-24-wayfinding-wall-ribs', True, [('Metres_2_4', 1680, 1707.7360300395997), ('V02_East_Diffuse', 1680, 1608.9241344029044)])]
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE_IMAGE V02 east room 24 diffuse bake 0.0 0
+Traceback (most recent call last):
+  File "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/debug_furnished_bake.py", line 198, in <module>
+    raise RuntimeError('Controlled diagnostic stop after first8sample bake; not an acceptance result')
+RuntimeError: Controlled diagnostic stop after first8sample bake; not an acceptance result
+Info: Saved as "debug-post-bake.blend"
+
+Error: script failed, file: 'scripts/vertical-v02/debug_furnished_bake.py', exiting.
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

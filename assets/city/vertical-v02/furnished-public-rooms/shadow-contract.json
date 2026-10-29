@@ -1,0 +1,48 @@
+{
+  "master": "development/vertical-city-v02/blender/SaintMeridian_V02_Furnished_Public_Lighting.blend",
+  "parentMaster": "development/vertical-city-v02/blender/SaintMeridian_V02_Slender_Crossings.blend",
+  "parentMasterSHA256": "aedec72b9337394f7d47f0cac8b403a26a1eb6ba7f4c4d9036e4cfc2fdf89ec1",
+  "policy": {
+    "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+    "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence.",
+    "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+    "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+    "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask."
+  },
+  "runtimeShadow": {
+    "bias": -2e-05,
+    "center": [
+      80,
+      75,
+      340
+    ],
+    "far": 1400,
+    "filter": "Four nearest depth comparisons with bilinear weights; existing dynamic-light filters remain unchanged",
+    "halfHeight": 210,
+    "halfWidth": 220,
+    "lightDistance": 650,
+    "mapSize": 2048,
+    "near": 0.5,
+    "normalBias": 0.04,
+    "radius": -1
+  },
+  "schema": "sm-v02-existing-rim-shadow-1",
+  "sourceLight": {
+    "castsSourceShadows": true,
+    "color": [
+      1.0,
+      0.6784313917160034,
+      0.4627451002597809
+    ],
+    "intensity": 0.25,
+    "name": "Study directional 3",
+    "sourceAngularDiameterRadians": 0.06981316953897476,
+    "toward": [
+      -0.4696362018585205,
+      -0.4957272410392761,
+      -0.7305453419685364
+    ],
+    "type": "SUN"
+  },
+  "masterSHA256": "491bc0e50571debe92fc0707bc312fc28f97fb70b0bc4d581932f1bd15dc32b1"
+}

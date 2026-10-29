@@ -1,0 +1,20 @@
+00:01.753  blend            | Read blend: "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/development/vertical-city-v02/blender/SaintMeridian_V02_Furnished_Public_Rooms.blend"
+/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/validate_upper_anchor_master.py:16: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  data={'useNodes':m.use_nodes,'diffuse':list(m.diffuse_color)}
+/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/validate_upper_anchor_master.py:17: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if m.use_nodes:data.update({'nodes':sorted([{'name':n.name,'type':n.bl_idname,'inputs':[(i.identifier,value(i.default_value))for i in n.inputs if hasattr(i,'default_value')],'image':n.image.name if getattr(n,'image',None)else None}for n in m.node_tree.nodes],key=lambda x:x['name']),'links':sorted((l.from_node.name,l.from_socket.identifier,l.to_node.name,l.to_socket.identifier)for l in m.node_tree.links)})
+/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/validate_furnished_public_lighting.py:39: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world_data={'name':world.name,'useNodes':world.use_nodes,'color':list(world.color)}
+/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/validate_furnished_public_lighting.py:40: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  if world.use_nodes:
+00:09.014  blend            | Read blend: "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/development/vertical-city-v02/blender/SaintMeridian_V02_Furnished_Public_Lighting.blend"
+Traceback (most recent call last):
+  File "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/validate_furnished_public_lighting.py", line 196, in <module>
+    assert not overlaps, ('UV2 islands overlap',room['floor'],overlaps[:8])
+           ^^^^^^^^^^^^
+AssertionError: ('UV2 islands overlap', 24, [{'a': 861, 'b': 744, 'uvArea': 6.687786380243921e-09}, {'a': 861, 'b': 745, 'uvArea': 1.352567391421644e-08}, {'a': 869, 'b': 744, 'uvArea': 1.1588376397364542e-08}, {'a': 869, 'b': 745, 'uvArea': 8.625083869340244e-09}, {'a': 870, 'b': 744, 'uvArea': 7.294010784253402e-09}, {'a': 870, 'b': 745, 'uvArea': 1.2919275177436518e-08}, {'a': 883, 'b': 744, 'uvArea': 1.2209327826528948e-08}, {'a': 883, 'b': 745, 'uvArea': 8.002322055000732e-09}])
+
+Error: script failed, file: 'scripts/vertical-v02/validate_furnished_public_lighting.py', exiting.
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

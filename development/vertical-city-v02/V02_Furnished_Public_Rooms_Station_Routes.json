@@ -1,0 +1,205 @@
+{
+  "status": "PASS all three current approaches, zero/full legal bank starts",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_FURNISHED_PUBLIC_ROOMS.html",
+  "entrySHA256": "0fe895d6f438c7a640f9903f98a28dd89229f2186e050093f4bbdf7cc847a289",
+  "manifest": "assets/city/vertical-v02/furnished-public-rooms/runtime/manifest.json",
+  "manifestSHA256": "d5ecc2e184a9f31f46eff3495cd8aec6387a4614e0bfea92e9ccb493de1514d6",
+  "hashes": {
+    "SIGHTLINE_SAINT_MERIDIAN_V02_FURNISHED_PUBLIC_ROOMS.html": "0fe895d6f438c7a640f9903f98a28dd89229f2186e050093f4bbdf7cc847a289",
+    "assets/city/vertical-v02/furnished-public-rooms/runtime/manifest.json": "d5ecc2e184a9f31f46eff3495cd8aec6387a4614e0bfea92e9ccb493de1514d6",
+    "scripts/vertical-v02/station_route_environment.cjs": "3a7de8bd6984a7c77f453e6dd420a4d4a24e3e03572b40330a690e08de615670",
+    "scripts/vertical-v02/route_camera_probe.cjs": "180467f581d7948bdf854280c9c2b7886b4270810b763376e1c2b5c7aa6dae45",
+    "scripts/vertical-v02/test_public_station.cjs": "d5f4d5cd6baab74f16007b3c2775364161e25e1cedb08ba3e5f1068310cf3875",
+    "scripts/vertical-v02/test_momentum_route.cjs": "a929d8d783e72154fd20c8221b43e4c14aab448a233e8fd041bfe3d7eb89216d",
+    "scripts/vertical-v02/test_mastery_route.cjs": "42dc9621cd9c3d88f829f96551b6bd267a2ada3e0033958bbf1965892e4b3473",
+    "scripts/vertical-v02/run_current_station_routes.py": "b81b232b7770a79878d4a85c640ac2b444f91ac33fc564ab2e4b77fb3ef3e9b6",
+    "scripts/game_motion_loadout.js": "4c83cf50c8646ebd1ca39e80399a8d4271d2352df7c9e5a9d73f78460cf93eb8",
+    "scripts/game_vertical_encounters_v02.js": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+    "scripts/game_vertical_market_v02.js": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+    "scripts/game_vertical_pursuit_v02.js": "d26199eb208a5d3fc21ad26f70c97471bd14b8b3b8370dfd2611c7b0c0344d58",
+    "scripts/game_vertical_discovery_v02.js": "7cfc8878103a13115fb9778c4d8ee15dadc0147a0ace29433a14a2ba651c0679",
+    "scripts/vertical_transit_core_v02.js": "75b8e9f71b7853f586f42b5d2b031140a7851711d8f05646ba9de57ab3a88353",
+    "scripts/game_vertical_transit_v02.js": "0403f887673e0008f7e493a916bcbc8502794978f048b2e8ca806fe5de731ecb",
+    "scripts/game_aerial_traffic_core_v02.js": "e518c60772284ec255757bca341a3c4a420d095baa10011e38426d621e70e811",
+    "scripts/game_vertical_furnished_room_life_v02.js": "9e5afbc361d7efa029b436da8586f7d9f95f45cfd01056a49e30b8c778b32386",
+    "scripts/game_vertical_appearance_facade_v02.js": "2705ecadebe14ebddf1756ba5b3cfb7f6b955ac6955ccae9ec1480d08bb245ae",
+    "scripts/game_vertical_loggia_hud_v02.js": "73ffa63e9ab875bded2f37dd40fc6afc4fe2537bf850bebb14b01bd3684386dc",
+    "scripts/game_vertical_views_v02.js": "0f2ee6e9f3c8d555c8c5189d076c4b8daf33f2d15b0c672edbf1e8aa2a4d9f21",
+    "scripts/v02_exact_camera_rays.js": "bd9856c17f746f8741d522ce53f47428b7d6bba4ad953ed4ca094a56f5ade670",
+    "scripts/game_vertical_loggia_material_v02.js": "062587fe36e8b753d841adf836ea04ad345e1749f7843c967f91efd854fc3c4f",
+    "scripts/game_vertical_diffuse_lighting_v02.js": "99bb11e0709d8b6372731bc4c17a05cd3fc7d090f85a876e1f84822c34ce644d",
+    "scripts/game_v02_body_framing_v2.js": "ceafb64874a814604e8d92f17f96f9683d4c93fc7bf2b676120d4e5990718a13",
+    "scripts/game_v02_body_notice.js": "704c5f9a3bc53faac7d4084583c8063ae1b1c66bdcf6e4d975f340dbd985e7c2",
+    "scripts/game_v02_facade_cassettes.js": "a1ee9a0bc5084b82763ac9dc2ab1bd6e025b1d5aac4b05d7509098d41f3b4327",
+    "scripts/game_v02_furnished_public_lighting.js": "fef901bdd9bf5c8eeba911ec9bd4c749d71d5b40e9a00228833d0ba6d48ebf6e",
+    "scripts/game_v02_surface_normals.js": "c29ac5758f444285b1b35577991b918287d33446db4954fb2595396f46762e04",
+    "scripts/game_v02_furnished_room_shadows.js": "0fc81f8d0d0b413127023db73f5d40ca711ee08ac22f539eb671e163af147874"
+  },
+  "scope": "Six uninterrupted normal-input station approaches on the current combined city. One labelled starting fixture per run; full bank is earned by actual running. Not full city/release/performance acceptance.",
+  "jobs": [
+    {
+      "name": "momentum-zero",
+      "file": "test_momentum_route.cjs",
+      "environment": {
+        "FULL_ROUTE": "1",
+        "RUN_PREFIX": "flow"
+      },
+      "returncode": 0,
+      "reused": false,
+      "wallSeconds": 62.6048747911118,
+      "report": "evidence/furnished-public-rooms-station-routes/momentum-zero/V02_Momentum_Full_Zero_Flow.json",
+      "reportSHA256": "e7c693e6a2e904f4f18e6e343e91ef7590e5af47fc1367d26a0d7f43c5b92100",
+      "trace": "evidence/furnished-public-rooms-station-routes/momentum-zero/V02_Momentum_Full_Zero_Flow.trace.json.gz",
+      "traceSHA256": "7ab264135da0d02e2a482582d3954351c2b2d95fd9ef16460982796ba32457ff",
+      "seconds": 74.15,
+      "distance": 701.916968171881,
+      "initialBank": 0,
+      "finalPosition": [
+        66.46213990813789,
+        100.42,
+        375.83778188612973
+      ],
+      "cameraVisibility": {
+        "scope": "Sampled animated head/hips visibility at10Hz during fast/airborne non-aim motion; not full-body, HUD, between-sample or hardware certification.",
+        "samples": 468,
+        "problemSamples": 0,
+        "captures": []
+      }
+    },
+    {
+      "name": "mastery-zero",
+      "file": "test_mastery_route.cjs",
+      "environment": {
+        "FULL_ROUTE": "1"
+      },
+      "returncode": 0,
+      "reused": false,
+      "wallSeconds": 91.5862342081964,
+      "report": "evidence/furnished-public-rooms-station-routes/mastery-zero/V02_Mastery_Full_Zero.json",
+      "reportSHA256": "6d915befd4d861697c4eaa219af92510ea82ab0337b428b7eae6518ac3a84e79",
+      "trace": "evidence/furnished-public-rooms-station-routes/mastery-zero/V02_Mastery_Full_Zero.trace.json.gz",
+      "traceSHA256": "9a00d797af1cbee773e6be5a3902ee6c4fc3c7349be72372b77a9ce9976177b0",
+      "seconds": 106.91666666666667,
+      "distance": 934.0862422249056,
+      "initialBank": 0,
+      "finalPosition": [
+        66.4682122639836,
+        100.42,
+        375.8385281969784
+      ],
+      "cameraVisibility": {
+        "scope": "Sampled animated head/hips visibility at10Hz during fast/airborne non-aim motion; not full-body, HUD, between-sample or hardware certification.",
+        "samples": 695,
+        "problemSamples": 0,
+        "captures": []
+      }
+    },
+    {
+      "name": "momentum-banked",
+      "file": "test_momentum_route.cjs",
+      "environment": {
+        "FULL_ROUTE": "1",
+        "RUN_PREFIX": "flow",
+        "BANKED_START": "1"
+      },
+      "returncode": 0,
+      "reused": false,
+      "wallSeconds": 78.15525349974632,
+      "report": "evidence/furnished-public-rooms-station-routes/momentum-banked/V02_Momentum_Full_Banked_Flow.json",
+      "reportSHA256": "8582c8096600df2e87d7ebdb206261482aa223206d6efaca3ab6c1b7db2acf76",
+      "trace": "evidence/furnished-public-rooms-station-routes/momentum-banked/V02_Momentum_Full_Banked_Flow.trace.json.gz",
+      "traceSHA256": "ee2ef86793abf7054d8e0d13ebaca06e6c7809176c0d791083a043dd4042bb66",
+      "seconds": 73.56666666666666,
+      "distance": 701.7494774009105,
+      "initialBank": 5,
+      "finalPosition": [
+        66.46213990813789,
+        100.42,
+        375.83778188612973
+      ],
+      "cameraVisibility": {
+        "scope": "Sampled animated head/hips visibility at10Hz during fast/airborne non-aim motion; not full-body, HUD, between-sample or hardware certification.",
+        "samples": 509,
+        "problemSamples": 0,
+        "captures": []
+      }
+    },
+    {
+      "name": "mastery-brake",
+      "file": "test_mastery_route.cjs",
+      "environment": {
+        "FULL_ROUTE": "1",
+        "BANKED_START": "1",
+        "USE_BRAKE": "1"
+      },
+      "returncode": 0,
+      "reused": false,
+      "wallSeconds": 102.23123924992979,
+      "report": "evidence/furnished-public-rooms-station-routes/mastery-brake/V02_Mastery_Full_Banked_Brake.json",
+      "reportSHA256": "8fc07b627baa7f71089f88d7b6217702483f8b22351446307167919629b0a0d5",
+      "trace": "evidence/furnished-public-rooms-station-routes/mastery-brake/V02_Mastery_Full_Banked_Brake.trace.json.gz",
+      "traceSHA256": "79f1baff3627dc7f7671ab8fd79d5ac7f37252271bc760f06e8780b4a17aa6a3",
+      "seconds": 106.65,
+      "distance": 933.8729227780964,
+      "initialBank": 5,
+      "finalPosition": [
+        66.46611548671488,
+        100.42,
+        375.8282006148342
+      ],
+      "cameraVisibility": {
+        "scope": "Sampled animated head/hips visibility at10Hz during fast/airborne non-aim motion; not full-body, HUD, between-sample or hardware certification.",
+        "samples": 737,
+        "problemSamples": 0,
+        "captures": []
+      }
+    },
+    {
+      "name": "public-zero",
+      "file": "test_public_station.cjs",
+      "environment": {
+        "RUN_PUBLIC": "1"
+      },
+      "returncode": 0,
+      "reused": false,
+      "wallSeconds": 102.07510854210705,
+      "report": "evidence/furnished-public-rooms-station-routes/public-zero/V02_Public_Route_Run_Validation.json",
+      "reportSHA256": "e7943ed2be64854756b1d24f6aff9b5fe9fd40ede0a4f6f3205036a02add0bca",
+      "trace": "evidence/furnished-public-rooms-station-routes/public-zero/V02_Public_Route_Run_Validation.trace.json.gz",
+      "traceSHA256": "b04b06cc45e216c9d5888863bb80274bcaf0d3db61aa4eda8b47e0639c2b27aa",
+      "seconds": 135.33333333333334,
+      "distance": 774.3808671453033,
+      "initialBank": 0,
+      "finalPosition": [
+        66.42999999999996,
+        100.42,
+        375.91500000002014
+      ],
+      "cameraVisibility": null
+    },
+    {
+      "name": "public-banked",
+      "file": "test_public_station.cjs",
+      "environment": {
+        "RUN_PUBLIC": "1",
+        "BANKED_START": "1"
+      },
+      "returncode": 0,
+      "reused": false,
+      "wallSeconds": 110.15249970788136,
+      "report": "evidence/furnished-public-rooms-station-routes/public-banked/V02_Public_Route_Run_Validation.json",
+      "reportSHA256": "cae9bf8d571c0e5731b6739c3081a6e685410fbe2f962f19e1a066d2a8f50049",
+      "trace": "evidence/furnished-public-rooms-station-routes/public-banked/V02_Public_Route_Run_Validation.trace.json.gz",
+      "traceSHA256": "566d6c1001cfaf5f7acb60cf283110aca1a43867e81003ef705e42502baf8fed",
+      "seconds": 135.08333333333334,
+      "distance": 773.9782163119702,
+      "initialBank": 5,
+      "finalPosition": [
+        66.42999999999996,
+        100.42,
+        375.94219083335355
+      ],
+      "cameraVisibility": null
+    }
+  ]
+}
