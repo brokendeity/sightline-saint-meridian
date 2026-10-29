@@ -1,0 +1,21 @@
+START momentum-zero
+ground approach start {"name":"ground approach start","frame":2,"p":[55,0.42,210],"clock":0.08333333333333333,"message":""}
+public A 0 to 24 {"name":"public A 0 to 24","frame":692,"p":[61.1590031344088,24.42,215.5043200879496],"clock":11.583333333333488,"message":""}
+public A 24 to 52 {"name":"public A 24 to 52","frame":1555,"p":[61.05860536534933,52.42,215.5007294679946],"clock":25.966666666666473,"message":""}
+public A 52 to 84 {"name":"public A 52 to 84","frame":2370,"p":[61.08052229875829,84.42,215.50031104383604],"clock":39.54999999999904,"message":""}
+courtyard reached from ground {"name":"courtyard reached from ground","frame":2704,"p":[55.00013491735099,84.42,292.8528256107442],"clock":45.11666666666539,"message":""}
+initial launch court {"name":"initial launch court","frame":2705,"p":[55.00013491735099,84.42,292.8528256107442],"clock":45.133333333332054,"message":""}
+first cartridge A {"name":"first cartridge A","frame":2844,"p":[55.00013491735099,84.42,292.8528256107442],"clock":46.53999999999882,"message":"POINT A ATTACHED · AIM B"}
+first rail constructed {"name":"first rail constructed","frame":2994,"p":[55.00013491735099,84.42,292.8528256107442],"clock":48.3033333333322,"message":"blocked-path"}
+first acceleration start {"name":"first acceleration start","frame":3138,"p":[46.39004693668464,84.42,282.90711771236636],"clock":50.70333333333206,"message":"blocked-path"}
+AssertionError [ERR_ASSERTION]: No momentum catch {"frame":0,"p":[54.96740917443648,84.42,294.95422541650817],"v":[-9.490861248289795,0,-13.330138562228495],"grounded":true,"mode":"GROUND","trauma":0,"rail":null,"rails":[],"anchors":[],"bank":5,"releases":[],"clock":56.08666666666509,"message":"AIM AT A SOLID SURFACE","deployment":"attached","precision":false,"source":"traversal-locomotion-parkourSprint","camera":[51.23997278487903,86.05559005513011,292.2445961085876]}
+    at ride (/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/test_momentum_route.cjs:22:1)
+    at async /Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/test_momentum_route.cjs:36:190 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+

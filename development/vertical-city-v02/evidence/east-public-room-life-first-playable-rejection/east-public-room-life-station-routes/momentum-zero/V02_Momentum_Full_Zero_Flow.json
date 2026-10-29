@@ -1,0 +1,281 @@
+{
+  "status": "FAIL",
+  "scope": "Ground access to Y100 station through public stair A and two physical uphill rails",
+  "method": "One controlled initial setup (ground for full route, Y84 for local pilot). Normal R/Shift/Space keys and standard simulated controller movement/look after setup. No direct rail creation, actor/camera assignment, reset or resource injection during route.",
+  "errors": [],
+  "stages": [
+    {
+      "name": "ground approach start",
+      "frame": 2,
+      "p": [
+        55,
+        0.42,
+        210
+      ],
+      "clock": 0.08333333333333333,
+      "message": ""
+    },
+    {
+      "name": "public A 0 to 24",
+      "frame": 692,
+      "p": [
+        61.1590031344088,
+        24.42,
+        215.5043200879496
+      ],
+      "clock": 11.583333333333488,
+      "message": ""
+    },
+    {
+      "name": "public A 24 to 52",
+      "frame": 1555,
+      "p": [
+        61.05860536534933,
+        52.42,
+        215.5007294679946
+      ],
+      "clock": 25.966666666666473,
+      "message": ""
+    },
+    {
+      "name": "public A 52 to 84",
+      "frame": 2370,
+      "p": [
+        61.08052229875829,
+        84.42,
+        215.50031104383604
+      ],
+      "clock": 39.54999999999904,
+      "message": ""
+    },
+    {
+      "name": "courtyard reached from ground",
+      "frame": 2704,
+      "p": [
+        55.00013491735099,
+        84.42,
+        292.8528256107442
+      ],
+      "clock": 45.11666666666539,
+      "message": ""
+    },
+    {
+      "name": "initial launch court",
+      "frame": 2705,
+      "p": [
+        55.00013491735099,
+        84.42,
+        292.8528256107442
+      ],
+      "clock": 45.133333333332054,
+      "message": ""
+    },
+    {
+      "name": "first cartridge A",
+      "frame": 2844,
+      "p": [
+        55.00013491735099,
+        84.42,
+        292.8528256107442
+      ],
+      "clock": 46.53999999999882,
+      "message": "POINT A ATTACHED · AIM B"
+    },
+    {
+      "name": "first rail constructed",
+      "frame": 2994,
+      "p": [
+        55.00013491735099,
+        84.42,
+        292.8528256107442
+      ],
+      "clock": 48.3033333333322,
+      "message": "blocked-path"
+    },
+    {
+      "name": "first acceleration start",
+      "frame": 3138,
+      "p": [
+        46.39004693668464,
+        84.42,
+        282.90711771236636
+      ],
+      "clock": 50.70333333333206,
+      "message": "blocked-path"
+    }
+  ],
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_PUBLIC_ROOM_LIFE.html",
+  "manifest": "assets/city/vertical-v02/east-public-emissive/runtime/manifest.json",
+  "buildReport": "V02_East_Public_Room_Life_Build.json",
+  "entrySHA256": "e8459a0bb274ede1ddc56771599255bc32f103a9c946124bd57c857c66589bf8",
+  "manifestSHA256": "0bf5890913968eec9d1450be46d97dcb548693030cc9b0fbef4fb221cd4a6833",
+  "testConfigurationSHA256": "3a7de8bd6984a7c77f453e6dd420a4d4a24e3e03572b40330a690e08de615670",
+  "evidenceRun": "momentum-zero",
+  "evidenceSuite": "east-public-room-life-station-routes",
+  "testReadinessAdapterSHA256": "b3a00e6933b6d42b3a947c0a10a728aa98745eb18a8414b7a2df7a397be3f165",
+  "requiredAssetAPI": "v02EastPublicLightingState.ready + v02FacadeCassettesState.ready + eleven visitors",
+  "testSourceSHA256": "a929d8d783e72154fd20c8221b43e4c14aab448a233e8fd041bfe3d7eb89216d",
+  "cameraSamplePolicy": {
+    "sourceSHA256": "180467f581d7948bdf854280c9c2b7886b4270810b763376e1c2b5c7aa6dae45",
+    "intervalFrames": 6,
+    "scope": "Actual animated head/hips projection and native static-obstacle triangle rays during normal input, 10Hz at60Hz simulation. No gameplay state writes. Transparent glass below.5alpha excluded from opaque occlusion; moving objects absent from the native obstacle registry, HUD, between-sample frames and physical devices are not certified. Raw samples require context/visual review; collection is not camera acceptance."
+  },
+  "initialBank": 0,
+  "routeStartFrame": 1,
+  "routeTraceStart": 1,
+  "aimCoastEvidence": [
+    {
+      "target": [
+        55,
+        84,
+        295
+      ],
+      "arrivalError": {
+        "dy": -0.000742343822461411,
+        "dp": -0.000021209804610733407,
+        "nativeYawDrift": 0.0004285892885458331,
+        "nativePitchDrift": 0.00006528084918644428,
+        "hit": {
+          "x": 55.002770455560174,
+          "y": 84,
+          "z": 294.999189789368
+        }
+      },
+      "settled": {
+        "dy": -0.0008061137125228157,
+        "dp": 0.00002839280405453337,
+        "rawPitch": -0.7585336065829973,
+        "targetPitch": -0.7585359354115769,
+        "body": {
+          "compositionFamily": "exploration",
+          "quietPitch": 0.13333333333333333,
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": 0,
+          "heldPitch": 0,
+          "frames": 2806,
+          "adjusted": 696,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 59.18874586731684,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "hit": {
+          "x": 55.00287495153461,
+          "y": 84,
+          "z": 294.99874532723675
+        }
+      },
+      "accepted": true
+    },
+    {
+      "target": [
+        70,
+        91.75,
+        315
+      ],
+      "arrivalError": {
+        "dy": 0.0003222015740775852,
+        "dp": 0.0008174171964316912,
+        "nativeYawDrift": 0.00005319468203479616,
+        "nativePitchDrift": 0.00032895013635375614,
+        "hit": {
+          "x": 70,
+          "y": 91.72643127594583,
+          "z": 315.01675149451796
+        }
+      },
+      "settled": {
+        "dy": 0.0003808593565755025,
+        "dp": 0.0011304256133309598,
+        "rawPitch": 0.22206575884048133,
+        "targetPitch": 0.2220540238755055,
+        "body": {
+          "compositionFamily": "exploration",
+          "quietPitch": 0.13333333333333333,
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": 0,
+          "heldPitch": 0,
+          "frames": 2929,
+          "adjusted": 696,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 59.18874586731684,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "hit": {
+          "x": 70,
+          "y": 91.71682414197886,
+          "z": 315.0198057427038
+        }
+      },
+      "accepted": true
+    },
+    {
+      "target": [
+        55,
+        85.84,
+        295
+      ],
+      "arrivalError": {
+        "dy": -0.00002966727109177114,
+        "dp": 0.00007519778077967956,
+        "nativeYawDrift": 0.00006207117475698354,
+        "nativePitchDrift": 0.0002307619862081745,
+        "hit": {
+          "x": 98.91,
+          "y": 85.0468906977631,
+          "z": 347.66456297986923
+        }
+      },
+      "settled": {
+        "dy": 0.000009574363154740697,
+        "dp": -0.00006928162701253307,
+        "rawPitch": 0.0009401431814278155,
+        "targetPitch": 0.0009483753829886048,
+        "body": {
+          "compositionFamily": "exploration",
+          "quietPitch": 0.16666666666666666,
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": 0,
+          "heldPitch": 0,
+          "frames": 3179,
+          "adjusted": 696,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 59.18874586731684,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "hit": {
+          "x": 98.91,
+          "y": 85.06996006147398,
+          "z": 347.67418965844047
+        }
+      },
+      "accepted": true
+    }
+  ],
+  "failure": "AssertionError [ERR_ASSERTION]: No momentum catch {\"frame\":0,\"p\":[54.96740917443648,84.42,294.95422541650817],\"v\":[-9.490861248289795,0,-13.330138562228495],\"grounded\":true,\"mode\":\"GROUND\",\"trauma\":0,\"rail\":null,\"rails\":[],\"anchors\":[],\"bank\":5,\"releases\":[],\"clock\":56.08666666666509,\"message\":\"AIM AT A SOLID SURFACE\",\"deployment\":\"attached\",\"precision\":false,\"source\":\"traversal-locomotion-parkourSprint\",\"camera\":[51.23997278487903,86.05559005513011,292.2445961085876]}",
+  "fullTrace": "V02_Momentum_Full_Zero_Flow.trace.json.gz",
+  "traceFrames": 3461
+}

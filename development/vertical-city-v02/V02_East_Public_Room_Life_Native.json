@@ -1,0 +1,2505 @@
+{
+  "status": "PASS180native simulation seconds:11visitors/36aircraft, all room destinations, supported visible feet, pause and hero yield/resume",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_PUBLIC_ROOM_LIFE.html",
+  "entrySHA256": "d40e10c5d47b82ecd0eac30adc64e383566ce68cb0504635e256781a43c80300",
+  "manifestSHA256": "0bf5890913968eec9d1450be46d97dcb548693030cc9b0fbef4fb221cd4a6833",
+  "testSHA256": "08eaee8115ffa21cff7846b6b41502c3140a0c09fba15c9866809cd247261544",
+  "errors": [],
+  "captures": [
+    {
+      "id": "room-24",
+      "file": "development/vertical-city-v02/evidence/east-public-room-life/room-24.png",
+      "sha256": "fbb817d4254c1d21e6cd13dc4edc0b58e6740d717df4548a03494755e36b8d77",
+      "scope": "Explicit camera-only inspection; actor/NPC state unchanged"
+    },
+    {
+      "id": "room-52",
+      "file": "development/vertical-city-v02/evidence/east-public-room-life/room-52.png",
+      "sha256": "d281bcadd8c28232f9dcaa785b9ec241bfea14c19e1d5cc764667cfeeb393c79",
+      "scope": "Explicit camera-only inspection; actor/NPC state unchanged"
+    },
+    {
+      "id": "room-84",
+      "file": "development/vertical-city-v02/evidence/east-public-room-life/room-84.png",
+      "sha256": "5e384da83a1ede673822213c4c4615148e5aeb9b1014007970da6a98b78e6a9e",
+      "scope": "Explicit camera-only inspection; actor/NPC state unchanged"
+    }
+  ],
+  "scope": "180seconds complete-game fixed60Hz simulation of actual existing pedestrian meshes on three new admitted room routes; source-grounded feet, destinations, pause and hero yielding. No physical device or sustained frame-cost acceptance.",
+  "initial": {
+    "clock": 0.24999999999999997,
+    "active": true,
+    "hero": [
+      0,
+      0.42,
+      8
+    ],
+    "trauma": 0,
+    "people": [
+      {
+        "id": "station-commuters-0",
+        "route": "station-commuters",
+        "position": [
+          73,
+          100,
+          382.28749999999974
+        ],
+        "target": 1,
+        "dwell": 0,
+        "walked": 0.2874999999997385,
+        "arrivals": 0,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 0.006060703650165373
+      },
+      {
+        "id": "station-commuters-1",
+        "route": "station-commuters",
+        "position": [
+          76.12,
+          100,
+          395.1541666666664
+        ],
+        "target": 3,
+        "dwell": 0,
+        "walked": 0.2874999999997385,
+        "arrivals": 0,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 0.006469943894540807
+      },
+      {
+        "id": "station-commuters-2",
+        "route": "station-commuters",
+        "position": [
+          76.98,
+          100,
+          393.7191666666669
+        ],
+        "target": 5,
+        "dwell": 0,
+        "walked": 0.2874999999997385,
+        "arrivals": 0,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 0.0068436184614408405
+      },
+      {
+        "id": "market-visitors-0",
+        "route": "market-visitors",
+        "position": [
+          62.78749999999995,
+          24,
+          356.1
+        ],
+        "target": 1,
+        "dwell": 0,
+        "walked": 0.2874999999999517,
+        "arrivals": 0,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 0.0060607036501662895
+      },
+      {
+        "id": "market-visitors-1",
+        "route": "market-visitors",
+        "position": [
+          65.5,
+          24,
+          358.9874999999997
+        ],
+        "target": 2,
+        "dwell": 0,
+        "walked": 0.2874999999997385,
+        "arrivals": 0,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 0.006469943894540807
+      },
+      {
+        "id": "market-visitors-2",
+        "route": "market-visitors",
+        "position": [
+          62.52750000000004,
+          24,
+          361.5
+        ],
+        "target": 0,
+        "dwell": 4.916666666666667,
+        "walked": 0.172499999999971,
+        "arrivals": 1,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 0.005267608574055679
+      },
+      {
+        "id": "observation-visitors-0",
+        "route": "observation-visitors",
+        "position": [
+          76.28749999999995,
+          128,
+          417
+        ],
+        "target": 1,
+        "dwell": 0,
+        "walked": 0.2874999999999517,
+        "arrivals": 0,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 0.0060607036501662895
+      },
+      {
+        "id": "observation-visitors-1",
+        "route": "observation-visitors",
+        "position": [
+          80,
+          128,
+          423
+        ],
+        "target": 3,
+        "dwell": 4.7666666666666675,
+        "walked": 0,
+        "arrivals": 1,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": -1.3351440131259553e-9
+      },
+      {
+        "id": "east-public-room-24-visitor-0",
+        "route": "east-public-room-24-visitor",
+        "position": [
+          97,
+          24,
+          300.26249999999976
+        ],
+        "target": 1,
+        "dwell": 0,
+        "walked": 0.26249999999976126,
+        "arrivals": 0,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 0.00603372144739394
+      },
+      {
+        "id": "east-public-room-52-visitor-0",
+        "route": "east-public-room-52-visitor",
+        "position": [
+          97,
+          52,
+          300.26249999999976
+        ],
+        "target": 1,
+        "dwell": 0,
+        "walked": 0.26249999999976126,
+        "arrivals": 0,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 0.00603372144739394
+      },
+      {
+        "id": "east-public-room-84-visitor-0",
+        "route": "east-public-room-84-visitor",
+        "position": [
+          97,
+          84,
+          300.26249999999976
+        ],
+        "target": 1,
+        "dwell": 0,
+        "walked": 0.26249999999976126,
+        "arrivals": 0,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 0.00603372144739394
+      }
+    ],
+    "events": [
+      {
+        "id": 1,
+        "kind": "ready",
+        "clock": 0
+      },
+      {
+        "id": 2,
+        "kind": "destination",
+        "clock": 0.016666666666666666,
+        "visitor": "observation-visitors-1",
+        "waypoint": 2,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 3,
+        "kind": "destination",
+        "clock": 0.16666666666666666,
+        "visitor": "market-visitors-2",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      }
+    ],
+    "aircraft": 36,
+    "visitors": 11,
+    "visuals": [
+      {
+        "position": [
+          73,
+          100,
+          382.28749999999974
+        ],
+        "sole": 99.99999999915443,
+        "support": 100.42
+      },
+      {
+        "position": [
+          76.12,
+          100,
+          395.1541666666664
+        ],
+        "sole": 99.99999999890002,
+        "support": 100.42
+      },
+      {
+        "position": [
+          76.98,
+          100,
+          393.7191666666669
+        ],
+        "sole": 99.99999999893761,
+        "support": 100.42
+      },
+      {
+        "position": [
+          62.78749999999995,
+          24,
+          356.1
+        ],
+        "sole": 23.99999999915442,
+        "support": 24.42
+      },
+      {
+        "position": [
+          65.5,
+          24,
+          358.9874999999997
+        ],
+        "sole": 23.99999999890002,
+        "support": 24.42
+      },
+      {
+        "position": [
+          62.52750000000004,
+          24,
+          361.5
+        ],
+        "sole": 23.999999998827324,
+        "support": 24.42
+      },
+      {
+        "position": [
+          76.28749999999995,
+          128,
+          417
+        ],
+        "sole": 127.99999999915443,
+        "support": 128.42
+      },
+      {
+        "position": [
+          80,
+          128,
+          423
+        ],
+        "sole": 127.99999999866486,
+        "support": 128.42
+      },
+      {
+        "position": [
+          97,
+          24,
+          300.26249999999976
+        ],
+        "sole": 23.999999999156294,
+        "support": 24.42
+      },
+      {
+        "position": [
+          97,
+          52,
+          300.26249999999976
+        ],
+        "sole": 51.9999999991563,
+        "support": 52.42
+      },
+      {
+        "position": [
+          97,
+          84,
+          300.26249999999976
+        ],
+        "sole": 83.9999999991563,
+        "support": 84.42
+      }
+    ]
+  },
+  "source": {
+    "world": {
+      "ready": true,
+      "loading": false,
+      "error": null,
+      "aircraft": 36,
+      "visitors": 11,
+      "source": "Shared Blender hover vehicles and existing street pedestrian geometry",
+      "blockedMoves": 0,
+      "events": [
+        {
+          "id": 1,
+          "kind": "ready",
+          "clock": 0
+        },
+        {
+          "id": 2,
+          "kind": "destination",
+          "clock": 0.016666666666666666,
+          "visitor": "observation-visitors-1",
+          "waypoint": 2,
+          "purpose": "Walk through the sheltered observation area and pause at the outlook"
+        },
+        {
+          "id": 3,
+          "kind": "destination",
+          "clock": 0.16666666666666666,
+          "visitor": "market-visitors-2",
+          "waypoint": 3,
+          "purpose": "Visit the suspended commercial gallery and storefront approach"
+        }
+      ],
+      "eventId": 3,
+      "clock": 0.24999999999999997,
+      "ambientManifestSHA256": "0bf5890913968eec9d1450be46d97dcb548693030cc9b0fbef4fb221cd4a6833",
+      "roomGraphSHA256": "29077afba94b6e538d19a28f3b7b1bec95609df512b1b4cf29cce1b14a3426b4",
+      "scenicOnly": true,
+      "dynamicLights": 0,
+      "air": {
+        "clock": 0.24999999999999997,
+        "emergencyBrakes": 0,
+        "settings": {
+          "acceleration": 0.9,
+          "braking": 1.6,
+          "lateralAcceleration": 2,
+          "minimumGap": 10,
+          "timeGap": 1.6,
+          "maxBank": 0.20943951023931953
+        },
+        "lanes": [
+          {
+            "id": "aerial-band-0",
+            "length": 1257.6072224958739,
+            "agents": [
+              {
+                "id": "aerial-band-0-0",
+                "variant": 0,
+                "distance": 1.9264608441671716,
+                "speed": 7.786343376668685,
+                "preferred": 10.8,
+                "bank": -0.11509239415584338,
+                "laps": 0,
+                "position": [
+                  76.9615757225918,
+                  38,
+                  105.78623478972663
+                ],
+                "quaternion": [
+                  -0.00009149681015006978,
+                  0.001588215960063755,
+                  -0.057514368230874274,
+                  0.9983434111794405
+                ],
+                "gapAhead": 105.64914103048909
+              },
+              {
+                "id": "aerial-band-0-1",
+                "variant": 1,
+                "distance": 107.57560187465619,
+                "speed": 11.100000000000001,
+                "preferred": 11.100000000000001,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  77,
+                  38,
+                  211.43510787241664
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 104.87560187465601
+              },
+              {
+                "id": "aerial-band-0-2",
+                "variant": 2,
+                "distance": 212.45120374931227,
+                "speed": 11.4,
+                "preferred": 11.4,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  77,
+                  38,
+                  316.3107097470727
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 104.87560187465601
+              },
+              {
+                "id": "aerial-band-0-3",
+                "variant": 0,
+                "distance": 317.32680562396837,
+                "speed": 11.700000000000001,
+                "preferred": 11.700000000000001,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  77,
+                  38,
+                  421.1863116217281
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 104.22498554392564
+              },
+              {
+                "id": "aerial-band-0-4",
+                "variant": 1,
+                "distance": 421.551791167894,
+                "speed": 9.201090232633012,
+                "preferred": 12,
+                "bank": -0.002110768123077413,
+                "laps": 0,
+                "position": [
+                  77.00113271987402,
+                  38,
+                  525.4112967564055
+                ],
+                "quaternion": [
+                  -4.649540683025391e-7,
+                  0.000440554213977034,
+                  -0.0010553837631992096,
+                  0.9999993460382266
+                ],
+                "gapAhead": 105.15121820538593
+              },
+              {
+                "id": "aerial-band-0-5",
+                "variant": 2,
+                "distance": 526.70300937328,
+                "speed": 10.8,
+                "preferred": 10.8,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  156.16122054948477,
+                  38,
+                  563
+                ],
+                "quaternion": [
+                  0,
+                  0.7071067811865475,
+                  0,
+                  0.7071067811865476
+                ],
+                "gapAhead": 104.0098299087881
+              },
+              {
+                "id": "aerial-band-0-6",
+                "variant": 0,
+                "distance": 630.712839282068,
+                "speed": 7.717412136522581,
+                "preferred": 11.100000000000001,
+                "bank": -0.1134847669914024,
+                "laps": 0,
+                "position": [
+                  243.03837816054292,
+                  38,
+                  534.2309522184709
+                ],
+                "quaternion": [
+                  0.05671188109671725,
+                  -0.9983895545654485,
+                  -0.00008139451738478123,
+                  0.001432917307349999
+                ],
+                "gapAhead": 105.74137384052597
+              },
+              {
+                "id": "aerial-band-0-7",
+                "variant": 1,
+                "distance": 736.454213122594,
+                "speed": 11.4,
+                "preferred": 11.4,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  243,
+                  38,
+                  428.48984487592037
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 104.87560187465601
+              },
+              {
+                "id": "aerial-band-0-8",
+                "variant": 2,
+                "distance": 841.32981499725,
+                "speed": 11.700000000000001,
+                "preferred": 11.700000000000001,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  243,
+                  38,
+                  323.6142430012478
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 104.87560187465624
+              },
+              {
+                "id": "aerial-band-0-9",
+                "variant": 0,
+                "distance": 946.2054168719061,
+                "speed": 12,
+                "preferred": 12,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  243,
+                  38,
+                  218.73864112670782
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 104.15160756128535
+              },
+              {
+                "id": "aerial-band-0-10",
+                "variant": 1,
+                "distance": 1050.3570244331916,
+                "speed": 9.20757830207577,
+                "preferred": 10.8,
+                "bank": -0.0022372165820777274,
+                "laps": 0,
+                "position": [
+                  242.99879952814595,
+                  38,
+                  114.58703402421422
+                ],
+                "quaternion": [
+                  0.0011186079361868966,
+                  -0.9999992656789631,
+                  -5.215135271261475e-7,
+                  0.00046621620256470214
+                ],
+                "gapAhead": 105.22459618802532
+              },
+              {
+                "id": "aerial-band-0-11",
+                "variant": 2,
+                "distance": 1155.5816206212169,
+                "speed": 11.100000000000001,
+                "preferred": 11.100000000000001,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  163.7638227403796,
+                  38,
+                  77
+                ],
+                "quaternion": [
+                  0,
+                  -0.7071067811865475,
+                  0,
+                  0.7071067811865476
+                ],
+                "gapAhead": 103.95206271882421
+              }
+            ]
+          },
+          {
+            "id": "aerial-band-1",
+            "length": 1257.607222495181,
+            "agents": [
+              {
+                "id": "aerial-band-1-0",
+                "variant": 1,
+                "distance": 1.6582442003842945,
+                "speed": 6.732976801537176,
+                "preferred": 13.5,
+                "bank": 0.12129473056329576,
+                "laps": 0,
+                "position": [
+                  77.97800045294757,
+                  65,
+                  96.8064464282244
+                ],
+                "quaternion": [
+                  0.06005634901052008,
+                  0.9890404888429738,
+                  0.008174997841575476,
+                  0.134630292962127
+                ],
+                "gapAhead": 106.59769896623288
+              },
+              {
+                "id": "aerial-band-1-1",
+                "variant": 2,
+                "distance": 108.25594316661724,
+                "speed": 13.670546375034673,
+                "preferred": 13.875,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  175.47449412761623,
+                  65,
+                  77
+                ],
+                "quaternion": [
+                  0,
+                  0.7071067811865475,
+                  0,
+                  0.7071067811865476
+                ],
+                "gapAhead": 104.90776058257984
+              },
+              {
+                "id": "aerial-band-1-2",
+                "variant": 0,
+                "distance": 213.16370374919703,
+                "speed": 14.250000000000002,
+                "preferred": 14.250000000000002,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  243,
+                  65,
+                  125.98086934750073
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 104.89435187459799
+              },
+              {
+                "id": "aerial-band-1-3",
+                "variant": 1,
+                "distance": 318.0580556237949,
+                "speed": 14.625000000000002,
+                "preferred": 14.625000000000002,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  243,
+                  65,
+                  230.87522122209378
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 104.8943518745989
+              },
+              {
+                "id": "aerial-band-1-4",
+                "variant": 2,
+                "distance": 422.9524074983937,
+                "speed": 15,
+                "preferred": 15,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  243,
+                  65,
+                  335.76957309669046
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 104.42560187459867
+              },
+              {
+                "id": "aerial-band-1-5",
+                "variant": 0,
+                "distance": 527.3780093729924,
+                "speed": 13.5,
+                "preferred": 13.5,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  243,
+                  65,
+                  440.1951749712879
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 103.01062493063341
+              },
+              {
+                "id": "aerial-band-1-6",
+                "variant": 1,
+                "distance": 630.3886343036257,
+                "speed": 6.452092224141319,
+                "preferred": 13.875,
+                "bank": 0.1120828010153956,
+                "laps": 0,
+                "position": [
+                  242.04146465391844,
+                  65,
+                  543.1229190021534
+                ],
+                "quaternion": [
+                  -0.007481323271762168,
+                  -0.13335658137702755,
+                  0.05551019617376101,
+                  0.9894840423808189
+                ],
+                "gapAhead": 106.68233336470144
+              },
+              {
+                "id": "aerial-band-1-7",
+                "variant": 2,
+                "distance": 737.0709676683272,
+                "speed": 13.674820512371157,
+                "preferred": 14.250000000000002,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  144.51413590784807,
+                  65,
+                  563
+                ],
+                "quaternion": [
+                  0,
+                  -0.7071067811865475,
+                  0,
+                  0.7071067811865476
+                ],
+                "gapAhead": 104.99009732846002
+              },
+              {
+                "id": "aerial-band-1-8",
+                "variant": 0,
+                "distance": 842.0610649967871,
+                "speed": 14.625000000000002,
+                "preferred": 14.625000000000002,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  77,
+                  65,
+                  513.9253334008204
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 104.89435187459867
+              },
+              {
+                "id": "aerial-band-1-9",
+                "variant": 1,
+                "distance": 946.9554168713858,
+                "speed": 15,
+                "preferred": 15,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  77,
+                  65,
+                  409.0309815263089
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 104.42560187459708
+              },
+              {
+                "id": "aerial-band-1-10",
+                "variant": 2,
+                "distance": 1051.3810187459828,
+                "speed": 13.5,
+                "preferred": 13.5,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  77,
+                  65,
+                  304.6053796518063
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 104.89435187460049
+              },
+              {
+                "id": "aerial-band-1-11",
+                "variant": 0,
+                "distance": 1156.2753706205833,
+                "speed": 13.875,
+                "preferred": 13.875,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  77,
+                  65,
+                  199.7110277773305
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 102.99009607498215
+              }
+            ]
+          },
+          {
+            "id": "aerial-band-2",
+            "length": 1219.913818405767,
+            "agents": [
+              {
+                "id": "aerial-band-2-0",
+                "variant": 2,
+                "distance": 1.8726081339041754,
+                "speed": 7.5624325356167015,
+                "preferred": 16.2,
+                "bank": -0.1104772550455235,
+                "laps": 0,
+                "position": [
+                  82.96284828593866,
+                  114,
+                  106.01156515916897
+                ],
+                "quaternion": [
+                  -0.00016255953024955154,
+                  0.002939865892172353,
+                  -0.0552103008321189,
+                  0.9984704068949475
+                ],
+                "gapAhead": 103.94937673324307
+              },
+              {
+                "id": "aerial-band-2-1",
+                "variant": 0,
+                "distance": 105.8219848671473,
+                "speed": 16.650000000000002,
+                "preferred": 16.650000000000002,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  83,
+                  114,
+                  209.96068202105317
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 101.77198486714724
+              },
+              {
+                "id": "aerial-band-2-2",
+                "variant": 1,
+                "distance": 207.59396973429443,
+                "speed": 17.1,
+                "preferred": 17.1,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  83,
+                  114,
+                  311.7326668882004
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 101.7719848671477
+              },
+              {
+                "id": "aerial-band-2-3",
+                "variant": 2,
+                "distance": 309.365954601442,
+                "speed": 17.55,
+                "preferred": 17.55,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  83,
+                  114,
+                  413.50465175534794
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 100.01672504848602
+              },
+              {
+                "id": "aerial-band-2-4",
+                "variant": 0,
+                "distance": 409.382679649928,
+                "speed": 10.788541871318479,
+                "preferred": 18,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  83,
+                  114,
+                  513.521376803834
+                ],
+                "quaternion": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "gapAhead": 102.9173866557237
+              },
+              {
+                "id": "aerial-band-2-5",
+                "variant": 1,
+                "distance": 512.3000663056516,
+                "speed": 15.816595341879308,
+                "preferred": 16.2,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  151.4608213838725,
+                  114,
+                  557
+                ],
+                "quaternion": [
+                  0,
+                  0.7071067811865475,
+                  0,
+                  0.7071067811865476
+                ],
+                "gapAhead": 99.51696305564565
+              },
+              {
+                "id": "aerial-band-2-6",
+                "variant": 2,
+                "distance": 611.8170293612973,
+                "speed": 7.512480633655848,
+                "preferred": 16.650000000000002,
+                "bank": -0.10952718849822576,
+                "laps": 0,
+                "position": [
+                  237.03733058781665,
+                  114,
+                  534.0008772714917
+                ],
+                "quaternion": [
+                  0.05473600474917828,
+                  -0.9984968273348851,
+                  -0.00015535435070344547,
+                  0.002833981526435579
+                ],
+                "gapAhead": 104.0743647087329
+              },
+              {
+                "id": "aerial-band-2-7",
+                "variant": 0,
+                "distance": 715.8913940700303,
+                "speed": 17.1,
+                "preferred": 17.1,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  237,
+                  114,
+                  429.92677524303883
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 101.77198486714792
+              },
+              {
+                "id": "aerial-band-2-8",
+                "variant": 1,
+                "distance": 817.6633789371782,
+                "speed": 17.55,
+                "preferred": 17.55,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  237,
+                  114,
+                  328.1547903758682
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 101.77198486714633
+              },
+              {
+                "id": "aerial-band-2-9",
+                "variant": 2,
+                "distance": 919.4353638043245,
+                "speed": 18,
+                "preferred": 18,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  237,
+                  114,
+                  226.38280550883297
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 99.90566504378626
+              },
+              {
+                "id": "aerial-band-2-10",
+                "variant": 0,
+                "distance": 1019.3410288481108,
+                "speed": 10.794332073564878,
+                "preferred": 16.2,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  237,
+                  114,
+                  126.47714046513232
+                ],
+                "quaternion": [
+                  0,
+                  1,
+                  0,
+                  6.123233995736766e-17
+                ],
+                "gapAhead": 102.91594164479284
+              },
+              {
+                "id": "aerial-band-2-11",
+                "variant": 1,
+                "distance": 1122.2569704929037,
+                "speed": 15.816575188040938,
+                "preferred": 16.650000000000002,
+                "bank": 0,
+                "laps": 0,
+                "position": [
+                  168.5392315023866,
+                  114,
+                  83
+                ],
+                "quaternion": [
+                  0,
+                  -0.7071067811865475,
+                  0,
+                  0.7071067811865476
+                ],
+                "gapAhead": 99.52945604676734
+              }
+            ]
+          }
+        ]
+      },
+      "airBatches": 17,
+      "people": [
+        {
+          "id": "station-commuters-0",
+          "route": "station-commuters",
+          "position": [
+            73,
+            100,
+            382.28749999999974
+          ],
+          "target": 1,
+          "dwell": 0,
+          "walked": 0.2874999999997385,
+          "arrivals": 0,
+          "lastReason": null,
+          "blocked": 0,
+          "soleOffset": 0.006060703650165373
+        },
+        {
+          "id": "station-commuters-1",
+          "route": "station-commuters",
+          "position": [
+            76.12,
+            100,
+            395.1541666666664
+          ],
+          "target": 3,
+          "dwell": 0,
+          "walked": 0.2874999999997385,
+          "arrivals": 0,
+          "lastReason": null,
+          "blocked": 0,
+          "soleOffset": 0.006469943894540807
+        },
+        {
+          "id": "station-commuters-2",
+          "route": "station-commuters",
+          "position": [
+            76.98,
+            100,
+            393.7191666666669
+          ],
+          "target": 5,
+          "dwell": 0,
+          "walked": 0.2874999999997385,
+          "arrivals": 0,
+          "lastReason": null,
+          "blocked": 0,
+          "soleOffset": 0.0068436184614408405
+        },
+        {
+          "id": "market-visitors-0",
+          "route": "market-visitors",
+          "position": [
+            62.78749999999995,
+            24,
+            356.1
+          ],
+          "target": 1,
+          "dwell": 0,
+          "walked": 0.2874999999999517,
+          "arrivals": 0,
+          "lastReason": null,
+          "blocked": 0,
+          "soleOffset": 0.0060607036501662895
+        },
+        {
+          "id": "market-visitors-1",
+          "route": "market-visitors",
+          "position": [
+            65.5,
+            24,
+            358.9874999999997
+          ],
+          "target": 2,
+          "dwell": 0,
+          "walked": 0.2874999999997385,
+          "arrivals": 0,
+          "lastReason": null,
+          "blocked": 0,
+          "soleOffset": 0.006469943894540807
+        },
+        {
+          "id": "market-visitors-2",
+          "route": "market-visitors",
+          "position": [
+            62.52750000000004,
+            24,
+            361.5
+          ],
+          "target": 0,
+          "dwell": 4.916666666666667,
+          "walked": 0.172499999999971,
+          "arrivals": 1,
+          "lastReason": null,
+          "blocked": 0,
+          "soleOffset": 0.005267608574055679
+        },
+        {
+          "id": "observation-visitors-0",
+          "route": "observation-visitors",
+          "position": [
+            76.28749999999995,
+            128,
+            417
+          ],
+          "target": 1,
+          "dwell": 0,
+          "walked": 0.2874999999999517,
+          "arrivals": 0,
+          "lastReason": null,
+          "blocked": 0,
+          "soleOffset": 0.0060607036501662895
+        },
+        {
+          "id": "observation-visitors-1",
+          "route": "observation-visitors",
+          "position": [
+            80,
+            128,
+            423
+          ],
+          "target": 3,
+          "dwell": 4.7666666666666675,
+          "walked": 0,
+          "arrivals": 1,
+          "lastReason": null,
+          "blocked": 0,
+          "soleOffset": -1.3351440131259553e-9
+        },
+        {
+          "id": "east-public-room-24-visitor-0",
+          "route": "east-public-room-24-visitor",
+          "position": [
+            97,
+            24,
+            300.26249999999976
+          ],
+          "target": 1,
+          "dwell": 0,
+          "walked": 0.26249999999976126,
+          "arrivals": 0,
+          "lastReason": null,
+          "blocked": 0,
+          "soleOffset": 0.00603372144739394
+        },
+        {
+          "id": "east-public-room-52-visitor-0",
+          "route": "east-public-room-52-visitor",
+          "position": [
+            97,
+            52,
+            300.26249999999976
+          ],
+          "target": 1,
+          "dwell": 0,
+          "walked": 0.26249999999976126,
+          "arrivals": 0,
+          "lastReason": null,
+          "blocked": 0,
+          "soleOffset": 0.00603372144739394
+        },
+        {
+          "id": "east-public-room-84-visitor-0",
+          "route": "east-public-room-84-visitor",
+          "position": [
+            97,
+            84,
+            300.26249999999976
+          ],
+          "target": 1,
+          "dwell": 0,
+          "walked": 0.26249999999976126,
+          "arrivals": 0,
+          "lastReason": null,
+          "blocked": 0,
+          "soleOffset": 0.00603372144739394
+        }
+      ]
+    },
+    "lighting": {
+      "ready": true,
+      "loading": false,
+      "error": null,
+      "rooms": [
+        {
+          "floor": 24,
+          "chunk": "east-public-room-24",
+          "meshes": 7,
+          "primitives": 7,
+          "atlasSHA256": "c9404fabb60249eb787b7ef445cc9fceb9e5eab29d5828cd9d243ee9b9248dc5",
+          "reflectionSHA256": "8421338e3d172749edf51def4c592bf4286b0a4f270e0e14bbadf65fa1ca86f9",
+          "probe": [
+            102.1,
+            25.6,
+            310
+          ]
+        },
+        {
+          "floor": 52,
+          "chunk": "east-public-room-52",
+          "meshes": 7,
+          "primitives": 7,
+          "atlasSHA256": "58aaa5d7c3b8d0942f0204d4bc1c1581d1eed3a9c06028824c5e65c0de2858fb",
+          "reflectionSHA256": "e02a9ee9f4f79d90798d006ff4d8e1d11cd570944ba01461fb045bbdf4844750",
+          "probe": [
+            102.1,
+            53.6,
+            310
+          ]
+        },
+        {
+          "floor": 84,
+          "chunk": "east-public-room-84",
+          "meshes": 7,
+          "primitives": 7,
+          "atlasSHA256": "9f18d4134a391a08a515065188325b528dfb8144cade36474c4fd69f54827e00",
+          "reflectionSHA256": "36b2a73f6f82b5571c2b78e0ba97c84e617adba760afaffb751c426a1fa73748",
+          "probe": [
+            102.1,
+            85.6,
+            310
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "V02_glass",
+          "floor": 24,
+          "diffuse": false
+        },
+        {
+          "name": "V02_cyan",
+          "floor": 24,
+          "diffuse": false
+        },
+        {
+          "name": "V02_terrace_foliage",
+          "floor": 24,
+          "diffuse": true
+        },
+        {
+          "name": "V02_arcade_soffit",
+          "floor": 24,
+          "diffuse": true
+        },
+        {
+          "name": "V02_east_loggia_luminaire_v2",
+          "floor": 24,
+          "diffuse": true
+        },
+        {
+          "name": "V02_deck",
+          "floor": 24,
+          "diffuse": true
+        },
+        {
+          "name": "V02_steel",
+          "floor": 24,
+          "diffuse": true
+        },
+        {
+          "name": "V02_glass",
+          "floor": 52,
+          "diffuse": false
+        },
+        {
+          "name": "V02_cyan",
+          "floor": 52,
+          "diffuse": false
+        },
+        {
+          "name": "V02_terrace_foliage",
+          "floor": 52,
+          "diffuse": true
+        },
+        {
+          "name": "V02_arcade_soffit",
+          "floor": 52,
+          "diffuse": true
+        },
+        {
+          "name": "V02_east_loggia_luminaire_v2",
+          "floor": 52,
+          "diffuse": true
+        },
+        {
+          "name": "V02_deck",
+          "floor": 52,
+          "diffuse": true
+        },
+        {
+          "name": "V02_steel",
+          "floor": 52,
+          "diffuse": true
+        },
+        {
+          "name": "V02_glass",
+          "floor": 84,
+          "diffuse": false
+        },
+        {
+          "name": "V02_cyan",
+          "floor": 84,
+          "diffuse": false
+        },
+        {
+          "name": "V02_terrace_foliage",
+          "floor": 84,
+          "diffuse": true
+        },
+        {
+          "name": "V02_arcade_soffit",
+          "floor": 84,
+          "diffuse": true
+        },
+        {
+          "name": "V02_east_loggia_luminaire_v2",
+          "floor": 84,
+          "diffuse": true
+        },
+        {
+          "name": "V02_deck",
+          "floor": 84,
+          "diffuse": true
+        },
+        {
+          "name": "V02_steel",
+          "floor": 84,
+          "diffuse": true
+        }
+      ],
+      "newDynamicLights": 0,
+      "textureBytes": 9437184,
+      "sourceMasterSHA256": "8dead00f5b5a9b268d2ea74765e33347e04488040179a72c5db918c3ec06649f",
+      "contractSHA256": "2d699f15a6c44b4286b836537f3bd40fe7df6e8f532404084d531efeb3da13fd",
+      "bakeScope": "Only the six new room fixtures: full direct+indirect diffuse. Sun, sky, old emitters and global lights are excluded from these atlases.",
+      "scope": "New-fixture emissive-only source light maps loaded; live global lighting retained; gameplay and final visual acceptance remain separate"
+    },
+    "lights": [
+      "25C1583D-F470-4811-BA7D-EB3829A6ED24",
+      "E04FEFFC-7D5D-4517-AA39-FD53EAD5F5F6",
+      "D1A0A1C5-8292-4B7C-8D27-199EDA6419B3",
+      "ABEB7A94-C883-4662-8661-7E512A74C534",
+      "CF966EE5-3697-4BCC-9E4F-DC77CFC53AC2",
+      "E50F831B-D975-420F-A792-FEBFC77DA64C",
+      "6DC6DDDA-1073-488D-9ACB-C01D3CDD5EEE",
+      "65F93167-FD3D-47D6-A28A-1ABDAF1DA38E",
+      "55B8C31E-0E6F-40B0-8BD1-206C36E6F457"
+    ]
+  },
+  "final": {
+    "clock": 180.25000000003558,
+    "active": true,
+    "hero": [
+      0,
+      0.42,
+      8
+    ],
+    "trauma": 0,
+    "people": [
+      {
+        "id": "station-commuters-0",
+        "route": "station-commuters",
+        "position": [
+          76.17742102583001,
+          100,
+          401.97564464751724
+        ],
+        "target": 4,
+        "dwell": 0,
+        "walked": 166.38583333332292,
+        "arrivals": 27,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 0.0038334118252066215
+      },
+      {
+        "id": "station-commuters-1",
+        "route": "station-commuters",
+        "position": [
+          76.97890314229417,
+          100,
+          386.8386559782611
+        ],
+        "target": 5,
+        "dwell": 0,
+        "walked": 166.40499999997246,
+        "arrivals": 26,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 0.00636507564040927
+      },
+      {
+        "id": "station-commuters-2",
+        "route": "station-commuters",
+        "position": [
+          76.08797587016807,
+          100,
+          386.08476603401886
+        ],
+        "target": 3,
+        "dwell": 0,
+        "walked": 166.3283333333078,
+        "arrivals": 30,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 0.0062606331191736074
+      },
+      {
+        "id": "market-visitors-0",
+        "route": "market-visitors",
+        "position": [
+          65.4708313613796,
+          24,
+          356.1003217481383
+        ],
+        "target": 2,
+        "dwell": 1.26666666666668,
+        "walked": 119.69583333332295,
+        "arrivals": 29,
+        "lastReason": null,
+        "blocked": 103,
+        "soleOffset": -1.3351440130521772e-9
+      },
+      {
+        "id": "market-visitors-1",
+        "route": "market-visitors",
+        "position": [
+          62.52916863862039,
+          24,
+          361.4996782518617
+        ],
+        "target": 0,
+        "dwell": 4.983333333333333,
+        "walked": 122.47499999998799,
+        "arrivals": 30,
+        "lastReason": null,
+        "blocked": 180,
+        "soleOffset": 0.007059216711201215
+      },
+      {
+        "id": "market-visitors-2",
+        "route": "market-visitors",
+        "position": [
+          62.52357773132998,
+          24,
+          360.46469335257336
+        ],
+        "target": 0,
+        "dwell": 0,
+        "walked": 117.93249999999034,
+        "arrivals": 29,
+        "lastReason": null,
+        "blocked": 118,
+        "soleOffset": 0.000006257125888566891
+      },
+      {
+        "id": "observation-visitors-0",
+        "route": "observation-visitors",
+        "position": [
+          79.99989225997237,
+          128,
+          422.98007419541347
+        ],
+        "target": 3,
+        "dwell": 2.8500000000000076,
+        "walked": 129.31749999994847,
+        "arrivals": 26,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": -1.3280553978828747e-9
+      },
+      {
+        "id": "observation-visitors-1",
+        "route": "observation-visitors",
+        "position": [
+          78.45341063273113,
+          128,
+          417.00770446689756
+        ],
+        "target": 1,
+        "dwell": 0,
+        "walked": 131.77083333327957,
+        "arrivals": 27,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 0.004682601363477336
+      },
+      {
+        "id": "east-public-room-24-visitor-0",
+        "route": "east-public-room-24-visitor",
+        "position": [
+          99.44997510044949,
+          24,
+          308.94997145757503
+        ],
+        "target": 3,
+        "dwell": 0,
+        "walked": 146.92999999998065,
+        "arrivals": 14,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 0.007031428376116407
+      },
+      {
+        "id": "east-public-room-52-visitor-0",
+        "route": "east-public-room-52-visitor",
+        "position": [
+          99.44997510044949,
+          52,
+          308.94997145757503
+        ],
+        "target": 3,
+        "dwell": 0,
+        "walked": 146.92999999998065,
+        "arrivals": 14,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 0.007031428376116407
+      },
+      {
+        "id": "east-public-room-84-visitor-0",
+        "route": "east-public-room-84-visitor",
+        "position": [
+          99.44997510044949,
+          84,
+          308.94997145757503
+        ],
+        "target": 3,
+        "dwell": 0,
+        "walked": 146.92999999998065,
+        "arrivals": 14,
+        "lastReason": null,
+        "blocked": 0,
+        "soleOffset": 0.007031428376116407
+      }
+    ],
+    "events": [
+      {
+        "id": 30,
+        "kind": "destination",
+        "clock": 44.433333333332094,
+        "visitor": "east-public-room-52-visitor-0",
+        "waypoint": 4,
+        "purpose": "Walk the public gallery, visit its sheltered waiting room and return to circulation"
+      },
+      {
+        "id": 31,
+        "kind": "destination",
+        "clock": 44.433333333332094,
+        "visitor": "east-public-room-84-visitor-0",
+        "waypoint": 4,
+        "purpose": "Walk the public gallery, visit its sheltered waiting room and return to circulation"
+      },
+      {
+        "id": 32,
+        "kind": "destination",
+        "clock": 44.583333333332085,
+        "visitor": "observation-visitors-1",
+        "waypoint": 1,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 33,
+        "kind": "destination",
+        "clock": 46.683333333331966,
+        "visitor": "station-commuters-0",
+        "waypoint": 0,
+        "purpose": "Walk between transit information and the protected waiting platform"
+      },
+      {
+        "id": 34,
+        "kind": "destination",
+        "clock": 49.533333333331804,
+        "visitor": "market-visitors-2",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 35,
+        "kind": "destination",
+        "clock": 52.683333333331625,
+        "visitor": "market-visitors-0",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 36,
+        "kind": "destination",
+        "clock": 54.81666666666484,
+        "visitor": "observation-visitors-1",
+        "waypoint": 2,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 37,
+        "kind": "destination",
+        "clock": 55.43333333333147,
+        "visitor": "market-visitors-1",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 38,
+        "kind": "destination",
+        "clock": 57.899999999997995,
+        "visitor": "station-commuters-1",
+        "waypoint": 3,
+        "purpose": "Walk between transit information and the protected waiting platform"
+      },
+      {
+        "id": 39,
+        "kind": "destination",
+        "clock": 58.26666666666464,
+        "visitor": "observation-visitors-0",
+        "waypoint": 1,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 40,
+        "kind": "destination",
+        "clock": 61.833333333331105,
+        "visitor": "market-visitors-2",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 41,
+        "kind": "destination",
+        "clock": 64.98333333333093,
+        "visitor": "market-visitors-0",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 42,
+        "kind": "destination",
+        "clock": 65.5833333333309,
+        "visitor": "station-commuters-2",
+        "waypoint": 0,
+        "purpose": "Walk between transit information and the protected waiting platform"
+      },
+      {
+        "id": 43,
+        "kind": "destination",
+        "clock": 67.73333333333078,
+        "visitor": "market-visitors-1",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 44,
+        "kind": "destination",
+        "clock": 68.4999999999974,
+        "visitor": "observation-visitors-0",
+        "waypoint": 2,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 45,
+        "kind": "destination",
+        "clock": 71.78333333333055,
+        "visitor": "station-commuters-0",
+        "waypoint": 3,
+        "purpose": "Walk between transit information and the protected waiting platform"
+      },
+      {
+        "id": 46,
+        "kind": "destination",
+        "clock": 71.98333333333053,
+        "visitor": "observation-visitors-1",
+        "waypoint": 1,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 47,
+        "kind": "destination",
+        "clock": 74.13333333333041,
+        "visitor": "market-visitors-2",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 48,
+        "kind": "destination",
+        "clock": 77.28333333333023,
+        "visitor": "market-visitors-0",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 49,
+        "kind": "destination",
+        "clock": 80.91666666666336,
+        "visitor": "market-visitors-1",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 50,
+        "kind": "destination",
+        "clock": 82.21666666666329,
+        "visitor": "observation-visitors-1",
+        "waypoint": 2,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 51,
+        "kind": "destination",
+        "clock": 84.49999999999649,
+        "visitor": "station-commuters-1",
+        "waypoint": 0,
+        "purpose": "Walk between transit information and the protected waiting platform"
+      },
+      {
+        "id": 52,
+        "kind": "destination",
+        "clock": 85.66666666666309,
+        "visitor": "observation-visitors-0",
+        "waypoint": 1,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 53,
+        "kind": "destination",
+        "clock": 86.43333333332971,
+        "visitor": "market-visitors-2",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 54,
+        "kind": "destination",
+        "clock": 89.58333333332953,
+        "visitor": "market-visitors-0",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 55,
+        "kind": "destination",
+        "clock": 90.68333333332947,
+        "visitor": "station-commuters-2",
+        "waypoint": 3,
+        "purpose": "Walk between transit information and the protected waiting platform"
+      },
+      {
+        "id": 56,
+        "kind": "destination",
+        "clock": 91.54999999999609,
+        "visitor": "east-public-room-24-visitor-0",
+        "waypoint": 2,
+        "purpose": "Walk the public gallery, visit its sheltered waiting room and return to circulation"
+      },
+      {
+        "id": 57,
+        "kind": "destination",
+        "clock": 91.54999999999609,
+        "visitor": "east-public-room-52-visitor-0",
+        "waypoint": 2,
+        "purpose": "Walk the public gallery, visit its sheltered waiting room and return to circulation"
+      },
+      {
+        "id": 58,
+        "kind": "destination",
+        "clock": 91.54999999999609,
+        "visitor": "east-public-room-84-visitor-0",
+        "waypoint": 2,
+        "purpose": "Walk the public gallery, visit its sheltered waiting room and return to circulation"
+      },
+      {
+        "id": 59,
+        "kind": "destination",
+        "clock": 93.21666666666266,
+        "visitor": "market-visitors-1",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 60,
+        "kind": "destination",
+        "clock": 95.89999999999584,
+        "visitor": "observation-visitors-0",
+        "waypoint": 2,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 61,
+        "kind": "destination",
+        "clock": 98.38333333332903,
+        "visitor": "station-commuters-0",
+        "waypoint": 0,
+        "purpose": "Walk between transit information and the protected waiting platform"
+      },
+      {
+        "id": 62,
+        "kind": "destination",
+        "clock": 99.38333333332898,
+        "visitor": "observation-visitors-1",
+        "waypoint": 1,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 63,
+        "kind": "destination",
+        "clock": 99.63333333332896,
+        "visitor": "market-visitors-2",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 64,
+        "kind": "destination",
+        "clock": 101.88333333332884,
+        "visitor": "market-visitors-0",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 65,
+        "kind": "destination",
+        "clock": 105.53333333332863,
+        "visitor": "market-visitors-1",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 66,
+        "kind": "destination",
+        "clock": 109.59999999999506,
+        "visitor": "station-commuters-1",
+        "waypoint": 3,
+        "purpose": "Walk between transit information and the protected waiting platform"
+      },
+      {
+        "id": 67,
+        "kind": "destination",
+        "clock": 109.61666666666173,
+        "visitor": "observation-visitors-1",
+        "waypoint": 2,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 68,
+        "kind": "destination",
+        "clock": 111.93333333332826,
+        "visitor": "market-visitors-2",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 69,
+        "kind": "destination",
+        "clock": 113.06666666666153,
+        "visitor": "observation-visitors-0",
+        "waypoint": 1,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 70,
+        "kind": "destination",
+        "clock": 115.01666666666142,
+        "visitor": "market-visitors-0",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 71,
+        "kind": "destination",
+        "clock": 117.28333333332796,
+        "visitor": "station-commuters-2",
+        "waypoint": 0,
+        "purpose": "Walk between transit information and the protected waiting platform"
+      },
+      {
+        "id": 72,
+        "kind": "destination",
+        "clock": 117.83333333332793,
+        "visitor": "market-visitors-1",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 73,
+        "kind": "destination",
+        "clock": 121.61666666666105,
+        "visitor": "east-public-room-24-visitor-0",
+        "waypoint": 4,
+        "purpose": "Walk the public gallery, visit its sheltered waiting room and return to circulation"
+      },
+      {
+        "id": 74,
+        "kind": "destination",
+        "clock": 121.61666666666105,
+        "visitor": "east-public-room-52-visitor-0",
+        "waypoint": 4,
+        "purpose": "Walk the public gallery, visit its sheltered waiting room and return to circulation"
+      },
+      {
+        "id": 75,
+        "kind": "destination",
+        "clock": 121.61666666666105,
+        "visitor": "east-public-room-84-visitor-0",
+        "waypoint": 4,
+        "purpose": "Walk the public gallery, visit its sheltered waiting room and return to circulation"
+      },
+      {
+        "id": 76,
+        "kind": "destination",
+        "clock": 123.29999999999428,
+        "visitor": "observation-visitors-0",
+        "waypoint": 2,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 77,
+        "kind": "destination",
+        "clock": 123.48333333332761,
+        "visitor": "station-commuters-0",
+        "waypoint": 3,
+        "purpose": "Walk between transit information and the protected waiting platform"
+      },
+      {
+        "id": 78,
+        "kind": "destination",
+        "clock": 124.23333333332756,
+        "visitor": "market-visitors-2",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 79,
+        "kind": "destination",
+        "clock": 126.78333333332742,
+        "visitor": "observation-visitors-1",
+        "waypoint": 1,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 80,
+        "kind": "destination",
+        "clock": 127.31666666666072,
+        "visitor": "market-visitors-0",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 81,
+        "kind": "destination",
+        "clock": 130.13333333332903,
+        "visitor": "market-visitors-1",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 82,
+        "kind": "destination",
+        "clock": 136.20000000000053,
+        "visitor": "station-commuters-1",
+        "waypoint": 0,
+        "purpose": "Walk between transit information and the protected waiting platform"
+      },
+      {
+        "id": 83,
+        "kind": "destination",
+        "clock": 136.53333333333413,
+        "visitor": "market-visitors-2",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 84,
+        "kind": "destination",
+        "clock": 137.01666666666785,
+        "visitor": "observation-visitors-1",
+        "waypoint": 2,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 85,
+        "kind": "destination",
+        "clock": 139.61666666666991,
+        "visitor": "market-visitors-0",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 86,
+        "kind": "destination",
+        "clock": 140.4666666666706,
+        "visitor": "observation-visitors-0",
+        "waypoint": 1,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 87,
+        "kind": "destination",
+        "clock": 142.38333333333878,
+        "visitor": "station-commuters-2",
+        "waypoint": 3,
+        "purpose": "Walk between transit information and the protected waiting platform"
+      },
+      {
+        "id": 88,
+        "kind": "destination",
+        "clock": 142.43333333333882,
+        "visitor": "market-visitors-1",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 89,
+        "kind": "destination",
+        "clock": 148.83333333334392,
+        "visitor": "market-visitors-2",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 90,
+        "kind": "destination",
+        "clock": 150.0833333333449,
+        "visitor": "station-commuters-0",
+        "waypoint": 0,
+        "purpose": "Walk between transit information and the protected waiting platform"
+      },
+      {
+        "id": 91,
+        "kind": "destination",
+        "clock": 150.70000000001207,
+        "visitor": "observation-visitors-0",
+        "waypoint": 2,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 92,
+        "kind": "destination",
+        "clock": 151.9166666666797,
+        "visitor": "market-visitors-0",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 93,
+        "kind": "destination",
+        "clock": 154.18333333334817,
+        "visitor": "observation-visitors-1",
+        "waypoint": 1,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 94,
+        "kind": "destination",
+        "clock": 155.63333333334933,
+        "visitor": "market-visitors-1",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 95,
+        "kind": "destination",
+        "clock": 161.1333333333537,
+        "visitor": "market-visitors-2",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 96,
+        "kind": "destination",
+        "clock": 161.3000000000205,
+        "visitor": "station-commuters-1",
+        "waypoint": 3,
+        "purpose": "Walk between transit information and the protected waiting platform"
+      },
+      {
+        "id": 97,
+        "kind": "destination",
+        "clock": 164.2166666666895,
+        "visitor": "market-visitors-0",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 98,
+        "kind": "destination",
+        "clock": 164.41666666668965,
+        "visitor": "observation-visitors-1",
+        "waypoint": 2,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 99,
+        "kind": "destination",
+        "clock": 167.8666666666924,
+        "visitor": "observation-visitors-0",
+        "waypoint": 1,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 100,
+        "kind": "destination",
+        "clock": 167.93333333335912,
+        "visitor": "market-visitors-1",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 101,
+        "kind": "destination",
+        "clock": 168.73333333335975,
+        "visitor": "east-public-room-24-visitor-0",
+        "waypoint": 2,
+        "purpose": "Walk the public gallery, visit its sheltered waiting room and return to circulation"
+      },
+      {
+        "id": 102,
+        "kind": "destination",
+        "clock": 168.73333333335975,
+        "visitor": "east-public-room-52-visitor-0",
+        "waypoint": 2,
+        "purpose": "Walk the public gallery, visit its sheltered waiting room and return to circulation"
+      },
+      {
+        "id": 103,
+        "kind": "destination",
+        "clock": 168.73333333335975,
+        "visitor": "east-public-room-84-visitor-0",
+        "waypoint": 2,
+        "purpose": "Walk the public gallery, visit its sheltered waiting room and return to circulation"
+      },
+      {
+        "id": 104,
+        "kind": "destination",
+        "clock": 168.98333333335995,
+        "visitor": "station-commuters-2",
+        "waypoint": 0,
+        "purpose": "Walk between transit information and the protected waiting platform"
+      },
+      {
+        "id": 105,
+        "kind": "destination",
+        "clock": 174.3333333333642,
+        "visitor": "market-visitors-2",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 106,
+        "kind": "destination",
+        "clock": 175.18333333336489,
+        "visitor": "station-commuters-0",
+        "waypoint": 3,
+        "purpose": "Walk between transit information and the protected waiting platform"
+      },
+      {
+        "id": 107,
+        "kind": "destination",
+        "clock": 176.51666666669928,
+        "visitor": "market-visitors-0",
+        "waypoint": 1,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      },
+      {
+        "id": 108,
+        "kind": "destination",
+        "clock": 178.10000000003387,
+        "visitor": "observation-visitors-0",
+        "waypoint": 2,
+        "purpose": "Walk through the sheltered observation area and pause at the outlook"
+      },
+      {
+        "id": 109,
+        "kind": "destination",
+        "clock": 180.2333333333689,
+        "visitor": "market-visitors-1",
+        "waypoint": 3,
+        "purpose": "Visit the suspended commercial gallery and storefront approach"
+      }
+    ],
+    "aircraft": 36,
+    "visitors": 11,
+    "visuals": [
+      {
+        "position": [
+          76.17742102583001,
+          100,
+          401.97564464751724
+        ],
+        "sole": 99.99999999876974,
+        "support": 100.42
+      },
+      {
+        "position": [
+          76.97890314229417,
+          100,
+          386.8386559782611
+        ],
+        "sole": 99.99999999889171,
+        "support": 100.42
+      },
+      {
+        "position": [
+          76.08797587016807,
+          100,
+          386.08476603401886
+        ],
+        "sole": 99.99999999913972,
+        "support": 100.42
+      },
+      {
+        "position": [
+          65.4708313613796,
+          24,
+          356.1003217481383
+        ],
+        "sole": 23.999999998664855,
+        "support": 24.42
+      },
+      {
+        "position": [
+          62.52916863862039,
+          24,
+          361.4996782518617
+        ],
+        "sole": 23.999999998975586,
+        "support": 24.42
+      },
+      {
+        "position": [
+          62.52357773132998,
+          24,
+          360.46469335257336
+        ],
+        "sole": 23.999999998664997,
+        "support": 24.42
+      },
+      {
+        "position": [
+          79.99989225997237,
+          128,
+          422.98007419541347
+        ],
+        "sole": 127.99999999866485,
+        "support": 128.42
+      },
+      {
+        "position": [
+          78.45341063273113,
+          128,
+          417.00770446689756
+        ],
+        "sole": 127.99999999880163,
+        "support": 128.42
+      },
+      {
+        "position": [
+          99.44997510044949,
+          24,
+          308.94997145757503
+        ],
+        "sole": 23.999999999050385,
+        "support": 24.42
+      },
+      {
+        "position": [
+          99.44997510044949,
+          52,
+          308.94997145757503
+        ],
+        "sole": 51.99999999905039,
+        "support": 52.42
+      },
+      {
+        "position": [
+          99.44997510044949,
+          84,
+          308.94997145757503
+        ],
+        "sole": 83.99999999905039,
+        "support": 84.42
+      }
+    ]
+  },
+  "yielded": {
+    "id": "east-public-room-24-visitor-0",
+    "route": "east-public-room-24-visitor",
+    "position": [
+      99.44997510044949,
+      24,
+      308.94997145757503
+    ],
+    "target": 3,
+    "dwell": 0,
+    "walked": 146.92999999998065,
+    "arrivals": 14,
+    "lastReason": "hero nearby",
+    "blocked": 1,
+    "soleOffset": 0.007093717707949808
+  },
+  "yieldTest": {
+    "initial": {
+      "id": "east-public-room-24-visitor-0",
+      "route": "east-public-room-24-visitor",
+      "position": [
+        99.44997510044949,
+        24,
+        308.94997145757503
+      ],
+      "target": 3,
+      "dwell": 0,
+      "walked": 146.92999999998065,
+      "arrivals": 14,
+      "lastReason": null,
+      "blocked": 0,
+      "soleOffset": 0.007031428376116407
+    },
+    "final": {
+      "id": "east-public-room-24-visitor-0",
+      "route": "east-public-room-24-visitor",
+      "position": [
+        97.34997510059124,
+        24,
+        308.9499959227597
+      ],
+      "target": 3,
+      "dwell": 0,
+      "walked": 149.02999999998215,
+      "arrivals": 14,
+      "lastReason": null,
+      "blocked": 1,
+      "soleOffset": 0.006194713784188764
+    }
+  },
+  "traces": "development/vertical-city-v02/evidence/east-public-room-life/traces.json.gz",
+  "tracesSHA256": "d12ac82b6ecb558dcfd84222d04fb387520e85663fce7f22d60f5c9c21fa579a"
+}

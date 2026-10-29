@@ -1,0 +1,1174 @@
+{
+  "status": "PASS nine native public-room entry/return/continuation cases with support, camera and body framing checks; visual/reference/release acceptance separate",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_PUBLIC_ROOM_LIFE.html",
+  "entrySHA256": "e8459a0bb274ede1ddc56771599255bc32f103a9c946124bd57c857c66589bf8",
+  "manifestSHA256": "0bf5890913968eec9d1450be46d97dcb548693030cc9b0fbef4fb221cd4a6833",
+  "testSHA256": "f75923b5df04d4ba39cd2dc3b880a5fb66fbfb61ee89e265bc7ccad6e69a407c",
+  "scope": "Normal input enters and exits three actual public rooms, with desktop keyboard and simulated-controller portrait/landscape layouts. Initial fixture only is positioned directly. No physical-device, arbitrary route or visual-quality acceptance.",
+  "cases": [
+    {
+      "view": "desktop",
+      "driver": "keyboard",
+      "floor": 24,
+      "walking": true,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/desktop-24-gallery.png",
+          "sha256": "0bb50f17b809c9d2111e15872f90641e7d11a9ae19979be68a49bc83a32d36c5"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/desktop-24-room.png",
+          "sha256": "cd0fb9be39d5667a342cbf85faec2a72f0f4b1705075bfcad60c7baf9a9e4e94"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/desktop-24-return.png",
+          "sha256": "d30c894e0c8f4123e949f16e5e8fc236b81c7ff5f9fa1e3a9870f22e5e1d1cde"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/desktop-24-continue.png",
+          "sha256": "df8c6d6184c5672d0ac7e3a673a3988bedfbc34aacdce2d9439920ebc61460d7"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/desktop-24-reverse-gallery.png",
+          "sha256": "969dbfe510da9eba6cf35d20ebd969e40f36163c7ebbb3fb94aa7bf91ef9c6c9"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/desktop-24-start-return.png",
+          "sha256": "615b421d5ffd32180548e8c0d1f204fd853427374f3c116182871029cc82930c"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96,
+            24.42,
+            309.892499999991
+          ],
+          "frame": 392
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            24,
+            310
+          ],
+          "position": [
+            102.01500000000074,
+            24.42,
+            309.919999999991
+          ],
+          "frame": 644
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            309.919999999991
+          ],
+          "frame": 892
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            24,
+            326
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            325.9174999999764
+          ],
+          "frame": 1506
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            310.0849999999908
+          ],
+          "frame": 2114
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            24,
+            300
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            300.0824999999999
+          ],
+          "frame": 2510
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "seconds": 41.833333333333336,
+      "frames": 2510
+    },
+    {
+      "view": "desktop",
+      "driver": "keyboard",
+      "floor": 52,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/desktop-52-gallery.png",
+          "sha256": "9031e3487504fdbdc97bd5290bc19d9a72bc26415c36854a2e6abfecd4c42249"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/desktop-52-room.png",
+          "sha256": "6cecb6031ce4fbe3b5bf5253448b2f1752dccedb97085cad2765fb020fa47c44"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/desktop-52-return.png",
+          "sha256": "cc50586719dd204f8e6dd2769e074c422f380c7751a47ecdf54f229b7e407cdc"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/desktop-52-continue.png",
+          "sha256": "3dff777c66e0169f23284f635f2464ff3f77dd17368898bbbd7420d9e6cc6f45"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/desktop-52-reverse-gallery.png",
+          "sha256": "2a992b2efe01b5513e5db8f3ce26b6a14a54adb4b45961e3d01ebe5cf1d3c57b"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/desktop-52-start-return.png",
+          "sha256": "dc2e85fd888203fe183edc4cf6ba028f3635423869b100f3311a5d0f2a63583e"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96,
+            52.42,
+            309.95500000000106
+          ],
+          "frame": 131
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            52,
+            310
+          ],
+          "position": [
+            101.99499999999998,
+            52.42,
+            309.95500000000106
+          ],
+          "frame": 226
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.11,
+            52.42,
+            309.95500000000106
+          ],
+          "frame": 320
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            52,
+            326
+          ],
+          "position": [
+            96.11,
+            52.42,
+            325.9600000000029
+          ],
+          "frame": 506
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.11,
+            52.42,
+            310.0650000000011
+          ],
+          "frame": 691
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            52,
+            300
+          ],
+          "position": [
+            96.11,
+            52.42,
+            300
+          ],
+          "frame": 823
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "seconds": 13.716666666666667,
+      "frames": 823
+    },
+    {
+      "view": "desktop",
+      "driver": "keyboard",
+      "floor": 84,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/desktop-84-gallery.png",
+          "sha256": "da1311133655b862853daee282cb10dfefdb16124b31066a411ea04dbd4038b4"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/desktop-84-room.png",
+          "sha256": "70e260e4ecef745fe7e9bf858c17a7d829e5e6fb026c54613f3fce4d65cd9257"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/desktop-84-return.png",
+          "sha256": "309576f3057977e3ec10ac6f195d881546ceb382c41e8f8d080d4ada48d5dfbc"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/desktop-84-continue.png",
+          "sha256": "c550ee288a0afece5d85ba9640f602c0bf6b923342ef7a16783dffe0a78aef4e"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/desktop-84-reverse-gallery.png",
+          "sha256": "20518785ffd917b7520d093eb3eb6b5cded5acf1f8527755c47bcb786175138a"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/desktop-84-start-return.png",
+          "sha256": "a11c008b721f2986a302116bf5ab93bc8de18c193993615acdf627717fff2439"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96,
+            84.42,
+            309.95500000000106
+          ],
+          "frame": 131
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            84,
+            310
+          ],
+          "position": [
+            101.99499999999998,
+            84.42,
+            309.95500000000106
+          ],
+          "frame": 226
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.11,
+            84.42,
+            309.95500000000106
+          ],
+          "frame": 320
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            84,
+            326
+          ],
+          "position": [
+            96.11,
+            84.42,
+            325.9600000000029
+          ],
+          "frame": 506
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.11,
+            84.42,
+            310.0650000000011
+          ],
+          "frame": 691
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            84,
+            300
+          ],
+          "position": [
+            96.11,
+            84.42,
+            300
+          ],
+          "frame": 823
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "seconds": 13.716666666666667,
+      "frames": 823
+    },
+    {
+      "view": "portrait",
+      "driver": "controller",
+      "floor": 24,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/portrait-24-gallery.png",
+          "sha256": "9cdf8a5ef6cd8e7e9ed19fabc3ddb72f326ef9b4b46b213147d9421fc8b342e9"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/portrait-24-room.png",
+          "sha256": "ad293036d8b6e1db13402787fc5d8413337803bf346b4165df6f69b76c3a3d6a"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/portrait-24-return.png",
+          "sha256": "9be3a61cfc4079c6285551ac4cc0c9f0c789f4314090cb7eccbc88d0a042d9ed"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/portrait-24-continue.png",
+          "sha256": "e8dc938c1cccdbd2b7d68f2eb881e31ba8d84a527f5d55b2d100232a87ee6114"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/portrait-24-reverse-gallery.png",
+          "sha256": "0700103e5cd3a11e994b34a0caedff22335217e7cfb7204be81f4162702f93eb"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/portrait-24-start-return.png",
+          "sha256": "846cb95385303492919955cf912975a0758b687b05894ec4ea1841b4e49bf453"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96,
+            24.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            24,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            24.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            24.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            24,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            24.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            24.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            24,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            24.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "portrait",
+      "driver": "controller",
+      "floor": 52,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/portrait-52-gallery.png",
+          "sha256": "17dfd55ed6ddea7b86eeb7c9f6bb71edf02f93e1a7a50b3ab6ea703bc1d2753e"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/portrait-52-room.png",
+          "sha256": "c65d1b66807a1090dc2d9ba0f848bc9fbd6fb24279fa8335269a4512367cadb3"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/portrait-52-return.png",
+          "sha256": "12e3fddbf9e0950527a15d4cacc27e8060ed6194ee8fdc55e28f07f37b550679"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/portrait-52-continue.png",
+          "sha256": "48a9c3061ff0169e719a3dd9b3090b4806abf9fe9688c1fe9ade84a3abe3b4d0"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/portrait-52-reverse-gallery.png",
+          "sha256": "7fe0e58c79912d0c2b193eedbdbfe20fbe754ec566c599a69252e5615606f506"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/portrait-52-start-return.png",
+          "sha256": "b54636286b73b04f98de730e146582fcdbb53464ddfcffa71cee597a006c9227"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96,
+            52.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            52,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            52.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            52.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            52,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            52.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            52.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            52,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            52.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "portrait",
+      "driver": "controller",
+      "floor": 84,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/portrait-84-gallery.png",
+          "sha256": "b366c58cbdbbeb7fd9e9ac29d372a63a624dc120aeec824642be5c38678e568b"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/portrait-84-room.png",
+          "sha256": "f414a386800a0365bbc058fdd42c4a1b956ed5b33452ca3ad3090ee007f6f8f3"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/portrait-84-return.png",
+          "sha256": "1323606a27aa5adc390306a5a5dbf3c10bc59290e7fb1db20551e45785cffa6b"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/portrait-84-continue.png",
+          "sha256": "551facb2b0d7e85428eded32f2790c554b9c02ac7e731635842b3fb1dc9349e6"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/portrait-84-reverse-gallery.png",
+          "sha256": "fd403f8aa62c67e3bce44b7c92d0da6a529770920d8cba6d1a29e87cc6a3fb92"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/portrait-84-start-return.png",
+          "sha256": "822b1e1c3037617a3cfdaf7f1698ec476a211606556f422148ba37425a7baaca"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96,
+            84.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            84,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            84.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            84.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            84,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            84.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            84.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            84,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            84.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "landscape",
+      "driver": "controller",
+      "floor": 24,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/landscape-24-gallery.png",
+          "sha256": "d54f242213b27cf1a54164395aa71b84658d38e3246d61d4508d344962bcaf8d"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/landscape-24-room.png",
+          "sha256": "38358fa4c804b1f1264a3d4b5fddd135637816c6ae6bd6f61b967d78ea3b004a"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/landscape-24-return.png",
+          "sha256": "8325ce11b5b8431ee375ccc5b455243bc9338f8ed8ea4e23e580baea98151c59"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/landscape-24-continue.png",
+          "sha256": "63686a763e02bd582ad8d03107f940ec20edbb5f7f0f7068615786a5269d68eb"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/landscape-24-reverse-gallery.png",
+          "sha256": "044de518490f36b6686b84054d1a2f5b6e82b009709f329dd9f7c252a869bf1e"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/landscape-24-start-return.png",
+          "sha256": "d2f17e4c41536ba3a376d2c90d9b2a3a323fa60605aca20e6b51344a19c0b38b"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96,
+            24.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            24,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            24.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            24.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            24,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            24.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            24.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            24,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            24.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "landscape",
+      "driver": "controller",
+      "floor": 52,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/landscape-52-gallery.png",
+          "sha256": "7907724a05489f81824c823d3aa02a59664b5ecc77e96a7fc397d0113bc1bcb4"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/landscape-52-room.png",
+          "sha256": "4d8643c35c0652c247362fec5cc921ab1cd6d5b2fa2c467e2cfe55d20341c357"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/landscape-52-return.png",
+          "sha256": "12685dc8861f2e1234d90ae6f00f6826150d1bc46bd91c1678a7834c33e6b3b0"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/landscape-52-continue.png",
+          "sha256": "bf5fa0e823bb78c2dff7d7a1338c913f4a1332de445f3c0c0a4e2a014b8a46bf"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/landscape-52-reverse-gallery.png",
+          "sha256": "8c01ae9d1fad48ddb60ee6ac294d6cd24087aabf259b2eb6f845599e73a9075d"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/landscape-52-start-return.png",
+          "sha256": "a8c42742023fae717fc465ac706a14c76b512a69d829867edce1a6079c06b14c"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96,
+            52.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            52,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            52.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            52.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            52,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            52.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            52.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            52,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            52.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "landscape",
+      "driver": "controller",
+      "floor": 84,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/landscape-84-gallery.png",
+          "sha256": "e4720eda7541a83a8bbba21d6898fcce5b95938f49e77dc182308fc10186c173"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/landscape-84-room.png",
+          "sha256": "8c330e87d6091b8f43a51bbdbc59ca4ef6252f1ef22701c703051dcda3309e38"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/landscape-84-return.png",
+          "sha256": "f3a6b749814902cb08d683ed573a8603a9a8af3b0beb1dfbea8a2dcadb31e105"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/landscape-84-continue.png",
+          "sha256": "2683a4fe4d8bf19bb9b0d36ca71e63c5e340559513cc20353406e06fc251fa5d"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/landscape-84-reverse-gallery.png",
+          "sha256": "18b292bbda7a7e79c320ead327d464ed1239d6efafa912fce7010178dad82421"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/east-public-room-life-movement/landscape-84-start-return.png",
+          "sha256": "8c3790f727ead8b8d7d65bf99d0577c019901e41db6fa3b3c1d24d0ff693993f"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96,
+            84.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            84,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            84.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            84.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            84,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            84.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            84.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            84,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            84.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    }
+  ],
+  "errors": [],
+  "traces": "development/vertical-city-v02/evidence/east-public-room-life-movement/traces.json.gz",
+  "tracesSHA256": "7208d140daa590ae5f3456be3680a2698ed50f8f5d8d8f2421fec67c92680b17"
+}

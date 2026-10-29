@@ -1,0 +1,172 @@
+{
+  "status": "PASS chase pursuit through supported upper route",
+  "scope": "Single station setup. Normal movement and interaction through connected 100/128m architecture. chase",
+  "errors": [],
+  "stages": [
+    {
+      "label": "start",
+      "frame": 6,
+      "p": [
+        73,
+        100.42,
+        364
+      ],
+      "target": [
+        73.7,
+        100,
+        373
+      ],
+      "phase": "active",
+      "elapsed": 0.05
+    },
+    {
+      "label": "stairs-entry",
+      "frame": 3326,
+      "p": [
+        61.07523660263679,
+        100.42,
+        403.3917313423531
+      ],
+      "target": [
+        61.00716773132338,
+        120.39506172839506,
+        408.4499938035882
+      ],
+      "phase": "active",
+      "elapsed": 55.38333333333147
+    },
+    {
+      "label": "upper-stair",
+      "frame": 5408,
+      "p": [
+        61.131110833316086,
+        128.42,
+        403.50188321008454
+      ],
+      "target": [
+        55.00335943582726,
+        127.99999999999999,
+        424.06499670549607
+      ],
+      "phase": "active",
+      "elapsed": 90.0833333333295
+    },
+    {
+      "label": "upper-approach",
+      "frame": 5900,
+      "p": [
+        68.69552914194493,
+        128.42,
+        429.92675507781644
+      ],
+      "target": [
+        70.7500000000006,
+        127.99999999999999,
+        430
+      ],
+      "phase": "victory",
+      "elapsed": 98.21666666666238
+    },
+    {
+      "label": "victory",
+      "frame": 6185,
+      "p": [
+        68.69552914194493,
+        128.42,
+        429.92675507781644
+      ],
+      "target": [
+        70.7500000000006,
+        127.99999999999999,
+        430
+      ],
+      "phase": "victory",
+      "elapsed": 98.21666666666238
+    }
+  ],
+  "entrySHA256": "d40e10c5d47b82ecd0eac30adc64e383566ce68cb0504635e256781a43c80300",
+  "manifestSHA256": "0bf5890913968eec9d1450be46d97dcb548693030cc9b0fbef4fb221cd4a6833",
+  "pursuitSHA256": "d26199eb208a5d3fc21ad26f70c97471bd14b8b3b8370dfd2611c7b0c0344d58",
+  "fullGroundApproach": false,
+  "runnerVisual": {
+    "visible": true,
+    "visualSoleY": 128,
+    "baseY": 127.99999999999999,
+    "ndc": [
+      -0.0075781742975331,
+      -0.06526885047620837,
+      0.9843698322795982
+    ]
+  },
+  "courierPreserved": true,
+  "maximumRunnerRise": 0.17283950617284916,
+  "maximumRunnerHorizontalStep": 0.045000000000024035,
+  "final": {
+    "p": [
+      68.69552914194493,
+      128.42,
+      429.92675507781644
+    ],
+    "v": [
+      0,
+      0,
+      0
+    ],
+    "grounded": true,
+    "trauma": 0,
+    "score": 400,
+    "active": true,
+    "pursuit": {
+      "phase": "victory",
+      "attempt": 1,
+      "elapsed": 98.21666666666238,
+      "runner": {
+        "position": [
+          70.7500000000006,
+          127.99999999999999,
+          430
+        ],
+        "speedLimit": 2.7
+      },
+      "canCapture": false,
+      "waypoint": 39,
+      "rewarded": true,
+      "error": null,
+      "events": [
+        {
+          "eventId": 39,
+          "attempt": 1,
+          "time": 92.35,
+          "kind": "waypoint",
+          "index": 38,
+          "position": [
+            55,
+            127.99999999999999,
+            430
+          ]
+        },
+        {
+          "eventId": 40,
+          "attempt": 1,
+          "time": 98.267,
+          "kind": "intercepted",
+          "position": [
+            70.7500000000006,
+            127.99999999999999,
+            430
+          ],
+          "player": [
+            68.69552914194493,
+            128.42,
+            429.92675507781644
+          ],
+          "reward": 400
+        }
+      ]
+    },
+    "bank": 3,
+    "releases": 0
+  },
+  "fullTrace": "V02_Pursuit_chase.trace.json.gz",
+  "traceFrames": 6185
+}

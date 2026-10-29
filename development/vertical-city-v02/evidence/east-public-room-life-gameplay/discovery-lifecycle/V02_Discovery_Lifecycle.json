@@ -1,0 +1,1466 @@
+{
+  "status": "PASS discovery elevation, line-of-sight, pause, input, hero and invalidation cases",
+  "scope": "One labelled below-POI ground setup, then normal walking/keys/controller/CDP touch. Navigation-refresh API is an explicitly labelled invalidation probe, not a destruction playthrough.",
+  "results": [
+    {
+      "name": "matching XZ below the market does not discover or read its elevated board",
+      "pass": true
+    },
+    {
+      "name": "actual kiosk geometry prevents reading through its back; normal walking reaches its front",
+      "pass": true
+    },
+    {
+      "name": "standard controller Y opens information without changing combat state",
+      "pass": true
+    },
+    {
+      "name": "labelled native navigation refresh cancels an in-progress route check before publishing mixed-world guidance",
+      "pass": true
+    },
+    {
+      "name": "actual controller-look frames the readable front of the Blender kiosk and runtime label",
+      "pass": true
+    },
+    {
+      "name": "board Pause freezes clock and state; normal resume restores the reading",
+      "pass": true
+    },
+    {
+      "name": "CDP touch reads and chooses a public route; portrait/landscape Close and Pause remain reachable and combat controls return",
+      "pass": true
+    },
+    {
+      "name": "actual hero switching retains the guide without advancing it or replacing Sightline objectives",
+      "pass": true
+    },
+    {
+      "name": "labelled existing navigation-refresh API invalidates stale guidance; actual Clear route removes it",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_PUBLIC_ROOM_LIFE.html",
+  "manifest": "assets/city/vertical-v02/east-public-emissive/runtime/manifest.json",
+  "stage": "hud",
+  "evidenceRun": "east-public-room-life-gameplay/discovery-lifecycle",
+  "entrySHA256": "d40e10c5d47b82ecd0eac30adc64e383566ce68cb0504635e256781a43c80300",
+  "manifestSHA256": "0bf5890913968eec9d1450be46d97dcb548693030cc9b0fbef4fb221cd4a6833",
+  "encounterSHA256": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+  "marketSHA256": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+  "eastPublicReadiness": {
+    "adapterSHA256": "b3a00e6933b6d42b3a947c0a10a728aa98745eb18a8414b7a2df7a397be3f165",
+    "state": {
+      "lighting": {
+        "ready": true,
+        "loading": false,
+        "error": null,
+        "rooms": [
+          {
+            "floor": 24,
+            "chunk": "east-public-room-24",
+            "meshes": 7,
+            "primitives": 7,
+            "atlasSHA256": "c9404fabb60249eb787b7ef445cc9fceb9e5eab29d5828cd9d243ee9b9248dc5",
+            "reflectionSHA256": "8421338e3d172749edf51def4c592bf4286b0a4f270e0e14bbadf65fa1ca86f9",
+            "probe": [
+              102.1,
+              25.6,
+              310
+            ]
+          },
+          {
+            "floor": 52,
+            "chunk": "east-public-room-52",
+            "meshes": 7,
+            "primitives": 7,
+            "atlasSHA256": "58aaa5d7c3b8d0942f0204d4bc1c1581d1eed3a9c06028824c5e65c0de2858fb",
+            "reflectionSHA256": "e02a9ee9f4f79d90798d006ff4d8e1d11cd570944ba01461fb045bbdf4844750",
+            "probe": [
+              102.1,
+              53.6,
+              310
+            ]
+          },
+          {
+            "floor": 84,
+            "chunk": "east-public-room-84",
+            "meshes": 7,
+            "primitives": 7,
+            "atlasSHA256": "9f18d4134a391a08a515065188325b528dfb8144cade36474c4fd69f54827e00",
+            "reflectionSHA256": "36b2a73f6f82b5571c2b78e0ba97c84e617adba760afaffb751c426a1fa73748",
+            "probe": [
+              102.1,
+              85.6,
+              310
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "name": "V02_glass",
+            "floor": 24,
+            "diffuse": false
+          },
+          {
+            "name": "V02_cyan",
+            "floor": 24,
+            "diffuse": false
+          },
+          {
+            "name": "V02_terrace_foliage",
+            "floor": 24,
+            "diffuse": true
+          },
+          {
+            "name": "V02_arcade_soffit",
+            "floor": 24,
+            "diffuse": true
+          },
+          {
+            "name": "V02_east_loggia_luminaire_v2",
+            "floor": 24,
+            "diffuse": true
+          },
+          {
+            "name": "V02_deck",
+            "floor": 24,
+            "diffuse": true
+          },
+          {
+            "name": "V02_steel",
+            "floor": 24,
+            "diffuse": true
+          },
+          {
+            "name": "V02_glass",
+            "floor": 52,
+            "diffuse": false
+          },
+          {
+            "name": "V02_cyan",
+            "floor": 52,
+            "diffuse": false
+          },
+          {
+            "name": "V02_terrace_foliage",
+            "floor": 52,
+            "diffuse": true
+          },
+          {
+            "name": "V02_arcade_soffit",
+            "floor": 52,
+            "diffuse": true
+          },
+          {
+            "name": "V02_east_loggia_luminaire_v2",
+            "floor": 52,
+            "diffuse": true
+          },
+          {
+            "name": "V02_deck",
+            "floor": 52,
+            "diffuse": true
+          },
+          {
+            "name": "V02_steel",
+            "floor": 52,
+            "diffuse": true
+          },
+          {
+            "name": "V02_glass",
+            "floor": 84,
+            "diffuse": false
+          },
+          {
+            "name": "V02_cyan",
+            "floor": 84,
+            "diffuse": false
+          },
+          {
+            "name": "V02_terrace_foliage",
+            "floor": 84,
+            "diffuse": true
+          },
+          {
+            "name": "V02_arcade_soffit",
+            "floor": 84,
+            "diffuse": true
+          },
+          {
+            "name": "V02_east_loggia_luminaire_v2",
+            "floor": 84,
+            "diffuse": true
+          },
+          {
+            "name": "V02_deck",
+            "floor": 84,
+            "diffuse": true
+          },
+          {
+            "name": "V02_steel",
+            "floor": 84,
+            "diffuse": true
+          }
+        ],
+        "newDynamicLights": 0,
+        "textureBytes": 9437184,
+        "sourceMasterSHA256": "8dead00f5b5a9b268d2ea74765e33347e04488040179a72c5db918c3ec06649f",
+        "contractSHA256": "2d699f15a6c44b4286b836537f3bd40fe7df6e8f532404084d531efeb3da13fd",
+        "bakeScope": "Only the six new room fixtures: full direct+indirect diffuse. Sun, sky, old emitters and global lights are excluded from these atlases.",
+        "scope": "New-fixture emissive-only source light maps loaded; live global lighting retained; gameplay and final visual acceptance remain separate"
+      },
+      "cassettes": {
+        "ready": true,
+        "loading": false,
+        "error": null,
+        "owners": [
+          {
+            "id": "building-141",
+            "parent": true,
+            "features": 1117,
+            "hidden": 0,
+            "visible": true
+          },
+          {
+            "id": "building-160",
+            "parent": true,
+            "features": 837,
+            "hidden": 0,
+            "visible": true
+          },
+          {
+            "id": "building-162",
+            "parent": true,
+            "features": 474,
+            "hidden": 0,
+            "visible": true
+          }
+        ],
+        "features": 2428,
+        "hidden": 0,
+        "triangles": 155392,
+        "newDynamicLights": 0,
+        "newCollisionRecords": 0,
+        "sourceMasterSHA256": "de5e381572d622623943d48a40bb911b89d141812f21d8c902828777de42d8e2"
+      },
+      "world": {
+        "ready": true,
+        "loading": false,
+        "error": null,
+        "aircraft": 36,
+        "visitors": 11,
+        "source": "Shared Blender hover vehicles and existing street pedestrian geometry",
+        "blockedMoves": 0,
+        "events": [
+          {
+            "id": 1,
+            "kind": "ready",
+            "clock": 0
+          },
+          {
+            "id": 2,
+            "kind": "destination",
+            "clock": 0.016666666666666666,
+            "visitor": "observation-visitors-1",
+            "waypoint": 2,
+            "purpose": "Walk through the sheltered observation area and pause at the outlook"
+          }
+        ],
+        "eventId": 2,
+        "clock": 0.06666666666666667,
+        "ambientManifestSHA256": "0bf5890913968eec9d1450be46d97dcb548693030cc9b0fbef4fb221cd4a6833",
+        "roomGraphSHA256": "29077afba94b6e538d19a28f3b7b1bec95609df512b1b4cf29cce1b14a3426b4",
+        "scenicOnly": true,
+        "dynamicLights": 0,
+        "air": {
+          "clock": 0.06666666666666667,
+          "emergencyBrakes": 0,
+          "settings": {
+            "acceleration": 0.9,
+            "braking": 1.6,
+            "lateralAcceleration": 2,
+            "minimumGap": 10,
+            "timeGap": 1.6,
+            "maxBank": 0.20943951023931953
+          },
+          "lanes": [
+            {
+              "id": "aerial-band-0",
+              "length": 1257.6072224958739,
+              "agents": [
+                {
+                  "id": "aerial-band-0-0",
+                  "variant": 0,
+                  "distance": 0.5120895584445792,
+                  "speed": 7.681343376668687,
+                  "preferred": 10.8,
+                  "bank": -0.041062249716359064,
+                  "laps": 0,
+                  "position": [
+                    76.9808999181275,
+                    38,
+                    104.37207872894417
+                  ],
+                  "quaternion": [
+                    0.00035286722066357046,
+                    -0.017184525479079366,
+                    -0.020526649693350593,
+                    0.999641547866609
+                  ],
+                  "gapAhead": 105.02851231621162
+                },
+                {
+                  "id": "aerial-band-0-1",
+                  "variant": 1,
+                  "distance": 105.54060187465616,
+                  "speed": 11.100000000000001,
+                  "preferred": 11.100000000000001,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    77,
+                    38,
+                    209.40010787241658
+                  ],
+                  "quaternion": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "gapAhead": 104.82060187465618
+                },
+                {
+                  "id": "aerial-band-0-2",
+                  "variant": 2,
+                  "distance": 210.3612037493123,
+                  "speed": 11.4,
+                  "preferred": 11.4,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    77,
+                    38,
+                    314.2207097470727
+                  ],
+                  "quaternion": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "gapAhead": 104.82060187465618
+                },
+                {
+                  "id": "aerial-band-0-3",
+                  "variant": 0,
+                  "distance": 315.18180562396844,
+                  "speed": 11.700000000000001,
+                  "preferred": 11.700000000000001,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    77,
+                    38,
+                    419.04131162173013
+                  ],
+                  "quaternion": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "gapAhead": 104.65623011238722
+                },
+                {
+                  "id": "aerial-band-0-4",
+                  "variant": 1,
+                  "distance": 419.83803573635566,
+                  "speed": 9.494423565966352,
+                  "preferred": 12,
+                  "bank": -0.00015026344472213478,
+                  "laps": 0,
+                  "position": [
+                    77.0000066778624,
+                    38,
+                    523.697541655278
+                  ],
+                  "quaternion": [
+                    -4.3380236074734476e-9,
+                    0.000057738907920457635,
+                    -0.0000751317221651474,
+                    0.9999999955107214
+                  ],
+                  "gapAhead": 104.88497363692477
+                },
+                {
+                  "id": "aerial-band-0-5",
+                  "variant": 2,
+                  "distance": 524.7230093732805,
+                  "speed": 10.8,
+                  "preferred": 10.8,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    154.18122054948765,
+                    38,
+                    563
+                  ],
+                  "quaternion": [
+                    0,
+                    0.7071067811865475,
+                    0,
+                    0.7071067811865476
+                  ],
+                  "gapAhead": 104.5880960170914
+                },
+                {
+                  "id": "aerial-band-0-6",
+                  "variant": 0,
+                  "distance": 629.311105390372,
+                  "speed": 7.612412136522583,
+                  "preferred": 11.100000000000001,
+                  "bank": -0.040797860777563894,
+                  "laps": 0,
+                  "position": [
+                    243.01891384394003,
+                    38,
+                    535.6324695229267
+                  ],
+                  "quaternion": [
+                    -0.020394491185567763,
+                    0.9996437014732753,
+                    -0.0003512490309477812,
+                    0.017216604142790044
+                  ],
+                  "gapAhead": 105.0531077322214
+                },
+                {
+                  "id": "aerial-band-0-7",
+                  "variant": 1,
+                  "distance": 734.3642131225934,
+                  "speed": 11.4,
+                  "preferred": 11.4,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    243,
+                    38,
+                    430.5798448759263
+                  ],
+                  "quaternion": [
+                    0,
+                    1,
+                    0,
+                    6.123233995736766e-17
+                  ],
+                  "gapAhead": 104.82060187465595
+                },
+                {
+                  "id": "aerial-band-0-8",
+                  "variant": 2,
+                  "distance": 839.1848149972494,
+                  "speed": 11.700000000000001,
+                  "preferred": 11.700000000000001,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    243,
+                    38,
+                    325.7592430012459
+                  ],
+                  "quaternion": [
+                    0,
+                    1,
+                    0,
+                    6.123233995736766e-17
+                  ],
+                  "gapAhead": 104.82060187465618
+                },
+                {
+                  "id": "aerial-band-0-9",
+                  "variant": 0,
+                  "distance": 944.0054168719056,
+                  "speed": 12,
+                  "preferred": 12,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    243,
+                    38,
+                    220.93864112670533
+                  ],
+                  "quaternion": [
+                    0,
+                    1,
+                    0,
+                    6.123233995736766e-17
+                  ],
+                  "gapAhead": 104.63666265034999
+                },
+                {
+                  "id": "aerial-band-0-10",
+                  "variant": 1,
+                  "distance": 1048.6420795222555,
+                  "speed": 9.50091163540911,
+                  "preferred": 10.8,
+                  "bank": -0.00015929432198047314,
+                  "laps": 0,
+                  "position": [
+                    242.99999287603987,
+                    38,
+                    116.30197854677223
+                  ],
+                  "quaternion": [
+                    0.00007964716075618837,
+                    -0.9999999949468803,
+                    -4.885539614384817e-9,
+                    0.00006133978340612734
+                  ],
+                  "gapAhead": 104.904541098962
+                },
+                {
+                  "id": "aerial-band-0-11",
+                  "variant": 2,
+                  "distance": 1153.5466206212175,
+                  "speed": 11.100000000000001,
+                  "preferred": 11.100000000000001,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    165.798822740377,
+                    38,
+                    77
+                  ],
+                  "quaternion": [
+                    0,
+                    -0.7071067811865475,
+                    0,
+                    0.7071067811865476
+                  ],
+                  "gapAhead": 104.572691433101
+                }
+              ]
+            },
+            {
+              "id": "aerial-band-1",
+              "length": 1257.607222495181,
+              "agents": [
+                {
+                  "id": "aerial-band-1-0",
+                  "variant": 1,
+                  "distance": 0.43886512010247863,
+                  "speed": 6.582976801537179,
+                  "preferred": 13.5,
+                  "bank": 0.05701048126244089,
+                  "laps": 0,
+                  "position": [
+                    77.67834026553335,
+                    65,
+                    97.98832845247459
+                  ],
+                  "quaternion": [
+                    0.028319896566192732,
+                    0.9932287920250621,
+                    0.0032112532256090803,
+                    0.11262432243364234
+                  ],
+                  "gapAhead": 105.2867367544959
+                },
+                {
+                  "id": "aerial-band-1-1",
+                  "variant": 2,
+                  "distance": 105.72560187459844,
+                  "speed": 13.875,
+                  "preferred": 13.875,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    172.94415283559735,
+                    65,
+                    77
+                  ],
+                  "quaternion": [
+                    0,
+                    0.7071067811865475,
+                    0,
+                    0.7071067811865476
+                  ],
+                  "gapAhead": 104.82560187459853
+                },
+                {
+                  "id": "aerial-band-1-2",
+                  "variant": 0,
+                  "distance": 210.5512037491969,
+                  "speed": 14.250000000000002,
+                  "preferred": 14.250000000000002,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    243,
+                    65,
+                    123.3683693474999
+                  ],
+                  "quaternion": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "gapAhead": 104.8256018745983
+                },
+                {
+                  "id": "aerial-band-1-3",
+                  "variant": 1,
+                  "distance": 315.3768056237952,
+                  "speed": 14.625000000000002,
+                  "preferred": 14.625000000000002,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    243,
+                    65,
+                    228.19397122209472
+                  ],
+                  "quaternion": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "gapAhead": 104.82560187459853
+                },
+                {
+                  "id": "aerial-band-1-4",
+                  "variant": 2,
+                  "distance": 420.2024074983937,
+                  "speed": 15,
+                  "preferred": 15,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    243,
+                    65,
+                    333.01957309669046
+                  ],
+                  "quaternion": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "gapAhead": 104.70060187459853
+                },
+                {
+                  "id": "aerial-band-1-5",
+                  "variant": 0,
+                  "distance": 524.9030093729922,
+                  "speed": 13.5,
+                  "preferred": 13.5,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    243,
+                    65,
+                    437.7201749712877
+                  ],
+                  "quaternion": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "gapAhead": 104.31786635620779
+                },
+                {
+                  "id": "aerial-band-1-6",
+                  "variant": 1,
+                  "distance": 629.2208757291999,
+                  "speed": 6.287092224141323,
+                  "preferred": 13.875,
+                  "bank": 0.051773761186282935,
+                  "laps": 0,
+                  "position": [
+                    242.32648938403327,
+                    65,
+                    541.990571481131
+                  ],
+                  "quaternion": [
+                    -0.002906207059067958,
+                    -0.11224055521852201,
+                    0.02572032015897162,
+                    0.9933438865044107
+                  ],
+                  "gapAhead": 105.31662399380662
+                },
+                {
+                  "id": "aerial-band-1-7",
+                  "variant": 2,
+                  "distance": 734.5374997230064,
+                  "speed": 13.949299012261294,
+                  "preferred": 14.250000000000002,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    147.0476038531664,
+                    65,
+                    563
+                  ],
+                  "quaternion": [
+                    0,
+                    -0.7071067811865475,
+                    0,
+                    0.7071067811865476
+                  ],
+                  "gapAhead": 104.84231527378097
+                },
+                {
+                  "id": "aerial-band-1-8",
+                  "variant": 0,
+                  "distance": 839.3798149967873,
+                  "speed": 14.625000000000002,
+                  "preferred": 14.625000000000002,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    77,
+                    65,
+                    516.6065834008199
+                  ],
+                  "quaternion": [
+                    0,
+                    1,
+                    0,
+                    6.123233995736766e-17
+                  ],
+                  "gapAhead": 104.82560187459853
+                },
+                {
+                  "id": "aerial-band-1-9",
+                  "variant": 1,
+                  "distance": 944.2054168713858,
+                  "speed": 15,
+                  "preferred": 15,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    77,
+                    65,
+                    411.78098152630577
+                  ],
+                  "quaternion": [
+                    0,
+                    1,
+                    0,
+                    6.123233995736766e-17
+                  ],
+                  "gapAhead": 104.70060187459808
+                },
+                {
+                  "id": "aerial-band-1-10",
+                  "variant": 2,
+                  "distance": 1048.9060187459838,
+                  "speed": 13.5,
+                  "preferred": 13.5,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    77,
+                    65,
+                    307.08037965180216
+                  ],
+                  "quaternion": [
+                    0,
+                    1,
+                    0,
+                    6.123233995736766e-17
+                  ],
+                  "gapAhead": 104.82560187459899
+                },
+                {
+                  "id": "aerial-band-1-11",
+                  "variant": 0,
+                  "distance": 1153.7316206205828,
+                  "speed": 13.875,
+                  "preferred": 13.875,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    77,
+                    65,
+                    202.2547777773282
+                  ],
+                  "quaternion": [
+                    0,
+                    1,
+                    0,
+                    6.123233995736766e-17
+                  ],
+                  "gapAhead": 104.31446699470075
+                }
+              ]
+            },
+            {
+              "id": "aerial-band-2",
+              "length": 1219.913818405767,
+              "agents": [
+                {
+                  "id": "aerial-band-2-0",
+                  "variant": 2,
+                  "distance": 0.49816216904111355,
+                  "speed": 7.472432535616703,
+                  "preferred": 16.2,
+                  "bank": -0.03493097737809861,
+                  "laps": 0,
+                  "position": [
+                    82.9767406247759,
+                    114,
+                    104.63726588803611
+                  ],
+                  "quaternion": [
+                    0.00026683728705251226,
+                    -0.015276420771414096,
+                    -0.017462562158336272,
+                    0.9997307731030106
+                  ],
+                  "gapAhead": 102.27132269810613
+                },
+                {
+                  "id": "aerial-band-2-1",
+                  "variant": 0,
+                  "distance": 102.76948486714726,
+                  "speed": 16.650000000000002,
+                  "preferred": 16.650000000000002,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    83,
+                    114,
+                    206.90818202105316
+                  ],
+                  "quaternion": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "gapAhead": 101.68948486714726
+                },
+                {
+                  "id": "aerial-band-2-2",
+                  "variant": 1,
+                  "distance": 204.45896973429447,
+                  "speed": 17.1,
+                  "preferred": 17.1,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    83,
+                    114,
+                    308.5976668882004
+                  ],
+                  "quaternion": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "gapAhead": 101.68948486714726
+                },
+                {
+                  "id": "aerial-band-2-3",
+                  "variant": 2,
+                  "distance": 306.1484546014418,
+                  "speed": 17.55,
+                  "preferred": 17.55,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    83,
+                    114,
+                    410.2871517553477
+                  ],
+                  "quaternion": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "gapAhead": 101.22993103941371
+                },
+                {
+                  "id": "aerial-band-2-4",
+                  "variant": 0,
+                  "distance": 407.37838564085564,
+                  "speed": 11.066692584000622,
+                  "preferred": 18,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    83,
+                    114,
+                    511.5170827947616
+                  ],
+                  "quaternion": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "gapAhead": 101.99550941559619
+                },
+                {
+                  "id": "aerial-band-2-5",
+                  "variant": 1,
+                  "distance": 509.3738950564519,
+                  "speed": 16.099438245649722,
+                  "preferred": 16.2,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    148.53465013467297,
+                    114,
+                    557
+                  ],
+                  "quaternion": [
+                    0,
+                    0.7071067811865475,
+                    0,
+                    0.7071067811865476
+                  ],
+                  "gapAhead": 101.07784618867527
+                },
+                {
+                  "id": "aerial-band-2-6",
+                  "variant": 2,
+                  "distance": 610.4517412451271,
+                  "speed": 7.42248063365585,
+                  "preferred": 16.650000000000002,
+                  "bank": -0.034224717884522825,
+                  "laps": 0,
+                  "position": [
+                    237.0232027311414,
+                    114,
+                    535.3660179871025
+                  ],
+                  "quaternion": [
+                    -0.01710949794331604,
+                    0.9997352144265372,
+                    -0.00026329854532708923,
+                    0.015384953348301212
+                  ],
+                  "gapAhead": 102.30465282490354
+                },
+                {
+                  "id": "aerial-band-2-7",
+                  "variant": 0,
+                  "distance": 712.7563940700306,
+                  "speed": 17.1,
+                  "preferred": 17.1,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    237,
+                    114,
+                    433.0617752430373
+                  ],
+                  "quaternion": [
+                    0,
+                    1,
+                    0,
+                    6.123233995736766e-17
+                  ],
+                  "gapAhead": 101.68948486714726
+                },
+                {
+                  "id": "aerial-band-2-8",
+                  "variant": 1,
+                  "distance": 814.445878937178,
+                  "speed": 17.55,
+                  "preferred": 17.55,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    237,
+                    114,
+                    331.37229037586485
+                  ],
+                  "quaternion": [
+                    0,
+                    1,
+                    0,
+                    6.123233995736766e-17
+                  ],
+                  "gapAhead": 101.68948486714703
+                },
+                {
+                  "id": "aerial-band-2-9",
+                  "variant": 2,
+                  "distance": 916.135363804325,
+                  "speed": 18,
+                  "preferred": 18,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    237,
+                    114,
+                    229.68280550882974
+                  ],
+                  "quaternion": [
+                    0,
+                    1,
+                    0,
+                    6.123233995736766e-17
+                  ],
+                  "gapAhead": 101.20031202839846
+                },
+                {
+                  "id": "aerial-band-2-10",
+                  "variant": 0,
+                  "distance": 1017.3356758327234,
+                  "speed": 11.07240741876419,
+                  "preferred": 16.2,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    237,
+                    114,
+                    128.48249348051766
+                  ],
+                  "quaternion": [
+                    0,
+                    1,
+                    0,
+                    6.123233995736766e-17
+                  ],
+                  "gapAhead": 101.99512709802684
+                },
+                {
+                  "id": "aerial-band-2-11",
+                  "variant": 1,
+                  "distance": 1119.3308029307502,
+                  "speed": 16.09941827866339,
+                  "preferred": 16.650000000000002,
+                  "bank": 0,
+                  "laps": 0,
+                  "position": [
+                    171.46539906453648,
+                    114,
+                    83
+                  ],
+                  "quaternion": [
+                    0,
+                    -0.7071067811865475,
+                    0,
+                    0.7071067811865476
+                  ],
+                  "gapAhead": 101.08117764405779
+                }
+              ]
+            }
+          ]
+        },
+        "airBatches": 17,
+        "people": [
+          {
+            "id": "station-commuters-0",
+            "route": "station-commuters",
+            "position": [
+              73,
+              100,
+              382.0766666666666
+            ],
+            "target": 1,
+            "dwell": 0,
+            "walked": 0.07666666666659694,
+            "arrivals": 0,
+            "lastReason": null,
+            "blocked": 0,
+            "soleOffset": 0.003794417116564912
+          },
+          {
+            "id": "station-commuters-1",
+            "route": "station-commuters",
+            "position": [
+              76.12,
+              100,
+              394.94333333333327
+            ],
+            "target": 3,
+            "dwell": 0,
+            "walked": 0.07666666666659694,
+            "arrivals": 0,
+            "lastReason": null,
+            "blocked": 0,
+            "soleOffset": 0.005140059599312716
+          },
+          {
+            "id": "station-commuters-2",
+            "route": "station-commuters",
+            "position": [
+              76.98,
+              100,
+              393.93000000000006
+            ],
+            "target": 5,
+            "dwell": 0,
+            "walked": 0.07666666666659694,
+            "arrivals": 0,
+            "lastReason": null,
+            "blocked": 0,
+            "soleOffset": 0.006523972773303142
+          },
+          {
+            "id": "market-visitors-0",
+            "route": "market-visitors",
+            "position": [
+              62.576666666666654,
+              24,
+              356.1
+            ],
+            "target": 1,
+            "dwell": 0,
+            "walked": 0.07666666666665378,
+            "arrivals": 0,
+            "lastReason": null,
+            "blocked": 0,
+            "soleOffset": 0.003794417116567086
+          },
+          {
+            "id": "market-visitors-1",
+            "route": "market-visitors",
+            "position": [
+              65.5,
+              24,
+              358.7766666666666
+            ],
+            "target": 2,
+            "dwell": 0,
+            "walked": 0.07666666666659694,
+            "arrivals": 0,
+            "lastReason": null,
+            "blocked": 0,
+            "soleOffset": 0.005140059599312716
+          },
+          {
+            "id": "market-visitors-2",
+            "route": "market-visitors",
+            "position": [
+              62.623333333333356,
+              24,
+              361.5
+            ],
+            "target": 3,
+            "dwell": 0,
+            "walked": 0.07666666666665378,
+            "arrivals": 0,
+            "lastReason": null,
+            "blocked": 0,
+            "soleOffset": 0.006523972773303366
+          },
+          {
+            "id": "observation-visitors-0",
+            "route": "observation-visitors",
+            "position": [
+              76.07666666666665,
+              128,
+              417
+            ],
+            "target": 1,
+            "dwell": 0,
+            "walked": 0.07666666666665378,
+            "arrivals": 0,
+            "lastReason": null,
+            "blocked": 0,
+            "soleOffset": 0.003794417116567086
+          },
+          {
+            "id": "observation-visitors-1",
+            "route": "observation-visitors",
+            "position": [
+              80,
+              128,
+              423
+            ],
+            "target": 3,
+            "dwell": 4.95,
+            "walked": 0,
+            "arrivals": 1,
+            "lastReason": null,
+            "blocked": 0,
+            "soleOffset": -1.3351440131259553e-9
+          },
+          {
+            "id": "east-public-room-24-visitor-0",
+            "route": "east-public-room-24-visitor",
+            "position": [
+              97,
+              24,
+              300.06999999999994
+            ],
+            "target": 1,
+            "dwell": 0,
+            "walked": 0.06999999999993634,
+            "arrivals": 0,
+            "lastReason": null,
+            "blocked": 0,
+            "soleOffset": 0.0035370549459429307
+          },
+          {
+            "id": "east-public-room-52-visitor-0",
+            "route": "east-public-room-52-visitor",
+            "position": [
+              97,
+              52,
+              300.06999999999994
+            ],
+            "target": 1,
+            "dwell": 0,
+            "walked": 0.06999999999993634,
+            "arrivals": 0,
+            "lastReason": null,
+            "blocked": 0,
+            "soleOffset": 0.0035370549459429307
+          },
+          {
+            "id": "east-public-room-84-visitor-0",
+            "route": "east-public-room-84-visitor",
+            "position": [
+              97,
+              84,
+              300.06999999999994
+            ],
+            "target": 1,
+            "dwell": 0,
+            "walked": 0.06999999999993634,
+            "arrivals": 0,
+            "lastReason": null,
+            "blocked": 0,
+            "soleOffset": 0.0035370549459429307
+          }
+        ]
+      }
+    },
+    "scope": "Current assets ready before normal input; retained helper initial fixture only"
+  },
+  "discoverySHA256": "7cfc8878103a13115fb9778c4d8ee15dadc0147a0ace29433a14a2ba651c0679",
+  "controlledSetup": [
+    64,
+    0.42,
+    356
+  ],
+  "signView": {
+    "front": 0.5949676136814451,
+    "ndc": [
+      0.008124104824301084,
+      0.006984928394429848,
+      0.9835926800256783
+    ]
+  },
+  "uiTransitions": [
+    {
+      "action": "hero",
+      "hero": "sightline",
+      "throughPauseTools": true,
+      "resumed": true
+    },
+    {
+      "action": "hero",
+      "hero": "backspool",
+      "throughPauseTools": true,
+      "resumed": true
+    }
+  ],
+  "diagnostics": {
+    "ready": true,
+    "clock": 32.41666666666611,
+    "discovered": [],
+    "openBoard": null,
+    "route": null,
+    "pending": null,
+    "message": "",
+    "eventId": 11,
+    "events": [
+      {
+        "id": 1,
+        "time": 26.55,
+        "kind": "board-read",
+        "point": "directory"
+      },
+      {
+        "id": 2,
+        "time": 26.6,
+        "kind": "route-requested",
+        "source": "directory",
+        "destination": "poi-market"
+      },
+      {
+        "id": 3,
+        "time": 26.617,
+        "kind": "route-rejected",
+        "reason": "WORLD REVISION",
+        "from": 2,
+        "to": 3
+      },
+      {
+        "id": 4,
+        "time": 29.183,
+        "kind": "board-read",
+        "point": "directory"
+      },
+      {
+        "id": 5,
+        "time": 29.217,
+        "kind": "route-requested",
+        "source": "directory",
+        "destination": "poi-market"
+      },
+      {
+        "id": 6,
+        "time": 30.133,
+        "kind": "route-ready",
+        "destination": "poi-market",
+        "edges": [
+          "E0192",
+          "E0156",
+          "E0151",
+          "E0000",
+          "E0002",
+          "E0004",
+          "E0006",
+          "E0008",
+          "E0010",
+          "E0262"
+        ],
+        "validationSamples": 1692,
+        "blockedEdges": [],
+        "validationAttempts": 1
+      },
+      {
+        "id": 7,
+        "time": 30.15,
+        "kind": "board-read",
+        "point": "directory"
+      },
+      {
+        "id": 8,
+        "time": 30.217,
+        "kind": "route-hero-change",
+        "hero": "sightline"
+      },
+      {
+        "id": 9,
+        "time": 32.283,
+        "kind": "route-hero-change",
+        "hero": "backspool"
+      },
+      {
+        "id": 10,
+        "time": 32.367,
+        "kind": "route-invalidated",
+        "navigationVersion": 4
+      },
+      {
+        "id": 11,
+        "time": 32.383,
+        "kind": "route-ended",
+        "reason": "CANCELLED",
+        "destination": "poi-market"
+      }
+    ],
+    "error": null,
+    "points": [
+      {
+        "id": "market-info",
+        "title": "MARKET ASSEMBLY",
+        "position": [
+          64,
+          24,
+          356
+        ],
+        "board": [
+          65.25,
+          24.85,
+          354.3
+        ],
+        "graphNode": "poi-market",
+        "function": "market",
+        "collection": "SM_V02_MARKET"
+      },
+      {
+        "id": "maintenance-access",
+        "title": "MAINTENANCE ACCESS",
+        "position": [
+          86,
+          52,
+          314.8
+        ],
+        "board": [
+          87.4,
+          52.85,
+          313.7
+        ],
+        "graphNode": "poi-maintenance",
+        "function": "maintenance",
+        "collection": "SM_V02_SERVICE_YARDS"
+      },
+      {
+        "id": "observation",
+        "title": "OBSERVATION DECK",
+        "position": [
+          72,
+          128,
+          420
+        ],
+        "board": [
+          73.5,
+          128.85,
+          418
+        ],
+        "graphNode": "observation-deck",
+        "function": "observation",
+        "collection": "SM_V02_LANDMARKS"
+      },
+      {
+        "id": "station-info",
+        "title": "TRANSIT INFORMATION",
+        "position": [
+          73,
+          100,
+          382
+        ],
+        "board": [
+          74.65,
+          100.85,
+          382
+        ],
+        "graphNode": "poi-station",
+        "function": "station",
+        "collection": "SM_V02_TRANSIT_STRUCTURES"
+      }
+    ],
+    "directory": {
+      "id": "directory",
+      "title": "DISTRICT DIRECTORY",
+      "position": [
+        55,
+        0,
+        210
+      ],
+      "board": [
+        56.9,
+        0.85,
+        208
+      ],
+      "graphNode": "ground-access",
+      "function": "directory",
+      "collection": "SM_V02_GALLERIES"
+    },
+    "nearBoard": "directory",
+    "readingDisabledByEncounter": false,
+    "scope": "Four functional information/discovery locations and voluntary public route guidance; not final landmark architecture or complete V02 acceptance"
+  },
+  "fullTrace": "V02_Discovery_Lifecycle.trace.json.gz",
+  "traceFrames": 2075
+}

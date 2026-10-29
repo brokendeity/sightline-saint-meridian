@@ -1,0 +1,304 @@
+{
+  "schema": "sm-v02-east-public-room-visitors-1",
+  "worldManifestSHA256": "0bf5890913968eec9d1450be46d97dcb548693030cc9b0fbef4fb221cd4a6833",
+  "routes": [
+    {
+      "id": "station-commuters",
+      "purpose": "Walk between transit information and the protected waiting platform",
+      "count": 3,
+      "points": [
+        [
+          73,
+          100,
+          382
+        ],
+        [
+          73,
+          100,
+          385.05
+        ],
+        [
+          76.12,
+          100,
+          385.05
+        ],
+        [
+          76.12,
+          100,
+          402
+        ],
+        [
+          76.98,
+          100,
+          402
+        ],
+        [
+          76.98,
+          100,
+          385.8
+        ],
+        [
+          73.9,
+          100,
+          385.8
+        ],
+        [
+          73.9,
+          100,
+          382
+        ]
+      ],
+      "dwellAt": [
+        0,
+        3
+      ],
+      "closed": true,
+      "baseSpeed": 1.15,
+      "minimumSpacing": 0.68,
+      "dwellSeconds": 5,
+      "length": 47.96000000000001
+    },
+    {
+      "id": "market-visitors",
+      "purpose": "Visit the suspended commercial gallery and storefront approach",
+      "count": 3,
+      "points": [
+        [
+          62.5,
+          24,
+          356.1
+        ],
+        [
+          65.5,
+          24,
+          356.1
+        ],
+        [
+          65.5,
+          24,
+          361.5
+        ],
+        [
+          62.5,
+          24,
+          361.5
+        ]
+      ],
+      "dwellAt": [
+        1,
+        3
+      ],
+      "closed": true,
+      "baseSpeed": 1.15,
+      "minimumSpacing": 0.68,
+      "dwellSeconds": 5,
+      "length": 16.799999999999955
+    },
+    {
+      "id": "observation-visitors",
+      "purpose": "Walk through the sheltered observation area and pause at the outlook",
+      "count": 2,
+      "points": [
+        [
+          76,
+          128,
+          417
+        ],
+        [
+          80,
+          128,
+          417
+        ],
+        [
+          80,
+          128,
+          423
+        ],
+        [
+          76,
+          128,
+          423
+        ]
+      ],
+      "dwellAt": [
+        1,
+        2
+      ],
+      "closed": true,
+      "baseSpeed": 1.15,
+      "minimumSpacing": 0.68,
+      "dwellSeconds": 5,
+      "length": 20
+    },
+    {
+      "id": "east-public-room-24-visitor",
+      "purpose": "Walk the public gallery, visit its sheltered waiting room and return to circulation",
+      "count": 1,
+      "points": [
+        [
+          96,
+          24,
+          300
+        ],
+        [
+          96,
+          24,
+          310
+        ],
+        [
+          102.1,
+          24,
+          310
+        ],
+        [
+          96,
+          24,
+          310
+        ],
+        [
+          96,
+          24,
+          326
+        ],
+        [
+          96,
+          24,
+          310
+        ]
+      ],
+      "dwellAt": [
+        2,
+        4
+      ],
+      "closed": true,
+      "baseSpeed": 1.05,
+      "minimumSpacing": 0.68,
+      "dwellSeconds": 8,
+      "length": 64.19999999999999,
+      "placementEvidenceEdges": [
+        "EPR24-0",
+        "EPR24-1",
+        "EPR24-2",
+        "EPR24-3",
+        "EPR24-4",
+        "EPR24-5"
+      ]
+    },
+    {
+      "id": "east-public-room-52-visitor",
+      "purpose": "Walk the public gallery, visit its sheltered waiting room and return to circulation",
+      "count": 1,
+      "points": [
+        [
+          96,
+          52,
+          300
+        ],
+        [
+          96,
+          52,
+          310
+        ],
+        [
+          102.1,
+          52,
+          310
+        ],
+        [
+          96,
+          52,
+          310
+        ],
+        [
+          96,
+          52,
+          326
+        ],
+        [
+          96,
+          52,
+          310
+        ]
+      ],
+      "dwellAt": [
+        2,
+        4
+      ],
+      "closed": true,
+      "baseSpeed": 1.05,
+      "minimumSpacing": 0.68,
+      "dwellSeconds": 8,
+      "length": 64.19999999999999,
+      "placementEvidenceEdges": [
+        "EPR52-0",
+        "EPR52-1",
+        "EPR52-2",
+        "EPR52-3",
+        "EPR52-4",
+        "EPR52-5"
+      ]
+    },
+    {
+      "id": "east-public-room-84-visitor",
+      "purpose": "Walk the public gallery, visit its sheltered waiting room and return to circulation",
+      "count": 1,
+      "points": [
+        [
+          96,
+          84,
+          300
+        ],
+        [
+          96,
+          84,
+          310
+        ],
+        [
+          102.1,
+          84,
+          310
+        ],
+        [
+          96,
+          84,
+          310
+        ],
+        [
+          96,
+          84,
+          326
+        ],
+        [
+          96,
+          84,
+          310
+        ]
+      ],
+      "dwellAt": [
+        2,
+        4
+      ],
+      "closed": true,
+      "baseSpeed": 1.05,
+      "minimumSpacing": 0.68,
+      "dwellSeconds": 8,
+      "length": 64.19999999999999,
+      "placementEvidenceEdges": [
+        "EPR84-0",
+        "EPR84-1",
+        "EPR84-2",
+        "EPR84-3",
+        "EPR84-4",
+        "EPR84-5"
+      ]
+    }
+  ],
+  "actorCount": 11,
+  "limits": [
+    "Scenic visitors, no combat/quest/reward ownership",
+    "Existing source pedestrian appearance reused; final visual review remains separate"
+  ],
+  "parentAmbientSHA256": "20a988d28c9a5db2a8760177c6aa2a7bd6e65aa0a8b527cb6b40c392ae5b5140",
+  "admittedPlayerGraphSHA256": "29077afba94b6e538d19a28f3b7b1bec95609df512b1b4cf29cce1b14a3426b4",
+  "admissionPolicy": "Player path evidence is a placement prerequisite, not NPC acceptance. Runtime sweeps/support/yield checks and current visitor tests remain required."
+}
