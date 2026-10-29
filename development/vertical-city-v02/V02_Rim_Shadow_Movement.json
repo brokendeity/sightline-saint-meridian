@@ -1,0 +1,1183 @@
+{
+  "status": "PASS nine native public-room entry/return/continuation cases with support, camera and body framing checks; visual/reference/release acceptance separate",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_RIM_SHADOWS.html",
+  "entrySHA256": "08312dcd28db92bdf1e065057e2aa9131477832f3ae30d1b900aa5486e1e47ba",
+  "contractSHA256": "7c812f541cee8a5e24a663910d3da36275ca9967a9d324d0d01ee525e8235304",
+  "testSHA256": "60aa8cca2e8fb5d95e4700fb2763e29d8996c7c54bded014c50283fb9c41d063",
+  "scope": "Normal input enters and exits three actual public rooms, with desktop keyboard and simulated-controller portrait/landscape layouts. Initial fixture only is positioned directly. No physical-device, arbitrary route or visual-quality acceptance.",
+  "cases": [
+    {
+      "view": "desktop",
+      "driver": "keyboard",
+      "floor": 24,
+      "walking": true,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/desktop-24-gallery.png",
+          "sha256": "6d881b65aa6471239b46ca49cfa2732310ff453520293211ca8de9567890db46"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/desktop-24-room.png",
+          "sha256": "8f785c58336b3c1199f10d85cd72c8a8112fe4bc0b6ef3aa513a5cfec8f9084f"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/desktop-24-return.png",
+          "sha256": "0d943d9f1e815868d277cd1dbfba4d6b5142612e6f05040d414022e51a4a0454"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/desktop-24-continue.png",
+          "sha256": "50c8be27b0e22ed24a60a3ecdc95101ea1752f207cdccac45ee0e28bf16030fd"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/desktop-24-reverse-gallery.png",
+          "sha256": "19de17d3ba69a7273d9aba3cd229418f60cb6a9f2293aab6c5f6a2b73ffd12ee"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/desktop-24-start-return.png",
+          "sha256": "1eca45a455cbb0bc3394ee1a5d40da737d18504b0cbdc0ed1f7a7fba5e843b11"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96,
+            24.42,
+            309.892499999991
+          ],
+          "frame": 392
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            24,
+            310
+          ],
+          "position": [
+            102.01500000000074,
+            24.42,
+            309.919999999991
+          ],
+          "frame": 644
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            309.919999999991
+          ],
+          "frame": 892
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            24,
+            326
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            325.9174999999764
+          ],
+          "frame": 1506
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            310.0849999999908
+          ],
+          "frame": 2114
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            24,
+            300
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            300.0824999999999
+          ],
+          "frame": 2510
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 0.9400411339898763,
+      "seconds": 41.833333333333336,
+      "frames": 2510
+    },
+    {
+      "view": "desktop",
+      "driver": "keyboard",
+      "floor": 52,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/desktop-52-gallery.png",
+          "sha256": "5a9783be2826f14c1eae82f3efaabe7a7d543d3cdb3edecb416517609690678d"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/desktop-52-room.png",
+          "sha256": "b5c1043173a29c26d936bb009fdf091bffee1adf53f316f69fcea0a004dcdfb1"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/desktop-52-return.png",
+          "sha256": "ca55b74dc5f47c7879d727f1c94ede8846580750331652ceba2f93ab020105ee"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/desktop-52-continue.png",
+          "sha256": "d1473cd3ae90fdc250c6a1d1274c69a757f422c6a52c4969962e731b6c8f803a"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/desktop-52-reverse-gallery.png",
+          "sha256": "e99002789ad134c2bf7e747be92c645fec716f4eb20db1c2e8e07e5613a46d36"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/desktop-52-start-return.png",
+          "sha256": "15de9df616b40171d277bcc382fce9dd0b169b26689548a3d5ac801a385dbbc1"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96,
+            52.42,
+            309.95500000000106
+          ],
+          "frame": 131
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            52,
+            310
+          ],
+          "position": [
+            101.99499999999998,
+            52.42,
+            309.95500000000106
+          ],
+          "frame": 226
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.11,
+            52.42,
+            309.95500000000106
+          ],
+          "frame": 320
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            52,
+            326
+          ],
+          "position": [
+            96.11,
+            52.42,
+            325.9600000000029
+          ],
+          "frame": 506
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.11,
+            52.42,
+            310.0650000000011
+          ],
+          "frame": 691
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            52,
+            300
+          ],
+          "position": [
+            96.11,
+            52.42,
+            300
+          ],
+          "frame": 823
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 0.8904683535404747,
+      "seconds": 13.716666666666667,
+      "frames": 823
+    },
+    {
+      "view": "desktop",
+      "driver": "keyboard",
+      "floor": 84,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/desktop-84-gallery.png",
+          "sha256": "2a6b065ee3fdd2785de280b3e940744148bc060b1e48f87a8af6a5b2be1981fa"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/desktop-84-room.png",
+          "sha256": "e0476217b7ce49011a22c00e675c16753a8162ca4148a617b9d0b9571bab6fbc"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/desktop-84-return.png",
+          "sha256": "d5ea467c05759aab491425bf065cc4f5dd3979102fc232d241b56493d5cf8c18"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/desktop-84-continue.png",
+          "sha256": "66306db6be3253d0a76dfbb1dad26d5b713b698ef8032ead00821c7bd6f55ee3"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/desktop-84-reverse-gallery.png",
+          "sha256": "e798e8348276c4532a82386960b40346d0c87c9d5b6bae906b0cf1162d34299e"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/desktop-84-start-return.png",
+          "sha256": "e4bf6f08b71ab521fac3b7faecf4e51fed7a5618669f8fd5929c6e19d546a486"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96,
+            84.42,
+            309.95500000000106
+          ],
+          "frame": 131
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            84,
+            310
+          ],
+          "position": [
+            101.99499999999998,
+            84.42,
+            309.95500000000106
+          ],
+          "frame": 226
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.11,
+            84.42,
+            309.95500000000106
+          ],
+          "frame": 320
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            84,
+            326
+          ],
+          "position": [
+            96.11,
+            84.42,
+            325.9600000000029
+          ],
+          "frame": 506
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.11,
+            84.42,
+            310.0650000000011
+          ],
+          "frame": 691
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            84,
+            300
+          ],
+          "position": [
+            96.11,
+            84.42,
+            300
+          ],
+          "frame": 823
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 0.8900597580573264,
+      "seconds": 13.716666666666667,
+      "frames": 823
+    },
+    {
+      "view": "portrait",
+      "driver": "controller",
+      "floor": 24,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/portrait-24-gallery.png",
+          "sha256": "ca32e983c7564e62ab6ac8e0baa80538b81bd794d9961eca2cb5cc48c8df0a62"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/portrait-24-room.png",
+          "sha256": "3f24ebaa355dc3d6043c530dc9b48ca7c521f3d57c06b566653490118a89094d"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/portrait-24-return.png",
+          "sha256": "1843cb3c689a49c0ed29f496f298c18d1877f0335d656f57e8cbc1544d3b4919"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/portrait-24-continue.png",
+          "sha256": "0a09e5b24eb87b5116b54f5f127cfd5578b6dcfe83e8d35e5e19ac858311f280"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/portrait-24-reverse-gallery.png",
+          "sha256": "5b7734edf09eb9f435b08961afdd637f04a5ed6883909d648d938fdb461caf58"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/portrait-24-start-return.png",
+          "sha256": "0dad0409ccf38cce1acaaeabc6b016ed2a9c37e96a705cf66a1b89198024ab29"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96,
+            24.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            24,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            24.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            24.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            24,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            24.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            24.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            24,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            24.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.0001130398217986,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "portrait",
+      "driver": "controller",
+      "floor": 52,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/portrait-52-gallery.png",
+          "sha256": "0e1f3510cd32acf0dea45c8e8d0d414b3d4b76e18b461c243ed6de30ff6c424e"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/portrait-52-room.png",
+          "sha256": "2e8faa840f0aa0433ba72bf65cf96765611e8c83468997e33feffb5e76c3a6cc"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/portrait-52-return.png",
+          "sha256": "5619719396a00c7c8ef8b273d51481c9d05c0840b47d9b5d51a5a4ac41305d28"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/portrait-52-continue.png",
+          "sha256": "846d2ddf91211d21f9970dd6997dce5a066e91674dd63deb4580e0b6d79cedee"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/portrait-52-reverse-gallery.png",
+          "sha256": "f2d0d6f0099d7a1684227c4473579039a4254ca87b53e8158fbb56e65b86a9ea"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/portrait-52-start-return.png",
+          "sha256": "acd956eaef9ea9ecaeb2c648a8481fe24c744abc096395a950295ff6c48bbbc2"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96,
+            52.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            52,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            52.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            52.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            52,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            52.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            52.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            52,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            52.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.0311195992159452,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "portrait",
+      "driver": "controller",
+      "floor": 84,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/portrait-84-gallery.png",
+          "sha256": "c26f2849a31d111a3bca426393127070ea808095115f012413625c35e4bb07a1"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/portrait-84-room.png",
+          "sha256": "968e060db554f6406c9b5813c73fd934073653ba867e3efb2520508196c734eb"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/portrait-84-return.png",
+          "sha256": "fe263afbc1d1d48f44102885af979c35d72b314fbe7f7cb09bb6314ebccce5e7"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/portrait-84-continue.png",
+          "sha256": "310f59d5f94d3b2cebf392f71de7bfee8234e1134f1c4022635397aabf4b0f33"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/portrait-84-reverse-gallery.png",
+          "sha256": "d5598f42711f8e4c1d3d51888cf2f6fd477da91b318fc0c8ccee77d78c40566c"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/portrait-84-start-return.png",
+          "sha256": "383498d14292da20250f3f97ca8c3a0ef3f754500443e3a9b9203a1e0bada446"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96,
+            84.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            84,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            84.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            84.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            84,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            84.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            84.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            84,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            84.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.0039923591208997,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "landscape",
+      "driver": "controller",
+      "floor": 24,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/landscape-24-gallery.png",
+          "sha256": "427408a03f7acf5bdc30ebd804076e15f9072fa709acdd6283c52c96a1ab01a1"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/landscape-24-room.png",
+          "sha256": "f613be7d394e2fee195a6b56ee25733854d768020f9226c263a24452c3801657"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/landscape-24-return.png",
+          "sha256": "b3c69a9025f3b16f8e955c8ece84f5925cb74036bf3a7d99fd55d8be1cafb4e4"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/landscape-24-continue.png",
+          "sha256": "936915d5d46e03623c7d872b027f2ded7a8d31a8388f6471e3e5e42a792ead90"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/landscape-24-reverse-gallery.png",
+          "sha256": "494e43d17efa9e8547c0fd09aea4fd0631029d6544aa72ea4fcc43f5067d78d5"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/landscape-24-start-return.png",
+          "sha256": "c888958d7aac8dba84b70d9504002de04dc3fcd6cd68bd6b210787431c296f64"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96,
+            24.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            24,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            24.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            24.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            24,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            24.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            24.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            24,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            24.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 0.9316523455802239,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "landscape",
+      "driver": "controller",
+      "floor": 52,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/landscape-52-gallery.png",
+          "sha256": "8ec13e831b632b399764543763e8962ee049352ab9608d9d5dae685724d69389"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/landscape-52-room.png",
+          "sha256": "3633cb468965dd2109011bbc06e06d411a10f4a40c7b3a37d991f8d7a631e7b4"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/landscape-52-return.png",
+          "sha256": "63141a18c971114d760ca8aa08c61545502c465fb5da1449f49e12eb619f87a1"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/landscape-52-continue.png",
+          "sha256": "5285137ec9d93a3a7e20bf0fb48e6fe240d7599b55ec7507720c26f53c810672"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/landscape-52-reverse-gallery.png",
+          "sha256": "5c0a957462a86fa66d60e814de2827a4d2e65317990e2aa6e6726e59503a8a5b"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/landscape-52-start-return.png",
+          "sha256": "9eb9c16da441b5d8843f957533839895a41135ab1f10d81fb934d9ef496c3c2f"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96,
+            52.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            52,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            52.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            52.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            52,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            52.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            52.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            52,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            52.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.0003399240424267,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "landscape",
+      "driver": "controller",
+      "floor": 84,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/landscape-84-gallery.png",
+          "sha256": "a0f90c553b6da010224b369dff9fd47448af9e3d5579773606b4d60498611a4f"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/landscape-84-room.png",
+          "sha256": "c4c3a5b5a753c6efcc2666dae0fc983529794397bb45c707c9bbb96bb8d3f188"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/landscape-84-return.png",
+          "sha256": "3dbe86abfc140b22475885f25b2eceb33941a2cdf0ee88c3e4bcfc69f9e2ec37"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/landscape-84-continue.png",
+          "sha256": "b8e9bf80dd05ae318c015e04007b68f385c9d2ff4a5f47b1444306b2e119f74c"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/landscape-84-reverse-gallery.png",
+          "sha256": "3c06fe217dca8d85ace6bde2111a9148f0a6e8f9a751b034abd6ad081c623621"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/rim-shadow-movement/landscape-84-start-return.png",
+          "sha256": "26eccb41fea03c1a4755ea5367ee7489487c698d506bd5e7231162bb4a7c3f7a"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96,
+            84.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            84,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            84.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            84.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            84,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            84.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            84.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            84,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            84.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.5532143655531745,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    }
+  ],
+  "errors": [],
+  "traces": "development/vertical-city-v02/evidence/rim-shadow-movement/traces.json.gz",
+  "tracesSHA256": "190bf42dea838b59128ff21086a96f47a75a9d7b396b723559b72ab830641f36"
+}

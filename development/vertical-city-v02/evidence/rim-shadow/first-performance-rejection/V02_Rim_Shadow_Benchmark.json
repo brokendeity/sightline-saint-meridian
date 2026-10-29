@@ -1,0 +1,4012 @@
+{
+  "status": "MEASURED fixed-resolution static warm-rim shadow workload; combined release benchmark remains separate",
+  "scope": "Matched 60 simulation-second fixed1280x800 lower public loop through native RAF, standard simulated controller and rendering. Matched player input/camera positions; final body composition can change the visible scene. No combat/replay/destruction stress; not final combined release acceptance.",
+  "viewport": [
+    1280,
+    800
+  ],
+  "video": [
+    640,
+    400
+  ],
+  "route": [
+    [
+      55,
+      24,
+      210
+    ],
+    [
+      55,
+      24,
+      230
+    ],
+    [
+      55,
+      24,
+      250
+    ],
+    [
+      55,
+      24,
+      276
+    ],
+    [
+      55,
+      24,
+      300
+    ],
+    [
+      55,
+      24,
+      326
+    ],
+    [
+      55,
+      24,
+      350
+    ],
+    [
+      96,
+      24,
+      350
+    ],
+    [
+      96,
+      24,
+      326
+    ],
+    [
+      96,
+      24,
+      300
+    ],
+    [
+      96,
+      24,
+      276
+    ],
+    [
+      96,
+      24,
+      250
+    ],
+    [
+      96,
+      24,
+      230
+    ],
+    [
+      96,
+      24,
+      210
+    ],
+    [
+      55,
+      24,
+      210
+    ]
+  ],
+  "runs": [
+    {
+      "id": "baseline",
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_PUBLIC_ROOM_LIFE.html",
+      "entrySHA256": "d40e10c5d47b82ecd0eac30adc64e383566ce68cb0504635e256781a43c80300",
+      "loadWallMs": 10049,
+      "wallSeconds": 60.10190000009537,
+      "simulationSeconds": 60,
+      "frameIntervalsMs": {
+        "samples": 4672,
+        "p50": 8.800000000001091,
+        "p95": 18.30000000000291,
+        "max": 116.79999999999927
+      },
+      "simulationCpuMs": {
+        "samples": 3600,
+        "p50": 9,
+        "p95": 16,
+        "max": 65.90000009536743
+      },
+      "renderSubmissionCpuMs": {
+        "samples": 4673,
+        "p50": 3.700000286102295,
+        "p95": 4.400000095367432,
+        "max": 69.40000009536743
+      },
+      "gpuTimeMs": {
+        "samples": 1169,
+        "p50": 6.900916,
+        "p95": 9.493833,
+        "max": 23.443749
+      },
+      "gpuTiming": {
+        "supported": true,
+        "disjointSamples": 0,
+        "scope": "Asynchronous elapsed GPU time for renderNight, including world, cartridge capture and post pass"
+      },
+      "internalResolution": [
+        1280,
+        800
+      ],
+      "renderedFrames": 4673,
+      "drawCalls": {
+        "samples": 4673,
+        "p50": 413,
+        "p95": 522,
+        "max": 529
+      },
+      "renderedTriangles": {
+        "samples": 4673,
+        "p50": 1771656,
+        "p95": 1948516,
+        "max": 1992526
+      },
+      "distance": 640.6535539148827,
+      "highSpeedSeconds": 29.5,
+      "laps": 1,
+      "droppedTime": 0.08080000019073474,
+      "memory": {
+        "start": {
+          "used": 364000000,
+          "total": 435000000
+        },
+        "end": {
+          "used": 364000000,
+          "total": 435000000
+        }
+      },
+      "startQuality": null,
+      "end": {
+        "quality": null,
+        "position": [
+          95.99999998953633,
+          24.42,
+          250.6105369099554
+        ],
+        "trauma": 0,
+        "grounded": true,
+        "simulation": {
+          "units": "CPU milliseconds; render is submission time",
+          "simulation": {
+            "samples": 240,
+            "p50": 7.099999904632568,
+            "p95": 12.700000286102295
+          },
+          "render": {
+            "samples": 240,
+            "p50": 3.700000286102295,
+            "p95": 4.300000190734863
+          }
+        },
+        "acceleration": {
+          "builds": 16,
+          "invalidations": 0,
+          "queries": 79552,
+          "acceleratedMeshes": 315203,
+          "nativeMeshes": 65974,
+          "leafTests": 256594,
+          "indexBytes": 1588544,
+          "buildMs": 99.60000038146973,
+          "scope": "Exact static V02 camera triangles; native fallback for original and unsupported meshes"
+        },
+        "shadow": null
+      },
+      "trace": [
+        {
+          "step": 120,
+          "simSeconds": 2,
+          "wallMs": 1995.6999998092651,
+          "position": [
+            55,
+            24.42,
+            229.4237845412517
+          ],
+          "velocity": [
+            0,
+            0,
+            1.9636380000000002
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            234.37057668130444
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 1,
+          "source": "traversal-locomotion-walk",
+          "viewQuaternion": [
+            -0.04610568363573392,
+            0.02547886016371805,
+            0.0011763543515918126,
+            0.9986108900926721
+          ],
+          "fov": 59.99999999999972,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 2.066666666666664,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 136,
+            "adjusted": 92,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 59.99999999999972,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 240,
+          "simSeconds": 4,
+          "wallMs": 3995.699999809265,
+          "position": [
+            55,
+            24.42,
+            249.28663741586766
+          ],
+          "velocity": [
+            0,
+            0,
+            1.982788404959545
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            254.15773708402776
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 2,
+          "source": "traversal-locomotion-walk",
+          "viewQuaternion": [
+            -0.0461729761392731,
+            0.025516255827107027,
+            0.001179805150001867,
+            0.9986068220389924
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 4.0666666666666575,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 256,
+            "adjusted": 178,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 360,
+          "simSeconds": 6,
+          "wallMs": 5994.900000095367,
+          "position": [
+            55,
+            24.42,
+            272.7205766522048
+          ],
+          "velocity": [
+            0,
+            0,
+            11.405240515025023
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            276.437612520074
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 3,
+          "source": "traversal-locomotion-parkourRun",
+          "viewQuaternion": [
+            -0.1028590131839178,
+            0.02585523457464577,
+            0.0026745383056822726,
+            0.9943562626628205
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 6.06666666666665,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -2.671474153004283e-15,
+            "heldPitch": -0.11212720600143206,
+            "frames": 376,
+            "adjusted": 268,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.1121272060014365,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 480,
+          "simSeconds": 8,
+          "wallMs": 8001.599999904633,
+          "position": [
+            55,
+            24.42,
+            292.1653015996369
+          ],
+          "velocity": [
+            0,
+            0,
+            16.36365
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            295.5412539158319
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 4,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.13038841918443878,
+            0.025879843962283423,
+            0.0034046677150583356,
+            0.9911193177699751
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 8.066666666666647,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 2.699229728619912e-15,
+            "heldPitch": -0.1671919271388781,
+            "frames": 496,
+            "adjusted": 350,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.1671919271388726,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 600,
+          "simSeconds": 10,
+          "wallMs": 9994.800000190735,
+          "position": [
+            55,
+            24.42,
+            311.52314531664786
+          ],
+          "velocity": [
+            0,
+            0,
+            16.36365
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            314.9060946907559
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 5,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.1297870988490371,
+            0.025877509116961125,
+            0.003388390235980535,
+            0.9911983566904561
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 10.066666666666746,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -4.232725281383409e-15,
+            "heldPitch": -0.16599445837047117,
+            "frames": 616,
+            "adjusted": 434,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.16599445837047538,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 720,
+          "simSeconds": 12,
+          "wallMs": 12077.199999809265,
+          "position": [
+            55,
+            24.42,
+            330.6643068335931
+          ],
+          "velocity": [
+            0,
+            0,
+            13.363638000000009
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            334.5578145800366
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 6,
+          "source": "traversal-locomotion-parkourRun",
+          "viewQuaternion": [
+            -0.08996550277071515,
+            0.025772353306923106,
+            0.0023288495318809013,
+            0.9956086432811305
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 12.066666666666846,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -8.673617379884035e-16,
+            "heldPitch": -0.08662621685638437,
+            "frames": 736,
+            "adjusted": 516,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.08662621685637856,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 840,
+          "simSeconds": 14,
+          "wallMs": 14167.699999809265,
+          "position": [
+            56.84222714415983,
+            24.42,
+            349.72281007388125
+          ],
+          "velocity": [
+            8.263430964944606,
+            0,
+            0.05849515055651511
+          ],
+          "camera": [
+            58.01491245743975,
+            26.43160332695665,
+            354.36930319866013
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 7,
+          "source": "traversal-locomotion-fastRun",
+          "viewQuaternion": [
+            -0.04590686209686829,
+            0.01995832543562542,
+            0.0009173745678902624,
+            0.9987459054645117
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 14.066666666666945,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 856,
+            "adjusted": 596,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 960,
+          "simSeconds": 16,
+          "wallMs": 16120.300000190735,
+          "position": [
+            87.81374577227875,
+            24.42,
+            349.94205116790204
+          ],
+          "velocity": [
+            16.363240029332825,
+            0,
+            0.11583205488878312
+          ],
+          "camera": [
+            87.90388264405551,
+            26.43133720100682,
+            354.5658546558419
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 7,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.04595497944297297,
+            0.011609768210989264,
+            0.0005341270705763754,
+            0.9988759021293664
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 16.066666666667036,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 976,
+            "adjusted": 616,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 1080,
+          "simSeconds": 18,
+          "wallMs": 18109.900000095367,
+          "position": [
+            95.84243197687722,
+            24.42,
+            339.00238081830724
+          ],
+          "velocity": [
+            0.1982866609690963,
+            0,
+            -16.362448585788794
+          ],
+          "camera": [
+            97.18082728819108,
+            26.43160332695665,
+            344.59523126731517
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 8,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.04515582165788629,
+            0.024853433319702342,
+            0.0011237716912809827,
+            0.9986701135809615
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 18.066666666666922,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 1096,
+            "adjusted": 627,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 1200,
+          "simSeconds": 20,
+          "wallMs": 20105.800000190735,
+          "position": [
+            95.99747185792833,
+            24.42,
+            319.6315357114011
+          ],
+          "velocity": [
+            0.001991401694673,
+            0,
+            -15.463637871774019
+          ],
+          "camera": [
+            97.3473760074022,
+            26.43160332695665,
+            325.01505144445395
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 9,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.0452666672264771,
+            0.025011803672129778,
+            0.0011337188954236754,
+            0.9986611303123499
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 20.06666666666681,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 1216,
+            "adjusted": 661,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 1320,
+          "simSeconds": 22,
+          "wallMs": 22106.199999809265,
+          "position": [
+            95.999965215992,
+            24.42,
+            298.71697510113324
+          ],
+          "velocity": [
+            0.000011734486845135796,
+            0,
+            -7.663637999991014
+          ],
+          "camera": [
+            97.34996749869525,
+            26.43160332695665,
+            303.4499614151566
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 10,
+          "source": "traversal-locomotion-fastRun",
+          "viewQuaternion": [
+            -0.045458346068672766,
+            0.02511918994528134,
+            0.001143420770900586,
+            0.9986497171972434
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 22.066666666666695,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 1336,
+            "adjusted": 697,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 1440,
+          "simSeconds": 24,
+          "wallMs": 24106.699999809265,
+          "position": [
+            95.99999955073821,
+            24.42,
+            276.21385285163774
+          ],
+          "velocity": [
+            4.393648637216195e-8,
+            0,
+            -2.5636379999999996
+          ],
+          "camera": [
+            97.35000008150917,
+            26.43160332695665,
+            280.49518050198117
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 11,
+          "source": "traversal-locomotion-jog",
+          "viewQuaternion": [
+            -0.06447946964167726,
+            0.025240969230581174,
+            0.0016314423302862167,
+            0.9975984311650415
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 24.06666666666658,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 6.58501031480796e-15,
+            "heldPitch": -0.03757920608760308,
+            "frames": 1456,
+            "adjusted": 717,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.03757920608759863,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 1560,
+          "simSeconds": 26,
+          "wallMs": 26108.400000095367,
+          "position": [
+            95.9999999784023,
+            24.42,
+            251.26019606013864
+          ],
+          "velocity": [
+            8.864372700246333e-8,
+            0,
+            -5.172241092223033
+          ],
+          "camera": [
+            97.34999997613416,
+            26.43160332695665,
+            256.02766727485226
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 11,
+          "source": "traversal-locomotion-run",
+          "viewQuaternion": [
+            -0.04545187781429492,
+            0.025115575961351083,
+            0.0011430931479775419,
+            0.9986501028815544
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 26.066666666666467,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 1576,
+            "adjusted": 731,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 1680,
+          "simSeconds": 28,
+          "wallMs": 28109,
+          "position": [
+            95.99999999960582,
+            24.42,
+            231.6468808190145
+          ],
+          "velocity": [
+            1.6298984369977101e-9,
+            0,
+            -6.809583698284386
+          ],
+          "camera": [
+            97.34999999955,
+            26.43160332695665,
+            236.5152018509887
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 12,
+          "source": "traversal-locomotion-fastRun",
+          "viewQuaternion": [
+            -0.045471143357661004,
+            0.025126279622584537,
+            0.001144066347317974,
+            0.9986489554925032
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 28.066666666666354,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 1696,
+            "adjusted": 767,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 1800,
+          "simSeconds": 30,
+          "wallMs": 30107.800000190735,
+          "position": [
+            95.99999999999272,
+            24.42,
+            212.14316414999246
+          ],
+          "velocity": [
+            2.882409317907473e-11,
+            0,
+            -8.487030644258066
+          ],
+          "camera": [
+            97.3499999999914,
+            26.43160332695665,
+            217.17013995710565
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 13,
+          "source": "traversal-locomotion-fastRun",
+          "viewQuaternion": [
+            -0.04539691727118203,
+            0.025085041388668298,
+            0.0011403191327022423,
+            0.9986533734349861
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 30.06666666666624,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 1816,
+            "adjusted": 805,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 1920,
+          "simSeconds": 32,
+          "wallMs": 32116.800000190735,
+          "position": [
+            77.6404357435222,
+            24.42,
+            210.15783689505423
+          ],
+          "velocity": [
+            -16.363252367520122,
+            0,
+            -0.1140757614356827
+          ],
+          "camera": [
+            80.1134516771029,
+            26.43160332695665,
+            214.80079388469878
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 14,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.045802610758168834,
+            0.03650513727186495,
+            0.0016749083045904173,
+            0.9982818692547057
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 32.06666666666613,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 1936,
+            "adjusted": 833,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 2040,
+          "simSeconds": 34,
+          "wallMs": 34118,
+          "position": [
+            55.28440355009892,
+            24.42,
+            210.44379918320732
+          ],
+          "velocity": [
+            -0.06345316937792188,
+            0,
+            4.363176628368359
+          ],
+          "camera": [
+            56.476147096239146,
+            26.43160332695665,
+            215.1622716579956
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 1,
+          "source": "traversal-locomotion-run",
+          "viewQuaternion": [
+            -0.04624766819405989,
+            0.024181030694964918,
+            0.0011198430119540533,
+            0.9986366590971764
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 34.066666666666016,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 2056,
+            "adjusted": 833,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 2160,
+          "simSeconds": 36,
+          "wallMs": 36106.59999990463,
+          "position": [
+            55.004184109349836,
+            24.42,
+            229.947504222896
+          ],
+          "velocity": [
+            -0.0007227150169160589,
+            0,
+            3.4636379245999436
+          ],
+          "camera": [
+            56.35053081789945,
+            26.43160332695665,
+            234.89366714260728
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 2,
+          "source": "traversal-locomotion-jog",
+          "viewQuaternion": [
+            -0.04607015100508398,
+            0.025433993125727986,
+            0.0011733745798498145,
+            0.9986136772406757
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 36.0666666666659,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 2176,
+            "adjusted": 920,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 2280,
+          "simSeconds": 38,
+          "wallMs": 38105.90000009537,
+          "position": [
+            55.00005926310882,
+            24.42,
+            249.75329844779353
+          ],
+          "velocity": [
+            -0.0000051111270055750054,
+            0,
+            2.26363799999423
+          ],
+          "camera": [
+            56.3499825122326,
+            26.43160332695665,
+            254.7522932086714
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 3,
+          "source": "traversal-locomotion-jog",
+          "viewQuaternion": [
+            -0.04604966289203332,
+            0.02544774578691142,
+            0.0011734862479122836,
+            0.9986142717345478
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 38.06666666666579,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 2296,
+            "adjusted": 1006,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 2400,
+          "simSeconds": 40,
+          "wallMs": 40100.09999990463,
+          "position": [
+            55.0000030434425,
+            24.42,
+            274.65210704238706
+          ],
+          "velocity": [
+            -0.000012560087688465191,
+            0,
+            5.562665885093364
+          ],
+          "camera": [
+            56.350003667979905,
+            26.43160332695665,
+            279.0106371530014
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 3,
+          "source": "traversal-locomotion-run",
+          "viewQuaternion": [
+            -0.0597662894109704,
+            0.025701913554069988,
+            0.0015393710553805301,
+            0.9978802696849243
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 40.066666666665675,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 4.579669976578771e-16,
+            "heldPitch": -0.026499740210845654,
+            "frames": 2416,
+            "adjusted": 1110,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.026499740210847167,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 2520,
+          "simSeconds": 42,
+          "wallMs": 42102.90000009537,
+          "position": [
+            55.00000011235018,
+            24.42,
+            295.7877632470771
+          ],
+          "velocity": [
+            -3.586624000329466e-7,
+            0,
+            13.446983333333336
+          ],
+          "camera": [
+            56.35000014194342,
+            26.43160332695665,
+            299.3133796170928
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 4,
+          "source": "traversal-locomotion-parkourRun",
+          "viewQuaternion": [
+            -0.11786436824906145,
+            0.025879370024744684,
+            0.0030727243777891136,
+            0.992687668538937
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 42.06666666666556,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -2.1510571102112408e-15,
+            "heldPitch": -0.14208923471948237,
+            "frames": 2536,
+            "adjusted": 1192,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.1420892347194765,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 2640,
+          "simSeconds": 44,
+          "wallMs": 44100.5,
+          "position": [
+            55.000000003163834,
+            24.42,
+            315.340162146254
+          ],
+          "velocity": [
+            -4.856721248141926e-9,
+            0,
+            16.36365
+          ],
+          "camera": [
+            56.35000000353751,
+            26.43160332695665,
+            318.7162864800678
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 5,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.13037361717015206,
+            0.025879784203624558,
+            0.003404266649789221,
+            0.9911212679002109
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 44.06666666666545,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -4.85722573273506e-17,
+            "heldPitch": -0.16716245798620247,
+            "frames": 2656,
+            "adjusted": 1276,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.16716245798619905,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 2760,
+          "simSeconds": 46,
+          "wallMs": 46100.800000190735,
+          "position": [
+            55.00000000005464,
+            24.42,
+            334.25791928309155
+          ],
+          "velocity": [
+            -5.679655230039061e-11,
+            0,
+            16.36365
+          ],
+          "camera": [
+            56.350000000058714,
+            26.43160332695665,
+            337.71729848677313
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 6,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.12332220348892176,
+            0.025855918465823025,
+            0.0032142437712833123,
+            0.9920245834876797
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 46.066666666665334,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 3.3861802251067274e-15,
+            "heldPitch": -0.1531112260473516,
+            "frames": 2776,
+            "adjusted": 1358,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.15311122604735267,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 2880,
+          "simSeconds": 48,
+          "wallMs": 48104,
+          "position": [
+            59.29534817346175,
+            24.42,
+            349.74052638876
+          ],
+          "velocity": [
+            12.463326582704633,
+            0,
+            0.08810611722353694
+          ],
+          "camera": [
+            60.00529329400928,
+            26.43160332695665,
+            354.37178185029836
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 7,
+          "source": "traversal-locomotion-parkourRun",
+          "viewQuaternion": [
+            -0.04593569275438385,
+            0.016605024433714397,
+            0.0007636750611298678,
+            0.9988060883350339
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 48.06666666666522,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 2896,
+            "adjusted": 1424,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 3000,
+          "simSeconds": 50,
+          "wallMs": 50108.90000009537,
+          "position": [
+            91.48640324313007,
+            24.42,
+            349.96809234819307
+          ],
+          "velocity": [
+            13.867257012740074,
+            0,
+            0.0980308237784669
+          ],
+          "camera": [
+            91.69347699421405,
+            26.43160016651088,
+            354.5951120997332
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 7,
+          "source": "traversal-locomotion-parkourRun",
+          "viewQuaternion": [
+            -0.04595380465437037,
+            0.01219542596641056,
+            0.0005610608032364725,
+            0.998868962694337
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 50.06666666666511,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 3016,
+            "adjusted": 1444,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 3120,
+          "simSeconds": 52,
+          "wallMs": 52111.90000009537,
+          "position": [
+            95.88869844565498,
+            24.42,
+            335.1844789308312
+          ],
+          "velocity": [
+            0.19828734686845234,
+            0,
+            -16.36244857747678
+          ],
+          "camera": [
+            97.22699612630171,
+            26.43160332695665,
+            340.78527453917746
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 8,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.045150716567369485,
+            0.024849907293541498,
+            0.0011234848699436246,
+            0.9986704324664379
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 52.06666666666499,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 3136,
+            "adjusted": 1458,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 3240,
+          "simSeconds": 54,
+          "wallMs": 54103,
+          "position": [
+            95.99796160400565,
+            24.42,
+            315.82835400660423
+          ],
+          "velocity": [
+            0.002107332090401803,
+            0,
+            -16.36364986430752
+          ],
+          "camera": [
+            97.34783886477713,
+            26.43160332695665,
+            321.41676125149314
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 9,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.045158114185073234,
+            0.024951341743052954,
+            0.0011282588728561541,
+            0.9986675634566214
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 54.06666666666488,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 3256,
+            "adjusted": 1491,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 3360,
+          "simSeconds": 56,
+          "wallMs": 56104.59999990463,
+          "position": [
+            95.99996875761698,
+            24.42,
+            296.4037919219022
+          ],
+          "velocity": [
+            0.00001816565880464877,
+            0,
+            -11.863637999986098
+          ],
+          "camera": [
+            97.34996821542614,
+            26.43160332695665,
+            301.44409868513014
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 10,
+          "source": "traversal-locomotion-parkourRun",
+          "viewQuaternion": [
+            -0.04542585182018813,
+            0.02510110940985676,
+            0.0011417787913860584,
+            0.9986516522962331
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 56.066666666664766,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 3376,
+            "adjusted": 1526,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 3480,
+          "simSeconds": 58,
+          "wallMs": 58100.300000190735,
+          "position": [
+            95.99999956998487,
+            24.42,
+            275.0906697571935
+          ],
+          "velocity": [
+            1.1591825558344105e-7,
+            0,
+            -6.763637999999998
+          ],
+          "camera": [
+            97.34999962289274,
+            26.43160332695665,
+            279.7250619865008
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 11,
+          "source": "traversal-locomotion-fastRun",
+          "viewQuaternion": [
+            -0.045522197882911626,
+            0.025154645446695458,
+            0.0011466474086453745,
+            0.9986459124795336
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 58.06666666666465,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 3496,
+            "adjusted": 1559,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        },
+        {
+          "step": 3600,
+          "simSeconds": 60,
+          "wallMs": 60101.90000009537,
+          "position": [
+            95.99999998953633,
+            24.42,
+            250.6105369099554
+          ],
+          "velocity": [
+            3.365371844345988e-8,
+            0,
+            -1.9636380000000002
+          ],
+          "camera": [
+            97.34999999467087,
+            26.43160332695665,
+            254.94607412467857
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 11,
+          "source": "traversal-locomotion-walk",
+          "viewQuaternion": [
+            -0.06119204315200868,
+            0.025212532306407145,
+            0.0015461982141580998,
+            0.997806329575366
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 60.06666666666454,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 7.854827899222983e-15,
+            "heldPitch": -0.03111041350862996,
+            "frames": 3616,
+            "adjusted": 1571,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.031110413508626866,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": null
+        }
+      ],
+      "errors": [],
+      "video": "evidence/rim-shadow-benchmark/baseline.webm"
+    },
+    {
+      "id": "candidate",
+      "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_RIM_SHADOWS.html",
+      "entrySHA256": "fe3f022454a46da54f7dde2731a11c27110f9f22b19c7b8fcb5ee6eaddd2304c",
+      "loadWallMs": 9391,
+      "wallSeconds": 63.8202000002861,
+      "simulationSeconds": 60,
+      "frameIntervalsMs": {
+        "samples": 3979,
+        "p50": 14.900000000008731,
+        "p95": 24.80000000000291,
+        "max": 424.7000000000007
+      },
+      "simulationCpuMs": {
+        "samples": 3600,
+        "p50": 9.099999904632568,
+        "p95": 24.299999713897705,
+        "max": 67.69999980926514
+      },
+      "renderSubmissionCpuMs": {
+        "samples": 3980,
+        "p50": 4.199999809265137,
+        "p95": 4.900000095367432,
+        "max": 393.5
+      },
+      "gpuTimeMs": {
+        "samples": 995,
+        "p50": 7.623666,
+        "p95": 11.103666,
+        "max": 26.554208
+      },
+      "gpuTiming": {
+        "supported": true,
+        "disjointSamples": 0,
+        "scope": "Asynchronous elapsed GPU time for renderNight, including world, cartridge capture and post pass"
+      },
+      "internalResolution": [
+        1280,
+        800
+      ],
+      "renderedFrames": 3980,
+      "drawCalls": {
+        "samples": 3980,
+        "p50": 405,
+        "p95": 521,
+        "max": 528
+      },
+      "renderedTriangles": {
+        "samples": 3980,
+        "p50": 1590372,
+        "p95": 1948151,
+        "max": 1974537
+      },
+      "distance": 640.6535539148827,
+      "highSpeedSeconds": 29.5,
+      "laps": 1,
+      "droppedTime": 3.6168999996185285,
+      "memory": {
+        "start": {
+          "used": 386000000,
+          "total": 435000000
+        },
+        "end": {
+          "used": 386000000,
+          "total": 435000000
+        }
+      },
+      "startQuality": null,
+      "end": {
+        "quality": null,
+        "position": [
+          95.99999998953633,
+          24.42,
+          250.6105369099554
+        ],
+        "trauma": 0,
+        "grounded": true,
+        "simulation": {
+          "units": "CPU milliseconds; render is submission time",
+          "simulation": {
+            "samples": 240,
+            "p50": 7.399999618530273,
+            "p95": 12.199999809265137
+          },
+          "render": {
+            "samples": 240,
+            "p50": 4.199999809265137,
+            "p95": 4.699999809265137
+          }
+        },
+        "acceleration": {
+          "builds": 16,
+          "invalidations": 0,
+          "queries": 79530,
+          "acceleratedMeshes": 315190,
+          "nativeMeshes": 65968,
+          "leafTests": 256594,
+          "indexBytes": 1588544,
+          "buildMs": 115.69999980926514,
+          "scope": "Exact static V02 camera triangles; native fallback for original and unsupported meshes"
+        },
+        "shadow": {
+          "ready": true,
+          "error": null,
+          "loading": false,
+          "updates": 1,
+          "casters": 569,
+          "shadowDrawCalls": 302,
+          "lastUpdateMs": 36.19999980926514,
+          "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+          "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+          "scope": {
+            "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+            "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+            "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+            "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+            "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+          },
+          "activeCasters": 569
+        }
+      },
+      "trace": [
+        {
+          "step": 120,
+          "simSeconds": 2,
+          "wallMs": 2306.2000002861023,
+          "position": [
+            55,
+            24.42,
+            229.4237845412517
+          ],
+          "velocity": [
+            0,
+            0,
+            1.9636380000000002
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            234.37057668130444
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 1,
+          "source": "traversal-locomotion-walk",
+          "viewQuaternion": [
+            -0.04610568363573392,
+            0.02547886016371805,
+            0.0011763543515918126,
+            0.9986108900926721
+          ],
+          "fov": 59.99999999999972,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 2.066666666666664,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 135,
+            "adjusted": 92,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 59.99999999999972,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 240,
+          "simSeconds": 4,
+          "wallMs": 4308.800000190735,
+          "position": [
+            55,
+            24.42,
+            249.28663741586766
+          ],
+          "velocity": [
+            0,
+            0,
+            1.982788404959545
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            254.15773708402776
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 2,
+          "source": "traversal-locomotion-walk",
+          "viewQuaternion": [
+            -0.0461729761392731,
+            0.025516255827107027,
+            0.001179805150001867,
+            0.9986068220389924
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 4.0666666666666575,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 255,
+            "adjusted": 178,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 360,
+          "simSeconds": 6,
+          "wallMs": 6307.800000190735,
+          "position": [
+            55,
+            24.42,
+            272.7205766522048
+          ],
+          "velocity": [
+            0,
+            0,
+            11.405240515025023
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            276.437612520074
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 3,
+          "source": "traversal-locomotion-parkourRun",
+          "viewQuaternion": [
+            -0.1028590131839178,
+            0.02585523457464577,
+            0.0026745383056822726,
+            0.9943562626628205
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 6.06666666666665,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -2.671474153004283e-15,
+            "heldPitch": -0.11212720600143206,
+            "frames": 375,
+            "adjusted": 268,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.1121272060014365,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 480,
+          "simSeconds": 8,
+          "wallMs": 8310.300000190735,
+          "position": [
+            55,
+            24.42,
+            292.1653015996369
+          ],
+          "velocity": [
+            0,
+            0,
+            16.36365
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            295.5412539158319
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 4,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.13038841918443878,
+            0.025879843962283423,
+            0.0034046677150583356,
+            0.9911193177699751
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 8.066666666666647,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 2.699229728619912e-15,
+            "heldPitch": -0.1671919271388781,
+            "frames": 495,
+            "adjusted": 350,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.1671919271388726,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 600,
+          "simSeconds": 10,
+          "wallMs": 10312.300000190735,
+          "position": [
+            55,
+            24.42,
+            311.52314531664786
+          ],
+          "velocity": [
+            0,
+            0,
+            16.36365
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            314.9060946907559
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 5,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.1297870988490371,
+            0.025877509116961125,
+            0.003388390235980535,
+            0.9911983566904561
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 10.066666666666746,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -4.232725281383409e-15,
+            "heldPitch": -0.16599445837047117,
+            "frames": 615,
+            "adjusted": 434,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.16599445837047538,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 720,
+          "simSeconds": 12,
+          "wallMs": 12408.700000286102,
+          "position": [
+            55,
+            24.42,
+            330.6643068335931
+          ],
+          "velocity": [
+            0,
+            0,
+            13.363638000000009
+          ],
+          "camera": [
+            56.349999999999994,
+            26.43160332695665,
+            334.5578145800366
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 6,
+          "source": "traversal-locomotion-parkourRun",
+          "viewQuaternion": [
+            -0.08996550277071515,
+            0.025772353306923106,
+            0.0023288495318809013,
+            0.9956086432811305
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 12.066666666666846,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -8.673617379884035e-16,
+            "heldPitch": -0.08662621685638437,
+            "frames": 735,
+            "adjusted": 516,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.08662621685637856,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 840,
+          "simSeconds": 14,
+          "wallMs": 14565.700000286102,
+          "position": [
+            56.84222714415983,
+            24.42,
+            349.72281007388125
+          ],
+          "velocity": [
+            8.263430964944606,
+            0,
+            0.05849515055651511
+          ],
+          "camera": [
+            58.01491245743975,
+            26.43160332695665,
+            354.36930319866013
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 7,
+          "source": "traversal-locomotion-fastRun",
+          "viewQuaternion": [
+            -0.04590686209686829,
+            0.01995832543562542,
+            0.0009173745678902624,
+            0.9987459054645117
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 14.066666666666945,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 855,
+            "adjusted": 596,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 960,
+          "simSeconds": 16,
+          "wallMs": 16514.599999904633,
+          "position": [
+            87.81374577227875,
+            24.42,
+            349.94205116790204
+          ],
+          "velocity": [
+            16.363240029332825,
+            0,
+            0.11583205488878312
+          ],
+          "camera": [
+            87.90388264405551,
+            26.43133720100682,
+            354.5658546558419
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 7,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.04595497944297297,
+            0.011609768210989264,
+            0.0005341270705763754,
+            0.9988759021293664
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 16.066666666667036,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 975,
+            "adjusted": 616,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 1080,
+          "simSeconds": 18,
+          "wallMs": 19485.900000095367,
+          "position": [
+            95.84243197687722,
+            24.42,
+            339.00238081830724
+          ],
+          "velocity": [
+            0.1982866609690963,
+            0,
+            -16.362448585788794
+          ],
+          "camera": [
+            97.18082728819108,
+            26.43160332695665,
+            344.59523126731517
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 8,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.04515582165788629,
+            0.024853433319702342,
+            0.0011237716912809827,
+            0.9986701135809615
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 18.066666666666922,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 1095,
+            "adjusted": 627,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 1200,
+          "simSeconds": 20,
+          "wallMs": 22663.700000286102,
+          "position": [
+            95.99747185792833,
+            24.42,
+            319.6315357114011
+          ],
+          "velocity": [
+            0.001991401694673,
+            0,
+            -15.463637871774019
+          ],
+          "camera": [
+            97.3473760074022,
+            26.43160332695665,
+            325.01505144445395
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 9,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.0452666672264771,
+            0.025011803672129778,
+            0.0011337188954236754,
+            0.9986611303123499
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 20.06666666666681,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 1215,
+            "adjusted": 662,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 1320,
+          "simSeconds": 22,
+          "wallMs": 25694.900000095367,
+          "position": [
+            95.999965215992,
+            24.42,
+            298.71697510113324
+          ],
+          "velocity": [
+            0.000011734486845135796,
+            0,
+            -7.663637999991014
+          ],
+          "camera": [
+            97.34996749869525,
+            26.43160332695665,
+            303.4499614151566
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 10,
+          "source": "traversal-locomotion-fastRun",
+          "viewQuaternion": [
+            -0.045458346068672766,
+            0.02511918994528134,
+            0.001143420770900586,
+            0.9986497171972434
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 22.066666666666695,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 1335,
+            "adjusted": 698,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 1440,
+          "simSeconds": 24,
+          "wallMs": 27821.800000190735,
+          "position": [
+            95.99999955073821,
+            24.42,
+            276.21385285163774
+          ],
+          "velocity": [
+            4.393648637216195e-8,
+            0,
+            -2.5636379999999996
+          ],
+          "camera": [
+            97.35000008150917,
+            26.43160332695665,
+            280.49518050198117
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 11,
+          "source": "traversal-locomotion-jog",
+          "viewQuaternion": [
+            -0.06447946964167726,
+            0.025240969230581174,
+            0.0016314423302862167,
+            0.9975984311650415
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 24.06666666666658,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 6.58501031480796e-15,
+            "heldPitch": -0.03757920608760308,
+            "frames": 1455,
+            "adjusted": 718,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.03757920608759863,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 1560,
+          "simSeconds": 26,
+          "wallMs": 29819.599999904633,
+          "position": [
+            95.9999999784023,
+            24.42,
+            251.26019606013864
+          ],
+          "velocity": [
+            8.864372700246333e-8,
+            0,
+            -5.172241092223033
+          ],
+          "camera": [
+            97.34999997613416,
+            26.43160332695665,
+            256.02766727485226
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 11,
+          "source": "traversal-locomotion-run",
+          "viewQuaternion": [
+            -0.04545187781429492,
+            0.025115575961351083,
+            0.0011430931479775419,
+            0.9986501028815544
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 26.066666666666467,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 1575,
+            "adjusted": 732,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 1680,
+          "simSeconds": 28,
+          "wallMs": 31822.200000286102,
+          "position": [
+            95.99999999960582,
+            24.42,
+            231.6468808190145
+          ],
+          "velocity": [
+            1.6298984369977101e-9,
+            0,
+            -6.809583698284386
+          ],
+          "camera": [
+            97.34999999955,
+            26.43160332695665,
+            236.5152018509887
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 12,
+          "source": "traversal-locomotion-fastRun",
+          "viewQuaternion": [
+            -0.045471143357661004,
+            0.025126279622584537,
+            0.001144066347317974,
+            0.9986489554925032
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 28.066666666666354,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 1695,
+            "adjusted": 768,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 1800,
+          "simSeconds": 30,
+          "wallMs": 33822,
+          "position": [
+            95.99999999999272,
+            24.42,
+            212.14316414999246
+          ],
+          "velocity": [
+            2.882409317907473e-11,
+            0,
+            -8.487030644258066
+          ],
+          "camera": [
+            97.3499999999914,
+            26.43160332695665,
+            217.17013995710565
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 13,
+          "source": "traversal-locomotion-fastRun",
+          "viewQuaternion": [
+            -0.04539691727118203,
+            0.025085041388668298,
+            0.0011403191327022423,
+            0.9986533734349861
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 30.06666666666624,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 1815,
+            "adjusted": 805,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 1920,
+          "simSeconds": 32,
+          "wallMs": 35832.7000002861,
+          "position": [
+            77.6404357435222,
+            24.42,
+            210.15783689505423
+          ],
+          "velocity": [
+            -16.363252367520122,
+            0,
+            -0.1140757614356827
+          ],
+          "camera": [
+            80.1134516771029,
+            26.43160332695665,
+            214.80079388469878
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 14,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.045802610758168834,
+            0.03650513727186495,
+            0.0016749083045904173,
+            0.9982818692547057
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 32.06666666666613,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 1935,
+            "adjusted": 833,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 2040,
+          "simSeconds": 34,
+          "wallMs": 37819.300000190735,
+          "position": [
+            55.28440355009892,
+            24.42,
+            210.44379918320732
+          ],
+          "velocity": [
+            -0.06345316937792188,
+            0,
+            4.363176628368359
+          ],
+          "camera": [
+            56.476147096239146,
+            26.43160332695665,
+            215.1622716579956
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 1,
+          "source": "traversal-locomotion-run",
+          "viewQuaternion": [
+            -0.04624766819405989,
+            0.024181030694964918,
+            0.0011198430119540533,
+            0.9986366590971764
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 34.066666666666016,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 2055,
+            "adjusted": 833,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 2160,
+          "simSeconds": 36,
+          "wallMs": 39820.7000002861,
+          "position": [
+            55.004184109349836,
+            24.42,
+            229.947504222896
+          ],
+          "velocity": [
+            -0.0007227150169160589,
+            0,
+            3.4636379245999436
+          ],
+          "camera": [
+            56.35053081789945,
+            26.43160332695665,
+            234.89366714260728
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 2,
+          "source": "traversal-locomotion-jog",
+          "viewQuaternion": [
+            -0.04607015100508398,
+            0.025433993125727986,
+            0.0011733745798498145,
+            0.9986136772406757
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 36.0666666666659,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 2175,
+            "adjusted": 920,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 2280,
+          "simSeconds": 38,
+          "wallMs": 41817,
+          "position": [
+            55.00005926310882,
+            24.42,
+            249.75329844779353
+          ],
+          "velocity": [
+            -0.0000051111270055750054,
+            0,
+            2.26363799999423
+          ],
+          "camera": [
+            56.3499825122326,
+            26.43160332695665,
+            254.7522932086714
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 3,
+          "source": "traversal-locomotion-jog",
+          "viewQuaternion": [
+            -0.04604966289203332,
+            0.02544774578691142,
+            0.0011734862479122836,
+            0.9986142717345478
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 38.06666666666579,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 2295,
+            "adjusted": 1006,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 2400,
+          "simSeconds": 40,
+          "wallMs": 43829.40000009537,
+          "position": [
+            55.0000030434425,
+            24.42,
+            274.65210704238706
+          ],
+          "velocity": [
+            -0.000012560087688465191,
+            0,
+            5.562665885093364
+          ],
+          "camera": [
+            56.350003667979905,
+            26.43160332695665,
+            279.0106371530014
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 3,
+          "source": "traversal-locomotion-run",
+          "viewQuaternion": [
+            -0.0597662894109704,
+            0.025701913554069988,
+            0.0015393710553805301,
+            0.9978802696849243
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 40.066666666665675,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 4.579669976578771e-16,
+            "heldPitch": -0.026499740210845654,
+            "frames": 2415,
+            "adjusted": 1110,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.026499740210847167,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 2520,
+          "simSeconds": 42,
+          "wallMs": 45817.90000009537,
+          "position": [
+            55.00000011235018,
+            24.42,
+            295.7877632470771
+          ],
+          "velocity": [
+            -3.586624000329466e-7,
+            0,
+            13.446983333333336
+          ],
+          "camera": [
+            56.35000014194342,
+            26.43160332695665,
+            299.3133796170928
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 4,
+          "source": "traversal-locomotion-parkourRun",
+          "viewQuaternion": [
+            -0.11786436824906145,
+            0.025879370024744684,
+            0.0030727243777891136,
+            0.992687668538937
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 42.06666666666556,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -2.1510571102112408e-15,
+            "heldPitch": -0.14208923471948237,
+            "frames": 2535,
+            "adjusted": 1192,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.1420892347194765,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 2640,
+          "simSeconds": 44,
+          "wallMs": 47823.5,
+          "position": [
+            55.000000003163834,
+            24.42,
+            315.340162146254
+          ],
+          "velocity": [
+            -4.856721248141926e-9,
+            0,
+            16.36365
+          ],
+          "camera": [
+            56.35000000353751,
+            26.43160332695665,
+            318.7162864800678
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 5,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.13037361717015206,
+            0.025879784203624558,
+            0.003404266649789221,
+            0.9911212679002109
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 44.06666666666545,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -4.85722573273506e-17,
+            "heldPitch": -0.16716245798620247,
+            "frames": 2655,
+            "adjusted": 1276,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.16716245798619905,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 2760,
+          "simSeconds": 46,
+          "wallMs": 49817.90000009537,
+          "position": [
+            55.00000000005464,
+            24.42,
+            334.25791928309155
+          ],
+          "velocity": [
+            -5.679655230039061e-11,
+            0,
+            16.36365
+          ],
+          "camera": [
+            56.350000000058714,
+            26.43160332695665,
+            337.71729848677313
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 6,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.12332220348892176,
+            0.025855918465823025,
+            0.0032142437712833123,
+            0.9920245834876797
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 46.066666666665334,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 3.3861802251067274e-15,
+            "heldPitch": -0.1531112260473516,
+            "frames": 2775,
+            "adjusted": 1358,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.15311122604735267,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 2880,
+          "simSeconds": 48,
+          "wallMs": 51819.5,
+          "position": [
+            59.29534817346175,
+            24.42,
+            349.74052638876
+          ],
+          "velocity": [
+            12.463326582704633,
+            0,
+            0.08810611722353694
+          ],
+          "camera": [
+            60.00529329400928,
+            26.43160332695665,
+            354.37178185029836
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 7,
+          "source": "traversal-locomotion-parkourRun",
+          "viewQuaternion": [
+            -0.04593569275438385,
+            0.016605024433714397,
+            0.0007636750611298678,
+            0.9988060883350339
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 48.06666666666522,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 2895,
+            "adjusted": 1424,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 3000,
+          "simSeconds": 50,
+          "wallMs": 53819.59999990463,
+          "position": [
+            91.48640324313007,
+            24.42,
+            349.96809234819307
+          ],
+          "velocity": [
+            13.867257012740074,
+            0,
+            0.0980308237784669
+          ],
+          "camera": [
+            91.69347699421405,
+            26.43160016651088,
+            354.5951120997332
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 7,
+          "source": "traversal-locomotion-parkourRun",
+          "viewQuaternion": [
+            -0.04595380465437037,
+            0.01219542596641056,
+            0.0005610608032364725,
+            0.998868962694337
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 50.06666666666511,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 3015,
+            "adjusted": 1444,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 3120,
+          "simSeconds": 52,
+          "wallMs": 55820,
+          "position": [
+            95.88869844565498,
+            24.42,
+            335.1844789308312
+          ],
+          "velocity": [
+            0.19828734686845234,
+            0,
+            -16.36244857747678
+          ],
+          "camera": [
+            97.22699612630171,
+            26.43160332695665,
+            340.78527453917746
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 8,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.045150716567369485,
+            0.024849907293541498,
+            0.0011234848699436246,
+            0.9986704324664379
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 52.06666666666499,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 3135,
+            "adjusted": 1457,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 3240,
+          "simSeconds": 54,
+          "wallMs": 57816.40000009537,
+          "position": [
+            95.99796160400565,
+            24.42,
+            315.82835400660423
+          ],
+          "velocity": [
+            0.002107332090401803,
+            0,
+            -16.36364986430752
+          ],
+          "camera": [
+            97.34783886477713,
+            26.43160332695665,
+            321.41676125149314
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 9,
+          "source": "traversal-locomotion-parkourSprint",
+          "viewQuaternion": [
+            -0.045158114185073234,
+            0.024951341743052954,
+            0.0011282588728561541,
+            0.9986675634566214
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 54.06666666666488,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 3255,
+            "adjusted": 1490,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 3360,
+          "simSeconds": 56,
+          "wallMs": 59824.59999990463,
+          "position": [
+            95.99996875761698,
+            24.42,
+            296.4037919219022
+          ],
+          "velocity": [
+            0.00001816565880464877,
+            0,
+            -11.863637999986098
+          ],
+          "camera": [
+            97.34996821542614,
+            26.43160332695665,
+            301.44409868513014
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 10,
+          "source": "traversal-locomotion-parkourRun",
+          "viewQuaternion": [
+            -0.04542585182018813,
+            0.02510110940985676,
+            0.0011417787913860584,
+            0.9986516522962331
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 56.066666666664766,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 3375,
+            "adjusted": 1525,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 3480,
+          "simSeconds": 58,
+          "wallMs": 61818.300000190735,
+          "position": [
+            95.99999956998487,
+            24.42,
+            275.0906697571935
+          ],
+          "velocity": [
+            1.1591825558344105e-7,
+            0,
+            -6.763637999999998
+          ],
+          "camera": [
+            97.34999962289274,
+            26.43160332695665,
+            279.7250619865008
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 11,
+          "source": "traversal-locomotion-fastRun",
+          "viewQuaternion": [
+            -0.045522197882911626,
+            0.025154645446695458,
+            0.0011466474086453745,
+            0.9986459124795336
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 58.06666666666465,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0,
+            "heldPitch": 0,
+            "frames": 3495,
+            "adjusted": 1558,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": 0,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        },
+        {
+          "step": 3600,
+          "simSeconds": 60,
+          "wallMs": 63820.09999990463,
+          "position": [
+            95.99999998953633,
+            24.42,
+            250.6105369099554
+          ],
+          "velocity": [
+            3.365371844345988e-8,
+            0,
+            -1.9636380000000002
+          ],
+          "camera": [
+            97.34999999467087,
+            26.43160332695665,
+            254.94607412467857
+          ],
+          "grounded": true,
+          "trauma": 0,
+          "target": 11,
+          "source": "traversal-locomotion-walk",
+          "viewQuaternion": [
+            -0.06119204315200868,
+            0.025212532306407145,
+            0.0015461982141580998,
+            0.997806329575366
+          ],
+          "fov": 60,
+          "body": {
+            "compositionFamily": "exploration",
+            "quietPitch": 60.06666666666454,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 7.854827899222983e-15,
+            "heldPitch": -0.03111041350862996,
+            "frames": 3615,
+            "adjusted": 1570,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 60,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.031110413508626866,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "shadow": {
+            "ready": true,
+            "error": null,
+            "loading": false,
+            "updates": 1,
+            "casters": 569,
+            "shadowDrawCalls": 302,
+            "lastUpdateMs": 36.19999980926514,
+            "sourceMasterSHA256": "bd1b990265724c95215a8b2877d502652e814775ecf9ecd33cc959ef4b3deb33",
+            "contractSHA256": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+            "scope": {
+              "scope": "Bounded static architectural occlusion of the existing warm directional light. Main sun retains dynamic actor shadows.",
+              "casters": "Original full building geometry, original fixed facade fittings, and loaded V02 static architectural meshes; no actors, train, aircraft, vegetation or debris.",
+              "transparency": "Transparent materials do not cast opaque architectural rim shadows. Mixed original facade glazing requires a per-vertex reflectance depth mask.",
+              "invalidation": "Rebuild on source mesh/geometry or saved world-matrix changes and building damage/destruction; source visibility culling does not remove static casters.",
+              "fidelity": "PCF depth-map approximation to source SUN occlusion; no claim of Cycles soft-shadow or complete material equivalence."
+            },
+            "activeCasters": 569
+          }
+        }
+      ],
+      "errors": [],
+      "video": "evidence/rim-shadow-benchmark/candidate.webm"
+    }
+  ],
+  "gpuTiming": "Asynchronous full-render GPU timer query where supported; CPU render submission reported separately",
+  "physicalDevices": "NOT TESTED",
+  "hashes": {
+    "scripts/vertical-v02/benchmark_rim_shadows.cjs": "71a98c5fee9eb9295a89543db41ca4d57900cb03fb44eb9a84cc6b031541c3a9",
+    "scripts/game_v02_rim_shadows.js": "dbb3ec83ec0f72b79c4d1acfa5206f7e2489399afe7908968af95803a226d59a",
+    "assets/city/vertical-v02/rim-shadow/contract.json": "5a65d3ef4e648cec4e8a6ff1728bb27959e6189ebf3b565601963cf059826ad3",
+    "scripts/game_v02_body_framing_v2.js": "ceafb64874a814604e8d92f17f96f9683d4c93fc7bf2b676120d4e5990718a13",
+    "scripts/game_v02_body_framing.css": "839f156f2c2a616c3fcb6cf21465f7d3be6200d459516d4b391e2bffbef99d80",
+    "scripts/game_v02_body_notice.js": "704c5f9a3bc53faac7d4084583c8063ae1b1c66bdcf6e4d975f340dbd985e7c2",
+    "scripts/game_vertical_diffuse_lighting_v02.js": "99bb11e0709d8b6372731bc4c17a05cd3fc7d090f85a876e1f84822c34ce644d",
+    "scripts/game_v02_facade_cassettes.js": "a1ee9a0bc5084b82763ac9dc2ab1bd6e025b1d5aac4b05d7509098d41f3b4327",
+    "assets/city/vertical-v02/facade-cassettes/runtime.json.gz": "89b7a9c7afde35fd53dcea3e1ba6be92fe1d21cfe439c81e1c964a02b54839aa",
+    "assets/city/vertical-v02/diffuse-pilot/runtime/lighting.json": "f9743db14f8272150bc628c9925259fc85dff48883deaac3d6a543f582e84002",
+    "assets/city/vertical-v02/upper-anchor-mounts/runtime/manifest.json": "792e4bb30a68c364bd2ce9123e10eb5e462af8f4b583922e104f14ff8aaf38bd",
+    "assets/city/vertical-v02/east-public-emissive/runtime/manifest.json": "0bf5890913968eec9d1450be46d97dcb548693030cc9b0fbef4fb221cd4a6833",
+    "assets/city/vertical-v02/east-public-emissive/runtime/lighting.json": "2d699f15a6c44b4286b836537f3bd40fe7df6e8f532404084d531efeb3da13fd",
+    "assets/city/vertical-v02/east-public-emissive/runtime/ambient_routes.json": "6ebbf5cbc7765065f75812a14bcc1a856d58fadb9c4851fb4d335e324327deb3",
+    "scripts/game_v02_east_public_emissive.js": "fc789490cd57b27125a95766e17444be86fd9e7c919f3ba9fa8e7926813f38c3",
+    "scripts/game_vertical_east_public_life_v02.js": "e310d1b64f25c726c4972d914175dc68a90ef6334af04e660edc8901dd0d8ba2"
+  },
+  "comparison": {
+    "simulationMedianRatio": 1.0111111005147297,
+    "simulationP95Ratio": 1.5187499821186066,
+    "frameMedianRatio": 1.6931818181826004,
+    "maxPositionDifference": 0,
+    "maxCameraDifference": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PASS saved-source renders with matching native inspection optics; reference visual gate remains incomplete",
+  "masterSHA256": "5844b184cbd03c0c58a7f6caf3e35162c4c1025973bb60145d3193b08523ae4f",
+  "entrySHA256": "08312dcd28db92bdf1e065057e2aa9131477832f3ae30d1b900aa5486e1e47ba",
+  "nativeReportSHA256": "ce9928aab4dbc26cc068609309239c64c4391abd233b70ad676e0c875b6416f6",
+  "captures": [
+    {
+      "id": "reference-A",
+      "file": "evidence/rim-shadow/source-views/blender-reference-A.png",
+      "sha256": "ec9620c49ce5828a328be7d3247d0488129fd60f55800b70ee14db6bb48b02f6",
+      "samples": 32,
+      "projectionErrorPixels": 0.0001853603541097648
+    },
+    {
+      "id": "reference-B",
+      "file": "evidence/rim-shadow/source-views/blender-reference-B.png",
+      "sha256": "ae450121d7bd68193ab92f51a62c2d2663d200083af80d474371caa87b8f686d",
+      "samples": 32,
+      "projectionErrorPixels": 0.00012489541014551011
+    },
+    {
+      "id": "B",
+      "file": "evidence/rim-shadow/source-views/blender-B.png",
+      "sha256": "67de296f8b5a264810dd36db196caa3b573085c6c043236402cd3c7b9f176264",
+      "samples": 32,
+      "projectionErrorPixels": 0.001704134361608565
+    }
+  ],
+  "scope": "Saved Blender authoring and exact geometric inspection optics only. Source/native lighting, moving actors/traffic and full approved-reference quality are not certified."
+}

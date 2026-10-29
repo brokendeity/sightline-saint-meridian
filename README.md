@@ -20,6 +20,8 @@ Experimental facade build: [SIGHTLINE_SAINT_MERIDIAN_V02_FACADE_CASSETTES.html](
 
 Experimental public-room/life build: [SIGHTLINE_SAINT_MERIDIAN_V02_PUBLIC_ROOM_LIFE.html](SIGHTLINE_SAINT_MERIDIAN_V02_PUBLIC_ROOM_LIFE.html) adds three enterable, source-lit public rooms and three ambient visitors. It also repairs two-sided cartridge attachment normals exposed by the updated geometry. Seven sequential check groups pass, including six fresh station approaches, three loops and twelve retained gameplay cases. The default above remains unchanged; final architecture, lighting, inherited crowd overlap and release acceptance are unfinished. [Exact evidence and limits](development/vertical-city-v02/V02_EAST_PUBLIC_ROOMS.md).
 
+Experimental architectural-shadow build: [SIGHTLINE_SAINT_MERIDIAN_V02_RIM_SHADOWS.html](SIGHTLINE_SAINT_MERIDIAN_V02_RIM_SHADOWS.html) adds cached shadows for the existing warm directional light, reducing pale facade glare while retaining its color and strength. Source/native preservation, nine current room routes and matched 60-second measurements are included. Median frame interval rose from 9.1 to 9.9 ms; a worst-frame hitch and the broader reference-art/release gates remain open. This does not replace the default above. [Evidence, rejected attempts and exact limits](development/vertical-city-v02/V02_RIM_SHADOWS.md).
+
 ## Earlier checkpoints
 
 The entries below are historical. Their files, snapshots and branches remain available for rollback.

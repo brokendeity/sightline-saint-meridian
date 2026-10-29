@@ -1,0 +1,31 @@
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
++ [
++   'THREE.WebGLProgram: shader error:  0 35715 false gl.getProgramInfoLog Too many attributes (cityReflectance)\n' +
++     '\x00  ',
++   'THREE.WebGLProgram: shader error:  1282 35715 false gl.getProgramInfoLog Too many attributes (cityEmission)\n' +
++     '\x00  '
++ ]
+- []
+
+    at /Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/inspect_facade_light_contributions.cjs:91:9 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: [Array],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+FAIL AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
++ [
++   'THREE.WebGLProgram: shader error:  0 35715 false gl.getProgramInfoLog Too many attributes (cityReflectance)\n' +
++     '\x00  ',
++   'THREE.WebGLProgram: shader error:  1282 35715 false gl.getProgramInfoLog Too many attributes (cityEmission)\n' +
++     '\x00  '
++ ]
+- []
+
+    at /Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/inspect_facade_light_contributions.cjs:91:9
