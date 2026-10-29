@@ -1,0 +1,18 @@
+PASS frontFlip source and moving recovery
+PASS backFlip source and moving recovery
+PASS sideFlipLeft source and moving recovery
+PASS sideFlipRight source and moving recovery
+PASS full standing recovery
+PASS grounded tumble and body contact
+PASS rollLeft landing
+PASS rollRight landing
+PASS rollBack landing
+AssertionError [ERR_ASSERTION]: Roll recovery cannot cancel to strike
+    at /Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/test_current_landing_contacts.cjs:14:282 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}

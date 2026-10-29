@@ -1,0 +1,17 @@
+market reached from ground {"name":"market reached from ground","frame":3548,"p":[61.87100440141939,24.42,374.99751044785506],"phase":"idle","civilians":[[85,24,364],[68.799672725225,24,358.0439664723172],[87.96685880309526,24,374.64829233092826]]}
+AssertionError [ERR_ASSERTION]: {"phase":"locate","savedPhase":null,"attempt":1,"elapsed":7.699999999999978,"powerIsolated":false,"rewarded":false,"waitingReason":null,"message":"Find the resident by the damaged power conduit. Stay outside the amber fault ring.","clock":66.86666666666416,"eventId":1,"events":[{"eventId":1,"attempt":1,"time":59.167,"kind":"started","resident":[85,24,364]}],"queue":[],"lastPathPoint":null,"pathMetres":0,"escortMetres":0,"error":null,"config":{"id":"market-rescue","title":"SUSPENDED MARKET · RESCUE","trigger":[62,24,375],"positions":[[85,24,364],[66,24,358],[77,24,373]],"reward":450,"isolation":[82,24,357],"extraction":[62,24,357],"hazard":[85,24,364],"patrols":[[[66,24,358],[74,24,358],[74,24,361],[66,24,361]],[[77,24,373],[88,24,373],[88,24,376],[77,24,376]]],"bounds":{"min":[51,23.9,349],"max":[99,26,381]},"actorType":"existing scenic pedestrian appearance; new collision-checked escort adapter","status":"new runtime adapter; acceptance requires normal-input incident, escort and lifecycle tests"},"appearance":"existing scenic pedestrian clone; shared source geometry/materials are never disposed","nearAccess":false,"onMarket":true,"target":[84.64041387002544,24,364.2549977729896],"civilians":[{"id":0,"position":[84.64041387002544,24,364.2549977729896],"walked":0.5133333333333304,"blocked":0,"yielding":false,"yieldedMetres":0.5133333333333304},{"id":1,"position":[73.17442338893787,24,360.9393434161645],"walked":76.89666666665703,"blocked":0,"yielding":false,"yieldedMetres":0},{"id":2,"position":[80.38931302112222,24,375.97906726629833],"walked":76.89666666666393,"blocked":0,"yielding":false,"yieldedMetres":0}],"scope":"New market incident/escort adapter with existing scenic civilian appearance; not original courier pickup or full V02 acceptance"}
++ actual - expected
+
++ 'locate'
+- 'isolate'
+
+    at press (/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/market_test_helpers.cjs:34:89)
+    at async reachEscort (/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/market_test_helpers.cjs:35:142)
+    at async /Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/test_market_clearance_rescue.cjs:9:2 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 'locate',
+  expected: 'isolate',
+  operator: 'strictEqual',
+  diff: 'simple'
+}

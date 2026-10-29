@@ -1,0 +1,1183 @@
+{
+  "status": "PASS nine native public-room entry/return/continuation cases with support, camera and body framing checks; visual/reference/release acceptance separate",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_CIVILIAN_CLEARANCE.html",
+  "entrySHA256": "9d63f5149da186d7376532b213187588dae395021002c30243d2694fc43dfa9a",
+  "manifestSHA256": "d5ecc2e184a9f31f46eff3495cd8aec6387a4614e0bfea92e9ccb493de1514d6",
+  "testSHA256": "b556d178b598c2267628cea31ce6f85e64c9fb5d80128b4993d3206d4f2d7f55",
+  "scope": "Normal input enters and exits three actual public rooms, with desktop keyboard and simulated-controller portrait/landscape layouts. Initial fixture only is positioned directly. No physical-device, arbitrary route or visual-quality acceptance.",
+  "cases": [
+    {
+      "view": "desktop",
+      "driver": "keyboard",
+      "floor": 24,
+      "walking": true,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/desktop-24-gallery.png",
+          "sha256": "8c115f65831fecbee35a6c580a9948b0bcf5356aaf3543e80281166ea98f7b92"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/desktop-24-room.png",
+          "sha256": "3db4e1dd5343d665128f434595e99a76993385bd9a9400144a129702adb16c33"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/desktop-24-return.png",
+          "sha256": "01977ca5a1e0cd1de2da9a884048cbf2463a0c330cb0e302d7f355f0eef8f606"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/desktop-24-continue.png",
+          "sha256": "d00be0885c3ff3d4aaa2073f2ead32d9974e0fb462a7ec0149e7cfb45acc390b"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/desktop-24-reverse-gallery.png",
+          "sha256": "899a6ccbace32169f526ec2da631b7efc56d192f0e8c7ecaa1dcfec0f53840bd"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/desktop-24-start-return.png",
+          "sha256": "9b571360a5a77250928c824e6d31123b7e0e977f7fcee450edb3ea87bf90fab8"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96,
+            24.42,
+            309.892499999991
+          ],
+          "frame": 392
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            24,
+            310
+          ],
+          "position": [
+            102.01500000000074,
+            24.42,
+            309.919999999991
+          ],
+          "frame": 644
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            309.919999999991
+          ],
+          "frame": 892
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            24,
+            326
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            325.9174999999764
+          ],
+          "frame": 1506
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            310.0849999999908
+          ],
+          "frame": 2114
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            24,
+            300
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            300.0824999999999
+          ],
+          "frame": 2510
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.1838273024509085,
+      "seconds": 41.833333333333336,
+      "frames": 2510
+    },
+    {
+      "view": "desktop",
+      "driver": "keyboard",
+      "floor": 52,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/desktop-52-gallery.png",
+          "sha256": "7dc41046ef2f2f05c15b27c7856d98912097c67d21fefea4c11cce1d46d3fd7c"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/desktop-52-room.png",
+          "sha256": "19d22a6af5ba128b99affcd7f3e9ba067d817e32d4d432c70945d18f23f45a82"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/desktop-52-return.png",
+          "sha256": "e30f9c1aa9890dc1ade19d7b221494819f50c10ea0cbf04545fe30a670b40cf1"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/desktop-52-continue.png",
+          "sha256": "436e5279c63fddda1549d6bab6fda7b5a372f8e34882772dfc78a0a87a1948f3"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/desktop-52-reverse-gallery.png",
+          "sha256": "1749beb509de1bcf7f67928b1598ec78b044016f63038c9b52a2c48e47f2ce8b"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/desktop-52-start-return.png",
+          "sha256": "8ecac5c1ef8663a6a5154223dfda29e9d56d7108b4127292e693e6c291eabd1c"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96,
+            52.42,
+            309.95500000000106
+          ],
+          "frame": 131
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            52,
+            310
+          ],
+          "position": [
+            101.99499999999998,
+            52.42,
+            309.95500000000106
+          ],
+          "frame": 226
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.11,
+            52.42,
+            309.95500000000106
+          ],
+          "frame": 320
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            52,
+            326
+          ],
+          "position": [
+            96.11,
+            52.42,
+            325.9600000000029
+          ],
+          "frame": 506
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.11,
+            52.42,
+            310.0650000000011
+          ],
+          "frame": 691
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            52,
+            300
+          ],
+          "position": [
+            96.11,
+            52.42,
+            300
+          ],
+          "frame": 823
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.401441196722054,
+      "seconds": 13.716666666666667,
+      "frames": 823
+    },
+    {
+      "view": "desktop",
+      "driver": "keyboard",
+      "floor": 84,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/desktop-84-gallery.png",
+          "sha256": "304727eb7fd8873e3cd70352d9e17bb61e1b50f5832418e0a97bcb34c529e0ff"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/desktop-84-room.png",
+          "sha256": "b108372910fd90e8fb7b12e9554b2dac23df13b5b85f2b5ef3287dcd0e33db56"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/desktop-84-return.png",
+          "sha256": "bf10fc8aa1a4eb5d3cdf0f6415b54a2c14a85fce8daa059c8a1cb7e3ae14427d"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/desktop-84-continue.png",
+          "sha256": "cfeed410f982ba532308d5fab1cf9acc3fdf0ebccce1a7849164c0b59dc52bc1"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/desktop-84-reverse-gallery.png",
+          "sha256": "ca661426a4d8dc1ee1e1de52c2d03a481b21b90bacf43c49c9e0eef3278d21da"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/desktop-84-start-return.png",
+          "sha256": "a55828e17dde483e0540ee46445688dc38ed8a9f498aea482801b3769fcdc08a"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96,
+            84.42,
+            309.95500000000106
+          ],
+          "frame": 131
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            84,
+            310
+          ],
+          "position": [
+            101.99499999999998,
+            84.42,
+            309.95500000000106
+          ],
+          "frame": 226
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.11,
+            84.42,
+            309.95500000000106
+          ],
+          "frame": 320
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            84,
+            326
+          ],
+          "position": [
+            96.11,
+            84.42,
+            325.9600000000029
+          ],
+          "frame": 506
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.11,
+            84.42,
+            310.0650000000011
+          ],
+          "frame": 691
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            84,
+            300
+          ],
+          "position": [
+            96.11,
+            84.42,
+            300
+          ],
+          "frame": 823
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 0.8987351618503929,
+      "seconds": 13.716666666666667,
+      "frames": 823
+    },
+    {
+      "view": "portrait",
+      "driver": "controller",
+      "floor": 24,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/portrait-24-gallery.png",
+          "sha256": "d6fe900d5cadd83b80d8509bee88e179be28a4ffbc87abe92746cbfda0327983"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/portrait-24-room.png",
+          "sha256": "d6a8d2486e59d6b6fa4c1c1417b89fe89d88a6dd58961f44320f762369b8f9d3"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/portrait-24-return.png",
+          "sha256": "89b3a0b379b9260db643150e50fc9cb3acb1cdcb1e56beff83c9e1d3a21cf88d"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/portrait-24-continue.png",
+          "sha256": "993ec100f4c17d1c743ad9ac552950c20d2b7422ea34d067d0312c55b3d82f58"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/portrait-24-reverse-gallery.png",
+          "sha256": "8638424341d3384547a675c5024ec70fb545aceeb0d999ef04a232eaadac51e6"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/portrait-24-start-return.png",
+          "sha256": "48e656f3688091f4dda2c9a974fd496838cf36b125711ac9d3887df246421be6"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96,
+            24.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            24,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            24.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            24.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            24,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            24.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            24.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            24,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            24.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.4060253306251944,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "portrait",
+      "driver": "controller",
+      "floor": 52,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/portrait-52-gallery.png",
+          "sha256": "9fe3e820b9100c57e2ce4b3aed7ca263a46719cae3d50c3402f6c60ce5f86d3b"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/portrait-52-room.png",
+          "sha256": "c81728711c0bda83ceb7adcd23bf6803a6fef05642328140ed6a108c84976947"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/portrait-52-return.png",
+          "sha256": "f8e302909e74614fd87c8facd9975189de86327faa02bc27844c27ab4812cf39"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/portrait-52-continue.png",
+          "sha256": "79d2eee3fff07ce34cc1a3a5b6044a03136f52c8d2db6537b3ac13cc35fc0142"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/portrait-52-reverse-gallery.png",
+          "sha256": "d0633470a4279913ec181dc3dd73bd21d6b923e41f64a0d176a4915f4e83edb7"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/portrait-52-start-return.png",
+          "sha256": "f54d81af4ad48e499350c6466134fc1b534bfa80035c5ff73edb3cfbc1d260aa"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96,
+            52.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            52,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            52.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            52.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            52,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            52.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            52.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            52,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            52.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.8179956464336098,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "portrait",
+      "driver": "controller",
+      "floor": 84,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/portrait-84-gallery.png",
+          "sha256": "d28735b90de5d2e5a17eb19e1f42b81c5662f2fbccaec0cfc923c0469b6f90f9"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/portrait-84-room.png",
+          "sha256": "4002f2126e80cf345a3a55ffee2d521b6dbb8a1a9b12b640feeee34a60b17dd0"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/portrait-84-return.png",
+          "sha256": "6e75084fa7d37893125fb3c81286044a7b01dd7d31e9d0c832df4db2638c17b5"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/portrait-84-continue.png",
+          "sha256": "f3c6b8616a620af8336ae9c53e4f6e05ba9ee4178ddac63f7e798cd3574664b1"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/portrait-84-reverse-gallery.png",
+          "sha256": "ae9fc916931a841e44cfa2e9ca61a71a7a8ef103f715397a241a84f2735a356f"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/portrait-84-start-return.png",
+          "sha256": "a96e389efe9022c6782385bb5e83c06b7e179982fac1c7b266750a8d8c8249a2"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96,
+            84.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            84,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            84.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            84.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            84,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            84.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            84.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            84,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            84.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.4033181601037892,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "landscape",
+      "driver": "controller",
+      "floor": 24,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/landscape-24-gallery.png",
+          "sha256": "bb297704481935abe970e10cb255c5d3d988261b5f52cd36c9373c4ea8266825"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/landscape-24-room.png",
+          "sha256": "1ebc18b4fc86df445bbfec75b609554d6c581c6ba3daddfe8db773f6ec2e1c1e"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/landscape-24-return.png",
+          "sha256": "f42e56af19aee080cf7117e2ef1fb172c8da74aaae2f0d8678a990b92fd02549"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/landscape-24-continue.png",
+          "sha256": "2f8c18c634ab58e23082b5d379e123406063cad61499c787817b0ac8cd5752fe"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/landscape-24-reverse-gallery.png",
+          "sha256": "87c1038b6df94d9b3a4281a0fd3e44fea9b7496707101f6911ee1bebdb2ea9b8"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/landscape-24-start-return.png",
+          "sha256": "fdb684bf951fa9fbb78ffa39b0271a65b12dd453cbbefd7e00540a310eb5d5e9"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96,
+            24.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            24,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            24.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            24.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            24,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            24.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            24.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            24,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            24.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.4060253306251944,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "landscape",
+      "driver": "controller",
+      "floor": 52,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/landscape-52-gallery.png",
+          "sha256": "08e007e4e3f6e2a1b40a936533dcad00ee3791ed6ca7e1cdc797d45f5306adf6"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/landscape-52-room.png",
+          "sha256": "a6e89b529921d4633f1bf9f69ed6ff2264c8d01882d1287eb4e6622765423e6c"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/landscape-52-return.png",
+          "sha256": "05f490872a70eeaf11e4b73047fcbd9be2e04a7030a895e3571e47c7d0ed6817"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/landscape-52-continue.png",
+          "sha256": "29a032e124a5b8f1ecda8ad40d12f5e20530bd94b7b4917f0abf98cbf938d9e7"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/landscape-52-reverse-gallery.png",
+          "sha256": "ec01115786b14b7ea71b8f8922b1864ef973e8049a1fee89fd7410a7df14571c"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/landscape-52-start-return.png",
+          "sha256": "1dd04caa97305821fcf2928cd48fafade9765f9dea8b135e1cbba950eb9c37dc"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96,
+            52.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            52,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            52.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            52.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            52,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            52.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            52.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            52,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            52.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.403898459876629,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "landscape",
+      "driver": "controller",
+      "floor": 84,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/landscape-84-gallery.png",
+          "sha256": "cc6d28c6fb41ac38de6055e853450e1c91d146148be69a0ef9e50aab4cb2bad4"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/landscape-84-room.png",
+          "sha256": "2d0d23a7a8ac8577853f4275019a37072fdddac348f49d5b71c4d634009bfe76"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/landscape-84-return.png",
+          "sha256": "9d6ca891d37e6d0690b7f3a712edc9aa602581cfc2e09976c4f3c0212caa84d7"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/landscape-84-continue.png",
+          "sha256": "c7ca9a233e425db37bc3c6699a0e0549edf0713f68c55daec1bab35e5560b176"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/landscape-84-reverse-gallery.png",
+          "sha256": "1f006e165de0556e9010cfe0501f080e48f9112aad90874234d7cc4283be3f29"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/landscape-84-start-return.png",
+          "sha256": "72e98e9c106a6395c2a4231c8e6a28f9914e04ff968ae19b38b428895cf52b07"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96,
+            84.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            84,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            84.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            84.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            84,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            84.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            84.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            84,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            84.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.1234234128520957,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    }
+  ],
+  "errors": [],
+  "traces": "development/vertical-city-v02/evidence/civilian-clearance-room-movement/traces.json.gz",
+  "tracesSHA256": "02e7233aeac538a38c7c44928e144764a22a5f8ce618b677b841e8e38d410828"
+}

@@ -1,0 +1,76 @@
+{
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_FURNISHED_PUBLIC_ROOMS.html",
+  "manifestSHA256": "d5ecc2e184a9f31f46eff3495cd8aec6387a4614e0bfea92e9ccb493de1514d6",
+  "testSHA256": "96f49961668269cf535df4ed04c8c5d5a7b4e89c8408eec2799bb33fd51da6cb",
+  "scope": "Current-game normal input after labelled initial fixtures. Synthetic QA wall isolates core behavior; final two cases select actual nearby city facades. Camera screenshots use native composition. Damage-counter mutation is not legal destruction acceptance.",
+  "buildSha256": "0fe895d6f438c7a640f9903f98a28dd89229f2186e050093f4bbdf7cc847a289",
+  "results": [
+    {
+      "name": "entry preserves speed and stable wall stand-off",
+      "pass": true,
+      "frames": 33
+    },
+    {
+      "name": "released movement drops instead of climbing with no input",
+      "pass": true,
+      "frames": 42
+    },
+    {
+      "name": "continuous lateral run reaches edge once without repeated grab",
+      "pass": true,
+      "frames": 260
+    },
+    {
+      "name": "head-on climb mantles onto roof and settles supported",
+      "pass": true,
+      "frames": 262
+    },
+    {
+      "name": "neutral input beside a wall does not start climbing",
+      "pass": true,
+      "frames": 30
+    },
+    {
+      "name": "toggle Flow off releases the wall without an automatic regrab",
+      "pass": true,
+      "frames": 30
+    },
+    {
+      "name": "steering away detaches and preserves outward control",
+      "pass": true,
+      "frames": 40
+    },
+    {
+      "name": "upward boost resumes wall source timeline without a floor snap",
+      "pass": true,
+      "frames": 46
+    },
+    {
+      "name": "back plus Jump kicks away and returns to supported ground",
+      "pass": true,
+      "frames": 81
+    },
+    {
+      "name": "wall destruction interrupts safely and pause clears ownership",
+      "pass": true,
+      "frames": 21
+    },
+    {
+      "name": "simulated controller Flow and stick climb then release",
+      "pass": true,
+      "frames": 51
+    },
+    {
+      "name": "blocked imported facade drops once instead of repeatedly retrying",
+      "pass": true,
+      "frames": 240
+    },
+    {
+      "name": "actual city facade allows continuous collision-clear wall traversal",
+      "pass": true,
+      "frames": 108
+    }
+  ],
+  "errors": [],
+  "fullTrace": "report.json.gz"
+}
