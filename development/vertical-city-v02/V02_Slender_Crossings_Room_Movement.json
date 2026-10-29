@@ -1,0 +1,1183 @@
+{
+  "status": "PASS nine native public-room entry/return/continuation cases with support, camera and body framing checks; visual/reference/release acceptance separate",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_FLARED_CROSSINGS.html",
+  "entrySHA256": "f98c559846b1c4c16c79a4ecdafaaf1d222a218758b6ac43f1099e5b05975980",
+  "manifestSHA256": "37bd7c4500e7d894b06df82a693b485dd0e4f485e5d6e2f2be1bbdb2a26e329b",
+  "testSHA256": "e51c8676180a2f8d0a1ee5f6b2e83154e49f0e68b52401518841f356df353f57",
+  "scope": "Normal input enters and exits three actual public rooms, with desktop keyboard and simulated-controller portrait/landscape layouts. Initial fixture only is positioned directly. No physical-device, arbitrary route or visual-quality acceptance.",
+  "cases": [
+    {
+      "view": "desktop",
+      "driver": "keyboard",
+      "floor": 24,
+      "walking": true,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/desktop-24-gallery.png",
+          "sha256": "a4786d33b9e21399bd69efae4e10e8f84e1f5fbd6f93aa4412cc830c879defe3"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/desktop-24-room.png",
+          "sha256": "439eb49314b9e5914db2a7005de152af323e160a6739db07d4b184d232017369"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/desktop-24-return.png",
+          "sha256": "fdf14bfdefd0379f944900c9a865b3a20cbd5ee8a5511b2eb5558f59b4264580"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/desktop-24-continue.png",
+          "sha256": "4f167ba7395bc7c5354ad124704e85259de58cf7f5d0ee8cfdb1d1a6d7a8db8e"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/desktop-24-reverse-gallery.png",
+          "sha256": "bc9ecdd7879277ceeaf5b96917d11f6e167f768690bb89a458bc560a847c5969"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/desktop-24-start-return.png",
+          "sha256": "b4912a8aa0d5d03bb4a4f63a3b79949780687263a257cf8f5d3b5419db926920"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96,
+            24.42,
+            309.892499999991
+          ],
+          "frame": 392
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            24,
+            310
+          ],
+          "position": [
+            102.01500000000074,
+            24.42,
+            309.919999999991
+          ],
+          "frame": 644
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            309.919999999991
+          ],
+          "frame": 892
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            24,
+            326
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            325.9174999999764
+          ],
+          "frame": 1506
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            310.0849999999908
+          ],
+          "frame": 2114
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            24,
+            300
+          ],
+          "position": [
+            96.08250000000001,
+            24.42,
+            300.0824999999999
+          ],
+          "frame": 2510
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 0.9400411339898763,
+      "seconds": 41.833333333333336,
+      "frames": 2510
+    },
+    {
+      "view": "desktop",
+      "driver": "keyboard",
+      "floor": 52,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/desktop-52-gallery.png",
+          "sha256": "8d34f2b234d316950389047c3ec082873012b315b9a2ac3de03f3ec540bc1eb4"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/desktop-52-room.png",
+          "sha256": "248931b09c1591b353181fe4511873af4016aa564af5c67cfa315f656df40378"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/desktop-52-return.png",
+          "sha256": "e555ce41d767e49511614b0a12106ffe6b1751316978193c2cff871a4eccd208"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/desktop-52-continue.png",
+          "sha256": "d5c82bf9582aba4da66fea1d1ec0786153cca729cb224c445a4a5e766c23b31f"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/desktop-52-reverse-gallery.png",
+          "sha256": "4087d1cce3dc1ee4ba463901278e81aaf6df76709ba157563ca8709a94cc5323"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/desktop-52-start-return.png",
+          "sha256": "08a297ae6a89539233c4f9f1ac92463f689ea7067e37c541ae7956d59b04a62c"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96,
+            52.42,
+            309.95500000000106
+          ],
+          "frame": 131
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            52,
+            310
+          ],
+          "position": [
+            101.99499999999998,
+            52.42,
+            309.95500000000106
+          ],
+          "frame": 226
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.11,
+            52.42,
+            309.95500000000106
+          ],
+          "frame": 320
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            52,
+            326
+          ],
+          "position": [
+            96.11,
+            52.42,
+            325.9600000000029
+          ],
+          "frame": 506
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.11,
+            52.42,
+            310.0650000000011
+          ],
+          "frame": 691
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            52,
+            300
+          ],
+          "position": [
+            96.11,
+            52.42,
+            300
+          ],
+          "frame": 823
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 0.8904683535404747,
+      "seconds": 13.716666666666667,
+      "frames": 823
+    },
+    {
+      "view": "desktop",
+      "driver": "keyboard",
+      "floor": 84,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/desktop-84-gallery.png",
+          "sha256": "6bff7fca0f924cab8200d510f681b30a568e0ef5d95955d3b00a66d6172cbcfc"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/desktop-84-room.png",
+          "sha256": "9731020bab5e67650d4db469fac6f299a02802e9bf4fc156fb7bb7a0eb3ec01a"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/desktop-84-return.png",
+          "sha256": "04cec72d1162f0b1fe7028b2af4c68a2d25cafd5f1315e87798f4ab7048e6dc6"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/desktop-84-continue.png",
+          "sha256": "439e68a6b2e637609ad9733f1c8662f9d463e2dcf3c6b4c3c4b322aade2bf508"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/desktop-84-reverse-gallery.png",
+          "sha256": "689e8e780ac7f84f3377ba5ffe1416228d750df359d9773f43b4d709c8121132"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/desktop-84-start-return.png",
+          "sha256": "e94dcfccdace2fa750a24f7a32883b40a8dd781e5f0dc3ac25173a8b4da89c8a"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96,
+            84.42,
+            309.95500000000106
+          ],
+          "frame": 131
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            84,
+            310
+          ],
+          "position": [
+            101.99499999999998,
+            84.42,
+            309.95500000000106
+          ],
+          "frame": 226
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.11,
+            84.42,
+            309.95500000000106
+          ],
+          "frame": 320
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            84,
+            326
+          ],
+          "position": [
+            96.11,
+            84.42,
+            325.9600000000029
+          ],
+          "frame": 506
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.11,
+            84.42,
+            310.0650000000011
+          ],
+          "frame": 691
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            84,
+            300
+          ],
+          "position": [
+            96.11,
+            84.42,
+            300
+          ],
+          "frame": 823
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 0.8900597580573264,
+      "seconds": 13.716666666666667,
+      "frames": 823
+    },
+    {
+      "view": "portrait",
+      "driver": "controller",
+      "floor": 24,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/portrait-24-gallery.png",
+          "sha256": "53d5604507df465bd7b9431121bbaff3285b3c5ffa7d3feb277549d79afd74d4"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/portrait-24-room.png",
+          "sha256": "9d9cb6369a4c7e348fc91f9a7b3088ef33554769f03e7fb0f39a8688a03fad0b"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/portrait-24-return.png",
+          "sha256": "61884eb2a483fd3ab392b4cd87e96acc04e85c9c9b219cbe4f3687f5c0229ab4"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/portrait-24-continue.png",
+          "sha256": "0f10676e28d25eb15ec20f2be6c6312ed8a6c18ebb1a2e2cc9f4133b558824aa"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/portrait-24-reverse-gallery.png",
+          "sha256": "793e32a0442cddcc443a3f0923876e0ad51f227ead2c5eca75d8d341beb6a316"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/portrait-24-start-return.png",
+          "sha256": "33cf11e051310f72ae301303d21667d02e9478127a9b3ed0deee9b477d00a85d"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96,
+            24.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            24,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            24.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            24.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            24,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            24.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            24.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            24,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            24.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.0001130398217986,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "portrait",
+      "driver": "controller",
+      "floor": 52,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/portrait-52-gallery.png",
+          "sha256": "b31f80680248315fc5812060ed038cd9bed8f1fac38c92ca2d5ada4cdd8f1599"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/portrait-52-room.png",
+          "sha256": "dbd7a304ec028e201644849f002f304d4a8d80fe361aca9b19e636247923c38f"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/portrait-52-return.png",
+          "sha256": "0b1e99e4720515960821c976fa45d9d0a49100e750eb57f83b8a35088d346fd5"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/portrait-52-continue.png",
+          "sha256": "7517cd2a35745234774fbaff44220d7885342111da451b7f07b7a6a1a50e6223"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/portrait-52-reverse-gallery.png",
+          "sha256": "87f713f13ca8e4f24c7c8bd9a6731240bf53f1e69a88c67e137bb9aa954f5ab5"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/portrait-52-start-return.png",
+          "sha256": "86bbdab54c1eba6b5af82a391c75e68ae9c54de590237745b7083af01d20d7d3"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96,
+            52.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            52,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            52.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            52.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            52,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            52.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            52.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            52,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            52.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.0311195992159452,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "portrait",
+      "driver": "controller",
+      "floor": 84,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/portrait-84-gallery.png",
+          "sha256": "bf60382efffe049a7f729ae2f54f4467f0e7423c1c6b95b3ddde9292ecdde27a"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/portrait-84-room.png",
+          "sha256": "b86c7cb41426f383e2292df0fc3b4b1713ba3a6bbc86a8db3171deee9a7738f5"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/portrait-84-return.png",
+          "sha256": "d9d1e637c857ac78e381e821514a7f275781488750197855de7c9cc1a8560e74"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/portrait-84-continue.png",
+          "sha256": "42d29d0a0c6886fc7d3b9a0e595e245a1890213fbf056c8d6bd0378a93b69225"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/portrait-84-reverse-gallery.png",
+          "sha256": "6e2738a63b174a9b618211840a71d4632f60312a1c4cb345bcdd6fae74840e69"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/portrait-84-start-return.png",
+          "sha256": "80c24714a5f7076308de87b041a71c3f96b798c988879f954568fcad4d3c0873"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96,
+            84.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            84,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            84.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            84.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            84,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            84.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            84.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            84,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            84.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.0039923591208997,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "landscape",
+      "driver": "controller",
+      "floor": 24,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/landscape-24-gallery.png",
+          "sha256": "2870e7915a26a586870057c9bf493d39214bec61308914b51382bff45a1abfd9"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/landscape-24-room.png",
+          "sha256": "3c90ebdd04ebbeafc322145e43dfddf8e6b828e9bb0df7a0982cf6291dabe89a"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/landscape-24-return.png",
+          "sha256": "b55f021bd650018ef91cd211384b69fa9136d8ecff0983173addfccb0973d18c"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/landscape-24-continue.png",
+          "sha256": "b588d8c9e4051fd255c8d4bf2697d20c09a2baa79e913aace7e5582a926d35cf"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/landscape-24-reverse-gallery.png",
+          "sha256": "48cb666fd9266f5d6cac7a4bbe9a19263270b1505ff934a81be4e8dab53d6e03"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/landscape-24-start-return.png",
+          "sha256": "0dd200deb6ad2bf1328419be6bdb5685a97b13b1456c75dacf1aa3f4001ed2db"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96,
+            24.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            24,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            24.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            24.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            24,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            24.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            24,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            24.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            24,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            24.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 0.9316523455802239,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "landscape",
+      "driver": "controller",
+      "floor": 52,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/landscape-52-gallery.png",
+          "sha256": "fd06aa48d0f91757750b2f238d76b1620dd0f02670b1427922735f666bc584c1"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/landscape-52-room.png",
+          "sha256": "e74d5f34653cae93837b0f9b6c9b1e054b92841f03fe9cf9563d14129453b182"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/landscape-52-return.png",
+          "sha256": "23b942533f1799fae01126ae4c7e10170821abec9be1cea25283542535bdf8b3"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/landscape-52-continue.png",
+          "sha256": "eee440217cd00a8387febd28dcfa4172fb958c22c521bb0b9ecee5a4501f5ddb"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/landscape-52-reverse-gallery.png",
+          "sha256": "c1684956e111e1fe9bc4437375256c5cdbb7d0c616fa313063f1903e1a5e243e"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/landscape-52-start-return.png",
+          "sha256": "7ec1d1c2a87d6f969749b7b85f598a58ad4695af9747b078b4a5c380ecf5b15f"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96,
+            52.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            52,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            52.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            52.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            52,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            52.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            52,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            52.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            52,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            52.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.0003399240424267,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    },
+    {
+      "view": "landscape",
+      "driver": "controller",
+      "floor": 84,
+      "walking": false,
+      "fixture": "One supported gallery start at[96,floor+.42,300]; no later actor/camera positioning",
+      "captures": [
+        {
+          "id": "gallery",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/landscape-84-gallery.png",
+          "sha256": "12d1dbe83e1ce7104e5f99a0b3033e748e382d1cfc1214a2eaa55a414a0a1763"
+        },
+        {
+          "id": "room",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/landscape-84-room.png",
+          "sha256": "7ca1bde046642d231c31bb96ac21a30845e75dce981581395d17b13b21660fc6"
+        },
+        {
+          "id": "return",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/landscape-84-return.png",
+          "sha256": "7f337c36bf9d35f0563f741c93ae9c215d172b7af35d06af7f737c592a72105e"
+        },
+        {
+          "id": "continue",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/landscape-84-continue.png",
+          "sha256": "51e09f996d63ccea1a4e58c568de203f63f46ab7554c4f3e664f521a6e504774"
+        },
+        {
+          "id": "reverse-gallery",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/landscape-84-reverse-gallery.png",
+          "sha256": "ef9906a5922811bd09f100c395d45622cb309efe9c20d4f3cd20341345edc53e"
+        },
+        {
+          "id": "start-return",
+          "file": "development/vertical-city-v02/evidence/slender-crossings-room-movement/landscape-84-start-return.png",
+          "sha256": "d6f2e84c5353a3d64b0265aa46324896b424aea5f707dc5b2abd86004c4e588c"
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96,
+            84.42,
+            309.87038357200095
+          ],
+          "frame": 149
+        },
+        {
+          "id": "room",
+          "target": [
+            102.1,
+            84,
+            310
+          ],
+          "position": [
+            101.97812863034856,
+            84.42,
+            309.9974104046542
+          ],
+          "frame": 264
+        },
+        {
+          "id": "return",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.12624636451001,
+            84.42,
+            309.9999453128198
+          ],
+          "frame": 377
+        },
+        {
+          "id": "continue",
+          "target": [
+            96,
+            84,
+            326
+          ],
+          "position": [
+            96.00096001721728,
+            84.42,
+            325.87833053223267
+          ],
+          "frame": 582
+        },
+        {
+          "id": "reverse-gallery",
+          "target": [
+            96,
+            84,
+            310
+          ],
+          "position": [
+            96.00000763360357,
+            84.42,
+            310.1262569862482
+          ],
+          "frame": 785
+        },
+        {
+          "id": "start-return",
+          "target": [
+            96,
+            84,
+            300
+          ],
+          "position": [
+            96.0000000941781,
+            84.42,
+            300.12493074710767
+          ],
+          "frame": 937
+        }
+      ],
+      "framingFailures": 0,
+      "cameraInsideFailures": 0,
+      "minimumVisitorGap": 1.5532143655531745,
+      "seconds": 15.616666666666667,
+      "frames": 937
+    }
+  ],
+  "errors": [],
+  "traces": "development/vertical-city-v02/evidence/slender-crossings-room-movement/traces.json.gz",
+  "tracesSHA256": "190bf42dea838b59128ff21086a96f47a75a9d7b396b723559b72ab830641f36"
+}

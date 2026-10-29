@@ -105,3 +105,5 @@ Rebuild the candidate with `python3 scripts/build_backspool_traversal_candidate.
 Use a separate checkout: `git worktree add ../sightline-pre-rea snapshot-2026-10-15-pre-rea`. The original build is also retained as `archive/pre-roads-backspool-2026-10-14`. No existing branch or archive tag was replaced.
 
 This private development snapshot contains supplied and recovered assets; their original ownership remains unchanged. Third-party notices remain in third-party/. File identities are recorded in SNAPSHOT_MANIFEST.json.
+
+Experimental flared-crossing build: [SIGHTLINE_SAINT_MERIDIAN_V02_FLARED_CROSSINGS.html](SIGHTLINE_SAINT_MERIDIAN_V02_FLARED_CROSSINGS.html). Six Blender-authored bridges retain wide junctions and taper through their central spans; the market connection stays continuous. Seven sequential current validation jobs and33guard walking approaches pass their bounded checks. [Implementation, timing and remaining limitations](development/vertical-city-v02/V02_SLENDER_CROSSINGS.md). This remains unfinished and does not replace the default checkpoint.

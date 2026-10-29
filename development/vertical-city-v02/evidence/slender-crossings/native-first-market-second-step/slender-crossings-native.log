@@ -1,0 +1,51 @@
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
++ [
++   {
++     id: 'V2-BR-L2',
++     kind: 'physical-support',
++     support: 24.42,
++     x: 77.375,
++     z: 353.41
++   },
++   {
++     id: 'V2-BR-L2',
++     kind: 'physical-support',
++     support: 24.42,
++     x: 77.625,
++     z: 353.41
++   }
++ ]
+- []
+
+    at /Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/inspect_slender_crossings.cjs:49:11 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: [Array],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+FAIL AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
++ [
++   {
++     id: 'V2-BR-L2',
++     kind: 'physical-support',
++     support: 24.42,
++     x: 77.375,
++     z: 353.41
++   },
++   {
++     id: 'V2-BR-L2',
++     kind: 'physical-support',
++     support: 24.42,
++     x: 77.625,
++     z: 353.41
++   }
++ ]
+- []
+
+    at /Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/inspect_slender_crossings.cjs:49:11

@@ -1,0 +1,60 @@
+{
+  "status": "PASS continuous complete-vehicle separation preflight",
+  "hashes": {
+    "development/vertical-city-v02/V02_Slender_Crossings_Plan.json": "005edc015b535f7089a5a99ded51f716f88c1742ca934d69eb67c3ad14df4ec5",
+    "development/vertical-city-v02/V02_Upper_Anchor_Clearance.json": "a90ad4da336a3fcc080fbb185a0d5da318030fc897e6916c106cced5cf38afb2",
+    "assets/city/vertical-v02/transit/definition.json": "6fdd3fe36b3cf237abb185c88e75f81a05d5255b6cdca6602a5a6baa7fb721b4",
+    "assets/city/vertical-v02/world-life/air_routes.json": "10e1aeb641e2d9249f62373c8c52755f3b89f7c996077c38510bed5599c4e571",
+    "scripts/vertical-v02/validate_slender_crossing_traffic.cjs": "abbce4aa5b66576b57b507ffae29a9f39ea7f6f33336cac31aaa8106bb1454bb"
+  },
+  "inheritedImmutableGeometryDependencies": {
+    "scripts/vertical-v02/validate_upper_anchor_clearance.cjs": "20022b8a439bda450ea0197555c7f5260f0f9eb2f084614133660c7044edd5ec",
+    "scripts/vendor/three-r128.js": "ba0c6cb529517d7e286dadcd68d37ff5220aa638e4ac2cd7fcb316aae580924d",
+    "scripts/game_vertical_transit_v02.js": "0403f887673e0008f7e493a916bcbc8502794978f048b2e8ca806fe5de731ecb",
+    "scripts/vertical_transit_core_v02.js": "75b8e9f71b7853f586f42b5d2b031140a7851711d8f05646ba9de57ab3a88353",
+    "assets/city/vertical-v02/transit/definition.json": "6fdd3fe36b3cf237abb185c88e75f81a05d5255b6cdca6602a5a6baa7fb721b4",
+    "scripts/game_aerial_traffic_core_v02.js": "e518c60772284ec255757bca341a3c4a420d095baa10011e38426d621e70e811",
+    "assets/city/vertical-v02/world-life/air_routes.json": "10e1aeb641e2d9249f62373c8c52755f3b89f7c996077c38510bed5599c4e571",
+    "assets/city/vertical-v02/world-life/air_assets.json": "9a51757f1496492eaf522116dde3d6580a8be8104583c0c5715d33524c095356",
+    "assets/city/vertical-v02/world-life/air_commuter.glb": "fa915f3b8e38fd2e5a007bc5d4a31fbab613150ee3ec734fbed2437a71f4041d",
+    "assets/city/vertical-v02/world-life/air_delivery.glb": "04f3462fe59fc6bed915e444a2de4858f9bff90156ca331790ab5d986c3a1cfc",
+    "assets/city/vertical-v02/world-life/air_municipal.glb": "7dd74e4aab95f7784884fc40430ebbf0fafb8f8ea526fa62567b74a1ea8e566d",
+    "assets/city/vertical-v02/transit/assets.json": "da5fd88e7b27c3b4e38f42ff4237137f1c6f143089707a7644ce4570c9963d7d",
+    "assets/city/vertical-v02/transit/passenger_car.glb": "74c686d6dbf34e62c153775a9b621922d4a44e86cdbef915257a6f246cd2a057"
+  },
+  "nativeGeometryReportSHA256": "1dc2032e71ae8f177013d1156babac82f7195aca442dce8a39638fabf31445f8",
+  "radiusEvidence": "All loaded rigid train meshes, doors, articulation pivots, couplers and native arc interpolation bound; every air mesh vertex, including yaw/bank rotation.",
+  "method": "All Catmull-Rom cubic Bezier convex hulls, recursively subdivided analytically. A strictly positive separating axis proves the entire expanded subcurve clears each proposed component.",
+  "routes": [
+    {
+      "id": "all-four-train-carriages",
+      "radius": 8.842510253440189,
+      "acceptedHulls": 263208,
+      "maximumDepth": 0,
+      "minimumCertifiedGap": 6.029988746559809
+    },
+    {
+      "id": "aerial-band-0",
+      "radius": 3.737131371624291,
+      "acceptedHulls": 247256,
+      "maximumDepth": 0,
+      "minimumCertifiedGap": 9.135367628375711
+    },
+    {
+      "id": "aerial-band-1",
+      "radius": 3.737131371624291,
+      "acceptedHulls": 247256,
+      "maximumDepth": 0,
+      "minimumCertifiedGap": 8.135367628375704
+    },
+    {
+      "id": "aerial-band-2",
+      "radius": 3.737131371624291,
+      "acceptedHulls": 247256,
+      "maximumDepth": 0,
+      "minimumCertifiedGap": 25.135367628375718
+    }
+  ],
+  "failures": [],
+  "scope": "Source pre-authoring full-vehicle gate for changed bridge meshes and physical decomposition; real input and visual acceptance separate."
+}
