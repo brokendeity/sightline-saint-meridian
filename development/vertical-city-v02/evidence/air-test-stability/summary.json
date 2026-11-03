@@ -1,0 +1,676 @@
+{
+ "test": "scripts/vertical-v02/test_forspoken_air.cjs",
+ "testSHA256": "f704d66702cf12144b22f5b2aebb7a5fd0e72cf52d0e001d778cbf6eae4b5ee6",
+ "previousTestSHA256": "32dbf5059b85d5fa329e4e16caa02e14c93c3ba527f75244fad1973bb8e0c152",
+ "cause": "configurePatrol() seeds halo drone patrolPhase/patrolRadius with Math.random (not the seeded rand()). On some loads a near-ring drone searchlight catches the plaza, the drone chases (hovers 18 m above), and its projectile hit reaction (backspoolCombat.receiveProjectile -> movementLocked, action-v2-flow-reaction) replaces the take-off pose mid-rise. Not wall-clock: seeding Math.random makes the outcome identical across runs and CPU throttling.",
+ "method": "Before: diagnostic copy of the old test logic with per-frame pose/owner capture, drone/projectile capture and a receiveProjectile hook; Math.random replaced by a mulberry32 seed via addInitScript (seeded cases only). After: the committed-candidate test file itself, or a scratch copy that only adds the same Math.random seed and optional CPU throttle.",
+ "before": [
+  {
+   "case": "seed 4",
+   "oldTestLogic": "FAIL",
+   "rising": {
+    "stand": [
+     "jump"
+    ],
+    "run": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ]
+   },
+   "droneHitFrames": [
+    27,
+    85
+   ],
+   "hitSources": [
+    [
+     23.7,
+     27.4,
+     59
+    ],
+    [
+     30,
+     18.4,
+     49.3
+    ]
+   ]
+  },
+  {
+   "case": "seed 4 repeat",
+   "oldTestLogic": "FAIL",
+   "rising": {
+    "stand": [
+     "jump"
+    ],
+    "run": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ]
+   },
+   "droneHitFrames": [
+    27,
+    85
+   ],
+   "hitSources": [
+    [
+     23.7,
+     27.4,
+     59
+    ],
+    [
+     30,
+     18.4,
+     49.3
+    ]
+   ]
+  },
+  {
+   "case": "seed 4 repeat",
+   "oldTestLogic": "FAIL",
+   "rising": {
+    "stand": [
+     "jump"
+    ],
+    "run": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ]
+   },
+   "droneHitFrames": [
+    27,
+    85
+   ],
+   "hitSources": [
+    [
+     23.7,
+     27.4,
+     59
+    ],
+    [
+     30,
+     18.4,
+     49.3
+    ]
+   ]
+  },
+  {
+   "case": "seed 4, 4x CPU throttle",
+   "oldTestLogic": "FAIL",
+   "rising": {
+    "stand": [
+     "jump"
+    ],
+    "run": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ]
+   },
+   "droneHitFrames": [
+    27,
+    85
+   ],
+   "hitSources": [
+    [
+     23.7,
+     27.4,
+     59
+    ],
+    [
+     30,
+     18.4,
+     49.3
+    ]
+   ]
+  },
+  {
+   "case": "seed 5",
+   "oldTestLogic": "PASS",
+   "rising": {
+    "stand": [
+     "jump"
+    ],
+    "run": [
+     "jumpMove"
+    ],
+    "standAgain": [
+     "jump"
+    ]
+   },
+   "droneHitFrames": [
+    40
+   ],
+   "hitSources": [
+    [
+     26.3,
+     26.4,
+     56.4
+    ]
+   ]
+  },
+  {
+   "case": "seed 1, 4x CPU throttle",
+   "oldTestLogic": "PASS",
+   "rising": {
+    "stand": [
+     "jump"
+    ],
+    "run": [
+     "jumpMove"
+    ],
+    "standAgain": [
+     "jump"
+    ]
+   },
+   "droneHitFrames": [],
+   "hitSources": []
+  },
+  {
+   "case": "unseeded, 4x CPU throttle",
+   "oldTestLogic": "FAIL",
+   "rising": {
+    "stand": [
+     "jump",
+     null
+    ],
+    "run": [
+     "jumpMove"
+    ],
+    "standAgain": [
+     "jump"
+    ]
+   },
+   "droneHitFrames": "not instrumented",
+   "hitSources": []
+  },
+  {
+   "case": "unseeded, 4x CPU throttle",
+   "oldTestLogic": "FAIL",
+   "rising": {
+    "stand": [
+     "jump"
+    ],
+    "run": [],
+    "standAgain": [
+     "jump"
+    ]
+   },
+   "droneHitFrames": [
+    31,
+    90
+   ],
+   "hitSources": [
+    [
+     24.5,
+     27.2,
+     58.6
+    ],
+    [
+     30,
+     18.4,
+     48.8
+    ]
+   ]
+  },
+  {
+   "case": "unseeded, 4x CPU throttle",
+   "oldTestLogic": "FAIL",
+   "rising": {
+    "stand": [
+     "jump"
+    ],
+    "run": [
+     "jumpMove"
+    ],
+    "standAgain": []
+   },
+   "droneHitFrames": [
+    242
+   ],
+   "hitSources": [
+    [
+     28,
+     26.6,
+     54.3
+    ]
+   ]
+  }
+ ],
+ "after": {
+  "NO_HALO_TRUCKS_unseeded_12_runs": [
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "rep_nh_1",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "rep_nh_2",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "rep_nh_3",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "rep_nh_4",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "rep_nh_5",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "rep_nh_6",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "rep_nh_7",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "rep_nh_8",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "rep_nh_9",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "rep_nh_10",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "rep_nh_11",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "rep_nh_12",
+    "running": [
+     "jumpMove"
+    ]
+   }
+  ],
+  "NO_HALO_TRUCKS_seeds_1_to_8": [
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "seed_1",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "seed_2",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "seed_3",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "seed_4",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "seed_5",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "seed_6",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "seed_7",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "seed_8",
+    "running": [
+     "jumpMove"
+    ]
+   }
+  ],
+  "NO_HALO_TRUCKS_failing_seeds_with_throttle": [
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "h_4 0_",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "h_4 4_",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_NO_HALO_TRUCKS.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "h_5 0_",
+    "running": [
+     "jumpMove"
+    ]
+   }
+  ],
+  "MENU_STYLE_unseeded_5_runs": [
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_MENU_STYLE.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "rep_ms_1",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_MENU_STYLE.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "rep_ms_2",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_MENU_STYLE.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "rep_ms_3",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_MENU_STYLE.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "rep_ms_4",
+    "running": [
+     "jumpMove"
+    ]
+   },
+   {
+    "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_MENU_STYLE.html",
+    "result": "PASS",
+    "hostileShots": 0,
+    "stand": [
+     "jump"
+    ],
+    "standAgain": [
+     "jump"
+    ],
+    "run": "rep_ms_5",
+    "running": [
+     "jumpMove"
+    ]
+   }
+  ]
+ },
+ "scope": "Air test stability only: take-off role selection with hostile fire stood down as labelled test setup. Combat hits during jumps are not tested here and remain legitimate gameplay."
+}

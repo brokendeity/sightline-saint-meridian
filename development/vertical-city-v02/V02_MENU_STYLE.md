@@ -45,7 +45,7 @@ Results are in `evidence/menu-style/`. PASS:
 - **Visual review:** the look was judged from screenshots only, and the user has not reviewed it yet.
 - **Font:** the display font is the system Impact family, with condensed fallbacks. Other machines may substitute a different heavy face.
 - **Gamepad:** there is still no gamepad navigation inside the menu, so there are no pad prompts.
-- **Air test timing (existing problem):** `test_forspoken_air.cjs` is sensitive to startup timing. It passes every time when the page is allowed to settle for 8 s after "ready", and fails occasionally on earlier builds too. Its cause has not been found; it is a follow-up item.
+- **Air test:** its occasional failure was a randomly placed halo drone shooting Backspool mid-jump, not timing. It is fixed in the test's labelled setup; see `V02_AIR_TEST_STABILITY.md`.
 
 ## Regressions (`evidence/menu-style-checks/`, run muted)
 
@@ -57,7 +57,13 @@ All PASS:
 - the 8-hit combat, Sightline melee, burst rhythm and themed-slot tests
 - the impact FX, no-halo-trucks and menu tests
 
-**Air test:** the first version of this menu used a backdrop blur, and with it the air test failed in the full run. A bisect traced the failure to the stylesheet; with it blocked, the test passed 2 of 2. The test also passed every time with an 8 s settle after load.
+**Correction (later the same day):** the conclusion below was wrong. The air test's failures came from a halo patrol drone whose patrol phase is set by `Math.random`. On some page loads it shoots Backspool mid-jump, and its hit reaction replaces the take-off. The blur had nothing to do with it; with a blur overlay present during load, the test passed 4 of 4. The pass rates below are chance at a roughly 70% per-run pass rate.
+
+The test now stands hostile fire down in its labelled setup and asserts that no shot lands. With that, it passes 8 of 8 here: 5 of 5 on this build and 3 of 3 on the no-halo-trucks build. See `V02_AIR_TEST_STABILITY.md` for the full account.
+
+The backdrop blur stays removed, because the menu reads well without it. The comment in `scripts/game_v02_menu_style.css` that says the blur caused the failures is outdated. It is left unedited because the build records that stylesheet's hash.
+
+*Original (superseded) account:* the first version of this menu used a backdrop blur, and with it the air test failed in the full run. A bisect traced the failure to the stylesheet; with it blocked, the test passed 2 of 2. The test also passed every time with an 8 s settle after load.
 
 The blur over the WebGL canvas was then removed. Air-test results, with the earlier baseline runs and the later runs interleaved on one machine (`air-flake-study/`, `air-noblur-*.log`):
 
