@@ -1,0 +1,40 @@
+{
+ "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html",
+ "entrySHA256": "d6308658c5947b91045e10d3ee1d16f87a8e65d6ff2fdabeb7be2a4d931f7abd",
+ "testSHA256": "2c7623e23e545ac6cbfbfe269fffe985974e37ef16ed17a0936f12f6cf8a9c44",
+ "results": {
+  "frames": 900,
+  "segments": 7200,
+  "candidateMismatches": 0,
+  "rays": 7200,
+  "hits": 11961,
+  "rayMismatches": 0,
+  "yieldChecks": 25200,
+  "yieldMismatches": 0,
+  "trainSegments": 900,
+  "examples": [],
+  "pacing": {
+   "boxesComputed": 105550,
+   "boxesReused": 6136558,
+   "warmed": 105,
+   "warmMs": 431.09999990463257,
+   "warmMenuMs": 431.09999990463257,
+   "warmIdleMs": 0,
+   "pending": 0,
+   "complete": true,
+   "scope": "Exact reuse of ray broadphase bounds; camera-ray partitions built on the menu and in idle time"
+  },
+  "cameraRays": {
+   "builds": 105,
+   "invalidations": 0,
+   "queries": 30759,
+   "acceleratedMeshes": 154988,
+   "nativeMeshes": 65223,
+   "leafTests": 396396,
+   "indexBytes": 7279008,
+   "buildMs": 429.7999997138977,
+   "scope": "Exact static V02 camera triangles; native fallback for original and unsupported meshes"
+  }
+ },
+ "errors": []
+}

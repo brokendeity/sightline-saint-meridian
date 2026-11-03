@@ -1,0 +1,971 @@
+{
+ "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html",
+ "seconds": 60,
+ "stress": false,
+ "viewport": [
+  1280,
+  800
+ ],
+ "frameIntervalsMs": {
+  "samples": 6180,
+  "p50": 8.39999999999418,
+  "p95": 16.80000000000291,
+  "p99": 17.5,
+  "max": 32.70000000000073
+ },
+ "longFrames": {
+  "over17.5ms": 44,
+  "over20ms": 25,
+  "over25ms": 13,
+  "over33.4ms": 0,
+  "over50ms": 0
+ },
+ "threshold": 25,
+ "spikeCount": 15,
+ "simulationCpuMs": {
+  "samples": 3599,
+  "p50": 4.300000190734863,
+  "p95": 10.199999809265137,
+  "p99": 13.200000286102295,
+  "max": 30.100000381469727
+ },
+ "renderCpuMs": {
+  "samples": 6181,
+  "p50": 4.600000381469727,
+  "p95": 6.100000381469727,
+  "p99": 6.799999713897705,
+  "max": 10.900000095367432
+ },
+ "drawCalls": {
+  "samples": 6181,
+  "p50": 1,
+  "p95": 1,
+  "p99": 1,
+  "max": 1
+ },
+ "programs": {
+  "start": 147,
+  "end": 147
+ },
+ "textures": {
+  "start": 67,
+  "end": 69
+ },
+ "geometries": {
+  "start": 843,
+  "end": 855
+ },
+ "spikeSelfMsByFunction": [
+  [
+   "intersectTriangle SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   23.3
+  ],
+  [
+   "writePose SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:10982",
+   15
+  ],
+  [
+   "(garbage collector) :0",
+   12.5
+  ],
+  [
+   "recordHistory SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:10996",
+   11.3
+  ],
+  [
+   "unchanged game_v02_frame_pacing.js:16",
+   10.5
+  ],
+  [
+   "(program) :0",
+   9
+  ],
+  [
+   "raycast SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   8.5
+  ],
+  [
+   "fromBufferAttribute SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   7.5
+  ],
+  [
+   "updateMatrixWorld SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   6.5
+  ],
+  [
+   "At SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   6.3
+  ],
+  [
+   "obstacleCandidates SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:11569",
+   6
+  ],
+  [
+   "(idle) :0",
+   4.5
+  ],
+  [
+   "(anon) SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   4.5
+  ],
+  [
+   "multiplyMatrices SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   4
+  ],
+  [
+   "update SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   3.8
+  ],
+  [
+   "jn SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   3.5
+  ],
+  [
+   "state SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:11693",
+   3.3
+  ],
+  [
+   "sync game_v02_furnished_room_shadows.js:35",
+   3.3
+  ],
+  [
+   "M SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   3.3
+  ],
+  [
+   "renderBufferDirect SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   3
+  ],
+  [
+   "updateDroneSearchlight SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:8439",
+   3
+  ],
+  [
+   "getZ SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   2.8
+  ],
+  [
+   "getX SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   2.5
+  ],
+  [
+   "setXYZ SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   2
+  ],
+  [
+   "getY SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   2
+  ],
+  [
+   "setFromEuler SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   1.8
+  ],
+  [
+   "getPoint SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   1.8
+  ],
+  [
+   "Cr.upload SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   1.8
+  ],
+  [
+   "bindVertexArray :0",
+   1.8
+  ],
+  [
+   "renderNight SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:7788",
+   1.5
+  ]
+ ],
+ "spikeSelfMsByScript": [
+  [
+   "SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html",
+   171.3
+  ],
+  [
+   "(garbage collector)",
+   12.5
+  ],
+  [
+   "game_v02_frame_pacing.js",
+   10.5
+  ],
+  [
+   "(program)",
+   9
+  ],
+  [
+   "(native)",
+   9
+  ],
+  [
+   "(idle)",
+   4.5
+  ],
+  [
+   "game_v02_furnished_room_shadows.js",
+   3.5
+  ],
+  [
+   "game_v02_friendly_contacts.js",
+   1.3
+  ],
+  [
+   "v02_exact_camera_rays.js",
+   0.8
+  ],
+  [
+   "game_v02_friendly_market_clearance.js",
+   0.5
+  ],
+  [
+   "game_v02_friendly_visitor_clearance.js",
+   0.5
+  ],
+  [
+   "game_aerial_traffic_core_v02.js",
+   0.5
+  ],
+  [
+   "game_v02_body_framing_v2.js",
+   0.3
+  ],
+  [
+   "game_v02_body_notice.js",
+   0.3
+  ]
+ ],
+ "wholeRunSelfMsByScript": [
+  [
+   "SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html",
+   30328
+  ],
+  [
+   "(idle)",
+   3686
+  ],
+  [
+   "(program)",
+   3496
+  ],
+  [
+   "(native)",
+   2182.5
+  ],
+  [
+   "game_v02_furnished_room_shadows.js",
+   1281
+  ],
+  [
+   "game_v02_frame_pacing.js",
+   1181.8
+  ],
+  [
+   "game_v02_friendly_contacts.js",
+   192.8
+  ],
+  [
+   "(garbage collector)",
+   172.5
+  ],
+  [
+   "game_aerial_traffic_core_v02.js",
+   137
+  ],
+  [
+   "v02_exact_camera_rays.js",
+   127
+  ],
+  [
+   "game_v02_friendly_market_clearance.js",
+   117.8
+  ],
+  [
+   "game_vertical_loggia_hud_v02.js",
+   110.3
+  ],
+  [
+   "game_v02_friendly_visitor_clearance.js",
+   107.5
+  ],
+  [
+   "game_v02_body_framing_v2.js",
+   31.8
+  ],
+  [
+   "game_v02_friendly_discovery.js",
+   30.3
+  ],
+  [
+   "game_v02_body_notice.js",
+   22.3
+  ],
+  [
+   "game_v02_friendly_pursuit.js",
+   21.8
+  ],
+  [
+   "game_v02_friendly_camera.js",
+   18.3
+  ],
+  [
+   "game_vertical_encounters_v02.js",
+   16.5
+  ],
+  [
+   "game_vertical_transit_v02.js",
+   16.3
+  ],
+  [
+   "game_impact_fx.js",
+   14.5
+  ],
+  [
+   "vertical_transit_core_v02.js",
+   11.5
+  ],
+  [
+   "friendly_contact_core_v02.js",
+   7.3
+  ],
+  [
+   "game_v02_facade_cassettes.js",
+   6
+  ],
+  [
+   "game_vertical_appearance_facade_v02.js",
+   3.5
+  ],
+  [
+   "game_vertical_views_v02.js",
+   1.3
+  ]
+ ],
+ "wholeRunSelfMsByFunction": [
+  [
+   "(idle) :0",
+   3686
+  ],
+  [
+   "(program) :0",
+   3496
+  ],
+  [
+   "updateMatrixWorld SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   2632.8
+  ],
+  [
+   "multiplyMatrices SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   1648
+  ],
+  [
+   "At SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   1532.3
+  ],
+  [
+   "intersectTriangle SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   1253.8
+  ],
+  [
+   "writePose SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:10982",
+   1242.8
+  ],
+  [
+   "sync game_v02_furnished_room_shadows.js:35",
+   1214.5
+  ],
+  [
+   "unchanged game_v02_frame_pacing.js:16",
+   1151
+  ],
+  [
+   "state SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:11693",
+   918
+  ],
+  [
+   "update SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   917
+  ],
+  [
+   "renderBufferDirect SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   914.3
+  ],
+  [
+   "M SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   897.8
+  ],
+  [
+   "bindVertexArray :0",
+   676.5
+  ],
+  [
+   "obstacleCandidates SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:11569",
+   675.5
+  ],
+  [
+   "renderNight SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:7788",
+   649.3
+  ],
+  [
+   "It SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   584.5
+  ],
+  [
+   "Ct SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   535.8
+  ],
+  [
+   "fromBufferAttribute SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   523.8
+  ],
+  [
+   "raycast SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   523
+  ],
+  [
+   "Er.setValue SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   510.3
+  ],
+  [
+   "state SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:11439",
+   497.8
+  ],
+  [
+   "(anon) SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:11416",
+   475.3
+  ],
+  [
+   "(anon) SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   459.5
+  ],
+  [
+   "getPoint SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   445.5
+  ],
+  [
+   "intersectsObject SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   400.3
+  ],
+  [
+   "(anon) SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:11693",
+   371
+  ],
+  [
+   "Oi SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   362
+  ],
+  [
+   "sort SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   310.3
+  ],
+  [
+   "getUtoTmapping SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+   308.8
+  ]
+ ],
+ "spikes": [
+  {
+   "atMs": 42,
+   "ms": 32.7,
+   "drawCalls": 1,
+   "geometries": 843,
+   "textures": 67,
+   "programs": 147,
+   "programsBefore": 147,
+   "top": [
+    [
+     "recordHistory SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:10996",
+     11
+    ],
+    [
+     "writePose SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:10982",
+     6.5
+    ],
+    [
+     "(program) :0",
+     0.8
+    ],
+    [
+     "updateMatrixWorld SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     0.5
+    ],
+    [
+     "setXYZ SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     0.5
+    ],
+    [
+     "(garbage collector) :0",
+     0.5
+    ]
+   ]
+  },
+  {
+   "atMs": 12033,
+   "ms": 25.1,
+   "drawCalls": 1,
+   "geometries": 852,
+   "textures": 68,
+   "programs": 147,
+   "programsBefore": 147,
+   "top": [
+    [
+     "(idle) :0",
+     2.5
+    ],
+    [
+     "intersectTriangle SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     2
+    ],
+    [
+     "writePose SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:10982",
+     1.5
+    ],
+    [
+     "(program) :0",
+     1.3
+    ],
+    [
+     "unchanged game_v02_frame_pacing.js:16",
+     1
+    ],
+    [
+     "raycast SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     1
+    ]
+   ]
+  },
+  {
+   "atMs": 45216,
+   "ms": 25.7,
+   "drawCalls": 1,
+   "geometries": 855,
+   "textures": 69,
+   "programs": 147,
+   "programsBefore": 147,
+   "top": [
+    [
+     "intersectTriangle SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     2
+    ],
+    [
+     "raycast SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     1.3
+    ],
+    [
+     "update SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     1
+    ],
+    [
+     "unchanged game_v02_frame_pacing.js:16",
+     1
+    ],
+    [
+     "(program) :0",
+     0.8
+    ],
+    [
+     "obstacleCandidates SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:11569",
+     0.8
+    ]
+   ]
+  },
+  {
+   "atMs": 45283,
+   "ms": 25.7,
+   "drawCalls": 1,
+   "geometries": 855,
+   "textures": 69,
+   "programs": 147,
+   "programsBefore": 147,
+   "top": [
+    [
+     "(garbage collector) :0",
+     4.8
+    ],
+    [
+     "writePose SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:10982",
+     2.3
+    ],
+    [
+     "(program) :0",
+     0.8
+    ],
+    [
+     "multiplyMatrices SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     0.5
+    ],
+    [
+     "(anon) SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     0.3
+    ],
+    [
+     "M SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     0.3
+    ]
+   ]
+  },
+  {
+   "atMs": 45400,
+   "ms": 25.5,
+   "drawCalls": 1,
+   "geometries": 855,
+   "textures": 69,
+   "programs": 147,
+   "programsBefore": 147,
+   "top": [
+    [
+     "intersectTriangle SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     2.5
+    ],
+    [
+     "writePose SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:10982",
+     1.8
+    ],
+    [
+     "fromBufferAttribute SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     1.5
+    ],
+    [
+     "unchanged game_v02_frame_pacing.js:16",
+     1.3
+    ],
+    [
+     "setXYZ SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     0.8
+    ],
+    [
+     "raycast SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     0.8
+    ]
+   ]
+  },
+  {
+   "atMs": 45583,
+   "ms": 25.2,
+   "drawCalls": 1,
+   "geometries": 855,
+   "textures": 69,
+   "programs": 147,
+   "programsBefore": 147,
+   "top": [
+    [
+     "intersectTriangle SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     3
+    ],
+    [
+     "(program) :0",
+     1
+    ],
+    [
+     "unchanged game_v02_frame_pacing.js:16",
+     1
+    ],
+    [
+     "raycast SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     1
+    ],
+    [
+     "At SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     0.8
+    ],
+    [
+     "fromBufferAttribute SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     0.8
+    ]
+   ]
+  },
+  {
+   "atMs": 45949,
+   "ms": 25.8,
+   "drawCalls": 1,
+   "geometries": 855,
+   "textures": 69,
+   "programs": 147,
+   "programsBefore": 147,
+   "top": [
+    [
+     "intersectTriangle SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     2
+    ],
+    [
+     "writePose SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:10982",
+     1.8
+    ],
+    [
+     "updateMatrixWorld SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     1.3
+    ],
+    [
+     "getX SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     1
+    ],
+    [
+     "At SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     0.8
+    ],
+    [
+     "updateDroneSearchlight SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:8439",
+     0.8
+    ]
+   ]
+  },
+  {
+   "atMs": 46500,
+   "ms": 25.1,
+   "drawCalls": 1,
+   "geometries": 855,
+   "textures": 69,
+   "programs": 147,
+   "programsBefore": 147,
+   "top": [
+    [
+     "intersectTriangle SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     1.5
+    ],
+    [
+     "(anon) SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:11416",
+     0.3
+    ],
+    [
+     "unchanged game_v02_frame_pacing.js:16",
+     0.3
+    ],
+    [
+     "updateDroneSearchlight SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:8439",
+     0.3
+    ],
+    [
+     "getZ SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     0.3
+    ]
+   ]
+  },
+  {
+   "atMs": 51283,
+   "ms": 25.1,
+   "drawCalls": 1,
+   "geometries": 855,
+   "textures": 69,
+   "programs": 147,
+   "programsBefore": 147,
+   "top": [
+    [
+     "(garbage collector) :0",
+     2.5
+    ],
+    [
+     "updateMatrixWorld SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     1
+    ],
+    [
+     "(program) :0",
+     1
+    ],
+    [
+     "sync game_v02_furnished_room_shadows.js:35",
+     0.5
+    ],
+    [
+     "renderBufferDirect SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     0.5
+    ],
+    [
+     "state SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:12256",
+     0.3
+    ]
+   ]
+  },
+  {
+   "atMs": 54208,
+   "ms": 25,
+   "drawCalls": 1,
+   "geometries": 855,
+   "textures": 69,
+   "programs": 147,
+   "programsBefore": 147,
+   "top": []
+  },
+  {
+   "atMs": 56950,
+   "ms": 25.1,
+   "drawCalls": 1,
+   "geometries": 855,
+   "textures": 69,
+   "programs": 147,
+   "programsBefore": 147,
+   "top": [
+    [
+     "intersectTriangle SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     2
+    ],
+    [
+     "unchanged game_v02_frame_pacing.js:16",
+     1.8
+    ],
+    [
+     "fromBufferAttribute SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     1.5
+    ],
+    [
+     "updateMatrixWorld SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     1
+    ],
+    [
+     "At SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     0.8
+    ],
+    [
+     "obstacleCandidates SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:11569",
+     0.8
+    ]
+   ]
+  },
+  {
+   "atMs": 57983,
+   "ms": 25,
+   "drawCalls": 1,
+   "geometries": 855,
+   "textures": 69,
+   "programs": 147,
+   "programsBefore": 147,
+   "top": [
+    [
+     "(garbage collector) :0",
+     3.5
+    ],
+    [
+     "(program) :0",
+     0.8
+    ],
+    [
+     "update SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     0.5
+    ],
+    [
+     "bindVertexArray :0",
+     0.5
+    ],
+    [
+     "renderBufferDirect SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     0.5
+    ],
+    [
+     "state SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:11693",
+     0.5
+    ]
+   ]
+  },
+  {
+   "atMs": 58049,
+   "ms": 25.8,
+   "drawCalls": 1,
+   "geometries": 855,
+   "textures": 69,
+   "programs": 147,
+   "programsBefore": 147,
+   "top": [
+    [
+     "intersectTriangle SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     1.8
+    ],
+    [
+     "raycast SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     1.3
+    ],
+    [
+     "unchanged game_v02_frame_pacing.js:16",
+     1
+    ],
+    [
+     "jn SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     1
+    ],
+    [
+     "multiplyMatrices SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     0.8
+    ],
+    [
+     "(program) :0",
+     0.8
+    ]
+   ]
+  },
+  {
+   "atMs": 58608,
+   "ms": 25.6,
+   "drawCalls": 1,
+   "geometries": 855,
+   "textures": 69,
+   "programs": 147,
+   "programsBefore": 147,
+   "top": [
+    [
+     "intersectTriangle SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     3.3
+    ],
+    [
+     "(idle) :0",
+     1.8
+    ],
+    [
+     "unchanged game_v02_frame_pacing.js:16",
+     1.8
+    ],
+    [
+     "writePose SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:10982",
+     1.3
+    ],
+    [
+     "setFromEuler SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     0.5
+    ],
+    [
+     "obstacleCandidates SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:11569",
+     0.5
+    ]
+   ]
+  },
+  {
+   "atMs": 58782,
+   "ms": 25.9,
+   "drawCalls": 1,
+   "geometries": 855,
+   "textures": 69,
+   "programs": 147,
+   "programsBefore": 147,
+   "top": [
+    [
+     "intersectTriangle SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     2.8
+    ],
+    [
+     "obstacleCandidates SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:11569",
+     1.5
+    ],
+    [
+     "At SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     1
+    ],
+    [
+     "raycast SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     1
+    ],
+    [
+     "multiplyMatrices SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     0.8
+    ],
+    [
+     "fromBufferAttribute SIGHTLINE_SAINT_MERIDIAN_V02_FRAME_PACING.html:114",
+     0.8
+    ]
+   ]
+  }
+ ],
+ "endPosition": [
+  95.99999998897545,
+  24.42,
+  250.64326420995542
+ ],
+ "errors": [],
+ "note": "Headless Chromium on ANGLE/Metal; CPU sampling at 250 us; clocks aligned with a 40 ms marker function (alignment error under one sample)."
+}
