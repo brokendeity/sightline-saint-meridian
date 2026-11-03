@@ -1,0 +1,1651 @@
+{
+  "version": 3,
+  "hero": "sightline",
+  "animationPack": "assets/sightline/action-street-gameplay.json.gz",
+  "states": {
+    "street": {
+      "name": "Street",
+      "moves": [
+        {
+          "id": "street-light-1",
+          "name": "Street Light 1",
+          "state": "street",
+          "version": 3,
+          "clipId": "action-v2-sl-street-light-1",
+          "sourceStart": 0,
+          "sourceEnd": 0.36,
+          "duration": 0.36,
+          "contact": [
+            {
+              "id": "street-light-1-contact",
+              "time": 0.16851,
+              "socket": "leftHand",
+              "radius": 0.32,
+              "damage": 19,
+              "push": 0.35,
+              "heavy": false,
+              "launcher": false
+            }
+          ],
+          "chainAt": 0.2448,
+          "cancelAt": 0.2376,
+          "comboOpen": 0.12851,
+          "comboClose": 0.345,
+          "next": "street-light-2",
+          "kind": "light",
+          "sourceFamily": "native",
+          "sourceLabel": "Sightline Mixamo",
+          "provenance": {
+            "animation": "left punch",
+            "nativeId": "backspool-007",
+            "start": 0.2133,
+            "end": 0.6833,
+            "playbackRate": 1.3055555555555556,
+            "sourceDuration": 0.8333333134651184
+          },
+          "support": {
+            "mode": "feet",
+            "plantedSockets": [
+              "leftFoot",
+              "rightFoot"
+            ],
+            "contactStart": 0.14351,
+            "contactEnd": 0.22351,
+            "maxAuthoredHorizontalCorrection": 0.10596872952465874
+          },
+          "movement": {
+            "distance": 0.19,
+            "maxYaw": 3.5
+          },
+          "damage": 19,
+          "reaction": "stagger",
+          "landing": "ground",
+          "sourceFacingYaw": 0,
+          "timingMap": {
+            "sourceStart": 0.2133,
+            "sourceEnd": 0.6833,
+            "playbackRate": 1.3055555555555556,
+            "start": 0,
+            "end": 0.36
+          },
+          "transition": {
+            "entryEnd": 0.055,
+            "exitStart": 0.22351,
+            "exitEnd": 0.2448
+          }
+        },
+        {
+          "id": "street-light-2",
+          "name": "Street Light 2",
+          "state": "street",
+          "version": 3,
+          "clipId": "action-v2-sl-street-light-2",
+          "sourceStart": 0,
+          "sourceEnd": 0.42,
+          "duration": 0.42,
+          "contact": [
+            {
+              "id": "street-light-2-contact",
+              "time": 0.21,
+              "socket": "leftHand",
+              "radius": 0.32,
+              "damage": 19,
+              "push": 0.35,
+              "heavy": false,
+              "launcher": false
+            }
+          ],
+          "chainAt": 0.2856,
+          "cancelAt": 0.2772,
+          "comboOpen": 0.17,
+          "comboClose": 0.405,
+          "next": "street-light-3",
+          "kind": "light",
+          "sourceFamily": "native",
+          "sourceLabel": "Sightline Mixamo",
+          "provenance": {
+            "animation": "hook with lead hand",
+            "nativeId": "backspool-079",
+            "start": 0.2533,
+            "end": 0.8133,
+            "playbackRate": 1.3333333333333335,
+            "sourceDuration": 1.0666667222976685
+          },
+          "support": {
+            "mode": "feet",
+            "plantedSockets": [
+              "leftFoot",
+              "rightFoot"
+            ],
+            "contactStart": 0.185,
+            "contactEnd": 0.265,
+            "maxAuthoredHorizontalCorrection": 0.12
+          },
+          "movement": {
+            "distance": 0.19,
+            "maxYaw": 3.5
+          },
+          "damage": 19,
+          "reaction": "stagger",
+          "landing": "ground",
+          "sourceFacingYaw": 0,
+          "timingMap": {
+            "sourceStart": 0.2533,
+            "sourceEnd": 0.8133,
+            "playbackRate": 1.3333333333333335,
+            "start": 0,
+            "end": 0.42
+          },
+          "transition": {
+            "entryEnd": 0.055,
+            "exitStart": 0.265,
+            "exitEnd": 0.2856
+          }
+        },
+        {
+          "id": "street-light-3",
+          "name": "Street Light 3",
+          "state": "street",
+          "version": 3,
+          "clipId": "action-v2-sl-street-light-3",
+          "sourceStart": 0,
+          "sourceEnd": 0.44,
+          "duration": 0.44,
+          "contact": [
+            {
+              "id": "street-light-3-contact",
+              "time": 0.22,
+              "socket": "leftHand",
+              "radius": 0.32,
+              "damage": 19,
+              "push": 0.35,
+              "heavy": false,
+              "launcher": false
+            }
+          ],
+          "chainAt": 0.2992,
+          "cancelAt": 0.2904,
+          "comboOpen": 0.18,
+          "comboClose": 0.425,
+          "next": "street-light-4",
+          "kind": "light",
+          "sourceFamily": "native",
+          "sourceLabel": "Sightline Mixamo",
+          "provenance": {
+            "animation": "body hook",
+            "nativeId": "backspool-005",
+            "start": 0.2333,
+            "end": 0.8333,
+            "playbackRate": 1.3636363636363633,
+            "sourceDuration": 1.7666666507720947
+          },
+          "support": {
+            "mode": "feet",
+            "plantedSockets": [
+              "leftFoot",
+              "rightFoot"
+            ],
+            "contactStart": 0.195,
+            "contactEnd": 0.275,
+            "maxAuthoredHorizontalCorrection": 0.10025966542474059
+          },
+          "movement": {
+            "distance": 0.19,
+            "maxYaw": 3.5
+          },
+          "damage": 19,
+          "reaction": "stagger",
+          "landing": "ground",
+          "sourceFacingYaw": 0,
+          "timingMap": {
+            "sourceStart": 0.2333,
+            "sourceEnd": 0.8333,
+            "playbackRate": 1.3636363636363633,
+            "start": 0,
+            "end": 0.44
+          },
+          "transition": {
+            "entryEnd": 0.055,
+            "exitStart": 0.275,
+            "exitEnd": 0.2992
+          }
+        },
+        {
+          "id": "street-light-4",
+          "name": "Street Light 4",
+          "state": "street",
+          "version": 3,
+          "clipId": "action-v2-sl-street-light-4",
+          "sourceStart": 0,
+          "sourceEnd": 0.52,
+          "duration": 0.52,
+          "contact": [
+            {
+              "id": "street-light-4-contact",
+              "time": 0.17588,
+              "socket": "rightHand",
+              "radius": 0.32,
+              "damage": 19,
+              "push": 0.35,
+              "heavy": false,
+              "launcher": false
+            }
+          ],
+          "chainAt": 0.3536,
+          "cancelAt": 0.3432,
+          "comboOpen": 0.13588,
+          "comboClose": 0.505,
+          "next": null,
+          "kind": "light",
+          "sourceFamily": "native",
+          "sourceLabel": "Sightline Mixamo",
+          "provenance": {
+            "animation": "heavy uppercut",
+            "nativeId": "backspool-078",
+            "start": 0.0533,
+            "end": 0.7333,
+            "playbackRate": 1.3076923076923077,
+            "sourceDuration": 2.633333444595337
+          },
+          "support": {
+            "mode": "feet",
+            "plantedSockets": [
+              "leftFoot",
+              "rightFoot"
+            ],
+            "contactStart": 0.15088,
+            "contactEnd": 0.23088,
+            "maxAuthoredHorizontalCorrection": 0.1109039171383073
+          },
+          "movement": {
+            "distance": 0.19,
+            "maxYaw": 3.5
+          },
+          "damage": 19,
+          "reaction": "stagger",
+          "landing": "ground",
+          "sourceFacingYaw": 0,
+          "timingMap": {
+            "sourceStart": 0.0533,
+            "sourceEnd": 0.7333,
+            "playbackRate": 1.3076923076923077,
+            "start": 0,
+            "end": 0.52
+          },
+          "transition": {
+            "entryEnd": 0.055,
+            "exitStart": 0.23088,
+            "exitEnd": 0.3536
+          }
+        },
+        {
+          "id": "street-left",
+          "name": "Street Left",
+          "state": "street",
+          "version": 3,
+          "clipId": "action-v2-sl-street-left",
+          "sourceStart": 0,
+          "sourceEnd": 0.5,
+          "duration": 0.5,
+          "contact": [
+            {
+              "id": "street-left-contact",
+              "time": 0.28571,
+              "socket": "rightFoot",
+              "radius": 0.38,
+              "damage": 19,
+              "push": 0.35,
+              "heavy": false,
+              "launcher": false
+            }
+          ],
+          "chainAt": 0.35571,
+          "cancelAt": 0.35071,
+          "comboOpen": 0.24571,
+          "comboClose": 0.485,
+          "next": null,
+          "kind": "direction",
+          "sourceFamily": "native",
+          "sourceLabel": "Sightline Mixamo",
+          "provenance": {
+            "animation": "Mma Kick",
+            "nativeId": "backspool-002",
+            "start": 0.3333,
+            "end": 1.0333,
+            "playbackRate": 1.4,
+            "sourceDuration": 1.6666666269302368
+          },
+          "support": {
+            "mode": "feet",
+            "plantedSockets": [
+              "leftFoot"
+            ],
+            "contactStart": 0.26071,
+            "contactEnd": 0.34071,
+            "maxAuthoredHorizontalCorrection": 0.08125302045037273
+          },
+          "movement": {
+            "distance": 0.19,
+            "maxYaw": 3.5
+          },
+          "damage": 19,
+          "reaction": "stagger",
+          "landing": "ground",
+          "sourceFacingYaw": 0,
+          "timingMap": {
+            "sourceStart": 0.3333,
+            "sourceEnd": 1.0333,
+            "playbackRate": 1.4,
+            "start": 0,
+            "end": 0.5
+          },
+          "transition": {
+            "entryEnd": 0.055,
+            "exitStart": 0.34071,
+            "exitEnd": 0.35571
+          }
+        },
+        {
+          "id": "street-right",
+          "name": "Street Right",
+          "state": "street",
+          "version": 3,
+          "clipId": "action-v2-sl-street-right",
+          "sourceStart": 0,
+          "sourceEnd": 0.48,
+          "duration": 0.48,
+          "contact": [
+            {
+              "id": "street-right-contact",
+              "time": 0.25846,
+              "socket": "rightFoot",
+              "radius": 0.38,
+              "damage": 19,
+              "push": 0.35,
+              "heavy": false,
+              "launcher": false
+            }
+          ],
+          "chainAt": 0.32846,
+          "cancelAt": 0.32346,
+          "comboOpen": 0.21846,
+          "comboClose": 0.465,
+          "next": null,
+          "kind": "direction",
+          "sourceFamily": "native",
+          "sourceLabel": "Sightline Mixamo",
+          "provenance": {
+            "animation": "Side Kick with back foot",
+            "nativeId": "backspool-050",
+            "start": 0.35,
+            "end": 1.0,
+            "playbackRate": 1.3541666666666667,
+            "sourceDuration": 2.0333333015441895
+          },
+          "support": {
+            "mode": "feet",
+            "plantedSockets": [
+              "leftFoot"
+            ],
+            "contactStart": 0.23346,
+            "contactEnd": 0.31346,
+            "maxAuthoredHorizontalCorrection": 0.07037169488508811
+          },
+          "movement": {
+            "distance": 0.19,
+            "maxYaw": 3.5
+          },
+          "damage": 19,
+          "reaction": "stagger",
+          "landing": "ground",
+          "sourceFacingYaw": 0,
+          "timingMap": {
+            "sourceStart": 0.35,
+            "sourceEnd": 1.0,
+            "playbackRate": 1.3541666666666667,
+            "start": 0,
+            "end": 0.48
+          },
+          "transition": {
+            "entryEnd": 0.055,
+            "exitStart": 0.31346,
+            "exitEnd": 0.32846
+          }
+        },
+        {
+          "id": "street-heavy",
+          "name": "Street Heavy",
+          "state": "street",
+          "version": 3,
+          "clipId": "action-v2-sl-street-heavy",
+          "sourceStart": 0,
+          "sourceEnd": 0.7,
+          "duration": 0.7,
+          "contact": [
+            {
+              "id": "street-heavy-contact",
+              "time": 0.25,
+              "socket": "rightFoot",
+              "radius": 0.38,
+              "damage": 31,
+              "push": 2.3,
+              "heavy": true,
+              "launcher": false
+            }
+          ],
+          "chainAt": 0.476,
+          "cancelAt": 0.462,
+          "comboOpen": 0.21,
+          "comboClose": 0.685,
+          "next": null,
+          "kind": "heavy",
+          "sourceFamily": "native",
+          "sourceLabel": "Sightline Mixamo",
+          "provenance": {
+            "animation": "jumping knee followed by punch",
+            "nativeId": "backspool-081",
+            "start": 0.0833,
+            "end": 0.7833,
+            "playbackRate": 1.0,
+            "sourceDuration": 2.6666667461395264
+          },
+          "support": {
+            "mode": "feet",
+            "plantedSockets": [
+              "leftFoot"
+            ],
+            "contactStart": 0.225,
+            "contactEnd": 0.305,
+            "maxAuthoredHorizontalCorrection": 0.10819570494047928
+          },
+          "movement": {
+            "distance": 0.19,
+            "maxYaw": 3.5
+          },
+          "damage": 31,
+          "reaction": "heavy",
+          "landing": "ground",
+          "sourceFacingYaw": 0,
+          "timingMap": {
+            "sourceStart": 0.0833,
+            "sourceEnd": 0.7833,
+            "playbackRate": 1.0,
+            "start": 0,
+            "end": 0.7
+          },
+          "transition": {
+            "entryEnd": 0.055,
+            "exitStart": 0.305,
+            "exitEnd": 0.476
+          }
+        },
+        {
+          "id": "street-launcher",
+          "name": "Street Launcher",
+          "state": "street",
+          "version": 3,
+          "clipId": "action-v2-sl-street-launcher",
+          "sourceStart": 0,
+          "sourceEnd": 0.75,
+          "duration": 0.75,
+          "contact": [
+            {
+              "id": "street-launcher-contact",
+              "time": 0.20783,
+              "socket": "rightHand",
+              "radius": 0.32,
+              "damage": 31,
+              "push": 2.3,
+              "heavy": true,
+              "launcher": true
+            }
+          ],
+          "chainAt": 0.51,
+          "cancelAt": 0.495,
+          "comboOpen": 0.16783,
+          "comboClose": 0.735,
+          "next": null,
+          "kind": "heavy",
+          "sourceFamily": "native",
+          "sourceLabel": "Sightline Mixamo",
+          "provenance": {
+            "animation": "heavy uppercut",
+            "nativeId": "backspool-078",
+            "start": 0.0533,
+            "end": 0.8833,
+            "playbackRate": 1.1066666666666667,
+            "sourceDuration": 2.633333444595337
+          },
+          "support": {
+            "mode": "feet",
+            "plantedSockets": [
+              "leftFoot",
+              "rightFoot"
+            ],
+            "contactStart": 0.18283,
+            "contactEnd": 0.26283,
+            "maxAuthoredHorizontalCorrection": 0.12
+          },
+          "movement": {
+            "distance": 0.19,
+            "maxYaw": 3.5
+          },
+          "damage": 31,
+          "reaction": "launch",
+          "landing": "ground",
+          "sourceFacingYaw": 0,
+          "timingMap": {
+            "sourceStart": 0.0533,
+            "sourceEnd": 0.8833,
+            "playbackRate": 1.1066666666666667,
+            "start": 0,
+            "end": 0.75
+          },
+          "transition": {
+            "entryEnd": 0.055,
+            "exitStart": 0.26283,
+            "exitEnd": 0.51
+          }
+        },
+        {
+          "id": "street-air-light",
+          "name": "Street Air Light",
+          "state": "street",
+          "version": 3,
+          "clipId": "action-v2-sl-street-air-light",
+          "sourceStart": 0,
+          "sourceEnd": 0.4,
+          "duration": 0.4,
+          "contact": [
+            {
+              "id": "street-air-light-contact",
+              "time": 0.21818,
+              "socket": "leftFoot",
+              "radius": 0.38,
+              "damage": 19,
+              "push": 0.35,
+              "heavy": false,
+              "launcher": false
+            }
+          ],
+          "chainAt": 0.28818,
+          "cancelAt": 0.28318,
+          "comboOpen": 0.17818,
+          "comboClose": 0.385,
+          "next": {
+            "light": "street-air-light",
+            "finisher": "street-air-finisher"
+          },
+          "kind": "air",
+          "sourceFamily": "native",
+          "sourceLabel": "Sightline Mixamo",
+          "provenance": {
+            "animation": "Flying Kick",
+            "nativeId": "backspool-027",
+            "start": 0.15,
+            "end": 0.7,
+            "playbackRate": 1.3749999999999998,
+            "sourceDuration": 1.5
+          },
+          "support": {
+            "mode": "air",
+            "plantedSockets": [],
+            "contactStart": 0.19318,
+            "contactEnd": 0.27318
+          },
+          "movement": {
+            "distance": 0.19,
+            "maxYaw": 3.5
+          },
+          "damage": 19,
+          "reaction": "stagger",
+          "landing": "close",
+          "sourceFacingYaw": 0,
+          "timingMap": {
+            "sourceStart": 0.15,
+            "sourceEnd": 0.7,
+            "playbackRate": 1.3749999999999998,
+            "start": 0,
+            "end": 0.4
+          },
+          "transition": {
+            "entryEnd": 0.055,
+            "exitStart": 0.27318,
+            "exitEnd": 0.28818
+          }
+        },
+        {
+          "id": "street-air-finisher",
+          "name": "Street Air Finisher",
+          "state": "street",
+          "version": 3,
+          "clipId": "action-v2-sl-street-air-finisher",
+          "sourceStart": 0,
+          "sourceEnd": 0.7,
+          "duration": 0.7,
+          "contact": [
+            {
+              "id": "street-air-finisher-contact",
+              "time": 0.39375,
+              "socket": "leftHand",
+              "radius": 0.32,
+              "damage": 31,
+              "push": 2.3,
+              "heavy": true,
+              "launcher": false
+            }
+          ],
+          "chainAt": 0.476,
+          "cancelAt": 0.462,
+          "comboOpen": 0.35375,
+          "comboClose": 0.685,
+          "next": null,
+          "kind": "air",
+          "sourceFamily": "native",
+          "sourceLabel": "Sightline Mixamo",
+          "provenance": {
+            "animation": "jumping knee followed by punch",
+            "nativeId": "backspool-081",
+            "start": 0.9,
+            "end": 1.7,
+            "playbackRate": 1.142857142857143,
+            "sourceDuration": 2.6666667461395264
+          },
+          "support": {
+            "mode": "air",
+            "plantedSockets": [],
+            "contactStart": 0.36875,
+            "contactEnd": 0.44875
+          },
+          "movement": {
+            "distance": 0.19,
+            "maxYaw": 3.5
+          },
+          "damage": 31,
+          "reaction": "heavy",
+          "landing": "close",
+          "sourceFacingYaw": 0,
+          "timingMap": {
+            "sourceStart": 0.9,
+            "sourceEnd": 1.7,
+            "playbackRate": 1.142857142857143,
+            "start": 0,
+            "end": 0.7
+          },
+          "transition": {
+            "entryEnd": 0.055,
+            "exitStart": 0.44875,
+            "exitEnd": 0.476
+          }
+        },
+        {
+          "id": "street-counter-1",
+          "name": "Street Counter 1",
+          "state": "street",
+          "version": 3,
+          "clipId": "action-v2-sl-street-counter-1",
+          "sourceStart": 0,
+          "sourceEnd": 0.44,
+          "duration": 0.44,
+          "contact": [
+            {
+              "id": "street-counter-1-contact",
+              "time": 0.22,
+              "socket": "leftHand",
+              "radius": 0.32,
+              "damage": 25,
+              "push": 0.35,
+              "heavy": false,
+              "launcher": false
+            }
+          ],
+          "chainAt": 0.2992,
+          "cancelAt": 0.2904,
+          "comboOpen": 0.18,
+          "comboClose": 0.425,
+          "next": "street-counter-2",
+          "kind": "counter",
+          "sourceFamily": "native",
+          "sourceLabel": "Sightline Mixamo",
+          "provenance": {
+            "animation": "body hook",
+            "nativeId": "backspool-005",
+            "start": 0.2333,
+            "end": 0.8333,
+            "playbackRate": 1.3636363636363633,
+            "sourceDuration": 1.7666666507720947
+          },
+          "support": {
+            "mode": "feet",
+            "plantedSockets": [
+              "leftFoot",
+              "rightFoot"
+            ],
+            "contactStart": 0.195,
+            "contactEnd": 0.275,
+            "maxAuthoredHorizontalCorrection": 0.12
+          },
+          "movement": {
+            "distance": 0.19,
+            "maxYaw": 3.5
+          },
+          "damage": 25,
+          "reaction": "stagger",
+          "landing": "ground",
+          "sourceFacingYaw": 0,
+          "timingMap": {
+            "sourceStart": 0.2333,
+            "sourceEnd": 0.8333,
+            "playbackRate": 1.3636363636363633,
+            "start": 0,
+            "end": 0.44
+          },
+          "transition": {
+            "entryEnd": 0.055,
+            "exitStart": 0.275,
+            "exitEnd": 0.2992
+          }
+        },
+        {
+          "id": "street-counter-2",
+          "name": "Street Counter 2",
+          "state": "street",
+          "version": 3,
+          "clipId": "action-v2-sl-street-counter-2",
+          "sourceStart": 0,
+          "sourceEnd": 0.48,
+          "duration": 0.48,
+          "contact": [
+            {
+              "id": "street-counter-2-contact",
+              "time": 0.17524,
+              "socket": "rightHand",
+              "radius": 0.32,
+              "damage": 25,
+              "push": 0.35,
+              "heavy": false,
+              "launcher": false
+            }
+          ],
+          "chainAt": 0.3264,
+          "cancelAt": 0.3168,
+          "comboOpen": 0.13524,
+          "comboClose": 0.465,
+          "next": null,
+          "kind": "counter",
+          "sourceFamily": "native",
+          "sourceLabel": "Sightline Mixamo",
+          "provenance": {
+            "animation": "heavy uppercut",
+            "nativeId": "backspool-078",
+            "start": 0.0533,
+            "end": 0.6833,
+            "playbackRate": 1.3125,
+            "sourceDuration": 2.633333444595337
+          },
+          "support": {
+            "mode": "feet",
+            "plantedSockets": [
+              "leftFoot",
+              "rightFoot"
+            ],
+            "contactStart": 0.15024,
+            "contactEnd": 0.23024,
+            "maxAuthoredHorizontalCorrection": 0.05940036957816105
+          },
+          "movement": {
+            "distance": 0.19,
+            "maxYaw": 3.5
+          },
+          "damage": 25,
+          "reaction": "stagger",
+          "landing": "ground",
+          "sourceFacingYaw": 0,
+          "timingMap": {
+            "sourceStart": 0.0533,
+            "sourceEnd": 0.6833,
+            "playbackRate": 1.3125,
+            "start": 0,
+            "end": 0.48
+          },
+          "transition": {
+            "entryEnd": 0.055,
+            "exitStart": 0.23024,
+            "exitEnd": 0.3264
+          }
+        }
+      ],
+      "stance": "action-v2-sl-street-stance",
+      "guard": "action-v2-sl-street-guard",
+      "dodge": "action-v2-sl-street-dodge",
+      "reaction": "action-v2-sl-street-reaction",
+      "reaction-head": "action-v2-sl-street-reaction-head",
+      "reaction-body": "action-v2-sl-street-reaction-body"
+    }
+  },
+  "moves": [
+    {
+      "id": "street-light-1",
+      "name": "Street Light 1",
+      "state": "street",
+      "version": 3,
+      "clipId": "action-v2-sl-street-light-1",
+      "sourceStart": 0,
+      "sourceEnd": 0.36,
+      "duration": 0.36,
+      "contact": [
+        {
+          "id": "street-light-1-contact",
+          "time": 0.16851,
+          "socket": "leftHand",
+          "radius": 0.32,
+          "damage": 19,
+          "push": 0.35,
+          "heavy": false,
+          "launcher": false
+        }
+      ],
+      "chainAt": 0.2448,
+      "cancelAt": 0.2376,
+      "comboOpen": 0.12851,
+      "comboClose": 0.345,
+      "next": "street-light-2",
+      "kind": "light",
+      "sourceFamily": "native",
+      "sourceLabel": "Sightline Mixamo",
+      "provenance": {
+        "animation": "left punch",
+        "nativeId": "backspool-007",
+        "start": 0.2133,
+        "end": 0.6833,
+        "playbackRate": 1.3055555555555556,
+        "sourceDuration": 0.8333333134651184
+      },
+      "support": {
+        "mode": "feet",
+        "plantedSockets": [
+          "leftFoot",
+          "rightFoot"
+        ],
+        "contactStart": 0.14351,
+        "contactEnd": 0.22351,
+        "maxAuthoredHorizontalCorrection": 0.10596872952465874
+      },
+      "movement": {
+        "distance": 0.19,
+        "maxYaw": 3.5
+      },
+      "damage": 19,
+      "reaction": "stagger",
+      "landing": "ground",
+      "sourceFacingYaw": 0,
+      "timingMap": {
+        "sourceStart": 0.2133,
+        "sourceEnd": 0.6833,
+        "playbackRate": 1.3055555555555556,
+        "start": 0,
+        "end": 0.36
+      },
+      "transition": {
+        "entryEnd": 0.055,
+        "exitStart": 0.22351,
+        "exitEnd": 0.2448
+      }
+    },
+    {
+      "id": "street-light-2",
+      "name": "Street Light 2",
+      "state": "street",
+      "version": 3,
+      "clipId": "action-v2-sl-street-light-2",
+      "sourceStart": 0,
+      "sourceEnd": 0.42,
+      "duration": 0.42,
+      "contact": [
+        {
+          "id": "street-light-2-contact",
+          "time": 0.21,
+          "socket": "leftHand",
+          "radius": 0.32,
+          "damage": 19,
+          "push": 0.35,
+          "heavy": false,
+          "launcher": false
+        }
+      ],
+      "chainAt": 0.2856,
+      "cancelAt": 0.2772,
+      "comboOpen": 0.17,
+      "comboClose": 0.405,
+      "next": "street-light-3",
+      "kind": "light",
+      "sourceFamily": "native",
+      "sourceLabel": "Sightline Mixamo",
+      "provenance": {
+        "animation": "hook with lead hand",
+        "nativeId": "backspool-079",
+        "start": 0.2533,
+        "end": 0.8133,
+        "playbackRate": 1.3333333333333335,
+        "sourceDuration": 1.0666667222976685
+      },
+      "support": {
+        "mode": "feet",
+        "plantedSockets": [
+          "leftFoot",
+          "rightFoot"
+        ],
+        "contactStart": 0.185,
+        "contactEnd": 0.265,
+        "maxAuthoredHorizontalCorrection": 0.12
+      },
+      "movement": {
+        "distance": 0.19,
+        "maxYaw": 3.5
+      },
+      "damage": 19,
+      "reaction": "stagger",
+      "landing": "ground",
+      "sourceFacingYaw": 0,
+      "timingMap": {
+        "sourceStart": 0.2533,
+        "sourceEnd": 0.8133,
+        "playbackRate": 1.3333333333333335,
+        "start": 0,
+        "end": 0.42
+      },
+      "transition": {
+        "entryEnd": 0.055,
+        "exitStart": 0.265,
+        "exitEnd": 0.2856
+      }
+    },
+    {
+      "id": "street-light-3",
+      "name": "Street Light 3",
+      "state": "street",
+      "version": 3,
+      "clipId": "action-v2-sl-street-light-3",
+      "sourceStart": 0,
+      "sourceEnd": 0.44,
+      "duration": 0.44,
+      "contact": [
+        {
+          "id": "street-light-3-contact",
+          "time": 0.22,
+          "socket": "leftHand",
+          "radius": 0.32,
+          "damage": 19,
+          "push": 0.35,
+          "heavy": false,
+          "launcher": false
+        }
+      ],
+      "chainAt": 0.2992,
+      "cancelAt": 0.2904,
+      "comboOpen": 0.18,
+      "comboClose": 0.425,
+      "next": "street-light-4",
+      "kind": "light",
+      "sourceFamily": "native",
+      "sourceLabel": "Sightline Mixamo",
+      "provenance": {
+        "animation": "body hook",
+        "nativeId": "backspool-005",
+        "start": 0.2333,
+        "end": 0.8333,
+        "playbackRate": 1.3636363636363633,
+        "sourceDuration": 1.7666666507720947
+      },
+      "support": {
+        "mode": "feet",
+        "plantedSockets": [
+          "leftFoot",
+          "rightFoot"
+        ],
+        "contactStart": 0.195,
+        "contactEnd": 0.275,
+        "maxAuthoredHorizontalCorrection": 0.10025966542474059
+      },
+      "movement": {
+        "distance": 0.19,
+        "maxYaw": 3.5
+      },
+      "damage": 19,
+      "reaction": "stagger",
+      "landing": "ground",
+      "sourceFacingYaw": 0,
+      "timingMap": {
+        "sourceStart": 0.2333,
+        "sourceEnd": 0.8333,
+        "playbackRate": 1.3636363636363633,
+        "start": 0,
+        "end": 0.44
+      },
+      "transition": {
+        "entryEnd": 0.055,
+        "exitStart": 0.275,
+        "exitEnd": 0.2992
+      }
+    },
+    {
+      "id": "street-light-4",
+      "name": "Street Light 4",
+      "state": "street",
+      "version": 3,
+      "clipId": "action-v2-sl-street-light-4",
+      "sourceStart": 0,
+      "sourceEnd": 0.52,
+      "duration": 0.52,
+      "contact": [
+        {
+          "id": "street-light-4-contact",
+          "time": 0.17588,
+          "socket": "rightHand",
+          "radius": 0.32,
+          "damage": 19,
+          "push": 0.35,
+          "heavy": false,
+          "launcher": false
+        }
+      ],
+      "chainAt": 0.3536,
+      "cancelAt": 0.3432,
+      "comboOpen": 0.13588,
+      "comboClose": 0.505,
+      "next": null,
+      "kind": "light",
+      "sourceFamily": "native",
+      "sourceLabel": "Sightline Mixamo",
+      "provenance": {
+        "animation": "heavy uppercut",
+        "nativeId": "backspool-078",
+        "start": 0.0533,
+        "end": 0.7333,
+        "playbackRate": 1.3076923076923077,
+        "sourceDuration": 2.633333444595337
+      },
+      "support": {
+        "mode": "feet",
+        "plantedSockets": [
+          "leftFoot",
+          "rightFoot"
+        ],
+        "contactStart": 0.15088,
+        "contactEnd": 0.23088,
+        "maxAuthoredHorizontalCorrection": 0.1109039171383073
+      },
+      "movement": {
+        "distance": 0.19,
+        "maxYaw": 3.5
+      },
+      "damage": 19,
+      "reaction": "stagger",
+      "landing": "ground",
+      "sourceFacingYaw": 0,
+      "timingMap": {
+        "sourceStart": 0.0533,
+        "sourceEnd": 0.7333,
+        "playbackRate": 1.3076923076923077,
+        "start": 0,
+        "end": 0.52
+      },
+      "transition": {
+        "entryEnd": 0.055,
+        "exitStart": 0.23088,
+        "exitEnd": 0.3536
+      }
+    },
+    {
+      "id": "street-left",
+      "name": "Street Left",
+      "state": "street",
+      "version": 3,
+      "clipId": "action-v2-sl-street-left",
+      "sourceStart": 0,
+      "sourceEnd": 0.5,
+      "duration": 0.5,
+      "contact": [
+        {
+          "id": "street-left-contact",
+          "time": 0.28571,
+          "socket": "rightFoot",
+          "radius": 0.38,
+          "damage": 19,
+          "push": 0.35,
+          "heavy": false,
+          "launcher": false
+        }
+      ],
+      "chainAt": 0.35571,
+      "cancelAt": 0.35071,
+      "comboOpen": 0.24571,
+      "comboClose": 0.485,
+      "next": null,
+      "kind": "direction",
+      "sourceFamily": "native",
+      "sourceLabel": "Sightline Mixamo",
+      "provenance": {
+        "animation": "Mma Kick",
+        "nativeId": "backspool-002",
+        "start": 0.3333,
+        "end": 1.0333,
+        "playbackRate": 1.4,
+        "sourceDuration": 1.6666666269302368
+      },
+      "support": {
+        "mode": "feet",
+        "plantedSockets": [
+          "leftFoot"
+        ],
+        "contactStart": 0.26071,
+        "contactEnd": 0.34071,
+        "maxAuthoredHorizontalCorrection": 0.08125302045037273
+      },
+      "movement": {
+        "distance": 0.19,
+        "maxYaw": 3.5
+      },
+      "damage": 19,
+      "reaction": "stagger",
+      "landing": "ground",
+      "sourceFacingYaw": 0,
+      "timingMap": {
+        "sourceStart": 0.3333,
+        "sourceEnd": 1.0333,
+        "playbackRate": 1.4,
+        "start": 0,
+        "end": 0.5
+      },
+      "transition": {
+        "entryEnd": 0.055,
+        "exitStart": 0.34071,
+        "exitEnd": 0.35571
+      }
+    },
+    {
+      "id": "street-right",
+      "name": "Street Right",
+      "state": "street",
+      "version": 3,
+      "clipId": "action-v2-sl-street-right",
+      "sourceStart": 0,
+      "sourceEnd": 0.48,
+      "duration": 0.48,
+      "contact": [
+        {
+          "id": "street-right-contact",
+          "time": 0.25846,
+          "socket": "rightFoot",
+          "radius": 0.38,
+          "damage": 19,
+          "push": 0.35,
+          "heavy": false,
+          "launcher": false
+        }
+      ],
+      "chainAt": 0.32846,
+      "cancelAt": 0.32346,
+      "comboOpen": 0.21846,
+      "comboClose": 0.465,
+      "next": null,
+      "kind": "direction",
+      "sourceFamily": "native",
+      "sourceLabel": "Sightline Mixamo",
+      "provenance": {
+        "animation": "Side Kick with back foot",
+        "nativeId": "backspool-050",
+        "start": 0.35,
+        "end": 1.0,
+        "playbackRate": 1.3541666666666667,
+        "sourceDuration": 2.0333333015441895
+      },
+      "support": {
+        "mode": "feet",
+        "plantedSockets": [
+          "leftFoot"
+        ],
+        "contactStart": 0.23346,
+        "contactEnd": 0.31346,
+        "maxAuthoredHorizontalCorrection": 0.07037169488508811
+      },
+      "movement": {
+        "distance": 0.19,
+        "maxYaw": 3.5
+      },
+      "damage": 19,
+      "reaction": "stagger",
+      "landing": "ground",
+      "sourceFacingYaw": 0,
+      "timingMap": {
+        "sourceStart": 0.35,
+        "sourceEnd": 1.0,
+        "playbackRate": 1.3541666666666667,
+        "start": 0,
+        "end": 0.48
+      },
+      "transition": {
+        "entryEnd": 0.055,
+        "exitStart": 0.31346,
+        "exitEnd": 0.32846
+      }
+    },
+    {
+      "id": "street-heavy",
+      "name": "Street Heavy",
+      "state": "street",
+      "version": 3,
+      "clipId": "action-v2-sl-street-heavy",
+      "sourceStart": 0,
+      "sourceEnd": 0.7,
+      "duration": 0.7,
+      "contact": [
+        {
+          "id": "street-heavy-contact",
+          "time": 0.25,
+          "socket": "rightFoot",
+          "radius": 0.38,
+          "damage": 31,
+          "push": 2.3,
+          "heavy": true,
+          "launcher": false
+        }
+      ],
+      "chainAt": 0.476,
+      "cancelAt": 0.462,
+      "comboOpen": 0.21,
+      "comboClose": 0.685,
+      "next": null,
+      "kind": "heavy",
+      "sourceFamily": "native",
+      "sourceLabel": "Sightline Mixamo",
+      "provenance": {
+        "animation": "jumping knee followed by punch",
+        "nativeId": "backspool-081",
+        "start": 0.0833,
+        "end": 0.7833,
+        "playbackRate": 1.0,
+        "sourceDuration": 2.6666667461395264
+      },
+      "support": {
+        "mode": "feet",
+        "plantedSockets": [
+          "leftFoot"
+        ],
+        "contactStart": 0.225,
+        "contactEnd": 0.305,
+        "maxAuthoredHorizontalCorrection": 0.10819570494047928
+      },
+      "movement": {
+        "distance": 0.19,
+        "maxYaw": 3.5
+      },
+      "damage": 31,
+      "reaction": "heavy",
+      "landing": "ground",
+      "sourceFacingYaw": 0,
+      "timingMap": {
+        "sourceStart": 0.0833,
+        "sourceEnd": 0.7833,
+        "playbackRate": 1.0,
+        "start": 0,
+        "end": 0.7
+      },
+      "transition": {
+        "entryEnd": 0.055,
+        "exitStart": 0.305,
+        "exitEnd": 0.476
+      }
+    },
+    {
+      "id": "street-launcher",
+      "name": "Street Launcher",
+      "state": "street",
+      "version": 3,
+      "clipId": "action-v2-sl-street-launcher",
+      "sourceStart": 0,
+      "sourceEnd": 0.75,
+      "duration": 0.75,
+      "contact": [
+        {
+          "id": "street-launcher-contact",
+          "time": 0.20783,
+          "socket": "rightHand",
+          "radius": 0.32,
+          "damage": 31,
+          "push": 2.3,
+          "heavy": true,
+          "launcher": true
+        }
+      ],
+      "chainAt": 0.51,
+      "cancelAt": 0.495,
+      "comboOpen": 0.16783,
+      "comboClose": 0.735,
+      "next": null,
+      "kind": "heavy",
+      "sourceFamily": "native",
+      "sourceLabel": "Sightline Mixamo",
+      "provenance": {
+        "animation": "heavy uppercut",
+        "nativeId": "backspool-078",
+        "start": 0.0533,
+        "end": 0.8833,
+        "playbackRate": 1.1066666666666667,
+        "sourceDuration": 2.633333444595337
+      },
+      "support": {
+        "mode": "feet",
+        "plantedSockets": [
+          "leftFoot",
+          "rightFoot"
+        ],
+        "contactStart": 0.18283,
+        "contactEnd": 0.26283,
+        "maxAuthoredHorizontalCorrection": 0.12
+      },
+      "movement": {
+        "distance": 0.19,
+        "maxYaw": 3.5
+      },
+      "damage": 31,
+      "reaction": "launch",
+      "landing": "ground",
+      "sourceFacingYaw": 0,
+      "timingMap": {
+        "sourceStart": 0.0533,
+        "sourceEnd": 0.8833,
+        "playbackRate": 1.1066666666666667,
+        "start": 0,
+        "end": 0.75
+      },
+      "transition": {
+        "entryEnd": 0.055,
+        "exitStart": 0.26283,
+        "exitEnd": 0.51
+      }
+    },
+    {
+      "id": "street-air-light",
+      "name": "Street Air Light",
+      "state": "street",
+      "version": 3,
+      "clipId": "action-v2-sl-street-air-light",
+      "sourceStart": 0,
+      "sourceEnd": 0.4,
+      "duration": 0.4,
+      "contact": [
+        {
+          "id": "street-air-light-contact",
+          "time": 0.21818,
+          "socket": "leftFoot",
+          "radius": 0.38,
+          "damage": 19,
+          "push": 0.35,
+          "heavy": false,
+          "launcher": false
+        }
+      ],
+      "chainAt": 0.28818,
+      "cancelAt": 0.28318,
+      "comboOpen": 0.17818,
+      "comboClose": 0.385,
+      "next": {
+        "light": "street-air-light",
+        "finisher": "street-air-finisher"
+      },
+      "kind": "air",
+      "sourceFamily": "native",
+      "sourceLabel": "Sightline Mixamo",
+      "provenance": {
+        "animation": "Flying Kick",
+        "nativeId": "backspool-027",
+        "start": 0.15,
+        "end": 0.7,
+        "playbackRate": 1.3749999999999998,
+        "sourceDuration": 1.5
+      },
+      "support": {
+        "mode": "air",
+        "plantedSockets": [],
+        "contactStart": 0.19318,
+        "contactEnd": 0.27318
+      },
+      "movement": {
+        "distance": 0.19,
+        "maxYaw": 3.5
+      },
+      "damage": 19,
+      "reaction": "stagger",
+      "landing": "close",
+      "sourceFacingYaw": 0,
+      "timingMap": {
+        "sourceStart": 0.15,
+        "sourceEnd": 0.7,
+        "playbackRate": 1.3749999999999998,
+        "start": 0,
+        "end": 0.4
+      },
+      "transition": {
+        "entryEnd": 0.055,
+        "exitStart": 0.27318,
+        "exitEnd": 0.28818
+      }
+    },
+    {
+      "id": "street-air-finisher",
+      "name": "Street Air Finisher",
+      "state": "street",
+      "version": 3,
+      "clipId": "action-v2-sl-street-air-finisher",
+      "sourceStart": 0,
+      "sourceEnd": 0.7,
+      "duration": 0.7,
+      "contact": [
+        {
+          "id": "street-air-finisher-contact",
+          "time": 0.39375,
+          "socket": "leftHand",
+          "radius": 0.32,
+          "damage": 31,
+          "push": 2.3,
+          "heavy": true,
+          "launcher": false
+        }
+      ],
+      "chainAt": 0.476,
+      "cancelAt": 0.462,
+      "comboOpen": 0.35375,
+      "comboClose": 0.685,
+      "next": null,
+      "kind": "air",
+      "sourceFamily": "native",
+      "sourceLabel": "Sightline Mixamo",
+      "provenance": {
+        "animation": "jumping knee followed by punch",
+        "nativeId": "backspool-081",
+        "start": 0.9,
+        "end": 1.7,
+        "playbackRate": 1.142857142857143,
+        "sourceDuration": 2.6666667461395264
+      },
+      "support": {
+        "mode": "air",
+        "plantedSockets": [],
+        "contactStart": 0.36875,
+        "contactEnd": 0.44875
+      },
+      "movement": {
+        "distance": 0.19,
+        "maxYaw": 3.5
+      },
+      "damage": 31,
+      "reaction": "heavy",
+      "landing": "close",
+      "sourceFacingYaw": 0,
+      "timingMap": {
+        "sourceStart": 0.9,
+        "sourceEnd": 1.7,
+        "playbackRate": 1.142857142857143,
+        "start": 0,
+        "end": 0.7
+      },
+      "transition": {
+        "entryEnd": 0.055,
+        "exitStart": 0.44875,
+        "exitEnd": 0.476
+      }
+    },
+    {
+      "id": "street-counter-1",
+      "name": "Street Counter 1",
+      "state": "street",
+      "version": 3,
+      "clipId": "action-v2-sl-street-counter-1",
+      "sourceStart": 0,
+      "sourceEnd": 0.44,
+      "duration": 0.44,
+      "contact": [
+        {
+          "id": "street-counter-1-contact",
+          "time": 0.22,
+          "socket": "leftHand",
+          "radius": 0.32,
+          "damage": 25,
+          "push": 0.35,
+          "heavy": false,
+          "launcher": false
+        }
+      ],
+      "chainAt": 0.2992,
+      "cancelAt": 0.2904,
+      "comboOpen": 0.18,
+      "comboClose": 0.425,
+      "next": "street-counter-2",
+      "kind": "counter",
+      "sourceFamily": "native",
+      "sourceLabel": "Sightline Mixamo",
+      "provenance": {
+        "animation": "body hook",
+        "nativeId": "backspool-005",
+        "start": 0.2333,
+        "end": 0.8333,
+        "playbackRate": 1.3636363636363633,
+        "sourceDuration": 1.7666666507720947
+      },
+      "support": {
+        "mode": "feet",
+        "plantedSockets": [
+          "leftFoot",
+          "rightFoot"
+        ],
+        "contactStart": 0.195,
+        "contactEnd": 0.275,
+        "maxAuthoredHorizontalCorrection": 0.12
+      },
+      "movement": {
+        "distance": 0.19,
+        "maxYaw": 3.5
+      },
+      "damage": 25,
+      "reaction": "stagger",
+      "landing": "ground",
+      "sourceFacingYaw": 0,
+      "timingMap": {
+        "sourceStart": 0.2333,
+        "sourceEnd": 0.8333,
+        "playbackRate": 1.3636363636363633,
+        "start": 0,
+        "end": 0.44
+      },
+      "transition": {
+        "entryEnd": 0.055,
+        "exitStart": 0.275,
+        "exitEnd": 0.2992
+      }
+    },
+    {
+      "id": "street-counter-2",
+      "name": "Street Counter 2",
+      "state": "street",
+      "version": 3,
+      "clipId": "action-v2-sl-street-counter-2",
+      "sourceStart": 0,
+      "sourceEnd": 0.48,
+      "duration": 0.48,
+      "contact": [
+        {
+          "id": "street-counter-2-contact",
+          "time": 0.17524,
+          "socket": "rightHand",
+          "radius": 0.32,
+          "damage": 25,
+          "push": 0.35,
+          "heavy": false,
+          "launcher": false
+        }
+      ],
+      "chainAt": 0.3264,
+      "cancelAt": 0.3168,
+      "comboOpen": 0.13524,
+      "comboClose": 0.465,
+      "next": null,
+      "kind": "counter",
+      "sourceFamily": "native",
+      "sourceLabel": "Sightline Mixamo",
+      "provenance": {
+        "animation": "heavy uppercut",
+        "nativeId": "backspool-078",
+        "start": 0.0533,
+        "end": 0.6833,
+        "playbackRate": 1.3125,
+        "sourceDuration": 2.633333444595337
+      },
+      "support": {
+        "mode": "feet",
+        "plantedSockets": [
+          "leftFoot",
+          "rightFoot"
+        ],
+        "contactStart": 0.15024,
+        "contactEnd": 0.23024,
+        "maxAuthoredHorizontalCorrection": 0.05940036957816105
+      },
+      "movement": {
+        "distance": 0.19,
+        "maxYaw": 3.5
+      },
+      "damage": 25,
+      "reaction": "stagger",
+      "landing": "ground",
+      "sourceFacingYaw": 0,
+      "timingMap": {
+        "sourceStart": 0.0533,
+        "sourceEnd": 0.6833,
+        "playbackRate": 1.3125,
+        "start": 0,
+        "end": 0.48
+      },
+      "transition": {
+        "entryEnd": 0.055,
+        "exitStart": 0.23024,
+        "exitEnd": 0.3264
+      }
+    }
+  ],
+  "defense": {
+    "street": {
+      "stance": "action-v2-sl-street-stance",
+      "guard": "action-v2-sl-street-guard",
+      "dodge": "action-v2-sl-street-dodge",
+      "reaction": "action-v2-sl-street-reaction",
+      "reaction-head": "action-v2-sl-street-reaction-head",
+      "reaction-body": "action-v2-sl-street-reaction-body"
+    }
+  },
+  "sourceHipsRestY": 0.54476,
+  "hipsPolicy": "horizontal hips centred; height rescaled at load by Sightline idle hips height / sourceHipsRestY",
+  "sourceBoundary": "Backspool's licensed Mixamo combat clips played on Sightline's Mixamo rig; move rules copied from the action-v3 impact style.",
+  "rhythm": "four-hit RT burst; kicks on the stick; knee heavy; high guard on LB",
+  "contactPolicy": "full mesh sole-root normalization; runtime correction cap .12m"
+}
