@@ -43,6 +43,34 @@ Hits 5–8 come from the Backspool-rig retargets in the NSUNSC Motion Library (`
 - **Chosen by review:** every pick was rendered around its strike. Aerial flips (`2kkscmb06`, `2tndcmb07`, `2tndcmb11`) were rejected, because strike grounding would lay a horizontal body on the floor.
 - **Placeholders:** these 12 moves are third-party NSUNSC data. Their provenance says so, and they must be replaced before any public release.
 
+### Themed slots from the NSUNSC Motion Library
+
+Every other slot now comes from the library too, so each style has its own cast:
+- **Flow:** Kakashi, Itachi and Sasuke.
+- **Impact:** Tsunade, Sakura and Lee.
+- **Counter:** Hinata and Neji.
+
+The Mixamo picks stay in the builder as the fallback. Of the 48 moves, 36 now come from the library, and the 12 Mixamo moves are RT hits 1–4.
+
+| Slot | Flow | Impact | Counter |
+|---|---|---|---|
+| Left | Kakashi kick (`2kkscmb01`) | Tsunade kick (`2tndcmb02`) | Hinata palm (`2hntcmb07`) |
+| Right | Sasuke kick (`2sskcmb02`) | Lee kick (`2roccmb02`) | Hinata palm (`2hntcmb05`) |
+| Heavy | Itachi side kick (`2itccmb02`) | Tsunade power punch (`2tndcmb13`) | Hinata palm sequence (`2hntcmb13`) |
+| Launcher | Kakashi rising kick (`2kkscmb15`) | Tsunade rising kick (`2tndcmb06`) | Hinata rising palm (`2hntcmb12`) |
+| Air light | Kakashi air kick (`2kkscma00`) | Lee air kick (`2roccma02`) | Neji air palm (`2nejcma00`) |
+| Air finisher | Kakashi air kick (`2kkscma02`) | Tsunade air smash (`2tndcma02`) | Hinata air palm (`2hntcma01`) |
+| Counter 1 | Kakashi strike (`2kkscmb08`) | Lee kick (`1roccmb06`) | Hinata palm (`2hntcmb16`) |
+| Counter 2 | Sasuke punch (`2sskcmb06`) | Sakura kick (`2skrcmb10`) | Neji palm (`2nejcmb01`) |
+
+**How they were chosen and cut:**
+- **Flips excluded:** ground slots exclude any clip whose hips tilt past 90°.
+- **Launchers:** favour a limb rising into contact.
+- **Air slots:** use the air-combo (`cma`) clips.
+- **Reviewed:** all 24 were rendered around their strikes before use.
+- **Windows:** up to 0.3 s of wind-up and 0.35 s of follow-through (0.5 s for heavy and launcher), played at ×1.2 (×1.1 for heavy and launcher).
+- **Kept from action-v2:** damage, reactions, launch flags, chains and support rules.
+
 **Defence poses:**
 - **Stance:** Action Idle To Fight Idle, or standing idle to fight stance.
 - **Guard:** guard-up side step.
@@ -73,6 +101,17 @@ Hits 5–8 come from the Backspool-rig retargets in the NSUNSC Motion Library (`
 - the 12 retained encounter/replay/discovery cases (`evidence/mixamo-combat-gameplay/`)
 - the stride, vault, air, crouch and 8-hit combat tests
 
+**Themed slot test** (`test_themed_slots.cjs`, virtual pad, all three styles):
+- **Ground slots:** left and right (stick + RT), heavy (D-pad up) and launcher (stick forward + D-pad up) each play their move and connect.
+- **Air light:** jump + RT plays it.
+- **Air finisher:** plays given air time (setup starts 10 m up). A normal jump or launcher chase leaves about 0.77 s in the air, room for one air strike, so in normal play the finisher needs a drop or a long fall.
+- **Counters:** counter 1 and counter 2 play after a perfect guard (LT raised as a sparring strike lands, then RT twice).
+- **Errors:** none on the page.
+
+**Regressions with the themed pack**, on the Sightline melee entry `314f92a2` (`evidence/themed-melee-checks/`):
+- **Passed:** every standard and motion suite, the Sightline, rhythm and themed-slot tests, and the combat build's 8-hit and themed tests.
+- **Crouch:** the crouch test failed once while a second headless browser was running alongside. It passed when rerun alone (`crouch-rerun.log`).
+
 **Comparison:** before the change, the same harness on the crouch build also landed four guarded contacts. The new chain takes about 13 frames longer, because each strike now has a real wind-up.
 
 **Impact screenshots:** `evidence/mixamo-combat/<style>-<move>.png`.
@@ -81,11 +120,10 @@ Hits 5–8 come from the Backspool-rig retargets in the NSUNSC Motion Library (`
 
 - **Feel:** lights take 0.38–0.66 s instead of 0.30–0.46 s, so the chain is slightly slower. An 8-hit chain lasts about 3.5 s, long enough for the practice targets to interrupt it. Chain and cancel windows follow the action-v2 rules and have not been tuned by hand.
 - **Not tested:**
-  - directional, launcher, air and counter moves (only the light chain and heavy are exercised)
   - real enemies in encounters, beyond the retained gameplay suite
 - **Visual review** covers only the impact frames.
 - **Leftover third-party data:**
-  - Hits 5–8 are NSUNSC-derived.
+  - Hits 5–8 and all 24 themed slots are NSUNSC-derived.
   - The action-v2 STORM-derived pack is still in the repository and is used by older builds.
   - The Forspoken traversal clips in this chain still need replacing before release (handoff §12).
 - **Hardware:** nothing has been tested on a physical controller.

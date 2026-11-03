@@ -98,7 +98,30 @@ EXTEND={
  'light-6':('storm-local-2hntcmb09','leftHand',.53,.30,.35,.50),   # Hinata palm strike
  'light-7':('storm-local-2nejcmb02','rightHand',.18,.18,.35,.40),  # Neji palm
  'light-8':('storm-local-2hntcmb04','leftFoot',.30,.28,.50,.62)}}  # Hinata sweep finisher
-LIBRARY_FAMILIES={'2kks','2itc','2ssk','2tnd','2skr','2roc','2hnt','2nej'}
+# Every other slot also comes from the library, themed per style; the Mixamo picks in SPECS
+# stay as the fallback. Flow: Kakashi, Itachi, Sasuke. Impact: Tsunade, Sakura, Lee.
+# Counter: Hinata, Neji. Ground slots exclude clips whose hips tilt past 90 degrees (flips);
+# launchers favour a limb rising into contact; air slots use the air-combo (cma) clips.
+# Window: up to .3 s of wind-up and .35 s follow-through (.5 s for heavy and launcher),
+# played at x1.2 (x1.1 for heavy and launcher). Placeholders, as above.
+# suffix: (library clip id, socket, approximate strike s)
+THEMED={
+'flow':{
+ 'left':('storm-local-2kkscmb01','leftFoot',.38),'right':('storm-local-2sskcmb02','rightFoot',.37),
+ 'heavy':('storm-local-2itccmb02','rightFoot',.33),'launcher':('storm-local-2kkscmb15','leftFoot',.27),
+ 'air-light':('storm-local-2kkscma00','rightFoot',.13),'air-finisher':('storm-local-2kkscma02','rightFoot',.23),
+ 'counter-1':('storm-local-2kkscmb08','leftHand',.47),'counter-2':('storm-local-2sskcmb06','rightHand',.30)},
+'impact':{
+ 'left':('storm-local-2tndcmb02','rightFoot',.30),'right':('storm-local-2roccmb02','rightFoot',.27),
+ 'heavy':('storm-local-2tndcmb13','rightHand',.63),'launcher':('storm-local-2tndcmb06','leftFoot',.20),
+ 'air-light':('storm-local-2roccma02','leftFoot',.37),'air-finisher':('storm-local-2tndcma02','leftHand',.33),
+ 'counter-1':('storm-local-1roccmb06','leftFoot',.65),'counter-2':('storm-local-2skrcmb10','leftFoot',.62)},
+'counter':{
+ 'left':('storm-local-2hntcmb07','rightHand',.43),'right':('storm-local-2hntcmb05','rightHand',.33),
+ 'heavy':('storm-local-2hntcmb13','leftHand',.30),'launcher':('storm-local-2hntcmb12','leftHand',.27),
+ 'air-light':('storm-local-2nejcma00','leftHand',.15),'air-finisher':('storm-local-2hntcma01','leftHand',.13),
+ 'counter-1':('storm-local-2hntcmb16','rightHand',.32),'counter-2':('storm-local-2nejcmb01','rightHand',.13)}}
+LIBRARY_FAMILIES={'1roc','2kks','2itc','2ssk','2tnd','2skr','2roc','2hnt','2nej'}
 # role: (native clip, start, end, duration). Stances end in the fight stance the pose hold samples.
 DEFENSE={
  'flow':{'stance':('Action Idle To Fight Idle',.55,1.0,.45),'guard':('defence guard up side step to the left',0,.6,.60),'dodge':('Standing Dodge Backward',.1,.7,.48)},
@@ -124,10 +147,16 @@ def build():
  for state,specs in SPECS.items():
   smoves=[]
   for suffix,spec in specs.items():
-   name,socket,approx,pre,post,duration=spec[:6]
-   moveid=state+'-'+suffix;base=old[moveid];entry=native[name]
-   hit=peak(reach[name]['rows'],socket,approx);start=max(0,hit-pre);end=min(entry['clip']['duration'],hit+post)
+   moveid=state+'-'+suffix;base=old[moveid];themed=THEMED.get(state,{}).get(suffix)
+   if themed:
+    clipid,socket,approx=themed;entry=library[clipid];hit=peak(storm[clipid]['rows'],socket,approx)
+    strong=base['kind']=='heavy';start=max(0,hit-.3);end=min(entry['clip']['duration'],hit+(.5 if strong else .35))
+    duration=round((end-start)/(1.1 if strong else 1.2),4)
+   else:
+    name,socket,approx,pre,post,duration=spec[:6];entry=native[name]
+    hit=peak(reach[name]['rows'],socket,approx);start=max(0,hit-pre);end=min(entry['clip']['duration'],hit+post)
    seg=crop(entry,'action-v2-mx-'+moveid,start,end,duration);rate=seg['provenance']['playbackRate'];ct=round((hit-start)/rate,5)
+   if themed:seg['provenance']={**seg['provenance'],'library':'NSUNSC Motion Library','character':entry.get('characterLabel'),'placeholder':'third-party; replace before public release'}
    assert .01<ct<duration-.06,(moveid,ct,duration)
    # Same window rules as action-v2, applied to the new contact time.
    contact=[{**base['contact'][0],'time':ct,'socket':socket,'radius':.32 if 'Hand' in socket else .38}]
@@ -135,7 +164,7 @@ def build():
    support={**base['support'],'plantedSockets':planted,'contactStart':round(max(0,ct-.025),5),'contactEnd':round(ct+.055,5)}
    move={**base,'clipId':seg['id'],'sourceStart':0,'sourceEnd':duration,'duration':duration,'contact':contact,
     'chainAt':round(max(ct+.07,duration*.68),5),'cancelAt':round(max(ct+.065,duration*.66),5),'comboOpen':round(max(0,ct-.04),5),'comboClose':round(duration-.015,5),
-    'sourceFamily':'native','sourceLabel':'Backspool Mixamo','provenance':seg['provenance'],'support':support,'sourceFacingYaw':0,
+    'sourceFamily':entry.get('character') if themed else 'native','sourceLabel':entry.get('characterLabel') if themed else 'Backspool Mixamo','provenance':seg['provenance'],'support':support,'sourceFacingYaw':0,
     'timingMap':{'sourceStart':seg['provenance']['start'],'sourceEnd':seg['provenance']['end'],'playbackRate':rate,'start':0,'end':duration},
     'transition':{'entryEnd':round(min(.055,ct*.6),5),'exitStart':round(ct+.055,5),'exitEnd':round(max(ct+.07,duration*.68),5)},'version':3}
    seg['moveId']=moveid;seg['combatRole']='air' if base['kind']=='air' else 'ground';seg['support']={'mode':base['support']['mode']};seg['contactPolicy']='authored-sole-root-v2';pack.append(seg);moves.append(move);smoves.append(move)
@@ -169,7 +198,7 @@ def build():
   rid=v2['defense'][state]['reaction'];pack.append(old_pack[rid]);states[state]['reaction']=rid;defense[state]['reaction']=rid
  manifest={**v2,'version':3,'animationPack':'assets/backspool/action-v3-gameplay.json.gz','states':states,'moves':moves,'defense':defense,
   'sourceBoundary':"Backspool's own licensed Mixamo combat clips. Move ids, chains, damage and cancel rules are the authored action-v2 rules; contact times are measured limb peaks.",
-  'createdFrom':{'source':'assets/backspool/animations-web.json.gz','reach':'assets/backspool/action-v3-reach.json','chainExtensions':{'source':'assets/motion-library/<family>.json.gz','reach':'assets/backspool/action-v3-storm-reach.json.gz','moves':sum(len(v) for v in EXTEND.values()),'placeholder':'NSUNSC-derived; replace before public release'},'moves':len(moves),'replaces':'action-v2 STORM-derived segments'}}
+  'createdFrom':{'source':'assets/backspool/animations-web.json.gz','reach':'assets/backspool/action-v3-reach.json','chainExtensions':{'source':'assets/motion-library/<family>.json.gz','reach':'assets/backspool/action-v3-storm-reach.json.gz','moves':sum(len(v) for v in EXTEND.values()),'placeholder':'NSUNSC-derived; replace before public release'},'themedSlots':{'source':'assets/motion-library/<family>.json.gz','moves':sum(len(v) for v in THEMED.values()),'placeholder':'NSUNSC-derived; replace before public release'},'moves':len(moves),'replaces':'action-v2 STORM-derived segments'}}
  (ASSETS/'action-v3-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');gzwrite(ASSETS/'action-v3-gameplay.json.gz',pack)
  print('authored',len(moves),'moves and',len(pack),'gameplay clips from',len({p['provenance']['animation'] for p in pack if 'provenance' in p}),'native clips')
 if __name__=='__main__':build()
