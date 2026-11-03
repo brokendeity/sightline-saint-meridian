@@ -1,0 +1,1 @@
+First top-recovery assertion rejected the original floor impact as if it were a civilian impact. Exact trace confirms zero health loss and grounded recovery at y24.42. Corrected test must retain ordinary floor impact/debris, and prove any added impact happens at floor contact rather than against the friendly body. This is not a runtime fix or a removed collision requirement.

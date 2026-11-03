@@ -1,0 +1,6 @@
+const{openMarket,D}=require('./market_test_helpers.cjs'),{saveEvidence}=require('./evidence_io.cjs');
+const report={status:'PROBE',scope:'Current native40simulation seconds, fixed hero fixture at ground away from market; read-only blocker identification. No civilian/clock/route writes.'};
+(async()=>{let h;try{h=await openMarket(report);await h.p.evaluate(()=>{resetPlayer();clearInput();clearPad();startGame(false);s.pos.set(0,.42,8);s.vel.set(0,0,0);s.onGround=true;setMode(P.GROUND);marketPad.axes=[0,0,0,0];});for(let i=0;i<40;i++)await h.step(60);report.blockers=await h.p.evaluate(()=>{
+ const visitors=verticalWorldLifeState().people.filter(p=>p.route==='market-visitors'),residents=verticalMarketState().civilians,actors=v02FriendlyContactState().actors;
+ return visitors.map(v=>({visitor:v,residents:residents.map(r=>({...r,gap:Math.hypot(r.position[0]-v.position[0],r.position[2]-v.position[2])})),nearBodies:actors.filter(a=>Math.abs(a.position[1]-v.position[1])<.4&&Math.hypot(a.position[0]-v.position[0],a.position[2]-v.position[2])<2)}));
+ });console.log(JSON.stringify(report.blockers));report.status='PROBE complete';}catch(e){report.status='FAIL';report.failure=String(e);process.exitCode=1;}finally{await h?.browser.close();saveEvidence(D,'V02_Friendly_Market_Queue_Probe.json',report);}})();

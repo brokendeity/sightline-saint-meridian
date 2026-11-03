@@ -1,0 +1,120 @@
+{
+  "status": "PASS source-painted parameters and all310native non-reflectance geometry/material/transform/compound invariants; actual A/B comparison captured, final art and gameplay gates pending",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_PAINTED_CLADDING_STUDY.html",
+  "entrySHA256": "31c507af8ebe2eb15e4d8c5b62043e687067484027dc39ae2ee52e4ada63af1f",
+  "masterSHA256": "52702f6cb5423097a7ca07aea1aa9eb1d4677f9b2cf1615f83da810b99c6cf3b",
+  "contractSHA256": "571156d4d0c3119d4e084ee40cef7c47e3bccb15d71d212da81de7ffc5b68421",
+  "testSHA256": "8ce762dd175b5f6ec377186f7e77711a1a9b631536ff3aa81a68de487f714ab1",
+  "scope": "Source-painted reflectance admission and fixed native A/B views only; no full source render, gameplay/destruction/performance or final reference acceptance.",
+  "captures": [
+    {
+      "phase": "before",
+      "id": "A",
+      "file": "development/vertical-city-v02/evidence/painted-cladding-study/before-A.png",
+      "sha256": "96aab5c7ce7e61a6943ec85f37512208992049379b3fc7cf48f08791282b239a",
+      "calls": 1,
+      "triangles": 2
+    },
+    {
+      "phase": "before",
+      "id": "B",
+      "file": "development/vertical-city-v02/evidence/painted-cladding-study/before-B.png",
+      "sha256": "697088bce27179ca07060cb0b25164b7ae7560f77f23481464635313a6a8eb48",
+      "calls": 1,
+      "triangles": 2
+    },
+    {
+      "phase": "after",
+      "id": "A",
+      "file": "development/vertical-city-v02/evidence/painted-cladding-study/after-A.png",
+      "sha256": "c7517d516355cdc6309a626660f8ffbd23ba60ee9b96d504aef449ba03e14049",
+      "calls": 1,
+      "triangles": 2
+    },
+    {
+      "phase": "after",
+      "id": "B",
+      "file": "development/vertical-city-v02/evidence/painted-cladding-study/after-B.png",
+      "sha256": "f7e1a7ea1497fe072143a3433f1a2279eff755ad72cc0fa2e78f903fb15d86b2",
+      "calls": 1,
+      "triangles": 2
+    }
+  ],
+  "errors": [],
+  "state": {
+    "ready": true,
+    "loading": false,
+    "error": null,
+    "geometryClones": 6,
+    "vertices": 63468,
+    "owners": [
+      {
+        "sourceIndex": 141,
+        "cityBuildingId": 141,
+        "sourceMaterials": [
+          "V02_PBR_building-141_0",
+          "V02_PBR_building-141_2",
+          "V02_PBR_building-141_5"
+        ]
+      },
+      {
+        "sourceIndex": 160,
+        "cityBuildingId": 160,
+        "sourceMaterials": [
+          "V02_PBR_building-160_0",
+          "V02_PBR_building-160_2",
+          "V02_PBR_building-160_5"
+        ]
+      },
+      {
+        "sourceIndex": 162,
+        "cityBuildingId": 162,
+        "sourceMaterials": [
+          "V02_PBR_building-162_0",
+          "V02_PBR_building-162_1",
+          "V02_PBR_building-162_3"
+        ]
+      }
+    ],
+    "newDynamicLights": 0,
+    "sourceMasterSHA256": "52702f6cb5423097a7ca07aea1aa9eb1d4677f9b2cf1615f83da810b99c6cf3b"
+  },
+  "parameters": [
+    {
+      "index": 141,
+      "part": "full",
+      "vertices": 18888,
+      "edited": 14136
+    },
+    {
+      "index": 141,
+      "part": "lod",
+      "vertices": 8076,
+      "edited": 5160
+    },
+    {
+      "index": 160,
+      "part": "full",
+      "vertices": 30756,
+      "edited": 18984
+    },
+    {
+      "index": 160,
+      "part": "lod",
+      "vertices": 5568,
+      "edited": 2508
+    },
+    {
+      "index": 162,
+      "part": "full",
+      "vertices": 18324,
+      "edited": 14988
+    },
+    {
+      "index": 162,
+      "part": "lod",
+      "vertices": 9264,
+      "edited": 7692
+    }
+  ]
+}

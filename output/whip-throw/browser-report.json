@@ -1,0 +1,100 @@
+{
+  "traces": [
+    {
+      "release": {
+        "id": 2,
+        "time": 0.8866666666666678,
+        "type": "release",
+        "index": 0,
+        "handIndex": 0,
+        "throwId": "1:0",
+        "sourceAnimationId": "0x2811be99",
+        "position": {
+          "x": -47.47433695200101,
+          "y": 1.7505453091140524,
+          "z": 85.32490684028495
+        }
+      },
+      "pose": {
+        "throwId": "1:0",
+        "hand": "right",
+        "sourceAnimationId": "0x2811be99",
+        "originalMotionName": "pkr_mgc_grab_short_f000a",
+        "authoredMirror": false,
+        "sourceTime": 0.3,
+        "weight": 1,
+        "phase": "follow-through",
+        "releaseSourceTime": 0.3
+      },
+      "palm": [
+        -47.47433695200101,
+        1.7505453091140524,
+        85.32490684028495
+      ]
+    },
+    {
+      "release": {
+        "id": 7,
+        "time": 1.8566666666666656,
+        "type": "release",
+        "index": 0,
+        "handIndex": 1,
+        "throwId": "2:0",
+        "sourceAnimationId": "0x2811be99",
+        "position": {
+          "x": -48.213721270610165,
+          "y": 1.7544073366883735,
+          "z": 85.16942321467691
+        }
+      },
+      "pose": {
+        "throwId": "2:0",
+        "hand": "left",
+        "sourceAnimationId": "0x2811be99",
+        "originalMotionName": "pkr_mgc_grab_short_f000a",
+        "authoredMirror": true,
+        "sourceTime": 0.3,
+        "weight": 1,
+        "phase": "follow-through",
+        "releaseSourceTime": 0.3
+      },
+      "palm": [
+        -48.213721270610165,
+        1.7544073366883735,
+        85.16942321467691
+      ]
+    }
+  ],
+  "base": {
+    "pos": [
+      -48,
+      0.42,
+      86
+    ],
+    "legs": [
+      [
+        0.04964935779571533,
+        -0.028041958808898926,
+        0.004832176491618156
+      ],
+      [
+        -0.04964935779571533,
+        -0.028041958808898926,
+        0.0051602330058813095
+      ]
+    ]
+  },
+  "errors": [],
+  "checks": [
+    "actual keyboard precision A/B",
+    "source forward-extension marker",
+    "same-frame palm release",
+    "mirrored B",
+    "physical wall impacts",
+    "rail only after tension",
+    "recovery restore",
+    "zero movement conflicts",
+    "pause during windup",
+    "hero switch"
+  ]
+}

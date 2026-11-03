@@ -1,0 +1,30 @@
+# Blender 5.1.2, Commit date: 2026-05-18 13:43, Hash ec6e62d40fa9
+
+# backtrace
+0   Blender                             0x00000001034b2a84 _ZN7blender33BLI_system_backtrace_with_os_infoEP7__sFILEPKv + 56
+1   Blender                             0x0000000102ba6840 _ZN7blenderL19sig_handle_crash_fnEi + 264
+2   libsystem_platform.dylib            0x0000000181f4d744 _sigtramp + 56
+3   Blender                             0x000000010339cf98 _ZN7blender11array_utils4copyERKNS_7GVArrayENS_12GMutableSpanEx + 220
+4   Blender                             0x0000000102bfc16c _ZN7blender3bke9Attribute14data_for_writeEv + 168
+5   Blender                             0x0000000103dd6bb0 _ZN7blender24rna_Attribute_data_beginEPNS_26CollectionPropertyIteratorEPNS_10PointerRNAE + 136
+6   Blender                             0x0000000103f275f4 _ZN7blender26MeshUVLoopLayer_data_beginEPNS_26CollectionPropertyIteratorEPNS_10PointerRNAE + 256
+7   Blender                             0x0000000103d5a7d8 _ZN7blender29RNA_property_collection_beginEPNS_10PointerRNAEPNS_11PropertyRNAEPNS_26CollectionPropertyIteratorE + 360
+8   Blender                             0x00000001043ab6d8 _ZN7blenderL31pyrna_prop_collection_iter_initEP7_objectS1_S1_ + 512
+9   Blender                             0x00000001078a721c type_call + 432
+10  Blender                             0x0000000107820158 _PyObject_MakeTpCall + 300
+11  Blender                             0x0000000107820d04 PyObject_CallOneArg + 212
+12  Blender                             0x00000001043a01fc _ZN7blenderL26pyrna_prop_collection_iterEP7_object + 76
+13  Blender                             0x0000000107809b40 PyObject_GetIter + 32
+14  Blender                             0x00000001079523e0 _PyEval_EvalFrameDefault + 26464
+15  Blender                             0x000000010794b748 PyEval_EvalCode + 252
+16  Blender                             0x00000001079b883c run_eval_code_obj + 180
+17  Blender                             0x00000001079b84f0 run_mod + 328
+18  Blender                             0x00000001079b7908 PyRun_FileExFlags + 176
+19  Blender                             0x000000010438da04 _ZN7blenderL18python_script_execEPNS_8bContextEPKcPNS_4TextEPNS_10ReportListEb + 472
+20  Blender                             0x0000000102ba4c64 _ZN7blenderL26arg_handle_python_file_runEiPPKcPv + 256
+21  Blender                             0x00000001034bd808 _ZN7blender14BLI_args_parseEPNS_5bArgsEiPFiiPPKcPvES5_ + 188
+22  Blender                             0x0000000102ba1304 main + 932
+23  dyld                                0x0000000181b784e4 start + 6992
+
+# Python backtrace
+  File "/Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/blender_indirect_pilot.py", line 29 in <module>

@@ -1,0 +1,247 @@
+{
+  "status": "FAIL source room lighting",
+  "sourceMaster": "development/vertical-city-v02/blender/SaintMeridian_V02_East_Public_Loggias.blend",
+  "sourceMasterSHA256": "73dea6311c343e00a8621e39535d1e773b8507651f1677302ece94d28e2bcf59",
+  "scriptSHA256": "3395409613f0b7259e613da21ab8233fbe8f6a620edd36cd5904431d0327363f",
+  "stages": [
+    {
+      "name": "baking full source diffuse",
+      "wallSeconds": 8.273725542239845,
+      "floor": 24,
+      "resolution": [
+        512,
+        512
+      ],
+      "samples": 512,
+      "sourceObjects": 27,
+      "globalLightsChanged": false
+    },
+    {
+      "name": "source diffuse atlas packed",
+      "wallSeconds": 79.66274124989286,
+      "floor": 24,
+      "coveredPixels": 21523,
+      "litPixels": 31111
+    },
+    {
+      "name": "baking full source diffuse",
+      "wallSeconds": 82.2322054579854,
+      "floor": 52,
+      "resolution": [
+        512,
+        512
+      ],
+      "samples": 512,
+      "sourceObjects": 27,
+      "globalLightsChanged": false
+    },
+    {
+      "name": "source diffuse atlas packed",
+      "wallSeconds": 155.10354233300313,
+      "floor": 52,
+      "coveredPixels": 21523,
+      "litPixels": 31065
+    },
+    {
+      "name": "baking full source diffuse",
+      "wallSeconds": 157.69791324995458,
+      "floor": 84,
+      "resolution": [
+        512,
+        512
+      ],
+      "samples": 512,
+      "sourceObjects": 27,
+      "globalLightsChanged": false
+    },
+    {
+      "name": "source diffuse atlas packed",
+      "wallSeconds": 231.67618020810187,
+      "floor": 84,
+      "coveredPixels": 21523,
+      "litPixels": 32833
+    }
+  ],
+  "rooms": [
+    {
+      "floor": 24,
+      "chunk": "east-public-room-24",
+      "sourceIDs": [
+        "east-loggia-24-room-floor",
+        "east-loggia-24-bridge-floor",
+        "east-loggia-24-bridge-edge-308.46",
+        "east-loggia-24-bridge-edge-308.46-cap",
+        "east-loggia-24-bridge-edge-311.54",
+        "east-loggia-24-bridge-edge-311.54-cap",
+        "east-loggia-24-roof",
+        "east-loggia-24-back",
+        "east-loggia-24-side-glazing-306.05",
+        "east-loggia-24-side-glazing-313.95",
+        "east-loggia-24-front-glazing-307.3",
+        "east-loggia-24-front-glazing-312.7",
+        "east-loggia-24-canopy-post-100.85-306.15",
+        "east-loggia-24-canopy-post-100.85-313.85",
+        "east-loggia-24-canopy-post-104.1-306.15",
+        "east-loggia-24-canopy-post-104.1-313.85",
+        "east-loggia-24-floor-girder-306.8",
+        "east-loggia-24-floor-girder-313.2",
+        "east-loggia-24-bench-307.4",
+        "east-loggia-24-bench-312.6",
+        "east-loggia-24-planter-306.7",
+        "east-loggia-24-foliage-306.7",
+        "east-loggia-24-planter-313.3",
+        "east-loggia-24-foliage-313.3",
+        "east-loggia-24-warm-ceiling-306.6",
+        "east-loggia-24-warm-ceiling-313.4",
+        "east-loggia-24-canopy-cyan"
+      ],
+      "atlas": {
+        "url": "assets/city/vertical-v02/east-public-lighting/room-24-diffuse.rgba16f.gz",
+        "sha256": "6db97e4b2da5ea8a0d90f61dbfd23d2aa79040fca284d8ca231b3d50c53b07eb",
+        "rawSHA256": "abf33ee2ed983afb0eac44ac6e5bf959b7bc8f2fbdcec1e686507c1c3d6abe08",
+        "rawBytes": 2097152,
+        "bytes": 212570,
+        "width": 512,
+        "height": 512,
+        "sourceImage": "V02 east room 24 source diffuse atlas",
+        "sourceEXR": "development/vertical-city-v02/evidence/east-public-lighting/room-24-diffuse.exr",
+        "sourceEXRSHA256": "9713eae0c186e8df78b01f5bb55e2653191fa62aa31ee386c646a2c952224d9c",
+        "samples": 512,
+        "coveredPixels": 21523,
+        "litPixels": 31111,
+        "maxRGB": 7.93359375,
+        "format": "scene-linear uncolored full direct+indirect diffuse, little-endian RGBA16F, top row first",
+        "uv": "glTF TEXCOORD_1 with texture.flipY=false"
+      }
+    },
+    {
+      "floor": 52,
+      "chunk": "east-public-room-52",
+      "sourceIDs": [
+        "east-loggia-52-room-floor",
+        "east-loggia-52-bridge-floor",
+        "east-loggia-52-bridge-edge-308.46",
+        "east-loggia-52-bridge-edge-308.46-cap",
+        "east-loggia-52-bridge-edge-311.54",
+        "east-loggia-52-bridge-edge-311.54-cap",
+        "east-loggia-52-roof",
+        "east-loggia-52-back",
+        "east-loggia-52-side-glazing-306.05",
+        "east-loggia-52-side-glazing-313.95",
+        "east-loggia-52-front-glazing-307.3",
+        "east-loggia-52-front-glazing-312.7",
+        "east-loggia-52-canopy-post-100.85-306.15",
+        "east-loggia-52-canopy-post-100.85-313.85",
+        "east-loggia-52-canopy-post-104.1-306.15",
+        "east-loggia-52-canopy-post-104.1-313.85",
+        "east-loggia-52-floor-girder-306.8",
+        "east-loggia-52-floor-girder-313.2",
+        "east-loggia-52-bench-307.4",
+        "east-loggia-52-bench-312.6",
+        "east-loggia-52-planter-306.7",
+        "east-loggia-52-foliage-306.7",
+        "east-loggia-52-planter-313.3",
+        "east-loggia-52-foliage-313.3",
+        "east-loggia-52-warm-ceiling-306.6",
+        "east-loggia-52-warm-ceiling-313.4",
+        "east-loggia-52-canopy-cyan"
+      ],
+      "atlas": {
+        "url": "assets/city/vertical-v02/east-public-lighting/room-52-diffuse.rgba16f.gz",
+        "sha256": "a97c4c6d3b4204c6c7a5f4639c9aea61b929e4e2d0ac568ecc560a5501b450ee",
+        "rawSHA256": "af7aca9d536c89a0fd201d46d5b4111f40ac378f3a5ec5555328fdb7563ca0a8",
+        "rawBytes": 2097152,
+        "bytes": 212416,
+        "width": 512,
+        "height": 512,
+        "sourceImage": "V02 east room 52 source diffuse atlas",
+        "sourceEXR": "development/vertical-city-v02/evidence/east-public-lighting/room-52-diffuse.exr",
+        "sourceEXRSHA256": "fab0001d790b99b0615f529ccdac8c6245699d33e3760256b1950f68cf0bb078",
+        "samples": 512,
+        "coveredPixels": 21523,
+        "litPixels": 31065,
+        "maxRGB": 8.046875,
+        "format": "scene-linear uncolored full direct+indirect diffuse, little-endian RGBA16F, top row first",
+        "uv": "glTF TEXCOORD_1 with texture.flipY=false"
+      }
+    },
+    {
+      "floor": 84,
+      "chunk": "east-public-room-84",
+      "sourceIDs": [
+        "east-loggia-84-room-floor",
+        "east-loggia-84-bridge-floor",
+        "east-loggia-84-bridge-edge-308.46",
+        "east-loggia-84-bridge-edge-308.46-cap",
+        "east-loggia-84-bridge-edge-311.54",
+        "east-loggia-84-bridge-edge-311.54-cap",
+        "east-loggia-84-roof",
+        "east-loggia-84-back",
+        "east-loggia-84-side-glazing-306.05",
+        "east-loggia-84-side-glazing-313.95",
+        "east-loggia-84-front-glazing-307.3",
+        "east-loggia-84-front-glazing-312.7",
+        "east-loggia-84-canopy-post-100.85-306.15",
+        "east-loggia-84-canopy-post-100.85-313.85",
+        "east-loggia-84-canopy-post-104.1-306.15",
+        "east-loggia-84-canopy-post-104.1-313.85",
+        "east-loggia-84-floor-girder-306.8",
+        "east-loggia-84-floor-girder-313.2",
+        "east-loggia-84-bench-307.4",
+        "east-loggia-84-bench-312.6",
+        "east-loggia-84-planter-306.7",
+        "east-loggia-84-foliage-306.7",
+        "east-loggia-84-planter-313.3",
+        "east-loggia-84-foliage-313.3",
+        "east-loggia-84-warm-ceiling-306.6",
+        "east-loggia-84-warm-ceiling-313.4",
+        "east-loggia-84-canopy-cyan"
+      ],
+      "atlas": {
+        "url": "assets/city/vertical-v02/east-public-lighting/room-84-diffuse.rgba16f.gz",
+        "sha256": "8e2a69db2ffef1cc05b89334969f908d16ebb288885eca23688e3458886d2151",
+        "rawSHA256": "99ee1706de3424177ceed608e2f73ec01d4df018210dff9b0324ee4b6bc7a0f3",
+        "rawBytes": 2097152,
+        "bytes": 220017,
+        "width": 512,
+        "height": 512,
+        "sourceImage": "V02 east room 84 source diffuse atlas",
+        "sourceEXR": "development/vertical-city-v02/evidence/east-public-lighting/room-84-diffuse.exr",
+        "sourceEXRSHA256": "d4be6f5f38dffdb1fc58890197dcc40ecb6d3f0ff84fd5406a2e1795dc572ad0",
+        "samples": 512,
+        "coveredPixels": 21523,
+        "litPixels": 32833,
+        "maxRGB": 8.296875,
+        "format": "scene-linear uncolored full direct+indirect diffuse, little-endian RGBA16F, top row first",
+        "uv": "glTF TEXCOORD_1 with texture.flipY=false"
+      }
+    }
+  ],
+  "exports": [
+    {
+      "id": "east-public-room-24",
+      "url": "assets/city/vertical-v02/east-public-lighting/east-public-room-24-uv2.glb",
+      "sha256": "0bb1d111f1a89823f681795a68b39f99b680a7ba771f57a8a17113e94e15f07f",
+      "bytes": 679688,
+      "primitives": 38
+    },
+    {
+      "id": "east-public-room-52",
+      "url": "assets/city/vertical-v02/east-public-lighting/east-public-room-52-uv2.glb",
+      "sha256": "f6d0768632254a67d14f27da451d317a76978c46595df93ebf28845c1630dc83",
+      "bytes": 679676,
+      "primitives": 38
+    },
+    {
+      "id": "east-public-room-84",
+      "url": "assets/city/vertical-v02/east-public-lighting/east-public-room-84-uv2.glb",
+      "sha256": "f0c156ff9111225d804421334f8b77723df3081e19013315002c5d4d7c0bc538",
+      "bytes": 679668,
+      "primitives": 38
+    }
+  ],
+  "newDynamicLights": 0,
+  "scope": "Source-only UV2, physical diffuse atlases and room-local reflection probes.\n\nThe room source remains immutable. Only UV2 and explicit image-reference\nproperties are added in a new master. No geometry, base UV, original material,\ncontact, actor, power or global-light changes are made.",
+  "stage": "source diffuse atlas packed",
+  "error": ""
+}

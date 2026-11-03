@@ -1,0 +1,645 @@
+{
+  "status": "REJECTED0310: visitor queue regression and portrait actor occlusion; retained before new implementation",
+  "files": [
+    {
+      "path": "SIGHTLINE_SAINT_MERIDIAN_V02_FRIENDLY_CONTACTS.html",
+      "sha256": "0310d54a36a6abe7f47178a15ef125fc6962d229616627e7daf31e4c5269e14c",
+      "bytes": 1619765
+    },
+    {
+      "path": "assets/city/vertical-v02/furnished-public-rooms/runtime/manifest.json",
+      "sha256": "d5ecc2e184a9f31f46eff3495cd8aec6387a4614e0bfea92e9ccb493de1514d6",
+      "bytes": 13579365
+    },
+    {
+      "path": "development/vertical-city-v02/V02_Friendly_Contacts_Build.json",
+      "sha256": "bb92ffa1d85041eca1b2db17df6d95089246f14c7e7841390f03532591cd30f6",
+      "bytes": 8155
+    },
+    {
+      "path": "development/vertical-city-v02/V02_Friendly_Contacts_Checks.json",
+      "sha256": "cad6f8ad2923883668f06f75bda18dea21c1b53749ff77064cb02589995b767d",
+      "bytes": 10737
+    },
+    {
+      "path": "development/vertical-city-v02/V02_Friendly_Contacts_Life.json",
+      "sha256": "c6a23d0a290a40c536fd11040239cc34c74620458354c1d92cc8ff20eac936bf",
+      "bytes": 82670
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contact-baseline/V02_Friendly_Contact_Probe.json",
+      "sha256": "2ac8fb67c03bfdd2ef99bb189f1ae37ea9d63e174cbf6f4ce38bd8f095be76b6",
+      "bytes": 276717
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contact-baseline/V02_Friendly_Contact_Probe.trace.json.gz",
+      "sha256": "534802c340b6985a28c97b6914f13fc924baa6e2bbba11eb229de71b445c8d36",
+      "bytes": 39834
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contact-baseline/evidence/market-fixed-resident-body.png",
+      "sha256": "0d3eb8f2927a5a5268195a0e680491ccaded5691eab9d46643957061cf6b9aa8",
+      "bytes": 758080
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contact-baseline/evidence/market-street-pedestrian-body.png",
+      "sha256": "bdd5266b79ff7af640ecf00ca903c4324a9b3f497f5f0311c9285ad6b54c05e2",
+      "bytes": 1016064
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contact-current/V02_Friendly_Contact_Probe.json",
+      "sha256": "f26531a3b1018c3ccf77333f8d643cd0a32eacd9fca5cda84e6a23a2893bc551",
+      "bytes": 7239241
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contact-current/V02_Friendly_Contact_Probe.trace.json.gz",
+      "sha256": "72b0226219fb090ff75dfa309073e9ed68d712415f24ef6cd4045e393328f434",
+      "bytes": 233952
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contact-current/evidence/market-fixed-resident-body.png",
+      "sha256": "67cce51714c3030400626ff10d74107a1e395637b2e775df90752ee108c39988",
+      "bytes": 717860
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contact-current/evidence/market-street-pedestrian-body.png",
+      "sha256": "e261cec3034da7a9c61cc4a3b7a29089c6de1444743735bdbdbb5a69d24d52b1",
+      "bytes": 1054357
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contact-first/README.md",
+      "sha256": "9af8cf6516629757050c5f648b0af67ffe3025ffa1efa25901d86c7ec8fd2b65",
+      "bytes": 496
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contact-first/V02_Friendly_Contact_Probe.json",
+      "sha256": "f9a9edabd4a3b3da1df94c76de0f865c0e3d37fe991509103297691fb7103b24",
+      "bytes": 3220314
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contact-first/V02_Friendly_Contact_Probe.trace.json.gz",
+      "sha256": "c113b24426eb63aa28f0467826f89389c1d34cb384aa6e9dd6e5a68af83c7945",
+      "bytes": 109748
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contact-first/evidence/market-fixed-resident-body.png",
+      "sha256": "ceb68c003170d8033ff4d2dcc6d7b700dd91281285c5093cdecdc8fb75f9a998",
+      "bytes": 721420
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contact-first/first-fixture-diagnostic/SIGHTLINE_SAINT_MERIDIAN_V02_FRIENDLY_CONTACTS.html",
+      "sha256": "582d872e180d136979572b25617756cccebbeda47dccd5b82d060e9e24a2fce6",
+      "bytes": 1619652
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contact-first/first-fixture-diagnostic/development/vertical-city-v02/V02_Friendly_Contacts_Build.json",
+      "sha256": "e2991cbecda318eb3be90dd4f8b9bdca6c3d56d37eb7b11ebaf28b8d8ddfc155",
+      "bytes": 8126
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contact-first/first-fixture-diagnostic/scripts/friendly_contact_core_v02.js",
+      "sha256": "71a4e0b421e30723d86cc1ba786f1a252cdc466dcd792d9b554aff40dadb611e",
+      "bytes": 2548
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contact-first/first-fixture-diagnostic/scripts/game_v02_friendly_contacts.js",
+      "sha256": "0e17e3ed18b2a18b459899b40e6296ef67c1c7d7c810f4392556206f2db40276",
+      "bytes": 6686
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contact-first/first-fixture-diagnostic/scripts/vertical-v02/probe_friendly_contacts.cjs",
+      "sha256": "9c2c419a7649be6a0e13b3df41bce5255481f4776210f0d8d2a713335685187a",
+      "bytes": 4466
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-checks/capsule-core.log",
+      "sha256": "bc4471266a91619c212951d0103e647d0a22a2b054bcdf275f88b28889c5ae0e",
+      "bytes": 654
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-checks/friendly-native.log",
+      "sha256": "a787c43d2fd70df8bd1a0837cc7aafcea87daeaef34df5847486eb6e31877f34",
+      "bytes": 466
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-checks/keyboard.log",
+      "sha256": "439ee482fd7b357e81c5d99fd9d5a14d89332cdd80df437405d1f44cdb1ce482",
+      "bytes": 81
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-checks/stock-client.log",
+      "sha256": "0a5db797d74261050d9e02d4a25660dcf9f429c83cfb818d45c9b09db2729eee",
+      "bytes": 498
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-checks/touch.log",
+      "sha256": "c92776c69d15e245af5173ee8b0be42639024c6c1a152a9909521e4aea76a6bf",
+      "bytes": 85
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-checks/world-life.log",
+      "sha256": "9b73968976ddfaaaaf9b3e084705f0c6af24fee4cdf3bf23d311a496ba3cb52d",
+      "bytes": 536
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-keyboard-final/V02_Friendly_Contacts_Keyboard.json",
+      "sha256": "65b7d08092964dc13cbb2f2ac65f1b88b6d30d4892a6bcb5379f3d213b32a409",
+      "bytes": 52569
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-keyboard-final/V02_Friendly_Contacts_Keyboard.trace.json.gz",
+      "sha256": "0a59e0a1148eae5d9a184a26ddfa4dfbf78f1b205db0ef44841e5c6a0ae364c9",
+      "bytes": 29736
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-keyboard-final/evidence/friendly-keyboard-final.png",
+      "sha256": "de31fe259a77ceb98644b0fcca7d411a3de09f219e2be660b1f9c774841afcb0",
+      "bytes": 735300
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-keyboard-final/evidence/market-keyboard-jump-recovery.png",
+      "sha256": "045b422ac36cc0063bb885774c715ed97e159be5720068ea51ee73ab813eeadd",
+      "bytes": 744425
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-keyboard-final/evidence/market-keyboard-sprint-body.png",
+      "sha256": "69105210209215c6d1788acd27484d48f0b80ccffcbb23e442dc7979b48f0da5",
+      "bytes": 744427
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-keyboard/V02_Friendly_Contacts_Keyboard.json",
+      "sha256": "f4360cbbfe39a5c4db0be9733c12ca3ef2fee6bda8831f7d2ad4147d633bb0f0",
+      "bytes": 52485
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-keyboard/V02_Friendly_Contacts_Keyboard.trace.json.gz",
+      "sha256": "edb1729df868ab4cb4721d2cebe8c14e610c458eb4c08542ea42c2e87139fed8",
+      "bytes": 29686
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-keyboard/evidence/friendly-keyboard-final.png",
+      "sha256": "f67fef3035ed33f1e0abfa59cbed8c79f850ddb4723b6ab321387994de05e716",
+      "bytes": 733560
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-keyboard/evidence/market-keyboard-jump-recovery.png",
+      "sha256": "5f414f18616b59408c1a5e65334585c65ce2c2e4aa5074ae4d8731d95fc592e0",
+      "bytes": 742627
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-keyboard/evidence/market-keyboard-sprint-body.png",
+      "sha256": "bede26c26a885fa1fef05de8675610a59c5de33386b1609a32ea33a8da22e64e",
+      "bytes": 741317
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-native-final/V02_Friendly_Contacts_Native.json",
+      "sha256": "13b5bd81699936e138bdd8d2658b6f54b07bb56f0c12829fd7ecacdacbc75534",
+      "bytes": 661608
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-native-final/V02_Friendly_Contacts_Native.trace.json.gz",
+      "sha256": "01c9b66a04ef69bf74700c7c897cc8ed2dbfd6ae77b07d9bc32a6bf4ab896418",
+      "bytes": 114584
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-native-final/evidence/market-fixed-resident-body.png",
+      "sha256": "6f70d10d6b0004f49355cc484218c1c55df0b42c0f8ffb6f146d0e1ef5ccaf00",
+      "bytes": 719522
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-native-final/evidence/market-fixed-resident-detour.png",
+      "sha256": "555c02006715242d82f53aa5ecbae779bcf9cf98a75069610e78fb177d141d90",
+      "bytes": 750320
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-native-final/evidence/market-sightline-street-body.png",
+      "sha256": "0607265edfc1821641fd645385704fccb776c54490ac44d4a164bcf2773f72e7",
+      "bytes": 1020509
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-native-final/evidence/market-street-pedestrian-body.png",
+      "sha256": "bc4e9f49f4159e29d20802db2930f7ac1cb44b51b2c0d834f21cc6bcb34c1a13",
+      "bytes": 1072188
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-native-final/evidence/market-street-pedestrian-detour.png",
+      "sha256": "10411e089b7dfe1ec2f6a40b38874e35bb82607cb95a3962a6acbe60a14c2da2",
+      "bytes": 1030707
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-native/V02_Friendly_Contacts_Native.json",
+      "sha256": "259f44c631f71b5317246187669b95fcc9fd79ec290d00962b16afa07c08a71f",
+      "bytes": 650355
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-native/V02_Friendly_Contacts_Native.trace.json.gz",
+      "sha256": "d414d958c70d7d736130c1519efb5d9ec20c252debb3b40b157b0bf773b303ab",
+      "bytes": 112943
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-native/evidence/market-fixed-resident-body.png",
+      "sha256": "f46be7205de6c54f4f074c0b1e40f90ab6dc9c08eba8a99d7c8e36ce9686894e",
+      "bytes": 718588
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-native/evidence/market-fixed-resident-detour.png",
+      "sha256": "ad57527d4980dd3c0b776d0919b6d3bc672d98d34d3a785751ca5dc2792235cd",
+      "bytes": 747764
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-native/evidence/market-sightline-street-body.png",
+      "sha256": "56729f56b348f2023669538cb20267f888db0cd49104f676d899146e0f2594f4",
+      "bytes": 1020759
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-native/evidence/market-street-pedestrian-body.png",
+      "sha256": "a6baa6a08b96c6dbfa355df014b5bd04cc4352e142fcb152a2040b053751b798",
+      "bytes": 1072286
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-native/evidence/market-street-pedestrian-detour.png",
+      "sha256": "11ce7d639ea9f72030745801cceac0d578caf7778a3d04ac30f1ab18d3d1778d",
+      "bytes": 1030754
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-stock/shot-0.png",
+      "sha256": "f946a437f888c9a70ae7125300b1d4fe9e48a2ba735ef3286a9452418f9ebc08",
+      "bytes": 1516467
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-stock/state-0.json",
+      "sha256": "0920436b5567e40d7b8629646f5cc8dd307849619542792a3d9fa00dbc5b44d8",
+      "bytes": 24739
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-touch-final/V02_Friendly_Contacts_Touch.json",
+      "sha256": "bcdaffc7baccbae969e13004d69507fe38cf69bec236514fb67332c0e9239e09",
+      "bytes": 52509
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-touch-final/V02_Friendly_Contacts_Touch.trace.json.gz",
+      "sha256": "c709992afa7f47a6630f5b0392b3952e2195fbae64cd90e4bfad2788c60f09b6",
+      "bytes": 15593
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-touch-final/evidence/friendly-touch-final.png",
+      "sha256": "7091e7fdf0af998484cc94e376c266e0a34f3fe2d2771f6e9c5a3d8047b78dc4",
+      "bytes": 349001
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-touch-final/evidence/market-friendly-touch-landscape.png",
+      "sha256": "5c14024cf204a7d501e50157dfc74b230bac57841c837e4153dd13c274464421",
+      "bytes": 349004
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-touch-final/evidence/market-friendly-touch-portrait.png",
+      "sha256": "6092ca3fcc6f061d411f8a9eaf70104113597381f680518ebf933a46c49fbd69",
+      "bytes": 295612
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-touch/V02_Friendly_Contacts_Touch.json",
+      "sha256": "f0dbe9374eb323d0683ba686caa33deb88c443ebaa5434103564a19043c9f18e",
+      "bytes": 52396
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-touch/V02_Friendly_Contacts_Touch.trace.json.gz",
+      "sha256": "92e1b44c5bd8d1e93ca80d7db3d07bff32b5e6e024df612cd670bbf258e38c91",
+      "bytes": 15536
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-touch/evidence/friendly-touch-final.png",
+      "sha256": "fc69f78457f90ca50f90c30e0a28587c4f7f71ec787b80fd91132f2f5e16c7d5",
+      "bytes": 349129
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-touch/evidence/market-friendly-touch-landscape.png",
+      "sha256": "90c06443322aab63d3ee28cd96938d6b2c2e158416ed41335f384453a704004c",
+      "bytes": 349133
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-touch/evidence/market-friendly-touch-portrait.png",
+      "sha256": "670ca58f6cdd67dec473ea54a632876b6c37ed92d722c226f95b90c817403d49",
+      "bytes": 295898
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-world-life/failure.png",
+      "sha256": "fc27b0c261131b3e308e3cce088c57f41619cc4e48926fdd6e8dc6ffed427f5a",
+      "bytes": 903085
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-world-life/room-24.png",
+      "sha256": "c036ef20d94ce03742ae1082a04c42e2592e2f6043391656868a4c943b922286",
+      "bytes": 758383
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-world-life/room-52.png",
+      "sha256": "a25a80dd6ce873729c52b097c2561d0c28e4f80a4a60bada84cb86296022c140",
+      "bytes": 764423
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-world-life/room-84.png",
+      "sha256": "33eacd381a3aceb8a738a5331ea8a45a27eea3511870fd108ec73eaf59f4bc3d",
+      "bytes": 903616
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-contacts-world-life/traces.json.gz",
+      "sha256": "526175e6d663270fc6c70b101f92e16c0680b0074362040f77d8b7ccd4fd8934",
+      "bytes": 240671
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-market-queue-probe/V02_Friendly_Market_Queue_Probe.json",
+      "sha256": "b9c31b3a582eb03ece73854a613637ba906b5ca459919ceb6e6b289fdb4c5bf3",
+      "bytes": 59398
+    },
+    {
+      "path": "development/vertical-city-v02/evidence/friendly-market-queue-probe/V02_Friendly_Market_Queue_Probe.trace.json.gz",
+      "sha256": "fe47006573fb9edf5810eec6f155c9b3e9eb7c3239cb3c9460807cc2e19f48ca",
+      "bytes": 96644
+    },
+    {
+      "path": "development/vertical-city-v02/tools/run-furnished-skill-client.cjs",
+      "sha256": "81c0283182bd955a02215612cca2da10fa16f465d136e1e960b19bfd62f12be2",
+      "bytes": 1351
+    },
+    {
+      "path": "scripts/friendly_contact_core_v02.js",
+      "sha256": "71a4e0b421e30723d86cc1ba786f1a252cdc466dcd792d9b554aff40dadb611e",
+      "bytes": 2548
+    },
+    {
+      "path": "scripts/game_aerial_traffic_core_v02.js",
+      "sha256": "e518c60772284ec255757bca341a3c4a420d095baa10011e38426d621e70e811",
+      "bytes": 3692
+    },
+    {
+      "path": "scripts/game_motion_loadout.js",
+      "sha256": "4c83cf50c8646ebd1ca39e80399a8d4271d2352df7c9e5a9d73f78460cf93eb8",
+      "bytes": 5325
+    },
+    {
+      "path": "scripts/game_v02_body_framing.css",
+      "sha256": "839f156f2c2a616c3fcb6cf21465f7d3be6200d459516d4b391e2bffbef99d80",
+      "bytes": 1893
+    },
+    {
+      "path": "scripts/game_v02_body_framing_v2.js",
+      "sha256": "ceafb64874a814604e8d92f17f96f9683d4c93fc7bf2b676120d4e5990718a13",
+      "bytes": 7941
+    },
+    {
+      "path": "scripts/game_v02_body_notice.js",
+      "sha256": "704c5f9a3bc53faac7d4084583c8063ae1b1c66bdcf6e4d975f340dbd985e7c2",
+      "bytes": 1142
+    },
+    {
+      "path": "scripts/game_v02_facade_cassettes.js",
+      "sha256": "a1ee9a0bc5084b82763ac9dc2ab1bd6e025b1d5aac4b05d7509098d41f3b4327",
+      "bytes": 5129
+    },
+    {
+      "path": "scripts/game_v02_friendly_contacts.js",
+      "sha256": "b1457e69cbd587fe71c991c1997698946cbea30e8b1d868621e4a7dc5d0bd325",
+      "bytes": 7108
+    },
+    {
+      "path": "scripts/game_v02_furnished_public_lighting.js",
+      "sha256": "fef901bdd9bf5c8eeba911ec9bd4c749d71d5b40e9a00228833d0ba6d48ebf6e",
+      "bytes": 6609
+    },
+    {
+      "path": "scripts/game_v02_furnished_room_shadows.js",
+      "sha256": "0fc81f8d0d0b413127023db73f5d40ca711ee08ac22f539eb671e163af147874",
+      "bytes": 9093
+    },
+    {
+      "path": "scripts/game_v02_market_clearance.js",
+      "sha256": "ccf167f9f771f8e4288ddac67eeacded1417f5dcc986b62a73cc09f3d7e215b9",
+      "bytes": 22640
+    },
+    {
+      "path": "scripts/game_v02_surface_normals.js",
+      "sha256": "c29ac5758f444285b1b35577991b918287d33446db4954fb2595396f46762e04",
+      "bytes": 1139
+    },
+    {
+      "path": "scripts/game_v02_visitor_clearance.js",
+      "sha256": "51b37c4c3da5a1b781087ac8ec8283b1a34cabec4ddc6c80949e692e58fefdaa",
+      "bytes": 15187
+    },
+    {
+      "path": "scripts/game_vertical_appearance_facade_v02.js",
+      "sha256": "2705ecadebe14ebddf1756ba5b3cfb7f6b955ac6955ccae9ec1480d08bb245ae",
+      "bytes": 7327
+    },
+    {
+      "path": "scripts/game_vertical_diffuse_lighting_v02.js",
+      "sha256": "99bb11e0709d8b6372731bc4c17a05cd3fc7d090f85a876e1f84822c34ce644d",
+      "bytes": 5792
+    },
+    {
+      "path": "scripts/game_vertical_discovery_v02.js",
+      "sha256": "7cfc8878103a13115fb9778c4d8ee15dadc0147a0ace29433a14a2ba651c0679",
+      "bytes": 16207
+    },
+    {
+      "path": "scripts/game_vertical_encounters_v02.js",
+      "sha256": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+      "bytes": 8937
+    },
+    {
+      "path": "scripts/game_vertical_loggia_hud_v02.js",
+      "sha256": "73ffa63e9ab875bded2f37dd40fc6afc4fe2537bf850bebb14b01bd3684386dc",
+      "bytes": 9628
+    },
+    {
+      "path": "scripts/game_vertical_loggia_material_v02.js",
+      "sha256": "062587fe36e8b753d841adf836ea04ad345e1749f7843c967f91efd854fc3c4f",
+      "bytes": 6401
+    },
+    {
+      "path": "scripts/game_vertical_pursuit_v02.js",
+      "sha256": "d26199eb208a5d3fc21ad26f70c97471bd14b8b3b8370dfd2611c7b0c0344d58",
+      "bytes": 12081
+    },
+    {
+      "path": "scripts/game_vertical_transit_v02.js",
+      "sha256": "0403f887673e0008f7e493a916bcbc8502794978f048b2e8ca806fe5de731ecb",
+      "bytes": 5563
+    },
+    {
+      "path": "scripts/game_vertical_views_v02.js",
+      "sha256": "0f2ee6e9f3c8d555c8c5189d076c4b8daf33f2d15b0c672edbf1e8aa2a4d9f21",
+      "bytes": 5531
+    },
+    {
+      "path": "scripts/v02_exact_camera_rays.js",
+      "sha256": "bd9856c17f746f8741d522ce53f47428b7d6bba4ad953ed4ca094a56f5ade670",
+      "bytes": 5150
+    },
+    {
+      "path": "scripts/vertical-v02/build_friendly_contacts_candidate.py",
+      "sha256": "4bd03acece539876998e78056e42fa5dc7dec2d750a388017c5a1fdfa65f2e43",
+      "bytes": 6065
+    },
+    {
+      "path": "scripts/vertical-v02/civilian_test_readiness.cjs",
+      "sha256": "18bc37d7f7cc20453fd96215d26ffd4cce3b0595c0bb6c42f5e31d0bc6b76b9c",
+      "bytes": 1460
+    },
+    {
+      "path": "scripts/vertical-v02/evidence_io.cjs",
+      "sha256": "e41a051fcddd33b0d0d03059d3c4ce7d26653a2eea029e11b3b210d3705bdf51",
+      "bytes": 794
+    },
+    {
+      "path": "scripts/vertical-v02/friendly_contact_readiness.cjs",
+      "sha256": "cdede1210092bf9fe01817f8d4990f9f4dec68157717dc38a6e5f835c2ad3ddf",
+      "bytes": 1689
+    },
+    {
+      "path": "scripts/vertical-v02/market_test_helpers.cjs",
+      "sha256": "5f3abaf92dc8bb5d49afadd7cc9fc45c8659ff3489cbc2a8b9419625797d6372",
+      "bytes": 8668
+    },
+    {
+      "path": "scripts/vertical-v02/probe_friendly_market_queue.cjs",
+      "sha256": "83a0a8afd9a0c600319c3569f490e173994772a8680a618337a8b61013d82fac",
+      "bytes": 1312
+    },
+    {
+      "path": "scripts/vertical-v02/route_camera_probe.cjs",
+      "sha256": "180467f581d7948bdf854280c9c2b7886b4270810b763376e1c2b5c7aa6dae45",
+      "bytes": 2990
+    },
+    {
+      "path": "scripts/vertical-v02/run_current_gameplay_regressions.py",
+      "sha256": "dbd6791a90981c00c47e0438bb107c99c24c9f26cdf0ac49d2a5fed56bbd99f9",
+      "bytes": 3596
+    },
+    {
+      "path": "scripts/vertical-v02/run_current_station_routes.py",
+      "sha256": "b81b232b7770a79878d4a85c640ac2b444f91ac33fc564ab2e4b77fb3ef3e9b6",
+      "bytes": 5052
+    },
+    {
+      "path": "scripts/vertical-v02/run_friendly_contacts_checks.py",
+      "sha256": "510f3dfb33587cbaa55809bd2b9b70b028087a336b087be1833e9e6e0f37ac38",
+      "bytes": 5510
+    },
+    {
+      "path": "scripts/vertical-v02/slender_test_readiness.cjs",
+      "sha256": "8c209506673539db1e68818ea50a71968604559a021a8cd1948aa9b55859bdbf",
+      "bytes": 1904
+    },
+    {
+      "path": "scripts/vertical-v02/station_route_environment.cjs",
+      "sha256": "3a7de8bd6984a7c77f453e6dd420a4d4a24e3e03572b40330a690e08de615670",
+      "bytes": 2404
+    },
+    {
+      "path": "scripts/vertical-v02/test_discovery.cjs",
+      "sha256": "8858c26174c2db0d0183ea4a3544906e55f1847f41cceedbfc6e411a6373ba96",
+      "bytes": 6583
+    },
+    {
+      "path": "scripts/vertical-v02/test_discovery_lifecycle.cjs",
+      "sha256": "bd0498e5037867d8901a0a7d18e5f8f982907b2fca8cd6a40393340966e99437",
+      "bytes": 8265
+    },
+    {
+      "path": "scripts/vertical-v02/test_east_public_room_life_city_loops.cjs",
+      "sha256": "70684a1b7c3e63eb6a9e6074d2e1226ff6c623e9a24de265d12b6328f13b1a42",
+      "bytes": 5574
+    },
+    {
+      "path": "scripts/vertical-v02/test_friendly_contact_core.cjs",
+      "sha256": "0786684d4eabce6272b3aef7e88059aa3557d5ee1949f741eddf747e75193684",
+      "bytes": 2396
+    },
+    {
+      "path": "scripts/vertical-v02/test_friendly_contacts_keyboard.cjs",
+      "sha256": "c8329431a47c0c86cc435b7c4af675685b6fa5b787506de5abb27648aa0f3b59",
+      "bytes": 4236
+    },
+    {
+      "path": "scripts/vertical-v02/test_friendly_contacts_native.cjs",
+      "sha256": "848c5506fdb1d12967e42cd85ea3c103bbe68fdab9f67849ab92dc2eef8e3dae",
+      "bytes": 9308
+    },
+    {
+      "path": "scripts/vertical-v02/test_friendly_contacts_touch.cjs",
+      "sha256": "29c226c408493b05677b5d4c96a64559392590d463aab8febd4eb8622f7691f7",
+      "bytes": 4996
+    },
+    {
+      "path": "scripts/vertical-v02/test_friendly_landing_contacts.cjs",
+      "sha256": "23d799a673c99cf67cef7ac61a8eef68b228d5ab54532666a6fa7ccec05e3de8",
+      "bytes": 7948
+    },
+    {
+      "path": "scripts/vertical-v02/test_friendly_room_movement.cjs",
+      "sha256": "4ef75d6c93375e4ffe61bbaf09f1856dcba11c172a29406939a80eeedccff569",
+      "bytes": 8943
+    },
+    {
+      "path": "scripts/vertical-v02/test_friendly_wall_contacts.cjs",
+      "sha256": "946ea4557b7424c965b6192100d93be87c28e21b092914af8010ed26282f54b3",
+      "bytes": 13777
+    },
+    {
+      "path": "scripts/vertical-v02/test_friendly_world_life.cjs",
+      "sha256": "c07b85efd570976c16165e077873a23e9a0117bd8f78a29d11f29f5d449d0965",
+      "bytes": 8802
+    },
+    {
+      "path": "scripts/vertical-v02/test_market_lifecycle.cjs",
+      "sha256": "b10f00ee3bccaa41ffbb191de248824f537c0e36b968cbc17ed915ffbfa527d4",
+      "bytes": 7346
+    },
+    {
+      "path": "scripts/vertical-v02/test_market_rescue.cjs",
+      "sha256": "c52db7db1fdf00373eaafb8d8a2471c4e7fe6519777979b6c1ef825611added6",
+      "bytes": 5843
+    },
+    {
+      "path": "scripts/vertical-v02/test_mastery_route.cjs",
+      "sha256": "42dc9621cd9c3d88f829f96551b6bd267a2ada3e0033958bbf1965892e4b3473",
+      "bytes": 17642
+    },
+    {
+      "path": "scripts/vertical-v02/test_momentum_route.cjs",
+      "sha256": "a929d8d783e72154fd20c8221b43e4c14aab448a233e8fd041bfe3d7eb89216d",
+      "bytes": 12529
+    },
+    {
+      "path": "scripts/vertical-v02/test_public_station.cjs",
+      "sha256": "d5f4d5cd6baab74f16007b3c2775364161e25e1cedb08ba3e5f1068310cf3875",
+      "bytes": 7891
+    },
+    {
+      "path": "scripts/vertical-v02/test_pursuit.cjs",
+      "sha256": "5ded9290750847934590dbe3b8186444b34d5a9f32ea9666fcd13778e0fb04f9",
+      "bytes": 15998
+    },
+    {
+      "path": "scripts/vertical-v02/test_service_encounter.cjs",
+      "sha256": "1b77e8ddcc65b612df6ea281b1e99fbeaebd9a49402894d2cab110640b8a1a04",
+      "bytes": 11277
+    },
+    {
+      "path": "scripts/vertical-v02/test_service_lifecycle.cjs",
+      "sha256": "3c161ba05fede041c0aab9fa2d023ef6f372b00613c557bd49ade113d4d3a4ba",
+      "bytes": 9400
+    },
+    {
+      "path": "scripts/vertical-v02/test_service_replay.cjs",
+      "sha256": "c50bd452d716cecf9eb1f579efb1a80dfd5ad7543ab9ddbda9dc1424a1669cc9",
+      "bytes": 8391
+    },
+    {
+      "path": "scripts/vertical_transit_core_v02.js",
+      "sha256": "75b8e9f71b7853f586f42b5d2b031140a7851711d8f05646ba9de57ab3a88353",
+      "bytes": 4367
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "state": {
+    "ready": true,
+    "error": null,
+    "sourceTask": "b71871c5-e9e6-4e89-b6f7-723182ab3c8e",
+    "diameter": 0.08,
+    "thickness": 0.02,
+    "dt": 0.016666666666666607,
+    "modelBounds": [
+      0.081000001810248,
+      0.024879999546101317,
+      0.08100000445693827
+    ],
+    "count": 4,
+    "instances": [
+      {
+        "id": "belt-A",
+        "pair": "A",
+        "mode": "folded",
+        "deployment": 0,
+        "faceNormal": [
+          -0.9999999999999998,
+          0,
+          0
+        ],
+        "position": [
+          -48.18,
+          1.4281809198171704,
+          86.0006843740714
+        ],
+        "threadExit": [
+          -48.18700000021607,
+          1.4621809216649144,
+          86.0006843740714
+        ]
+      },
+      {
+        "id": "belt-B",
+        "pair": "B",
+        "mode": "folded",
+        "deployment": 0,
+        "faceNormal": [
+          0.9999999999999998,
+          0,
+          0
+        ],
+        "position": [
+          -47.82,
+          1.4281809198171704,
+          86.0006843740714
+        ],
+        "threadExit": [
+          -47.81299999978393,
+          1.3941809179694264,
+          86.0006843740714
+        ]
+      },
+      {
+        "id": "anchor-5",
+        "pair": "A",
+        "mode": "anchored",
+        "deployment": 0.999999999999987,
+        "faceNormal": [
+          0,
+          0,
+          0.9999999999999998
+        ],
+        "position": [
+          -52,
+          3,
+          80.01
+        ],
+        "threadExit": [
+          -51.965999998152256,
+          3,
+          80.01700000021607
+        ]
+      },
+      {
+        "id": "anchor-6",
+        "pair": "B",
+        "mode": "anchored",
+        "deployment": 0.9999987174581986,
+        "faceNormal": [
+          0,
+          0,
+          0.9999999999999998
+        ],
+        "position": [
+          -44,
+          6,
+          80.01
+        ],
+        "threadExit": [
+          -43.965999998152256,
+          6,
+          80.01700000021607
+        ]
+      }
+    ]
+  },
+  "errors": [],
+  "checks": [
+    "keyboard wall throws",
+    "two real surface impacts",
+    "normal orientation",
+    "deployed moving parts",
+    "socket filament",
+    "simulation expiry cleanup"
+  ]
+}

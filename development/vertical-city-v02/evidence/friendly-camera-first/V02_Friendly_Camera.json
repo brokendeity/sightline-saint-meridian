@@ -1,0 +1,4451 @@
+{
+  "status": "PASS native friendly camera visibility, unchanged body-position owner and manual orbit",
+  "cases": [
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "source": {
+        "adapterSHA256": "18bc37d7f7cc20453fd96215d26ffd4cce3b0595c0bb6c42f5e31d0bc6b76b9c",
+        "entrySHA256": "79a3f93ea25a2a9ea2ab69e717cfdbed6831c8ffe7e95605b574d905ed850858",
+        "marketModule": "scripts/game_v02_market_clearance.js",
+        "worldLifeModule": "scripts/game_v02_friendly_visitor_clearance.js"
+      },
+      "settled": {
+        "hero": [
+          85,
+          24.42,
+          363.03900000000004
+        ],
+        "camera": [
+          87.8316649737921,
+          27.7687768809779,
+          367.0067766831401
+        ],
+        "gap": 0.9609999999999559,
+        "health": 100,
+        "rays": [
+          {
+            "name": "Hips",
+            "blocks": []
+          },
+          {
+            "name": "Head",
+            "blocks": []
+          },
+          {
+            "name": "LeftHand",
+            "blocks": []
+          },
+          {
+            "name": "RightHand",
+            "blocks": []
+          },
+          {
+            "name": "LeftFoot",
+            "blocks": []
+          },
+          {
+            "name": "RightFoot",
+            "blocks": []
+          }
+        ],
+        "framing": {
+          "compositionFamily": "exploration",
+          "quietPitch": 6.033333333333317,
+          "manualPitch": false,
+          "compositionOwner": "automatic",
+          "heldYaw": 0.3894445908460849,
+          "heldPitch": -0.18067753725854127,
+          "frames": 366,
+          "adjusted": 366,
+          "eligible": true,
+          "reason": "native body composition",
+          "positionDelta": 0,
+          "fov": 56,
+          "yawCorrection": -0.3706353695038296,
+          "pitchCorrection": -0.2060747143300512,
+          "unresolved": 0,
+          "fit": true,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "planner": {
+          "frames": 366,
+          "adjusted": 333,
+          "checks": 7320,
+          "baseScore": 20,
+          "goalScore": 0,
+          "offset": [
+            2.3999999999999986,
+            1.1999999999999993
+          ],
+          "goal": [
+            2.4,
+            1.2
+          ],
+          "cpuMs": 0,
+          "reason": "friendly body shoulder clearance",
+          "positionOwner": "native actionCamera",
+          "manualHold": false
+        },
+        "yaw": 0,
+        "targetYaw": 0
+      },
+      "trace": [
+        {
+          "hero": [
+            85,
+            24.42,
+            360.505
+          ],
+          "camera": [
+            85.79493670591607,
+            26.619624587854165,
+            364.7276537447614
+          ],
+          "gap": 3.4950000000000045,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 0.05,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.08372632796846016,
+            "heldPitch": -0.07974083343012392,
+            "frames": 7,
+            "adjusted": 7,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.0820406401303567,
+            "pitchCorrection": -0.08047663202310307,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 7,
+            "adjusted": 0,
+            "checks": 36,
+            "baseScore": 0,
+            "goalScore": 0,
+            "offset": [
+              0,
+              0
+            ],
+            "goal": [
+              0,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "not sampled",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            360.87749999999966
+          ],
+          "camera": [
+            85.44792421695736,
+            26.563834511728263,
+            364.9250967855823
+          ],
+          "gap": 3.1225000000003433,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 0.3,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 4.3021142204224816e-15,
+            "heldPitch": -0.09324189092185645,
+            "frames": 22,
+            "adjusted": 22,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.09324189092185275,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 22,
+            "adjusted": 0,
+            "checks": 216,
+            "baseScore": 0,
+            "goalScore": 0,
+            "offset": [
+              0,
+              0
+            ],
+            "goal": [
+              0,
+              0
+            ],
+            "cpuMs": 0.20000028610229492,
+            "reason": "not sampled",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            361.2899999999993
+          ],
+          "camera": [
+            85.60414241313046,
+            26.568525427147748,
+            365.3058278825168
+          ],
+          "gap": 2.7100000000007185,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 0.55,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.020315795339280435,
+            "heldPitch": -0.09374087468795916,
+            "frames": 37,
+            "adjusted": 37,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.019885392497957094,
+            "pitchCorrection": -0.09378599277042354,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 37,
+            "adjusted": 4,
+            "checks": 582,
+            "baseScore": 1,
+            "goalScore": 0,
+            "offset": [
+              0.2919497285804449,
+              0
+            ],
+            "goal": [
+              0.6,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            361.7024999999989
+          ],
+          "camera": [
+            85.99396653480956,
+            26.56876661353312,
+            365.6765834070316
+          ],
+          "gap": 2.2975000000010937,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 0.8000000000000008,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.10687088321413202,
+            "heldPitch": -0.09606618869986641,
+            "frames": 52,
+            "adjusted": 52,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.10456888680841689,
+            "pitchCorrection": -0.09733290117200122,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 52,
+            "adjusted": 19,
+            "checks": 762,
+            "baseScore": 2,
+            "goalScore": 0,
+            "offset": [
+              0.5747136938944342,
+              0
+            ],
+            "goal": [
+              0.6,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            362.11499999999853
+          ],
+          "camera": [
+            86.10160265644858,
+            26.568776478388433,
+            366.07770900069113
+          ],
+          "gap": 1.8850000000014688,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 1.0500000000000012,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.1298224472204359,
+            "heldPitch": -0.09608440799745183,
+            "frames": 67,
+            "adjusted": 67,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.12702412345472705,
+            "pitchCorrection": -0.09795802482641347,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 67,
+            "adjusted": 34,
+            "checks": 1128,
+            "baseScore": 11,
+            "goalScore": 0,
+            "offset": [
+              0.7680055872538476,
+              0
+            ],
+            "goal": [
+              1.2,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            362.52749999999816
+          ],
+          "camera": [
+            86.77973770529469,
+            26.568776865329085,
+            366.418705719708
+          ],
+          "gap": 1.472500000001844,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 1.3000000000000003,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.26907639608683354,
+            "heldPitch": -0.09132842643189859,
+            "frames": 82,
+            "adjusted": 82,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.2634037621907588,
+            "pitchCorrection": -0.09909814579784271,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 82,
+            "adjusted": 49,
+            "checks": 1494,
+            "baseScore": 12,
+            "goalScore": 0,
+            "offset": [
+              1.5037808141199536,
+              0
+            ],
+            "goal": [
+              1.8,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            362.9399999999978
+          ],
+          "camera": [
+            87.39645602767257,
+            26.568776880370805,
+            366.766179140777
+          ],
+          "gap": 1.0600000000022192,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 1.5499999999999994,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.3786041320936326,
+            "heldPitch": -0.08120162945891843,
+            "frames": 97,
+            "adjusted": 97,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.37109416045521865,
+            "pitchCorrection": -0.09608906416659535,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 97,
+            "adjusted": 64,
+            "checks": 2232,
+            "baseScore": 20,
+            "goalScore": 1,
+            "offset": [
+              2.114925923430417,
+              0
+            ],
+            "goal": [
+              2.4,
+              0
+            ],
+            "cpuMs": 2.9000000953674316,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            87.7873324015436,
+            27.121733985738818,
+            366.9876176246922
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 1.7999999999999985,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.4027072921223341,
+            "heldPitch": -0.12075885880430529,
+            "frames": 112,
+            "adjusted": 112,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.3903799999854388,
+            "pitchCorrection": -0.14210101134091835,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 112,
+            "adjusted": 79,
+            "checks": 4272,
+            "baseScore": 20,
+            "goalScore": 0,
+            "offset": [
+              2.3765996948170764,
+              0.792430400948376
+            ],
+            "goal": [
+              2.4,
+              1.2
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            87.82795145700477,
+            27.704858431296685,
+            367.00613138180495
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 2.0499999999999976,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.39074544109256304,
+            "heldPitch": -0.17519512498544024,
+            "frames": 127,
+            "adjusted": 127,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.3725871316521167,
+            "pitchCorrection": -0.2002710714132344,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 127,
+            "adjusted": 94,
+            "checks": 4452,
+            "baseScore": 20,
+            "goalScore": 0,
+            "offset": [
+              2.398079185981261,
+              1.1665446500227046
+            ],
+            "goal": [
+              2.4,
+              1.2
+            ],
+            "cpuMs": 0.09999990463256836,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            87.83135950541377,
+            27.763436645472,
+            367.00676771315034
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 2.2999999999999967,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.3895487850671018,
+            "heldPitch": -0.18021921806534635,
+            "frames": 142,
+            "adjusted": 142,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.37079449829830524,
+            "pitchCorrection": -0.20558930222025817,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 142,
+            "adjusted": 109,
+            "checks": 4632,
+            "baseScore": 20,
+            "goalScore": 0,
+            "offset": [
+              2.3998423299839153,
+              1.1972538176431518
+            ],
+            "goal": [
+              2.4,
+              1.2
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            87.83163989384592,
+            27.76833771890978,
+            367.0067777224599
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 2.549999999999996,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.3894529458734998,
+            "heldPitch": -0.18063968799678956,
+            "frames": 157,
+            "adjusted": 157,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.37064826664045925,
+            "pitchCorrection": -0.20603459923109146,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 157,
+            "adjusted": 124,
+            "checks": 4812,
+            "baseScore": 20,
+            "goalScore": 0,
+            "offset": [
+              2.399987057656946,
+              1.1997745796250172
+            ],
+            "goal": [
+              2.4,
+              1.2
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            87.83166291505653,
+            27.768740825362276,
+            367.0067768379029
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 2.799999999999995,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.38944526817943514,
+            "heldPitch": -0.18067442260547537,
+            "frames": 172,
+            "adjusted": 172,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.3706364207223216,
+            "pitchCorrection": -0.2060714119821525,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 172,
+            "adjusted": 139,
+            "checks": 4992,
+            "baseScore": 20,
+            "goalScore": 0,
+            "offset": [
+              2.3999989376277884,
+              1.1999814963688298
+            ],
+            "goal": [
+              2.4,
+              1.2
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            87.83166480480038,
+            27.7687739212922,
+            367.00677669854196
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 3.049999999999994,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.3894446461089388,
+            "heldPitch": -0.1806772813009671,
+            "frames": 187,
+            "adjusted": 187,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.3706354554956041,
+            "pitchCorrection": -0.20607444289912236,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 187,
+            "adjusted": 154,
+            "checks": 5172,
+            "baseScore": 20,
+            "goalScore": 0,
+            "offset": [
+              2.3999999127951783,
+              1.1999984811294608
+            ],
+            "goal": [
+              2.4,
+              1.2
+            ],
+            "cpuMs": 0.09999990463256836,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            87.83166495992043,
+            27.768776638031586,
+            367.0067766845091
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 3.299999999999993,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.3894445953692545,
+            "heldPitch": -0.18067751623709208,
+            "frames": 202,
+            "adjusted": 202,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.37063537655083845,
+            "pitchCorrection": -0.2060746920358758,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 202,
+            "adjusted": 169,
+            "checks": 5352,
+            "baseScore": 20,
+            "goalScore": 0,
+            "offset": [
+              2.399999992841792,
+              1.199999875323514
+            ],
+            "goal": [
+              2.4,
+              1.2
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            87.83166497265346,
+            27.76877686103565,
+            367.00677668325665
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 3.5499999999999923,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.38944459121683794,
+            "heldPitch": -0.1806775355325477,
+            "frames": 217,
+            "adjusted": 217,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.3706353700818451,
+            "pitchCorrection": -0.2060747124994875,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 217,
+            "adjusted": 184,
+            "checks": 5532,
+            "baseScore": 20,
+            "goalScore": 0,
+            "offset": [
+              2.399999999412418,
+              1.1999999897659308
+            ],
+            "goal": [
+              2.4,
+              1.2
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            87.83166497369865,
+            27.76877687934094,
+            367.00677668314984
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 3.7999999999999914,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.389444590876511,
+            "heldPitch": -0.18067753711686924,
+            "frames": 232,
+            "adjusted": 232,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.37063536955124227,
+            "pitchCorrection": -0.20607471417976853,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 232,
+            "adjusted": 199,
+            "checks": 5712,
+            "baseScore": 20,
+            "goalScore": 0,
+            "offset": [
+              2.3999999999517683,
+              1.1999999991599364
+            ],
+            "goal": [
+              2.4,
+              1.2
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        }
+      ],
+      "manualOrbit": {
+        "hero": [
+          85,
+          24.42,
+          363.03900000000004
+        ],
+        "camera": [
+          82.55434806310973,
+          27.768766070048294,
+          367.25554127320737
+        ],
+        "gap": 0.9609999999999559,
+        "health": 100,
+        "rays": [
+          {
+            "name": "Hips",
+            "blocks": []
+          },
+          {
+            "name": "Head",
+            "blocks": []
+          },
+          {
+            "name": "LeftHand",
+            "blocks": []
+          },
+          {
+            "name": "RightHand",
+            "blocks": []
+          },
+          {
+            "name": "LeftFoot",
+            "blocks": []
+          },
+          {
+            "name": "RightFoot",
+            "blocks": []
+          }
+        ],
+        "framing": {
+          "compositionFamily": "exploration",
+          "quietPitch": 7.116666666666647,
+          "manualPitch": false,
+          "compositionOwner": "automatic",
+          "heldYaw": 0.376582825050386,
+          "heldPitch": -0.1787747284103936,
+          "frames": 431,
+          "adjusted": 431,
+          "eligible": true,
+          "reason": "native body composition",
+          "positionDelta": 0,
+          "fov": 56,
+          "yawCorrection": -0.35855609551552503,
+          "pitchCorrection": -0.20261699693419044,
+          "unresolved": 0,
+          "fit": true,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "planner": {
+          "frames": 431,
+          "adjusted": 398,
+          "checks": 7830,
+          "baseScore": 0,
+          "goalScore": 0,
+          "offset": [
+            2.3999999999999986,
+            1.1999999999999993
+          ],
+          "goal": [
+            2.4,
+            1.2
+          ],
+          "cpuMs": 0,
+          "reason": "manual/precision composition held",
+          "positionOwner": "native actionCamera",
+          "manualHold": false
+        },
+        "yaw": -1.145821492441547,
+        "targetYaw": -1.1458333333333348
+      }
+    },
+    {
+      "viewport": {
+        "width": 932,
+        "height": 430
+      },
+      "source": {
+        "adapterSHA256": "18bc37d7f7cc20453fd96215d26ffd4cce3b0595c0bb6c42f5e31d0bc6b76b9c",
+        "entrySHA256": "79a3f93ea25a2a9ea2ab69e717cfdbed6831c8ffe7e95605b574d905ed850858",
+        "marketModule": "scripts/game_v02_market_clearance.js",
+        "worldLifeModule": "scripts/game_v02_friendly_visitor_clearance.js"
+      },
+      "settled": {
+        "hero": [
+          85,
+          24.42,
+          363.03900000000004
+        ],
+        "camera": [
+          88.6358525066931,
+          26.5687768809779,
+          366.5270829455384
+        ],
+        "gap": 0.9609999999999559,
+        "health": 100,
+        "rays": [
+          {
+            "name": "Hips",
+            "blocks": []
+          },
+          {
+            "name": "Head",
+            "blocks": []
+          },
+          {
+            "name": "LeftHand",
+            "blocks": []
+          },
+          {
+            "name": "RightHand",
+            "blocks": []
+          },
+          {
+            "name": "LeftFoot",
+            "blocks": []
+          },
+          {
+            "name": "RightFoot",
+            "blocks": []
+          }
+        ],
+        "framing": {
+          "compositionFamily": "exploration",
+          "quietPitch": 6.033333333333317,
+          "manualPitch": false,
+          "compositionOwner": "automatic",
+          "heldYaw": 1.7208456881689926e-15,
+          "heldPitch": -0.10524409910497179,
+          "frames": 366,
+          "adjusted": 366,
+          "eligible": true,
+          "reason": "native body composition",
+          "positionDelta": 0,
+          "fov": 56,
+          "yawCorrection": 0,
+          "pitchCorrection": -0.10524409910496868,
+          "unresolved": 0,
+          "fit": true,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "planner": {
+          "frames": 366,
+          "adjusted": 297,
+          "checks": 5088,
+          "baseScore": 11,
+          "goalScore": 0,
+          "offset": [
+            2.3999999999999986,
+            0
+          ],
+          "goal": [
+            2.4,
+            0
+          ],
+          "cpuMs": 0,
+          "reason": "friendly body shoulder clearance",
+          "positionOwner": "native actionCamera",
+          "manualHold": false
+        },
+        "yaw": 0,
+        "targetYaw": 0
+      },
+      "trace": [
+        {
+          "hero": [
+            85,
+            24.42,
+            360.505
+          ],
+          "camera": [
+            86.35,
+            26.619624587854165,
+            364.7276537447614
+          ],
+          "gap": 3.4950000000000045,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 0.05,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 5.266620473065586e-15,
+            "heldPitch": -0.07487186830122586,
+            "frames": 7,
+            "adjusted": 7,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.07487186830122328,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 7,
+            "adjusted": 0,
+            "checks": 36,
+            "baseScore": 0,
+            "goalScore": 0,
+            "offset": [
+              0,
+              0
+            ],
+            "goal": [
+              0,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "not sampled",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            360.87749999999966
+          ],
+          "camera": [
+            86.35,
+            26.563834511728263,
+            364.9250967855823
+          ],
+          "gap": 3.1225000000003433,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 0.3,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -1.8318679906315083e-15,
+            "heldPitch": -0.08416891168072893,
+            "frames": 22,
+            "adjusted": 22,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.08416891168073282,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 22,
+            "adjusted": 0,
+            "checks": 216,
+            "baseScore": 0,
+            "goalScore": 0,
+            "offset": [
+              0,
+              0
+            ],
+            "goal": [
+              0,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "not sampled",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            361.2899999999993
+          ],
+          "camera": [
+            86.35,
+            26.568525427147748,
+            365.32261602421886
+          ],
+          "gap": 2.7100000000007185,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 0.55,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 5.342948306008566e-15,
+            "heldPitch": -0.08573131656254723,
+            "frames": 37,
+            "adjusted": 37,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.08573131656254873,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 37,
+            "adjusted": 0,
+            "checks": 396,
+            "baseScore": 0,
+            "goalScore": 0,
+            "offset": [
+              0,
+              0
+            ],
+            "goal": [
+              0,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "not sampled",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            361.7024999999989
+          ],
+          "camera": [
+            86.35,
+            26.56876661353312,
+            365.73447719168064
+          ],
+          "gap": 2.2975000000010937,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 0.8000000000000008,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 5.488665077990618e-15,
+            "heldPitch": -0.08609805200164403,
+            "frames": 52,
+            "adjusted": 52,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.08609805200164267,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 52,
+            "adjusted": 0,
+            "checks": 576,
+            "baseScore": 0,
+            "goalScore": 0,
+            "offset": [
+              0,
+              0
+            ],
+            "goal": [
+              0,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "native composition restored",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            362.11499999999853
+          ],
+          "camera": [
+            86.35,
+            26.568776478388433,
+            366.1469519199558
+          ],
+          "gap": 1.8850000000014688,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 1.0500000000000012,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -1.790234627208065e-15,
+            "heldPitch": -0.08611502447245489,
+            "frames": 67,
+            "adjusted": 67,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.086115024472457,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 67,
+            "adjusted": 0,
+            "checks": 756,
+            "baseScore": 0,
+            "goalScore": 0,
+            "offset": [
+              0,
+              0
+            ],
+            "goal": [
+              0,
+              0
+            ],
+            "cpuMs": 0.09999990463256836,
+            "reason": "native composition restored",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            362.52749999999816
+          ],
+          "camera": [
+            86.80273036417273,
+            26.568776865329085,
+            366.4146007970119
+          ],
+          "gap": 1.472500000001844,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 1.3000000000000003,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -5.23192600354605e-15,
+            "heldPitch": -0.09928402708900524,
+            "frames": 82,
+            "adjusted": 82,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.09928402708900153,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 82,
+            "adjusted": 13,
+            "checks": 1122,
+            "baseScore": 1,
+            "goalScore": 0,
+            "offset": [
+              0.5312646936043874,
+              0
+            ],
+            "goal": [
+              0.6,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            362.9399999999978
+          ],
+          "camera": [
+            87.42684610932137,
+            26.568776880370805,
+            366.62741622379366
+          ],
+          "gap": 1.0600000000022192,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 1.5499999999999994,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -2.248201624865942e-15,
+            "heldPitch": -0.11452840118245916,
+            "frames": 97,
+            "adjusted": 97,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.11452840118245533,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 97,
+            "adjusted": 28,
+            "checks": 1674,
+            "baseScore": 10,
+            "goalScore": 0,
+            "offset": [
+              1.3345116189937067,
+              0
+            ],
+            "goal": [
+              1.8,
+              0
+            ],
+            "cpuMs": 0.10000038146972656,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            88.48017984224957,
+            26.56877688095437,
+            366.55305662318494
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 1.7999999999999985,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -2.6922908347160046e-15,
+            "heldPitch": -0.10724840598977434,
+            "frames": 112,
+            "adjusted": 112,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.10724840598976859,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 112,
+            "adjusted": 43,
+            "checks": 2040,
+            "baseScore": 11,
+            "goalScore": 0,
+            "offset": [
+              2.3125393877113183,
+              0
+            ],
+            "goal": [
+              2.4,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            88.62258588918162,
+            26.568776880976994,
+            366.5302907191226
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 2.0499999999999976,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -9.547918011776346e-15,
+            "heldPitch": -0.10528609649153531,
+            "frames": 127,
+            "adjusted": 127,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.10528609649153975,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 127,
+            "adjusted": 58,
+            "checks": 2220,
+            "baseScore": 11,
+            "goalScore": 0,
+            "offset": [
+              2.392820795760638,
+              0
+            ],
+            "goal": [
+              2.4,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            88.63475929242118,
+            26.56877688097788,
+            366.52739153871465
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 2.2999999999999967,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -1.6653345369377348e-15,
+            "heldPitch": -0.10524148837365715,
+            "frames": 142,
+            "adjusted": 142,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.10524148837365921,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 142,
+            "adjusted": 73,
+            "checks": 2400,
+            "baseScore": 11,
+            "goalScore": 0,
+            "offset": [
+              2.3994106950298906,
+              0
+            ],
+            "goal": [
+              2.4,
+              0
+            ],
+            "cpuMs": 0.09999990463256836,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            88.63576273365642,
+            26.5687768809779,
+            366.5271100631348
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 2.549999999999996,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 5.051514762044462e-15,
+            "heldPitch": -0.1052436387877144,
+            "frames": 157,
+            "adjusted": 157,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.10524363878771048,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 157,
+            "adjusted": 88,
+            "checks": 2580,
+            "baseScore": 11,
+            "goalScore": 0,
+            "offset": [
+              2.399951626902339,
+              0
+            ],
+            "goal": [
+              2.4,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            88.63584513735735,
+            26.5687768809779,
+            366.52708524103264
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 2.799999999999995,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -8.604228440844963e-16,
+            "heldPitch": -0.10524405168864928,
+            "frames": 172,
+            "adjusted": 172,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.10524405168864892,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 172,
+            "adjusted": 103,
+            "checks": 2760,
+            "baseScore": 11,
+            "goalScore": 0,
+            "offset": [
+              2.399996029294345,
+              0
+            ],
+            "goal": [
+              2.4,
+              0
+            ],
+            "cpuMs": 0.09999990463256836,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            88.63585190177847,
+            26.5687768809779,
+            366.52708313666295
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 3.049999999999994,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 2.3592239273284576e-15,
+            "heldPitch": -0.10524409483859198,
+            "frames": 187,
+            "adjusted": 187,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.10524409483859043,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 187,
+            "adjusted": 118,
+            "checks": 2940,
+            "baseScore": 11,
+            "goalScore": 0,
+            "offset": [
+              2.3999996740646314,
+              0
+            ],
+            "goal": [
+              2.4,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            88.63585245703868,
+            26.5687768809779,
+            366.5270829613316
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 3.299999999999993,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 1.5265566588595902e-15,
+            "heldPitch": -0.10524409874023818,
+            "frames": 202,
+            "adjusted": 202,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.10524409874023455,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 202,
+            "adjusted": 133,
+            "checks": 3120,
+            "baseScore": 11,
+            "goalScore": 0,
+            "offset": [
+              2.399999973245596,
+              0
+            ],
+            "goal": [
+              2.4,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            88.63585250261723,
+            26.5687768809779,
+            366.52708294683896
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 3.5499999999999923,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -3.219646771412954e-15,
+            "heldPitch": -0.10524409907444954,
+            "frames": 217,
+            "adjusted": 217,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.10524409907444698,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 217,
+            "adjusted": 148,
+            "checks": 3300,
+            "baseScore": 11,
+            "goalScore": 0,
+            "offset": [
+              2.3999999978038646,
+              0
+            ],
+            "goal": [
+              2.4,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            88.63585250635855,
+            26.5687768809779,
+            366.5270829456453
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 3.7999999999999914,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -6.106226635438361e-16,
+            "heldPitch": -0.10524409910243801,
+            "frames": 232,
+            "adjusted": 232,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.10524409910243959,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 232,
+            "adjusted": 163,
+            "checks": 3480,
+            "baseScore": 11,
+            "goalScore": 0,
+            "offset": [
+              2.3999999998197303,
+              0
+            ],
+            "goal": [
+              2.4,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        }
+      ],
+      "manualOrbit": {
+        "hero": [
+          85,
+          24.42,
+          363.03900000000004
+        ],
+        "camera": [
+          83.32312810244483,
+          26.56877430239083,
+          367.79011647872295
+        ],
+        "gap": 0.9609999999999559,
+        "health": 100,
+        "rays": [
+          {
+            "name": "Hips",
+            "blocks": []
+          },
+          {
+            "name": "Head",
+            "blocks": []
+          },
+          {
+            "name": "LeftHand",
+            "blocks": [
+              {
+                "name": "Market resident / rescue",
+                "distance": 4.163279030449713
+              }
+            ]
+          },
+          {
+            "name": "RightHand",
+            "blocks": []
+          },
+          {
+            "name": "LeftFoot",
+            "blocks": [
+              {
+                "name": "Market resident / rescue",
+                "distance": 4.40194792091606
+              },
+              {
+                "name": "Market resident / rescue",
+                "distance": 4.541045906353788
+              }
+            ]
+          },
+          {
+            "name": "RightFoot",
+            "blocks": []
+          }
+        ],
+        "framing": {
+          "compositionFamily": "exploration",
+          "quietPitch": 7.116666666666647,
+          "manualPitch": false,
+          "compositionOwner": "automatic",
+          "heldYaw": -2.5757174171303632e-14,
+          "heldPitch": -0.1018785815646516,
+          "frames": 431,
+          "adjusted": 431,
+          "eligible": true,
+          "reason": "native body composition",
+          "positionDelta": 0,
+          "fov": 56,
+          "yawCorrection": 0,
+          "pitchCorrection": -0.1018785815646489,
+          "unresolved": 0,
+          "fit": true,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "planner": {
+          "frames": 431,
+          "adjusted": 362,
+          "checks": 5598,
+          "baseScore": 0,
+          "goalScore": 0,
+          "offset": [
+            2.3999999999999986,
+            0
+          ],
+          "goal": [
+            2.4,
+            0
+          ],
+          "cpuMs": 0,
+          "reason": "manual/precision composition held",
+          "positionOwner": "native actionCamera",
+          "manualHold": false
+        },
+        "yaw": -1.145821492441547,
+        "targetYaw": -1.1458333333333348
+      }
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "source": {
+        "adapterSHA256": "18bc37d7f7cc20453fd96215d26ffd4cce3b0595c0bb6c42f5e31d0bc6b76b9c",
+        "entrySHA256": "79a3f93ea25a2a9ea2ab69e717cfdbed6831c8ffe7e95605b574d905ed850858",
+        "marketModule": "scripts/game_v02_market_clearance.js",
+        "worldLifeModule": "scripts/game_v02_friendly_visitor_clearance.js"
+      },
+      "settled": {
+        "hero": [
+          85,
+          24.42,
+          363.03900000000004
+        ],
+        "camera": [
+          88.6358525066931,
+          26.5687768809779,
+          366.5270829455384
+        ],
+        "gap": 0.9609999999999559,
+        "health": 100,
+        "rays": [
+          {
+            "name": "Hips",
+            "blocks": []
+          },
+          {
+            "name": "Head",
+            "blocks": []
+          },
+          {
+            "name": "LeftHand",
+            "blocks": []
+          },
+          {
+            "name": "RightHand",
+            "blocks": []
+          },
+          {
+            "name": "LeftFoot",
+            "blocks": []
+          },
+          {
+            "name": "RightFoot",
+            "blocks": []
+          }
+        ],
+        "framing": {
+          "compositionFamily": "exploration",
+          "quietPitch": 6.033333333333317,
+          "manualPitch": false,
+          "compositionOwner": "automatic",
+          "heldYaw": 0.12434209237621284,
+          "heldPitch": -0.10346255450899444,
+          "frames": 366,
+          "adjusted": 366,
+          "eligible": true,
+          "reason": "native body composition",
+          "positionDelta": 0,
+          "fov": 56,
+          "yawCorrection": -0.12148669211474494,
+          "pitchCorrection": -0.10524409910496868,
+          "unresolved": 0,
+          "fit": true,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "planner": {
+          "frames": 366,
+          "adjusted": 297,
+          "checks": 5088,
+          "baseScore": 11,
+          "goalScore": 0,
+          "offset": [
+            2.3999999999999986,
+            0
+          ],
+          "goal": [
+            2.4,
+            0
+          ],
+          "cpuMs": 0.09999990463256836,
+          "reason": "friendly body shoulder clearance",
+          "positionOwner": "native actionCamera",
+          "manualHold": false
+        },
+        "yaw": 0,
+        "targetYaw": 0
+      },
+      "trace": [
+        {
+          "hero": [
+            85,
+            24.42,
+            360.505
+          ],
+          "camera": [
+            86.35,
+            26.619624587854165,
+            364.7276537447614
+          ],
+          "gap": 3.4950000000000045,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 0.05,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 5.266620473065586e-15,
+            "heldPitch": -0.07487186830122586,
+            "frames": 7,
+            "adjusted": 7,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.07487186830122328,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 7,
+            "adjusted": 0,
+            "checks": 36,
+            "baseScore": 0,
+            "goalScore": 0,
+            "offset": [
+              0,
+              0
+            ],
+            "goal": [
+              0,
+              0
+            ],
+            "cpuMs": 0.19999980926513672,
+            "reason": "not sampled",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            360.87749999999966
+          ],
+          "camera": [
+            86.35,
+            26.563834511728263,
+            364.9250967855823
+          ],
+          "gap": 3.1225000000003433,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 0.3,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -1.8318679906315083e-15,
+            "heldPitch": -0.08416891168072893,
+            "frames": 22,
+            "adjusted": 22,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.08416891168073282,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 22,
+            "adjusted": 0,
+            "checks": 216,
+            "baseScore": 0,
+            "goalScore": 0,
+            "offset": [
+              0,
+              0
+            ],
+            "goal": [
+              0,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "not sampled",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            361.2899999999993
+          ],
+          "camera": [
+            86.35,
+            26.568525427147748,
+            365.32261602421886
+          ],
+          "gap": 2.7100000000007185,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 0.55,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 5.342948306008566e-15,
+            "heldPitch": -0.08573131656254723,
+            "frames": 37,
+            "adjusted": 37,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.08573131656254873,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 37,
+            "adjusted": 0,
+            "checks": 396,
+            "baseScore": 0,
+            "goalScore": 0,
+            "offset": [
+              0,
+              0
+            ],
+            "goal": [
+              0,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "not sampled",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            361.7024999999989
+          ],
+          "camera": [
+            86.35,
+            26.56876661353312,
+            365.73447719168064
+          ],
+          "gap": 2.2975000000010937,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 0.8000000000000008,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 5.488665077990618e-15,
+            "heldPitch": -0.08609805200164403,
+            "frames": 52,
+            "adjusted": 52,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.08609805200164267,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 52,
+            "adjusted": 0,
+            "checks": 576,
+            "baseScore": 0,
+            "goalScore": 0,
+            "offset": [
+              0,
+              0
+            ],
+            "goal": [
+              0,
+              0
+            ],
+            "cpuMs": 0.10000038146972656,
+            "reason": "native composition restored",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            362.11499999999853
+          ],
+          "camera": [
+            86.35,
+            26.568776478388433,
+            366.1469519199558
+          ],
+          "gap": 1.8850000000014688,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 1.0500000000000012,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -1.790234627208065e-15,
+            "heldPitch": -0.08611502447245489,
+            "frames": 67,
+            "adjusted": 67,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.086115024472457,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 67,
+            "adjusted": 0,
+            "checks": 756,
+            "baseScore": 0,
+            "goalScore": 0,
+            "offset": [
+              0,
+              0
+            ],
+            "goal": [
+              0,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "native composition restored",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            362.52749999999816
+          ],
+          "camera": [
+            86.80273036417273,
+            26.568776865329085,
+            366.4146007970119
+          ],
+          "gap": 1.472500000001844,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 1.3000000000000003,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -5.23192600354605e-15,
+            "heldPitch": -0.09928402708900524,
+            "frames": 82,
+            "adjusted": 82,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.09928402708900153,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 82,
+            "adjusted": 13,
+            "checks": 1122,
+            "baseScore": 1,
+            "goalScore": 0,
+            "offset": [
+              0.5312646936043874,
+              0
+            ],
+            "goal": [
+              0.6,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            362.9399999999978
+          ],
+          "camera": [
+            87.42684610932137,
+            26.568776880370805,
+            366.62741622379366
+          ],
+          "gap": 1.0600000000022192,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 1.5499999999999994,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": -2.248201624865942e-15,
+            "heldPitch": -0.11452840118245916,
+            "frames": 97,
+            "adjusted": 97,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": 0,
+            "pitchCorrection": -0.11452840118245533,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 97,
+            "adjusted": 28,
+            "checks": 1674,
+            "baseScore": 10,
+            "goalScore": 0,
+            "offset": [
+              1.3345116189937067,
+              0
+            ],
+            "goal": [
+              1.8,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            88.48017984224957,
+            26.56877688095437,
+            366.55305662318494
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 1.7999999999999985,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.10662860555298334,
+            "heldPitch": -0.10592825658322108,
+            "frames": 112,
+            "adjusted": 112,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.10414652479214503,
+            "pitchCorrection": -0.10724840598976859,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 112,
+            "adjusted": 43,
+            "checks": 2040,
+            "baseScore": 11,
+            "goalScore": 0,
+            "offset": [
+              2.3125393877113183,
+              0
+            ],
+            "goal": [
+              2.4,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            88.62258588918162,
+            26.568776880976994,
+            366.5302907191226
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 2.0499999999999976,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.12272015661472543,
+            "heldPitch": -0.1035504648664399,
+            "frames": 127,
+            "adjusted": 127,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.11990083102414806,
+            "pitchCorrection": -0.10528609649153975,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 127,
+            "adjusted": 58,
+            "checks": 2220,
+            "baseScore": 11,
+            "goalScore": 0,
+            "offset": [
+              2.392820795760638,
+              0
+            ],
+            "goal": [
+              2.4,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            88.63475929242118,
+            26.56877688097788,
+            366.52739153871465
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 2.2999999999999967,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.1242019941629314,
+            "heldPitch": -0.1034639763935673,
+            "frames": 142,
+            "adjusted": 142,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.12134981554388236,
+            "pitchCorrection": -0.10524148837365921,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 142,
+            "adjusted": 73,
+            "checks": 2400,
+            "baseScore": 11,
+            "goalScore": 0,
+            "offset": [
+              2.3994106950298906,
+              0
+            ],
+            "goal": [
+              2.4,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            88.63576273365642,
+            26.5687768809779,
+            366.5271100631348
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 2.549999999999996,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.12433032015848483,
+            "heldPitch": -0.10346243490464951,
+            "frames": 157,
+            "adjusted": 157,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.12147519475138846,
+            "pitchCorrection": -0.10524363878771048,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 157,
+            "adjusted": 88,
+            "checks": 2580,
+            "baseScore": 11,
+            "goalScore": 0,
+            "offset": [
+              2.399951626902339,
+              0
+            ],
+            "goal": [
+              2.4,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            88.63584513735735,
+            26.5687768809779,
+            366.52708524103264
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 2.799999999999995,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.12434111549349103,
+            "heldPitch": -0.10346253543134148,
+            "frames": 172,
+            "adjusted": 172,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.12148573819873898,
+            "pitchCorrection": -0.10524405168864892,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 172,
+            "adjusted": 103,
+            "checks": 2760,
+            "baseScore": 11,
+            "goalScore": 0,
+            "offset": [
+              2.399996029294345,
+              0
+            ],
+            "goal": [
+              2.4,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            88.63585190177847,
+            26.5687768809779,
+            366.52708313666295
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 3.049999999999994,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.12434201177941205,
+            "heldPitch": -0.10346255258315878,
+            "frames": 187,
+            "adjusted": 187,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.12148661341889333,
+            "pitchCorrection": -0.10524409483859043,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 187,
+            "adjusted": 118,
+            "checks": 2940,
+            "baseScore": 11,
+            "goalScore": 0,
+            "offset": [
+              2.3999996740646314,
+              0
+            ],
+            "goal": [
+              2.4,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            88.63585245703868,
+            26.5687768809779,
+            366.5270829613316
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 3.299999999999993,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.12434208574453834,
+            "heldPitch": -0.10346255433693896,
+            "frames": 202,
+            "adjusted": 202,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.12148668563972365,
+            "pitchCorrection": -0.10524409874023455,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 202,
+            "adjusted": 133,
+            "checks": 3120,
+            "baseScore": 11,
+            "goalScore": 0,
+            "offset": [
+              2.399999973245596,
+              0
+            ],
+            "goal": [
+              2.4,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            88.63585250261723,
+            26.5687768809779,
+            366.52708294683896
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 3.5499999999999923,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.1243420918312082,
+            "heldPitch": -0.10346255449430503,
+            "frames": 217,
+            "adjusted": 217,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.12148669158263192,
+            "pitchCorrection": -0.10524409907444698,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 217,
+            "adjusted": 148,
+            "checks": 3300,
+            "baseScore": 11,
+            "goalScore": 0,
+            "offset": [
+              2.3999999978038646,
+              0
+            ],
+            "goal": [
+              2.4,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        },
+        {
+          "hero": [
+            85,
+            24.42,
+            363.03900000000004
+          ],
+          "camera": [
+            88.63585250635855,
+            26.5687768809779,
+            366.5270829456453
+          ],
+          "gap": 0.9609999999999559,
+          "health": 100,
+          "rays": [
+            {
+              "name": "Hips",
+              "blocks": []
+            },
+            {
+              "name": "Head",
+              "blocks": []
+            },
+            {
+              "name": "LeftHand",
+              "blocks": []
+            },
+            {
+              "name": "RightHand",
+              "blocks": []
+            },
+            {
+              "name": "LeftFoot",
+              "blocks": []
+            },
+            {
+              "name": "RightFoot",
+              "blocks": []
+            }
+          ],
+          "framing": {
+            "compositionFamily": "exploration",
+            "quietPitch": 3.7999999999999914,
+            "manualPitch": false,
+            "compositionOwner": "automatic",
+            "heldYaw": 0.12434209233144827,
+            "heldPitch": -0.10346255450776903,
+            "frames": 232,
+            "adjusted": 232,
+            "eligible": true,
+            "reason": "native body composition",
+            "positionDelta": 0,
+            "fov": 56,
+            "yawCorrection": -0.12148669207104357,
+            "pitchCorrection": -0.10524409910243959,
+            "unresolved": 0,
+            "fit": true,
+            "hasTarget": false,
+            "groundEnvelope": true
+          },
+          "planner": {
+            "frames": 232,
+            "adjusted": 163,
+            "checks": 3480,
+            "baseScore": 11,
+            "goalScore": 0,
+            "offset": [
+              2.3999999998197303,
+              0
+            ],
+            "goal": [
+              2.4,
+              0
+            ],
+            "cpuMs": 0,
+            "reason": "friendly body shoulder clearance",
+            "positionOwner": "native actionCamera",
+            "manualHold": false
+          },
+          "yaw": 0,
+          "targetYaw": 0
+        }
+      ],
+      "manualOrbit": {
+        "hero": [
+          85,
+          24.42,
+          363.03900000000004
+        ],
+        "camera": [
+          83.32312810244483,
+          26.56877430239083,
+          367.79011647872295
+        ],
+        "gap": 0.9609999999999559,
+        "health": 100,
+        "rays": [
+          {
+            "name": "Hips",
+            "blocks": []
+          },
+          {
+            "name": "Head",
+            "blocks": []
+          },
+          {
+            "name": "LeftHand",
+            "blocks": [
+              {
+                "name": "Market resident / rescue",
+                "distance": 4.163279030449713
+              }
+            ]
+          },
+          {
+            "name": "RightHand",
+            "blocks": []
+          },
+          {
+            "name": "LeftFoot",
+            "blocks": [
+              {
+                "name": "Market resident / rescue",
+                "distance": 4.40194792091606
+              },
+              {
+                "name": "Market resident / rescue",
+                "distance": 4.541045906353788
+              }
+            ]
+          },
+          {
+            "name": "RightFoot",
+            "blocks": []
+          }
+        ],
+        "framing": {
+          "compositionFamily": "exploration",
+          "quietPitch": 7.116666666666647,
+          "manualPitch": false,
+          "compositionOwner": "automatic",
+          "heldYaw": 0.09516264207327474,
+          "heldPitch": -0.10084822743963717,
+          "frames": 431,
+          "adjusted": 431,
+          "eligible": true,
+          "reason": "native body composition",
+          "positionDelta": 0,
+          "fov": 56,
+          "yawCorrection": -0.09301127541238574,
+          "pitchCorrection": -0.1018785815646489,
+          "unresolved": 0,
+          "fit": true,
+          "hasTarget": false,
+          "groundEnvelope": true
+        },
+        "planner": {
+          "frames": 431,
+          "adjusted": 362,
+          "checks": 5598,
+          "baseScore": 0,
+          "goalScore": 0,
+          "offset": [
+            2.3999999999999986,
+            0
+          ],
+          "goal": [
+            2.4,
+            0
+          ],
+          "cpuMs": 0,
+          "reason": "manual/precision composition held",
+          "positionOwner": "native actionCamera",
+          "manualHold": false
+        },
+        "yaw": -1.145821492441547,
+        "targetYaw": -1.1458333333333348
+      }
+    }
+  ],
+  "scope": "Native approach/settle and manual controller orbit at three aspect ratios; six exact rigid-mesh rays to animated body bones. Not a whole-game camera certification.",
+  "fullTrace": "V02_Friendly_Camera.trace.json.gz"
+}

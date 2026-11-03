@@ -1,0 +1,84 @@
+{
+  "baseline": {
+    "cpuP50": 2.5999999046325684,
+    "cpuP95": 3.299999713897705,
+    "frameIntervalP50": 8.300000190734863,
+    "drawsP50": 209,
+    "memory": {
+      "geometries": 280,
+      "textures": 44
+    },
+    "asset": null
+  },
+  "cartridge": {
+    "cpuP50": 2.700000286102295,
+    "cpuP95": 3.200000286102295,
+    "frameIntervalP50": 8.300000190734863,
+    "drawsP50": 220,
+    "memory": {
+      "geometries": 287,
+      "textures": 48
+    },
+    "asset": {
+      "ready": true,
+      "error": null,
+      "sourceTask": "b71871c5-e9e6-4e89-b6f7-723182ab3c8e",
+      "diameter": 0.08,
+      "thickness": 0.02,
+      "dt": 0.01666666666666669,
+      "modelBounds": [
+        0.081000001810248,
+        0.024879999546101317,
+        0.08100000445693827
+      ],
+      "count": 2,
+      "instances": [
+        {
+          "id": "belt-A",
+          "pair": "A",
+          "mode": "folded",
+          "deployment": 0,
+          "faceNormal": [
+            -0.9999999999999998,
+            0,
+            0
+          ],
+          "position": [
+            -0.18,
+            1.4281179146661758,
+            0.0006843740713915712
+          ],
+          "threadExit": [
+            -0.18700000021606683,
+            1.4621179165139198,
+            0.0006843740713915712
+          ]
+        },
+        {
+          "id": "belt-B",
+          "pair": "B",
+          "mode": "folded",
+          "deployment": 0,
+          "faceNormal": [
+            0.9999999999999998,
+            0,
+            0
+          ],
+          "position": [
+            0.18,
+            1.4281179146661758,
+            0.0006843740713915712
+          ],
+          "threadExit": [
+            0.18700000021606683,
+            1.3941179128184318,
+            0.0006843740713915712
+          ]
+        }
+      ]
+    }
+  },
+  "cpuMedianRatio": 1.0384616865914302,
+  "additionalDrawCalls": 11,
+  "limitations": "One fixed city view, render CPU and RAF intervals only; not GPU timing or sustained traversal performance certification."
+}

@@ -1,0 +1,8 @@
+{
+  "status": "FAIL native Blender UV RNA pointer crash",
+  "exitCode": 139,
+  "sourceMasterUnchanged": "5ccbb46478111f9a2ff265dcafb9d045caaba7777ca12bb84d25aad2a1df9927",
+  "location": "author.py line29; cached UV RNA reference retained across edit-mode mesh rebuild",
+  "fix": "Reacquire UV layer from the object after edit mode; no geometry or source fallback",
+  "bakeStarted": false
+}

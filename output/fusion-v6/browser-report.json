@@ -1,0 +1,625 @@
+{
+  "roof": {
+    "a": [
+      -993.0179411396384,
+      129.0323134933593,
+      -979.0409800988259
+    ],
+    "b": [
+      -979.0179411396384,
+      129.0323134933593,
+      -979.0409800988259
+    ]
+  },
+  "state": {
+    "snapback": {
+      "bank": null,
+      "clock": 3.423333333333327,
+      "reason": "INPUT RESET",
+      "distance": 0,
+      "tension": 0,
+      "remaining": 0,
+      "events": [
+        {
+          "position": {
+            "x": -993.0179411396384,
+            "y": 129.0323134933593,
+            "z": -979.0409800988259
+          },
+          "id": 1,
+          "time": 2.456666666666664,
+          "type": "bank"
+        },
+        {
+          "grade": "DIRTY",
+          "tension": 0.17482142857144417,
+          "direction": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "spent": [
+            "physical-3"
+          ],
+          "id": 2,
+          "time": 3.389999999999994,
+          "type": "release"
+        },
+        {
+          "position": {
+            "x": -988.2333054527106,
+            "y": 129.0323134933593,
+            "z": -979.0409800988259
+          },
+          "id": 3,
+          "time": 3.4066666666666605,
+          "type": "bank"
+        },
+        {
+          "reason": "PAUSE",
+          "id": 4,
+          "time": 3.423333333333327,
+          "type": "cancel"
+        }
+      ]
+    },
+    "surf": {
+      "active": false,
+      "railId": null,
+      "phase": "off",
+      "age": 0,
+      "speed": 0,
+      "lean": 0,
+      "crouch": 0,
+      "compression": 0,
+      "source": "0x2811926e",
+      "provenance": "authored slide-derived posture",
+      "offsets": {
+        "spinePitch": 0,
+        "spineRoll": 0,
+        "knee": 0,
+        "armBalance": 0.06
+      }
+    },
+    "mastery": {
+      "rails": [
+        {
+          "id": "rail-1",
+          "family": "Same-Wall",
+          "construction": "PERFECT",
+          "score": 0.9192307692307692,
+          "span": 14,
+          "slope": 0
+        }
+      ],
+      "lastCatch": {
+        "railId": "rail-1",
+        "grade": "PERFECT",
+        "score": 0.9974999999999987
+      },
+      "lastPop": {
+        "railId": "rail-1",
+        "grade": "EARLY",
+        "seconds": 1.3044582738216721,
+        "retention": 0.94
+      },
+      "style": 35,
+      "events": [
+        {
+          "id": 1,
+          "family": "Same-Wall",
+          "construction": "PERFECT",
+          "score": 0.9192307692307692,
+          "span": 14,
+          "slope": 0,
+          "type": "construction"
+        },
+        {
+          "railId": "rail-1",
+          "grade": "PERFECT",
+          "score": 0.9974999999999987,
+          "id": 2,
+          "type": "catch"
+        },
+        {
+          "railId": "rail-1",
+          "grade": "EARLY",
+          "seconds": 1.3044582738216721,
+          "retention": 0.94,
+          "id": 3,
+          "type": "pop"
+        }
+      ]
+    },
+    "deployment": {
+      "clock": 3.423333333333327,
+      "status": "INPUT RESET",
+      "tensionAt": null,
+      "tensionProgress": 0,
+      "shots": [],
+      "events": [
+        {
+          "id": 1,
+          "time": 0,
+          "type": "cancel",
+          "reason": "RESPAWN"
+        },
+        {
+          "id": 2,
+          "time": 0,
+          "type": "cancel",
+          "reason": "INPUT RESET"
+        },
+        {
+          "id": 3,
+          "time": 0,
+          "type": "cancel",
+          "reason": "INPUT RESET"
+        },
+        {
+          "id": 4,
+          "time": 0,
+          "type": "cancel",
+          "reason": "HERO CHANGE"
+        },
+        {
+          "id": 5,
+          "time": 0,
+          "type": "cancel",
+          "reason": "INPUT RESET"
+        },
+        {
+          "id": 6,
+          "time": 0,
+          "type": "cancel",
+          "reason": "INPUT RESET"
+        },
+        {
+          "id": 7,
+          "time": 0,
+          "type": "cancel",
+          "reason": "INPUT RESET"
+        },
+        {
+          "id": 8,
+          "time": 0,
+          "type": "cancel",
+          "reason": "HERO CHANGE"
+        },
+        {
+          "id": 9,
+          "time": 0.13333333333333333,
+          "type": "cancel",
+          "reason": "INPUT RESET"
+        },
+        {
+          "id": 10,
+          "time": 0.13333333333333333,
+          "type": "cancel",
+          "reason": "RESPAWN"
+        },
+        {
+          "id": 11,
+          "time": 0.13333333333333333,
+          "type": "cancel",
+          "reason": "INPUT RESET"
+        },
+        {
+          "id": 12,
+          "time": 0.47000000000000025,
+          "type": "begin",
+          "count": 1,
+          "autoCatch": false
+        },
+        {
+          "id": 13,
+          "time": 0.6366666666666674,
+          "type": "release",
+          "index": 0,
+          "position": {
+            "x": -992.6748710678141,
+            "y": 130.0010599362385,
+            "z": -979.0387032636747
+          }
+        },
+        {
+          "id": 14,
+          "time": 0.6700000000000008,
+          "type": "impact",
+          "index": 0,
+          "target": "anchor-1"
+        },
+        {
+          "id": 15,
+          "time": 0.6700000000000008,
+          "type": "tension-start"
+        },
+        {
+          "id": 16,
+          "time": 0.8533333333333347,
+          "type": "tension"
+        },
+        {
+          "id": 17,
+          "time": 1.1566666666666685,
+          "type": "begin",
+          "count": 1,
+          "autoCatch": false
+        },
+        {
+          "id": 18,
+          "time": 1.3233333333333346,
+          "type": "release",
+          "index": 0,
+          "position": {
+            "x": -992.6751780160029,
+            "y": 130.00409525177312,
+            "z": -979.0390949213888
+          }
+        },
+        {
+          "id": 19,
+          "time": 1.6400000000000001,
+          "type": "impact",
+          "index": 0,
+          "target": "anchor-2"
+        },
+        {
+          "id": 20,
+          "time": 1.6400000000000001,
+          "type": "tension-start"
+        },
+        {
+          "id": 21,
+          "time": 1.8233333333333328,
+          "type": "tension"
+        },
+        {
+          "id": 22,
+          "time": 2.406666666666664,
+          "type": "cancel",
+          "reason": "INPUT RESET"
+        },
+        {
+          "id": 23,
+          "time": 2.406666666666664,
+          "type": "cancel",
+          "reason": "RESPAWN"
+        },
+        {
+          "id": 24,
+          "time": 3.423333333333327,
+          "type": "cancel",
+          "reason": "PAUSE"
+        },
+        {
+          "id": 25,
+          "time": 3.423333333333327,
+          "type": "cancel",
+          "reason": "INPUT RESET"
+        }
+      ]
+    },
+    "motion": {
+      "position": {
+        "x": -988.3436697657833,
+        "y": 129.0323134933593,
+        "z": -979.0409800988259
+      },
+      "velocity": {
+        "x": -6.621858784359569,
+        "y": 0,
+        "z": 0
+      },
+      "speed": 6.621858784359569,
+      "grounded": true,
+      "mode": "GROUND",
+      "flow": null,
+      "advanced": null,
+      "sourcePose": null,
+      "contact": {
+        "policy": "sole",
+        "correction": 0,
+        "support": 129.0323134933593
+      }
+    },
+    "camera": {
+      "mode": "exploration",
+      "clock": 3.683333333333325,
+      "manualRemaining": 0,
+      "releaseRemaining": 0,
+      "yaw": -0.9416666666666673,
+      "pitch": -0.08,
+      "composition": null
+    },
+    "afterimages": {
+      "bound": true,
+      "disposed": false,
+      "sourceVertices": 56190,
+      "sourceIndices": 56190,
+      "capacity": 3,
+      "poolCapacity": 4,
+      "history": 0,
+      "config": {
+        "quality": "high",
+        "maxShards": 96,
+        "shardCount": 48,
+        "shardSize": 1,
+        "shardOpacity": 0.25,
+        "shardSpeed": 5.5,
+        "shardLifetime": 0.68,
+        "shardRotation": 0.7,
+        "violetBalance": 0.28,
+        "outlineBrightness": 1.3,
+        "afterimageCount": 3,
+        "afterimageOpacity": 0.22,
+        "afterimageSpacing": 0.85,
+        "afterimageFade": 0.55,
+        "outletBrightness": 1.3,
+        "intensity": 1,
+        "trailLength": 7
+      },
+      "active": 0,
+      "activeKinds": [],
+      "footCapacity": 8,
+      "footprints": 0,
+      "pending": 0,
+      "drawCalls": 0,
+      "maxDrawCalls": 2,
+      "captures": 3,
+      "peakCaptureMs": 0.3000001907348633,
+      "last": {
+        "kind": "reset",
+        "reason": "INPUT RESET"
+      }
+    },
+    "lastFailure": null,
+    "impulses": [],
+    "releaseEvents": [],
+    "movementReady": false,
+    "hero": "backspool",
+    "clock": 3.423333333333327,
+    "owner": {
+      "frame": 221,
+      "owner": "ordinary",
+      "reason": null,
+      "conflicts": 0,
+      "commits": 1
+    },
+    "sprint": false,
+    "preset": "traversal",
+    "mode": "auto",
+    "wheel": false,
+    "drive": {
+      "now": 3.423333333333327,
+      "strain": 12,
+      "capacity": 5,
+      "bank": [],
+      "lastBeat": 2.6066666666666634,
+      "lastRelease": {
+        "type": "release",
+        "id": "afterstep-2",
+        "sequence": 2,
+        "time": 3.389999999999994,
+        "mode": "snapback",
+        "contactId": "physical-3",
+        "action": "footplant",
+        "perfect": false,
+        "cost": 12,
+        "deltaVelocity": {
+          "x": -13.221858784359569,
+          "y": 0,
+          "z": 1.4654943925052066e-15
+        },
+        "spent": [
+          "physical-3"
+        ],
+        "doubleStep": 0
+      },
+      "doubleStep": null,
+      "eventSequence": 2,
+      "reason": "RELEASED"
+    },
+    "rail": {
+      "time": 1.016666666666668,
+      "anchors": [],
+      "rails": [],
+      "current": null,
+      "events": [
+        {
+          "id": 9,
+          "type": "reset",
+          "time": 0,
+          "reason": "RESPAWN"
+        }
+      ],
+      "lastReason": "RESPAWN",
+      "limits": {
+        "minSpan": 6,
+        "maxSpan": 100,
+        "maxSlope": 55,
+        "maxRails": 4,
+        "maxAnchors": 8,
+        "lifetime": 30,
+        "attachReach": 2,
+        "transferReach": 3,
+        "maxSpeed": 28,
+        "gravity": 9.81,
+        "friction": 0.45,
+        "junctionAngle": 75,
+        "jumpImpulse": 4.8,
+        "slingshotImpulse": 6.5
+      }
+    },
+    "route": {
+      "status": "empty",
+      "reason": "INPUT RESET",
+      "time": 0,
+      "route": null,
+      "recording": null,
+      "token": null,
+      "reservedIds": [],
+      "consumedIds": [],
+      "actionIndex": 0,
+      "counters": {
+        "recordings": 0,
+        "replays": 0,
+        "completed": 0,
+        "interrupted": 0,
+        "executed": 0,
+        "rejectedActions": 0
+      },
+      "limits": {
+        "maxSeconds": 4,
+        "maxActions": 8,
+        "maxSamples": 120,
+        "reconnectDistance": 1.35,
+        "maxDeviation": 1.5
+      },
+      "nextIds": {
+        "route": 1,
+        "action": 1,
+        "trace": 1,
+        "replay": 1
+      }
+    },
+    "exhaust": {
+      "bound": true,
+      "source": "bone:mixamorigHips",
+      "enabled": true,
+      "disposed": false,
+      "outletPosition": {
+        "x": -988.6167831990485,
+        "y": 129.640517241107,
+        "z": -979.0522349222259
+      },
+      "outlets": [
+        {
+          "x": -988.6197778298167,
+          "y": 129.65436021431017,
+          "z": -978.9209969540949
+        },
+        {
+          "x": -988.6137885682804,
+          "y": 129.62667426790384,
+          "z": -979.1834728903569
+        }
+      ],
+      "outletOffsetMeters": {
+        "x": 0,
+        "y": -0.02,
+        "z": -0.19
+      },
+      "emissionDirection": {
+        "x": 1,
+        "y": 0,
+        "z": -1.1083875697105255e-16
+      },
+      "activeCounts": {
+        "slivers": 0,
+        "rings": 0,
+        "threads": 0,
+        "slices": 0
+      },
+      "capacities": {
+        "slivers": 96,
+        "rings": 24,
+        "threads": 64,
+        "slices": 12
+      },
+      "activeTotal": 0,
+      "visibleDrawCalls": 0,
+      "maxDrawCalls": 3,
+      "lastRelease": {
+        "id": "afterstep-2",
+        "at": 3.389999999999994,
+        "mode": "snapback",
+        "perfect": false,
+        "magnitude": 13.221858784359569,
+        "deltaVelocity": {
+          "x": -13.221858784359569,
+          "y": 0,
+          "z": 1.4654943925052066e-15
+        },
+        "direction": {
+          "x": 1,
+          "y": 0,
+          "z": -1.1083875697105255e-16
+        },
+        "braking": false
+      },
+      "lastBank": {
+        "id": "afterstep-1",
+        "at": 2.6066666666666634,
+        "type": "contact"
+      },
+      "lastReset": "INPUT RESET",
+      "emitted": 74,
+      "overwritten": 0,
+      "flash": 0,
+      "config": {
+        "quality": "high",
+        "maxShards": 96,
+        "shardCount": 48,
+        "shardSize": 1,
+        "shardOpacity": 0.25,
+        "shardSpeed": 5.5,
+        "shardLifetime": 0.68,
+        "shardRotation": 0.7,
+        "violetBalance": 0.28,
+        "outlineBrightness": 1.3,
+        "afterimageCount": 3,
+        "afterimageOpacity": 0.22,
+        "afterimageSpacing": 0.85,
+        "afterimageFade": 0.55,
+        "outletBrightness": 1.3,
+        "intensity": 1,
+        "trailLength": 7
+      },
+      "refraction": {
+        "supported": null,
+        "remaining": 0,
+        "captureCount": 0,
+        "rect": null,
+        "textureSize": 128
+      }
+    },
+    "precision": false,
+    "pendingAnchor": null,
+    "lastMessage": "BANKED",
+    "course": null,
+    "activeAnimation": "forspoken-flow-idle",
+    "animationTime": 0.03333333333333333,
+    "contactEvents": [
+      {
+        "type": "contact",
+        "id": "afterstep-1",
+        "sequence": 1,
+        "time": 2.6066666666666634,
+        "contactId": "physical-3",
+        "action": "footplant",
+        "vector": {
+          "x": 0.96,
+          "y": 0,
+          "z": -2.1316282072803005e-16
+        },
+        "direction": {
+          "x": 1,
+          "y": 0,
+          "z": -2.220446049250313e-16
+        },
+        "magnitude": 0.96,
+        "replaced": null
+      }
+    ]
+  },
+  "errors": [],
+  "checks": [
+    "real keyboard precision A/B",
+    "no instant anchors",
+    "hand release and surface impact",
+    "rail only after B",
+    "pause cleanup",
+    "zero ownership conflicts"
+  ]
+}

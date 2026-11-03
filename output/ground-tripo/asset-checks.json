@@ -1,0 +1,77 @@
+{
+  "state": {
+    "imported": {
+      "barrier": {
+        "status": "ready",
+        "instances": 3,
+        "bounds": [
+          4.975,
+          0.52,
+          0.6380000000000017
+        ]
+      },
+      "planter": {
+        "status": "ready",
+        "instances": 3,
+        "bounds": [
+          4.975,
+          0.7000000000000001,
+          0.9879999999999995
+        ]
+      }
+    },
+    "ready": true,
+    "error": null,
+    "location": "Central plaza, straight ahead from spawn",
+    "start": [
+      0,
+      0.42,
+      8
+    ],
+    "obstacles": [
+      {
+        "id": "barrier",
+        "name": "LOW BARRIER",
+        "z": -14,
+        "width": 5,
+        "depth": 0.65,
+        "top": 0.92,
+        "color": 1320497
+      },
+      {
+        "id": "planter",
+        "name": "PLANTER",
+        "z": -40,
+        "width": 5,
+        "depth": 1,
+        "top": 1.1,
+        "color": 1716279
+      },
+      {
+        "id": "cargo",
+        "name": "CARGO CASES",
+        "z": -66,
+        "width": 5,
+        "depth": 0.65,
+        "top": 1.23,
+        "color": 2108473
+      }
+    ],
+    "run": {
+      "id": 1,
+      "jumpUsed": false,
+      "cleared": [],
+      "starts": [],
+      "began": 0,
+      "complete": false
+    },
+    "drawCalls": 15
+  },
+  "errors": [],
+  "checks": [
+    "six imported instances",
+    "collision envelope alignment",
+    "both GLBs loaded",
+    "no page errors"
+  ]
+}

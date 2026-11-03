@@ -1,0 +1,21 @@
+const{openMarket,D}=require('./market_test_helpers.cjs'),{saveEvidence}=require('./evidence_io.cjs'),assert=require('assert/strict'),path=require('path');
+const report={status:'FAIL',scope:'One supported hero fixture, then real keyboard sprint tap, continuous directional approach and jump, with native simulation and shared friendly bodies. No NPC/health/velocity edits during playback.',results:[]};
+(async()=>{let h;try{h=await openMarket(report);const{p,step,capture}=h;
+ const site=await p.evaluate(()=>{
+  const target=verticalMarketState().civilians[0].position;
+  for(const distance of [12,10,8])for(const [x,z,key]of [[1,0,'a'],[-1,0,'d'],[0,1,'w'],[0,-1,'s']]){
+   const from=new THREE.Vector3(target[0]+x*distance,target[1]+.42,target[2]+z*distance),to=new THREE.Vector3(target[0],target[1]+.42,target[2]);
+   if(sweptStaticCharacterHit(from,to))continue;let supported=true;
+   for(let t=0;t<=distance;t+=.4){const point=from.clone().lerp(to,t/distance);if(Math.abs(supportHeight(point.x,point.z,point.y+.1)-point.y)>.02){supported=false;break;}}
+   if(supported)return{from:from.toArray(),key,target,distance};
+  }throw Error('No supported native sprint approach');
+ });report.site=site;
+ await p.evaluate(from=>{resetPlayer();clearInput();clearPad();startGame(false);s.pos.fromArray(from);s.vel.set(0,0,0);s.onGround=true;setMode(P.GROUND);marketPad.axes=[0,0,0,0];s.yaw=cam.yaw=cam.targetYaw=0;cam.pitch=cam.targetPitch=-.1;cam.focus.copy(s.pos).add(new THREE.Vector3(0,1.2,0));camera.position.copy(s.pos).add(new THREE.Vector3(1.35,2.4,4.24));camera.lookAt(cam.focus);camera.updateMatrixWorld(true);},site.from);
+ if(await p.evaluate(()=>backspoolFlow.walking()))await p.keyboard.press('o');
+ await p.keyboard.press('Shift');await p.keyboard.down(site.key);
+ const rows=[];async function sample(n){for(let i=0;i<n;i++){await step();rows.push(await p.evaluate(()=>{const d=v02FriendlyContactState(),point=s.pos,shape={radius:playerBodyRadius(),height:playerBodyHeight(),offset:.42,margin:0};return{p:point.toArray(),v:s.vel.toArray(),grounded:s.onGround,mode:s.mode,trauma:courier.trauma,sprint:threadrailGame.sprinting(),source:currentAnim,contact:d.last,overlaps:d.actors.filter(a=>v02FriendlyContactCore.occupied(point,{...a,x:a.position[0],y:a.position[1],z:a.position[2]},shape)).map(a=>a.id),hits:destruction.hits};}));}}
+ await sample(180);assert(rows.some(r=>Math.hypot(r.v[0],r.v[2])>12),'No fast native sprint demonstrated');assert(rows.every(r=>r.sprint),'Sprint tap did not remain active');assert(rows.every(r=>!r.overlaps.length),'Fast approach entered a friendly body '+JSON.stringify(rows.find(r=>r.overlaps.length)));assert(rows.every(r=>r.trauma===0&&r.hits===rows[0].hits),'Friendly sprint made damage');await capture('keyboard-sprint-body');
+ report.results.push({name:'single-tap keyboard Flow sprint meets a fixed friendly body',maximumSpeed:Math.max(...rows.map(r=>Math.hypot(r.v[0],r.v[2]))),trace:rows.slice()});
+ await p.keyboard.press('Space');await sample(180);await p.keyboard.up(site.key);await step(30);assert(rows.some(r=>!r.grounded),'Jump did not occur');assert(rows.every(r=>!r.overlaps.length),'Jump/landing crossed a friendly body '+JSON.stringify(rows.find(r=>r.overlaps.length)));assert(rows.every(r=>r.trauma===0),'Friendly jump caused health loss');assert(await p.evaluate(()=>s.onGround),'Jump failed to return to support');await capture('keyboard-jump-recovery');report.results.push({name:'native jump from contact returns to supported movement',trace:rows.slice(180)});
+ await p.keyboard.press('Shift');await step(2);assert.equal(await p.evaluate(()=>threadrailGame.sprinting()),false,'Second sprint tap did not toggle off');assert.deepEqual(report.errors,[]);report.status='PASS keyboard sprint body contact, jump/landing recovery and tap-toggle controls';
+}catch(e){report.failure=e.stack||String(e);console.error(e);process.exitCode=1;}finally{if(h){await h.p.keyboard.up(report.site?.key||'a').catch(()=>{});await h.p.evaluate(()=>renderNight(0)).catch(()=>{});await h.p.screenshot({path:path.join(D,'evidence/friendly-keyboard-final.png')}).catch(()=>{});await h.browser.close();}saveEvidence(D,'V02_Friendly_Contacts_Keyboard.json',report);console.log(report.status)}})();

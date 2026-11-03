@@ -1,0 +1,15 @@
+/* Start through native reset and UI hero selection. Aim/fire are standard pad
+ * buttons/sticks; no target, camera, movement, health, NPC or rail writes. */
+const{openMarket,selectHero,D}=require('./market_test_helpers.cjs'),{saveEvidence}=require('./evidence_io.cjs');
+const report={status:'PROBE',scope:'Original Sightline courier first recovery-anchor approach from native central reset, using simulated normal controller look/aim/fire. This is route investigation, not complete mission certification.'};
+(async()=>{let h;try{h=await openMarket(report);const{p,step,capture}=h;await selectHero(p,'sightline',step,report);await p.evaluate(()=>{resetPlayer();clearInput();startGame(false);marketPad.axes=[0,0,0,0];marketPad.buttons[6]={pressed:true,value:1};});await step(30);
+ report.initial=await p.evaluate(()=>({hero:s.pos.toArray(),courier:courierState(),anchors:courier.routeAnchors.map(a=>({position:a.group.position.toArray(),type:a.type,visited:a.visited}))}));
+ let acquired=false;
+ for(let i=0;i<720;i++){
+  const r=await p.evaluate(()=>{camera.updateMatrixWorld(true);const target=courier.routeAnchors[0],point=target.group.getWorldPosition(new THREE.Vector3()),d=point.clone().sub(camera.position).normalize(),view=camera.getWorldDirection(new THREE.Vector3()),yaw=angleDelta(Math.atan2(-view.x,-view.z),Math.atan2(-d.x,-d.z)),pitch=Math.asin(d.y)-Math.asin(view.y),scale=Math.min(1,Math.hypot(yaw,pitch)*6),len=Math.hypot(yaw,pitch),raw=scale?.1+.9*scale:0;marketPad.axes[2]=len?-yaw/len*raw:0;marketPad.axes[3]=len?-pitch/len*raw:0;return{acquired:s.targetObj?.userData.anchorGroup===target.group,error:Math.hypot(yaw,pitch),target:s.target?.toArray(),object:s.targetObj?.name,hero:s.pos.toArray(),camera:camera.position.toArray()};});
+  await step();if(i%30===0)(report.aimTrace??=[]).push(r);if(r.acquired){acquired=true;break;}
+ }
+ await p.evaluate(()=>marketPad.axes=[0,0,0,0]);await step(4);report.acquired=acquired;
+ if(acquired){await p.evaluate(()=>marketPad.buttons[7]={pressed:true,value:1});await step();await p.evaluate(()=>marketPad.buttons[7]={pressed:false,value:0});for(let i=0;i<360;i++){await step();if(i%10===0)(report.flight??=[]).push(await p.evaluate(()=>({hero:s.pos.toArray(),mode:s.mode,velocity:s.vel.toArray(),trauma:courier.trauma,visited:courier.routeAnchors[0].visited,queued:!!s.queued})));if(await p.evaluate(()=>courier.routeAnchors[0].visited))break;}}
+ report.final=await p.evaluate(()=>({hero:s.pos.toArray(),mode:s.mode,courier:courierState(),visited:courier.routeAnchors[0].visited,errors:window.lastError}));await capture('original-first-recovery');report.status='PROBE completed: '+(report.final.visited?'first original recovery anchor reached':acquired?'target acquired; physical arrival requires investigation':'first anchor not acquired from central reset');console.log(report.status);
+}catch(e){report.status='FAIL probe execution';report.failure=e.stack||String(e);console.error(e);process.exitCode=1;}finally{await h?.browser.close();saveEvidence(D,'V02_Original_Courier_Input_Probe.json',report);}})();

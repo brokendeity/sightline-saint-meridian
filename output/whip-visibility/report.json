@@ -1,0 +1,198 @@
+{
+  "traces": [
+    {
+      "pair": "A",
+      "held": {
+        "id": "aim-cartridge-A",
+        "pair": "A",
+        "mode": "held",
+        "deployment": 0,
+        "faceNormal": [
+          -0.8155191478530197,
+          0.1580034887297741,
+          -0.5567435828407048
+        ],
+        "position": [
+          -47.6473918743803,
+          1.8386978592859002,
+          86.01325962717439
+        ],
+        "threadExit": [
+          -47.634245449145226,
+          1.8819483747695818,
+          85.98741751612584
+        ],
+        "coreIntensity": 1.6,
+        "surfaceGlow": false,
+        "speedTrail": false,
+        "trailPoints": 0
+      },
+      "live": {
+        "hand": [
+          -47.663476065494145,
+          1.795508597744519,
+          86.08742826261906
+        ],
+        "visible": true,
+        "core": 1.6,
+        "belt": "holder"
+      }
+    },
+    {
+      "pair": "A",
+      "anchor": {
+        "id": "anchor-5",
+        "pair": "A",
+        "mode": "anchored",
+        "deployment": 0.9998955358561683,
+        "faceNormal": [
+          0,
+          0,
+          0.9999999999999998
+        ],
+        "position": [
+          -52,
+          3,
+          80.016
+        ],
+        "threadExit": [
+          -51.948999997228384,
+          3,
+          80.0265000003241
+        ],
+        "coreIntensity": 2.4,
+        "surfaceGlow": true,
+        "speedTrail": false,
+        "trailPoints": 0
+      },
+      "visible": {
+        "visible": true,
+        "core": 2.4,
+        "world": [
+          -52,
+          3,
+          80.016
+        ]
+      }
+    },
+    {
+      "pair": "B",
+      "held": {
+        "id": "aim-cartridge-B",
+        "pair": "B",
+        "mode": "held",
+        "deployment": 0,
+        "faceNormal": [
+          0.973392939785663,
+          0.12593481450785066,
+          -0.19143303599509265
+        ],
+        "position": [
+          -48.33263917830638,
+          1.8373195760731325,
+          85.8698503504105
+        ],
+        "threadExit": [
+          -48.3143359425966,
+          1.7889988490393403,
+          85.87628068407129
+        ],
+        "coreIntensity": 1.6,
+        "surfaceGlow": false,
+        "speedTrail": false,
+        "trailPoints": 0
+      },
+      "live": {
+        "hand": [
+          -48.34847464208707,
+          1.7972482313332099,
+          85.94580115960687
+        ],
+        "visible": true,
+        "core": 1.6,
+        "belt": "holder"
+      }
+    },
+    {
+      "pair": "B",
+      "anchor": {
+        "id": "anchor-6",
+        "pair": "B",
+        "mode": "anchored",
+        "deployment": 0.9998492669249045,
+        "faceNormal": [
+          0,
+          0,
+          0.9999999999999998
+        ],
+        "position": [
+          -44,
+          6,
+          80.016
+        ],
+        "threadExit": [
+          -43.948999997228384,
+          6,
+          80.0265000003241
+        ],
+        "coreIntensity": 2.4,
+        "surfaceGlow": true,
+        "speedTrail": false,
+        "trailPoints": 0
+      },
+      "visible": {
+        "visible": true,
+        "core": 2.4,
+        "world": [
+          -44,
+          6,
+          80.016
+        ]
+      }
+    },
+    {
+      "floorAsset": {
+        "id": "anchor-7",
+        "pair": "A",
+        "mode": "anchored",
+        "deployment": 0.9999919780845732,
+        "faceNormal": [
+          0,
+          1,
+          0
+        ],
+        "position": [
+          -46,
+          0.4160000029802314,
+          84.15000000111952
+        ],
+        "threadExit": [
+          -45.948999997228384,
+          0.42650000330433163,
+          84.15000000111952
+        ],
+        "coreIntensity": 2.4,
+        "surfaceGlow": true,
+        "speedTrail": false,
+        "trailPoints": 0
+      },
+      "floorContact": {
+        "x": -46,
+        "y": 0.40000000298023136,
+        "z": 84.15000000111952
+      }
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "long-held aim A/B",
+    "palm attachment",
+    "carried slot hidden",
+    "aim to casting handoff",
+    "physical impacts",
+    "persistent attached GLBs",
+    "wall and floor deploy",
+    "surface offset",
+    "pause cleanup"
+  ]
+}
