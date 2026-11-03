@@ -1,0 +1,100 @@
+/* V02 pause / title menu restyle: "Midnight Slash".
+ * Design principles taken from bold stylised RPG menus (diagonal composition, stamped labels, hard offset shadows,
+ * kinetic entrances, one loud selection colour) and expressed in Saint Meridian's own art direction: midnight-blue and
+ * charcoal slabs, thin cyan strips, warm amber accents, no bloom. Presentation only: every id, button, tab and handler
+ * is the one the HUD module already owns. Loaded after scripts/game_vertical_hud_v02.css. */
+:root{--sm-slab-w:min(66vw,940px);--sm-night:#06101a;--sm-slab:#0a1926;--sm-slab-2:#0f2433;--sm-charcoal:#11171d;--sm-cyan:#5fe3e8;--sm-cyan-deep:#0f6f7a;--sm-amber:#ffb25a;--sm-amber-deep:#9a5a17;--sm-ink:#f2f7f9;--sm-dim:#a9c0c9;--sm-display:Impact,Haettenschweiler,"Arial Narrow Bold","Franklin Gothic Heavy",sans-serif}
+
+/* ---- Stage: the live city stays visible on the right; a midnight slab carries the menu on the left.
+ * No backdrop blur: blurring over the WebGL canvas loaded the GPU right after startup and made the timing-sensitive
+ * Backspool air test fail 4 of 5 runs; without it the build matches the previous build's air-test pass rate. */
+html body #menu#menu{background:linear-gradient(90deg,rgba(4,10,17,.88),rgba(4,10,17,.55) 55%,rgba(4,10,17,.18))!important;backdrop-filter:none!important;align-items:flex-start!important;justify-content:flex-start!important;padding:clamp(12px,3vh,32px) 0 clamp(12px,3vh,32px) clamp(16px,5vw,88px)!important;overflow:hidden auto!important}
+html body #menu#menu::before{content:'';position:fixed;inset:0 auto 0 0;width:var(--sm-slab-w);background:linear-gradient(180deg,var(--sm-slab),var(--sm-night) 70%);clip-path:polygon(0 0,100% 0,90% 100%,0 100%);pointer-events:none;z-index:0;animation:smSlab .28s cubic-bezier(.2,.9,.2,1) both}
+html body #menu#menu::after{content:'';position:fixed;inset:0;background:linear-gradient(90deg,var(--sm-cyan),var(--sm-cyan));clip-path:polygon(var(--sm-slab-w) 0,calc(var(--sm-slab-w) + 3px) 0,calc(var(--sm-slab-w)*.9 + 3px) 100%,calc(var(--sm-slab-w)*.9) 100%);pointer-events:none;z-index:0;animation:smStrip .36s .08s cubic-bezier(.2,.9,.2,1) both}
+#menuStrip{position:fixed;inset:0;pointer-events:none;z-index:0;animation:smStrip .4s .12s cubic-bezier(.2,.9,.2,1) both;background:var(--sm-amber);clip-path:polygon(calc(var(--sm-slab-w) + 12px) 0,calc(var(--sm-slab-w) + 13px) 0,calc(var(--sm-slab-w)*.9 + 13px) 100%,calc(var(--sm-slab-w)*.9 + 12px) 100%);opacity:.75}
+#menuHeroWord{position:fixed;right:2.5vw;bottom:6vh;pointer-events:none;z-index:1;text-align:right;transform:rotate(-8deg);transform-origin:right bottom;animation:smWord .42s .1s cubic-bezier(.2,.9,.2,1) both}
+#menuHeroWord b{display:block;font:400 clamp(72px,min(7vw,14vh),140px)/.82 var(--sm-display);letter-spacing:.02em;text-transform:uppercase;color:transparent;-webkit-text-stroke:2px rgba(95,227,232,.42);white-space:nowrap}
+#menuHeroWord span{display:inline-block;margin:0 0 10px 0;text-transform:uppercase;padding:5px 14px 4px;font:400 15px/1 var(--sm-display);letter-spacing:.16em;color:var(--sm-night);background:var(--sm-amber);clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+
+/* ---- The card becomes an open layout on the slab. */
+html body #menu#menu .card{position:relative;z-index:2;margin:0!important;width:min(700px,calc(100vw - 32px))!important;max-height:calc(100dvh - 2*clamp(12px,3vh,32px))!important;background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:0 8px 0 0!important;animation:smCard .26s .04s cubic-bezier(.2,.9,.2,1) both}
+
+/* ---- Tabs: stamped, tilted chips; the selected one is a cyan slab with an amber hard shadow. */
+html body #menu#menu #v02Tabs{gap:4px!important;padding:14px 4px 22px!important;border-bottom:0!important;margin-bottom:2px;scrollbar-width:none}
+html body #menu#menu #v02Tabs::-webkit-scrollbar{display:none}
+html body #menu#menu #v02Tabs button{position:relative;isolation:isolate;flex:none;min-height:44px;margin:0!important;padding:9px 18px 8px!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;color:#d3e4ea!important;font:400 18px/1 var(--sm-display)!important;letter-spacing:.06em!important;text-transform:uppercase;transform:rotate(-3deg);transition:transform .12s cubic-bezier(.2,.9,.2,1),color .12s}
+html body #menu#menu #v02Tabs button::before{content:'';position:absolute;inset:3px 0;z-index:-1;transform:skewX(-16deg);background:rgba(15,36,51,.85);border-bottom:2px solid rgba(95,227,232,.25);transition:background .12s,box-shadow .12s}
+html body #menu#menu #v02Tabs button:hover{color:#fff!important;transform:rotate(-3deg) translateY(-2px)}
+html body #menu#menu #v02Tabs button:hover::before{background:#16384a}
+html body #menu#menu #v02Tabs button[aria-selected=true]{color:var(--sm-night)!important;transform:rotate(-5deg) scale(1.12);z-index:2}
+html body #menu#menu #v02Tabs button[aria-selected=true]::before{background:var(--sm-cyan);border-bottom-color:transparent;box-shadow:5px 5px 0 var(--sm-amber)}
+html body #menu#menu #v02Tabs button:focus-visible{outline:none}
+html body #menu#menu #v02Tabs button:focus-visible::before{box-shadow:5px 5px 0 var(--sm-amber),0 0 0 3px var(--sm-ink)}
+
+/* ---- District pane: stamped eyebrow, tilted display title, slips for the three objectives. */
+html body #menu#menu .eyebrow{display:inline-block;margin:6px 0 0;padding:6px 16px 5px;font:400 15px/1 var(--sm-display)!important;letter-spacing:.16em!important;color:var(--sm-night)!important;background:var(--sm-amber);clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);transform:rotate(-3deg)}
+html body #menu#menu .title{margin:18px 0 14px!important;font:400 clamp(60px,min(8.6vw,12vh),124px)/.84 var(--sm-display)!important;letter-spacing:.01em!important;color:var(--sm-ink)!important;transform:rotate(-4deg) skewX(-6deg);transform-origin:left center;text-shadow:6px 6px 0 var(--sm-cyan-deep);animation:smTitle .34s .1s cubic-bezier(.2,1.4,.3,1) both}
+html body #menu#menu .subtitle{max-width:470px!important;margin:0 0 20px!important;padding-left:14px;border-left:3px solid var(--sm-cyan);color:#cfe0e6!important;font-size:15px!important;line-height:1.55!important}
+html body #menu#menu .missionBrief{display:flex!important;flex-direction:column;gap:7px;margin:0 0 18px!important;border:0!important}
+html body #menu#menu .missionBrief>div{display:grid;grid-template-columns:auto 1fr;column-gap:16px;align-items:center;max-width:560px;padding:7px 34px 7px 0;border:0!important;background:linear-gradient(90deg,var(--sm-slab-2),rgba(10,25,38,.8));clip-path:polygon(0 0,100% 0,calc(100% - 22px) 100%,0 100%);color:var(--sm-dim);font-size:13px;line-height:1.35;transform:rotate(-1.5deg);animation:smSlip .3s cubic-bezier(.2,.9,.2,1) both}
+html body #menu#menu .missionBrief>div:nth-child(1){margin-left:0;animation-delay:.14s}
+html body #menu#menu .missionBrief>div:nth-child(2){margin-left:18px;animation-delay:.19s}
+html body #menu#menu .missionBrief>div:nth-child(3){margin-left:36px;animation-delay:.24s}
+html body #menu#menu .missionBrief span{grid-row:1/3;align-self:stretch;display:flex;align-items:center;min-width:132px;padding:0 14px;background:var(--sm-charcoal);border-left:4px solid var(--sm-cyan);color:var(--sm-amber)!important;font:400 14px/1.1 var(--sm-display)!important;letter-spacing:.1em!important}
+html body #menu#menu .missionBrief b{grid-column:2;color:var(--sm-ink);font:400 19px/1.05 var(--sm-display);letter-spacing:.04em;text-transform:uppercase}
+html body #menu#menu #v02Pane-overview:not([hidden]){display:flex!important;flex-direction:column;align-items:flex-start}
+html body #menu#menu #v02Pane-overview>*{order:1}
+html body #menu#menu #v02Pane-overview>:is(.eyebrow,.title,.subtitle,.missionBrief){order:0}
+html body #menu#menu #v02Pane-overview>#v02Start{order:0;margin-bottom:10px!important}
+html body #menu#menu #v02Pane-overview>#v02ViewTools{align-self:stretch;max-width:600px}
+html body #menu#menu #assetNote{margin:0 0 14px!important;color:#8fa9b3!important;font-size:12px!important}
+html body #menu#menu :is(#v02ToolPanels h2){margin:16px 0 6px!important;font:400 24px/1 var(--sm-display)!important;letter-spacing:.05em!important;text-transform:uppercase;color:var(--sm-amber)!important;transform:rotate(-2deg);transform-origin:left}
+html body #menu#menu #v02ToolPanels p{color:#c3d6dd}
+
+/* ---- Buttons: skewed slabs that jump on hover/focus. Primary = cyan, secondary = amber edge, quiet = dark. */
+html body #menu#menu button:not(#v02Tabs button),html body #menu#menu summary{position:relative;isolation:isolate;min-height:44px;margin:6px 12px 6px 0!important;padding:11px 26px 10px!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;color:var(--sm-ink)!important;font:400 16px/1 var(--sm-display)!important;letter-spacing:.07em!important;text-transform:uppercase;cursor:pointer;transition:transform .12s cubic-bezier(.2,.9,.2,1),color .12s}
+html body #menu#menu button:not(#v02Tabs button)::before,html body #menu#menu summary::before{content:'';position:absolute;inset:0;z-index:-1;transform:skewX(-14deg);background:var(--sm-slab-2);box-shadow:inset 0 0 0 1px rgba(95,227,232,.28);transition:box-shadow .12s,background .12s}
+html body #menu#menu button:not(#v02Tabs button):hover,html body #menu#menu button:not(#v02Tabs button):focus-visible,html body #menu#menu summary:hover,html body #menu#menu summary:focus-visible{outline:none;transform:translate(3px,-2px) rotate(-1.5deg)}
+html body #menu#menu button:not(#v02Tabs button):hover::before,html body #menu#menu button:not(#v02Tabs button):focus-visible::before,html body #menu#menu summary:hover::before,html body #menu#menu summary:focus-visible::before{box-shadow:inset 0 0 0 1px var(--sm-cyan),-5px 5px 0 var(--sm-cyan-deep)}
+html body #menu#menu button:not(#v02Tabs button):focus-visible::before,html body #menu#menu summary:focus-visible::before{box-shadow:inset 0 0 0 1px var(--sm-cyan),-5px 5px 0 var(--sm-cyan-deep),0 0 0 3px var(--sm-ink)}
+html body #menu#menu button:not(#v02Tabs button):active{transform:translate(1px,0) scale(.97)}
+html body #menu#menu :is(#v02Start,#start,#contractStart,#combatPractice,#vaultCourseStart,#motionLoadoutApply){color:var(--sm-night)!important}
+html body #menu#menu :is(#v02Start,#start,#contractStart,#combatPractice,#vaultCourseStart,#motionLoadoutApply)::before{background:var(--sm-cyan)!important;box-shadow:5px 5px 0 var(--sm-amber)!important}
+html body #menu#menu :is(#v02Start,#start,#contractStart,#combatPractice,#vaultCourseStart,#motionLoadoutApply):is(:hover,:focus-visible)::before{box-shadow:-6px 6px 0 var(--sm-amber)!important}
+html body #menu#menu :is(#v02Start,#start,#contractStart,#combatPractice,#vaultCourseStart,#motionLoadoutApply):focus-visible::before{box-shadow:-6px 6px 0 var(--sm-amber),0 0 0 3px var(--sm-ink)!important}
+html body #menu#menu #v02Start{font-size:22px!important;padding:14px 34px 13px!important;margin-top:12px!important}
+html body #menu#menu :is(#v02CityViewOpen,#backspoolSpar,#backspoolLesson,#contractEnd,#bankArm,#bankRelease,#bankRetrace,#threadrailCourse,#backspoolLibrary){color:var(--sm-amber)!important}
+html body #menu#menu :is(#v02CityViewOpen,#backspoolSpar,#backspoolLesson,#contractEnd,#bankArm,#bankRelease,#bankRetrace,#threadrailCourse,#backspoolLibrary)::before{box-shadow:inset 4px 0 0 var(--sm-amber),inset 0 0 0 1px rgba(255,178,90,.3)}
+html body #menu#menu select{min-height:44px;padding:8px 34px 8px 12px!important;background:var(--sm-charcoal)!important;border:0!important;border-left:3px solid var(--sm-cyan)!important;border-radius:0!important;color:var(--sm-amber)!important;font:400 16px/1 var(--sm-display)!important;letter-spacing:.06em!important}
+html body #menu#menu select:focus-visible{outline:3px solid var(--sm-ink);outline-offset:2px}
+html body #menu#menu input[type=range]{accent-color:var(--sm-cyan)}
+
+/* ---- Tool panes (hero, equipment, practice, controls): slabs with a cyan edge and a stamped heading. */
+html body #menu#menu :is(#characterControls,#audioControls,#backspoolCombatHUD,#backspoolPowerHUD,#afterstepHUD,#v02ContractTools,#v02ViewTools){margin:0 0 12px!important;padding:14px 16px 12px!important;background:linear-gradient(100deg,rgba(15,36,51,.92),rgba(10,25,38,.7))!important;border:0!important;border-left:3px solid var(--sm-cyan)!important;border-radius:0!important;box-shadow:none!important;clip-path:polygon(0 0,100% 0,100% calc(100% - 16px),calc(100% - 16px) 100%,0 100%)}
+html body #menu#menu :is(#backspoolCombatHUD,#backspoolPowerHUD,#afterstepHUD)>strong{display:inline-block!important;margin:0 0 10px!important;padding:5px 14px 4px;font:400 15px/1 var(--sm-display)!important;letter-spacing:.14em!important;color:var(--sm-night)!important;background:var(--sm-amber);clip-path:polygon(7px 0,100% 0,calc(100% - 7px) 100%,0 100%)}
+html body #menu#menu :is(#backspoolCombatHUD,#backspoolPowerHUD) p{color:#c3d6dd!important}
+html body #menu#menu #characterControls label{color:var(--sm-amber)!important;font:400 15px/1 var(--sm-display)!important;letter-spacing:.14em!important}
+html body #menu#menu #characterControls a{color:var(--sm-cyan)!important}
+html body #menu#menu .powerMeter{background:var(--sm-charcoal)!important;border:0!important;height:8px!important;clip-path:polygon(4px 0,100% 0,calc(100% - 4px) 100%,0 100%)}
+html body #menu#menu .powerMeter i{background:linear-gradient(90deg,var(--sm-cyan),var(--sm-amber))!important}
+html body #menu#menu #controlsGuide{color:#c3d6dd}
+html body #menu#menu #controllerStatus{margin-top:10px!important;padding:9px 12px!important;background:var(--sm-charcoal)!important;border:0!important;border-left:3px solid var(--sm-amber)!important;border-radius:0!important;color:#a9c0c9!important;font-size:12px!important}
+
+/* ---- Footer: resume slab plus stamped prompts for the keys the menu really answers to. */
+html body #menu#menu #v02MenuFooter{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;border-top:0!important;padding-top:10px!important;margin-top:8px!important}
+#menuPrompts{display:flex;flex-wrap:wrap;gap:6px 14px;pointer-events:none;color:var(--sm-dim);font:400 13px/1 var(--sm-display);letter-spacing:.08em;text-transform:uppercase}
+#menuPrompts kbd{display:inline-block;margin-right:6px;padding:4px 8px 3px;background:var(--sm-ink);color:var(--sm-night);font:400 12px/1 var(--sm-display);letter-spacing:.04em;transform:rotate(-4deg);clip-path:polygon(4px 0,100% 0,calc(100% - 4px) 100%,0 100%)}
+
+/* ---- Motion: short, punchy entrances. */
+@keyframes smSlab{from{transform:translateX(-18%);opacity:0}to{transform:none;opacity:1}}
+@keyframes smStrip{from{opacity:0;transform:translateY(-6%)}to{opacity:1;transform:none}}
+@keyframes smWord{from{transform:rotate(-8deg) translateX(14%);opacity:0}to{transform:rotate(-8deg);opacity:1}}
+@keyframes smCard{from{transform:translateX(-28px);opacity:0}to{transform:none;opacity:1}}
+@keyframes smTitle{from{transform:rotate(-4deg) skewX(-6deg) scale(1.25);opacity:0}to{transform:rotate(-4deg) skewX(-6deg);opacity:1}}
+@keyframes smSlip{from{transform:rotate(-1.5deg) translateX(-40px);opacity:0}to{transform:rotate(-1.5deg);opacity:1}}
+@media (prefers-reduced-motion:reduce){html body #menu#menu::before,html body #menu#menu::after,#menuHeroWord,#menuStrip,html body #menu#menu .card,html body #menu#menu .title,html body #menu#menu .missionBrief>div{animation:none!important}html body #menu#menu *{transition:none!important}}
+
+/* ---- Narrow screens: the slab covers the screen, the hero word and prompts step aside. */
+@media (max-width:900px){#menuHeroWord,#menuStrip{display:none}html body #menu#menu::before{width:100vw;clip-path:none}html body #menu#menu::after{display:none}}
+@media (max-width:700px){html body #menu#menu .missionBrief{display:none!important}}
+@media (max-width:620px){html body #menu#menu{padding:10px 0 10px 16px!important}html body #menu#menu .card{width:calc(100vw - 32px)!important}html body #menu#menu #v02Tabs{flex-wrap:wrap!important;overflow:visible!important;row-gap:6px!important;padding:10px 4px 14px!important}html body #menu#menu #v02Tabs button{font-size:15px!important;padding:8px 12px 7px!important}html body #menu#menu .title{font-size:clamp(52px,16vw,72px)!important;margin:10px 0 14px!important}html body #menu#menu .missionBrief>div{margin-left:0!important}html body #menu#menu .missionBrief span{min-width:104px;font-size:12px!important}#menuPrompts{display:none}html body #menu#menu #v02MenuFooter #start{width:auto!important;min-width:160px}}
