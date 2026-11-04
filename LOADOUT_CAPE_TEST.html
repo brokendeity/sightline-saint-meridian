@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Loadout Cape Test</title>
+<style>
+ :root{--night:#06101a;--panel:#0d1b29;--cyan:#5fe3e8;--amber:#ffb25a;--text:#d7e4ee}
+ html,body{margin:0;height:100%;background:var(--night);color:var(--text);font:13px/1.45 system-ui,sans-serif;overflow:hidden}
+ canvas{display:block}
+ #hud{position:fixed;left:12px;top:12px;background:color-mix(in srgb,var(--panel) 88%,transparent);border-left:2px solid var(--cyan);padding:10px 12px;max-width:340px}
+ #hud b{color:var(--amber)} #hud kbd{border:1px solid #3a5266;border-radius:3px;padding:0 4px;font:12px ui-monospace,monospace}
+ #msg{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%)}
+</style>
+</head>
+<body>
+<div id="hud"><b>Loadout cape test</b> · standalone, not a game build<br>
+<kbd>W</kbd> run · <kbd>Shift</kbd> tap sprint · <kbd>A</kbd>/<kbd>D</kbd> turn<br>
+<kbd>1</kbd> back <kbd>2</kbd> side <kbd>3</kbd> front <kbd>4</kbd> ¾ · <kbd>P</kbd> cloth on/off
+<div id="stat"></div></div>
+<div id="msg">Loading Loadout…</div>
+<script src="scripts/vendor/three-r128.js"></script>
+<script src="scripts/vendor/fflate-r128.js"></script>
+<script src="scripts/vendor/FBXLoader-r128.js"></script>
+<script src="scripts/game_mixamo_retarget.js"></script>
+<script src="scripts/game_loadout_cape_cloth.js"></script>
+<script>
+(async()=>{
+ 'use strict';
+ const HEIGHT=1.82,RUN=4.2,SPRINT=7.0,TURN=Math.PI*0.85;
+ const CLIPS={idle:'assets/backspool/clips/017.fbx',run:'assets/backspool/clips/112.fbx',sprint:'assets/backspool/clips/119.fbx'};
+ const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+ renderer.outputEncoding=THREE.sRGBEncoding;document.body.appendChild(renderer.domElement);
+ const scene=new THREE.Scene();scene.background=new THREE.Color(0x0b1622);scene.fog=new THREE.Fog(0x0b1622,18,60);
+ const camera=new THREE.PerspectiveCamera(42,1,0.05,200);
+ scene.add(new THREE.HemisphereLight(0x9fc3e0,0x1a1410,0.85));
+ const key=new THREE.DirectionalLight(0xffe2bf,1.05);key.position.set(4,8,3);scene.add(key);
+ const rim=new THREE.DirectionalLight(0x5fe3e8,0.55);rim.position.set(-5,3,-6);scene.add(rim);
+ const grid=new THREE.GridHelper(200,200,0x1f3a4d,0x132634);scene.add(grid);
+ function resize(){renderer.setSize(innerWidth,innerHeight);camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();}
+ addEventListener('resize',resize);resize();
+
+ const loader=new THREE.FBXLoader();
+ const load=url=>new Promise((res,rej)=>loader.load(url,res,undefined,rej));
+ const [model,rig,...clipFiles]=await Promise.all([load('assets/loadout/loadout_caped.fbx'),fetch('assets/loadout/loadout_cape_rig.json').then(r=>r.json()),...Object.values(CLIPS).map(load)]);
+
+ // Normalise like the game's character loader: 1.82 m tall, feet on the ground, centred.
+ model.updateMatrixWorld(true);
+ let box=new THREE.Box3().setFromObject(model);model.scale.multiplyScalar(HEIGHT/box.getSize(new THREE.Vector3()).y);
+ model.updateMatrixWorld(true);box.setFromObject(model);const ctr=box.getCenter(new THREE.Vector3());
+ model.position.sub(new THREE.Vector3(ctr.x,box.min.y,ctr.z));
+ // Face +Z inside the root: the character's left arm is at +X when facing +Z.
+ const la=model.getObjectByName('mixamorigLeftArm').getWorldPosition(new THREE.Vector3()),ra=model.getObjectByName('mixamorigRightArm').getWorldPosition(new THREE.Vector3());
+ const fwd=new THREE.Vector3().subVectors(la,ra).cross(new THREE.Vector3(0,1,0)).setY(0).normalize();
+ const yaw=Math.atan2(fwd.x,fwd.z);
+ const pivot=new THREE.Group();pivot.rotation.y=-yaw;pivot.add(model);
+ const root=new THREE.Group();root.add(pivot);scene.add(root);
+ // Same idea as the game's applyToonVisuals: Phong becomes MeshToonMaterial keeping colour, map and emissive (specular dropped).
+ const ramp=new THREE.DataTexture(new Uint8Array([70,70,70,255,150,150,150,255,255,255,255,255]),3,1,THREE.RGBAFormat);ramp.minFilter=ramp.magFilter=THREE.NearestFilter;ramp.needsUpdate=true;
+ model.traverse(o=>{if(!o.isMesh)return;o.frustumCulled=false;
+  const toon=m=>{if(m.map)m.map.encoding=THREE.sRGBEncoding;return new THREE.MeshToonMaterial({color:m.color.clone(),map:m.map,emissive:m.emissive.clone(),gradientMap:ramp,skinning:!!o.isSkinnedMesh});};
+  o.material=Array.isArray(o.material)?o.material.map(toon):toon(o.material);});
+
+ // Clips: Backspool's Mixamo clips retargeted onto Loadout's differently-oriented skeleton, in place (the test root moves instead).
+ root.updateMatrixWorld(true);
+ const clips={};
+ Object.keys(CLIPS).forEach((k,i)=>{clips[k]=MixamoRetarget.retargetClip(clipFiles[i].animations[0],clipFiles[i],model,{inPlace:true,name:k});});
+ const mixer=new THREE.AnimationMixer(model);
+ const actions=Object.fromEntries(Object.entries(clips).map(([k,c])=>[k,mixer.clipAction(c)]));
+ let current='idle';actions.idle.play();
+ function play(name){if(name===current)return;const a=actions[name],b=actions[current];a.reset().play();a.crossFadeFrom(b,0.25,false);current=name;}
+
+ // Tuning switches for tests: ?nocollide removes body colliders, ?cloth={"drag":2} overrides cloth options.
+ const params=new URLSearchParams(location.search);if(params.has('nocollide'))rig.colliders=[];
+ const cloth=LoadoutCapeCloth.create(model,rig,Object.assign({height:HEIGHT},JSON.parse(params.get('cloth')||'{}')));
+ let clothOn=true;
+
+ // Input: real key events only.
+ const down=new Set();let sprint=false,view=0;
+ addEventListener('keydown',e=>{const k=e.key.toLowerCase();if(e.repeat)return;down.add(k);
+  if(k==='shift')sprint=!sprint;if(k==='p'){clothOn=!clothOn;cloth.reset();}if('1234'.includes(k))view=+k-1;});
+ addEventListener('keyup',e=>down.delete(e.key.toLowerCase()));
+ addEventListener('blur',()=>down.clear());
+
+ let heading=0,speed=0,last=performance.now(),dist=0;
+ const forward=new THREE.Vector3();
+ const views=[[0,2.1,-4.2],[4.4,1.7,0],[0,1.8,4.2],[3.2,2.2,-3.2]];
+ function capeAngle(){
+  // Degrees the back of the cape (collar to hem, middle columns) swings back from hanging straight down, in his forward/vertical plane.
+  const top=cloth.row(0),hem=cloth.hem(),C=hem.length;let sum=0,n=0;
+  forward.set(Math.sin(heading),0,Math.cos(heading));
+  for(let c=Math.floor(C/2)-1;c<=Math.floor(C/2)+1;c++){
+   const dz=(hem[c].p[0]-top[c].p[0])*forward.x+(hem[c].p[2]-top[c].p[2])*forward.z,dy=hem[c].p[1]-top[c].p[1];
+   sum+=Math.atan2(-dz,-dy)*180/Math.PI;n++;
+  }
+  return sum/n;
+ }
+ function frame(now){
+  const dt=Math.min(0.05,(now-last)/1000);last=now;
+  const moving=down.has('w');
+  if(down.has('a'))heading+=TURN*dt;if(down.has('d'))heading-=TURN*dt;
+  const want=moving?(sprint?SPRINT:RUN):0;speed+=(want-speed)*Math.min(1,dt*6);
+  play(moving?(sprint?'sprint':'run'):'idle');
+  root.rotation.y=heading;forward.set(Math.sin(heading),0,Math.cos(heading));
+  root.position.addScaledVector(forward,speed*dt);dist+=speed*dt;
+  mixer.update(dt);
+  if(clothOn)cloth.update(dt);
+  const v=views[view],off=new THREE.Vector3(v[0],v[1],v[2]).applyAxisAngle(new THREE.Vector3(0,1,0),heading);
+  camera.position.copy(root.position).add(off);camera.lookAt(root.position.x,root.position.y+1.15,root.position.z);
+  renderer.render(scene,camera);
+  const s=cloth.state();
+  document.getElementById('stat').textContent=`${current} · ${speed.toFixed(1)} m/s · cloth ${clothOn?'on':'off'} · cape ${capeAngle().toFixed(0)}° back · ${s.meanCostMs} ms`;
+  requestAnimationFrame(frame);
+ }
+ document.getElementById('msg').remove();
+ window.loadoutCapeTest={ready:true,cloth,root,state:()=>({clip:current,speed,heading,dist,sprint,clothOn,capeAngle:capeAngle(),cape:cloth.state()}),
+  hem:()=>cloth.hem(),capsules:()=>cloth.capsules(),boneNames:()=>{const n=[];model.traverse(o=>{if(o.isBone)n.push(o.name)});return n;},
+  debugTree:()=>{const out=[];const walk=(o,d)=>{if(d>3&&o.isBone)return;const e={d,type:o.type,name:o.name,pos:o.position.toArray().map(v=>+v.toFixed(3)),rot:o.rotation.toArray().slice(0,3).map(v=>+v.toFixed(3)),scale:o.scale.toArray().map(v=>+v.toFixed(4))};
+   if(o.isMesh){const m=[].concat(o.material);e.mats=m.map(x=>({type:x.type,name:x.name,transparent:x.transparent,opacity:x.opacity,map:!!x.map,alphaMap:!!x.alphaMap,skinning:x.skinning}));if(o.isSkinnedMesh){e.bones=o.skeleton.bones.length;e.firstBone=o.skeleton.bones[0].name;e.firstBoneUuid=o.skeleton.bones[0].uuid.slice(0,8);e.capeBoneUuid=(o.skeleton.bones.find(x=>x.name.startsWith('Cape'))||{uuid:'-'}).uuid.slice(0,8);}}
+   out.push(e);for(const c of o.children)walk(c,d+1);};walk(model,0);
+   const all=[];model.traverse(o=>{if(o.name==='mixamorigHips'||o.name==='CapeC05_2')all.push({name:o.name,uuid:o.uuid.slice(0,8),parent:o.parent&&o.parent.name});});return {out,all,actionsBound:mixer._actions.map(a=>a._propertyBindings.filter(Boolean).length)};}};
+ requestAnimationFrame(frame);
+})().catch(e=>{document.getElementById('msg').textContent='Failed: '+e.message;console.error(e);window.loadoutCapeTest={ready:false,error:String(e.stack||e)};});
+</script>
+</body>
+</html>

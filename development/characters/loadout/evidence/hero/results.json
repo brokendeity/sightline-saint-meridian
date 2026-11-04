@@ -1,0 +1,438 @@
+{
+ "build": "SIGHTLINE_SAINT_MERIDIAN_V02_LOADOUT.html",
+ "hashes": {
+  "SIGHTLINE_SAINT_MERIDIAN_V02_LOADOUT.html": "6677df2dc4e266848e3893577814dae38d086718eb4cfa9eeff00da3a8e5ae0d",
+  "scripts/game_v02_loadout_hero.js": "6163033bd8dc7b20854829910f683c5a16047c3d4392918135e8dc035c611c8f",
+  "scripts/game_loadout_cape_cloth.js": "d7fe9da8ce5cc6ce0daf7e845aaa99137d035bfd207d6a0b8e392c954d75b835",
+  "scripts/game_mixamo_retarget.js": "14ac75bba0820d7d1a1ee3bdeb6e08d23b7b71d2c2470528d53d40b1f3fe197b",
+  "scripts/game_v02_menu_style_v2.js": "ad4701ad0c97b3c5d9302a74ffc8624b04a5e8bd744c505e67dde6fb6708183f",
+  "assets/loadout/loadout_caped.fbx": "21de6562c6ada3c2b1a0071aa92ed567d3e3243fff22824f6a8bc68538f128cb",
+  "scripts/characters/loadout/test_loadout_hero_real_input.cjs": "be6371e8181bd2f076a31734cd097e9730b3c88a27707bed9a3c6e2af6588e1a"
+ },
+ "scope": "Real mouse, keyboard and simulated-gamepad input in headless Chromium (ANGLE/Metal). No teleports. Combat, traversal moves, missions and the city beyond a short run are not covered here.",
+ "checks": {
+  "Hero tab: no Loadout section while Sightline is the hero": true,
+  "Hero tab: Loadout section and Cape switch shown for Loadout": true,
+  "menu backdrop word reads Loadout": true,
+  "Loadout runs on the Backspool controller": true,
+  "all Backspool clips retargeted onto Loadout": true,
+  "W moves Loadout more than 5 m in 2.5 s": true,
+  "cape cloth updates while on, finite and outside the body": true,
+  "power keys do nothing for Loadout": true,
+  "power HUD hidden and relabelled for Loadout": true,
+  "Cape switch turns the cape off and stops the cloth": true,
+  "hero and cape choice survive a reload": true,
+  "Cape switch turns it back on": true,
+  "chord cycles Loadout -> Sightline -> Backspool -> Loadout": true,
+  "Backspool HUD restored after Loadout": true,
+  "control: the same Snapback key banks for Backspool": true,
+  "no page errors": true
+ },
+ "results": {
+  "sightlineMenu": {
+   "hero": "sightline",
+   "active": "sightline",
+   "playing": false,
+   "pos": [
+    0,
+    0.42,
+    0
+   ],
+   "anim": "idle",
+   "cape": {
+    "on": true,
+    "visible": false,
+    "frames": 0,
+    "pen": 0,
+    "nan": false,
+    "aim": 0
+   },
+   "options": false,
+   "toggle": "Cape · On",
+   "checked": "true",
+   "word": "Sightline",
+   "heroName": "SIGHTLINE",
+   "hint": "",
+   "resourcesHidden": true,
+   "power": {
+    "snapBank": false,
+    "snapEvents": 0,
+    "rails": 0,
+    "shots": 0,
+    "driveRelease": false,
+    "echoRecording": false
+   }
+  },
+  "switchMs": 4039,
+  "loadoutMenu": {
+   "hero": "loadout",
+   "active": "backspool",
+   "playing": false,
+   "pos": [
+    0,
+    0.42,
+    0
+   ],
+   "anim": "idle",
+   "cape": {
+    "on": true,
+    "visible": true,
+    "frames": 20,
+    "pen": 0,
+    "nan": false,
+    "aim": 0.0001
+   },
+   "options": true,
+   "toggle": "Cape · On",
+   "checked": "true",
+   "word": "Loadout",
+   "heroName": "LOADOUT",
+   "hint": "Shift/L3 Flow · C evade",
+   "resourcesHidden": true,
+   "power": {
+    "snapBank": false,
+    "snapEvents": 0,
+    "rails": 0,
+    "shots": 0,
+    "driveRelease": false,
+    "echoRecording": false
+   }
+  },
+  "build": {
+   "built": true,
+   "buildMs": 1230,
+   "retargetMs": 560,
+   "clips": 183,
+   "active": true,
+   "capeOn": true,
+   "capeVisible": true,
+   "capeMeshes": 2
+  },
+  "idle": {
+   "hero": "loadout",
+   "active": "backspool",
+   "playing": true,
+   "pos": [
+    55,
+    0.42,
+    210
+   ],
+   "anim": "forspoken-threadrail-relaxed-idle",
+   "cape": {
+    "on": true,
+    "visible": true,
+    "frames": 146,
+    "pen": 0,
+    "nan": false,
+    "aim": 0
+   },
+   "options": true,
+   "toggle": "Cape · On",
+   "checked": "true",
+   "word": "Loadout",
+   "heroName": "LOADOUT",
+   "hint": "Shift/L3 Flow · C evade",
+   "resourcesHidden": true,
+   "power": {
+    "snapBank": false,
+    "snapEvents": 0,
+    "rails": 0,
+    "shots": 0,
+    "driveRelease": false,
+    "echoRecording": false
+   }
+  },
+  "run": {
+   "hero": "loadout",
+   "active": "backspool",
+   "playing": true,
+   "pos": [
+    55,
+    0.42,
+    225.45500000000175
+   ],
+   "anim": "traversal-locomotion-fastRun",
+   "cape": {
+    "on": true,
+    "visible": true,
+    "frames": 402,
+    "pen": 0,
+    "nan": false,
+    "aim": 0.0006
+   },
+   "options": true,
+   "toggle": "Cape · On",
+   "checked": "true",
+   "word": "Loadout",
+   "heroName": "LOADOUT",
+   "hint": "Shift/L3 Flow · C evade",
+   "resourcesHidden": true,
+   "power": {
+    "snapBank": false,
+    "snapEvents": 0,
+    "rails": 0,
+    "shots": 0,
+    "driveRelease": false,
+    "echoRecording": false
+   }
+  },
+  "moved": 15.455000000001746,
+  "loadoutPowers": {
+   "hero": "loadout",
+   "active": "backspool",
+   "playing": true,
+   "pos": [
+    55,
+    0.42,
+    227.21500000000196
+   ],
+   "anim": "forspoken-threadrail-relaxed-idle",
+   "cape": {
+    "on": true,
+    "visible": true,
+    "frames": 627,
+    "pen": 0,
+    "nan": false,
+    "aim": 0.0001
+   },
+   "options": true,
+   "toggle": "Cape · On",
+   "checked": "true",
+   "word": "Loadout",
+   "heroName": "LOADOUT",
+   "hint": "Shift/L3 Flow · C evade",
+   "resourcesHidden": true,
+   "power": {
+    "snapBank": false,
+    "snapEvents": 0,
+    "rails": 0,
+    "shots": 0,
+    "driveRelease": false,
+    "echoRecording": false
+   }
+  },
+  "capeOffMenu": {
+   "hero": "loadout",
+   "active": "backspool",
+   "playing": false,
+   "pos": [
+    55,
+    0.42,
+    227.21500000000196
+   ],
+   "anim": "forspoken-threadrail-relaxed-idle",
+   "cape": {
+    "on": false,
+    "visible": false,
+    "frames": 672,
+    "pen": 0,
+    "nan": false,
+    "aim": 0.0005
+   },
+   "options": true,
+   "toggle": "Cape · Off",
+   "checked": "false",
+   "word": "Loadout",
+   "heroName": "LOADOUT",
+   "hint": "Shift/L3 Flow · C evade",
+   "resourcesHidden": true,
+   "power": {
+    "snapBank": false,
+    "snapEvents": 0,
+    "rails": 0,
+    "shots": 0,
+    "driveRelease": false,
+    "echoRecording": false
+   }
+  },
+  "capeOffPlay": {
+   "hero": "loadout",
+   "active": "backspool",
+   "playing": true,
+   "pos": [
+    55,
+    0.42,
+    218.85500000000093
+   ],
+   "anim": "forspoken-v17-moveStop",
+   "cape": {
+    "on": false,
+    "visible": false,
+    "frames": 672,
+    "pen": 0,
+    "nan": false,
+    "aim": 0.0005
+   },
+   "options": true,
+   "toggle": "Cape · Off",
+   "checked": "false",
+   "word": "Loadout",
+   "heroName": "LOADOUT",
+   "hint": "Shift/L3 Flow · C evade",
+   "resourcesHidden": true,
+   "power": {
+    "snapBank": false,
+    "snapEvents": 0,
+    "rails": 0,
+    "shots": 0,
+    "driveRelease": false,
+    "echoRecording": false
+   },
+   "framesWhileOff": 0
+  },
+  "afterReload": {
+   "hero": "loadout",
+   "active": "backspool",
+   "playing": false,
+   "pos": [
+    0,
+    0.42,
+    0
+   ],
+   "anim": "idle",
+   "cape": {
+    "on": false,
+    "visible": false,
+    "frames": 0,
+    "pen": 0,
+    "nan": false,
+    "aim": 0
+   },
+   "options": true,
+   "toggle": "Cape · Off",
+   "checked": "false",
+   "word": "Loadout",
+   "heroName": "LOADOUT",
+   "hint": "Shift/L3 Flow · C evade",
+   "resourcesHidden": true,
+   "power": {
+    "snapBank": false,
+    "snapEvents": 0,
+    "rails": 0,
+    "shots": 0,
+    "driveRelease": false,
+    "echoRecording": false
+   }
+  },
+  "capeBackOn": {
+   "hero": "loadout",
+   "active": "backspool",
+   "playing": false,
+   "pos": [
+    0,
+    0.42,
+    0
+   ],
+   "anim": "idle",
+   "cape": {
+    "on": true,
+    "visible": true,
+    "frames": 30,
+    "pen": 0,
+    "nan": false,
+    "aim": 0.0001
+   },
+   "options": true,
+   "toggle": "Cape · On",
+   "checked": "true",
+   "word": "Loadout",
+   "heroName": "LOADOUT",
+   "hint": "Shift/L3 Flow · C evade",
+   "resourcesHidden": true,
+   "power": {
+    "snapBank": false,
+    "snapEvents": 0,
+    "rails": 0,
+    "shots": 0,
+    "driveRelease": false,
+    "echoRecording": false
+   }
+  },
+  "chord": [
+   {
+    "want": "sightline",
+    "got": "sightline",
+    "active": "sightline"
+   },
+   {
+    "want": "backspool",
+    "got": "backspool",
+    "active": "backspool"
+   },
+   {
+    "want": "loadout",
+    "got": "loadout",
+    "active": "backspool"
+   }
+  ],
+  "backspoolHud": {
+   "hero": "backspool",
+   "active": "backspool",
+   "playing": true,
+   "pos": [
+    55,
+    0.42,
+    210
+   ],
+   "anim": "forspoken-threadrail-relaxed-idle",
+   "cape": {
+    "on": true,
+    "visible": true,
+    "frames": 42,
+    "pen": 0,
+    "nan": false,
+    "aim": 0.0004
+   },
+   "options": false,
+   "toggle": "Cape · On",
+   "checked": "true",
+   "word": "Backspool",
+   "heroName": "BACKSPOOL",
+   "hint": "Shift/L3 Flow · E/RB Drive · R/X rail · U/LB+Y Snapback · C evade",
+   "resourcesHidden": false,
+   "power": {
+    "snapBank": false,
+    "snapEvents": 0,
+    "rails": 0,
+    "shots": 0,
+    "driveRelease": false,
+    "echoRecording": false
+   }
+  },
+  "backspoolPowers": {
+   "hero": "backspool",
+   "active": "backspool",
+   "playing": true,
+   "pos": [
+    55,
+    0.42,
+    210
+   ],
+   "anim": "forspoken-threadrail-relaxed-idle",
+   "cape": {
+    "on": true,
+    "visible": true,
+    "frames": 42,
+    "pen": 0,
+    "nan": false,
+    "aim": 0.0004
+   },
+   "options": false,
+   "toggle": "Cape · On",
+   "checked": "true",
+   "word": "Backspool",
+   "heroName": "BACKSPOOL",
+   "hint": "Shift/L3 Flow · E/RB Drive · R/X rail · U/LB+Y Snapback · C evade",
+   "resourcesHidden": false,
+   "power": {
+    "snapBank": true,
+    "snapEvents": 1,
+    "rails": 0,
+    "shots": 0,
+    "driveRelease": false,
+    "echoRecording": false
+   }
+  }
+ },
+ "errors": []
+}
