@@ -1,0 +1,316 @@
+{
+ "build": "V02_Threadrail_Grind_Build.json",
+ "results": {
+  "smoke": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 16.1,
+   "command": "node scripts/vertical-v02/test_canonical_smoke.cjs V02_Threadrail_Grind_Build.json",
+   "environment": {},
+   "logTail": [
+    "PASS v02ModulesLoaded",
+    "PASS everyHeroRunsAndMoves",
+    "PASS noPageErrors"
+   ]
+  },
+  "threadrail-grind": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 39.7,
+   "command": "node scripts/vertical-v02/test_threadrail_grind.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Threadrail_Grind_Build.json",
+    "V02_GRIND_OUT": "development/vertical-city-v02/evidence/threadrail-grind-checks/threadrail-grind"
+   },
+   "logTail": [
+    "PASS rTapStillAttaches",
+    "PASS noHostileShotLanded",
+    "PASS noPageErrors"
+   ]
+  },
+  "hero-select": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 72.5,
+   "command": "node scripts/vertical-v02/test_hero_select.cjs V02_Threadrail_Grind_Build.json",
+   "environment": {
+    "V02_HERO_SELECT_OUT": "development/vertical-city-v02/evidence/threadrail-grind-checks/hero-select"
+   },
+   "logTail": [
+    "PASS singleCanvasWhileClosed {\"canvases\":1}",
+    "PASS noPageErrors {\"errors\":[]}",
+    "ALL PASS"
+   ]
+  },
+  "wall-contacts": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 24.6,
+   "command": "node scripts/vertical-v02/test_friendly_wall_contacts.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Threadrail_Grind_Build.json"
+   },
+   "logTail": [
+    "PASS simulated controller Flow and stick climb then release",
+    "PASS blocked imported facade drops once instead of repeatedly retrying",
+    "PASS actual city facade allows continuous collision-clear wall traversal"
+   ]
+  },
+  "landing-contacts": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 18.8,
+   "command": "node scripts/vertical-v02/test_friendly_landing_contacts.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Threadrail_Grind_Build.json"
+   },
+   "logTail": [
+    "PASS rollBack landing",
+    "PASS recovery cancel to strike",
+    "PASS landing / roll input flows; no page errors"
+   ]
+  },
+  "city-loops": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 48.3,
+   "command": "node scripts/vertical-v02/test_current_city_loops.cjs",
+   "environment": {
+    "V02_LOOP_BUILD": "V02_Threadrail_Grind_Build.json",
+    "V02_LOOP_REPORT": "V02_Threadrail_Grind_Loops.json",
+    "V02_LOOP_RUN": "threadrail-grind-loops"
+   },
+   "logTail": [
+    "PASS mid 35.36666666666667 229.405000000023 cameraInsideFrames 0",
+    "PASS high 37.2 241.5050000000245 cameraInsideFrames 0",
+    "PASS complete lower/mid/high public loops on current combined candidate"
+   ]
+  },
+  "station-routes": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 367.1,
+   "command": "python3 scripts/vertical-v02/run_current_station_routes.py",
+   "environment": {
+    "V02_ROUTE_BUILD_REPORT": "V02_Threadrail_Grind_Build.json",
+    "V02_ROUTE_REPORT": "V02_Threadrail_Grind_Station_Routes.json",
+    "V02_ROUTE_SUITE": "threadrail-grind-station-routes"
+   },
+   "logTail": [
+    "START public-banked",
+    "PASS public-banked 135.08333333333334 773.9782163119702",
+    "PASS all three current approaches, zero/full legal bank starts"
+   ]
+  },
+  "retained-gameplay": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 752.4,
+   "command": "python3 scripts/vertical-v02/run_friendly_gameplay_regressions.py",
+   "environment": {
+    "V02_GAMEPLAY_BUILD": "V02_Threadrail_Grind_Build.json",
+    "V02_GAMEPLAY_SUITE": "threadrail-grind-gameplay"
+   },
+   "logTail": [
+    "START discovery-lifecycle",
+    "DONE discovery-lifecycle 0",
+    "PASS12current encounter/replay/discovery cases; final release scope remains separate"
+   ]
+  },
+  "strides": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 17.4,
+   "command": "node scripts/vertical-v02/test_forspoken_strides.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Threadrail_Grind_Build.json",
+    "V02_STRIDES_OUT": "development/vertical-city-v02/evidence/threadrail-grind-checks/strides"
+   },
+   "logTail": [
+    "PASS ground starts, stops, turns and stop cancel; no page errors"
+   ]
+  },
+  "vaults": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 23.1,
+   "command": "node scripts/vertical-v02/test_forspoken_vaults.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Threadrail_Grind_Build.json",
+    "V02_VAULTS_OUT": "development/vertical-city-v02/evidence/threadrail-grind-checks/vaults"
+   },
+   "logTail": [
+    "PASS climb1.2 climbMid",
+    "PASS climb1.8 climbHigh",
+    "PASS graded vaults and climbs; no page errors"
+   ]
+  },
+  "air": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 14.1,
+   "command": "node scripts/vertical-v02/test_forspoken_air.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Threadrail_Grind_Build.json",
+    "V02_AIR_OUT": "development/vertical-city-v02/evidence/threadrail-grind-checks/air"
+   },
+   "logTail": [
+    "PASS standing and running take-offs; no page errors"
+   ]
+  },
+  "crouch": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 13.9,
+   "command": "node scripts/vertical-v02/test_forspoken_crouch.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Threadrail_Grind_Build.json",
+    "V02_CROUCH_OUT": "development/vertical-city-v02/evidence/threadrail-grind-checks/crouch"
+   },
+   "logTail": [
+    "PASS crouch down, start, stop, up and cancel; no page errors"
+   ]
+  },
+  "combat": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 26.4,
+   "command": "node scripts/vertical-v02/test_mixamo_combat.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Threadrail_Grind_Build.json",
+    "V02_COMBAT_OUT": "development/vertical-city-v02/evidence/threadrail-grind-checks/combat"
+   },
+   "logTail": [
+    "PASS impact RT chain and heavy",
+    "PASS counter RT chain and heavy",
+    "PASS 8-hit RT chains and heavies in all three styles; no page errors"
+   ]
+  },
+  "sightline": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 15.0,
+   "command": "node scripts/vertical-v02/test_sightline_melee.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Threadrail_Grind_Build.json",
+    "V02_SIGHTLINE_OUT": "development/vertical-city-v02/evidence/threadrail-grind-checks/sightline"
+   },
+   "logTail": [
+    "PASS Sightline burst, kick, guard and rail separation; no page errors"
+   ]
+  },
+  "rhythm": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 15.5,
+   "command": "node scripts/vertical-v02/test_burst_rhythm.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Threadrail_Grind_Build.json",
+    "V02_RHYTHM_OUT": "development/vertical-city-v02/evidence/threadrail-grind-checks/rhythm"
+   },
+   "logTail": [
+    "PASS burst > cover > counter > reset; guarded counter takes chip damage only; no page errors"
+   ]
+  },
+  "themed": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 33.9,
+   "command": "node scripts/vertical-v02/test_themed_slots.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Threadrail_Grind_Build.json",
+    "V02_THEMED_OUT": "development/vertical-city-v02/evidence/threadrail-grind-checks/themed"
+   },
+   "logTail": [
+    "PASS counter directional, heavy, launcher, air light and finisher",
+    "PASS counter counter [\"counter-counter-1\",\"counter-counter-2\"]",
+    "PASS themed directional, heavy, launcher, air and counter slots in all three styles; no page errors"
+   ]
+  },
+  "impact": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 26.1,
+   "command": "node scripts/vertical-v02/test_impact_fx.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Threadrail_Grind_Build.json",
+    "V02_IMPACT_OUT": "development/vertical-city-v02/evidence/threadrail-grind-checks/impact"
+   },
+   "logTail": [
+    "PASS surfaces, debris rest, decal 30 s + 2 s fade, flash, hit-stop, landing crater, shot burst, heavy-strike feel; no page errors"
+   ]
+  },
+  "no-trucks": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 12.6,
+   "command": "node scripts/vertical-v02/test_no_halo_trucks.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Threadrail_Grind_Build.json",
+    "V02_TRUCKS_OUT": "development/vertical-city-v02/evidence/threadrail-grind-checks/no-trucks"
+   },
+   "logTail": [
+    "PASS no halo trucks {\"removed\":\"Halo trucks removed for now; replacement models pending\",\"moved\":41.5}"
+   ]
+  },
+  "menu": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 16.4,
+   "command": "node scripts/vertical-v02/test_menu_style.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Threadrail_Grind_Build.json",
+    "V02_MENU_OUT": "development/vertical-city-v02/evidence/threadrail-grind-checks/menu"
+   },
+   "logTail": [
+    "PASS menu restyle: tabs, keys, focus, start, pause, resume, hero word, phone layout; no page errors"
+   ]
+  },
+  "loadout-hero": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 35.0,
+   "command": "node scripts/characters/loadout/test_loadout_hero_real_input.cjs",
+   "environment": {
+    "LOADOUT_HERO_BUILD": "SIGHTLINE_SAINT_MERIDIAN_V02_THREADRAIL_GRIND.html",
+    "LOADOUT_HERO_OUT": "development/vertical-city-v02/evidence/threadrail-grind-checks/loadout-hero"
+   },
+   "logTail": [
+    "PASS no page errors",
+    "{\"switchMs\":5058,\"build\":{\"built\":true,\"buildMs\":1518,\"retargetMs\":550,\"clips\":183,\"active\":true,\"capeOn\":true,\"capeVisible\":true,\"capeMeshes\":2},\"moved\":9.61,\"chord\":[{\"want\":\"sightline\",\"got\":\"sightline\",\"active\":\"sightline\"},{\"want\":\"backspool\",\"got\":\"backspool\",\"active\":\"backspool\"},{\"want\":\"loadout\",\"got\":\"loadout\",\"active\":\"backspool\"}]}",
+    "PASS Loadout hero, real input"
+   ]
+  },
+  "loadout-runner-roles": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 49.1,
+   "command": "node scripts/characters/loadout/test_loadout_runner_real_input.cjs",
+   "environment": {
+    "LOADOUT_RUNNER_BUILD": "SIGHTLINE_SAINT_MERIDIAN_V02_THREADRAIL_GRIND.html",
+    "LOADOUT_RUNNER_OUT": "development/vertical-city-v02/evidence/threadrail-grind-checks/loadout-runner-roles",
+    "LOADOUT_RUNNER_FULL_OFF": "1"
+   },
+   "logTail": [
+    "{\"evadeNeutral\":[\"runner-Esc_BoostDash_Back\",\"action-v2-mx-flow-stance\"],\"evadeLeft\":[\"runner-Esc_Roll_Left\"],\"turn\":[\"runner-Mvm_Jog_TurnL_180_Left\",\"runner-Mvm_Boost@13.8\"],\"flipLeft\":[\"runner-Jmp_SideAir_A\",\"runner-Land_Base_Move\",\"runner-Mvm_Boost@13.8\"],\"flipRight\":[\"runner-Jmp_SideAir_A_Mirror\",\"runner-Land_Base_Move\",\"runner-Mvm_Boost@13.8\"],\"wallRight\":[\"runner-Wall_Vertical_Dash_Loop\",\"runner-LoWall_LDash_Loop\"],\"wallLeft\":[\"runner-Wall_Vertical_Dash_Loop\",\"runner-LoWall_RDash_Loop\"],\"climb\":[\"action-v2-mx-flow-stance\",\"runner-Mvm_Walk@4\",\"runner-Mvm_Jog@8.2\",\"runner-Mvm_Dash@8.2\",\"runner-Mvm_Boost@13.8\",\"runner-Wall_Vertical_Dash_Loop\",\"forspoken-flow-mantle\"],\"boost\":[\"runner-Wall_Vertical_Dash_Loop\",\"runner-Wall_Vertical_Boost\",\"forspoken-flow-mantle\"],\"reaction\":[\"action-v2-mx-flow-stance\",\"action-v2-flow-reaction\"],\"wallLatch\":{\"groundRoll\":{\"dir\":\"left\",\"since\":21.316666666666737,\"seen\":22.483333333333338},\"wallRun\":{\"dir\":\"right\",\"since\":38.51666666666576,\"seen\":39.64999999999903}}}",
+    "{\"moved\":13.79,\"run\":[\"runner-Mvm_Jog_Start_Fwd\",\"runner-Mvm_Boost@13.8\"],\"sprint\":[\"runner-Mvm_Boost@13.8\"],\"stop\":[\"runner-Mvm_BoostEnd\",\"runner-relaxedIdle-variants\"],\"jump\":[\"runner-Jmp_FrontAir_A\",\"runner-Jump_Down_A_Loop\",\"runner-Land_Base_Move\",\"runner-Mvm_Boost@13.8\",\"runner-Mvm_JogStop\"],\"roll\":[\"runner-Land_Roll_Move\"],\"cape\":{\"frames\":2143,\"maxPen\":0,\"maxAim\":0.123,\"nan\":false},\"backspool\":{\"idle\":\"forspoken-flow-idle\",\"roll\":\"forspoken-flow-roll\",\"run\":\"traversal-locomotion-run\",\"runnerIds\":0,\"light1\":0.38,\"runnerInBank\":0}}",
+    "PASS Loadout Runner moves, real input"
+   ]
+  },
+  "loadout-runner-full": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 146.1,
+   "command": "node scripts/characters/loadout/test_loadout_runner_full_real_input.cjs",
+   "environment": {
+    "LRF_BUILD": "SIGHTLINE_SAINT_MERIDIAN_V02_THREADRAIL_GRIND.html",
+    "LRF_OUT": "development/vertical-city-v02/evidence/threadrail-grind-checks/loadout-runner-full"
+   },
+   "logTail": [
+    "PASS Backspool control: no Runner-full actions, his own clips, E is still his Drive {\"anims\":[\"forspoken-v17-moveStart\",\"traversal-locomotion-fastRun\"],\"unclear\":0,\"conflicts\":0,\"nonFinite\":0,\"notRate1\":[]}",
+    "PASS no page errors {\"errors\":[]}",
+    "RESULT 42 PASS 0 FAIL"
+   ]
+  }
+ }
+}

@@ -1,0 +1,590 @@
+{
+  "build": "SIGHTLINE_SAINT_MERIDIAN_V02_THREADRAIL_GRIND.html",
+  "entrySHA256": "ab02ac2ac0f1475c3e0a2d14136c6810eeaeb090b1c6af5bef49cf93b66aba80",
+  "steps": {
+    "bootAndEnterDistrict": {
+      "startHero": "backspool",
+      "loadSeconds": 4
+    },
+    "escPausesAndEntryPointsExist": {
+      "footer": true,
+      "heroTab": true
+    },
+    "keyboardHOpens": {
+      "focus": "backspool"
+    },
+    "keyboardArrowsBrowseAndWrap": {
+      "order": [
+        "backspool",
+        "sightline",
+        "loadout"
+      ],
+      "wrapRight": "backspool",
+      "wrapLeft": "loadout"
+    },
+    "previewFramingClearOfTextAndOnBase": {
+      "failures": [],
+      "runs": 12
+    },
+    "cartridgeDisplayBackspoolOnly": {
+      "failures": [],
+      "runs": 12,
+      "glb": "assets/backspool/threadrail-cartridge/backspool_threadrail_cartridge_game.glb"
+    },
+    "keyboardDoesNotLeakIntoGame": {
+      "moved": 0,
+      "open": true,
+      "hero": "backspool"
+    },
+    "cartridgeFreedOnCloseAndReused": {
+      "geometriesOpen": 39,
+      "geometriesClosed": 20,
+      "texturesOpen": 13,
+      "texturesClosed": 9,
+      "frees": 1,
+      "framesReopen": 144
+    },
+    "keyboardPicksSightlineAndResumes": {
+      "label": "sightline W",
+      "moved": 12.1,
+      "confirms": [
+        {
+          "hero": "sightline",
+          "from": "backspool",
+          "source": "keyboard",
+          "switchMs": 4
+        }
+      ]
+    },
+    "padStickDpadShouldersBrowse": {
+      "padNav": [
+        [
+          "stickRight",
+          "loadout"
+        ],
+        [
+          "stickLeft",
+          "sightline"
+        ],
+        [
+          "dpadRight",
+          "loadout"
+        ],
+        [
+          "LB",
+          "sightline"
+        ],
+        [
+          "RB",
+          "loadout"
+        ],
+        [
+          "dpadLeft",
+          "sightline"
+        ]
+      ]
+    },
+    "padPicksLoadoutAndResumes": {
+      "label": "loadout stick",
+      "moved": 6.43,
+      "samples": 4,
+      "earlyResume": false,
+      "switchMs": 1254
+    },
+    "mousePicksBackspoolAndResumes": {
+      "label": "backspool W",
+      "moved": 8.09
+    },
+    "padDoesNotLeakIntoGame": {
+      "moved": 0,
+      "focusAfter": "loadout"
+    },
+    "chordWorksWhileScreenOpen": {
+      "from": "backspool",
+      "to": "loadout",
+      "activeCard": "loadout"
+    },
+    "chordWorksDuringPlay": {
+      "from": "loadout",
+      "to": "sightline",
+      "label": "after chord",
+      "moved": 11.96
+    },
+    "resumeAsCurrentHeroNoSwitch": {
+      "hero": "sightline",
+      "label": "Resume as Sightline"
+    },
+    "previewRenderedAllRigs": {
+      "rigs": {
+        "backspool": {
+          "status": "ready",
+          "clip": "backspool-017",
+          "clipSeconds": 9.93,
+          "triangles": 18730,
+          "bones": 65,
+          "loadMs": 949
+        },
+        "sightline": {
+          "status": "ready",
+          "clip": "idle",
+          "clipSeconds": 3.3,
+          "triangles": 91425,
+          "bones": 65,
+          "loadMs": 211
+        },
+        "loadout": {
+          "status": "ready",
+          "clip": "runner-Idle_Wait_A",
+          "clipSeconds": 2,
+          "triangles": 68842,
+          "bones": 120,
+          "loadMs": 481
+        }
+      },
+      "frames": 4631,
+      "lastFrameMs": 0.3
+    },
+    "previewStopsWhenClosed": {
+      "framesBefore": 4631,
+      "framesAfter": 4631
+    },
+    "singleCanvasWhileClosed": {
+      "canvases": 1
+    },
+    "noPageErrors": {
+      "errors": []
+    }
+  },
+  "checks": {
+    "recordMatchesFile": true,
+    "bootAndEnterDistrict": true,
+    "escPausesAndEntryPointsExist": true,
+    "keyboardHOpens": true,
+    "keyboardArrowsBrowseAndWrap": true,
+    "previewFramingClearOfTextAndOnBase": true,
+    "cartridgeDisplayBackspoolOnly": true,
+    "keyboardDoesNotLeakIntoGame": true,
+    "keyboardEscBacksOutNoSwitch": true,
+    "cartridgeFreedOnCloseAndReused": true,
+    "keyboardPicksSightlineAndResumes": true,
+    "padStartPauses": true,
+    "padYOpens": true,
+    "padBBacksOutNoSwitch": true,
+    "padStickDpadShouldersBrowse": true,
+    "padPicksLoadoutAndResumes": true,
+    "mousePicksBackspoolAndResumes": true,
+    "padDoesNotLeakIntoGame": true,
+    "chordWorksWhileScreenOpen": true,
+    "chordWorksDuringPlay": true,
+    "resumeAsCurrentHeroNoSwitch": true,
+    "previewRenderedAllRigs": true,
+    "previewStopsWhenClosed": true,
+    "singleCanvasWhileClosed": true,
+    "noPageErrors": true
+  },
+  "notes": [],
+  "loadSeconds": 4,
+  "startHero": "backspool",
+  "framing": [
+    {
+      "viewport": "1280x800",
+      "hero": "backspool",
+      "ok": true,
+      "modelTop": 240.4,
+      "textBottom": 143,
+      "canvasTop": 157,
+      "modelBottom": 654.3,
+      "base": [
+        596.5,
+        729.4
+      ],
+      "worldMinY": 0,
+      "worldMaxY": 1.777,
+      "overlaps": []
+    },
+    {
+      "viewport": "1280x800",
+      "hero": "sightline",
+      "ok": true,
+      "modelTop": 238.5,
+      "textBottom": 143,
+      "canvasTop": 157,
+      "modelBottom": 646,
+      "base": [
+        596.5,
+        729.4
+      ],
+      "worldMinY": 0,
+      "worldMaxY": 1.804,
+      "overlaps": []
+    },
+    {
+      "viewport": "1280x800",
+      "hero": "loadout",
+      "ok": true,
+      "modelTop": 231.8,
+      "textBottom": 143,
+      "canvasTop": 157,
+      "modelBottom": 660.8,
+      "base": [
+        596.5,
+        729.4
+      ],
+      "worldMinY": 0,
+      "worldMaxY": 1.798,
+      "overlaps": []
+    },
+    {
+      "viewport": "1280x800",
+      "hero": "backspool",
+      "ok": true,
+      "modelTop": 240.4,
+      "textBottom": 143,
+      "canvasTop": 157,
+      "modelBottom": 654.4,
+      "base": [
+        596.5,
+        729.4
+      ],
+      "worldMinY": 0,
+      "worldMaxY": 1.777,
+      "overlaps": []
+    },
+    {
+      "viewport": "1280x800",
+      "hero": "sightline",
+      "ok": true,
+      "modelTop": 238.5,
+      "textBottom": 143,
+      "canvasTop": 157,
+      "modelBottom": 646,
+      "base": [
+        596.5,
+        729.4
+      ],
+      "worldMinY": 0,
+      "worldMaxY": 1.804,
+      "overlaps": []
+    },
+    {
+      "viewport": "1280x800",
+      "hero": "loadout",
+      "ok": true,
+      "modelTop": 231.8,
+      "textBottom": 143,
+      "canvasTop": 157,
+      "modelBottom": 660.9,
+      "base": [
+        596.5,
+        729.4
+      ],
+      "worldMinY": 0,
+      "worldMaxY": 1.798,
+      "overlaps": []
+    },
+    {
+      "viewport": "1920x1080",
+      "hero": "backspool",
+      "ok": true,
+      "modelTop": 285.3,
+      "textBottom": 151.4,
+      "canvasTop": 166,
+      "modelBottom": 877.5,
+      "base": [
+        794.6,
+        984.8
+      ],
+      "worldMinY": 0,
+      "worldMaxY": 1.777,
+      "overlaps": []
+    },
+    {
+      "viewport": "1920x1080",
+      "hero": "sightline",
+      "ok": true,
+      "modelTop": 282.6,
+      "textBottom": 151.4,
+      "canvasTop": 166,
+      "modelBottom": 865.5,
+      "base": [
+        794.6,
+        984.8
+      ],
+      "worldMinY": 0,
+      "worldMaxY": 1.804,
+      "overlaps": []
+    },
+    {
+      "viewport": "1920x1080",
+      "hero": "loadout",
+      "ok": true,
+      "modelTop": 273,
+      "textBottom": 151.4,
+      "canvasTop": 166,
+      "modelBottom": 886.9,
+      "base": [
+        794.6,
+        984.8
+      ],
+      "worldMinY": 0,
+      "worldMaxY": 1.798,
+      "overlaps": []
+    },
+    {
+      "viewport": "1024x768",
+      "hero": "backspool",
+      "ok": true,
+      "modelTop": 252.4,
+      "textBottom": 161.5,
+      "canvasTop": 176,
+      "modelBottom": 631.5,
+      "base": [
+        578.4,
+        700.2
+      ],
+      "worldMinY": 0,
+      "worldMaxY": 1.777,
+      "overlaps": []
+    },
+    {
+      "viewport": "1024x768",
+      "hero": "sightline",
+      "ok": true,
+      "modelTop": 234.4,
+      "textBottom": 142,
+      "canvasTop": 157,
+      "modelBottom": 621,
+      "base": [
+        574.1,
+        700.2
+      ],
+      "worldMinY": 0,
+      "worldMaxY": 1.804,
+      "overlaps": []
+    },
+    {
+      "viewport": "1024x768",
+      "hero": "loadout",
+      "ok": true,
+      "modelTop": 228,
+      "textBottom": 142,
+      "canvasTop": 157,
+      "modelBottom": 635.1,
+      "base": [
+        574.1,
+        700.2
+      ],
+      "worldMinY": 0,
+      "worldMaxY": 1.798,
+      "overlaps": []
+    }
+  ],
+  "cartridge": [
+    {
+      "viewport": "1280x800",
+      "hero": "backspool",
+      "ok": true,
+      "visible": true,
+      "framesAdvanced": 49,
+      "passTriangles": 9034,
+      "figure": {
+        "left": 779.78125,
+        "right": 939.53125,
+        "top": 162.703125,
+        "bottom": 393.828125
+      },
+      "view": {
+        "left": 780.78125,
+        "right": 938.53125,
+        "top": 163.703125,
+        "bottom": 321.453125
+      },
+      "projected": {
+        "left": 790.2,
+        "right": 929.1,
+        "top": 201.6,
+        "bottom": 292.9
+      },
+      "deploy": 0.998
+    },
+    {
+      "viewport": "1280x800",
+      "hero": "sightline",
+      "ok": true,
+      "visible": false,
+      "framesAdvanced": 0,
+      "passTriangles": 9034,
+      "figure": null,
+      "view": null,
+      "projected": null,
+      "deploy": 1
+    },
+    {
+      "viewport": "1280x800",
+      "hero": "loadout",
+      "ok": true,
+      "visible": false,
+      "framesAdvanced": 0,
+      "passTriangles": 9034,
+      "figure": null,
+      "view": null,
+      "projected": null,
+      "deploy": 1
+    },
+    {
+      "viewport": "1280x800",
+      "hero": "backspool",
+      "ok": true,
+      "visible": true,
+      "framesAdvanced": 49,
+      "passTriangles": 9034,
+      "figure": {
+        "left": 779.78125,
+        "right": 939.53125,
+        "top": 162.703125,
+        "bottom": 393.828125
+      },
+      "view": {
+        "left": 780.78125,
+        "right": 938.53125,
+        "top": 163.703125,
+        "bottom": 321.453125
+      },
+      "projected": {
+        "left": 789.6,
+        "right": 929.7,
+        "top": 198.8,
+        "bottom": 296.2
+      },
+      "deploy": 0.496
+    },
+    {
+      "viewport": "1280x800",
+      "hero": "sightline",
+      "ok": true,
+      "visible": false,
+      "framesAdvanced": 0,
+      "passTriangles": 8906,
+      "figure": null,
+      "view": null,
+      "projected": null,
+      "deploy": 0.008
+    },
+    {
+      "viewport": "1280x800",
+      "hero": "loadout",
+      "ok": true,
+      "visible": false,
+      "framesAdvanced": 0,
+      "passTriangles": 8906,
+      "figure": null,
+      "view": null,
+      "projected": null,
+      "deploy": 0.008
+    },
+    {
+      "viewport": "1920x1080",
+      "hero": "backspool",
+      "ok": true,
+      "visible": true,
+      "framesAdvanced": 39,
+      "passTriangles": 8906,
+      "figure": {
+        "left": 1209.296875,
+        "right": 1409.296875,
+        "top": 174.15625,
+        "bottom": 430.84375
+      },
+      "view": {
+        "left": 1210.296875,
+        "right": 1408.296875,
+        "top": 175.15625,
+        "bottom": 373.15625
+      },
+      "projected": {
+        "left": 1224.8,
+        "right": 1393.8,
+        "top": 220.7,
+        "bottom": 339.5
+      },
+      "deploy": 0
+    },
+    {
+      "viewport": "1920x1080",
+      "hero": "sightline",
+      "ok": true,
+      "visible": false,
+      "framesAdvanced": 0,
+      "passTriangles": 9034,
+      "figure": null,
+      "view": null,
+      "projected": null,
+      "deploy": 0.781
+    },
+    {
+      "viewport": "1920x1080",
+      "hero": "loadout",
+      "ok": true,
+      "visible": false,
+      "framesAdvanced": 0,
+      "passTriangles": 9034,
+      "figure": null,
+      "view": null,
+      "projected": null,
+      "deploy": 0.781
+    },
+    {
+      "viewport": "1024x768",
+      "hero": "backspool",
+      "ok": true,
+      "visible": true,
+      "framesAdvanced": 48,
+      "passTriangles": 9034,
+      "figure": {
+        "left": 623.828125,
+        "right": 751.625,
+        "top": 181.21875,
+        "bottom": 392.390625
+      },
+      "view": {
+        "left": 624.828125,
+        "right": 750.625,
+        "top": 182.21875,
+        "bottom": 308.015625
+      },
+      "projected": {
+        "left": 630.9,
+        "right": 744.6,
+        "top": 213.5,
+        "bottom": 284.3
+      },
+      "deploy": 1
+    },
+    {
+      "viewport": "1024x768",
+      "hero": "sightline",
+      "ok": true,
+      "visible": false,
+      "framesAdvanced": 0,
+      "passTriangles": 9034,
+      "figure": null,
+      "view": null,
+      "projected": null,
+      "deploy": 1
+    },
+    {
+      "viewport": "1024x768",
+      "hero": "loadout",
+      "ok": true,
+      "visible": false,
+      "framesAdvanced": 0,
+      "passTriangles": 9034,
+      "figure": null,
+      "view": null,
+      "projected": null,
+      "deploy": 1
+    }
+  ],
+  "errors": [],
+  "pass": true
+}
