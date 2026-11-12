@@ -1,0 +1,166 @@
+{
+  "build": "SIGHTLINE_SAINT_MERIDIAN_V02_HERO_SELECT.html",
+  "entrySHA256": "2af17e20a15565a0c2a2891f8b580668782d541bc983aede70cb55f5de1ebadb",
+  "steps": {
+    "bootAndEnterDistrict": {
+      "startHero": "backspool",
+      "loadSeconds": 4
+    },
+    "escPausesAndEntryPointsExist": {
+      "footer": true,
+      "heroTab": true
+    },
+    "keyboardHOpens": {
+      "focus": "backspool"
+    },
+    "keyboardArrowsBrowseAndWrap": {
+      "order": [
+        "backspool",
+        "sightline",
+        "loadout"
+      ],
+      "wrapRight": "backspool",
+      "wrapLeft": "loadout"
+    },
+    "keyboardDoesNotLeakIntoGame": {
+      "moved": 0,
+      "open": true,
+      "hero": "backspool"
+    },
+    "keyboardPicksSightlineAndResumes": {
+      "label": "sightline W",
+      "moved": 12.25,
+      "confirms": [
+        {
+          "hero": "sightline",
+          "from": "backspool",
+          "source": "keyboard",
+          "switchMs": 4
+        }
+      ]
+    },
+    "padStickDpadShouldersBrowse": {
+      "padNav": [
+        [
+          "stickRight",
+          "loadout"
+        ],
+        [
+          "stickLeft",
+          "sightline"
+        ],
+        [
+          "dpadRight",
+          "loadout"
+        ],
+        [
+          "LB",
+          "sightline"
+        ],
+        [
+          "RB",
+          "loadout"
+        ],
+        [
+          "dpadLeft",
+          "sightline"
+        ]
+      ]
+    },
+    "padPicksLoadoutAndResumes": {
+      "label": "loadout stick",
+      "moved": 8.09,
+      "samples": 3,
+      "earlyResume": false,
+      "switchMs": 1243
+    },
+    "mousePicksBackspoolAndResumes": {
+      "label": "backspool W",
+      "moved": 8.2
+    },
+    "padDoesNotLeakIntoGame": {
+      "moved": 0,
+      "focusAfter": "loadout"
+    },
+    "chordWorksWhileScreenOpen": {
+      "from": "backspool",
+      "to": "loadout",
+      "activeCard": "loadout"
+    },
+    "chordWorksDuringPlay": {
+      "from": "loadout",
+      "to": "sightline",
+      "label": "after chord",
+      "moved": 12.1
+    },
+    "resumeAsCurrentHeroNoSwitch": {
+      "hero": "sightline",
+      "label": "Resume as Sightline"
+    },
+    "previewRenderedAllRigs": {
+      "rigs": {
+        "backspool": {
+          "status": "ready",
+          "clip": "backspool-017",
+          "clipSeconds": 9.93,
+          "triangles": 18730,
+          "bones": 65,
+          "loadMs": 845
+        },
+        "sightline": {
+          "status": "ready",
+          "clip": "idle",
+          "clipSeconds": 3.3,
+          "triangles": 91425,
+          "bones": 65,
+          "loadMs": 203
+        },
+        "loadout": {
+          "status": "ready",
+          "clip": "runner-Idle_Wait_A",
+          "clipSeconds": 2,
+          "triangles": 68842,
+          "bones": 120,
+          "loadMs": 395
+        }
+      },
+      "frames": 1495,
+      "lastFrameMs": 0.5
+    },
+    "previewStopsWhenClosed": {
+      "framesBefore": 1495,
+      "framesAfter": 1495
+    },
+    "noPageErrors": {
+      "errors": []
+    }
+  },
+  "checks": {
+    "recordMatchesFile": true,
+    "bootAndEnterDistrict": true,
+    "escPausesAndEntryPointsExist": true,
+    "keyboardHOpens": true,
+    "keyboardArrowsBrowseAndWrap": true,
+    "keyboardDoesNotLeakIntoGame": true,
+    "keyboardEscBacksOutNoSwitch": true,
+    "keyboardPicksSightlineAndResumes": true,
+    "padStartPauses": true,
+    "padYOpens": true,
+    "padBBacksOutNoSwitch": true,
+    "padStickDpadShouldersBrowse": true,
+    "padPicksLoadoutAndResumes": true,
+    "mousePicksBackspoolAndResumes": true,
+    "padDoesNotLeakIntoGame": true,
+    "chordWorksWhileScreenOpen": true,
+    "chordWorksDuringPlay": true,
+    "resumeAsCurrentHeroNoSwitch": true,
+    "previewRenderedAllRigs": true,
+    "previewStopsWhenClosed": true,
+    "noPageErrors": true
+  },
+  "notes": [],
+  "loadSeconds": 4,
+  "startHero": "backspool",
+  "errors": [],
+  "pass": true
+}

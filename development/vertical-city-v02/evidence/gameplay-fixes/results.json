@@ -1,0 +1,360 @@
+{
+  "build": "SIGHTLINE_SAINT_MERIDIAN_V02_GAMEPLAY_FIXES.html",
+  "control": "SIGHTLINE_SAINT_MERIDIAN_V02_STYLIZED_ATMOSPHERE.html",
+  "checks": {
+    "controlBuildReproducesStall": true,
+    "standingRailAttachesThenStepsOff": true,
+    "dismountAddsNoSpeed": true,
+    "walkWorksAfterDismount": true,
+    "runningRailStillGrinds": true,
+    "controlBuildShowsMarkerOverlap": true,
+    "markerClearOfHudPanels": true,
+    "controlGuideWrongForBackspool": true,
+    "sightlineGuideUnchanged": true,
+    "backspoolGuideListsBackspoolKeys": true,
+    "loadoutGuideHasNoPowers": true,
+    "guideKeysWork": true,
+    "noPageErrors": true
+  },
+  "evidence": {
+    "stall": {
+      "attachFrame": 79,
+      "releaseFrame": 107,
+      "secondsOnRail": 0.47,
+      "releaseRow": {
+        "mode": "AIR",
+        "onGround": false,
+        "onRail": false,
+        "speed": 0.383,
+        "hspeed": 0,
+        "vy": -0.383,
+        "pos": [
+          33.4,
+          0.434,
+          218.4
+        ],
+        "anim": "forspoken-flow-fall",
+        "hero": "backspool"
+      },
+      "settled": {
+        "mode": "GROUND",
+        "onGround": true,
+        "onRail": false,
+        "speed": 0,
+        "hspeed": 0,
+        "vy": 0,
+        "pos": [
+          33.4,
+          0.42,
+          218.4
+        ],
+        "anim": "forspoken-threadrail-relaxed-idle",
+        "hero": "backspool"
+      },
+      "fixState": {
+        "time": 0,
+        "notified": false,
+        "dismounts": 1,
+        "raisedNotices": 0,
+        "restartSkips": 0,
+        "last": {
+          "reason": "floor",
+          "gap": 0.02,
+          "position": [
+            33.4,
+            0.43999999999995143,
+            218.4
+          ],
+          "speed": 0
+        }
+      },
+      "walked": {
+        "mode": "GROUND",
+        "onGround": true,
+        "onRail": false,
+        "speed": 6.6,
+        "hspeed": 6.6,
+        "vy": 0,
+        "pos": [
+          33.4,
+          0.42,
+          214.605
+        ],
+        "anim": "traversal-locomotion-fastRun",
+        "hero": "backspool"
+      },
+      "controlLast": {
+        "mode": "AIR",
+        "onGround": false,
+        "onRail": true,
+        "speed": 0,
+        "hspeed": 0,
+        "vy": 0,
+        "pos": [
+          33.4,
+          0.44,
+          218.4
+        ],
+        "anim": "forspoken-threadrail-grind",
+        "hero": "backspool"
+      },
+      "controlStuckLastSecond": true,
+      "controlAnims": [
+        "forspoken-threadrail-relaxed-idle",
+        "forspoken-threadrail-grind"
+      ],
+      "fixedAnims": [
+        "forspoken-threadrail-relaxed-idle",
+        "forspoken-threadrail-grind",
+        "forspoken-flow-fall",
+        "forspoken-v16-landSoft"
+      ],
+      "afterRelease": [
+        [
+          "AIR",
+          0,
+          -0.383,
+          0.434
+        ],
+        [
+          "AIR",
+          0,
+          -0.767,
+          0.421
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ],
+        [
+          "GROUND",
+          0,
+          0,
+          0.42
+        ]
+      ]
+    },
+    "runningRail": {
+      "grindFramesWithSpeed": 69,
+      "peak": 6.6,
+      "dismountsAfter": 1
+    },
+    "marker": {
+      "fixed": {
+        "samples": 150,
+        "overlapSamples": 0,
+        "worst": null,
+        "yawEnd": -12.46
+      },
+      "control": {
+        "samples": 150,
+        "overlapSamples": 12,
+        "worst": {
+          "out": [
+            {
+              "id": "flightVitals",
+              "area": 1410
+            }
+          ],
+          "yaw": -3.79,
+          "marker": [
+            179,
+            638,
+            37,
+            55
+          ]
+        },
+        "yawEnd": -12.46
+      },
+      "moves": {
+        "moves": 46,
+        "last": {
+          "from": 628.4,
+          "to": 618.9
+        }
+      }
+    },
+    "guide": {
+      "sightline": "WASDMove — walk → run ShiftSprint SpaceJump RMBAim Sightline LMBLaunch / queue rail QArrival brace EMicro-rail dodge VRail Read visor CAir-brake / controlled fall RReset to plaza OFlip model facing FRecenter camera ZSwap aim shoulder EscRelease cursor CONTROLLER // AUTO-DETECTED LSMove — analog walk/run RSCamera LTAim Sightline RTLaunch / queue rail A / ×Jump / start B / ○Air-brake X / □Micro-rail",
+      "backspool": "WASDMove — walk → run Shift / CtrlFlow sprint — tap to toggle SpaceJump / directional flip LMBStrike QHeavy RMBGuard CEvade AltLock target 1–3Combat state RThreadrail — tap · hold for precision EAfterstep Drive USnapback G hold / H / J / NBank / Echo / Retrace / next TPractice targets IRead public information EscPause and tools CONTROLLER // AUTO-DETECTED LSMove RSCamera L3Flow sprint — B outside combat A / ×Jump RTStrike D↑Heavy LTGuard D↓ / BEvade R3Lock target D← / D→Combat state X / □Threadrail RB / R1Afterstep Drive LB + YSnapback View + LB / RB / X / D↑Bank / Echo / Retrace / next Y / △R",
+      "loadout": "WASDMove — walk → run Shift / CtrlFlow sprint — tap to toggle SpaceJump / directional flip LMBStrike QHeavy RMBGuard CEvade AltLock target 1–3Combat state TPractice targets IRead public information EscPause and tools CONTROLLER // AUTO-DETECTED LSMove RSCamera L3Flow sprint — B outside combat A / ×Jump RTStrike D↑Heavy LTGuard D↓ / BEvade R3Lock target D← / D→Combat state Y / △Read public information L3 + LT + RT + R3Switch hero Loadout uses Backspool's traversal, parkour and melee combat without his powers: no Threadrail, Afterstep Drive, Snapback, Echo or Retrace. F3Toggle diagnostics EscPau",
+      "controlBackspool": "WASDMove — walk → run ShiftSprint SpaceJump RMBAim Sightline LMBLaunch / queue rail QArrival brace EMicro-rail dodge VRail Read visor CAir-brake / controlled fall RReset to plaza OFlip model facing FRecenter camera ZSwap aim shoulder EscRelease cursor CONTROLLER // AUTO-DETECTED LSMove — analog walk"
+    },
+    "keys": {
+      "R": [
+        "forspoken-threadrail-relaxed-idle",
+        "forspoken-threadrail-grind",
+        "forspoken-flow-fall",
+        "forspoken-v16-landSoft"
+      ],
+      "Q": [
+        "action-v2-mx-flow-heavy"
+      ],
+      "C": [
+        "forspoken-flow-backstep",
+        "action-v2-mx-flow-stance"
+      ],
+      "deployment": "INPUT RESET"
+    }
+  },
+  "errors": [],
+  "pass": true
+}

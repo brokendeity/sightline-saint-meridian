@@ -1,0 +1,115 @@
+{
+ "build": "V02_Hero_Select_Build.json",
+ "results": {
+  "smoke": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 16.9,
+   "command": "node scripts/vertical-v02/test_canonical_smoke.cjs V02_Hero_Select_Build.json",
+   "environment": {},
+   "logTail": [
+    "PASS v02ModulesLoaded",
+    "PASS everyHeroRunsAndMoves",
+    "PASS noPageErrors"
+   ]
+  },
+  "hero-select": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 41.5,
+   "command": "node scripts/vertical-v02/test_hero_select.cjs V02_Hero_Select_Build.json",
+   "environment": {
+    "V02_HERO_SELECT_OUT": "development/vertical-city-v02/evidence/hero-select-checks/hero-select"
+   },
+   "logTail": [
+    "PASS previewStopsWhenClosed {\"framesBefore\":1495,\"framesAfter\":1495}",
+    "PASS noPageErrors {\"errors\":[]}",
+    "ALL PASS"
+   ]
+  },
+  "wall-contacts": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 25.0,
+   "command": "node scripts/vertical-v02/test_friendly_wall_contacts.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Hero_Select_Build.json"
+   },
+   "logTail": [
+    "PASS simulated controller Flow and stick climb then release",
+    "PASS blocked imported facade drops once instead of repeatedly retrying",
+    "PASS actual city facade allows continuous collision-clear wall traversal"
+   ]
+  },
+  "landing-contacts": {
+   "status": "FAIL",
+   "returncode": 1,
+   "wallSeconds": 10.9,
+   "command": "node scripts/vertical-v02/test_friendly_landing_contacts.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Hero_Select_Build.json"
+   },
+   "logTail": [
+    "  - waiting for locator('canvas')",
+    "",
+    "    at /Users/richardmpayi/Downloads/sight game rail/backspool-threadrail-work/scripts/vertical-v02/test_friendly_landing_contacts.cjs:4:815"
+   ]
+  },
+  "city-loops": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 53.4,
+   "command": "node scripts/vertical-v02/test_current_city_loops.cjs",
+   "environment": {
+    "V02_LOOP_BUILD": "V02_Hero_Select_Build.json",
+    "V02_LOOP_REPORT": "V02_Hero_Select_Loops.json",
+    "V02_LOOP_RUN": "hero-select-loops"
+   },
+   "logTail": [
+    "PASS mid 35.36666666666667 229.405000000023 cameraInsideFrames 0",
+    "PASS high 37.2 241.5050000000245 cameraInsideFrames 0",
+    "PASS complete lower/mid/high public loops on current combined candidate"
+   ]
+  },
+  "station-routes": {
+   "status": "NOT TESTED"
+  },
+  "retained-gameplay": {
+   "status": "NOT TESTED"
+  },
+  "strides": {
+   "status": "NOT TESTED"
+  },
+  "vaults": {
+   "status": "NOT TESTED"
+  },
+  "air": {
+   "status": "NOT TESTED"
+  },
+  "crouch": {
+   "status": "NOT TESTED"
+  },
+  "combat": {
+   "status": "NOT TESTED"
+  },
+  "sightline": {
+   "status": "NOT TESTED"
+  },
+  "rhythm": {
+   "status": "NOT TESTED"
+  },
+  "themed": {
+   "status": "NOT TESTED"
+  },
+  "impact": {
+   "status": "NOT TESTED"
+  },
+  "no-trucks": {
+   "status": "NOT TESTED"
+  },
+  "menu": {
+   "status": "NOT TESTED"
+  }
+ },
+ "stopped": "Run stopped by hand during station-routes on 2026-11-06. landing-contacts FAILED because the module kept a second <canvas> (the turntable) in the page, and that suite clicks a bare locator(\"canvas\") (strict-mode violation). The module was then fixed to attach that canvas only while the screen is open; because builds load scripts/game_v02_hero_select.js from disk, the jobs still to come would have tested the fixed module rather than the committed one, so the run was stopped. station-routes was interrupted (partial output removed); every later job is NOT TESTED on this build. The fixed module is tested on V02_Hero_Select_Runner_Full_Build.json (evidence/hero-select-runner-full-checks/)."
+}

@@ -1,0 +1,229 @@
+{
+ "build": "V02_Gameplay_Fixes_Build.json",
+ "results": {
+  "wall-contacts": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 26.6,
+   "command": "node scripts/vertical-v02/test_friendly_wall_contacts.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Gameplay_Fixes_Build.json"
+   },
+   "logTail": [
+    "PASS simulated controller Flow and stick climb then release",
+    "PASS blocked imported facade drops once instead of repeatedly retrying",
+    "PASS actual city facade allows continuous collision-clear wall traversal"
+   ]
+  },
+  "landing-contacts": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 21.2,
+   "command": "node scripts/vertical-v02/test_friendly_landing_contacts.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Gameplay_Fixes_Build.json"
+   },
+   "logTail": [
+    "PASS rollBack landing",
+    "PASS recovery cancel to strike",
+    "PASS landing / roll input flows; no page errors"
+   ]
+  },
+  "city-loops": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 51.5,
+   "command": "node scripts/vertical-v02/test_current_city_loops.cjs",
+   "environment": {
+    "V02_LOOP_BUILD": "V02_Gameplay_Fixes_Build.json",
+    "V02_LOOP_REPORT": "V02_Gameplay_Fixes_Loops.json",
+    "V02_LOOP_RUN": "gameplay-fixes-loops"
+   },
+   "logTail": [
+    "PASS mid 35.36666666666667 229.405000000023 cameraInsideFrames 0",
+    "PASS high 37.2 241.5050000000245 cameraInsideFrames 0",
+    "PASS complete lower/mid/high public loops on current combined candidate"
+   ]
+  },
+  "station-routes": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 384.1,
+   "command": "python3 scripts/vertical-v02/run_current_station_routes.py",
+   "environment": {
+    "V02_ROUTE_BUILD_REPORT": "V02_Gameplay_Fixes_Build.json",
+    "V02_ROUTE_REPORT": "V02_Gameplay_Fixes_Station_Routes.json",
+    "V02_ROUTE_SUITE": "gameplay-fixes-station-routes"
+   },
+   "logTail": [
+    "START public-banked",
+    "PASS public-banked 135.08333333333334 773.9782163119702",
+    "PASS all three current approaches, zero/full legal bank starts"
+   ]
+  },
+  "retained-gameplay": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 743.9,
+   "command": "python3 scripts/vertical-v02/run_friendly_gameplay_regressions.py",
+   "environment": {
+    "V02_GAMEPLAY_BUILD": "V02_Gameplay_Fixes_Build.json",
+    "V02_GAMEPLAY_SUITE": "gameplay-fixes-gameplay"
+   },
+   "logTail": [
+    "START discovery-lifecycle",
+    "DONE discovery-lifecycle 0",
+    "PASS12current encounter/replay/discovery cases; final release scope remains separate"
+   ]
+  },
+  "strides": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 18.9,
+   "command": "node scripts/vertical-v02/test_forspoken_strides.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Gameplay_Fixes_Build.json",
+    "V02_STRIDES_OUT": "development/vertical-city-v02/evidence/gameplay-fixes-checks/strides"
+   },
+   "logTail": [
+    "PASS ground starts, stops, turns and stop cancel; no page errors"
+   ]
+  },
+  "vaults": {
+   "status": "FAIL",
+   "returncode": 1,
+   "wallSeconds": 24.4,
+   "command": "node scripts/vertical-v02/test_forspoken_vaults.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Gameplay_Fixes_Build.json",
+    "V02_VAULTS_OUT": "development/vertical-city-v02/evidence/gameplay-fixes-checks/vaults"
+   },
+   "logTail": [
+    "  operator: 'strictEqual',",
+    "  diff: 'simple'",
+    "}"
+   ]
+  },
+  "air": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 14.3,
+   "command": "node scripts/vertical-v02/test_forspoken_air.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Gameplay_Fixes_Build.json",
+    "V02_AIR_OUT": "development/vertical-city-v02/evidence/gameplay-fixes-checks/air"
+   },
+   "logTail": [
+    "PASS standing and running take-offs; no page errors"
+   ]
+  },
+  "crouch": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 14.4,
+   "command": "node scripts/vertical-v02/test_forspoken_crouch.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Gameplay_Fixes_Build.json",
+    "V02_CROUCH_OUT": "development/vertical-city-v02/evidence/gameplay-fixes-checks/crouch"
+   },
+   "logTail": [
+    "PASS crouch down, start, stop, up and cancel; no page errors"
+   ]
+  },
+  "combat": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 28.4,
+   "command": "node scripts/vertical-v02/test_mixamo_combat.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Gameplay_Fixes_Build.json",
+    "V02_COMBAT_OUT": "development/vertical-city-v02/evidence/gameplay-fixes-checks/combat"
+   },
+   "logTail": [
+    "PASS impact RT chain and heavy",
+    "PASS counter RT chain and heavy",
+    "PASS 8-hit RT chains and heavies in all three styles; no page errors"
+   ]
+  },
+  "sightline": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 16.4,
+   "command": "node scripts/vertical-v02/test_sightline_melee.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Gameplay_Fixes_Build.json",
+    "V02_SIGHTLINE_OUT": "development/vertical-city-v02/evidence/gameplay-fixes-checks/sightline"
+   },
+   "logTail": [
+    "PASS Sightline burst, kick, guard and rail separation; no page errors"
+   ]
+  },
+  "rhythm": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 17.8,
+   "command": "node scripts/vertical-v02/test_burst_rhythm.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Gameplay_Fixes_Build.json",
+    "V02_RHYTHM_OUT": "development/vertical-city-v02/evidence/gameplay-fixes-checks/rhythm"
+   },
+   "logTail": [
+    "PASS burst > cover > counter > reset; guarded counter takes chip damage only; no page errors"
+   ]
+  },
+  "themed": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 36.4,
+   "command": "node scripts/vertical-v02/test_themed_slots.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Gameplay_Fixes_Build.json",
+    "V02_THEMED_OUT": "development/vertical-city-v02/evidence/gameplay-fixes-checks/themed"
+   },
+   "logTail": [
+    "PASS counter directional, heavy, launcher, air light and finisher",
+    "PASS counter counter [\"counter-counter-1\",\"counter-counter-2\"]",
+    "PASS themed directional, heavy, launcher, air and counter slots in all three styles; no page errors"
+   ]
+  },
+  "impact": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 26.7,
+   "command": "node scripts/vertical-v02/test_impact_fx.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Gameplay_Fixes_Build.json",
+    "V02_IMPACT_OUT": "development/vertical-city-v02/evidence/gameplay-fixes-checks/impact"
+   },
+   "logTail": [
+    "PASS surfaces, debris rest, decal 30 s + 2 s fade, flash, hit-stop, landing crater, shot burst, heavy-strike feel; no page errors"
+   ]
+  },
+  "no-trucks": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 13.4,
+   "command": "node scripts/vertical-v02/test_no_halo_trucks.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Gameplay_Fixes_Build.json",
+    "V02_TRUCKS_OUT": "development/vertical-city-v02/evidence/gameplay-fixes-checks/no-trucks"
+   },
+   "logTail": [
+    "PASS no halo trucks {\"removed\":\"Halo trucks removed for now; replacement models pending\",\"moved\":41.5}"
+   ]
+  },
+  "menu": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 17.0,
+   "command": "node scripts/vertical-v02/test_menu_style.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Gameplay_Fixes_Build.json",
+    "V02_MENU_OUT": "development/vertical-city-v02/evidence/gameplay-fixes-checks/menu"
+   },
+   "logTail": [
+    "PASS menu restyle: tabs, keys, focus, start, pause, resume, hero word, phone layout; no page errors"
+   ]
+  }
+ }
+}

@@ -1,0 +1,1615 @@
+{
+  "status": "PASS local service Echo contact and two supported public escapes",
+  "scope": "Local service-yard Echo contact, two public gallery escapes and encounter cleanup. One initial player/camera fixture followed by DOM keys/mouse and simulated movement axes. Not full hero/mission or final character-art acceptance.",
+  "results": [
+    {
+      "name": "actual G/Q/H inputs bank and release a versioned strike; confirmed Echo damages the matching live service opponent",
+      "pass": true
+    },
+    {
+      "name": "both public gallery exits remain reachable through ordinary supported movement during the live encounter",
+      "pass": true
+    },
+    {
+      "name": "End removes owned opponents and replay state; native condition values are recorded",
+      "pass": true
+    }
+  ],
+  "stages": [
+    {
+      "name": "started through actual interaction",
+      "p": [
+        64,
+        52.42,
+        333.2
+      ],
+      "trauma": 0,
+      "phase": "active",
+      "targets": [
+        {
+          "id": "encounter-1-0",
+          "hp": 180,
+          "position": [
+            64.93736225144147,
+            52,
+            330.2004407953873
+          ],
+          "phase": "approach"
+        },
+        {
+          "id": "encounter-1-1",
+          "hp": 180,
+          "position": [
+            72.82706340378783,
+            52,
+            327.1191340996129
+          ],
+          "phase": "approach"
+        },
+        {
+          "id": "encounter-1-2",
+          "hp": 180,
+          "position": [
+            85.5,
+            55.2,
+            329
+          ],
+          "phase": "ready"
+        }
+      ],
+      "powers": {
+        "clock": 0.2333333333333333,
+        "strain": 0,
+        "selected": 0,
+        "recording": null,
+        "armed": false,
+        "echoes": 0,
+        "retraces": 0,
+        "crossbeats": 0,
+        "message": "MOVE · BANK · RELEASE",
+        "messageUntil": 2.1333333333333333,
+        "eventCursor": 0,
+        "selectedRoute": null,
+        "retracing": null,
+        "slots": [
+          {
+            "index": 0,
+            "kind": null,
+            "frames": 0,
+            "playing": false,
+            "expiresIn": 0,
+            "moveId": null,
+            "moveVersion": null,
+            "combatState": null,
+            "executedContacts": []
+          },
+          {
+            "index": 1,
+            "kind": null,
+            "frames": 0,
+            "playing": false,
+            "expiresIn": 0,
+            "moveId": null,
+            "moveVersion": null,
+            "combatState": null,
+            "executedContacts": []
+          },
+          {
+            "index": 2,
+            "kind": null,
+            "frames": 0,
+            "playing": false,
+            "expiresIn": 0,
+            "moveId": null,
+            "moveVersion": null,
+            "combatState": null,
+            "executedContacts": []
+          }
+        ],
+        "events": []
+      }
+    },
+    {
+      "name": "completed legal action bank",
+      "p": [
+        64.49762211354842,
+        52.42,
+        331.60760923664543
+      ],
+      "trauma": 0,
+      "phase": "active",
+      "targets": [
+        {
+          "id": "encounter-1-0",
+          "hp": 149,
+          "position": [
+            65.49811923853689,
+            52,
+            328.4060184366813
+          ],
+          "phase": "heavy-stagger"
+        },
+        {
+          "id": "encounter-1-1",
+          "hp": 180,
+          "position": [
+            70.32616918441448,
+            52,
+            328.5339664194406
+          ],
+          "phase": "approach"
+        },
+        {
+          "id": "encounter-1-2",
+          "hp": 180,
+          "position": [
+            85.5,
+            55.2,
+            329
+          ],
+          "phase": "ready"
+        }
+      ],
+      "powers": {
+        "clock": 1.6026666666666656,
+        "strain": 7.833333333333334,
+        "selected": 0,
+        "recording": null,
+        "armed": false,
+        "echoes": 0,
+        "retraces": 0,
+        "crossbeats": 0,
+        "message": "BANKED STRIKE",
+        "messageUntil": 3.5693333333333324,
+        "eventCursor": 2,
+        "selectedRoute": null,
+        "retracing": null,
+        "slots": [
+          {
+            "index": 0,
+            "id": 1,
+            "kind": "strike",
+            "frames": 28,
+            "playing": false,
+            "origin": [
+              64.44094986485264,
+              52.42,
+              331.78896043247175
+            ],
+            "expiresIn": 24.96666666666667,
+            "moveId": "impact-heavy",
+            "moveVersion": 3,
+            "combatState": "impact",
+            "executedContacts": [
+              {
+                "id": "impact-heavy-contact",
+                "time": 0.27274,
+                "socket": "rightHand",
+                "radius": 0.32,
+                "damage": 31,
+                "push": 2.3,
+                "heavy": true,
+                "launcher": false
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "kind": null,
+            "frames": 0,
+            "playing": false,
+            "expiresIn": 0,
+            "moveId": null,
+            "moveVersion": null,
+            "combatState": null,
+            "executedContacts": []
+          },
+          {
+            "index": 2,
+            "kind": null,
+            "frames": 0,
+            "playing": false,
+            "expiresIn": 0,
+            "moveId": null,
+            "moveVersion": null,
+            "combatState": null,
+            "executedContacts": []
+          }
+        ],
+        "events": [
+          {
+            "eventId": 1,
+            "recordingId": 1,
+            "kind": "record-start",
+            "time": 0.833,
+            "id": 1,
+            "action": "strike"
+          },
+          {
+            "eventId": 2,
+            "recordingId": 1,
+            "kind": "banked",
+            "time": 1.569,
+            "id": 1,
+            "action": "strike",
+            "frames": 28,
+            "moveId": "impact-heavy",
+            "moveVersion": 3,
+            "combatState": "impact",
+            "contacts": [
+              "impact-heavy-contact"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Echo played against live yard opponent",
+      "p": [
+        64.1518616586741,
+        52.42,
+        332.71404269224325
+      ],
+      "trauma": 0,
+      "phase": "active",
+      "targets": [
+        {
+          "id": "encounter-1-0",
+          "hp": 118,
+          "position": [
+            65.52392662709862,
+            52,
+            328.3234347932819
+          ],
+          "phase": "heavy-stagger"
+        },
+        {
+          "id": "encounter-1-1",
+          "hp": 180,
+          "position": [
+            66.04527243636247,
+            52,
+            331.40828788105796
+          ],
+          "phase": "approach"
+        },
+        {
+          "id": "encounter-1-2",
+          "hp": 180,
+          "position": [
+            85.5,
+            55.2,
+            329
+          ],
+          "phase": "ready"
+        }
+      ],
+      "powers": {
+        "clock": 5.20533333333332,
+        "strain": 8.819999999999947,
+        "selected": 0,
+        "recording": null,
+        "armed": false,
+        "echoes": 1,
+        "retraces": 0,
+        "crossbeats": 0,
+        "message": "ECHO HIT",
+        "messageUntil": 6.052666666666657,
+        "eventCursor": 5,
+        "selectedRoute": null,
+        "retracing": null,
+        "slots": [
+          {
+            "index": 0,
+            "kind": null,
+            "frames": 0,
+            "playing": false,
+            "expiresIn": 0,
+            "moveId": null,
+            "moveVersion": null,
+            "combatState": null,
+            "executedContacts": []
+          },
+          {
+            "index": 1,
+            "kind": null,
+            "frames": 0,
+            "playing": false,
+            "expiresIn": 0,
+            "moveId": null,
+            "moveVersion": null,
+            "combatState": null,
+            "executedContacts": []
+          },
+          {
+            "index": 2,
+            "kind": null,
+            "frames": 0,
+            "playing": false,
+            "expiresIn": 0,
+            "moveId": null,
+            "moveVersion": null,
+            "combatState": null,
+            "executedContacts": []
+          }
+        ],
+        "events": [
+          {
+            "eventId": 1,
+            "recordingId": 1,
+            "kind": "record-start",
+            "time": 0.833,
+            "id": 1,
+            "action": "strike"
+          },
+          {
+            "eventId": 2,
+            "recordingId": 1,
+            "kind": "banked",
+            "time": 1.569,
+            "id": 1,
+            "action": "strike",
+            "frames": 28,
+            "moveId": "impact-heavy",
+            "moveVersion": 3,
+            "combatState": "impact",
+            "contacts": [
+              "impact-heavy-contact"
+            ]
+          },
+          {
+            "eventId": 3,
+            "recordingId": 1,
+            "kind": "echo-release",
+            "time": 3.769,
+            "id": 1
+          },
+          {
+            "eventId": 4,
+            "recordingId": 1,
+            "kind": "echo-hit",
+            "time": 4.053,
+            "id": 1,
+            "target": "encounter-1-0",
+            "contactId": "impact-heavy-contact",
+            "result": "HIT",
+            "damage": 31,
+            "moveId": "impact-heavy",
+            "moveVersion": 3,
+            "combatState": "impact"
+          },
+          {
+            "eventId": 5,
+            "recordingId": 1,
+            "kind": "echo-complete",
+            "time": 4.472,
+            "id": 1,
+            "hits": 1,
+            "guards": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "west public gallery escape",
+      "p": [
+        55.00124870705543,
+        52.42,
+        345.8736474400461
+      ],
+      "trauma": 0,
+      "phase": "active",
+      "targets": [
+        {
+          "id": "encounter-1-0",
+          "hp": 118,
+          "position": [
+            61.3005095476141,
+            52,
+            332.1816717860547
+          ],
+          "phase": "return"
+        },
+        {
+          "id": "encounter-1-1",
+          "hp": 180,
+          "position": [
+            68.88382832242216,
+            52,
+            329.20802618604347
+          ],
+          "phase": "return"
+        },
+        {
+          "id": "encounter-1-2",
+          "hp": 180,
+          "position": [
+            85.5,
+            55.2,
+            329
+          ],
+          "phase": "ready"
+        }
+      ],
+      "powers": {
+        "clock": 9.722000000000062,
+        "strain": 0,
+        "selected": 0,
+        "recording": null,
+        "armed": false,
+        "echoes": 1,
+        "retraces": 0,
+        "crossbeats": 0,
+        "message": "ECHO HIT",
+        "messageUntil": 6.052666666666657,
+        "eventCursor": 5,
+        "selectedRoute": null,
+        "retracing": null,
+        "slots": [
+          {
+            "index": 0,
+            "kind": null,
+            "frames": 0,
+            "playing": false,
+            "expiresIn": 0,
+            "moveId": null,
+            "moveVersion": null,
+            "combatState": null,
+            "executedContacts": []
+          },
+          {
+            "index": 1,
+            "kind": null,
+            "frames": 0,
+            "playing": false,
+            "expiresIn": 0,
+            "moveId": null,
+            "moveVersion": null,
+            "combatState": null,
+            "executedContacts": []
+          },
+          {
+            "index": 2,
+            "kind": null,
+            "frames": 0,
+            "playing": false,
+            "expiresIn": 0,
+            "moveId": null,
+            "moveVersion": null,
+            "combatState": null,
+            "executedContacts": []
+          }
+        ],
+        "events": [
+          {
+            "eventId": 1,
+            "recordingId": 1,
+            "kind": "record-start",
+            "time": 0.833,
+            "id": 1,
+            "action": "strike"
+          },
+          {
+            "eventId": 2,
+            "recordingId": 1,
+            "kind": "banked",
+            "time": 1.569,
+            "id": 1,
+            "action": "strike",
+            "frames": 28,
+            "moveId": "impact-heavy",
+            "moveVersion": 3,
+            "combatState": "impact",
+            "contacts": [
+              "impact-heavy-contact"
+            ]
+          },
+          {
+            "eventId": 3,
+            "recordingId": 1,
+            "kind": "echo-release",
+            "time": 3.769,
+            "id": 1
+          },
+          {
+            "eventId": 4,
+            "recordingId": 1,
+            "kind": "echo-hit",
+            "time": 4.053,
+            "id": 1,
+            "target": "encounter-1-0",
+            "contactId": "impact-heavy-contact",
+            "result": "HIT",
+            "damage": 31,
+            "moveId": "impact-heavy",
+            "moveVersion": 3,
+            "combatState": "impact"
+          },
+          {
+            "eventId": 5,
+            "recordingId": 1,
+            "kind": "echo-complete",
+            "time": 4.472,
+            "id": 1,
+            "hits": 1,
+            "guards": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "east public gallery escape via return crossing",
+      "p": [
+        95.99538243361839,
+        52.42,
+        346.14159650429264
+      ],
+      "trauma": 0,
+      "phase": "active",
+      "targets": [
+        {
+          "id": "encounter-1-0",
+          "hp": 118,
+          "position": [
+            64.88813205406905,
+            52,
+            330.0659710153445
+          ],
+          "phase": "ready"
+        },
+        {
+          "id": "encounter-1-1",
+          "hp": 180,
+          "position": [
+            72.893371832335,
+            52,
+            327.057198242643
+          ],
+          "phase": "ready"
+        },
+        {
+          "id": "encounter-1-2",
+          "hp": 180,
+          "position": [
+            85.5,
+            55.2,
+            329
+          ],
+          "phase": "ready"
+        }
+      ],
+      "powers": {
+        "clock": 18.75533333333355,
+        "strain": 0,
+        "selected": 0,
+        "recording": null,
+        "armed": false,
+        "echoes": 1,
+        "retraces": 0,
+        "crossbeats": 0,
+        "message": "ECHO HIT",
+        "messageUntil": 6.052666666666657,
+        "eventCursor": 5,
+        "selectedRoute": null,
+        "retracing": null,
+        "slots": [
+          {
+            "index": 0,
+            "kind": null,
+            "frames": 0,
+            "playing": false,
+            "expiresIn": 0,
+            "moveId": null,
+            "moveVersion": null,
+            "combatState": null,
+            "executedContacts": []
+          },
+          {
+            "index": 1,
+            "kind": null,
+            "frames": 0,
+            "playing": false,
+            "expiresIn": 0,
+            "moveId": null,
+            "moveVersion": null,
+            "combatState": null,
+            "executedContacts": []
+          },
+          {
+            "index": 2,
+            "kind": null,
+            "frames": 0,
+            "playing": false,
+            "expiresIn": 0,
+            "moveId": null,
+            "moveVersion": null,
+            "combatState": null,
+            "executedContacts": []
+          }
+        ],
+        "events": [
+          {
+            "eventId": 1,
+            "recordingId": 1,
+            "kind": "record-start",
+            "time": 0.833,
+            "id": 1,
+            "action": "strike"
+          },
+          {
+            "eventId": 2,
+            "recordingId": 1,
+            "kind": "banked",
+            "time": 1.569,
+            "id": 1,
+            "action": "strike",
+            "frames": 28,
+            "moveId": "impact-heavy",
+            "moveVersion": 3,
+            "combatState": "impact",
+            "contacts": [
+              "impact-heavy-contact"
+            ]
+          },
+          {
+            "eventId": 3,
+            "recordingId": 1,
+            "kind": "echo-release",
+            "time": 3.769,
+            "id": 1
+          },
+          {
+            "eventId": 4,
+            "recordingId": 1,
+            "kind": "echo-hit",
+            "time": 4.053,
+            "id": 1,
+            "target": "encounter-1-0",
+            "contactId": "impact-heavy-contact",
+            "result": "HIT",
+            "damage": 31,
+            "moveId": "impact-heavy",
+            "moveVersion": 3,
+            "combatState": "impact"
+          },
+          {
+            "eventId": 5,
+            "recordingId": 1,
+            "kind": "echo-complete",
+            "time": 4.472,
+            "id": 1,
+            "hits": 1,
+            "guards": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "ended through encounter control",
+      "p": [
+        95.99538243361839,
+        52.42,
+        346.14159650429264
+      ],
+      "trauma": 0,
+      "phase": "idle",
+      "targets": [],
+      "powers": {
+        "clock": 18.78866666666688,
+        "strain": 0,
+        "selected": 0,
+        "recording": null,
+        "armed": false,
+        "echoes": 1,
+        "retraces": 0,
+        "crossbeats": 0,
+        "message": "MOVE · BANK · RELEASE",
+        "messageUntil": 20.75533333333355,
+        "eventCursor": 5,
+        "selectedRoute": null,
+        "retracing": null,
+        "slots": [
+          {
+            "index": 0,
+            "kind": null,
+            "frames": 0,
+            "playing": false,
+            "expiresIn": 0,
+            "moveId": null,
+            "moveVersion": null,
+            "combatState": null,
+            "executedContacts": []
+          },
+          {
+            "index": 1,
+            "kind": null,
+            "frames": 0,
+            "playing": false,
+            "expiresIn": 0,
+            "moveId": null,
+            "moveVersion": null,
+            "combatState": null,
+            "executedContacts": []
+          },
+          {
+            "index": 2,
+            "kind": null,
+            "frames": 0,
+            "playing": false,
+            "expiresIn": 0,
+            "moveId": null,
+            "moveVersion": null,
+            "combatState": null,
+            "executedContacts": []
+          }
+        ],
+        "events": [
+          {
+            "eventId": 1,
+            "recordingId": 1,
+            "kind": "record-start",
+            "time": 0.833,
+            "id": 1,
+            "action": "strike"
+          },
+          {
+            "eventId": 2,
+            "recordingId": 1,
+            "kind": "banked",
+            "time": 1.569,
+            "id": 1,
+            "action": "strike",
+            "frames": 28,
+            "moveId": "impact-heavy",
+            "moveVersion": 3,
+            "combatState": "impact",
+            "contacts": [
+              "impact-heavy-contact"
+            ]
+          },
+          {
+            "eventId": 3,
+            "recordingId": 1,
+            "kind": "echo-release",
+            "time": 3.769,
+            "id": 1
+          },
+          {
+            "eventId": 4,
+            "recordingId": 1,
+            "kind": "echo-hit",
+            "time": 4.053,
+            "id": 1,
+            "target": "encounter-1-0",
+            "contactId": "impact-heavy-contact",
+            "result": "HIT",
+            "damage": 31,
+            "moveId": "impact-heavy",
+            "moveVersion": 3,
+            "combatState": "impact"
+          },
+          {
+            "eventId": 5,
+            "recordingId": 1,
+            "kind": "echo-complete",
+            "time": 4.472,
+            "id": 1,
+            "hits": 1,
+            "guards": 0
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_FLIGHT_CEILING.html",
+  "manifest": "assets/city/vertical-v02/furnished-public-rooms/runtime/manifest.json",
+  "stage": "hud",
+  "evidenceRun": "flight-ceiling-gameplay/service-replay",
+  "entrySHA256": "119a45033c50853aae473982aed94d8a7147b9e28863e3a2191aaf5bb8fcd41d",
+  "manifestSHA256": "d5ecc2e184a9f31f46eff3495cd8aec6387a4614e0bfea92e9ccb493de1514d6",
+  "encounterSHA256": "9e65d4e94f0a20d8365e2ce9bf280240cbed60dae53cf13649362b953e013e85",
+  "marketSHA256": "6e2be87d08bd03a8aaa41fbe766972cf3a2d6cd57757b7406ac764b638c5714d",
+  "initialTrauma": 0,
+  "initialScore": 0,
+  "recorded": {
+    "slot": {
+      "index": 0,
+      "id": 1,
+      "kind": "strike",
+      "frames": 28,
+      "playing": false,
+      "origin": [
+        64.44094986485264,
+        52.42,
+        331.78896043247175
+      ],
+      "expiresIn": 24.96666666666667,
+      "moveId": "impact-heavy",
+      "moveVersion": 3,
+      "combatState": "impact",
+      "executedContacts": [
+        {
+          "id": "impact-heavy-contact",
+          "time": 0.27274,
+          "socket": "rightHand",
+          "radius": 0.32,
+          "damage": 31,
+          "push": 2.3,
+          "heavy": true,
+          "launcher": false
+        }
+      ]
+    },
+    "state": {
+      "p": [
+        64.49762211354842,
+        52.42,
+        331.60760923664543
+      ],
+      "grounded": true,
+      "trauma": 0,
+      "encounter": {
+        "phase": "active",
+        "attempt": 1,
+        "elapsed": 1.4693333333333332,
+        "rewarded": false,
+        "message": "Clear both levels. Stairs and the overhead route give you a flank; both galleries remain open.",
+        "reason": null,
+        "history": [],
+        "events": [
+          {
+            "eventId": 1,
+            "time": 0.133,
+            "attempt": 1,
+            "kind": "started",
+            "positions": [
+              [
+                65,
+                52,
+                330
+              ],
+              [
+                73,
+                52,
+                327
+              ],
+              [
+                85.5,
+                55.2,
+                329
+              ]
+            ]
+          }
+        ],
+        "eventId": 1,
+        "config": {
+          "id": "service-combat",
+          "title": "SERVICE YARD · COMBAT",
+          "trigger": [
+            62,
+            52,
+            337
+          ],
+          "positions": [
+            [
+              65,
+              52,
+              330
+            ],
+            [
+              73,
+              52,
+              327
+            ],
+            [
+              85.5,
+              55.2,
+              329
+            ]
+          ],
+          "reward": 350,
+          "bounds": {
+            "min": [
+              51,
+              51.9,
+              308
+            ],
+            "max": [
+              99,
+              61,
+              343
+            ]
+          },
+          "actorType": "existing damage-taking sparring prototype",
+          "status": "runtime adapter; acceptance is hash-bound external evidence, not this design record"
+        },
+        "near": true,
+        "inside": true,
+        "opponents": [
+          {
+            "id": "encounter-1-0",
+            "hp": 149,
+            "phase": "heavy-stagger",
+            "position": [
+              65.49811923853689,
+              52,
+              328.4060184366813
+            ]
+          },
+          {
+            "id": "encounter-1-1",
+            "hp": 180,
+            "phase": "approach",
+            "position": [
+              70.32616918441448,
+              52,
+              328.5339664194406
+            ]
+          },
+          {
+            "id": "encounter-1-2",
+            "hp": 180,
+            "phase": "ready",
+            "position": [
+              85.5,
+              55.2,
+              329
+            ]
+          }
+        ],
+        "scope": "Service-yard prototype combat only; rescue and pursuit pending"
+      },
+      "powers": {
+        "clock": 1.6026666666666656,
+        "strain": 7.833333333333334,
+        "selected": 0,
+        "recording": null,
+        "armed": false,
+        "echoes": 0,
+        "retraces": 0,
+        "crossbeats": 0,
+        "message": "BANKED STRIKE",
+        "messageUntil": 3.5693333333333324,
+        "eventCursor": 2,
+        "selectedRoute": null,
+        "retracing": null,
+        "slots": [
+          {
+            "index": 0,
+            "id": 1,
+            "kind": "strike",
+            "frames": 28,
+            "playing": false,
+            "origin": [
+              64.44094986485264,
+              52.42,
+              331.78896043247175
+            ],
+            "expiresIn": 24.96666666666667,
+            "moveId": "impact-heavy",
+            "moveVersion": 3,
+            "combatState": "impact",
+            "executedContacts": [
+              {
+                "id": "impact-heavy-contact",
+                "time": 0.27274,
+                "socket": "rightHand",
+                "radius": 0.32,
+                "damage": 31,
+                "push": 2.3,
+                "heavy": true,
+                "launcher": false
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "kind": null,
+            "frames": 0,
+            "playing": false,
+            "expiresIn": 0,
+            "moveId": null,
+            "moveVersion": null,
+            "combatState": null,
+            "executedContacts": []
+          },
+          {
+            "index": 2,
+            "kind": null,
+            "frames": 0,
+            "playing": false,
+            "expiresIn": 0,
+            "moveId": null,
+            "moveVersion": null,
+            "combatState": null,
+            "executedContacts": []
+          }
+        ],
+        "events": [
+          {
+            "eventId": 1,
+            "recordingId": 1,
+            "kind": "record-start",
+            "time": 0.833,
+            "id": 1,
+            "action": "strike"
+          },
+          {
+            "eventId": 2,
+            "recordingId": 1,
+            "kind": "banked",
+            "time": 1.569,
+            "id": 1,
+            "action": "strike",
+            "frames": 28,
+            "moveId": "impact-heavy",
+            "moveVersion": 3,
+            "combatState": "impact",
+            "contacts": [
+              "impact-heavy-contact"
+            ]
+          }
+        ]
+      },
+      "combat": {
+        "clock": 1.6026666666666656,
+        "inputClock": 1.6666666666666656,
+        "pending": null,
+        "action": null,
+        "phase": "idle",
+        "charge": 0,
+        "charging": false,
+        "target": null,
+        "lockPhase": "none",
+        "lockAge": 1.6666666666666656,
+        "hits": 1,
+        "blocked": 0,
+        "evaded": 0,
+        "sequence": 1,
+        "chain": 0,
+        "buffer": false,
+        "hitstop": 0,
+        "focus": 0,
+        "evadeUntil": -0.8666666666666667,
+        "guardSince": -100,
+        "reactionUntil": 0,
+        "cameraMode": "exploration",
+        "lastResult": "HIT",
+        "interruptionReason": "COMPLETE",
+        "groundLift": -0.12,
+        "groundClearance": 0.16835727302449754,
+        "responseLatency": 0,
+        "statePending": null,
+        "evadeStarted": -100,
+        "counterUntil": 0,
+        "counterSequence": 0,
+        "groundCorrectionRequested": -0.2803572730244923,
+        "contactPolicy": "feet",
+        "groundRejected": true,
+        "invulnerable": false,
+        "staggered": false,
+        "defensiveWindow": {
+          "movement": 0.3,
+          "recovery": 0.48,
+          "invulnerableStart": 0.04,
+          "invulnerableEnd": 0.22,
+          "perfectGuard": 0.18
+        },
+        "style": "impact",
+        "groundMoves": 14,
+        "airMoves": 2,
+        "importedClips": 379,
+        "acrobatics": null,
+        "practice": [
+          {
+            "id": "encounter-1-0",
+            "hp": 149,
+            "guarding": false,
+            "position": [
+              65.49811923853689,
+              52,
+              328.4060184366813
+            ]
+          },
+          {
+            "id": "encounter-1-1",
+            "hp": 180,
+            "guarding": true,
+            "position": [
+              70.32616918441448,
+              52,
+              328.5339664194406
+            ]
+          },
+          {
+            "id": "encounter-1-2",
+            "hp": 180,
+            "guarding": false,
+            "position": [
+              85.5,
+              55.2,
+              329
+            ]
+          }
+        ],
+        "ledger": [
+          {
+            "attack": 1,
+            "moveId": "impact-heavy",
+            "beat": "impact-heavy-contact",
+            "target": "encounter-1-0",
+            "result": "HIT",
+            "damage": 31,
+            "time": 1.117
+          }
+        ],
+        "contactEvents": [
+          {
+            "attack": 1,
+            "moveId": "impact-heavy",
+            "beat": "impact-heavy-contact",
+            "target": "encounter-1-0",
+            "result": "HIT",
+            "damage": 31,
+            "time": 1.117
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "encounter-1-0",
+          "hp": 149,
+          "position": [
+            65.49811923853689,
+            52,
+            328.4060184366813
+          ],
+          "phase": "heavy-stagger"
+        },
+        {
+          "id": "encounter-1-1",
+          "hp": 180,
+          "position": [
+            70.32616918441448,
+            52,
+            328.5339664194406
+          ],
+          "phase": "approach"
+        },
+        {
+          "id": "encounter-1-2",
+          "hp": 180,
+          "position": [
+            85.5,
+            55.2,
+            329
+          ],
+          "phase": "ready"
+        }
+      ]
+    }
+  },
+  "baitPosition": [
+    64.1518616586741,
+    52.42,
+    332.71404269224325
+  ],
+  "targetApproach": [
+    {
+      "position": [
+        65.49811923853689,
+        52,
+        328.4060184366813
+      ],
+      "phase": "heavy-stagger",
+      "player": [
+        64.1518616586741,
+        52.42,
+        332.71404269224325
+      ],
+      "recordingDistance": 3.5442775895150738
+    },
+    {
+      "position": [
+        65.49811923853689,
+        52,
+        328.4060184366813
+      ],
+      "phase": "recover",
+      "player": [
+        64.1518616586741,
+        52.42,
+        332.71404269224325
+      ],
+      "recordingDistance": 3.5442775895150738
+    },
+    {
+      "position": [
+        65.49811923853689,
+        52,
+        328.4060184366813
+      ],
+      "phase": "recover",
+      "player": [
+        64.1518616586741,
+        52.42,
+        332.71404269224325
+      ],
+      "recordingDistance": 3.5442775895150738
+    },
+    {
+      "position": [
+        65.39372299093934,
+        52,
+        328.74008642899344
+      ],
+      "phase": "approach",
+      "player": [
+        64.1518616586741,
+        52.42,
+        332.71404269224325
+      ],
+      "recordingDistance": 3.1942775895151825
+    },
+    {
+      "position": [
+        65.23712861954301,
+        52,
+        329.2411884174617
+      ],
+      "phase": "approach",
+      "player": [
+        64.1518616586741,
+        52.42,
+        332.71404269224325
+      ],
+      "recordingDistance": 2.6692775895153447
+    },
+    {
+      "position": [
+        65.08053424814669,
+        52,
+        329.7422904059299
+      ],
+      "phase": "approach",
+      "player": [
+        64.1518616586741,
+        52.42,
+        332.71404269224325
+      ],
+      "recordingDistance": 2.1442775895155073
+    }
+  ],
+  "echoEvidence": {
+    "recordingId": 1,
+    "targetId": "encounter-1-0",
+    "hits": [
+      {
+        "eventId": 4,
+        "recordingId": 1,
+        "kind": "echo-hit",
+        "time": 4.053,
+        "id": 1,
+        "target": "encounter-1-0",
+        "contactId": "impact-heavy-contact",
+        "result": "HIT",
+        "damage": 31,
+        "moveId": "impact-heavy",
+        "moveVersion": 3,
+        "combatState": "impact"
+      }
+    ],
+    "hpBefore": 149,
+    "hpAfter": 118
+  },
+  "condition": {
+    "initial": 0,
+    "afterEcho": 0,
+    "west": 0,
+    "east": 0,
+    "policy": "Native condition recovery remains enabled during elapsed world time. This scenario does not isolate health-regeneration timing.",
+    "afterEnd": 0
+  },
+  "final": {
+    "p": [
+      95.99538243361839,
+      52.42,
+      346.14159650429264
+    ],
+    "grounded": true,
+    "trauma": 0,
+    "encounter": {
+      "phase": "idle",
+      "attempt": null,
+      "elapsed": 18.622000000000224,
+      "rewarded": false,
+      "message": "Encounter ended. Your condition and global Halo consequences remain.",
+      "reason": "ENDED",
+      "history": [
+        {
+          "attempt": 1,
+          "outcome": "ENDED",
+          "elapsed": 18.622000000000224
+        }
+      ],
+      "events": [
+        {
+          "eventId": 1,
+          "time": 0.133,
+          "attempt": 1,
+          "kind": "started",
+          "positions": [
+            [
+              65,
+              52,
+              330
+            ],
+            [
+              73,
+              52,
+              327
+            ],
+            [
+              85.5,
+              55.2,
+              329
+            ]
+          ]
+        },
+        {
+          "eventId": 2,
+          "time": 18.755,
+          "attempt": 1,
+          "kind": "ended",
+          "reason": "ENDED"
+        }
+      ],
+      "eventId": 2,
+      "config": {
+        "id": "service-combat",
+        "title": "SERVICE YARD · COMBAT",
+        "trigger": [
+          62,
+          52,
+          337
+        ],
+        "positions": [
+          [
+            65,
+            52,
+            330
+          ],
+          [
+            73,
+            52,
+            327
+          ],
+          [
+            85.5,
+            55.2,
+            329
+          ]
+        ],
+        "reward": 350,
+        "bounds": {
+          "min": [
+            51,
+            51.9,
+            308
+          ],
+          "max": [
+            99,
+            61,
+            343
+          ]
+        },
+        "actorType": "existing damage-taking sparring prototype",
+        "status": "runtime adapter; acceptance is hash-bound external evidence, not this design record"
+      },
+      "near": false,
+      "inside": false,
+      "opponents": [],
+      "scope": "Service-yard prototype combat only; rescue and pursuit pending"
+    },
+    "powers": {
+      "clock": 18.78866666666688,
+      "strain": 0,
+      "selected": 0,
+      "recording": null,
+      "armed": false,
+      "echoes": 1,
+      "retraces": 0,
+      "crossbeats": 0,
+      "message": "MOVE · BANK · RELEASE",
+      "messageUntil": 20.75533333333355,
+      "eventCursor": 5,
+      "selectedRoute": null,
+      "retracing": null,
+      "slots": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": 0,
+          "playing": false,
+          "expiresIn": 0,
+          "moveId": null,
+          "moveVersion": null,
+          "combatState": null,
+          "executedContacts": []
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": 0,
+          "playing": false,
+          "expiresIn": 0,
+          "moveId": null,
+          "moveVersion": null,
+          "combatState": null,
+          "executedContacts": []
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": 0,
+          "playing": false,
+          "expiresIn": 0,
+          "moveId": null,
+          "moveVersion": null,
+          "combatState": null,
+          "executedContacts": []
+        }
+      ],
+      "events": [
+        {
+          "eventId": 1,
+          "recordingId": 1,
+          "kind": "record-start",
+          "time": 0.833,
+          "id": 1,
+          "action": "strike"
+        },
+        {
+          "eventId": 2,
+          "recordingId": 1,
+          "kind": "banked",
+          "time": 1.569,
+          "id": 1,
+          "action": "strike",
+          "frames": 28,
+          "moveId": "impact-heavy",
+          "moveVersion": 3,
+          "combatState": "impact",
+          "contacts": [
+            "impact-heavy-contact"
+          ]
+        },
+        {
+          "eventId": 3,
+          "recordingId": 1,
+          "kind": "echo-release",
+          "time": 3.769,
+          "id": 1
+        },
+        {
+          "eventId": 4,
+          "recordingId": 1,
+          "kind": "echo-hit",
+          "time": 4.053,
+          "id": 1,
+          "target": "encounter-1-0",
+          "contactId": "impact-heavy-contact",
+          "result": "HIT",
+          "damage": 31,
+          "moveId": "impact-heavy",
+          "moveVersion": 3,
+          "combatState": "impact"
+        },
+        {
+          "eventId": 5,
+          "recordingId": 1,
+          "kind": "echo-complete",
+          "time": 4.472,
+          "id": 1,
+          "hits": 1,
+          "guards": 0
+        }
+      ]
+    },
+    "combat": {
+      "clock": 18.78866666666688,
+      "inputClock": 18.916666666666874,
+      "pending": null,
+      "action": null,
+      "phase": "idle",
+      "charge": 0,
+      "charging": false,
+      "target": null,
+      "lockPhase": "none",
+      "lockAge": 18.916666666666874,
+      "hits": 2,
+      "blocked": 0,
+      "evaded": 0,
+      "sequence": 1,
+      "chain": 0,
+      "buffer": false,
+      "hitstop": 0,
+      "focus": 0,
+      "evadeUntil": 17.75533333333355,
+      "guardSince": -100,
+      "reactionUntil": 0,
+      "cameraMode": "exploration",
+      "lastResult": "HIT",
+      "interruptionReason": "RESET",
+      "groundLift": 0.004331688624269248,
+      "groundClearance": 0.008000000000002672,
+      "responseLatency": 0,
+      "statePending": null,
+      "evadeStarted": -100,
+      "counterUntil": 0,
+      "counterSequence": 0,
+      "groundCorrectionRequested": 0.004331688624269248,
+      "contactPolicy": "mesh-support",
+      "groundRejected": false,
+      "invulnerable": false,
+      "staggered": false,
+      "defensiveWindow": {
+        "movement": 0.3,
+        "recovery": 0.48,
+        "invulnerableStart": 0.04,
+        "invulnerableEnd": 0.22,
+        "perfectGuard": 0.18
+      },
+      "style": "impact",
+      "groundMoves": 14,
+      "airMoves": 2,
+      "importedClips": 379,
+      "acrobatics": null,
+      "practice": [],
+      "ledger": [
+        {
+          "attack": 1,
+          "moveId": "impact-heavy",
+          "beat": "impact-heavy-contact",
+          "target": "encounter-1-0",
+          "result": "HIT",
+          "damage": 31,
+          "time": 1.117
+        },
+        {
+          "attack": "echo-1",
+          "moveId": "impact-heavy",
+          "beat": "impact-heavy-contact",
+          "target": "encounter-1-0",
+          "result": "HIT",
+          "damage": 31,
+          "time": 4.036
+        }
+      ],
+      "contactEvents": [
+        {
+          "attack": 1,
+          "moveId": "impact-heavy",
+          "beat": "impact-heavy-contact",
+          "target": "encounter-1-0",
+          "result": "HIT",
+          "damage": 31,
+          "time": 1.117
+        },
+        {
+          "attack": "echo-1",
+          "moveId": "impact-heavy",
+          "beat": "impact-heavy-contact",
+          "target": "encounter-1-0",
+          "result": "HIT",
+          "damage": 31,
+          "time": 4.036
+        }
+      ]
+    },
+    "targets": []
+  },
+  "fullTrace": "V02_Service_Replay_Escape.trace.json.gz",
+  "traceFrames": 1135
+}

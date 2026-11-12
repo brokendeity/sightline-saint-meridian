@@ -1,0 +1,170 @@
+{
+  "build": "SIGHTLINE_SAINT_MERIDIAN_V02_HERO_SELECT_RUNNER_FULL.html",
+  "entrySHA256": "5a239402f785e833c9d224ce3dd72def842f14a0009eedaa4ca854e9cbe1fe55",
+  "steps": {
+    "bootAndEnterDistrict": {
+      "startHero": "backspool",
+      "loadSeconds": 4.1
+    },
+    "escPausesAndEntryPointsExist": {
+      "footer": true,
+      "heroTab": true
+    },
+    "keyboardHOpens": {
+      "focus": "backspool"
+    },
+    "keyboardArrowsBrowseAndWrap": {
+      "order": [
+        "backspool",
+        "sightline",
+        "loadout"
+      ],
+      "wrapRight": "backspool",
+      "wrapLeft": "loadout"
+    },
+    "keyboardDoesNotLeakIntoGame": {
+      "moved": 0,
+      "open": true,
+      "hero": "backspool"
+    },
+    "keyboardPicksSightlineAndResumes": {
+      "label": "sightline W",
+      "moved": 12.1,
+      "confirms": [
+        {
+          "hero": "sightline",
+          "from": "backspool",
+          "source": "keyboard",
+          "switchMs": 3
+        }
+      ]
+    },
+    "padStickDpadShouldersBrowse": {
+      "padNav": [
+        [
+          "stickRight",
+          "loadout"
+        ],
+        [
+          "stickLeft",
+          "sightline"
+        ],
+        [
+          "dpadRight",
+          "loadout"
+        ],
+        [
+          "LB",
+          "sightline"
+        ],
+        [
+          "RB",
+          "loadout"
+        ],
+        [
+          "dpadLeft",
+          "sightline"
+        ]
+      ]
+    },
+    "padPicksLoadoutAndResumes": {
+      "label": "loadout stick",
+      "moved": 6.43,
+      "samples": 4,
+      "earlyResume": false,
+      "switchMs": 1305
+    },
+    "mousePicksBackspoolAndResumes": {
+      "label": "backspool W",
+      "moved": 8.09
+    },
+    "padDoesNotLeakIntoGame": {
+      "moved": 0,
+      "focusAfter": "loadout"
+    },
+    "chordWorksWhileScreenOpen": {
+      "from": "backspool",
+      "to": "loadout",
+      "activeCard": "loadout"
+    },
+    "chordWorksDuringPlay": {
+      "from": "loadout",
+      "to": "sightline",
+      "label": "after chord",
+      "moved": 11.97
+    },
+    "resumeAsCurrentHeroNoSwitch": {
+      "hero": "sightline",
+      "label": "Resume as Sightline"
+    },
+    "previewRenderedAllRigs": {
+      "rigs": {
+        "backspool": {
+          "status": "ready",
+          "clip": "backspool-017",
+          "clipSeconds": 9.93,
+          "triangles": 18730,
+          "bones": 65,
+          "loadMs": 279
+        },
+        "sightline": {
+          "status": "ready",
+          "clip": "idle",
+          "clipSeconds": 3.3,
+          "triangles": 91425,
+          "bones": 65,
+          "loadMs": 331
+        },
+        "loadout": {
+          "status": "ready",
+          "clip": "runner-Idle_Wait_A",
+          "clipSeconds": 2,
+          "triangles": 68842,
+          "bones": 120,
+          "loadMs": 584
+        }
+      },
+      "frames": 1504,
+      "lastFrameMs": 0.3
+    },
+    "previewStopsWhenClosed": {
+      "framesBefore": 1504,
+      "framesAfter": 1504
+    },
+    "singleCanvasWhileClosed": {
+      "canvases": 1
+    },
+    "noPageErrors": {
+      "errors": []
+    }
+  },
+  "checks": {
+    "recordMatchesFile": true,
+    "bootAndEnterDistrict": true,
+    "escPausesAndEntryPointsExist": true,
+    "keyboardHOpens": true,
+    "keyboardArrowsBrowseAndWrap": true,
+    "keyboardDoesNotLeakIntoGame": true,
+    "keyboardEscBacksOutNoSwitch": true,
+    "keyboardPicksSightlineAndResumes": true,
+    "padStartPauses": true,
+    "padYOpens": true,
+    "padBBacksOutNoSwitch": true,
+    "padStickDpadShouldersBrowse": true,
+    "padPicksLoadoutAndResumes": true,
+    "mousePicksBackspoolAndResumes": true,
+    "padDoesNotLeakIntoGame": true,
+    "chordWorksWhileScreenOpen": true,
+    "chordWorksDuringPlay": true,
+    "resumeAsCurrentHeroNoSwitch": true,
+    "previewRenderedAllRigs": true,
+    "previewStopsWhenClosed": true,
+    "singleCanvasWhileClosed": true,
+    "noPageErrors": true
+  },
+  "notes": [],
+  "loadSeconds": 4.1,
+  "startHero": "backspool",
+  "errors": [],
+  "pass": true
+}

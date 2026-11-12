@@ -1,0 +1,348 @@
+{
+  "build": "SIGHTLINE_SAINT_MERIDIAN_V02_FLIGHT_CEILING.html",
+  "control": "SIGHTLINE_SAINT_MERIDIAN_V02_GAMEPLAY_FIXES.html",
+  "checks": {
+    "controlClimbsPastCeiling": true,
+    "chainStaysUnderCeiling": true,
+    "skyRailEndsOnRoofLineAlongCrosshair": true,
+    "railsAboveRoofRunLevel": true,
+    "laserShowsFlownEndpoint": true,
+    "belowRoofSkyRailUnchanged": true,
+    "coastLevelsOffUnderCeiling": true,
+    "levelOffIsSmooth": true,
+    "horizontalSpeedKept": true,
+    "ceilingNoticeShown": true,
+    "groundRailToFacadeUnchanged": true,
+    "noHostileShotLanded": true,
+    "noPageErrors": true
+  },
+  "evidence": {
+    "limits": {
+      "roof": 346.84,
+      "ceiling": 406.84
+    },
+    "chain": {
+      "fixedPeak": 373.77,
+      "controlPeak": 997.23,
+      "fixed": [
+        {
+          "k": 0,
+          "start": [
+            0,
+            1.67,
+            12
+          ],
+          "target": [
+            0.01,
+            162.73,
+            -66.02
+          ],
+          "arrive": [
+            0.01,
+            162.73,
+            -66.02
+          ],
+          "arriveVy": 171,
+          "arriveH": 82.83,
+          "mode": "AIR"
+        },
+        {
+          "k": 1,
+          "start": [
+            0.01,
+            190.56,
+            -79.37
+          ],
+          "target": [
+            0.03,
+            346.84,
+            -91.48
+          ],
+          "arrive": [
+            0.03,
+            346.84,
+            -91.48
+          ],
+          "arriveVy": 189.43,
+          "arriveH": 14.68,
+          "mode": "AIR"
+        },
+        {
+          "k": 2,
+          "start": [
+            0.03,
+            373.77,
+            -93.85
+          ],
+          "target": [
+            0.04,
+            373.77,
+            -107.63
+          ],
+          "arrive": [
+            0.04,
+            373.77,
+            -107.63
+          ],
+          "arriveVy": 0,
+          "arriveH": 44.45,
+          "mode": "AIR"
+        },
+        {
+          "k": 3,
+          "start": [
+            0.05,
+            373.19,
+            -117.05
+          ],
+          "target": [
+            0.06,
+            373.19,
+            -130.4
+          ],
+          "arrive": [
+            0.06,
+            373.19,
+            -130.4
+          ],
+          "arriveVy": 0,
+          "arriveH": 43.08,
+          "mode": "AIR"
+        },
+        {
+          "k": 4,
+          "start": [
+            0.07,
+            372.7,
+            -138.94
+          ],
+          "target": [
+            0.09,
+            372.7,
+            -152.3
+          ],
+          "arrive": [
+            0.09,
+            372.7,
+            -152.3
+          ],
+          "arriveVy": 0,
+          "arriveH": 43.09,
+          "mode": "AIR"
+        }
+      ],
+      "control": [
+        {
+          "k": 0,
+          "start": [
+            0,
+            1.67,
+            12
+          ],
+          "target": [
+            0.01,
+            162.73,
+            -66.02
+          ],
+          "arrive": [
+            0.01,
+            162.73,
+            -66.02
+          ],
+          "arriveVy": 171,
+          "arriveH": 82.83,
+          "mode": "AIR"
+        },
+        {
+          "k": 1,
+          "start": [
+            0.01,
+            190.56,
+            -79.37
+          ],
+          "target": [
+            0.03,
+            369.08,
+            -93.15
+          ],
+          "arrive": [
+            0.03,
+            369.08,
+            -93.15
+          ],
+          "arriveVy": 189.44,
+          "arriveH": 14.62,
+          "mode": "AIR"
+        },
+        {
+          "k": 2,
+          "start": [
+            0.03,
+            399.94,
+            -95.51
+          ],
+          "target": [
+            0.04,
+            578.47,
+            -109.29
+          ],
+          "arrive": [
+            0.04,
+            578.47,
+            -109.29
+          ],
+          "arriveVy": 189.44,
+          "arriveH": 14.62,
+          "mode": "AIR"
+        },
+        {
+          "k": 3,
+          "start": [
+            0.04,
+            609.32,
+            -111.64
+          ],
+          "target": [
+            0.06,
+            787.85,
+            -125.42
+          ],
+          "arrive": [
+            0.06,
+            787.85,
+            -125.42
+          ],
+          "arriveVy": 189.44,
+          "arriveH": 14.62,
+          "mode": "AIR"
+        },
+        {
+          "k": 4,
+          "start": [
+            0.06,
+            818.71,
+            -127.78
+          ],
+          "target": [
+            0.07,
+            997.23,
+            -141.55
+          ],
+          "arrive": [
+            0.07,
+            997.23,
+            -141.55
+          ],
+          "arriveVy": 189.44,
+          "arriveH": 14.62,
+          "mode": "AIR"
+        }
+      ],
+      "hostileShots": [
+        0,
+        0
+      ],
+      "firstClipped": {
+        "k": 1,
+        "targetY": 346.84,
+        "crosshairAngleDeg": 0,
+        "arriveY": 346.84
+      },
+      "levelRails": [
+        {
+          "k": 2,
+          "climb": 0,
+          "travel": 12.62,
+          "arriveVy": 0
+        },
+        {
+          "k": 3,
+          "climb": 0,
+          "travel": 12.81,
+          "arriveVy": 0
+        },
+        {
+          "k": 4,
+          "climb": 0,
+          "travel": 12.82,
+          "arriveVy": 0
+        }
+      ]
+    },
+    "belowRoof": {
+      "framesCompared": 213,
+      "maxPositionDiff": 0,
+      "peakBeforeSecondRail": 190.56,
+      "firstRailTarget": [
+        [
+          0.01,
+          162.73,
+          -66.02
+        ],
+        [
+          0.01,
+          162.73,
+          -66.02
+        ]
+      ]
+    },
+    "coast": {
+      "arriveY": 346.84,
+      "arriveVy": 189.43,
+      "peak": 406.83,
+      "framesToTop": 46,
+      "secondsToTop": 0.77,
+      "maxFreeDvyPerFrame": 4.71,
+      "maxExtraStep": 0,
+      "hLossOverBrake": {
+        "fixed": 2.26,
+        "control": 2.25,
+        "frames": 46
+      },
+      "vyAfterTop": [
+        0,
+        -3.83,
+        -7.66,
+        -11.49,
+        -15.33,
+        -19.16
+      ],
+      "banners": [
+        "FLIGHT CEILING"
+      ],
+      "state": {
+        "brakeFrames": 68,
+        "clampFrames": 2,
+        "banners": 2,
+        "maxExtra": 276.04
+      },
+      "controlPeak": 1021.27,
+      "hostileShots": [
+        0,
+        0
+      ]
+    },
+    "groundRail": {
+      "target": [
+        -9.59,
+        41.78,
+        -298.54
+      ],
+      "targetObj": true,
+      "modes": [
+        "AIM",
+        "TAKEOFF",
+        "TRANSIT",
+        "UNCONTROLLED"
+      ],
+      "maxPositionDiff": 0,
+      "travelled": 320.3,
+      "hostileShots": [
+        0,
+        0
+      ]
+    }
+  },
+  "errors": [],
+  "pass": true
+}

@@ -1,0 +1,393 @@
+{
+ "build": "V02_Hero_Select_V3_Build.json",
+ "results": {
+  "smoke": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 17.3,
+   "command": "node scripts/vertical-v02/test_canonical_smoke.cjs V02_Hero_Select_V3_Build.json",
+   "environment": {},
+   "logTail": [
+    "PASS v02ModulesLoaded",
+    "PASS everyHeroRunsAndMoves",
+    "PASS noPageErrors"
+   ]
+  },
+  "threadrail-grind": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 50.0,
+   "command": "node scripts/vertical-v02/test_threadrail_grind.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Hero_Select_V3_Build.json",
+    "V02_GRIND_OUT": "development/vertical-city-v02/evidence/hero-select-v3-checks/threadrail-grind",
+    "V02_GRIND_CONTROL": "SIGHTLINE_SAINT_MERIDIAN_V02_HERO_SELECT_CARTRIDGE.html"
+   },
+   "logTail": [
+    "PASS rTapStillAttaches",
+    "PASS noHostileShotLanded",
+    "PASS noPageErrors"
+   ]
+  },
+  "hero-select": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 171.1,
+   "command": "node scripts/vertical-v02/test_hero_select_v3.cjs V02_Hero_Select_V3_Build.json",
+   "environment": {
+    "V02_HERO_SELECT_OUT": "development/vertical-city-v02/evidence/hero-select-v3-checks/hero-select",
+    "V02_PORT": "8766"
+   },
+   "logTail": [
+    "PASS touchTapsBrowseTryAndSelect {\"move\":{\"move\":\"lo:Jmp_FrontAir_Roll_All\",\"source\":\"touch\",\"rig\":\"loadout\",\"at\":23939,\"status\":\"playing\",\"shards\":false,\"clip\":\"runner-Jmp_FrontAir_Roll_All\",\"seconds\":1.77},\"confirm\":{\"hero\":\"loadout\",\"from\":\"backspool\",\"costume\":null,\"costumeBefore\":null,\"bank\":\"loadout\",\"source\":\"touch\",\"switchMs\":10,\"signature\":\"lo:Jmp_FrontAir_Roll_All\",\"totalMs\":929}}",
+    "PASS noPageErrors {\"errors\":[]}",
+    "ALL PASS"
+   ]
+  },
+  "wall-contacts": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 29.7,
+   "command": "node scripts/vertical-v02/test_friendly_wall_contacts.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Hero_Select_V3_Build.json"
+   },
+   "logTail": [
+    "PASS simulated controller Flow and stick climb then release",
+    "PASS blocked imported facade drops once instead of repeatedly retrying",
+    "PASS actual city facade allows continuous collision-clear wall traversal"
+   ]
+  },
+  "landing-contacts": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 21.6,
+   "command": "node scripts/vertical-v02/test_friendly_landing_contacts.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Hero_Select_V3_Build.json"
+   },
+   "logTail": [
+    "PASS rollBack landing",
+    "PASS recovery cancel to strike",
+    "PASS landing / roll input flows; no page errors"
+   ]
+  },
+  "city-loops": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 56.6,
+   "command": "node scripts/vertical-v02/test_current_city_loops.cjs",
+   "environment": {
+    "V02_LOOP_BUILD": "V02_Hero_Select_V3_Build.json",
+    "V02_LOOP_REPORT": "V02_Hero_Select_V3_Loops.json",
+    "V02_LOOP_RUN": "hero-select-v3-loops"
+   },
+   "logTail": [
+    "PASS mid 35.36666666666667 229.405000000023 cameraInsideFrames 0",
+    "PASS high 37.2 241.5050000000245 cameraInsideFrames 0",
+    "PASS complete lower/mid/high public loops on current combined candidate"
+   ]
+  },
+  "station-routes": {
+   "status": "FAIL",
+   "returncode": 1,
+   "wallSeconds": 330.9,
+   "command": "python3 scripts/vertical-v02/run_current_station_routes.py",
+   "environment": {
+    "V02_ROUTE_BUILD_REPORT": "V02_Hero_Select_V3_Build.json",
+    "V02_ROUTE_REPORT": "V02_Hero_Select_V3_Station_Routes.json",
+    "V02_ROUTE_SUITE": "hero-select-v3-station-routes"
+   },
+   "logTail": [
+    "PASS segment Y84 west public gallery [ 60.90499999999998, 84.42, 375.4400000000202 ]",
+    "Error: Unreached C stair 84 to 100 waypoint 8 {\"target\":[61,93.60000000000001,384.98],\"last\":{\"damage\":0,\"damageEvidence\":null,\"p\":[61.03036638143472,90.82000000000001,375.47115333925996],\"v\":[0,0,0],\"grounded\":true,\"mode\":\"GROUND\",\"trauma\":0,\"support\":90.82000000000001,\"camera\":[62.11501217590651,92.64914942039766,378.70513744651777]}}",
+    "    at /Users/richardmpayi/Downloads/sight game rail/hero-select-v3/scripts/vertical-v02/test_public_station.cjs:15:637"
+   ],
+   "rerun": {
+    "status": "FAIL",
+    "returncode": 1,
+    "wallSeconds": 115.4,
+    "note": "rerun alone after the full run; first run overlapped with the user viewing the v3 screen in the browser pane"
+   },
+   "rerun2": {
+    "status": "PASS",
+    "note": "third run, alone; identical route timings to the control (V02_Hero_Select_Costumes_Build.json, PASS) run back to back under the same load (suites hero-select-v3-control-costumes / -v3)"
+   }
+  },
+  "retained-gameplay": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 905.5,
+   "command": "python3 scripts/vertical-v02/run_friendly_gameplay_regressions.py",
+   "environment": {
+    "V02_GAMEPLAY_BUILD": "V02_Hero_Select_V3_Build.json",
+    "V02_GAMEPLAY_SUITE": "hero-select-v3-gameplay"
+   },
+   "logTail": [
+    "START discovery-lifecycle",
+    "DONE discovery-lifecycle 0",
+    "PASS12current encounter/replay/discovery cases; final release scope remains separate"
+   ]
+  },
+  "strides": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 21.4,
+   "command": "node scripts/vertical-v02/test_forspoken_strides.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Hero_Select_V3_Build.json",
+    "V02_STRIDES_OUT": "development/vertical-city-v02/evidence/hero-select-v3-checks/strides"
+   },
+   "logTail": [
+    "PASS ground starts, stops, turns and stop cancel; no page errors"
+   ]
+  },
+  "vaults": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 27.3,
+   "command": "node scripts/vertical-v02/test_forspoken_vaults.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Hero_Select_V3_Build.json",
+    "V02_VAULTS_OUT": "development/vertical-city-v02/evidence/hero-select-v3-checks/vaults"
+   },
+   "logTail": [
+    "PASS climb1.2 climbMid",
+    "PASS climb1.8 climbHigh",
+    "PASS graded vaults and climbs; no page errors"
+   ]
+  },
+  "air": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 17.1,
+   "command": "node scripts/vertical-v02/test_forspoken_air.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Hero_Select_V3_Build.json",
+    "V02_AIR_OUT": "development/vertical-city-v02/evidence/hero-select-v3-checks/air"
+   },
+   "logTail": [
+    "PASS standing and running take-offs; no page errors"
+   ]
+  },
+  "crouch": {
+   "status": "FAIL",
+   "returncode": 1,
+   "wallSeconds": 11.5,
+   "command": "node scripts/vertical-v02/test_forspoken_crouch.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Hero_Select_V3_Build.json",
+    "V02_CROUCH_OUT": "development/vertical-city-v02/evidence/hero-select-v3-checks/crouch"
+   },
+   "logTail": [
+    "  operator: '==',",
+    "  diff: 'simple'",
+    "}"
+   ],
+   "rerun": {
+    "status": "PASS",
+    "returncode": 0,
+    "wallSeconds": 17.0,
+    "note": "rerun alone after the full run; first run overlapped with the user viewing the v3 screen in the browser pane"
+   }
+  },
+  "combat": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 27.0,
+   "command": "node scripts/vertical-v02/test_mixamo_combat.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Hero_Select_V3_Build.json",
+    "V02_COMBAT_OUT": "development/vertical-city-v02/evidence/hero-select-v3-checks/combat"
+   },
+   "logTail": [
+    "PASS impact RT chain and heavy",
+    "PASS counter RT chain and heavy",
+    "PASS 8-hit RT chains and heavies in all three styles; no page errors"
+   ]
+  },
+  "sightline": {
+   "status": "FAIL",
+   "returncode": 1,
+   "wallSeconds": 41.5,
+   "command": "node scripts/vertical-v02/test_sightline_melee.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Hero_Select_V3_Build.json",
+    "V02_SIGHTLINE_OUT": "development/vertical-city-v02/evidence/hero-select-v3-checks/sightline"
+   },
+   "logTail": [
+    "    at async /Users/richardmpayi/Downloads/sight game rail/hero-select-v3/scripts/vertical-v02/test_sightline_melee.cjs:26:2 {",
+    "  name: 'TimeoutError'",
+    "}"
+   ],
+   "rerun": {
+    "status": "PASS",
+    "returncode": 0,
+    "wallSeconds": 17.1,
+    "note": "rerun alone after the full run; first run overlapped with the user viewing the v3 screen in the browser pane"
+   }
+  },
+  "rhythm": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 16.6,
+   "command": "node scripts/vertical-v02/test_burst_rhythm.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Hero_Select_V3_Build.json",
+    "V02_RHYTHM_OUT": "development/vertical-city-v02/evidence/hero-select-v3-checks/rhythm"
+   },
+   "logTail": [
+    "PASS burst > cover > counter > reset; guarded counter takes chip damage only; no page errors"
+   ]
+  },
+  "themed": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 40.0,
+   "command": "node scripts/vertical-v02/test_themed_slots.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Hero_Select_V3_Build.json",
+    "V02_THEMED_OUT": "development/vertical-city-v02/evidence/hero-select-v3-checks/themed"
+   },
+   "logTail": [
+    "PASS counter directional, heavy, launcher, air light and finisher",
+    "PASS counter counter [\"counter-counter-1\",\"counter-counter-2\"]",
+    "PASS themed directional, heavy, launcher, air and counter slots in all three styles; no page errors"
+   ]
+  },
+  "impact": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 32.0,
+   "command": "node scripts/vertical-v02/test_impact_fx.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Hero_Select_V3_Build.json",
+    "V02_IMPACT_OUT": "development/vertical-city-v02/evidence/hero-select-v3-checks/impact"
+   },
+   "logTail": [
+    "PASS surfaces, debris rest, decal 30 s + 2 s fade, flash, hit-stop, landing crater, shot burst, heavy-strike feel; no page errors"
+   ]
+  },
+  "no-trucks": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 14.8,
+   "command": "node scripts/vertical-v02/test_no_halo_trucks.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Hero_Select_V3_Build.json",
+    "V02_TRUCKS_OUT": "development/vertical-city-v02/evidence/hero-select-v3-checks/no-trucks"
+   },
+   "logTail": [
+    "PASS no halo trucks {\"removed\":\"Halo trucks removed for now; replacement models pending\",\"moved\":41.5}"
+   ]
+  },
+  "menu": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 19.4,
+   "command": "node scripts/vertical-v02/test_menu_style.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Hero_Select_V3_Build.json",
+    "V02_MENU_OUT": "development/vertical-city-v02/evidence/hero-select-v3-checks/menu"
+   },
+   "logTail": [
+    "PASS menu restyle: tabs, keys, focus, start, pause, resume, hero word, phone layout; no page errors"
+   ]
+  },
+  "loadout-hero": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 37.0,
+   "command": "node scripts/characters/loadout/test_loadout_hero_real_input.cjs",
+   "environment": {
+    "LOADOUT_HERO_BUILD": "SIGHTLINE_SAINT_MERIDIAN_V02_HERO_SELECT_V3.html",
+    "LOADOUT_HERO_OUT": "development/vertical-city-v02/evidence/hero-select-v3-checks/loadout-hero"
+   },
+   "logTail": [
+    "PASS no page errors",
+    "{\"switchMs\":5222,\"build\":{\"built\":true,\"buildMs\":1685,\"retargetMs\":580,\"clips\":183,\"active\":true,\"capeOn\":true,\"capeVisible\":true,\"capeMeshes\":2},\"moved\":9.34,\"chord\":[{\"want\":\"sightline\",\"got\":\"sightline\",\"active\":\"sightline\"},{\"want\":\"backspool\",\"got\":\"backspool\",\"active\":\"backspool\"},{\"want\":\"loadout\",\"got\":\"loadout\",\"active\":\"backspool\"}]}",
+    "PASS Loadout hero, real input"
+   ]
+  },
+  "loadout-runner-roles": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 63.0,
+   "command": "node scripts/characters/loadout/test_loadout_runner_real_input.cjs",
+   "environment": {
+    "LOADOUT_RUNNER_BUILD": "SIGHTLINE_SAINT_MERIDIAN_V02_HERO_SELECT_V3.html",
+    "LOADOUT_RUNNER_OUT": "development/vertical-city-v02/evidence/hero-select-v3-checks/loadout-runner-roles",
+    "LOADOUT_RUNNER_FULL_OFF": "1"
+   },
+   "logTail": [
+    "{\"evadeNeutral\":[\"runner-Esc_BoostDash_Back\",\"action-v2-mx-flow-stance\"],\"evadeLeft\":[\"runner-Esc_Roll_Left\"],\"turn\":[\"runner-Mvm_Jog_TurnL_180_Left\",\"runner-Mvm_Boost@13.8\"],\"flipLeft\":[\"runner-Jmp_SideAir_A\",\"runner-Land_Base_Move\",\"runner-Mvm_Boost@13.8\"],\"flipRight\":[\"runner-Jmp_SideAir_A_Mirror\",\"runner-Land_Base_Move\",\"runner-Mvm_Boost@13.8\"],\"wallRight\":[\"runner-Wall_Vertical_Dash_Loop\",\"runner-LoWall_LDash_Loop\"],\"wallLeft\":[\"runner-Wall_Vertical_Dash_Loop\",\"runner-LoWall_RDash_Loop\"],\"climb\":[\"action-v2-mx-flow-stance\",\"runner-Mvm_Walk@4\",\"runner-Mvm_Jog@8.2\",\"runner-Mvm_Dash@8.2\",\"runner-Mvm_Boost@13.8\",\"runner-Wall_Vertical_Dash_Loop\",\"forspoken-flow-mantle\"],\"boost\":[\"runner-Wall_Vertical_Dash_Loop\",\"runner-Wall_Vertical_Boost\",\"forspoken-flow-mantle\"],\"reaction\":[\"action-v2-mx-flow-stance\",\"action-v2-flow-reaction\"],\"wallLatch\":{\"groundRoll\":{\"dir\":\"left\",\"since\":21.18333333333341,\"seen\":22.350000000000012},\"wallRun\":{\"dir\":\"right\",\"since\":38.38333333333244,\"seen\":39.51666666666571}}}",
+    "{\"moved\":13.79,\"run\":[\"runner-Mvm_Jog_Start_Fwd\",\"runner-Mvm_Boost@13.8\"],\"sprint\":[\"runner-Mvm_Boost@13.8\"],\"stop\":[\"runner-Mvm_BoostEnd\",\"runner-relaxedIdle-variants\"],\"jump\":[\"runner-Jmp_FrontAir_A\",\"runner-Jump_Down_A_Loop\",\"runner-Land_Base_Move\",\"runner-Mvm_Boost@13.8\",\"runner-Mvm_JogStop\"],\"roll\":[\"runner-Land_Roll_Move\"],\"cape\":{\"frames\":2143,\"maxPen\":0,\"maxAim\":0.123,\"nan\":false},\"backspool\":{\"idle\":\"forspoken-flow-idle\",\"roll\":\"forspoken-flow-roll\",\"run\":\"traversal-locomotion-run\",\"runnerIds\":0,\"light1\":0.38,\"runnerInBank\":0}}",
+    "PASS Loadout Runner moves, real input"
+   ]
+  },
+  "backspool-costume": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 42.9,
+   "command": "node scripts/characters/backspool/test_backspool_costume_real_input.cjs",
+   "environment": {
+    "BSC_BUILD": "SIGHTLINE_SAINT_MERIDIAN_V02_HERO_SELECT_V3.html",
+    "BSC_OUT": "development/vertical-city-v02/evidence/hero-select-v3-checks/backspool-costume"
+   },
+   "logTail": [
+    "PASS Default restores his own model",
+    "PASS no page errors",
+    "{\"switchMs\":1219,\"build\":{\"halfmask\":{\"ms\":1182,\"retargetMs\":726,\"clips\":183,\"facingDeltaDeg\":0,\"bones\":82}},\"moved\":[15.5,15.3],\"jump\":[{\"airborne\":true,\"rise\":1.93,\"landed\":true},{\"airborne\":true,\"rise\":1.77,\"landed\":true}],\"frame\":[{\"inside\":17,\"missing\":0,\"of\":17,\"worstNdc\":0.78},{\"inside\":17,\"missing\":0,\"of\":17,\"worstNdc\":0.795}],\"errors\":[]}"
+   ]
+  },
+  "costume-combat": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 37.4,
+   "command": "node scripts/vertical-v02/test_mixamo_combat.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Hero_Select_V3_Build.json",
+    "V02_COMBAT_OUT": "development/vertical-city-v02/evidence/hero-select-v3-checks/costume-combat",
+    "V02_BACKSPOOL_COSTUME": "halfmask"
+   },
+   "logTail": [
+    "PASS impact RT chain and heavy",
+    "PASS counter RT chain and heavy",
+    "PASS 8-hit RT chains and heavies in all three styles; no page errors"
+   ]
+  },
+  "costume-grind": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 52.6,
+   "command": "node scripts/vertical-v02/test_threadrail_grind.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Hero_Select_V3_Build.json",
+    "V02_GRIND_OUT": "development/vertical-city-v02/evidence/hero-select-v3-checks/costume-grind",
+    "V02_GRIND_CONTROL": "SIGHTLINE_SAINT_MERIDIAN_V02_HERO_SELECT_CARTRIDGE.html",
+    "V02_BACKSPOOL_COSTUME": "halfmask"
+   },
+   "logTail": [
+    "PASS rTapStillAttaches",
+    "PASS noHostileShotLanded",
+    "PASS noPageErrors"
+   ]
+  },
+  "loadout-runner-full": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 210.3,
+   "command": "node scripts/characters/loadout/test_loadout_runner_full_real_input.cjs",
+   "environment": {
+    "LRF_BUILD": "SIGHTLINE_SAINT_MERIDIAN_V02_HERO_SELECT_V3.html",
+    "LRF_OUT": "development/vertical-city-v02/evidence/hero-select-v3-checks/loadout-runner-full"
+   },
+   "logTail": [
+    "PASS Backspool control: no Runner-full actions, his own clips, E is still his Drive {\"anims\":[\"forspoken-v17-moveStart\",\"traversal-locomotion-fastRun\"],\"unclear\":0,\"conflicts\":0,\"nonFinite\":0,\"notRate1\":[]}",
+    "PASS no page errors {\"errors\":[]}",
+    "RESULT 42 PASS 0 FAIL"
+   ]
+  }
+ },
+ "verdict": "First full run 22/25: station-routes, crouch and sightline FAILED while the user had the v3 screen rendering in the browser pane. Rerun alone: crouch PASS, sightline PASS; station-routes FAILED again at a different route, then PASSED, with the control build also PASSING back to back. Counting reruns: 25/25 PASS; first-pass flakes recorded as above."
+}
