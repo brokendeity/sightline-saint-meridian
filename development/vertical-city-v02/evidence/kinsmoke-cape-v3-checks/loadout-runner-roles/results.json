@@ -1,0 +1,1116 @@
+{
+ "build": "SIGHTLINE_SAINT_MERIDIAN_V02_KINSMOKE_CAPE_V3.html",
+ "hashes": {
+  "SIGHTLINE_SAINT_MERIDIAN_V02_KINSMOKE_CAPE_V3.html": "9b6befb1349d04aee3955325b88c16efdfedccc3a50a155d13af7bc0545ae7da",
+  "scripts/game_v02_loadout_runner_moves.js": "a0a92c2559eb4ede25d060ff4655fa75844b753468f9aa2e64ef90feb9cd3230",
+  "scripts/game_loadout_cape_cloth_v2.js": "86418ccb672d07e79ff662a66123cd2036bfe526f1b22de6a18be6a82c4ae9fd",
+  "scripts/game_humanoid_retarget.js": "488f833f7ec897e66b2fa77e52b01ca1c898395024994459d7d6c03b14fe40fc",
+  "assets/loadout/runner/loadout_runner_roles.json": "86e4bc7c8ce87cd019a92b5404b3a83d0126cf57e6b6137589250ce556b32d44",
+  "assets/loadout/runner/loadout_runner_clips.json.gz": "e8fc9f698c8fbec12d3721290c75f899c8e7359173977cfb8f3cd63ab51d5108",
+  "scripts/characters/loadout/test_loadout_runner_real_input.cjs": "975c1eeee5aa3d8b19b664e4941ec68db52a04bfaf9271a9ad8c65d6a3e0c979"
+ },
+ "scope": "Keyboard, menu and virtual-pad input with stepped frames in headless Chromium (ANGLE/Metal); labelled plaza reset and practice targets. Vaults, mantles, slides, ladders, swimming, crouch, heavy landings from height and missions as Loadout are not covered; walls use a labelled QA slab.",
+ "checks": {
+  "Runner clips loaded for Loadout (every converted clip)": true,
+  "Runner replaces 39 flow roles and 6 locomotion loops": true,
+  "idle plays the blended Runner idle variants": true,
+  "starting to run plays the Runner jog start": true,
+  "running plays a Runner run loop": true,
+  "sprint plays the Runner sprint (Mvm_Boost)": true,
+  "stopping plays a Runner stop": true,
+  "Loadout covers ground: more than 8 m": true,
+  "running jump leaves the ground and plays Runner jump or air clips": true,
+  "landing plays a Runner landing": true,
+  "moving evade plays a Runner roll": true,
+  "neutral standing evade plays the Runner back dash": true,
+  "evade with the stick left from standing plays the Runner roll left": true,
+  "180-degree turn plays a Runner turn": true,
+  "side flip left plays Jmp_SideAir_A": true,
+  "side flip right plays its mirror": true,
+  "wall run with the wall on his left plays the left-wall clip": true,
+  "wall run with the wall on his right plays the right-wall clip": true,
+  "wall climb plays the Runner vertical run": true,
+  "wall boost plays the Runner vertical boost": true,
+  "hit reaction plays the Runner stumble": true,
+  "flow: R3 locks a practice target": true,
+  "flow: RT chain plays all eight light moves in order": true,
+  "flow: every light strike is a Runner attack clip": true,
+  "flow: all eight strikes connect": true,
+  "flow: D-pad up heavy connects": true,
+  "impact: R3 locks a practice target": true,
+  "impact: RT chain plays all eight light moves in order": true,
+  "impact: every light strike is a Runner attack clip": true,
+  "impact: all eight strikes connect": true,
+  "impact: D-pad up heavy connects": true,
+  "counter: R3 locks a practice target": true,
+  "counter: RT chain plays all eight light moves in order": true,
+  "counter: every light strike is a Runner attack clip": true,
+  "counter: all eight strikes connect": true,
+  "counter: D-pad up heavy connects": true,
+  "cape cloth finite and outside the body through every move": true,
+  "control: Backspool keeps his own flow and locomotion clips": true,
+  "control: Backspool keeps his own strike clips": true,
+  "no page errors": true
+ },
+ "results": {
+  "runner": {
+   "loaded": true,
+   "clips": 56,
+   "flowRoles": [
+    "idle",
+    "jump",
+    "fall",
+    "treeFlip",
+    "scale",
+    "wallClimb",
+    "wallRun",
+    "wallBoost",
+    "slide",
+    "frontFlip",
+    "backFlip",
+    "sideFlipLeft",
+    "sideFlipRight",
+    "twistFlip",
+    "groundRoll",
+    "roll",
+    "rollLeft",
+    "rollRight",
+    "rollBack",
+    "land",
+    "landMove",
+    "landHard",
+    "backstep",
+    "wallFlip",
+    "wallKick",
+    "landSoft",
+    "landSoftMove",
+    "landHeavy",
+    "landMoveFast",
+    "moveStart",
+    "moveStartFast",
+    "moveStartTurn",
+    "moveStopWalk",
+    "moveStop",
+    "moveStopFast",
+    "moveTurn",
+    "moveTurnFast",
+    "jumpMove",
+    "relaxedIdle"
+   ],
+   "locomotion": {
+    "walk": {
+     "clip": "Mvm_Walk",
+     "speed": 2.13,
+     "referenceSpeed": 4,
+     "timeScale": 0.532
+    },
+    "jog": {
+     "clip": "Mvm_Jog",
+     "speed": 3.46,
+     "referenceSpeed": 8.2,
+     "timeScale": 0.422
+    },
+    "run": {
+     "clip": "Mvm_Dash",
+     "speed": 8.15,
+     "referenceSpeed": 8.2,
+     "timeScale": 0.994
+    },
+    "fastRun": {
+     "clip": "Mvm_Boost",
+     "speed": 10.85,
+     "referenceSpeed": 13.8,
+     "timeScale": 0.786
+    },
+    "parkourRun": {
+     "clip": "Mvm_Boost",
+     "speed": 10.85,
+     "referenceSpeed": 13.8,
+     "timeScale": 0.786
+    },
+    "parkourSprint": {
+     "clip": "Mvm_Boost",
+     "speed": 10.85,
+     "referenceSpeed": 13.8,
+     "timeScale": 0.786
+    }
+   },
+   "combat": {
+    "flow-light-1": {
+     "clipId": "action-v2-mx-flow-light-1",
+     "runnerClip": "Attack_Hand_2L",
+     "socket": "leftHand",
+     "strikeSocket": "leftHand",
+     "window": [
+      0.129,
+      0.604
+     ],
+     "contactFraction": 0.5,
+     "strikeFraction": 0.5
+    },
+    "flow-light-2": {
+     "clipId": "action-v2-mx-flow-light-2",
+     "runnerClip": "Attack_Hand_PwR_Mirror",
+     "socket": "leftHand",
+     "strikeSocket": "leftHand",
+     "window": [
+      0.103,
+      0.603
+     ],
+     "contactFraction": 0.528,
+     "strikeFraction": 0.528
+    },
+    "flow-light-3": {
+     "clipId": "action-v2-mx-flow-light-3",
+     "runnerClip": "Attack_Kick_A_Mirror",
+     "socket": "rightFoot",
+     "strikeSocket": "rightFoot",
+     "window": [
+      0.194,
+      0.719
+     ],
+     "contactFraction": 0.583,
+     "strikeFraction": 0.583
+    },
+    "flow-light-4": {
+     "clipId": "action-v2-mx-flow-light-4",
+     "runnerClip": "Attack_Kick_A",
+     "socket": "leftFoot",
+     "strikeSocket": "leftFoot",
+     "window": [
+      0.19,
+      0.765
+     ],
+     "contactFraction": 0.538,
+     "strikeFraction": 0.538
+    },
+    "flow-left": {
+     "clipId": "action-v2-mx-flow-left",
+     "runnerClip": "Attack_Kick_B",
+     "socket": "leftFoot",
+     "strikeSocket": "leftFoot",
+     "window": [
+      0.154,
+      0.831
+     ],
+     "contactFraction": 0.462,
+     "strikeFraction": 0.462
+    },
+    "flow-right": {
+     "clipId": "action-v2-mx-flow-right",
+     "runnerClip": "Attack_Kick_B_Mirror",
+     "socket": "rightFoot",
+     "strikeSocket": "rightFoot",
+     "window": [
+      0.154,
+      0.831
+     ],
+     "contactFraction": 0.462,
+     "strikeFraction": 0.462
+    },
+    "flow-heavy": {
+     "clipId": "action-v2-mx-flow-heavy",
+     "runnerClip": "Attack_Kick_C_Mirror",
+     "socket": "rightFoot",
+     "strikeSocket": "rightFoot",
+     "window": [
+      0.685,
+      1.267
+     ],
+     "contactFraction": 0.375,
+     "strikeFraction": 0.427
+    },
+    "flow-launcher": {
+     "clipId": "action-v2-mx-flow-launcher",
+     "runnerClip": "Attack_Kick_C",
+     "socket": "leftFoot",
+     "strikeSocket": "leftFoot",
+     "window": [
+      0.709,
+      1.267
+     ],
+     "contactFraction": 0.348,
+     "strikeFraction": 0.402
+    },
+    "flow-air-light": {
+     "clipId": "action-v2-mx-flow-air-light",
+     "runnerClip": "Attack_Kick_A_Mirror",
+     "socket": "rightFoot",
+     "strikeSocket": "rightFoot",
+     "window": [
+      0.361,
+      0.865
+     ],
+     "contactFraction": 0.276,
+     "strikeFraction": 0.276
+    },
+    "flow-air-finisher": {
+     "clipId": "action-v2-mx-flow-air-finisher",
+     "runnerClip": "Attack_Kick_A_Mirror",
+     "socket": "rightFoot",
+     "strikeSocket": "rightFoot",
+     "window": [
+      0.257,
+      0.865
+     ],
+     "contactFraction": 0.4,
+     "strikeFraction": 0.4
+    },
+    "flow-counter-1": {
+     "clipId": "action-v2-mx-flow-counter-1",
+     "runnerClip": "Attack_Hand_2L",
+     "socket": "leftHand",
+     "strikeSocket": "leftHand",
+     "window": [
+      0.054,
+      0.731
+     ],
+     "contactFraction": 0.462,
+     "strikeFraction": 0.462
+    },
+    "flow-counter-2": {
+     "clipId": "action-v2-mx-flow-counter-2",
+     "runnerClip": "Attack_Hand_1R",
+     "socket": "rightHand",
+     "strikeSocket": "rightHand",
+     "window": [
+      0.054,
+      0.731
+     ],
+     "contactFraction": 0.462,
+     "strikeFraction": 0.462
+    },
+    "flow-light-5": {
+     "clipId": "action-v2-mx-flow-light-5",
+     "runnerClip": "Attack_Hand_PwR",
+     "socket": "rightHand",
+     "strikeSocket": "rightHand",
+     "window": [
+      0.491,
+      0.966
+     ],
+     "contactFraction": 0.3,
+     "strikeFraction": 0.3
+    },
+    "flow-light-6": {
+     "clipId": "action-v2-mx-flow-light-6",
+     "runnerClip": "Attack_Kick_C",
+     "socket": "leftFoot",
+     "strikeSocket": "leftFoot",
+     "window": [
+      0.667,
+      1.267
+     ],
+     "contactFraction": 0.444,
+     "strikeFraction": 0.444
+    },
+    "flow-light-7": {
+     "clipId": "action-v2-mx-flow-light-7",
+     "runnerClip": "Attack_Kick_A",
+     "socket": "leftFoot",
+     "strikeSocket": "leftFoot",
+     "window": [
+      0.29,
+      0.84
+     ],
+     "contactFraction": 0.382,
+     "strikeFraction": 0.382
+    },
+    "flow-light-8": {
+     "clipId": "action-v2-mx-flow-light-8",
+     "runnerClip": "Attack_Kick_C_Mirror",
+     "socket": "rightFoot",
+     "strikeSocket": "rightFoot",
+     "window": [
+      0.733,
+      1.267
+     ],
+     "contactFraction": 0.375,
+     "strikeFraction": 0.375
+    },
+    "impact-light-1": {
+     "clipId": "action-v2-mx-impact-light-1",
+     "runnerClip": "Attack_Hand_PwR_Mirror",
+     "socket": "leftHand",
+     "strikeSocket": "leftHand",
+     "window": [
+      0.106,
+      0.656
+     ],
+     "contactFraction": 0.474,
+     "strikeFraction": 0.474
+    },
+    "impact-light-2": {
+     "clipId": "action-v2-mx-impact-light-2",
+     "runnerClip": "Attack_Hand_2L",
+     "socket": "leftHand",
+     "strikeSocket": "leftHand",
+     "window": [
+      0.092,
+      0.642
+     ],
+     "contactFraction": 0.5,
+     "strikeFraction": 0.5
+    },
+    "impact-light-3": {
+     "clipId": "action-v2-mx-impact-light-3",
+     "runnerClip": "Attack_Hand_PwR_Mirror",
+     "socket": "leftHand",
+     "strikeSocket": "leftHand",
+     "window": [
+      0.092,
+      0.642
+     ],
+     "contactFraction": 0.5,
+     "strikeFraction": 0.5
+    },
+    "impact-light-4": {
+     "clipId": "action-v2-mx-impact-light-4",
+     "runnerClip": "Attack_Hand_1R",
+     "socket": "rightHand",
+     "strikeSocket": "rightHand",
+     "window": [
+      0.146,
+      0.721
+     ],
+     "contactFraction": 0.383,
+     "strikeFraction": 0.383
+    },
+    "impact-left": {
+     "clipId": "action-v2-mx-impact-left",
+     "runnerClip": "Attack_Kick_A_Mirror",
+     "socket": "rightFoot",
+     "strikeSocket": "rightFoot",
+     "window": [
+      0.187,
+      0.865
+     ],
+     "contactFraction": 0.462,
+     "strikeFraction": 0.462
+    },
+    "impact-right": {
+     "clipId": "action-v2-mx-impact-right",
+     "runnerClip": "Attack_Kick_B_Mirror",
+     "socket": "rightFoot",
+     "strikeSocket": "rightFoot",
+     "window": [
+      0.189,
+      0.831
+     ],
+     "contactFraction": 0.432,
+     "strikeFraction": 0.432
+    },
+    "impact-heavy": {
+     "clipId": "action-v2-mx-impact-heavy",
+     "runnerClip": "Attack_Hand_PwR",
+     "socket": "rightHand",
+     "strikeSocket": "rightHand",
+     "window": [
+      0.292,
+      1.202
+     ],
+     "contactFraction": 0.375,
+     "strikeFraction": 0.375
+    },
+    "impact-launcher": {
+     "clipId": "action-v2-mx-impact-launcher",
+     "runnerClip": "Attack_Kick_C",
+     "socket": "leftFoot",
+     "strikeSocket": "leftFoot",
+     "window": [
+      0.758,
+      1.267
+     ],
+     "contactFraction": 0.286,
+     "strikeFraction": 0.345
+    },
+    "impact-air-light": {
+     "clipId": "action-v2-mx-impact-air-light",
+     "runnerClip": "Attack_Kick_A",
+     "socket": "leftFoot",
+     "strikeSocket": "leftFoot",
+     "window": [
+      0.187,
+      0.865
+     ],
+     "contactFraction": 0.462,
+     "strikeFraction": 0.462
+    },
+    "impact-air-finisher": {
+     "clipId": "action-v2-mx-impact-air-finisher",
+     "runnerClip": "JAttack_AirFront_Mirror",
+     "socket": "leftHand",
+     "strikeSocket": "leftHand",
+     "window": [
+      0.2,
+      0.633
+     ],
+     "contactFraction": 0.462,
+     "strikeFraction": 0.577
+    },
+    "impact-counter-1": {
+     "clipId": "action-v2-mx-impact-counter-1",
+     "runnerClip": "Attack_Kick_B",
+     "socket": "leftFoot",
+     "strikeSocket": "leftFoot",
+     "window": [
+      0.154,
+      0.831
+     ],
+     "contactFraction": 0.462,
+     "strikeFraction": 0.462
+    },
+    "impact-counter-2": {
+     "clipId": "action-v2-mx-impact-counter-2",
+     "runnerClip": "Attack_Kick_C",
+     "socket": "leftFoot",
+     "strikeSocket": "leftFoot",
+     "window": [
+      0.648,
+      1.267
+     ],
+     "contactFraction": 0.462,
+     "strikeFraction": 0.462
+    },
+    "impact-light-5": {
+     "clipId": "action-v2-mx-impact-light-5",
+     "runnerClip": "Attack_Hand_PwR",
+     "socket": "rightHand",
+     "strikeSocket": "rightHand",
+     "window": [
+      0.345,
+      0.97
+     ],
+     "contactFraction": 0.462,
+     "strikeFraction": 0.462
+    },
+    "impact-light-6": {
+     "clipId": "action-v2-mx-impact-light-6",
+     "runnerClip": "Attack_Kick_A",
+     "socket": "leftFoot",
+     "strikeSocket": "leftFoot",
+     "window": [
+      0.212,
+      0.837
+     ],
+     "contactFraction": 0.462,
+     "strikeFraction": 0.462
+    },
+    "impact-light-7": {
+     "clipId": "action-v2-mx-impact-light-7",
+     "runnerClip": "Attack_Kick_B",
+     "socket": "leftFoot",
+     "strikeSocket": "leftFoot",
+     "window": [
+      0.178,
+      0.803
+     ],
+     "contactFraction": 0.462,
+     "strikeFraction": 0.462
+    },
+    "impact-light-8": {
+     "clipId": "action-v2-mx-impact-light-8",
+     "runnerClip": "Attack_Kick_C",
+     "socket": "leftFoot",
+     "strikeSocket": "leftFoot",
+     "window": [
+      0.733,
+      1.267
+     ],
+     "contactFraction": 0.375,
+     "strikeFraction": 0.375
+    },
+    "counter-light-1": {
+     "clipId": "action-v2-mx-counter-light-1",
+     "runnerClip": "Attack_Kick_A",
+     "socket": "leftFoot",
+     "strikeSocket": "leftFoot",
+     "window": [
+      0.227,
+      0.727
+     ],
+     "contactFraction": 0.545,
+     "strikeFraction": 0.545
+    },
+    "counter-light-2": {
+     "clipId": "action-v2-mx-counter-light-2",
+     "runnerClip": "Attack_Kick_B",
+     "socket": "leftFoot",
+     "strikeSocket": "leftFoot",
+     "window": [
+      0.077,
+      0.727
+     ],
+     "contactFraction": 0.6,
+     "strikeFraction": 0.6
+    },
+    "counter-light-3": {
+     "clipId": "action-v2-mx-counter-light-3",
+     "runnerClip": "Attack_Kick_C",
+     "socket": "leftFoot",
+     "strikeSocket": "leftFoot",
+     "window": [
+      0.59,
+      1.19
+     ],
+     "contactFraction": 0.571,
+     "strikeFraction": 0.571
+    },
+    "counter-light-4": {
+     "clipId": "action-v2-mx-counter-light-4",
+     "runnerClip": "Attack_Kick_C_Mirror",
+     "socket": "rightFoot",
+     "strikeSocket": "rightFoot",
+     "window": [
+      0.543,
+      1.193
+     ],
+     "contactFraction": 0.6,
+     "strikeFraction": 0.6
+    },
+    "counter-left": {
+     "clipId": "action-v2-mx-counter-left",
+     "runnerClip": "Attack_Hand_1R",
+     "socket": "rightHand",
+     "strikeSocket": "rightHand",
+     "window": [
+      0.054,
+      0.731
+     ],
+     "contactFraction": 0.462,
+     "strikeFraction": 0.462
+    },
+    "counter-right": {
+     "clipId": "action-v2-mx-counter-right",
+     "runnerClip": "Attack_Hand_PwR",
+     "socket": "rightHand",
+     "strikeSocket": "rightHand",
+     "window": [
+      0.321,
+      0.998
+     ],
+     "contactFraction": 0.462,
+     "strikeFraction": 0.462
+    },
+    "counter-heavy": {
+     "clipId": "action-v2-mx-counter-heavy",
+     "runnerClip": "Attack_Hand_PwR_Mirror",
+     "socket": "leftHand",
+     "strikeSocket": "leftHand",
+     "window": [
+      0.026,
+      0.935
+     ],
+     "contactFraction": 0.375,
+     "strikeFraction": 0.375
+    },
+    "counter-launcher": {
+     "clipId": "action-v2-mx-counter-launcher",
+     "runnerClip": "Attack_Hand_PwR_Mirror",
+     "socket": "leftHand",
+     "strikeSocket": "leftHand",
+     "window": [
+      0.064,
+      0.935
+     ],
+     "contactFraction": 0.348,
+     "strikeFraction": 0.348
+    },
+    "counter-air-light": {
+     "clipId": "action-v2-mx-counter-air-light",
+     "runnerClip": "JAttack_AirDrop_All",
+     "socket": "leftHand",
+     "strikeSocket": "leftHand",
+     "window": [
+      0,
+      0.444
+     ],
+     "contactFraction": 0.3,
+     "strikeFraction": 0.3
+    },
+    "counter-air-finisher": {
+     "clipId": "action-v2-mx-counter-air-finisher",
+     "runnerClip": "JAttack_AirFront_Mirror",
+     "socket": "leftHand",
+     "strikeSocket": "leftHand",
+     "window": [
+      0.311,
+      0.633
+     ],
+     "contactFraction": 0.276,
+     "strikeFraction": 0.431
+    },
+    "counter-counter-1": {
+     "clipId": "action-v2-mx-counter-counter-1",
+     "runnerClip": "Attack_Hand_1R",
+     "socket": "rightHand",
+     "strikeSocket": "rightHand",
+     "window": [
+      0.054,
+      0.731
+     ],
+     "contactFraction": 0.462,
+     "strikeFraction": 0.462
+    },
+    "counter-counter-2": {
+     "clipId": "action-v2-mx-counter-counter-2",
+     "runnerClip": "Attack_Hand_PwR",
+     "socket": "rightHand",
+     "strikeSocket": "rightHand",
+     "window": [
+      0.494,
+      0.998
+     ],
+     "contactFraction": 0.276,
+     "strikeFraction": 0.276
+    },
+    "counter-light-5": {
+     "clipId": "action-v2-mx-counter-light-5",
+     "runnerClip": "Attack_Hand_1R",
+     "socket": "rightHand",
+     "strikeSocket": "rightHand",
+     "window": [
+      0.1,
+      0.7
+     ],
+     "contactFraction": 0.444,
+     "strikeFraction": 0.444
+    },
+    "counter-light-6": {
+     "clipId": "action-v2-mx-counter-light-6",
+     "runnerClip": "Attack_Hand_2L",
+     "socket": "leftHand",
+     "strikeSocket": "leftHand",
+     "window": [
+      0.078,
+      0.703
+     ],
+     "contactFraction": 0.462,
+     "strikeFraction": 0.462
+    },
+    "counter-light-7": {
+     "clipId": "action-v2-mx-counter-light-7",
+     "runnerClip": "Attack_Hand_PwR",
+     "socket": "rightHand",
+     "strikeSocket": "rightHand",
+     "window": [
+      0.463,
+      0.963
+     ],
+     "contactFraction": 0.34,
+     "strikeFraction": 0.34
+    },
+    "counter-light-8": {
+     "clipId": "action-v2-mx-counter-light-8",
+     "runnerClip": "Attack_Kick_A",
+     "socket": "leftFoot",
+     "strikeSocket": "leftFoot",
+     "window": [
+      0.222,
+      0.997
+     ],
+     "contactFraction": 0.359,
+     "strikeFraction": 0.359
+    }
+   },
+   "buildMs": 127,
+   "latch": {},
+   "defense": {
+    "flow-reaction": {
+     "clipId": "action-v2-flow-reaction",
+     "runnerClip": "Dam_Stand_Stumble",
+     "window": [
+      0.1,
+      0.9
+     ]
+    },
+    "impact-reaction": {
+     "clipId": "action-v2-impact-reaction",
+     "runnerClip": "Dam_Stand_Stumble",
+     "window": [
+      0.1,
+      0.9
+     ]
+    },
+    "counter-reaction": {
+     "clipId": "action-v2-counter-reaction",
+     "runnerClip": "Dam_Stand_Stumble",
+     "window": [
+      0.1,
+      0.9
+     ]
+    }
+   },
+   "active": true,
+   "playing": "idle",
+   "runnerPlaying": false
+  },
+  "moved": 13.79,
+  "peakRun": 6.6,
+  "peakSprint": 16.36,
+  "idle": {
+   "frames": 30,
+   "anims": [
+    "runner-relaxedIdle-variants"
+   ]
+  },
+  "run": {
+   "frames": 60,
+   "anims": [
+    "runner-Mvm_Jog_Start_Fwd",
+    "runner-Mvm_Boost@13.8"
+   ]
+  },
+  "sprint": {
+   "frames": 40,
+   "anims": [
+    "runner-Mvm_Boost@13.8"
+   ]
+  },
+  "stop": {
+   "frames": 90,
+   "anims": [
+    "runner-Mvm_BoostEnd",
+    "runner-relaxedIdle-variants"
+   ]
+  },
+  "jump": {
+   "frames": 190,
+   "anims": [
+    "runner-Jmp_FrontAir_A",
+    "runner-Jump_Down_A_Loop",
+    "runner-Land_Base_Move",
+    "runner-Mvm_Boost@13.8",
+    "runner-Mvm_JogStop"
+   ]
+  },
+  "roll": {
+   "frames": 70,
+   "anims": [
+    "runner-Land_Roll_Move"
+   ]
+  },
+  "evadeNeutral": {
+   "frames": 50,
+   "anims": [
+    "runner-Esc_BoostDash_Back",
+    "action-v2-mx-flow-stance"
+   ]
+  },
+  "evadeLeft": {
+   "frames": 50,
+   "anims": [
+    "runner-Esc_Roll_Left"
+   ]
+  },
+  "turn": {
+   "frames": 60,
+   "anims": [
+    "runner-Mvm_Jog_TurnL_180_Left",
+    "runner-Mvm_Boost@13.8"
+   ]
+  },
+  "flipLeft": {
+   "frames": 90,
+   "anims": [
+    "runner-Jmp_SideAir_A",
+    "runner-Land_Base_Move",
+    "runner-Mvm_Boost@13.8"
+   ]
+  },
+  "flipRight": {
+   "frames": 90,
+   "anims": [
+    "runner-Jmp_SideAir_A_Mirror",
+    "runner-Land_Base_Move",
+    "runner-Mvm_Boost@13.8"
+   ]
+  },
+  "wallRight": {
+   "frames": 70,
+   "anims": [
+    "runner-Wall_Vertical_Dash_Loop",
+    "runner-LoWall_LDash_Loop"
+   ]
+  },
+  "wallLeft": {
+   "frames": 70,
+   "anims": [
+    "runner-Wall_Vertical_Dash_Loop",
+    "runner-LoWall_RDash_Loop"
+   ]
+  },
+  "climb": {
+   "frames": 160,
+   "anims": [
+    "action-v2-mx-flow-stance",
+    "runner-Mvm_Walk@4",
+    "runner-Mvm_Jog@8.2",
+    "runner-Mvm_Dash@8.2",
+    "runner-Mvm_Boost@13.8",
+    "runner-Wall_Vertical_Dash_Loop",
+    "forspoken-flow-mantle"
+   ]
+  },
+  "boost": {
+   "frames": 52,
+   "anims": [
+    "runner-Wall_Vertical_Dash_Loop",
+    "runner-Wall_Vertical_Boost",
+    "forspoken-flow-mantle"
+   ]
+  },
+  "reaction": {
+   "frames": 240,
+   "anims": [
+    "action-v2-mx-flow-stance",
+    "action-v2-flow-reaction"
+   ]
+  },
+  "wallLatch": {
+   "groundRoll": {
+    "dir": "left",
+    "since": 21.316666666666737,
+    "seen": 22.483333333333338
+   },
+   "wallRun": {
+    "dir": "right",
+    "since": 38.51666666666576,
+    "seen": 39.64999999999903
+   }
+  },
+  "capeByBlock": {
+   "idle": 0,
+   "run": 0,
+   "sprint": 0,
+   "stop": 0,
+   "jump": 0,
+   "roll": 0,
+   "evadeNeutral": 0,
+   "evadeLeft": 0,
+   "turn": 0,
+   "flipLeft": 0,
+   "flipRight": 0,
+   "wallRight": 0,
+   "wallLeft": 0,
+   "climb": 0,
+   "boost": 0,
+   "reaction": 0,
+   "flow": 0,
+   "impact": 0,
+   "counter": 0
+  },
+  "combat": {
+   "flow": {
+    "locked": true,
+    "played": [
+     "action-v2-mx-flow-light-1",
+     "action-v2-mx-flow-light-2",
+     "action-v2-mx-flow-light-3",
+     "action-v2-mx-flow-light-4",
+     "action-v2-mx-flow-light-5",
+     "action-v2-mx-flow-light-6",
+     "action-v2-mx-flow-light-7",
+     "action-v2-mx-flow-light-8"
+    ],
+    "hits": 8,
+    "heavyHit": true,
+    "runnerClips": [
+     {
+      "id": "action-v2-mx-flow-light-1",
+      "runner": "Attack_Hand_2L",
+      "duration": 0.475,
+      "window": 0.475
+     },
+     {
+      "id": "action-v2-mx-flow-light-2",
+      "runner": "Attack_Hand_PwR_Mirror",
+      "duration": 0.5,
+      "window": 0.5
+     },
+     {
+      "id": "action-v2-mx-flow-light-3",
+      "runner": "Attack_Kick_A_Mirror",
+      "duration": 0.525,
+      "window": 0.525
+     },
+     {
+      "id": "action-v2-mx-flow-light-4",
+      "runner": "Attack_Kick_A",
+      "duration": 0.575,
+      "window": 0.575
+     },
+     {
+      "id": "action-v2-mx-flow-light-5",
+      "runner": "Attack_Hand_PwR",
+      "duration": 0.475,
+      "window": 0.475
+     },
+     {
+      "id": "action-v2-mx-flow-light-6",
+      "runner": "Attack_Kick_C",
+      "duration": 0.6,
+      "window": 0.6
+     },
+     {
+      "id": "action-v2-mx-flow-light-7",
+      "runner": "Attack_Kick_A",
+      "duration": 0.55,
+      "window": 0.55
+     },
+     {
+      "id": "action-v2-mx-flow-light-8",
+      "runner": "Attack_Kick_C_Mirror",
+      "duration": 0.533,
+      "window": 0.534
+     }
+    ]
+   },
+   "impact": {
+    "locked": true,
+    "played": [
+     "action-v2-mx-impact-light-1",
+     "action-v2-mx-impact-light-2",
+     "action-v2-mx-impact-light-3",
+     "action-v2-mx-impact-light-4",
+     "action-v2-mx-impact-light-5",
+     "action-v2-mx-impact-light-6",
+     "action-v2-mx-impact-light-7",
+     "action-v2-mx-impact-light-8"
+    ],
+    "hits": 8,
+    "heavyHit": true,
+    "runnerClips": [
+     {
+      "id": "action-v2-mx-impact-light-1",
+      "runner": "Attack_Hand_PwR_Mirror",
+      "duration": 0.55,
+      "window": 0.55
+     },
+     {
+      "id": "action-v2-mx-impact-light-2",
+      "runner": "Attack_Hand_2L",
+      "duration": 0.55,
+      "window": 0.55
+     },
+     {
+      "id": "action-v2-mx-impact-light-3",
+      "runner": "Attack_Hand_PwR_Mirror",
+      "duration": 0.55,
+      "window": 0.55
+     },
+     {
+      "id": "action-v2-mx-impact-light-4",
+      "runner": "Attack_Hand_1R",
+      "duration": 0.575,
+      "window": 0.575
+     },
+     {
+      "id": "action-v2-mx-impact-light-5",
+      "runner": "Attack_Hand_PwR",
+      "duration": 0.625,
+      "window": 0.625
+     },
+     {
+      "id": "action-v2-mx-impact-light-6",
+      "runner": "Attack_Kick_A",
+      "duration": 0.625,
+      "window": 0.625
+     },
+     {
+      "id": "action-v2-mx-impact-light-7",
+      "runner": "Attack_Kick_B",
+      "duration": 0.625,
+      "window": 0.625
+     },
+     {
+      "id": "action-v2-mx-impact-light-8",
+      "runner": "Attack_Kick_C",
+      "duration": 0.533,
+      "window": 0.534
+     }
+    ]
+   },
+   "counter": {
+    "locked": true,
+    "played": [
+     "action-v2-mx-counter-light-1",
+     "action-v2-mx-counter-light-2",
+     "action-v2-mx-counter-light-3",
+     "action-v2-mx-counter-light-4",
+     "action-v2-mx-counter-light-5",
+     "action-v2-mx-counter-light-6",
+     "action-v2-mx-counter-light-7",
+     "action-v2-mx-counter-light-8"
+    ],
+    "hits": 8,
+    "heavyHit": true,
+    "runnerClips": [
+     {
+      "id": "action-v2-mx-counter-light-1",
+      "runner": "Attack_Kick_A",
+      "duration": 0.5,
+      "window": 0.5
+     },
+     {
+      "id": "action-v2-mx-counter-light-2",
+      "runner": "Attack_Kick_B",
+      "duration": 0.65,
+      "window": 0.65
+     },
+     {
+      "id": "action-v2-mx-counter-light-3",
+      "runner": "Attack_Kick_C",
+      "duration": 0.6,
+      "window": 0.6
+     },
+     {
+      "id": "action-v2-mx-counter-light-4",
+      "runner": "Attack_Kick_C_Mirror",
+      "duration": 0.65,
+      "window": 0.65
+     },
+     {
+      "id": "action-v2-mx-counter-light-5",
+      "runner": "Attack_Hand_1R",
+      "duration": 0.6,
+      "window": 0.6
+     },
+     {
+      "id": "action-v2-mx-counter-light-6",
+      "runner": "Attack_Hand_2L",
+      "duration": 0.625,
+      "window": 0.625
+     },
+     {
+      "id": "action-v2-mx-counter-light-7",
+      "runner": "Attack_Hand_PwR",
+      "duration": 0.5,
+      "window": 0.5
+     },
+     {
+      "id": "action-v2-mx-counter-light-8",
+      "runner": "Attack_Kick_A",
+      "duration": 0.775,
+      "window": 0.775
+     }
+    ]
+   }
+  },
+  "cape": {
+   "frames": 2143,
+   "maxPen": 0,
+   "maxAim": 0.123,
+   "nan": false
+  },
+  "backspool": {
+   "idle": "forspoken-flow-idle",
+   "roll": "forspoken-flow-roll",
+   "run": "traversal-locomotion-run",
+   "runnerIds": 0,
+   "light1": 0.38,
+   "runnerInBank": 0
+  }
+ },
+ "errors": []
+}

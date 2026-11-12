@@ -1,0 +1,68 @@
+{
+  "status": "FAIL",
+  "errors": [],
+  "ambientHits": [],
+  "method": "One controlled ground start [55,.42,210]; WASD only (O walk in baseline, ordinary run in RUN_PUBLIC variant). No jump, rail, Drive, teleport or position assignment after start.",
+  "entrySHA256": "078c315c41381cdbc0174e2458f4be5653d69653e0abb0c40358358520cebe53",
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_HERO_SELECT_V3.html",
+  "manifest": "assets/city/vertical-v02/furnished-public-rooms/runtime/manifest.json",
+  "buildReport": "V02_Hero_Select_V3_Build.json",
+  "manifestSHA256": "d5ecc2e184a9f31f46eff3495cd8aec6387a4614e0bfea92e9ccb493de1514d6",
+  "testConfigurationSHA256": "3a7de8bd6984a7c77f453e6dd420a4d4a24e3e03572b40330a690e08de615670",
+  "evidenceRun": "public-zero",
+  "evidenceSuite": "hero-select-v3-station-routes",
+  "testSourceSHA256": "d5f4d5cd6baab74f16007b3c2775364161e25e1cedb08ba3e5f1068310cf3875",
+  "initialBank": 0,
+  "routeStartFrame": 0,
+  "routeTraceStart": 0,
+  "segments": [
+    {
+      "name": "ground access",
+      "seconds": 2.4,
+      "at": [
+        60.909999999999975,
+        0.42,
+        215.4450000000005
+      ]
+    },
+    {
+      "name": "A stair 0 to 24",
+      "seconds": 23.933333333333334,
+      "at": [
+        61.01999999999997,
+        24.42,
+        215.55500000000052
+      ]
+    },
+    {
+      "name": "A stair 24 to 52",
+      "seconds": 31.183333333333334,
+      "at": [
+        61.09999999999998,
+        52.42,
+        215.53000000000048
+      ]
+    },
+    {
+      "name": "A stair 52 to 84",
+      "seconds": 30.133333333333333,
+      "at": [
+        61.09999999999998,
+        84.42,
+        215.53000000000048
+      ]
+    },
+    {
+      "name": "Y84 west public gallery",
+      "seconds": 26.933333333333334,
+      "at": [
+        60.90499999999998,
+        84.42,
+        375.4400000000202
+      ]
+    }
+  ],
+  "failure": "Error: Unreached C stair 84 to 100 waypoint 8 {\"target\":[61,93.60000000000001,384.98],\"last\":{\"damage\":0,\"damageEvidence\":null,\"p\":[61.03036638143472,90.82000000000001,375.47115333925996],\"v\":[0,0,0],\"grounded\":true,\"mode\":\"GROUND\",\"trauma\":0,\"support\":90.82000000000001,\"camera\":[62.11501217590651,92.64914942039766,378.70513744651777]}}",
+  "fullTrace": "V02_Public_Route_Run_Validation.trace.json.gz",
+  "traceFrames": 14755
+}

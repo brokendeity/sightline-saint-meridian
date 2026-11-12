@@ -1,0 +1,273 @@
+{
+  "status": "FAIL",
+  "scope": "Ground access, four wall ascents, upper rail and Pop to Y100 station",
+  "method": "One controlled initial setup (ground for full route, Y84 for local pilot). Normal R/Shift/Space keys and standard simulated controller movement/look after setup. No direct rail creation, actor/camera assignment, reset or resource injection during route.",
+  "errors": [],
+  "stages": [
+    {
+      "name": "ground approach start",
+      "frame": 2,
+      "p": [
+        55,
+        0.42,
+        210
+      ],
+      "clock": 0.08333333333333333,
+      "message": ""
+    },
+    {
+      "name": "public A 0 to 24",
+      "frame": 692,
+      "p": [
+        61.1590031344088,
+        24.42,
+        215.5043200879496
+      ],
+      "clock": 11.583333333333488,
+      "message": ""
+    },
+    {
+      "name": "public A 24 to 52",
+      "frame": 1555,
+      "p": [
+        61.05860536534933,
+        52.42,
+        215.5007294679946
+      ],
+      "clock": 25.966666666666473,
+      "message": ""
+    },
+    {
+      "name": "public A 52 to 84",
+      "frame": 2370,
+      "p": [
+        61.08052229875829,
+        84.42,
+        215.50031104383604
+      ],
+      "clock": 39.54999999999904,
+      "message": ""
+    },
+    {
+      "name": "courtyard reached from ground",
+      "frame": 2704,
+      "p": [
+        55.00013491735099,
+        84.42,
+        292.8528256107442
+      ],
+      "clock": 45.11666666666539,
+      "message": ""
+    },
+    {
+      "name": "mastery courtyard",
+      "frame": 2705,
+      "p": [
+        55.00013491735099,
+        84.42,
+        292.8528256107442
+      ],
+      "clock": 45.133333333332054,
+      "message": ""
+    },
+    {
+      "name": "wall boost to 96",
+      "frame": 3038,
+      "p": [
+        63.831641758577824,
+        86.67915525530671,
+        300.62
+      ],
+      "clock": 50.68333333333174,
+      "message": ""
+    },
+    {
+      "name": "wall roof landing 96",
+      "frame": 3212,
+      "p": [
+        63.831641758577824,
+        96.42,
+        299.365
+      ],
+      "clock": 53.583333333331574,
+      "message": ""
+    },
+    {
+      "name": "wall boost to 108",
+      "frame": 3290,
+      "p": [
+        63.831641758577824,
+        98.67915525530671,
+        292.62
+      ],
+      "clock": 54.8833333333315,
+      "message": ""
+    },
+    {
+      "name": "wall roof landing 108",
+      "frame": 3464,
+      "p": [
+        63.831641758577824,
+        108.42,
+        291.12
+      ],
+      "clock": 57.783333333331335,
+      "message": ""
+    },
+    {
+      "name": "wall boost to 120",
+      "frame": 3516,
+      "p": [
+        63.831641758577824,
+        110.67915525530671,
+        284.62
+      ],
+      "clock": 58.64999999999795,
+      "message": ""
+    },
+    {
+      "name": "wall roof landing 120",
+      "frame": 3690,
+      "p": [
+        63.831641758577824,
+        120.42,
+        283.09727250000003
+      ],
+      "clock": 61.54999999999779,
+      "message": ""
+    },
+    {
+      "name": "wall boost to 128",
+      "frame": 3742,
+      "p": [
+        63.831641758577824,
+        122.67915525530671,
+        276.62
+      ],
+      "clock": 62.416666666664405,
+      "message": ""
+    },
+    {
+      "name": "wall roof landing 128",
+      "frame": 3873,
+      "p": [
+        63.831641758577824,
+        128.42,
+        275.09727250000003
+      ],
+      "clock": 64.59999999999762,
+      "message": ""
+    }
+  ],
+  "entry": "SIGHTLINE_SAINT_MERIDIAN_V02_HERO_SELECT_V3.html",
+  "manifest": "assets/city/vertical-v02/furnished-public-rooms/runtime/manifest.json",
+  "buildReport": "V02_Hero_Select_V3_Build.json",
+  "entrySHA256": "078c315c41381cdbc0174e2458f4be5653d69653e0abb0c40358358520cebe53",
+  "manifestSHA256": "d5ecc2e184a9f31f46eff3495cd8aec6387a4614e0bfea92e9ccb493de1514d6",
+  "testConfigurationSHA256": "3a7de8bd6984a7c77f453e6dd420a4d4a24e3e03572b40330a690e08de615670",
+  "evidenceRun": "mastery-zero",
+  "evidenceSuite": "hero-select-v3-station-routes",
+  "testSourceSHA256": "42dc9621cd9c3d88f829f96551b6bd267a2ada3e0033958bbf1965892e4b3473",
+  "cameraSamplePolicy": {
+    "sourceSHA256": "180467f581d7948bdf854280c9c2b7886b4270810b763376e1c2b5c7aa6dae45",
+    "intervalFrames": 6,
+    "scope": "Actual animated head/hips projection and native static-obstacle triangle rays during normal input, 10Hz at60Hz simulation. No gameplay state writes. Transparent glass below.5alpha excluded from opaque occlusion; moving objects absent from the native obstacle registry, HUD, between-sample frames and physical devices are not certified. Raw samples require context/visual review; collection is not camera acceptance."
+  },
+  "initialBank": 0,
+  "routeStartFrame": 1,
+  "routeTraceStart": 1,
+  "aimCoastEvidence": [
+    {
+      "target": [
+        64,
+        94,
+        288
+      ],
+      "arrivalError": {
+        "dy": 0.0005456675800425449,
+        "dp": 0.0004148442938043395,
+        "nativeYawDrift": 0.0002398925996871526,
+        "nativePitchDrift": 0.00043159803505243843,
+        "hit": {
+          "x": 64.2635947832161,
+          "y": 85.6906472929541,
+          "z": 300
+        }
+      },
+      "settled": {
+        "dy": 0.000276673066892618,
+        "dp": 0.000020509754020348048,
+        "rawPitch": 1.2014871011605106,
+        "targetPitch": 1.2015024979859419,
+        "body": {
+          "compositionFamily": "exploration",
+          "quietPitch": 0.13333333333333333,
+          "manualPitch": true,
+          "compositionOwner": "manual pitch",
+          "heldYaw": 0.05977764295792775,
+          "heldPitch": -0.5920177696775419,
+          "frames": 3011,
+          "adjusted": 2397,
+          "eligible": false,
+          "reason": "visible composition bias held for manual pitch",
+          "positionDelta": 0,
+          "fov": 59.37178323594487,
+          "yawCorrection": 0,
+          "pitchCorrection": 0,
+          "unresolved": 0,
+          "fit": null,
+          "hasTarget": false,
+          "groundEnvelope": false,
+          "hero": "backspool"
+        },
+        "hit": {
+          "x": 64.26312358603698,
+          "y": 85.69101803670522,
+          "z": 300
+        }
+      },
+      "accepted": true
+    }
+  ],
+  "travelViewInputs": [
+    {
+      "yaw": 3.141592653589793,
+      "pitch": -0.08,
+      "inputIterations": 49,
+      "method": "Actual simulated right stick followed by30quiet native ticks"
+    }
+  ],
+  "blockedMovement": {
+    "target": [
+      55,
+      128,
+      424
+    ],
+    "position": [
+      55.13368330317604,
+      128.42,
+      311.820019746951
+    ],
+    "stalledInputIterations": 60,
+    "nearbyOwners": [
+      {
+        "id": "upper-gallery-W-300",
+        "box": {
+          "min": [
+            52,
+            127.4,
+            300
+          ],
+          "max": [
+            58,
+            128,
+            326
+          ]
+        }
+      }
+    ]
+  },
+  "failure": "Error: Blocked authored route {\"target\":[55,128,424],\"position\":[55.13368330317604,128.42,311.820019746951],\"stalledInputIterations\":60,\"nearbyOwners\":[{\"id\":\"upper-gallery-W-300\",\"box\":{\"min\":[52,127.4,300],\"max\":[58,128,326]}}]}",
+  "fullTrace": "V02_Mastery_Full_Zero.trace.json.gz",
+  "traceFrames": 4523
+}

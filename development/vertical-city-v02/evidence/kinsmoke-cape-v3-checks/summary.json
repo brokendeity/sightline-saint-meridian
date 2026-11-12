@@ -1,0 +1,391 @@
+{
+ "build": "V02_Kinsmoke_Cape_V3_Build.json",
+ "results": {
+  "smoke": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 16.3,
+   "command": "node scripts/vertical-v02/test_canonical_smoke.cjs V02_Kinsmoke_Cape_V3_Build.json",
+   "environment": {},
+   "logTail": [
+    "PASS v02ModulesLoaded",
+    "PASS everyHeroRunsAndMoves",
+    "PASS noPageErrors"
+   ]
+  },
+  "threadrail-grind": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 40.1,
+   "command": "node scripts/vertical-v02/test_threadrail_grind.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Kinsmoke_Cape_V3_Build.json",
+    "V02_GRIND_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/threadrail-grind",
+    "V02_GRIND_CONTROL": "SIGHTLINE_SAINT_MERIDIAN_V02_HERO_SELECT_CARTRIDGE.html"
+   },
+   "logTail": [
+    "PASS rTapStillAttaches",
+    "PASS noHostileShotLanded",
+    "PASS noPageErrors"
+   ]
+  },
+  "hero-select": {
+   "status": "FAIL",
+   "returncode": 1,
+   "wallSeconds": 168.8,
+   "command": "node scripts/vertical-v02/test_hero_select_v3_kinsmoke.cjs V02_Kinsmoke_Cape_V3_Build.json",
+   "environment": {
+    "V02_HERO_SELECT_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/hero-select",
+    "V02_PORT": "8768"
+   },
+   "logTail": [
+    "PASS touchTapsBrowseTryAndSelect {\"move\":{\"move\":\"lo:Jmp_FrontAir_Roll_All\",\"source\":\"touch\",\"rig\":\"loadout\",\"at\":18047,\"status\":\"playing\",\"shards\":false,\"clip\":\"runner-Jmp_FrontAir_Roll_All\",\"seconds\":1.77},\"confirm\":{\"hero\":\"loadout\",\"from\":\"backspool\",\"costume\":null,\"costumeBefore\":null,\"bank\":\"loadout\",\"source\":\"touch\",\"switchMs\":7,\"signature\":\"lo:Jmp_FrontAir_Roll_All\",\"totalMs\":906}}",
+    "PASS noPageErrors {\"errors\":[]}",
+    "FAILED"
+   ],
+   "rerun": {
+    "status": "PASS",
+    "log": "hero-select-rerun.log",
+    "note": "First run: previewFramingClearOfTextAndOnBase failed for Kinsmoke only (the v3 wings are much wider and overlapped the side panels at a 1.5x pull-back). Fixed: his page frames from 2.05x when the game module is cape v3+. Re-run on the final build: ALL PASS."
+   }
+  },
+  "wall-contacts": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 23.7,
+   "command": "node scripts/vertical-v02/test_friendly_wall_contacts.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Kinsmoke_Cape_V3_Build.json"
+   },
+   "logTail": [
+    "PASS simulated controller Flow and stick climb then release",
+    "PASS blocked imported facade drops once instead of repeatedly retrying",
+    "PASS actual city facade allows continuous collision-clear wall traversal"
+   ]
+  },
+  "landing-contacts": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 18.4,
+   "command": "node scripts/vertical-v02/test_friendly_landing_contacts.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Kinsmoke_Cape_V3_Build.json"
+   },
+   "logTail": [
+    "PASS rollBack landing",
+    "PASS recovery cancel to strike",
+    "PASS landing / roll input flows; no page errors"
+   ]
+  },
+  "city-loops": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 47.4,
+   "command": "node scripts/vertical-v02/test_current_city_loops.cjs",
+   "environment": {
+    "V02_LOOP_BUILD": "V02_Kinsmoke_Cape_V3_Build.json",
+    "V02_LOOP_REPORT": "V02_Kinsmoke_Cape_V3_Loops.json",
+    "V02_LOOP_RUN": "kinsmoke-cape-v3-loops"
+   },
+   "logTail": [
+    "PASS mid 35.36666666666667 229.405000000023 cameraInsideFrames 0",
+    "PASS high 37.2 241.5050000000245 cameraInsideFrames 0",
+    "PASS complete lower/mid/high public loops on current combined candidate"
+   ]
+  },
+  "station-routes": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 337.8,
+   "command": "python3 scripts/vertical-v02/run_current_station_routes.py",
+   "environment": {
+    "V02_ROUTE_BUILD_REPORT": "V02_Kinsmoke_Cape_V3_Build.json",
+    "V02_ROUTE_REPORT": "V02_Kinsmoke_Cape_V3_Station_Routes.json",
+    "V02_ROUTE_SUITE": "kinsmoke-cape-v3-station-routes"
+   },
+   "logTail": [
+    "START public-banked",
+    "PASS public-banked 135.08333333333334 773.9782163119702",
+    "PASS all three current approaches, zero/full legal bank starts"
+   ]
+  },
+  "retained-gameplay": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 734.4,
+   "command": "python3 scripts/vertical-v02/run_friendly_gameplay_regressions.py",
+   "environment": {
+    "V02_GAMEPLAY_BUILD": "V02_Kinsmoke_Cape_V3_Build.json",
+    "V02_GAMEPLAY_SUITE": "kinsmoke-cape-v3-gameplay"
+   },
+   "logTail": [
+    "START discovery-lifecycle",
+    "DONE discovery-lifecycle 0",
+    "PASS12current encounter/replay/discovery cases; final release scope remains separate"
+   ]
+  },
+  "strides": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 17.6,
+   "command": "node scripts/vertical-v02/test_forspoken_strides.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Kinsmoke_Cape_V3_Build.json",
+    "V02_STRIDES_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/strides"
+   },
+   "logTail": [
+    "PASS ground starts, stops, turns and stop cancel; no page errors"
+   ]
+  },
+  "vaults": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 22.0,
+   "command": "node scripts/vertical-v02/test_forspoken_vaults.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Kinsmoke_Cape_V3_Build.json",
+    "V02_VAULTS_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/vaults"
+   },
+   "logTail": [
+    "PASS climb1.2 climbMid",
+    "PASS climb1.8 climbHigh",
+    "PASS graded vaults and climbs; no page errors"
+   ]
+  },
+  "air": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 13.0,
+   "command": "node scripts/vertical-v02/test_forspoken_air.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Kinsmoke_Cape_V3_Build.json",
+    "V02_AIR_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/air"
+   },
+   "logTail": [
+    "PASS standing and running take-offs; no page errors"
+   ]
+  },
+  "crouch": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 12.5,
+   "command": "node scripts/vertical-v02/test_forspoken_crouch.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Kinsmoke_Cape_V3_Build.json",
+    "V02_CROUCH_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/crouch"
+   },
+   "logTail": [
+    "PASS crouch down, start, stop, up and cancel; no page errors"
+   ]
+  },
+  "combat": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 23.4,
+   "command": "node scripts/vertical-v02/test_mixamo_combat.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Kinsmoke_Cape_V3_Build.json",
+    "V02_COMBAT_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/combat"
+   },
+   "logTail": [
+    "PASS impact RT chain and heavy",
+    "PASS counter RT chain and heavy",
+    "PASS 8-hit RT chains and heavies in all three styles; no page errors"
+   ]
+  },
+  "sightline": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 14.4,
+   "command": "node scripts/vertical-v02/test_sightline_melee.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Kinsmoke_Cape_V3_Build.json",
+    "V02_SIGHTLINE_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/sightline"
+   },
+   "logTail": [
+    "PASS Sightline burst, kick, guard and rail separation; no page errors"
+   ]
+  },
+  "rhythm": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 14.7,
+   "command": "node scripts/vertical-v02/test_burst_rhythm.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Kinsmoke_Cape_V3_Build.json",
+    "V02_RHYTHM_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/rhythm"
+   },
+   "logTail": [
+    "PASS burst > cover > counter > reset; guarded counter takes chip damage only; no page errors"
+   ]
+  },
+  "themed": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 32.6,
+   "command": "node scripts/vertical-v02/test_themed_slots.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Kinsmoke_Cape_V3_Build.json",
+    "V02_THEMED_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/themed"
+   },
+   "logTail": [
+    "PASS counter directional, heavy, launcher, air light and finisher",
+    "PASS counter counter [\"counter-counter-1\",\"counter-counter-2\"]",
+    "PASS themed directional, heavy, launcher, air and counter slots in all three styles; no page errors"
+   ]
+  },
+  "impact": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 25.5,
+   "command": "node scripts/vertical-v02/test_impact_fx.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Kinsmoke_Cape_V3_Build.json",
+    "V02_IMPACT_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/impact"
+   },
+   "logTail": [
+    "PASS surfaces, debris rest, decal 30 s + 2 s fade, flash, hit-stop, landing crater, shot burst, heavy-strike feel; no page errors"
+   ]
+  },
+  "no-trucks": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 12.5,
+   "command": "node scripts/vertical-v02/test_no_halo_trucks.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Kinsmoke_Cape_V3_Build.json",
+    "V02_TRUCKS_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/no-trucks"
+   },
+   "logTail": [
+    "PASS no halo trucks {\"removed\":\"Halo trucks removed for now; replacement models pending\",\"moved\":41.5}"
+   ]
+  },
+  "menu": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 16.1,
+   "command": "node scripts/vertical-v02/test_menu_style.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Kinsmoke_Cape_V3_Build.json",
+    "V02_MENU_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/menu"
+   },
+   "logTail": [
+    "PASS menu restyle: tabs, keys, focus, start, pause, resume, hero word, phone layout; no page errors"
+   ]
+  },
+  "loadout-hero": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 36.4,
+   "command": "node scripts/characters/kinsmoke/test_loadout_hero_four_heroes.cjs",
+   "environment": {
+    "LOADOUT_HERO_BUILD": "SIGHTLINE_SAINT_MERIDIAN_V02_KINSMOKE_CAPE_V3.html",
+    "LOADOUT_HERO_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/loadout-hero"
+   },
+   "logTail": [
+    "PASS no page errors",
+    "{\"switchMs\":4538,\"build\":{\"built\":true,\"buildMs\":985,\"retargetMs\":534,\"clips\":183,\"active\":true,\"capeOn\":true,\"capeVisible\":true,\"capeMeshes\":2},\"moved\":14.09,\"chord\":[{\"want\":\"kinsmoke\",\"got\":\"kinsmoke\",\"active\":\"backspool\"},{\"want\":\"sightline\",\"got\":\"sightline\",\"active\":\"sightline\"},{\"want\":\"backspool\",\"got\":\"backspool\",\"active\":\"backspool\"},{\"want\":\"loadout\",\"got\":\"loadout\",\"active\":\"backspool\"}]}",
+    "PASS Loadout hero, real input"
+   ]
+  },
+  "loadout-runner-roles": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 48.9,
+   "command": "node scripts/characters/loadout/test_loadout_runner_real_input.cjs",
+   "environment": {
+    "LOADOUT_RUNNER_BUILD": "SIGHTLINE_SAINT_MERIDIAN_V02_KINSMOKE_CAPE_V3.html",
+    "LOADOUT_RUNNER_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/loadout-runner-roles",
+    "LOADOUT_RUNNER_FULL_OFF": "1"
+   },
+   "logTail": [
+    "{\"evadeNeutral\":[\"runner-Esc_BoostDash_Back\",\"action-v2-mx-flow-stance\"],\"evadeLeft\":[\"runner-Esc_Roll_Left\"],\"turn\":[\"runner-Mvm_Jog_TurnL_180_Left\",\"runner-Mvm_Boost@13.8\"],\"flipLeft\":[\"runner-Jmp_SideAir_A\",\"runner-Land_Base_Move\",\"runner-Mvm_Boost@13.8\"],\"flipRight\":[\"runner-Jmp_SideAir_A_Mirror\",\"runner-Land_Base_Move\",\"runner-Mvm_Boost@13.8\"],\"wallRight\":[\"runner-Wall_Vertical_Dash_Loop\",\"runner-LoWall_LDash_Loop\"],\"wallLeft\":[\"runner-Wall_Vertical_Dash_Loop\",\"runner-LoWall_RDash_Loop\"],\"climb\":[\"action-v2-mx-flow-stance\",\"runner-Mvm_Walk@4\",\"runner-Mvm_Jog@8.2\",\"runner-Mvm_Dash@8.2\",\"runner-Mvm_Boost@13.8\",\"runner-Wall_Vertical_Dash_Loop\",\"forspoken-flow-mantle\"],\"boost\":[\"runner-Wall_Vertical_Dash_Loop\",\"runner-Wall_Vertical_Boost\",\"forspoken-flow-mantle\"],\"reaction\":[\"action-v2-mx-flow-stance\",\"action-v2-flow-reaction\"],\"wallLatch\":{\"groundRoll\":{\"dir\":\"left\",\"since\":21.316666666666737,\"seen\":22.483333333333338},\"wallRun\":{\"dir\":\"right\",\"since\":38.51666666666576,\"seen\":39.64999999999903}}}",
+    "{\"moved\":13.79,\"run\":[\"runner-Mvm_Jog_Start_Fwd\",\"runner-Mvm_Boost@13.8\"],\"sprint\":[\"runner-Mvm_Boost@13.8\"],\"stop\":[\"runner-Mvm_BoostEnd\",\"runner-relaxedIdle-variants\"],\"jump\":[\"runner-Jmp_FrontAir_A\",\"runner-Jump_Down_A_Loop\",\"runner-Land_Base_Move\",\"runner-Mvm_Boost@13.8\",\"runner-Mvm_JogStop\"],\"roll\":[\"runner-Land_Roll_Move\"],\"cape\":{\"frames\":2143,\"maxPen\":0,\"maxAim\":0.123,\"nan\":false},\"backspool\":{\"idle\":\"forspoken-flow-idle\",\"roll\":\"forspoken-flow-roll\",\"run\":\"traversal-locomotion-run\",\"runnerIds\":0,\"light1\":0.38,\"runnerInBank\":0}}",
+    "PASS Loadout Runner moves, real input"
+   ]
+  },
+  "backspool-costume": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 38.5,
+   "command": "node scripts/characters/backspool/test_backspool_costume_real_input.cjs",
+   "environment": {
+    "BSC_BUILD": "SIGHTLINE_SAINT_MERIDIAN_V02_KINSMOKE_CAPE_V3.html",
+    "BSC_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/backspool-costume"
+   },
+   "logTail": [
+    "PASS Default restores his own model",
+    "PASS no page errors",
+    "{\"switchMs\":1370,\"build\":{\"halfmask\":{\"ms\":1042,\"retargetMs\":622,\"clips\":183,\"facingDeltaDeg\":0,\"bones\":82}},\"moved\":[15.5,15.5],\"jump\":[{\"airborne\":true,\"rise\":1.93,\"landed\":true},{\"airborne\":true,\"rise\":1.93,\"landed\":true}],\"frame\":[{\"inside\":17,\"missing\":0,\"of\":17,\"worstNdc\":0.78},{\"inside\":17,\"missing\":0,\"of\":17,\"worstNdc\":0.794}],\"errors\":[]}"
+   ]
+  },
+  "costume-combat": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 31.3,
+   "command": "node scripts/vertical-v02/test_mixamo_combat.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Kinsmoke_Cape_V3_Build.json",
+    "V02_COMBAT_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/costume-combat",
+    "V02_BACKSPOOL_COSTUME": "halfmask"
+   },
+   "logTail": [
+    "PASS impact RT chain and heavy",
+    "PASS counter RT chain and heavy",
+    "PASS 8-hit RT chains and heavies in all three styles; no page errors"
+   ]
+  },
+  "costume-grind": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 41.5,
+   "command": "node scripts/vertical-v02/test_threadrail_grind.cjs",
+   "environment": {
+    "V02_ACTION_BUILD": "V02_Kinsmoke_Cape_V3_Build.json",
+    "V02_GRIND_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/costume-grind",
+    "V02_GRIND_CONTROL": "SIGHTLINE_SAINT_MERIDIAN_V02_HERO_SELECT_CARTRIDGE.html",
+    "V02_BACKSPOOL_COSTUME": "halfmask"
+   },
+   "logTail": [
+    "PASS rTapStillAttaches",
+    "PASS noHostileShotLanded",
+    "PASS noPageErrors"
+   ]
+  },
+  "loadout-runner-full": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 143.6,
+   "command": "node scripts/characters/loadout/test_loadout_runner_full_real_input.cjs",
+   "environment": {
+    "LRF_BUILD": "SIGHTLINE_SAINT_MERIDIAN_V02_KINSMOKE_CAPE_V3.html",
+    "LRF_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/loadout-runner-full"
+   },
+   "logTail": [
+    "PASS Backspool control: no Runner-full actions, his own clips, E is still his Drive {\"anims\":[\"forspoken-v17-moveStart\",\"traversal-locomotion-fastRun\"],\"unclear\":0,\"conflicts\":0,\"nonFinite\":0,\"notRate1\":[]}",
+    "PASS no page errors {\"errors\":[]}",
+    "RESULT 42 PASS 0 FAIL"
+   ]
+  },
+  "kinsmoke": {
+   "status": "PASS",
+   "returncode": 0,
+   "wallSeconds": 36.6,
+   "command": "node scripts/characters/kinsmoke/test_kinsmoke_real_input.cjs",
+   "environment": {
+    "KSM_BUILD": "SIGHTLINE_SAINT_MERIDIAN_V02_KINSMOKE_CAPE_V3.html",
+    "KSM_OUT": "development/vertical-city-v02/evidence/kinsmoke-cape-v3-checks/kinsmoke",
+    "V02_PORT": "8768"
+   },
+   "logTail": [
+    "PASS running: one connected sheet, no rolls or tubes (signed curl >= 180 deg never persists across two samples; chains never fold below 0.65 of rest)",
+    "PASS no page errors",
+    "{\"switchMs\":4331,\"menu\":{\"anim\":\"idle\",\"timeScale\":1,\"clips\":2,\"sources\":{\"idle\":\"Idle_Wait_A\",\"run\":\"Mvm_Dash\"},\"capeMeshes\":2,\"capeVisible\":true,\"built\":true,\"buildMs\":1164,\"retargetMs\":9,\"capeBones\":210},\"idle\":{\"motion\":0,\"maxDisp\":0.0003,\"meanDisp\":0.0001,\"leg\":0,\"pen\":0,\"resets\":1,\"frames\":205,\"meanCostMs\":2.762,\"maxStretch\":1,\"colRatio\":0.999,\"foldRatio\":1,\"crossTurnDeg\":23.8,\"chainTurnDeg\":42.2,\"crossTurnAt\":[17,4],\"rollDeg\":100.3,\"rollAt\":[17,7],\"restRollDeg\":100.2,\"curlDeg\":74.9,\"curlAt\":[1,6],\"restCurlDeg\":74.9,\"chainTurnAt\":[10,1],\"restTurnDeg\":{\"cross\":43.5,\"chain\":35.8}},\"run\":{\"samples\":40,\"moving\":40,\"movedM\":29.67,\"maxDisp\":1.1511,\"maxLeg\":0,\"anims\":[\"run\"],\"timeScales\":[0.756,0.967,1.021,1.042,1.047,1.048,1.049,0.978],\"speeds\":[6.2,7.93,8.38,8.55,8.58,8.6],\"motionMax\":1,\"nan\":false,\"resets\":0,\"minColRatio\":0.725,\"maxCrossTurnDeg\":90.8,\"maxRollDeg\":167.9,\"maxCurlDeg\":200.3,\"curlOver180\":1,\"curlOver180Streak\":1,\"restCurlDeg\":74.9,\"restRollDeg\":100.2,\"maxChainTurnDeg\":89.2,\"restTurnDeg\":{\"cross\":43.5,\"chain\":35.8},\"minFoldRatio\":0.743,\"sheetMetrics\":true},\"settled\":{\"motion\":0,\"maxDisp\":0.0003,\"meanDisp\":0.0001,\"leg\":0,\"pen\":0,\"resets\":1,\"frames\":1083,\"meanCostMs\":2.454,\"maxStretch\":1,\"colRatio\":1,\"foldRatio\":1,\"crossTurnDeg\":23.8,\"chainTurnDeg\":42.3,\"crossTurnAt\":[3,4],\"rollDeg\":100.3,\"rollAt\":[17,7],\"restRollDeg\":100.2,\"curlDeg\":74.9,\"curlAt\":[1,6],\"restCurlDeg\":74.9,\"chainTurnAt\":[10,1],\"restTurnDeg\":{\"cross\":43.5,\"chain\":35.8}},\"chord\":[\"sightline\",\"backspool\",\"loadout\",\"kinsmoke\"],\"orbit\":{\"angles\":[110.8,130.4,149.9,169.3,-170.8,-151.2,-131.4,-111.7],\"stepDeg\":[19.600000000000023,19.5,19.399999999999977,19.899999999999977,19.600000000000023,19.799999999999955,19.700000000000045],\"radius\":[0.92,0.92],\"heightY\":[0.094,0.213]},\"preview\":[0.6948,0.772,0.5245,1.1241,0.6884,1.0749,0.6058,0.7425,0.8348,0.9247,1.1505,0.69],\"errors\":[]}"
+   ]
+  }
+ },
+ "finalBuildReruns": {
+  "note": "The hero-select framing fix and a brighter knotwork trim (texture) changed the build after the full run. Jobs that load Kinsmoke assets or depend on the hero order were re-run on the final build (SHA 594c0c85...): smoke PASS (smoke-rerun.log), loadout-hero four-hero chord PASS (loadout-hero-rerun.log), hero-select ALL PASS, kinsmoke real input 16/16 twice (development/characters/kinsmoke/evidence/real-input-cape-v3-final1, -final2). The other 22 jobs ran on the previous build hash, whose only differences are the hero-select Kinsmoke framing and the cape texture."
+ },
+ "final": "26 of 26 PASS (hero-select after the framing fix; Kinsmoke-dependent jobs re-run on the final build)"
+}

@@ -1,0 +1,2899 @@
+{
+ "catalog": {
+  "counts": {
+   "clips": 872,
+   "inPlace": 484,
+   "root": 388,
+   "poseShared": 234,
+   "withRootMotion": 444
+  },
+  "clips": 872,
+  "files": {
+   "runner_full_P1.bin.gz": {
+    "rawBytes": 3983396,
+    "bytes": 1235790,
+    "sha256": "2d04da1a85d46b7e705ad8dbdbde5f40dc78dc09b0d6e04b9ff3e9a09225aa93"
+   },
+   "runner_full_P2.bin.gz": {
+    "rawBytes": 1025488,
+    "bytes": 342755,
+    "sha256": "834dbda100f1ce7ea53eef05e687553efb053d0fe65aeba15314027975a3ad3b"
+   },
+   "runner_full_P3.bin.gz": {
+    "rawBytes": 1064008,
+    "bytes": 478819,
+    "sha256": "7386b3afeceaf92506901589cc9b638a7c85bc1515776684e13b5d84965d9cee"
+   },
+   "runner_full_P4.bin.gz": {
+    "rawBytes": 387340,
+    "bytes": 132717,
+    "sha256": "1cdebdb95b98496b333ac118889f7a294772835ec4f7256643c1272f4307122e"
+   },
+   "runner_full_P5.bin.gz": {
+    "rawBytes": 471656,
+    "bytes": 168646,
+    "sha256": "a07a9d3e0e69ec861e1d7740827d2dba271e59295717a6027f50314259c6bd48"
+   },
+   "runner_full_P6.bin.gz": {
+    "rawBytes": 1785188,
+    "bytes": 431505,
+    "sha256": "c1e46e1488952d95263d67c4e1232de6b32e55d5bff5ab40817b7f9583b84707"
+   }
+  },
+  "schema": "loadout-runner-full-v1",
+  "pack": {
+   "name": "Runner Action Animation Pack v1.7.2",
+   "unitypackage": "Runner Action Animation Pack v1.7.2.unitypackage",
+   "sha256": "7ba8576f21b5938cd7f63767f59ee5ad1fe5c50c0874ce569dcfa7d3ef649b26",
+   "note": "Licensed Unity Asset Store pack; converted clip data for the game only. Do not publish this data on its own."
+  }
+ },
+ "decode": {
+  "bad": [],
+  "frames": 27878
+ },
+ "run": {
+  "anims": [
+   "rf-Mvm_Jog_Start_Fwd_Root",
+   "rf-Mvm_Jog",
+   "rf-Mvm_Walk",
+   "rf-Mvm_Dash"
+  ],
+  "speed": 8.154,
+  "ts": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ "walk": {
+  "anims": [
+   "rf-Mvm_Walk_Start_Fwd_Root",
+   "rf-Mvm_Walk",
+   "action-v2-mx-flow-stance"
+  ],
+  "speed": 2.129,
+  "ts": 1
+ },
+ "sprint": {
+  "anims": [
+   "rf-Mvm_Jog_Start_Fwd_Root",
+   "rf-Mvm_Jog",
+   "runner-relaxedIdle-variants",
+   "rf-Mvm_Walk",
+   "rf-Mvm_Dash",
+   "rf-Mvm_Boost"
+  ],
+  "speed": 10.853,
+  "ts": 1
+ },
+ "allClips": {
+  "total": 872,
+  "performed": 872,
+  "armedCovered": 872,
+  "notPerformed": [],
+  "notRate1": [],
+  "unsound": [],
+  "travelMismatch": []
+ },
+ "state": {
+  "maxCorrection": 0,
+  "corrections": 0,
+  "blockedSteps": 184,
+  "ledgeHandoffs": 1,
+  "ceilingStops": 0,
+  "actions": 984,
+  "bound": 642,
+  "performedDistinct": 501
+ },
+ "bindings": {
+  "Mvm_Walk": [
+   "locomotion walk (Runner pace)",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Mvm_Walk_Root": [
+   "locomotion walk (Runner pace) (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Mvm_Jog": [
+   "locomotion jog (Runner pace)",
+   "strafe jog loop",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Mvm_Jog_Root": [
+   "locomotion jog (Runner pace) (root motion)",
+   "strafe jog loop (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Mvm_Dash": [
+   "locomotion run (Runner pace)",
+   "strafe dash loop",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Mvm_Dash_Root": [
+   "locomotion run (Runner pace) (root motion)",
+   "strafe dash loop (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Mvm_Boost": [
+   "locomotion fastRun (Runner pace)",
+   "locomotion parkourRun (Runner pace)",
+   "locomotion parkourSprint (Runner pace)",
+   "strafe boost loop",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Mvm_Boost_Root": [
+   "locomotion fastRun (Runner pace) (root motion)",
+   "locomotion parkourRun (Runner pace) (root motion)",
+   "locomotion parkourSprint (Runner pace) (root motion)",
+   "strafe boost loop (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Mvm_Walk_Front": [
+   "strafe walk loop"
+  ],
+  "Mvm_Walk_Front_Root": [
+   "strafe walk loop (root motion)"
+  ],
+  "Mvm_Walk_Start_Fwd": [
+   "strafe start",
+   "auto start"
+  ],
+  "Mvm_Walk_Start_Fwd_Root": [
+   "strafe start (root motion)",
+   "auto start (root motion)"
+  ],
+  "Mvm_WalkStop": [
+   "strafe stop",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Mvm_WalkStop_Root": [
+   "strafe stop (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Mvm_Walk_Front_R45": [
+   "strafe walk loop"
+  ],
+  "Mvm_Walk_Front_R45_Root": [
+   "strafe walk loop (root motion)"
+  ],
+  "Mvm_Walk_Front_R45_Start": [
+   "strafe start"
+  ],
+  "Mvm_Walk_Front_R45_Start_Root": [
+   "strafe start (root motion)"
+  ],
+  "Mvm_WalkStop_Front_R45": [
+   "strafe stop"
+  ],
+  "Mvm_WalkStop_Front_R45_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Walk_Front_R": [
+   "strafe walk loop"
+  ],
+  "Mvm_Walk_Front_R_Root": [
+   "strafe walk loop (root motion)"
+  ],
+  "Mvm_Walk_Front_R_Start": [
+   "strafe start"
+  ],
+  "Mvm_Walk_Front_R_Start_Root": [
+   "strafe start (root motion)"
+  ],
+  "Mvm_WalkStop_Front_R": [
+   "strafe stop"
+  ],
+  "Mvm_WalkStop_Front_R_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Walk_Back_R45": [
+   "strafe walk loop"
+  ],
+  "Mvm_Walk_Back_R45_Root": [
+   "strafe walk loop (root motion)"
+  ],
+  "Mvm_Walk_Back_R45_Start": [
+   "strafe start"
+  ],
+  "Mvm_Walk_Back_R45_Start_Root": [
+   "strafe start (root motion)"
+  ],
+  "Mvm_WalkStop_Back_R45": [
+   "strafe stop"
+  ],
+  "Mvm_WalkStop_Back_R45_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Walk_Back": [
+   "strafe walk loop"
+  ],
+  "Mvm_Walk_Back_Root": [
+   "strafe walk loop (root motion)"
+  ],
+  "Mvm_Walk_Start_Bwd": [
+   "strafe start"
+  ],
+  "Mvm_Walk_Start_Bwd_Root": [
+   "strafe start (root motion)"
+  ],
+  "Mvm_WalkStop_Back": [
+   "strafe stop"
+  ],
+  "Mvm_WalkStop_Back_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Walk_Back_L45": [
+   "strafe walk loop"
+  ],
+  "Mvm_Walk_Back_L45_Root": [
+   "strafe walk loop (root motion)"
+  ],
+  "Mvm_Walk_Back_L45_Start": [
+   "strafe start"
+  ],
+  "Mvm_Walk_Back_L45_Start_Root": [
+   "strafe start (root motion)"
+  ],
+  "Mvm_WalkStop_Back_L45": [
+   "strafe stop"
+  ],
+  "Mvm_WalkStop_Back_L45_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Walk_Back_L": [
+   "strafe walk loop"
+  ],
+  "Mvm_Walk_Back_L_Root": [
+   "strafe walk loop (root motion)"
+  ],
+  "Mvm_Walk_Back_L_Start": [
+   "strafe start"
+  ],
+  "Mvm_Walk_Back_L_Start_Root": [
+   "strafe start (root motion)"
+  ],
+  "Mvm_WalkStop_Back_L": [
+   "strafe stop"
+  ],
+  "Mvm_WalkStop_Back_L_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Walk_Front_L45": [
+   "strafe walk loop"
+  ],
+  "Mvm_Walk_Front_L45_Root": [
+   "strafe walk loop (root motion)"
+  ],
+  "Mvm_Walk_Front_L45_Start": [
+   "strafe start"
+  ],
+  "Mvm_Walk_Front_L45_Start_Root": [
+   "strafe start (root motion)"
+  ],
+  "Mvm_WalkStop_Front_L45": [
+   "strafe stop"
+  ],
+  "Mvm_WalkStop_Front_L45_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Walk_Front_L": [
+   "strafe walk loop"
+  ],
+  "Mvm_Walk_Front_L_Root": [
+   "strafe walk loop (root motion)"
+  ],
+  "Mvm_Walk_Front_L_Start": [
+   "strafe start"
+  ],
+  "Mvm_Walk_Front_L_Start_Root": [
+   "strafe start (root motion)"
+  ],
+  "Mvm_WalkStop_Front_L": [
+   "strafe stop"
+  ],
+  "Mvm_WalkStop_Front_L_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Jog_Start_Fwd": [
+   "strafe start",
+   "auto start",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Mvm_Jog_Start_Fwd_Root": [
+   "strafe start (root motion)",
+   "auto start (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Mvm_JogStop": [
+   "strafe stop",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Mvm_JogStop_Root": [
+   "strafe stop (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Mvm_Jog_Front_R45": [
+   "strafe jog loop"
+  ],
+  "Mvm_Jog_Front_R45_Root": [
+   "strafe jog loop (root motion)"
+  ],
+  "Mvm_Jog_Front_R45_Start": [
+   "strafe start"
+  ],
+  "Mvm_Jog_Front_R45_Start_Root": [
+   "strafe start (root motion)"
+  ],
+  "Mvm_JogStop_Front_R45": [
+   "strafe stop"
+  ],
+  "Mvm_JogStop_Front_R45_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Jog_Front_R": [
+   "strafe jog loop"
+  ],
+  "Mvm_Jog_Front_R_Root": [
+   "strafe jog loop (root motion)"
+  ],
+  "Mvm_Jog_Front_R_Start": [
+   "strafe start"
+  ],
+  "Mvm_Jog_Front_R_Start_Root": [
+   "strafe start (root motion)"
+  ],
+  "Mvm_JogStop_Front_R": [
+   "strafe stop"
+  ],
+  "Mvm_JogStop_Front_R_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Jog_Back_R45": [
+   "strafe jog loop"
+  ],
+  "Mvm_Jog_Back_R45_Root": [
+   "strafe jog loop (root motion)"
+  ],
+  "Mvm_Jog_Back_R45_Start": [
+   "strafe start"
+  ],
+  "Mvm_Jog_Back_R45_Start_Root": [
+   "strafe start (root motion)"
+  ],
+  "Mvm_JogStop_Back_R45": [
+   "strafe stop"
+  ],
+  "Mvm_JogStop_Back_R45_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Jog_Back": [
+   "strafe jog loop"
+  ],
+  "Mvm_Jog_Back_Root": [
+   "strafe jog loop (root motion)"
+  ],
+  "Mvm_Jog_Start_Bwd": [
+   "strafe start"
+  ],
+  "Mvm_Jog_Start_Bwd_Root": [
+   "strafe start (root motion)"
+  ],
+  "Mvm_JogStop_Back": [
+   "strafe stop"
+  ],
+  "Mvm_JogStop_Back_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Jog_Back_L45": [
+   "strafe jog loop"
+  ],
+  "Mvm_Jog_Back_L45_Root": [
+   "strafe jog loop (root motion)"
+  ],
+  "Mvm_Jog_Back_L45_Start": [
+   "strafe start"
+  ],
+  "Mvm_Jog_Back_L45_Start_Root": [
+   "strafe start (root motion)"
+  ],
+  "Mvm_JogStop_Back_L45": [
+   "strafe stop"
+  ],
+  "Mvm_JogStop_Back_L45_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Jog_Back_L": [
+   "strafe jog loop"
+  ],
+  "Mvm_Jog_Back_L_Root": [
+   "strafe jog loop (root motion)"
+  ],
+  "Mvm_Jog_Back_L_Start": [
+   "strafe start"
+  ],
+  "Mvm_Jog_Back_L_Start_Root": [
+   "strafe start (root motion)"
+  ],
+  "Mvm_JogStop_Back_L": [
+   "strafe stop"
+  ],
+  "Mvm_JogStop_Back_L_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Jog_Front_L45": [
+   "strafe jog loop"
+  ],
+  "Mvm_Jog_Front_L45_Root": [
+   "strafe jog loop (root motion)"
+  ],
+  "Mvm_Jog_Front_L45_Start": [
+   "strafe start"
+  ],
+  "Mvm_Jog_Front_L45_Start_Root": [
+   "strafe start (root motion)"
+  ],
+  "Mvm_JogStop_Front_L45": [
+   "strafe stop"
+  ],
+  "Mvm_JogStop_Front_L45_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Jog_Front_L": [
+   "strafe jog loop"
+  ],
+  "Mvm_Jog_Front_L_Root": [
+   "strafe jog loop (root motion)"
+  ],
+  "Mvm_Jog_Front_L_Start": [
+   "strafe start"
+  ],
+  "Mvm_Jog_Front_L_Start_Root": [
+   "strafe start (root motion)"
+  ],
+  "Mvm_JogStop_Front_L": [
+   "strafe stop"
+  ],
+  "Mvm_JogStop_Front_L_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Stop_Front": [
+   "strafe stop"
+  ],
+  "Mvm_Stop_Front_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Dash_Front_R45": [
+   "strafe dash loop"
+  ],
+  "Mvm_Dash_Front_R45_Root": [
+   "strafe dash loop (root motion)"
+  ],
+  "Mvm_Stop_Front_R45": [
+   "strafe stop"
+  ],
+  "Mvm_Stop_Front_R45_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Dash_Front_R": [
+   "strafe dash loop"
+  ],
+  "Mvm_Dash_Front_R_Root": [
+   "strafe dash loop (root motion)"
+  ],
+  "Mvm_Stop_Front_R": [
+   "strafe stop"
+  ],
+  "Mvm_Stop_Front_R_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Dash_Back_R45": [
+   "strafe dash loop"
+  ],
+  "Mvm_Dash_Back_R45_Root": [
+   "strafe dash loop (root motion)"
+  ],
+  "Mvm_Stop_Back_R45": [
+   "strafe stop"
+  ],
+  "Mvm_Stop_Back_R45_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Dash_Back": [
+   "strafe dash loop"
+  ],
+  "Mvm_Dash_Back_Root": [
+   "strafe dash loop (root motion)"
+  ],
+  "Mvm_Stop_Back": [
+   "strafe stop"
+  ],
+  "Mvm_Stop_Back_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Dash_Back_L45": [
+   "strafe dash loop"
+  ],
+  "Mvm_Dash_Back_L45_Root": [
+   "strafe dash loop (root motion)"
+  ],
+  "Mvm_Stop_Back_L45": [
+   "strafe stop"
+  ],
+  "Mvm_Stop_Back_L45_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Dash_Back_L": [
+   "strafe dash loop"
+  ],
+  "Mvm_Dash_Back_L_Root": [
+   "strafe dash loop (root motion)"
+  ],
+  "Mvm_Stop_Back_L": [
+   "strafe stop"
+  ],
+  "Mvm_Stop_Back_L_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Dash_Front_L45": [
+   "strafe dash loop"
+  ],
+  "Mvm_Dash_Front_L45_Root": [
+   "strafe dash loop (root motion)"
+  ],
+  "Mvm_Stop_Front_L45": [
+   "strafe stop"
+  ],
+  "Mvm_Stop_Front_L45_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_Dash_Front_L": [
+   "strafe dash loop"
+  ],
+  "Mvm_Dash_Front_L_Root": [
+   "strafe dash loop (root motion)"
+  ],
+  "Mvm_Stop_Front_L": [
+   "strafe stop"
+  ],
+  "Mvm_Stop_Front_L_Root": [
+   "strafe stop (root motion)"
+  ],
+  "Mvm_BoostEnd": [
+   "strafe stop",
+   "auto stop",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Mvm_BoostEnd_Root": [
+   "strafe stop (root motion)",
+   "auto stop (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Mvm_Boost_Front_R45": [
+   "strafe boost loop"
+  ],
+  "Mvm_Boost_Front_R45_Root": [
+   "strafe boost loop (root motion)"
+  ],
+  "Mvm_Boost_Front_R": [
+   "strafe boost loop"
+  ],
+  "Mvm_Boost_Front_R_Root": [
+   "strafe boost loop (root motion)"
+  ],
+  "Mvm_Boost_Back_R45": [
+   "strafe boost loop"
+  ],
+  "Mvm_Boost_Back_R45_Root": [
+   "strafe boost loop (root motion)"
+  ],
+  "Mvm_Boost_Back": [
+   "strafe boost loop"
+  ],
+  "Mvm_Boost_Back_Root": [
+   "strafe boost loop (root motion)"
+  ],
+  "Mvm_Boost_Back_L45": [
+   "strafe boost loop"
+  ],
+  "Mvm_Boost_Back_L45_Root": [
+   "strafe boost loop (root motion)"
+  ],
+  "Mvm_Boost_Back_L": [
+   "strafe boost loop"
+  ],
+  "Mvm_Boost_Back_L_Root": [
+   "strafe boost loop (root motion)"
+  ],
+  "Mvm_Boost_Front_L45": [
+   "strafe boost loop"
+  ],
+  "Mvm_Boost_Front_L45_Root": [
+   "strafe boost loop (root motion)"
+  ],
+  "Mvm_Boost_Front_L": [
+   "strafe boost loop"
+  ],
+  "Mvm_Boost_Front_L_Root": [
+   "strafe boost loop (root motion)"
+  ],
+  "Mvm_ChargeDash": [
+   "strafe chargeDash loop"
+  ],
+  "Mvm_ChargeDash_Root": [
+   "strafe chargeDash loop (root motion)"
+  ],
+  "Mvm_ChargeDash_Front_R45": [
+   "strafe chargeDash loop"
+  ],
+  "Mvm_ChargeDash_Front_R45_Root": [
+   "strafe chargeDash loop (root motion)"
+  ],
+  "Mvm_ChargeDash_Front_R": [
+   "strafe chargeDash loop"
+  ],
+  "Mvm_ChargeDash_Front_R_Root": [
+   "strafe chargeDash loop (root motion)"
+  ],
+  "Mvm_ChargeDash_Back_R45": [
+   "strafe chargeDash loop"
+  ],
+  "Mvm_ChargeDash_Back_R45_Root": [
+   "strafe chargeDash loop (root motion)"
+  ],
+  "Mvm_ChargeDash_Back": [
+   "strafe chargeDash loop"
+  ],
+  "Mvm_ChargeDash_Back_Root": [
+   "strafe chargeDash loop (root motion)"
+  ],
+  "Mvm_ChargeDash_Back_L45": [
+   "strafe chargeDash loop"
+  ],
+  "Mvm_ChargeDash_Back_L45_Root": [
+   "strafe chargeDash loop (root motion)"
+  ],
+  "Mvm_ChargeDash_Back_L": [
+   "strafe chargeDash loop"
+  ],
+  "Mvm_ChargeDash_Back_L_Root": [
+   "strafe chargeDash loop (root motion)"
+  ],
+  "Mvm_ChargeDash_Front_L45": [
+   "strafe chargeDash loop"
+  ],
+  "Mvm_ChargeDash_Front_L45_Root": [
+   "strafe chargeDash loop (root motion)"
+  ],
+  "Mvm_ChargeDash_Front_L": [
+   "strafe chargeDash loop"
+  ],
+  "Mvm_ChargeDash_Front_L_Root": [
+   "strafe chargeDash loop (root motion)"
+  ],
+  "Mvm_ChargeBoost": [
+   "strafe chargeBoost loop"
+  ],
+  "Mvm_ChargeBoost_Root": [
+   "strafe chargeBoost loop (root motion)"
+  ],
+  "Mvm_ChargeBoost_Front_R45": [
+   "strafe chargeBoost loop"
+  ],
+  "Mvm_ChargeBoost_Front_R45_Root": [
+   "strafe chargeBoost loop (root motion)"
+  ],
+  "Mvm_ChargeBoost_Front_R": [
+   "strafe chargeBoost loop"
+  ],
+  "Mvm_ChargeBoost_Front_R_Root": [
+   "strafe chargeBoost loop (root motion)"
+  ],
+  "Mvm_ChargeBoost_Back_R45": [
+   "strafe chargeBoost loop"
+  ],
+  "Mvm_ChargeBoost_Back_R45_Root": [
+   "strafe chargeBoost loop (root motion)"
+  ],
+  "Mvm_ChargeBoost_Back": [
+   "strafe chargeBoost loop"
+  ],
+  "Mvm_ChargeBoost_Back_Root": [
+   "strafe chargeBoost loop (root motion)"
+  ],
+  "Mvm_ChargeBoost_Back_L45": [
+   "strafe chargeBoost loop"
+  ],
+  "Mvm_ChargeBoost_Back_L45_Root": [
+   "strafe chargeBoost loop (root motion)"
+  ],
+  "Mvm_ChargeBoost_Back_L": [
+   "strafe chargeBoost loop"
+  ],
+  "Mvm_ChargeBoost_Back_L_Root": [
+   "strafe chargeBoost loop (root motion)"
+  ],
+  "Mvm_ChargeBoost_Front_L45": [
+   "strafe chargeBoost loop"
+  ],
+  "Mvm_ChargeBoost_Front_L45_Root": [
+   "strafe chargeBoost loop (root motion)"
+  ],
+  "Mvm_ChargeBoost_Front_L": [
+   "strafe chargeBoost loop"
+  ],
+  "Mvm_ChargeBoost_Front_L_Root": [
+   "strafe chargeBoost loop (root motion)"
+  ],
+  "Mvm_Wp_ChargeBoost": [
+   "weapon charge loop"
+  ],
+  "Mvm_Wp_ChargeBoost_Root": [
+   "weapon charge loop (root motion)"
+  ],
+  "Idle_Wait_A": [
+   "strafe idle",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Attack_Hand_Ready": [
+   "strafe idle with a lock-on target"
+  ],
+  "Attack_Hand_Ready_Root": [
+   "strafe idle with a lock-on target (root motion)"
+  ],
+  "Esc_BoostDash_Front": [
+   "RB dash"
+  ],
+  "Esc_BoostDash_Front_Root": [
+   "RB dash (root motion)"
+  ],
+  "Esc_BoostDash_Air_Front": [
+   "RB air dash"
+  ],
+  "Esc_BoostDash_Air_Front_Root": [
+   "RB air dash (root motion)"
+  ],
+  "Mvm_PowerDash_Front": [
+   "RB dash in Flow"
+  ],
+  "Mvm_PowerDash_Front_Root": [
+   "RB dash in Flow (root motion)"
+  ],
+  "Mvm_PWChargeDash_Front": [
+   "RB hold-release charge dash"
+  ],
+  "Mvm_PowerChargeDash_Front_Root": [
+   "RB hold-release charge dash (root motion)"
+  ],
+  "Esc_BoostDash_Front_R45": [
+   "RB dash"
+  ],
+  "Esc_BoostDash_Front_R45_Root": [
+   "RB dash (root motion)"
+  ],
+  "Esc_BoostDash_Air_Front_R45": [
+   "RB air dash"
+  ],
+  "Esc_BoostDash_Air_Front_R45_Root": [
+   "RB air dash (root motion)"
+  ],
+  "Mvm_PowerDash_Front_R45": [
+   "RB dash in Flow"
+  ],
+  "Mvm_PowerDash_Front_R45_Root": [
+   "RB dash in Flow (root motion)"
+  ],
+  "Mvm_PWChargeDash_Front_R45": [
+   "RB hold-release charge dash"
+  ],
+  "Mvm_PowerChargeDash_Front_R45_Root": [
+   "RB hold-release charge dash (root motion)"
+  ],
+  "Esc_BoostDash_Right": [
+   "RB dash"
+  ],
+  "Esc_BoostDash_Right_Root": [
+   "RB dash (root motion)"
+  ],
+  "Esc_BoostDash_Air_Right": [
+   "RB air dash"
+  ],
+  "Esc_BoostDash_Air_Right_Root": [
+   "RB air dash (root motion)"
+  ],
+  "Mvm_PowerDash_Front_R": [
+   "RB dash in Flow"
+  ],
+  "Mvm_PowerDash_Front_R_Root": [
+   "RB dash in Flow (root motion)"
+  ],
+  "Mvm_PWChargeDash_Front_R": [
+   "RB hold-release charge dash"
+  ],
+  "Mvm_PowerChargeDash_Front_R_Root": [
+   "RB hold-release charge dash (root motion)"
+  ],
+  "Esc_BoostDash_Back_R45": [
+   "RB dash"
+  ],
+  "Esc_BoostDash_Back_R45_Root": [
+   "RB dash (root motion)"
+  ],
+  "Esc_BoostDash_Air_Back_R45": [
+   "RB air dash"
+  ],
+  "Esc_BoostDash_Air_Back_R45_Root": [
+   "RB air dash (root motion)"
+  ],
+  "Esc_BoostDash_Back": [
+   "RB dash",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Esc_BoostDash_Back_Root": [
+   "RB dash (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Esc_BoostDash_Air_Back": [
+   "RB air dash"
+  ],
+  "Esc_BoostDash_Air_Back_Root": [
+   "RB air dash (root motion)"
+  ],
+  "Esc_BoostDash_Back_L45": [
+   "RB dash"
+  ],
+  "Esc_BoostDash_Back_L45_Root": [
+   "RB dash (root motion)"
+  ],
+  "Esc_BoostDash_Air_Back_L45": [
+   "RB air dash"
+  ],
+  "Esc_BoostDash_Air_Back_L45_Root": [
+   "RB air dash (root motion)"
+  ],
+  "Esc_BoostDash_Left": [
+   "RB dash"
+  ],
+  "Esc_BoostDash_Left_Root": [
+   "RB dash (root motion)"
+  ],
+  "Esc_BoostDash_Air_Left": [
+   "RB air dash"
+  ],
+  "Esc_BoostDash_Air_Left_Root": [
+   "RB air dash (root motion)"
+  ],
+  "Mvm_PowerDash_Front_L": [
+   "RB dash in Flow"
+  ],
+  "Mvm_PowerDash_Front_L_Root": [
+   "RB dash in Flow (root motion)"
+  ],
+  "Mvm_PWChargeDash_Front_L": [
+   "RB hold-release charge dash"
+  ],
+  "Mvm_PowerChargeDash_Front_L_Root": [
+   "RB hold-release charge dash (root motion)"
+  ],
+  "Esc_BoostDash_Front_L45": [
+   "RB dash"
+  ],
+  "Esc_BoostDash_Front_L45_Root": [
+   "RB dash (root motion)"
+  ],
+  "Esc_BoostDash_Air_Front_L45": [
+   "RB air dash"
+  ],
+  "Esc_BoostDash_Air_Front_L45_Root": [
+   "RB air dash (root motion)"
+  ],
+  "Mvm_PowerDash_Front_L45": [
+   "RB dash in Flow"
+  ],
+  "Mvm_PowerDash_Front_L45_Root": [
+   "RB dash in Flow (root motion)"
+  ],
+  "Mvm_PWChargeDash_Front_L45": [
+   "RB hold-release charge dash"
+  ],
+  "Mvm_PowerChargeDash_Front_L45_Root": [
+   "RB hold-release charge dash (root motion)"
+  ],
+  "Esc_BoostDash_Front_Ad": [
+   "RB double dash"
+  ],
+  "Esc_BoostDash_Front_Ad_Root": [
+   "RB double dash (root motion)"
+  ],
+  "Esc_BoostDash_Air_Front_Ad": [
+   "RB double air dash"
+  ],
+  "Esc_BoostDash_Air_Front_Ad_Root": [
+   "RB double air dash (root motion)"
+  ],
+  "Esc_BoostDash_Back_Ad": [
+   "RB double dash"
+  ],
+  "Esc_BoostDash_Back_Ad_Root": [
+   "RB double dash (root motion)"
+  ],
+  "Esc_BoostDash_Air_Back_Ad": [
+   "RB double air dash"
+  ],
+  "Esc_BoostDash_Air_Back_Ad_Root": [
+   "RB double air dash (root motion)"
+  ],
+  "Esc_BoostDash_Up": [
+   "RB air dash with Jump held"
+  ],
+  "Esc_BoostDash_Up_Root": [
+   "RB air dash with Jump held (root motion)"
+  ],
+  "Esc_BoostDash_Up_Fwd": [
+   "RB air dash with Jump held"
+  ],
+  "Esc_BoostDash_Up_Fwd_Root": [
+   "RB air dash with Jump held (root motion)"
+  ],
+  "Esc_BoostDash_Down": [
+   "RB air dash with LB held"
+  ],
+  "Esc_BoostDash_Down_Root": [
+   "RB air dash with LB held (root motion)"
+  ],
+  "Esc_BoostDash_Down_Fwd": [
+   "RB air dash with LB held"
+  ],
+  "Esc_BoostDash_Down_Fwd_Root": [
+   "RB air dash with LB held (root motion)"
+  ],
+  "Mvm_Wp_ChargeDash": [
+   "RB dash in weapon mode"
+  ],
+  "Mvm_Wp_ChargeDash_Root": [
+   "RB dash in weapon mode (root motion)"
+  ],
+  "Mvm_Wp_ChargeDash_2": [
+   "RB dash in weapon mode"
+  ],
+  "Mvm_Wp_ChargeDash2_Root": [
+   "RB dash in weapon mode (root motion)"
+  ],
+  "Tum_F_HandSpring_Start": [
+   "X tumble"
+  ],
+  "Tum_F_HandSpring_Start_Root": [
+   "X tumble (root motion)"
+  ],
+  "Tum_F_HandSpring_Loop": [
+   "X tumble"
+  ],
+  "Tum_F_HandSpring_Loop_Root": [
+   "X tumble (root motion)"
+  ],
+  "Tum_F_HandSpring_End": [
+   "X tumble"
+  ],
+  "Tum_F_HandSpring_End_Root": [
+   "X tumble (root motion)"
+  ],
+  "Tum_B_HandSpring_Start": [
+   "X tumble"
+  ],
+  "Tum_B_HandSpring_Start_Root": [
+   "X tumble (root motion)"
+  ],
+  "Tum_B_HandSpring_Loop": [
+   "X tumble"
+  ],
+  "Tum_B_HandSpring_Loop_Root": [
+   "X tumble (root motion)"
+  ],
+  "Tum_B_HandSpring_End": [
+   "X tumble"
+  ],
+  "Tum_B_HandSpring_End_Root": [
+   "X tumble (root motion)"
+  ],
+  "Tum_B_HandSpring_Turn_Start": [
+   "X tumble"
+  ],
+  "Tum_B_HandSpring_Turn_Start_Root": [
+   "X tumble (root motion)"
+  ],
+  "Tum_B_HandSpring_Air_End": [
+   "X tumble"
+  ],
+  "Tum_B_HandSpring_Air_End_Root": [
+   "X tumble (root motion)"
+  ],
+  "Tum_B_HandSpring_3Turn_All": [
+   "X tumble"
+  ],
+  "Tum_B_HandSpring_3Turn_All_Root": [
+   "X tumble (root motion)"
+  ],
+  "Tum_B_HandSpring_4Turn_All": [
+   "X tumble"
+  ],
+  "Tum_B_HandSpring_4Turn_All_Root": [
+   "X tumble (root motion)"
+  ],
+  "Tum_RackSpring": [
+   "X tumble"
+  ],
+  "Tum_RackSpring_Root": [
+   "X tumble (root motion)"
+  ],
+  "Tum_RackSpring_BackDown": [
+   "X tumble"
+  ],
+  "Tum_RackSpring_BackDown_Root": [
+   "X tumble (root motion)"
+  ],
+  "Jmp_FrontAir_Roll_Start": [
+   "X air roll"
+  ],
+  "Jmp_FrontAir_Roll_Loop": [
+   "X air roll"
+  ],
+  "Jmp_FrontAir_Roll_End": [
+   "X air roll"
+  ],
+  "Jmp_BackAir_Roll_Start": [
+   "X air roll"
+  ],
+  "Jmp_BackAir_Roll_Loop": [
+   "X air roll"
+  ],
+  "Jmp_BackAir_Roll_End": [
+   "X air roll"
+  ],
+  "WpAttack_Rolling_All": [
+   "X in weapon mode",
+   "weapon-mode heavy strike (counter-launcher)"
+  ],
+  "WpAttack_Rolling_All_Root": [
+   "X in weapon mode (root motion)",
+   "weapon-mode heavy strike (counter-launcher) (root motion)"
+  ],
+  "WpAttack_Rolling": [
+   "X in weapon mode"
+  ],
+  "WpAttack_Rolling_Root": [
+   "X in weapon mode (root motion)"
+  ],
+  "Esc_StandDodge_Left": [
+   "strafe evade"
+  ],
+  "Esc_StandDodge_Left_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_StandMove_Left": [
+   "strafe evade"
+  ],
+  "Esc_StandMove_Left_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_TurnDodge_Left": [
+   "strafe evade"
+  ],
+  "Esc_TurnDodge_Left_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_StandRoll_Left": [
+   "strafe evade"
+  ],
+  "Esc_StandRoll_Left_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_Roll_Left": [
+   "strafe evade",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Esc_Roll_Left_Root": [
+   "strafe evade (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Esc_Dodge_Left": [
+   "strafe evade"
+  ],
+  "Esc_Dodge_Left_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_Move_Left": [
+   "strafe evade"
+  ],
+  "Esc_Move_Left_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_Slide_Left": [
+   "strafe evade"
+  ],
+  "Esc_Slide_Left_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_Roll_Left_Fwd_Root": [
+   "strafe evade at speed"
+  ],
+  "Esc_Dodge_Left_Fwd_Root": [
+   "strafe evade at speed"
+  ],
+  "Esc_Move_Left_Fwd_Root": [
+   "strafe evade at speed"
+  ],
+  "Jmp_TurnAir_Left_Start": [
+   "strafe jump"
+  ],
+  "Jmp_TurnAir_Left_Keep": [
+   "strafe jump"
+  ],
+  "Jmp_TurnAir_Left": [
+   "strafe jump"
+  ],
+  "Jmp_TurnAir_Left_Root": [
+   "strafe jump (root motion)"
+  ],
+  "Jmp_Move_Left_Start": [
+   "strafe jump"
+  ],
+  "Jmp_Move_Left_Keep": [
+   "strafe jump"
+  ],
+  "Jmp_Move_Left": [
+   "strafe jump"
+  ],
+  "Jmp_Move_Left_Root": [
+   "strafe jump (root motion)"
+  ],
+  "Mvm_Walk_Arc_180_Left": [
+   "auto turn"
+  ],
+  "Mvm_Walk_Arc_180_Left_Root": [
+   "auto turn (root motion)"
+  ],
+  "Mvm_Walk_Arc_Fwd_Left": [
+   "auto turn"
+  ],
+  "Mvm_Walk_Arc_Fwd_Left_Root": [
+   "auto turn (root motion)"
+  ],
+  "Mvm_Jog_Arc_90_Left": [
+   "auto 90-degree arc"
+  ],
+  "Mvm_Jog_Arc_90_Left_Root": [
+   "auto 90-degree arc (root motion)"
+  ],
+  "Mvm_Jog_Arc_Fwd_Left": [
+   "auto quick arc"
+  ],
+  "Mvm_Jog_Arc_Fwd_Left_Root": [
+   "auto quick arc (root motion)"
+  ],
+  "Mvm_Dash_Arc_90_Left": [
+   "auto 90-degree arc"
+  ],
+  "Mvm_Dash_Arc_90_Left_Root": [
+   "auto 90-degree arc (root motion)"
+  ],
+  "Mvm_Dash_Arc_Fwd_Left": [
+   "auto quick arc"
+  ],
+  "Mvm_Dash_Arc_Fwd_Left_Root": [
+   "auto quick arc (root motion)"
+  ],
+  "Mvm_Boost_Arc_90_Left": [
+   "auto 90-degree arc"
+  ],
+  "Mvm_Boost_Arc_90_Left_Root": [
+   "auto 90-degree arc (root motion)"
+  ],
+  "Mvm_Boost_Arc_Fwd_Left": [
+   "auto quick arc"
+  ],
+  "Mvm_Boost_Arc_Fwd_Left_Root": [
+   "auto quick arc (root motion)"
+  ],
+  "Mvm_Walk_TurnL_180_Left": [
+   "auto 180-degree turn"
+  ],
+  "Mvm_Walk_TurnL_180_Left_Root": [
+   "auto 180-degree turn (root motion)"
+  ],
+  "Mvm_Walk_TurnR_180_Left": [
+   "auto 180-degree turn"
+  ],
+  "Mvm_Walk_TurnR_180_Left_Root": [
+   "auto 180-degree turn (root motion)"
+  ],
+  "Mvm_Jog_TurnL_180_Left": [
+   "auto 180-degree turn",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Mvm_Jog_TurnL_180_Left_Root": [
+   "auto 180-degree turn (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Mvm_Jog_TurnR_180_Left": [
+   "auto 180-degree turn"
+  ],
+  "Mvm_Jog_TurnR_180_Left_Root": [
+   "auto 180-degree turn (root motion)"
+  ],
+  "Mvm_Dash_TurnL_180_Left": [
+   "auto 180-degree turn"
+  ],
+  "Mvm_Dash_TurnL_180_Left_Root": [
+   "auto 180-degree turn (root motion)"
+  ],
+  "Mvm_Dash_TurnR_180_Left": [
+   "auto 180-degree turn"
+  ],
+  "Mvm_Dash_TurnR_180_Left_Root": [
+   "auto 180-degree turn (root motion)"
+  ],
+  "Mvm_Boost_TurnL_180_Left": [
+   "auto 180-degree turn",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Mvm_Boost_TurnL_180_Left_Root": [
+   "auto 180-degree turn (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Mvm_Boost_TurnR_180_Left": [
+   "auto 180-degree turn"
+  ],
+  "Mvm_Boost_TurnR_180_Left_Root": [
+   "auto 180-degree turn (root motion)"
+  ],
+  "Dam_FlyDie_Left": [
+   "death in the air"
+  ],
+  "Dam_FlyDie_Left_Root": [
+   "death in the air (root motion)"
+  ],
+  "Esc_StandDodge_Right": [
+   "strafe evade"
+  ],
+  "Esc_StandDodge_Right_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_StandMove_Right": [
+   "strafe evade"
+  ],
+  "Esc_StandMove_Right_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_TurnDodge_Right": [
+   "strafe evade"
+  ],
+  "Esc_TurnDodge_Right_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_StandRoll_Right": [
+   "strafe evade"
+  ],
+  "Esc_StandRoll_Right_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_Roll_Right": [
+   "strafe evade",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Esc_Roll_Right_Root": [
+   "strafe evade (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Esc_Dodge_Right": [
+   "strafe evade"
+  ],
+  "Esc_Dodge_Right_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_Move_Right": [
+   "strafe evade"
+  ],
+  "Esc_Move_Right_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_Slide_Right": [
+   "strafe evade"
+  ],
+  "Esc_Slide_Right_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_Roll_Right_Fwd_Root": [
+   "strafe evade at speed"
+  ],
+  "Esc_Dodge_Right_Fwd_Root": [
+   "strafe evade at speed"
+  ],
+  "Esc_Move_Right_Fwd_Root": [
+   "strafe evade at speed"
+  ],
+  "Jmp_TurnAir_Right_Start": [
+   "strafe jump"
+  ],
+  "Jmp_TurnAir_Right_Keep": [
+   "strafe jump"
+  ],
+  "Jmp_TurnAir_Right": [
+   "strafe jump"
+  ],
+  "Jmp_TurnAir_Right_Root": [
+   "strafe jump (root motion)"
+  ],
+  "Jmp_Move_Right_Start": [
+   "strafe jump"
+  ],
+  "Jmp_Move_Right_Keep": [
+   "strafe jump"
+  ],
+  "Jmp_Move_Right": [
+   "strafe jump"
+  ],
+  "Jmp_Move_Right_Root": [
+   "strafe jump (root motion)"
+  ],
+  "Mvm_Walk_Arc_180_Right": [
+   "auto turn"
+  ],
+  "Mvm_Walk_Arc_180_Right_Root": [
+   "auto turn (root motion)"
+  ],
+  "Mvm_Walk_Arc_Fwd_Right": [
+   "auto turn"
+  ],
+  "Mvm_Walk_Arc_Fwd_Right_Root": [
+   "auto turn (root motion)"
+  ],
+  "Mvm_Jog_Arc_90_Right": [
+   "auto 90-degree arc"
+  ],
+  "Mvm_Jog_Arc_90_Right_Root": [
+   "auto 90-degree arc (root motion)"
+  ],
+  "Mvm_Jog_Arc_Fwd_Right": [
+   "auto quick arc"
+  ],
+  "Mvm_Jog_Arc_Fwd_Right_Root": [
+   "auto quick arc (root motion)"
+  ],
+  "Mvm_Dash_Arc_90_Right": [
+   "auto 90-degree arc"
+  ],
+  "Mvm_Dash_Arc_90_Right_Root": [
+   "auto 90-degree arc (root motion)"
+  ],
+  "Mvm_Dash_Arc_Fwd_Right": [
+   "auto quick arc"
+  ],
+  "Mvm_Dash_Arc_Fwd_Right_Root": [
+   "auto quick arc (root motion)"
+  ],
+  "Mvm_Boost_Arc_90_Right": [
+   "auto 90-degree arc"
+  ],
+  "Mvm_Boost_Arc_90_Right_Root": [
+   "auto 90-degree arc (root motion)"
+  ],
+  "Mvm_Boost_Arc_Fwd_Right": [
+   "auto quick arc"
+  ],
+  "Mvm_Boost_Arc_Fwd_Right_Root": [
+   "auto quick arc (root motion)"
+  ],
+  "Mvm_Walk_TurnL_180_Right": [
+   "auto 180-degree turn"
+  ],
+  "Mvm_Walk_TurnL_180_Right_Root": [
+   "auto 180-degree turn (root motion)"
+  ],
+  "Mvm_Walk_TurnR_180_Right": [
+   "auto 180-degree turn"
+  ],
+  "Mvm_Walk_TurnR_180_Right_Root": [
+   "auto 180-degree turn (root motion)"
+  ],
+  "Mvm_Jog_TurnL_180_Right": [
+   "auto 180-degree turn"
+  ],
+  "Mvm_Jog_TurnL_180_Right_Root": [
+   "auto 180-degree turn (root motion)"
+  ],
+  "Mvm_Jog_TurnR_180_Right": [
+   "auto 180-degree turn"
+  ],
+  "Mvm_Jog_TurnR_180_Right_Root": [
+   "auto 180-degree turn (root motion)"
+  ],
+  "Mvm_Dash_TurnL_180_Right": [
+   "auto 180-degree turn"
+  ],
+  "Mvm_Dash_TurnL_180_Right_Root": [
+   "auto 180-degree turn (root motion)"
+  ],
+  "Mvm_Dash_TurnR_180_Right": [
+   "auto 180-degree turn"
+  ],
+  "Mvm_Dash_TurnR_180_Right_Root": [
+   "auto 180-degree turn (root motion)"
+  ],
+  "Mvm_Boost_TurnL_180_Right": [
+   "auto 180-degree turn"
+  ],
+  "Mvm_Boost_TurnL_180_Right_Root": [
+   "auto 180-degree turn (root motion)"
+  ],
+  "Mvm_Boost_TurnR_180_Right": [
+   "auto 180-degree turn"
+  ],
+  "Mvm_Boost_TurnR_180_Right_Root": [
+   "auto 180-degree turn (root motion)"
+  ],
+  "Dam_FlyDie_Right": [
+   "death in the air"
+  ],
+  "Dam_FlyDie_Right_Root": [
+   "death in the air (root motion)"
+  ],
+  "Esc_StandRoll_Front": [
+   "strafe evade"
+  ],
+  "Esc_StandRoll_Front_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_StandRoll_JFront": [
+   "strafe evade"
+  ],
+  "Esc_StandRoll_JFront_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_StandRoll_Back": [
+   "strafe evade"
+  ],
+  "Esc_StandRoll_Back_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_Roll_Front": [
+   "strafe evade",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Esc_Roll_Front_Root": [
+   "strafe evade (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Esc_Roll_JFront": [
+   "strafe evade"
+  ],
+  "Esc_Roll_JFront_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_Roll_Back": [
+   "strafe evade",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Esc_Roll_Back_Root": [
+   "strafe evade (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Esc_Slide_Start": [
+   "strafe evade"
+  ],
+  "Esc_Slide_Start_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_Slide_End": [
+   "strafe evade"
+  ],
+  "Esc_Slide_End_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_Slide_Keep_Short": [
+   "strafe evade"
+  ],
+  "Esc_Slide_Keep_Short_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_Slide_Keep_Middle": [
+   "strafe evade"
+  ],
+  "Esc_Slide_Keep_Middle_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_Slide_Keep_Long": [
+   "strafe evade"
+  ],
+  "Esc_Slide_Keep_Long_Root": [
+   "strafe evade (root motion)"
+  ],
+  "Esc_Slide_Loop_OffHand": [
+   "strafe evade"
+  ],
+  "Jmp_BackAir_Start": [
+   "strafe jump"
+  ],
+  "Jmp_BackAir_Keep": [
+   "strafe jump"
+  ],
+  "Jmp_BackAir": [
+   "strafe jump"
+  ],
+  "Jmp_BackAir_Root": [
+   "strafe jump (root motion)"
+  ],
+  "Jmp_SideAir_C_Start": [
+   "strafe jump"
+  ],
+  "Jmp_SideAir_C_Keep": [
+   "strafe jump"
+  ],
+  "Jmp_SideAir_C": [
+   "strafe jump"
+  ],
+  "Jmp_SideAir_C_Root": [
+   "strafe jump (root motion)"
+  ],
+  "Jmp_Roll_Front_Start": [
+   "strafe jump"
+  ],
+  "Jmp_Roll_Front_Keep": [
+   "strafe jump"
+  ],
+  "Jmp_Roll_Front_End": [
+   "strafe jump"
+  ],
+  "Jmp_Roll_Front": [
+   "strafe jump"
+  ],
+  "Jmp_Roll_Front_Root": [
+   "strafe jump (root motion)"
+  ],
+  "Jmp_FrontAir_A_Start": [
+   "strafe jump"
+  ],
+  "Jmp_FrontAir_A_Keep": [
+   "strafe jump"
+  ],
+  "Jmp_FrontAir_A": [
+   "strafe jump",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Jmp_FrontAir_A_Root": [
+   "strafe jump (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Jmp_FrontAir_B_Start": [
+   "strafe jump"
+  ],
+  "Jmp_FrontAir_B_Keep": [
+   "strafe jump"
+  ],
+  "Jmp_FrontAir_B": [
+   "strafe jump"
+  ],
+  "Jmp_FrontAir_B_Root": [
+   "strafe jump (root motion)"
+  ],
+  "Jmp_Base_A_Start": [
+   "strafe jump"
+  ],
+  "Jmp_Base_A_Keep": [
+   "strafe jump"
+  ],
+  "Jmp_Base_A": [
+   "strafe jump",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Jmp_Base_A_Root": [
+   "strafe jump (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Jmp_Base_B_Start": [
+   "strafe jump"
+  ],
+  "Jmp_Base_B_Keep": [
+   "strafe jump"
+  ],
+  "Jmp_Base_B": [
+   "strafe jump",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Jmp_Base_B_Root": [
+   "strafe jump (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Mvm_Walk_Start_L90": [
+   "auto start"
+  ],
+  "Mvm_Walk_Start_L90_Root": [
+   "auto start (root motion)"
+  ],
+  "Mvm_Walk_Start_R90": [
+   "auto start"
+  ],
+  "Mvm_Walk_Start_R90_Root": [
+   "auto start (root motion)"
+  ],
+  "Mvm_Walk_Start_L180": [
+   "auto start"
+  ],
+  "Mvm_Walk_Start_L180_Root": [
+   "auto start (root motion)"
+  ],
+  "Mvm_Walk_Start_R180": [
+   "auto start"
+  ],
+  "Mvm_Walk_Start_R180_Root": [
+   "auto start (root motion)"
+  ],
+  "Mvm_Jog_Start_L90": [
+   "auto start"
+  ],
+  "Mvm_Jog_Start_L90_Root": [
+   "auto start (root motion)"
+  ],
+  "Mvm_Jog_Start_R90": [
+   "auto start"
+  ],
+  "Mvm_Jog_Start_R90_Root": [
+   "auto start (root motion)"
+  ],
+  "Mvm_Jog_Start_L180": [
+   "auto start",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Mvm_Jog_Start_L180_Root": [
+   "auto start (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Mvm_Jog_Start_R180": [
+   "auto start"
+  ],
+  "Mvm_Jog_Start_R180_Root": [
+   "auto start (root motion)"
+  ],
+  "Mvm_Idle_A_TurnL_90": [
+   "auto idle turn"
+  ],
+  "Mvm_Idle_A_TurnL_90_Root": [
+   "auto idle turn (root motion)"
+  ],
+  "Mvm_Idle_A_TurnL_180": [
+   "auto idle turn"
+  ],
+  "Mvm_Idle_A_TurnL_180_Root": [
+   "auto idle turn (root motion)"
+  ],
+  "Mvm_Idle_A_TurnR_90": [
+   "auto idle turn"
+  ],
+  "Mvm_Idle_A_TurnR_90_Root": [
+   "auto idle turn (root motion)"
+  ],
+  "Mvm_Idle_A_TurnR_180": [
+   "auto idle turn"
+  ],
+  "Mvm_Idle_A_TurnR_180_Root": [
+   "auto idle turn (root motion)"
+  ],
+  "Mvm_Idle_B_TurnL_90": [
+   "auto idle turn"
+  ],
+  "Mvm_Idle_B_TurnL_90_Root": [
+   "auto idle turn (root motion)"
+  ],
+  "Mvm_Idle_B_TurnL_180": [
+   "auto idle turn"
+  ],
+  "Mvm_Idle_B_TurnL_180_Root": [
+   "auto idle turn (root motion)"
+  ],
+  "Mvm_Idle_B_TurnR_90": [
+   "auto idle turn"
+  ],
+  "Mvm_Idle_B_TurnR_90_Root": [
+   "auto idle turn (root motion)"
+  ],
+  "Mvm_Idle_B_TurnR_180": [
+   "auto idle turn"
+  ],
+  "Mvm_Idle_B_TurnR_180_Root": [
+   "auto idle turn (root motion)"
+  ],
+  "Mvm_Idle_C_TurnL_90": [
+   "auto idle turn"
+  ],
+  "Mvm_Idle_C_TurnL_90_Root": [
+   "auto idle turn (root motion)"
+  ],
+  "Mvm_Idle_C_TurnL_180": [
+   "auto idle turn"
+  ],
+  "Mvm_Idle_C_TurnL_180_Root": [
+   "auto idle turn (root motion)"
+  ],
+  "Mvm_Idle_C_TurnR_90": [
+   "auto idle turn"
+  ],
+  "Mvm_Idle_C_TurnR_90_Root": [
+   "auto idle turn (root motion)"
+  ],
+  "Mvm_Idle_C_TurnR_180": [
+   "auto idle turn"
+  ],
+  "Mvm_Idle_C_TurnR_180_Root": [
+   "auto idle turn (root motion)"
+  ],
+  "Mvm_DashEnd_L": [
+   "auto stop"
+  ],
+  "Mvm_DashEnd_L_Root": [
+   "auto stop (root motion)"
+  ],
+  "Mvm_JogEnd_L": [
+   "auto stop"
+  ],
+  "Mvm_JogEnd_L_Root": [
+   "auto stop (root motion)"
+  ],
+  "Mvm_JogEnd_LH": [
+   "auto stop"
+  ],
+  "Mvm_JogEnd_LH_Root": [
+   "auto stop (root motion)"
+  ],
+  "Mvm_WalkEnd_L": [
+   "auto stop"
+  ],
+  "Mvm_WalkEnd_L_Root": [
+   "auto stop (root motion)"
+  ],
+  "Mvm_WalkEnd_LH": [
+   "auto stop"
+  ],
+  "Mvm_WalkEnd_LH_Root": [
+   "auto stop (root motion)"
+  ],
+  "Mvm_DashEnd_R": [
+   "auto stop"
+  ],
+  "Mvm_DashEnd_R_Root": [
+   "auto stop (root motion)"
+  ],
+  "Mvm_JogEnd_R": [
+   "auto stop"
+  ],
+  "Mvm_JogEnd_R_Root": [
+   "auto stop (root motion)"
+  ],
+  "Mvm_JogEnd_RH": [
+   "auto stop"
+  ],
+  "Mvm_JogEnd_RH_Root": [
+   "auto stop (root motion)"
+  ],
+  "Mvm_WalkEnd_R": [
+   "auto stop"
+  ],
+  "Mvm_WalkEnd_R_Root": [
+   "auto stop (root motion)"
+  ],
+  "Mvm_WalkEnd_RH": [
+   "auto stop"
+  ],
+  "Mvm_WalkEnd_RH_Root": [
+   "auto stop (root motion)"
+  ],
+  "Dam_SlideDie": [
+   "death by context"
+  ],
+  "Dam_SlideDie_Root": [
+   "death by context (root motion)"
+  ],
+  "Dam_StandDie": [
+   "death by context"
+  ],
+  "Dam_StandDie_Root": [
+   "death by context (root motion)"
+  ],
+  "Dam_TurnDie": [
+   "death by context"
+  ],
+  "Dam_TurnDie_Root": [
+   "death by context (root motion)"
+  ],
+  "Dam_JumpDie_Over_Start": [
+   "death by context"
+  ],
+  "Dam_JumpDie_Over_Keep": [
+   "death by context"
+  ],
+  "Dam_JumpDie_Over_End": [
+   "death by context"
+  ],
+  "Dam_StandDie_Over_Start": [
+   "death by context"
+  ],
+  "Dam_StandDie_Over_Keep": [
+   "death by context"
+  ],
+  "Dam_StandDie_Over_End": [
+   "death by context"
+  ],
+  "Dam_StandDie_Over2_Start": [
+   "death by context"
+  ],
+  "Dam_StandDie_Over2_Keep": [
+   "death by context"
+  ],
+  "Dam_StandDie_Over2_End": [
+   "death by context"
+  ],
+  "HiWall_LDash_Loop": [
+   "flow role wallRun"
+  ],
+  "HiWall_LDash_Loop_Root": [
+   "flow role wallRun (root motion)"
+  ],
+  "HiWall_LBoost_Loop": [
+   "flow role wallRun"
+  ],
+  "HiWall_LBoost_Loop_Root": [
+   "flow role wallRun (root motion)"
+  ],
+  "LoWall_LDash_Loop": [
+   "flow role wallRun",
+   "role mapping of the Loadout Runner build"
+  ],
+  "LoWall_LDash_Loop_Root": [
+   "flow role wallRun (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "LoWall_LBoost_Loop": [
+   "flow role wallRun"
+  ],
+  "LoWall_LBoost_Loop_Root": [
+   "flow role wallRun (root motion)"
+  ],
+  "HiWall_RDash_Loop": [
+   "flow role wallRun"
+  ],
+  "HiWall_RDash_Loop_Root": [
+   "flow role wallRun (root motion)"
+  ],
+  "HiWall_RBoost_Loop": [
+   "flow role wallRun"
+  ],
+  "HiWall_RBoost_Loop_Root": [
+   "flow role wallRun (root motion)"
+  ],
+  "LoWall_RDash_Loop": [
+   "flow role wallRun",
+   "role mapping of the Loadout Runner build"
+  ],
+  "LoWall_RDash_Loop_Root": [
+   "flow role wallRun (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "LoWall_RBoost_Loop": [
+   "flow role wallRun"
+  ],
+  "LoWall_RBoost_Loop_Root": [
+   "flow role wallRun (root motion)"
+  ],
+  "Wall_Vertical_Dash_Loop": [
+   "flow role wallClimb",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Wall_Vertical_Dash_Loop_Root": [
+   "flow role wallClimb (root motion)",
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Wall_Vertical_Boost_Loop": [
+   "flow role wallClimb"
+  ],
+  "Wall_Vertical_Boost_Loop_Root": [
+   "flow role wallClimb (root motion)"
+  ],
+  "Wall_Jump_Turn_Air_L": [
+   "flow role wallKick",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Wall_Jump_Cross_Air_L": [
+   "flow role wallFlip",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Wall_Jump_Turn_Air_R": [
+   "flow role wallKick",
+   "role mapping of the Loadout Runner build"
+  ],
+  "Wall_Jump_Cross_Air_R": [
+   "flow role wallFlip"
+  ],
+  "Idle_Wait_B": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Idle_Wait_C": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Jump_Down_A_Loop": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Land_Base_Wait": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Land_Base_Wait_Root": [
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Land_Base_Move": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Land_Base_Move_Root": [
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Land_Stumble_Move": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Land_Stumble_Move_Root": [
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Land_Spawn_Wait": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Land_Spawn_Wait_Root": [
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Land_Roll_Move": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Land_Roll_Move_Root": [
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Jmp_FrontAir_Roll_All": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Jmp_BackAir_Roll_All": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Jmp_SideAir_A": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Jmp_SideAir_A_Root": [
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Jmp_SideAir_B": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Jmp_SideAir_B_Root": [
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Esc_Slide_All": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Esc_Slide_All_Root": [
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Wall_Vertical_Boost": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Wall_Vertical_Boost_Root": [
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Dam_Stand_Stumble": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Dam_Stand_Stumble_Root": [
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Attack_Hand_1R": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Attack_Hand_1R_Root": [
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Attack_Hand_2L": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Attack_Hand_2L_Root": [
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Attack_Hand_PwR": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Attack_Hand_PwR_Root": [
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Attack_Kick_A": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Attack_Kick_A_Root": [
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Attack_Kick_B": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Attack_Kick_B_Root": [
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Attack_Kick_C": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "Attack_Kick_C_Root": [
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "JAttack_AirFront": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "JAttack_AirFront_Root": [
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "JAttack_AirDrop_All": [
+   "role mapping of the Loadout Runner build"
+  ],
+  "JAttack_AirDrop_All_Root": [
+   "role mapping of the Loadout Runner build (root motion)"
+  ],
+  "Esc_Spawn": [
+   "respawn"
+  ],
+  "Esc_Spawn_Root": [
+   "respawn (root motion)"
+  ],
+  "Dam_StandUp": [
+   "stand-up after a death"
+  ],
+  "WpAttack_Hand_1R": [
+   "weapon-mode ground strike (flow-light-1)",
+   "weapon-mode ground strike (flow-counter-2)",
+   "weapon-mode ground strike (impact-light-1)",
+   "weapon-mode ground strike (impact-light-5)",
+   "weapon-mode ground strike (counter-counter-1)",
+   "weapon-mode ground strike (counter-light-6)",
+   "weapon-mode ground strike (counter-light-7)"
+  ],
+  "WpAttack_Hand_1R_Root": [
+   "weapon-mode ground strike (flow-light-1) (root motion)",
+   "weapon-mode ground strike (flow-counter-2) (root motion)",
+   "weapon-mode ground strike (impact-light-1) (root motion)",
+   "weapon-mode ground strike (impact-light-5) (root motion)",
+   "weapon-mode ground strike (counter-counter-1) (root motion)",
+   "weapon-mode ground strike (counter-light-6) (root motion)",
+   "weapon-mode ground strike (counter-light-7) (root motion)"
+  ],
+  "WpAttack_Hand_2L": [
+   "weapon-mode ground strike (flow-light-2)",
+   "weapon-mode ground strike (flow-light-5)",
+   "weapon-mode ground strike (impact-light-2)",
+   "weapon-mode ground strike (counter-left)",
+   "weapon-mode ground strike (counter-counter-2)"
+  ],
+  "WpAttack_Hand_2L_Root": [
+   "weapon-mode ground strike (flow-light-2) (root motion)",
+   "weapon-mode ground strike (flow-light-5) (root motion)",
+   "weapon-mode ground strike (impact-light-2) (root motion)",
+   "weapon-mode ground strike (counter-left) (root motion)",
+   "weapon-mode ground strike (counter-counter-2) (root motion)"
+  ],
+  "WpAttack_Hand_All": [
+   "weapon-mode ground strike (flow-counter-1)",
+   "weapon-mode ground strike (impact-light-3)",
+   "weapon-mode ground strike (impact-light-4)",
+   "weapon-mode ground strike (counter-right)",
+   "weapon-mode ground strike (counter-light-5)"
+  ],
+  "WpAttack_Hand_All_Root": [
+   "weapon-mode ground strike (flow-counter-1) (root motion)",
+   "weapon-mode ground strike (impact-light-3) (root motion)",
+   "weapon-mode ground strike (impact-light-4) (root motion)",
+   "weapon-mode ground strike (counter-right) (root motion)",
+   "weapon-mode ground strike (counter-light-5) (root motion)"
+  ],
+  "WpAttack_Hand_PwR": [
+   "weapon-mode heavy strike (impact-heavy)",
+   "weapon-mode heavy strike (counter-heavy)"
+  ],
+  "WpAttack_Hand_PwR_Root": [
+   "weapon-mode heavy strike (impact-heavy) (root motion)",
+   "weapon-mode heavy strike (counter-heavy) (root motion)"
+  ],
+  "WpJAttack_AirSwing_All": [
+   "weapon-mode air strike (impact-air-finisher)",
+   "weapon-mode air strike (counter-air-finisher)"
+  ],
+  "WpJAttack_AirSwing_All_Root": [
+   "weapon-mode air strike (impact-air-finisher) (root motion)",
+   "weapon-mode air strike (counter-air-finisher) (root motion)"
+  ],
+  "WpJAttack_AirDrop_All": [
+   "weapon-mode air strike (counter-air-light)"
+  ],
+  "WpJAttack_AirDrop_All_Root": [
+   "weapon-mode air strike (counter-air-light) (root motion)"
+  ]
+ },
+ "coordinator": {
+  "frame": 68188,
+  "owner": "ordinary",
+  "reason": null,
+  "conflicts": 0,
+  "commits": 1
+ },
+ "checks": [
+  {
+   "name": "catalog: 872 clips (484 in-place, 388 root) converted and decodable",
+   "status": "PASS",
+   "counts": {
+    "clips": 872,
+    "inPlace": 484,
+    "root": 388,
+    "poseShared": 234,
+    "withRootMotion": 444
+   },
+   "bad": [],
+   "frames": 27878
+  },
+  {
+   "name": "pace: run is Mvm_Dash at its own speed, rate 1",
+   "status": "PASS",
+   "speed": 8.154,
+   "expected": 8.154,
+   "anims": [
+    "rf-Mvm_Jog_Start_Fwd_Root",
+    "rf-Mvm_Jog",
+    "rf-Mvm_Walk",
+    "rf-Mvm_Dash"
+   ]
+  },
+  {
+   "name": "pace: light stick is Mvm_Walk at its own speed, rate 1",
+   "status": "PASS",
+   "speed": 2.129,
+   "expected": 2.129,
+   "anims": [
+    "rf-Mvm_Walk_Start_Fwd_Root",
+    "rf-Mvm_Walk",
+    "action-v2-mx-flow-stance"
+   ]
+  },
+  {
+   "name": "pace: Flow sprint is Mvm_Boost at its own speed, rate 1",
+   "status": "PASS",
+   "speed": 10.853,
+   "expected": 10.853,
+   "anims": [
+    "rf-Mvm_Jog_Start_Fwd_Root",
+    "rf-Mvm_Jog",
+    "runner-relaxedIdle-variants",
+    "rf-Mvm_Walk",
+    "rf-Mvm_Dash",
+    "rf-Mvm_Boost"
+   ]
+  },
+  {
+   "name": "auto start: Mvm_Jog_Start_Fwd with root motion",
+   "status": "PASS",
+   "acts": [
+    "Mvm_Jog_Start_Fwd_Root"
+   ]
+  },
+  {
+   "name": "auto stop: a Dash end clip brings him to rest",
+   "status": "PASS",
+   "acts": [
+    "Mvm_DashEnd_L_Root"
+   ],
+   "endSpeed": 0
+  },
+  {
+   "name": "auto idle turn: light stick to the side turns him in place",
+   "status": "PASS",
+   "acts": [
+    "Mvm_Idle_C_TurnR_90_Root"
+   ],
+   "moved": 0.5477336363636363
+  },
+  {
+   "name": "auto turning start: stick behind plays a 180 start",
+   "status": "PASS",
+   "acts": [
+    "Mvm_Jog_Start_R180_Root"
+   ]
+  },
+  {
+   "name": "auto 180 turn while running (Dash pace)",
+   "status": "PASS",
+   "acts": [
+    "Mvm_Dash_TurnR_180_Left_Root"
+   ]
+  },
+  {
+   "name": "auto 90-degree arc while running",
+   "status": "PASS",
+   "acts": [
+    "Mvm_Dash_Arc_90_Right_Root"
+   ]
+  },
+  {
+   "name": "E dash, no stick: Esc_BoostDash_Back with its root travel",
+   "status": "PASS",
+   "moved": 4.85815011346912,
+   "expected": 4.83
+  },
+  {
+   "name": "RB dash follows the stick in 8 directions",
+   "status": "PASS",
+   "dashDirs": {
+    "Right": [
+     "Esc_BoostDash_Right_Root"
+    ],
+    "Front_L45": [
+     "Esc_BoostDash_Front_L45_Root"
+    ],
+    "Left": [
+     "Esc_BoostDash_Left_Root"
+    ],
+    "Back_R45": [
+     "Esc_BoostDash_Back_R45_Root"
+    ]
+   }
+  },
+  {
+   "name": "RB hold then release: power charge dash",
+   "status": "PASS",
+   "acts": [
+    "Mvm_PowerChargeDash_Front_Root"
+   ]
+  },
+  {
+   "name": "E in Flow sprint: power dash",
+   "status": "PASS",
+   "acts": [
+    "Mvm_PowerDash_Front_Root"
+   ]
+  },
+  {
+   "name": "E in the air: 8-way air dash",
+   "status": "PASS",
+   "acts": [
+    "Esc_BoostDash_Air_Back_Root"
+   ]
+  },
+  {
+   "name": "E in the air with Jump held: upward boost dash lifts the capsule",
+   "status": "PASS",
+   "acts": [
+    "Esc_BoostDash_Up_Root"
+   ],
+   "peak": 6.05
+  },
+  {
+   "name": "X tumble: front handspring start and end (tap)",
+   "status": "PASS",
+   "acts": [
+    "Tum_F_HandSpring_Start_Root",
+    "Tum_F_HandSpring_End_Root"
+   ]
+  },
+  {
+   "name": "X held: handspring keeps springing (loop) then ends",
+   "status": "PASS",
+   "acts": [
+    "Tum_F_HandSpring_Start_Root",
+    "Tum_F_HandSpring_Loop_Root",
+    "Tum_F_HandSpring_End_Root"
+   ]
+  },
+  {
+   "name": "R with stick back: back handspring",
+   "status": "PASS",
+   "acts": [
+    "Tum_B_HandSpring_Start_Root",
+    "Tum_B_HandSpring_End_Root",
+    "Mvm_Jog_Start_Fwd_Root"
+   ]
+  },
+  {
+   "name": "R in the air: front air roll over the physics jump",
+   "status": "PASS",
+   "overlays": [
+    "Jmp_FrontAir_Roll_Start",
+    "Jmp_FrontAir_Roll_Loop",
+    "Jmp_FrontAir_Roll_End"
+   ]
+  },
+  {
+   "name": "Tab strafe: right, left, back and forward loops, facing the camera",
+   "status": "PASS",
+   "sdirs": {
+    "Front_R": {
+     "loops": [
+      "Mvm_Jog_Front_R"
+     ],
+     "acts": [
+      "Mvm_Jog_Front_R_Start_Root",
+      "Mvm_JogStop_Front_R_Root"
+     ],
+     "yawDrift": 0
+    },
+    "Front_L": {
+     "loops": [
+      "Mvm_Jog_Front_L"
+     ],
+     "acts": [
+      "Mvm_Jog_Front_L_Start_Root",
+      "Mvm_JogStop_Front_L_Root"
+     ],
+     "yawDrift": 0
+    },
+    "Back": {
+     "loops": [
+      "Mvm_Jog_Back"
+     ],
+     "acts": [
+      "Mvm_Jog_Start_Bwd_Root",
+      "Mvm_JogStop_Back_Root"
+     ],
+     "yawDrift": 0
+    },
+    "Fwd": {
+     "loops": [
+      "Mvm_Jog"
+     ],
+     "acts": [
+      "Mvm_Jog_Start_Fwd_Root",
+      "Mvm_JogStop_Root"
+     ],
+     "yawDrift": 0
+    }
+   }
+  },
+  {
+   "name": "strafe starts and stops by direction",
+   "status": "PASS",
+   "right": [
+    "Mvm_Jog_Front_R_Start_Root",
+    "Mvm_JogStop_Front_R_Root"
+   ],
+   "back": [
+    "Mvm_Jog_Start_Bwd_Root",
+    "Mvm_JogStop_Back_Root"
+   ]
+  },
+  {
+   "name": "LB strafe tiers: light stick walk loop, RB held charge-dash loop",
+   "status": "PASS",
+   "walk": [
+    "Mvm_Walk_Front_R"
+   ],
+   "charge": [
+    "Mvm_Jog_Front_R",
+    "Mvm_ChargeDash_Front_R"
+   ]
+  },
+  {
+   "name": "LB strafe in Flow: dash loop then boost loop at their own speeds",
+   "status": "PASS",
+   "loops": [
+    "Mvm_Dash",
+    "Mvm_Boost"
+   ],
+   "peak": 10.852989820833681
+  },
+  {
+   "name": "strafe evades: side-step, stand roll, dodge, roll",
+   "status": "PASS",
+   "evades": {
+    "stand-right": [
+     "Esc_StandDodge_Right_Root",
+     "Mvm_Jog_Front_R_Start_Root"
+    ],
+    "stand-back": [
+     "Esc_StandRoll_Back_Root",
+     "Mvm_Jog_Front_R45_Start_Root"
+    ],
+    "move-right": [
+     "Esc_Dodge_Right_Root",
+     "Mvm_Jog_Front_R_Start_Root"
+    ],
+    "move-fwd": [
+     "Esc_Roll_Front_Root",
+     "Mvm_Jog_Start_Fwd_Root"
+    ]
+   }
+  },
+  {
+   "name": "strafe evade in Flow at speed: slide start, keep, end",
+   "status": "PASS",
+   "acts": [
+    "Esc_Slide_Start_Root",
+    "Esc_Slide_Keep_Long_Root",
+    "Esc_Slide_End_Root"
+   ]
+  },
+  {
+   "name": "strafe jump to the side: Runner side jump over the physics jump",
+   "status": "PASS",
+   "overlays": [
+    "Jmp_Move_Right_Start",
+    "Jmp_Move_Right_Keep"
+   ]
+  },
+  {
+   "name": "dash into a wall: blocked at the wall, never through it",
+   "status": "PASS",
+   "minZ": 9.9115,
+   "wallFace": 8.05
+  },
+  {
+   "name": "dash off a ledge: handed to physics, falls and lands",
+   "status": "PASS",
+   "ledgeHandoffs": 1,
+   "endY": 0.42
+  },
+  {
+   "name": "contact correction never above 12 cm",
+   "status": "PASS",
+   "maxCorrection": 0,
+   "corrections": 0
+  },
+  {
+   "name": "wall runs: Runner wall loop on the wall's side, leaning away from the wall, both directions",
+   "status": "PASS",
+   "walls": {
+    "right": {
+     "lean": [
+      {
+       "anim": "rf-LoWall_LDash_Loop",
+       "headRight": 0.068,
+       "wallRight": -0.999,
+       "yaw": -1.52
+      },
+      {
+       "anim": "rf-LoWall_LDash_Loop",
+       "headRight": 0.07,
+       "wallRight": -0.989,
+       "yaw": -1.42
+      },
+      {
+       "anim": "rf-LoWall_LDash_Loop",
+       "headRight": 0.07,
+       "wallRight": -0.968,
+       "yaw": -1.32
+      },
+      {
+       "anim": "rf-LoWall_LDash_Loop",
+       "headRight": 0.067,
+       "wallRight": -0.944,
+       "yaw": -1.23
+      },
+      {
+       "anim": "rf-LoWall_LDash_Loop",
+       "headRight": 0.068,
+       "wallRight": -0.925,
+       "yaw": -1.18
+      },
+      {
+       "anim": "rf-LoWall_LDash_Loop",
+       "headRight": 0.07,
+       "wallRight": -0.921,
+       "yaw": -1.17
+      },
+      {
+       "anim": "rf-LoWall_LDash_Loop",
+       "headRight": 0.077,
+       "wallRight": -0.939,
+       "yaw": -1.22
+      },
+      {
+       "anim": "rf-LoWall_LDash_Loop",
+       "headRight": 0.08,
+       "wallRight": -0.966,
+       "yaw": -1.31
+      },
+      {
+       "anim": "rf-LoWall_LDash_Loop",
+       "headRight": 0.08,
+       "wallRight": -0.981,
+       "yaw": -1.38
+      },
+      {
+       "anim": "rf-LoWall_LDash_Loop",
+       "headRight": 0.081,
+       "wallRight": -0.99,
+       "yaw": -1.43
+      },
+      {
+       "anim": "rf-LoWall_LDash_Loop",
+       "headRight": 0.081,
+       "wallRight": -0.994,
+       "yaw": -1.46
+      },
+      {
+       "anim": "rf-LoWall_LDash_Loop",
+       "headRight": 0.083,
+       "wallRight": -0.997,
+       "yaw": -1.49
+      },
+      {
+       "anim": "rf-LoWall_LDash_Loop",
+       "headRight": 0.085,
+       "wallRight": -0.998,
+       "yaw": -1.51
+      },
+      {
+       "anim": "rf-LoWall_LDash_Loop",
+       "headRight": 0.088,
+       "wallRight": -0.999,
+       "yaw": -1.53
+      },
+      {
+       "anim": "rf-LoWall_LDash_Loop",
+       "headRight": 0.091,
+       "wallRight": -0.999,
+       "yaw": -1.54
+      }
+     ],
+     "anims": [
+      "rf-Wall_Vertical_Dash_Loop",
+      "rf-LoWall_LDash_Loop"
+     ],
+     "sound": true
+    },
+    "left": {
+     "lean": [
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.13,
+       "wallRight": 0.998,
+       "yaw": 1.51
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.128,
+       "wallRight": 0.985,
+       "yaw": 1.4
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.112,
+       "wallRight": 0.961,
+       "yaw": 1.29
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.086,
+       "wallRight": 0.934,
+       "yaw": 1.21
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.069,
+       "wallRight": 0.916,
+       "yaw": 1.16
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.069,
+       "wallRight": 0.915,
+       "yaw": 1.15
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.103,
+       "wallRight": 0.935,
+       "yaw": 1.21
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.099,
+       "wallRight": 0.964,
+       "yaw": 1.3
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.094,
+       "wallRight": 0.98,
+       "yaw": 1.37
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.091,
+       "wallRight": 0.989,
+       "yaw": 1.42
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.089,
+       "wallRight": 0.994,
+       "yaw": 1.46
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.089,
+       "wallRight": 0.997,
+       "yaw": 1.49
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.09,
+       "wallRight": 0.998,
+       "yaw": 1.51
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.092,
+       "wallRight": 0.999,
+       "yaw": 1.53
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.094,
+       "wallRight": 0.999,
+       "yaw": 1.54
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.097,
+       "wallRight": 1,
+       "yaw": 1.55
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.099,
+       "wallRight": 1,
+       "yaw": 1.55
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.101,
+       "wallRight": 1,
+       "yaw": 1.56
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.103,
+       "wallRight": 1,
+       "yaw": 1.56
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.104,
+       "wallRight": 1,
+       "yaw": 1.56
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.104,
+       "wallRight": 1,
+       "yaw": 1.57
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.103,
+       "wallRight": 1,
+       "yaw": 1.57
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.102,
+       "wallRight": 1,
+       "yaw": 1.57
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.1,
+       "wallRight": 1,
+       "yaw": 1.57
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.098,
+       "wallRight": 1,
+       "yaw": 1.57
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.096,
+       "wallRight": 1,
+       "yaw": 1.57
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.093,
+       "wallRight": 1,
+       "yaw": 1.57
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.09,
+       "wallRight": 1,
+       "yaw": 1.57
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.087,
+       "wallRight": 1,
+       "yaw": 1.57
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.084,
+       "wallRight": 1,
+       "yaw": 1.57
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.082,
+       "wallRight": 1,
+       "yaw": 1.57
+      },
+      {
+       "anim": "rf-LoWall_RDash_Loop",
+       "headRight": -0.08,
+       "wallRight": 1,
+       "yaw": 1.57
+      }
+     ],
+     "anims": [
+      "rf-Wall_Vertical_Dash_Loop",
+      "rf-LoWall_RDash_Loop"
+     ],
+     "sound": true
+    }
+   }
+  },
+  {
+   "name": "G weapon mode: staff in hand, E is the weapon dash",
+   "status": "PASS",
+   "acts": [
+    "Mvm_Wp_ChargeDash_Root"
+   ],
+   "windows": 23
+  },
+  {
+   "name": "weapon mode RT chain: weapon clips on the combat moves, hits connect",
+   "status": "PASS",
+   "strikeClips": [
+    "action-v2-mx-flow-light-1"
+   ],
+   "hits": 8,
+   "moves": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "name": "G again: weapon off, staff hidden",
+   "status": "PASS",
+   "on": false,
+   "staff": false
+  },
+  {
+   "name": "death while running plays a Runner death; respawn stands him up",
+   "status": "PASS",
+   "death": [
+    "Dam_StandDie_Root"
+   ],
+   "up": [
+    "Dam_StandUp"
+   ]
+  },
+  {
+   "name": "Move List: Perform plays the chosen clip in play",
+   "status": "PASS",
+   "acts": [
+    "Esc_Spawn",
+    "Tum_B_HandSpring_4Turn_All_Root"
+   ],
+   "unclear": 0,
+   "conflicts": 0,
+   "nonFinite": 0,
+   "notRate1": []
+  },
+  {
+   "name": "every one of the 872 clips performs through the Move List (M / .)",
+   "status": "PASS",
+   "performed": 872,
+   "notPerformed": []
+  },
+  {
+   "name": "every performed clip plays at rate 1 (the pack video speed)",
+   "status": "PASS",
+   "notRate1": []
+  },
+  {
+   "name": "every performed clip keeps the capsule clear, finite and conflict-free",
+   "status": "PASS",
+   "unsound": []
+  },
+  {
+   "name": "root-motion clips travel their own distance in the open plaza (within 15% / 0.35 m)",
+   "status": "PASS",
+   "mismatches": 0,
+   "examples": []
+  },
+  {
+   "name": "Backspool control: no Runner-full actions, his own clips, E is still his Drive",
+   "status": "PASS",
+   "anims": [
+    "forspoken-v17-moveStart",
+    "traversal-locomotion-fastRun"
+   ],
+   "unclear": 0,
+   "conflicts": 0,
+   "nonFinite": 0,
+   "notRate1": []
+  },
+  {
+   "name": "no page errors",
+   "status": "PASS",
+   "errors": []
+  }
+ ],
+ "pass": 42,
+ "fail": 0
+}
