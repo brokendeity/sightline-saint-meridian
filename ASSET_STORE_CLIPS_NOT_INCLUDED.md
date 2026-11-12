@@ -10,8 +10,10 @@ left out on purpose. These files exist only in the local working copy:
 
 What this means for a checkout of this branch:
 
-- Builds from `…V02_LOADOUT_RUNNER.html` onward ask for those files. Without them the Loadout hero's Runner Action
-  animations and his weapon clips cannot load. How those builds behave without the files is NOT TESTED.
+- Builds from `…V02_LOADOUT_RUNNER.html` onward ask for those files. Checked on the P10C build with the eight files
+  answered as "not found" (real keys, 2026-11-12): the game starts and Sightline runs normally; choosing Loadout in the
+  Hero tab does not complete ("Loadout runner asset unavailable"), so Loadout, his Runner Action animations and his
+  weapon clips are not playable from this branch alone. Other builds and Backspool were NOT TESTED in this state.
 - Backspool, Sightline, the city and the missions do not use these files.
 - To get the full game, copy the eight files above into the same paths from the local working copy.
 
