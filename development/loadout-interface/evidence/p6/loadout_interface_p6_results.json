@@ -1,0 +1,553 @@
+{
+ "build": "SIGHTLINE_SAINT_MERIDIAN_V02_LOADOUT_INTERFACE_P6.html",
+ "date": "2026-11-11T21:46:57.924Z",
+ "results": [
+  {
+   "name": "HUD shows the selected socket (01 BATON) and how to use it",
+   "result": "PASS",
+   "info": "REGISTERED GEAR · X USE · HOLD BELT01 BATON · STOWED · 12/12IN HAND · —"
+  },
+  {
+   "name": "X tap: quick retrieval draws the selected baton",
+   "result": "PASS",
+   "info": {
+    "baton": true
+   }
+  },
+  {
+   "name": "X tap again stows it",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "X hold: the belt carousel opens and the camera lowers to his waist",
+   "result": "PASS",
+   "info": {
+    "open": true,
+    "blend": 1,
+    "cam": [
+     3.87,
+     2.24
+    ]
+   }
+  },
+  {
+   "name": "7 sockets are shown around the belt with their state",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "W while the carousel is open does not move him",
+   "result": "PASS",
+   "info": {
+    "moved": 0
+   }
+  },
+  {
+   "name": "D steps the selection (→ 03 medical kit)",
+   "result": "PASS",
+   "info": {
+    "sel": "medkit"
+   }
+  },
+  {
+   "name": "RMB cancels: closed, nothing used",
+   "result": "PASS",
+   "info": {
+    "med": 4
+   }
+  },
+  {
+   "name": "the camera returns after closing",
+   "result": "PASS",
+   "info": {
+    "cam": 3.44
+   }
+  },
+  {
+   "name": "grapnel fires at a wall: the cable is strung and stays (HUD says DEPLOYED)",
+   "result": "PASS",
+   "info": {
+    "face": {
+     "d": 2.370119513268687,
+     "a": 270
+    },
+    "grapnel": {
+     "state": "deployed",
+     "anchor": [
+      56.79,
+      0.817,
+      208.498
+     ],
+     "spool": [
+      55,
+      0.02,
+      210
+     ]
+    }
+   }
+  },
+  {
+   "name": "standing at the spool, X reels it back in (1.2 s)",
+   "result": "PASS",
+   "info": {
+    "grapnel": "stowed"
+   }
+  },
+  {
+   "name": "away from the spool it cannot be recovered: the cable stays connected",
+   "result": "PASS",
+   "info": {
+    "anch": true,
+    "state": "deployed"
+   }
+  },
+  {
+   "name": "the construct walking through the low cable trips and goes down",
+   "result": "PASS",
+   "info": {
+    "phase": "recover",
+    "down": 1.39
+   }
+  },
+  {
+   "name": "it trips only once on the same cable (then steps over it)",
+   "result": "PASS",
+   "info": {
+    "trips": [
+     "TRIP LINE · the construct went down on the grapnel cable · 1.4 s",
+     "The construct steps over the cable now · it learned it"
+    ]
+   }
+  },
+  {
+   "name": "while the carousel is open the construct runs at half speed (the world clock does not)",
+   "result": "PASS",
+   "info": {
+    "ratio": 0.499
+   }
+  },
+  {
+   "name": "releasing on C1 throws a smoke capsule (2 → 1) and the cloud blinds the construct",
+   "result": "PASS",
+   "info": {
+    "smoke": 1,
+    "clouds": 1,
+    "blind": true
+   }
+  },
+  {
+   "name": "inside the smoke it starts no attack",
+   "result": "PASS",
+   "info": {
+    "windups": 0
+   }
+  },
+  {
+   "name": "a hit interrupts the treatment and no dose is used",
+   "result": "PASS",
+   "info": {
+    "med": 4,
+    "act": null,
+    "log": [
+     "Medical kit · treating · 2.4 s, exposed",
+     "Legs → Sweep → Balance · Legs 90%",
+     "COUNTER / BOX — 2 FORMS COMPROMISED · B: Status",
+     "Hit · Low sweep · −9 HP",
+     "Treatment interrupted · no dose used",
+     "Hit · Lead jab · −7 HP"
+    ],
+    "c": {
+     "hp": 300,
+     "phase": "ready",
+     "attack": "jab",
+     "clinch": 0,
+     "down": 0,
+     "seen": {
+      "jab": 0,
+      "overhead": 0,
+      "sweep": 0,
+      "grab": 0
+     },
+     "jabCounterReady": false,
+     "pos": [
+      55.1,
+      0,
+      200.34
+     ],
+     "dist": 1.65
+    }
+   }
+  },
+  {
+   "name": "an uninterrupted treatment uses one dose and treats the worst part (+25)",
+   "result": "PASS",
+   "info": {
+    "med": [
+     4,
+     3
+    ],
+    "worst": "rightArm",
+    "before": 60,
+    "log": [
+     "Treated · Right forearm 60% → 85% · +15 HP · 3 doses left"
+    ]
+   }
+  },
+  {
+   "name": "the rescue cutter lies near the trapped worker (located, not registered)",
+   "result": "PASS",
+   "info": {
+    "cutter": {
+     "state": "field",
+     "rescues": 0,
+     "out": false
+    }
+   }
+  },
+  {
+   "name": "I picks it up: carried in hand, not registered",
+   "result": "PASS",
+   "info": {
+    "cutter": {
+     "state": "carried",
+     "rescues": 0,
+     "out": false
+    }
+   }
+  },
+  {
+   "name": "with the cutter in hand the baton cannot be drawn (hands full)",
+   "result": "PASS",
+   "info": {
+    "baton": false
+   }
+  },
+  {
+   "name": "carried, it frees the worker faster (< 1.2 s; 1.5 s without) and counts 1/2",
+   "result": "PASS",
+   "info": {
+    "ms": 619,
+    "rescues": 1,
+    "worker": {
+     "heard": true,
+     "freed": true,
+     "progress": 1.01,
+     "near": false
+    },
+    "outcome": "active",
+    "hp": 60,
+    "ui": null,
+    "inv": false
+   }
+  },
+  {
+   "name": "the unregistered cutter is still carried in the next encounter (no new one is placed)",
+   "result": "PASS",
+   "info": {
+    "cutter": "carried"
+   }
+  },
+  {
+   "name": "a second rescue with it registers it into socket 04",
+   "result": "PASS",
+   "info": {
+    "cutter": {
+     "state": "registered",
+     "rescues": 2,
+     "out": false
+    }
+   }
+  },
+  {
+   "name": "now X retrieves it from socket 04",
+   "result": "PASS",
+   "info": {
+    "cutter": {
+     "state": "registered",
+     "rescues": 2,
+     "out": true
+    }
+   }
+  },
+  {
+   "name": "SHOP restocks a smoke capsule (bought, not made)",
+   "result": "PASS",
+   "info": {
+    "smoke": 2,
+    "credits": 75
+   }
+  },
+  {
+   "name": "SHOP refills the medical kit to 4 doses",
+   "result": "PASS",
+   "info": {
+    "med": 4
+   }
+  },
+  {
+   "name": "INVENTORY page shows all sockets with their real state",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "after a reload the deployed cable, doses, capsules and registration persist",
+   "result": "PASS",
+   "info": {
+    "inv": {
+     "g": "deployed",
+     "cable": true,
+     "med": 4,
+     "smoke": 2,
+     "cutter": "registered"
+    }
+   }
+  },
+  {
+   "name": "pad: hold D-left opens the carousel",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "pad: RB steps the selection",
+   "result": "PASS",
+   "info": {
+    "sel": [
+     3,
+     4
+    ]
+   }
+  },
+  {
+   "name": "pad: B cancels without using anything (and D-left release does nothing)",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "pad: releasing D-left uses the selected item (cutter in / out of socket 04)",
+   "result": "PASS",
+   "info": {
+    "sel": "cutter",
+    "act": "cutter",
+    "out": false
+   }
+  },
+  {
+   "name": "pad: D-left tap uses it again (quick retrieval)",
+   "result": "PASS",
+   "info": {
+    "out": [
+     false,
+     true
+    ]
+   }
+  },
+  {
+   "name": "no page errors",
+   "result": "PASS",
+   "info": []
+  }
+ ],
+ "final": {
+  "active": true,
+  "hp": 100,
+  "mp": 100,
+  "sta": 100,
+  "body": {
+   "rightArm": 100,
+   "leftArm": 100,
+   "legs": 100,
+   "torso": 100
+  },
+  "loadout": "box",
+  "swap": null,
+  "wheel": false,
+  "form": null,
+  "guard": false,
+  "analyze": false,
+  "baton": {
+   "registered": true,
+   "out": false,
+   "durability": 12,
+   "max": 12,
+   "broken": false
+  },
+  "xp": 170,
+  "level": 11,
+  "echo": {
+   "grab": 0
+  },
+  "questOpen": false,
+  "statusOpen": false,
+  "reliability": {
+   "slip": 1,
+   "tempo": 1,
+   "cross": 1,
+   "feint": 1,
+   "clinch": 1,
+   "sweep": 1,
+   "throw": 1,
+   "burst": 1,
+   "route": 1,
+   "intercept": 1,
+   "vaultread": 1,
+   "frame": 1
+  },
+  "compromised": [
+   [],
+   []
+  ],
+  "stats": {
+   "forms": 0,
+   "hits": 0,
+   "counters": 0,
+   "swaps": 0,
+   "swapInterrupts": 0,
+   "failed": 0,
+   "hitsTaken": 0,
+   "guarded": 0,
+   "evaded": 0,
+   "analyzeSeconds": 0,
+   "predictions": 0,
+   "predictedRight": 0
+  },
+  "assets": "idle",
+  "assetError": null,
+  "encounter": null,
+  "scan": {
+   "on": false,
+   "sat": 0,
+   "overload": false,
+   "labels": []
+  },
+  "pursuit": {
+   "on": false,
+   "tracking": false,
+   "ledges": [],
+   "routes": []
+  },
+  "pad": {
+   "recent": true,
+   "analyze": false,
+   "guard": false,
+   "status": false,
+   "interact": false
+  },
+  "ui": {
+   "open": null,
+   "sel": 0,
+   "row": 0,
+   "col": 0,
+   "section": "status",
+   "visible": false,
+   "text": ""
+  },
+  "interface": {
+   "credits": 35,
+   "deck": [
+    [
+     "slip",
+     "tempo",
+     "cross",
+     "feint"
+    ],
+    [
+     "clinch",
+     "sweep",
+     "throw",
+     "frame"
+    ],
+    [
+     "burst",
+     "route",
+     "intercept",
+     "vaultread"
+    ]
+   ],
+   "activeTitle": "hotswap",
+   "earned": [
+    "hotswap"
+   ],
+   "life": {
+    "trips": 1,
+    "hitsTaken": 8,
+    "voices": 2,
+    "smokeBlinds": 1
+   },
+   "formUses": {},
+   "observed": {},
+   "quests": 0,
+   "anomalies": 2
+  },
+  "inv": {
+   "cable": true,
+   "simT": 0,
+   "sel": 3,
+   "selected": "cutter",
+   "open": false,
+   "blend": 0,
+   "act": "cutter",
+   "smoke": 2,
+   "med": 4,
+   "grapnel": {
+    "state": "deployed",
+    "anchor": [
+     48.47,
+     1,
+     194.77
+    ],
+    "spool": [
+     42.8529,
+     0.019999999999999962,
+     194.16150000000025
+    ]
+   },
+   "cutter": {
+    "state": "registered",
+    "rescues": 2,
+    "out": true
+   },
+   "clouds": 0,
+   "nearCutter": false,
+   "fieldCutter": null,
+   "constructBlinded": false,
+   "camera": [
+    53.95,
+    2.25,
+    206.76
+   ]
+  },
+  "condition": null,
+  "outclassedOn": false,
+  "witnesses": [],
+  "witnessesPresent": 0,
+  "accounts": [],
+  "log": [
+   {
+    "t": 1.57,
+    "text": "Belt Inventory · sockets open · the construct is slowed, not stopped",
+    "kind": "gear"
+   },
+   {
+    "t": 2.24,
+    "text": "Belt Inventory · cancelled",
+    "kind": "gear"
+   },
+   {
+    "t": 3.22,
+    "text": "Belt Inventory · sockets open · the construct is slowed, not stopped",
+    "kind": "gear"
+   },
+   {
+    "t": 5.5,
+    "text": "Rescue cutter stowed · socket 04",
+    "kind": "gear"
+   },
+   {
+    "t": 6.51,
+    "text": "Rescue cutter retrieved · socket 04",
+    "kind": "gear"
+   }
+  ]
+ }
+}

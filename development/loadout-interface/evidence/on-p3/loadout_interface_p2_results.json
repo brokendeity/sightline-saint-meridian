@@ -1,0 +1,362 @@
+{
+ "build": "SIGHTLINE_SAINT_MERIDIAN_V02_LOADOUT_INTERFACE_P3.html",
+ "date": "2026-11-11T19:24:48.173Z",
+ "results": [
+  {
+   "name": "Y: Deep Scan on, labels anchored to real people / targets nearby",
+   "result": "PASS",
+   "info": {
+    "labels": [
+     {
+      "head": "Halo sparring construct · threat",
+      "cls": "red",
+      "d": 2.5
+     },
+     {
+      "head": "—",
+      "cls": "amber",
+      "d": 8.1
+     }
+    ]
+   }
+  },
+  {
+   "name": "Deep Scan labels are interpretations (hostile, unverified, unclassified voice kinds present)",
+   "result": "PASS",
+   "info": [
+    "Halo sparring construct · threat",
+    "—"
+   ]
+  },
+  {
+   "name": "Deep Scan drains MP and raises Archive Saturation",
+   "result": "PASS",
+   "info": {
+    "mp": 97.3,
+    "sat": 7.7
+   }
+  },
+  {
+   "name": "saturation above 60%: labels turn reductive",
+   "result": "PASS",
+   "info": {
+    "sat": 61,
+    "labels": [
+     {
+      "head": "HOSTILE",
+      "cls": "red",
+      "d": 2.4
+     },
+     {
+      "head": "Unclassified voice",
+      "cls": "amber",
+      "d": 8.1
+     }
+    ]
+   }
+  },
+  {
+   "name": "MP or saturation exhausted: Interface overload switches Deep Scan off",
+   "result": "PASS",
+   "info": {
+    "scan": {
+     "on": false,
+     "sat": 100,
+     "overload": true
+    },
+    "mp": 0
+   }
+  },
+  {
+   "name": "Q wheel → 3: PURSUIT Loadout online",
+   "result": "PASS",
+   "info": {
+    "loadout": "pursuit"
+   }
+  },
+  {
+   "name": "4: Ledge Read marks vault/climb ledges from real collision boxes",
+   "result": "PASS",
+   "info": {
+    "ledges": [
+     {
+      "kind": "CLIMB",
+      "rise": 1.7,
+      "d": 2.3
+     },
+     {
+      "kind": "VAULT",
+      "rise": 0.71,
+      "d": 9.2
+     },
+     {
+      "kind": "CLIMB",
+      "rise": 2.16,
+      "d": 9.8
+     },
+     {
+      "kind": "CLIMB",
+      "rise": 1.94,
+      "d": 11.5
+     },
+     {
+      "kind": "CLIMB",
+      "rise": 2.16,
+      "d": 11.6
+     }
+    ]
+   }
+  },
+  {
+   "name": "2 without a chase: Route Assessment reports no fleeing target (no fake routes)",
+   "result": "PASS",
+   "info": [
+    {
+     "t": 21.02,
+     "text": "Route Assessment · no fleeing target · pursuit access 184 m (I there)",
+     "kind": "analyze"
+    }
+   ]
+  },
+  {
+   "name": "I at the access marker starts the existing transit pursuit as Loadout",
+   "result": "PASS",
+   "info": {
+    "phase": "active",
+    "message": "Follow the runner up the public stairs, or cut across the observation deck. Interact nearby to intercept."
+   }
+  },
+  {
+   "name": "3: Target Interception tracks the runner",
+   "result": "PASS",
+   "info": {
+    "tracking": true
+   }
+  },
+  {
+   "name": "2: Route Assessment scores interception routes on the real route and geometry",
+   "result": "PASS",
+   "info": {
+    "routes": [
+     {
+      "name": "Direct interception",
+      "time": 2.4,
+      "runner": 3.7,
+      "margin": 1.3,
+      "climbs": 0,
+      "drops": 0,
+      "blocked": false,
+      "len": 19.4,
+      "cls": ""
+     },
+     {
+      "name": "Cut across",
+      "time": 3.2,
+      "runner": 8.4,
+      "margin": 5.1,
+      "climbs": 0,
+      "drops": 0,
+      "blocked": false,
+      "len": 26.5,
+      "cls": ""
+     },
+     {
+      "name": "Follow the runner (to its exit)",
+      "time": 106.4,
+      "runner": 105.3,
+      "margin": -1.2,
+      "climbs": 0,
+      "drops": 0,
+      "blocked": false,
+      "len": 9.4,
+      "cls": "amber"
+     }
+    ]
+   }
+  },
+  {
+   "name": "1: Burst Dash travels through the movement owner (Runner root motion)",
+   "result": "PASS",
+   "info": {
+    "moved": 4.47
+   }
+  },
+  {
+   "name": "switch to Backspool: Deep Scan and Pursuit overlays off, layer inactive",
+   "result": "PASS",
+   "info": {
+    "scan": false,
+    "pursuit": false,
+    "ui": {
+     "hud": true,
+     "veil": true,
+     "tags": 0
+    }
+   }
+  },
+  {
+   "name": "Y as Backspool does not start Deep Scan",
+   "result": "PASS"
+  },
+  {
+   "name": "no page errors",
+   "result": "PASS",
+   "info": []
+  }
+ ],
+ "final": {
+  "active": false,
+  "hp": 44,
+  "mp": 20.3,
+  "sta": 100,
+  "body": {
+   "rightArm": 76,
+   "leftArm": 100,
+   "legs": 70,
+   "torso": 100
+  },
+  "loadout": "pursuit",
+  "swap": null,
+  "wheel": false,
+  "form": null,
+  "guard": false,
+  "analyze": false,
+  "baton": {
+   "registered": true,
+   "out": false,
+   "durability": 12,
+   "max": 12,
+   "broken": false
+  },
+  "xp": 10,
+  "level": 11,
+  "echo": {
+   "grab": 0
+  },
+  "questOpen": false,
+  "statusOpen": false,
+  "reliability": {
+   "slip": 1,
+   "tempo": 0.76,
+   "cross": 0.76,
+   "feint": 0.7,
+   "clinch": 0.76,
+   "sweep": 0.7,
+   "throw": 0.76,
+   "burst": 0.7,
+   "route": 1,
+   "intercept": 1,
+   "vaultread": 1,
+   "frame": 0.7
+  },
+  "compromised": [
+   [
+    "tempo",
+    "feint"
+   ],
+   [
+    "clinch",
+    "sweep",
+    "frame"
+   ]
+  ],
+  "stats": {
+   "forms": 5,
+   "hits": 0,
+   "counters": 0,
+   "swaps": 1,
+   "swapInterrupts": 0,
+   "failed": 0,
+   "hitsTaken": 7,
+   "guarded": 0,
+   "evaded": 0,
+   "analyzeSeconds": 0,
+   "predictions": 0,
+   "predictedRight": 0
+  },
+  "assets": "ready",
+  "assetError": null,
+  "encounter": null,
+  "scan": {
+   "on": false,
+   "sat": 72.5,
+   "overload": false,
+   "labels": []
+  },
+  "pursuit": {
+   "on": false,
+   "tracking": false,
+   "ledges": [],
+   "routes": []
+  },
+  "pad": {
+   "recent": false,
+   "analyze": false,
+   "guard": false,
+   "status": false,
+   "interact": false
+  },
+  "log": [
+   {
+    "t": 19.93,
+    "text": "Compatibility · 1 Form compromised by injury",
+    "kind": "warn"
+   },
+   {
+    "t": 20.33,
+    "text": "Ledge Read · 5 ledges (1 vault, 4 climb) from real geometry",
+    "kind": "analyze"
+   },
+   {
+    "t": 20.51,
+    "text": "RightForearm → BluntImpact · Right forearm 76%",
+    "kind": "injury"
+   },
+   {
+    "t": 20.51,
+    "text": "PURSUIT — 1 FORM COMPROMISED · B: Status",
+    "kind": "warn"
+   },
+   {
+    "t": 20.51,
+    "text": "Hit · Overhead strike · −16 HP",
+    "kind": "hit"
+   },
+   {
+    "t": 21.02,
+    "text": "Route Assessment · no fleeing target · pursuit access 184 m (I there)",
+    "kind": "analyze"
+   },
+   {
+    "t": 22.8,
+    "text": "Target Interception tracking",
+    "kind": "analyze"
+   },
+   {
+    "t": 23.28,
+    "text": "Route Assessment · 3 routes · best: Direct interception 2.4 s · ahead of runner by 1.3 s",
+    "kind": "analyze"
+   },
+   {
+    "t": 23.28,
+    "text": "+10 XP · Pursuit · route assessed",
+    "kind": "xp"
+   },
+   {
+    "t": 24.13,
+    "text": "Burst Dash",
+    "kind": "swap"
+   },
+   {
+    "t": 24.26,
+    "text": "Voice detected · unclassified · not in the Quest model",
+    "kind": "quest"
+   },
+   {
+    "t": 24.26,
+    "text": "PRIMARY QUEST unchanged · unconfirmed occupant: excluded from model",
+    "kind": "quest"
+   }
+  ]
+ }
+}

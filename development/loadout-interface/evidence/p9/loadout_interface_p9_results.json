@@ -1,0 +1,681 @@
+{
+ "build": "SIGHTLINE_SAINT_MERIDIAN_V02_LOADOUT_INTERFACE_P9.html",
+ "date": "2026-11-12T08:27:02.941Z",
+ "viewport": "1920x1080 headless (ANGLE Metal)",
+ "results": [
+  {
+   "name": "1 · open while standing: holding X opens the inventory",
+   "result": "PASS",
+   "info": {
+    "open": true,
+    "mode": "capsule"
+   }
+  },
+  {
+   "name": "1 · he is centred (hips 42–58% across) in the lower middle (head 33–48% down, belt 62–80% down)",
+   "result": "PASS",
+   "info": {
+    "right": 0.566,
+    "centre": 0.5,
+    "headY": 0.386,
+    "hipY": 0.718,
+    "core": {
+     "x": 960,
+     "y": 713,
+     "in": true
+    },
+    "faces": 0.769,
+    "yawFaces": 1,
+    "camBehind": 1,
+    "camLooks": 1,
+    "headYaw": 0.492
+   }
+  },
+  {
+   "name": "1 · camera is behind him and looks the way he faces; his body faces the card array",
+   "result": "PASS",
+   "info": {
+    "camBehind": 1,
+    "camLooks": 1,
+    "yawFaces": 1
+   }
+  },
+  {
+   "name": "1 · the camera eases in (intermediate blend values, no cut)",
+   "result": "PASS",
+   "info": [
+    0,
+    0,
+    0,
+    0,
+    0.798,
+    0.97,
+    0.996,
+    0.999,
+    1,
+    1
+   ]
+  },
+  {
+   "name": "1 · slots in order: 01 BATON, 02 GRAPNEL, 03 MEDICAL KIT, 04 RESCUE CUTTER, 05 SMOKE CAPSULES, then capsule C2",
+   "result": "PASS",
+   "info": [
+    [
+     "01",
+     "baton"
+    ],
+    [
+     "02",
+     "grapnel"
+    ],
+    [
+     "03",
+     "medkit"
+    ],
+    [
+     "04",
+     "cutter"
+    ],
+    [
+     "05",
+     "smoke"
+    ],
+    [
+     "C2",
+     null
+    ]
+   ]
+  },
+  {
+   "name": "1 · every card is whole on screen, left to right, in front of him (ahead > 0)",
+   "result": "PASS",
+   "info": [
+    [
+     542,
+     347,
+     305,
+     412,
+     1.43
+    ],
+    [
+     768,
+     312,
+     176,
+     238,
+     2.33
+    ],
+    [
+     932,
+     308,
+     172,
+     232,
+     2.45
+    ],
+    [
+     1094,
+     310,
+     174,
+     235,
+     2.39
+    ],
+    [
+     1261,
+     317,
+     182,
+     246,
+     2.18
+    ],
+    [
+     1440,
+     330,
+     198,
+     268,
+     1.81
+    ]
+   ]
+  },
+  {
+   "name": "1 · the five main cards sit at upper-torso to head height (card centres above his belt line, none below it)",
+   "result": "PASS",
+   "info": {
+    "cardY": [
+     347,
+     312,
+     308,
+     310,
+     317,
+     330
+    ],
+    "belt": 775
+   }
+  },
+  {
+   "name": "1 · the selected card is at least 30% larger than the others",
+   "result": "PASS",
+   "info": [
+    412,
+    238,
+    232,
+    235,
+    246,
+    268
+   ]
+  },
+  {
+   "name": "1 · neighbouring cards overlap by at most 12% of the smaller card",
+   "result": "PASS",
+   "info": [
+    0,
+    15,
+    10,
+    11,
+    11,
+    11
+   ]
+  },
+  {
+   "name": "1 · one line per card back to the belt, and the ground ring",
+   "result": "PASS",
+   "info": {
+    "lines": 6,
+    "ring": true
+   }
+  },
+  {
+   "name": "1 · the regular gameplay HUD stays (vitals, bars, gear readout, forms) and the selected-item panel is on the right",
+   "result": "PASS",
+   "info": {
+    "vit": true,
+    "bars": true,
+    "gear": true,
+    "forms": true
+   }
+  },
+  {
+   "name": "2 · A / D selects each of the five slots; the selected card is the large one and the panel names it",
+   "result": "PASS",
+   "info": [
+    [
+     "baton",
+     "baton",
+     true,
+     "BATONMELEE // CONTROLCollapsible baton f"
+    ],
+    [
+     "grapnel",
+     "grapnel",
+     true,
+     "GRAPNELTOOL // ANCHOR LINEFires a line t"
+    ],
+    [
+     "medkit",
+     "medkit",
+     true,
+     "MEDICAL KITMEDICAL // FIELD CARETreats t"
+    ],
+    [
+     "cutter",
+     "cutter",
+     true,
+     "RESCUE CUTTERTOOL // RESCUECutter for fr"
+    ],
+    [
+     "smoke",
+     "smoke",
+     true,
+     "SMOKE CAPSULESCAPSULE // COVERThrown at "
+    ]
+   ]
+  },
+  {
+   "name": "3 · his head turns toward the selected card: left for 01, right for 05, in order, at most 0.5 rad",
+   "result": "PASS",
+   "info": [
+    0.5,
+    0.446,
+    0.149,
+    -0.149,
+    -0.446
+   ]
+  },
+  {
+   "name": "3 · the head bone itself turns (measured from its world matrix), by 0.3 rad or more between 01 and 05",
+   "result": "PASS",
+   "info": {
+    "sweep": 0.918
+   }
+  },
+  {
+   "name": "3 · his body keeps facing the cards while the head turns; camera stays behind",
+   "result": "PASS",
+   "info": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "name": "2 · mouse over a card selects it (03 MEDICAL KIT)",
+   "result": "PASS",
+   "info": {
+    "sel": "medkit"
+   }
+  },
+  {
+   "name": "extra · the empty capsule (C2) cannot be retrieved: confirm starts nothing and equips nothing",
+   "result": "PASS",
+   "info": {
+    "sel": 5,
+    "open": false,
+    "props": []
+   }
+  },
+  {
+   "name": "extra · the rescue cutter is not registered yet: confirm on its card starts no retrieval and equips nothing",
+   "result": "PASS",
+   "info": {
+    "cutter": {
+     "state": "none",
+     "rescues": 0,
+     "out": false
+    },
+    "info": "RESCUE CUTTERTOOL // RESCUECutter for freeing trapped people. It has to be registered to the belt before it answers him."
+   }
+  },
+  {
+   "name": "9 · cancel (right mouse button) closes the inventory and nothing is equipped",
+   "result": "PASS",
+   "info": {
+    "open": false,
+    "props": []
+   }
+  },
+  {
+   "name": "9 · after closing: gameplay camera back (distance, fov) and no camera override left",
+   "result": "PASS",
+   "info": {
+    "before": {
+     "dist": 3.87,
+     "fov": 48,
+     "ahead": 3.67
+    },
+    "after": {
+     "dist": 3.87,
+     "fov": 48,
+     "ahead": 3.67
+    }
+   }
+  },
+  {
+   "name": "4 · clicking the Baton card starts the retrieval; phases run in order",
+   "result": "PASS",
+   "info": [
+    "card coming into reach",
+    "reaching",
+    "touching · reaching in",
+    "withdrawing"
+   ]
+  },
+  {
+   "name": "4 · his fingertip reaches the card: 3 cm or less from the card opening at touch",
+   "result": "PASS",
+   "info": {
+    "touchDist": 0,
+    "touchAt": 0.449,
+    "tip": [
+     54.582,
+     1.321,
+     210.382
+    ],
+    "card": [
+     54.582,
+     1.32,
+     210.382
+    ]
+   }
+  },
+  {
+   "name": "4 · the card came into arm reach (card is within 75% of his arm length from the shoulder... reported ratio ≤ 1)",
+   "result": "PASS",
+   "info": {
+    "shoulder": 0.552
+   }
+  },
+  {
+   "name": "5 · the card opens at touch (opening > 0.9) and the other cards dim",
+   "result": "PASS",
+   "info": {
+    "open": 1,
+    "dim": 0.38
+   }
+  },
+  {
+   "name": "5 · his hand goes into the opening before the grip (5 cm or more past the card face)",
+   "result": "PASS",
+   "info": {
+    "gripDepth": 0.097,
+    "maxDepth": 0.097,
+    "gripErr": 0
+   }
+  },
+  {
+   "name": "5 · the Baton appears in his hand only at the grip (not before the withdraw phase), once",
+   "result": "PASS",
+   "info": {
+    "firstBaton": 48,
+    "firstWd": 48,
+    "props": [
+     "baton"
+    ]
+   }
+  },
+  {
+   "name": "5 · the sequence ends by itself (X still held): inventory closed, cards gone, camera eased back and released",
+   "result": "PASS",
+   "info": {
+    "done5": true,
+    "cards": 0,
+    "cam": null,
+    "completed": true
+   }
+  },
+  {
+   "name": "5 · responsive: confirm to grip in under 1 s",
+   "result": "PASS",
+   "info": {
+    "secondsToGrip": 0.65
+   }
+  },
+  {
+   "name": "6 · the Baton is equipped (state: out, in hand, 12/12)",
+   "result": "PASS",
+   "info": {
+    "out": true,
+    "dur": 12
+   }
+  },
+  {
+   "name": "6 · it is usable: key 1 performs a form with the Baton still in hand",
+   "result": "PASS",
+   "info": {
+    "form": {
+     "id": "slip",
+     "clip": "Attack_Hand_2L",
+     "t": 0.28,
+     "done": false,
+     "hit": false
+    },
+    "props": [
+     "baton"
+    ]
+   }
+  },
+  {
+   "name": "6 · control is back: W moves him",
+   "result": "PASS",
+   "info": {
+    "moved": 1.02
+   }
+  },
+  {
+   "name": "7 · with the Baton out the panel offers to stow it (no second Baton)",
+   "result": "PASS",
+   "info": "Release: stow it"
+  },
+  {
+   "name": "7 · releasing X on the Baton card stores it: touch, then the Baton leaves his hand",
+   "result": "PASS",
+   "info": {
+    "lp": {
+     "item": "baton",
+     "sock": 0,
+     "slot": "01",
+     "stow": true,
+     "touchDist": 0,
+     "gripDepth": 0.096,
+     "completed": true,
+     "aborted": false,
+     "touchAt": 0.441,
+     "tip": [
+      54.443,
+      1.324,
+      211.804
+     ],
+     "card": [
+      54.443,
+      1.324,
+      211.804
+     ],
+     "shoulder": 0.552,
+     "maxDepth": 0.097,
+     "gripErr": 0
+    },
+    "out": false,
+    "props": []
+   }
+  },
+  {
+   "name": "8 · Enter on 03 MEDICAL KIT: he touches its card and the kit is in his hand",
+   "result": "PASS",
+   "info": {
+    "lp": {
+     "item": "medkit",
+     "sock": 2,
+     "slot": "03",
+     "stow": false,
+     "touchDist": 0.002,
+     "gripDepth": 0.097,
+     "completed": true,
+     "aborted": false,
+     "touchAt": 0.46,
+     "tip": [
+      54.474,
+      1.442,
+      211.746
+     ],
+     "card": [
+      54.475,
+      1.442,
+      211.744
+     ],
+     "shoulder": 0.552,
+     "maxDepth": 0.099,
+     "gripErr": 0
+    },
+    "med": [
+     4,
+     3
+    ],
+    "done8": true
+   }
+  },
+  {
+   "name": "11 · in a fight the inventory opens the same way, he stays centred with the camera behind",
+   "result": "PASS",
+   "info": {
+    "hero": {
+     "right": 0.566,
+     "centre": 0.5,
+     "headY": 0.393,
+     "hipY": 0.724,
+     "core": {
+      "x": 960,
+      "y": 718,
+      "in": true
+     },
+     "faces": 0.68,
+     "yawFaces": 1,
+     "camBehind": 1,
+     "camLooks": 1,
+     "headYaw": 0.149
+    }
+   }
+  },
+  {
+   "name": "11 · the opponent keeps moving at half speed (slowed, not stopped)",
+   "result": "PASS",
+   "info": {
+    "ratio": 0.499
+   }
+  },
+  {
+   "name": "10 · the construct's jab lands before the grip and interrupts the retrieval: the capsule stays in its socket",
+   "result": "PASS",
+   "info": {
+    "interrupted": [
+     0,
+     1
+    ],
+    "smoke": 2,
+    "hits": [
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "name": "10 · after the interruption the inventory is closed, no act is left and nothing is half-equipped",
+   "result": "PASS",
+   "info": {
+    "open": false,
+    "seq": false,
+    "act": null,
+    "props": [],
+    "lp": {
+     "item": "smoke",
+     "sock": 4,
+     "slot": "05",
+     "stow": false,
+     "touchDist": null,
+     "gripDepth": null,
+     "completed": false,
+     "aborted": true
+    }
+   }
+  },
+  {
+   "name": "12 · camera behind him on every recorded frame with the inventory up (1582 frames): min camBehind ≥ 0.9, min camLooks ≥ 0.9",
+   "result": "PASS",
+   "info": {
+    "frames": 1582,
+    "minBehind": 0.961,
+    "minLooks": 1
+   }
+  },
+  {
+   "name": "12 · he stays centred while it is open (hips 40–60% across on every settled frame)",
+   "result": "PASS",
+   "info": {
+    "frames": 1211,
+    "min": 0.497,
+    "max": 0.5
+   }
+  },
+  {
+   "name": "12 · no jitter: his screen position moves less than 2% of the width between frames",
+   "result": "PASS",
+   "info": {
+    "maxStep": 0.003
+   }
+  },
+  {
+   "name": "pad · holding D-left opens the inventory",
+   "result": "PASS",
+   "info": {
+    "open": true
+   }
+  },
+  {
+   "name": "pad · D-pad right then up, and the right stick, move the selection (01 → 02 → 01 → 02)",
+   "result": "PASS",
+   "info": [
+    "grapnel",
+    "baton",
+    "grapnel"
+   ]
+  },
+  {
+   "name": "pad · B cancels: closed, nothing equipped",
+   "result": "PASS",
+   "info": {
+    "open": false,
+    "props": []
+   }
+  },
+  {
+   "name": "pad · A confirms: touch-and-retrieve runs and the Baton is in his hand",
+   "result": "PASS",
+   "info": {
+    "lp": {
+     "item": "baton",
+     "sock": 0,
+     "slot": "01",
+     "stow": false,
+     "touchDist": 0,
+     "gripDepth": 0.097,
+     "completed": true,
+     "aborted": false,
+     "touchAt": 0.445,
+     "tip": [
+      54.652,
+      1.488,
+      210.253
+     ],
+     "card": [
+      54.652,
+      1.488,
+      210.253
+     ],
+     "shoulder": 0.552,
+     "maxDepth": 0.097,
+     "gripErr": 0
+    },
+    "out": true
+   }
+  },
+  {
+   "name": "switch · L3+LT+RT+R3 with the inventory open changes hero; no cards, lines, ring or inventory panel remain",
+   "result": "PASS",
+   "info": {
+    "other": {
+     "hero": "kinsmoke",
+     "belt": false,
+     "cls": false
+    },
+    "cards": 0,
+    "ring": false,
+    "cam": null
+   }
+  },
+  {
+   "name": "switch · no equipment leaks to the other Moniker: no Loadout prop is shown in hand",
+   "result": "PASS",
+   "info": {
+    "props": [],
+    "act": null
+   }
+  },
+  {
+   "name": "no page errors",
+   "result": "PASS",
+   "info": []
+  }
+ ]
+}

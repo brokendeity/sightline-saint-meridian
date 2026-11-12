@@ -1,0 +1,633 @@
+{
+ "build": "SIGHTLINE_SAINT_MERIDIAN_V02_LOADOUT_INTERFACE_P7D.html",
+ "date": "2026-11-12T00:18:22.791Z",
+ "results": [
+  {
+   "name": "calm: holding X opens the belt (calm mode) and the camera stays over his shoulder",
+   "result": "PASS",
+   "info": {
+    "mode": "capsule",
+    "cam": [
+     3.87,
+     3.87
+    ]
+   }
+  },
+  {
+   "name": "7 socket cards are whole on screen, each tied to the belt core by its own energy line",
+   "result": "PASS",
+   "info": {
+    "lines": 7,
+    "cards": [
+     [
+      589,
+      363,
+      128,
+      173
+     ],
+     [
+      699,
+      361,
+      110,
+      149
+     ],
+     [
+      821,
+      350,
+      111,
+      150
+     ],
+     [
+      928,
+      331,
+      108,
+      145
+     ],
+     [
+      999,
+      307,
+      101,
+      136
+     ],
+     [
+      1028,
+      282,
+      83,
+      112
+     ],
+     [
+      1020,
+      259,
+      75,
+      102
+     ]
+    ],
+    "ring": true
+   }
+  },
+  {
+   "name": "every card stands in front of him (0.3 m or more ahead) and to the open side",
+   "result": "PASS",
+   "info": [
+    [
+     0.5,
+     0.7
+    ],
+    [
+     0.33,
+     1.16
+    ],
+    [
+     0.31,
+     1.64
+    ],
+    [
+     0.45,
+     2.11
+    ],
+    [
+     0.73,
+     2.5
+    ],
+    [
+     1.13,
+     2.79
+    ],
+    [
+     1.59,
+     2.94
+    ]
+   ]
+  },
+  {
+   "name": "no card covers the character on screen",
+   "result": "PASS",
+   "info": {
+    "body": {
+     "x0": 326,
+     "x1": 468,
+     "y0": 271,
+     "y1": 695
+    },
+    "cards": [
+     [
+      525,
+      653
+     ],
+     [
+      644,
+      754
+     ],
+     [
+      765,
+      877
+     ],
+     [
+      874,
+      982
+     ],
+     [
+      948,
+      1050
+     ],
+     [
+      986,
+      1070
+     ],
+     [
+      982,
+      1058
+     ]
+    ]
+   }
+  },
+  {
+   "name": "the selected card (slot 01) is the largest",
+   "result": "PASS",
+   "info": [
+    0.433,
+    0.372,
+    0.375,
+    0.363,
+    0.34,
+    0.28,
+    0.255
+   ]
+  },
+  {
+   "name": "D rotates the ring: slot 02 is now the nearest and largest card, still clear of him",
+   "result": "PASS",
+   "info": {
+    "sel": "grapnel",
+    "h": [
+     0.284,
+     0.433,
+     0.372,
+     0.375,
+     0.363,
+     0.306,
+     0.281
+    ]
+   }
+  },
+  {
+   "name": "detail panel, gear count and prompts are shown",
+   "result": "PASS",
+   "info": [
+    "GRAPNEL",
+    "REGISTERED GEAR03 / 05",
+    "A DROTATEXRELEASE: EQUIPRMBCANCEL"
+   ]
+  },
+  {
+   "name": "the detail panel does not cover a card or the HUD panels",
+   "result": "PASS",
+   "info": [
+    986,
+    384,
+    1256,
+    568
+   ]
+  },
+  {
+   "name": "release: his right arm reaches for the socket (reach weight rises to ~1)",
+   "result": "PASS",
+   "info": {
+    "peak": 1
+   }
+  },
+  {
+   "name": "at contact his hand is at the socket card (≤ 6 cm)",
+   "result": "PASS",
+   "info": {
+    "item": "baton",
+    "handDist": 0,
+    "w": 1,
+    "solved": true
+   }
+  },
+  {
+   "name": "the baton is in his hand only from contact on",
+   "result": "PASS",
+   "info": {
+    "first": [],
+    "end": [
+     "baton"
+    ]
+   }
+  },
+  {
+   "name": "HUD: in hand, condition and item capacity",
+   "result": "PASS",
+   "info": "REGISTERED GEAR · X USE · HOLD BELT01 BATON · IN HAND · 12/12IN HAND · BATON · CONDITION 100%ITEM CAPACITY · 3 / 5"
+  },
+  {
+   "name": "HUD panels do not overlap (gear below the HP bars)",
+   "result": "PASS",
+   "info": [
+    682,
+    690
+   ]
+  },
+  {
+   "name": "tap X stows the baton again",
+   "result": "PASS",
+   "info": {
+    "out": false,
+    "props": []
+   }
+  },
+  {
+   "name": "medical kit: reach then the kit is in his hand",
+   "result": "PASS",
+   "info": {
+    "peak": 1,
+    "seen": true
+   }
+  },
+  {
+   "name": "fight: holding X opens the combat arc and the camera stays on the fight",
+   "result": "PASS",
+   "info": {
+    "mode": "arc",
+    "cam": [
+     3.87,
+     3.87
+    ]
+   }
+  },
+  {
+   "name": "fight: 7 cards in front of him, fanning right from the selected one, none covering him",
+   "result": "PASS",
+   "info": {
+    "xs": [
+     589,
+     699,
+     820,
+     927,
+     999,
+     1028,
+     1021
+    ],
+    "body": {
+     "x0": 329,
+     "x1": 470,
+     "y0": 250,
+     "y1": 665
+    }
+   }
+  },
+  {
+   "name": "the opponent is slowed to half speed, not stopped, while the arc is open",
+   "result": "PASS",
+   "info": {
+    "ratio": 0.498
+   }
+  },
+  {
+   "name": "arc: D D D selects the smoke capsule from the medical kit",
+   "result": "PASS",
+   "info": {
+    "sel": "smoke"
+   }
+  },
+  {
+   "name": "SETUP hit lands during the reach",
+   "result": "PASS",
+   "info": {
+    "hitDone": true,
+    "hits": [
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "name": "a hit before contact interrupts the reach: the smoke capsule stays in its socket",
+   "result": "PASS",
+   "info": {
+    "interrupted": 1,
+    "smoke": 2
+   }
+  },
+  {
+   "name": "no page errors",
+   "result": "PASS",
+   "info": []
+  }
+ ],
+ "final": {
+  "active": true,
+  "hp": 94,
+  "mp": 100,
+  "sta": 100,
+  "body": {
+   "rightArm": 92,
+   "leftArm": 100,
+   "legs": 100,
+   "torso": 100
+  },
+  "loadout": "box",
+  "swap": null,
+  "wheel": false,
+  "form": null,
+  "guard": false,
+  "analyze": false,
+  "baton": {
+   "registered": true,
+   "out": false,
+   "durability": 12,
+   "max": 12,
+   "broken": false
+  },
+  "xp": 0,
+  "level": 11,
+  "echo": {
+   "grab": 0
+  },
+  "questOpen": false,
+  "statusOpen": false,
+  "reliability": {
+   "slip": 1,
+   "tempo": 0.92,
+   "cross": 0.92,
+   "feint": 1,
+   "clinch": 0.92,
+   "sweep": 1,
+   "throw": 0.92,
+   "burst": 1,
+   "route": 1,
+   "intercept": 1,
+   "vaultread": 1,
+   "frame": 1
+  },
+  "compromised": [
+   [],
+   []
+  ],
+  "stats": {
+   "forms": 0,
+   "hits": 0,
+   "counters": 0,
+   "swaps": 0,
+   "swapInterrupts": 0,
+   "failed": 0,
+   "hitsTaken": 2,
+   "guarded": 0,
+   "evaded": 0,
+   "analyzeSeconds": 0,
+   "predictions": 0,
+   "predictedRight": 0
+  },
+  "assets": "ready",
+  "assetError": null,
+  "encounter": {
+   "outcome": "active",
+   "clock": 4.4,
+   "worker": {
+    "heard": false,
+    "freed": false,
+    "progress": 0,
+    "near": false
+   },
+   "offScript": false,
+   "summary": null,
+   "construct": {
+    "hp": 300,
+    "phase": "ready",
+    "attack": "overhead",
+    "clinch": 0,
+    "down": 0,
+    "seen": {
+     "jab": 0,
+     "overhead": 0,
+     "sweep": 0,
+     "grab": 0
+    },
+    "jabCounterReady": false,
+    "pos": [
+     55,
+     0,
+     211.74
+    ],
+    "dist": 1.79
+   },
+   "ghosts": {
+    "jab": {
+     "visible": false,
+     "opacity": 0,
+     "p": 0.25
+    },
+    "overhead": {
+     "visible": false,
+     "opacity": 0,
+     "p": 0.25
+    },
+    "sweep": {
+     "visible": false,
+     "opacity": 0,
+     "p": 0.25
+    },
+    "grab": {
+     "visible": false,
+     "opacity": 0,
+     "p": 0.25
+    }
+   }
+  },
+  "scan": {
+   "on": false,
+   "sat": 0,
+   "overload": false,
+   "labels": []
+  },
+  "pursuit": {
+   "on": false,
+   "tracking": false,
+   "ledges": [],
+   "routes": []
+  },
+  "pad": {
+   "recent": false,
+   "analyze": false,
+   "guard": false,
+   "status": false,
+   "interact": false
+  },
+  "ui": {
+   "open": null,
+   "sel": 0,
+   "row": 0,
+   "col": 0,
+   "section": "status",
+   "visible": false,
+   "text": ""
+  },
+  "interface": {
+   "credits": 0,
+   "deck": [
+    [
+     "slip",
+     "tempo",
+     "cross",
+     "feint"
+    ],
+    [
+     "clinch",
+     "sweep",
+     "throw",
+     "frame"
+    ],
+    [
+     "burst",
+     "route",
+     "intercept",
+     "vaultread"
+    ]
+   ],
+   "activeTitle": "hotswap",
+   "earned": [
+    "hotswap"
+   ],
+   "life": {
+    "hitsTaken": 2
+   },
+   "formUses": {},
+   "observed": {},
+   "quests": 0,
+   "anomalies": 0
+  },
+  "inv": {
+   "mode": "arc",
+   "reach": 0,
+   "reachDist": null,
+   "contacted": false,
+   "lastContact": {
+    "item": "medkit",
+    "handDist": 0,
+    "w": 1,
+    "solved": true
+   },
+   "interrupted": 1,
+   "props": [],
+   "cards": [],
+   "body": null,
+   "lines": 0,
+   "side": 1,
+   "ring": false,
+   "tether": false,
+   "cable": false,
+   "simT": 3.257,
+   "sel": 5,
+   "selected": "smoke",
+   "open": false,
+   "blend": 0,
+   "act": null,
+   "smoke": 2,
+   "med": 3,
+   "grapnel": {
+    "state": "stowed",
+    "anchor": null,
+    "spool": null
+   },
+   "cutter": {
+    "state": "field",
+    "rescues": 0,
+    "out": false
+   },
+   "clouds": 0,
+   "nearCutter": false,
+   "fieldCutter": [
+    63.6,
+    0,
+    215.2
+   ],
+   "constructBlinded": false,
+   "camera": [
+    53.95,
+    2.25,
+    206.76
+   ]
+  },
+  "condition": null,
+  "outclassedOn": false,
+  "witnesses": [
+   {
+    "id": "w1",
+    "said": null
+   },
+   {
+    "id": "w2",
+    "said": null
+   },
+   {
+    "id": "w3",
+    "said": null
+   }
+  ],
+  "witnessesPresent": 3,
+  "accounts": [],
+  "log": [
+   {
+    "t": 4.02,
+    "text": "Baton retrieved · socket 01 · 12/12",
+    "kind": "gear"
+   },
+   {
+    "t": 5.56,
+    "text": "Baton stowed · socket 01",
+    "kind": "gear"
+   },
+   {
+    "t": 6.63,
+    "text": "Belt Inventory · sockets open · the construct is slowed, not stopped",
+    "kind": "gear"
+   },
+   {
+    "t": 7.06,
+    "text": "Medical kit · treating · 2.4 s, exposed",
+    "kind": "gear"
+   },
+   {
+    "t": 9.47,
+    "text": "Treated · Right forearm 100% → 100% · +15 HP · 3 doses left",
+    "kind": "gear"
+   },
+   {
+    "t": 11.3,
+    "text": "Loading the sparring construct…",
+    "kind": "info"
+   },
+   {
+    "t": 11.39,
+    "text": "Encounter · Halo sparring construct · hold RMB to Analyze",
+    "kind": "quest"
+   },
+   {
+    "t": 12.63,
+    "text": "Belt Inventory · sockets open · the construct is slowed, not stopped",
+    "kind": "gear"
+   },
+   {
+    "t": 14.67,
+    "text": "RightForearm → BluntImpact · Right forearm 92%",
+    "kind": "injury"
+   },
+   {
+    "t": 14.67,
+    "text": "Hit · Overhead strike · −16 HP",
+    "kind": "hit"
+   },
+   {
+    "t": 14.95,
+    "text": "Hit · test jab · −6 HP",
+    "kind": "hit"
+   },
+   {
+    "t": 14.97,
+    "text": "Reach interrupted · Smoke capsules stays in socket C1",
+    "kind": "warn"
+   }
+  ]
+ }
+}

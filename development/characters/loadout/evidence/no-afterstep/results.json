@@ -1,0 +1,53 @@
+{
+  "build": "SIGHTLINE_SAINT_MERIDIAN_V02_LOADOUT_RUNNER_NO_AFTERSTEP.html",
+  "checks": {
+    "loadoutSprintedRolledFlipped": true,
+    "loadoutExhaustOff": true,
+    "loadoutAfterimagesNotDrawn": true,
+    "backspoolControlExhaust": true,
+    "backspoolControlAfterimages": true,
+    "noPageErrors": true
+  },
+  "pass": true,
+  "loadout": {
+    "frames": 270,
+    "heroes": [
+      "loadout"
+    ],
+    "peakSpeed": 16.36,
+    "anims": [
+      "runner-Mvm_Boost@13.8",
+      "runner-Jmp_FrontAir_Roll_All",
+      "runner-Land_Base_Move",
+      "runner-Jmp_SideAir_A"
+    ],
+    "exhaustEnabledFrames": 0,
+    "exhaustLiveMax": 0,
+    "exhaustDrawsMax": 0,
+    "emittedDuring": 0,
+    "afterDrawFrames": 0,
+    "afterLiveMax": 1
+  },
+  "backspool": {
+    "frames": 270,
+    "heroes": [
+      "backspool"
+    ],
+    "peakSpeed": 16.36,
+    "anims": [
+      "traversal-locomotion-fastRun",
+      "traversal-locomotion-parkourRun",
+      "traversal-locomotion-parkourSprint",
+      "forspoken-flow-frontFlip",
+      "forspoken-flow-landMove",
+      "forspoken-flow-sideFlipLeft"
+    ],
+    "exhaustEnabledFrames": 270,
+    "exhaustLiveMax": 29,
+    "exhaustDrawsMax": 2,
+    "emittedDuring": 314,
+    "afterDrawFrames": 249,
+    "afterLiveMax": 3
+  },
+  "errors": []
+}

@@ -1,0 +1,658 @@
+{
+ "build": "SIGHTLINE_SAINT_MERIDIAN_V02_LOADOUT_INTERFACE_P4.html",
+ "date": "2026-11-11T20:53:23.673Z",
+ "results": [
+  {
+   "name": "Tab opens the Core Wheel with 8 sections",
+   "result": "PASS",
+   "info": {
+    "open": "wheel",
+    "visible": true
+   }
+  },
+  {
+   "name": "world is dimmed behind the wheel (veil with backdrop filter)",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "W while the wheel is open does not move Loadout",
+   "result": "PASS",
+   "info": {
+    "moved": 0
+   }
+  },
+  {
+   "name": "→ steps the selection by one",
+   "result": "PASS",
+   "info": {
+    "sel0": 7,
+    "sel": 0
+   }
+  },
+  {
+   "name": "mouse direction points at a section (right = LOADOUTS)",
+   "result": "PASS",
+   "info": {
+    "sel": 2
+   }
+  },
+  {
+   "name": "1 opens STATUS: body map, resources, Forms per body part",
+   "result": "PASS",
+   "info": {
+    "text": "STATUS\nSKILLS\nLOADOUTS\nINVENTORY\nQUESTS\nSHOP\nTITLES\nRECORDS\nSTATUS\nLOADOUT // INTERFACE · HOTSWAP · LEVEL 11\nFRONT VIEW\nBODY\nRight forearm\n60%\nLeft arm\n100%\nLegs\n100%\nTorso\n100%\nRIGHT FOREARM · FORMS "
+   }
+  },
+  {
+   "name": "STATUS marks the injured forearm and its heavy Form",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "↓ selects the next body part (left arm)",
+   "result": "PASS",
+   "info": {
+    "row": 1
+   }
+  },
+  {
+   "name": "R: next page SKILLS lists Forms, uses and the incomplete Grip Reversal",
+   "result": "PASS",
+   "info": {
+    "uses": {
+     "tempo": 1
+    }
+   }
+  },
+  {
+   "name": "LOADOUTS shows the Build Deck (3 presets + locked Rescue)",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "Enter on socket 1: next Form, swapped with its old socket",
+   "result": "PASS",
+   "info": {
+    "deck": [
+     "tempo",
+     "slip",
+     "cross",
+     "feint"
+    ]
+   }
+  },
+  {
+   "name": "LMB on a page does not throw a strike",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "Tab closes the Interface",
+   "result": "PASS",
+   "info": {
+    "open": null
+   }
+  },
+  {
+   "name": "the edited deck is what 1 performs now (Tempo Jab)",
+   "result": "PASS",
+   "info": {
+    "form": "tempo"
+   }
+  },
+  {
+   "name": "LOADOUTS · EQUIP on GRAPPLE / CONTROL performs a real hotswap",
+   "result": "PASS",
+   "info": {
+    "loadout": "grapple"
+   }
+  },
+  {
+   "name": "Backspace goes back to the wheel",
+   "result": "PASS",
+   "info": {
+    "open": "wheel"
+   }
+  },
+  {
+   "name": "INVENTORY shows the belt sockets with the baton in 01",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "Enter draws the registered baton",
+   "result": "PASS",
+   "info": {
+    "baton": true
+   }
+  },
+  {
+   "name": "SHOP · field repair spends 30 CR and restores the real baton",
+   "result": "PASS",
+   "info": {
+    "credits": 10,
+    "baton": {
+     "registered": true,
+     "out": false,
+     "durability": 12,
+     "max": 12,
+     "broken": false
+    }
+   }
+  },
+  {
+   "name": "a second repair is refused (already full)",
+   "result": "PASS",
+   "info": {
+    "credits": 10
+   }
+  },
+  {
+   "name": "blueprints cannot be bought (credits unchanged)",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "QUESTS with nothing active says so",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "TITLES: HOTSWAP active, OUTCLASSED shown as not active, INDEXED locked",
+   "result": "PASS",
+   "info": {
+    "earned": [
+     "hotswap"
+    ]
+   }
+  },
+  {
+   "name": "an unearned Title cannot be made active",
+   "result": "PASS",
+   "info": {
+    "active": "hotswap"
+   }
+  },
+  {
+   "name": "RECORDS · EVENT LOG holds the Build Deck and Shop events",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "techniques observed while analyzing are recorded",
+   "result": "PASS",
+   "info": {
+    "observed": {
+     "overhead": 1,
+     "jab": 2
+    }
+   }
+  },
+  {
+   "name": "enemies are not paused while the Interface is open (and the hint says so)",
+   "result": "PASS",
+   "info": {
+    "clock0": 6.85,
+    "clock": 7.87
+   }
+  },
+  {
+   "name": "Build Deck is locked during an active encounter",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "RECORDS lists observed techniques",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "Esc closes the Interface (and pauses the game as usual)",
+   "result": "PASS",
+   "info": {
+    "open": null,
+    "gameActive": false
+   }
+  },
+  {
+   "name": "as Backspool, Tab does not open Loadout’s Interface",
+   "result": "PASS",
+   "info": {
+    "open": null
+   }
+  },
+  {
+   "name": "pad: View tap opens the Core Wheel",
+   "result": "PASS",
+   "info": {
+    "open": "wheel"
+   }
+  },
+  {
+   "name": "pad: the wheel shows pad hints",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "pad: left stick right points at LOADOUTS",
+   "result": "PASS",
+   "info": {
+    "sel": 2
+   }
+  },
+  {
+   "name": "pad: the stick does not move Loadout while the Interface is open",
+   "result": "PASS",
+   "info": {
+    "moved": 0
+   }
+  },
+  {
+   "name": "pad: A opens the selected page",
+   "result": "PASS",
+   "info": {
+    "open": "status",
+    "sel": 0
+   }
+  },
+  {
+   "name": "pad: RB next page",
+   "result": "PASS",
+   "info": {
+    "open": "skills"
+   }
+  },
+  {
+   "name": "pad: LB previous page",
+   "result": "PASS",
+   "info": {
+    "open": "status"
+   }
+  },
+  {
+   "name": "pad: D-down moves the selection",
+   "result": "PASS",
+   "info": {
+    "row": 1
+   }
+  },
+  {
+   "name": "pad: B goes back to the wheel",
+   "result": "PASS",
+   "info": {
+    "open": "wheel"
+   }
+  },
+  {
+   "name": "pad: B on the wheel closes it, and the held B does not leak into an evade",
+   "result": "PASS",
+   "info": {
+    "open": null,
+    "clip": null,
+    "before": ""
+   }
+  },
+  {
+   "name": "pad: View with another button held does not open it",
+   "result": "PASS",
+   "info": {
+    "open": null
+   }
+  },
+  {
+   "name": "pad: View tap closes it and it stays closed",
+   "result": "PASS",
+   "info": {
+    "open": null
+   }
+  },
+  {
+   "name": "no page errors",
+   "result": "PASS",
+   "info": []
+  }
+ ],
+ "keyboardFinal": {
+  "active": false,
+  "hp": 61,
+  "mp": 51.7,
+  "sta": 100,
+  "body": {
+   "rightArm": 92,
+   "leftArm": 100,
+   "legs": 90,
+   "torso": 100
+  },
+  "loadout": "grapple",
+  "swap": null,
+  "wheel": false,
+  "form": null,
+  "guard": false,
+  "analyze": false,
+  "baton": {
+   "registered": true,
+   "out": false,
+   "durability": 12,
+   "max": 12,
+   "broken": false
+  },
+  "xp": 0,
+  "level": 11,
+  "echo": {
+   "grab": 0
+  },
+  "questOpen": false,
+  "statusOpen": false,
+  "reliability": {
+   "slip": 1,
+   "tempo": 0.92,
+   "cross": 0.92,
+   "feint": 0.9,
+   "clinch": 0.92,
+   "sweep": 0.9,
+   "throw": 0.92,
+   "burst": 0.9,
+   "route": 1,
+   "intercept": 1,
+   "vaultread": 1,
+   "frame": 0.9
+  },
+  "compromised": [
+   [],
+   []
+  ],
+  "stats": {
+   "forms": 2,
+   "hits": 0,
+   "counters": 0,
+   "swaps": 1,
+   "swapInterrupts": 0,
+   "failed": 0,
+   "hitsTaken": 4,
+   "guarded": 0,
+   "evaded": 0,
+   "analyzeSeconds": 6.015699999988071,
+   "predictions": 3,
+   "predictedRight": 3
+  },
+  "assets": "ready",
+  "assetError": null,
+  "encounter": null,
+  "scan": {
+   "on": false,
+   "sat": 0,
+   "overload": false,
+   "labels": []
+  },
+  "pursuit": {
+   "on": false,
+   "tracking": false,
+   "ledges": [],
+   "routes": []
+  },
+  "pad": {
+   "recent": false,
+   "analyze": false,
+   "guard": false,
+   "status": false,
+   "interact": false
+  },
+  "ui": {
+   "open": null,
+   "sel": 7,
+   "row": 0,
+   "col": 0,
+   "section": "records",
+   "visible": false,
+   "text": ""
+  },
+  "interface": {
+   "credits": 10,
+   "deck": [
+    [
+     "tempo",
+     "slip",
+     "cross",
+     "feint"
+    ],
+    [
+     "clinch",
+     "sweep",
+     "throw",
+     "frame"
+    ],
+    [
+     "burst",
+     "route",
+     "intercept",
+     "vaultread"
+    ]
+   ],
+   "activeTitle": "hotswap",
+   "earned": [
+    "hotswap",
+    "reader"
+   ],
+   "life": {
+    "forms": 2,
+    "swaps": 1,
+    "analyzeSeconds": 6.015699999988071,
+    "predictions": 3,
+    "predictedRight": 3,
+    "hitsTaken": 4,
+    "voices": 1
+   },
+   "formUses": {
+    "tempo": 2
+   },
+   "observed": {
+    "overhead": 1,
+    "jab": 2
+   },
+   "quests": 0,
+   "anomalies": 1
+  },
+  "log": [
+   {
+    "t": 13.36,
+    "text": "Shop · baton repaired · −30 CR",
+    "kind": "gear"
+   },
+   {
+    "t": 17.8,
+    "text": "Loading the sparring construct…",
+    "kind": "info"
+   },
+   {
+    "t": 17.86,
+    "text": "Encounter · Halo sparring construct · hold RMB to Analyze",
+    "kind": "quest"
+   },
+   {
+    "t": 20.11,
+    "text": "RightForearm → BluntImpact · Right forearm 92%",
+    "kind": "injury"
+   },
+   {
+    "t": 20.11,
+    "text": "Hit · Overhead strike · −16 HP",
+    "kind": "hit"
+   },
+   {
+    "t": 22.11,
+    "text": "Hit · Lead jab · −7 HP",
+    "kind": "hit"
+   },
+   {
+    "t": 23.86,
+    "text": "Voice detected · unclassified · not in the Quest model",
+    "kind": "quest"
+   },
+   {
+    "t": 23.86,
+    "text": "PRIMARY QUEST unchanged · unconfirmed occupant: excluded from model",
+    "kind": "quest"
+   },
+   {
+    "t": 24.4,
+    "text": "Hit · Lead jab · −7 HP",
+    "kind": "hit"
+   },
+   {
+    "t": 24.72,
+    "text": "Interface open · the world keeps running",
+    "kind": "info"
+   },
+   {
+    "t": 26.51,
+    "text": "Legs → Sweep → Balance · Legs 90%",
+    "kind": "injury"
+   },
+   {
+    "t": 26.51,
+    "text": "Hit · Low sweep · −9 HP",
+    "kind": "hit"
+   }
+  ]
+ },
+ "padFinal": {
+  "active": true,
+  "hp": 100,
+  "mp": 100,
+  "sta": 100,
+  "body": {
+   "rightArm": 100,
+   "leftArm": 100,
+   "legs": 100,
+   "torso": 100
+  },
+  "loadout": "box",
+  "swap": null,
+  "wheel": false,
+  "form": null,
+  "guard": false,
+  "analyze": false,
+  "baton": {
+   "registered": true,
+   "out": false,
+   "durability": 12,
+   "max": 12,
+   "broken": false
+  },
+  "xp": 0,
+  "level": 11,
+  "echo": {
+   "grab": 0
+  },
+  "questOpen": false,
+  "statusOpen": false,
+  "reliability": {
+   "slip": 1,
+   "tempo": 1,
+   "cross": 1,
+   "feint": 1,
+   "clinch": 1,
+   "sweep": 1,
+   "throw": 1,
+   "burst": 1,
+   "route": 1,
+   "intercept": 1,
+   "vaultread": 1,
+   "frame": 1
+  },
+  "compromised": [
+   [],
+   []
+  ],
+  "stats": {
+   "forms": 0,
+   "hits": 0,
+   "counters": 0,
+   "swaps": 0,
+   "swapInterrupts": 0,
+   "failed": 0,
+   "hitsTaken": 0,
+   "guarded": 0,
+   "evaded": 0,
+   "analyzeSeconds": 0,
+   "predictions": 0,
+   "predictedRight": 0
+  },
+  "assets": "idle",
+  "assetError": null,
+  "encounter": null,
+  "scan": {
+   "on": false,
+   "sat": 0,
+   "overload": false,
+   "labels": []
+  },
+  "pursuit": {
+   "on": false,
+   "tracking": false,
+   "ledges": [],
+   "routes": []
+  },
+  "pad": {
+   "recent": true,
+   "analyze": false,
+   "guard": false,
+   "status": false,
+   "interact": false
+  },
+  "ui": {
+   "open": null,
+   "sel": 0,
+   "row": 0,
+   "col": 0,
+   "section": "status",
+   "visible": false,
+   "text": ""
+  },
+  "interface": {
+   "credits": 0,
+   "deck": [
+    [
+     "slip",
+     "tempo",
+     "cross",
+     "feint"
+    ],
+    [
+     "clinch",
+     "sweep",
+     "throw",
+     "frame"
+    ],
+    [
+     "burst",
+     "route",
+     "intercept",
+     "vaultread"
+    ]
+   ],
+   "activeTitle": "hotswap",
+   "earned": [
+    "hotswap"
+   ],
+   "life": {},
+   "formUses": {},
+   "observed": {},
+   "quests": 0,
+   "anomalies": 0
+  },
+  "log": [
+   {
+    "t": 1.37,
+    "text": "Interface open · the world keeps running",
+    "kind": "info"
+   },
+   {
+    "t": 6.02,
+    "text": "Interface open · the world keeps running",
+    "kind": "info"
+   }
+  ]
+ }
+}

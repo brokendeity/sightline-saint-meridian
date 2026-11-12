@@ -1,0 +1,499 @@
+{
+ "build": "SIGHTLINE_SAINT_MERIDIAN_V02_LOADOUT_INTERFACE_P5.html",
+ "date": "2026-11-11T21:03:41.787Z",
+ "results": [
+  {
+   "name": "the encounter has 3 spectators, at least 2 able to see the fight",
+   "result": "PASS",
+   "info": {
+    "w": 3,
+    "present": 3
+   }
+  },
+  {
+   "name": "no Condition before any loss",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "going down with witnesses watching gains OUTCLASSED",
+   "result": "PASS",
+   "info": {
+    "condition": {
+     "id": "outclassed",
+     "against": "Halo sparring construct",
+     "pressure": 100,
+     "contradictions": 0,
+     "gained": 1794431001437,
+     "witnesses": 3
+    }
+   }
+  },
+  {
+   "name": "each present witness gives an account (insult / agreement; no dispute without a counter)",
+   "result": "PASS",
+   "info": {
+    "accounts": [
+     "agree: He never got a hand on it.",
+     "agree: Outclassed. It wasn’t close.",
+     "insult: Taken apart by a training dummy."
+    ]
+   }
+  },
+  {
+   "name": "their words are shown over them in the world",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "the next encounter starts with OUTCLASSED active",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "Ghost Builds show inflated success (≥ 88%) on the attack it fears",
+   "result": "PASS",
+   "info": [
+    "Lead jab · SUCCESS 48%",
+    "Overhead strike · SUCCESS 60%",
+    "Low sweep · SUCCESS 42%",
+    "Feint into grab · SUCCESS 92%"
+   ]
+  },
+  {
+   "name": "threat bracket is red and the tag says OVERWHELMING / counter window UNCERTAIN",
+   "result": "PASS",
+   "info": {
+    "bracket": "rgb(255, 95, 69)"
+   }
+  },
+  {
+   "name": "red vignette and an amber ESCAPE ROUTE are shown",
+   "result": "PASS",
+   "info": {
+    "veil": true,
+    "esc": true
+   }
+  },
+  {
+   "name": "the opponent’s real attacks are unchanged (lead jab still −7 HP)",
+   "result": "PASS",
+   "info": {
+    "delta": 7,
+    "text": "Hit · Lead jab · −7 HP"
+   }
+  },
+  {
+   "name": "TITLES shows OUTCLASSED as ACTIVE with its pressure",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "RECORDS · WITNESS ACCOUNTS keeps what they said",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "win without contradictions: OUTCLASSED persists, pressure drops",
+   "result": "PASS",
+   "info": {
+    "outcome": "construct down",
+    "pressure": [
+     100,
+     85
+    ]
+   }
+  },
+  {
+   "name": "3 counters while OUTCLASSED are logged as PREDICTION CONTRADICTED",
+   "result": "PASS",
+   "info": {
+    "contradictions": 3
+   }
+  },
+  {
+   "name": "a win seen by witnesses after the contradictions clears OUTCLASSED",
+   "result": "PASS",
+   "info": {
+    "outcome": "construct down",
+    "condition": null
+   }
+  },
+  {
+   "name": "the witnesses revise their accounts",
+   "result": "PASS",
+   "info": {
+    "accounts": [
+     "Told you he was reading it.",
+     "Okay. That was not luck.",
+     "...Fine. He figured it out."
+    ]
+   }
+  },
+  {
+   "name": "clearing it is a significant achievement (+XP)",
+   "result": "PASS",
+   "info": {
+    "xp": [
+     50,
+     180
+    ]
+   }
+  },
+  {
+   "name": "the HUD no longer shows the Condition",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "no page errors",
+   "result": "PASS",
+   "info": []
+  }
+ ],
+ "final": {
+  "active": true,
+  "hp": 100,
+  "mp": 100,
+  "sta": 100,
+  "body": {
+   "rightArm": 100,
+   "leftArm": 100,
+   "legs": 92.08602000001066,
+   "torso": 93.63224000000353
+  },
+  "loadout": "box",
+  "swap": null,
+  "wheel": false,
+  "form": {
+   "id": "tempo",
+   "clip": "Attack_Hand_1R",
+   "t": 1.17,
+   "done": true,
+   "hit": true
+  },
+  "guard": false,
+  "analyze": false,
+  "baton": {
+   "registered": true,
+   "out": false,
+   "durability": 12,
+   "max": 12,
+   "broken": false
+  },
+  "xp": 180,
+  "level": 11,
+  "echo": {
+   "grab": 0
+  },
+  "questOpen": false,
+  "statusOpen": false,
+  "reliability": {
+   "slip": 1,
+   "tempo": 1,
+   "cross": 1,
+   "feint": 0.92,
+   "clinch": 1,
+   "sweep": 0.92,
+   "throw": 0.94,
+   "burst": 0.92,
+   "route": 0.94,
+   "intercept": 0.94,
+   "vaultread": 0.94,
+   "frame": 0.92
+  },
+  "compromised": [
+   [],
+   []
+  ],
+  "stats": {
+   "forms": 5,
+   "hits": 4,
+   "counters": 2,
+   "swaps": 0,
+   "swapInterrupts": 0,
+   "failed": 0,
+   "hitsTaken": 4,
+   "guarded": 0,
+   "evaded": 2,
+   "analyzeSeconds": 0.6657999999821187,
+   "predictions": 1,
+   "predictedRight": 1
+  },
+  "assets": "ready",
+  "assetError": null,
+  "encounter": {
+   "outcome": "construct down",
+   "clock": 10.36,
+   "worker": {
+    "heard": true,
+    "freed": false,
+    "progress": 0,
+    "near": false
+   },
+   "offScript": false,
+   "summary": {
+    "outcome": "construct down",
+    "offScript": false,
+    "freed": false,
+    "heard": true,
+    "hp": 100,
+    "body": {
+     "rightArm": 100,
+     "leftArm": 100,
+     "legs": 91.12542000001064,
+     "torso": 92.6716400000035
+    },
+    "stats": {
+     "forms": 5,
+     "hits": 4,
+     "counters": 2,
+     "swaps": 0,
+     "swapInterrupts": 0,
+     "failed": 0,
+     "hitsTaken": 4,
+     "guarded": 0,
+     "evaded": 2,
+     "analyzeSeconds": 0.6657999999821187,
+     "predictions": 1,
+     "predictedRight": 1
+    }
+   },
+   "construct": {
+    "hp": 0,
+    "phase": "ready",
+    "attack": "overhead",
+    "clinch": 0,
+    "down": 0,
+    "seen": {
+     "jab": 0,
+     "overhead": 0,
+     "sweep": 0,
+     "grab": 0
+    },
+    "jabCounterReady": false,
+    "pos": [
+     55,
+     0,
+     211.73
+    ],
+    "dist": 1.78
+   },
+   "ghosts": {
+    "jab": {
+     "visible": false,
+     "opacity": 0,
+     "p": 0
+    },
+    "overhead": {
+     "visible": false,
+     "opacity": 0,
+     "p": 0
+    },
+    "sweep": {
+     "visible": false,
+     "opacity": 0,
+     "p": 0
+    },
+    "grab": {
+     "visible": false,
+     "opacity": 0,
+     "p": 0
+    }
+   }
+  },
+  "scan": {
+   "on": false,
+   "sat": 0,
+   "overload": false,
+   "labels": []
+  },
+  "pursuit": {
+   "on": false,
+   "tracking": false,
+   "ledges": [],
+   "routes": []
+  },
+  "pad": {
+   "recent": false,
+   "analyze": false,
+   "guard": false,
+   "status": false,
+   "interact": false
+  },
+  "ui": {
+   "open": null,
+   "sel": 7,
+   "row": 5,
+   "col": 0,
+   "section": "records",
+   "visible": false,
+   "text": ""
+  },
+  "interface": {
+   "credits": 40,
+   "deck": [
+    [
+     "slip",
+     "tempo",
+     "cross",
+     "feint"
+    ],
+    [
+     "clinch",
+     "sweep",
+     "throw",
+     "frame"
+    ],
+    [
+     "burst",
+     "route",
+     "intercept",
+     "vaultread"
+    ]
+   ],
+   "activeTitle": "hotswap",
+   "earned": [
+    "hotswap"
+   ],
+   "life": {
+    "hitsTaken": 4,
+    "analyzeSeconds": 0.6657999999821187,
+    "predictions": 1,
+    "predictedRight": 1,
+    "voices": 2,
+    "forms": 5,
+    "hits": 4,
+    "evaded": 2,
+    "counters": 2,
+    "outclassedCleared": 1
+   },
+   "formUses": {
+    "tempo": 2,
+    "slip": 3
+   },
+   "observed": {
+    "overhead": 1
+   },
+   "quests": 3,
+   "anomalies": 2
+  },
+  "condition": null,
+  "outclassedOn": false,
+  "witnesses": [
+   {
+    "id": "w1",
+    "said": "...Fine. He figured it out."
+   },
+   {
+    "id": "w2",
+    "said": "Okay. That was not luck."
+   },
+   {
+    "id": "w3",
+    "said": "Told you he was reading it."
+   }
+  ],
+  "witnessesPresent": 3,
+  "accounts": [
+   {
+    "who": "Spectator · green hood",
+    "text": "Told you he was reading it.",
+    "kind": "revise",
+    "when": 1794431020195
+   },
+   {
+    "who": "Spectator · grey coat",
+    "text": "Okay. That was not luck.",
+    "kind": "revise",
+    "when": 1794431020195
+   },
+   {
+    "who": "Spectator · courier jacket",
+    "text": "...Fine. He figured it out.",
+    "kind": "revise",
+    "when": 1794431020195
+   },
+   {
+    "who": "Spectator · green hood",
+    "text": "He never got a hand on it.",
+    "kind": "agree",
+    "when": 1794431001437
+   },
+   {
+    "who": "Spectator · grey coat",
+    "text": "Outclassed. It wasn’t close.",
+    "kind": "agree",
+    "when": 1794431001437
+   },
+   {
+    "who": "Spectator · courier jacket",
+    "text": "Taken apart by a training dummy.",
+    "kind": "insult",
+    "when": 1794431001437
+   }
+  ],
+  "log": [
+   {
+    "t": 22.34,
+    "text": "Evaded · Overhead strike",
+    "kind": "combat"
+   },
+   {
+    "t": 22.47,
+    "text": "PREDICTION CONTRADICTED · the Interface gave it 97% · counter · 3/3",
+    "kind": "analyze"
+   },
+   {
+    "t": 22.47,
+    "text": "COUNTER · Slip Counter · 31 dmg",
+    "kind": "combat"
+   },
+   {
+    "t": 24.61,
+    "text": "Tempo Jab · 6 dmg",
+    "kind": "combat"
+   },
+   {
+    "t": 24.61,
+    "text": "+50 XP · Quest · construct neutralised",
+    "kind": "xp"
+   },
+   {
+    "t": 24.61,
+    "text": "Encounter · construct down · occupant left behind · T to restart",
+    "kind": "quest"
+   },
+   {
+    "t": 24.61,
+    "text": "courier jacket: “...Fine. He figured it out.”",
+    "kind": "quest"
+   },
+   {
+    "t": 24.61,
+    "text": "grey coat: “Okay. That was not luck.”",
+    "kind": "quest"
+   },
+   {
+    "t": 24.61,
+    "text": "green hood: “Told you he was reading it.”",
+    "kind": "quest"
+   },
+   {
+    "t": 24.61,
+    "text": "CONDITION CLEARED · OUTCLASSED contradicted in front of 3 witnesses",
+    "kind": "level"
+   },
+   {
+    "t": 24.61,
+    "text": "+80 XP · Significant achievement · OUTCLASSED contradicted",
+    "kind": "xp"
+   },
+   {
+    "t": 24.61,
+    "text": "+20 CR · construct neutralised",
+    "kind": "xp"
+   }
+  ]
+ }
+}

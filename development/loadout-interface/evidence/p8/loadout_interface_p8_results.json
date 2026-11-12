@@ -1,0 +1,424 @@
+{
+ "build": "SIGHTLINE_SAINT_MERIDIAN_V02_LOADOUT_INTERFACE_P8.html",
+ "date": "2026-11-12T01:31:29.839Z",
+ "viewport": "1920x1080 headless (ANGLE Metal)",
+ "frameTimeMs": {
+  "closed": {
+   "n": 180,
+   "avg": 13.93,
+   "p95": 17.5
+  },
+  "open": {
+   "n": 178,
+   "avg": 14.14,
+   "p95": 24.9
+  }
+ },
+ "results": [
+  {
+   "name": "holding X opens the belt inventory",
+   "result": "PASS",
+   "info": {
+    "open": true,
+    "mode": "capsule"
+   }
+  },
+  {
+   "name": "inventory camera: closer than the gameplay camera, still behind him (over the shoulder), fov 50",
+   "result": "PASS",
+   "info": {
+    "before": {
+     "dist": 3.87,
+     "fov": 48,
+     "ahead": 3.67
+    },
+    "open": {
+     "dist": 2.09,
+     "fov": 50,
+     "ahead": 1.66
+    },
+    "cam": {
+     "blend": 1,
+     "fov": 50,
+     "pulled": 0
+    }
+   }
+  },
+  {
+   "name": "the camera eases in (blend rises through intermediate values, no cut)",
+   "result": "PASS",
+   "info": [
+    0.088,
+    0.58,
+    0.787,
+    0.878,
+    0.93
+   ]
+  },
+  {
+   "name": "he stands in the left part of the frame (right edge of his hips 25–42% across, centre left of 30%)",
+   "result": "PASS",
+   "info": {
+    "right": 0.322,
+    "centre": 0.211,
+    "headY": 0.189,
+    "core": {
+     "x": 549,
+     "y": 796,
+     "in": true
+    }
+   }
+  },
+  {
+   "name": "the belt core is on screen in the lower left",
+   "result": "PASS",
+   "info": {
+    "x": 549,
+    "y": 796,
+    "in": true
+   }
+  },
+  {
+   "name": "five socket cards in belt order: 01 BATON, 02 GRAPNEL, 03 SMOKE, 04 MED KIT, 05 RESCUE TOOL",
+   "result": "PASS",
+   "info": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05"
+   ]
+  },
+  {
+   "name": "all five cards are whole on screen, left to right, none covering him",
+   "result": "PASS",
+   "info": {
+    "xs": [
+     [
+      845,
+      296
+     ],
+     [
+      1093,
+      175
+     ],
+     [
+      1284,
+      174
+     ],
+     [
+      1493,
+      178
+     ],
+     [
+      1737,
+      188
+     ]
+    ],
+    "body": {
+     "x0": 193,
+     "x1": 618,
+     "y0": 205,
+     "y1": 1477
+    }
+   }
+  },
+  {
+   "name": "neighbouring cards do not overlap by more than 12% of the smaller card",
+   "result": "PASS",
+   "info": [
+    0,
+    -12,
+    -16,
+    -33,
+    -61
+   ]
+  },
+  {
+   "name": "the selected card is 20% or more larger than every other card",
+   "result": "PASS",
+   "info": [
+    400,
+    237,
+    235,
+    241,
+    254
+   ]
+  },
+  {
+   "name": "one energy line per card from the belt core (5)",
+   "result": "PASS",
+   "info": {
+    "lines": 5
+   }
+  },
+  {
+   "name": "registered gear count comes from the inventory state (cutter not registered → 04 / 05)",
+   "result": "PASS",
+   "info": {
+    "reg": 4,
+    "cutter": "none"
+   }
+  },
+  {
+   "name": "unrelated panels are hidden while the inventory is open",
+   "result": "PASS",
+   "info": {
+    "flightVitals": false,
+    "loLog": false,
+    "loBars": false,
+    "loGear": false,
+    "loForms": false,
+    "v02ContextStack": false,
+    "v02Toolbar": false,
+    "crosshair": false
+   }
+  },
+  {
+   "name": "inventory HUD: vitals top left, detail panel, gear count bottom left, prompts bottom right",
+   "result": "PASS",
+   "info": [
+    [
+     26,
+     22,
+     326,
+     138
+    ],
+    [
+     1580,
+     572,
+     1890,
+     778
+    ],
+    [
+     26,
+     1009,
+     291,
+     1054
+    ],
+    [
+     1452,
+     1015,
+     1890,
+     1054
+    ]
+   ]
+  },
+  {
+   "name": "vitals show the real HP / MP / stamina numbers",
+   "result": "PASS",
+   "info": "//LOADOUTHP100 / 100MP100 / 100STAMINA100 / 100"
+  },
+  {
+   "name": "detail panel: BATON, MELEE // CONTROL, description, CONDITION 100%",
+   "result": "PASS",
+   "info": "BATONMELEE // CONTROLCollapsible baton. Close-range control, disruption and defensive striking.Release: draw itCONDITION100%"
+  },
+  {
+   "name": "the detail panel does not cover a card",
+   "result": "PASS"
+  },
+  {
+   "name": "detail and prompt text is not monospace",
+   "result": "PASS"
+  },
+  {
+   "name": "D rotates: 02 GRAPNEL is selected, nearest the belt and largest; cards stay clear of him",
+   "result": "PASS",
+   "info": {
+    "sel": "grapnel",
+    "h": [
+     254,
+     399,
+     236,
+     235,
+     240
+    ]
+   }
+  },
+  {
+   "name": "A rotates back to 01 BATON",
+   "result": "PASS",
+   "info": {
+    "sel": "baton"
+   }
+  },
+  {
+   "name": "right mouse button cancels: the inventory closes and nothing is equipped",
+   "result": "PASS",
+   "info": {
+    "open": false,
+    "act": null,
+    "out": false
+   }
+  },
+  {
+   "name": "after closing, the gameplay camera is back (distance and fov as before) and the camera override is released",
+   "result": "PASS",
+   "info": {
+    "before": {
+     "dist": 3.87,
+     "fov": 48,
+     "ahead": 3.67
+    },
+    "after": {
+     "dist": 3.87,
+     "fov": 48,
+     "ahead": 3.66
+    }
+   }
+  },
+  {
+   "name": "after closing, the gameplay HUD panels are back as they were",
+   "result": "PASS",
+   "info": {
+    "before": {
+     "flightVitals": true,
+     "loLog": true,
+     "loBars": true,
+     "loGear": true,
+     "loForms": true,
+     "v02ContextStack": true,
+     "v02Toolbar": true
+    },
+    "after": {
+     "flightVitals": true,
+     "loLog": true,
+     "loBars": true,
+     "loGear": true,
+     "loForms": true,
+     "v02ContextStack": true,
+     "v02Toolbar": true
+    }
+   }
+  },
+  {
+   "name": "release on the baton: his arm reaches (weight ~1) and his hand meets the socket card (≤ 6 cm)",
+   "result": "PASS",
+   "info": {
+    "peak": 1,
+    "lc": {
+     "item": "baton",
+     "handDist": 0,
+     "w": 1,
+     "solved": true
+    }
+   }
+  },
+  {
+   "name": "the baton is in his hand only from contact on, and only once",
+   "result": "PASS",
+   "info": {
+    "first": [],
+    "end": [
+     "baton"
+    ]
+   }
+  },
+  {
+   "name": "no duplicated item: with the baton in hand the panel offers to stow it, not draw another",
+   "result": "PASS",
+   "info": "Release: stow it"
+  },
+  {
+   "name": "tap X stows the baton again",
+   "result": "PASS",
+   "info": {
+    "out": false,
+    "props": []
+   }
+  },
+  {
+   "name": "D D D selects 04 MED KIT; release: reach, then the kit is in his hand",
+   "result": "PASS",
+   "info": {
+    "sel": "medkit",
+    "peak": 1
+   }
+  },
+  {
+   "name": "05 RESCUE TOOL is shown as not registered, and releasing on it equips nothing",
+   "result": "PASS",
+   "info": {
+    "info": "RESCUE TOOLTOOL // RESCUECutter for freeing trapped people. It has to be registered to the belt before it answers him.Not registered · it does not answer him ye",
+    "props": []
+   }
+  },
+  {
+   "name": "fight: the same five cards open as the combat arc, clear of him",
+   "result": "PASS",
+   "info": {
+    "mode": "arc"
+   }
+  },
+  {
+   "name": "the opponent is slowed to half speed, not stopped",
+   "result": "PASS",
+   "info": {
+    "ratio": 0.502
+   }
+  },
+  {
+   "name": "SETUP hit lands during the reach",
+   "result": "PASS",
+   "info": {
+    "hits": [
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "name": "a hit before contact interrupts the retrieval: the smoke capsule stays in its socket",
+   "result": "PASS",
+   "info": {
+    "interrupted": 1,
+    "smoke": 2
+   }
+  },
+  {
+   "name": "condition is read from the real baton state (SETUP durability 6 / 12 → 50%)",
+   "result": "PASS",
+   "info": {
+    "t": "CONDITION50%",
+    "w": "50%",
+    "d": 6
+   }
+  },
+  {
+   "name": "explicit debug mode (?lodebug=1) keeps the gameplay / debug panels while the inventory is open",
+   "result": "PASS",
+   "info": {
+    "loLog": true,
+    "vit": true
+   }
+  },
+  {
+   "name": "Backspool: no inventory, no camera override, no HUD change",
+   "result": "PASS",
+   "info": {
+    "other": {
+     "cls": false,
+     "belt": false,
+     "cam": null,
+     "hero": "backspool"
+    },
+    "cb0": {
+     "dist": 3.87,
+     "fov": 48,
+     "ahead": 3.62
+    },
+    "cb1": {
+     "dist": 3.87,
+     "fov": 48,
+     "ahead": 3.62
+    }
+   }
+  },
+  {
+   "name": "no page errors",
+   "result": "PASS",
+   "info": []
+  }
+ ]
+}

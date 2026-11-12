@@ -1,0 +1,314 @@
+{
+ "build": "SIGHTLINE_SAINT_MERIDIAN_V02_LOADOUT_INTERFACE_P3.html",
+ "date": "2026-11-11T19:23:17.301Z",
+ "results": [
+  {
+   "name": "LT hold: Analyze with Ghost Builds",
+   "result": "PASS",
+   "info": {
+    "analyze": true,
+    "phase": "windup"
+   }
+  },
+  {
+   "name": "LT does not trigger Backspool aim / guard for Loadout",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "HUD switches to pad glyphs",
+   "result": "PASS",
+   "info": "COUNTER / BOXRT+XSlip CounterRT+YTempo JabRT+APower CrossRT+BFeint StepATTENTION"
+  },
+  {
+   "name": "LT + R3: Deep Scan on",
+   "result": "PASS",
+   "info": {
+    "scan": true
+   }
+  },
+  {
+   "name": "LT + D-up: Quest panel",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "RT + X: Form 1 (Slip Counter)",
+   "result": "PASS",
+   "info": {
+    "forms": 1,
+    "form": {
+     "id": "slip",
+     "clip": "Attack_Hand_2L",
+     "t": 0.67,
+     "done": false,
+     "hit": true
+    }
+   }
+  },
+  {
+   "name": "RT + X did not tumble (X masked while RT is held)",
+   "result": "PASS",
+   "info": "Attack_Hand_2L"
+  },
+  {
+   "name": "RT + Y: Form 2 (Tempo Jab)",
+   "result": "PASS",
+   "info": {
+    "form": {
+     "id": "tempo",
+     "clip": "Attack_Hand_1R",
+     "t": 0.58,
+     "done": false,
+     "hit": true
+    }
+   }
+  },
+  {
+   "name": "RT tap: basic strike (backspoolCombat.pressAttack)",
+   "result": "PASS",
+   "info": {
+    "before": 0,
+    "after": {
+     "seq": 1,
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "name": "D-right tap: hotswap to GRAPPLE / CONTROL",
+   "result": "PASS",
+   "info": {
+    "loadout": "grapple"
+   }
+  },
+  {
+   "name": "D-right no longer cycles Backspool's combat style for Loadout",
+   "result": "PASS",
+   "info": {
+    "style0": "flow"
+   }
+  },
+  {
+   "name": "D-right hold: Loadout wheel opens",
+   "result": "PASS",
+   "info": {
+    "wheel": true
+   }
+  },
+  {
+   "name": "wheel + A picks 3: PURSUIT",
+   "result": "PASS",
+   "info": {
+    "loadout": "pursuit"
+   }
+  },
+  {
+   "name": "D-left: baton drawn",
+   "result": "PASS",
+   "info": {
+    "baton": {
+     "registered": true,
+     "out": true,
+     "durability": 12,
+     "max": 12,
+     "broken": false
+    }
+   }
+  },
+  {
+   "name": "D-up tap: Status glance",
+   "result": "PASS",
+   "info": {}
+  },
+  {
+   "name": "D-up hold: Body Inspection",
+   "result": "PASS",
+   "info": {
+    "pad": {
+     "recent": true,
+     "analyze": false,
+     "guard": false,
+     "status": true,
+     "interact": false
+    }
+   }
+  },
+  {
+   "name": "LB with the stick still: guard",
+   "result": "PASS",
+   "info": {
+    "guard": true
+   }
+  },
+  {
+   "name": "LB + stick: strafe (Runner), no guard",
+   "result": "PASS",
+   "info": {
+    "guard": false,
+    "strafe": true
+   }
+  },
+  {
+   "name": "L3+LT+RT+R3 still switches hero (priority) and the Loadout layer goes inactive",
+   "result": "PASS",
+   "info": {
+    "hero": "kinsmoke",
+    "active": false
+   }
+  },
+  {
+   "name": "no page errors",
+   "result": "PASS",
+   "info": []
+  }
+ ],
+ "final": {
+  "active": false,
+  "hp": 28.5,
+  "mp": 99.9,
+  "sta": 100,
+  "body": {
+   "rightArm": 84,
+   "leftArm": 100,
+   "legs": 90,
+   "torso": 92
+  },
+  "loadout": "pursuit",
+  "swap": null,
+  "wheel": false,
+  "form": null,
+  "guard": false,
+  "analyze": false,
+  "baton": {
+   "registered": true,
+   "out": false,
+   "durability": 12,
+   "max": 12,
+   "broken": false
+  },
+  "xp": 0,
+  "level": 11,
+  "echo": {
+   "grab": 0
+  },
+  "questOpen": false,
+  "statusOpen": true,
+  "reliability": {
+   "slip": 1,
+   "tempo": 0.84,
+   "cross": 0.84,
+   "feint": 0.9,
+   "clinch": 0.84,
+   "sweep": 0.9,
+   "throw": 0.84,
+   "burst": 0.9,
+   "route": 0.92,
+   "intercept": 0.92,
+   "vaultread": 0.92,
+   "frame": 0.9
+  },
+  "compromised": [
+   [],
+   []
+  ],
+  "stats": {
+   "forms": 2,
+   "hits": 2,
+   "counters": 0,
+   "swaps": 3,
+   "swapInterrupts": 1,
+   "failed": 0,
+   "hitsTaken": 6,
+   "guarded": 0,
+   "evaded": 0,
+   "analyzeSeconds": 2.3784999999701952,
+   "predictions": 2,
+   "predictedRight": 2
+  },
+  "assets": "ready",
+  "assetError": null,
+  "encounter": null,
+  "scan": {
+   "on": false,
+   "sat": 0,
+   "overload": false,
+   "labels": []
+  },
+  "pursuit": {
+   "on": false,
+   "tracking": false,
+   "ledges": [],
+   "routes": []
+  },
+  "pad": {
+   "recent": true,
+   "analyze": false,
+   "guard": false,
+   "status": false,
+   "interact": false
+  },
+  "log": [
+   {
+    "t": 11.07,
+    "text": "HOTSWAP → GRAPPLE / CONTROL · 0.7 s, vulnerable",
+    "kind": "swap"
+   },
+   {
+    "t": 11.79,
+    "text": "Loadout · GRAPPLE / CONTROL online",
+    "kind": "swap"
+   },
+   {
+    "t": 12.66,
+    "text": "HOTSWAP → PURSUIT · 0.7 s, vulnerable",
+    "kind": "swap"
+   },
+   {
+    "t": 12.92,
+    "text": "Legs → Sweep → Balance · Legs 90%",
+    "kind": "injury"
+   },
+   {
+    "t": 12.92,
+    "text": "HOTSWAP INTERRUPTED · still GRAPPLE / CONTROL",
+    "kind": "warn"
+   },
+   {
+    "t": 12.92,
+    "text": "Hit · Low sweep · −14 HP",
+    "kind": "hit"
+   },
+   {
+    "t": 14.33,
+    "text": "HOTSWAP → PURSUIT · 0.7 s, vulnerable",
+    "kind": "swap"
+   },
+   {
+    "t": 15.03,
+    "text": "Loadout · PURSUIT online",
+    "kind": "swap"
+   },
+   {
+    "t": 15.03,
+    "text": "PURSUIT online · ledges, routes and interception from real geometry",
+    "kind": "swap"
+   },
+   {
+    "t": 15.11,
+    "text": "Hit · Lead jab · −7 HP",
+    "kind": "hit"
+   },
+   {
+    "t": 15.53,
+    "text": "Baton retrieved · socket 01 · 12/12",
+    "kind": "gear"
+   },
+   {
+    "t": 15.81,
+    "text": "Baton stowed · socket 01",
+    "kind": "gear"
+   }
+  ]
+ }
+}

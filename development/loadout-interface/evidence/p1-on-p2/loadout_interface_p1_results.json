@@ -1,0 +1,403 @@
+{
+ "build": "SIGHTLINE_SAINT_MERIDIAN_V02_LOADOUT_INTERFACE_P2.html",
+ "date": "2026-11-11T19:18:05.368Z",
+ "results": [
+  {
+   "name": "layer active as Loadout, HUD shown",
+   "result": "PASS",
+   "info": {
+    "loadout": "box"
+   }
+  },
+  {
+   "name": "T starts the encounter (construct + worker)",
+   "result": "PASS",
+   "info": {
+    "construct": {
+     "hp": 300,
+     "phase": "ready",
+     "attack": null,
+     "clinch": 0,
+     "down": 0,
+     "seen": {
+      "jab": 0,
+      "overhead": 0,
+      "sweep": 0,
+      "grab": 0
+     },
+     "jabCounterReady": false,
+     "pos": [
+      55,
+      0,
+      213.32
+     ],
+     "dist": 3.34
+    }
+   }
+  },
+  {
+   "name": "Analyze held: Ghost Builds of possible attacks visible during the windup",
+   "result": "PASS",
+   "info": {
+    "visible": 4,
+    "ghosts": {
+     "jab": {
+      "visible": true,
+      "opacity": 0.22,
+      "p": 0.31
+     },
+     "overhead": {
+      "visible": true,
+      "opacity": 0.22,
+      "p": 0.31
+     },
+     "sweep": {
+      "visible": true,
+      "opacity": 0.14,
+      "p": 0.08
+     },
+     "grab": {
+      "visible": true,
+      "opacity": 0.22,
+      "p": 0.31
+     }
+    },
+    "phase": "windup",
+    "attack": "jab"
+   }
+  },
+  {
+   "name": "Analyze drains MP",
+   "result": "PASS",
+   "info": {
+    "mp": 92.1
+   }
+  },
+  {
+   "name": "construct attacks resolve on Loadout (guarded / hit)",
+   "result": "PASS",
+   "info": {
+    "hitsTaken": 2,
+    "guarded": 1,
+    "hp": 88.2
+   }
+  },
+  {
+   "name": "Analyze records observed attacks",
+   "result": "PASS",
+   "info": {
+    "jab": 1,
+    "overhead": 1,
+    "sweep": 0,
+    "grab": 0
+   }
+  },
+  {
+   "name": "guarded overhead injures the right forearm",
+   "result": "PASS",
+   "info": {
+    "rightArm": 72,
+    "log": [
+     "RightForearm → BluntImpact → StructuralStress · Right forearm 72%",
+     "COUNTER / BOX — 2 FORMS COMPROMISED · B: Status",
+     "Hit · Overhead strike (guarded) · −5 HP"
+    ]
+   }
+  },
+  {
+   "name": "B opens the Status glance",
+   "result": "PASS"
+  },
+  {
+   "name": "Form 1 (Slip Counter) performed; counter lands in the window",
+   "result": "PASS",
+   "info": {
+    "forms": 1,
+    "counters": 1,
+    "constructHp": 269,
+    "log": [
+     "COUNTER / BOX — 2 FORMS COMPROMISED · B: Status",
+     "Hit · Overhead strike (guarded) · −5 HP",
+     "Evaded · Overhead strike",
+     "COUNTER · Slip Counter · 31 dmg"
+    ]
+   }
+  },
+  {
+   "name": "two Tempo Jabs: construct learns to counter the lead",
+   "result": "PASS",
+   "info": {
+    "jabCounterReady": true
+   }
+  },
+  {
+   "name": "Q tap hotswaps to GRAPPLE / CONTROL after a vulnerable transition",
+   "result": "PASS",
+   "info": {
+    "during": {
+     "to": "grapple",
+     "t": 0.16
+    },
+    "after": "grapple"
+   }
+  },
+  {
+   "name": "Grapple: Clinch Entry in an opening controls the construct",
+   "result": "PASS",
+   "info": {
+    "log": [
+     "Hit · Lead jab · −7 HP",
+     "CLINCH · construct controlled 1.8 s",
+     "Clinch Entry · 3 dmg (reliability 64%)",
+     "Balance Break · KNOCKDOWN · 16 dmg"
+    ]
+   }
+  },
+  {
+   "name": "Grapple: Balance Break from the clinch knocks it down",
+   "result": "PASS",
+   "info": {
+    "log": [
+     "Hit · Lead jab · −7 HP",
+     "CLINCH · construct controlled 1.8 s",
+     "Clinch Entry · 3 dmg (reliability 64%)",
+     "Balance Break · KNOCKDOWN · 16 dmg"
+    ]
+   }
+  },
+  {
+   "name": "Q hold opens the Loadout wheel; 1 picks COUNTER / BOX",
+   "result": "PASS",
+   "info": {
+    "wheel": true,
+    "loadout": "box"
+   }
+  },
+  {
+   "name": "X draws the registered baton",
+   "result": "PASS",
+   "info": {
+    "baton": {
+     "registered": true,
+     "out": true,
+     "durability": 12,
+     "max": 12,
+     "broken": false
+    }
+   }
+  },
+  {
+   "name": "baton strike spends durability (persistent state)",
+   "result": "PASS",
+   "info": {
+    "before": 12,
+    "after": 11,
+    "log": [
+     "Baton retrieved · socket 01 · 12/12",
+     "Tempo Jab · 15 dmg (reliability 64%)",
+     "Construct interrupted"
+    ]
+   }
+  },
+  {
+   "name": "X stows it; durability unchanged by stowing",
+   "result": "PASS",
+   "info": {
+    "baton": {
+     "registered": true,
+     "out": false,
+     "durability": 11,
+     "max": 12,
+     "broken": false
+    }
+   }
+  },
+  {
+   "name": "worker heard; J shows the quest with the excluded occupant",
+   "result": "PASS"
+  },
+  {
+   "name": "hold I frees the trapped worker (OFF-SCRIPT while the construct is active)",
+   "result": "PASS",
+   "info": {
+    "worker": {
+     "heard": true,
+     "freed": true,
+     "progress": 1,
+     "near": false
+    },
+    "offScript": true,
+    "xp": 60
+   }
+  },
+  {
+   "name": "switch to Backspool: Loadout layer inactive, HUD hidden, encounter cleared",
+   "result": "PASS",
+   "info": {
+    "active": false,
+    "hidden": true,
+    "encounter": false
+   }
+  },
+  {
+   "name": "Backspool keeps his own keys (2 = Impact style)",
+   "result": "PASS",
+   "info": {
+    "styleBefore": "flow",
+    "styleAfter": "impact"
+   }
+  },
+  {
+   "name": "no page errors",
+   "result": "PASS",
+   "info": []
+  }
+ ],
+ "final": {
+  "active": false,
+  "hp": 48.4,
+  "mp": 100,
+  "sta": 100,
+  "body": {
+   "rightArm": 64,
+   "leftArm": 100,
+   "legs": 100,
+   "torso": 92
+  },
+  "loadout": "box",
+  "swap": null,
+  "wheel": false,
+  "form": null,
+  "guard": false,
+  "analyze": false,
+  "baton": {
+   "registered": true,
+   "out": false,
+   "durability": 11,
+   "max": 12,
+   "broken": false
+  },
+  "xp": 60,
+  "level": 11,
+  "echo": {
+   "grab": 0
+  },
+  "questOpen": false,
+  "statusOpen": false,
+  "reliability": {
+   "slip": 1,
+   "tempo": 0.64,
+   "cross": 0.64,
+   "feint": 1,
+   "clinch": 0.64,
+   "sweep": 1,
+   "throw": 0.64,
+   "burst": 1,
+   "route": 0.92,
+   "intercept": 0.92,
+   "vaultread": 0.92,
+   "frame": 1
+  },
+  "compromised": [
+   [
+    "tempo",
+    "cross"
+   ],
+   [
+    "clinch",
+    "throw"
+   ]
+  ],
+  "stats": {
+   "forms": 6,
+   "hits": 5,
+   "counters": 1,
+   "swaps": 2,
+   "swapInterrupts": 0,
+   "failed": 0,
+   "hitsTaken": 6,
+   "guarded": 2,
+   "evaded": 1,
+   "analyzeSeconds": 4.437900000005958,
+   "predictions": 2,
+   "predictedRight": 2
+  },
+  "assets": "ready",
+  "assetError": null,
+  "encounter": null,
+  "scan": {
+   "on": false,
+   "sat": 0,
+   "overload": false,
+   "labels": []
+  },
+  "pursuit": {
+   "on": false,
+   "tracking": false,
+   "ledges": [],
+   "routes": []
+  },
+  "log": [
+   {
+    "t": 18.31,
+    "text": "Clinch Entry · 3 dmg (reliability 64%)",
+    "kind": "combat"
+   },
+   {
+    "t": 19.13,
+    "text": "Balance Break · KNOCKDOWN · 16 dmg",
+    "kind": "combat"
+   },
+   {
+    "t": 20.38,
+    "text": "HOTSWAP → COUNTER / BOX · 0.7 s, vulnerable",
+    "kind": "swap"
+   },
+   {
+    "t": 21.08,
+    "text": "Loadout · COUNTER / BOX online",
+    "kind": "swap"
+   },
+   {
+    "t": 21.08,
+    "text": "Compatibility · 2 Forms compromised by injury",
+    "kind": "warn"
+   },
+   {
+    "t": 21.38,
+    "text": "Baton retrieved · socket 01 · 12/12",
+    "kind": "gear"
+   },
+   {
+    "t": 22.58,
+    "text": "Tempo Jab · 15 dmg (reliability 64%)",
+    "kind": "combat"
+   },
+   {
+    "t": 22.58,
+    "text": "Construct interrupted",
+    "kind": "combat"
+   },
+   {
+    "t": 23.6,
+    "text": "Baton stowed · socket 01",
+    "kind": "gear"
+   },
+   {
+    "t": 25.17,
+    "text": "Construct whiffs · Feint into grab",
+    "kind": "combat"
+   },
+   {
+    "t": 26.4,
+    "text": "OFF-SCRIPT · occupant freed against the Quest recommendation",
+    "kind": "quest"
+   },
+   {
+    "t": 26.4,
+    "text": "+60 XP · Quest judgment · occupant rescued (OFF-SCRIPT)",
+    "kind": "xp"
+   }
+  ]
+ }
+}
