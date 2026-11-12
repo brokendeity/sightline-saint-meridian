@@ -12,7 +12,7 @@
    - The chord cycles Loadout -> Sightline -> Backspool -> Loadout.
    Labelled setup: none (no teleports). */
 const{chromium}=require('/opt/homebrew/lib/node_modules/playwright'),assert=require('assert/strict'),fs=require('fs'),crypto=require('crypto'),path=require('path');
-const OUT='development/characters/loadout/evidence/hero',BUILD='SIGHTLINE_SAINT_MERIDIAN_V02_LOADOUT.html';
+const OUT=process.env.LOADOUT_HERO_OUT||'development/characters/loadout/evidence/hero',BUILD=process.env.LOADOUT_HERO_BUILD||'SIGHTLINE_SAINT_MERIDIAN_V02_LOADOUT.html';
 (async()=>{const browser=await chromium.launch({headless:true,args:['--use-gl=angle','--use-angle=metal','--mute-audio']});const ctx=await browser.newContext({viewport:{width:1280,height:800}});try{
  fs.mkdirSync(OUT,{recursive:true});
  const p=await ctx.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));

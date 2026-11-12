@@ -1,0 +1,55 @@
+"""Run the full V02 regression set against the Backspool costume build (grind build + Backspool costume switch), one browser at a time,
+plus three costume jobs: the costume real-input test, and the combat and grind tests started in the Half mask costume.
+The grind jobs use the pre-grind build as their control (V02_GRIND_CONTROL), as the grind build itself did.
+Original description of the copied runner:
+the canonical smoke check, the hero-select real-input test, the 16 V02 suites, then the three Loadout jobs of
+run_loadout_runner_full_checks.py (hero test, earlier Runner roles test with the full-pack layer off, full-pack test).
+
+Pointed at V02_Backspool_Costume_Build.json. Logs and evidence go to
+development/vertical-city-v02/evidence/backspool-costume-checks/ and the threadrail-grind-* suite folders.
+Three tests write to fixed tracked folders (friendly-contacts-wall / -landing, canonical-source): their output is copied
+here, then those folders are restored to HEAD (the runner refuses to start if they already have local changes).
+Usage: python3 -I run_threadrail_grind_checks.py [first-job-name]"""
+from pathlib import Path
+import json,os,shutil,subprocess,sys,time
+R=Path(__file__).resolve().parents[2];D=R/'development/vertical-city-v02';V='scripts/vertical-v02/';E=D/'evidence/backspool-costume-checks';E.mkdir(parents=True,exist_ok=True)
+BUILD='V02_Backspool_Costume_Build.json';HTML='SIGHTLINE_SAINT_MERIDIAN_V02_BACKSPOOL_COSTUME.html';GC='SIGHTLINE_SAINT_MERIDIAN_V02_HERO_SELECT_CARTRIDGE.html';fixed=['development/vertical-city-v02/evidence/friendly-contacts-wall','development/vertical-city-v02/evidence/friendly-contacts-landing','development/vertical-city-v02/evidence/canonical-source']
+dirty=subprocess.run(['git','status','--porcelain','--',*fixed],cwd=R,capture_output=True,text=True).stdout.strip();assert not dirty,'fixed evidence folders have local changes:\n'+dirty
+out=lambda n:'development/vertical-city-v02/evidence/backspool-costume-checks/'+n
+jobs=[('smoke',['node',V+'test_canonical_smoke.cjs',BUILD],{},fixed[2]),
+ ('threadrail-grind',['node',V+'test_threadrail_grind.cjs'],{'V02_ACTION_BUILD':BUILD,'V02_GRIND_OUT':out('threadrail-grind'),'V02_GRIND_CONTROL':GC},None),
+ ('hero-select',['node',V+'test_hero_select.cjs',BUILD],{'V02_HERO_SELECT_OUT':out('hero-select')},None),
+ ('wall-contacts',['node',V+'test_friendly_wall_contacts.cjs'],{'V02_ACTION_BUILD':BUILD},fixed[0]),
+ ('landing-contacts',['node',V+'test_friendly_landing_contacts.cjs'],{'V02_ACTION_BUILD':BUILD},fixed[1]),
+ ('city-loops',['node',V+'test_current_city_loops.cjs'],{'V02_LOOP_BUILD':BUILD,'V02_LOOP_REPORT':'V02_Backspool_Costume_Loops.json','V02_LOOP_RUN':'backspool-costume-loops'},None),
+ ('station-routes',['python3',V+'run_current_station_routes.py'],{'V02_ROUTE_BUILD_REPORT':BUILD,'V02_ROUTE_REPORT':'V02_Backspool_Costume_Station_Routes.json','V02_ROUTE_SUITE':'backspool-costume-station-routes'},None),
+ ('retained-gameplay',['python3',V+'run_friendly_gameplay_regressions.py'],{'V02_GAMEPLAY_BUILD':BUILD,'V02_GAMEPLAY_SUITE':'backspool-costume-gameplay'},None),
+ ('strides',['node',V+'test_forspoken_strides.cjs'],{'V02_ACTION_BUILD':BUILD,'V02_STRIDES_OUT':out('strides')},None),
+ ('vaults',['node',V+'test_forspoken_vaults.cjs'],{'V02_ACTION_BUILD':BUILD,'V02_VAULTS_OUT':out('vaults')},None),
+ ('air',['node',V+'test_forspoken_air.cjs'],{'V02_ACTION_BUILD':BUILD,'V02_AIR_OUT':out('air')},None),
+ ('crouch',['node',V+'test_forspoken_crouch.cjs'],{'V02_ACTION_BUILD':BUILD,'V02_CROUCH_OUT':out('crouch')},None),
+ ('combat',['node',V+'test_mixamo_combat.cjs'],{'V02_ACTION_BUILD':BUILD,'V02_COMBAT_OUT':out('combat')},None),
+ ('sightline',['node',V+'test_sightline_melee.cjs'],{'V02_ACTION_BUILD':BUILD,'V02_SIGHTLINE_OUT':out('sightline')},None),
+ ('rhythm',['node',V+'test_burst_rhythm.cjs'],{'V02_ACTION_BUILD':BUILD,'V02_RHYTHM_OUT':out('rhythm')},None),
+ ('themed',['node',V+'test_themed_slots.cjs'],{'V02_ACTION_BUILD':BUILD,'V02_THEMED_OUT':out('themed')},None),
+ ('impact',['node',V+'test_impact_fx.cjs'],{'V02_ACTION_BUILD':BUILD,'V02_IMPACT_OUT':out('impact')},None),
+ ('no-trucks',['node',V+'test_no_halo_trucks.cjs'],{'V02_ACTION_BUILD':BUILD,'V02_TRUCKS_OUT':out('no-trucks')},None),
+ ('menu',['node',V+'test_menu_style.cjs'],{'V02_ACTION_BUILD':BUILD,'V02_MENU_OUT':out('menu')},None),
+ ('loadout-hero',['node','scripts/characters/loadout/test_loadout_hero_real_input.cjs'],{'LOADOUT_HERO_BUILD':HTML,'LOADOUT_HERO_OUT':out('loadout-hero')},None),
+ ('loadout-runner-roles',['node','scripts/characters/loadout/test_loadout_runner_real_input.cjs'],{'LOADOUT_RUNNER_BUILD':HTML,'LOADOUT_RUNNER_OUT':out('loadout-runner-roles'),'LOADOUT_RUNNER_FULL_OFF':'1'},None),
+ ('backspool-costume',['node','scripts/characters/backspool/test_backspool_costume_real_input.cjs'],{'BSC_BUILD':HTML,'BSC_OUT':out('backspool-costume')},None),
+ ('costume-combat',['node',V+'test_mixamo_combat.cjs'],{'V02_ACTION_BUILD':BUILD,'V02_COMBAT_OUT':out('costume-combat'),'V02_BACKSPOOL_COSTUME':'halfmask'},None),
+ ('costume-grind',['node',V+'test_threadrail_grind.cjs'],{'V02_ACTION_BUILD':BUILD,'V02_GRIND_OUT':out('costume-grind'),'V02_GRIND_CONTROL':GC,'V02_BACKSPOOL_COSTUME':'halfmask'},None),
+ ('loadout-runner-full',['node','scripts/characters/loadout/test_loadout_runner_full_real_input.cjs'],{'LRF_BUILD':HTML,'LRF_OUT':out('loadout-runner-full')},None)]
+names=[j[0] for j in jobs];start=names.index(sys.argv[1]) if len(sys.argv)>1 else 0
+summaryFile=E/'summary.json';summary=json.loads(summaryFile.read_text()) if start and summaryFile.exists() else {'build':BUILD,'results':{}}
+for name,cmd,env,fixedOut in jobs[start:]:
+ t0=time.monotonic();print('START',name,flush=True)
+ with open(E/(name+'.log'),'w') as log:rc=subprocess.run(cmd,cwd=R,env={**os.environ,**env},stdout=log,stderr=subprocess.STDOUT).returncode
+ if fixedOut:
+  dst=E/(Path(fixedOut).name);shutil.rmtree(dst,ignore_errors=True);shutil.copytree(R/fixedOut,dst)
+  subprocess.run(['git','restore','--source=HEAD','--worktree','--',fixedOut],cwd=R,check=True);subprocess.run(['git','clean','-fdq','--',fixedOut],cwd=R,check=True)
+ tail=(E/(name+'.log')).read_text().strip().splitlines()[-3:]
+ summary['results'][name]={'status':'PASS' if rc==0 else 'FAIL','returncode':rc,'wallSeconds':round(time.monotonic()-t0,1),'command':' '.join(cmd),'environment':env,'logTail':tail}
+ summaryFile.write_text(json.dumps(summary,indent=1)+'\n');print(summary['results'][name]['status'],name,rc,flush=True)
+print('DONE',sum(r['status']=='PASS' for r in summary['results'].values()),'of',len(summary['results']),'PASS')

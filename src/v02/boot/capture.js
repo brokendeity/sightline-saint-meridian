@@ -1,0 +1,1 @@
+if(new URLSearchParams(location.search).get("capture")==="backspool")localStorage.setItem("sightlineCharacter","backspool");

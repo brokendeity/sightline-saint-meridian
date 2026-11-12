@@ -1,0 +1,120 @@
+/* V02 hero select ("Midnight Slash" language): midnight-blue and charcoal slabs, thin cyan strips, warm amber accents,
+ * cut-corner panels, stamped labels, kinetic entrances. No bloom, no backdrop blur over the WebGL canvas. */
+#v02HeroSelect{--hs-night:var(--sm-night,#06101a);--hs-slab:var(--sm-slab,#0a1926);--hs-slab2:var(--sm-slab-2,#0f2433);--hs-char:var(--sm-charcoal,#11171d);--hs-cyan:var(--sm-cyan,#5fe3e8);--hs-cyan-deep:var(--sm-cyan-deep,#0f6f7a);--hs-amber:var(--sm-amber,#ffb25a);--hs-ink:var(--sm-ink,#f2f7f9);--hs-dim:var(--sm-dim,#a9c0c9);--hs-display:var(--sm-display,Impact,Haettenschweiler,"Arial Narrow Bold","Franklin Gothic Heavy",sans-serif);--hs-cut:12px;
+ position:fixed;inset:0;z-index:90;color:var(--hs-ink);font-family:inherit;overflow:hidden;user-select:none}
+#v02HeroSelect[hidden]{display:none!important}
+body.v02HeroSelectOpen #menu{visibility:hidden}
+#v02HeroSelect .hsBackdrop{position:absolute;inset:0;background:
+ repeating-linear-gradient(90deg,rgba(95,227,232,.035) 0 1px,transparent 1px 64px),
+ repeating-linear-gradient(0deg,rgba(95,227,232,.03) 0 1px,transparent 1px 64px),
+ radial-gradient(ellipse 46% 60% at 50% 56%,rgba(15,111,122,.30),transparent 70%),
+ linear-gradient(180deg,rgba(10,25,38,.95),rgba(6,16,26,.97) 60%,rgba(17,23,29,.98));animation:hsFade .22s ease-out both}
+#v02HeroSelect .hsBackdrop::before{content:'';position:absolute;inset:0 auto 0 0;width:min(27vw,350px);background:linear-gradient(180deg,var(--hs-slab),var(--hs-night));clip-path:polygon(0 0,100% 0,96% 100%,0 100%);opacity:.9;animation:hsSlab .3s cubic-bezier(.2,.9,.2,1) both}
+#v02HeroSelect .hsStrip{position:absolute;inset:0;pointer-events:none;background:var(--hs-cyan);clip-path:polygon(min(27vw,350px) 0,calc(min(27vw,350px) + 2px) 0,calc(min(27vw,350px)*.96 + 2px) 100%,calc(min(27vw,350px)*.96) 100%);opacity:.8;animation:hsSlab .36s .06s cubic-bezier(.2,.9,.2,1) both}
+#v02HeroSelect .hsStrip::after{content:'';position:absolute;inset:0;background:var(--hs-amber);clip-path:polygon(calc(min(27vw,350px) + 10px) 0,calc(min(27vw,350px) + 11px) 0,calc(min(27vw,350px)*.96 + 11px) 100%,calc(min(27vw,350px)*.96 + 10px) 100%);opacity:.75}
+#v02HeroSelect h2{margin:0 0 10px;font-size:12px;font-weight:600;line-height:1;letter-spacing:.22em;text-transform:uppercase;color:var(--hs-cyan)}
+#v02HeroSelect h2::before{content:'';display:inline-block;width:18px;height:2px;margin:0 8px 3px 0;background:var(--hs-amber);vertical-align:middle}
+
+/* Stage: the turntable sits in the middle; its canvas is transparent over the backdrop. */
+#v02HeroSelect .hsStage{position:absolute;left:24vw;right:24vw;top:13vh;bottom:9vh}
+#v02HeroStage{width:100%;height:100%;display:block;cursor:grab;touch-action:none}
+#v02HeroStage:active{cursor:grabbing}
+#v02HeroStageNote{position:absolute;left:0;right:0;bottom:22%;text-align:center;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--hs-dim)}
+#v02HeroStageNote:empty{display:none}
+/* Backspool's Threadrail cartridge display: a small card in the stage's upper right. The WebGL view under .hsCartView is
+ * drawn by the preview renderer; the card itself is only a frame and a caption, so it carries no background. */
+#v02HeroCartridge{position:absolute;right:5%;top:1%;width:clamp(120px,24%,200px);margin:0;pointer-events:none;border:1px solid rgba(95,227,232,.55);clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);animation:hsInRight .35s .15s cubic-bezier(.2,.9,.2,1) both}
+#v02HeroCartridge[hidden]{display:none}
+#v02HeroCartridge .hsCartView{width:100%;aspect-ratio:1/1}
+#v02HeroCartridge figcaption{padding:6px 9px 8px;border-top:1px solid rgba(95,227,232,.35);background:rgba(6,16,26,.82)}
+#v02HeroCartridge figcaption b{display:block;font:400 14px/1.05 var(--hs-display);letter-spacing:.06em;text-transform:uppercase;color:var(--hs-ink)}
+#v02HeroCartridge figcaption b::before{content:'';display:inline-block;width:10px;height:2px;margin:0 6px 4px 0;background:var(--hs-amber);vertical-align:middle}
+#v02HeroCartridge figcaption span{display:block;margin-top:3px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--hs-dim)}
+
+/* Name plate and description, top centre. */
+#v02HeroSelect .hsTop{position:absolute;top:3vh;left:50%;transform:translateX(-50%);width:min(560px,48vw);text-align:center;pointer-events:none}
+#v02HeroSelect .hsEyebrow{display:inline-block;padding:4px 12px;font-size:11px;letter-spacing:.24em;color:var(--hs-night);background:var(--hs-amber);clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+#v02HeroSelect .hsPlate{display:flex;align-items:baseline;justify-content:center;gap:14px;margin-top:8px}
+#v02HeroName{margin:0;font:400 clamp(44px,min(6vw,9vh),92px)/.9 var(--hs-display);letter-spacing:.03em;text-transform:uppercase;color:var(--hs-ink);text-shadow:4px 4px 0 var(--hs-cyan-deep)}
+#v02HeroCode{font-size:11px;letter-spacing:.2em;color:var(--hs-cyan);border:1px solid var(--hs-cyan);padding:3px 7px}
+#v02HeroRole{margin:6px 0 0;font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--hs-amber)}
+#v02HeroBlurb{margin:8px auto 0;max-width:520px;font-size:13px;line-height:1.5;color:var(--hs-dim)}
+
+/* Cut-corner panel shared by the roster, traits and ability cards. */
+#v02HeroSelect .hsRoster,#v02HeroSelect .hsTraits,#v02HeroSelect .hsAbilities{position:absolute;padding:14px 16px 18px;background:linear-gradient(180deg,rgba(15,36,51,.78),rgba(6,16,26,.82));border:1px solid rgba(95,227,232,.55);clip-path:polygon(var(--hs-cut) 0,100% 0,100% calc(100% - var(--hs-cut)),calc(100% - var(--hs-cut)) 100%,0 100%,0 var(--hs-cut))}
+#v02HeroSelect .hsTraits{left:3vw;top:6vh;width:min(280px,22vw);animation:hsInLeft .35s .05s cubic-bezier(.2,.9,.2,1) both}
+#v02HeroSelect .hsRoster{left:3vw;bottom:12vh;width:min(280px,22vw);animation:hsInLeft .35s .1s cubic-bezier(.2,.9,.2,1) both}
+#v02HeroSelect .hsAbilities{right:3vw;top:6vh;width:min(300px,22vw);max-height:76vh;overflow:auto;animation:hsInRight .35s .1s cubic-bezier(.2,.9,.2,1) both}
+
+/* Roster cards. */
+#v02HeroCards{display:flex;flex-direction:column;gap:8px}
+#v02HeroSelect .hsCard{position:relative;display:flex;align-items:center;gap:12px;width:100%;min-height:58px;padding:6px 10px;border:1px solid rgba(95,227,232,.5);background:rgba(6,16,26,.6);color:var(--hs-ink);text-align:left;cursor:pointer;overflow:hidden;opacity:.72;font:inherit;clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);transition:opacity .25s,background .25s,transform .25s cubic-bezier(.2,.9,.2,1)}
+#v02HeroSelect .hsCard:hover{opacity:.95;background:rgba(95,227,232,.08)}
+#v02HeroSelect .hsCard.isFocus{opacity:1;background:linear-gradient(90deg,rgba(95,227,232,.2),rgba(95,227,232,.05));border-color:var(--hs-cyan);transform:translateX(8px)}
+#v02HeroSelect .hsCard.isFocus::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--hs-amber)}
+#v02HeroSelect .hsCard:focus-visible{outline:2px solid var(--hs-amber);outline-offset:-4px}
+#v02HeroSelect .hsShine{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(95,227,232,.18) 35%,rgba(95,227,232,.36) 50%,rgba(95,227,232,.18) 65%,transparent);transform:translateX(-150%)}
+#v02HeroSelect .hsCard.isFocus .hsShine{animation:hsShine 1s cubic-bezier(.2,.9,.2,1)}
+#v02HeroSelect .hsGlyph{width:34px;height:34px;flex:none;color:var(--hs-cyan)}
+#v02HeroSelect .hsCard.isFocus .hsGlyph{color:var(--hs-amber)}
+#v02HeroSelect .hsGlyph svg{width:100%;height:100%}
+#v02HeroSelect .hsCardText{display:flex;flex-direction:column;gap:2px;flex:1;min-width:0}
+#v02HeroSelect .hsCardText b{font:400 20px/1 var(--hs-display);letter-spacing:.05em;text-transform:uppercase}
+#v02HeroSelect .hsCardText i{font-size:11px;font-style:normal;letter-spacing:.12em;text-transform:uppercase;color:var(--hs-dim)}
+#v02HeroSelect .hsActive{display:none;align-self:flex-start;margin-top:3px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;padding:2px 6px;color:var(--hs-night);background:var(--hs-cyan)}
+#v02HeroSelect .hsCard.isActive .hsActive{display:inline-block}
+#v02HeroSelect .hsKey{position:absolute;right:6px;top:4px;font-size:10px;color:rgba(169,192,201,.6)}
+
+/* Trait bars: fill one after another on each swap. */
+#v02HeroTraits{display:flex;flex-direction:column;gap:8px}
+#v02HeroSelect .hsTrait{display:grid;grid-template-columns:78px 1fr 34px;align-items:center;gap:8px;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+#v02HeroSelect .hsTrait span{color:var(--hs-cyan)}
+#v02HeroSelect .hsTrait b{font-weight:600;text-align:right;color:var(--hs-ink)}
+#v02HeroSelect .hsBar_{height:9px;border:1px solid rgba(95,227,232,.7);background:rgba(0,0,0,.45);overflow:hidden}
+#v02HeroSelect .hsBar_ i{display:block;height:100%;width:calc(var(--fill) * 100%);background:linear-gradient(90deg,var(--hs-cyan-deep),var(--hs-cyan));transform-origin:left;animation:hsFill .7s var(--delay) cubic-bezier(.2,.9,.2,1) both}
+
+/* Ability cards. */
+#v02HeroAbilities{display:flex;flex-direction:column;gap:10px}
+#v02HeroSelect .hsAbility{padding:8px 10px 9px 12px;border-left:2px solid var(--hs-amber);background:rgba(10,25,38,.7);animation:hsInRight .4s var(--delay) cubic-bezier(.2,.9,.2,1) both}
+#v02HeroSelect .hsAbility b{display:block;font:400 17px/1.05 var(--hs-display);letter-spacing:.05em;text-transform:uppercase;color:var(--hs-ink)}
+#v02HeroSelect .hsAbility p{margin:4px 0 0;font-size:12px;line-height:1.45;color:var(--hs-dim)}
+
+/* Bottom bar: prompts, status, Back and Select. */
+#v02HeroSelect .hsBar{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;gap:14px;padding:12px 3vw;background:linear-gradient(0deg,rgba(6,16,26,.95),rgba(6,16,26,.6));border-top:1px solid rgba(95,227,232,.35)}
+#v02HeroSelect .hsPrompts{display:flex;gap:18px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--hs-dim)}
+#v02HeroSelect kbd,#v02HeroSelectQuick kbd{display:inline-block;margin-right:5px;padding:2px 6px;font-size:10px;font-weight:600;line-height:1.2;color:var(--hs-night,#06101a);background:var(--hs-cyan,#5fe3e8);clip-path:polygon(4px 0,100% 0,calc(100% - 4px) 100%,0 100%)}
+#v02HeroStatus{flex:1;text-align:right;font-size:12px;letter-spacing:.08em;color:var(--hs-amber)}
+#v02HeroSelect .hsBar button{padding:10px 20px;font:400 18px/1 var(--hs-display);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;border:1px solid var(--hs-cyan);clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%)}
+#v02HeroBack{background:transparent;color:var(--hs-cyan)}
+#v02HeroConfirm{background:var(--hs-amber);border-color:var(--hs-amber)!important;color:var(--hs-night)}
+#v02HeroConfirm:disabled{opacity:.5;cursor:progress}
+#v02HeroSelect .hsBar button:focus-visible{outline:2px solid var(--hs-ink);outline-offset:2px}
+
+/* Swap: name plate and panels re-enter on every focus change. */
+#v02HeroSelect.hsSwap .hsPlate,#v02HeroSelect.hsSwap #v02HeroRole,#v02HeroSelect.hsSwap #v02HeroBlurb{animation:hsDrop .32s cubic-bezier(.2,.9,.2,1) both}
+#v02HeroSelect.hsSwap #v02HeroRole{animation-delay:.04s}#v02HeroSelect.hsSwap #v02HeroBlurb{animation-delay:.08s}
+
+/* Entry points in the pause menu. */
+#v02HeroSelectQuick{margin-left:10px}
+#v02HeroSelectTools{margin:0 0 14px}
+#v02HeroSelectTools p{margin:4px 0 8px}
+
+@keyframes hsFade{from{opacity:0}to{opacity:1}}
+@keyframes hsSlab{from{transform:translateX(-30px);opacity:0}to{transform:none;opacity:1}}
+@keyframes hsInLeft{from{transform:translateX(-24px);opacity:0}to{transform:none;opacity:1}}
+@keyframes hsInRight{from{transform:translateX(24px);opacity:0}to{transform:none;opacity:1}}
+@keyframes hsDrop{from{transform:translateY(-10px);opacity:0}to{transform:none;opacity:1}}
+@keyframes hsFill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes hsShine{from{transform:translateX(-150%)}to{transform:translateX(150%)}}
+
+/* Narrow screens: stack panels; the stage keeps the middle. */
+@media (max-width:900px){
+ #v02HeroSelect{overflow:auto}
+ #v02HeroSelect .hsTop{position:relative;top:auto;left:auto;transform:none;width:auto;padding:16px 16px 0}
+ #v02HeroSelect .hsStage{position:relative;left:auto;right:auto;top:auto;bottom:auto;height:46vh}
+ #v02HeroSelect .hsRoster,#v02HeroSelect .hsTraits,#v02HeroSelect .hsAbilities{position:relative;left:auto;right:auto;top:auto;bottom:auto;width:auto;max-height:none;margin:10px 16px}
+ #v02HeroSelect .hsBar{position:sticky;flex-wrap:wrap}
+ #v02HeroSelect .hsPrompts{display:none}
+ #v02HeroSelect .hsBackdrop{position:fixed}
+}
+@media (prefers-reduced-motion:reduce){#v02HeroSelect *,#v02HeroSelect *::before,#v02HeroSelect *::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}

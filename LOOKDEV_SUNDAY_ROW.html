@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sunday Row look-dev slice</title>
+<style>
+ :root{--ink:#0d1520;--panel:rgba(8,16,26,.78);--text:#e9f1f7;--accent:#ffcf6b}
+ html,body{margin:0;height:100%;background:var(--ink);overflow:hidden;font:13px system-ui,sans-serif;color:var(--text)}
+ canvas{display:block;width:100vw;height:100vh}
+ #hud{position:fixed;left:12px;top:12px;background:var(--panel);padding:10px 12px;border-radius:8px;max-width:320px;line-height:1.5}
+ #hud b{color:var(--accent)} #hud.hidden{display:none}
+ #views button{margin:2px;background:#1c2b3b;color:var(--text);border:1px solid #39506a;border-radius:6px;padding:4px 8px;cursor:pointer}
+</style></head><body>
+<div id="hud"><b>SUNDAY ROW · MERCER STRIP</b> — look-dev slice (not the game).<br>
+Drag to orbit, wheel to zoom, WASD to move. Keys 1–5 jump to views, H hides this panel.
+<div id="views"></div></div>
+<script src="scripts/vendor/three-r128.js"></script>
+<script src="scripts/vendor/GLTFLoader-r128.js"></script>
+<script src="scripts/sunday-row/sunday_row_look.js"></script>
+<script src="scripts/look/anime_paint_look.js"></script>
+<script>
+(async()=>{
+ const renderer=new THREE.WebGLRenderer({antialias:false,powerPreference:'high-performance'});renderer.setPixelRatio(Math.min(2,devicePixelRatio));
+ renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.outputEncoding=THREE.LinearEncoding;document.body.appendChild(renderer.domElement);
+ const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(52,1,.1,3000);
+ const look=SundayRowLook.create(renderer,scene,camera);
+ const sky=look.addSky(),clouds=look.addClouds(),skyline=look.addSkyline();
+ const meta=await (await fetch('assets/city/sunday-row/slice/mercer_strip_slice.json')).json();
+ const gltf=await new Promise((ok,no)=>new THREE.GLTFLoader().load('assets/city/sunday-row/slice/mercer_strip_slice.glb',ok,undefined,no));
+ scene.add(gltf.scene);const meshes=look.applyMaterials(gltf.scene);look.addSigns(meta.signs);look.addContext(meta.layout);
+ // ?look=paint: physically based light + painterly post (location-independent anime-paint look); default: toon
+ const mode=new URLSearchParams(location.search).get('look')||'toon';let paint=null;
+ if(mode==='paint'){paint=AnimePaintLook.create(renderer,scene,camera);paint.convertMaterials(scene);paint.buildEnvironment([sky,clouds]);look.lights.sun.intensity=1.9;look.lights.hemi.intensity=.5;}
+ const renderNow=()=>paint?paint.render():look.render(),sizeNow=(w,h)=>paint?paint.setSize(w,h):look.setSize(w,h);
+ // Blender (x, y, z) -> three (x, z, -y)
+ const V=p=>new THREE.Vector3(p[0],p[2],-p[1]);
+ const views=meta.views,target=new THREE.Vector3();let yaw=0,pitch=0,dist=1;
+ function setView(name){const v=views[name];if(!v)return false;camera.position.copy(V(v.pos));target.copy(V(v.look));sync();return true;}
+ function sync(){const d=camera.position.clone().sub(target);dist=d.length();yaw=Math.atan2(d.x,d.z);pitch=Math.asin(d.y/dist);camera.lookAt(target);}
+ function orbit(){camera.position.set(target.x+dist*Math.cos(pitch)*Math.sin(yaw),target.y+dist*Math.sin(pitch),target.z+dist*Math.cos(pitch)*Math.cos(yaw));camera.lookAt(target);}
+ const names=Object.keys(views);const vb=document.getElementById('views');names.forEach((n,i)=>{const b=document.createElement('button');b.textContent=(i+1)+' '+n.replace(/_/g,' ');b.onclick=()=>setView(n);vb.appendChild(b);});
+ setView('street_chase');
+ let drag=null;renderer.domElement.addEventListener('pointerdown',e=>drag={x:e.clientX,y:e.clientY});addEventListener('pointerup',()=>drag=null);
+ addEventListener('pointermove',e=>{if(!drag)return;yaw-=(e.clientX-drag.x)*.005;pitch=Math.max(-.2,Math.min(1.4,pitch+(e.clientY-drag.y)*.005));drag={x:e.clientX,y:e.clientY};orbit();});
+ addEventListener('wheel',e=>{dist=Math.max(2,Math.min(400,dist*(1+Math.sign(e.deltaY)*.1)));orbit();});
+ const keys=new Set();addEventListener('keydown',e=>{keys.add(e.code);const i=parseInt(e.key)-1;if(i>=0&&i<names.length)setView(names[i]);if(e.code==='KeyH')document.getElementById('hud').classList.toggle('hidden');});addEventListener('keyup',e=>keys.delete(e.code));
+ function resize(){sizeNow(innerWidth,innerHeight);}addEventListener('resize',resize);resize();
+ let last=performance.now();
+ function frame(t){const dt=Math.min(.05,(t-last)/1000);last=t;
+  const f=new THREE.Vector3(),r=new THREE.Vector3();camera.getWorldDirection(f);f.y=0;f.normalize();r.crossVectors(f,new THREE.Vector3(0,1,0));const sp=12*dt;
+  if(keys.has('KeyW')){camera.position.addScaledVector(f,sp);target.addScaledVector(f,sp);}if(keys.has('KeyS')){camera.position.addScaledVector(f,-sp);target.addScaledVector(f,-sp);}
+  if(keys.has('KeyD')){camera.position.addScaledVector(r,sp);target.addScaledVector(r,sp);}if(keys.has('KeyA')){camera.position.addScaledVector(r,-sp);target.addScaledVector(r,-sp);}
+  sky.material.uniforms.time.value=t/1000;renderNow();requestAnimationFrame(frame);}
+ requestAnimationFrame(frame);
+ window.LOOKDEV={ready:true,scene,camera,meshes,views:names,setView,render:renderNow,mode,settings:paint?paint.settings:look.settings,info:()=>renderer.info.render};
+})().catch(e=>{document.getElementById('hud').innerHTML='<b>Load failed</b><br>'+e;window.LOOKDEV={error:String(e)};console.error(e);});
+</script></body></html>

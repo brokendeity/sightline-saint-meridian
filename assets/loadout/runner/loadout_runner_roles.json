@@ -1,0 +1,149 @@
+{
+ "schema": "loadout-runner-roles-v1",
+ "pack": "Runner Action Animation Pack v1.7.2 (licensed Unity Asset Store pack, in-place clips)",
+ "note": "Which Runner clip plays each of Loadout's gameplay roles. Roles not listed keep Backspool's retargeted clips. Gameplay timing never changes: each replaced role is fitted to the original role's gameplay duration, locomotion loops are time-scaled to the game's reference speeds, and attacks are trimmed so the Runner strike lands on the move's contact time.",
+ "flow": {
+  "idle": "Idle_Wait_A",
+  "relaxedIdle": "Idle_Wait_A",
+  "jump": "Jmp_Base_A",
+  "jumpMove": "Jmp_FrontAir_A",
+  "fall": "Jump_Down_A_Loop",
+  "land": "Land_Base_Wait",
+  "landSoft": "Land_Base_Wait",
+  "landMove": "Land_Base_Move",
+  "landSoftMove": "Land_Base_Move",
+  "landMoveFast": "Land_Stumble_Move",
+  "groundRoll": "Land_Roll_Move",
+  "roll": "Esc_Roll_Front",
+  "rollLeft": "Esc_Roll_Left",
+  "rollRight": "Esc_Roll_Right",
+  "rollBack": "Esc_Roll_Back",
+  "frontFlip": "Jmp_FrontAir_Roll_All",
+  "backFlip": "Jmp_BackAir_Roll_All",
+  "slide": "Esc_Slide_All",
+  "wallRun": "LoWall_RDash_Loop",
+  "wallClimb": "Wall_Vertical_Dash_Loop",
+  "wallBoost": "Wall_Vertical_Boost",
+  "wallKick": "Wall_Jump_Turn_Air_L",
+  "wallFlip": "Wall_Jump_Cross_Air_L",
+  "moveStart": "Mvm_Jog_Start_Fwd",
+  "moveStartFast": "Mvm_Jog_Start_Fwd",
+  "moveStop": "Mvm_JogStop",
+  "moveStopFast": "Mvm_BoostEnd",
+  "moveStopWalk": "Mvm_WalkStop",
+  "landHard": "Land_Spawn_Wait",
+  "landHeavy": "Land_Spawn_Wait",
+  "moveTurn": "Mvm_Jog_TurnL_180_Left",
+  "moveTurnFast": "Mvm_Boost_TurnL_180_Left",
+  "moveStartTurn": "Mvm_Jog_Start_L180",
+  "sideFlipLeft": "Jmp_SideAir_A",
+  "sideFlipRight": "Jmp_SideAir_A_Mirror",
+  "twistFlip": "Jmp_SideAir_B",
+  "treeFlip": "Wall_Jump_Turn_Air_R",
+  "scale": "Jmp_Base_B",
+  "backstep": "Esc_BoostDash_Back"
+ },
+ "loops": [
+  "idle",
+  "relaxedIdle",
+  "fall",
+  "wallRun",
+  "wallClimb"
+ ],
+ "mirrorNote": "A clip name ending in _Mirror is that Runner clip mirrored left to right by the converter.",
+ "locomotion": {
+  "walk": {
+   "clip": "Mvm_Walk",
+   "referenceSpeed": 4.0
+  },
+  "jog": {
+   "clip": "Mvm_Jog",
+   "referenceSpeed": 8.2
+  },
+  "run": {
+   "clip": "Mvm_Dash",
+   "referenceSpeed": 8.2
+  },
+  "fastRun": {
+   "clip": "Mvm_Boost",
+   "referenceSpeed": 13.8
+  },
+  "parkourRun": {
+   "clip": "Mvm_Boost",
+   "referenceSpeed": 13.8
+  },
+  "parkourSprint": {
+   "clip": "Mvm_Boost",
+   "referenceSpeed": 13.8
+  }
+ },
+ "combat": {
+  "ground": [
+   "Attack_Hand_2L",
+   "Attack_Hand_1R",
+   "Attack_Kick_A",
+   "Attack_Kick_A_Mirror",
+   "Attack_Kick_B",
+   "Attack_Kick_B_Mirror",
+   "Attack_Kick_C",
+   "Attack_Kick_C_Mirror",
+   "Attack_Hand_PwR",
+   "Attack_Hand_PwR_Mirror"
+  ],
+  "heavy": [
+   "Attack_Hand_PwR",
+   "Attack_Hand_PwR_Mirror",
+   "Attack_Kick_C",
+   "Attack_Kick_C_Mirror"
+  ],
+  "air": [
+   "JAttack_AirFront",
+   "JAttack_AirFront_Mirror",
+   "JAttack_AirDrop_All",
+   "JAttack_AirDrop_All_Mirror",
+   "Attack_Kick_A",
+   "Attack_Kick_A_Mirror"
+  ]
+ },
+ "kept": "Vaults, climbs, mantles, ledges, ladders, crouch, swimming, landBack, guard, fight stance and the Afterstep/Threadrail power roles keep Backspool's retargeted clips: they carry contact data calibrated to those clips, are powers Loadout does not have, or the pack has no equivalent (its 'ready' pose is a running pose).",
+ "faceEnd": [
+  "Mvm_Jog_TurnL_180_Left",
+  "Mvm_Boost_TurnL_180_Left",
+  "Mvm_Jog_Start_L180"
+ ],
+ "faceEndNote": "Turn clips are rebased to end facing forward: the game snaps yaw to the new heading when a turn starts.",
+ "variants": {
+  "idle": [
+   "Idle_Wait_A",
+   "Idle_Wait_B",
+   "Idle_Wait_C"
+  ],
+  "relaxedIdle": [
+   "Idle_Wait_A",
+   "Idle_Wait_B",
+   "Idle_Wait_C"
+  ]
+ },
+ "directional": {
+  "groundRoll": {
+   "front": "Land_Roll_Move",
+   "left": "Esc_Roll_Left",
+   "right": "Esc_Roll_Right",
+   "back": "Esc_Roll_Back"
+  },
+  "wallRun": {
+   "right": "LoWall_RDash_Loop",
+   "left": "LoWall_LDash_Loop"
+  }
+ },
+ "directionalNote": "The Flow ground roll follows the stick relative to his facing (front, left, right, back); wall runs use the clip for the side the wall is on (LDash: wall on his left). The choice is made each time the role starts.",
+ "defense": {
+  "reaction": {
+   "clip": "Dam_Stand_Stumble",
+   "window": [
+    0.1,
+    0.9
+   ]
+  }
+ }
+}

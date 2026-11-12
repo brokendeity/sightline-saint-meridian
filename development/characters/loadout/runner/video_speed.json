@@ -1,0 +1,157 @@
+{
+ "video": "https://www.youtube.com/watch?v=59_yV7DdakM",
+ "videoFile": "video.mp4",
+ "fps": 60,
+ "cells": {
+  "Walk": {
+   "clip": "Mvm_Walk",
+   "clipDuration": 0.9333,
+   "videoPeriod": 0.9321,
+   "cycles": 1,
+   "ratio": 0.9987,
+   "minimumDepth": 0.314
+  },
+  "Jog": {
+   "clip": "Mvm_Jog",
+   "clipDuration": 0.9333,
+   "videoPeriod": 0.9328,
+   "cycles": 1,
+   "ratio": 0.9994,
+   "minimumDepth": 0.249
+  },
+  "Dash": {
+   "clip": "Mvm_Dash",
+   "clipDuration": 0.5333,
+   "videoPeriod": 0.5331,
+   "cycles": 1,
+   "ratio": 0.9995,
+   "minimumDepth": 0.198
+  },
+  "Boost": {
+   "clip": "Mvm_Boost",
+   "clipDuration": 0.4,
+   "videoPeriod": 0.3999,
+   "cycles": 1,
+   "ratio": 0.9997,
+   "minimumDepth": 0.122
+  },
+  "ChargeDash": {
+   "clip": "Mvm_ChargeDash",
+   "clipDuration": 0.5333,
+   "videoPeriod": 0.5332,
+   "cycles": 1,
+   "ratio": 0.9998,
+   "minimumDepth": 0.157
+  },
+  "ChargeBoost": {
+   "clip": "Mvm_ChargeBoost",
+   "clipDuration": 0.4,
+   "videoPeriod": 0.3999,
+   "cycles": 1,
+   "ratio": 0.9996,
+   "minimumDepth": 0.141
+  },
+  "BoostEnd": {
+   "clip": "Mvm_BoostEnd",
+   "clipDuration": 1.5,
+   "videoPeriod": 1.4991,
+   "cycles": 1,
+   "ratio": 0.9994,
+   "minimumDepth": 0.397
+  },
+  "Dodge-Right": {
+   "clip": "Esc_Dodge_Right",
+   "clipDuration": 0.8667,
+   "videoPeriod": 0.8657,
+   "cycles": 1,
+   "ratio": 0.9989,
+   "minimumDepth": 0.545
+  },
+  "Dodge-Left": {
+   "clip": "Esc_Dodge_Left",
+   "clipDuration": 0.8667,
+   "videoPeriod": 0.8665,
+   "cycles": 1,
+   "ratio": 0.9998,
+   "minimumDepth": 0.553
+  },
+  "Move-Right": {
+   "clip": "Esc_Move_Right",
+   "clipDuration": 0.6333,
+   "videoPeriod": 0.6327,
+   "cycles": 1,
+   "ratio": 0.9991,
+   "minimumDepth": 0.54
+  },
+  "Move-Left": {
+   "clip": "Esc_Move_Left",
+   "clipDuration": 0.6333,
+   "videoPeriod": 0.6332,
+   "cycles": 1,
+   "ratio": 0.9998,
+   "minimumDepth": 0.547
+  },
+  "Slide-Right": {
+   "clip": "Esc_Slide_Right",
+   "clipDuration": 0.8,
+   "videoPeriod": 0.7993,
+   "cycles": 1,
+   "ratio": 0.9991,
+   "minimumDepth": 0.505
+  },
+  "Slide-Left": {
+   "clip": "Esc_Slide_Left",
+   "clipDuration": 0.8,
+   "videoPeriod": 0.8,
+   "cycles": 1,
+   "ratio": 1.0,
+   "minimumDepth": 0.509
+  },
+  "Roll-Right": {
+   "clip": "Esc_Roll_Right",
+   "clipDuration": 1.2,
+   "videoPeriod": 1.1994,
+   "cycles": 1,
+   "ratio": 0.9995,
+   "minimumDepth": 0.568
+  },
+  "Roll-Back": {
+   "clip": "Esc_Roll_Back",
+   "clipDuration": 1.4,
+   "videoPeriod": 1.3997,
+   "cycles": 1,
+   "ratio": 0.9998,
+   "minimumDepth": 0.571
+  },
+  "Roll-Left": {
+   "clip": "Esc_Roll_Left",
+   "clipDuration": 1.2,
+   "videoPeriod": 1.1997,
+   "cycles": 1,
+   "ratio": 0.9997,
+   "minimumDepth": 0.567
+  },
+  "Roll-Front": {
+   "clip": "Esc_Roll_Front",
+   "clipDuration": 0.9667,
+   "videoPeriod": 0.9663,
+   "cycles": 1,
+   "ratio": 0.9996,
+   "minimumDepth": 0.56
+  },
+  "Roll-JFront": {
+   "clip": "Esc_Roll_JFront",
+   "clipDuration": 1.2333,
+   "videoPeriod": 1.233,
+   "cycles": 1,
+   "ratio": 0.9997,
+   "minimumDepth": 0.533
+  }
+ },
+ "ratio": {
+  "min": 0.9987,
+  "max": 1.0,
+  "mean": 0.9995
+ },
+ "method": "loop period of each grid cell from frame-difference energy; ratio = period / (cycles x clip length)"
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" href="data:,">
+<meta name="sightline-build" content="action-v2"><script>@@include file:src/v02/boot/capture.js@@</script><meta name="backspool-traversal" content="authored-candidate"><title>Saint Meridian V02 Graybox — Threadrail fusion pilot — Tripo city props — Reference Afterstep VFX — Automatic vault playground — Threadrail + Afterstep — SIGHTLINE — Saint Meridian · Toon Style</title>
+<style>@@include file:src/v02/styles/game.css@@</style>
+<script>@@include file:scripts/vendor/three-r128.js@@</script>
+<script>@@include file:scripts/vendor/fflate-r128.js|drop-extract-note@@</script>
+<script>@@include file:scripts/vendor/FBXLoader-r128.js|drop-extract-note@@</script>
+<style>@@include file:src/v02/styles/touch.css@@</style></head>
+<script>@@include file:scripts/vendor/GLTFLoader-r128.js@@</script>
+<body><div id="crosscutClock" aria-hidden="true"><svg viewBox="0 0 108 108"><circle cx="54" cy="54" r="46"/></svg><span>CROSSCUT <b>0.42s</b></span></div><div id="courierResults" role="dialog" aria-modal="true" aria-labelledby="resultTitle"><div class="resultCard"><h2 id="resultTitle">COURIER COMPLETE</h2><div id="resultRank"></div><div id="resultStats"></div><button id="resultContinue">NEXT MISSION</button><small>Enter / A to continue</small></div></div>
+<div id="audioControls"><button id="soundToggle" aria-label="Toggle game sound">SOUND ON</button><input id="soundVolume" type="range" min="0" max="1" step=".01" value=".32" aria-label="Game sound volume"></div>
+<div id="loading"><div class="card"><div class="eyebrow">Civic Halo // Sightline field build</div><h1 class="title">SIGHTLINE</h1><p class="subtitle">Preparing Saint Meridian and your flight gear.</p><div id="loadbar"><div id="loadfill"></div></div><div id="loadtext">BOOTING RENDERER…</div></div></div>
+<div id="menu"><div class="card"><div class="eyebrow">Saint Meridian // After Dark</div><h1 class="title">SIGHTLINE</h1><p class="subtitle">Turn a line of sight into a flight path.<br>Cross the city, outwit Civic Halo, and bring three civilians home.</p><div class="missionBrief"><div><span>01 / PRECISION</span><b>Land cleanly</b>Slow down on the first rooftop.</div><div><span>02 / DISRUPTION</span><b>Break the watch</b>A fast arrival releases a Bloom.</div><div><span>03 / CROSSCUT</span><b>Keep the flow</b>Fire again within 0.42 seconds.</div></div><button id="start">Enter Sandbox</button><button id="helpToggle" aria-expanded="false" aria-controls="controlsGuide">Controls &amp; Rescues</button><div id="controllerStatus">Press a controller button to connect.</div><div id="controlsGuide" hidden><div class="grid">
+<div><span class="key">WASD</span><b>Move</b> — walk → run</div><div><span class="key">Shift</span><b>Sprint</b></div>
+<div><span class="key">Space</span><b>Jump</b></div><div><span class="key">RMB</span><b>Aim Sightline</b></div>
+<div><span class="key">LMB</span><b>Launch / queue rail</b></div><div><span class="key">Q</span><b>Arrival brace</b></div>
+<div><span class="key">E</span><b>Micro-rail dodge</b></div><div><span class="key">V</span><b>Rail Read visor</b></div>
+<div><span class="key">C</span><b>Air-brake / controlled fall</b></div><div><span class="key">R</span><b>Reset to plaza</b></div>
+<div><span class="key">O</span><b>Flip model facing</b></div><div><span class="key">F</span><b>Recenter camera</b></div>
+<div><span class="key">Z</span><b>Swap aim shoulder</b></div><div><span class="key">Esc</span><b>Release cursor</b></div>
+</div>
+<div class="controllerHelp"><div class="label">Controller // auto-detected</div><div class="grid">
+<div><span class="key">LS</span><b>Move</b> — analog walk/run</div><div><span class="key">RS</span><b>Camera</b></div>
+<div><span class="key">LT</span><b>Aim Sightline</b></div><div><span class="key">RT</span><b>Launch / queue rail</b></div>
+<div><span class="key">A / ×</span><b>Jump / start</b></div><div><span class="key">B / ○</span><b>Air-brake</b></div>
+<div><span class="key">X / □</span><b>Micro-rail dodge</b></div><div><span class="key">Y / △</span><b>Rail Read</b></div>
+<div><span class="key">LB / L1</span><b>Arrival brace</b></div><div><span class="key">RB / R1</span><b>Sprint</b></div>
+<div><span class="key">L3</span><b>Sprint alternate</b></div><div><span class="key">R3</span><b>Recenter camera</b></div>
+<div><span class="key">D↓</span><b>Reset to plaza</b></div><div><span class="key">D← / D→</span><b>Swap camera shoulder</b></div>
+</div></div>
+<p class="courierHelp">Follow the numbered markers. Green recovery stops vent rail strain; gold approaches lead to rescue rooftops. Aim freezes ground movement and slows the world. A jump stays in controlled fall until you fire. Brace during flight to vent pressure; time a guard against incoming shots. Tap the visor briefly to verify locks. Stay out of searchlights to protect your identity.</p><div class="grid"><div><span class="key">F3</span>Toggle diagnostics</div><div><span class="key">Esc</span>Pause and controls</div></div></div><div id="assetNote">Aim at a rooftop or anchor, then launch. Choose clear vectors and brace before hard arrivals.</div></div></div>
+<div id="hud"><div id="flightVitals"><div class="vitalHeader"><div><b id="vitalSpeed">0</b><span class="vitalUnit">m/s</span></div><span id="vitalMode">ON FOOT</span></div><div class="vitalBars"><div><label>STRAIN <span id="vitalLoad">0%</span></label><div class="vitalTrack"><i id="vitalPressure"></i></div></div><div><label>CONDITION <span id="vitalConditionText">100%</span></label><div class="vitalTrack"><i id="vitalCondition"></i></div></div></div><div class="vitalFooter"><span><strong id="vitalPassengers">0/3</strong> ONBOARD</span><span id="vitalScore">0</span></div><div style="margin-top:8px"><span id="vitalAlert">HALO CLEAR</span><div class="vitalTrack"><i id="vitalIdentity"></i></div></div></div><div id="navigationMarker"><div id="navArrow"></div><div class="navDiamond"><span id="navNumber">1</span></div><span id="navLabel" class="navDistance"></span></div><div id="actionHint"></div><div id="courierReadout"></div><div id="velocityEdge"></div><div id="perceptionTag">PERCEPTION / WORLD DILATED</div><div id="visor"></div><div id="damage"></div><div id="crosshair"></div><div id="railTargetReadout"></div><div class="hudbox">INPUT&nbsp;&nbsp;&nbsp; <span id="inputMode" class="cyan">KEYBOARD / MOUSE</span><br>PAD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="padHud" class="cyan">NONE</span><br>STATE&nbsp;&nbsp;&nbsp; <span id="state" class="v">IDLE</span><br>ANIM&nbsp;&nbsp;&nbsp;&nbsp; <span id="anim" class="cyan">Idle</span><br>RIG&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="rigStatus" class="cyan">LOADING</span><br>CONTACT&nbsp; <span id="contact" class="cyan">CLEAR</span><br>SLINGSHOTS <span id="boostCount" class="cyan">0</span> &nbsp;STRIKE EXIT <span id="exitSpeed" class="v">0</span><br>SPEED&nbsp;&nbsp;&nbsp; <span id="speed" class="v">0</span> m/s<br>ALTITUDE&nbsp; <span id="alt" class="v">0</span> m<br>PRESSURE&nbsp; <span id="pressureText" class="v">0</span>%<br>RAIL CORE <span id="railLock" class="cyan">READY</span><br>WORLD TIME <span id="timeReadout" class="cyan">100%</span> &nbsp;TUNNEL <span id="tunnelReadout" class="v">0%</span><div id="pressureWrap"><div id="pressure"></div></div><br>SCORE&nbsp;&nbsp;&nbsp; <span id="score" class="cyan">0</span>&nbsp;&nbsp; COMBO <span id="combo" class="cyan">x0</span></div><div id="mission"><div class="missionTitle">Current field task</div><div id="missionText" class="missionText">Reach the rooftop VIP, then bring them to the cyan extraction pad.</div></div><div id="railReadPanel"><div class="readTitle">RAIL READ // VECTOR INTELLIGENCE</div><div id="railReadDetail">SCANNING FOR SAFE RAILS…</div><div class="readLegend">CYAN roof routes · VIOLET anchors<br>GREEN safe · AMBER strain · RED danger / echo</div></div><div id="banner"><div id="bannerBig" class="bannerBig"></div><div id="bannerSub" class="bannerSub"></div></div></div>
+<div id="touchControls"><div id="movePad">MOVE</div><div id="lookPad" aria-label="Drag to look"></div><div id="touchButtons"><button id="tAim">Aim</button><button id="tFire">Rail</button><button id="tJump">Jump</button><button id="tBrake">Brake</button><button id="tDodge">Dodge</button><button id="tBrace">Brace</button><button id="tRead">Visor</button><button id="tSprint">Sprint</button><button id="tPause">Pause</button></div></div>
+<script>@@include file:src/v02/boot/three-load-error.js@@</script>
+<script src="scripts/game_v02_stylized_atmosphere.js?v=158d49d9bea3"></script>
+<script>@@include list:src/v02/engine.json@@</script>
+<script src="scripts/game_motion_loadout.js"></script>
+<script>@@include file:src/v02/boot/tripo-ground-materials.js@@</script><script>@@include file:src/v02/boot/vertical-ready.js@@</script><script src="scripts/game_impact_fx.js?v=9636a5b7323a"></script><script src="scripts/game_vertical_encounters_v02.js"></script><script src="scripts/game_v02_friendly_market_clearance.js?v=c8c16b5e4ff5"></script><script src="scripts/game_v02_friendly_pursuit.js?v=19d98b3f4bee"></script><script src="scripts/game_v02_friendly_discovery.js?v=049a1753aed7"></script><script src="scripts/vertical_transit_core_v02.js"></script><script src="scripts/game_vertical_transit_v02.js"></script><script src="scripts/game_aerial_traffic_core_v02.js"></script><script src="scripts/game_v02_friendly_visitor_clearance.js?v=91e545cbda44"></script><script src="scripts/game_vertical_appearance_facade_v02.js"></script><script src="scripts/game_vertical_loggia_hud_v02.js?v=73ffa63e9ab8"></script><script src="scripts/game_mixamo_retarget.js?v=14ac75bba082"></script><script src="scripts/game_loadout_cape_cloth_v2.js?v=86418ccb672d"></script><script src="scripts/game_v02_loadout_hero.js?v=bf6668571e55"></script><script src="scripts/game_v02_backspool_costume.js?v=804858b8473c"></script><script src="scripts/game_kinsmoke_cape_cloth_v16.js"></script><script src="scripts/game_v02_kinsmoke_hero_v16.js"></script><script src="scripts/game_v02_loadout_runner_moves.js?v=a0a92c2559eb"></script><script src="scripts/game_v02_loadout_runner_full.js?v=f19debae4bdc"></script><script src="scripts/game_v02_loadout_interface_v10c.js"></script><script src="scripts/game_v02_menu_style_v2.js?v=ad4701ad0c97"></script><script src="scripts/game_vertical_views_v02.js"></script><script src="scripts/v02_exact_camera_rays.js"></script><script src="scripts/game_v02_frame_pacing.js?v=7c6772cf86be"></script><script src="scripts/game_vertical_loggia_material_v02.js?v=062587fe36e8"></script>
+<script src="scripts/game_vertical_diffuse_lighting_v02.js?v=99bb11e0709d"></script>
+<link rel="stylesheet" href="scripts/game_v02_body_framing.css?v=839f156f2c2a">
+<script src="scripts/game_v02_body_framing_v4.js?v=c26d9dbbb7b5"></script>
+<script src="scripts/game_v02_body_notice.js?v=704c5f9a3bc5"></script>
+<script src="scripts/game_v02_facade_cassettes.js?v=a1ee9a0bc508"></script>
+<script src="scripts/game_v02_furnished_public_lighting.js?v=fef901bdd9bf&amp;contract=49f1011009b91ef07d816dfafee81844bff4f11231165b5c251c93b3206308b7"></script>
+<script src="scripts/game_v02_surface_normals.js?v=c29ac5758f44"></script>
+<script src="scripts/game_v02_furnished_room_shadows.js?v=0fc81f8d0d0b&amp;contract=f440f772132e715a82df77dd50aad7c1194384372eeb62de6fb18b7ef59f746e"></script>
+<script src="scripts/friendly_contact_core_v02.js?v=71a4e0b421e3"></script>
+<script src="scripts/game_v02_friendly_contacts.js?v=d72d2baa3815"></script>
+<script src="scripts/game_v02_friendly_camera.js?v=f31df819a528"></script>
+<script src="scripts/game_v02_gameplay_fixes.js?v=399c2d360742"></script>
+<script src="scripts/game_v02_flight_ceiling.js?v=21a7dff36284"></script>
+<script src="scripts/game_v02_close_camera.js?v=943601fb7064"></script>
+<script src="scripts/look/anime_paint_look.js?v=e81524f79dfc"></script>
+<script src="scripts/game_v02_hero_select_v6.js"></script>
+<script src="scripts/game_v02_threadrail_grind.js?v=1e6e0208b9f9"></script>
+</body>
+</html>

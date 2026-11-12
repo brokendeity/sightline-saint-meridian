@@ -5,7 +5,7 @@
  * The cloth only rotates cape bones after all posing and before rendering; it never moves the actor. */
 (()=>{
  'use strict';
- const ORDER=['sightline','backspool','loadout'],CAPE_KEY='loadoutCape',HEIGHT=1.82;
+ const ORDER=['sightline','backspool','loadout','kinsmoke'],CAPE_KEY='loadoutCape',HEIGHT=1.82;
  let bank=null,cloth=null,capeMeshes=[],capeOn=readCape(),ui=null,stats={built:false,buildMs:0,retargetMs:0,clips:0};
  function readCape(){try{return localStorage.getItem(CAPE_KEY)!=='off';}catch(e){return true;}}
  function writeCape(){try{localStorage.setItem(CAPE_KEY,capeOn?'on':'off');}catch(e){}}
@@ -109,6 +109,6 @@
   if(!bank||model!==bank.model||!cloth||!capeOn||!(dt>0))return;
   cloth.update(dt);
  }
- window.loadoutHero={id:'loadout',buildBank,beforeRender,heroChanged,nextHero,blocksPowers:isActive,setCape,
+ window.loadoutHero={id:'loadout',buildBank,beforeRender,heroChanged,nextHero,blocksPowers:()=>isActive()||hero()==='kinsmoke',setCape,
   capeEnabled:()=>capeOn,state:()=>({...stats,active:isActive(),capeOn,capeVisible:capeMeshes.length>0&&capeMeshes.every(m=>m.visible),capeMeshes:capeMeshes.length,cloth:cloth?.state()||null})};
 })();

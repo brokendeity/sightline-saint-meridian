@@ -1,0 +1,1 @@
+const verticalReady=setInterval(()=>{if(gameReady&&roadNetworkState().ready){clearInterval(verticalReady);verticalCity.build();verticalDistrict.build();}},100);

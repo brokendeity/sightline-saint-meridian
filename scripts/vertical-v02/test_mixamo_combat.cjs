@@ -7,9 +7,11 @@ const {chromium}=require('/opt/homebrew/lib/node_modules/playwright'),assert=req
  const out=process.env.V02_COMBAT_OUT||'development/vertical-city-v02/evidence/mixamo-combat';fs.mkdirSync(out,{recursive:true});
  const p=await browser.newPage({viewport:{width:1280,height:900}}),errors=[];p.on('pageerror',e=>errors.push(e.message));
  await p.addInitScript(()=>{const up={pressed:false,value:0};window.testPad={id:'test pad',index:0,connected:true,mapping:'standard',axes:[0,0,0,0],buttons:Array.from({length:17},()=>up)};navigator.getGamepads=()=>[window.testPad];});
+ if(process.env.V02_BACKSPOOL_COSTUME)await p.addInitScript(c=>{try{localStorage.setItem('backspoolCostume',c);}catch(e){}},process.env.V02_BACKSPOOL_COSTUME);
  await p.goto('http://127.0.0.1:8766/'+build.entry+'?capture=backspool');
  await p.waitForFunction(()=>typeof gameReady!=='undefined'&&gameReady&&window.characterState&&!characterState().busy&&roadNetworkState().ready,null,{timeout:150000});
  await p.waitForFunction(()=>verticalWorldLifeState().ready&&v02EastPublicLightingState().ready&&v02RimShadowState().ready,null,{timeout:120000});
+ if(process.env.V02_BACKSPOOL_COSTUME){await p.waitForFunction(c=>!window.backspoolCostume||characterSwitcher.bankKey()==='backspool@'+c,process.env.V02_BACKSPOOL_COSTUME,{timeout:300000});console.log('costume bank active where supported: backspool@'+process.env.V02_BACKSPOOL_COSTUME);}
  await p.locator('#v02Start').click();await p.evaluate(()=>{window.requestAnimationFrame=()=>0});
  const step=n=>p.evaluate(n=>{for(let i=0;i<n;i++)tickFrame(1/60,false)},n);
  const tap=async button=>{await p.evaluate(b=>testPad.buttons=testPad.buttons.map((x,i)=>i===b?{pressed:true,value:1}:x),button);await step(2);await p.evaluate(()=>testPad.buttons=testPad.buttons.map(()=>({pressed:false,value:0})));};

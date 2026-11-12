@@ -1,0 +1,2 @@
+
+const BACKSPOOL_SOURCE_EVIDENCE_URL="assets/backspool/source-graph-evidence-v7.json.gz";const BACKSPOOL_SOURCE_EVIDENCE_HASH="ec5ccedf98bad31d471dc2142d43e0c2b3f357df0d9039ccb9315cdc488b7c97";

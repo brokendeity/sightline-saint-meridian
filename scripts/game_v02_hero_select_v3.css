@@ -1,0 +1,136 @@
+/* V02 hero select v3 (loaded by scripts/game_v02_hero_select_v3.js). v1/v2 keep their own stylesheets.
+ * The hero owns a full-screen 3D stage; text sits on the scene, not in framed boxes. "Midnight Slash" type and palette:
+ * midnight blue and charcoal, thin cyan strips, warm amber, a per-hero accent (--hs-accent), no bloom, no backdrop blur. */
+#v02HeroSelect.hsV3{--hs-night:var(--sm-night,#06101a);--hs-cyan:var(--sm-cyan,#5fe3e8);--hs-amber:var(--sm-amber,#ffb25a);--hs-ink:var(--sm-ink,#f2f7f9);--hs-dim:var(--sm-dim,#a9c0c9);--hs-display:var(--sm-display,Impact,Haettenschweiler,"Arial Narrow Bold","Franklin Gothic Heavy",sans-serif);--hs-accent:#5fe3e8;--hs-accent2:#ffb25a;
+ position:fixed;inset:0;z-index:90;color:var(--hs-ink);overflow:hidden;user-select:none;background:var(--hs-night)}
+#v02HeroSelect.hsV3[hidden]{display:none!important}
+/* Reset the page's generic button and heading styles inside this screen (the page styles a bare 'button' with margins,
+ * radius, padding and an orange fill). Rules below use at least id + two classes, so they win over this reset. */
+#v02HeroSelect.hsV3 button{margin:0;border-radius:0;box-shadow:none;min-width:0;min-height:0;letter-spacing:normal;text-transform:none;font-family:inherit;font-size:inherit;font-weight:inherit;line-height:inherit;color:inherit;background:none;padding:0;border:0}
+#v02HeroSelect.hsV3 h1,#v02HeroSelect.hsV3 h2,#v02HeroSelect.hsV3 h3,#v02HeroSelect.hsV3 p{display:block}
+body.v02HeroSelectOpen #menu{visibility:hidden}
+#v02HeroSelect.hsV3 .hsStage{position:absolute;inset:0;z-index:0}
+#v02HeroStage{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:none}
+#v02HeroStage:active{cursor:grabbing}
+/* Edge shading so text reads over the painted scene without boxes. */
+#v02HeroSelect.hsV3 .hsShade{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(4,9,16,.86),rgba(4,9,16,.35) 26%,transparent 40%,transparent 62%,rgba(4,9,16,.4) 74%,rgba(4,9,16,.86)),linear-gradient(0deg,rgba(4,9,16,.85),transparent 16%)}
+#v02HeroStageNote{position:absolute;left:0;right:0;bottom:22%;text-align:center;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--hs-dim);z-index:2}
+#v02HeroStageNote:empty{display:none}
+/* Slash wipe on hero change. */
+#v02HeroSelect.hsV3 .hsWipe{position:absolute;inset:-10% -30%;z-index:6;pointer-events:none;background:linear-gradient(90deg,transparent 0 30%,var(--hs-accent) 30% 31%,var(--hs-night) 31% 69%,var(--hs-accent2) 69% 70%,transparent 70%);transform:translateX(-140%) skewX(-18deg);opacity:0}
+#v02HeroSelect.hsV3 .hsWipe.go{animation:hsWipe .5s cubic-bezier(.6,.05,.3,.95) both}
+@keyframes hsWipe{0%{transform:translateX(-140%) skewX(-18deg);opacity:1}100%{transform:translateX(140%) skewX(-18deg);opacity:1}}
+#v02HeroSelect.hsV3 h2,#v02HeroSelect.hsV3 h3{margin:0 0 8px;font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--hs-cyan)}
+#v02HeroSelect.hsV3 kbd{display:inline-block;margin-right:5px;padding:2px 6px;font-size:10px;font-weight:600;line-height:1.2;color:var(--hs-night);background:var(--hs-cyan);clip-path:polygon(4px 0,100% 0,calc(100% - 4px) 100%,0 100%)}
+
+/* Identity, top left. */
+#v02HeroSelect.hsV3 .hsId{position:absolute;z-index:3;left:3vw;top:3.5vh;width:min(340px,25vw)}
+#v02HeroSelect.hsV3 .hsEyebrow{display:inline-block;padding:4px 12px;font-size:11px;letter-spacing:.24em;color:var(--hs-night);background:var(--hs-amber);clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+#v02HeroSelect.hsV3 #hsV3Name{display:block;margin:10px 0 0;font-family:var(--hs-display);font-weight:400;font-size:clamp(40px,min(4.6vw,8vh),78px);line-height:.9;letter-spacing:.03em;text-transform:uppercase;color:var(--hs-ink);text-shadow:4px 4px 0 rgba(0,0,0,.55)}
+#v02HeroSub{margin:6px 0 0;font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--hs-accent)}
+#v02HeroCostume{margin:6px 0 0;display:inline-block;padding:3px 10px;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--hs-night);background:var(--hs-cyan);clip-path:polygon(6px 0,100% 0,calc(100% - 6px) 100%,0 100%)}
+#v02HeroCostume[hidden]{display:none}
+#v02HeroBlurb{margin:10px 0 0;font-size:12.5px;line-height:1.5;color:var(--hs-dim);text-shadow:0 1px 2px #000}
+
+/* Roster, left middle: unboxed rows with an accent tick. */
+#v02HeroSelect.hsV3 .hsRoster{position:absolute;z-index:3;left:3vw;top:43vh;width:min(260px,21vw)}
+#v02HeroCards{display:flex;flex-direction:column;gap:4px}
+#v02HeroSelect.hsV3 .hsCard{position:relative;display:flex;align-items:center;gap:12px;width:100%;min-height:48px;padding:5px 10px 5px 14px;border:0;background:transparent;color:var(--hs-ink);text-align:left;cursor:pointer;opacity:.6;font:inherit;transition:opacity .2s,transform .25s cubic-bezier(.2,.9,.2,1),background .2s}
+#v02HeroSelect.hsV3 .hsCard::before{content:'';position:absolute;left:0;top:8px;bottom:8px;width:3px;background:rgba(255,255,255,.18)}
+#v02HeroSelect.hsV3 .hsCard:hover{opacity:.9}
+#v02HeroSelect.hsV3 .hsCard.isFocus{opacity:1;transform:translateX(10px);background:linear-gradient(90deg,rgba(255,255,255,.08),transparent)}
+#v02HeroSelect.hsV3 .hsCard.isFocus::before{background:var(--hs-accent);top:4px;bottom:4px}
+#v02HeroSelect.hsV3 .hsCard:focus-visible{outline:2px solid var(--hs-amber);outline-offset:-2px}
+#v02HeroSelect.hsV3 .hsGlyph{width:28px;height:28px;flex:none;color:var(--hs-dim)}
+#v02HeroSelect.hsV3 .hsCard.isFocus .hsGlyph{color:var(--hs-accent)}
+#v02HeroSelect.hsV3 .hsGlyph svg{width:100%;height:100%}
+#v02HeroSelect.hsV3 .hsCardText{display:flex;flex-direction:column;gap:1px;flex:1;min-width:0}
+#v02HeroSelect.hsV3 .hsCardText b{font-family:var(--hs-display);font-weight:400;font-size:21px;line-height:1;letter-spacing:.05em;text-transform:uppercase}
+#v02HeroSelect.hsV3 .hsCardText i{font-size:10px;font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:var(--hs-dim)}
+#v02HeroSelect.hsV3 .hsActive{display:none;align-self:flex-start;margin-top:3px;font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:2px 6px;color:var(--hs-night);background:var(--hs-cyan)}
+#v02HeroSelect.hsV3 .hsCard.isActive .hsActive{display:inline-block}
+#v02HeroSelect.hsV3 .hsKey{font-size:10px;color:rgba(169,192,201,.55)}
+
+/* One compact radar chart, bottom left. */
+#v02HeroSelect.hsV3 .hsChart{position:absolute;z-index:3;left:3vw;bottom:calc(64px + 3vh);display:flex;align-items:center;gap:14px}
+#v02HeroRadar{width:clamp(96px,10vw,128px);height:clamp(96px,10vw,128px);overflow:visible}
+#v02HeroRadar .hsRing{fill:none;stroke:rgba(169,192,201,.28);stroke-width:.8}
+#v02HeroRadar .hsAxis{stroke:rgba(169,192,201,.22);stroke-width:.8}
+#v02HeroRadar .hsShape{fill:var(--hs-accent);fill-opacity:.28;stroke:var(--hs-accent);stroke-width:1.6;transform-origin:0 0;animation:hsGrow .45s cubic-bezier(.2,.9,.2,1) both}
+#v02HeroRadar .hsDot{fill:var(--hs-ink)}
+#v02HeroTraits{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:auto auto;gap:3px 10px;font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+#v02HeroTraits span{color:var(--hs-dim)}#v02HeroTraits b{color:var(--hs-ink);font-weight:600}
+@keyframes hsGrow{from{transform:scale(0)}to{transform:scale(1)}}
+
+/* Right side: tabs, icon ability cards, controls. */
+#v02HeroSelect.hsV3 .hsSide{position:absolute;z-index:3;right:3vw;top:3.5vh;bottom:calc(64px + 2vh);width:min(320px,23vw);display:flex;flex-direction:column}
+#v02HeroSelect.hsV3 .hsTabs{display:flex;gap:4px;margin-bottom:10px}
+#v02HeroSelect.hsV3 .hsTabs button{flex:1;padding:7px 8px;border:0;border-bottom:2px solid rgba(255,255,255,.18);background:transparent;color:var(--hs-dim);font-family:var(--hs-display);font-weight:400;font-size:16px;line-height:1;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+#v02HeroSelect.hsV3 .hsTabs button[aria-selected="true"]{color:var(--hs-ink);border-bottom-color:var(--hs-accent)}
+#v02HeroSelect.hsV3 .hsTabs button:focus-visible{outline:2px solid var(--hs-amber);outline-offset:2px}
+#v02HeroAbilities{display:flex;flex-direction:column;gap:6px}
+#v02HeroAbilities[hidden],#v02HeroControls[hidden]{display:none}
+#v02HeroSelect.hsV3 .hsAbility{display:flex;align-items:flex-start;gap:10px;padding:8px 8px;border:0;background:transparent;color:inherit;text-align:left;font:inherit;cursor:pointer;opacity:.82;animation:hsInRight .35s var(--delay) cubic-bezier(.2,.9,.2,1) both;transition:background .2s,opacity .2s}
+#v02HeroSelect.hsV3 .hsAbility:hover,#v02HeroSelect.hsV3 .hsAbility.isFocus,#v02HeroSelect.hsV3 .hsAbility:focus-visible{opacity:1;background:linear-gradient(90deg,transparent,rgba(255,255,255,.07));outline:none}
+#v02HeroSelect.hsV3 .hsAbility.isFocus .hsIcon{color:var(--hs-night);background:var(--hs-accent)}
+#v02HeroSelect.hsV3 .hsIcon{flex:none;width:34px;height:34px;padding:5px;color:var(--hs-accent);border:1px solid var(--hs-accent);clip-path:polygon(6px 0,100% 0,100% calc(100% - 6px),calc(100% - 6px) 100%,0 100%,0 6px);transition:background .2s,color .2s}
+#v02HeroSelect.hsV3 .hsIcon svg{width:100%;height:100%}
+#v02HeroSelect.hsV3 .hsAbText b{display:block;font-family:var(--hs-display);font-weight:400;font-size:16px;line-height:1.05;letter-spacing:.05em;text-transform:uppercase;color:var(--hs-ink)}
+#v02HeroSelect.hsV3 .hsAbText span{display:block;margin-top:3px;font-size:11.5px;line-height:1.4;letter-spacing:.01em;text-transform:none;color:var(--hs-dim);text-shadow:0 1px 2px #000}
+#v02HeroControls{overflow:auto;font-size:11px;color:var(--hs-dim);padding-right:4px}
+#v02HeroControls ul{list-style:none;margin:0 0 10px;padding:0;display:flex;flex-direction:column;gap:3px}
+#v02HeroControls li{display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
+#v02HeroControls li b{color:var(--hs-ink);font-weight:600}#v02HeroControls li i{font-style:normal;opacity:.8}
+#v02HeroControls .hsGuideSightline .grid{display:flex;flex-direction:column;gap:3px}
+#v02HeroControls .hsGuideSightline .key{display:inline-block;min-width:38px;margin-right:6px;padding:1px 5px;font-weight:600;color:var(--hs-night);background:var(--hs-cyan)}
+#v02HeroControls p{line-height:1.4}
+
+/* Costume arrows beside the model; Backspool's cartridge showcase to his right. */
+#v02CostumeBar{position:absolute;inset:0;pointer-events:none;z-index:3}
+#v02CostumeBar[hidden]{display:none}
+#v02HeroSelect.hsV3 #v02CostumeBar button{position:absolute;top:48%;transform:translateY(-50%);width:44px;height:64px;pointer-events:auto;cursor:pointer;color:var(--hs-ink);background:rgba(6,16,26,.55);border:1px solid rgba(255,255,255,.35);clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px);transition:background .2s,color .2s}
+#v02HeroSelect.hsV3 #v02CostumeBar button:hover,#v02HeroSelect.hsV3 #v02CostumeBar button:focus-visible{background:var(--hs-accent);color:var(--hs-night);outline:none}
+#v02CostumeBar svg{width:18px;height:30px;display:block;margin:auto}
+#v02HeroSelect.hsV3 #v02CostumePrev{left:calc(50% - 190px)}#v02HeroSelect.hsV3 #v02CostumeNext{left:calc(50% + 146px)}
+#v02HeroSelect.hsV3 #v02HeroCartridge{position:relative;margin:14px 0 0 44px;width:clamp(120px,11vw,160px);pointer-events:none;border:1px solid rgba(95,227,232,.45);clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px)}
+#v02HeroSelect.hsV3 #v02HeroCartridge[hidden]{display:none}
+#v02HeroCartridge .hsCartView{width:100%;aspect-ratio:1/1}
+#v02HeroCartridge figcaption{padding:5px 8px 7px;background:rgba(6,16,26,.7)}
+#v02HeroCartridge figcaption b{display:block;font-family:var(--hs-display);font-weight:400;font-size:13px;line-height:1.05;letter-spacing:.06em;text-transform:uppercase;color:var(--hs-ink)}
+#v02HeroCartridge figcaption span{display:block;margin-top:3px;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--hs-dim)}
+
+/* Bottom bar. */
+#v02HeroSelect.hsV3 .hsBar{position:absolute;z-index:4;left:0;right:0;bottom:0;display:flex;align-items:center;gap:12px;padding:12px 3vw;background:linear-gradient(0deg,rgba(4,9,16,.92),rgba(4,9,16,.55));border-top:1px solid rgba(95,227,232,.28)}
+#v02HeroSelect.hsV3 .hsPrompts{display:flex;gap:14px;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--hs-dim)}
+#v02HeroSelect.hsV3 .hsPrompts>span{white-space:nowrap}
+#v02HeroSelect.hsV3 .hsCostumePrompt{display:none}#v02HeroSelect.hsV3.hsHasCostumes .hsCostumePrompt{display:inline}
+#v02HeroStatus{flex:1;text-align:right;font-size:12px;letter-spacing:.08em;color:var(--hs-amber)}
+#v02HeroSelect.hsV3 .hsBar>button{white-space:nowrap;padding:10px 18px;font-family:var(--hs-display);font-weight:400;font-size:18px;line-height:1;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;border:1px solid var(--hs-cyan);clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%)}
+#v02HeroSelect.hsV3 .hsBar>#v02HeroBack{background:transparent;color:var(--hs-cyan)}
+#v02HeroSelect.hsV3 .hsBar>#v02HeroConfirm{background:var(--hs-accent);border-color:var(--hs-accent);color:var(--hs-night)}
+#v02HeroSelect.hsV3 .hsBar>#v02HeroConfirm:disabled{opacity:.6;cursor:progress}
+#v02HeroSelect.hsV3 .hsBar>button:focus-visible{outline:2px solid var(--hs-ink);outline-offset:2px}
+/* Loading shimmer while every hero's bank is prepared. */
+#v02HeroSelect.hsV3 .hsShimmer{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:transparent;background:linear-gradient(90deg,rgba(169,192,201,.35) 0 35%,var(--hs-ink) 50%,rgba(169,192,201,.35) 65% 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;animation:hsShimmer 1.3s linear infinite}
+#v02HeroSelect.hsV3 .hsShimmer[hidden]{display:none}
+@keyframes hsShimmer{from{background-position:100% 0}to{background-position:-150% 0}}
+
+/* Swap entrances. */
+#v02HeroSelect.hsV3.hsSwap #hsV3Name,#v02HeroSelect.hsV3.hsSwap #v02HeroSub,#v02HeroSelect.hsV3.hsSwap #v02HeroBlurb{animation:hsDrop .32s cubic-bezier(.2,.9,.2,1) both}
+#v02HeroSelect.hsV3.hsSwap #v02HeroSub{animation-delay:.04s}#v02HeroSelect.hsV3.hsSwap #v02HeroBlurb{animation-delay:.08s}
+@keyframes hsDrop{from{transform:translateY(-10px);opacity:0}to{transform:none;opacity:1}}
+@keyframes hsInRight{from{transform:translateX(20px);opacity:0}to{transform:none;opacity:1}}
+#v02HeroSelectQuick{margin-left:10px}
+#v02HeroSelectTools{margin:0 0 14px}#v02HeroSelectTools p{margin:4px 0 8px}
+
+/* Mid widths: tighter bar and side columns. */
+@media (max-width:1200px){
+ #v02HeroSelect.hsV3 .hsBar{gap:8px;padding:10px 2vw}
+ #v02HeroSelect.hsV3 .hsPrompts{gap:8px;font-size:9.5px;letter-spacing:.06em}
+ #v02HeroSelect.hsV3 .hsPrompts kbd+kbd{display:none}
+ #v02HeroSelect.hsV3 .hsBar>button{padding:8px 12px;font-size:15px}
+ #v02HeroSelect.hsV3 .hsAbText span{font-size:10.5px}
+ #v02HeroSelect.hsV3 #v02CostumePrev{left:calc(50% - 160px)}#v02HeroSelect.hsV3 #v02CostumeNext{left:calc(50% + 116px)}
+ #v02HeroSelect.hsV3 #v02HeroCartridge{width:clamp(100px,10vw,130px);margin-top:8px}
+}
+@media (prefers-reduced-motion:reduce){#v02HeroSelect.hsV3 *,#v02HeroSelect.hsV3 *::before,#v02HeroSelect.hsV3 *::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
