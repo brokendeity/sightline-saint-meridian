@@ -1,0 +1,226 @@
+{
+  "build": "SIGHTLINE_SAINT_MERIDIAN_V02_KINSMOKE.html",
+  "control": "SIGHTLINE_SAINT_MERIDIAN_V02_HERO_SELECT_CARTRIDGE.html",
+  "checks": {
+    "throwsMakeLine": true,
+    "thickGlowingLineDrawn": true,
+    "landingOnLineGrinds": true,
+    "noFreeSpeed": true,
+    "controlNeverCatches": true,
+    "jumpOffNotRecaught": true,
+    "stillJumpUnderLineDoesNotStick": true,
+    "rTapStillAttaches": true,
+    "noHostileShotLanded": true,
+    "noPageErrors": true
+  },
+  "evidence": {
+    "before": {
+      "new": {
+        "thinVisible": false,
+        "thinCount": 1,
+        "core": {
+          "visible": false,
+          "radius": 1,
+          "length": 1,
+          "mid": [
+            0,
+            0,
+            0
+          ]
+        },
+        "glow": {
+          "visible": false,
+          "radius": 1,
+          "additive": true
+        }
+      },
+      "control": {
+        "thinVisible": false,
+        "thinCount": 1,
+        "core": null,
+        "glow": null
+      }
+    },
+    "line": {
+      "new": {
+        "a": {
+          "aimErrorDeg": 0.26,
+          "status": "STRAIN 0% · AUTO · ROUTE EMPTY · POINT A ATTACHED · AIM B"
+        },
+        "b": {
+          "aimErrorDeg": 0.14,
+          "status": "STRAIN 0% · AUTO · ROUTE EMPTY · PERFECT CROSS-STREET"
+        },
+        "rail": {
+          "anchors": [
+            [
+              20.64725758374611,
+              0.9729881016751918,
+              70.4051888480362
+            ],
+            [
+              -20.647257583746104,
+              1.037996160522503,
+              70.40679245445467
+            ]
+          ],
+          "rails": [
+            {
+              "id": "rail-1",
+              "a": "anchor-1",
+              "b": "anchor-2",
+              "length": 41.29456636819805,
+              "slope": 0.09019803989569361
+            }
+          ],
+          "current": null
+        }
+      },
+      "control": {
+        "a": {
+          "aimErrorDeg": 0.27,
+          "status": "STRAIN 0% · AUTO · ROUTE EMPTY · POINT A ATTACHED · AIM B"
+        },
+        "b": {
+          "aimErrorDeg": 0.15,
+          "status": "STRAIN 0% · AUTO · ROUTE EMPTY · PERFECT CROSS-STREET"
+        },
+        "rail": {
+          "anchors": [
+            [
+              20.647257583746107,
+              0.9689542383030203,
+              70.37817783371383
+            ],
+            [
+              -20.647257583746104,
+              1.033264446982134,
+              70.40966142682683
+            ]
+          ],
+          "rails": [
+            {
+              "id": "rail-1",
+              "a": "anchor-1",
+              "b": "anchor-2",
+              "length": 41.2945772461448,
+              "slope": 0.08922975538420252
+            }
+          ],
+          "current": null
+        }
+      }
+    },
+    "visual": {
+      "new": {
+        "thinVisible": false,
+        "thinCount": 1,
+        "core": {
+          "visible": true,
+          "radius": 0.035,
+          "length": 41.29456636819805,
+          "mid": [
+            3.552713678800501e-15,
+            0.5854921310988475,
+            70.40599065124545
+          ]
+        },
+        "glow": {
+          "visible": true,
+          "radius": 0.12,
+          "additive": true
+        }
+      },
+      "control": {
+        "thinVisible": false,
+        "thinCount": 1,
+        "core": null,
+        "glow": null
+      },
+      "coreMidOffset": 0
+    },
+    "runs": {
+      "new": [
+        {
+          "jumpAt": 10,
+          "caught": true,
+          "catchFrame": 124,
+          "framesOnRail": 91,
+          "catchSpeed": 13.187,
+          "incomingAlong": 13.187,
+          "travelled": 17.587,
+          "anims": [
+            "forspoken-threadrail-grind"
+          ],
+          "surfPhases": [
+            "catch",
+            "cruise"
+          ],
+          "flowAtJump": true
+        }
+      ],
+      "control": [
+        {
+          "jumpAt": 10,
+          "caught": false,
+          "maxY": 4.333,
+          "minLat": 0.028
+        }
+      ]
+    },
+    "grindShot": {
+      "jumpAt": 10,
+      "caught": true,
+      "catchFrame": 124,
+      "framesOnRail": 20,
+      "catchSpeed": 13.187,
+      "incomingAlong": 13.187,
+      "travelled": 2.41,
+      "anims": [
+        "forspoken-threadrail-grind"
+      ],
+      "surfPhases": [
+        "catch",
+        "cruise"
+      ],
+      "flowAtJump": true
+    },
+    "jumpOff": {
+      "wasOn": true,
+      "offAfterJump": true,
+      "recaughtWithin04s": false
+    },
+    "stillJump": {
+      "framesOnRail": 0,
+      "maxY": 2.587083333333335,
+      "tooSlowRefusals": 4,
+      "catches": 0,
+      "endOnGround": true
+    },
+    "rTap": {
+      "new": true,
+      "control": true
+    },
+    "grindState": {
+      "catches": 4,
+      "attempts": 4,
+      "refused": 0,
+      "tooSlow": 4,
+      "lastCatch": {
+        "rail": "rail-3",
+        "t": 0.718,
+        "horizontal": 0.064,
+        "offset": 0.336,
+        "clock": 39.97
+      },
+      "lastRefusal": null,
+      "visible": 1
+    },
+    "hostileShots": [
+      0,
+      0
+    ]
+  },
+  "errors": [],
+  "pass": true
+}

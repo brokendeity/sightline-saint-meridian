@@ -1,0 +1,720 @@
+{
+  "build": "SIGHTLINE_SAINT_MERIDIAN_V02_SIGHTLINE_FRAMING.html",
+  "control": "SIGHTLINE_SAINT_MERIDIAN_V02_FLIGHT_CEILING.html",
+  "checks": {
+    "aimLockReferenceMeasured": true,
+    "defaultMatchesAimLock_sightline": false,
+    "defaultMatchesAimLock_backspool": true,
+    "defaultMatchesAimLock_loadout": true,
+    "controlDefaultWasFarther": true,
+    "noFloorPatchTilt": true,
+    "sightlineAimUnchanged": true,
+    "sprintKeepsRelativePullBack": true,
+    "resetStartsAtNewDefault": true,
+    "railFlightCameraUnchanged": true,
+    "cameraOutOfWallsBackedToFacade": true,
+    "roomFixturesFramed": true,
+    "portraitFramed": true,
+    "noHostileShotLanded": true,
+    "noPageErrors": true
+  },
+  "evidence": {
+    "idle": {
+      "sightline": {
+        "new": {
+          "fov": 48,
+          "back": 3.25,
+          "lat": 1.05,
+          "h": 0.25,
+          "tiltDeg": -0.669,
+          "ndc": {
+            "minY": -0.786,
+            "maxY": 0.314,
+            "minX": -0.415,
+            "maxX": -0.255
+          },
+          "framed": true,
+          "floorPatch": false
+        },
+        "control": {
+          "fov": 56,
+          "back": 4.25,
+          "lat": 1.35,
+          "h": 0.32,
+          "tiltDeg": 0,
+          "ndc": {
+            "minY": -0.539,
+            "maxY": 0.168,
+            "minX": -0.326,
+            "maxX": -0.221
+          },
+          "framed": true,
+          "floorPatch": true
+        }
+      },
+      "backspool": {
+        "new": {
+          "fov": 48,
+          "back": 3.25,
+          "lat": 1.05,
+          "h": 0.25,
+          "tiltDeg": -3.423,
+          "ndc": {
+            "minY": -0.786,
+            "maxY": 0.293,
+            "minX": -0.516,
+            "maxX": -0.241
+          },
+          "framed": true,
+          "floorPatch": false
+        },
+        "control": {
+          "fov": 56,
+          "back": 4.25,
+          "lat": 1.35,
+          "h": 0.32,
+          "tiltDeg": -3.93,
+          "ndc": {
+            "minY": -0.489,
+            "maxY": 0.21,
+            "minX": -0.388,
+            "maxX": -0.21
+          },
+          "framed": true,
+          "floorPatch": true
+        }
+      },
+      "loadout": {
+        "new": {
+          "fov": 48,
+          "back": 3.25,
+          "lat": 1.05,
+          "h": 0.25,
+          "tiltDeg": -6.725,
+          "ndc": {
+            "minY": -0.786,
+            "maxY": 0.414,
+            "minX": -0.573,
+            "maxX": -0.228
+          },
+          "framed": true,
+          "floorPatch": false
+        },
+        "control": {
+          "fov": 56,
+          "back": 4.25,
+          "lat": 1.35,
+          "h": 0.32,
+          "tiltDeg": -3.93,
+          "ndc": {
+            "minY": -0.568,
+            "maxY": 0.203,
+            "minX": -0.423,
+            "maxX": -0.205
+          },
+          "framed": true,
+          "floorPatch": true
+        }
+      }
+    },
+    "sprint": {
+      "sightline": {
+        "new": {
+          "sprinting": true,
+          "groundedSprintFrames": 20,
+          "flipFrames": 0,
+          "back": 3.8766081318721417,
+          "fov": 51.99999999988167,
+          "inside": 0,
+          "sprintOffAfter": true
+        },
+        "control": {
+          "sprinting": true,
+          "groundedSprintFrames": 20,
+          "flipFrames": 0,
+          "back": 4.876533413662171,
+          "fov": 59.999999999881666,
+          "inside": 0,
+          "sprintOffAfter": true
+        }
+      },
+      "backspool": {
+        "new": {
+          "sprinting": true,
+          "groundedSprintFrames": 20,
+          "flipFrames": 22,
+          "back": 4.090245281281468,
+          "fov": 51.99999997104717,
+          "inside": 0,
+          "sprintOffAfter": true
+        },
+        "control": {
+          "sprinting": true,
+          "groundedSprintFrames": 20,
+          "flipFrames": 22,
+          "back": 5.090245281281469,
+          "fov": 59.99999997104627,
+          "inside": 0,
+          "sprintOffAfter": true
+        }
+      },
+      "loadout": {
+        "new": {
+          "sprinting": true,
+          "groundedSprintFrames": 20,
+          "flipFrames": 22,
+          "back": 4.090245281281468,
+          "fov": 51.99999997104747,
+          "inside": 0,
+          "sprintOffAfter": true
+        },
+        "control": {
+          "sprinting": true,
+          "groundedSprintFrames": 20,
+          "flipFrames": 22,
+          "back": 5.090245281281469,
+          "fov": 59.99999997104635,
+          "inside": 0,
+          "sprintOffAfter": true
+        }
+      }
+    },
+    "wall": {
+      "sightline": {
+        "new": {
+          "framesInsideBox": 0,
+          "minCameraDistance": 0.796,
+          "framedFrames": 160,
+          "frames": 160,
+          "stayedPut": true
+        },
+        "control": {
+          "framesInsideBox": 0,
+          "minCameraDistance": 0.799,
+          "framedFrames": 84,
+          "frames": 160,
+          "stayedPut": true
+        }
+      },
+      "backspool": {
+        "new": {
+          "framesInsideBox": 0,
+          "minCameraDistance": 0.796,
+          "framedFrames": 160,
+          "frames": 160,
+          "stayedPut": true
+        },
+        "control": {
+          "framesInsideBox": 0,
+          "minCameraDistance": 0.799,
+          "framedFrames": 160,
+          "frames": 160,
+          "stayedPut": true
+        }
+      },
+      "loadout": {
+        "new": {
+          "framesInsideBox": 0,
+          "minCameraDistance": 0.796,
+          "framedFrames": 160,
+          "frames": 160,
+          "stayedPut": true
+        },
+        "control": {
+          "framesInsideBox": 0,
+          "minCameraDistance": 0.799,
+          "framedFrames": 160,
+          "frames": 160,
+          "stayedPut": true
+        }
+      }
+    },
+    "rooms": {
+      "sightline": {
+        "new": [
+          {
+            "floor": 40,
+            "z": 294.2,
+            "framed": true,
+            "onGround": true,
+            "back": 3.25,
+            "fov": 48
+          },
+          {
+            "floor": 40,
+            "z": 300.5,
+            "framed": true,
+            "onGround": true,
+            "back": 2.738,
+            "fov": 48
+          },
+          {
+            "floor": 68,
+            "z": 294.2,
+            "framed": true,
+            "onGround": true,
+            "back": 3.25,
+            "fov": 48
+          },
+          {
+            "floor": 68,
+            "z": 300.5,
+            "framed": true,
+            "onGround": true,
+            "back": 2.738,
+            "fov": 48
+          },
+          {
+            "floor": 100,
+            "z": 294.2,
+            "framed": true,
+            "onGround": true,
+            "back": 3.25,
+            "fov": 48
+          },
+          {
+            "floor": 100,
+            "z": 300.5,
+            "framed": true,
+            "onGround": true,
+            "back": 2.738,
+            "fov": 48
+          }
+        ],
+        "control": [
+          {
+            "floor": 40,
+            "z": 294.2,
+            "framed": true,
+            "onGround": true,
+            "back": 4.25,
+            "fov": 56
+          },
+          {
+            "floor": 40,
+            "z": 300.5,
+            "framed": false,
+            "onGround": true,
+            "back": 2.739,
+            "fov": 56
+          },
+          {
+            "floor": 68,
+            "z": 294.2,
+            "framed": true,
+            "onGround": true,
+            "back": 4.25,
+            "fov": 56
+          },
+          {
+            "floor": 68,
+            "z": 300.5,
+            "framed": false,
+            "onGround": true,
+            "back": 2.739,
+            "fov": 56
+          },
+          {
+            "floor": 100,
+            "z": 294.2,
+            "framed": true,
+            "onGround": true,
+            "back": 4.25,
+            "fov": 56
+          },
+          {
+            "floor": 100,
+            "z": 300.5,
+            "framed": false,
+            "onGround": true,
+            "back": 2.739,
+            "fov": 56
+          }
+        ]
+      },
+      "backspool": {
+        "new": [
+          {
+            "floor": 40,
+            "z": 294.2,
+            "framed": true,
+            "onGround": true,
+            "back": 3.25,
+            "fov": 48
+          },
+          {
+            "floor": 40,
+            "z": 300.5,
+            "framed": true,
+            "onGround": true,
+            "back": 2.738,
+            "fov": 48
+          },
+          {
+            "floor": 68,
+            "z": 294.2,
+            "framed": true,
+            "onGround": true,
+            "back": 3.25,
+            "fov": 48
+          },
+          {
+            "floor": 68,
+            "z": 300.5,
+            "framed": true,
+            "onGround": true,
+            "back": 2.738,
+            "fov": 48
+          },
+          {
+            "floor": 100,
+            "z": 294.2,
+            "framed": true,
+            "onGround": true,
+            "back": 3.25,
+            "fov": 48
+          },
+          {
+            "floor": 100,
+            "z": 300.5,
+            "framed": true,
+            "onGround": true,
+            "back": 2.738,
+            "fov": 48
+          }
+        ],
+        "control": [
+          {
+            "floor": 40,
+            "z": 294.2,
+            "framed": true,
+            "onGround": true,
+            "back": 4.25,
+            "fov": 56
+          },
+          {
+            "floor": 40,
+            "z": 300.5,
+            "framed": true,
+            "onGround": true,
+            "back": 2.739,
+            "fov": 56
+          },
+          {
+            "floor": 68,
+            "z": 294.2,
+            "framed": true,
+            "onGround": true,
+            "back": 4.25,
+            "fov": 56
+          },
+          {
+            "floor": 68,
+            "z": 300.5,
+            "framed": true,
+            "onGround": true,
+            "back": 2.739,
+            "fov": 56
+          },
+          {
+            "floor": 100,
+            "z": 294.2,
+            "framed": true,
+            "onGround": true,
+            "back": 4.25,
+            "fov": 56
+          },
+          {
+            "floor": 100,
+            "z": 300.5,
+            "framed": true,
+            "onGround": true,
+            "back": 2.739,
+            "fov": 56
+          }
+        ]
+      },
+      "loadout": {
+        "new": [
+          {
+            "floor": 40,
+            "z": 294.2,
+            "framed": true,
+            "onGround": true,
+            "back": 3.25,
+            "fov": 48
+          },
+          {
+            "floor": 40,
+            "z": 300.5,
+            "framed": true,
+            "onGround": true,
+            "back": 2.738,
+            "fov": 48
+          },
+          {
+            "floor": 68,
+            "z": 294.2,
+            "framed": true,
+            "onGround": true,
+            "back": 3.25,
+            "fov": 48
+          },
+          {
+            "floor": 68,
+            "z": 300.5,
+            "framed": true,
+            "onGround": true,
+            "back": 2.738,
+            "fov": 48
+          },
+          {
+            "floor": 100,
+            "z": 294.2,
+            "framed": true,
+            "onGround": true,
+            "back": 3.25,
+            "fov": 48
+          },
+          {
+            "floor": 100,
+            "z": 300.5,
+            "framed": true,
+            "onGround": true,
+            "back": 2.738,
+            "fov": 48
+          }
+        ],
+        "control": [
+          {
+            "floor": 40,
+            "z": 294.2,
+            "framed": true,
+            "onGround": true,
+            "back": 4.25,
+            "fov": 56
+          },
+          {
+            "floor": 40,
+            "z": 300.5,
+            "framed": true,
+            "onGround": true,
+            "back": 2.739,
+            "fov": 56
+          },
+          {
+            "floor": 68,
+            "z": 294.2,
+            "framed": true,
+            "onGround": true,
+            "back": 4.25,
+            "fov": 56
+          },
+          {
+            "floor": 68,
+            "z": 300.5,
+            "framed": true,
+            "onGround": true,
+            "back": 2.739,
+            "fov": 56
+          },
+          {
+            "floor": 100,
+            "z": 294.2,
+            "framed": true,
+            "onGround": true,
+            "back": 4.25,
+            "fov": 56
+          },
+          {
+            "floor": 100,
+            "z": 300.5,
+            "framed": true,
+            "onGround": true,
+            "back": 2.739,
+            "fov": 56
+          }
+        ]
+      }
+    },
+    "portrait": {
+      "sightline": {
+        "new": {
+          "fov": 48,
+          "back": 3.25,
+          "lat": 0.346,
+          "h": 0.25,
+          "tiltDeg": -0.838,
+          "ndc": {
+            "minY": -0.785,
+            "maxY": 0.323,
+            "minX": -0.671,
+            "maxX": 0.027
+          },
+          "framed": true,
+          "floorPatch": false
+        },
+        "control": {
+          "fov": 56,
+          "back": 4.25,
+          "lat": 0.445,
+          "h": 0.32,
+          "tiltDeg": 0,
+          "ndc": {
+            "minY": -0.546,
+            "maxY": 0.168,
+            "minX": -0.504,
+            "maxX": -0.052
+          },
+          "framed": true,
+          "floorPatch": true
+        }
+      },
+      "backspool": {
+        "new": {
+          "fov": 48,
+          "back": 3.25,
+          "lat": 0.346,
+          "h": 0.25,
+          "tiltDeg": -3.689,
+          "ndc": {
+            "minY": -0.784,
+            "maxY": 0.303,
+            "minX": -0.74,
+            "maxX": 0.235
+          },
+          "framed": true,
+          "floorPatch": false
+        },
+        "control": {
+          "fov": 56,
+          "back": 4.25,
+          "lat": 0.445,
+          "h": 0.32,
+          "tiltDeg": -4.259,
+          "ndc": {
+            "minY": -0.486,
+            "maxY": 0.22,
+            "minX": -0.67,
+            "maxX": -0.039
+          },
+          "framed": true,
+          "floorPatch": true
+        }
+      },
+      "loadout": {
+        "new": {
+          "fov": 48,
+          "back": 3.25,
+          "lat": 0.346,
+          "h": 0.25,
+          "tiltDeg": -6.119,
+          "ndc": {
+            "minY": -0.786,
+            "maxY": 0.449,
+            "minX": -0.877,
+            "maxX": 0.25
+          },
+          "framed": true,
+          "floorPatch": false
+        },
+        "control": {
+          "fov": 56,
+          "back": 4.25,
+          "lat": 0.445,
+          "h": 0.32,
+          "tiltDeg": -4.259,
+          "ndc": {
+            "minY": -0.547,
+            "maxY": 0.249,
+            "minX": -0.736,
+            "maxX": -0.02
+          },
+          "framed": true,
+          "floorPatch": true
+        }
+      }
+    },
+    "wallSpot": {
+      "position": [
+        203.22565627078296,
+        0.42,
+        140.37539883385122
+      ],
+      "yaw": 0,
+      "normal": [
+        0,
+        0,
+        -1
+      ]
+    },
+    "aimLock": {
+      "new": {
+        "fov": 48,
+        "back": 3.25,
+        "lat": 1.05,
+        "h": 0.25,
+        "tiltDeg": 0,
+        "ndc": {
+          "minY": -0.839,
+          "maxY": 0.309,
+          "minX": -0.44,
+          "maxX": -0.283
+        },
+        "framed": true,
+        "floorPatch": false
+      },
+      "control": {
+        "fov": 48,
+        "back": 3.25,
+        "lat": 1.05,
+        "h": 0.25,
+        "tiltDeg": 0,
+        "ndc": {
+          "minY": -0.839,
+          "maxY": 0.309,
+          "minX": -0.44,
+          "maxX": -0.283
+        },
+        "framed": true,
+        "floorPatch": true
+      }
+    },
+    "reset": {
+      "first": {
+        "fov": 48,
+        "back": 3.25,
+        "lat": 1.05,
+        "h": 0.332,
+        "tiltDeg": 0,
+        "ndc": {
+          "minY": -0.721,
+          "maxY": 0.407,
+          "minX": -0.45,
+          "maxX": -0.194
+        },
+        "framed": true,
+        "floorPatch": false
+      },
+      "fovRange": 0,
+      "backRange": 0
+    },
+    "railFlight": {
+      "alignedFrames": 118,
+      "maxCameraDiff": 0.002878696584724103,
+      "maxFovDiff": 0.038,
+      "atFireDiff": 4.124897102250149e-7,
+      "modes": [
+        "TAKEOFF",
+        "TRANSIT",
+        "UNCONTROLLED"
+      ]
+    },
+    "hostileShots": [
+      0,
+      0
+    ]
+  },
+  "errors": [],
+  "pass": false
+}

@@ -1,0 +1,270 @@
+{
+  "build": "SIGHTLINE_SAINT_MERIDIAN_V02_SIGHTLINE_FRAMING.html",
+  "control": "SIGHTLINE_SAINT_MERIDIAN_V02_CLOSE_CAMERA.html",
+  "checks": {
+    "plazaFramed": true,
+    "roomFixturesFramed": true,
+    "wallOrbitFramed": true,
+    "aimEasesOutWithoutSnap": true,
+    "aimViewSettlesOnControl": true,
+    "jumpEasesOutAndBackIn": true,
+    "skyRailIdentical": true,
+    "groundRailIdentical": true,
+    "backspoolLoadoutUnchanged": true,
+    "noHostileShotLanded": true,
+    "noPageErrors": true
+  },
+  "evidence": {
+    "others": {
+      "backspool": {
+        "hero": "backspool",
+        "plaza": {
+          "viewAngleDiffDeg": 0.00064,
+          "cameraPositionDiff": 0,
+          "framed": [
+            true,
+            true
+          ]
+        },
+        "room": {
+          "viewAngleDiffDeg": 0.00012,
+          "cameraPositionDiff": 0,
+          "framed": [
+            true,
+            true
+          ]
+        }
+      },
+      "loadout": {
+        "hero": "loadout",
+        "plaza": {
+          "viewAngleDiffDeg": 0.00048,
+          "cameraPositionDiff": 0,
+          "framed": [
+            true,
+            true
+          ]
+        },
+        "room": {
+          "viewAngleDiffDeg": 0.00057,
+          "cameraPositionDiff": 0,
+          "framed": [
+            true,
+            true
+          ]
+        }
+      }
+    },
+    "skyRail": {
+      "frames": 213,
+      "modes": [
+        "AIR",
+        "AIM",
+        "TRANSIT"
+      ],
+      "maxPositionDiff": 1.5888218595934733e-13,
+      "maxFlightCameraDiff": 1.0345658396181439e-13,
+      "maxAimViewDiffDeg": 0
+    },
+    "groundRail": {
+      "modes": [
+        "AIM",
+        "TAKEOFF",
+        "TRANSIT",
+        "UNCONTROLLED"
+      ],
+      "alignedFrames": 118,
+      "maxPositionDiff": 0.002762918050351565,
+      "maxFlightCameraDiff": 0.002604347586836506,
+      "targetDiffAtFire": 0.0027627835042238758,
+      "travelled": 328.459
+    },
+    "plaza": {
+      "new": {
+        "framed": true,
+        "fit": true,
+        "owner": "automatic",
+        "pitchBiasDeg": -0.602,
+        "fov": 48
+      },
+      "control": {
+        "framed": true,
+        "owner": "automatic",
+        "fov": 48
+      },
+      "cameraPositionDiff": 0,
+      "viewAngleDiffDeg": 0.602
+    },
+    "rooms": {
+      "new": [
+        {
+          "floor": 40,
+          "z": 294.2,
+          "framed": true,
+          "onGround": true,
+          "pitchBiasDeg": -6.259,
+          "fov": 48
+        },
+        {
+          "floor": 40,
+          "z": 300.5,
+          "framed": true,
+          "onGround": true,
+          "pitchBiasDeg": -10.531,
+          "fov": 48
+        },
+        {
+          "floor": 68,
+          "z": 294.2,
+          "framed": true,
+          "onGround": true,
+          "pitchBiasDeg": -6.259,
+          "fov": 48
+        },
+        {
+          "floor": 68,
+          "z": 300.5,
+          "framed": true,
+          "onGround": true,
+          "pitchBiasDeg": -10.531,
+          "fov": 48
+        },
+        {
+          "floor": 100,
+          "z": 294.2,
+          "framed": true,
+          "onGround": true,
+          "pitchBiasDeg": -6.259,
+          "fov": 48
+        },
+        {
+          "floor": 100,
+          "z": 300.5,
+          "framed": true,
+          "onGround": true,
+          "pitchBiasDeg": -10.531,
+          "fov": 48
+        }
+      ],
+      "control": [
+        {
+          "floor": 40,
+          "z": 294.2,
+          "framed": false,
+          "onGround": true,
+          "pitchBiasDeg": -13.618,
+          "fov": 48
+        },
+        {
+          "floor": 40,
+          "z": 300.5,
+          "framed": false,
+          "onGround": true,
+          "pitchBiasDeg": -13.618,
+          "fov": 48
+        },
+        {
+          "floor": 68,
+          "z": 294.2,
+          "framed": false,
+          "onGround": true,
+          "pitchBiasDeg": -13.618,
+          "fov": 48
+        },
+        {
+          "floor": 68,
+          "z": 300.5,
+          "framed": false,
+          "onGround": true,
+          "pitchBiasDeg": -13.618,
+          "fov": 48
+        },
+        {
+          "floor": 100,
+          "z": 294.2,
+          "framed": false,
+          "onGround": true,
+          "pitchBiasDeg": -13.618,
+          "fov": 48
+        },
+        {
+          "floor": 100,
+          "z": 300.5,
+          "framed": false,
+          "onGround": true,
+          "pitchBiasDeg": -13.618,
+          "fov": 48
+        }
+      ]
+    },
+    "wall": {
+      "spot": {
+        "position": [
+          203.22565627078296,
+          0.42,
+          140.37539883385122
+        ],
+        "yaw": 0
+      },
+      "new": {
+        "framedFrames": 160,
+        "insideFrames": 0
+      },
+      "control": {
+        "framedFrames": 0,
+        "insideFrames": 0
+      },
+      "frames": 160,
+      "positionDiff": 0
+    },
+    "aim": {
+      "room": {
+        "startBiasDeg": 6.452,
+        "firstFrameDropDeg": 0.991,
+        "maxFrameDropDeg": 0.991,
+        "gapAt15": 0.53,
+        "gapAt30": 0.043,
+        "gapAt60": 0,
+        "targetDiffAt60": 0,
+        "targetObjSame": true,
+        "owners": [
+          "sightline aim"
+        ],
+        "positionDiff": 0
+      },
+      "plaza": {
+        "startBiasDeg": 0.635,
+        "firstFrameDropDeg": 0.097,
+        "maxFrameDropDeg": 0.097,
+        "gapAt15": 0.052,
+        "gapAt30": 0.004,
+        "gapAt60": 0,
+        "targetDiffAt60": 0,
+        "targetObjSame": true,
+        "owners": [
+          "sightline aim"
+        ],
+        "positionDiff": 0
+      }
+    },
+    "jump": {
+      "startBiasDeg": 5.785,
+      "minBiasInAirDeg": 0.002,
+      "maxFrameChangeDeg": 1.085,
+      "landFrame": 50,
+      "biasAfterLandingDeg": 6.256,
+      "airFrames": 50,
+      "positionDiff": 0,
+      "owners": [
+        "sightline off foot",
+        "automatic"
+      ]
+    },
+    "hostileShots": [
+      0,
+      0
+    ]
+  },
+  "errors": [],
+  "pass": true
+}
